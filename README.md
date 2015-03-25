@@ -8,3 +8,4 @@ for build lk
 ./mk -o=TARGET_BUILD_VARIANT=user tinno82_wet_kk n lk
 or
 ./mk -o=TARGET_BUILD_VARIANT=user golf n lk
+Kernel source isn't tested
