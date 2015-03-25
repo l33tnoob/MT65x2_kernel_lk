@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ --><resources>    
+<!-- 
+     *******************Must Read******************
+		 *******[[[[[[Customization Note]]]]]]]]********
+		 *******************Must Read******************		 
+	 1.supported_location_codes and supported_location_mccs must be arranged in the order according to supported_locations.	 
+	   Customer can check Matvctrl.h for location-to-code mappings.Please also be noted that auto-select is mapped to -1. 
+	 2.if there's more than one mcc for a country,remember also update ChannelListActivity.getAutoSelectLocationIndex().
+	   You can check the case of China as an example.
+	 3.if you don't know the mcc of a specifi country/area,you also need to provide one item with its value set to 0.
+-->
+    <string-array name="supported_locations">
+		 <item>"Auto seleção"</item>
+        <item>"China Insular"</item>
+        <item>"Taiwan"</item>
+        <item>"Shenzhen Chinês"</item>
+        <item>"Hong Kong Chinês"</item>
+        <item>"Afganistão"</item>
+        <item>"Argentina"</item>
+        <item>"Austrália"</item>
+        <item>"Brasil"</item>
+        <item>"Mianmar"</item>
+        <item>"Cambodja"</item>
+        <item>"Canadá"</item>
+        <item>"Chile"</item>
+        <item>"Europa Oriental"</item>
+        <item>"Europa Ocidental"</item>
+        <item>"França"</item>
+        <item>"Colônia Francesa"</item>
+        <item>"Índia"</item>
+        <item>"Indonésia"</item>
+        <item>"Irã"</item>
+        <item>"Itália"</item>
+        <item>"Japão"</item>
+        <item>"Coreia"</item>
+        <item>"Laos"</item>
+        <item>"Malásia"</item>
+        <item>"México"</item>
+        <item>"Nova Zelândia"</item>
+        <item>"Paquistão"</item>
+        <item>"Paraguai"</item>
+        <item>"Filipinas"</item>
+        <item>"Portugal"</item>
+        <item>"Rússia"</item>
+        <item>"Cingapura"</item>
+        <item>"África do Sul"</item>
+        <item>"Espanha"</item>
+        <item>"Tailândia"</item>
+        <item>"Turquia"</item>
+        <item>"Emirados Árabes Unidos"</item>
+        <item>"Reino Unido"</item>
+        <item>"Estados Unidos da América"</item>
+        <item>"Uruguai"</item>
+        <item>"Venezuela"</item>
+        <item>"Vietnã "</item>
+        <item>"Irlanda"</item>
+        <item>"Morrocos"</item>        
+	
+</string-array>
+
+<string-array name="AudioFormats">
+<item>Mono</item>
+        <item>"Estéreo"</item>
+<item>SAP</item>
+<item>Sub</item>
+<item>Main sub</item>
+<item>Main</item>
+<item>Dual1</item>
+<item>Dual2</item>
+<item>NICAM Mono</item>
+<item>NICAM Stereo</item>
+<item>NICAM Dual1</item>
+<item>NICAM Dual2</item>
+</string-array>
+</resources>

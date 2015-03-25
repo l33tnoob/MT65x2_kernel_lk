@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.mediatek.atci.service"
+      android:sharedUserId="android.uid.system"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:label="Atci_service" android:launchMode="singleInstance">
+        <receiver android:name="com.mediatek.atci.service.AtciIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.mediatek.atci.service.AtciService">
+            <intent-filter>
+                <action android:name="com.mediatek.atci.service.bringup" />
+                <action android:name="android.location.agps.EMERGENCY_CALL" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </service>        
+        <service android:name=".FMRadioService" android:process=".remote">
+            <intent-filter>
+                <action android:name="com.mediatek.atci.service.IFMRadioService" />
+            </intent-filter>
+        </service>       
+    </application>
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	
+</manifest> 

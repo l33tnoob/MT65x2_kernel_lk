@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"시스템 업데이트"</string>
+
+
+    <string name="none_package">올바른 업데이트 패키지가 없습니다.</string>
+    <string name="new_version_query">업데이트를 확인하는 중\u2026</string>
+    <string name="menu_stats_refresh">새로 고침</string>
+    <string name="network_error">네트워크 연결 실패</string>
+    <string name="no_new_version">시스템이 현재 최신 상태입니다.</string>
+    <string name="not_support_version">대상이 Over-the-Air를 지원하지 않습니다</string>
+    <string name="query_sd_insufficient_space"><xliff:g id="path">%s</xliff:g> 에 대한 공간이 부족합니다</string>
+    <string name="ota_category_title">OTA</string>
+    <string name="sd_category_title">SD 카드 업데이트</string>
+    <string name="ota_preference_summary">서버에서 시스템 업데이트를 찾았습니다</string>
+
+
+    <string name="notes_summary">펌웨어를 업데이트하면 기계 안전성을 향상하고 버그를 패치할 수 있습니다.</string>
+    <string name="ask_for_install_ota">지금 시스템 업데이트를 설치하시겠습니까?</string>
+    <string name="warning_install_ota" product="tablet">설치 중에는 태블릿을 사용하거나 비상 전화를 걸 수 없습니다. 배터리와 SD 카드를 제거하거나 태블릿을 끄십시오.</string>
+    <string name="warning_install_ota" product="default">설치 중에는 전화를 사용하거나 비상 전화를 걸 수 없습니다. 배터리와 SD 카드를 제거하거나 전화를 끄십시오.</string>
+    <string name="ask_for_install_sd">SD 카드에서 최신 시스템 업데이트 패키지를 찾았습니다. 설치하시겠습니까?</string>
+    <string name="warning_install_sd" product="tablet">설치 중에는 태블릿을 사용하거나 비상 전화를 걸 수 없습니다. 배터리와 SD 카드를 제거하거나 태블릿을 끄십시오. \n설치를 시작하기 전에, 공식 웹사이트에서 패키지를 다운로드했으며 패키지가 손상되지 않았는지 확인하십시오.</string>
+    <string name="warning_install_sd" product="default">설치 중에는 전화를 사용하거나 비상 전화를 걸 수 없습니다. 배터리와 SD 카드를 제거하거나 전화를 끄십시오. \n설치를 시작하기 전에, 공식 웹사이트에서 패키지를 다운로드했으며 패키지가 손상되지 않았는지 확인하십시오.</string>
+    <string name="ask_for_download_ota">시스템 최적화 업데이트를 다운로드하시겠습니까?</string>
+    <string name="warning_download_ota">이 업데이트를 적용하기 위해 무료 Wi-Fi 핫스팟 또는 무제한 데이터 요금제를 사용할 것을 권장합니다. 그러지 않을 경우 표준 데이터 연결 요금이 적용될 수 있습니다. \n업그레이드하기 전에 먼저 데이터를 백업하십시오.</string>
+        
+    <string name="notification_content_title">시스템 업데이트</string>
+    <string name="downloading_title">"다운로드 중..."</string>   
+    <string name="wifi_only_check">Wi-Fi 전용</string>     
+    
+    
+    
+    
+    
+    <string name="btn_install">"설치"</string>
+    <string name="btn_cancel">취소</string>
+    <string name="btn_download">다운로드 및 설치</string>
+    <string name="btn_resume">"다운로드"</string>
+    
+    <string name="warn_data_cost_title">업데이트 다운로드</string>
+    <string name="warn_data_cost_content">모바일 네트워크를 통해 다운로드할 경우 추가 요금이 청구될 수 있습니다. 계속하시겠습니까?</string>
+    <string name="warn_data_cost_yes">"예"</string>
+    <string name="warn_data_cost_no">"아니요"</string>
+
+    <string name="notification_download_complete_title">시스템 업데이트가 준비되었습니다</string>
+    <string name="notification_download_complete_context">누르면 시스템 업데이트가 설치됩니다</string>
+        
+    <string name="sdcard_crash_or_unmount">SD 카드 오류. SD 카드를 확인하고 다시 시도하십시오.</string>
+    <string name="unmount_sdcard">SC 카드 마운트 오류입니다. 확인하십시오.</string>
+    <string name="insufficient_space_content">설치를 위해 최소  <xliff:g id="deltasize" example="3.5M">%s</xliff:g> 바이트의 저장 공간이 필요합니다. 공간을 확보한 다음 계속하십시오.</string>
+
+    
+    
+    
+    
+    <string name="install_sd_title">업데이트 설치</string>
+    <string name="install_sd_message">설치하기 전에 공식 웹사이트에서 패키지를 다운로드하고 패키지가 손상되지 않았는지 확인하십시오. 그러지 않은 경우 시스템이 문제가 발생할 수 있습니다.</string>
+    <string name="install_reminder_now">지금 설치</string>
+    <string name="install_reminder_not_now">"나중에"</string>
+    
+    
+
+    <string name="notification_content_text_completed">성공적으로 다운로드</string> 
+
+    <string name="unknown_per">"알 수 없음"</string>    
+    <string name="unknown_error">알 수 없는 오류</string>
+    <string name="unknown_error_content">알 수 없는 오류가 발생했습니다. 이 페이지를 종료하고 다시 시작하십시오.</string>
+    <string name="insufficient_space_title">공간 부족</string>
+    <string name="error_sdcard">SD 카드 정보</string>
+    <string name="insufficient_space">SD 카드에 공간이 부족합니다.</string>
+    <string name="package_deleted_error">잘못된 업그레이드이기 때문에 시스템 업데이트가 정지되었습니다.</string>
+    
+    <string name="cancel_download_title">다운로드 취소</string>
+    <string name="cancel_download_content">이 작업 시 다운로드된 파일이 취소됩니다.</string>
+
+    
+    <string name="change_network_title">"다운로드"</string>
+    <string name="change_network_content">현재 APN이 다운로드를 지원하지 않습니다. 다른 APN으로 변경하거나 Wi-Fi를 켜시겠습니까?</string>
+    <string name="change_network_wifi_btn">Wi-Fi 사용</string>
+    <string name="change_network_apn_btn">APN 변경</string>
+    <string name="change_network_discard_btn">취소</string>    
+    <string name="package_error_title">설치 실패</string>
+    <string name="package_error_message_invalid">패키지 오류. 업데이트를 확인하고 다시 다운로드하십시오.</string>
+    <string name="package_error_message_insuff" product="tablet">장치에 공간이 부족합니다.</string>
+    <string name="package_error_message_insuff" product="default">전화기에 공간이 부족합니다.</string>
+    <string name="package_error_message_crash">데이터 파티션에 액세스할 수 없습니다.</string>
+    <string name="package_error_message_full">파티선이 변경된 경우 전체 패키지가 필요합니다.</string>    
+    <string name="updateSuccess" product="tablet">축하합니다! 장치가 버전 <xliff:g id="version" example="gb.p37">%s</xliff:g>(으)로 성공적으로 업데이트되었습니다.</string> 
+    <string name="updateSuccess" product="default">축하합니다! 전화기가 버전 <xliff:g id="version" example="gb.p37">%s</xliff:g>(으)로 성공적으로 업데이트되었습니다.</string> 
+    <string name="updateFailed">버전 <xliff:g id="version" example="gb.p37">%s</xliff:g>(으)로 업데이트하는 데 실패했습니다.</string>
+    <string name="package_unzip">패키지 압축을 푸는 중\u2026</string>
+    <string name="package_unzip_error">압축해제 오류</string>
+    
+    <string name="installing_message">전화기가 꺼집니다\u2026</string>
+    <string name="install_sd_info">업그레이드를 계속하려면 패키지를 전화 저장소에 복사해야 합니다.\n전화기에 공간이 부족합니다.</string>
+    <string name="sdcard_crash_or_unmount_when_install">SD 카드 마운트가 해제되어 시스템 업데이트가 중단되었습니다.</string>
+    <string name="sdcard_inserted">업데이트 패키지가 더 있는지 확인하기 위해 SD 카드를 검색하시겠습니까?</string>
+    
+    <string name="new_version_detected">시스템 업데이트를 사용할 수 있습니다</string>
+    <string name="sdcard_unmount">SD 카드가 탑재 해제되었습니다</string>
+    <string name="server_version_error">서버 오류: 서버 소스 코드를 업데이트하십시오.</string>
+    <string name="cta_warning">시스템은 공식 웹사이트 또는 서버에서만 펌웨어 업그레이드를 지원합니다. 사용자가 타사 ROM 이미지 및/또는 기타 루트 방법을 사용하여 펌웨어를 업그레이드하면 폰이 불안정해집니다. 이러한 경우 사용자가 모든 책임을 져야 합니다.</string>
+</resources>

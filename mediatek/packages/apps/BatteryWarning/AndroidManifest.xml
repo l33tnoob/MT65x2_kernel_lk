@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.mediatek.batterywarning"
+        android:sharedUserId="android.uid.system">
+       <application android:label="@string/batteryWarning_label"
+            android:icon="@mipmap/ic_launcher_settings"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Holo"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:supportsRtl="true" >
+           <activity android:name="com.mediatek.batterywarning.BatteryWarningActivity"
+               android:label="@string/batteryWarning_label"
+               android:theme="@*android:style/Theme.Holo.Dialog.Alert"
+               android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc"
+               android:exported="true">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                </intent-filter>
+            </activity>
+        <receiver android:name="com.mediatek.batterywarning.BatteryWarningReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_WARNING" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binbadblocks Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type badblocks_exec , exec_type, file_type;
+type badblocks ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive badblocks;
+init_daemon_domain(badblocks)
+
+
+# 20131122 Add Set Property Rule
+allow badblocks  property_type:property_service set;

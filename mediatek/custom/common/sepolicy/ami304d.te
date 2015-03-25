@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binami304d Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type ami304d_exec , exec_type, file_type;
+type ami304d ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive ami304d;
+init_daemon_domain(ami304d)
+
+
+# 20131122 Add Set Property Rule
+allow ami304d  property_type:property_service set;

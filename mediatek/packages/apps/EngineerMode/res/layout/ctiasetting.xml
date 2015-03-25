@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dip" >
+
+        <LinearLayout
+            android:id="@+id/table"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="@string/ctia_title"
+            android:textSize="18dip" />
+
+        <CheckBox
+            android:id="@+id/enable_checkbox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ctia_checkbox" />
+
+        <TextView
+            android:id="@+id/title2_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:layout_marginTop="4dip"
+            android:text="@string/ctia_rate"
+            android:textSize="12dip" />
+
+        <Spinner
+            android:id="@+id/rate_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/title4_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:layout_marginTop="4dip"
+            android:text="@string/ctia_flag"
+            android:textSize="16dip" />
+
+        <LinearLayout
+            android:id="@+id/table"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/title5_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dip"
+                android:layout_marginRight="108dip"
+                android:layout_marginTop="4dip"
+                android:text="@string/ctia_id"
+                android:textSize="12dip" />
+
+            <TextView
+                android:id="@+id/title6_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="4dip"
+                android:text="@string/ctia_value"
+                android:textSize="12dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/label1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="2dip"
+                android:layout_marginTop="4dip"
+                android:text="@string/ctia_label"
+                android:textSize="12dip" />
+
+            <EditText
+                android:id="@+id/idedittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dip"
+                android:layout_marginTop="4dip"
+                android:maxLength="8"
+                android:maxLines="1"
+                android:maxWidth="96dip"
+                android:minWidth="96dip"
+                android:text="@string/ctia_default_val"
+                android:textSize="12dip" />
+
+            <TextView
+                android:id="@+id/label2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="2dip"
+                android:layout_marginTop="4dip"
+                android:text="@string/ctia_label"
+                android:textSize="12dip" />
+
+            <EditText
+                android:id="@+id/valedittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dip"
+                android:layout_marginTop="4dip"
+                android:maxLength="8"
+                android:maxLines="1"
+                android:maxWidth="96dip"
+                android:minWidth="96dip"
+                android:text="@string/ctia_default_val"
+                android:textSize="12dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/set_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:minWidth="100dip"
+                android:text="@string/ctia_btn_set"
+                android:textSize="14dip" />
+
+            <Button
+                android:id="@+id/get_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dip"
+                android:minWidth="100dip"
+                android:text="@string/ctia_btn_get"
+                android:textSize="14dip" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/enable_dump_checkbox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ctia_dump_checkbox" />
+
+        <CheckBox
+            android:id="@+id/enable_dump_counter_checkbox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ctia_counter_checkbox" />
+
+        <TextView
+            android:id="@+id/interval_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:layout_marginTop="4dip"
+            android:text="@string/ctia_interval"
+            android:textSize="16dip" />
+
+        <EditText
+            android:id="@+id/interval_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:layout_marginTop="4dip"
+            android:inputType="number"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:maxWidth="48dip"
+            android:minWidth="48dip"
+            android:numeric="decimal"
+            android:textSize="16dip" />
+    </LinearLayout>
+
+</ScrollView>

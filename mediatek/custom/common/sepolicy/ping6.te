@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binping6 Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type ping6_exec , exec_type, file_type;
+type ping6 ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive ping6;
+init_daemon_domain(ping6)
+
+
+# 20131122 Add Set Property Rule
+allow ping6  property_type:property_service set;

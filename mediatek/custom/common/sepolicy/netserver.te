@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbinnetserver Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type netserver_exec , exec_type, file_type;
+type netserver ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive netserver;
+init_daemon_domain(netserver)
+
+
+# 20131122 Add Set Property Rule
+allow netserver  property_type:property_service set;

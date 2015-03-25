@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/working_mode_radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/working_mode_normal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/working_mode_normal" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/working_mode_media_loopback"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/working_mode_media_loopback" >
+        </RadioButton>
+
+        <LinearLayout
+            android:id="@+id/media_loopback_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/media_loopback_radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dip"
+                android:background="@color/gray"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RadioButton
+                    android:id="@+id/media_loopback_stack"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/media_loopback_stack"
+                    android:textColor="@color/black" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/media_loopback_transceiver"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/network_loopback_service"
+                    android:textColor="@color/black" >
+                </RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+
+        <RadioButton
+            android:id="@+id/working_mode_network_loopback"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/working_mode_network_loopback" >
+        </RadioButton>
+
+        <RadioGroup
+            android:id="@+id/network_loopback_radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dip"
+            android:background="@color/gray"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RadioButton
+                android:id="@+id/network_loopback_stack"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/network_loopback_stack"
+                android:textColor="@color/black" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/network_loopback_service"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/network_loopback_service"
+                android:textColor="@color/black" >
+            </RadioButton>
+        </RadioGroup>
+
+        <RadioButton
+            android:id="@+id/working_mode_test_file"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/working_mode_test_file" >
+        </RadioButton>
+    </RadioGroup>
+
+    <!--
+  	<LinearLayout
+  	  android:layout_width="fill_parent"
+  	  android:layout_height="wrap_content"
+  	  android:layout_marginLeft="30dip"
+  	  android:layout_marginRight="30dip"
+  	  android:gravity="center"
+  	  android:orientation="vertical">
+  	  	<Spinner
+  	  	  android:layout_width="fill_parent"
+  	  	  android:layout_height="wrap_content"
+  	  	  android:enabled="false"
+  	  	  android:id="@+id/working_mode_playback_spinner">
+  	  	</Spinner>
+  	</LinearLayout> 
+    -->
+
+</LinearLayout>

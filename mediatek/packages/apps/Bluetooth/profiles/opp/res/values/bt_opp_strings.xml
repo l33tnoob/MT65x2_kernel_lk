@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="bt_opp_push_file_name" translatable="false">"bluetooth_share.html"</string>
+
+	<!-- Incoming / Outgoing File Notification -->
+	<string name="bt_opp_notification_in_coming_ticker">"Incoming file request"</string>
+	<string name="bt_opp_notification_in_coming_title">"Incoming file request (from: %1$s)"</string>
+	<string name="bt_opp_notification_in_coming_message">"Select to accept incoming file."</string>
+	<string name="bt_opp_notification_in_ongoing_ticker">"Incoming file"</string>
+	<string name="bt_opp_notification_in_ongoing_message">"Receiving: %1$s (%2$s)"</string>
+	<string name="bt_opp_notification_out_ongoing_ticker">"Outgoing file"</string>
+	<string name="bt_opp_notification_out_ongoing_message">"Sending: %1$s (%2$s)"</string>
+
+	<!-- Cancel Transfer -->
+	<string name="bt_opp_cancel_task_title">"File transfer"</string>
+	<string name="bt_opp_cancel_task_message">"Cancel this transfer?"</string>
+	<string name="bt_opp_cancel_task_yes">"Yes"</string>
+	<string name="bt_opp_cancel_task_no">"No"</string>
+
+	<!--  Canceling Transfer -->
+	<string name="bt_opp_canceling_task_message">"Canceling transfer, please wait..."</string>
+
+	<!-- Incoming File Dialog -->
+	<string name="bt_opps_confirm_push_title">"Bluetooth - Incoming object"</string>
+	<string name="bt_opps_confirm_push_message">"Incoming file: %1$s (%2$s) from %3$s. Accept?"</string>
+	<string name="bt_opps_confirm_push_yes">"Accept"</string>
+	<string name="bt_opps_confirm_push_no">"Reject"</string>
+
+	<!-- Unsupported Push Request -->
+	<string name="bt_oppc_push_action_label">"Bluetooth"</string>
+	<string name="bt_oppc_push_toast_sending_file">"Sending file to %1$s"</string>
+	<string name="bt_oppc_push_toast_sending_files">"Sending files to %1$s"</string>
+	<string name="bt_oppc_push_toast_unsupported_uri">"Unsupported share content: %1$s"</string>
+	<string name="bt_oppc_push_toast_unknown_device">"unknown device"</string>
+	<string name="bt_opps_toast_storage_unavailable">"No SD card or not enough storage space for incoming file."</string>
+	<string name="bt_oppc_toast_disk_full">" No enough disk space for saving sending info."</string>
+	<string name="bt_opps_push_toast_invalid_request">"Invalid share request from remote device."</string>
+
+	<string name="permlab_bluetoothWhitelist">Whitelist bluetooth device access.</string>
+	<string name="permdesc_bluetoothWhitelist">Allows the app to temporarily whitelist
+		a Bluetooth device, allowing that device to send files to this device without user
+		confirmation.</string>
+
+	<!-- Strings used for a (system only) permission -->
+	<string name="permlab_handoverStatus">Receive BT handover transfer broadcasts.</string>
+	<string name="permdesc_handoverStatus">Allows receiving handover transfer status
+		information from Bluetooth.</string>
+</resources>

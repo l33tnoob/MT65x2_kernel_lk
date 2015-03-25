@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bincputime Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type cputime_exec , exec_type, file_type;
+type cputime ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive cputime;
+init_daemon_domain(cputime)
+
+
+# 20131122 Add Set Property Rule
+allow cputime  property_type:property_service set;

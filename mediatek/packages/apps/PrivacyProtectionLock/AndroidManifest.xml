@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mediatek.ppl"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.REBOOT" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.REBOOT" />
+
+    <permission
+        android:name="com.mediatek.ppl.permission.ACCESS_PPL_MANAGER"
+        android:description="@string/ppl_permission_description"
+        android:label="@string/ppl_permission_label"
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:protectionLevel="dangerous" >
+    </permission>
+
+    <application
+        android:name="PplApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.mediatek.ppl.ui.SetupPasswordActivity"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+            <intent-filter />
+        </activity>
+        <activity
+            android:name="com.mediatek.ppl.ui.SetupTrustedContactsActivity"
+            android:parentActivityName="com.mediatek.ppl.ui.SetupPasswordActivity"
+            android:windowSoftInputMode="adjustResize" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mediatek.ppl.ui.SetupPasswordActivity" />
+
+            <intent-filter />
+        </activity>
+        <activity
+            android:name="com.mediatek.ppl.ui.SetupSendManualActivity"
+            android:parentActivityName="com.mediatek.ppl.ui.SetupTrustedContactsActivity"
+            android:windowSoftInputMode="adjustResize" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mediatek.ppl.ui.SetupTrustedContactActivity" />
+
+            <intent-filter />
+        </activity>
+        <activity
+            android:name="com.mediatek.ppl.ui.AccessLockActivity"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter />
+        </activity>
+        <activity android:name="com.mediatek.ppl.ui.ControlPanelActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask" >
+            <intent-filter />
+        </activity>
+        <activity
+            android:name="com.mediatek.ppl.ui.ChangePasswordActivity"
+            android:excludeFromRecents="true"
+            android:parentActivityName="com.mediatek.ppl.ui.ControlPanelActivity"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mediatek.ppl.ui.ControlPanelActivity" />
+
+            <intent-filter />
+        </activity>
+        <activity
+            android:name="com.mediatek.ppl.ui.UpdateTrustedContactsActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:excludeFromRecents="true"
+            android:parentActivityName="com.mediatek.ppl.ui.ControlPanelActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mediatek.ppl.ui.ControlPanelActivity" />
+
+            <intent-filter />
+        </activity>
+        <activity
+            android:name="com.mediatek.ppl.ui.ViewInstructionActivity"
+            android:excludeFromRecents="true"
+            android:parentActivityName="com.mediatek.ppl.ui.ControlPanelActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mediatek.ppl.ui.ControlPanelActivity" />
+
+            <intent-filter />
+        </activity>
+        <activity
+            android:name="com.mediatek.ppl.ui.ChooseEnableModeActivity"
+            android:excludeFromRecents="true"
+            android:theme="@*android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter />
+        </activity>
+
+        <service
+            android:name="com.mediatek.ppl.PplService"
+            android:permission="com.mediatek.ppl.permission.ACCESS_PPL_MANAGER" >
+            <intent-filter android:priority="0x7FFFFFFF" >
+                <action android:name="com.mediatek.ppl.service" />
+                <action android:name="com.mediatek.ppl.REMOTE_INSTRUCTION_RECEIVED"/>
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.mediatek.ppl.PplReceiver" >
+            <intent-filter android:priority="0x7FFFFFFF" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.SIM_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.mediatek.ppl.ext.PplSettingsEntryPlugin"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.mediatek.settings.ext.IPplSettingsEntryExt" />
+            </intent-filter>
+
+            <meta-data
+                android:name="class"
+                android:value="com.mediatek.ppl.ext.PplSettingsEntryPlugin" />
+        </service>
+    </application>
+
+</manifest>

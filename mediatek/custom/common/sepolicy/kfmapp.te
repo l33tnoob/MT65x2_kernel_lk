@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbinkfmapp Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type kfmapp_exec , exec_type, file_type;
+type kfmapp ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive kfmapp;
+init_daemon_domain(kfmapp)
+
+
+# 20131122 Add Set Property Rule
+allow kfmapp  property_type:property_service set;

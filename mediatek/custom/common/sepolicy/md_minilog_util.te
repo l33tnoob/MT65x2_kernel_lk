@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binmd_minilog_util Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type md_minilog_util_exec , exec_type, file_type;
+type md_minilog_util ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive md_minilog_util;
+init_daemon_domain(md_minilog_util)
+
+
+# 20131122 Add Set Property Rule
+allow md_minilog_util  property_type:property_service set;

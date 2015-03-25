@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<!--Line Begin-->
+	<LinearLayout android:id="@+id/LinearLayout"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dip" 
+		android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip" 
+		android:orientation="vertical">
+
+		<TextView android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:gravity="center" 
+			android:text="@string/fd_text_screen_on"
+			android:textStyle="bold">
+		</TextView>
+
+		<View android:id="@+id/SpacerTop" 
+		android:layout_width="fill_parent"
+			android:layout_height="1dip" 
+			android:layout_marginTop="5dip"
+			android:background="#0000FF">
+		</View>
+	</LinearLayout>
+	<!--Line End-->
+
+	<!--Screen On Begin-->
+	<LinearLayout android:id="@+id/LinearLayout"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dip" 
+		android:orientation="horizontal"
+		android:gravity="center">
+		<TextView android:layout_width="100dip" 
+		android:layout_height="wrap_content"
+			android:id="@+id/fd_text_screen_on_r8fd" 
+			android:text="@string/fd_text_r8">
+		</TextView>
+		<EditText android:layout_width="120dip"
+			android:layout_height="wrap_content" 
+			android:id="@+id/fd_edit_screen_on_r8fd"
+			android:digits="0123456789">
+		</EditText>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_marginLeft="1dip"
+			android:text="@string/fd_text_unit">
+		</TextView>
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/LinearLayout"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dip" 
+		android:orientation="horizontal"
+		android:gravity="center">
+		<TextView android:layout_width="100dip" 
+		android:layout_height="wrap_content"
+			android:id="@+id/fd_text_screen_on_legacy" 
+			android:text="@string/fd_text_legacy">
+		</TextView>
+		<EditText android:layout_width="120dip"
+			android:layout_height="wrap_content" 
+			android:id="@+id/fd_edit_screen_on_legacy"
+			android:digits="0123456789">
+		</EditText>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_marginLeft="1dip"
+			android:text="@string/fd_text_unit">
+		</TextView>
+	</LinearLayout>
+	<!--Screen On End-->
+
+
+	<!--Line Begin-->
+	<LinearLayout android:id="@+id/LinearLayout"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dip" 
+		android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip" 
+		android:orientation="vertical">
+
+		<TextView android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:gravity="center" 
+			android:text="@string/fd_text_screen_off"
+			android:textStyle="bold">
+		</TextView>
+
+		<View android:layout_width="fill_parent"
+			android:layout_height="1dip" 
+			android:layout_marginTop="5dip"
+			android:background="#0000FF">
+		</View>
+	</LinearLayout>
+	<!--Line End-->
+
+	<!--Screen Off Begin-->
+	<LinearLayout android:id="@+id/LinearLayout"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dip" 
+		android:orientation="horizontal"
+		android:gravity="center">
+		<TextView android:layout_width="100dip" 
+		android:layout_height="wrap_content"
+			android:id="@+id/fd_text_screen_off_r8fd" 
+			android:text="@string/fd_text_r8">
+		</TextView>
+		<EditText android:layout_width="120dip"
+			android:layout_height="wrap_content" 
+			android:id="@+id/fd_edit_screen_off_r8fd"
+			android:digits="0123456789.">
+		</EditText>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_marginLeft="1dip" 
+			android:text="@string/fd_text_unit">
+		</TextView>
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/LinearLayout"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dip" 
+		android:orientation="horizontal"
+		android:gravity="center">
+		<TextView android:layout_width="100dip" 
+		android:layout_height="wrap_content"
+			android:id="@+id/fd_text_screen_off_legacy" 
+			android:text="@string/fd_text_legacy">
+		</TextView>
+		<EditText android:layout_width="120dip"
+			android:layout_height="wrap_content" 
+			android:id="@+id/fd_edit_screen_off_legacy"
+			android:digits="0123456789.">
+		</EditText>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_marginLeft="1dip" 
+			android:text="@string/fd_text_unit">
+		</TextView>
+	</LinearLayout>
+	<!--Screen Off End-->
+
+	<!--Set Button begin-->
+	<LinearLayout android:id="@+id/LinearLayout"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dip" 
+		android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip" 
+		android:orientation="horizontal">
+		<Button android:id="@+id/fd_btn_set"
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:text="@string/fd_text_set">
+		</Button>
+	</LinearLayout>
+	<!--Set Button end-->
+
+	<!--Line Begin-->
+	<LinearLayout android:id="@+id/LinearLayout"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dip" 
+		android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip" 
+		android:orientation="vertical">
+
+		<TextView android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:gravity="center" 
+			android:text="@string/fd_text_config"
+			android:textStyle="bold">
+		</TextView>
+
+		<View android:id="@+id/SpacerTop" 
+		android:layout_width="fill_parent"
+			android:layout_height="1dip" 
+			android:layout_marginTop="5dip"
+			android:background="#0000FF">
+		</View>
+	</LinearLayout>
+	<!--Line End-->
+
+	<LinearLayout android:id="@+id/LinearLayout"
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dip" 
+		android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip" 
+		android:orientation="horizontal"
+		android:gravity="center">
+		<Button android:id="@+id/fd_btn_send"
+		android:layout_width="150dip" 
+		android:layout_height="wrap_content"
+			android:text="@string/fd_text_send">
+		</Button>
+		<Button android:id="@+id/fd_btn_config"
+		android:layout_width="150dip" 
+		android:layout_height="wrap_content"
+			android:text="@string/fd_text_config_fd">
+		</Button>
+	</LinearLayout>
+
+</LinearLayout>

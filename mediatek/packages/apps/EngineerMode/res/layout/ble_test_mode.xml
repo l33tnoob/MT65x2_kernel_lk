@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/BLETestMode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="@string/BLETestMode" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="310dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/BLETxRx"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/BLETestModeTx"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/BLETestModeTx" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/BLETestModeRx"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/BLETestModeRx" >
+                </RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="310dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/BLEHoppingSingle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/BLEHopping"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/BLEHopping" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/BLESingle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/BLESingle" >
+                </RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- channel select -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/BLEChannel"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dip"
+                android:text="@string/BLEChannel" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/BLEChannelSpinner"
+                android:layout_width="230dip"
+                android:layout_height="wrap_content" >
+            </Spinner>
+        </LinearLayout>
+
+        <!-- pattern select -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/BLEPattern"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dip"
+                android:text="@string/BLEPattern" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/BLEPatternSpinner"
+                android:layout_width="230dip"
+                android:layout_height="wrap_content" 
+                android:entries="@array/bt_ble_test_pattern">
+            </Spinner>
+        </LinearLayout>
+        <!-- BLE continious tx checkbox -->
+
+        <CheckBox
+            android:id="@+id/BLEContiniousTx"
+            android:layout_width="310dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/BLEContiniousTx" >
+        </CheckBox>
+        <!-- start / stop buttont -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dip" >
+
+            <Button
+                android:id="@+id/BLEStart"
+                android:layout_width="155dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEStart" >
+            </Button>
+
+            <Button
+                android:id="@+id/BLEStop"
+                android:layout_width="155dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEStop" >
+            </Button>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/BLEResult_Text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip" >
+        </TextView>
+    </LinearLayout>
+
+</ScrollView>

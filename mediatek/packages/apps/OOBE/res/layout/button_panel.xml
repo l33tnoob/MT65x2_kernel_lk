@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+ 
+     <View 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="2dip" 
+    	android:layout_marginStart="6dp" 
+        android:layout_marginEnd="6dp"
+    	android:background="?android:attr/listDivider"/>  	
+    	<LinearLayout 
+    	    android:id="@+id/button_pannel_layout"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="horizontal">
+    	    
+        <Button android:id="@+id/panel_button_back"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:layout_marginTop="2dip"
+            android:text="@string/oobe_btn_text_back" 
+            android:textAppearance="?android:attr/textAppearanceSmallInverse"
+            android:background="?android:attr/selectableItemBackground"
+            />
+        
+     <View 
+    	android:layout_width="2dip" 
+    	android:layout_height="fill_parent" 
+    	android:layout_marginTop="6dp"
+    	android:layout_marginBottom="6dp"
+    	android:background="?android:attr/listDivider"/>  
+        
+        <Button android:id="@+id/panel_button_next"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:layout_marginTop="2dip"
+            android:text="@string/oobe_btn_text_next" 
+            android:textAppearance="?android:attr/textAppearanceSmallInverse"
+            android:background="?android:attr/selectableItemBackground"
+            />    	    
+    	</LinearLayout>
+    </LinearLayout>    

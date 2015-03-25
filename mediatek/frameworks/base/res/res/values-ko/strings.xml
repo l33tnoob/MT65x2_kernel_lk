@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+/* //device/apps/common/assets/res/any/strings.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">  
+    <string name="keyguard_pinword_enter_pinword_code">PIN을 입력하여 잠금을 해제하십시오.</string>  
+    <string name="badPin2">입력한 이전의 PIN2가 올바르지 않습니다.</string>  
+    <string name="badPuk2">입력한 PUK2가 올바르지 않습니다.</string>  
+    <string name="checkPwdLen">암호가 4-8 자릿수인지 확인하십시오.</string>  
+    <string name="pinNotEnabled">PIN을 변경하기 전에 활성화하십시오.</string>  
+    <string name="puk1Blocked">PIN이 차단되었습니다.</string>  
+    <string name="puk2Blocked">PIN2가 차단되었습니다.</string>  
+    <string name="fdnFailMmi">FDN 확인에 실패했습니다.</string>  
+    <string name="callBarringFailMmi">수신 거부엥 실패했습니다.</string>  
+    <string name="Pin2Mmi">PIN2 변경</string>  
+    <string name="PukMmi">PIN 차단 해제</string>  
+    <string name="Puk2Mmi">PIN2 차단 해제</string>  
+    <string name="serviceProvisioned">서비스가 프로비져닝됨.</string>  
+    <string name="serviceUnknown">연결 문제 또는 잘못된 MMI 코드.</string>  
+    <string name="cfServiceNotForwarded">전단되지 않음</string>  
+    <string name="permlab_receiveCbSms">CB SMS 수신</string>  
+    <string name="permdesc_receiveCbSms">애플리케이션이 CB SMS 메시지를 수신하고 처리하도록 허용합니다. 악성 애플리케이션이 자신을 드러내지 않고 사용자의 메시지를 모니터링하거나 삭제할 수 있습니다.</string>  
+    <string name="keyguard_password_enter_puk_code">PUK 코드 입력</string>  
+    <string name="keyguard_password_wrong_puk_code">잘못된 PUK 코드</string>  
+    <string name="keyguard_password_enter_new_pin_code">새 PIN 입력</string>  
+    <string name="keyguard_password_Confirm_pin_code">새 PIN 확인</string>  
+    <string name="invalidPuk">8 자릿수를 입력하십시오.</string>  
+    <string name="sim_permanently_locked">잘못된 PUK 코드를 10회 이상 입력하면, SIM 카드가 영구적으로 잠가집니다.</string>  
+    <string name="pin_length_indicate">(4-8 자릿수)</string>  
+    <string name="puk_length_indicate">(8 자릿수)</string>  
+    <string name="one_retry_left">1회의 재시도가 남음</string>  
+    <string name="retries_left">남은 횟수: 
+        <xliff:g id="number">%d</xliff:g> 
+    </string>  
+    <string name="invalid_imei">잘못된 IMEI</string>  
+    <string name="same_imei">동일한 IMEI</string>  
+    <string name="oper_long_46000">China Mobile</string>  
+    <string name="oper_long_46001">China Unicom</string>  
+    <string name="oper_long_46003">China Telecom</string>  
+    <string name="oper_long_46601">Far EasTone</string>  
+    <string name="oper_long_46692">Chunghwa Telecom</string>  
+    <string name="oper_long_46697">Taiwan Mobile</string>  
+    <string name="oper_long_99998">안드로이드 1</string>  
+    <string name="oper_long_99999">안드로이드</string>  
+    <string name="oper_short_46000">CMCC</string>  
+    <string name="oper_short_46001">CU-GSM</string>  
+    <string name="oper_short_46003">China Telecom</string>  
+    <string name="oper_short_46601">FET</string>  
+    <string name="oper_short_46692">Chunghwa</string>  
+    <string name="oper_short_46697">TWN</string>  
+    <string name="oper_short_99997">AD1</string>  
+    <string name="oper_short_99999">AD</string>  
+    <string name="unable_launch_the_ap">애플리케이션을 시작할 수 없습니다.</string>  
+    <string name="keyguard_password_enter_sim1_pin_code">SIM 1 PIN 코드 입력</string>  
+    <string name="RestrictedChangedTitle_SIM1">SIM1 제한 액세스가 변경됨</string>  
+    <string name="RestrictedChangedTitle_SIM2">SIM2 제한 액세스가 변경됨</string>  
+    <string name="keyguard_password_enter_sim2_pin_code">SIM 2 PIN 코드 입력</string>  
+    <string name="keyguard_password_wrong_sim1_pin_code">잘못된 SIM 1 PIN 코드!</string>  
+    <string name="keyguard_password_wrong_sim2_pin_code">잘못된 SIM 2 PIN 코드!</string>  
+    <string name="keyguard_password_enter_sim1_puk_code">SIM 1 PUK 코드 입력</string>  
+    <string name="keyguard_password_enter_sim2_puk_code">SIM 2 PUK 코드 입력</string>  
+    <string name="lockscreen_sim1_puk_locked_message">SIM 카드 1이 PUK로 잠가졌습니다.</string>  
+    <string name="lockscreen_sim2_puk_locked_message">SIM 카드 2가 PUK로 잠가졌습니다.</string>  
+    <string name="choose_bootup_mode">SIM을 선택하십시오</string>  
+    <string name="choose_gprs_mode">데이터 연결을 선택하십시오</string>  
+    <string name="sim_close">SIM 카드 닫기</string>  
+    <string name="lockscreen_sim_puk_locked_message_short">PUK로 잠가짐</string>  
+    <string name="lockscreen_sim_locked_message_short">SIM 카드가 잠가짐</string>  
+    <string name="simlock_slot_locked_message">슬롯이 영구적으로 잠가졌습니다.</string>
+    <string name="simlock_entersimmelock">"SIM ME 잠금 입력"</string>  
+    <string name="slot_id">슬롯 <xliff:g id="number">%d</xliff:g>:</string>
+    <string name="new_simcard">새 SIM 카드</string>
+    <string name="lockscreen_missing_sim_dialog_message">"SIM 카드가 분리되었습니다. SIM 카드가 제대로 연결되었는지 확인하십시오."</string>
+    <string name="permlab_receiveDmRegisterSms">DM 등록 SMS 수신</string>  
+    <string name="permdesc_receiveDmRegisterSms">애플리케이션이 DM 등록 SMS 메시지를 수신하고 처리하도록 허용합니다. DM APP을 제외한 모든 애플리케이션은 이를 사용해서는 안 됩니다</string>  
+    <string name="lockscreen_password_error">암호 오류, 다시 시도하십시오</string>  
+    <string name="lockscreen_pinword_error">PIN 오류, 다시 시도하십시오</string>  
+    <string name="music_no_artist">알 수 없는 아티스트 이름</string>  
+    <string name="music_play">재생</string>  
+    <string name="music_pause">일시정지</string>  
+    <string name="music_library">라이브러리</string>  
+    <string name="music_no_songs">곡 없음</string>  
+    <string name="serviceClassVideo">동영상</string>  
+    <string name="aerr_application_lowmem">전화 저장소가 가득 찼습니다. 애플리케이션이 정지했습니다. 공간을 확보하고 다시 시도하십시오.</string> 
+    <string name="aerr_process_lowmem">전화 저장소가 가득 찼습니다. 처리가 정지했습니다. 공간을 확보하고 다시 시도하십시오.</string>  
+    <string name="free_memory_btn">"사용가능한 공간"</string>  
+    <string name="free_memory_text">"메모리 부족, 메모리를 확보하십시오."</string>  
+    <string name="mem_low_title">메모리를 확보하십시오</string>  
+    <string name="unread_message">%d개의 읽지 않은 메시지</string>  
+    <string name="unread_messages">%d개의 읽지 않은 메시지</string>  
+    <string name="missed_call">%d개의 부재중 통화</string>  
+    <string name="missed_calls">%d개의 부재중 통화</string>  
+    <string name="no_favorite_contacts">즐겨찾는 연락처 없음</string>  
+    <string name="contact_widget_loading">로드하는 중\u2026</string>  
+    <string name="volume_fm">FM 볼륨</string>  
+    <string name="volume_matv">모바일 TV 볼륨</string>  
+    <string name="media_controller_buffering">"%d%%을(를) 버퍼링하는 중..."</string>  
+    <string name="media_controller_live">"라이브"</string>  
+    <string name="media_controller_playing">"재생 중"</string>  
+    <string name="media_controller_connecting">"연결하는 중…"</string>  
+    <string name="media_controller_weak_signal">"신호가 약함"</string>  
+    <string name="VideoView_error_text_bad_file">"불량 파일, 이 동영상을 재생할 수 없습니다."</string>  
+    <string name="VideoView_error_text_cannot_connect_to_server">"서버에 연결할 수 없습니다."</string>  
+    <string name="VideoView_error_text_type_not_supported">"미디어 파일 형태가 지원되지 않습니다."</string>  
+    <string name="VideoView_error_text_drm_not_supported">"DRM이 보호되어 있습니다. 이 동영상을 재생할 수 없습니다."</string>  
+    <string name="VideoView_error_text_invalid_connection">"잘못된 연결.(403 금지됨)"</string>  
+    <string name="wikiPediaName" translatable="false">wikipedia</string>  
+    <string name="redo">다시 실행</string>  
+    <string name="undo">실행 취소</string>  
+    <string name="undoAll">모두 실행 취소</string>  
+    <string name="new_sim">새 SIM</string>  
+    <string name="edit">편집</string>  
+    <string name="delete">삭제</string>  
+    <string name="sim_card_changed_dialog_title">SIM 카드가 변경되었습니다</string>
+    <string name="change_setting_for_onenewsim">새 SIM 카드가 감지되었습니다. 라벨을 다음과 같습니다</string>  
+    <string name="change_setting_for_twonewsim">새 SIM 카드가 감지되었습니다. 라벨을 다음과 같습니다</string>  
+    <string name="change_settings">변경</string>  
+    <string name="sim_card_removed">SIM 카드가 제거되었습니다.</string>
+    <string name="sim_card_swapped">SIM 카드가 교체되었습니다.</string>
+    <string name="keyguard_voice_call">음성 통화:</string>  
+    <string name="keyguard_sms">메시징:</string>  
+    <string name="keyguard_data">데이터 연결:</string>  
+    <string name="keyguard_alwaysask">항상 묻기</string>  
+    <string name="keyguard_data_none">끄기</string>  
+    <string name="dismiss">무시</string>  
+    <string name="keyguard_wrong_code_input">잘못된 코드.</string>  
+    <string name="keyguard_code_length_prompt">4-8 자릿수를 입력하십시오.</string>  
+    <string name="keyguard_code_donnot_mismatch">일치하지 않습니다.</string>  
+    <string name="for_text">대상</string>  
+    <string name="keyguard_internal_call">내부 통화</string>  
+    <string name="keyguard_not_set">설정되지 않음</string>  
+    <string name="network_searching">새 네트워크 검색</string>  
+    <string name="searching_simcard">검색하는 중…</string>  
+    <string name="keyguard_close">닫기</string>  
+    <string name="for_first_simcard">첫 번째 SIM의 경우</string>  
+    <string name="for_second_simcard">두 번째 SIM의 경우</string>
+    <string name="for_third_simcard">세 번째 SIM용</string>
+    <string name="for_fourth_simcard">네 번째 SIM용</string>
+    <string name="default_sim_setting_prompt">기본 SIM 설정:</string>  
+    <string name="keyguard_video_call">화상 통화:</string>  
+    <string name="dm_prompt">단말기가 이미 잠가졌습니다</string>  
+    <string name="lockscreen_pin_too_many_failed_attempts_dialog_message">PIN을 
+        <xliff:g id="number">%d</xliff:g>회 잘못 입력했습니다. \n\n 
+        <xliff:g id="number">%d</xliff:g>초 내에 다시 시도하십시오.
+    </string>  
+    <string name="lockscreen_password_too_many_failed_attempts_dialog_message">암호를 
+        <xliff:g id="number">%d</xliff:g>회 잘못 입력했습니다. \n\n 
+        <xliff:g id="number">%d</xliff:g>초 내에 다시 시도하십시오.
+    </string>  
+    <string name="wap_browser_pakcage" translatable="false">com.myriad.android.kunbrowser</string>  
+    <string name="wap_browser_component" translatable="false">com.myriad.android.kunbrowser.BrowserActivity</string>  
+    <string name="wap_browser_keyword" translatable="false">s.139.com</string>  
+    <string name="wap_browser_url_flag" translatable="false">search_url</string>  
+    <string name="criticallowtitle">공간이 없음</string>  
+    <string name="criticallowmessage">전화 저장소가 가득 찼습니다. 필요없는 파일을 삭제하십시오. 그러지 않으면 애플리케이션이 예기치 않게 종료될 수 있습니다</string>  
+    <string name="nq_sms_filter_title">SMS 필터</string>  
+    <string name="nq_sms_filter_message">이 메시지는 요금을 공제할 수 있습니다. 계속하시겠습니까?</string>  
+    <string name="nq_sms_filter_yes">예</string>  
+    <string name="nq_sms_filter_no">아니요</string>  
+    <string name="ext_media_checking_notification_title_sd2">SD 카드 준비</string>  
+    <string name="ext_media_checking_notification_title_otg">USB 저장소 준비</string>  
+    <string name="ext_media_badremoval_notification_title_otg">USB 저장소가 예기치 않게 제거되었습니다</string>  
+    <string name="ext_media_nomedia_notification_title_otg">제거된 USB 저장소</string>  
+    <string name="ext_media_badremoval_notification_message_otg">데이터 손실을 방지하기 위해 제거하기 전에 USB 저장소를 탑재 해제하십시오.</string>  
+    <string name="ext_media_nomedia_notification_message_otg">USB 저장소가 제거되었습니다. 새 미디어를 삽입하십시오.</string>  
+    <string name="ext_media_unmountable_notification_title_otg">손상된 USB 저장소</string>  
+    <string name="ext_media_unmountable_notification_message_otg">USB 저장소가 손상되었습니다. 저장소를 다시 포맷해야 합니다.</string>  
+    <string name="ext_media_nofs_notification_title_otg">빈 USB 저장소</string>  
+    <string name="ext_media_nofs_notification_message_otg">USB 저장소가 비었거나 파일 시스템이 지원되지 않습니다.</string>  
+    <string name="ext_media_safe_unmount_notification_title_otg">USB 저장소 안전하게 제거</string>  
+    <string name="ext_media_safe_unmount_notification_message_otg">USB 저장소를 안전하게 제거할 수 있습니다.</string>  
+    <string name="drm_protection_status">보호 상태:</string>  
+    <string name="drm_can_forward">전달할 수 있습니다.</string>  
+    <string name="drm_can_not_forward">전달할 수 없습니다.</string>  
+    <string name="drm_no_limitation">제한이 없음.</string>  
+    <string name="drm_no_license">사용 가능한 DRM 라이센스가 없습니다.</string>  
+    <string name="drm_begin">시작:</string>  
+    <string name="drm_end">종료:</string>  
+    <string name="drm_use_left">남은 개수:</string>  
+    <string name="drm_protectioninfo_renew">갱신</string>  
+    <string name="drm_protectioninfo_title">보호 정보</string>  
+    <string name="drm_licenseacquisition_title">DRM 라이센스 획득</string>  
+    <string name="drm_licenseacquisition_message">%1$s 에 사용 가능한 DRM 라이센스가 없습니다. "갱신" 버튼을 눌러 DRM 라이센스를 획득할 수 있습니다.</string> 
+    <string name="drm_toast_license_expired">DRM 라이센스가 만료되었습니다.</string>  
+    <string name="drm_forwardforbidden_title">전달이 금지됨</string>  
+    <string name="drm_forwardforbidden_message">일부 보호된 파일은 전달할 수 없습니다.</string>  
+    <string name="drm_license_install_success">DRM 라이센스가 성공적으로 설치되었습니다.</string>  
+    <string name="drm_license_install_fail">DRM 라이센스 설치에 실패했습니다.</string>  
+    <string name="drm_secure_timer_title">잘못된 DRM 보안 시계</string>  
+    <string name="drm_secure_timer_message">DRM 보호 파일을 사용할 수 없습니다. 데이터 연결을 사용할 수 있는지 확인하십시오.</string>  
+    <string name="drm_consume_title">DRM 권한 사용</string>  
+    <string name="drm_consume_message">사용자의 동작이 DRM 권한을 사용합니다.</string>  
+    <string name="drm_forward_forbidden">하나 이상의 보호 파일을 전달할 수 없습니다.</string>  
+    <string name="recip_unsupport_operator">RecipientsView는 문자 작업을 지원하지 않습니다. 도구 모음을 사용하여 수신인 관련 작업을 하십시오.</string>  
+    <string name="recip_unsupport_selection">죄송합니다. RecipientsView에 수신인이 있는 경우 탈자 기호를 앞으로 이동할 수 없습니다.</string>  
+    <string name="sim_missing_slot1">"아니요"</string>  
+    <string name="sim_missing_slot2">"아니요"</string>  
+    <string name="sim_missing">SIM 카드를 감지할 수 없습니다.</string>  
+    <string name="sim_missing_detail">SIM 카드가 준비되었는지 확인하십시오</string>  
+    <string name="wap_push_setting_noti_ticker">"아니요"</string>  
+    <string name="wap_push_setting_noti_title">"아니요"</string>  
+    <string name="wap_push_setting_noti_text">탭핑하여 선택하십시오</string>  
+    <string name="url_dialog_choice_title">메시지</string>  
+    <string name="url_dialog_choice_message">브라우저가 열립니다. 계속하시겠습니까?</string>  
+    <string name="wifi_tether_configure_ssid_default_for_cmcc" translatable="false">MTK Athens15</string>  
+    <string name="deleteApp">애플리케이션 설치제거</string>  
+    <string name="deleteMail">메일 백업 및 저장소 해제</string>  
+    <string name="default_label">알람</string>  
+    <string name="dismiss_power_on">무시 및 전원 켜기</string>  
+    <string name="dismiss_power_off">무시 및 전원 끄기</string>  
+    <string name="alarm_alert_snooze_text">스누즈</string>  
+    <string name="never">사용 안 함</string>  
+    <string name="day_concat">", "</string>  
+    <string name="every_day">매일</string>  
+    <string name="repeat_weekdays">매주</string>  
+    <string name="storage_withsd">전화 저장소의 공간이 부족합니다. 일부 저장소의 공간을 확보하거나 설정에서 기본 쓰기 디스크를 변경하십시오.</string>  
+    <string name="storage_withoutsd">전화 저장소의 공간이 부족합니다. 일부 저장소의 공간을 확보하거나 SD 카드를 삽입하십시오.</string>  
+    <string name="storage_sd">SD 카드 저장소의 공간이 부족합니다. 일부 저장소의 공간을 확보하거나 설정에서 기본 쓰기 디스크를 변경하십시오.</string>  
+    <string name="usb_ums_notification_title">USB 저장소로 연결됨</string>  
+    <string name="usb_charging_notification_title">USB 충전 전용</string>  
+    <string name="gps_time_sync_fail_str">GPS 제공 시간을 불러오는 데 실패했습니다</string>
+    <string name="tethered_notification_message_for_hotspot">
+        <xliff:g id="connected">%1$d</xliff:g>이(가) 연결됨, 
+        <xliff:g id="blocked">%2$d</xliff:g>이(가) 차단됨
+    </string>
+    <string name="tethered_notification_message_bandwidth_set">대역폭이 설정됨</string>
+    <string name="default_wallpaper_name">"기본값"</string> 
+    <string name="invalid_sim_title">잘못된 SIM 카드</string>
+    <string name="invalid_sim_message">UIM/SIM 카드가 인식되지 않았습니다</string>
+    <!-- voice unlock start -->
+    <string name="voice_unlock_service_error">음성 잠금해제 서비스 오류.</string>
+    <string name="voice_unlock_password_wrong">죄송합니다. 음성을 인식할 수 없습니다.</string>
+    <string name="voice_unlock_noisy">너무 시끄러워 음성이 잘 들리지 않습니다.</string>
+    <string name="voice_unlock_weak">음성을 들을 수 없습니다.</string>
+    <string name="voice_unlock_media_playing">미디어 재생 중 음성 잠금해제가 비활성화됩니다.</string>
+    <string name="voiceunlock_multiple_failures">최대 음성 잠금해제 시도가 초과되었습니다.</string>    
+    <!-- voice unlock end -->
+
+    <string name="wifi_display_bt_hdmi_off_wfd_on">무선 디스플레이를 켜면 블루투스와 HDMI가 꺼집니다. 계속하시겠습니까?</string> 
+    <string name="wifi_display_wfd_off_hdmi_on">HDMI를 켜면 무선 디스플레이가 꺼집니다. 계속하시겠습니까?</string> 
+    <string name="wifi_display_wfd_off_bt_on">블루투스를 켜면 무선 디스플레이가 꺼집니다. 계속하시겠습니까?</string> 
+    <string name="wifi_display_wifi_p2p_disconnect_wfd_connect">무선 디스플레이 장치에 연결하면 현재의 Wi-Fi Direct 연결이 끊어집니다. 계속하시겠습니까?</string>
+    <string name="wifi_display_unstable_connection">불안정한 연결</string>
+    <string name="wifi_display_connection_is_not_steady">무선 디스플레이의 현재 연결이 안정적이지 않습니다.</string>
+    <string name="wifi_display_unstable_suggestion">무선 디스플레이의 현재 연결이 안정적이지 않습니다. 디스플레이 장치 가까이 다가가십시오.</string>
+    <string name="wifi_display_reconnect">다시 연결</string> 
+    <string name="wifi_display_disconnect_then_reconnect">무선 디스플레이 연결이 끊어졌습니다. 다시 연결하시겠습니까?</string> 
+    <string name="wifi_display_disconnected">무선 디스플레이 연결이 끊어졌습니다.</string>
+    <string name="wifi_wps_failed_overlap">"다른 WPS 세션이 감지되었습니다. 잠시 후 다시 시도해 주세요."</string>
+    <string name="wifi_display_wfd_and_wifi_are_turned_on">무선 디스플레이와 Wi-Fi가 켜졌습니다.</string>
+    <string name="wifi_display_sound_path_reminder">멀티미디어 사운드가 헤드셋에서 재생되지 않습니다.</string>  
+    <string name="wifi_display_change_resolution_reminder">해상도를 변경하면 무선 디스플레이가 자동으로 다시 연결됩니다.</string>  
+    <string name="wifi_display_do_not_remind_again">다시 알리지 않음.</string>
+    <string name="wifi_display_wifi_ap_affects_quality">현재의 Wi-Fi AP가 무선 디스플레이의 품질에 영향을 미칠 수 있습니다.</string>
+    
+    <!-- Add for AT&T to show toast when pass pin/puk lock -->
+    <string name="pin_pass">수락된 코드</string>
+    <string name="puk_pass">차단되지 않은 PIN</string>
+    <!-- MountService start -->
+    <string name="sdcard_ready_title">SD 카드 준비</string>
+    <string name="sdcard_select_default_path">기본 쓰기 디스크를 변경하시겠습니까?</string>
+    <string name="sdcard_default_path_change">기본 쓰기 디스크가 변경되었습니다.</string>
+    <string name="usb_storage_ready_title">외부 USB 저장소 준비</string>
+    <!-- MountService end -->
+
+
+    <string name="sd_accessing_swtich_user_title">사용자를 전환하시겠습니까?</string>
+    <string name="sd_accessing_swtich_user_message">소유자 계정에 저장되지 않은 모든 데이터는 손실되거나 손상됩니다.</string>  
+    
+    <string name="calibration_data">아직 보정되지 않았습니다. 보정 데이터를 다운로드하십시오! 그러지 않을 경우 장치가 네트워크의 접속을 보류할 수 없습니다.[MTK 인터넷 사용자]</string>
+    <string name="invalid_card">유효하지 않은 카드</string>
+    <string name="usbint_notification_title">USB 인터넷 작동 중</string>
+
+    <string name="hdmi_notification_title">HDMI 케이블이 연결됨</string>  
+    <string name="hdmi_notification_content">클릭하여 HDMI 구성</string>
+    <string name="hdmi_hdvideo_toast">HDMI는 4K 비디오를 재생할 수 없습니다. 연결이 중단됩니다. </string>
+
+    <!-- VolumePanel -->
+    <string name="safe_media_volume_warning_title">경고</string> 
+    
+    <!-- Low Storage -->
+    <string name="aerr_application_lowstorage">내부 저장공간이 부족하여 애플리케이션이 정지했습니다.  일부 공간을 비우고 다시 시도하십시오.</string>
+    <string name="aerr_process_lowstorage">내부 저장공간이 부족하여 과정이 정지했습니다.  일부 공간을 비우고 다시 시도하십시오.</string>
+    <string name="low_internal_storage_view_title">내부 공간이 부족합니다.</string>
+    <string name="deleteMails">메일 삭제</string>
+    <string name="low_storage_warning_message">일부 공간을 비우십시오. 그러지 않을 경우 일부 애플리케이션 및 시스템 기능이 제대로 작동하지 않을 수 있습니다.</string>
+
+    <!-- KK translation task -->
+    <string name="virtual_sim_on_slot1">가상 SIM  1 켜기</string>
+    <string name="virtual_sim_on_slot2">가상 SIM  2 켜기</string>
+    <string name="virtual_sim_on_slot3">가상 SIM  3 켜기</string>
+    <string name="virtual_sim_on_slot4">가상 SIM  4 켜기</string>
+    <string name="virtual_sim_on">가상 SIM  켜기</string>
+    <string name="RejectCauseTitle">네트워크 거부 원인</string>
+    <string name="MMRejectCause2">SIM이 프로비전되지 않음 MM #2</string>
+    <string name="MMRejectCause3">SIM이 허용되지 않음 MM #3</string>
+    <string name="MMRejectCause5">호출 실패 MM #5</string>
+    <string name="MMRejectCause6">전화가 허용되지 않음 MM #6</string>
+    <string name="MMRejectCause13">SOS/비상 전화 전용</string>
+    <string name="keyguard_accessibility_alarm_unlock">알람 전원 끄기</string>
+    <string name="dialog_color_picker">색 선택</string>
+    <string name="press_color_to_apply">색을 눌러 적용</string>
+    <string name="keyguard_sim_auto">"자동"</string>
+    <string name="keyguard_domestic_zone_name">"베이징"</string>
+    <string name="sim_missing_slot3">슬롯 3:  SIM 카드가 탐지되지 않음</string>
+    <string name="sim_missing_slot4">슬롯 4:  SIM 카드가 탐지되지 않음</string>
+    <string name="sim_missing_slot1_card">슬롯 1: 카드가 탐지되지 않음</string>
+    <string name="sim_missing_slot2_card">슬롯 2: 카드 탐지되지 않음</string>
+    <string name="sim_missing_card">카드가 탐지되지 않음</string>
+    <string name="sim_missing_detail_card">카드가 준비되어 있는지 확인하십시오</string>
+    <string name="find_previous">이전</string>
+    <string name="find_next">다음</string>
+    <string name="alarm_alert_dismiss_text">무시</string>
+    <string name="description_direction_right">"오른쪽으로 슬라이드하여 취소"</string>
+    <string name="description_direction_left">"왼쪽으로 슬라이드하여 일시 중지"</string>
+    <string name="description_direction_up">"위로 슬라이드하여 취소"</string>
+    <string name="description_direction_down">"아래로 슬라이드하여 일시 중지"</string>
+    <string name="voiceui_notify_string">알람 전원 끄기를 제어하려면</string>
+    <string name="voiceui_control_poweroff_alarm">말하십시오.</string>
+    <string name="voiceui_or">또는</string>
+    <string name="headset_pin_recognition">어어폰이 전화기와 호환되지 않습니다. 다른 이어폰을 사용하십시오</string>
+    <string name="msensor_toast_text">나침반 간섭.
+그림 8과 같이 전화기를 흔들어 나침반을 다시 보정하십시오. </string>
+    <string name="usb_autorun_cdrom_notification_title">자동 실행 CD-ROM으로 연결됨</string>
+    <string name="ct_net_name">"CTNET"</string>
+    <string name="ct_wap_name">"CTWAP"</string>
+</resources>

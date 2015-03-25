@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/BLEScan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="@string/BLEScan" >
+        </TextView>
+
+        <!-- scan type select -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:id="@+id/BLEScanType"
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEScanType" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/BLEScanTypeSpinner"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content" >
+            </Spinner>
+        </LinearLayout>
+
+        <!-- scan interval -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEScanInterval" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/BLEScanInterval"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content" >
+            </EditText>
+
+            <TextView
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLETimeUnit" >
+            </TextView>
+        </LinearLayout>
+
+        <!-- scan window -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEScanWindow" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/BLEScanWindow"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content" >
+            </EditText>
+
+            <TextView
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLETimeUnit" >
+            </TextView>
+        </LinearLayout>
+
+        <!-- own address type select -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEOwnAddressType" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/BLEScanOwnAddressTypeSpinner"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content" >
+            </Spinner>
+        </LinearLayout>
+
+        <!-- scan filter policy select -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEFilterPolicy" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/BLEFilterPolicySpinner"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content" >
+            </Spinner>
+        </LinearLayout>
+
+        <!-- scan filter duplicate select -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEScanFilterDuplicate" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/BLEScanFilterDuplicate"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content" >
+            </Spinner>
+        </LinearLayout>
+
+        <!-- scan filter policy select -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal"
+            android:paddingTop="10dip" >
+
+            <EditText
+                android:id="@+id/BLEScanResponseData"
+                android:layout_width="230dip"
+                android:layout_height="wrap_content" >
+            </EditText>
+
+            <Button
+                android:id="@+id/BLEScanSet"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLESet" >
+            </Button>
+        </LinearLayout>
+
+        <!-- start/stop button -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal"
+            android:paddingTop="10dip" >
+
+            <Button
+                android:id="@+id/BLEScanStart"
+                android:layout_width="155dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEStart" >
+            </Button>
+
+            <Button
+                android:id="@+id/BLEScanStop"
+                android:layout_width="155dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEStop" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

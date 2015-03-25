@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Title">
+        <item name="android:background">@drawable/ab_solid_light_holo</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="Title.Second">
+        <item name="android:background">@color/ListHeaderBgColor</item>
+        <item name="android:layout_height">@dimen/ListHeaderHeight</item>
+    </style>
+    
+    <style name="Title.Bottom">
+        <item name="android:background">@drawable/ab_bottom_solid_light_holo</item>
+    </style>
+
+	<!-- define Layout attributes for Item Layout -->
+    <style name="Item">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/BodyHeight</item>
+    </style>
+    
+    <!-- else -->
+    <style name="TodoImgButton">
+    	<item name="android:background">@drawable/color_background</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/ButtonPadding</item>
+        <item name="android:paddingRight">@dimen/ButtonPadding</item>
+        <item name="android:paddingTop">@dimen/ButtonPadding</item>
+        <item name="android:paddingBottom">@dimen/ButtonPadding</item>
+    </style>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:key="simap_server_category"
+            android:title="@string/bluetooth_simap_server_settings">
+
+        <CheckBoxPreference
+            android:key="simap_server_enable"
+            android:persistent="false"
+            android:title="@string/bluetooth_simap_server_enable_title"/>
+
+        <ListPreference
+            android:key="simap_server_sim_index"
+            android:title="@string/bluetooth_simap_server_sim_index_title"
+	          android:dependency="simap_server_enable"
+            android:persistent="false"/>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

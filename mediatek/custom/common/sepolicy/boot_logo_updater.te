@@ -1,0 +1,49 @@
+# ==============================================
+# Policy File of /system/binboot_logo_updater Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type boot_logo_updater_exec , exec_type, file_type;
+type boot_logo_updater ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive boot_logo_updater;
+init_daemon_domain(boot_logo_updater)
+
+# 20131028 CTS_12
+allow boot_logo_updater linker_exec:file read;
+
+
+# 20131028 CTS_16
+allow boot_logo_updater block_device:blk_file { read open };
+allow boot_logo_updater device:chr_file { read ioctl open };
+allow boot_logo_updater property_socket:sock_file write;
+allow boot_logo_updater sysfs:file write;
+
+
+# 20131028 CTS_21
+allow boot_logo_updater graphics_device:chr_file { read write };
+allow boot_logo_updater self:capability dac_override;
+
+
+# 20131028 CTS_22
+allow boot_logo_updater graphics_device:chr_file { ioctl open };
+
+
+
+# 20131122 Add Set Property Rule
+allow boot_logo_updater  property_type:property_service set;

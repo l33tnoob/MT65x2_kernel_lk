@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="app_name">CellConnectionService</string>
+	<string name="button_ok">Ok</string>
+	<string name="button_cancel">Cancel</string>
+	<string name="confirm_radio_title">SIM turned off</string>
+	<string name="confirm_radio_title_uim">UIM turned off</string>
+	<string name="confirm_radio_title_card">Card turned off</string>
+
+	<string name="confirm_radio_msg">
+		<xliff:g id="operator_name" example="CMCC">%1$s</xliff:g>
+		is now turned off. Would you like to turn on this SIM card?
+	</string>
+  <string name="confirm_radio_msg_uim">
+		<xliff:g id="operator_name" example="CMCC">%1$s</xliff:g>
+		is now turned off. Would you like to turn on this UIM card?
+	</string>
+  <string name="confirm_radio_msg_card">
+		<xliff:g id="operator_name" example="CMCC">%1$s</xliff:g>
+		is now turned off. Would you like to turn on this card?
+	</string>
+
+	<string name="confirm_radio_flight_mode_on_and_msg">
+		Flight mode is on and
+  </string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg">
+		<xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g>
+		is now turned off. Would you like to turn off the flight mode and turn on this SIM card?
+	</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg_uim">
+		<xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g>
+		is now turned off. Would you like to turn off the flight mode and turn on this UIM card?
+	</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg_card">
+		<xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g>
+		is now turned off. Would you like to turn off the flight mode and turn on this card?
+	</string>	
+	<string name="confirm_radio_flight_mode_on_sim_on_msg">
+    Flight mode is on. Would you like to turn off the flight mode? 
+  </string>  
+	<string name="confirm_radio_msg_single">
+		Airplane mode is now turned on, would you like to turn off?
+	</string>
+	<string name="confirm_pin_title">SIM locked</string>
+	<string name="confirm_pin_title_uim">UIM locked</string>
+	<string name="confirm_pin_title_card">Card locked</string>
+	<string name="confirm_pin_msg">The selected SIM card is now locked.Please unlock
+		it first.</string>
+	<string name="confirm_pin_msg_uim">The selected UIM card is now locked.Please unlock
+		it first.</string>
+	<string name="confirm_pin_msg_card">The selected card is now locked.Please unlock
+		it first.</string>
+	<string name="confirm_simmelock_title">SIM ME locked</string>
+	<string name="confirm_simmelock_msg">The selected SIM slot is now locked.Please unlock
+		it first.</string>
+	<string name="confirm_simmelock_msg_uim">The selected UIM slot is now locked.Please unlock
+		it first.</string>
+	<string name="confirm_simmelock_msg_card">The selected slot is now locked.Please unlock
+		it first.</string>
+	<string name="confirm_fdn_title">FDN enabled</string>
+	<string name="confirm_fdn_msg">The fixed dialing numbers is enabled.</string>
+	<string name="confirm_roaming_title">Roaming warning</string>
+	<string name="confirm_roaming_msg">The SIM card that you are about to use is
+		now roaming. No local SIM is available now. Would you like to continue?</string>
+	<string name="confirm_roaming_msg_uim">The UIM card that you are about to use is
+		now roaming. No local UIM is available now. Would you like to continue?</string>
+	<string name="confirm_roaming_msg_card">The card that you are about to use is
+		now roaming. No local Card is available now. Would you like to continue?</string>
+  <string name="confirm_roaming_withPrefer_msg">
+    The SIM card that you are about to use is now
+    roaming. Would you like to continue via the local SIM?
+  </string>
+  <string name="confirm_roaming_withPrefer_msg_uim">
+    The SIM card that you are about to use is now
+    roaming. Would you like to continue via the local UIM?
+  </string>
+  <string name="confirm_roaming_withPrefer_msg_card">
+    The SIM card that you are about to use is now
+    roaming. Would you like to continue via the local Card?
+  </string>
+  <string name="confirm_roaming_lbutton">Continue</string>
+  <string name="confirm_roaming_rbutton">Cancel</string>
+  <string name="confirm_roamingWithPrefer_lbutton">Local SIM</string>
+  <string name="confirm_roamingWithPrefer_lbutton_uim">Local UIM</string>
+  <string name="confirm_roamingWithPrefer_lbutton_card">Local Card</string>
+  <string name="confirm_roamingWithPrefer_rbutton">Roaming SIM</string>
+  <string name="confirm_roamingWithPrefer_rbutton_uim">Roaming UIM</string>
+  <string name="confirm_roamingWithPrefer_rbutton_card">Roaming Card</string>
+	<string name="confirm_roaming_for3Sims_msg">The SIM card that you are about to use is
+		now roaming. Would you like to continue?</string>
+  <string name="confirm_roaming_for3Sims_msg_uim">The UIM card that you are about to use is
+		now roaming. Would you like to continue?</string>
+  <string name="confirm_roaming_for3Sims_msg_card">The card that you are about to use is
+		now roaming. Would you like to continue?</string>
+	<string name="confirm_radio_lbutton">Turn on</string>
+	<string name="confirm_unlock_lbutton">Unlock</string>
+	<string name="confirm_unlock_fail">Operation canceled</string>
+	<string name="confirm_turnon_radio_fail">Operation canceled</string>
+	<string name="confirm_permit_roaming_fail">You cancel this action on the roaming SIM</string>
+	<string name="confirm_permit_roaming_fail_uim">You cancel this action on the roaming UIM</string>
+	<string name="confirm_permit_roaming_fail_card">You cancel this action on the roaming Card</string>
+	<string name="confirm_sim_locked_message">SIM card has been permanently locked</string>
+	<string name="confirm_sim_locked_message_uim">UIM card has been permanently locked</string>
+	<string name="confirm_sim_locked_message_card">Card has been permanently locked</string>	
+    <string name="confirm_slot_locked_message">The slot has been permanently locked</string>
+	<string name="button_yes">Yes</string>  
+	<string name="button_no">No</string>  
+</resources>

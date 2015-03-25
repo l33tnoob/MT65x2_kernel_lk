@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_sketch_tools"
+        android:icon="@drawable/ic_action_pencil"
+        android:showAsAction="always"
+        android:title="@string/STR_NMS_SKETCH_TOOLS_PEN">
+        <menu>
+            <item
+                android:id="@+id/menu_sketch_tools_eraser"
+                android:icon="@drawable/ic_menu_eraser"
+                android:showAsAction="never|withText"
+                android:title="@string/STR_NMS_SKETCH_TOOLS_ERASER"/>
+            <item
+                android:id="@+id/menu_sketch_tools_pen"
+                android:showAsAction="never|withText"
+                android:icon="@drawable/ic_action_pencil"
+                android:title="@string/STR_NMS_SKETCH_TOOLS_PEN"/>
+            
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_sketch_size"
+        android:showAsAction="always"
+        android:title="@string/STR_NMS_SIZE_SKETCH_TITLE">
+    </item>
+    <item
+        android:id="@+id/menu_sketch_color"
+        android:icon="@drawable/ic_menu_color"
+        android:showAsAction="always"
+        android:title="@string/STR_NMS_COLOR_SKETCH_TITLE">
+    </item>
+    <item
+        android:id="@+id/menu_sketch_delete"
+        android:icon="@drawable/ic_menu_trash"
+        android:showAsAction="always"
+        android:title="@string/STR_NMS_SKETCH_DELETE"/>
+    <item
+        android:id="@+id/menu_sketch_undo"
+        android:showAsAction="never|withText"
+        android:title="@string/STR_NMS_UNDO"/>
+    <item
+        android:id="@+id/menu_sketch_redo"
+        android:showAsAction="never|withText"
+        android:title="@string/STR_NMS_REDO"/>
+    <item
+        android:id="@+id/menu_sketch_discard"
+        android:showAsAction="never|withText"
+        android:title="@string/STR_NMS_DISCARD"/>
+
+</menu>

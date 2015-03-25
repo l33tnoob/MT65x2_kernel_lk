@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+   
+    <string name="badPin2">Mã PIN2 cũ vừa nhập không đúng.</string>
+    <string name="badPuk2">Mã PUK2 vừa nhập không đúng.</string>
+    <string name="checkPwdLen">K.tra xem m.khẩu của bạn có gồm từ 4-8 số.</string>
+    <string name="pinNotEnabled">Hãy bật mã PIN trước khi đổi.</string>
+    <string name="puk1Blocked">Mã PIN đã bị chặn.</string>
+    <string name="puk2Blocked">Mã PIN2 đã bị chặn.</string>
+    <string name="fdnFailMmi">Lỗi kiểm tra FDN.</string>
+    <string name="callBarringFailMmi">Lỗi chặn cuộc gọi.</string>
+    <string name="Pin2Mmi">Đổi mã PIN2</string>
+    <string name="PukMmi">Mở khóa mã PIN</string>
+    <string name="Puk2Mmi">Mở khóa mã PIN2</string>
+    <string name="serviceProvisioned">Đã c.cấp dịch vụ.</string>
+    <string name="serviceUnknown">Sự cố k.nối hoặc mã MMI không hợp lệ.</string>
+    <string name="cfServiceNotForwarded">Chưa ch.tiếp</string>
+    <string name="permlab_receiveCbSms">nhận SMS q.cáo</string>
+    <string name="permdesc_receiveCbSms">Cho phép ứng dụng nhận và xử lý các tin nhắn SMS quảng cáo. Các ứng dụng độc hại có thể g.sát hoặc xóa tin nhắn thay vì chuyển đến bạn.</string>
+    <string name="keyguard_password_enter_puk_code">Nhập mã PUK</string>
+    <string name="keyguard_password_wrong_puk_code">Mã PUK không đúng!</string>
+    <string name="keyguard_password_enter_new_pin_code">Nhập mã PIN mới</string>
+    <string name="keyguard_password_Confirm_pin_code">X.nhận mã PIN mới</string>
+    <string name="invalidPuk">Nhập 8 số.</string>
+    <string name="sim_permanently_locked">Nhập sai mã PUK hơn 10 lần, thẻ SIM sẽ bị khóa vĩnh viễn.</string>
+    <string name="pin_length_indicate">(4-8 số)</string>
+    <string name="puk_length_indicate">(8 số)</string>
+    <string name="one_retry_left">Còn lại 1 nhập</string>
+    <string name="retries_left">Còn lại: <xliff:g id="number">%d</xliff:g></string>
+    <string name="invalid_imei">IMEI k.hợp lệ</string>
+    <string name="same_imei">IMEI trùng nhau</string>
+    <string name="unable_launch_the_ap">Không thể bật ứng dụng.</string>
+    <string name="keyguard_password_enter_sim1_pin_code">Nhập mã PIN SIM1</string>
+    <string name="RestrictedChangedTitle_SIM1">Đã thay đổi truy cập g.hạn SIM1</string>
+    <string name="RestrictedChangedTitle_SIM2">Đã thay đổi truy cập g.hạn SIM2</string>
+    <string name="keyguard_password_enter_sim2_pin_code">Nhập mã PIN SIM2</string>
+    <string name="keyguard_password_wrong_sim1_pin_code">Mã PIN SIM1 không đúng!</string>
+    <string name="keyguard_password_wrong_sim2_pin_code">Mã PIN SIM2 không đúng!</string>
+    <string name="keyguard_password_enter_sim1_puk_code">Nhập mã PUK SIM1</string>
+    <string name="keyguard_password_enter_sim2_puk_code">Nhập mã PUK SIM2</string>
+    <string name="lockscreen_sim1_puk_locked_message">SIM1 đã bị khóa bởi mã PUK.</string>
+    <string name="lockscreen_sim2_puk_locked_message">SIM2 đã bị khóa bởi mã PUK.</string>
+    <string name="choose_bootup_mode">Hãy chọn SIM</string>
+    <string name="choose_gprs_mode">Hãy cài lại SIM kết nối dữ liệu</string>
+    <string name="sim_close">Đóng thẻ SIM</string>
+    <string name="lockscreen_sim_puk_locked_message_short">Bị khóa bởi mã PUK</string>
+    <string name="lockscreen_sim_locked_message_short">Đã khóa SIM</string>
+    <string name="simlock_slot_locked_message">"Khe cắm đã bị khóa vĩnh viễn."</string>
+    <string name="simlock_entersimmelock">"Nhập khóa SIM ME"</string>
+    <string name="slot_id">Khe <xliff:g id="number">%d</xliff:g>:</string>
+    <string name="new_simcard">SIM mới</string>
+    <string name="lockscreen_missing_sim_dialog_message">"Thẻ SIM đã bị ngắt kết nối. Đảm bảo thẻ SIM đã được kết nối thích hợp."</string>
+    <string name="keyguard_pinword_enter_pinword_code">Nhập mã PIN để mở khóa</string>
+    <string name="lockscreen_pinword_error">PIN sai, vui lòng thử lại</string>
+    <string name="no_favorite_contacts">K.có số l.lạc yêu thích</string>
+    <string name="contact_widget_loading">Đang tải\u2026</string>
+    <string name="volume_fm">Âm lượng FM</string>
+    <string name="volume_matv">Âm lượng TV di động</string>
+
+    <string name="aerr_application_lowmem">Ứng dụng %1$s (quy trình %2$s) đã dừng đột ngột. Lỗi này có thể do thiếu dung lượng bộ nhớ. Hãy làm trống bộ nhớ và thử lại.</string>
+    <string name="aerr_process_lowmem">Quy trình <xliff:g id="process">%1$s</xliff:g> đã dừng đột ngột. Lỗi này có thể do thiếu dung lượng bộ nhớ. Hãy làm trống bộ nhớ và thử lại.</string>
+    <string name="free_memory_btn">"Làm trống bộ nhớ"</string>
+    <string name="free_memory_text">"Không đủ bộ nhớ. Hãy làm trống bộ nhớ."</string>
+    <string name="mem_low_title">Hãy làm trống bộ nhớ</string>
+<string name="lockscreen_password_error">Lỗi mật khẩu, hãy thử lại</string>
+    
+   <!-- add new style for mtk streaming video player start -->
+   <string name="media_controller_buffering">"Đang đệm %d%%..."</string>
+   <string name="media_controller_live">"Trực tiếp"</string>
+   <string name="media_controller_playing">"Đang phát"</string>
+   <string name="media_controller_connecting">"Đang kết nối..."</string>
+   <string name="media_controller_weak_signal">"Tín hiệu yếu"</string>
+   <string name="VideoView_error_text_bad_file">"File bị lỗi, không thể phát video này."</string>
+   <string name="VideoView_error_text_cannot_connect_to_server">"Không thể k.nối với máy chủ."</string>
+   <string name="VideoView_error_text_type_not_supported">"Không hỗ trợ loại file media."</string>
+   <string name="VideoView_error_text_drm_not_supported">"Được bảo vệ bởi DRM, không thể phát video này."</string>
+   <!-- add new style for mtk streaming video player end -->
+
+   <!-- added new string for SearchDialog, used to indicate WikiPedia--> 
+   <string name="wikiPediaName">wikipedia_vi</string>
+   
+    <!-- support TextView undo tool bar -->
+    <string name="redo">Th.hiện lại</string>
+    <string name="undo">Hoàn tác</string>
+    <string name="undoAll">Hoàn tác tất cả</string>
+   <string name="new_sim">SIM mới</string>
+
+    <!-- support RecipientsView recipient bar -->
+    <string name="edit">Sửa</string>
+    <string name="delete">Xóa</string>
+    
+    <!-- string for gemini enhancement-->
+    <string name="sim_card_changed_dialog_title">Đã đổi thẻ SIM</string>
+    <string name="change_setting_for_onenewsim">Đã tìm thấy thẻ SIM mới. 
+Cài đặt SIM mặc định hiện là:</string>
+    <string name="change_setting_for_twonewsim">Đã tìm thấy thẻ SIM mới. 
+Cài đặt SIM mặc định hiện là:</string>
+    <string name="default_sim_setting_prompt">Now default SIM settings are:</string>
+    <string name="change_settings">Đổi</string>
+    <string name="sim_card_removed">Đã tháo thẻ SIM.</string>
+    <string name="sim_card_swapped">Đã chuyển thẻ SIM.</string>
+    <string name="keyguard_voice_call">Gọi thoại:</string>
+    <string name="keyguard_sms">SMS:</string>
+    <string name="keyguard_data">Kết nối dữ liệu:</string>
+    <string name="keyguard_alwaysask">Luôn hỏi</string>
+    <string name="keyguard_data_none">Tắt</string>
+    <string name="dismiss">Hủy bỏ</string>
+    <string name="keyguard_wrong_code_input">Mã không đúng.</string>
+    <string name="keyguard_code_length_prompt">Nhập 4-8 số.</string>
+    <string name="keyguard_code_donnot_mismatch">Don\'t match.</string>
+    <string name="for_text">cho</string>
+    <string name="keyguard_internal_call">Gọi internet</string>
+    <string name="keyguard_not_set">Chưa cài đặt</string>
+    <string name="network_searching">Đang dò tìm mạng mới</string>
+    <string name="searching_simcard">Detecting...</string>
+    <string name="for_first_simcard">cho SIM thứ nhất</string>
+    <string name="for_second_simcard">cho SIM thứ hai</string>
+    <string name="for_third_simcard">Cho SIM thứ 3</string>
+    <string name="for_fourth_simcard">Cho SIM thứ 4</string>
+     <string name="missed_call_display">Cuộc gọi nhỡ:</string>
+   <string name="missed_message_display">Tin nhắn nhỡ:</string>
+     <!-- string for gemini enhancement end-->
+
+    <!-- For the unlock screen, Information message shown in dialog when user has too many failed attempts -->
+    <string name="lockscreen_pin_too_many_failed_attempts_dialog_message">"Bạn đã nhập mã PIN không đúng <xliff:g id="NUMBER_0">%d</xliff:g> lần. "\n\n"Vui lòng thử lại sau <xliff:g id="NUMBER_1">%d</xliff:g> giây."</string>
+    <string name="lockscreen_password_too_many_failed_attempts_dialog_message">"Bạn đã nhập mật khẩu không đúng <xliff:g id="NUMBER_0">%d</xliff:g> lần. "\n\n"Vui lòng thử lại sau <xliff:g id="NUMBER_1">%d</xliff:g> giây."</string>
+    
+    <string name="ext_media_checking_notification_title_sd2">Chuẩn bị thẻ SD 2</string>
+    
+    <!-- add for drm start -->
+    <string name="drm_protection_status">T.trạng bảo vệ:</string>
+    <string name="drm_can_forward">Có thể ch.tiếp.</string>
+    <string name="drm_can_not_forward">Không thể ch.tiếp.</string>
+    <string name="drm_no_limitation">Không g.hạn.</string>
+    <string name="drm_no_license">Không có sẵn g.phép DRM</string>
+    <string name="drm_begin">Bắt đầu:</string>
+    <string name="drm_end">K.thúc:</string>
+    <string name="drm_use_left">Số đếm còn lại:</string>
+    <string name="drm_protectioninfo_renew">Gia hạn</string>
+    <string name="drm_protectioninfo_title">Th.tin bảo vệ</string>
+    <string name="drm_licenseacquisition_title">Mua lại giấy phép DRM</string>
+    <string name="drm_licenseacquisition_message">%1$s không có sẵn g.phép DRM. Bạn có thể bấm nút “Gia hạn” để mua lại giấy phép DRM.</string>
+    <string name="drm_toast_license_expired">Giấy phép DRM đã hết hạn.</string>
+    <string name="drm_forwardforbidden_title">Cấm chuyển tiếp</string>
+    <string name="drm_forwardforbidden_message">Không thể ch.tiếp một số file được bảo vệ.</string>
+    <string name="drm_license_install_success">Đã cài đặt thành công Giấy phép DRM.</string>
+    <string name="drm_license_install_fail">Không thể cài đặt Giấy phép DRM.</string>
+    <string name="drm_secure_timer_title">Đ.hồ bảo mật DRM k.hợp lệ</string>
+    <string name="drm_secure_timer_message">Bạn k.thể dùng các file được b.vệ bởi DRM. Đảm bảo có sẵn kết nối dữ liệu.</string>
+    <string name="drm_consume_title">Sử dụng các b.quyền DRM</string>
+    <string name="drm_consume_message">Th.tác của bạn sẽ sử dụng các b.quyền DRM.</string>
+    <!-- add for drm end -->
+    
+    <string name="recip_unsupport_operator">Cửa sổ Xem Người nhận không hỗ trợ các thao tác nhập ký tự, hãy dùng thanh công cụ để nhập người nhận.</string>
+    <string name="recip_unsupport_selection">Rất tiếc, bạn không thể chuyển dấu mũ về đầu khi có các người nhận trong cửa sổ Xem Người nhận.</string>
+
+    <string name="alarm_alert_snooze_text" msgid="1774416052207651584">"Báo lại"</string>
+    <string name="default_label" msgid="5590025289805630372">"Báo thức"</string>
+    <string name="power_on">Hủy và bật nguồn</string>
+    <string name="power_off">Hủy và bật nguồn</string>
+    <string name="every_day" msgid="4100909974923444602">"Hàng ngày"</string>
+    <string name="never" msgid="54104287800571769">"Chưa bao giờ"</string>
+    <string name="day_concat" msgid="971998564991636532">", "</string>
+
+    <string name="gps_time_sync_fail_str">Không thể truy cập giờ được cấp bởi GPS</string>
+
+    <string name="usb_ums_notification_title">Đã kết nối như thiết bị lưu trữ USB</string>
+    <string name="usb_charging_notification_title">Chỉ sạc pin qua USB</string>      
+
+    <string name="sim_missing_slot1">Khe cắm 1: Chưa tìm thấy thẻ SIM</string>  
+    <string name="sim_missing_slot2">Khe cắm 2: Chưa tìm thấy thẻ SIM</string>  
+    <string name="sim_missing">Chưa tìm thấy thẻ SIM</string>  
+    <string name="sim_missing_detail">Hãy kiểm tra xem thẻ SIM đã sẵn sàng chưa</string> 
+
+    <!-- add for webview find -->
+    <string name="find_previous">trước</string>
+    <string name="find_next">kế tiếp</string>
+
+    <string name="tethered_notification_message_for_hotspot">
+        Đã kết nối <xliff:g id="connected">%1$d</xliff:g>, đã chặn <xliff:g id="blocked">%2$d</xliff:g>
+    </string>
+    <string name="tethered_notification_message_bandwidth_set">Đã cài dải tần</string>
+    <string name="default_wallpaper_name">"Mặc định"</string> 
+    <string name="invalid_sim_title">SIM không hợp lệ</string>
+    <string name="invalid_sim_message">Không thể nhận dạng thẻ UIM/SIM</string>
+    <!-- voice unlock start -->
+    <string name="voice_unlock_service_error">Lỗi d.vụ mở khóa thoại.</string>
+    <string name="voice_unlock_password_wrong">Rất tiếc, ko thể n.dạng giọng nói của bạn.</string>
+    <string name="voice_unlock_noisy">Ồn đến nỗi ko thể nghe rõ giọng nói của bạn.</string>
+    <string name="voice_unlock_weak">Ko thể nghe giọng nói của bạn.</string>
+    <string name="voice_unlock_media_playing">Đã tắt mở khóa thoại trong khi phát media.</string>
+    <string name="voiceunlock_multiple_failures">Đã quá số lần thử Mở Khóa Thoại tối đa</string>    
+    <!-- voice unlock end -->
+
+    <string name="wifi_display_bt_hdmi_off_wfd_on">Bluetooth và HDMI sẽ tắt khi bật hiển thị không dây. Bạn muốn tiếp tục?</string> 
+    <string name="wifi_display_wfd_off_hdmi_on">Hiển thị không dây sẽ tắt khi bật HDMI. Bạn muốn tiếp tục?</string>  
+    <string name="wifi_display_wfd_off_bt_on">Chế độ hiển thị không dây sẽ tắt khi bạn bật Bluetooth. Bạn muốn tiếp tục?</string>
+    <string name="wifi_display_wifi_p2p_disconnect_wfd_connect">Kết nối Wi-Fi trực tiếp hiện hành sẽ bị ngắt khi bạn kết nối với thiết bị hiển thị không dây. Bạn muốn tiếp tục?</string>
+    <string name="wifi_display_unstable_connection">Kết nối không ổn định</string>
+    <string name="wifi_display_connection_is_not_steady">Kết nối hiển thị không dây hiện tại không ổn định.</string>
+    <string name="wifi_display_unstable_suggestion">Kết nối hiển thị không dây hiện tại không ổn định, hãy thử đến gần hơn thiết bị hiển thị của bạn.</string>
+    <string name="wifi_display_reconnect">Kết nối lại</string> 
+    <string name="wifi_display_disconnect_then_reconnect">Hiển thị không dây đang tắt. Bạn muốn kết nối lại?</string> 
+    <string name="wifi_display_disconnected">Đã tắt hiển thị không dây.</string>
+    <string name="wifi_wps_failed_overlap">"Đã phát hiện một phiên WPS khác. Vui lòng thử lại sau ít phút."</string>
+    <string name="wifi_display_wfd_and_wifi_are_turned_on">Hiển thị mạng không dây và Wi-Fi đã bật. </string>
+    <string name="wifi_display_sound_path_reminder">Âm thanh đa phương tiện sẽ không phát từ tai nghe của bạn.</string>  
+    <string name="wifi_display_change_resolution_reminder">Đổi độ phân giải sẽ kết nối lại hiện thị mạng không dây tự động.</string>  
+    <string name="wifi_display_do_not_remind_again">Đừng nhắc lại.</string>
+    <string name="wifi_display_wifi_ap_affects_quality">Bộ thu phát Wi-Fi có thể ảnh hưởng đến chất lượng của Hiển thị không dây.</string>
+    
+    <!-- Add for AT&T to show toast when pass pin/puk lock -->
+    <string name="pin_pass">Mã được chấp nhận</string>
+    <string name="puk_pass">Đã mở khóa PIN</string>
+    <!-- MountService start -->
+    <string name="sdcard_ready_title">Thẻ SD sẵn sàng</string>
+    <string name="sdcard_select_default_path">Bạn muốn thay đổi đĩa ghi mặc định?</string>
+    <string name="sdcard_default_path_change">Đĩa ghi mặc định đã thay đổi.</string>
+    <string name="usb_storage_ready_title">Bộ nhớ USB ngoại vi đã sẵn sàng</string>
+    <!-- MountService end -->
+
+
+    <string name="sd_accessing_swtich_user_title">Chuyển người dùng?</string>
+    <string name="sd_accessing_swtich_user_message">Mọi dữ liệu chưa lưu trong tài khoản người dùng sẽ bị mất hoặc thiệt hại.</string>
+    
+    <string name="music_no_artist">Tên ca sĩ không x.định</string>
+    <string name="music_play">"Phát"</string>
+    <string name="music_pause">Tạm dừng</string>
+    <string name="music_library">Thư viện</string>
+    <string name="music_no_songs">Không bài hát</string>
+    <string name="serviceClassVideo">Video</string>
+    <string name="VideoView_error_text_invalid_connection">"Kết nối không hợp lệ. (403 bị cấm)"</string>
+    <string name="keyguard_video_call">Gọi video:</string>
+    <string name="dm_prompt">Thiết bị cuối đã bị khóa</string>
+    <string name="criticallowmessage">Bộ nhớ điện thoại đầy, hãy xóa bớt các file không dùng, nếu không ứng dụng có thể thoát đột ngột</string>
+    <string name="nq_sms_filter_title">Bộ lọc SMS</string>
+    <string name="nq_sms_filter_message">Tin nhắn này có thể chịu phí. Bạn muốn tiếp tục?</string>
+    <string name="nq_sms_filter_yes">Có</string>
+    <string name="nq_sms_filter_no">Không</string>
+    <string name="drm_forward_forbidden">Không thể chuyển tiếp một hay nhiều file được bảo vệ.</string>
+    <string name="wap_push_setting_noti_text">Hãy chạm để chọn</string>
+    <string name="url_dialog_choice_title">Tin nhắn</string>
+    <string name="url_dialog_choice_message">Thao tác sẽ mở trình duyệt, tiếp tục?</string>
+    <string name="deleteApp">Gỡ cài đặt ứng dụng</string>
+    <string name="deleteMail">Sao lưu thư và làm trống bộ nhớ</string>
+    <string name="storage_withsd">Bộ nhớ điện thoại không đủ dung lượng. Hãy làm trống một số dung lượng bộ nhớ hoặc thay đổi đĩa ghi mặc định trong cài đặt.</string>
+    <string name="storage_withoutsd">Bộ nhớ điện thoại không đủ dung lượng. Hãy làm trống một số dung lượng bộ nhớ hoặc lắp thẻ SD.</string>
+    <string name="storage_sd">Thẻ SD không đủ dung lượng. Hãy làm trống một số dung lượng bộ nhớ hoặc thay đổi đĩa ghi mặc định trong cài đặt.</string>
+    <string name="criticallowtitle">Không khoảng trống</string>
+    <string name="calibration_data">Chưa cài đặt. Vui lòng tải dữ liệu cài đặt! Nếu không thiết bị không thể kết nối mạng.[Người dùng nội mạng MTK]</string>
+    <string name="invalid_card">Thẻ không hợp lệ</string>
+    <string name="usbint_notification_title">Internet USB đang bật</string>
+
+    <string name="hdmi_notification_title">Đã cắm cáp HDMI</string>  
+    <string name="hdmi_notification_content">Click để định cấu hình HDMI</string>
+    <string name="hdmi_hdvideo_toast">HDMI không thể phát video 4K, kết nối sẽ bị gián đoạn.</string>
+
+    <!-- VolumePanel -->
+    <string name="safe_media_volume_warning_title">Chú ý</string> 
+    
+    <!-- Low Storage -->
+    <string name="aerr_application_lowstorage">Bộ nhớ trong hết dung lượng, ứng dụng đã bị dừng. Hãy xóa bớt một số nội dung và thử lại.</string>
+    <string name="aerr_process_lowstorage">Bộ nhớ trong hết dung lượng, tiến trình đã bị dừng. Hãy xóa bớt một số nội dung và thử lại.</string>
+    <string name="low_internal_storage_view_title">Bộ nhớ trong hết dung lượng</string>
+    <string name="deleteMails">Hãy xóa thư</string>
+    <string name="low_storage_warning_message">Hãy xóa bớt một số nội dung, nếu không một số ứng dụng và chức năng hệ thống có thể không hoạt động tốt.</string>
+
+    <!-- KK translation task -->
+    <string name="virtual_sim_on_slot1">SIM 1 ảo BẬT</string>
+    <string name="virtual_sim_on_slot2">SIM 2 ảo BẬT</string>
+    <string name="virtual_sim_on_slot3">SIM 3 ảo BẬT</string>
+    <string name="virtual_sim_on_slot4">SIM 4 ảo BẬT</string>
+    <string name="virtual_sim_on">SIM ảo BẬT</string>
+    <string name="RejectCauseTitle">Nguyên nhân từ chối mạng</string>
+    <string name="MMRejectCause2">SIM chưa cấp MM #2</string>
+    <string name="MMRejectCause3">SIM chưa cấp phép MM #3</string>
+    <string name="MMRejectCause5">Ko thể gọi MM #5</string>
+    <string name="MMRejectCause6">ĐT chưa cấp phép MM #6</string>
+    <string name="MMRejectCause13">Chỉ gọi SOS/khẩn cấp</string>
+    <string name="keyguard_accessibility_alarm_unlock">B.động tắt nguồn</string>
+    <string name="dialog_color_picker">Bộ chọn màu</string>
+    <string name="press_color_to_apply">Nhấn vào Màu để áp dụng</string>
+    <string name="oper_long_46000">CMCC</string>
+    <string name="oper_long_46001">CU</string>
+    <string name="oper_long_46003">China Telecom</string>
+    <string name="oper_long_46601">Far EasTone</string>
+    <string name="oper_long_46692">Chunghwa Telecom</string>
+    <string name="oper_long_46697">Taiwan Mobile</string>
+    <string name="oper_long_99998">Android1</string>
+    <string name="oper_long_99999">Android</string>
+    <string name="oper_short_46000">CMCC</string>
+    <string name="oper_short_46001">CU-GSM</string>
+    <string name="oper_short_46003">China Telecom</string>
+    <string name="oper_short_46601">FET</string>
+    <string name="oper_short_46692">Chunghwa</string>
+    <string name="oper_short_46697">TWN</string>
+    <string name="oper_short_99997">AD1</string>
+    <string name="oper_short_99999">AD</string>
+    <string name="permlab_receiveDmRegisterSms">nhận SMS Đăng ký DM</string>
+    <string name="permdesc_receiveDmRegisterSms">Cho phép ứng dụng nhận và xử lý các tin nhắn SMS Đăng ký DM. Mọi ứng dụng trừ ứ.dụng DM sẽ không dùng tính năng này</string>
+    <string name="unread_message">%d tin nhắn chưa đọc</string>
+    <string name="unread_messages">%d tin nhắn chưa đọc</string>
+    <string name="missed_call">%d cuộc gọi nhỡ</string>
+    <string name="missed_calls">%d cuộc gọi nhỡ</string>
+    <string name="keyguard_sim_auto">"tự động"</string>
+    <string name="keyguard_close">"Đóng"</string>
+    <string name="keyguard_domestic_zone_name">"Bắc Kinh"</string>
+    <string name="ext_media_checking_notification_title_otg">Chuẩn bị thiết bị l.trữ USB</string>
+    <string name="ext_media_badremoval_notification_title_otg">"Bộ nhớ USB bị tháo đột ngột"</string>
+    <string name="ext_media_nomedia_notification_title_otg">"Bộ nhớ USB đã tháo"</string>
+    <string name="ext_media_badremoval_notification_message_otg">"Ngắt kết nối USB trước khi tháo nhằm tránh mất dữ liệu."</string>
+    <string name="ext_media_nomedia_notification_message_otg">"Bộ nhớ USB bị tháo. Hãy lắp phương tiện mới."</string>
+    <string name="ext_media_unmountable_notification_title_otg">"Bộ nhớ USB bị hỏng"</string>
+    <string name="ext_media_unmountable_notification_message_otg">"Bộ nhớ USB bị hỏng. Bạn có thể phải định dạng lại bộ nhớ USB đó."</string>
+    <string name="ext_media_nofs_notification_title_otg">"Bộ nhớ USB trống"</string>
+    <string name="ext_media_nofs_notification_message_otg">"Bộ nhớ USB trống hoặc không có hệ thống tệp được hỗ trợ."</string>
+    <string name="ext_media_safe_unmount_notification_title_otg">"Bộ nhớ USB an toàn để tháo"</string>
+    <string name="ext_media_safe_unmount_notification_message_otg">"Bạn có thể tháo an toàn bộ nhớ USB."</string>
+    <string name="sim_missing_slot3">Khe cắm 3: Chưa tìm thấy thẻ SIM</string>
+    <string name="sim_missing_slot4">Khe cắm 4: Chưa tìm thấy thẻ SIM</string>
+    <string name="sim_missing_slot1_card">Khe 1: Chưa tìm thấy thẻ</string>
+    <string name="sim_missing_slot2_card">Khe 2: Chưa tìm thấy thẻ</string>
+    <string name="sim_missing_card">Chưa tìm thấy thẻ</string>
+    <string name="sim_missing_detail_card">Kiểm tra xem thẻ có sẵn chưa</string>
+    <string name="wap_push_setting_noti_ticker">C.nhận d.vụ Tự Đẩy hay không?</string>
+    <string name="wap_push_setting_noti_title">C.nhận d.vụ Tự Đẩy hay không?</string>
+    <string name="alarm_alert_dismiss_text">Hủy bỏ</string>
+    <string name="description_direction_right">"Trượt sang phải để loại bỏ"</string>
+    <string name="description_direction_left">"Trượt sang trái để báo lại"</string>
+    <string name="description_direction_up">"Trượt lên để loại bỏ"</string>
+    <string name="description_direction_down">"Trượt xuống để báo lại"</string>
+    <string name="dismiss_power_on">Hủy và bật nguồn</string>
+    <string name="dismiss_power_off">Hủy và tắt nguồn</string>
+    <string name="voiceui_notify_string">Bạn có thể nói</string>
+    <string name="voiceui_control_poweroff_alarm">để k.soát b.động tắt nguồn.</string>
+    <string name="voiceui_or">hoặc</string>
+    <string name="headset_pin_recognition">Tai nghe của bạn ko tương thích với điện thoại. Hãy thử dùng tai nghe khác</string>
+    <string name="msensor_toast_text">Nhiễu la bàn. Chuyển điện thoại theo hướng hình 8 để canh chỉnh lại la bàn.</string>
+    <string name="usb_autorun_cdrom_notification_title">Kết nối như cdrom chạy tự động</string>
+    <string name="ct_net_name">"CTNET"</string>
+    <string name="ct_wap_name">"CTWAP"</string>
+</resources>
+

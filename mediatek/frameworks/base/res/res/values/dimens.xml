@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/dimens.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <!-- for SearchDialog. -->
+    <dimen name="search_dialog_searen_engine_item">44dip</dimen>
+
+    <!-- Dimemsions for BladeView. -->
+    <dimen name="blade_indicator_width">24dip</dimen>
+	<dimen name="blade_indicator_height">18dip</dimen>
+	<dimen name="blade_font_size">15sp</dimen>
+	<dimen name="blade_prompt_width">53dip</dimen>
+	<dimen name="blade_prompt_vert_offset">92dip</dimen>
+	<dimen name="blade_prompt_horz_offset">0dip</dimen>
+	
+    <!-- Dimemsions for MMSWidget. -->
+        <dimen name="mmswidget_utils_hight">84dip</dimen>
+        <dimen name="mmswidget_utils_width">84dip</dimen>
+        <dimen name="mmswidget_utils_photo_outer_padding">4dip</dimen>
+        <dimen name="mmswidget_utils_photo_inner_paddingleft">13dip</dimen>
+        <dimen name="mmswidget_utils_photo_inner_paddingtop">24dip</dimen>
+        <dimen name="mmswidget_setting_anim_height">238dip</dimen>
+        <dimen name="mmswidget_view_static_p0dy">-360dip</dimen>
+        <dimen name="mmswidget_view_static_p2dy">6dip</dimen>
+        <dimen name="mmswidget_view_static_p3dy">13dip</dimen>
+        <dimen name="mmswidget_view_static_p4dy">13dip</dimen>
+        <dimen name="mmswidget_view_dynamic_p0dy">-20dip</dimen>
+        <dimen name="mmswidget_view_dynamic_p2dy">6dip</dimen>
+        <dimen name="mmswidget_view_dynamic_p3dy">13dip</dimen>
+        <dimen name="mmswidget_view_dynamic_p4dy">13dip</dimen>
+
+    <!-- Dimemsions for BookmarkWidget. -->
+        <dimen name="bookmarkwidget_anim_height">242dip</dimen>
+
+    <!-- Dimemsions for ContactWidget. -->
+        <dimen name="contactwidget_anim_height">246dip</dimen>
+
+    <!-- The gap between two adjacent dot -->
+    <dimen name="bookmark_dot_gap">5dip</dimen>
+    <!-- The CoverFlow space -->
+    <dimen name="bookmark_spacing">15dip</dimen>
+
+    <!-- The width of gallery image on the hdpi Device -->
+    <dimen name="bookmark_bitmap_width">218px</dimen>
+    <!-- The height of gallery image on the hdpi Device -->
+    <dimen name="bookmark_bitmap_height">420px</dimen>
+
+    <!-- For keyguard, sim card name padding in SIMPinUnlock and SIm card changed dialog -->
+    <dimen name="sim_card_name_padding">6dip</dimen>
+    <!-- For keyguard, sim card info text max width in SIm card changed dialog -->
+    <dimen name="sim_card_infotext_maxwidth">100dip</dimen>
+    <!-- For keyguard, dual clock -->
+    <dimen name="kg_status_clock_font_size">75sp</dimen>
+    <dimen name="kg_status_clock_ampm_font_size">14sp</dimen>
+    <dimen name="kg_status_dual_first_clock_time_font_size">60sp</dimen>
+    <dimen name="kg_status_dual_first_clock_ampm_font_size">12sp</dimen>
+    <dimen name="kg_status_dual_second_clock_time_font_size">26sp</dimen>
+    <dimen name="kg_status_dual_second_clock_ampm_font_size">9sp</dimen>
+    <dimen name="kg_status_dual_second_clock_localweekday_font_size">12sp</dimen>
+    
+    
+    <!-- Power-off alarm start -->
+    <dimen name="label_margin_big">4dp</dimen>
+    <dimen name="label_margin_small">2dp</dimen>
+    <dimen name="time_margin_right">8dip</dimen>
+    <dimen name="time_margin_left">8dip</dimen>
+    <dimen name="time_margin_bottom">8dip</dimen>
+    <dimen name="time_margin_top">16dip</dimen>
+    
+     <!-- Default target placement radius for GlowPadView. Should be 1/2 of outerring diameter. -->
+    <dimen name="glowpadview_target_placement_radius">135dip</dimen>
+    <!-- Default glow radius for GlowPadView -->
+    <dimen name="glowpadview_glow_radius">75dip</dimen>
+    <dimen name="glowpadview_snap_margin">40dip</dimen>
+    <!-- Default distance from each snap target that GlowPadView considers a "hit" -->
+    <dimen name="glowpadview_inner_radius">15dip</dimen>
+    <dimen name="glowpadview_margin_bottom">-64dip</dimen>
+    <dimen name="glowpadview_margin_right">0dip</dimen>
+    
+    <!-- Size of alarm alert outer ring. -->
+    <dimen name="glowpadview_outerring_diameter">270dip</dimen>
+    <dimen name="big_font_size">120dp</dimen>
+    <dimen name="widget_big_font_size">80dp</dimen>
+    <dimen name="small_font_size">48sp</dimen>
+    <dimen name="medium_font_size">60dp</dimen>
+    <dimen name="widget_medium_font_size">48dp</dimen>
+    <dimen name="label_font_size">14sp</dimen>
+    <dimen name="header_font_size">24sp</dimen>
+    <dimen name="body_font_size">18sp</dimen>
+    <dimen name="body_font_padding">4dp</dimen>
+    <dimen name="button_font_size">24sp</dimen>
+    <dimen name="timer_label_font_size">24sp</dimen>
+    <dimen name="dialog_button_font_size">14sp</dimen>
+    <!-- Width of the sliding KeyguardSecurityContainer (includes 2x keyguard_security_view_margin) -->
+    <dimen name="keyguard_security_width">320dp</dimen>
+    <!-- Height of the sliding KeyguardSecurityContainer (includes 2x keyguard_security_view_margin) -->
+    <dimen name="keyguard_security_height">400dp</dimen>
+    <!-- Power off alarm end-->
+
+    <!-- on phones, the keyguard widget may be too small to be cut.
+       Set a minimum height and reduce the challenge container height -->
+    <dimen name="keyguard_small_widget_height_for_phone">120dp</dimen>
+</resources>

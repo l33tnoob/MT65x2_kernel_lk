@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binmemorydumper Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type memorydumper_exec , exec_type, file_type;
+type memorydumper ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive memorydumper;
+init_daemon_domain(memorydumper)
+
+
+# 20131122 Add Set Property Rule
+allow memorydumper  property_type:property_service set;

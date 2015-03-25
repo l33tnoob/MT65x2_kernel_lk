@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!--
+        /* * Copyright (C) 2007-2008 Esmertec AG. * Copyright (C)
+        2007-2008 The Android Open Source Project * * Licensed under the
+        Apache License, Version 2.0 (the "License"); * you may not use
+        this file except in compliance with the License. * You may
+        obtain a copy of the License at * *
+        http://www.apache.org/licenses/LICENSE-2.0 * * Unless required
+        by applicable law or agreed to in writing, software *
+        distributed under the License is distributed on an "AS IS"
+        BASIS, * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+        express or implied. * See the License for the specific language
+        governing permissions and * limitations under the License. */
+    -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Used as the title and message type information. -->
+    <string name="configuration_message">အစီအစဥ် စနစ် မက်ဆေ့(ခ်ျ)</string>
+    <!-- %d unread messages -->
+    <string name="notification_multiple">
+        <xliff:g id="count">%s</xliff:g>
+        မဖတ်ရသေးသော မက်ဆေ့(ခ်ျ)များ။
+    </string>
+    <!-- Used as part of notification description string. -->
+    <string name="notification_multiple_title">မက်ဆေ့(ခ်ျ) အသစ်များ</string>
+    <!-- Menu text. Clicking the menu leads to a new UI. -->
+    <string name="view">ကြည့်သည်</string>
+    <!-- Button text. Clicking the button will delete messages. -->
+    <string name="delete">ဖျက်ပစ်သည်</string>
+    <!--
+        Menu text. Clicking the menu leads to a alert dialog showing the
+        detail information to user.
+    -->
+    <string name="view_message_detail">မက်ဆေ့(ခ်ျ) ကို အသေးစိတ် ကြည့်သည်</string>
+    <!-- Menu text. Clicking the menu will delete all the messages. -->
+    <string name="delete_all">အားလုံးကို ဖျက်ပစ်သည်</string>
+    <!-- Title of a context menu. -->
+    <string name="message_options">မက်ဆေ့(ခ်ျ) ရွေးချယ်စရာများ</string>
+    <!-- Title of the main UI when the UI is loading. -->
+    <string name="refreshing">ပြန်လည်သန့်စင်သည်\u2026</string>
+    <!-- Button text. Clicking the button will just closing the dialog. -->
+    <string name="no">ဖျက်သိမ်းသည်</string>
+    <!-- Title of a alert dialog. -->
+    <string name="message_details_title">မက်ဆေ့(ခ်ျ) အသေးစိတ်</string>
+    <!-- An short identifier string, should be as short as possible. -->
+    <string name="installed_indicator">တပ်ဆင်ခဲ့သည်</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="message_type_label">အမျိုးအစား - \u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="from_label">မှ - \u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="received_label">လက်ခံရရှိခဲ့သည် - \u0020</string>
+    <!-- Dialog message to alert user. -->
+    <string name="confirm_delete_all_messages">မက်ဆေ့(ခ်ျ) အားလုံးကို ဖျက်ပစ်လိမ့်မည်။</string>
+    <!-- Dialog message to alert user. -->
+    <string name="confirm_delete_message">ထို မက်ဆေ့(ခ်ျ) ကို ဖျက်ပစ်လိမ့်မည်။</string>
+    <!-- Button text. Clicking the button will perform installation. -->
+    <string name="full_install_text">အပြည့်အဝ တပ်ဆင်သည်</string>
+    <!--
+        Button text. Clicking the button will lead to an selection
+        dialog.
+    -->
+    <string name="custom_install_text">အထူးပြုလုပ် တပ်ဆင်သည်</string>
+    <!-- Button text. Clicking the button will perform installation. -->
+    <string name="install_text">တပ်ဆင်သည်</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="application_label">လုပ်ငန်းသုံး ပရိုဂရမ် - \u0020</string>
+    <!-- Result of installation, should be as short as possible. -->
+    <string name="result_success">အောင်မြင်သည်</string>
+    <!-- Result of installation, should be as short as possible. -->
+    <string name="result_failed">မအောင်မြင်ခဲ့ပါ</string>
+    <!-- Result of installation, should be as short as possible. -->
+    <string name="unknown">မသိသော</string>
+    <!-- Application name -->
+    <string name="mms_app_name">MMS</string>
+    <!-- Application name -->
+    <string name="browser_app_name">ဘရောက်ဆာ</string>
+    <!-- Application name -->
+    <string name="apn_app_name">ဆက်သွယ်ရမည့် အမှတ်အမည်</string>
+    <!-- Application name -->
+    <string name="email_app_name">အီးမေး(လ်)</string>
+    <!-- Application name -->
+    <string name="email_smtp_app_name">အီးမေး(လ်) -SMTP</string>
+    <!-- Application name -->
+    <string name="email_pop3_app_name">အီးမေး(လ်) -POP3</string>
+    <!-- Application name -->
+    <string name="email_imap4_app_name">အီးမေး(လ်) -IMAP4</string>
+    <!-- Application name -->
+    <string name="dm_app_name">စက် စီမံခန့်ခွဲမှု</string>
+    <!-- Application name -->
+    <string name="agps_app_name">A-GPS</string>
+    <!-- Application name -->
+    <string name="rtsp_app_name">အချိန်အစစ်အမှန် အဆက်မပြတ်ကူးယူနေသော ပရိုတိုကော</string>
+    <!-- Application name -->
+    <string name="ds_app_name">အချက်အလက် တစ်မျိုးတည်းဖြစ်အောင်ပြုလုပ်ခြင်း</string>
+    <!-- Application name -->
+    <string name="imps_app_name">ချက်ခြင်း မက်ဆေ့(ခ်ျ) ပေးပို့နေခြင်း နှင့်
+        လက်ရှိဝန်ဆောင်မှု</string>
+    <!-- Title of an alert dialog. -->
+    <string name="installation_report">တပ်ဆင်ခြင်း အစီရင်ခံခြင်း</string>
+    <!-- Button text. Clicking the button will close the dialog. -->
+    <string name="yes">အဆင်ပြေပါသည်</string>
+    <!-- Progress dialog message to tell user it is now installing. -->
+    <string name="installing_progress_message">တပ်ဆင်နေသည်…..</string>
+    <!-- Error text. -->
+    <string name="install_timeout_error_msg">တပ်ဆင်ခြင်း အမှား။</string>
+    <!-- Dialog message to alert user. -->
+    <string name="re_install_notify_message">လုပ်ငန်းသုံး ပရိုဂရမ်၏ လက်ရှိအပြင်အဆင်များ
+        ပေါ်တွင် အချက်အလက် များထပ်မံ ဖြည့်စွက်လိမ့် မည်၊ ဆက်လက်ပြုလုပ်
+        မည်လား။</string>
+    <!-- Title of an alert dialog. -->
+    <string name="re_install_notify_title">အတည်ပြုချက်</string>
+    <!-- Dialog message to indicate user. -->
+    <string name="unlock_pin_dialog_title">ကျေးဇူးပြု၍ PIN ကို ထည့်သွင်းပါ</string>
+    <!-- Title of a UI. -->
+    <string name="detail_activity_label">အပြင်အဆင် အသေးစိတ်များ</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="bookmark_label">လိပ်စာ URL:\u0021</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="homepage_label">ပင်မ စာမျက်နှာ - \u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mmsc_label">MMSC -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="server_address_label">ဆာဗာ လိပ်စာ -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="port_number_label">ပို့(တ်) -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_outbound_label">အပြင် -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_inbound_label">အတွင်း -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_account_label">အကောင့် -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_need_sign_label">အကောင့်သို့ ဝင်ရန် လိုအပ်သည် -\u0020</string>
+    <string name="email_need_sign_yes">ဟုတ်ပါသည်</string>
+    <string name="email_need_sign_no">မဟုတ်ပါ</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="rtsp_netinfo_label">ကွန်ရက် သတင်းအချက်အလက် -\u0020</string>
+    <!--
+        Label, should be as short as possible. UDP is the short form of
+        "User Datagram Protocol"
+    -->
+    <string name="rtsp_max_udp_port_label">အမြင့်ဆုံး UDP ပို့(တ်) -</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="rtsp_min_udp_port_label">အနိမ့်ဆုံး UDP ပို့(တ်) -</string>
+    <!--
+        Label, should be as short as possible. Short form of "Access
+        Point Name"
+    -->
+    <string name="apn_apn_label">APN -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="apn_mms_proxy_label">MMS ပရောက်ဆီ - \u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="apn_mms_port_label">MMS ပို့(တ်) -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="apn_auth_type_label">စစ်မှန်ကြောင်းသက်သေပြခြင်း အမျိုးအစား - \u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="apn_type_label">APN အမျိုးအစား - \u0020</string>
+    <string name="info_unsupport">အထောက်အပံ့ မပေးထားသော</string>
+    <string name="info_unavaliable">မရနိုင်ပါ</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="bookmark_folder_label">မှတ်သားထားသောအရာ ဖို(လ်)ဒါ -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="proxy_label">ပရောက်ဆီ -\u0020</string>
+    <!--
+        Label, should be as short as possible. Short form of "Network
+        Access Point"
+    -->
+    <string name="nap_label">NAP-\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="bookmark_name_label">မှတ်သားထားသောအရာ အမည် -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="user_name_label">အသုံးပြုသူ အမည် - \u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="password_label">စကားဝှက် -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mmsc_name_label">MMSC အမည် -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mms_cm_label">ဖန်တီးသည့် ပုံစံ - \u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mms_rm_label">ပြန်လည်တင်သွင်းသည့် ပုံစံ -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mms_ms_label">အမြင့်ဆုံးခွင့်ပြုထားသော MM အရွယ်အစား - \u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mms_pc_addr_label">ပို့စကဒ် ဝန်ဆောင်မှု လိပ်စာ -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mms_ma_label">MMS A အင်တာဖေ့(စ်)ကို အထောက်အကူပြုသည် -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="server_id_label">ဆာဗာ ID -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="server_name_label">ဆာဗာ အမည် -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="server_addr_type_label">ဆာဗာ လိပ်စာ အမျိုးအစား -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="auth_level_label">လုံခြုံမှု အဆင့် -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="auth_type_label">လုံခြုံမှု အမျိုးအစား - \u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="auth_data_label">လုံခြုံမှု အချက်အလက် -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="dm_init_label">init ကို လိုအပ်သည် - \u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_setting_name_label">အပြင်အဆင် အမည် - \u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_secure_label">လုံခြုံသည် -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_from_label">မှ - \u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_rt_address_label">လိပ်စာသို့ အကြောင်းပြန်သည် - \u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="rtsp_max_bandwidth_label">အမြင့်ဆုံး လှိုင်းခွင်အကျယ်-\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="ds_database_name_label">ဒေတာဘေ့(စ်) အမည် -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="ds_database_url_label">ဒေတာဘေ့(စ်) URI - \u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="content_type_label">ပါဝင်သည့် အမျိုးအစား -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="ds_cliuri_label">သုံးစွဲသူ ဒေတာဘေ့(စ်) URI -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="ds_sync_type_label">တစ်မျိုးတည်းဖြစ်အောင်ပြုလုပ်ခြင်း
+        အမျိုးအစား-\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="imps_services_label">ဝန်ဆောင်မှုများ -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="imps_cid_prefix_label">သုံးစွဲသူ ID အစပြုစာလုံး -\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="name_label">အမည် -\u0020</string>
+    <!-- Dialog message to alert user. -->
+    <string name="detail_invalid_setting_error_msg">အကျုံးမဝင်သော အပြင်အဆင်။</string>
+    <!-- Title of dialog. -->
+    <string name="error">အမှား</string>
+    <string name="app_label">Omacp</string>
+</resources>

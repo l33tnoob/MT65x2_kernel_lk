@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="STR_NMS_MAIN">iSMS</string>
+    <string name="STR_NMS_HISSAGE">iSMS</string>
+    <string name="STR_NMS_INVITE_SMS_CONTENT">Bună, iSMS este un instrument cool de conversaţie. Este gratuit şi convenabil. Vă rugăm să accesaţi http://isms.hissage.com pentru a afla mai multe informaţii.</string>
+    <string name="STR_NMS_NO_SDCARD">Cardul SD nu este detectat, unele operaţii nu vor fi permise prin iSMS</string>
+    <string name="STR_NMS_MOUNT_SDCARD">Cardul SD este disponibil pentru utilizare</string>
+    <string name="STR_NMS_SEND_MMS_FAIL">Mesajul nu poate fi transmis Acesta va fi trimis în mod automat odată ce reţea va fi disponibilă.</string>
+    <string name="STR_NMS_RECV_MMS_FAIL">Nu se poate descărca. Vă rugăm să încercaţi mai târziu.</string>
+    <string name="STR_NMS_GROUP_CHAT_ME">pe mine	</string>
+    <string name="STR_NMS_GROUP_CHAT_I">Eu</string>
+    <string name="STR_NMS_GROUP_CHAT_YOU">Tu</string>
+    <string name="STR_NMS_GROUP_CREATE_MSG">%1$s invită %2$s la grupul de discuţie.</string>
+    <string name="STR_NMS_GROUP_ADD_MSG">%1$s s-a alăturat grupului de discuţie.</string>
+    <string name="STR_NMS_GROUP_DELETE_MSG">%1$s a şters %2$s din grupul de discuţie.</string>
+    <string name="STR_NMS_GROUP_QUITE_MSG">%1$s părăseşte grupul de discuţie.</string>
+    <string name="STR_NMS_GROUP_CHAT_PLACE_HOLDER_MSG_BODY">V-aţi alăturat acestui grup</string>
+    <string name="STR_NMS_PICTURE">imagine</string>
+    <string name="STR_NMS_TAPE">audio</string>
+    <string name="STR_NMS_VCARD">contact</string>
+    <string name="STR_NMS_LOCATION">locaţie</string>
+    <string name="STR_NMS_SKETCH">schiţă</string>
+    <string name="STR_NMS_VIDEO">video</string>
+    <string name="STR_NMS_CALENDAR">calendar</string>
+    <string name="STR_NMS_UNKNOWN">necunoscut</string>
+    <string name="STR_NMS_READ_MODE_PIC">o imagine</string>
+    <string name="STR_NMS_READ_MODE_TAPE">o notă audio</string>
+    <string name="STR_NMS_READ_MODE_VCARD">contacte</string>
+    <string name="STR_NMS_READ_MODE_LOCATION">o locaţie</string>
+    <string name="STR_NMS_READ_MODE_SKETCH">o schiţă</string>
+    <string name="STR_NMS_READ_MODE_VIDEO">un video</string>
+    <string name="STR_NMS_READ_MODE_CALENDAR">un calendar</string>
+    <string name="STR_NMS_ISMS_ENABLE">(Permite iSMS)</string>
+    <string name="STR_NMS_READ_MODE_UNKNOWN">un fişier necunoscut</string>
+    <string name="STR_NMS_ALL_MSG">Toate Mesajele</string>
+    <string name="STR_NMS_SAVED">Salvat</string>
+    <string name="STR_NMS_BLOCKMSG">Blocat	</string>
+    <string name="STR_NMS_SMS_TYPE">SMS</string>
+    <string name="STR_NMS_NO_SIM">Cardul SIM nu este detectat</string>
+    <string name="STR_NMS_ILLEGAL_ADDRESS">Număr invalid</string>
+    <string name="STR_NMS_REMIND_USER_SET_NAME">Vă rugăm să vă actualizaţi profilul</string>
+    <string name="STR_NMS_OK">OK</string>
+    <string name="STR_NMS_BACK">Înapoi</string>
+    <string name="STR_NMS_CANCEL">Anulaţi</string>
+    <string name="STR_NMS_NETWORK_UNAVL">Vă rugăm să vă asiguraţi că aveţi conexiune la datele de lucru, de ex. 3G, GPRS sau Wi-Fi</string>
+    <string name="STR_NMS_TODAY">Astăzi</string>
+    <string name="STR_NMS_YESTERDAY">Ieri</string>
+    <string name="STR_NMS_NOW">Acum</string>
+    <string name="STR_NMS_NO_SIM_CARD">Cardul SIM nu este detectat, trebuie să introduceţi un card SIM.</string>
+    <string name="STR_NMS_NO_CONNECTION">Reţeaua nu este disponibilă sau modul avion este activat, vă rugăm să verificaţi.</string>
+    <string name="STR_NMS_ATTACH_SHARE">%1$s a distribuit %2$s</string>
+    <string name="STR_NMS_WAIT">Aşteptaţi...</string>
+    <string name="STR_NMS_TIPTITLE">Sfat</string>
+
+    <string name="STR_NMS_OPEN">Deschideţi</string>
+    <string name="STR_NMS_PLAY">Redaţi</string>
+    
+    
+
+    <string name="STR_NMS_VCARD_NAME">%1$s contactează</string>
+    <string name="STR_NMS_SHARE_VCARD_FAILED">distribuţia contactului a eşuat</string>
+
+    <!-- upgrade info -->
+    <string name="STR_NMS_UPGRADE_TICKER">Versiunea upgradată</string>
+    <string name="STR_NMS_UPGRADE_ERROR_TITLE">Eroare upgrade</string>
+    <string name="STR_NMS_UPGRADE_ERROR_CONTENT">Eroare upgrade, vă rugăm să faceţi upgrade la clientul iSMS</string>
+    <string name="STR_NMS_INSTALLED_TITLE">Upgrade de succes</string>
+    <string name="STR_NMS_INSTALLED_CONTENT">Upgrade reuşit la telefon</string>
+    <string name="STR_NMS_PROMPT_DLG_TITLE">O nouă versiune a fost detectată</string>
+    <string name="STR_NMS_PROMPT_DLG_DOWNLOAD">Descărcaţi</string>
+    <string name="STR_NMS_PROMPT_DLG_LATER">Mai târziu</string>
+    <string name="STR_NMS_UPGRADING">Actualizare</string>
+    <string name="STR_NMS_UPGRADE_TIME">Ultima verificare: %s</string>
+    
+    <!-- ext protocol -->
+    <string name="STR_NMS_OFFLINE_URL">http://ismsi.hissage.com/webservice/nmsmail/notifyOffline.php</string>
+    
+    <!-- Activation start -->
+    <string name="STR_NMS_PRELOAD_IP_MSG_CONTENT">&quot;Bine aţi venit la iSMS.&quot;</string>
+    <string name="STR_NMS_ACTIVAT_TITLE">iSMS va trimite un singur SMS pentru a verifica numărul dvs. de telefon. Se poate aplica taxă de transmitere.</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE">Verificarea numărului dvs</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE2">Verificarea numărului dvs</string>
+    <string name="STR_NMS_YOUR_COUNTRY_TITLE">ȚARA DVSȚARA DVSȚARA DVSŢȚARA DVS</string>
+    <string name="STR_NMS_YOUR_PHONE_TITLE">NUMĂRUL DVS. DE TELEFON</string>
+    <string name="STR_NMS_VERIFY_FAIL_TITLE">Verificarea SMS-ului a eşuat.</string>
+    <string name="STR_NMS_VERIFY_FAIL_CONTENT">Asiguraţi-vă că numărul dvs. de telefon este introdus corect.</string>
+    <string name="STR_NMS_WORKING_SMS_TIP">Vă rugăm să vă asiguraţi că aveţi un plan tarifar pentru mesaje SMS.</string>
+    <string name="STR_NMS_VERIFYING">Aşteptaţi pentru a detecta în mod automat un SMS trimis către</string>
+    <string name="STR_NMS_RETRY">Reîncercaţi</string>
+    <string name="STR_NMS_EDIT_NUMBER">Editaţi numărul</string>
+    <string name="STR_NMS_UPDATE_PROFILE">Actualizaţi profilul</string>
+    <string name="STR_NMS_START_ISMS">Porniţi iSMS</string>
+    <string name="STR_NMS_SEND">Trimiteţi</string>
+    <string name="STR_NMS_CONGRATULATIONS_TITLE">Felicitări!</string>
+    <string name="STR_NMS_CONGRATULATIONS_CONTENT">Vă mulţumim pentru activarea iSMS.\n Puteţi începe acum să vă bucuraţi de acest serviciu. iSMS fericit!</string>
+    <string name="STR_NMS_WELCOME_BACK">Bine aţi revenit.</string>
+    <string name="STR_NMS_SEND_SMS_FAIL">Verificarea nu a reuşit, vă rugăm să verificaţi:\n  1. Numărul de telefon este corect;\n  2. Software-ul de securitate este oprit;\n  3. Alte motive posibile pentru a bloca trimiterea de SMS-uri.\n Asiguraţi-vă şi încercaţi din nou mai târziu.</string>
+    <string name="STR_NMS_ACTIVE">Activaţi iSMS</string>
+    <string name="STR_NMS_WELCOME_ACTIVE">Bine aţi venit la iSMS</string>
+    <string name="STR_NMS_CONNECTING">Se conectează....</string>
+    <!-- Activation end -->
+
+
+    <!-- Notification start -->
+    <string name="STR_NMS_NEW_MSG_TITLE">Mesaj Nou iSMS</string>
+    <string name="STR_NMS_NEW_SMG_CONTENT">Mesaj necitit %d</string>
+    <!-- Notification End -->
+
+    <string name="STR_NMS_MSG_DUMPER_MSG_SMS">SMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_MMS">MMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_IP">Mesaj IP </string>
+    <string name="STR_NMS_MSG_DUMPER_SEND_MSG">Trimis %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_RECEIVE_MSG">Primit %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TIME">Timp: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TEXT">Text</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_PIC">Imagine</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_SKETCH">Schiţă</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VOICE">Voce</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VIDEO">Video</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CALENDAR">Calendar</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION_IMG">Imaginea locaţiei</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VCARD">Vcard</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION">Locaţie</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CAPTION">Titlu: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_URL">Url: </string>
+    <string name="STR_NMS_MSG_DUMPER_DURATION">Durată: </string>
+    <string name="STR_NMS_MSG_DUMPER_COORDINATE">Coordonată: </string>
+    <string name="STR_NMS_MSG_DUMPER_ADDRESS">Adresă: </string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_SENDER">Expeditor: </string>
+    <string name="STR_NMS_MSG_DUMPER_NORMAL_DETAIL">Detaliu sesiune:</string>
+    <string name="STR_NMS_MSG_DUMPER_NAME">Nume: </string>
+    <string name="STR_NMS_MSG_DUMPER_NUMBER">Număr: </string>
+    <string name="STR_NMS_MSG_DUMPER_PORTRAIT">Portret:</string>
+    <string name="STR_NMS_MSG_DUMPER_MULTI_SEND_DETAIL">Transmisie:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_DETAIL">Grup de discuţie:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_CREATER">Creator: </string>
+    <string name="STR_NMS_MSG_DUMPER_MEMBERS">Membri: </string>
+    <string name="STR_NMS_MSG_DUMPER_VCARD_NAME">Nume: </string>
+    <string name="STR_NMS_MSG_DUMPER_CALENDAR_SUMMARY">Sumar: </string>
+
+    <!-- Chat Settings -->
+    <string name="STR_NMS_CHAT_SETTING_TITLE">Setări Chat:</string>
+    <string name="STR_NMS_DISPLAY">Ecran</string>
+    <string name="STR_NMS_CHAT_WALLPAPER">Wallpaper pentru discuţie</string>
+    <string name="STR_NMS_SYS_WALLPAPER">Selectaţi un wallpaper</string>
+    <string name="STR_NMS_CAMEARPHOTO">Faceţi poză</string>
+    <string name="STR_NMS_SYS_GALLERY">Selectaţi din Galerie</string>
+    <string name="STR_NMS_DEFAULT_WALLPAPER">Resetare</string>
+    <string name="STR_NMS_NOTIFICATION_CATEGORY">Notificare</string>
+    <string name="STR_NMS_NOTIFICATION_TITLE">notificare iSMS</string>
+    <string name="STR_NMS_NOTIFICATION_CONTENT">Arată când notificările sunt primite </string>
+    <string name="STR_NMS_MUTE">Fără sunet</string>
+    <string name="STR_NMS_MUTE_OFF">Închis</string>
+    <string name="STR_NMS_MUTE_1">Fără sunet pentru 1 oră</string>
+    <string name="STR_NMS_MUTE_4">Fără sunet pentru 4 ore</string>
+    <string name="STR_NMS_MUTE_8">Fără sunet pentru 8 ore</string>
+    <string name="STR_NMS_RINGTONE_TITLE">Ton de apel</string>
+    <string name="STR_NMS_RINGTONE_CONTENT">Setaţi un ton de apel pentru noile notificări  </string>
+    <string name="STR_NMS_VIBRATE_TITLE">Vibrează</string>
+    <string name="STR_NMS_VIBRATE_CONTENT">Vibrează când notificările sunt primite </string>
+    <string name="STR_NMS_ACTIONS">Acţiuni</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_TITLE">Descărcaţi istoricul discuţiei</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_CONTENT">Salvează în cardul DS în format zip</string>
+    <string name="STR_NMS_EMAIL_HISTORY_TITLE">Istoricul discuţiei pe E-Mail </string>
+    <string name="STR_NMS_EMAIL_HISTROY_CONTENT">Istoricul discuţiei pe E-Mail în format zip</string>
+    <string name="STR_NMS_CLEAR_HISTROY">Ştergeţi istoricul discuţiei </string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_DLG">Descarcă...</string>
+    <string name="STR_NMS_DOWNLOAD_OK">Descărcarea istoricului discuţiei s-a realizat, salvaţi ca %s</string>
+    <string name="STR_NMS_DOWNLOAD_ERROR">Eroare la descărcarea istoricului discuţiei </string>
+    <string name="STR_NMS_DOWNLOAD_EMPTY">NImic de descărcat.</string>
+    <string name="STR_NMS_CLEARING">Istoricul se şterge, vă rugăm aşteptaţi...</string>
+    <string name="STR_NMS_WAIT_SAVE_WALLPAPER">Wallpaperul se salvează, vă rugăm aşteptaţi...</string>
+    <string name="STR_NMS_SAVE_WALLPAPER_OK">Wallpaperul se salvează cu succes.</string>
+    <string name="STR_NMS_CLEARDONE">Ştergerea istoricului s-a încheiat.</string>
+    <string name="STR_NMS_SVAE_TITLE">Salvaţi pe cardul SD</string>
+    <string name="STR_NMS_SAVE_CONTENT">Salvaţi această conversaţie pe cardul SD ca fişier zip</string>
+    <string name="STR_NMS_EMAIL_TITLE">Distribuiţi prin E-Mail</string>
+    <string name="STR_NMS_EMAIL_CONTENT">Distribuiţi această conversaţie ca ataşament prin E-Mail, în format zip</string>
+
+    <!-- Chat Settings End -->
+
+
+    <!-- Profile Settings -->
+    <string name="STR_NMS_PROFILE_TITLE">Profil</string>
+    <string name="STR_NMS_TAP_AVATAR_TIP">Tastaţi pentru a edita imaginea de profil</string>
+    <string name="STR_NMS_DISPLAY_NAME_TIP">NUME AFIŞAT</string>
+    <string name="STR_NMS_ACCOUNT_TIP">CONT ISMS </string>
+    <string name="STR_NMS_NO_APP">Nicio aplicaţie nu poate efectua această acţiune.</string>
+    <string name="STR_NMS_NO_NAME">Setaţi numele dvs.</string>
+    <string name="STR_NMS_SAVE_AVATAR_FAILD">Ne pare rău, nu aţi reuşit să salvaţi imaginea de profil.</string>
+    <string name="STR_NMS_INPUT_NAME">Nume</string>
+    <string name="STR_NMS_TERM_WARN_ACTIVATE">Această facilitate este susţinută numai prin serviciul iSMS. n\n iSMS este un serviciu gratuit de mesagerie instantă care vă permite să discutaţi şi să distribuiţi conţinut multimedia către prieteni oricând şi oriunde, prin conexiune de date la Internet (Wi-Fi, 2G/3G, etc.). Când activaţi pentru prima dată, iSMS va trimite un SMS în mod automat pentru a finaliza înregistrarea. Taxe ce se pot aplica pentru SMS-uri. \n\n Acordul utilizatorului\n</string>
+    <string name="STR_NMS_TERM_WARN_WELCOME">iSMS este un serviciu gratuit de mesagerie instantă care vă permite să discutaţi şi să distribuiţi conţinut multimedia către prieteni oricând şi oriunde prin conexiune de date la Internet (Wi-Fi, 2G/3G, etc.).\n Când activaţi pentru prima dată, iSMS va trimite un SMS în mod automat pentru a finaliza înregistrarea. Taxe ce se pot aplica pentru SMS-uri. \n\n Acordul utilizatorului\n</string>
+    <string name="STR_NMS_TERM_KEY">Termeni şi Condiţii</string>
+    <string name="STR_NMS_AGREE_AND_CONTINUE">Acceptaţi şi continuaţi</string>
+    <string name="STR_NMS_ACTIVE_BNT">Activaţi</string>
+    <string name="STR_NMS_SET_PROFILE_OK">Profilul este configurat cu succes</string>
+    <string name="STR_NMS_SET_PROFILE_FAIL">Profilul nu a fost configurat</string>
+    <string name="STR_NMS_ILLEGAL_PROFILE_NAME">Nume ilegal</string>
+    <string name="STR_NMS_NO_ACTIVITED">Niciun card SIM este nu este activat sau permis.</string>
+    <!-- Profile Settings End -->
+
+
+    <!-- Term Activity -->
+    <string name="STR_NMS_REJECT">Refuză</string>
+    <string name="STR_NMS_AGREE">Acceptă</string>
+    <string name="STR_NMS_TERM_TITLE">Condiţii de utilizare</string>
+    <string name="STR_NMS_TERM_CONTENT">Luaţi la cunoştinţă faptul că Serviciul si software-ul încorporate în cadrul Serviciului pot include componente de securitate ce permit protejarea materialelor digitale şi că utilizarea acestor materiale este supusă unor reguli de utilizare stabilite de către AF PushMail şi / sau furnizorii de conţinut care furnizează conţinut în cadrul Serviciului. Nu încercaţi să încălcaţi sau păcăliţi oricare dintre regulile de utilizare încorporate în Serviciu. Orice reproducere, publicare, distribuire mai departe sau expunere publică a materialelor furnizate prin Serviciu, în întregime sau parţial, este strict interzisă.</string>
+    <!-- Term Activity End -->
+
+
+    <!-- System Settings -->
+    <string name="STR_NMS_SYS_SETTING_TITLE">Mesaj iSMS </string>
+    <string name="STR_NMS_SETTINGS_TITLE">PROFIL</string>
+    <string name="STR_NMS_PREFERENCE_CATE">PREFERINŢE</string>
+    <string name="STR_NMS_SEND_SMS_TITLE">Trimiteţi un SMS</string>
+    <string name="STR_NMS_SEND_SMS_CONTENT">Trimiteţi un SMS când iSMS nu este disponibil. Se pot aplica taxe de mesagerie. Această regulă nu se aplică grupului de chatuire.</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_TITLE">Descărcaţi auto</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_CONTENT">Descărcaţi în mod automat fişiere multimedia</string>
+    <string name="STR_NMS_CAPTION_TITLE">Titluri</string>
+    <string name="STR_NMS_CAPTION_CONTENT">Distribuiţi fişiere cu titluri</string>
+    <string name="STR_NMS_SYSTEM_CATE">SISTEM</string>
+    <string name="STR_NMS_UPDATE_TITLE">actualizarea software-ului</string>
+    <string name="STR_NMS_UPDATE_CONTENT">Ultima verificare: Niciodată</string>
+    <string name="STR_NMS_NETWORK_USAGE_TITLE">Utilizare Reţea</string>
+    <string name="STR_NMS_NETWORK_USAGE_CONTENT">Vedeţi consumul total de date trimise/ primite</string>
+    <string name="STR_NMS_NETWORK_DLG_CONTENT">Trimis: %1$.3f K \n Trimis: %2$.3f K\n Ultima resetare: %3$s</string>
+    <string name="STR_NMS_VERSION_TITLE">Versiune</string>
+    <string name="STR_NMS_NEVER_CLEAR">Niciodată</string>
+    <string name="STR_NMS_RESET">Resetare:</string>
+    <string name="STR_NMS_SWITCH_ON">DESCHIS</string>
+    <string name="STR_NMS_SWITCH_OFF">ÎNCHIS</string>
+    <string name="STR_NMS_SYSTEM_SETTING_TITLE">Setări</string>
+    <string name="STR_NMS_COPYRGIHT">Hesine Technologies, Inc.</string>
+    <string name="STR_NMS_ABOUT">Despre iSMS</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_TITLE">Afişează Statusul de Citire</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_CONTENT">Afişează Statusul de Citire în lista cu mesaje</string>
+    <string name="STR_NMS_SHOW_REMIND_TITLE">Afişează Notificările</string>
+    <string name="STR_NMS_SHOW_REMIND_CONTENT">Afişează Notificările iSMS pe ecranul discuţiei.</string>
+    <string name="STR_NMS_MENU_RESET_SETTING">Restabiliţi setările implicite</string>
+    <string name="STR_NMS_MENU_FUNCTION_INTRODUCTION">Facilităţi</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT">Acordul utilizatorului</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION">Drepturi de autor</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT_TITLE">ACORDUL DE LICENTĂ PENTRU UTILIZATOR  PENTRU HESINE iSMS </string>
+    <string name="STR_NMS_MENU_FUNCTION">Lista de facilităţi</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION_DETAIL">\nHesine Technologies Inc.\nCopyright© 2008-2013\n Toate drepturile rezervate.\n</string>
+    <!-- System Settings End -->
+
+
+    <!-- Caption Settings -->
+    <string name="STR_NMS_AUDIO_TITLE">Audio</string>
+    <string name="STR_NMS_VIDEO_TITLE">Videoclipuri</string>
+    <string name="STR_NMS_PHOTO_TITLE">Fotografii</string>
+    <!-- Caption Settings End -->
+
+
+    <!-- Map String start -->
+    <string name="STR_NMS_MAP_TITLE">Locaţie de Distribuţie</string>
+    <string name="STR_NMS_MAP_PROMPT">Harta nu poate fi afişată, deoarece serviciul de localizare nu este pornit. Adresa de mai jos este aproximată pe baza informaţiilor din celular. \n Pentru a avea un serviciu de localizare precis, se recomandă pornirea serviciului de localizare.</string>
+    <string name="STR_NMS_MAP_NOTE_1">Vă rugăm să activaţi o sursă în Locaţia mea, în setările de sistem</string>
+    <string name="STR_NMS_MAP_SHARE">Distribuiţi</string>
+    <string name="STR_NMS_MAP_SETTINGS">Setări</string>
+    <string name="STR_NMS_MAP_OK">OK</string>
+    <string name="STR_NMS_MAP_CANCEL">Anulaţi</string>
+    <string name="STR_NMS_MAP_EDIT">Editaţi locaţia</string>
+    <string name="STR_NMS_MAP_SEARCH_HINT">Căutaţi locuri în apropiere</string>
+    <string name="STR_NMS_MAP_WAIT">Vă rugăm să aşteptaţi...</string>
+    <string name="STR_NMS_MAP_EDIT_LIMIT">Numărul de caractere a atins limita</string>
+    <string name="STR_NMS_MAP_ADDR_LEN">Adresa este prea lungă</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR_LOCATING">Localizaţi poziţia dvs. curentă ...</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN_LOCATING">Localizaţi poziţia dvs. PIN ...</string>
+    <string name="STR_NMS_MAP_LINEONE_SEARCH_LOCATING">Localizaţi poziţia dvs. căutată ...</string>
+    <string name="STR_NMS_MAP_LINETHREE_NEARBY_LOCATING">Se caută locurile din apropiere ...</string>
+    <string name="STR_NMS_MAP_LINEONE_FAILED">Locaţia dvs. nu este disponibilă acum</string>
+    <string name="STR_NMS_MAP_LINETWO_FAILED">Asiguraţi-vă că serviciul dvs. de Localizare este pornit, iar reţeaua este disponibilă</string>
+    <string name="STR_NMS_MAP_LINETHREE_FAILED">Nu au fost găsite adrese în apropiere</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR">Distribuiţi locaţia curentă</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN">Distribuiţi locaţia PIN</string>
+    <string name="STR_NMS_MAP_MY_LOCATION">Locaţia mea</string>
+    <string name="STR_NMS_MAP_SEARCH">Căutaţi</string>
+    <string name="STR_NMS_MAP_ERROR_1">În imposibilitate de a obţine latitudinea şi longitudinea</string>
+    <string name="STR_NMS_MAP_ERROR_2">Serverele Google transmit o eroare</string>
+    <!-- Map String end -->
+
+
+    <!-- All Media String start -->
+    <string name="STR_NMS_ALL_MEDIA_TITLE">Toate fişierele</string>
+    <string name="STR_NMS_ALL_MEDIA_WAIT">Vă rugăm să aşteptaţi...</string>
+    <string name="STR_NMS_ALL_MEDIA_ERROR">Nu a reuşit să se încarce, vă rugăm să încercaţi din nou mai târziu</string>
+    <string name="STR_NMS_ALL_MEDIA_EMPTY">Gol</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_WEEK">În această săptămână</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_MONTH">În această lună</string>
+    <string name="STR_NMS_ALL_MEDIA_JAN">Ianuarie</string>
+    <string name="STR_NMS_ALL_MEDIA_FEB">Februarie</string>
+    <string name="STR_NMS_ALL_MEDIA_MAR">Martie</string>
+    <string name="STR_NMS_ALL_MEDIA_APR">Aprilie</string>
+    <string name="STR_NMS_ALL_MEDIA_MAY">Mai</string>
+    <string name="STR_NMS_ALL_MEDIA_JUN">Iunie</string>
+    <string name="STR_NMS_ALL_MEDIA_JUL">Iulie</string>
+    <string name="STR_NMS_ALL_MEDIA_AUG">August</string>
+    <string name="STR_NMS_ALL_MEDIA_SEPT">Septembrie</string>
+    <string name="STR_NMS_ALL_MEDIA_OCT">Octombrie</string>
+    <string name="STR_NMS_ALL_MEDIA_NOV">Noiembrie</string>
+    <string name="STR_NMS_ALL_MEDIA_DEC">Decembrie</string>
+    <string name="STR_NMS_ADDCONTACT">Adăugaţi un contact</string>
+    <string name="STR_NMS_ADD_PHONE_CONTACT">Adăugaţi  \&quot;%1$s\&quot; la contacte?</string>
+    <string name="STR_NMS_DELETE_MEDIA">Fişierul media va fi şters, doriţi să continuaţi?</string>
+    <string name="STR_NMS_MEDIA_SHARE_MESSAGE">%1$s distribuit la %2$s</string>
+
+    <!-- All Media String end -->
+
+
+    <!-- All Locations String start -->
+    <string name="STR_NMS_ALL_LOCATIONS_TITLE">Toate locaţiile</string>
+    <string name="STR_NMS_ALL_LOCATIONS_LOC">Locaţie</string>
+    <string name="STR_NMS_ALL_LOCATIONS_WAIT">Vă rugăm să aşteptaţi</string>
+    <!-- All Locations String end -->
+
+
+    <!-- Sketch -->
+    <string name="STR_NMS_SKETCH_TITLE">Desenaţi o schiţă</string>
+    <string name="STR_NMS_REDO">Redaţi</string>
+    <string name="STR_NMS_UNDO">Anulaţi</string>
+    <string name="STR_NMS_SKETCH_CUSTOM">Customizaţi</string>
+    <string name="STR_NMS_PEN_SIZE">Dimensiune</string>
+    <string name="STR_NMS_SKETCH_TOOLS_PEN">Creion</string>
+    <string name="STR_NMS_SKETCH_TOOLS_ERASER">Radieră</string>
+    <string name="STR_NMS_SKETCH_CUSTOM_COLOR">Culoare personalizată</string>
+    <string name="STR_NMS_CLEAR_SKETCH_TITLE">Schiţă ştearsă</string>
+    <string name="STR_NMS_CLEAR_SKETCH_CONTENT">Doriţi să ştergeţi această schiţă?</string>
+    <string name="STR_NMS_SIZE_SKETCH_TITLE">Dimensiune</string>
+    <string name="STR_NMS_SIZE_SKETCH_MAX">72</string>
+    <string name="STR_NMS_SIZE_SKETCH_MIN">2</string>
+    <string name="STR_NMS_COLOR_SKETCH_TITLE">Culoare</string>
+    <string name="STR_NMS_SKETCH_ERROR">Eroare în crearea unei schiţe.</string>
+    <string name="STR_NMS_BACK_TITLE">Confirmare</string>
+    <string name="STR_NMS_FINISH_SKETCH_CONTENT">Sigur doriţi să părăsiţi schiţa?</string>
+    <string name="STR_NMS_LEAVE_SKETCH_CONTENT">Sigur doriţi să renunţaţi la această schiţă?</string>
+    <string name="STR_NMS_NOTREDO">Nimic de redat</string>
+    <string name="STR_NMS_NOTUNDO">Nimic de anulat</string>
+    <string name="STR_NMS_SKETCH_DELETE">Ştergeţi</string>
+    <string name="STR_NMS_DISCARD">Renunţaţi</string>
+
+    <!-- Sketch end -->
+
+
+    <!-- Selection Contact -->
+    <string name="STR_NMS_DONE">OK</string>
+    <string name="STR_NMS_SELECTALL">Selectaţi tot</string>
+    <string name="STR_NMS_DESELECTED">Deselectaţi tot</string>
+    <string name="STR_NMS_SELECTED">selectat %1$s</string>
+    <string name="STR_NMS_CONTACT_SEARCH">Găsiţi contactele</string>
+    <string name="STR_NMS_SEARCH">Căutaţi</string>
+    <string name="STR_NMS_CONTACT_SELECT">Selectaţi contactul</string>
+    <string name="STR_NMS_SELECT_MEMBER_FULL">Au fost selectate prea multe contacte</string>
+    <string name="STR_NMS_SELECT_MEMBER_EMPTY">Nu a fost selectat niciun contact</string>
+    <string name="STR_NMS_SELECT_CONTAT_WAIT">Vă rugăm aşteptaţi...</string>
+    <string name="STR_NMS_SELECT_CONTAT_EMPTY">Niciun contact  iSMS</string>
+    <string name="STR_NMS_SELECT_NO_RESULT">Niciunul nu a fost găsit</string>
+    <string name="STR_NMS_EMPTY">Niciun contact</string>
+    <string name="STR_NMS_ALL_CONTACTS">TOATE</string>
+    <string name="STR_NMS_GROUPS_MEM"> membri %1$s</string>
+    <string name="STR_NMS_GROUPS_CONTACTS">TOATE GRUPURILE</string>
+    <!-- Selection Contact end -->
+
+    <!-- Group chat -->
+    <string name="STR_NMS_CREATE_GROUP_TITLE">Creaţi un Grup</string>
+    <string name="STR_NMS_GROUP_INFO_TITLE">Informaţiile Grupului</string>
+    <string name="STR_NMS_EDIT_GROUP_TITLE">Editaţi Grupul</string>
+    <string name="STR_NMS_SELECT_ACTION_TITLE">Selectaţi acţiunea</string>
+    <string name="STR_NMS_ADD_TO_BOOKMARK">Adăugaţi la semn de carte</string>
+    <string name="STR_NMS_ADD_TO_CONTACTS">Adăugaţi %1$s la Contacte</string>
+    <string name="STR_NMS_GROUP_NAME">NUMELE GRUPULUI </string>
+    <string name="STR_NMS_GROUP_INFO">INFORMAŢIILE GRUPULUI</string>
+    <string name="STR_NMS_GROUP_MEMBERS">MEMBRII GRUPULUI</string>
+    <string name="STR_NMS_GROUP_NAME_HIT">Numele grupului</string>
+    <string name="STR_NMS_GROUP_NAME_EMPTY">Numele grupului nu a fost completat</string>
+    <string name="STR_NMS_CONFIRM_LEAVE_TITLE">Părăsiţi grupul</string>
+    <string name="STR_NMS_LEAVE_GROUP_CONTENT">Doriţi să părăsiţi acest grup?</string>
+    <string name="STR_NMS_LEAVE_GROUP_SUCCESS">Aţi părăsit acest grup cu succes</string>
+    <string name="STR_NMS_LEAVE_GROUP_FAILED">Nu aţi reuşit să părăsiţi acest grup</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_SUCCESS">Actualizarea numelui grupului s-a înregistrat cu succes</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_SUCCESS">Noi membri au fost adăugaţi grupului </string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_FAILED">Eroare în adăugarea membrului la grup</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_FAILED">Eroare în actualizarea numele de grup</string>
+    <string name="STR_NMS_CREATE_GROUP_NAME_FAILED">Eroare în crearea grupului de discuţie</string>
+    <string name="STR_NMS_DELETE_GROUP_MEMBER_FAILED">Eroare în eliminarea membrului din grup</string>
+    <string name="STR_NMS_UPDATE_GROUP_SUCCESS">Actualizarea informaţiilor din grup s-a înregistrat cu succes</string>
+    <string name="STR_NMS_UPDATE_GROUP_FAILED">Eroare în actualizarea informaţiilor de grup</string>
+    <string name="STR_NMS_GROUP_CHAT_BACK">Doriţi să renunţaţi la această operaţiune?</string>
+    <string name="STR_NMS_GROUP_MEMEBER_YOU">DVS.</string>
+    <string name="STR_NMS_GROUP_INVITE_MORE">Invitaţi</string>
+    <string name="STR_NMS_LEAVE_GROUP">Părăsiţi acest grup</string>
+    <string name="STR_NMS_CHAT">Chat</string>
+    <string name="STR_NMS_CONFIRM_REMOVE_TITLE">Eliminaţi din lista membrilor de grup</string>
+    <string name="STR_NMS_REMOVE_OK">Eliminaţi </string>
+    <string name="STR_NMS_REMOVE_CANCEL">Anulaţi</string>
+    <string name="STR_NMS_REMOVE_CONTENT">Doriţi să eliminaţi acest contact din listă?</string>
+    <string name="STR_NMS_VIEW_ALL_MEDIA">Vizualizaţi toate fişierele</string>
+    <string name="STR_NMS_VIEW_ALL_LOCATIONS">Vizualizaţi toate locaţiile</string>
+    <string name="STR_NMS_CHAT_SETTINGS">Setările chatului</string>
+    <string name="STR_NMS_VIEW_GROUP_FAILED">Aţi părăsit acest grup de discuţie.</string>
+    <string name="STR_NMS_VIEW_HISTORY">Vizualizaţi istoricul grupului</string>
+    <string name="STR_NMS_ISMS_ENABLE_TITLE">Activaţi iSMS</string>
+    <string name="STR_NMS_ISMS_ENABLE_CONTENT">Această facilitate este susţinută numai prin serviciul iSMS.  Activaţi contul dvs. iSMS acum?</string>
+    <string name="STR_NMS_ENABLE">Activaţi</string>
+    <string name="STR_NMS_LATER">Renunţaţi</string>
+    <string name="STR_NMS_SWITCH_TITLE">Schimbaţi SIM</string>
+    <string name="STR_NMS_SWITCH_MESSAGE">Grupul de discuţie este acceptat numai atunci când serviciul iSMS este activat, dar cardul SIM curent nu este activat. Schimbaţi cu cardul SIM activat?</string>
+    <string name="STR_NMS_SWITCH_EDIT_MESSAGE">Cardul SIM curent nu este asociat cu acest grup. Schimbaţi cu alt card SIM?</string>
+    <string name="STR_NMS_LEAVE_GROUP_NOTICE">Aţi părăsit acest grup şi nu vă puteţi alătura acestui grup de discuţie, dacă nu sunteţi invitat din nou</string>
+    <string name="STR_NMS_LOSE_SIM_NOTICE">Cardul original SIM de discuţie a fost îndepărtat, puteţi discuta numai în acest grup cu cardul SIM original</string>
+    <string name="STR_NMS_SWITCH">Schimbaţi</string>
+
+    <!-- Group chat end -->
+
+
+    <!-- chat details screen long press item start -->
+    <string name="STR_NMS_LONG_PRESS_TITLE">Opţiuni pentru mesaje</string>
+    <string name="STR_NMS_SEND_VIA_TEXT">Trimiteţi prin SMS</string>
+    <string name="STR_NMS_TRY_AGAIN">Încercaţi din nou</string>
+    <string name="STR_NMS_TRY_ALL_AGAIN">Reluaţi totul de la început</string>
+    <string name="STR_NMS_CONTINUE_TRY">Continuaţi să încercaţi</string>
+    <string name="STR_NMS_COPY">Copiaţi</string>
+    
+    <string name="STR_NMS_FORWARD">Redirecţionaţi</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_TITLE">Descărcaţi</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD">Pentru a redirecţiona iSMS-uri, trebuie să descărcaţi conţinutul media mai întâi.</string>
+    <string name="STR_NMS_FORWARD_CONTIUE">Continuaţi</string>
+    <string name="STR_NMS_FORWARD_FAILED">Redirecţionarea a eşuat</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_MULTI">Pentru a face multiple redirecţionări, unele iSMS-uri trebuie să fie descărcate mai întâi.</string>
+    <string name="STR_NMS_FORWARD_SOME_FAILED">Unele redirecţionări de iSMS-uri eşuează</string>
+    <string name="STR_NMS_FORWARD_ALL_FAILED">Descărcarea a eşuat, multiple redirecţionări au fost eliminate</string>
+    
+    <string name="STR_NMS_SEND_VIA_MULTIMEDIA">Trimiteţi prin MMS</string>
+    <string name="STR_NMS_SHARE">Distribuiţi</string>
+    <string name="STR_NMS_DELETE">Ştergeţi</string>
+    <string name="STR_NMS_FLAG_IMPORTANT">Semnalizaţi ca fiind important</string>
+    <string name="STR_NMS_REMOVE_IMPORTANT">Îndepărtaţi semnalul ca fiind important</string>
+    <string name="STR_NMS_SAVE_IN_SDCARD">Export de card SD</string>
+    <string name="STR_NMS_SAVE_FILE">Fişierul este salvat până la %1$s</string>
+    <string name="STR_NMS_SHARE_TITLE">Modalitatea de distribuţie</string>
+    <string name="STR_NMS_VIEW_DETAILS">Vedeţi detaliile</string>
+    <string name="STR_NMS_VIEW_DETAILS_TITLE">Detaliile mesajului</string>
+    <string name="STR_NMS_SEND_MSG_DETAILS">Tipul: Mesaj IP\n Trimis: %1$s</string>
+    <!-- chat details screen long press item end -->
+
+
+    <!-- chat details screen delete item start -->
+    <string name="STR_NMS_DELETE_TITLE">Ştergeţi</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_TITLE">Ștergeți mesaj importantŞ</string>
+    <string name="STR_NMS_DELETE_WARNING">Mesajul va fi şters.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_WARNING">Sigur doriţi ştergerea acestui mesaj important?</string>
+    <string name="STR_NMS_DELETE_MSG">Mesajele selectate vor fi şterse.</string>
+    <string name="STR_NMS_DELETE_WAITTING">Se şterge</string>
+    <string name="STR_NMS_CLEAR_HISTORY_CONTENT">Tot istoricul de chatuire va fi şters în această cameră de discuţie.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT">Includeţi mesajele semnalizate ca fiind importante</string>
+    <!-- chat details screen delete item end -->
+
+
+    <!-- chat details actionBar option start -->
+    <string name="STR_NMS_MENU_CALL">Sunaţi</string>
+    <string name="STR_NMS_MENU_GROUPINFO">Informaţiile grupului</string>
+    <string name="STR_NMS_MENU_INVITE_CHAT">Invitaţi prietenii la chat</string>
+    <string name="STR_NMS_MENU_INVITE_ISMS">Invitaţi prietenii să foloseacă iSMS</string>
+    <string name="STR_NMS_MENU_SELECT_MSG">Selectaţi mesajul</string>
+    <string name="STR_NMS_MENU_MARK_SPAM">Mutaţi în lista de Spam</string>
+    <string name="STR_NMS_MENU_REMOVE_SPAM">Eliminaţi din lista de Spam</string>
+    <string name="STR_NMS_MENU_ADD_SHORTCUT">Adăugaţi comenzi rapide</string>
+    <string name="STR_NMS_MENU_VIEW_ALLMEDIA">Vizualizaţi toate fişierele</string>
+    <string name="STR_NMS_MENU_VIEW_ALLLOCATION">Vizualizaţi toate locaţiile</string>
+    <string name="STR_NMS_MENU_EDIT_GROUP">Editaţi grupul</string>
+    <string name="STR_NMS_MENU_CHAT_SETTING">Setările chatului</string>
+    <string name="STR_NMS_MENU_INSERT_QUICK_TEXT">Introduceţi text rapid</string>
+    <string name="STR_NMS_MENU_CLEAR_HISTORY">Ştergeţi istoricul discuţiei</string>
+    <string name="STR_NMS_MENU_LEAVE_GROUP">Părăsiţi acest grup</string>
+    <string name="STR_NMS_MENU_DISCARD">Renunţaţi</string>
+    <string name="STR_NMS_MENU_DELETE">Ştergeţi</string>
+    <string name="STR_NMS_MENU_IMPORTANT">Semnalizaţi ca important</string>
+    <string name="STR_NMS_MENU_FORWARD">Redirecţionaţi</string>
+    <!-- chat details actionBar option end -->
+
+
+    <!-- chat details share item start -->
+    <string name="STR_NMS_TAKE_PHOTO">Faceţi Poză</string>
+    <string name="STR_NMS_RECORD_VIDEO">Înregistraţi Video</string>
+    <string name="STR_NMS_DRAW_SKETCH">Desenaţi o Schiţă</string>
+    <string name="STR_NMS_SHARE_CONTACT">Distribuiţi un Contact</string>
+    <string name="STR_NMS_CHOOSE_PHOTO">Alegeţi o Poză</string>
+    <string name="STR_NMS_CHOOSE_VIDEO">Alegeţi un Videoclip</string>
+    <string name="STR_NMS_RECORD_AUDIO">Înregistraţi Audio</string>
+    <string name="STR_NMS_SHARE_LOCATION">Distribuiţi Locaţia</string>
+    <string name="STR_NMS_CHOOSE_AUDIO">Alegeţi un Videoclip</string>
+    <string name="STR_NMS_SHARE_CALENDAR">Distribuiţi Calendarul</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_TITLE">Adăugaţi muzică</string>
+    <string name="STR_NMS_CHOOSE_RINGTONE_ITEM">Ton de apel</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_ITEM">Audio</string>
+    <string name="STR_NMS_INSERT_SDCARD">Vă rugăm să introduceţi cardul SD!</string>
+    <!-- chat details share item start -->
+
+
+    <!-- record audio start -->
+    <string name="STR_NMS_AUDIO_TIMER_FORMAT" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <string name="STR_NMS_AUDIO_LABLE">Înregistrare Notă Audio</string>
+    <string name="STR_NMS_RECORD_AUDIO_CONT">Apăsaţi pentru înregistrare</string>
+    <string name="STR_NMS_PLAY_AUDIO_CONT">Apăsaţi pentru derulare</string>
+    <string name="STR_NMS_ACTION_SEND">Trimiteţi</string>
+    <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
+    <string name="audio_db_artist_name">Înregistrările dvs.</string>
+    <string name="audio_db_album_name">Înregistrări audio</string>
+    <!-- record audio end -->
+
+
+    <!-- chat & group details screen start -->
+
+    <string name="STR_NMS_UNREAD_FORMAT">mesaje necitite %1$d</string>
+    <string name="STR_NMS_NOT_DELIVERED_TITLE">Nu a fost încă livrat</string>
+    <string name="STR_NMS_FAILED_TITLE">Trimite Eroare</string>
+    <string name="STR_NMS_GROUP_SUBTITLE">%1$s, +%2$d</string>
+    <string name="STR_NMS_GROUP_DEAD_SUBTITLE">%1$s, %2$d</string>
+    <string name="STR_NMS_SAVE_AS_DRAFT">Mesaj salvat ca schiţă</string>
+    <string name="STR_NMS_NO_SD_TITLE">Eroare card SD</string>
+    <string name="STR_NMS_CANT_SHARE">Cardul SD nu poate fi accesat. Toate aplicaţiile multimedia asociate cu acesta sunt temporar indisponibile şi nu pot fi utilizate.\n\n Vă rugăm să verificaţi cardul SD şi să încercaţi din nou mai târziu.</string>
+    <string name="STR_NMS_CANT_SAVE">Cardul SD nu este detectat, nu puteţi salva fişierul</string>
+    <string name="STR_NMS_SDSPACE_NOT_ENOUGH">Spaţiul disponibil pe cardul SD nu este suficient, nu puteţi salva fişierul</string>
+    <string name="STR_NMS_REAEND_ALL">Reluaţi totul de la început</string>
+    <string name="STR_NMS_FILE_LIMIT">Prea mare</string>
+    <string name="STR_NMS_LOAD_ALL_MESSAGE">Încărcaţi Toate Mesajele</string>
+    <string name="STR_NMS_DOWNLOAD_FAILED">Descărcarea a eşuat</string>
+    <string name="STR_NMS_INPUT_HINT">Conţinutul de intrare</string>
+    <string name="STR_NMS_INPUT_HINT_ISMS">Scrieţi mesaj iSMS</string>
+    <string name="STR_NMS_CAPTION_HINT">Scrieţi titluri</string>
+    <string name="STR_NMS_PROTOCOL_SMS">SMS</string>
+    <string name="STR_NMS_PROTOCOL_MMS">MMS</string>
+    <string name="STR_NMS_PROTOCOL_IP">iSMS</string>
+    <string name="STR_NMS_SWITCH_BOTTON">Comutaţi SIM</string>
+    <string name="STR_NMS_TURN_ON_BOTTON">Porniţi</string>
+    <string name="STR_NMS_SWITCH_TEXT_FORMAT">Pentru a discuta în grup, treceţi la primul SIM %1$s .</string>
+    <string name="STR_NMS_ENABLE_TEXT_FORMAT">Pentru a continua discuţia în grup, porniţi serviciul iSMS pe primul SIM %1$s.</string>
+    <string name="STR_NMS_REPLACE_ATTACH_TITLE">Înlocuiţi ataşamentul</string>
+    <string name="STR_NMS_REPLACE_ATTACH_MSG">Există dela un ataşament, doriţi să înlocuiţi?</string>
+    <string name="STR_NMS_TRUNC_CAPTION">Titlul a fost trunchiat.</string>
+    <string name="STR_NMS_MAX_CHARACTERS_REACHED">Limita de dimensiune a mesajului a fost atinsă.</string>
+    <string name="STR_NMS_MAX_EMOTICON_REACHED">A atins limitele de emoticoane</string>
+    <string name="STR_NMS_ENABLE_PROCESS">Procesează...</string>
+    <string name="STR_NMS_ERR_FILE">Fişier invalid </string>
+    <string name="STR_NMS_SENDING_TEXT">Se trimite...</string>
+    <!-- chat & group details screen end -->
+    <!-- Error code tips -->
+    <string name="STR_NMS_ERR_GENERAL">Eroare generală</string>
+    <string name="STR_NMS_ERR_INVALID_ARGUMENT">Argument invalid</string>
+    <string name="STR_NMS_ERR_NETWORK_BLOCK">Reţeaua nu este OK</string>
+    <string name="STR_NMS_ERR_PHONE_NOT_ACTIVATED">Nu este activat</string>
+    <string name="STR_NMS_ERR_SIM_NOT_ACTIVATED">Cardul SIM nu este activat</string>
+    <string name="STR_NMS_ERR_INVALID_MSG_DB_ID">Mesaj invalid DB Id</string>
+    <string name="STR_NMS_ERR_ADD_MSG_DB_FAILED">Eroare de introducere în DB</string>
+    <string name="STR_NMS_ERR_UPDATE_MSG_DB_FAILED">Eroare în actualizarea DB</string>
+    <string name="STR_NMS_ERR_GET_MSG_DB_DATA_FAILED">Eroare în preluarea mesajului</string>
+    <string name="STR_NMS_ERR_INVALID_CONTACT_DB_ID">Contact DB Id invalid </string>
+    <string name="STR_NMS_ERR_ADD_CONTACT_DB_FAILED">Eroare de introducere la contact</string>
+    <string name="STR_NMS_ERR_UPDATE_CONTACT_DB_FAILED">Eroare în actualizarea contactului DB</string>
+    <string name="STR_NMS_ERR_GET_CONTACT_DB_DATA_FAILED">Eroare în recepţionarea contactului după Id</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_ERROR_FORMAT">IP invalid pentru Formatul Mesajului</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_INVALID_TO">Destinatar invalid </string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_WITH_UNKNOWN_USER">Utilizator destinatar invalid necunoscut</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_NO_MBMBER">Nu există membri ai grupului de discuţie</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_GCHAT_DEAD">Grupul de discuţie nu este activat</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_INVALID_SIM_ID">Cardul SIM pentru grupul de discuţie nu este cardul SIM curent</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_FOR_SYS_MSG">Trimiteţi din nou mesajul</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_INVALID_STATUS">Mesajul IP nu este gata</string>
+    <string name="STR_NMS_ERR_GCHAT_IS_DEAD">Acest grup de discuţie nu mai este acolo</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBERS">Grup de membrii invalid </string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBER_WITH_SELF">Eroare în crearea grupului Membrii nu trebuie să vă includă pe dvs.</string>
+    <string name="STR_NMS_ERR_GCHAT_EXCEED_MAX_MEMBER_COUNT">Numărul de membri ai grupului a atins limita</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_NAME">Nume invalid pentru grupul de discuţie</string>
+    <string name="STR_NMS_ERR_GCHAT_SIM_IS_NOT_ACTIVATED">Cardul SIM pentru grupul de discuţie nu este activat.</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_NOT_INBOX_MSG">Eroare în descărcarea URL-ului</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_INVALID_URL">Descărcare URL invalidă</string>
+    <string name="STR_NMS_ERR_GET_ATTACH_NAME_INVALID_BODY_FORMAT">Eroare în descărcarea numelui fişierului</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_INVALID_FILE_NAME">Descărcare invalidă pentru numele fişierului</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_EXIST">Fişierul descărcat nu există</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_INBOX_MSG">Eroare în descărcarea fişierului</string>
+    <string name="STR_NMS_ERR_SIM_INFO_NOT_FOUND">Informaţiile de pe cardul SIM nu au fost găsite</string>
+    <string name="STR_NMS_ERR_SIM_IN_INVALID_STATUS">Card SIM invalid</string>
+    <string name="STR_NMS_ERR_CMD_PROCESSING">Sistemul este ocupat, și nu se poate face cu comanda de configurare sistem</string>
+    <string name="STR_NMS_ERR_CMD_GENERAL">Eroare generală de configurare a sistemului</string>
+    <string name="STR_NMS_ERR_CODE_END">Cod de eroare necunoscut</string>
+    <!-- Error code tips -->
+    <string name="STR_NMS_SEND_MMS_QUERY_TITLE">Avertisment</string>
+    <string name="STR_NMS_SEND_MMS_QUERY">Destinatarul nu este un utilizator iSMS, poate trimite prin MMS?</string>
+    <!-- Service center start -->
+    <string name="STR_NMS_SERVICE_TITLE">Centrul de servicii iSMS</string>
+    <string name="STR_NMS_INTRODUCTION">Cu isme, puteți oferi instantaneu mesaje gratuite, și păstrează istoricul de chat într-un singur loc, apăsați pe un buton, vine noua experienta!Cu isme, puteți oferi instantaneu mesaje gratuite, și păstrează istoricul de chat într-un singur loc, apăsați pe un buton, vine noua experienta!C</string>
+    <string name="STR_NMS_TERMS">Termeni şi Condiţii</string>
+    <string name="STR_NMS_ACTIVATION_BUTTON">Activarea are loc acum</string>
+    <string name="STR_NMS_LOSE_SDCARD">Cardul SD nu poate fi detectat</string>
+    <!-- Service center end -->
+
+
+    <!-- conversation empty tips -->
+    <string name="STR_NMS_SPAM_EMPTY">Nu aveţi nicio conversaţie spam. \n SPAM-ul colectează toate conversaţiile ce sunt marcate ca spam. Notificarea va fi oprită în mod implicit. Acest lucru va evita pentru dvs. deranjamentele inutile. \n\n Puteţi marca un expeditor ca spam purtând o conversaţie şi selectând simbolul Marchează ca spam. Când o conversaţie este marcată ca spam, o pictogramă de notificare va fi afişată în mod automat, iar conversaţia va fi plasat aici.</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_FROM">+86123456789</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_SUBJECT">Acesta este un exemplu de mesaj spam.</string>
+    <string name="STR_NMS_GROUPCHAT_EMPTY">Nu aveţi niciun mesaj în grupul de discuţii. \n Discuţiile de grup colectează toate mesajele de grup care sunt create de dvs. sau la care v-aţi alăturat. Acest lucru vă permite să găsiţi şi să gestionaţi uşor discuţiile de grup. \n\n Pentru a crea un grup de discuţii, aveţi posibilitatea să apăsaţi în partea de jos a ecranului butonul Crează un grup de discuţii şi invitaţi prietenii dvs. să se alăture grupului.</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_FROM">Numele grupului</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_SUBJECT">Prietenul dvs: \n Îmi place posibilitatea de a discuta în grup!</string>
+    <string name="STR_NMS_IMPORTANT_EMPTY">Nu aveţi niciun mesaj important. \n IMPORTANT colectează toate mesajele marcate ca importante. Acest lucru vă permite să găsiţi uşor mesajele importante. \n\n Puteţi marca un mesaj ca fiind important, prin accesarea mesajului şi selectând din meniul de opţiuni Marchează ca fiind important . Când un mesaj este marcat ca fiind important, veţi vedea o pictogramă cu steag rosu aşa cum vedeţi mai jos.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TITLE">Acesta este un exemplu de mesaj semnalizat ca fiind important. Va apărea un steag roşu.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TIME">10:55 am</string>
+    <string name="STR_NMS_ALLCHAT_EMPTY">Nicio conversaţie</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_CONTENT">Pentru a utiliza această caracteristică trebuie să activaţi mai întâi serviciul iSMS. Nu vă faceţi griji - dacă nu vă place serviciul, aveţi posibilitatea să-l opriţi oricând din Setări. Încercaţi-l acum!</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_TITLE">Activaţi iSMS</string>
+    <!-- conversation empty tips -->
+    
+    <string name="STR_NMS_CLEAR_USER_DATA">Ştergeţi datele cu succes</string>
+    
+    <!-- get file err start -->
+    <string name="STR_NMS_NO_SUCH_FILE">Niciun astfel de fişier</string>
+    <string name="STR_NMS_OVER_FILE_LIMIT">Dimensiunea fişierului depăşeşte limita</string>
+    <string name="STR_NMS_INVALID_FILE_TYPE">Nu acceptă acest format</string>
+    <!-- get file err end -->
+
+    <string name="STR_NMS_DELIVERY_BODY">Mesaj primit de către %s</string>
+    <string name="STR_NMS_SIM_SELECT_TITLE">Selectaţi SIM-ul</string>
+    
+    <string name="STR_NMS_SHORTCUT_SUCCESS">Comandă rapidă %1$s a fost creată.</string>
+    <string name="STR_NMS_SHORTCUT_REFRESHING">Actualizând</string>
+    
+    <string name="STR_NMS_DISABLE_FAILED">Operaţiunea a eşuat, vă rugăm să încercaţi din nou</string>
+    <string name="STR_NMS_ENABLE_FAILED">Operaţiunea a eşuat, vă rugăm să încercaţi din nou</string>
+    <string name="STR_NMS_ENABLE_SUCCESS">Aţi activat cu succes serviciile iSMS</string>
+    <string name="STR_NMS_DISABLE_SUCCESS">Aţi dezactivat cu succes serviciile iSMS</string>
+    
+	<string name="STR_NMS_SD_CARD_FULL">Card SD plin</string>
+    <string name="STR_NMS_SEND_MSG_FAILED">Trimiterea mesajului a eşuat!</string>
+    <string name="STR_NMS_SELECT_AUDIO">Selectaţi audio</string>
+    
+    <string name="STR_NMS_SETTING_COMMENT">iSMS este un instrument cool de conversaţie. Este gratuit şi convenabil.Aflați mai multe</string>
+    <string name="STR_NMS_KNOW_MORE">Aflați mai multe</string>
+    <string name="STR_NMS_RECEIVED_MSG_DETAILS">Tipul: Mesaj IP\n De la: %1$s\nTrimis: %2$s\nPrimit: %3$s</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH_ADD">Serviciul iSMS este temporar indisponibil din cauza lipsei de spațiu de stocare.</string>
+    <string name="STR_NMS_SERVER_AUTO_ECHO_MSG">Mesajul primit. Vă mulțumim!</string>
+    
+    <string name="imsp_ip_message">Mesaje iSMS</string>
+    <string name="imsp_invite_chat_frequently"><b>Discutaţi frecvent cu %s?</b>\nDe ce nu invitaţi pe %s să folosească serviciul iSMS ca să economisiţi împreună bani?</string>
+    <string name="imsp_enable_chat_frequently"><b>Serviciul iSMS al lui %s este dezactivat!</b>\nDe ce nu activaţi serviciul dvs. iSMS ca să economisiţi împreună bani?</string>
+    <string name="imsp_invite">Invitaţi</string>
+    <string name="imsp_enable_notice">Sigur doriţi să dezactivaţi serviciul iSMS?</string>
+    <string name="imsp_activate_chat_frequently">Discutaţi frecvent cu prietenii ? \nDe ce nu activaţi serviciul iSMS ca să puteţi vorbi fără a mai plăti SMS-uri?</string>
+    <string name="imsp_activate_note">Sigur doriţi să activaţi serviciul iSMS?</string>
+    <string name="imsp_dismiss_content">Sigur doriţi să respingeţi mesajul?</string>
+    <string name="imsp_divider_online">%s este Online</string>
+    <string name="imsp_divider_offline">Ultima data online la %s</string>
+    <string name="imsp_divider_never_online">Niciodată online</string>
+    <string name="imsp_failed_title">Trimitere eşuată</string>
+    <string name="imsp_resend_via_sms">În schimb trimiteţi SMS</string>
+    <string name="imsp_resend_via_mms">În schimb trimiteţi MMS</string>
+    <string name="imsp_typing_text">Scrie</string>
+    <string name="imsp_save_attachment">Salvaţi ataşamentul</string>
+    <string name="imsp_view">Vizualizaţi</string>
+    <string name="imsp_convert_to_mms">Convertiţi la MMS.</string>
+    <string name="imsp_convert_to_sms">Convertiţi la SMS.</string>
+    <string name="imsp_convert_to_isms">Convertiţi la iSMS.</string>
+    <string name="imsp_convert_to_mms_for_service">Serviciul iSMS nu este disponibil de pe acest card SIM selectat. Acest mesaj poate fi trimis doar prin MMS de pe acest card SIM. Continuaţi oricum?</string>
+    <string name="imsp_convert_to_sms_for_service">Serviciul iSMS nu este disponibil de pe acest card SIM selectat. Acest mesaj poate fi trimis doar prin SMS de pe acest card SIM. Continuaţi oricum?</string>
+    <string name="imsp_convert_to_mms_for_recipients">Destinatarul(ii) nu este(sunt) utilizator(i)  iSMS. Acest mesaj poate fi trimis doar prin MMS. Continuaţi oricum?</string>
+    <string name="imsp_convert_to_sms_for_recipients">Destinatarul(ii) nu este(sunt) utilizator(i)  iSMS. Acest mesaj poate fi trimis doar prin SMS. Continuaţi oricum?</string>
+    <string name="imsp_sms_convert_to_isms">Serviciul iSMS este disponibil de pe acest card SIM selectat. Pentru a salva tariful SMS-ului, se sugerează trecerea mesajulului la iSMS. Schimbaţi acum?</string>
+    <string name="imsp_mms_convert_to_isms">Serviciul iSMS este disponibil de pe acest card SIM selectat. Pentru a salva tariful MMS-ului, se sugerează trecerea mesajulului la iSMS. Schimbaţi acum?</string>
+    <string name="imsp_keep_mms">Păstraţi MMS-ul</string>
+    <string name="imsp_keep_sms">Păstraţi SMS-ul</string>
+    <string name="imsp_resend_discard_message">Pentru a retrimite mesajul, mesajul dvs. în curs de scriere va fi şters.</string>
+    <string name="imsp_no_sim_card"> Niciun card SIM</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">&quot;Nu există conexiune la internet! Vă rugăm să încercaţi mai târziu.&quot;</string>
+    <string name="imsp_chat_setting_updating">se actualizează...</string>
+    <string name="imsp_dialog_clear_title">Ştergeţi</string>
+    <string name="imsp_dialog_clear_description">Tot istoricul discuţiei va fi şters în această fereastră</string>
+    <string name="imsp_chat_setting_saving">se salvează...</string>
+    <string name="imsp_chat_setting_sending">se trimite...</string>
+    <string name="imsp_save_chat_history_failed">salvare eşuată</string>
+    <string name="imsp_send_chat_history_failed">E-mail eşuat</string>
+    <string name="imsp_conversation_list_all">Mesaje</string>
+    <string name="imsp_conversation_list_important">Important</string>
+    <string name="imsp_conversation_list_group_chats">Grup</string>
+    <string name="imsp_conversation_list_spam">Spam</string>
+    <string name="imsp_mark_as_spam_tips">Mesajele marcate ca Spam vor fi mutate în lista de Spam şi notificarea se va opri în mod automat.</string>
+    <string name="imsp_typing">&quot;Tastarea...&quot;</string>
+    <string name="imsp_type_to_compose_text">&quot;Tastaţi mesajul SMS/iSMS&quot;</string>
+    <string name="imsp_no_sdcard">Niciun card SD</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">Pentru a trimite o invitaţie, mesajele în curs de scriere vor fi eliminate.</string>
+    <string name="imsp_current_sim_enabled">SIM-ul actual este activat.</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">Selectaţi SIM-ul pentru activarea serviciului iSMS</string>
+    <string name="imsp_activate_message">Această funcţie este acceptată numai prin serviciul iSMS. Activaţi contul dvs. iSMS acum?</string>
+    <string name="imsp_enable_message">Această funcţie este acceptată numai prin serviciul iSMS. Dezactivaţi contul dvs. iSMS acum?</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">Selectaţi SIM-ul pentru a dezactiva serviciul iSMS</string>
+    <string name="imsp_switch_sim_title">Schimbaţi SIM-ul</string>
+    <string name="imsp_switch_sim_message">SIM-ul actual nu acceptă serviciul iSMS. Schimbaţi cu alt SIM?</string>
+    <string name="imsp_switch_sim_successfully">Schimbarea SIM-ului s-a efectuat cu succes!</string>
+    <string name="imsp_dailog_multi_forward">Redirecţionarea Mesajelor</string>
+    <string name="imsp_dialog_send_result">Trimiteţi Rezultatul</string>
+    <string name="imsp_dlg_send_all">Toţi: %s</string>
+    <string name="imsp_dlg_send_sucess">Trimis: %s</string>
+    <string name="imsp_dlg_send_failed">Eşuat: %s</string>
+    <string name="imsp_multi_forward_sim_info">Obţinerea informaţiilor SIM</string>
+    <string name="imsp_multi_forward_no_sim">Nicio informaţie SIM</string>
+    <string name="imsp_get_sim_failed">Obţinerea informaţiilor SIM a eşuat</string>
+    <string name="imsp_sim_status_error">Erori de stare SIM</string>
+    <string name="imsp_forward_norecipients">Nu există niciun destinatar pentru transmiterea mesajului</string>
+    <string name="imsp_multiforward_no_message">Nu există niciun mesaj pentru a fi transmis</string>
+    <string name="imsp_need_input_recipients">Mai întâi vă rugăm să specificaţi cel puţin un destinatar </string>
+    <string name="imsp_spam_empty">Nu aveţi nicio conversaţie spam. \n SPAM-ul colectează toate conversaţiile ce sunt marcate ca spam. Notificarea va fi oprită în mod implicit. Acest lucru va evita pentru dvs. deranjamentele inutile. \n\n Puteţi marca un expeditor ca spam purtând o conversaţie şi selectând simbolul Marchează ca spam. Când o conversaţie este marcată ca spam, o pictogramă de notificare va fi afişată în mod automat, iar conversaţia va fi plasat aici.</string>
+    <string name="imsp_groupchat_empty">Nu aveţi niciun mesaj în grupul de discuţii. \n Discuţiile de grup colectează toate mesajele de grup care sunt create de dvs. sau la care v-aţi alăturat. Acest lucru vă permite să găsiţi şi să gestionaţi uşor discuţiile de grup. \n\n Pentru a crea un grup de discuţii, aveţi posibilitatea să apăsaţi în partea de jos a ecranului butonul Crează un grup de discuţii şi invitaţi prietenii dvs. să se alăture grupului.</string>
+    <string name="imsp_important_empty">Nu aveţi niciun mesaj important. \n IMPORTANT colectează toate mesajele marcate ca importante. Acest lucru vă permite să găsiţi uşor mesajele importante. \n\n Puteţi marca un mesaj ca fiind important, prin accesarea mesajului şi selectând din meniul de opţiuni Marchează ca fiind important . Când un mesaj este marcat ca fiind important, veţi vedea o pictogramă cu steag rosu aşa cum vedeţi mai jos.</string>
+    <string name="imsp_allchat_empty">Nicio conversaţie</string>
+    <string name="imsp_attach_slideshow">Expunere de diapozitiv</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">Se descarcă....</string>
+    <string name="imsp_invite_friends_to_ipmsg">Invitaţi-vă prietenii să folosească iSMS</string>
+    <string name="imsp_multi_forward_tips_content">Pentru a face redirecţionări multiple, unele iSMS-uri trebuie să fie în primul rând descărcate.</string>
+    <string name="imsp_multi_forward_failed_part">Redirecţionarea unor iSMS-uri a eşuat.</string>
+
+</resources>

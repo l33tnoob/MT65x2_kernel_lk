@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binaee_core_forwarder Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type aee_core_forwarder_exec , exec_type, file_type;
+type aee_core_forwarder ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive aee_core_forwarder;
+init_daemon_domain(aee_core_forwarder)
+
+
+# 20131122 Add Set Property Rule
+allow aee_core_forwarder  property_type:property_service set;

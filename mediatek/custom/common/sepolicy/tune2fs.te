@@ -1,0 +1,28 @@
+# ==============================================
+# Policy File of /sbintune2fs Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type tune2fs_exec , exec_type, file_type;
+type tune2fs ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive tune2fs;
+
+
+# 20131122 Add Set Property Rule
+allow tune2fs  property_type:property_service set;

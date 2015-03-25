@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binflash_image Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type flash_image_exec , exec_type, file_type;
+type flash_image ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive flash_image;
+init_daemon_domain(flash_image)
+
+
+# 20131122 Add Set Property Rule
+allow flash_image  property_type:property_service set;

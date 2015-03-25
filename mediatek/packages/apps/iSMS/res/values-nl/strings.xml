@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="STR_NMS_MAIN">iSMS</string>
+    <string name="STR_NMS_HISSAGE">iSMS</string>
+    <string name="STR_NMS_INVITE_SMS_CONTENT">Hallo, iSMS is een coole tool voor chatten.Deze is gratis en handig. Ga naar http://isms.hissage.com om meer te weten te komen.</string>
+    <string name="STR_NMS_NO_SDCARD">SD-kaart niet opgemerkt, sommige handelingen zijn door iSMS niet toegestaan.</string>
+    <string name="STR_NMS_MOUNT_SDCARD">SD-kaart is voor gebruik beschikbaar.</string>
+    <string name="STR_NMS_SEND_MMS_FAIL">Niet in staat om boodschap te sturen. Deze al automatisch verstuurd worden, als het netwerk beschikbaar is.</string>
+    <string name="STR_NMS_RECV_MMS_FAIL">Niet in staat te downloaden. Probeer het later opnieuw.</string>
+    <string name="STR_NMS_GROUP_CHAT_ME">mij</string>
+    <string name="STR_NMS_GROUP_CHAT_I">Ik</string>
+    <string name="STR_NMS_GROUP_CHAT_YOU">Jij</string>
+    <string name="STR_NMS_GROUP_CREATE_MSG">%1$s nodigt %2$s uit voor groeps-chatten</string>
+    <string name="STR_NMS_GROUP_ADD_MSG">%1$s heeft zich bij groeps-chat aangesloten.</string>
+    <string name="STR_NMS_GROUP_DELETE_MSG">%1$s verwijdert %2$s uit groeps-chat</string>
+    <string name="STR_NMS_GROUP_QUITE_MSG">%1$s heeft de groeps-chat verlaten.</string>
+    <string name="STR_NMS_GROUP_CHAT_PLACE_HOLDER_MSG_BODY">U hebt u bij de groep gevoegd.</string>
+    <string name="STR_NMS_PICTURE">foto</string>
+    <string name="STR_NMS_TAPE">audio</string>
+    <string name="STR_NMS_VCARD">contact</string>
+    <string name="STR_NMS_LOCATION">locatie</string>
+    <string name="STR_NMS_SKETCH">schets</string>
+    <string name="STR_NMS_VIDEO">video</string>
+    <string name="STR_NMS_CALENDAR">kalender</string>
+    <string name="STR_NMS_UNKNOWN">onbekend</string>
+    <string name="STR_NMS_READ_MODE_PIC">een afbeelding</string>
+    <string name="STR_NMS_READ_MODE_TAPE">een geluidsopmerking</string>
+    <string name="STR_NMS_READ_MODE_VCARD">contacten</string>
+    <string name="STR_NMS_READ_MODE_LOCATION">een locatie</string>
+    <string name="STR_NMS_READ_MODE_SKETCH">een schets</string>
+    <string name="STR_NMS_READ_MODE_VIDEO">een video</string>
+    <string name="STR_NMS_READ_MODE_CALENDAR">een kalender</string>
+    <string name="STR_NMS_ISMS_ENABLE">(SMS activeren)</string>
+    <string name="STR_NMS_READ_MODE_UNKNOWN">een onbekend bestand</string>
+    <string name="STR_NMS_ALL_MSG">Alle boodschappen</string>
+    <string name="STR_NMS_SAVED">Opgeslagen</string>
+    <string name="STR_NMS_BLOCKMSG">Geblokkeerd</string>
+    <string name="STR_NMS_SMS_TYPE">SMS</string>
+    <string name="STR_NMS_NO_SIM">SIM-kaart is niet opgemerkt</string>
+    <string name="STR_NMS_ILLEGAL_ADDRESS">Ongeldig getal</string>
+    <string name="STR_NMS_REMIND_USER_SET_NAME">Werk uw profiel bij.</string>
+    <string name="STR_NMS_OK">OK</string>
+    <string name="STR_NMS_BACK">Terug</string>
+    <string name="STR_NMS_CANCEL">Annuleren</string>
+    <string name="STR_NMS_NETWORK_UNAVL">Zorg voor een werkende data-verbinding, bijvoorbeeld 3G, GPRS or Wi-Fi</string>
+    <string name="STR_NMS_TODAY">Vandaag</string>
+    <string name="STR_NMS_YESTERDAY">Gisteren</string>
+    <string name="STR_NMS_NOW">Nu</string>
+    <string name="STR_NMS_NO_SIM_CARD">SIM-kaart niet opgemerkt, u moet eerst SIM-kaart insteken.</string>
+    <string name="STR_NMS_NO_CONNECTION">Netwerk is niet beschikbaar of vluchtmodus staat aan. Ga dit na.</string>
+    <string name="STR_NMS_ATTACH_SHARE">%1$s gedeeld %2$s</string>
+    <string name="STR_NMS_WAIT">Even geduld a.u.b...</string>
+    <string name="STR_NMS_TIPTITLE">Tip</string>
+
+    <string name="STR_NMS_OPEN">Openen</string>
+    <string name="STR_NMS_PLAY">Afspelen</string>
+    
+    <string name="STR_NMS_SETTING_COMMENT">iSMS is een coole tool voor chatten.Deze is gratis en handig. Meer info</string> 
+    <string name="STR_NMS_KNOW_MORE">Meer info</string>    
+    <string name="STR_NMS_RECEIVED_MSG_DETAILS">Type: IP-bericht\nVan: %1$s\nVerstuurd: %2$s\nOntvangen: %3$s</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH_ADD">SMS service is tijdelijk niet beschikbaar wegens gebrek aan opslagruimte.</string>
+    <string name="STR_NMS_SERVER_AUTO_ECHO_MSG">Bericht ontvangen. Bedankt!</string>
+
+    <string name="STR_NMS_VCARD_NAME">%1$s contacten</string>
+    <string name="STR_NMS_SHARE_VCARD_FAILED">contact delen mislukt</string>
+
+    <!-- upgrade info -->
+    <string name="STR_NMS_UPGRADE_TICKER">Upgrade van versie</string>
+    <string name="STR_NMS_UPGRADE_ERROR_TITLE">Fout bij upgrade</string>
+    <string name="STR_NMS_UPGRADE_ERROR_CONTENT">fout upgrade, voer upgrade uit in iSMS-client</string>
+    <string name="STR_NMS_INSTALLED_TITLE">Succes upgrade</string>
+    <string name="STR_NMS_INSTALLED_CONTENT">Upgrade naar telefoon succesvol</string>
+    <string name="STR_NMS_PROMPT_DLG_TITLE">Nieuwe versie opgemerkt</string>
+    <string name="STR_NMS_PROMPT_DLG_DOWNLOAD">Downloaden</string>
+    <string name="STR_NMS_PROMPT_DLG_LATER">Later</string>
+    <string name="STR_NMS_UPGRADING">Bezig met upgraden</string>
+    <string name="STR_NMS_UPGRADE_TIME">Laatste controle: %s</string>
+    
+    <!-- ext protocol -->
+    <string name="STR_NMS_OFFLINE_URL">http://ismsi.hissage.com/webservice/nmsmail/notifyOffline.php</string>
+    
+    <!-- Activation start -->
+    <string name="STR_NMS_PRELOAD_IP_MSG_CONTENT">&quot;Welkom bij iSMS.&quot;</string>
+    <string name="STR_NMS_ACTIVAT_TITLE">iSMS zal een eenmalige SMS sturen om uw telefoonnummer te verifiëren. Mogelijk zal uw telcombedrijf u daarvoor kosten berekenen.</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE">Verifieer uw telefoonnummer.</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE2">Verifieer uw telefoonnummer.</string>
+    <string name="STR_NMS_YOUR_COUNTRY_TITLE">UW LAND</string>
+    <string name="STR_NMS_YOUR_PHONE_TITLE">UW TELEFOONNUMMER</string>
+    <string name="STR_NMS_VERIFY_FAIL_TITLE">SMS-verficatie mislukt.</string>
+    <string name="STR_NMS_VERIFY_FAIL_CONTENT">Ga na, dat uw telefoonnummer goed is ingevoerd.</string>
+    <string name="STR_NMS_WORKING_SMS_TIP">Zorg dat u een werkend SMS-plan hebt.</string>
+    <string name="STR_NMS_VERIFYING">Bezig met wachten om automatisch een SMS op te merken gestuurd naar</string>
+    <string name="STR_NMS_RETRY">Opnieuw</string>
+    <string name="STR_NMS_EDIT_NUMBER">Nummer bewerken</string>
+    <string name="STR_NMS_UPDATE_PROFILE">Profiel bijwerken</string>
+    <string name="STR_NMS_START_ISMS">iSMS starten</string>
+    <string name="STR_NMS_SEND">Versturen</string>
+    <string name="STR_NMS_CONGRATULATIONS_TITLE">Gefeliceerd!</string>
+    <string name="STR_NMS_CONGRATULATIONS_CONTENT">Dank u voor het activeren van iSMS.\U kunt nu starten om te genieten van de service.\nGelukkige iSMS!</string>
+    <string name="STR_NMS_WELCOME_BACK">Welkom terug.</string>
+    <string name="STR_NMS_SEND_SMS_FAIL">Verivicatie mislukt, controleer:\n  1. Telefoonnummer is juist;\n  2. Beveiligingssoftware is uitgeschakeld;\n  3. Andere mogelijk redenen om sturen van SMS te blokkeren.\nZorg ervoor en probeer het later opnieuw.</string>
+    <string name="STR_NMS_ACTIVE">iSMS activeren</string>
+    <string name="STR_NMS_WELCOME_ACTIVE">Welkom bij iSMS.</string>
+    <string name="STR_NMS_CONNECTING">Bezig met verbinden...</string>
+    <!-- Activation end -->
+
+
+    <!-- Notification start -->
+    <string name="STR_NMS_NEW_MSG_TITLE">Nieuw iSMS-bericht</string>
+    <string name="STR_NMS_NEW_SMG_CONTENT">%d ongelezen bericht</string>
+    <!-- Notification End -->
+
+    <string name="STR_NMS_MSG_DUMPER_MSG_SMS">SMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_MMS">MMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_IP">IP-bericht</string>
+    <string name="STR_NMS_MSG_DUMPER_SEND_MSG">Verstuurd %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_RECEIVE_MSG">Ontvangen %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TIME">Tijd: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TEXT">Tekst</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_PIC">Foto</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_SKETCH">Schets</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VOICE">Stem</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VIDEO">Video</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CALENDAR">Kalender</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION_IMG">Locatiefoto</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VCARD">Vkaart</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION">Locatie</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CAPTION">Bijschrift: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_URL">URL: </string>
+    <string name="STR_NMS_MSG_DUMPER_DURATION">Duur: </string>
+    <string name="STR_NMS_MSG_DUMPER_COORDINATE">Coördinaat: </string>
+    <string name="STR_NMS_MSG_DUMPER_ADDRESS">Adres: </string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_SENDER">Afzender: </string>
+    <string name="STR_NMS_MSG_DUMPER_NORMAL_DETAIL">Sessiedetail:</string>
+    <string name="STR_NMS_MSG_DUMPER_NAME">Naam: </string>
+    <string name="STR_NMS_MSG_DUMPER_NUMBER">Nummer: </string>
+    <string name="STR_NMS_MSG_DUMPER_PORTRAIT">Portret</string>
+    <string name="STR_NMS_MSG_DUMPER_MULTI_SEND_DETAIL">Broadcasten:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_DETAIL">Groeps-chat:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_CREATER">Maker: </string>
+    <string name="STR_NMS_MSG_DUMPER_MEMBERS">Leden: </string>
+    <string name="STR_NMS_MSG_DUMPER_VCARD_NAME">Naam: </string>
+    <string name="STR_NMS_MSG_DUMPER_CALENDAR_SUMMARY">Samenvatting: </string>
+
+    <!-- Chat Settings -->
+    <string name="STR_NMS_CHAT_SETTING_TITLE">Instellingen chat</string>
+    <string name="STR_NMS_DISPLAY">Weergave</string>
+    <string name="STR_NMS_CHAT_WALLPAPER">Behang chat</string>
+    <string name="STR_NMS_SYS_WALLPAPER">Selecteer behang</string>
+    <string name="STR_NMS_CAMEARPHOTO">Neem een foto</string>
+    <string name="STR_NMS_SYS_GALLERY">Selecteer uit galerij</string>
+    <string name="STR_NMS_DEFAULT_WALLPAPER">Standaard</string>
+    <string name="STR_NMS_NOTIFICATION_CATEGORY">Melding</string>
+    <string name="STR_NMS_NOTIFICATION_TITLE">iSMS-melding</string>
+    <string name="STR_NMS_NOTIFICATION_CONTENT">Tonen, wanneer meldingen ontvangen worden</string>
+    <string name="STR_NMS_MUTE">Zonder geluid</string>
+    <string name="STR_NMS_MUTE_OFF">Uit</string>
+    <string name="STR_NMS_MUTE_1">Zonder geluid gedurende 1 uur</string>
+    <string name="STR_NMS_MUTE_4">Zonder geluid gedurende 4 uur</string>
+    <string name="STR_NMS_MUTE_8">Zonder geluid gedurende 8 uur</string>
+    <string name="STR_NMS_RINGTONE_TITLE">Ringtoon</string>
+    <string name="STR_NMS_RINGTONE_CONTENT">Ringtoon instellen voor nieuwe meldingen </string>
+    <string name="STR_NMS_VIBRATE_TITLE">Trillen</string>
+    <string name="STR_NMS_VIBRATE_CONTENT">Trillen, wanneer meldingen ontvangen worden</string>
+    <string name="STR_NMS_ACTIONS">Acties</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_TITLE">Geschiedenis chat downloaden</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_CONTENT">Op SD-kaart in ZIP-formaat opslaan</string>
+    <string name="STR_NMS_EMAIL_HISTORY_TITLE">Geschiedenis e-mail chat</string>
+    <string name="STR_NMS_EMAIL_HISTROY_CONTENT">Geschieden is e-mail chat in ZIP-formaat</string>
+    <string name="STR_NMS_CLEAR_HISTROY">Geschiedenis chat wissen</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_DLG">Bezig met downloaden...</string>
+    <string name="STR_NMS_DOWNLOAD_OK">Geschiedenis chat downloaden is klaar, opslaan als %s</string>
+    <string name="STR_NMS_DOWNLOAD_ERROR">Fout geschiedenis chat downloaden.</string>
+    <string name="STR_NMS_DOWNLOAD_EMPTY">Niet te downloaden.</string>
+    <string name="STR_NMS_CLEARING">Historie wissen, even geduld a.u.b...</string>
+    <string name="STR_NMS_WAIT_SAVE_WALLPAPER">Bezig met opslaan behang, even geduld a.u.b...</string>
+    <string name="STR_NMS_SAVE_WALLPAPER_OK">Opslag behang succes.</string>
+    <string name="STR_NMS_CLEARDONE">Geschiedenis wissen is klaar.</string>
+    <string name="STR_NMS_SVAE_TITLE">Opslaan op SD-kaart</string>
+    <string name="STR_NMS_SAVE_CONTENT">Deze chat-thread opslaan op SD-kaart als ZIP-bestand.</string>
+    <string name="STR_NMS_EMAIL_TITLE">Delen via e-mail</string>
+    <string name="STR_NMS_EMAIL_CONTENT">Deze chat-thread delen als bijlage via e-mail in ZIP-formaat.</string>
+
+    <!-- Chat Settings End -->
+
+
+    <!-- Profile Settings -->
+    <string name="STR_NMS_PROFILE_TITLE">Profiel</string>
+    <string name="STR_NMS_TAP_AVATAR_TIP">Klop om profielafbeelding te bewerken</string>
+    <string name="STR_NMS_DISPLAY_NAME_TIP">NAAM WEERGEVEN</string>
+    <string name="STR_NMS_ACCOUNT_TIP">ISMS-ACCOUNT</string>
+    <string name="STR_NMS_NO_APP">Geen toepassingen kunnen deze actie uitvoeren.</string>
+    <string name="STR_NMS_NO_NAME">Stel uw naam in.</string>
+    <string name="STR_NMS_SAVE_AVATAR_FAILD">Sorry, profielafbeelding opslaan mislukt.</string>
+    <string name="STR_NMS_INPUT_NAME">Naam</string>
+    <string name="STR_NMS_TERM_WARN_ACTIVATE">Deze functie wordt alleen ondersteund door iSMS-service.\n\niSMS is gratis service voor instant messaging, die u in staat stelt op elk willekeurg moment en op elke willekeurige plek te chatten en multimedia-content te delen met uw vrienden via een dataverbinding met internet (Wi-Fi, 2G/3G, etc.).\nWanneer u deze voor het eerst activeert, zal iSMS automatisch een SMS sturen om de registratie te voltooien. SMS-quota/kosten kunnen van toepassing zijn.\n\n Gebruikersovereenkomst\n</string>
+    <string name="STR_NMS_TERM_WARN_WELCOME">iSMS is gratis service voor instant messaging, die u in staat stelt op elk willekeurg moment en op elke willekeurige plek te chatten en multimedia-content te delen met uw vrienden via een dataverbinding met internet (Wi-Fi, 2G/3G, etc.).\nWanneer u deze voor het eerst activeert, zal iSMS automatisch een SMS sturen om de registratie te voltooien. SMS-quota/kosten kunnen van toepassing zijn.\n\n Gebruikersovereenkomst\n</string>
+    <string name="STR_NMS_TERM_KEY">Termen en condities</string>
+    <string name="STR_NMS_AGREE_AND_CONTINUE">Instemmen en doorgaan</string>
+    <string name="STR_NMS_ACTIVE_BNT">Activeren</string>
+    <string name="STR_NMS_SET_PROFILE_OK">Profiel is met succes ingesteld</string>
+    <string name="STR_NMS_SET_PROFILE_FAIL">Profiel instellen mislukt</string>
+    <string name="STR_NMS_ILLEGAL_PROFILE_NAME">Ongeldige naam</string>
+    <string name="STR_NMS_NO_ACTIVITED">Geen SIM-kaart geactiveer of ingeschakeld.</string>
+    <!-- Profile Settings End -->
+
+
+    <!-- Term Activity -->
+    <string name="STR_NMS_REJECT">Afwijzen</string>
+    <string name="STR_NMS_AGREE">Instemmen</string>
+    <string name="STR_NMS_TERM_TITLE">Termen van service</string>
+    <string name="STR_NMS_TERM_CONTENT">U begrijpt, dat de service en de software die binnen de service vervat zijn beveiligingscomponenten kunnen omvatten, die het digitale materialen toestaan om beschermd te worden en dat gebruik van deze materialen onderhevig is aan gebruiksregels ingesteld door PushMail en/of leveranciers van content, die content aan de service leveren. U kunt mogelijk gebruiksregels overschrijven of omzeilen, die in de service opgenomen zijn. Elke ongeautoriseerde reproductie, publicatie, verdere distributie of publieke tentoonstelling van de materialen die door de service worden geleverd, in zijn geheel of gedeeltelijk, is strikt verboden.</string>
+    <!-- Term Activity End -->
+
+
+    <!-- System Settings -->
+    <string name="STR_NMS_SYS_SETTING_TITLE">iSMS-bericht</string>
+    <string name="STR_NMS_SETTINGS_TITLE">PROFIEL</string>
+    <string name="STR_NMS_PREFERENCE_CATE">VOORKEUREN</string>
+    <string name="STR_NMS_SEND_SMS_TITLE">Een SMS versturen</string>
+    <string name="STR_NMS_SEND_SMS_CONTENT">Een SMS versturen, als iSMS niet beschikbaar is. De tarieven van uw provider voor berichten kan van toepassing zijn. Deze regel is niet van toepassing op groeps-chat.</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_TITLE">Automatisch downloaden</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_CONTENT">Automatisch multimedia-objecten downloaden</string>
+    <string name="STR_NMS_CAPTION_TITLE">Bijschriften</string>
+    <string name="STR_NMS_CAPTION_CONTENT">Bestand met bijschriften delen</string>
+    <string name="STR_NMS_SYSTEM_CATE">SYSTEEM</string>
+    <string name="STR_NMS_UPDATE_TITLE">Update software</string>
+    <string name="STR_NMS_UPDATE_CONTENT">Laatste controle: Nooit</string>
+    <string name="STR_NMS_NETWORK_USAGE_TITLE">Gebruik netwerk</string>
+    <string name="STR_NMS_NETWORK_USAGE_CONTENT">Op scherm totaal verstuurde/ontvangen data</string>
+    <string name="STR_NMS_NETWORK_DLG_CONTENT">Verstuurd: %1$.3f K \nOntvangen: %2$.3f K\nLaatste reset: %3$s</string>
+    <string name="STR_NMS_VERSION_TITLE">Versie</string>
+    <string name="STR_NMS_NEVER_CLEAR">Nooit</string>
+    <string name="STR_NMS_RESET">Resetten</string>
+    <string name="STR_NMS_SWITCH_ON">AAN</string>
+    <string name="STR_NMS_SWITCH_OFF">UIT</string>
+    <string name="STR_NMS_SYSTEM_SETTING_TITLE">Instellingen</string>
+    <string name="STR_NMS_COPYRGIHT">Hesine Technologies, Inc.</string>
+    <string name="STR_NMS_ABOUT">Over iSMS</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_TITLE">Leesstatus tonen</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_CONTENT">Leesstatus in berichtenlijst tonen</string>
+    <string name="STR_NMS_SHOW_REMIND_TITLE">Geheugensteuntjes tonen</string>
+    <string name="STR_NMS_SHOW_REMIND_CONTENT">Toon iSMS-geheugensteuntjes in chat-scherm</string>
+    <string name="STR_NMS_MENU_RESET_SETTING">Standaard instellingen herstellen</string>
+    <string name="STR_NMS_MENU_FUNCTION_INTRODUCTION">Functies</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT">Gebruikersovereenkomst</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION">Copyright</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT_TITLE">HESINE iSMS OVEREENKOMST GEBRUIKERSLICENTIE</string>
+    <string name="STR_NMS_MENU_FUNCTION">Lijst met functies</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION_DETAIL">\nHesine Technologies Inc.\nCopyright© 2008-2013\nAlle rechten voorbehoudenio9.\n</string>
+    <!-- System Settings End -->
+
+
+    <!-- Caption Settings -->
+    <string name="STR_NMS_AUDIO_TITLE">Geluid</string>
+    <string name="STR_NMS_VIDEO_TITLE">Video\'s</string>
+    <string name="STR_NMS_PHOTO_TITLE">Foto\'s</string>
+    <!-- Caption Settings End -->
+
+
+    <!-- Map String start -->
+    <string name="STR_NMS_MAP_TITLE">Locatie delen</string>
+    <string name="STR_NMS_MAP_PROMPT">Kaart kan niet weergegeven worden, omdat uw locatie-service niet ingeschakeld. is. Het ondstaande adres is geschat, gebaseerd op uw informatie. \nOm een meer nauwkeurige locatie-service te hebben verdient het aanbeveling om de locatie-service in te schakelen.</string>
+    <string name="STR_NMS_MAP_NOTE_1">Schakel een bron voor Mijn locatie in de systeeminstellingen in.</string>
+    <string name="STR_NMS_MAP_SHARE">Delen</string>
+    <string name="STR_NMS_MAP_SETTINGS">Instellingen</string>
+    <string name="STR_NMS_MAP_OK">OK</string>
+    <string name="STR_NMS_MAP_CANCEL">Annuleren</string>
+    <string name="STR_NMS_MAP_EDIT">Locatie bewerken</string>
+    <string name="STR_NMS_MAP_SEARCH_HINT">Nabijgelegen plekken doorzoeken</string>
+    <string name="STR_NMS_MAP_WAIT">Even geduld a.u.b...</string>
+    <string name="STR_NMS_MAP_EDIT_LIMIT">Invoertekens heeft zijn grens bereikt.</string>
+    <string name="STR_NMS_MAP_ADDR_LEN">Adres is te lang.</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR_LOCATING">Bezig met traceren van uw huidige positie...</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN_LOCATING">Bezig met traceren van uw PIN-positie...</string>
+    <string name="STR_NMS_MAP_LINEONE_SEARCH_LOCATING">Bezig met traceren van uw gezochte positie...</string>
+    <string name="STR_NMS_MAP_LINETHREE_NEARBY_LOCATING">Nabijgelegen plekken doorzoeken...</string>
+    <string name="STR_NMS_MAP_LINEONE_FAILED">Uw locatie is op dit moment niet beschikbaar</string>
+    <string name="STR_NMS_MAP_LINETWO_FAILED">Zorg ervoor, dat uw locatieservice ingeschakeld is en dat het netwerk beschikbaar is.</string>
+    <string name="STR_NMS_MAP_LINETHREE_FAILED">Geen nabij gelegen plaatsen gevonden</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR">Huidige locatie delen</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN">PIN-locatie delen</string>
+    <string name="STR_NMS_MAP_MY_LOCATION">Mijn locatie</string>
+    <string name="STR_NMS_MAP_SEARCH">Zoeken</string>
+    <string name="STR_NMS_MAP_ERROR_1">Niet in staat lengte en breedte te verkrijgen</string>
+    <string name="STR_NMS_MAP_ERROR_2">Google servers retourneren een fout</string>
+    <!-- Map String end -->
+
+
+    <!-- All Media String start -->
+    <string name="STR_NMS_ALL_MEDIA_TITLE">Alle media</string>
+    <string name="STR_NMS_ALL_MEDIA_WAIT">Even geduld a.u.b...</string>
+    <string name="STR_NMS_ALL_MEDIA_ERROR">Laden mislukt, probeer het later opnieuw</string>
+    <string name="STR_NMS_ALL_MEDIA_EMPTY">Leeg</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_WEEK">Deze week</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_MONTH">Deze maand</string>
+    <string name="STR_NMS_ALL_MEDIA_JAN">Januari</string>
+    <string name="STR_NMS_ALL_MEDIA_FEB">Februari</string>
+    <string name="STR_NMS_ALL_MEDIA_MAR">Maart</string>
+    <string name="STR_NMS_ALL_MEDIA_APR">April</string>
+    <string name="STR_NMS_ALL_MEDIA_MAY">Mei</string>
+    <string name="STR_NMS_ALL_MEDIA_JUN">Juni</string>
+    <string name="STR_NMS_ALL_MEDIA_JUL">Juli</string>
+    <string name="STR_NMS_ALL_MEDIA_AUG">Augustus</string>
+    <string name="STR_NMS_ALL_MEDIA_SEPT">September</string>
+    <string name="STR_NMS_ALL_MEDIA_OCT">Oktober</string>
+    <string name="STR_NMS_ALL_MEDIA_NOV">November</string>
+    <string name="STR_NMS_ALL_MEDIA_DEC">December</string>
+    <string name="STR_NMS_ADDCONTACT">Contact toevoegen</string>
+    <string name="STR_NMS_ADD_PHONE_CONTACT">Voeg \&quot;%1$s\&quot; aan contacten toe?</string>
+    <string name="STR_NMS_DELETE_MEDIA">De media zullen verwijderd worden, doorgaan?</string>
+    <string name="STR_NMS_MEDIA_SHARE_MESSAGE">%1$s deelde op %2$s</string>
+
+    <!-- All Media String end -->
+
+
+    <!-- All Locations String start -->
+    <string name="STR_NMS_ALL_LOCATIONS_TITLE">Alle locaties</string>
+    <string name="STR_NMS_ALL_LOCATIONS_LOC">Locatie</string>
+    <string name="STR_NMS_ALL_LOCATIONS_WAIT">Even geduld a.u.b...</string>
+    <!-- All Locations String end -->
+
+
+    <!-- Sketch -->
+    <string name="STR_NMS_SKETCH_TITLE">Een schets tekenen</string>
+    <string name="STR_NMS_REDO">Opnieuw</string>
+    <string name="STR_NMS_UNDO">Terug</string>
+    <string name="STR_NMS_SKETCH_CUSTOM">Speciaal</string>
+    <string name="STR_NMS_PEN_SIZE">Grootte</string>
+    <string name="STR_NMS_SKETCH_TOOLS_PEN">Potlood</string>
+    <string name="STR_NMS_SKETCH_TOOLS_ERASER">Gum</string>
+    <string name="STR_NMS_SKETCH_CUSTOM_COLOR">Speciale kleur</string>
+    <string name="STR_NMS_CLEAR_SKETCH_TITLE">Schets wissen</string>
+    <string name="STR_NMS_CLEAR_SKETCH_CONTENT">Wilt u deze schets wissen?</string>
+    <string name="STR_NMS_SIZE_SKETCH_TITLE">Grootte</string>
+    <string name="STR_NMS_SIZE_SKETCH_MAX">72</string>
+    <string name="STR_NMS_SIZE_SKETCH_MIN">2</string>
+    <string name="STR_NMS_COLOR_SKETCH_TITLE">Kleur</string>
+    <string name="STR_NMS_SKETCH_ERROR">Schets maken mislukt</string>
+    <string name="STR_NMS_BACK_TITLE">Bevestiging</string>
+    <string name="STR_NMS_FINISH_SKETCH_CONTENT">Weet u zeker dat u schetsen wilt verlaten?</string>
+    <string name="STR_NMS_LEAVE_SKETCH_CONTENT">Weet u zeker dat u schetsen wilt laten vallen?</string>
+    <string name="STR_NMS_NOTREDO">Niets opnieuw doen</string>
+    <string name="STR_NMS_NOTUNDO">Niets ongedaan maken</string>
+    <string name="STR_NMS_SKETCH_DELETE">Wissen</string>
+    <string name="STR_NMS_DISCARD">Negeren</string>
+
+    <!-- Sketch end -->
+
+
+    <!-- Selection Contact -->
+    <string name="STR_NMS_DONE">OK</string>
+    <string name="STR_NMS_SELECTALL">Alles selecteren</string>
+    <string name="STR_NMS_DESELECTED">Alles deselecteren</string>
+    <string name="STR_NMS_SELECTED">%1$s geselecteerd</string>
+    <string name="STR_NMS_CONTACT_SEARCH">Contacten zoeken</string>
+    <string name="STR_NMS_SEARCH">Zoeken</string>
+    <string name="STR_NMS_CONTACT_SELECT">Contact selecteren</string>
+    <string name="STR_NMS_SELECT_MEMBER_FULL">Er zijn te veel contacten geselecteerd</string>
+    <string name="STR_NMS_SELECT_MEMBER_EMPTY">Er zijn geen contacten geselecteerd</string>
+    <string name="STR_NMS_SELECT_CONTAT_WAIT">Even geduld a.u.b...</string>
+    <string name="STR_NMS_SELECT_CONTAT_EMPTY">Geen iSMS-contacten</string>
+    <string name="STR_NMS_SELECT_NO_RESULT">Geen gevonden</string>
+    <string name="STR_NMS_EMPTY">Geen contacten</string>
+    <!-- Selection Contact end -->
+
+    <!-- Group chat -->
+    <string name="STR_NMS_CREATE_GROUP_TITLE">Groep aanmaken</string>
+    <string name="STR_NMS_GROUP_INFO_TITLE">Groepsinfo</string>
+    <string name="STR_NMS_EDIT_GROUP_TITLE">Groep bewerken</string>
+    <string name="STR_NMS_SELECT_ACTION_TITLE">Selecteer actie</string>
+    <string name="STR_NMS_ADD_TO_BOOKMARK">Aan boekenlegger toevoegen</string>
+    <string name="STR_NMS_ADD_TO_CONTACTS">Voeg %1$s aan contacten toe?</string>
+    <string name="STR_NMS_GROUP_NAME">GROEPSNAAM</string>
+    <string name="STR_NMS_GROUP_INFO">GROEPSINFO</string>
+    <string name="STR_NMS_GROUP_MEMBERS">GROEPSLEDEN</string>
+    <string name="STR_NMS_GROUP_NAME_HIT">Groepsnaam</string>
+    <string name="STR_NMS_GROUP_NAME_EMPTY">Groepsnaam is leeg</string>
+    <string name="STR_NMS_CONFIRM_LEAVE_TITLE">Deze groep verlaten</string>
+    <string name="STR_NMS_LEAVE_GROUP_CONTENT">Wilt u deze groep verlaten?</string>
+    <string name="STR_NMS_LEAVE_GROUP_SUCCESS">Deze groep met succes verlaten.</string>
+    <string name="STR_NMS_LEAVE_GROUP_FAILED">Deze groep verlaten mislukt.</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_SUCCESS">Bijwerken groepsnaam succesvol.</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_SUCCESS">Nieuwe groepsleden toegevoegd.</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_FAILED">Groepslid toevoegen mislukt.</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_FAILED">Bijwerken groepsnaam mislukt</string>
+    <string name="STR_NMS_CREATE_GROUP_NAME_FAILED">Groeps-chat maken mislukt</string>
+    <string name="STR_NMS_DELETE_GROUP_MEMBER_FAILED">Groepslid verwijderen mislukt.</string>
+    <string name="STR_NMS_UPDATE_GROUP_SUCCESS">Bijwerken groepsinformatie succesvol.</string>
+    <string name="STR_NMS_UPDATE_GROUP_FAILED">Bijwerken groepsinformatie mislukt</string>
+    <string name="STR_NMS_GROUP_CHAT_BACK">Wilt u deze handeling negeren?</string>
+    <string name="STR_NMS_GROUP_MEMEBER_YOU">U</string>
+    <string name="STR_NMS_GROUP_INVITE_MORE">Meer uitnodigen</string>
+    <string name="STR_NMS_LEAVE_GROUP">Deze groep verlaten</string>
+    <string name="STR_NMS_CHAT">Chatten</string>
+    <string name="STR_NMS_CONFIRM_REMOVE_TITLE">Verwijderen uit lijst groepsleden</string>
+    <string name="STR_NMS_REMOVE_OK">Verwijderen</string>
+    <string name="STR_NMS_REMOVE_CANCEL">Annuleren</string>
+    <string name="STR_NMS_REMOVE_CONTENT">Wilt u dit uit de lijst verwijderen?</string>
+    <string name="STR_NMS_VIEW_ALL_MEDIA">Alle media bekijken</string>
+    <string name="STR_NMS_VIEW_ALL_LOCATIONS">Alle locaties bekijken</string>
+    <string name="STR_NMS_CHAT_SETTINGS">Instellingen chatten</string>
+    <string name="STR_NMS_VIEW_GROUP_FAILED">U hebt deze groeps-chat verlaten.</string>
+    <string name="STR_NMS_VIEW_HISTORY">Groepshistorie bekijken</string>
+    <string name="STR_NMS_ISMS_ENABLE_TITLE">iSMS activeren</string>
+    <string name="STR_NMS_ISMS_ENABLE_CONTENT">Deze functie wordt alleen ondersteund door iSMS-service. Uw iSMS-account nu activeren?</string>
+    <string name="STR_NMS_ENABLE">Inschakelen</string>
+    <string name="STR_NMS_LATER">Wegsturen</string>
+    <string name="STR_NMS_SWITCH_TITLE">SIM-schakelaar</string>
+    <string name="STR_NMS_SWITCH_MESSAGE">Groeps-chat wordt alleen ondersteund, wanneer iSMS-service geactiveerd is, maar de huidige SIM-kaart is niet geactiveerd. Overschakelen op de geactiveerde SIM-kaart?</string>
+    <string name="STR_NMS_SWITCH_EDIT_MESSAGE">Huidge SIM-kaar is niet gekoppeld aan deze groep. Overschakelen op de andere SIM-kaart?</string>
+    <string name="STR_NMS_LEAVE_GROUP_NOTICE">U hebt deze groep verlaten en kunt niet deelnemen aan deze groeps-chat, tenzij u opnieuw wordt uigenodigd.</string>
+    <string name="STR_NMS_LOSE_SIM_NOTICE">De oorspronkelijke SIM-kaart voor chatten is verwijderd. U kunt in deze groep alleen chatten met uw oorspronkelijke SIM-kaart.</string>
+    <string name="STR_NMS_SWITCH">Overschakelen</string>
+
+    <!-- Group chat end -->
+
+
+    <!-- chat details screen long press item start -->
+    <string name="STR_NMS_LONG_PRESS_TITLE">Berichtopties</string>
+    <string name="STR_NMS_SEND_VIA_TEXT">Versturen via SMS</string>
+    <string name="STR_NMS_TRY_AGAIN">Opnieuw proberen</string>
+    <string name="STR_NMS_TRY_ALL_AGAIN">Alles opnieuw proberen</string>
+    <string name="STR_NMS_CONTINUE_TRY">Ga door met proberen</string>
+    <string name="STR_NMS_COPY">Kopiëren</string>
+    
+    <string name="STR_NMS_FORWARD"> Doorsturen	Doorsturen</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_TITLE">Downloaden</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD">Om de iSMS door te sturen dient u de media-content eerst te downloaden.</string>
+    <string name="STR_NMS_FORWARD_CONTIUE">Doorgaan</string>
+    <string name="STR_NMS_FORWARD_FAILED"> Doorsturen	Doorsturen mislukt.</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_MULTI">Om meerdere keren door te sturen dienen sommige iSMS\'en eerst gedownload te worden.</string>
+    <string name="STR_NMS_FORWARD_SOME_FAILED">Het doorsturen van enkele iSMS\'en mislukte.</string>
+    <string name="STR_NMS_FORWARD_ALL_FAILED">Downloaden mislukt, meerdere malen doorsturen genegeerd</string>
+    
+    <string name="STR_NMS_SEND_VIA_MULTIMEDIA">Via MMS versturen</string>
+    <string name="STR_NMS_SHARE">Delen</string>
+    <string name="STR_NMS_DELETE">Verwijderen</string>
+    <string name="STR_NMS_FLAG_IMPORTANT">Markeren als belangrijk</string>
+    <string name="STR_NMS_REMOVE_IMPORTANT">Belangrijke vlag verwijderen</string>
+    <string name="STR_NMS_SAVE_IN_SDCARD">Exporteren naar SD-kaart</string>
+    <string name="STR_NMS_SAVE_FILE">Bestand wordt opgeslagen naar %1$s</string>
+    <string name="STR_NMS_SHARE_TITLE">De manier om te delen</string>
+    <string name="STR_NMS_VIEW_DETAILS">Details op scherm</string>
+    <string name="STR_NMS_VIEW_DETAILS_TITLE">Details bericht</string>
+    <string name="STR_NMS_SEND_MSG_DETAILS">Type: IP-bericht\nVerstuurd %1$s</string>
+    <!-- chat details screen long press item end -->
+
+
+    <!-- chat details screen delete item start -->
+    <string name="STR_NMS_DELETE_TITLE">Verwijderen</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_TITLE">Belangrijk bericht verwijderen</string>
+    <string name="STR_NMS_DELETE_WARNING">Het bericht zal verwijderd worden.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_WARNING">Weet u zeker, dat u dit belangrijk bericht wilt verwijderen?</string>
+    <string name="STR_NMS_DELETE_MSG">De geselecteerde berichten zullen verwijderd worden.</string>
+    <string name="STR_NMS_DELETE_WAITTING">Bezig met verwijderen</string>
+    <string name="STR_NMS_CLEAR_HISTORY_CONTENT">Elke chat-historie zal in deze chat-room gewist worden.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT">Neem berichten gemarkeerd als belangrijk ook op</string>
+    <!-- chat details screen delete item end -->
+
+
+    <!-- chat details actionBar option start -->
+    <string name="STR_NMS_MENU_CALL">Bellen</string>
+    <string name="STR_NMS_MENU_GROUPINFO">Groepsinfo</string>
+    <string name="STR_NMS_MENU_INVITE_CHAT">Nodig vrienden uit om te chatten</string>
+    <string name="STR_NMS_MENU_INVITE_ISMS">Nodig vrienden uit om iSMS te gebruiken</string>
+    <string name="STR_NMS_MENU_SELECT_MSG">Selecteer boodschap</string>
+    <string name="STR_NMS_MENU_MARK_SPAM">Naar lijst met spam</string>
+    <string name="STR_NMS_MENU_REMOVE_SPAM">Verwijder uit lijst met spam</string>
+    <string name="STR_NMS_MENU_ADD_SHORTCUT">Voeg sneltoets toe</string>
+    <string name="STR_NMS_MENU_VIEW_ALLMEDIA">Alle media bekijken</string>
+    <string name="STR_NMS_MENU_VIEW_ALLLOCATION">Alle locaties bekijken</string>
+    <string name="STR_NMS_MENU_EDIT_GROUP">Groep bewerken</string>
+    <string name="STR_NMS_MENU_CHAT_SETTING">Instelling chatten</string>
+    <string name="STR_NMS_MENU_INSERT_QUICK_TEXT">Snelle tekst invoeren</string>
+    <string name="STR_NMS_MENU_CLEAR_HISTORY">Geschiedenis chat wissen</string>
+    <string name="STR_NMS_MENU_LEAVE_GROUP">Deze groep verlaten</string>
+    <string name="STR_NMS_MENU_DISCARD">Negeren</string>
+    <string name="STR_NMS_MENU_DELETE">Verwijderen</string>
+    <string name="STR_NMS_MENU_IMPORTANT">Markeren als belangrijk</string>
+    <string name="STR_NMS_MENU_FORWARD">Doorsturen</string>
+    <!-- chat details actionBar option end -->
+
+
+    <!-- chat details share item start -->
+    <string name="STR_NMS_TAKE_PHOTO">Neem een foto</string>
+    <string name="STR_NMS_RECORD_VIDEO"> Opnemen	Een video opnemen</string>
+    <string name="STR_NMS_DRAW_SKETCH">Een schets tekenen</string>
+    <string name="STR_NMS_SHARE_CONTACT">Deel contact</string>
+    <string name="STR_NMS_CHOOSE_PHOTO">Kies een foto</string>
+    <string name="STR_NMS_CHOOSE_VIDEO">Kies een video</string>
+    <string name="STR_NMS_RECORD_AUDIO"> Opnemen	Audio opnemen</string>
+    <string name="STR_NMS_SHARE_LOCATION">Locatie delen</string>
+    <string name="STR_NMS_CHOOSE_AUDIO">Kies een audio</string>
+    <string name="STR_NMS_SHARE_CALENDAR">Deel kalender</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_TITLE">Voeg muziek toe</string>
+    <string name="STR_NMS_CHOOSE_RINGTONE_ITEM">Ringtoon</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_ITEM">Geluid</string>
+    <string name="STR_NMS_INSERT_SDCARD">Steek SD-kaart in!</string>
+    <!-- chat details share item start -->
+
+
+    <!-- record audio start -->
+    <string name="STR_NMS_AUDIO_TIMER_FORMAT" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <string name="STR_NMS_AUDIO_LABLE">Opname-apparaat geluidsnotitie</string>
+    <string name="STR_NMS_RECORD_AUDIO_CONT">Klop om op te nemen</string>
+    <string name="STR_NMS_PLAY_AUDIO_CONT">Klop om te spelen</string>
+    <string name="STR_NMS_ACTION_SEND">Versturen</string>
+    <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
+    <string name="audio_db_artist_name">Uw opnamen</string>
+    <string name="audio_db_album_name">Geluidsopnamen</string>
+    <string name="STR_NMS_SELECT_AUDIO">Audio selecteren</string>
+    <!-- record audio end -->
+
+
+    <!-- chat & group details screen start -->
+
+    <string name="STR_NMS_UNREAD_FORMAT">%1$d ongelezen berichten</string>
+    <string name="STR_NMS_NOT_DELIVERED_TITLE">Nog niet afgeleverd</string>
+    <string name="STR_NMS_FAILED_TITLE">Fout bij versturen</string>
+    <string name="STR_NMS_GROUP_SUBTITLE">%1$s, +%2$d</string>
+    <string name="STR_NMS_GROUP_DEAD_SUBTITLE">%1$s, %2$d</string>
+    <string name="STR_NMS_SAVE_AS_DRAFT">Bericht opgeslagen als schets</string>
+    <string name="STR_NMS_NO_SD_TITLE">Fout SD-kaart</string>
+    <string name="STR_NMS_CANT_SHARE">Geen toegang tot de SD-kaart. Alle functies die te maken hebben met multimedia zijn tijdelijk niet beschikbaar.\n\nnControleer uw SD-kaart en probeer het opnieuw later.</string>
+    <string name="STR_NMS_CANT_SAVE">SD-kaart niet opgemerkt, kan\bestand niet opslaan.</string>
+    <string name="STR_NMS_SDSPACE_NOT_ENOUGH">Beschikbare ruimte SD-kaart is niet genoegd, kan\bestnad niet opslaan.</string>
+    <string name="STR_NMS_REAEND_ALL">Alles opnieuw proberen...</string>
+    <string name="STR_NMS_FILE_LIMIT">Te groot</string>
+    <string name="STR_NMS_LOAD_ALL_MESSAGE">Laad alle berichten</string>
+    <string name="STR_NMS_DOWNLOAD_FAILED">Download failed</string>
+    <string name="STR_NMS_INPUT_HINT">Invoer content</string>
+    <string name="STR_NMS_INPUT_HINT_ISMS">Soort iSMS-bericht</string>
+    <string name="STR_NMS_CAPTION_HINT">Soort bijschriften</string>
+    <string name="STR_NMS_PROTOCOL_SMS">SMS</string>
+    <string name="STR_NMS_PROTOCOL_MMS">MMS</string>
+    <string name="STR_NMS_PROTOCOL_IP">iSMS</string>
+    <string name="STR_NMS_SWITCH_BOTTON">SIM-schakelaar</string>
+    <string name="STR_NMS_TURN_ON_BOTTON">Inschakelen</string>
+    <string name="STR_NMS_SWITCH_TEXT_FORMAT">Om door te gaan met groeps-chatten schakelt u eerst over naar %1$s.</string>
+    <string name="STR_NMS_ENABLE_TEXT_FORMAT">Om door te gaan met groeps-chatten schakelt u de iSMS-service op %1$s SIM eerst in.</string>
+    <string name="STR_NMS_REPLACE_ATTACH_TITLE">Vervang bijlage.</string>
+    <string name="STR_NMS_REPLACE_ATTACH_MSG">Er is een bestaande bijlage, vervangen?</string>
+    <string name="STR_NMS_TRUNC_CAPTION">Het bijschrift wordt afgekapt.</string>
+    <string name="STR_NMS_MAX_CHARACTERS_REACHED">Grens grootte bericht bereikt.</string>
+    <string name="STR_NMS_MAX_EMOTICON_REACHED">Voldoe aan grenzen emoticons</string>
+    <string name="STR_NMS_ENABLE_PROCESS">Bezig met verwerken...</string>
+    <string name="STR_NMS_ERR_FILE">Ongeldig bestand</string>
+    <string name="STR_NMS_SENDING_TEXT">Bezig met versturen...</string>
+    <!-- chat & group details screen end --> <!-- Error code tips -->
+    <string name="STR_NMS_ERR_GENERAL">Algemene fout</string>
+    <string name="STR_NMS_ERR_INVALID_ARGUMENT">Ongeldig argument</string>
+    <string name="STR_NMS_ERR_NETWORK_BLOCK">Netwerk is niet OK</string>
+    <string name="STR_NMS_ERR_PHONE_NOT_ACTIVATED">Niet geactiveerd</string>
+    <string name="STR_NMS_ERR_SIM_NOT_ACTIVATED">SIM-kaart is niet geactiveerd</string>
+    <string name="STR_NMS_ERR_INVALID_MSG_DB_ID">Ongeldig bericht DB-id</string>
+    <string name="STR_NMS_ERR_ADD_MSG_DB_FAILED">Invoegen in DB mislukt.</string>
+    <string name="STR_NMS_ERR_UPDATE_MSG_DB_FAILED">Bijwerken DB mislukt</string>
+    <string name="STR_NMS_ERR_GET_MSG_DB_DATA_FAILED">Bericht ophalen mislukt</string>
+    <string name="STR_NMS_ERR_INVALID_CONTACT_DB_ID">Ongeldig contact DB-id</string>
+    <string name="STR_NMS_ERR_ADD_CONTACT_DB_FAILED">Invoegen in contact mislukt.</string>
+    <string name="STR_NMS_ERR_UPDATE_CONTACT_DB_FAILED">Bijwerken contact mislukt</string>
+    <string name="STR_NMS_ERR_GET_CONTACT_DB_DATA_FAILED">Contact op id ophalen mislukt</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_ERROR_FORMAT">Formaat IP-bericht ongeldig</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_INVALID_TO">Ongeldige ontvanger</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_WITH_UNKNOWN_USER">Ongeldige onbekende ontvanger-gebruiker</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_NO_MBMBER">Er zijn geen leden voor de groeps-chat.</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_GCHAT_DEAD">De groeps-chat is niet geactiveerd.</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_INVALID_SIM_ID">De SIM-kaart van de groeps-chat is niet de huidige SIM-kaart.</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_FOR_SYS_MSG">Stuur systeemboodschap opnieuw</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_INVALID_STATUS">IP-bericht is niet klaar</string>
+    <string name="STR_NMS_ERR_GCHAT_IS_DEAD">Er is geen groeps-chat meer.</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBERS">Ongeldige groepsleden.</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBER_WITH_SELF">Groeps maken mislukt Leden dienen zichzelf niet te bevatten</string>
+    <string name="STR_NMS_ERR_GCHAT_EXCEED_MAX_MEMBER_COUNT">Aantal groepsleden bereikt de grens</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_NAME">Ongeldige naam groeps-chat</string>
+    <string name="STR_NMS_ERR_GCHAT_SIM_IS_NOT_ACTIVATED">De SIM-kaart\van de groeps-chat is niet geactiveerd.</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_NOT_INBOX_MSG">Downloaden URL mislukt</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_INVALID_URL">Ongeldige download-URL</string>
+    <string name="STR_NMS_ERR_GET_ATTACH_NAME_INVALID_BODY_FORMAT">Bestandsnaam voor downloaden ophalen mislukt</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_INVALID_FILE_NAME">Ongeldige bestandsnaam voor downloaden</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_EXIST">Het download-bestand bestaat niet</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_INBOX_MSG">Download-bestand instellen mislukt</string>
+    <string name="STR_NMS_ERR_SIM_INFO_NOT_FOUND">Informatie SIM-kaart niet gevonden</string>
+    <string name="STR_NMS_ERR_SIM_IN_INVALID_STATUS">Ongeldige SIM-kaartstatus</string>
+    <string name="STR_NMS_ERR_CMD_PROCESSING">Het systeem is druk en kan de opdracht voor de systeemconfiguratie niet verwerken.</string>
+    <string name="STR_NMS_ERR_CMD_GENERAL">Algemene fout systeemconfiguratie</string>
+    <string name="STR_NMS_ERR_CODE_END">De onbekende foutcode</string>
+    <!-- Error code tips -->
+    <string name="STR_NMS_SEND_MMS_QUERY_TITLE">Waarschuwing</string>
+    <string name="STR_NMS_SEND_MMS_QUERY">Ontvanger is geen iSMS-gebruiker, sturen via MMS?</string>
+    <!-- Service center start -->
+    <string name="STR_NMS_SERVICE_TITLE">Service-centrum iSMS</string>
+    <string name="STR_NMS_INTRODUCTION">Met iSMS kunt u meteen gratis berichten leveren en u houdt uw chat-historie op één plek. Druk op één knop, begin de nieuwe ervaring!</string>
+    <string name="STR_NMS_TERMS">Termen en conditie</string>
+    <string name="STR_NMS_ACTIVATION_BUTTON">Activering nu</string>
+    <string name="STR_NMS_LOSE_SDCARD">SD-kaart is niet opgemerkt</string>
+    <!-- Service center end -->
+
+
+    <!-- conversation empty tips -->
+    <string name="STR_NMS_SPAM_EMPTY">U hebt geen spam-conversatie. \nSPAM verzamelt alle conversaties, die men als spam gemarkeerd heeft. Standaard zal melding uitgeschakeld worden. Dit voorkomt dat u niet noodzakelijk gestoord wordt. \n\nU kunt een verzender als spam markeren door een conversatie te selecteren en vervolgens het pictogram Mark as Spam (Markeren als spam) te kiezen. Als een conversatie als spam gemarkeerd wordt, zal een pictogram dat toont dat melding uitgeschakeld is, automatisch worden weergegeven en de conversatie zal daar geplaatst worden.</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_FROM">+86123456789</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_SUBJECT">Dit is een voorbeeld van een spam-bericht.</string>
+    <string name="STR_NMS_GROUPCHAT_EMPTY">U hebt geen bericht voor een groeps-chat. \nGROEP-CHATS verzamelen alle berichten van een groeps-chat, die door u gemaakt zijn of waar aan u deelneemt. Dit stelt u in staat makkelijke uw groeps-chates te vinden en te beheren. \n\nOm een groeps-chat te maken kunt u tikken op de knop Create group chat (Groeps-chat maken) aan de onderkant van het scherm en u kunt uw vrienden uitnodigen om deel te nemen aan de groep.</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_FROM">Groepsnaam</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_SUBJECT">Uw vriend:\nIk mag de functie voor groeps-chatten wel!</string>
+    <string name="STR_NMS_IMPORTANT_EMPTY">U hebt geen belangrijk bericht. \nIMPORTANT (BELANGRIJK) verzameld alle berichten, die als belangrijk worden gemarkeerd. Dit stelt u in staat belangrijke berichten makkelijk te vinden. \n\nU kunt een bericht als belangrijk markeren door een bericht vast te houden en in het menu Option (Optie) Flag as important (Als belangrijk markeren) te selecteren. Als een bericht gemarkeerd is als belangrijk, zult u een pictogram in een rode vlag zoals hieronder zien.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TITLE">Dit is een voorbeeld van een bericht dat als belangrijk gemarkeerd is. Er zal een rode vlag worden weergegeven.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TIME">10:55 AM</string>
+    <string name="STR_NMS_ALLCHAT_EMPTY">Geen conversaties</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_CONTENT">Om deze functie te gebruiken dient u de iSMS-service eerst te activeren. Maak u geen zorgen - als u niet van de service houdt, kunt u deze altijd uitschakelen in Settings (Instellingen)./ Probeer het nu!</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_TITLE">iSMS activeren</string>
+    <!-- conversation empty tips -->
+    
+    <string name="STR_NMS_CLEAR_USER_DATA">Wissen data succesvol</string>
+    
+    <!-- get file err start -->
+    <string name="STR_NMS_NO_SUCH_FILE">Geen dergelijk bestand</string>
+    <string name="STR_NMS_OVER_FILE_LIMIT">De grootte van bestand overschrijdt de grens</string>
+    <string name="STR_NMS_INVALID_FILE_TYPE">Dit type wordt niet ondersteund</string>
+    <!-- get file err end -->
+
+    <string name="STR_NMS_DELIVERY_BODY">Bericht ontvangen door %s</string>
+    <string name="STR_NMS_SIM_SELECT_TITLE">Selecteer SIM</string>
+    
+    <string name="STR_NMS_SHORTCUT_SUCCESS">Sneltoets %1$s aangemaakt.</string>
+    <string name="STR_NMS_SHORTCUT_REFRESHING">Bezig met vernieuwen</string>
+    
+    <string name="STR_NMS_DISABLE_FAILED">De handeling is mislukt, probeer het later opnieuw.</string>
+    <string name="STR_NMS_ENABLE_FAILED">De handeling is mislukt, probeer het later opnieuw.</string>
+    <string name="STR_NMS_ENABLE_SUCCESS">U hebt met succes de iSMS-service geactiveerd.</string>
+    <string name="STR_NMS_DISABLE_SUCCESS">U hebt met succes de iSMS-service inactief gemaakt.</string>
+    
+	<string name="STR_NMS_SD_CARD_FULL">SD-kaart vol</string>
+    <string name="STR_NMS_SEND_MSG_FAILED">Versturen bericht mislukt!</string>
+    <string name="STR_NMS_GROUPS_MEM"> %1$s leden</string>
+    <string name="STR_NMS_ALL_CONTACTS">ALLE</string>
+    <string name="STR_NMS_GROUPS_CONTACTS">ALLE GR</string>  
+     
+    <string name="imsp_ip_message">iSMS-bericht</string>
+    <string name="imsp_invite_chat_frequently"><b>Chat vaak met %s?</b>\nWaar %s niet uitn om iSMS te gebr om beiden geld te sparen?</string>
+    <string name="imsp_enable_chat_frequently"><b>De iSMS-service van %s is uitgesch!</b>\nWaarom uw iSMS-service niet insch en beiden geld besparen?</string>
+    <string name="imsp_invite">Nodig uit</string>
+    <string name="imsp_enable_notice">Wilt u werk de iSMS-service insch?</string>
+    <string name="imsp_activate_chat_frequently"><b>Chat vaak met vrienden?</b>\nWaarom iSMS-service niet act om zonder SMS-tarief te chat?</string>
+    <string name="imsp_activate_note">Weet u zeker dat u iSMS wilt act?</string>
+    <string name="imsp_dismiss_content">Wilt u werk de opm negeren?</string>
+    <string name="imsp_divider_online">%s is online</string>
+    <string name="imsp_divider_offline">Laatste tijd online op %s</string>
+    <string name="imsp_divider_never_online">Nooit online</string>
+    <string name="imsp_failed_title">Stur mislukt</string>
+    <string name="imsp_resend_via_sms">Stuur SMS</string>
+    <string name="imsp_resend_via_mms">Stuur MMS</string>
+    <string name="imsp_typing_text">Typen</string>
+    <string name="imsp_save_attachment">Bijlage opslaan</string>
+    <string name="imsp_view">Beeld</string>
+    <string name="imsp_convert_to_mms">Convert nr MSS</string>
+    <string name="imsp_convert_to_sms">Convert nr SMS.</string>
+    <string name="imsp_convert_to_isms">Convert nr iSMS.</string>
+    <string name="imsp_convert_to_mms_for_service">iSMS-service niet besch in deze gesel. SIM-kaart. Dit bericht kan alleen via MMS in deze SIM-kaart gest wrd. Toch doorgaan?</string>
+    <string name="imsp_convert_to_sms_for_service">iSMS-service niet besch in deze gesel. SIM-kaart. Dit bericht kan alleen via SMS in deze SIM-kaart gest wrd. Toch doorgaan?</string>
+    <string name="imsp_convert_to_mms_for_recipients">De ontvanger(s) is/zijn geen gebr iSMS. Dit ber kan alleen via MMS gest worden. Toch doorgaan?</string>
+    <string name="imsp_convert_to_sms_for_recipients">De ontvanger(s) is/zijn geen gebr iSMS. Dit ber kan alleen via SMS gest worden. Toch doorgaan?</string>
+    <string name="imsp_sms_convert_to_isms">iSMS-service besch in deze gesel. SIM-kaart. Om SMS-tar te sparen sugger men het ber over te schk naar iSMS. Nu oversch?</string>
+    <string name="imsp_mms_convert_to_isms">iSMS-service besch in deze gesel. SIM-kaart. Om MMS-tar te sparen sugger men het ber over te sch naar iSMS. Nu oversch?</string>
+    <string name="imsp_keep_mms">Houd MMS</string>
+    <string name="imsp_keep_sms">Houd SMS</string>
+    <string name="imsp_resend_discard_message">Om ber opn te st zal uw huidige samenst bericht geneg worden.</string>
+    <string name="imsp_no_sim_card">Geen SIM-kaart!</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">&quot;Geen wrk internet verb gvonden! Probeer het later opnieuw.&quot;</string>
+    <string name="imsp_chat_setting_updating">bijw...</string>
+    <string name="imsp_dialog_clear_title">Wissen</string>
+    <string name="imsp_dialog_clear_description">Elke chat-historie zal in deze chat-room gewist worden.</string>
+    <string name="imsp_chat_setting_saving">ops...</string>
+    <string name="imsp_chat_setting_sending">verst...</string>
+    <string name="imsp_save_chat_history_failed">ops misl</string>
+    <string name="imsp_send_chat_history_failed">E-mail mis</string>
+    <string name="imsp_conversation_list_all">Berichten</string>
+    <string name="imsp_conversation_list_important">Belangr</string>
+    <string name="imsp_conversation_list_group_chats">Groepschats</string>
+    <string name="imsp_conversation_list_spam">Spam</string>
+    <string name="imsp_mark_as_spam_tips">Ber gemark als spam zullen naar lst Spam gaan en de melding wordt aut uitgeschakeld.</string>
+    <string name="imsp_typing">&quot;Typen...&quot;</string>
+    <string name="imsp_type_to_compose_text">&quot;Soort SMS/iSMS-bericht</string>
+    <string name="imsp_no_sdcard">Geen SD-krt</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">Om een uitn te sturen zal uw samenst berichten worden geneg.</string>
+    <string name="imsp_current_sim_enabled">Huid SIM is ingesch.</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">Select SIM om iSMS te act.</string>
+    <string name="imsp_activate_message">Deze functie wordt alleen ondersteund door iSMS-service. Uw iSMS-account nu activeren?</string>
+    <string name="imsp_enable_message">Deze functie wordt alleen ondersteund door iSMS-service. Uw iSMS-account nu activeren?</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">Select iSIM om iSMS te act.</string>
+    <string name="imsp_switch_sim_title">SIM-schakelaar</string>
+    <string name="imsp_switch_sim_message">De huid SIM onderst iSMS niet. Overs naar and SIM?</string>
+    <string name="imsp_switch_sim_successfully">Overs SIM succesv!</string>
+    <string name="imsp_dailog_multi_forward">Stuur ber door</string>
+    <string name="imsp_dialog_send_result">Stuur result</string>
+    <string name="imsp_dlg_send_all">Alle: %s</string>
+    <string name="imsp_dlg_send_sucess">Verstuurd: %s</string>
+    <string name="imsp_dlg_send_failed">Misl: %s</string>
+    <string name="imsp_multi_forward_sim_info">Krijg info SIM</string>
+    <string name="imsp_multi_forward_no_sim">Geen inf SIM</string>
+    <string name="imsp_get_sim_failed">Kr info SIM misl</string>
+    <string name="imsp_sim_status_error">Fout SIM-st</string>
+    <string name="imsp_forward_norecipients">Geen ontv(s) voor doorst bericht</string>
+    <string name="imsp_multiforward_no_message">Geen bericht(en) om door te st.</string>
+    <string name="imsp_need_input_recipients">Geef eerste een ontvanger op</string>
+    <string name="imsp_spam_empty">U hebt geen spam-conversatie. \nSPAM verzamelt alle conversaties, die men als spam gemarkeerd heeft. Standaard zal melding uitgeschakeld worden. Dit voorkomt dat u niet noodzakelijk gestoord wordt. \n\nU kunt een verzender als spam markeren door een conversatie te selecteren en vervolgens het pictogram Mark as Spam (Markeren als spam) te kiezen. Als een conversatie als spam gemarkeerd wordt, zal een pictogram dat toont dat melding uitgeschakeld is, automatisch worden weergegeven en de conversatie zal daar geplaatst worden.</string>
+    <string name="imsp_groupchat_empty">U hebt geen bericht voor een groeps-chat. \nGROEP-CHATS verzamelen alle berichten van een groeps-chat, die door u gemaakt zijn of waar aan u deelneemt. Dit stelt u in staat makkelijke uw groeps-chates te vinden en te beheren. \n\nOm een groeps-chat te maken kunt u tikken op de knop Create group chat (Groeps-chat maken) aan de onderkant van het scherm en u kunt uw vrienden uitnodigen om deel te nemen aan de groep.</string>
+    <string name="imsp_important_empty">U hebt geen belangrijk bericht. \nIMPORTANT (BELANGRIJK) verzameld alle berichten, die als belangrijk worden gemarkeerd. Dit stelt u in staat belangrijke berichten makkelijk te vinden. \n\nU kunt een bericht als belangrijk markeren door een bericht vast te houden en in het menu Option (Optie) Flag as important (Als belangrijk markeren) te selecteren. Als een bericht gemarkeerd is als belangrijk, zult u een pictogram in een rode vlag zoals hieronder zien.</string>
+    <string name="imsp_allchat_empty">Geen conversaties</string>
+    <string name="imsp_attach_slideshow">Diepresent</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">Bezig met downloaden...</string>
+    <string name="imsp_invite_friends_to_ipmsg">Nodig vrienden uit om iSMS te gebruiken</string>
+    <string name="imsp_multi_forward_tips_content">Om vaker door te st dienen somm iSMS\'en eerst gedownl te worden.</string>
+    <string name="imsp_multi_forward_failed_part">Doorst enk iSMS\'en misl.</string>
+
+</resources>

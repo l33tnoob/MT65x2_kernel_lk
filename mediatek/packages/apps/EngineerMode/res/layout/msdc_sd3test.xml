@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical" >
+
+        <Spinner
+            android:id="@+id/msdc_sd3test_host_spinner"
+            android:layout_width="240dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip" >
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/msdc_sd3test_mode" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/msdc_sd3test_mode_spinner"
+            android:layout_width="240dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="2dip" >
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="20dip"
+            android:text="@string/msdc_sd3test_max_current" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/msdc_sd3test_max_current_spinner"
+            android:layout_width="240dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="2dip" >
+        </Spinner>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="20dip"
+            android:text="@string/msdc_sd3test_drive" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/msdc_sd3test_drive_spinner"
+            android:layout_width="240dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="2dip" >
+        </Spinner>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="20dip"
+            android:text="@string/msdc_sd3test_power_control" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/msdc_sd3test_power_control_spinner"
+            android:layout_width="240dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="2dip" >
+        </Spinner>
+
+        <View
+            android:layout_width="240dip"
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="20dip"
+            android:background="#FF909090" >
+        </View>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/msdc_sd3test_get"
+                android:layout_width="110dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/MSDC_Get" >
+            </Button>
+
+            <Button
+                android:id="@+id/msdc_sd3test_set"
+                android:layout_width="110dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/MSDC_Set" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

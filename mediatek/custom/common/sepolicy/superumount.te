@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binsuperumount Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type superumount_exec , exec_type, file_type;
+type superumount ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive superumount;
+init_daemon_domain(superumount)
+
+
+# 20131122 Add Set Property Rule
+allow superumount  property_type:property_service set;

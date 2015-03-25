@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbindaemonize Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type daemonize_exec , exec_type, file_type;
+type daemonize ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive daemonize;
+init_daemon_domain(daemonize)
+
+
+# 20131122 Add Set Property Rule
+allow daemonize  property_type:property_service set;

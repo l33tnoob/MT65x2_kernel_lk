@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binwmt_loader Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type wmt_loader_exec , exec_type, file_type;
+type wmt_loader ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive wmt_loader;
+init_daemon_domain(wmt_loader)
+
+
+# 20131122 Add Set Property Rule
+allow wmt_loader  property_type:property_service set;

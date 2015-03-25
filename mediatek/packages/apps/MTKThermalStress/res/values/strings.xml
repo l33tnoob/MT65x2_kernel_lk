@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MTKThermalStress</string>
+    <string name="action_settings">Settings</string>
+    <string name="lv_condition">Initial condition</string>
+    <string name="lv_pattern">Stress pattern</string>
+    <string name="bt_start">Start</string>
+    <string name="sn_policy">Thermal policy</string>
+    <string-array name="policy_array">        
+        <item>High temp 120deg C</item><item>Thermal protection only</item>
+        <item>Default</item>
+        
+    </string-array><string-array name="mt_array">
+        <item>Off</item>
+        <item>On</item>        
+    </string-array>
+    <string name="thermal_policy">Thermal policy</string>
+    
+    <string name="micro_throttle">Micro throttle</string>
+    <string name="ts_cpu_md5">CPU (MD5)</string>
+    
+    <string name="init_temp">Starts stress when temperature is less than N degree C</string>
+    <string name="def_init_temp">40</string>
+    <string name="end_temp">Stop stress after  N degree C increased</string>
+    <string name="def_end_temp">35</string>
+    <string name="test_key">com.mediatek.thermalstress</string>
+    <string name="def_data">-1</string>
+    <string name="cpu_freq">Set CPU maximum frequency</string>
+    <string name="def_cpufreq">100000</string>
+    <string name="cpu_number">Set the numbers of CPU core online</string>
+    <string name="def_cpunumber">4</string><string name="btn_start_stress">Start stress</string>
+    <string name="btn_stop_stress">Stop stress</string>
+    <string name="mt_key">com.mediatek.thermalstress.mthrottle</string>
+    <string name="tp_key">com.mediatek.thermalstress.policy</string>
+    <string name="inittemp_key">com.mediatek.thermalstress.inittemp</string>
+    <string name="endtemp_key">com.mediatek.thermalstress.endtemp</string>
+    <string name="cpufreq_key">com.mediatek.thermalstress.cpufreq</string>
+    <string name="cpunum_key">com.mediatek.thermalstress.cpunum</string>
+    <string name="pattern_cpu_key">com.mediatek.thermalstress.cpumd5</string>
+    <string name="tp_ht120">/etc/.tp/.ht120.mtc</string>
+    <string name="tp_protect">/etc/.tp/thermal.off.conf</string>
+    <string name="tp_def">/etc/.tp/.ht120.mtc</string>
+    <string name="starttemp_key">com.mediatek.thermalstress.starttemp</string>
+    <string name="lasttemp_key">com.mediatek.thermalstress.lasttemp</string>
+    <string name="expecttime_key">con.mediatek.thermalstress.expecttime</string>
+    <string name="stop_reason_key">com.mediatek.thermalstress.stopreason</string>
+    <string name="templimit_key">com.mediatek.thermalstress.templimit</string>
+
+</resources>

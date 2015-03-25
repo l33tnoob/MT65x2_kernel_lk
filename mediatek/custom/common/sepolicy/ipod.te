@@ -1,0 +1,80 @@
+# ==============================================
+# Policy File of /system/binipod Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type ipod_exec , exec_type, file_type;
+type ipod ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive ipod;
+init_daemon_domain(ipod)
+
+
+# 20131122 Add Set Property Rule
+allow ipod  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow ipod aee_aed:unix_stream_socket connectto;
+allow ipod aee_exec:file { read getattr open execute execute_no_trans };
+allow ipod alarm_device:chr_file write;
+allow ipod am_exec:file { read getattr open execute execute_no_trans };
+allow ipod ashmem_device:chr_file execute;
+allow ipod block_device:blk_file { read open };
+allow ipod dalvikcache_data_file:file { write setattr };
+allow ipod device:chr_file { read ioctl open };
+allow ipod graphics_device:chr_file { read write ioctl open };
+allow ipod init:unix_stream_socket { write read setopt shutdown };
+allow ipod input_device:dir { read open };
+allow ipod ipohctl_exec:file { read getattr open execute execute_no_trans };
+allow ipod linker_exec:file { read execute open };
+allow ipod proc:file write;
+allow ipod property_socket:sock_file write;
+allow ipod self:capability { sys_resource sys_boot dac_override chown fsetid fowner net_admin sys_rawio };
+allow ipod self:netlink_kobject_uevent_socket { read bind create setopt };
+allow ipod servicemanager:binder call;
+allow ipod shell_exec:file { read execute open execute_no_trans };
+allow ipod surfaceflinger:binder { transfer call };
+allow ipod surfaceflinger:fd use;
+allow ipod sysfs:file write;
+allow ipod sysfs_wake_lock:file { read write open };
+allow ipod system_data_file:dir { write add_name };
+allow ipod system_data_file:file { write create open ioctl setattr };
+allow ipod system_server:binder { transfer call };
+allow ipod zygote_exec:file { read getattr open execute execute_no_trans };
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow ipod am_exec:file { read getattr open execute execute_no_trans };
+allow ipod ashmem_device:chr_file execute;
+allow ipod dalvikcache_data_file:file { write setattr };
+allow ipod device:chr_file { write ioctl };
+allow ipod init:unix_stream_socket { read write setopt };
+allow ipod input_device:chr_file { read write ioctl open };
+allow ipod linker_exec:file { read execute open };
+allow ipod property_socket:sock_file write;
+allow ipod self:capability { fowner sys_resource sys_boot dac_override };
+allow ipod self:netlink_kobject_uevent_socket read;
+allow ipod servicemanager:binder call;
+allow ipod shell_exec:file { read execute open execute_no_trans };
+allow ipod surfaceflinger:binder { transfer call };
+allow ipod surfaceflinger:fd use;
+allow ipod sysfs:file write;
+allow ipod sysfs_wake_lock:file { read write open };
+allow ipod system_server:binder { transfer call };
+allow ipod zygote_exec:file { read getattr open execute };
+

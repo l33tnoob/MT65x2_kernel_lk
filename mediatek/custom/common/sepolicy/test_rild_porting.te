@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bintest_rild_porting Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type test_rild_porting_exec , exec_type, file_type;
+type test_rild_porting ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive test_rild_porting;
+init_daemon_domain(test_rild_porting)
+
+
+# 20131122 Add Set Property Rule
+allow test_rild_porting  property_type:property_service set;

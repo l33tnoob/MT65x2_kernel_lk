@@ -1,0 +1,33 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type dbusd, domain;
+type dbusd_exec, exec_type, file_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# dbus daemon
+permissive dbusd;
+
+init_daemon_domain(dbusd)
+# unconfined_domain(dbusd)
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive dbusd;
+
+# 20131122 Add Set Property Rule
+allow dbusd property_type:property_service set;

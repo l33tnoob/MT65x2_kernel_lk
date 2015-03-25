@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/hqa_readermode_cb_typea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/hqa_nfc_typea" />
+
+        <RadioGroup
+            android:id="@+id/hqa_readermode_rg_typea"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/hqa_readermode_rb_typea_106"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_106" />
+
+            <RadioButton
+                android:id="@+id/hqa_readermode_rb_typea_212"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_212" />
+
+            <RadioButton
+                android:id="@+id/hqa_readermode_rb_typea_424"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_424" />
+
+            <RadioButton
+                android:id="@+id/hqa_readermode_rb_typea_848"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_848" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="3pt"
+            android:layout_marginRight="5pt"
+            android:background="#FF909090" >
+        </View>
+
+        <CheckBox
+            android:id="@+id/hqa_readermode_cb_typeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/hqa_nfc_typeb" />
+
+        <RadioGroup
+            android:id="@+id/hqa_readermode_rg_typeb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/hqa_readermode_rb_typeb_106"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_106" />
+
+            <RadioButton
+                android:id="@+id/hqa_readermode_rb_typeb_212"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_212" />
+
+            <RadioButton
+                android:id="@+id/hqa_readermode_rb_typeb_424"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_424" />
+
+            <RadioButton
+                android:id="@+id/hqa_readermode_rb_typeb_848"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_848" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="3pt"
+            android:layout_marginRight="5pt"
+            android:background="#FF909090" >
+        </View>
+
+        <CheckBox
+            android:id="@+id/hqa_readermode_cb_typef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/hqa_nfc_typef" />
+
+        <RadioGroup
+            android:id="@+id/hqa_readermode_rg_typef"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/hqa_readermode_rb_typef_212"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_212" />
+
+            <RadioButton
+                android:id="@+id/hqa_readermode_rb_typef_424"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_424" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="3pt"
+            android:layout_marginRight="5pt"
+            android:background="#FF909090" >
+        </View>
+
+        <CheckBox
+            android:id="@+id/hqa_readermode_cb_typev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/hqa_nfc_typev" />
+
+        <RadioGroup
+            android:id="@+id/hqa_readermode_rg_typev_subcarrier"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/hqa_readermode_rb_typev_subcarrier"
+                android:layout_weight="1"
+                android:text="@string/hqa_nfc_subcarrier" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/hqa_readermode_rb_typev_dual_subcarrier"
+                android:layout_weight="1"
+                android:text="@string/hqa_nfc_dual_subcarrier" >
+            </RadioButton>
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/hqa_readermode_rg_typev_mode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/hqa_readermode_rb_typev_mode_4"
+                android:layout_weight="1"
+                android:text="@string/hqa_nfc_mode_4" />
+
+            <RadioButton
+                android:id="@+id/hqa_readermode_rb_typev_mode_256"
+                android:layout_weight="1"
+                android:text="@string/hqa_nfc_mode_256" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/hqa_readermode_rg_typev_rate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/hqa_readermode_rb_typev_166"
+                android:text="@string/hqa_nfc_166" />
+
+            <RadioButton
+                android:id="@+id/hqa_readermode_rb_typev_2648"
+                android:text="@string/hqa_nfc_2648" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="3pt"
+            android:layout_marginRight="5pt"
+            android:background="#FF909090" >
+        </View>
+
+        <CheckBox
+            android:id="@+id/hqa_readermode_cb_kovio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/hqa_nfc_kovio" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="3pt"
+            android:layout_marginRight="5pt"
+            android:background="#FF909090" >
+        </View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp" >
+
+            <Button
+                android:id="@+id/hqa_readermode_btn_select_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_select_all"
+                android:width="100dp" />
+
+            <Button
+                android:id="@+id/hqa_readermode_btn_clear_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:text="@string/hqa_nfc_clear_all"
+                android:width="100dp" />
+
+            <Button
+                android:id="@+id/hqa_readermode_btn_start_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:text="@string/hqa_nfc_start"
+                android:width="100dp" />
+
+            <Button
+                android:id="@+id/hqa_readermode_btn_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/hqa_nfc_return"
+                android:width="100dp" />
+
+            <Button
+                android:id="@+id/hqa_readermode_btn_run_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/hqa_nfc_run_back"
+                android:width="205dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="confirm_radio_title">SIM disattivata</string>
+	<string name="confirm_radio_msg"> 		<xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		disattivato. Attivare questa scheda SIM? 	</string>
+	<string name="confirm_radio_msg_single">"Airplane mode (Modalità aereo) attivata. Disattivarla?"</string>
+	<string name="confirm_pin_title">Blocco PIN</string>
+	<string name="confirm_pin_msg">La scheda SIM che si sta per utilizzare è bloccata. Sbloccare?</string>
+	<string name="confirm_simmelock_title">Blocco SIM ME</string>
+	<string name="confirm_simmelock_msg">Lo slot SIM che si sta per utilizzare è bloccato. Sbloccare?</string>
+	<string name="confirm_fdn_title">FDN attivato</string>
+	<string name="confirm_fdn_msg">Numeri di selezione fissa attivati.</string>
+	<string name="confirm_roaming_title">Avviso roaming</string>
+	<string name="confirm_roaming_msg">La scheda SIM che si sta per utilizzare è in roaming. Nessuna scheda SIM disponibile. Continuare?</string>
+	<string name="confirm_roaming_withPrefer_msg">La scheda SIM che si sta per utilizzare è in roaming. Continuare con la SIM locale?</string>
+	<string name="confirm_roaming_lbutton">Continua</string>
+	<string name="confirm_roaming_rbutton">Annulla</string>
+	<string name="confirm_roamingWithPrefer_lbutton">SIM locale</string>
+	<string name="confirm_roamingWithPrefer_rbutton">SIM in roaming</string>
+	<string name="confirm_radio_lbutton">Attiva</string>
+	<string name="confirm_unlock_lbutton">Sblocca</string>
+	<string name="confirm_unlock_fail">Pengendalian dibatalkan</string>
+	<string name="confirm_turnon_radio_fail">Pengendalian dibatalkan</string>
+	<string name="confirm_permit_roaming_fail">Annullare questa operazione su SIM in roaming</string>
+	<string name="confirm_sim_locked_message">"La scheda SIM è stata bloccata permanentemente."</string>
+	<string name="confirm_slot_locked_message">"Slot bloccato in modo permanente."</string>
+	<string name="app_name">CellConnectionService</string>  
+	<string name="button_ok">Ok</string>  
+<string name="button_cancel">"Annulla"</string>
+    <string name="confirm_radio_title_uim">UIM disattivato</string>
+    <string name="confirm_radio_title_card">Scheda disattivata</string>
+    <string name="confirm_radio_msg_uim">Al momento <xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> è disattivato. Attivare questa scheda UIM?</string>
+    <string name="confirm_radio_msg_card">Al momento <xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> è disattivato. Attivare questa scheda?</string>
+    <string name="confirm_radio_flight_mode_on_and_msg">La modalità Aereo è attivata e</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg">Al momento <xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> è disattivato. Disattivare la modalità Aereo ed attivare questa scheda SIM?</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg_uim">Al momento <xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> è disattivato. Disattivare la modalità Aereo ed attivare questa scheda UIM?</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg_card">Al momento <xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> è disattivato. Disattivare la modalità Aereo ed attivare questa scheda?</string>
+    <string name="confirm_radio_flight_mode_on_sim_on_msg">La modalità Aereo è attivata. Disattivare la modalità aereo?</string>
+    <string name="confirm_pin_title_uim">UIM bloccata</string>
+    <string name="confirm_pin_title_card">Scheda bloccata</string>
+    <string name="confirm_pin_msg_uim">La scheda UIM selezionata al momento è bloccata. Prima sbloccarla.</string>
+    <string name="confirm_pin_msg_card">La scheda selezionata al momento è bloccata. Prima sbloccarla.</string>
+    <string name="confirm_simmelock_msg_uim">L’alloggio UIM selezionato al momento è bloccato. Prima sbloccarlo.</string>
+    <string name="confirm_simmelock_msg_card">L’alloggio selezionato al momento è bloccato. Prima sbloccarlo.</string>
+    <string name="confirm_roaming_msg_uim">La scheda UIM che si sta per utilizzare al momento è in roaming. Nessun UIM locale disponibile al momento. Continuare?</string>
+    <string name="confirm_roaming_msg_card">La scheda che si sta per utilizzare al momento è in roaming. Nessuna scheda locale disponibile al momento. Continuare?</string>
+    <string name="confirm_roaming_withPrefer_msg_uim">La scheda SIM che si sta per utilizzare al momento è in roaming. Continuare via UIM locale?</string>
+    <string name="confirm_roaming_withPrefer_msg_card">La scheda SIM che si sta per utilizzare al momento è in roaming. Continuare via scheda locale?</string>
+    <string name="confirm_roamingWithPrefer_lbutton_uim">UIM locale</string>
+    <string name="confirm_roamingWithPrefer_lbutton_card">Scheda locale</string>
+    <string name="confirm_roamingWithPrefer_rbutton_uim">Roaming UIM</string>
+    <string name="confirm_roamingWithPrefer_rbutton_card">Roaming scheda</string>
+    <string name="confirm_roaming_for3Sims_msg">La scheda SIM che si sta per utilizzare al momento è in roaming. Continuare?</string>
+    <string name="confirm_roaming_for3Sims_msg_uim">La scheda UIM che si sta per utilizzare adesso è in roaming. Continuare?</string>
+    <string name="confirm_roaming_for3Sims_msg_card">La scheda che si sta per utilizzare al momento è in roaming. Continuare?</string>
+    <string name="confirm_permit_roaming_fail_uim">Questa azione è stata annullata per il roaming UIM</string>
+    <string name="confirm_permit_roaming_fail_card">Questa azione è stata annullata per il roaming scheda</string>
+    <string name="confirm_sim_locked_message_uim">La scheda UIM à stata bloccata in modo permanente</string>
+    <string name="confirm_sim_locked_message_card">La scheda à stata bloccata in modo permanente</string>
+    <string name="button_yes">"Sì"</string>
+    <string name="button_no">"No"</string>
+    </resources>

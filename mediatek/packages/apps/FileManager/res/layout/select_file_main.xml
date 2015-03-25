@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/whole_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/bar_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dddddd"
+        android:orientation="horizontal" >
+        <view class="com.mediatek.filemanager.AbsBaseActivity$SlowHorizontalScrollView"
+            android:id="@+id/navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true" >
+            <LinearLayout
+                android:id="@+id/tabs_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </view>
+    </LinearLayout>
+    <View android:layout_width="match_parent" 
+            android:layout_height="1px"
+            android:background="@drawable/title_bar_line"
+            android:layout_below="@id/bar_background" />
+
+    <LinearLayout android:id="@+id/select_cancel_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        style="@android:style/Holo.ButtonBar">
+        <Button android:id="@+id/select_cancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel" />
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignTop="@id/select_cancel_bar" />
+
+    <ListView android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/select_cancel_bar"
+        android:layout_below="@id/bar_background" />
+
+    <TextView android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/select_cancel_bar"
+        android:layout_below="@id/bar_background"
+        android:gravity="center"
+        android:text="@string/empty_msg"
+        android:textColor="#FFC0C0C0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+</RelativeLayout>

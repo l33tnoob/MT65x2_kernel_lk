@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:layout_width="match_parent"
+	android:orientation="vertical">
+	<LinearLayout android:id="@+id/linearLayout2"
+		android:layout_height="wrap_content" android:layout_width="match_parent">
+		  <Button android:id="@+id/non_sleep_switch"
+        android:layout_height="wrap_content" android:layout_margin="10dp"
+        android:text="@string/non_sleep_enable" android:layout_width="match_parent"></Button>
+        </LinearLayout>
+
+</LinearLayout>

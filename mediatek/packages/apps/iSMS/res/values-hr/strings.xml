@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="STR_NMS_MAIN">iSMS</string>
+    <string name="STR_NMS_HISSAGE">iSMS</string>
+    <string name="STR_NMS_INVITE_SMS_CONTENT">Pozdrav, iSMS je super alat za razgovore. Besplatan je i prikladan. Više doznajte na http://isms.hissage.com.</string>
+    <string name="STR_NMS_NO_SDCARD">Nije otkrivena SD-kartica, iSMS neće dozvoliti neke radnje</string>
+    <string name="STR_NMS_MOUNT_SDCARD">SD-kartica je dostupna za uporabu</string>
+    <string name="STR_NMS_SEND_MMS_FAIL">Poruka nije mogla biti poslana. Bit će automatski poslana kad mreža bude dostupna.</string>
+    <string name="STR_NMS_RECV_MMS_FAIL">Pruzim. nije uspjelo. Pokušajte pon. kasnije.</string>
+    <string name="STR_NMS_GROUP_CHAT_ME">ja</string>
+    <string name="STR_NMS_GROUP_CHAT_I">Ja</string>
+    <string name="STR_NMS_GROUP_CHAT_YOU">Ti</string>
+    <string name="STR_NMS_GROUP_CREATE_MSG">%1$s poziva %2$s na grupni razgovor.</string>
+    <string name="STR_NMS_GROUP_ADD_MSG">%1$s se pridružio grupnom razgovoru.</string>
+    <string name="STR_NMS_GROUP_DELETE_MSG">%1$s brisanje %2$s s grupnog razgovora.</string>
+    <string name="STR_NMS_GROUP_QUITE_MSG">%1$s je napustio grupni razgovor.</string>
+    <string name="STR_NMS_GROUP_CHAT_PLACE_HOLDER_MSG_BODY">Pridružili ste se ovoj grupi</string>
+    <string name="STR_NMS_PICTURE">fotografija</string>
+    <string name="STR_NMS_TAPE">zvuk</string>
+    <string name="STR_NMS_VCARD">kontakt</string>
+    <string name="STR_NMS_LOCATION">lokacija</string>
+    <string name="STR_NMS_SKETCH">crtež</string>
+    <string name="STR_NMS_VIDEO">video</string>
+    <string name="STR_NMS_CALENDAR">kalendar</string>
+    <string name="STR_NMS_UNKNOWN">nepoznato</string>
+    <string name="STR_NMS_READ_MODE_PIC">snimka</string>
+    <string name="STR_NMS_READ_MODE_TAPE">zvučni zapis</string>
+    <string name="STR_NMS_READ_MODE_VCARD">kontakti</string>
+    <string name="STR_NMS_READ_MODE_LOCATION">lokacija</string>
+    <string name="STR_NMS_READ_MODE_SKETCH">crtež</string>
+    <string name="STR_NMS_READ_MODE_VIDEO">video</string>
+    <string name="STR_NMS_READ_MODE_CALENDAR">kalendar</string>
+    <string name="STR_NMS_ISMS_ENABLE">(iSMS omogućen)</string>
+    <string name="STR_NMS_READ_MODE_UNKNOWN">nepoznata datoteka</string>
+    <string name="STR_NMS_ALL_MSG">Sve poruke</string>
+    <string name="STR_NMS_SAVED">Spremljeno</string>
+    <string name="STR_NMS_BLOCKMSG">Blokirano</string>
+    <string name="STR_NMS_SMS_TYPE">SMS</string>
+    <string name="STR_NMS_VERSION_ID">v5.2.16.356</string>
+    <string name="STR_NMS_NO_SIM">SIM-kartica nije otkrivena</string>
+    <string name="STR_NMS_ILLEGAL_ADDRESS">Neispravan broj</string>
+    <string name="STR_NMS_REMIND_USER_SET_NAME">Ažurirajte profil</string>
+    <string name="STR_NMS_OK">OK</string>
+    <string name="STR_NMS_BACK">Natrag</string>
+    <string name="STR_NMS_CANCEL">Prekid</string>
+    <string name="STR_NMS_NETWORK_UNAVL">Provjerite imate li ispravnu podatkovnu vezu, npr., 3G, GPRS ili Wi-Fi</string>
+    <string name="STR_NMS_TODAY">Danas</string>
+    <string name="STR_NMS_YESTERDAY">Jučer</string>
+    <string name="STR_NMS_NOW">Sada</string>
+    <string name="STR_NMS_NO_SIM_CARD">SIM-kartica nije otkrivena, morate umetnuti SIM-karticu.</string>
+    <string name="STR_NMS_NO_CONNECTION">Mreža nije dostupna ili je uključen zrakoplovni način rada, provjerite.</string>
+    <string name="STR_NMS_ATTACH_SHARE">%1$s dijeljeno %2$s</string>
+    <string name="STR_NMS_WAIT">Pričekajte…</string>
+    <string name="STR_NMS_TIPTITLE">Savjet</string>
+
+    <string name="STR_NMS_OPEN">Otvori</string>
+    <string name="STR_NMS_PLAY">Pokreni</string>
+    
+    
+
+    <string name="STR_NMS_VCARD_NAME">%1$s kontakti</string>
+    <string name="STR_NMS_SHARE_VCARD_FAILED">dijeljenje kontakta nije uspjelo</string>
+
+    <!-- upgrade info -->
+    <string name="STR_NMS_UPGRADE_URL">http://ismsi.hissage.com/webservice/hss/hssVersionUpdate.php</string>
+    <string name="STR_NMS_UPGRADE_TICKER">Nadogradnja inačice</string>
+    <string name="STR_NMS_UPGRADE_ERROR_TITLE">Greška nadogradnje</string>
+    <string name="STR_NMS_UPGRADE_ERROR_CONTENT">Greška nadogradnje, nadogradite u iSMS klijentu</string>
+    <string name="STR_NMS_INSTALLED_TITLE">Nadogradnja uspjela</string>
+    <string name="STR_NMS_INSTALLED_CONTENT">Nadogradnja na telefon uspjela</string>
+    <string name="STR_NMS_PROMPT_DLG_TITLE">Pronađena nova inačica</string>
+    <string name="STR_NMS_PROMPT_DLG_DOWNLOAD">Preuzmi</string>
+    <string name="STR_NMS_PROMPT_DLG_LATER">Kasnije</string>
+    <string name="STR_NMS_UPGRADING">Nadogradnja</string>
+    <string name="STR_NMS_UPGRADE_TIME">Prethodna provjera: %s</string>
+    
+    <!-- ext protocol -->
+    <string name="STR_NMS_OFFLINE_URL">http://ismsi.hissage.com/webservice/nmsmail/notifyOffline.php</string>
+    
+    <!-- Activation start -->
+    <string name="STR_NMS_PRELOAD_IP_MSG_CONTENT">„Welcome to iSMS.”</string>
+    <string name="STR_NMS_ACTIVAT_TITLE">iSMS će poslati jednokratni SMS za provjeru vašeg broja telefona. Moguće su naknade pružatelja usluge.</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE">Potvrdite vaš broj telefona</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE2">Potvrdite vaš broj telefona</string>
+    <string name="STR_NMS_YOUR_COUNTRY_TITLE">DRŽAVA</string>
+    <string name="STR_NMS_YOUR_PHONE_TITLE">BROJ TELEFONA</string>
+    <string name="STR_NMS_VERIFY_FAIL_TITLE">Nije uspjela SMS potvrda.</string>
+    <string name="STR_NMS_VERIFY_FAIL_CONTENT">Provjerite jeste li ispravno unijeli broj telefona.</string>
+    <string name="STR_NMS_WORKING_SMS_TIP">Provjerite imate li važeći SMS plan.</string>
+    <string name="STR_NMS_VERIFYING">Čekanje na automatsko otkrivanje SMS-a poslanog na</string>
+    <string name="STR_NMS_RETRY">Pokušaj ponovo</string>
+    <string name="STR_NMS_EDIT_NUMBER">Uredi broj</string>
+    <string name="STR_NMS_UPDATE_PROFILE">Ažuriraj profil</string>
+    <string name="STR_NMS_START_ISMS">Pokreni iSMS</string>
+    <string name="STR_NMS_SEND">Pošalji</string>
+    <string name="STR_NMS_CONGRATULATIONS_TITLE">Čestitamo!</string>
+    <string name="STR_NMS_CONGRATULATIONS_CONTENT">Zahvaljujemo na aktivaciji iSMS.\n Sada možete pokrenuti uslugu.\nSretan iSMS!</string>
+    <string name="STR_NMS_WELCOME_BACK">Dobrodošli natrag.</string>
+    <string name="STR_NMS_SEND_SMS_FAIL">Potvrda nije uspjela, provjerite:\n  1. Ispravnost telefonskog broja;\n  2. Isključeni sigurnosni softver;\n  3. Druge moguće razloge koji blokiraju slanje SMS-a.\nProvjerite i pokušajte ponovo.</string>
+    <string name="STR_NMS_ACTIVE">Aktivirajte iSMS</string>
+    <string name="STR_NMS_WELCOME_ACTIVE">Dobrodošli na iSMS</string>
+    <string name="STR_NMS_CONNECTING">Spajanje...</string>
+    <!-- Activation end -->
+
+
+    <!-- Notification start -->
+    <string name="STR_NMS_NEW_MSG_TITLE">Nova iSMS poruka</string>
+    <string name="STR_NMS_NEW_SMG_CONTENT">%d nepročitane poruke</string>
+    <!-- Notification End -->
+
+    <string name="STR_NMS_MSG_DUMPER_MSG_SMS">SMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_MMS">MMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_IP">IP poruka</string>
+    <string name="STR_NMS_MSG_DUMPER_SEND_MSG">Poslano %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_RECEIVE_MSG">Primljeno %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TIME">Vrijeme: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TEXT">Tekst</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_PIC">Fotografija</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_SKETCH">Crtež</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VOICE">Zvuk</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VIDEO">Video</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CALENDAR">Kalendar</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION_IMG">Slika lokacije</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VCARD">Vkartica</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION">Lokacija</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CAPTION">Naslov: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_URL">Url: </string>
+    <string name="STR_NMS_MSG_DUMPER_DURATION">Trajanje: </string>
+    <string name="STR_NMS_MSG_DUMPER_COORDINATE">Koordinate: </string>
+    <string name="STR_NMS_MSG_DUMPER_ADDRESS">Adresa: </string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_SENDER">Pošiljatelj: </string>
+    <string name="STR_NMS_MSG_DUMPER_NORMAL_DETAIL">Detalji sesije:</string>
+    <string name="STR_NMS_MSG_DUMPER_NAME">Ime: </string>
+    <string name="STR_NMS_MSG_DUMPER_NUMBER">Broj: </string>
+    <string name="STR_NMS_MSG_DUMPER_PORTRAIT">Portret</string>
+    <string name="STR_NMS_MSG_DUMPER_MULTI_SEND_DETAIL">Emitiranje:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_DETAIL">Grupni razgovori:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_CREATER">Izradio: </string>
+    <string name="STR_NMS_MSG_DUMPER_MEMBERS">Članovi: </string>
+    <string name="STR_NMS_MSG_DUMPER_VCARD_NAME">Ime: </string>
+    <string name="STR_NMS_MSG_DUMPER_CALENDAR_SUMMARY">Sažetak: </string>
+
+    <!-- Chat Settings -->
+    <string name="STR_NMS_CHAT_SETTING_TITLE">Postavke razgovora</string>
+    <string name="STR_NMS_DISPLAY">Prikaz</string>
+    <string name="STR_NMS_CHAT_WALLPAPER">Pozadina razgovora</string>
+    <string name="STR_NMS_SYS_WALLPAPER">Odaberi pozadinu</string>
+    <string name="STR_NMS_CAMEARPHOTO">Fotografiraj</string>
+    <string name="STR_NMS_SYS_GALLERY">Odaberi iz Galerije</string>
+    <string name="STR_NMS_DEFAULT_WALLPAPER">Zadano</string>
+    <string name="STR_NMS_NOTIFICATION_CATEGORY">Obavijest</string>
+    <string name="STR_NMS_NOTIFICATION_TITLE">iSMS obavijest</string>
+    <string name="STR_NMS_NOTIFICATION_CONTENT">Prikaži pri dolasku obavijesti</string>
+    <string name="STR_NMS_MUTE">Prig.</string>
+    <string name="STR_NMS_MUTE_OFF">Isklj.</string>
+    <string name="STR_NMS_MUTE_1">Prigušen zvuk na 1 sat</string>
+    <string name="STR_NMS_MUTE_4">Prigušen zvuk na 4 sata</string>
+    <string name="STR_NMS_MUTE_8">Prigušen zvuk na 8 sati</string>
+    <string name="STR_NMS_RINGTONE_TITLE">Melodija zvona</string>
+    <string name="STR_NMS_RINGTONE_CONTENT">Postavi melodiju zvona za nove obavijesti </string>
+    <string name="STR_NMS_VIBRATE_TITLE">Vibracija</string>
+    <string name="STR_NMS_VIBRATE_CONTENT">Vibriranje pri dolasku obavijesti</string>
+    <string name="STR_NMS_ACTIONS">Radnje</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_TITLE">Preuzmi povijest razgovora</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_CONTENT">Spremi na SD-karticu u zip formatu</string>
+    <string name="STR_NMS_EMAIL_HISTORY_TITLE">Povijest razgovora E-pošte</string>
+    <string name="STR_NMS_EMAIL_HISTROY_CONTENT">Povijest razgovora E-pošte u zip formatu</string>
+    <string name="STR_NMS_CLEAR_HISTROY">Očisti povijest razgovora</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_DLG">Preuzmanje...</string>
+    <string name="STR_NMS_DOWNLOAD_OK">Preiuzeta povijest razgovora, spremi je kao %s</string>
+    <string name="STR_NMS_DOWNLOAD_ERROR">Greška preuzimanja povijesti razgovora.</string>
+    <string name="STR_NMS_DOWNLOAD_EMPTY">Nema ništa za preuzimanje.</string>
+    <string name="STR_NMS_CLEARING">Uklanjanje povijesti, pričekajte...</string>
+    <string name="STR_NMS_WAIT_SAVE_WALLPAPER">Spremanje pozadine, pričekajte...</string>
+    <string name="STR_NMS_SAVE_WALLPAPER_OK">Spremanje pozadine je uspjelo.</string>
+    <string name="STR_NMS_CLEARDONE">Dovršeno je uklanjanje povijesti.</string>
+    <string name="STR_NMS_SVAE_TITLE">Spremi na SD-karticu</string>
+    <string name="STR_NMS_SAVE_CONTENT">Spremi ovaj niz razgovora na SD-karticu u zip formatu</string>
+    <string name="STR_NMS_EMAIL_TITLE">Dijeli preko E-pošte</string>
+    <string name="STR_NMS_EMAIL_CONTENT">Dijeli ovaj niz razgovora kao privitak E-pošte u zip formatu</string>
+
+    <!-- Chat Settings End -->
+
+
+    <!-- Profile Settings -->
+    <string name="STR_NMS_PROFILE_TITLE">Profil</string>
+    <string name="STR_NMS_TAP_AVATAR_TIP">Dotakni za uređivanje slike profila</string>
+    <string name="STR_NMS_DISPLAY_NAME_TIP">PRIKAŽI IME</string>
+    <string name="STR_NMS_ACCOUNT_TIP">ISMS RAČUN</string>
+    <string name="STR_NMS_NO_APP">Nijedna aplikacija ne može izvršiti ovu radnju.</string>
+    <string name="STR_NMS_NO_NAME">Postavite ime</string>
+    <string name="STR_NMS_SAVE_AVATAR_FAILD">Nažalost, nije uspjelo spremanje slike profila.</string>
+    <string name="STR_NMS_INPUT_NAME">Ime</string>
+    <string name="STR_NMS_TERM_WARN_ACTIVATE">Ovu mogućnost podržava samo iSMS usluga.\n\niSMS je besplatna usluga slanja izravnih poruka koja vam preko intrenetske podatkovne mreže Wi-Fi, 2G/3G, itd.) omogućava razgovore i dijeljenje multimedijalnih sadržaja s prijateljima u bilo koje vrijeme i na bilo kojem mjestu.\nPrilikom prve aktivacije iSMS šalje automatski SMS za završetak registracije. Može se primijeniti ograničeni broj/naknada SMS-a.\n\n Korisnički sporazum\n</string>
+    <string name="STR_NMS_TERM_WARN_WELCOME">iSMS je besplatna usluga slanja izravnih poruka koja vam preko intrenetske podatkovne mreže Wi-Fi, 2G/3G, itd.) omogućava razgovore i dijeljenje multimedijalnih sadržaja s prijateljima u bilo koje vrijeme i na bilo kojem mjestu.\nPrilikom prve aktivacije iSMS šalje automatski SMS za završetak registracije. Može se primijeniti ograničeni broj/naknada SMS-a.\n\n Korisnički sporazum\n</string>
+    <string name="STR_NMS_TERM_KEY">Odredbe i uvjeti</string>
+    <string name="STR_NMS_AGREE_AND_CONTINUE">Slažem se i nastavljam</string>
+    <string name="STR_NMS_ACTIVE_BNT">Aktiviraj</string>
+    <string name="STR_NMS_SET_PROFILE_OK">Profil je uspješno postavljen</string>
+    <string name="STR_NMS_SET_PROFILE_FAIL">Nije uspjelo postavljanje profila</string>
+    <string name="STR_NMS_ILLEGAL_PROFILE_NAME">Protuzakonito ime</string>
+    <string name="STR_NMS_NO_ACTIVITED">SIM-kartica nije aktivirana ili je onemogućena.</string>
+    <!-- Profile Settings End -->
+
+
+    <!-- Term Activity -->
+    <string name="STR_NMS_REJECT">Odbaci</string>
+    <string name="STR_NMS_AGREE">Slažem se</string>
+    <string name="STR_NMS_TERM_TITLE">Uvjeti usluge</string>
+    <string name="STR_NMS_TERM_CONTENT">Razumijete da Usluga i softver uključen u Uslugu mogu uključivati sigurnosne komponente koji zabranjuju zaštićivanje digitalnog materijala te da uporaba tih materijala podliježe pravilima uporabe koje postavlja AF PushMail i/ili pružatelj sadržaja Usluzi. Nemojte pokušavati prijeći ili zaobići pravila uporabe uključene u ovu Uslugu. Strogo je zabranjeno neovlašteno umnožavanje, izdavanje, daljnja distribucija ili javno izlaganje materijala iz Usluge, dijelomično ili u cijelosti.</string>
+    <!-- Term Activity End -->
+
+
+    <!-- System Settings -->
+    <string name="STR_NMS_SYS_SETTING_TITLE">iSMS poruke</string>
+    <string name="STR_NMS_SETTINGS_TITLE">PROFIL</string>
+    <string name="STR_NMS_PREFERENCE_CATE">POSTAVKE</string>
+    <string name="STR_NMS_SEND_SMS_TITLE">Pošalji kao SMS</string>
+    <string name="STR_NMS_SEND_SMS_CONTENT">Pošalji kao SMS kad iSMS nije dostupan. Mogu se primijeniti naknade pružatelja usluge. Ovo se pravilo ne primjenjuje na grupne razgovore</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_TITLE">Automatsko preuzimanje</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_CONTENT">Automatsko preuzimanje multimedijalnih predmeta</string>
+    <string name="STR_NMS_CAPTION_TITLE">Naslovi</string>
+    <string name="STR_NMS_CAPTION_CONTENT">Dijeli datoteke s naslovima</string>
+    <string name="STR_NMS_SYSTEM_CATE">SUSTAV</string>
+    <string name="STR_NMS_UPDATE_TITLE">Ažuriranje softvera</string>
+    <string name="STR_NMS_UPDATE_CONTENT">Prethodna provjera: Nikad</string>
+    <string name="STR_NMS_NETWORK_USAGE_TITLE">Uporaba mreže</string>
+    <string name="STR_NMS_NETWORK_USAGE_CONTENT">Pregledajte ukupno poslano/primljeno korištenje podataka</string>
+    <string name="STR_NMS_NETWORK_DLG_CONTENT">Poslano: %1$.3f K \nPrimljeno: %2$.3f K\nPrethodno resetiranje: %3$s</string>
+    <string name="STR_NMS_VERSION_TITLE">Inačica</string>
+    <string name="STR_NMS_NEVER_CLEAR">Nikad</string>
+    <string name="STR_NMS_RESET">Resetiraj</string>
+    <string name="STR_NMS_SWITCH_ON">UKLJUČENO</string>
+    <string name="STR_NMS_SWITCH_OFF">ISKLJUČENO</string>
+    <string name="STR_NMS_SYSTEM_SETTING_TITLE">Postavke</string>
+    <string name="STR_NMS_COPYRGIHT">Hesine Technologies, Inc.</string>
+    <string name="STR_NMS_ABOUT">O iSMS-u</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_TITLE">Prikaži status pročitanog</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_CONTENT">Prikaži status pročitanog u popisu poruka</string>
+    <string name="STR_NMS_SHOW_REMIND_TITLE">Prikaži podsjetnike</string>
+    <string name="STR_NMS_SHOW_REMIND_CONTENT">Prikaži iSMS podsjetnike u zaslonu razgovora</string>
+    <string name="STR_NMS_MENU_RESET_SETTING">Vrati zadane postavke</string>
+    <string name="STR_NMS_MENU_FUNCTION_INTRODUCTION">Značajke</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT">Korisnički sporazum</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION">Autorsko pravo</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT_TITLE">HESINE iSMS KORISNIČKI SPORAZUM O LICENCI</string>
+    <string name="STR_NMS_MENU_FUNCTION">Popis značajki</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION_DETAIL">\nHesine Technologies Inc.\nCopyright© 2008-2013\nSva prava pridržana.\n</string>
+    <!-- System Settings End -->
+
+
+    <!-- Caption Settings -->
+    <string name="STR_NMS_AUDIO_TITLE">Zvuk</string>
+    <string name="STR_NMS_VIDEO_TITLE">Videa</string>
+    <string name="STR_NMS_PHOTO_TITLE">Fotografije</string>
+    <!-- Caption Settings End -->
+
+
+    <!-- Map String start -->
+    <string name="STR_NMS_MAP_TITLE">Dijeli lokaciju</string>
+    <string name="STR_NMS_MAP_PROMPT">Karta se ne može prikazati jer nije uključena usluga lokacije. Navedena adresa je procijenjena i temelji se na informacijama o vašoj mreži. \nKako biste dobili točniju uslugu lokacije, predlažemo da uključite uslugu lokacije.</string>
+    <string name="STR_NMS_MAP_NOTE_1">Omogućite Izvor moje lokacije u postavkama sustava</string>
+    <string name="STR_NMS_MAP_SHARE">Dijeli</string>
+    <string name="STR_NMS_MAP_SETTINGS">Postavke</string>
+    <string name="STR_NMS_MAP_OK">OK</string>
+    <string name="STR_NMS_MAP_CANCEL">Prekid</string>
+    <string name="STR_NMS_MAP_EDIT">Uredi lokaciju</string>
+    <string name="STR_NMS_MAP_SEARCH_HINT">Pretraži obližnja mjesta</string>
+    <string name="STR_NMS_MAP_WAIT">Pričekajte...</string>
+    <string name="STR_NMS_MAP_EDIT_LIMIT">Uneseni znakovi dostigli su ograničenje</string>
+    <string name="STR_NMS_MAP_ADDR_LEN">Adresa je preduga</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR_LOCATING">Lociranje trenutačnog položaja...</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN_LOCATING">Lociranje PIN položaja...</string>
+    <string name="STR_NMS_MAP_LINEONE_SEARCH_LOCATING">Lociranje traženog položaja...</string>
+    <string name="STR_NMS_MAP_LINETHREE_NEARBY_LOCATING">Pretraživanje obližnjih mjesta...</string>
+    <string name="STR_NMS_MAP_LINEONE_FAILED">Vaše mjesto nije dostupno</string>
+    <string name="STR_NMS_MAP_LINETWO_FAILED">Provjerite je li Usluga lokacije uključena i je li mreža dostupna</string>
+    <string name="STR_NMS_MAP_LINETHREE_FAILED">Nisu pronađena obližnja mjesta</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR">Dijeli trenutačnu lokaciju</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN">Dijeli PIN lokaciju</string>
+    <string name="STR_NMS_MAP_MY_LOCATION">Moja lokacija</string>
+    <string name="STR_NMS_MAP_SEARCH">Pretraži</string>
+    <string name="STR_NMS_MAP_ERROR_1">Nije moguće pribaviti geografsku širinu i dužinu</string>
+    <string name="STR_NMS_MAP_ERROR_2">Google poslužitelji vratili su poruku o grešci</string>
+    <!-- Map String end -->
+
+
+    <!-- All Media String start -->
+    <string name="STR_NMS_ALL_MEDIA_TITLE">Svi mediji</string>
+    <string name="STR_NMS_ALL_MEDIA_WAIT">Pričekajte...</string>
+    <string name="STR_NMS_ALL_MEDIA_ERROR">Nije uspjelo učitavanje, pokušajte ponovo kasnije</string>
+    <string name="STR_NMS_ALL_MEDIA_EMPTY">Prazno</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_WEEK">Ovaj tjedan</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_MONTH">Ovaj mjesec</string>
+    <string name="STR_NMS_ALL_MEDIA_JAN">Siječanj</string>
+    <string name="STR_NMS_ALL_MEDIA_FEB">Veljača</string>
+    <string name="STR_NMS_ALL_MEDIA_MAR">Ožujak</string>
+    <string name="STR_NMS_ALL_MEDIA_APR">Travanj</string>
+    <string name="STR_NMS_ALL_MEDIA_MAY">Svibanj</string>
+    <string name="STR_NMS_ALL_MEDIA_JUN">Lipanj</string>
+    <string name="STR_NMS_ALL_MEDIA_JUL">Srpanj</string>
+    <string name="STR_NMS_ALL_MEDIA_AUG">Kolovoz</string>
+    <string name="STR_NMS_ALL_MEDIA_SEPT">Rujan</string>
+    <string name="STR_NMS_ALL_MEDIA_OCT">Listopad</string>
+    <string name="STR_NMS_ALL_MEDIA_NOV">Studeni</string>
+    <string name="STR_NMS_ALL_MEDIA_DEC">Prosinac</string>
+    <string name="STR_NMS_ADDCONTACT">Dodaj kontakt</string>
+    <string name="STR_NMS_ADD_PHONE_CONTACT">Dodaj \&quot;%1$s\&quot; u kontakte?</string>
+    <string name="STR_NMS_DELETE_MEDIA">Medij će biti izbrisan, nastaviti?</string>
+    <string name="STR_NMS_MEDIA_SHARE_MESSAGE">%1$s dijeljeno u %2$s</string>
+
+    <!-- All Media String end -->
+
+
+    <!-- All Locations String start -->
+    <string name="STR_NMS_ALL_LOCATIONS_TITLE">Sve lokacije</string>
+    <string name="STR_NMS_ALL_LOCATIONS_LOC">Lokacija</string>
+    <string name="STR_NMS_ALL_LOCATIONS_WAIT">Pričekajte...</string>
+    <!-- All Locations String end -->
+
+
+    <!-- Sketch -->
+    <string name="STR_NMS_SKETCH_TITLE">Nacrtajte crtež</string>
+    <string name="STR_NMS_REDO">Ponovo</string>
+    <string name="STR_NMS_UNDO">Poništiti</string>
+    <string name="STR_NMS_SKETCH_CUSTOM">Prilagođeno</string>
+    <string name="STR_NMS_PEN_SIZE">Veličina</string>
+    <string name="STR_NMS_SKETCH_TOOLS_PEN">Olovka</string>
+    <string name="STR_NMS_SKETCH_TOOLS_ERASER">Gumica</string>
+    <string name="STR_NMS_SKETCH_CUSTOM_COLOR">Prilagođena boja</string>
+    <string name="STR_NMS_CLEAR_SKETCH_TITLE">Izbriši crtež</string>
+    <string name="STR_NMS_CLEAR_SKETCH_CONTENT">Želite li izbrisati ovaj crtež?</string>
+    <string name="STR_NMS_SIZE_SKETCH_TITLE">Veličina</string>
+    <string name="STR_NMS_SIZE_SKETCH_MAX">72</string>
+    <string name="STR_NMS_SIZE_SKETCH_MIN">2</string>
+    <string name="STR_NMS_COLOR_SKETCH_TITLE">Boja</string>
+    <string name="STR_NMS_SKETCH_ERROR">Nije uspjela izrada crteža.</string>
+    <string name="STR_NMS_BACK_TITLE">Potvrda</string>
+    <string name="STR_NMS_FINISH_SKETCH_CONTENT">Jeste li sigurni da želite napustiti crtanje?</string>
+    <string name="STR_NMS_LEAVE_SKETCH_CONTENT">Jeste li sigurni da želite odbaciti ovaj crtež?</string>
+    <string name="STR_NMS_NOTREDO">Nema ništa za ponavljanje</string>
+    <string name="STR_NMS_NOTUNDO">Nema ništa za poništavanje</string>
+    <string name="STR_NMS_SKETCH_DELETE">Očisti</string>
+    <string name="STR_NMS_DISCARD">Odbaci</string>
+
+    <!-- Sketch end -->
+
+
+    <!-- Selection Contact -->
+    <string name="STR_NMS_DONE">OK</string>
+    <string name="STR_NMS_SELECTALL">Odaberi sve</string>
+    <string name="STR_NMS_DESELECTED">Poništi odabir za sve</string>
+    <string name="STR_NMS_SELECTED">%1$s odabrano</string>
+    <string name="STR_NMS_CONTACT_SEARCH">Pronađi kontakte</string>
+    <string name="STR_NMS_SEARCH">Pretraži</string>
+    <string name="STR_NMS_CONTACT_SELECT">Odaberi kontakt</string>
+    <string name="STR_NMS_SELECT_MEMBER_FULL">Odabrano je previše konatakata</string>
+    <string name="STR_NMS_SELECT_MEMBER_EMPTY">Nema odabranih kontakata</string>
+    <string name="STR_NMS_SELECT_CONTAT_WAIT">Pričekajte...</string>
+    <string name="STR_NMS_SELECT_CONTAT_EMPTY">Nema iSMS kontakata</string>
+    <string name="STR_NMS_SELECT_NO_RESULT">Ništa pronađeno</string>
+    <string name="STR_NMS_EMPTY">Nema kontakata</string>
+    <!-- Selection Contact end -->
+
+    <!-- Group chat -->
+    <string name="STR_NMS_CREATE_GROUP_TITLE">Izradi grupu</string>
+    <string name="STR_NMS_GROUP_INFO_TITLE">Info o grupi</string>
+    <string name="STR_NMS_EDIT_GROUP_TITLE">Uredi grupu</string>
+    <string name="STR_NMS_SELECT_ACTION_TITLE">Odaberi radnju</string>
+    <string name="STR_NMS_ADD_TO_BOOKMARK">Dodaj knjižnoj oznaci</string>
+    <string name="STR_NMS_ADD_TO_CONTACTS">Dodaj %1$s u kontakte</string>
+    <string name="STR_NMS_GROUP_NAME">NAZIV GRUPE</string>
+    <string name="STR_NMS_GROUP_INFO">INFO O GRUPI</string>
+    <string name="STR_NMS_GROUP_MEMBERS">ČLANOVI GRUPE</string>
+    <string name="STR_NMS_GROUP_NAME_HIT">Naziv grupe</string>
+    <string name="STR_NMS_GROUP_NAME_EMPTY">Naziv grupe je prazan</string>
+    <string name="STR_NMS_CONFIRM_LEAVE_TITLE">Napusti ovu grupu</string>
+    <string name="STR_NMS_LEAVE_GROUP_CONTENT">Želite li napustiti ovu grupu?</string>
+    <string name="STR_NMS_LEAVE_GROUP_SUCCESS">Upješno napuštanje ove grupe</string>
+    <string name="STR_NMS_LEAVE_GROUP_FAILED">Neuspjelo napuštanje ove grupe</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_SUCCESS">Uspjelo je ažuriranje imena grupe</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_SUCCESS">Dodani su novi članovi u grupu</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_FAILED">Neuspjelo dodavanje člana u grupu</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_FAILED">Neuspjelo ažuriranje naziva grupe</string>
+    <string name="STR_NMS_CREATE_GROUP_NAME_FAILED">Neuspjela izrada grupnog razgovora</string>
+    <string name="STR_NMS_DELETE_GROUP_MEMBER_FAILED">Neuspjelo uklanjanje člana grupe</string>
+    <string name="STR_NMS_UPDATE_GROUP_SUCCESS">Uspjelo je ažuriranje informacija o grupi</string>
+    <string name="STR_NMS_UPDATE_GROUP_FAILED">Neuspjelo ažuriranje informacija o grupi</string>
+    <string name="STR_NMS_GROUP_CHAT_BACK">Želite li odbaciti ovu radnju?</string>
+    <string name="STR_NMS_GROUP_MEMEBER_YOU">TI</string>
+    <string name="STR_NMS_GROUP_INVITE_MORE">Pozovi još</string>
+    <string name="STR_NMS_LEAVE_GROUP">Napusti ovu grupu</string>
+    <string name="STR_NMS_CHAT">Razgovor</string>
+    <string name="STR_NMS_CONFIRM_REMOVE_TITLE">Ukloni s popisa članova grupe</string>
+    <string name="STR_NMS_REMOVE_OK">Ukloni</string>
+    <string name="STR_NMS_REMOVE_CANCEL">Prekid</string>
+    <string name="STR_NMS_REMOVE_CONTENT">Želite li ukloniti ovo s popisa?</string>
+    <string name="STR_NMS_VIEW_ALL_MEDIA">Pregledaj sve medije</string>
+    <string name="STR_NMS_VIEW_ALL_LOCATIONS">Pregledaj sve lokacije</string>
+    <string name="STR_NMS_CHAT_SETTINGS">Postavke razgovora</string>
+    <string name="STR_NMS_VIEW_GROUP_FAILED">Napustili ste ovaj grupni razgovor.</string>
+    <string name="STR_NMS_VIEW_HISTORY">Pregledaj povijest grupe</string>
+    <string name="STR_NMS_ISMS_ENABLE_TITLE">Omogući iSMS</string>
+    <string name="STR_NMS_ISMS_ENABLE_CONTENT">Ovu značajku podržava samo iSMS usluga. Omogući iSMS račun sada?</string>
+    <string name="STR_NMS_ENABLE">Omogući</string>
+    <string name="STR_NMS_LATER">Odbaci</string>
+    <string name="STR_NMS_SWITCH_TITLE">Zamjena SIM-a</string>
+    <string name="STR_NMS_SWITCH_MESSAGE">Grupni razgovori su podržani samo kad je aktivirana usluga iSMS, ali trenutačna SIM-kartica nije aktivirana. Prebaci na aktiviranu SIM-karticu?</string>
+    <string name="STR_NMS_SWITCH_EDIT_MESSAGE">Trenutačna SIM-kartica nije povezana s ovom grupom. Prebaci na drugu SIM-karticu?</string>
+    <string name="STR_NMS_LEAVE_GROUP_NOTICE">Napustili ste ovu grupu i ne možete joj se ponovo pridružiti ako niste ponovo pozvani</string>
+    <string name="STR_NMS_LOSE_SIM_NOTICE">Originalna SIM-kartica za razgovore je uklonjena, možete razgovarati u ovoj grupi samo s originalnom SIM-karticom</string>
+    <string name="STR_NMS_SWITCH">Prebaci</string>
+
+    <!-- Group chat end -->
+
+
+    <!-- chat details screen long press item start -->
+    <string name="STR_NMS_LONG_PRESS_TITLE">Opcije poruke</string>
+    <string name="STR_NMS_SEND_VIA_TEXT">Pošalji preko SMS-a</string>
+    <string name="STR_NMS_TRY_AGAIN">Pokušaj ponovo</string>
+    <string name="STR_NMS_TRY_ALL_AGAIN">Sve pokušaj ponovo</string>
+    <string name="STR_NMS_CONTINUE_TRY">Ponovno pokušaj</string>
+    <string name="STR_NMS_COPY">Kopiraj</string>
+    
+    <string name="STR_NMS_FORWARD">Proslijedi</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_TITLE">Preuzmi</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD">Za prosljeđivanje iSMS-a najprije morate preuzeti medijski sadržaj.</string>
+    <string name="STR_NMS_FORWARD_CONTIUE">Nastavi</string>
+    <string name="STR_NMS_FORWARD_FAILED">Prosljeđivanje neuspjelo.</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_MULTI">Za višestruko prosljeđivanje treba preuzeti neke iSMS-ove.</string>
+    <string name="STR_NMS_FORWARD_SOME_FAILED">Nije uspjelo prosljeđivanje nekih iSMS-ova.</string>
+    <string name="STR_NMS_FORWARD_ALL_FAILED">Preuzimanje nije uspjelo, višestruko prosljeđivanje odbačeno</string>
+    
+    <string name="STR_NMS_SEND_VIA_MULTIMEDIA">Pošalji preko MMS-a</string>
+    <string name="STR_NMS_SHARE">Dijeli</string>
+    <string name="STR_NMS_DELETE">Izbriši</string>
+    <string name="STR_NMS_FLAG_IMPORTANT">Označi kao važno</string>
+    <string name="STR_NMS_REMOVE_IMPORTANT">Ukloni oznaku važno</string>
+    <string name="STR_NMS_SAVE_IN_SDCARD">Izvezi na SD-karticu</string>
+    <string name="STR_NMS_SAVE_FILE">Datoteka je spremljena na %1$s</string>
+    <string name="STR_NMS_SHARE_TITLE">Kako dijeliti</string>
+    <string name="STR_NMS_VIEW_DETAILS">Prikaži detalje</string>
+    <string name="STR_NMS_VIEW_DETAILS_TITLE">Detalji poruke</string>
+    <string name="STR_NMS_SEND_MSG_DETAILS">Tip: IP Poruka\nPoslana: %1$s</string>
+    <!-- chat details screen long press item end -->
+
+
+    <!-- chat details screen delete item start -->
+    <string name="STR_NMS_DELETE_TITLE">Izbriši</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_TITLE">Izbriši važne poruke</string>
+    <string name="STR_NMS_DELETE_WARNING">Ova će se poruka izbrisati.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_WARNING">Jeste li sigurni da želite izbrisati važne poruke?</string>
+    <string name="STR_NMS_DELETE_MSG">Ove odabrane poruke bit će izbrisane.</string>
+    <string name="STR_NMS_DELETE_WAITTING">Brisanje</string>
+    <string name="STR_NMS_CLEAR_HISTORY_CONTENT">Povijest razgovora bit će uklonjena iz ove pričaonice</string>
+    <string name="STR_NMS_DELETE_IMPORTANT">Uključi poruke označene kao važne</string>
+    <!-- chat details screen delete item end -->
+
+
+    <!-- chat details actionBar option start -->
+    <string name="STR_NMS_MENU_CALL">Poziv</string>
+    <string name="STR_NMS_MENU_GROUPINFO">Info o grupi</string>
+    <string name="STR_NMS_MENU_INVITE_CHAT">Pozovi prijatelje za razgovor</string>
+    <string name="STR_NMS_MENU_INVITE_ISMS">Pozovi prijatelje da koriste iSMS</string>
+    <string name="STR_NMS_MENU_SELECT_MSG">Odaberi poruku</string>
+    <string name="STR_NMS_MENU_MARK_SPAM">Pomakni na popis Neželjene pošte</string>
+    <string name="STR_NMS_MENU_REMOVE_SPAM">Ukl.iz než.pošte</string>
+    <string name="STR_NMS_MENU_ADD_SHORTCUT">Dodaj prečac</string>
+    <string name="STR_NMS_MENU_VIEW_ALLMEDIA">Pregledaj sve medije</string>
+    <string name="STR_NMS_MENU_VIEW_ALLLOCATION">Pregledaj sve lokacije</string>
+    <string name="STR_NMS_MENU_EDIT_GROUP">Uredi grupu</string>
+    <string name="STR_NMS_MENU_CHAT_SETTING">Postavke razgovora</string>
+    <string name="STR_NMS_MENU_INSERT_QUICK_TEXT">Brzo umetanje teksta</string>
+    <string name="STR_NMS_MENU_CLEAR_HISTORY">Očisti povijest razgovora</string>
+    <string name="STR_NMS_MENU_LEAVE_GROUP">Napusti ovu grupu</string>
+    <string name="STR_NMS_MENU_DISCARD">Odbaci</string>
+    <string name="STR_NMS_MENU_DELETE">Izbriši</string>
+    <string name="STR_NMS_MENU_IMPORTANT">Označi kao važno</string>
+    <string name="STR_NMS_MENU_FORWARD">Proslijedi</string>
+    <!-- chat details actionBar option end -->
+
+
+    <!-- chat details share item start -->
+    <string name="STR_NMS_TAKE_PHOTO">Fotografiraj</string>
+    <string name="STR_NMS_RECORD_VIDEO">Snimi video</string>
+    <string name="STR_NMS_DRAW_SKETCH">Nacrtaj crtež</string>
+    <string name="STR_NMS_SHARE_CONTACT">Dijeli kontakt</string>
+    <string name="STR_NMS_CHOOSE_PHOTO">Odaberi fotografiju</string>
+    <string name="STR_NMS_CHOOSE_VIDEO">Odaberi video</string>
+    <string name="STR_NMS_RECORD_AUDIO">Snimi zvučni zapis</string>
+    <string name="STR_NMS_SHARE_LOCATION">Dijeli lokaciju</string>
+    <string name="STR_NMS_CHOOSE_AUDIO">Odaberi zvučni zapis</string>
+    <string name="STR_NMS_SHARE_CALENDAR">Dijeli kalendar</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_TITLE">Dodaj glazbu</string>
+    <string name="STR_NMS_CHOOSE_RINGTONE_ITEM">Melodija zvona</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_ITEM">Zvuk</string>
+    <string name="STR_NMS_INSERT_SDCARD">Umetnite SD-karticu!</string>
+    <!-- chat details share item start -->
+
+
+    <!-- record audio start -->
+    <string name="STR_NMS_AUDIO_TIMER_FORMAT" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <string name="STR_NMS_AUDIO_LABLE">Snimač zvučnog zapisa</string>
+    <string name="STR_NMS_RECORD_AUDIO_CONT">Dotakni za snimanje</string>
+    <string name="STR_NMS_PLAY_AUDIO_CONT">Dotakni za reprodukciju</string>
+    <string name="STR_NMS_ACTION_SEND">Pošalji</string>
+    <string name="audio_db_artist_name">Vaše snimke</string>
+    <string name="audio_db_album_name">Audiosnimke</string>
+    <string name="STR_NMS_SELECT_AUDIO">Odaberi audio</string>
+    <!-- record audio end -->
+
+
+    <!-- chat & group details screen start -->
+
+    <string name="STR_NMS_UNREAD_FORMAT">%1$d nepročitane poruke</string>
+    <string name="STR_NMS_NOT_DELIVERED_TITLE">Nisu još dostavljene</string>
+    <string name="STR_NMS_FAILED_TITLE">Greška pri slanju</string>
+    <string name="STR_NMS_GROUP_SUBTITLE">%1$s, +%2$d</string>
+    <string name="STR_NMS_GROUP_DEAD_SUBTITLE">%1$s, %2$d</string>
+    <string name="STR_NMS_SAVE_AS_DRAFT">Poruka spremljena kao skica</string>
+    <string name="STR_NMS_NO_SD_TITLE">Greška SD-kartice</string>
+    <string name="STR_NMS_CANT_SHARE">Ne može se pristupiti SD-kartici.Sve značajke povezane s multimedijom privremeno su nedostupne za uporabu.\n\nProvjerite SD-karticu i pokušajte ponovo kasnije.</string>
+    <string name="STR_NMS_CANT_SAVE">SD-kartica nije pronađena, datoteka se ne može spremiti</string>
+    <string name="STR_NMS_SDSPACE_NOT_ENOUGH">Nema dovoljno mjesta na SD-kartici, datoteka se ne može spremiti.</string>
+    <string name="STR_NMS_REAEND_ALL">Ponovo pokušaj sve...</string>
+    <string name="STR_NMS_FILE_LIMIT">Preveliko</string>
+    <string name="STR_NMS_LOAD_ALL_MESSAGE">Učitaj sve poruke</string>
+    <string name="STR_NMS_DOWNLOAD_FAILED">Preuzimanje nije uspjelo</string>
+    <string name="STR_NMS_INPUT_HINT">Ulazni sadržaj</string>
+    <string name="STR_NMS_INPUT_HINT_ISMS">Utipkajte iSMS poruku</string>
+    <string name="STR_NMS_CAPTION_HINT">Utipkajte Nazive</string>
+    <string name="STR_NMS_PROTOCOL_SMS">SMS</string>
+    <string name="STR_NMS_PROTOCOL_MMS">MMS</string>
+    <string name="STR_NMS_PROTOCOL_IP">iSMS</string>
+    <string name="STR_NMS_SWITCH_BOTTON">Zamijeni SIM</string>
+    <string name="STR_NMS_TURN_ON_BOTTON">Uključi</string>
+    <string name="STR_NMS_SWITCH_TEXT_FORMAT">Za nastavak grupnog razgovora, najprije prebacite na %1$s SIM.</string>
+    <string name="STR_NMS_ENABLE_TEXT_FORMAT">Za nastavak grupnog razgovora, uključite iSMS uslugu na %1$s SIM-u.</string>
+    <string name="STR_NMS_REPLACE_ATTACH_TITLE">Zamijenite prilog</string>
+    <string name="STR_NMS_REPLACE_ATTACH_MSG">Već postoji prilog, zamijeniti?</string>
+    <string name="STR_NMS_TRUNC_CAPTION">Naziv je skraćen.</string>
+    <string name="STR_NMS_MAX_CHARACTERS_REACHED">Dostignuto je ograničenje veličine poruke.</string>
+    <string name="STR_NMS_MAX_EMOTICON_REACHED">Dostignuto je ograničenje emotikona</string>
+    <string name="STR_NMS_ENABLE_PROCESS">Obrada...</string>
+    <string name="STR_NMS_ERR_FILE">Neispravna datoteka</string>
+    <string name="STR_NMS_SENDING_TEXT">Slanje...</string>
+    <!-- chat & group details screen end --> <!-- Error code tips -->
+    <string name="STR_NMS_ERR_GENERAL">Opća greška</string>
+    <string name="STR_NMS_ERR_INVALID_ARGUMENT">Neispravni argument</string>
+    <string name="STR_NMS_ERR_NETWORK_BLOCK">Mreža nije OK</string>
+    <string name="STR_NMS_ERR_PHONE_NOT_ACTIVATED">Nije aktivirano</string>
+    <string name="STR_NMS_ERR_SIM_NOT_ACTIVATED">SIM-kartica nije aktivirana</string>
+    <string name="STR_NMS_ERR_INVALID_MSG_DB_ID">Neispravna poruka ID-a BP</string>
+    <string name="STR_NMS_ERR_ADD_MSG_DB_FAILED">Nije uspjelo umetanje u BP</string>
+    <string name="STR_NMS_ERR_UPDATE_MSG_DB_FAILED">Nije uspjelo ažuriranje BP-a</string>
+    <string name="STR_NMS_ERR_GET_MSG_DB_DATA_FAILED">Nije uspjelo pribavljanje poruke</string>
+    <string name="STR_NMS_ERR_INVALID_CONTACT_DB_ID">Neispravni kontakt ID-a BP</string>
+    <string name="STR_NMS_ERR_ADD_CONTACT_DB_FAILED">Nije uspjelo umetanje u kontakt</string>
+    <string name="STR_NMS_ERR_UPDATE_CONTACT_DB_FAILED">Nije uspjelo ažuriranje kontakta BP</string>
+    <string name="STR_NMS_ERR_GET_CONTACT_DB_DATA_FAILED">Nije uspjelo pribavljanje kontakta preko ID-a</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_ERROR_FORMAT">Neispravan format IP poruke</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_INVALID_TO">Neispravni primatelj</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_WITH_UNKNOWN_USER">Neispravan nepoznati korisnik primatelj</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_NO_MBMBER">Nema članova grupe za razgovor</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_GCHAT_DEAD">Grupni razgovori nisu aktivirani</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_INVALID_SIM_ID">Trenutačna SIM-kartica nije SIM-kartica za grupne razgovore</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_FOR_SYS_MSG">Ponovo pošalji poruku sustava</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_INVALID_STATUS">IP poruka nije spremna</string>
+    <string name="STR_NMS_ERR_GCHAT_IS_DEAD">Ova grupa za razgovore više nije tamo</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBERS">Neispravni članovi grupe</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBER_WITH_SELF">Nije uspjela izrada grupe. Sami ne možete biti član grupe</string>
+    <string name="STR_NMS_ERR_GCHAT_EXCEED_MAX_MEMBER_COUNT">Broj članova grupe dostigao je ograničenje</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_NAME">Neispravan naziv grupe za razgovor</string>
+    <string name="STR_NMS_ERR_GCHAT_SIM_IS_NOT_ACTIVATED">SIM-kartica za grupne razgovore nije aktivirana</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_NOT_INBOX_MSG">Neuspjelo pribavljanje URL-a za preuzimanje</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_INVALID_URL">Neispravan URL za preuzimanje</string>
+    <string name="STR_NMS_ERR_GET_ATTACH_NAME_INVALID_BODY_FORMAT">Neuspjelo pribavljanje naziva datoteke za preuzimanje</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_INVALID_FILE_NAME">Neispravan naziv datoteke za preuzimanje</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_EXIST">Preuzeta datoteka ne postoji</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_INBOX_MSG">Neuspjelo postavljanje datoteke za preuzimanje</string>
+    <string name="STR_NMS_ERR_SIM_INFO_NOT_FOUND">Informacije SIM-kartice nisu pronađene</string>
+    <string name="STR_NMS_ERR_SIM_IN_INVALID_STATUS">Neispravan status SIM-kartice</string>
+    <string name="STR_NMS_ERR_CMD_PROCESSING">Sustav je zauzet, ne može se obraditi naredba konfiguracije sustava</string>
+    <string name="STR_NMS_ERR_CMD_GENERAL">Opća konfiguracijska greška sustava</string>
+    <string name="STR_NMS_ERR_CODE_END">Kod nepoznate greške</string>
+    <!-- Error code tips -->
+    <string name="STR_NMS_SEND_MMS_QUERY_TITLE">Upozorenje</string>
+    <string name="STR_NMS_SEND_MMS_QUERY">Primatelj nije korisnik iSMS-a, poslati kao MMS?</string>
+    <!-- Service center start -->
+    <string name="STR_NMS_SERVICE_TITLE">iSMS servisni centar</string>
+    <string name="STR_NMS_INTRODUCTION">S iSMS-om možete izravno poslati besplatne poruke i na jednom mjestu čuvati povijest razgovora, Pritiskom na samo jedan gumb doživjet ćete sasvim novo iskustvo!</string>
+    <string name="STR_NMS_TERMS">Odredbe i uvjeti</string>
+    <string name="STR_NMS_ACTIVATION_BUTTON">Aktivirati sada</string>
+    <string name="STR_NMS_LOSE_SDCARD">SD-kartica nije otkrivena</string>
+    <!-- Service center end -->
+
+
+    <!-- conversation empty tips -->
+    <string name="STR_NMS_SPAM_EMPTY">Nemate neželjenih razgovora. \nNEŽELJENO sprema sve razgovore koji su označeni kao neželjeni. Obavijesti će prema zadanoj postavci biti isključene. Time se izbjegava nepotrebno uznemiravanje. \n\nPošiljatelja možete označiti kao neželjenog tako što držite razgovor i odaberete ikonu Označi kao neželjeno. Kad se razgovor označi kao neželjeni, ikona isključivanja obavijesti automatski će se prikazati i razgovor će biti postavljen na ovom mjestu.</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_FROM">+86123456789</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_SUBJECT">Ovo je primjer neželjene poruke.</string>
+    <string name="STR_NMS_GROUPCHAT_EMPTY">Nemate poruka grupnog razgovora. \nGRUPNI RAZGOVORI sakupljaju sve poruke grupnih razgovora koji ste izradili ili ste im se pridružili. To vam omogućava da lako pronađete i upravljate razgovorima. \n\nZa izradu grupnih razgovora na ovom zaslonu dotaknite gumb Izradi grupni razgovor i pozovite prijatelje da se pridruže grupi.</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_FROM">Naziv grupe</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_SUBJECT">Vaš prijatelj:\nI voli značajku grupnog razgovora!</string>
+    <string name="STR_NMS_IMPORTANT_EMPTY">Nemate važnih poruka. \nVAŽNO sakuplja sve poruke označene kao važne. Tako na jednostavan način pronalazite važne poruke. \n\nPoruku označavate kao važnu tako što u izborniku Opcije držite poruku i odaberete Označi kao važno. Kad je poruka označena kao važna, vidjet ćete ikonu crvene oznake prikazanu dolje.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TITLE">Ovo je primjer poruke označene kao važne. Prikazuje se crvena oznaka.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TIME">10:55 a.m.</string>
+    <string name="STR_NMS_ALLCHAT_EMPTY">Nema razgovora</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_CONTENT">Za uporabu ove značajke najprije morate aktivirati iSMS uslugu. Ne brinite - ako vam se usluga ne sviđa, možete je isključiti u Postavkama. Probajte sada!</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_TITLE">Aktivirajte iSMS</string>
+    <!-- conversation empty tips -->
+    
+    <string name="STR_NMS_CLEAR_USER_DATA">Uspješno uklanjanje podataka</string>
+    
+    <!-- get file err start -->
+    <string name="STR_NMS_NO_SUCH_FILE">Nema te datoteke</string>
+    <string name="STR_NMS_OVER_FILE_LIMIT">Veličina datoteke prelazi ograničenje</string>
+    <string name="STR_NMS_INVALID_FILE_TYPE">Ova vrsta nije podržana</string>
+    <!-- get file err end -->
+
+    <string name="STR_NMS_DELIVERY_BODY">Poruku primio %s</string>
+    <string name="STR_NMS_SIM_SELECT_TITLE">Odaberite SIM</string>
+    
+    <string name="STR_NMS_SHORTCUT_SUCCESS">Izrađen %1$s prečac.</string>
+    <string name="STR_NMS_SHORTCUT_REFRESHING">Osvježavanje</string>
+    
+    <string name="STR_NMS_DISABLE_FAILED">Radnja nije uspjela, pokušajte ponovo</string>
+    <string name="STR_NMS_ENABLE_FAILED">Radnja nije uspjela, pokušajte ponovo</string>
+    <string name="STR_NMS_ENABLE_SUCCESS">Uspješno ste aktivirali iSMS uslugu</string>
+    <string name="STR_NMS_DISABLE_SUCCESS">Uspješno ste deaktivirali iSMS uslugu</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH">iSMS usluga je deaktivirana zbog nedostatka prostora za pohranu. Napravite mjesta i aktivirajte ručno.</string>
+
+	<string name="STR_NMS_SD_CARD_FULL">SD-kartica puna</string>
+    <string name="STR_NMS_SEND_MSG_FAILED">Neuspjelo slanje poruke!</string>
+    
+    <string name="STR_NMS_GROUPS_MEM"> %1$s članovi</string>
+    <string name="STR_NMS_ALL_CONTACTS">SVE</string>
+    <string name="STR_NMS_GROUPS_CONTACTS">SVE GRUPE</string>
+    
+    <string name="STR_NMS_SETTING_COMMENT">iSMS je super alat za razgovore. Besplatan je i prikladan.Saznajte više</string>
+    <string name="STR_NMS_KNOW_MORE">Saznajte više</string>
+    <string name="STR_NMS_RECEIVED_MSG_DETAILS">Tip: IP Poruka\nOd: %1$s\nPošalji Vrijeme: %2$s\nPrimio: %3$s</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH_ADD">iSMS usluga trenutno nije dostupna zbog nedostatka prostora za pohranu.</string>
+    <string name="STR_NMS_SERVER_AUTO_ECHO_MSG">Poruka primili. Hvala!</string>
+    
+    <string name="imsp_ip_message">iSMS poruke</string>
+    <string name="imsp_invite_chat_frequently"><b>Često čavrljate s %s ?</b>\nZašto ne pozovete %s da koristi iSMS, kako biste oboje uštedjeli novac?</string>
+    <string name="imsp_enable_chat_frequently"><b>iSMS usluga za %s je onemogućena!</b>\nZašto ne biste omogućili iSMS uslugu i oboje uštedjeli novac?</string>
+    <string name="imsp_invite">Pozovi</string>
+    <string name="imsp_enable_notice">Jeste li sigurni da želite omogućiti iSMS uslugu?</string>
+    <string name="imsp_activate_chat_frequently"><b>Često čavrljate s prijateljima?</b>\nZašto ne aktivirate iSMS uslugu za čavrljanje bez SMS cijene?</string>
+    <string name="imsp_activate_note">Jeste li sigurni da želite aktivirati iSMS?</string>
+    <string name="imsp_dismiss_content">Jeste li sigurni da želite odbaciti napomenu?</string>
+    <string name="imsp_divider_online">%s je na vezi</string>
+    <string name="imsp_divider_offline">Zadnje vrijeme na vezi u %s</string>
+    <string name="imsp_divider_never_online">Nikada na vezi</string>
+    <string name="imsp_failed_title">Slanje neuspjelo</string>
+    <string name="imsp_resend_via_sms">Umjesto toga pošalji SMS</string>
+    <string name="imsp_resend_via_mms">Umjesto toga pošalji MMS</string>
+    <string name="imsp_typing_text">Tipkanje</string>
+    <string name="imsp_save_attachment">Spremi prilog</string>
+    <string name="imsp_view">Pregled</string>
+    <string name="imsp_convert_to_mms">Pretvori u MMS.</string>
+    <string name="imsp_convert_to_sms">Pretvori u SMS.</string>
+    <string name="imsp_convert_to_isms">Pretvori u iSMS.</string>
+    <string name="imsp_convert_to_mms_for_service">iSMS usluga nije dostupna u ovoj odabranoj SIM kartici. Ova poruka može se poslati samo putem MMS poruke u ovoj SIM kartici. Ipak nastaviti?</string>
+    <string name="imsp_convert_to_sms_for_service">iSMS usluga nije dostupna u ovoj odabranoj SIM kartici. Ova poruka može se poslati samo putem SMS poruke u ovoj SIM kartici. Ipak nastaviti?</string>
+    <string name="imsp_convert_to_mms_for_recipients">Primatelji nisu iSMS korisnici. Ova poruka može se poslati samo putem MMS poruke. Ipak nastaviti?</string>
+    <string name="imsp_convert_to_sms_for_recipients">Primatelji nisu iSMS korisnici. Ova poruka može se poslati samo putem SMS poruke. Ipak nastaviti?</string>
+    <string name="imsp_sms_convert_to_isms">iSMS usluga dostupna je u ovoj odabranoj SIM kartici. Za uštedu u cijeni SMS poruka, preporučuje se prebacivanje poruke na iSMS. Prebaciti sada?</string>
+    <string name="imsp_mms_convert_to_isms">iSMS usluga dostupna je u ovoj odabranoj SIM kartici. Za uštedu u cijeni MMS poruka preporučuje se prebacivanje poruke na iSMS. Prebaciti sada?</string>
+    <string name="imsp_keep_mms">Zadrži MMS</string>
+    <string name="imsp_keep_sms">Zadrži SMS</string>
+    <string name="imsp_resend_discard_message">Za ponovno slanje poruke trenutno sastavljena poruka neće se odbaciti.</string>
+    <string name="imsp_no_sim_card">Nema SIM kartice!</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">&quot;Nije nađena nijedna radna internetska veza! Pokušajte ponovno kasnije.&quot;</string>
+    <string name="imsp_chat_setting_updating">ažuriranje...</string>
+    <string name="imsp_dialog_clear_title">Obriši</string>
+    <string name="imsp_dialog_clear_description">Povijest čavrljanja bit će uklonjena iz ove pričaonice</string>
+    <string name="imsp_chat_setting_saving">spremanje...</string>
+    <string name="imsp_chat_setting_sending">slanje...</string>
+    <string name="imsp_save_chat_history_failed">spremanje neuspjelo</string>
+    <string name="imsp_send_chat_history_failed">E-pošta neuspjela</string>
+    <string name="imsp_conversation_list_all">Poruke</string>
+    <string name="imsp_conversation_list_important">Važno</string>
+    <string name="imsp_conversation_list_group_chats">Grupa</string>
+    <string name="imsp_conversation_list_spam">Neželjeno</string>
+    <string name="imsp_mark_as_spam_tips">Poruke označene kao Neželjeno biti će premještene na popis Neželjenih poruka i obavijesti će se automatski isključiti.</string>
+    <string name="imsp_typing">&quot;Tipkanje...&quot;</string>
+    <string name="imsp_type_to_compose_text">&quot;Utipkajte SMS/iSMS poruku&quot;</string>
+    <string name="imsp_no_sdcard">Nema SD kartice</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">Za slanje pozivnice, sastavljene poruke biti će odbačene.</string>
+    <string name="imsp_current_sim_enabled">Trenutna SIM kartica je omogućena.</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">Odaberite SIM za aktivaciju iSMS</string>
+    <string name="imsp_activate_message">Ovu značajku podržava samo iSMS usluga. Želite li sada aktivirati iSMS račun?</string>
+    <string name="imsp_enable_message">Ovu značajku podržava samo iSMS usluga. Želite li sada omogućiti iSMS račun?</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">Odaberite SIM da omogućite iSMS</string>
+    <string name="imsp_switch_sim_title">Zamijeni SIM</string>
+    <string name="imsp_switch_sim_message">Trenutna SIM kartica ne podržava iSMS. Prebaciti na drugu SIM karticu?</string>
+    <string name="imsp_switch_sim_successfully">Zamjena SIM kartice uspjela!</string>
+    <string name="imsp_dailog_multi_forward">Prosljeđivanje poruka</string>
+    <string name="imsp_dialog_send_result">Rezultat slanja</string>
+    <string name="imsp_dlg_send_all">Sve: %s</string>
+    <string name="imsp_dlg_send_sucess">Poslano: %s</string>
+    <string name="imsp_dlg_send_failed">Neuspjelo: %s</string>
+    <string name="imsp_multi_forward_sim_info">Dobivanje SIM informacija</string>
+    <string name="imsp_multi_forward_no_sim">Nema SIM informacija</string>
+    <string name="imsp_get_sim_failed">Dobivanje SIM informacija neuspjelo</string>
+    <string name="imsp_sim_status_error">Greška SIM stanja</string>
+    <string name="imsp_forward_norecipients">Nema primatelja za prosljeđivanje poruke</string>
+    <string name="imsp_multiforward_no_message">Nema poruka za prosljeđivanje</string>
+    <string name="imsp_need_input_recipients">Prvo navedite barem jednog primatelja</string>
+    <string name="imsp_spam_empty">Nemate neželjenih razgovora. \nNEŽELJENO sprema sve razgovore koji su označeni kao neželjeni. Obavijesti će prema zadanoj postavci biti isključene. Time se izbjegava nepotrebno uznemiravanje. \n\nPošiljatelja možete označiti kao neželjenog tako što držite razgovor i odaberete ikonu Označi kao neželjeno. Kada se razgovor označi kao neželjen, ikona isključivanja obavijesti automatski će se prikazati i razgovor će se postaviti ovdje.</string>
+    <string name="imsp_groupchat_empty">Nemate poruka grupnog čavrljanja. \nGRUPNA ČAVRLJANJA skuplja sve poruke grupnih čavrljanja koje ste izradili ili im se pridružili. To vam omogućava da lako nalaženje i upravljanje čavrljanjima. \n\nZa izradu grupnih čavrljanja na ovom zaslonu dotaknite gumb Izradi grupno čavrljanje i pozovite prijatelje da se pridruže grupi.</string>
+    <string name="imsp_important_empty">Nemate važnih poruka. \nVAŽNO skuplja sve poruke označene kao važne. Tako na lak način pronalazite važne poruke. \n\nPoruku možete označiti kao važnu tako da u izborniku Opcije držite poruku i odaberete Označi kao važno. Kad se poruka označi kao važna, vidjet ćete ikonu crvene oznake prikazanu dolje.</string>
+    <string name="imsp_allchat_empty">Nema razgovora</string>
+    <string name="imsp_attach_slideshow">Dijaprojekcija</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">Preuzimanje...</string>
+    <string name="imsp_invite_friends_to_ipmsg">Pozovite prijatelje da koriste iSMS</string>
+    <string name="imsp_multi_forward_tips_content">Za višestruko prosljeđivanje prvo treba preuzeti neke iSMS-ove.</string>
+    <string name="imsp_multi_forward_failed_part">Neuspjelo prosljeđivanje nekih iSMS-ova.</string>
+</resources>

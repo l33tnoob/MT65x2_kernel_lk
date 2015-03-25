@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--* Copyright Statement:
+ *
+ * This software/firmware and related documentation ("MediaTek Software") are
+ * protected under relevant copyright laws. The information contained herein
+ * is confidential and proprietary to MediaTek Inc. and/or its licensors.
+ * Without the prior written permission of MediaTek inc. and/or its licensors,
+ * any reproduction, modification, use or disclosure of MediaTek Software,
+ * and information contained herein, in whole or in part, shall be strictly prohibited.
+ *
+ * MediaTek Inc. (C) 2012. All rights reserved.
+ *
+ * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+ * THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+ * RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO RECEIVER ON
+ * AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+ * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+ * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+ * SUPPLIED WITH THE MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+ * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+ * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+ * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+ * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+ * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+ * CUMULATIVE LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+ * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+ * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+ * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+ *
+ * The following software/firmware and/or related documentation ("MediaTek Software")
+ * have been modified by MediaTek Inc. All revisions are subject to any receiver's
+ * applicable license agreements with MediaTek Inc.
+ */  -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="file_transfer_button_resent">Resent</string>
+    <string name="file_transfer_button_accept">Accept</string>
+    <string name="file_transfer_button_reject">Reject</string>
+    <string name="file_transfer_titile_after">with you.</string>
+    <string name="file_transfer_size">Size:</string>
+    <string name="file_formats_not_support">The file formats is not support</string>
+    
+    <string name="file_transfer_at">at</string>
+    <string name="file_transfer_failed">has not been received</string>
+    <string name="file_transfer_rejected">rejected</string>
+    <string name="file_transfer_canceled">canceled</string>
+    <string name="file_transfer_you">You</string>
+    <string name="file_transfer_from">\u0020from\u0020</string>
+    <string name="file_transfer_off_line">You are not available. Please try it later.</string>
+    <string name="file_transfer_receiver_offline">Receiver is not available. Please try it later.</string>
+    <string name="file_transfer_receiver_timeout">Invitation Timeout</string>
+    <string name="file_transfer_receiver_no_space">No enough space</string>
+    <string name="ft_notify_title">File from <xliff:g id="contact">%s</xliff:g></string>
+    <string name="ft_notify_content"><xliff:g id="name">%s</xliff:g>(<xliff:g id="size">%s</xliff:g>) </string>
+    <string name="ft_notify_multiple_title"><xliff:g id="count">%s</xliff:g> files from <xliff:g id="contact">%s</xliff:g></string>
+    <string name="ft_notify_multiple_content"><xliff:g id="size">%s</xliff:g> in total</string>
+    <string name="ft_notify_from_dif_contact_title"><xliff:g id="count">%s</xliff:g> file transfer request</string>
+    <string name="ft_percent"><xliff:g id="number">%d</xliff:g><xliff:g id="percent">%%</xliff:g></string>
+    <string name="ft_progress_bar_title">File to <xliff:g id="contact">%s</xliff:g></string>
+    <string name="filetransfer_disable_reason_capability_failed">You can not share files right now. Please check your SD card.</string>
+    <string name="file_not_exist">File doesn\'t exist.</string>
+    <string name="file_type_image">Image</string>
+    <string name="file_type_video">Video</string>
+    <string name="file_type_audio">Audio</string>
+    <string name="file_type_text">Text</string>
+    <string name="file_type_app">Application</string>
+    <string name="file_type_file">File</string>
+    <string name="auto_accept_file">Do you want to auto accept received files in future?</string>
+    <string name="file_size_warning_message">Warning: Large file may cause significant data charges.</string>
+</resources>

@@ -1,0 +1,85 @@
+do project.cmm
+;SYSTEM.Reset
+SYSTEM.CPU CortexA7MPCore
+System.Option Cflush ON    	;flush the cache to avoid data consistency
+SYSTEM.OPTION ENRESET ON
+SYSTEM.OPTION TRST ON
+SYStem.Option ResBreak OFF
+SYStem.Option WaitReset OFF
+SYStem.JtagClock 10MHz
+
+;R-T Memory Access
+SYSTEM.MULTICORE MEMORYACCESSPORT 0
+SYSTEM.MULTICORE DEBUGACCESSPORT 1
+
+;Setting Core debug register access
+SYSTEM.MULTICORE COREBASE APB:0x80070000
+
+
+SYStem.Up
+wait 200.us
+; set_hw_breakpoint_by_def
+; setting attribute of breakpoints
+Break.Select Program OnChip
+Break.Select Hll OnChip
+;Break.Select Spot OnChip
+Break.Select Read OnChip
+Break.Select Write OnChip
+
+
+
+
+
+D.S A:0x10007000 %LE %LONG 0x22000024 ;disable wdt
+local &address &value
+&address=0x10007000
+&value=0x22000024
+data.epilog.reset
+data.epilog.SEQuence  SET asd:&address %long &value
+Data.EPILOG.ON
+
+; disable DABORT and PABORT breakpoint
+ TrOnchip.Set DABORT OFF        ; used by Linux for page miss!
+ TrOnchip.Set SWI OFF
+ TrOnchip.Set PABORT OFF        ; used by Linux for page miss!
+ TrOnchip.Set UNDEF OFF         ; used to detect non-existent coprocessor
+ SYStem.Option MMU off           ; enable space ids to virtual addresses
+
+
+print "loading lk symbol"
+d.load.elf ../../../../bootable/bootloader/lk/build-&project/lk /gnu /nocode
+
+
+Y.SPATH.RESET ; reset all source path
+Y.SPATH.SRD ../../../../mediatek/platform/mt6582/lk
+Y.SPATH.SRD ../../../../mediatek/custom/out/&project/preloader
+Y.SPATH.SRD ../../../../bootable/bootloader/lk/app
+Y.SPATH.SRD ../../../../bootable/bootloader/lk/app/mt_boot
+Y.SPATH.SRD ../../../../bootable/bootloader/lk/arch/arm
+Y.SPATH.SRD ../../../../bootable/bootloader/lk/dev
+Y.SPATH.SRD ../../../../bootable/bootloader/lk/include
+Y.SPATH.SRD ../../../../bootable/bootloader/lk/kernel
+Y.SPATH.SRD ../../../../bootable/bootloader/lk/lib
+
+Break.Delete 
+B.set kmain
+; jump to BROM
+Register.Set PC a:0x00000000
+
+;winclear
+winpos 0% 0% 50% 50%
+d.l
+go
+
+on pbreak gosub
+(
+    if data.long(asd:0x10007000)!=0x00000000
+    (
+    	;AP WDT disable
+	d.s asd:0x10007000 %le %long 0x22000000
+    )
+)
+
+
+enddo
+

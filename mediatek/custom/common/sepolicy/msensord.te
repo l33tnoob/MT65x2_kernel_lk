@@ -1,0 +1,39 @@
+# ==============================================
+# Policy File of /system/binmsensord Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type msensord_exec , exec_type, file_type;
+type msensord ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive msensord;
+init_daemon_domain(msensord)
+
+# 20131028 CTS_03
+allow msensord device:chr_file { read ioctl open };
+allow msensord linker_exec:file read;
+allow msensord property_socket:sock_file write;
+
+
+# 20131028 CTS_13
+allow msensord ctl_default_prop:property_service set;
+
+
+
+# 20131122 Add Set Property Rule
+allow msensord  property_type:property_service set;

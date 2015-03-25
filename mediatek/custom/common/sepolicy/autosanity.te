@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbinautosanity Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type autosanity_exec , exec_type, file_type;
+type autosanity ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive autosanity;
+init_daemon_domain(autosanity)
+
+
+# 20131122 Add Set Property Rule
+allow autosanity  property_type:property_service set;

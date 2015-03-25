@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binmagd Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type magd_exec , exec_type, file_type;
+type magd ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive magd;
+init_daemon_domain(magd)
+
+
+# 20131122 Add Set Property Rule
+allow magd  property_type:property_service set;

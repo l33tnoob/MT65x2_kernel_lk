@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="STR_NMS_MAIN">iSMS</string>
+    <string name="STR_NMS_HISSAGE">iSMS</string>
+    <string name="STR_NMS_INVITE_SMS_CONTENT">Hei, iSMS er et kult chatteverktøy. Det er gratis og enkelt. Gå til http://isms.hissage.com for å finne ut mer.</string>
+    <string name="STR_NMS_NO_SDCARD">Finner ikke SD-kortet, enkelte operasjoner vil ikke være tillatt av iSMS.</string>
+    <string name="STR_NMS_MOUNT_SDCARD">SD-kortet er tilgjengelig for bruk</string>
+    <string name="STR_NMS_SEND_MMS_FAIL">Kunne ikke sende meldingen. Den vil bli sendt automatisk når nettverket er tilgjengelig.</string>
+    <string name="STR_NMS_RECV_MMS_FAIL">Kunne ikke laste ned. Prøv igjen senere.</string>
+    <string name="STR_NMS_GROUP_CHAT_ME">meg</string>
+    <string name="STR_NMS_GROUP_CHAT_I">jeg</string>
+    <string name="STR_NMS_GROUP_CHAT_YOU">Du</string>
+    <string name="STR_NMS_GROUP_CREATE_MSG">%1$s invitasjon %2$s til gruppechat.</string>
+    <string name="STR_NMS_GROUP_ADD_MSG">%1$s ble med i gruppechat.</string>
+    <string name="STR_NMS_GROUP_DELETE_MSG">%1$s slett %2$s fra gruppechat.</string>
+    <string name="STR_NMS_GROUP_QUITE_MSG">%1$s avsluttet gruppechat.</string>
+    <string name="STR_NMS_GROUP_CHAT_PLACE_HOLDER_MSG_BODY">Du ble med i denne gruppen </string>
+    <string name="STR_NMS_PICTURE">bilde</string>
+    <string name="STR_NMS_TAPE">lyd</string>
+    <string name="STR_NMS_VCARD">kontakt</string>
+    <string name="STR_NMS_LOCATION">posisjon</string>
+    <string name="STR_NMS_SKETCH">skisse</string>
+    <string name="STR_NMS_VIDEO">video</string>
+    <string name="STR_NMS_CALENDAR">kalender</string>
+    <string name="STR_NMS_UNKNOWN">ukjent</string>
+    <string name="STR_NMS_READ_MODE_PIC">et bilde</string>
+    <string name="STR_NMS_READ_MODE_TAPE">en lydmerknad</string>
+    <string name="STR_NMS_READ_MODE_VCARD">kontakter</string>
+    <string name="STR_NMS_READ_MODE_LOCATION">en posisjon</string>
+    <string name="STR_NMS_READ_MODE_SKETCH">en skisse</string>
+    <string name="STR_NMS_READ_MODE_VIDEO">en video</string>
+    <string name="STR_NMS_READ_MODE_CALENDAR">en kalender</string>
+    <string name="STR_NMS_ISMS_ENABLE">(iSMS aktiver)</string>
+    <string name="STR_NMS_READ_MODE_UNKNOWN">en ukjent fil</string>
+    <string name="STR_NMS_ALL_MSG">Alle meldinger</string>
+    <string name="STR_NMS_SAVED">Lagret</string>
+    <string name="STR_NMS_BLOCKMSG">Blokkert</string>
+    <string name="STR_NMS_SMS_TYPE">SMS</string>
+    <string name="STR_NMS_NO_SIM">Finner ikke SIM-kortet</string>
+    <string name="STR_NMS_ILLEGAL_ADDRESS">Ugyldig nummer</string>
+    <string name="STR_NMS_REMIND_USER_SET_NAME">Oppdater profilen din</string>
+    <string name="STR_NMS_OK">OK</string>
+    <string name="STR_NMS_BACK">Tilbake</string>
+    <string name="STR_NMS_CANCEL">Avbryt</string>
+    <string name="STR_NMS_NETWORK_UNAVL">Kontroller at du har en fungerende datatilkobling, f.eks. 3G, GPRS eller Wi-Fi</string>
+    <string name="STR_NMS_TODAY">I dag</string>
+    <string name="STR_NMS_YESTERDAY">I går</string>
+    <string name="STR_NMS_NOW">Nå</string>
+    <string name="STR_NMS_NO_SIM_CARD">Finner ikke SIM-kortet, du må sette inn et SIM-kort.</string>
+    <string name="STR_NMS_NO_CONNECTION">Nettverket er ikke tilgjengelig eller flymodus er på, vennligst kontroller.</string>
+    <string name="STR_NMS_ATTACH_SHARE">%1$s delt %2$s</string>
+    <string name="STR_NMS_WAIT">Vent...</string>
+    <string name="STR_NMS_TIPTITLE">Tips</string>
+
+    <string name="STR_NMS_OPEN">Åpne</string>
+    <string name="STR_NMS_PLAY">Spill</string>
+    
+    
+
+    <string name="STR_NMS_VCARD_NAME">%1$s kontakter</string>
+    <string name="STR_NMS_SHARE_VCARD_FAILED">del kontakter mislyktes</string>
+
+    <!-- upgrade info -->
+    <string name="STR_NMS_UPGRADE_TICKER">Versjonsoppgradering</string>
+    <string name="STR_NMS_UPGRADE_ERROR_TITLE">Oppgraderingsfeil</string>
+    <string name="STR_NMS_UPGRADE_ERROR_CONTENT">Oppgraderingsfeil, vennligst oppgrader i iSMS-klient</string>
+    <string name="STR_NMS_INSTALLED_TITLE">Oppgradering vellykket</string>
+    <string name="STR_NMS_INSTALLED_CONTENT">Oppgradert vellykket til telefonen</string>
+    <string name="STR_NMS_PROMPT_DLG_TITLE">Ny versjon funnet</string>
+    <string name="STR_NMS_PROMPT_DLG_DOWNLOAD">Last ned</string>
+    <string name="STR_NMS_PROMPT_DLG_LATER">Senere</string>
+    <string name="STR_NMS_UPGRADING">Oppgraderer</string>
+    <string name="STR_NMS_UPGRADE_TIME">Siste kontroll: %s</string>
+    
+    <!-- ext protocol -->
+    <string name="STR_NMS_OFFLINE_URL">http://ismsi.hissage.com/webservice/nmsmail/notifyOffline.php</string>
+    
+    <!-- Activation start -->
+    <string name="STR_NMS_PRELOAD_IP_MSG_CONTENT">&quot;Velkommen til iSMS.&quot;</string>
+    <string name="STR_NMS_ACTIVAT_TITLE">iSMS vil sende en engangs-SMS for å bekrefte telefonnummeret ditt. Operatørgebyr kan være gjeldende.</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE">Bekreft telefonnummer</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE2">Bekreft telefonnummer</string>
+    <string name="STR_NMS_YOUR_COUNTRY_TITLE">DITT LAND</string>
+    <string name="STR_NMS_YOUR_PHONE_TITLE">TELEFONNUMMERET DITT</string>
+    <string name="STR_NMS_VERIFY_FAIL_TITLE">Kunne ikke fullføre SMS-bekreftelse.</string>
+    <string name="STR_NMS_VERIFY_FAIL_CONTENT">Kontroller at telefonnummeret er riktig innskrevet.</string>
+    <string name="STR_NMS_WORKING_SMS_TIP">Kontroller at du har en fungerende SMS-plan.\n\</string>
+    <string name="STR_NMS_VERIFYING">Venter på automatisk oppdagelse av en SMS sendt til</string>
+    <string name="STR_NMS_RETRY">Prøv på nytt</string>
+    <string name="STR_NMS_EDIT_NUMBER">Rediger nummer</string>
+    <string name="STR_NMS_UPDATE_PROFILE">Oppdater profil</string>
+    <string name="STR_NMS_START_ISMS">Start iSMS</string>
+    <string name="STR_NMS_SEND">Send</string>
+    <string name="STR_NMS_CONGRATULATIONS_TITLE">Gratulerer!</string>
+    <string name="STR_NMS_CONGRATULATIONS_CONTENT">Takk for at du aktiverer iSMS.\n Du kan nå begynne å bruke tjenesten.\nHappy iSMS!</string>
+    <string name="STR_NMS_WELCOME_BACK">Velkommen tilbake.</string>
+    <string name="STR_NMS_SEND_SMS_FAIL">Bekreftelse mislyktes, kontroller at:\n  1. Telefonnummeret er riktig;\n  2. Sikkerhetsprogramvaren er slått på;\n  3. Andre mulige årsaker til å blokkere sending av SMS.\nKontroller og prøv på nytt senere.</string>
+    <string name="STR_NMS_ACTIVE">Aktiver iSMS</string>
+    <string name="STR_NMS_WELCOME_ACTIVE">Velkommen til iSMS</string>
+    <string name="STR_NMS_CONNECTING">Kobler til ...</string>
+    <!-- Activation end -->
+
+
+    <!-- Notification start -->
+    <string name="STR_NMS_NEW_MSG_TITLE">Ny iSMS-melding</string>
+    <string name="STR_NMS_NEW_SMG_CONTENT">%d ulest melding</string>
+    <!-- Notification End -->
+
+    <string name="STR_NMS_MSG_DUMPER_MSG_SMS">SMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_MMS">MMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_IP">IP-melding</string>
+    <string name="STR_NMS_MSG_DUMPER_SEND_MSG">Sendt %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_RECEIVE_MSG">Mottatt %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TIME">Tid: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TEXT">Tekst</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_PIC">Bilde</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_SKETCH">Skisse</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VOICE">Stemme</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VIDEO">Video</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CALENDAR">Kalender</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION_IMG">Posisjonsbilde</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VCARD">Vcard</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION">Posisjon</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CAPTION">Bildetekst: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_URL">Url: </string>
+    <string name="STR_NMS_MSG_DUMPER_DURATION">Varighet: </string>
+    <string name="STR_NMS_MSG_DUMPER_COORDINATE">Koordinat: </string>
+    <string name="STR_NMS_MSG_DUMPER_ADDRESS">Adresse: </string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_SENDER">Sender: </string>
+    <string name="STR_NMS_MSG_DUMPER_NORMAL_DETAIL">Øktdetaljer:</string>
+    <string name="STR_NMS_MSG_DUMPER_NAME">Navn: </string>
+    <string name="STR_NMS_MSG_DUMPER_NUMBER">Nummer: </string>
+    <string name="STR_NMS_MSG_DUMPER_PORTRAIT">Portrett</string>
+    <string name="STR_NMS_MSG_DUMPER_MULTI_SEND_DETAIL">Kringkast:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_DETAIL">Gruppechat:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_CREATER">Oppretter: </string>
+    <string name="STR_NMS_MSG_DUMPER_MEMBERS">Medlemmer: </string>
+    <string name="STR_NMS_MSG_DUMPER_VCARD_NAME">Navn: </string>
+    <string name="STR_NMS_MSG_DUMPER_CALENDAR_SUMMARY">Oppsummering: </string>
+
+    <!-- Chat Settings -->
+    <string name="STR_NMS_CHAT_SETTING_TITLE">Chat-innstillinger</string>
+    <string name="STR_NMS_DISPLAY">Visning</string>
+    <string name="STR_NMS_CHAT_WALLPAPER">Chat-bakgrunn</string>
+    <string name="STR_NMS_SYS_WALLPAPER">Velg bakgrunn</string>
+    <string name="STR_NMS_CAMEARPHOTO">Ta et bilde</string>
+    <string name="STR_NMS_SYS_GALLERY">Velg fra galleri</string>
+    <string name="STR_NMS_DEFAULT_WALLPAPER">Standard</string>
+    <string name="STR_NMS_NOTIFICATION_CATEGORY">Varsling</string>
+    <string name="STR_NMS_NOTIFICATION_TITLE">iSMS-varsling</string>
+    <string name="STR_NMS_NOTIFICATION_CONTENT">Vis når varslingene mottas</string>
+    <string name="STR_NMS_MUTE">Demp</string>
+    <string name="STR_NMS_MUTE_OFF">Av</string>
+    <string name="STR_NMS_MUTE_1">Demp i 1 time</string>
+    <string name="STR_NMS_MUTE_4">Demp i 4 timer</string>
+    <string name="STR_NMS_MUTE_8">Demp i 8 timer</string>
+    <string name="STR_NMS_RINGTONE_TITLE">Ringetone</string>
+    <string name="STR_NMS_RINGTONE_CONTENT">Angi en ringetone for nye varsler </string>
+    <string name="STR_NMS_VIBRATE_TITLE">Vibrer</string>
+    <string name="STR_NMS_VIBRATE_CONTENT">Vibrer når varslingene mottas</string>
+    <string name="STR_NMS_ACTIONS">Handlinger</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_TITLE">Last ned chattelogg</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_CONTENT">Lagre i SD-kort i zip-format</string>
+    <string name="STR_NMS_EMAIL_HISTORY_TITLE">E-post-chattelogg</string>
+    <string name="STR_NMS_EMAIL_HISTROY_CONTENT">E-post-chattelogg i zip-format</string>
+    <string name="STR_NMS_CLEAR_HISTROY">Slett chattelogg</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_DLG">Laster ned ...</string>
+    <string name="STR_NMS_DOWNLOAD_OK">Nedlastingen av chattelogg er fullført, lagre den som %s</string>
+    <string name="STR_NMS_DOWNLOAD_ERROR">Feil ved nedlasting av chattelogg.</string>
+    <string name="STR_NMS_DOWNLOAD_EMPTY">Ingenting å laste ned.</string>
+    <string name="STR_NMS_CLEARING">Sletter logg, vennligst vent ...</string>
+    <string name="STR_NMS_WAIT_SAVE_WALLPAPER">Lagrer bakgrunn. vennligst vent ...</string>
+    <string name="STR_NMS_SAVE_WALLPAPER_OK">Lagring av bakgrunn vellykket.</string>
+    <string name="STR_NMS_CLEARDONE">Sletting av logg er fullført.</string>
+    <string name="STR_NMS_SVAE_TITLE">Lagre på SD-kort</string>
+    <string name="STR_NMS_SAVE_CONTENT">Lagre denne chattetråden til SD-kortet som en zip-fil</string>
+    <string name="STR_NMS_EMAIL_TITLE">Del via e-post</string>
+    <string name="STR_NMS_EMAIL_CONTENT">Del denne chattetråden som vedlegg via e-post i zip-format</string>
+
+    <!-- Chat Settings End -->
+
+
+    <!-- Profile Settings -->
+    <string name="STR_NMS_PROFILE_TITLE">Profil</string>
+    <string name="STR_NMS_TAP_AVATAR_TIP">Trykk for å redigere profilbilde</string>
+    <string name="STR_NMS_DISPLAY_NAME_TIP">VIS NAVN</string>
+    <string name="STR_NMS_ACCOUNT_TIP">ISMS-KONTO</string>
+    <string name="STR_NMS_NO_APP">Ingen programmer kan utføre denne handlingen.</string>
+    <string name="STR_NMS_NO_NAME">Konfigurer navnet ditt</string>
+    <string name="STR_NMS_SAVE_AVATAR_FAILD">Beklager, kunne ikke lagre profilbilde.</string>
+    <string name="STR_NMS_INPUT_NAME">Navn</string>
+    <string name="STR_NMS_TERM_WARN_ACTIVATE">Denne funksjonen er kun støttet av iSMS-tjeneste. \n\niSMS er en gratis hurtigmeldingstjeneste som gjør at du kan chatte og dele multimediainnhold med vennene dine når som helst og når som helst via Internettdatatilkobling (Wi-Fi, 2G/3G, etc.).\nNår den aktiveres for første gang, vil iSMS sende ut en automatisk SMS for å fullføre registreringen. SMS-tilbud/-gebyr kan påløpe.\n\n Brukeravtale\n</string>
+    <string name="STR_NMS_TERM_WARN_WELCOME">iSMS er en gratis hurtigmeldingstjeneste som gjør at du kan chatte og dele multimediainnhold med vennene dine når som helst og når som helst via Internettdatatilkobling (Wi-Fi, 2G/3G, etc.).\nNår den aktiveres for første gang, vil iSMS sende ut en automatisk SMS for å fullføre registreringen. SMS-tilbud/-gebyr kan påløpe.\n\n Brukeravtale\n</string>
+    <string name="STR_NMS_TERM_KEY">Vilkår og betingelser</string>
+    <string name="STR_NMS_AGREE_AND_CONTINUE">Godta og fortsett</string>
+    <string name="STR_NMS_ACTIVE_BNT">Aktiver</string>
+    <string name="STR_NMS_SET_PROFILE_OK">Profilen er vellykket konfigurert</string>
+    <string name="STR_NMS_SET_PROFILE_FAIL">Kunne ikke konfigurere profil</string>
+    <string name="STR_NMS_ILLEGAL_PROFILE_NAME">Ulovlig navn</string>
+    <string name="STR_NMS_NO_ACTIVITED">SIM-kort er ikke aktivert eller innsatt.</string>
+    <!-- Profile Settings End -->
+
+
+    <!-- Term Activity -->
+    <string name="STR_NMS_REJECT">Avvis</string>
+    <string name="STR_NMS_AGREE">Godta</string>
+    <string name="STR_NMS_TERM_TITLE">Tjenestevilkår</string>
+    <string name="STR_NMS_TERM_CONTENT">Du forstår at tjenesten og programvaren som er innlemmet i tjenesten kan inkludere sikkerhetskomponenter som tillater at digitale materialer beskyttes, og at bruk av disse materialene er underlagt bruksreglene som er gitt av AF PushMail og/eller innholdsleverandører som leverer innhold til tjenesten. Du må ikke prøve å overstyre eller omgå noen av bruksreglene som er innlemmet i tjenesten. All uautorisert reproduksjon, offentligjøring, videre distribusjon eller offentlig fremvisning av materialene som leveres med tjenesten, helt eller delvis, er strengt forbudt.</string>
+    <!-- Term Activity End -->
+
+
+    <!-- System Settings -->
+    <string name="STR_NMS_SYS_SETTING_TITLE">iSMS-melding</string>
+    <string name="STR_NMS_SETTINGS_TITLE">PROFILE</string>
+    <string name="STR_NMS_PREFERENCE_CATE">PREFERANSER</string>
+    <string name="STR_NMS_SEND_SMS_TITLE">Send som SMS</string>
+    <string name="STR_NMS_SEND_SMS_CONTENT">Send som SMS når iSMS er utilgjengelig. Operatørens meldingstakster kan gjelde. Denne regelen gjelder ikke for gruppechat</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_TITLE">Auto-nedlasting</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_CONTENT">Last ned multimedia-objekter automatisk</string>
+    <string name="STR_NMS_CAPTION_TITLE">Bildetekster</string>
+    <string name="STR_NMS_CAPTION_CONTENT">Del fil med bildetekster</string>
+    <string name="STR_NMS_SYSTEM_CATE">SYSTEM</string>
+    <string name="STR_NMS_UPDATE_TITLE">Programvareoppdatering</string>
+    <string name="STR_NMS_UPDATE_CONTENT">Siste kontroll: Aldri</string>
+    <string name="STR_NMS_NETWORK_USAGE_TITLE">Nettverksbruk</string>
+    <string name="STR_NMS_NETWORK_USAGE_CONTENT">Vis totalt sendt/mottatt databruk</string>
+    <string name="STR_NMS_NETWORK_DLG_CONTENT">Sendt: %1$.3f K \nMottatt: %2$.3f K\nSist nullstilt: %3$s</string>
+    <string name="STR_NMS_VERSION_TITLE">Versjon</string>
+    <string name="STR_NMS_NEVER_CLEAR">Aldri</string>
+    <string name="STR_NMS_RESET">Nullstill</string>
+    <string name="STR_NMS_SWITCH_ON">PÅ</string>
+    <string name="STR_NMS_SWITCH_OFF">AV</string>
+    <string name="STR_NMS_SYSTEM_SETTING_TITLE">Innstillinger</string>
+    <string name="STR_NMS_COPYRGIHT">Hesine Technologies, Inc.</string>
+    <string name="STR_NMS_ABOUT">Om iSMS</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_TITLE">Vis Les-status</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_CONTENT">Vis les-status i meldingslisten</string>
+    <string name="STR_NMS_SHOW_REMIND_TITLE">Vis påminnelser</string>
+    <string name="STR_NMS_SHOW_REMIND_CONTENT">Vis iSMS-påminnelser på chatteskjermen</string>
+    <string name="STR_NMS_MENU_RESET_SETTING">Gjenopprett standard</string>
+    <string name="STR_NMS_MENU_FUNCTION_INTRODUCTION">Funksjoner</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT">Brukeravtale</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION">Opphavsrett</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT_TITLE">HESINE iSMS BRUKERLISENSAVTALE</string>
+    <string name="STR_NMS_MENU_FUNCTION">Funksjonsliste</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION_DETAIL">\nHesine Technologies Inc.\nCopyright© 2008-2013\nMEd enerett.\n</string>
+    <!-- System Settings End -->
+
+
+    <!-- Caption Settings -->
+    <string name="STR_NMS_AUDIO_TITLE">Lyd</string>
+    <string name="STR_NMS_VIDEO_TITLE">Videoer</string>
+    <string name="STR_NMS_PHOTO_TITLE">Bilder</string>
+    <!-- Caption Settings End -->
+
+
+    <!-- Map String start -->
+    <string name="STR_NMS_MAP_TITLE">Del posisjon</string>
+    <string name="STR_NMS_MAP_PROMPT">Kartet kan ikke vises fordi posisjonstjenesten ikke er slått på. Adressen under er estimert basert på din mobilinformasjon. \nFor å få en mer nøyaktig posisjonstjeneste kan man slå på posisjonstjenesten.</string>
+    <string name="STR_NMS_MAP_NOTE_1">Aktivert en My Location-kilde i systeminnstillinger</string>
+    <string name="STR_NMS_MAP_SHARE">Del</string>
+    <string name="STR_NMS_MAP_SETTINGS">Innstillinger</string>
+    <string name="STR_NMS_MAP_OK">OK</string>
+    <string name="STR_NMS_MAP_CANCEL">Avbryt</string>
+    <string name="STR_NMS_MAP_EDIT">Rediger posisjon</string>
+    <string name="STR_NMS_MAP_SEARCH_HINT">Søk på nærliggende steder</string>
+    <string name="STR_NMS_MAP_WAIT">Vennligst vent ...</string>
+    <string name="STR_NMS_MAP_EDIT_LIMIT">Inndatategn har nådd grensen</string>
+    <string name="STR_NMS_MAP_ADDR_LEN">Adressen er for lang</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR_LOCATING">Finner din nåværende posisjon ...</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN_LOCATING">Finner din PIN-posisjon ...</string>
+    <string name="STR_NMS_MAP_LINEONE_SEARCH_LOCATING">Finner din søkte posisjon ...</string>
+    <string name="STR_NMS_MAP_LINETHREE_NEARBY_LOCATING">Søker på nærliggende steder ...</string>
+    <string name="STR_NMS_MAP_LINEONE_FAILED">Posisjonen din er utilgjengelig nå</string>
+    <string name="STR_NMS_MAP_LINETWO_FAILED">Kontroller at posisjonstjenesten er slått på og at nettverket er tilgjengelig</string>
+    <string name="STR_NMS_MAP_LINETHREE_FAILED">Ingen nærliggende steder funnet</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR">Del nåværende posisjon</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN">Del PIN-posisjon</string>
+    <string name="STR_NMS_MAP_MY_LOCATION">Min posisjon</string>
+    <string name="STR_NMS_MAP_SEARCH">Søk</string>
+    <string name="STR_NMS_MAP_ERROR_1">Kunne ikke finne høyde- og lengdegrad</string>
+    <string name="STR_NMS_MAP_ERROR_2">Google-servere returnerte en feil</string>
+    <!-- Map String end -->
+
+
+    <!-- All Media String start -->
+    <string name="STR_NMS_ALL_MEDIA_TITLE">All media</string>
+    <string name="STR_NMS_ALL_MEDIA_WAIT">Vennligst vent ...</string>
+    <string name="STR_NMS_ALL_MEDIA_ERROR">Kunne ikke laste, prøv på nytt senere</string>
+    <string name="STR_NMS_ALL_MEDIA_EMPTY">Tom</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_WEEK">Denne uken</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_MONTH">Denne måneden</string>
+    <string name="STR_NMS_ALL_MEDIA_JAN">Januar</string>
+    <string name="STR_NMS_ALL_MEDIA_FEB">Februar</string>
+    <string name="STR_NMS_ALL_MEDIA_MAR">Mars</string>
+    <string name="STR_NMS_ALL_MEDIA_APR">April</string>
+    <string name="STR_NMS_ALL_MEDIA_MAY">Mai</string>
+    <string name="STR_NMS_ALL_MEDIA_JUN">Juni</string>
+    <string name="STR_NMS_ALL_MEDIA_JUL">Juli</string>
+    <string name="STR_NMS_ALL_MEDIA_AUG">August</string>
+    <string name="STR_NMS_ALL_MEDIA_SEPT">September</string>
+    <string name="STR_NMS_ALL_MEDIA_OCT">Oktober</string>
+    <string name="STR_NMS_ALL_MEDIA_NOV">November</string>
+    <string name="STR_NMS_ALL_MEDIA_DEC">Desember</string>
+    <string name="STR_NMS_ADDCONTACT">Legg til kontakt</string>
+    <string name="STR_NMS_ADD_PHONE_CONTACT">Legg til \&quot;%1$s\&quot; til kontakter?</string>
+    <string name="STR_NMS_DELETE_MEDIA">Media vil bli slettet, fortsette?</string>
+    <string name="STR_NMS_MEDIA_SHARE_MESSAGE">%1$s delt ved %2$s</string>
+
+    <!-- All Media String end -->
+
+
+    <!-- All Locations String start -->
+    <string name="STR_NMS_ALL_LOCATIONS_TITLE">Alle posisjoner</string>
+    <string name="STR_NMS_ALL_LOCATIONS_LOC">Posisjon</string>
+    <string name="STR_NMS_ALL_LOCATIONS_WAIT">Vennligst vent ...</string>
+    <!-- All Locations String end -->
+
+
+    <!-- Sketch -->
+    <string name="STR_NMS_SKETCH_TITLE">Tegn en skisse</string>
+    <string name="STR_NMS_REDO">Gjør på nytt</string>
+    <string name="STR_NMS_UNDO">Angre</string>
+    <string name="STR_NMS_SKETCH_CUSTOM">Egendefinert</string>
+    <string name="STR_NMS_PEN_SIZE">Størrelse</string>
+    <string name="STR_NMS_SKETCH_TOOLS_PEN">Penn</string>
+    <string name="STR_NMS_SKETCH_TOOLS_ERASER">Viskelær</string>
+    <string name="STR_NMS_SKETCH_CUSTOM_COLOR">Egendefinert farge</string>
+    <string name="STR_NMS_CLEAR_SKETCH_TITLE">Slett en skisse</string>
+    <string name="STR_NMS_CLEAR_SKETCH_CONTENT">Ønsker du å slette denne skissen?</string>
+    <string name="STR_NMS_SIZE_SKETCH_TITLE">Størrelse</string>
+    <string name="STR_NMS_SIZE_SKETCH_MAX">72</string>
+    <string name="STR_NMS_SIZE_SKETCH_MIN">2</string>
+    <string name="STR_NMS_COLOR_SKETCH_TITLE">Farge</string>
+    <string name="STR_NMS_SKETCH_ERROR">Kunne ikke opprette skisse.</string>
+    <string name="STR_NMS_BACK_TITLE">Bekreftelse</string>
+    <string name="STR_NMS_FINISH_SKETCH_CONTENT">Vil du forlate skissen?</string>
+    <string name="STR_NMS_LEAVE_SKETCH_CONTENT">Vil du droppe skissen?</string>
+    <string name="STR_NMS_NOTREDO">Ingenting å gjøre på nytt</string>
+    <string name="STR_NMS_NOTUNDO">Ingenting å angre</string>
+    <string name="STR_NMS_SKETCH_DELETE">Slett</string>
+    <string name="STR_NMS_DISCARD">Kasser</string>
+
+    <!-- Sketch end -->
+
+
+    <!-- Selection Contact -->
+    <string name="STR_NMS_DONE">OK</string>
+    <string name="STR_NMS_SELECTALL">Velg alle</string>
+    <string name="STR_NMS_DESELECTED">Fjern alle valg</string>
+    <string name="STR_NMS_SELECTED">%1$s valgt</string>
+    <string name="STR_NMS_CONTACT_SEARCH">Finn kontakter</string>
+    <string name="STR_NMS_SEARCH">Søk</string>
+    <string name="STR_NMS_CONTACT_SELECT">Velg kontakt</string>
+    <string name="STR_NMS_SELECT_MEMBER_FULL">For mange kontakter er valgt</string>
+    <string name="STR_NMS_SELECT_MEMBER_EMPTY">Ingen kontakter er valgt</string>
+    <string name="STR_NMS_SELECT_CONTAT_WAIT">Vennligst vent ...</string>
+    <string name="STR_NMS_SELECT_CONTAT_EMPTY">Ingen iSMS-kontakter</string>
+    <string name="STR_NMS_SELECT_NO_RESULT">Ingen funnet</string>
+    <string name="STR_NMS_EMPTY">Ingen kontakter</string>
+    <string name="STR_NMS_ALL_CONTACTS">ALLE</string>
+    <string name="STR_NMS_GROUPS_MEM"> %1$s medlemmer</string>
+    <string name="STR_NMS_GROUPS_CONTACTS">ALLE GRUPPER</string>
+    <!-- Selection Contact end -->
+
+    <!-- Group chat -->
+    <string name="STR_NMS_CREATE_GROUP_TITLE">Opprett gruppe</string>
+    <string name="STR_NMS_GROUP_INFO_TITLE">Gruppeinfo</string>
+    <string name="STR_NMS_EDIT_GROUP_TITLE">Rediger gruppe</string>
+    <string name="STR_NMS_SELECT_ACTION_TITLE">Velg handling</string>
+    <string name="STR_NMS_ADD_TO_BOOKMARK">Legg til bokmerke</string>
+    <string name="STR_NMS_ADD_TO_CONTACTS">Legg til %1$s i kontakter</string>
+    <string name="STR_NMS_GROUP_NAME">GRUPPENAVN</string>
+    <string name="STR_NMS_GROUP_INFO">GRUPPEINFO</string>
+    <string name="STR_NMS_GROUP_MEMBERS">GRUPPEMEDLEMMER</string>
+    <string name="STR_NMS_GROUP_NAME_HIT">Gruppenavn</string>
+    <string name="STR_NMS_GROUP_NAME_EMPTY">Gruppenavn er tomt</string>
+    <string name="STR_NMS_CONFIRM_LEAVE_TITLE">Forlat denne gruppen</string>
+    <string name="STR_NMS_LEAVE_GROUP_CONTENT">Ønsker du å forlate denne gruppen?</string>
+    <string name="STR_NMS_LEAVE_GROUP_SUCCESS">Du har forlatt denne gruppen</string>
+    <string name="STR_NMS_LEAVE_GROUP_FAILED">Kunne ikke forlate denne gruppen</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_SUCCESS">Oppdatering av gruppenavnet var vellykket</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_SUCCESS">Nye gruppemedlemmer lagt til</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_FAILED">Kunne ikke legge til gruppemedlem</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_FAILED">Kunne ikke oppdatere gruppenavn</string>
+    <string name="STR_NMS_CREATE_GROUP_NAME_FAILED">Kunne ikke opprette gruppechat</string>
+    <string name="STR_NMS_DELETE_GROUP_MEMBER_FAILED">Kunne ikke fjerne gruppemedlem</string>
+    <string name="STR_NMS_UPDATE_GROUP_SUCCESS">Oppdatering av gruppeinformasjon var vellykket</string>
+    <string name="STR_NMS_UPDATE_GROUP_FAILED">Kunne ikke oppdatere gruppeinformasjon</string>
+    <string name="STR_NMS_GROUP_CHAT_BACK">Ønsker du å slette denne operasjonen?</string>
+    <string name="STR_NMS_GROUP_MEMEBER_YOU">DU</string>
+    <string name="STR_NMS_GROUP_INVITE_MORE">Inviter flere</string>
+    <string name="STR_NMS_LEAVE_GROUP">Forlat</string>
+    <string name="STR_NMS_CHAT">Chat</string>
+    <string name="STR_NMS_CONFIRM_REMOVE_TITLE">Fjern fra gruppemedlemsliste</string>
+    <string name="STR_NMS_REMOVE_OK">Fjern</string>
+    <string name="STR_NMS_REMOVE_CANCEL">Avbryt</string>
+    <string name="STR_NMS_REMOVE_CONTENT">Ønsker du å fjerne denne fra listen?</string>
+    <string name="STR_NMS_VIEW_ALL_MEDIA">Vis alle media</string>
+    <string name="STR_NMS_VIEW_ALL_LOCATIONS">Vis alle posisjoner</string>
+    <string name="STR_NMS_CHAT_SETTINGS">Chat-innstillinger</string>
+    <string name="STR_NMS_VIEW_GROUP_FAILED">Du har forlatt denne gruppechatten.</string>
+    <string name="STR_NMS_VIEW_HISTORY">Vis gruppelogg</string>
+    <string name="STR_NMS_ISMS_ENABLE_TITLE">Aktiver iSMS</string>
+    <string name="STR_NMS_ISMS_ENABLE_CONTENT">Denne funksjonen er kun støttet av iSMS-tjenesten. Aktivere iSMS-kontoen din nå?</string>
+    <string name="STR_NMS_ENABLE">Aktiver</string>
+    <string name="STR_NMS_LATER">Avvis</string>
+    <string name="STR_NMS_SWITCH_TITLE">SIM-bryter</string>
+    <string name="STR_NMS_SWITCH_MESSAGE">Gruppechat støttes kun når iSMS-tjenesten er aktivert, men det nåværende SIM-kortet er ikke aktivert. Bytt til det aktiverte SIM-kortet?</string>
+    <string name="STR_NMS_SWITCH_EDIT_MESSAGE">Nåværende SIM-kort er ikke tilknyttet denne gruppen. Bytt til det andre SIM-kortet?</string>
+    <string name="STR_NMS_LEAVE_GROUP_NOTICE">Du har forlatt denne gruppen og kan ikke bli med i denne gruppen hvis du ikke inviteres på nytt</string>
+    <string name="STR_NMS_LOSE_SIM_NOTICE">Det originale chat-SIM-kortet har blitt fjernet, du kan kun chatte i denne gruppen med ditt originale SIM-kort</string>
+    <string name="STR_NMS_SWITCH">Bryter</string>
+
+    <!-- Group chat end -->
+
+
+    <!-- chat details screen long press item start -->
+    <string name="STR_NMS_LONG_PRESS_TITLE">Meldingsvalg</string>
+    <string name="STR_NMS_SEND_VIA_TEXT">Send via SMS</string>
+    <string name="STR_NMS_TRY_AGAIN">Prøv på nytt</string>
+    <string name="STR_NMS_TRY_ALL_AGAIN">Prøv alle igjen</string>
+    <string name="STR_NMS_CONTINUE_TRY">Fortsett å prøve</string>
+    <string name="STR_NMS_COPY">Kopier</string>
+    
+    <string name="STR_NMS_FORWARD">Videresend</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_TITLE">Last ned</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD">For å videresende iSMS-en må du laste ned mediainnholdet først.</string>
+    <string name="STR_NMS_FORWARD_CONTIUE">Fortsett</string>
+    <string name="STR_NMS_FORWARD_FAILED">Videresending mislyktes.</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_MULTI">For å gjøre multi-videresend, må noen av iSMS-ene lastes ned først.</string>
+    <string name="STR_NMS_FORWARD_SOME_FAILED">Noen iSMS-videresendinger mislyktes.</string>
+    <string name="STR_NMS_FORWARD_ALL_FAILED">Nedlasting mislyktes, multi-videresending kassert</string>
+    
+    <string name="STR_NMS_SEND_VIA_MULTIMEDIA">Send via MMS</string>
+    <string name="STR_NMS_SHARE">Del</string>
+    <string name="STR_NMS_DELETE">Slett</string>
+    <string name="STR_NMS_FLAG_IMPORTANT">Flagg som viktig</string>
+    <string name="STR_NMS_REMOVE_IMPORTANT">Fjern viktig-flagg</string>
+    <string name="STR_NMS_SAVE_IN_SDCARD">Eksporter til SD-kort</string>
+    <string name="STR_NMS_SAVE_FILE">Filen er lagret til %1$s</string>
+    <string name="STR_NMS_SHARE_TITLE">Delingsmetode</string>
+    <string name="STR_NMS_VIEW_DETAILS">Vis detaljer</string>
+    <string name="STR_NMS_VIEW_DETAILS_TITLE">Meldingsdetaljer</string>
+    <string name="STR_NMS_SEND_MSG_DETAILS">Type: IP Melding\nSendt: %1$s</string>
+    <!-- chat details screen long press item end -->
+
+
+    <!-- chat details screen delete item start -->
+    <string name="STR_NMS_DELETE_TITLE">Slett</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_TITLE">Slette viktig melding</string>
+    <string name="STR_NMS_DELETE_WARNING">Meldingen vil bli slettet.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_WARNING">Er du sikker på at du ønsker å slette denne viktige meldingen?</string>
+    <string name="STR_NMS_DELETE_MSG">De valgte medlingene vil bli slettet.</string>
+    <string name="STR_NMS_DELETE_WAITTING">Sletter</string>
+    <string name="STR_NMS_CLEAR_HISTORY_CONTENT">All chattehistorikk vill bli slettet i dette chatterommet</string>
+    <string name="STR_NMS_DELETE_IMPORTANT">Inkluder meldnger som er flagget som viktig</string>
+    <!-- chat details screen delete item end -->
+
+
+    <!-- chat details actionBar option start -->
+    <string name="STR_NMS_MENU_CALL">Ring</string>
+    <string name="STR_NMS_MENU_GROUPINFO">Gruppeinfo</string>
+    <string name="STR_NMS_MENU_INVITE_CHAT">Inviter venner til å chatte</string>
+    <string name="STR_NMS_MENU_INVITE_ISMS">Inviter venner til å bruke iSMS</string>
+    <string name="STR_NMS_MENU_SELECT_MSG">Velg melding</string>
+    <string name="STR_NMS_MENU_MARK_SPAM">Flytt til spam-liste</string>
+    <string name="STR_NMS_MENU_REMOVE_SPAM">Fjern fra spam-liste</string>
+    <string name="STR_NMS_MENU_ADD_SHORTCUT">Legg til snarvei</string>
+    <string name="STR_NMS_MENU_VIEW_ALLMEDIA">Vis alle media</string>
+    <string name="STR_NMS_MENU_VIEW_ALLLOCATION">Vis alle posisjoner</string>
+    <string name="STR_NMS_MENU_EDIT_GROUP">Rediger gruppe</string>
+    <string name="STR_NMS_MENU_CHAT_SETTING">Chat-innstillinger</string>
+    <string name="STR_NMS_MENU_INSERT_QUICK_TEXT">Sett inn hurtigtekst</string>
+    <string name="STR_NMS_MENU_CLEAR_HISTORY">Slett chattelogg</string>
+    <string name="STR_NMS_MENU_LEAVE_GROUP">Forlat denne gruppen</string>
+    <string name="STR_NMS_MENU_DISCARD">Kasser</string>
+    <string name="STR_NMS_MENU_DELETE">Slett</string>
+    <string name="STR_NMS_MENU_IMPORTANT">Flagg som viktig</string>
+    <string name="STR_NMS_MENU_FORWARD">Videresend</string>
+    <!-- chat details actionBar option end -->
+
+
+    <!-- chat details share item start -->
+    <string name="STR_NMS_TAKE_PHOTO">Ta et bilde</string>
+    <string name="STR_NMS_RECORD_VIDEO">Innspill en video</string>
+    <string name="STR_NMS_DRAW_SKETCH">Tegn en skisse</string>
+    <string name="STR_NMS_SHARE_CONTACT">Del kontakt</string>
+    <string name="STR_NMS_CHOOSE_PHOTO">Velg et bilde</string>
+    <string name="STR_NMS_CHOOSE_VIDEO">Velg en video</string>
+    <string name="STR_NMS_RECORD_AUDIO">Innspill lydfil</string>
+    <string name="STR_NMS_SHARE_LOCATION">Del posisjon</string>
+    <string name="STR_NMS_CHOOSE_AUDIO">Velg en lydfil</string>
+    <string name="STR_NMS_SHARE_CALENDAR">Del en kalender</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_TITLE">Legg til musikk</string>
+    <string name="STR_NMS_CHOOSE_RINGTONE_ITEM">Ringetone</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_ITEM">Lyd</string>
+    <string name="STR_NMS_INSERT_SDCARD">Sett inn et SD-kort!</string>
+    <!-- chat details share item start -->
+
+
+    <!-- record audio start -->
+    <string name="STR_NMS_AUDIO_TIMER_FORMAT" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <string name="STR_NMS_AUDIO_LABLE">Lydmerknad innspiller</string>
+    <string name="STR_NMS_RECORD_AUDIO_CONT">Trykk for å innspille</string>
+    <string name="STR_NMS_PLAY_AUDIO_CONT">Trykk for å spille</string>
+    <string name="STR_NMS_ACTION_SEND">Send</string>
+    <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
+    <string name="audio_db_artist_name">Dine opptak</string>
+    <string name="audio_db_album_name">Lydopptak</string>
+    <!-- record audio end -->
+
+
+    <!-- chat & group details screen start -->
+
+    <string name="STR_NMS_UNREAD_FORMAT">%1$d uleste meldinger</string>
+    <string name="STR_NMS_NOT_DELIVERED_TITLE">Ennå ikke levert</string>
+    <string name="STR_NMS_FAILED_TITLE">Sendingsfeil</string>
+    <string name="STR_NMS_GROUP_SUBTITLE">%1$s, +%2$d</string>
+    <string name="STR_NMS_GROUP_DEAD_SUBTITLE">%1$s, %2$d</string>
+    <string name="STR_NMS_SAVE_AS_DRAFT">Melding lagret som utkast</string>
+    <string name="STR_NMS_NO_SD_TITLE">SD-kortfeil</string>
+    <string name="STR_NMS_CANT_SHARE">Får ikke tilgang til SD-kortet. Alle multimediarelaterte funksjoner er midlertidig utilgjengelige for bruk.\n\nSett inn SD-kortet ditt og prøv på nytt senere.</string>
+    <string name="STR_NMS_CANT_SAVE">SD-kortet blir ikke funnet, kan ikke lagre fil</string>
+    <string name="STR_NMS_SDSPACE_NOT_ENOUGH">SD-kortet har ikke nok ledig plass, kan ikke lagre fil.</string>
+    <string name="STR_NMS_REAEND_ALL">Prøv alle igjen ...</string>
+    <string name="STR_NMS_FILE_LIMIT">For stor</string>
+    <string name="STR_NMS_LOAD_ALL_MESSAGE">Last alle meldinger</string>
+    <string name="STR_NMS_DOWNLOAD_FAILED">Nedlasting mislyktes</string>
+    <string name="STR_NMS_INPUT_HINT">Inndatainnhold</string>
+    <string name="STR_NMS_INPUT_HINT_ISMS">Skriv iSMS-melding</string>
+    <string name="STR_NMS_CAPTION_HINT">Skriv bildetekster</string>
+    <string name="STR_NMS_PROTOCOL_SMS">SMS</string>
+    <string name="STR_NMS_PROTOCOL_MMS">MMS</string>
+    <string name="STR_NMS_PROTOCOL_IP">iSMS</string>
+    <string name="STR_NMS_SWITCH_BOTTON">Bytt SIM</string>
+    <string name="STR_NMS_TURN_ON_BOTTON">Slå på</string>
+    <string name="STR_NMS_SWITCH_TEXT_FORMAT">Bytt til %1$s SIM før du fortsetter gruppechatting.</string>
+    <string name="STR_NMS_ENABLE_TEXT_FORMAT">Slå på iSMS-tjenesten på %1$s SIM før du fortsetter gruppechat.</string>
+    <string name="STR_NMS_REPLACE_ATTACH_TITLE">Skift vedlegg</string>
+    <string name="STR_NMS_REPLACE_ATTACH_MSG">Skifte eksisterende vedlegg?</string>
+    <string name="STR_NMS_TRUNC_CAPTION">Billedteksten har blitt komprimert.</string>
+    <string name="STR_NMS_MAX_CHARACTERS_REACHED">Meldingsstørrelsen er nådd.</string>
+    <string name="STR_NMS_MAX_EMOTICON_REACHED">Emoticons-grensen nås</string>
+    <string name="STR_NMS_ENABLE_PROCESS">Behandlinger ...</string>
+    <string name="STR_NMS_ERR_FILE">Ugyldig fil</string>
+    <string name="STR_NMS_SENDING_TEXT">Sender ...</string>
+    <!-- chat & group details screen end --> <!-- Error code tips -->
+    <string name="STR_NMS_ERR_GENERAL">Generell feil</string>
+    <string name="STR_NMS_ERR_INVALID_ARGUMENT">Ugyldig argument</string>
+    <string name="STR_NMS_ERR_NETWORK_BLOCK">Nettverk er ikke OK</string>
+    <string name="STR_NMS_ERR_PHONE_NOT_ACTIVATED">Ikke aktivert</string>
+    <string name="STR_NMS_ERR_SIM_NOT_ACTIVATED">SIM-kortet er ikke aktivert</string>
+    <string name="STR_NMS_ERR_INVALID_MSG_DB_ID">Ugyldig melding DB Id</string>
+    <string name="STR_NMS_ERR_ADD_MSG_DB_FAILED">Kunne ikke sette inn til DB</string>
+    <string name="STR_NMS_ERR_UPDATE_MSG_DB_FAILED">Kunne ikke oppdatere DB</string>
+    <string name="STR_NMS_ERR_GET_MSG_DB_DATA_FAILED">Kunne ikke hente melding</string>
+    <string name="STR_NMS_ERR_INVALID_CONTACT_DB_ID">Ugyldig kontakt DB Id</string>
+    <string name="STR_NMS_ERR_ADD_CONTACT_DB_FAILED">Kunne ikke sette inn kontakt</string>
+    <string name="STR_NMS_ERR_UPDATE_CONTACT_DB_FAILED">Kunne ikke oppdatere kontakt DB</string>
+    <string name="STR_NMS_ERR_GET_CONTACT_DB_DATA_FAILED">Kunne ikke hente kontakt via Id</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_ERROR_FORMAT">Ugyldig IP-meldingsformat</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_INVALID_TO">Ugyldig mottaker</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_WITH_UNKNOWN_USER">Ugyldig ukjent mottaksbruker</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_NO_MBMBER">Det finnes ingen gruppechatmedlemmer</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_GCHAT_DEAD">Gruppechat er ikke aktivert</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_INVALID_SIM_ID">Gruppechat-SIM-kortet er ikke det nåværende SIM-kortet</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_FOR_SYS_MSG">Send systemmeldingen på nytt</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_INVALID_STATUS">IP-meldingen er ikke klar</string>
+    <string name="STR_NMS_ERR_GCHAT_IS_DEAD">Denne gruppechatten er ikke lenger der</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBERS">Ugyldige gruppemedlemmer</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBER_WITH_SELF">Kunne ikke opprette gruppe. Medlemmene skal ikke innholde deg selv</string>
+    <string name="STR_NMS_ERR_GCHAT_EXCEED_MAX_MEMBER_COUNT">Antall gruppemedlemmer når grensen</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_NAME">Ugyldig gruppechatnavn</string>
+    <string name="STR_NMS_ERR_GCHAT_SIM_IS_NOT_ACTIVATED">Gruppechattens SIM-kort er ikke aktivert</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_NOT_INBOX_MSG">Kunne ikke laste ned URL</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_INVALID_URL">Ugyldig nedlastings-URL</string>
+    <string name="STR_NMS_ERR_GET_ATTACH_NAME_INVALID_BODY_FORMAT">Kunne ikke laste ned filnavn</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_INVALID_FILE_NAME">Ugyldig nedlastet filnavn</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_EXIST">Nedlastingsfilen finnes ikke</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_INBOX_MSG">Kunne ikke innstille nedlastingsfil</string>
+    <string name="STR_NMS_ERR_SIM_INFO_NOT_FOUND">SIM-kortinformasjon ikke funnet</string>
+    <string name="STR_NMS_ERR_SIM_IN_INVALID_STATUS">Ugyldig SIM-kortstatus</string>
+    <string name="STR_NMS_ERR_CMD_PROCESSING">Systemet er opptatt og kan ikke behandle kommandoen om systemkonfigurasjon</string>
+    <string name="STR_NMS_ERR_CMD_GENERAL">Generell systemkonfigurasjonsfeil</string>
+    <string name="STR_NMS_ERR_CODE_END">Den ukjente feilkoden</string>
+    <!-- Error code tips -->
+    <string name="STR_NMS_SEND_MMS_QUERY_TITLE">Advarsel</string>
+    <string name="STR_NMS_SEND_MMS_QUERY">Mottakeren er ikke iSMS-bruker, vil du sende med MMS?</string>
+    <!-- Service center start -->
+    <string name="STR_NMS_SERVICE_TITLE">iSMS service center</string>
+    <string name="STR_NMS_INTRODUCTION">Med iSMS kan du umiddelbart levere gratis meldinger, du får chattehistorikken din på samme sted, trykk på en knapp, og du får en ny opplevelse!</string>
+    <string name="STR_NMS_TERMS">Vilkår og betingelser</string>
+    <string name="STR_NMS_ACTIVATION_BUTTON">Aktivering nå</string>
+    <string name="STR_NMS_LOSE_SDCARD">Finner ikke SD-kortet</string>
+    <!-- Service center end -->
+
+
+    <!-- conversation empty tips -->
+    <string name="STR_NMS_SPAM_EMPTY">Du har ingen spam-samtale. \nSPAM samler alle samtaler som er merket som spam. Varsling vil som standard være slått av. Slik unngår du unødvendige forstyrrelser. \n\nDu kan markere en sender ved å holde en samtale og velge Marker som spam-ikonet. Når en samtale markeres som spam, vil et varslingsikon bli vist automatisk og samtalen vil bli plassert her.</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_FROM">+86123456789</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_SUBJECT">Dette er et eksempel på en spam-melding.</string>
+    <string name="STR_NMS_GROUPCHAT_EMPTY">Du har ingen gruppechatmelding. \nGRUPPECHATTER samler alle gruppechatmeldingene som du oppretter eller blir med i. Dermed kan du finne og administrere gruppechattene dine enkelt. \n\nFor å opprette en gruppechat kan du trykke på Opprett gruppe-knappen på denne skjermen og invitere vennene dine til å bli med i gruppen.</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_FROM">Gruppenavn</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_SUBJECT">Vennen din:\nI liker gruppechat-funksjonen!</string>
+    <string name="STR_NMS_IMPORTANT_EMPTY">Du har ingen viktig melding. \nIMPORTANT samler meldingene som er flagget som viktige. Slik kan du lett finne meldingene. \n\nDu kan flagge en melding som viktig ved å holde en melding og velge Flagg som viktig fra Valg-menyen. Når en melding er flagget som viktig, vil du se et rødt flaggikon, som nedenfor.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TITLE">Dette er et eksempel på en melding som er flagget som viktig. Et rødt flagg vil vises.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TIME">10.55</string>
+    <string name="STR_NMS_ALLCHAT_EMPTY">Ingen samtaler</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_CONTENT">For å bruke denne funksjonen må du aktivere iSMS-tjenesten først. Ikke vær bekymret – hvis du ikke liker tjenesten kan du alltids slå av i Innstillinger. Prøv det nå!</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_TITLE">Aktiver iSMS</string>
+    <!-- conversation empty tips -->
+    
+    <string name="STR_NMS_CLEAR_USER_DATA">Sletting av data vellykket</string>
+    
+    <!-- get file err start -->
+    <string name="STR_NMS_NO_SUCH_FILE">Ingen slik fil</string>
+    <string name="STR_NMS_OVER_FILE_LIMIT">Filstørrelsen overstiger grensen</string>
+    <string name="STR_NMS_INVALID_FILE_TYPE">Støtter ikke denne typen</string>
+    <!-- get file err end -->
+
+    <string name="STR_NMS_DELIVERY_BODY">Meldingen mottatt av %s</string>
+    <string name="STR_NMS_SIM_SELECT_TITLE">Velg SIM</string>
+    
+    <string name="STR_NMS_SHORTCUT_SUCCESS">Snarvei %1$s opprettet.</string>
+    <string name="STR_NMS_SHORTCUT_REFRESHING">Oppdaterer</string>
+    
+    <string name="STR_NMS_DISABLE_FAILED">Operasjonen mislyktes, vennligst prøv på nytt</string>
+    <string name="STR_NMS_ENABLE_FAILED">Operasjonen mislyktes, vennligst prøv på nytt</string>
+    <string name="STR_NMS_ENABLE_SUCCESS">Du har nå aktivert iSMS-tjenesten</string>
+    <string name="STR_NMS_DISABLE_SUCCESS">Du har nå deaktivert iSMS-tjenesten</string>
+    
+	<string name="STR_NMS_SD_CARD_FULL">SD-kortet er fullt</string>
+    <string name="STR_NMS_SEND_MSG_FAILED">Sending av melding mislyktes!</string>
+    <string name="STR_NMS_SELECT_AUDIO">Velg lyd</string>
+    
+    <string name="STR_NMS_SETTING_COMMENT">iSMS er et kult chatteverktøy. Det er gratis og enkelt.Lær mer</string>
+    <string name="STR_NMS_KNOW_MORE">Lær mer</string>
+    <string name="STR_NMS_RECEIVED_MSG_DETAILS">Type: IP Melding\nFra: %1$s\nSendt: %2$s\nMottatt: %3$s</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH_ADD">iSMS-tjenesten er midlertidig utilgjengelig på grunn av mangel på lagringsplass.</string>
+    <string name="STR_NMS_SERVER_AUTO_ECHO_MSG">Mottatt melding. Takk!</string>   
+    
+    <string name="imsp_ip_message">iSMS-melding</string>
+    <string name="imsp_invite_chat_frequently"><b>Chatter ofte med %s ?</b>\nHvorfor ikke invitere %s til å bruke iSMS og spare penger for dere begge?</string>
+    <string name="imsp_enable_chat_frequently"><b>iSMS-tjenesten %s er deaktivert!</b>\nHvorfor ikke aktivere iSMS-tjenesten og spare penger for dere begge?</string>
+    <string name="imsp_invite">Inviter</string>
+    <string name="imsp_enable_notice">Vil du aktivere iSMS-tjenesten?</string>
+    <string name="imsp_activate_chat_frequently"><b>Chatter ofte med venner?</b>\nHvorfor ikke aktivere iSMS-tjenesten for å chatte uten å betale SMS-pris?</string>
+    <string name="imsp_activate_note">Er du sikker du vil aktivere iSMS?</string>
+    <string name="imsp_dismiss_content">Er du sikker du vil avvise notatet?</string>
+    <string name="imsp_divider_online">%s er pålogget</string>
+    <string name="imsp_divider_offline">Sist pålogget ved %s</string>
+    <string name="imsp_divider_never_online">Aldri pålogget</string>
+    <string name="imsp_failed_title">Sending mislyktes</string>
+    <string name="imsp_resend_via_sms">Send heller SMS</string>
+    <string name="imsp_resend_via_mms">Send heller MMS</string>
+    <string name="imsp_typing_text">Skriver</string>
+    <string name="imsp_save_attachment">Lagre vedlegg</string>
+    <string name="imsp_view">Vis</string>
+    <string name="imsp_convert_to_mms">Konverter til MMS</string>
+    <string name="imsp_convert_to_sms">Konverter til SMS</string>
+    <string name="imsp_convert_to_isms">Konverter til iSMS</string>
+    <string name="imsp_convert_to_mms_for_service">iSMS-tjenesten er ikke tilgjengelig på dette valgte SIM-kortet. Denne meldingen kan kun bli sendt via MMS på dette SIM-kortet. Fortsette allikevel?</string>
+    <string name="imsp_convert_to_sms_for_service">iSMS-tjenesten er ikke tilgjengelig på dette valgte SIM-kortet. Denne meldingen kan kun bli sendt via SMS på dette SIM-kortet. Fortsette allikevel?</string>
+    <string name="imsp_convert_to_mms_for_recipients">Mottakeren(e) er ikke iSMS bruke(er). Denne meldingen kan kun bli sendt via MMS. Fortsette allikevel?</string>
+    <string name="imsp_convert_to_sms_for_recipients">Mottakeren(e) er ikke iSMS bruke(er). Denne meldingen kan kun bli sendt via SMS. Fortsette allikevel?</string>
+    <string name="imsp_sms_convert_to_isms">iSMS-tjenesten er tilgjengelig på dette valgte SIM-kortet. For å spare SMS-penger foreslås det å bytte meldingen til iSMS. Bytte nå?</string>
+    <string name="imsp_mms_convert_to_isms">iSMS-tjenesten er tilgjengelig på dette valgte SIM-kortet. For å spare MMS-penger foreslås det å bytte meldingen til iSMS. Bytte nå?</string>
+    <string name="imsp_keep_mms">Beholde MMS</string>
+    <string name="imsp_keep_sms">Beholde SMS</string>
+    <string name="imsp_resend_discard_message">For å sende meldingen på ny vil meldingen du skriver nå kasseres.</string>
+    <string name="imsp_no_sim_card">Ingen SIM-kort!</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">"Fant ingen fungerende Internettilkobling! Prøv igjen senere."</string>
+    <string name="imsp_chat_setting_updating">oppdaterer …</string>
+    <string name="imsp_dialog_clear_title">Slett</string>
+    <string name="imsp_dialog_clear_description">All chattehistorikk vill bli slettet i dette chatterommet</string>
+    <string name="imsp_chat_setting_saving">lagrer …</string>
+    <string name="imsp_chat_setting_sending">sender ...</string>
+    <string name="imsp_save_chat_history_failed">lagring mislyktes</string>
+    <string name="imsp_send_chat_history_failed">E-post mislyktes</string>
+    <string name="imsp_conversation_list_all">Meldinger</string>
+    <string name="imsp_conversation_list_important">Viktig</string>
+    <string name="imsp_conversation_list_group_chats">Gruppechat</string>
+    <string name="imsp_conversation_list_spam">Spam</string>
+    <string name="imsp_mark_as_spam_tips">Meldinger markert som Spam flyttes til Spam-listen og varslingen slås av automatisk.</string>
+    <string name="imsp_typing">"Skriver …"</string>
+    <string name="imsp_type_to_compose_text">"Skriv SMS/iSMS-melding"</string>
+    <string name="imsp_no_sdcard">Ingen SD-kort</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">For å sende en invitasjon vil meldingen du skriver nå kasseres.</string>
+    <string name="imsp_current_sim_enabled">Gjeldende SIM er aktivert.</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">Velg SIM for å aktivere iSMS</string>
+    <string name="imsp_activate_message">Denne funksjonen er kun støttet av iSMS-tjenesten. Aktivere iSMS-kontoen din nå?</string>
+    <string name="imsp_enable_message">Denne funksjonen er kun støttet av iSMS-tjenesten. Aktivere iSMS-kontoen din nå?</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">Velg SIM for å aktivere iSMS</string>
+    <string name="imsp_switch_sim_title">Bytt SIM</string>
+    <string name="imsp_switch_sim_message">Gjeldende SIM støtter ikke iSMS. Bytte til annen SIM?</string>
+    <string name="imsp_switch_sim_successfully">Bytte av SIM vellykket!</string>
+    <string name="imsp_dailog_multi_forward">Videresender meldinger</string>
+    <string name="imsp_dialog_send_result">Senderesultat</string>
+    <string name="imsp_dlg_send_all">Alle: %s</string>
+    <string name="imsp_dlg_send_sucess">Sendt: %s</string>
+    <string name="imsp_dlg_send_failed">Mislyktes: %s</string>
+    <string name="imsp_multi_forward_sim_info">Henter SIM-info</string>
+    <string name="imsp_multi_forward_no_sim">Ingen SIM-info</string>
+    <string name="imsp_get_sim_failed">Henting av SIM-info mislyktes</string>
+    <string name="imsp_sim_status_error">SIM statusfeil</string>
+    <string name="imsp_forward_norecipients">Det er ingen mottakere for å videresende melding</string>
+    <string name="imsp_multiforward_no_message">Ingen melding(er) kan videresendes</string>
+    <string name="imsp_need_input_recipients">Angi minst en mottaker først</string>
+    <string name="imsp_spam_empty">Du har ingen spam-samtale. \nSPAM samler alle samtaler som er merket som spam. Varsling vil som standard være slått av. Slik unngår du unødvendige forstyrrelser. \n\nDu kan markere en sender ved å holde en samtale og velge Marker som spam-ikonet. Når en samtale markeres som spam, vil et varslingsikon bli vist automatisk og samtalen vil bli plassert her.</string>
+    <string name="imsp_groupchat_empty">Du har ingen gruppechatmelding. \nGRUPPECHATTER samler alle gruppechatmeldingene som du oppretter eller blir med i. Dermed kan du finne og administrere gruppechattene dine enkelt. \n\nFor å opprette en gruppechat kan du trykke på Opprett gruppe-knappen på denne skjermen og invitere vennene dine til å bli med i gruppen.</string>
+    <string name="imsp_important_empty">Du har ingen viktig melding. \nIMPORTANT samler meldingene som er flagget som viktige. Slik kan du lett finne meldingene. \n\nDu kan flagge en melding som viktig ved å holde en melding og velge Flagg som viktig fra Valg-menyen. Når en melding er flagget som viktig, vil du se et rødt flaggikon, som nedenfor.</string>
+    <string name="imsp_allchat_empty">Ingen samtaler</string>
+    <string name="imsp_attach_slideshow">Lysbildevisning</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">Laster ned ...</string>
+    <string name="imsp_invite_friends_to_ipmsg">Inviter venner til å bruke iSMS</string>
+    <string name="imsp_multi_forward_tips_content">For å gjøre multi-videresend, må noen av iSMS-ene lastes ned først.</string>
+    <string name="imsp_multi_forward_failed_part">Noen iSMS-videresendinger mislyktes.</string>
+
+</resources>

@@ -1,0 +1,37 @@
+# ==============================================
+# Policy File of /system/binshutdown Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type shutdown_exec , exec_type, file_type;
+type shutdown ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive shutdown;
+init_daemon_domain(shutdown)
+
+
+# 20131122 Add Set Property Rule
+allow shutdown  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_CTS_02
+allow shutdown labeledfs:filesystem unmount;
+allow shutdown linker_exec:file read;
+allow shutdown property_socket:sock_file write;
+allow shutdown self:capability { sys_boot dac_override };
+allow shutdown sysfs:file write;
+

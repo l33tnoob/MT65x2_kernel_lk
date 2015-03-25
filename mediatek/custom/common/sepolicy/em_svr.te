@@ -1,0 +1,49 @@
+# ==============================================
+# Policy File of /system/binem_svr Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type em_svr_exec , exec_type, file_type;
+type em_svr ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive em_svr;
+init_daemon_domain(em_svr)
+
+# 20131028 CTS_16
+allow em_svr linker_exec:file read;
+
+
+# 20131119 FeatureSQC
+allow em_svr device:chr_file { read ioctl open };
+
+
+
+# 20131122 Add Set Property Rule
+allow em_svr  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow em_svr self:capability dac_override;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow em_svr graphics_device:chr_file { read ioctl open };
+allow em_svr proc:file write;
+allow em_svr property_socket:sock_file write;
+allow em_svr self:capability dac_override;
+allow em_svr system_data_file:file { write open };
+

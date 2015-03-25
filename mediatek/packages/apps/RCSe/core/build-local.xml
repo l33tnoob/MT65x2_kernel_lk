@@ -1,0 +1,38 @@
+<!--**********************-->
+<!-- Android RCS terminal -->
+<!--**********************-->
+<project name="RCS core" basedir=".">
+
+	<property environment="env"/>
+	<property name="android.root" 		value="${env.ANDROID_SDK}"/>
+	<property name="terminal.root" 		value="../core"/>
+        <property name="api.dir.root" 		value="../"/>
+	<property name="terminal.api" 		value="${api.dir.root}/libs/rcse_api.jar"/>
+	<property name="terminal.build"		value="${terminal.root}/build"/>
+	<property name="src.path" 			value="${terminal.root}/src"/>
+
+	<path id="j2se.lib">
+		<fileset dir="${env.JAVA_HOME}/lib/">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	<property name="j2se.classpath" refid="j2se.lib"/>
+
+	<path id="terminal.classpath">
+       	<pathelement path="${j2se.classpath};${android.root}/android.jar;${terminal.build}/classes;${terminal.root}/build/classes"/>
+	</path>
+
+    <!-- Generate RCS API JAR -->
+    <target name="api">
+        <echo>Generate ${terminal.api} file to /libs</echo>
+
+	<delete file="${terminal.api}"/>
+    	
+	<jar destfile="${terminal.api}" basedir="${terminal.root}/bin/classes"
+		includesfile="${terminal.root}/jarfiles.txt">
+        </jar>
+	<copy todir="${api.dir.root}/RcsePlugin/plugin/phone/libs/" file="${terminal.api}"/>
+    
+    </target>
+</project>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+   
+    <ListView android:id="@+id/sdtest_choose_storage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"/>
+    <ToggleButton
+        android:id="@+id/desense_sdlog_toggle_btn"
+        android:layout_width="90dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textOff="@string/desense_sdlog_toggle_end"
+        android:textOn="@string/desense_sdlog_toggle_start" >
+    </ToggleButton>
+
+</LinearLayout>

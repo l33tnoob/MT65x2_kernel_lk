@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout01"
+			 android:layout_width="fill_parent" 
+			 android:layout_height="fill_parent" 
+
+			 xmlns:android="http://schemas.android.com/apk/res/android">
+			 
+    <TableRow>
+        <Button android:text="@+id/txtReset" android:id="@+id/btn_reset" 
+		android:layout_weight="1"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">
+		</Button>     
+    </TableRow>			 			 			 
+    <TableRow>
+        <TextView android:layout_weight="1" android:id="@+id/totalcount" android:padding="3dip" />
+        <TextView android:layout_weight="1" android:id="@+id/accuracy_label" android:padding="3dip" />    
+    </TableRow>			 			 
+    <TableRow>
+        <TextView android:layout_weight="1" android:id="@+id/table00" android:padding="3dip" />
+        <TextView android:layout_weight="1" android:id="@+id/table01" android:padding="3dip" />
+        <TextView android:layout_weight="1" android:id="@+id/table02" android:padding="3dip" />     
+    </TableRow>			 
+    <TableRow>
+        <TextView android:layout_weight="1" android:id="@+id/table10" android:padding="3dip" />
+        <TextView android:layout_weight="1" android:id="@+id/table11" android:padding="3dip" />
+        <TextView android:layout_weight="1" android:id="@+id/table12" android:padding="3dip" />     
+    </TableRow>	
+    <TableRow>
+        <TextView android:layout_weight="1" android:id="@+id/table20" android:padding="3dip" />
+        <TextView android:layout_weight="1" android:id="@+id/table21" android:padding="3dip" />
+        <TextView android:layout_weight="1" android:id="@+id/table22" android:padding="3dip" />     
+    </TableRow>	
+    <TableRow>
+        <TextView android:layout_weight="1" android:id="@+id/table30" android:padding="3dip" />
+        <TextView android:layout_weight="1" android:id="@+id/table31" android:padding="3dip" />
+        <TextView android:layout_weight="1" android:id="@+id/table32" android:padding="3dip" />     
+    </TableRow>	
+    <TableRow>
+        <TextView android:layout_weight="1" android:id="@+id/table40" android:padding="3dip" />
+        <TextView android:layout_weight="1" android:id="@+id/table41" android:padding="3dip" />
+        <TextView android:layout_weight="1" android:id="@+id/table42" android:padding="3dip" />     
+    </TableRow>	
+    <TableRow>
+        <TextView android:layout_weight="1" android:id="@+id/table50" android:padding="3dip" />
+        <TextView android:layout_weight="1" android:id="@+id/table51" android:padding="3dip" />
+        <TextView android:layout_weight="1" android:id="@+id/table52" android:padding="3dip" />     
+    </TableRow>	
+    <TableRow>
+        <TextView android:layout_weight="1" android:id="@+id/table60" android:padding="3dip" />
+        <TextView android:layout_weight="1" android:id="@+id/table61" android:padding="3dip" />
+        <TextView android:layout_weight="1" android:id="@+id/table62" android:padding="3dip" />     
+    </TableRow>	
+    <TableRow>
+        <TextView android:layout_weight="1" android:id="@+id/table70" android:padding="3dip" />
+        <TextView android:layout_weight="1" android:id="@+id/table71" android:padding="3dip" />
+        <TextView android:layout_weight="1" android:id="@+id/table72" android:padding="3dip" />     
+    </TableRow>	
+    <TableRow>
+        <TextView android:layout_weight="1" android:id="@+id/table80" android:padding="3dip" />
+        <TextView android:layout_weight="1" android:id="@+id/table81" android:padding="3dip" />
+        <TextView android:layout_weight="1" android:id="@+id/table82" android:padding="3dip" />     
+    </TableRow>	
+    <TableRow>
+        <TextView android:layout_weight="1" android:id="@+id/table90" android:padding="3dip" />
+        <TextView android:layout_weight="1" android:id="@+id/table91" android:padding="3dip" />
+        <TextView android:layout_weight="1" android:id="@+id/table92" android:padding="3dip" />     
+    </TableRow>	
+</TableLayout>

@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/strings.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+--><resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="keyguard_pinword_enter_pinword_code">Zadajte kód PIN pre odomknutie</string>
+        
+    <string name="badPin2">Starý PIN2 bol zadaný nesprávne.</string>
+    <string name="badPuk2">PUK2 bol zadaný správne.</string>
+    
+    <string name="checkPwdLen">Skontrolujte, či vaše heslo obsahuje 4 až 8 číslic.</string>
+    
+    <string name="pinNotEnabled">PIN povoľte skôr,  než ho zmeníte.</string>
+    
+    <string name="puk1Blocked">PIN je zablokovaný.</string>
+    
+    <string name="puk2Blocked">PIN2 je zablokovaný.</string>
+
+    
+    <string name="fdnFailMmi">Zlyhala kontrola FDN.</string>
+    
+    <string name="callBarringFailMmi">Zlyhalo blokovania hovorov.</string>
+    <string name="Pin2Mmi">Zmeniť PIN2</string>
+    <string name="PukMmi">Odblokovať PIN</string>
+    <string name="Puk2Mmi">Odblokovať PIN2</string>
+    
+    <string name="serviceProvisioned">Poskytnutá služba</string>
+
+    
+    <string name="serviceUnknown">Problém s pripojením alebo neplatný kód MMI.</string>
+    <string name="cfServiceNotForwarded">Nepresmerovaný</string>
+    
+    <string name="permlab_receiveCbSms">prijímať CB SMS</string>
+    
+    <string name="permdesc_receiveCbSms">Umožňuje aplikácii prijímať a spracovávať CB SMS správy. Škodlivé aplikácie môžu sledovať vaše správy alebo ich odstrániť bez toho, aby vám boli zobrazené.</string>
+
+    <string name="keyguard_password_enter_puk_code">Zadajte kód PUK</string>
+
+    <string name="keyguard_password_wrong_puk_code">Nesprávny kód PUK!</string>
+
+    <string name="keyguard_password_enter_new_pin_code">Zadajte nový kód PIN</string>
+
+    <string name="keyguard_password_Confirm_pin_code">"Potvrďte nový kód PIN"</string>
+
+    <string name="invalidPuk">Zadajte 8 číslic.</string>
+
+    <string name="sim_permanently_locked">Nesprávny kód PUK bol zadaný viac ako 10-krát. Karta SIM je trvalo zablokovaná.</string>
+
+    <string name="pin_length_indicate">(4 až 8 číslic)</string>
+
+    <string name="puk_length_indicate">(8 číslic)</string>
+
+    <string name="one_retry_left">1 opakovanie vľavo</string>
+
+    <string name="retries_left">Zostáva: <xliff:g id="number">%d</xliff:g></string>
+    
+    <string name="invalid_imei">Neplatné IMEI</string>
+    <string name="same_imei">Rovnaké IMEI</string>
+
+    
+    <string name="oper_long_46000">CMCC</string>
+    <string name="oper_long_46001">CU</string>
+    <string name="oper_long_46003">China Telecom</string>    
+    <string name="oper_long_46601">Far EasTone</string>
+    <string name="oper_long_46692">Chunghwa Telecom</string>
+    <string name="oper_long_46697">Taiwan Mobile</string>
+    <string name="oper_long_99998">Android1</string>
+    <string name="oper_long_99999">Android</string>
+
+    
+    <string name="oper_short_46000">CMCC</string>
+    <string name="oper_short_46001">CU-GSM</string>
+    <string name="oper_short_46003">China Telecom</string>    
+    <string name="oper_short_46601">FET</string>
+    <string name="oper_short_46692">Chunghwa</string>
+    <string name="oper_short_46697">TWN</string>
+    <string name="oper_short_99997">AD1</string>
+    <string name="oper_short_99999">AD</string>
+
+    
+    <string name="unable_launch_the_ap">Nemožno spustiť aplikáciu.</string>
+    
+    <string name="keyguard_password_enter_sim1_pin_code">Zadajte kód PIN pre SIM 1</string>
+
+    
+    <string name="RestrictedChangedTitle_SIM1">Obmedzený prístup k SIM1 je zmenený</string>
+    <string name="RestrictedChangedTitle_SIM2">Obmedzený prístup k SIM2 je zmenený</string>
+    
+    <string name="keyguard_password_enter_sim2_pin_code">Zadajte kód PIN pre SIM 2</string>
+
+
+    <string name="keyguard_password_wrong_sim1_pin_code">Nesprávny kód PIN pre SIM 1!</string>
+
+    <string name="keyguard_password_wrong_sim2_pin_code">Nesprávny kód PIN pre SIM 2!</string>
+
+    <string name="keyguard_password_enter_sim1_puk_code">Zadajte kód PUK pre SIM 1</string>
+
+    <string name="keyguard_password_enter_sim2_puk_code">Zadajte kód PUK pre SIM 2</string>
+
+    
+    <string name="lockscreen_sim1_puk_locked_message">Karta SIM 1 je zablokovaná kódom PUK.</string>
+
+    
+    <string name="lockscreen_sim2_puk_locked_message">Karta SIM 2 je zablokovaná kódom PUK.</string>
+
+    <string name="choose_bootup_mode">Vyberte kartu SIM</string>
+    <string name="choose_gprs_mode">Vyberte dátové pripojenie</string>
+    <string name="sim_close">Zavrieť kartu SIM</string>
+    <string name="lockscreen_sim_puk_locked_message_short">Zablokovaná kódom PUK</string>
+    <string name="lockscreen_sim_locked_message_short">Karta SIM je zablokovaná</string>
+    <string name="simlock_slot_locked_message">Zásuvka je trvale zablokovaná</string>
+    <string name="simlock_entersimmelock">Zadajte zámok SIM ME</string>
+    <string name="slot_id">Zásuvka <xliff:g id="number">%d</xliff:g>:</string>
+    <string name="new_simcard">Nová karta SIM</string>
+    <string name="lockscreen_missing_sim_dialog_message">"Karta SIM je odpojená. Uistite sa, že karta SIM je správne zapojená."</string>
+
+    
+    <string name="permlab_receiveDmRegisterSms">prevziať DM Register SMS</string>
+    
+    <string name="permdesc_receiveDmRegisterSms">Aplikácii umožňuje  prijímať a spracovávať DM Registrovať SMS správy. Toto by nemali používať žiadne aplikácie DM APP.</string>
+
+    <string name="lockscreen_password_error">Chybné heslo, skúste prosím znova</string>
+  	  <string name="lockscreen_pinword_error">Chybný PIN, skúste prosím znova</string>
+
+    <string name="music_no_artist">Neznáme meno umelca</string>
+    <string name="music_play">Prehrať</string>
+    <string name="music_pause">Prerušiť</string>
+    <string name="music_library">Knižnica</string>
+    <string name="music_no_songs">Žiadne piesne</string>
+    
+    
+    <string name="serviceClassVideo">Video</string>
+  <string name="aerr_application_lowmem">Vnútorná pamäť bude čoskoro plná, aplikácia je zastavená. Uvoľniť nejaké miesto a skúste znova.</string>
+  
+  <string name="aerr_process_lowmem">Vnútorná pamäť bude čoskoro plná, proces je zastavený. Uvoľnite nejaké miesto a skúste znova.</string>
+  <string name="free_memory_btn">"Voľné miesto"</string>
+  <string name="free_memory_text">"Nedostatok miesta v pamäti. Uvoľnite pamäť."</string>		
+<string name="mem_low_title">Uvoľnite pamäť</string>
+   
+   <string name="unread_message">%d Neprečítaná správa</string>
+   <string name="unread_messages">%d Neprečítané správy</string>
+   <string name="missed_call">%d Zmeškaný hovor</string>
+   <string name="missed_calls">%d Zmeškané hovory</string>
+  
+  <string name="no_favorite_contacts">Žiadne obľúbené kontakty</string>
+  <string name="contact_widget_loading">Prebieha načítavanie\u2026</string>
+   
+   <string name="volume_fm">Hlasitosť FM</string>
+   
+   <string name="volume_matv">Hlasitosť mobilného TV</string>
+
+   
+   <string name="media_controller_buffering">"Prebieha vyrovnávanie %d%%..."</string>
+   <string name="media_controller_live">"Priamy prenos"</string>
+   <string name="media_controller_playing">"Prehrávanie"</string>
+   <string name="media_controller_connecting">"Prebieha pripájanie..."</string>
+   <string name="media_controller_weak_signal">"slabý signál"</string>
+   <string name="VideoView_error_text_bad_file">"Chybný súbor, toto video sa nedá prehrať"</string>
+   <string name="VideoView_error_text_cannot_connect_to_server">"Nedá sa pripojiť k serveru."  </string>
+   <string name="VideoView_error_text_type_not_supported">"Tento typ mediálneho súboru nie je podporovaný."  </string>
+   <string name="VideoView_error_text_drm_not_supported">"Chránené správou DRM, toto video sa nedá prehrať"  </string>
+   <string name="VideoView_error_text_invalid_connection">"Neplatné pripojenie. (Zakázané 403)"  </string>
+   
+
+    
+   
+
+    
+    <string name="redo">Znova</string>
+    <string name="undo">Späť</string>
+    <string name="undoAll">Vrátiť späť všetko</string>
+    <string name="new_sim">Nová SIM</string>
+
+    
+    <string name="edit">Upraviť</string>
+    <string name="delete">Vymazať</string>
+
+    
+    <string name="sim_card_changed_dialog_title">Karta SIM je zmenená</string>
+    <string name="change_setting_for_onenewsim">Zistila sa nová karta SIM. Označená je ako</string>
+    <string name="change_setting_for_twonewsim">Zistila sa nová karta SIM. Označené sú ako</string>
+    <string name="sim_card_removed">Karta SIM je odpojená.</string>
+    <string name="sim_card_swapped">Karta SIM je vymenená.</string>
+    <string name="change_settings">Zmeniť</string>
+    <string name="keyguard_voice_call">Hlasové volanie:</string>
+    <string name="keyguard_sms">Odosielanie správ:</string>
+    <string name="keyguard_data">Dátové pripojenie:</string>
+    <string name="keyguard_alwaysask">Vždy sa opýtať</string>
+    <string name="keyguard_data_none">Vyp.</string>
+    <string name="keyguard_sim_auto">Automaticky</string>
+    <string name="dismiss">Zamietnuť</string>
+    <string name="keyguard_wrong_code_input">Nesprávny kód.</string>
+    <string name="keyguard_code_length_prompt">Zadajte 4 až 8 číslic.</string>
+    <string name="keyguard_code_donnot_mismatch">Nezhoduje sa.</string>
+    <string name="for_text">pre</string>
+    <string name="keyguard_internal_call">Interný hovor</string>
+    <string name="keyguard_not_set">Nenastavené</string>
+    <string name="network_searching">Hľadá sa nová sieť</string>
+    <string name="searching_simcard">Prebieha zisťovanie...</string>
+    <string name="keyguard_close">Zatvoriť</string>
+    <string name="for_first_simcard">Pre prvú SIM</string>
+    <string name="for_second_simcard">Pre druhú SIM</string>
+    <string name="for_third_simcard">Pre tretiu SIM</string>
+    <string name="for_fourth_simcard">Pre štvrtú SIM</string>
+    <string name="default_sim_setting_prompt">Nové predvolené nastavenia sú:</string>
+    <string name="keyguard_video_call">Video hovor:</string>
+    <string name="dm_prompt">Koncové zariadenia je už zablokované</string>
+    <string name="keyguard_domestic_zone_name">Peking</string>
+     
+
+    
+    <string name="invalid_sim_title">Neplatná karta SIM</string>
+    
+    
+    <string name="invalid_sim_message">Karta UIM/SIM nie je rozpoznaná.</string>
+     
+         
+    <string name="lockscreen_pin_too_many_failed_attempts_dialog_message"><xliff:g id="number">%d</xliff:g>-krát ste zadali nesprávny kód PIN\n\nSkúste znova za <xliff:g id="number">%d</xliff:g> sekúnd.</string>
+    
+    <string name="lockscreen_password_too_many_failed_attempts_dialog_message"><xliff:g id="number">%d</xliff:g>-krát ste zadali nesprávne heslo. \n\nSkúste znova za <xliff:g id="number">%d</xliff:g> sekúnd.</string>
+
+   
+    
+    
+    
+    
+       
+    <string name="low_internal_storage_view_title">Vnútorná pamäť je takmer plná</string>
+    <string name="deleteMails">Vymažte e-maily</string>
+    <string name="criticallowtitle">Žiadne miesto</string>
+    <string name="criticallowmessage">Uvoľnite nejaké miesto, pretože niektoré aplikácie a systémové funkcie nemusia správne fungovať.</string> 
+
+    <string name="nq_sms_filter_title">Filter správ SMS</string>
+    <string name="nq_sms_filter_message">Táto správa môže znížiť poplatky. Chcete pokračovať?</string>
+    <string name="nq_sms_filter_yes">Áno</string>
+    <string name="nq_sms_filter_no">Nie</string>
+    
+    
+    <string name="ext_media_checking_notification_title_sd2">Pripravte si kartu SD</string>
+    <string name="ext_media_checking_notification_title_otg">Pripravte si pamäťové zariadenie USB</string>
+    <string name="ext_media_badremoval_notification_title_otg">"Ukl. priestor USB nečakane odstránený"</string>
+    <string name="ext_media_nomedia_notification_title_otg">"Ukl. priestor USB odstránený"</string>
+    <string name="ext_media_badremoval_notification_message_otg">"Ak chcete zabrániť strate údajov, ukladací priestor USB pred odobratím odpojte."</string>
+    <string name="ext_media_nomedia_notification_message_otg">"Ukladací priestor USB odstránený. Vložte nové médium."</string>
+    <string name="ext_media_unmountable_notification_title_otg">"Ukl. priestor USB je poškodený"</string>
+    <string name="ext_media_unmountable_notification_message_otg">Pamäťové zariadenie USB je poškodené. Musíte ho preformátovať.</string>
+    <string name="ext_media_nofs_notification_title_otg">"Prázdny ukladací priestor USB"</string>
+    <string name="ext_media_nofs_notification_message_otg">Pamäťové zariadenie USB je prázdne alebo obsahuje nepodporovaný systémový súbor.</string>
+    <string name="ext_media_safe_unmount_notification_title_otg">"Ukl. priestor USB môžete odobrať"</string>
+    <string name="ext_media_safe_unmount_notification_message_otg">"Ukladací priestor USB môžete bezpečne odstrániť."</string>
+    
+    
+    <string name="drm_protection_status">Stav ochrany:</string>
+    <string name="drm_can_forward">Môže byť odoslaný.</string>
+    <string name="drm_can_not_forward">Nemôže byť odoslaný.</string>
+    <string name="drm_no_limitation">Bez obmedzenia.</string>
+    <string name="drm_no_license">Licencia DRM nie je k dispozícii.</string>
+    <string name="drm_begin">Začať:</string>
+    <string name="drm_end">Ukončiť:</string>
+    <string name="drm_use_left">Zostávajúci počet:</string>
+    <string name="drm_protectioninfo_renew">Obnoviť</string>
+    <string name="drm_protectioninfo_title">Informácie o ochrane</string>
+    <string name="drm_licenseacquisition_title">Získanie licencie DRM</string>
+    <string name="drm_licenseacquisition_message">%1$s nemá licenciu DRM. Ak chcete získať licenciu DRM, stlačte tlačidlo "Obnoviť".</string>
+    <string name="drm_toast_license_expired">Platnosť licencie DRM skončila.</string>
+    <string name="drm_forwardforbidden_title">Odosielanie je zakázané</string>
+    <string name="drm_forwardforbidden_message">Niektoré chránené súbory nemožno odoslať.</string>
+    <string name="drm_license_install_success">Licencia DRM je úspešne nainštalovaná.</string>
+    <string name="drm_license_install_fail">Licenciu DRM sa nepodarilo nainštalovať.</string>
+    <string name="drm_secure_timer_title">Neplatné hodiny zabezpečenia DRM</string>
+    <string name="drm_secure_timer_message">Nemôžete používať súbory chránené správou DRM. Uistite sa, že je k dispozícii dátové pripojenie.</string>
+    <string name="drm_consume_title">Platnosť práv DRM skončila</string>
+    <string name="drm_consume_message">Vaše opatrenie ukončí platnosť práv DRM.</string>
+    <string name="drm_forward_forbidden">Jeden alebo viac chránených súborov nemožno odoslať.</string>
+    
+    
+
+    <string name="recip_unsupport_operator">Aplikácia RecipientsView nepodporuje charakter operácií. Na obsluhu príjemcov použite panel nástrojov.</string>
+    <string name="recip_unsupport_selection">Ľutujeme, ale značku vynechávky nemôžete presunúť na začiatok, ak sa v RecipientsView nachádzajú príjemcovia.</string>
+    
+    <string name="virtual_sim_on_slot1">Virtuálna SIM 1 ZAP.</string>
+    <string name="virtual_sim_on_slot2">Virtuálna SIM 2 ZAP.</string>
+    <string name="virtual_sim_on_slot3">Virtuálna SIM 3 ZAP.</string>
+    <string name="virtual_sim_on_slot4">Virtuálna SIM 4 ZAP.</string>
+    <string name="virtual_sim_on">Virtuálna SIM ZAP.</string>
+    
+    <string name="sim_missing_slot1">Zásuvka 1: Nebola zistená žiadna karta SIM</string>
+    <string name="sim_missing_slot2">Zásuvka 2: Nebola zistená žiadna karta SIM</string>
+    <string name="sim_missing_slot3">Zásuvka 3: Nebola zistená žiadna karta SIM</string>
+    <string name="sim_missing_slot4">Zásuvka 4: Nebola zistená žiadna karta SIM</string>
+    <string name="sim_missing">Žiadna karta SIM nie je zistená</string>
+    <string name="sim_missing_detail">Skontrolujte, či je karta SIM pripravená</string>
+    <string name="sim_missing_slot1_card">Zásuvka 1: Nebola zistená žiadna karta</string>
+    <string name="sim_missing_slot2_card">Zásuvka 2: Nebola zistená žiadna karta</string>
+    <string name="sim_missing_card">Nebola zistená žiadna karta</string>
+    <string name="sim_missing_detail_card">Skontrolujte, či je karta pripravená</string>
+    
+    <string name="wap_push_setting_noti_ticker">Prijať alebo neprijať službu Auto-push?</string>
+    <string name="wap_push_setting_noti_title">Prijať alebo neprijať službu Auto-push?</string>
+    <string name="wap_push_setting_noti_text">Klepnite na voľbu </string>
+    <string name="url_dialog_choice_title">Správy</string>
+    <string name="url_dialog_choice_message">Otvorí prehliadač, pokračovať?</string>
+
+    
+    
+    <string name="deleteApp">Odinštalujte aplikácie</string>    
+    <string name="deleteMail">Zálohujte si e-maily a uvoľnite pamäť</string>    
+
+    <string name="storage_withsd">V pamäti telefónu je nedostatok miesta. Uvoľnite miesto v pamäti alebo v nastaveniach zmeňte predvolený zapisovateľný disk.</string>
+    <string name="storage_withoutsd">V pamäti telefónu je nedostatok miesta. Uvoľnite miesto v pamäti alebo vložte kartu SD.</string>
+    <string name="storage_sd">Na karte SD je nedostatok miesta. Uvoľnite miesto v pamäti alebo v nastaveniach zmeňte predvolený zapisovateľný disk.</string>   
+    <string name="usb_ums_notification_title">Pripojené ako pamäťové zariadenie USB</string>
+    
+    <string name="usb_charging_notification_title">Iba nabíjanie cez USB</string>
+    
+    
+    
+    <string name="gps_time_sync_fail_str">Nepodarilo sa získať poskytnutý čas GPS</string>
+
+    
+    <string name="calibration_data">Dosiaľ nie sú k dispozícii žiadne kalibračné údaje. Stiahnite si prosím kalibračné údaje! V opačnom prípade sa zariadenie nemôže byť pripojené k sieti. [Používateľ vnútornej MTK]</string>
+
+        
+    <string name="invalid_card">Neplatná karta</string>
+        
+    <string name="RejectCauseTitle">Príčina odmietnutia siete</string>
+        
+    <string name="MMRejectCause2">SIM nie je priradená, MM #2</string>
+        
+    <string name="MMRejectCause3">SIM nie je povolená, MM #3</string>
+        
+    <string name="MMRejectCause5">Hovor zlyhal, MM č. 5</string>
+        
+    <string name="MMRejectCause6">Telefón nie je povolený, MM #6</string>    
+    
+    <string name="MMRejectCause13">SOS/Iba tiesňové volania</string>
+
+    
+    <string name="find_previous">Predchádzajúci</string>
+    <string name="find_next">Ďalší</string>
+
+    <string name="tethered_notification_message_for_hotspot"><xliff:g id="connected">%1$d</xliff:g> je pripojený, <xliff:g id="blocked">%2$d</xliff:g> je zablokovaný</string>
+    <string name="tethered_notification_message_bandwidth_set">Nastavená je šírka pásma</string>
+    
+    <string name="usbint_notification_title">USB Internet je aktívny</string>
+
+    
+    <string name="default_wallpaper_name">Predvolená</string>
+
+
+    
+    
+    
+    
+    <string name="keyguard_accessibility_alarm_unlock">Vypnúť budík</string>
+    
+    <string name="alarm_alert_dismiss_text">zamietnuť</string>
+    
+    <string name="description_direction_right">Posunutím doprava odmietnite</string>
+    
+    <string name="alarm_alert_snooze_text">Opakované budenie</string>
+    
+    <string name="description_direction_left">Posunutím doľava zapnite opakované budenie</string>
+    
+    <string name="description_direction_up">Posunutím hore zamietnite</string>
+    
+    <string name="description_direction_down">Posunutím dolu zapnite opakované budenie</string>
+    <string name="every_day">Každý deň</string>
+    <string name="never">"Nikdy"</string>
+    <string name="day_concat">", "</string>
+    
+    <string name="default_label">"Budík"</string>
+    
+    <string name="dismiss_power_on">Odmietnuť a zapnúť</string>   
+    
+    <string name="dismiss_power_off">Odmietnuť a vypnúť</string>
+    
+
+    
+    <string name="voice_unlock_service_error">Chyba hlasovej služby!</string>
+    <string name="voice_unlock_password_wrong">Ľutujeme, ale váš hlas nemožno rozoznať.</string>
+    <string name="voice_unlock_noisy">Je príliš hlasný, takže vás nemožno počuť jasne.</string>
+    <string name="voice_unlock_weak">Nemožno počuť váš hlas.</string>
+    <string name="voice_unlock_media_playing">Počas prehrávania média je zablokované hlasové odomknutie.</string>
+    <string name="voiceunlock_multiple_failures">Prekročený je maximálny počet pokusov hlasového odomknutia</string>
+    
+    
+    <string name="voiceui_notify_string">Môžete povedať,</string>
+    <string name="voiceui_control_poweroff_alarm">ovládať vypnutie napájania budíka.</string>
+    <string name="voiceui_comma">,</string>
+    <string name="voiceui_quota_start">"</string>
+    <string name="voiceui_quota_end">"</string>
+    <string name="voiceui_or">alebo</string>
+
+    
+    <string name="dialog_color_picker">Paleta farieb</string>
+    <string name="press_color_to_apply">Na použ. stlačte tl. Color (Farby)</string>
+    <string name="color_picker_select">-&gt;</string>
+
+    
+
+    
+    <string name="wifi_display_bt_hdmi_off_wfd_on">HDMI sa vypne po zapnutí bezdrôtového displeja. Chcete pokračovať?</string> 
+    
+    <string name="wifi_display_wfd_off_hdmi_on">Bezdrôtový displej sa vypne po zapnutí HDMI. Chcete pokračovať?</string> 
+    
+    <string name="wifi_display_wfd_off_bt_on">Bezdrôtový displej sa vypne, keď zapnete Bluetooth. Chcete pokračovať?</string> 
+    
+    <string name="wifi_display_wifi_p2p_disconnect_wfd_connect">Aktuálne pripojenie Wi-Fi Direct bude odpojené, keď sa pripojíte k bezdrôtovému zobrazovaciemu zariadeniu. Chcete pokračovať?</string>
+    
+    <string name="wifi_display_unstable_connection">Pripojenie je nestabilné</string>
+    
+    <string name="wifi_display_connection_is_not_steady">Aktuálne pripojenie bezdrôtového displeja nie je stabilné.</string>
+    
+    
+    <string name="wifi_display_unstable_suggestion">Aktuálne pripojenie bezdrôtového displeja ne nestabilné. Skúste prejsť bližšie k zobrazovaciemu zariadeniu.</string>
+    
+    <string name="wifi_display_reconnect">Znovu pripojiť</string> 
+    
+    <string name="wifi_display_disconnect_then_reconnect">Odpojiť bezdrôtový displej. Chcete ho znova pripojiť?</string> 
+    
+    <string name="wifi_display_disconnected">Bezdrôtový displej je odpojený.</string>
+     
+    <string name="wifi_wps_failed_overlap">Zistená je ďalšia relácia WPS. Skúste znova o niekoľko minút.</string>
+    
+    <string name="wifi_display_wfd_and_wifi_are_turned_on">Bezdrôtový displej a Wi-Fi sú zapnuté.</string>
+    
+    <string name="wifi_display_sound_path_reminder">Multimediálny zvuk nemožno prehrať z náhlavnej súpravy.</string>  
+    
+    <string name="wifi_display_change_resolution_reminder">Zmenou rozlíšenia dôjde k automatickému opätovnému pripojeniu bezdrôtového displeja.</string>  
+    
+    <string name="wifi_display_do_not_remind_again">Nepripomínať znova.</string>
+
+    
+    <string name="sdcard_ready_title">Karta SD je pripravená</string>
+    <string name="sdcard_select_default_path">Chcete zmeniť predvolený zapisovateľný disk?</string>
+    <string name="sdcard_default_path_change">Predvolený zapisovateľný disk bol zmenený.</string>
+    <string name="usb_storage_ready_title">Externé pamäťové zariadenie USB je pripravené</string>
+    
+
+    
+    <string name="pin_pass">Kód je prijatý</string>
+    <string name="puk_pass">Kód PIN je odblokovaný</string>
+    
+    
+    <string name="headset_pin_recognition">Vaše slúchadlá nie sú kompatibilné s týmto telefónom. Skúste iné slúchadlá.</string>
+    
+    
+    <string name="msensor_toast_text">Rušenie kompasu. Ak chcete prekalibrovať kompas, kývavo pohybujte telefónom podľa obr. č. 8.</string> 
+
+
+    
+    <string name="sd_accessing_swtich_user_title">Prepnúť používateľa?</string>
+    <string name="sd_accessing_swtich_user_message">Všetky neuložené dáta na konte vlastníka budú stratené alebo poškodené.</string>
+
+    
+    <string name="usb_autorun_cdrom_notification_title">Pripojené ako autorun CD-ROM</string>
+    
+    
+    <string name="ct_net_name">"CTNET"</string>
+    <string name="ct_wap_name">"CTWAP"</string>    
+
+    
+    <string name="hdmi_notification_title">HDMI kábel je pripojený</string>
+    <string name="hdmi_notification_content">Kliknutím nastavte HDMI</string>
+    <string name="hdmi_hdvideo_toast">HDMI nemôže prehrať 4K video. Spojenie sa preruší.</string>
+    
+    
+
+    
+    <string name="safe_media_volume_warning_title">Výstraha</string>
+    
+    <string name="aerr_application_lowstorage">Vnútorná pamäť bude čoskoro plná, aplikácia je zastavená. Uvoľniť nejaké miesto a skúste znova.</string>
+    <string name="aerr_process_lowstorage">Vnútorná pamäť bude čoskoro plná, proces je zastavený. Uvoľnite nejaké miesto a skúste znova.</string>
+    <string name="low_storage_warning_message">Uvoľnite nejaké miesto, pretože niektoré aplikácie a systémové funkcie nemusia správne fungovať.</string>
+</resources>

@@ -1,0 +1,253 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type shell, domain;
+type shell_exec, file_type, exec_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# Domain for shell processes spawned by ADB
+# unconfined_domain(shell)
+
+# Run app_process.
+# XXX Split into its own domain?
+app_domain(shell)
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# Domain for shell processes spawned by ADB
+# unconfined_domain(shell)
+
+# Run app_process.
+# XXX Split into its own domain?
+# app_domain(shell)
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive shell;
+# 20131024 Sanity_01
+allow shell aee_aed:unix_stream_socket connectto;
+allow shell aee_exec:file { read getattr open execute execute_no_trans };
+allow shell am_exec:file { read getattr open execute execute_no_trans };
+allow shell dalvikcache_data_file:file { write setattr };
+allow shell devpts:chr_file { read write getattr ioctl };
+allow shell linker_exec:file { read execute open };
+allow shell logcat_exec:file { read getattr open execute execute_no_trans };
+allow shell pm_exec:file { read getattr open execute execute_no_trans };
+allow shell proc:file write;
+allow shell property_socket:sock_file write;
+allow shell sdcard_external:dir search;
+allow shell self:capability { fowner fsetid dac_override };
+allow shell self:capability2 syslog;
+allow shell system_data_file:dir { write remove_name };
+allow shell system_data_file:file unlink;
+allow shell toolbox_exec:file { read getattr open execute execute_no_trans };
+allow shell zygote_exec:file { read getattr open execute execute_no_trans };
+
+
+# 20131024 Sanity_02
+allow shell shell_data_file:dir { write remove_name };
+allow shell shell_data_file:file unlink;
+
+
+# 20131024 CTS_01
+allow shell FM50AF_device:chr_file getattr;
+allow shell M4U_device_device:chr_file getattr;
+allow shell MTK_SMI_device:chr_file getattr;
+allow shell adb_device:chr_file getattr;
+allow shell aed_device:chr_file getattr;
+allow shell als_ps_device:chr_file getattr;
+allow shell block_device:dir getattr;
+allow shell bugreport_exec:file { read getattr open execute execute_no_trans };
+allow shell device:chr_file { read ioctl open getattr };
+allow shell device:dir { read open };
+allow shell dumpstate:unix_stream_socket connectto;
+allow shell input_exec:file { read getattr open execute execute_no_trans };
+allow shell sdcard_external:dir { write rmdir read remove_name open add_name };
+allow shell sdcard_external:file { write getattr read create unlink open };
+allow shell selinuxfs:dir { read search open };
+allow shell selinuxfs:file { read open };
+allow shell shell_data_file:dir { write remove_name };
+allow shell shell_data_file:file unlink;
+
+
+# 20131024 CTS_02
+allow shell block_device:dir search;
+allow shell content_exec:file { read getattr open execute execute_no_trans };
+allow shell sdcard_external:dir create;
+
+
+# 20131028 CTS_03
+allow shell shell_data_file:file write;
+
+
+# 20131028 CTS_04
+allow shell dalvikcache_data_file:dir { write add_name };
+allow shell dalvikcache_data_file:file create;
+allow shell input_device:chr_file { write getattr open };
+allow shell monkey_exec:file { read getattr open execute execute_no_trans };
+allow shell shell_data_file:dir { search add_name };
+allow shell shell_data_file:file { read getattr open create };
+allow shell uiautomator_exec:file { read getattr open execute execute_no_trans };
+
+
+# 20131028 Sanity_08
+allow shell system_data_file:dir rmdir;
+
+# 20131028 CTS_05
+allow shell aee_aed:process sigchld;
+allow shell dalvikvm_exec:file { read getattr open execute execute_no_trans };
+allow shell dexopt_exec:file { read execute open execute_no_trans };
+allow shell shell_data_file:dir create;
+
+
+# 20131028 CTS_06
+allow shell dumpstate_socket:sock_file write;
+
+
+# 20131028 CTS_09
+allow shell selinuxfs:file getattr;
+
+
+# 20131028 CTS_11
+allow shell dumpsys_exec:file { read getattr open execute execute_no_trans };
+
+
+# 20131028 CTS_15
+allow shell adb_keys_file:dir getattr;
+allow shell bluetooth_data_file:dir getattr;
+allow shell dhcp_data_file:dir getattr;
+allow shell keystore_data_file:dir getattr;
+allow shell ppp_data_file:dir getattr;
+allow shell system_data_file:sock_file getattr;
+allow shell systemkeys_data_file:dir getattr;
+allow shell vpn_data_file:dir getattr;
+allow shell wide_dhcpv6_data_file:dir getattr;
+allow shell wifi_data_file:dir getattr;
+
+
+# 20131119 FeatureSQC
+allow shell BGW:dir { getattr search };
+allow shell BGW:file { read open };
+allow shell GoogleOtaBinder:dir { getattr search };
+allow shell GoogleOtaBinder:file { read open };
+allow shell aal:dir { getattr search };
+allow shell aal:file { read open };
+allow shell adbd:unix_stream_socket setopt;
+allow shell aee_aed:dir { getattr search };
+allow shell aee_aed:file { read open };
+allow shell apk_private_data_file:dir getattr;
+allow shell asec_image_file:dir getattr;
+allow shell atci_service:dir { getattr search };
+allow shell atci_service:file { read open };
+allow shell atcid:dir { getattr search };
+allow shell atcid:file { read open };
+allow shell backup_data_file:dir getattr;
+allow shell batterywarning:dir { getattr search };
+allow shell batterywarning:file { read open };
+allow shell bluetooth:file { read open };
+allow shell bmm050d:dir { getattr search };
+allow shell bmm050d:file { read open };
+allow shell ccci_fsd:dir { getattr search };
+allow shell ccci_fsd:file { read open };
+allow shell ccci_mdinit:dir { getattr search };
+allow shell ccci_mdinit:file { read open };
+allow shell dm_agent_binder:dir { getattr search };
+allow shell dm_agent_binder:file { read open };
+allow shell dontpanic_data_file:dir getattr;
+allow shell drm_data_file:dir getattr;
+allow shell drmserver:dir { getattr search };
+allow shell drmserver:file { read open };
+allow shell dumpsys_exec:file { read getattr open execute execute_no_trans };
+allow shell em_svr:dir { getattr search };
+allow shell em_svr:file { read open };
+allow shell featured:dir { getattr search };
+allow shell featured:file { read open };
+allow shell gsm0710muxd:dir { getattr search };
+allow shell gsm0710muxd:file { read open };
+allow shell hald:dir { getattr search };
+allow shell hald:file { read open };
+allow shell init:dir { getattr search };
+allow shell init:file { read open };
+allow shell init_shell:dir { getattr search };
+allow shell init_shell:file { read open };
+allow shell installd:dir { getattr search };
+allow shell installd:file { read open };
+allow shell kernel:dir { getattr search };
+allow shell kernel:file { read open };
+allow shell kernel:system syslog_mod;
+allow shell keystore:dir { getattr search };
+allow shell keystore:file { read open };
+allow shell logwrapper:dir { getattr search };
+allow shell logwrapper:file { read open };
+allow shell lost_found_data_file:dir getattr;
+allow shell matv:dir { getattr search };
+allow shell matv:file { read open };
+allow shell mdlogger:file { read open };
+allow shell media_app:dir { getattr search };
+allow shell mediaserver:dir { getattr search };
+allow shell mediaserver:file { read open };
+allow shell mobile_log_d:dir { getattr search };
+allow shell mobile_log_d:file { read open };
+allow shell mtk_agpsd:dir { getattr search };
+allow shell mtk_agpsd:file { read open };
+allow shell mtkbt:dir { getattr search };
+allow shell mtkbt:file { read open };
+allow shell netd:dir { getattr search };
+allow shell netd:file { read open };
+allow shell netdiag:dir { getattr search };
+allow shell netdiag:file { read open };
+allow shell nfc:dir { search getattr };
+allow shell nfc:file { read open };
+allow shell nvram_agent_binder:dir { getattr search };
+allow shell nvram_agent_binder:file { read open };
+allow shell platform_app:dir { getattr search };
+allow shell release_app:file { read open };
+allow shell resmon:dir { getattr search };
+allow shell resmon:file { read open };
+allow shell resource_cache_data_file:dir getattr;
+allow shell sdcard_internal:dir { write search rmdir read remove_name open };
+allow shell sdcard_internal:file { getattr unlink };
+allow shell sdcardd:dir { getattr search };
+allow shell sdcardd:file { read open };
+allow shell servicemanager:dir { getattr search };
+allow shell servicemanager:file { read open };
+allow shell surfaceflinger:dir { getattr search };
+allow shell surfaceflinger:file { read open };
+allow shell system_app:dir { getattr search };
+allow shell system_server:dir { getattr search };
+allow shell thermal:dir { getattr search };
+allow shell thermal:file { read open };
+allow shell thermald:dir { getattr search };
+allow shell thermald:file { read open };
+allow shell unlabeled:filesystem getattr;
+allow shell untrusted_app:file { read open };
+allow shell vold:dir { getattr search };
+allow shell vold:file { read open };
+allow shell zygote:dir { getattr search };
+allow shell zygote:file { read open };
+
+
+
+# 20131122 Add Set Property Rule
+allow shell property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow shell adbd:fifo_file { read write };
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow shell shell_data_file:dir setattr;
+allow shell shell_data_file:file setattr;
+allow shell usb_device:chr_file open;
+allow shell usb_device:dir { read open };
+

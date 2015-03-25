@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/strings.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+--><resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="keyguard_pinword_enter_pinword_code">Ange PIN-kod för att låsa upp</string>
+        
+    <string name="badPin2">Den gamla PIN2-koden som angavs är felaktig.</string>
+    <string name="badPuk2">PUK2-koden som angavs är felaktig.</string>
+    
+    <string name="checkPwdLen">Kontrollera att lösenordet är 4 till 8 siffror.</string>
+    
+    <string name="pinNotEnabled">Aktivera PIN-kod innan det ändras.</string>
+    
+    <string name="puk1Blocked">PIN-kod är blockerad.</string>
+    
+    <string name="puk2Blocked">PIN2-kod är blockerad.</string>
+
+    
+    <string name="fdnFailMmi">FDN-kontroll misslyckades.</string>
+    
+    <string name="callBarringFailMmi">Samtalsspärr misslyckades.</string>
+    <string name="Pin2Mmi">Ändra PIN2-kod</string>
+    <string name="PukMmi">Häv PIN-blockering</string>
+    <string name="Puk2Mmi">Häv PIN2-blockering</string>
+    
+    <string name="serviceProvisioned">Tjänsten tillhandahålls.</string>
+
+    
+    <string name="serviceUnknown">Anslutningsproblem eller felaktig MMI-kod.</string>
+    <string name="cfServiceNotForwarded">Ej vidarebefordrat</string>
+    
+    <string name="permlab_receiveCbSms">ta emot CB SMS</string>
+    
+    <string name="permdesc_receiveCbSms">Tillåter att program tar emot och bearbetar CB SMS. Skadlig programvara kan övervaka dina meddelanden eller ta bort dem utan att visa dem för dig.</string>
+
+    <string name="keyguard_password_enter_puk_code">Ange PUK-kod</string>
+
+    <string name="keyguard_password_wrong_puk_code">Felaktig PUK-kod!</string>
+
+    <string name="keyguard_password_enter_new_pin_code">Ange ny PIN-kod</string>
+
+    <string name="keyguard_password_Confirm_pin_code">"Bekräfta din nya pinkod"</string>
+
+    <string name="invalidPuk">Ange 8 siffror.</string>
+
+    <string name="sim_permanently_locked">SIM-kortet blir permanant låst om en felaktig PUK-kod anges mer än 10 gånger.</string>
+
+    <string name="pin_length_indicate">(4-8 siffror)</string>
+
+    <string name="puk_length_indicate">(8 siffror)</string>
+
+    <string name="one_retry_left">1 försök kvar</string>
+
+    <string name="retries_left">Återstår:<xliff:g id="number">%d</xliff:g></string>
+    
+    <string name="invalid_imei">Ogiltig IMEI</string>
+    <string name="same_imei">Samma IMEI</string>
+
+    
+    <string name="oper_long_46000">CMCC</string>
+    <string name="oper_long_46001">CU</string>
+    <string name="oper_long_46003">China Telecom</string>    
+    <string name="oper_long_46601">Far EasTone</string>
+    <string name="oper_long_46692">Chunghwa Telecom</string>
+    <string name="oper_long_46697">Taiwan Mobile</string>
+    <string name="oper_long_99998">Android1</string>
+    <string name="oper_long_99999">Android</string>
+
+    
+    <string name="oper_short_46000">CMCC</string>
+    <string name="oper_short_46001">CU-GSM</string>
+    <string name="oper_short_46003">China Telecom</string>    
+    <string name="oper_short_46601">FET</string>
+    <string name="oper_short_46692">Chunghwa</string>
+    <string name="oper_short_46697">TWN</string>
+    <string name="oper_short_99997">AD1</string>
+    <string name="oper_short_99999">AD</string>
+
+    
+    <string name="unable_launch_the_ap">Kan inte starta programmet.</string>
+    
+    <string name="keyguard_password_enter_sim1_pin_code">Ange SIM 1 PIN-kod</string>
+
+    
+    <string name="RestrictedChangedTitle_SIM1">Begränsad åtkomst för SIM1 har ändrats</string>
+    <string name="RestrictedChangedTitle_SIM2">Begränsad åtkomst för SIM2 har ändrats</string>
+    
+    <string name="keyguard_password_enter_sim2_pin_code">Ange SIM 2 PIN-kod</string>
+
+
+    <string name="keyguard_password_wrong_sim1_pin_code">Felaktig SIM 1 PIN-kod!</string>
+
+    <string name="keyguard_password_wrong_sim2_pin_code">Felaktig SIM 2 PIN-kod!</string>
+
+    <string name="keyguard_password_enter_sim1_puk_code">Ange SIM 1 PUK-kod</string>
+
+    <string name="keyguard_password_enter_sim2_puk_code">Ange SIM 2 PUK-kod</string>
+
+    
+    <string name="lockscreen_sim1_puk_locked_message">SIM-kort 1 är PUK-låst.</string>
+
+    
+    <string name="lockscreen_sim2_puk_locked_message">SIM-kort 2 är PUK-låst.</string>
+
+    <string name="choose_bootup_mode">Välj SIM-kort</string>
+    <string name="choose_gprs_mode">Välj dataanslutning</string>
+    <string name="sim_close">Stäng SIM-kort</string>
+    <string name="lockscreen_sim_puk_locked_message_short">PUK-låst</string>
+    <string name="lockscreen_sim_locked_message_short">SIM-kort låst</string>
+    <string name="simlock_slot_locked_message">Kortplatsen är permanent låst.</string>
+    <string name="simlock_entersimmelock">Ange SIM ME-lås</string>
+    <string name="slot_id">Kortplats <xliff:g id="number">%d</xliff:g>:</string>
+    <string name="new_simcard">Nytt SIM-kort</string>
+    <string name="lockscreen_missing_sim_dialog_message">"SIM-kortet är frånkopplat. Kontrollera att SIM-kortet är korrekt isatt."</string>
+
+    
+    <string name="permlab_receiveDmRegisterSms">ta emot DM Register SMS</string>
+    
+    <string name="permdesc_receiveDmRegisterSms">Tillåter att program tar emot och bearbetar DM Register SMS-meddelanden. Inget program förutom DM APP bör använda detta.</string>
+
+    <string name="lockscreen_password_error">Lösenordsfel, försök igen</string>
+  	  <string name="lockscreen_pinword_error">PIN-fel, försök igen</string>
+
+    <string name="music_no_artist">Okänt artistnamn</string>
+    <string name="music_play">Spela</string>
+    <string name="music_pause">Pausa</string>
+    <string name="music_library">Bibliotek</string>
+    <string name="music_no_songs">Inga låtar</string>
+    
+    
+    <string name="serviceClassVideo">Video</string>
+  <string name="aerr_application_lowmem">Internminnet håller på att ta slut, programmet har stoppats. Frigör utrymme och försök igen.</string>
+  
+  <string name="aerr_process_lowmem">Internminnet håller på att ta slut, processen har stoppats. Frigör utrymme och försök igen.</string>
+  <string name="free_memory_btn">"Ledigt utrymme"</string>
+  <string name="free_memory_text">"Ont om minne. Frigör mer minne."</string>		
+<string name="mem_low_title">Frigör mer minne</string>
+   
+   <string name="unread_message">%d oläst meddelande</string>
+   <string name="unread_messages">%d olästa meddelanden</string>
+   <string name="missed_call">%d missat samtal</string>
+   <string name="missed_calls">%d missade samtal</string>
+  
+  <string name="no_favorite_contacts">Inga favoritkontakter</string>
+  <string name="contact_widget_loading">Laddar\u2026</string>
+   
+   <string name="volume_fm">FM-volym</string>
+   
+   <string name="volume_matv">Mobil TV-volym</string>
+
+   
+   <string name="media_controller_buffering">"Buffrar %d%%..."</string>
+   <string name="media_controller_live">"Direkt"</string>
+   <string name="media_controller_playing">"Spelar upp"</string>
+   <string name="media_controller_connecting">"Ansluter…"</string>
+   <string name="media_controller_weak_signal">"svag signal"</string>
+   <string name="VideoView_error_text_bad_file">"Felaktig fil, videon kan inte spelas upp."</string>
+   <string name="VideoView_error_text_cannot_connect_to_server">"Kan inte ansluta till servern".</string>
+   <string name="VideoView_error_text_type_not_supported">"Filtypen stöds inte för media."</string>
+   <string name="VideoView_error_text_drm_not_supported">"DRM-skyddad, videon kan inte spelas upp."</string>
+   <string name="VideoView_error_text_invalid_connection">"Ogiltig anslutning. (403 Förbjuden)"</string>
+   
+
+    
+   
+
+    
+    <string name="redo">Gör om</string>
+    <string name="undo">Ångra</string>
+    <string name="undoAll">Ångra alla</string>
+    <string name="new_sim">Nytt SIM-kort</string>
+
+    
+    <string name="edit">Redigera</string>
+    <string name="delete">Radera</string>
+
+    
+    <string name="sim_card_changed_dialog_title">SIM-kort ändrat</string>
+    <string name="change_setting_for_onenewsim">Nytt SIM-kort har upptäckts med etiketten</string>
+    <string name="change_setting_for_twonewsim">Nytt SIM-kort har upptäckts med etiketten</string>
+    <string name="sim_card_removed">SIM-kort har tagits bort.</string>
+    <string name="sim_card_swapped">SIM-kort har byts ut.</string>
+    <string name="change_settings">Ändra</string>
+    <string name="keyguard_voice_call">Röstsamtal:</string>
+    <string name="keyguard_sms">Meddelanden:</string>
+    <string name="keyguard_data">Dataanslutning:</string>
+    <string name="keyguard_alwaysask">Fråga alltid</string>
+    <string name="keyguard_data_none">Av</string>
+    <string name="keyguard_sim_auto">Auto</string>
+    <string name="dismiss">Avvisa</string>
+    <string name="keyguard_wrong_code_input">Felaktig kod.</string>
+    <string name="keyguard_code_length_prompt">Ange 4-8 siffror.</string>
+    <string name="keyguard_code_donnot_mismatch">Matchar inte.</string>
+    <string name="for_text">för</string>
+    <string name="keyguard_internal_call">Internt samtal</string>
+    <string name="keyguard_not_set">Ej inställt</string>
+    <string name="network_searching">Söker efter nya nätverk</string>
+    <string name="searching_simcard">Detekterar…</string>
+    <string name="keyguard_close">Stäng</string>
+    <string name="for_first_simcard">För det första SIM-kortet</string>
+    <string name="for_second_simcard">För det andra SIM-kortet</string>
+    <string name="for_third_simcard">För det tredje SIM-kortet</string>
+    <string name="for_fourth_simcard">För det fjärde SIM-kortet</string>
+    <string name="default_sim_setting_prompt">Nu är standardinställningarna:</string>
+    <string name="keyguard_video_call">Videosamtal:</string>
+    <string name="dm_prompt">Terminalen har redan låsts.</string>
+    <string name="keyguard_domestic_zone_name">Peking</string>
+     
+
+    
+    <string name="invalid_sim_title">Ogiltigt SIM-kort</string>
+    
+    
+    <string name="invalid_sim_message">UIM-/SIM-kortet känns inte igen.</string>
+     
+         
+    <string name="lockscreen_pin_too_many_failed_attempts_dialog_message">Du har angett en felaktig PIN-kod <xliff:g id="number">%d</xliff:g> gånger. \n\nFörsök igen om <xliff:g id="number">%d</xliff:g> sekunder.</string>
+    
+    <string name="lockscreen_password_too_many_failed_attempts_dialog_message">Du har angett ett felaktigt lösenord <xliff:g id="number">%d</xliff:g> gånger. \n\nFörsök igen om <xliff:g id="number">%d</xliff:g> sekunder.</string>
+
+   
+    
+    
+    
+    
+       
+    <string name="low_internal_storage_view_title">Internminnet håller på ta slut</string>
+    <string name="deleteMails">Ta bort e-postmeddelanden</string>
+    <string name="criticallowtitle">Inget utrymme</string>
+    <string name="criticallowmessage">Frigör mer utrymme, annars fungerar kanske vissa program eller systemfunktioner felaktigt.</string> 
+
+    <string name="nq_sms_filter_title">SMS-filter</string>
+    <string name="nq_sms_filter_message">Detta meddelande kan dra av avgifter. Vill du fortsätta?</string>
+    <string name="nq_sms_filter_yes">Ja</string>
+    <string name="nq_sms_filter_no">Nej</string>
+    
+    
+    <string name="ext_media_checking_notification_title_sd2">Förbered SD-kort</string>
+    <string name="ext_media_checking_notification_title_otg">Förbered USB-lagring</string>
+    <string name="ext_media_badremoval_notification_title_otg">"USB-enheten togs oväntat bort"</string>
+    <string name="ext_media_nomedia_notification_title_otg">"USB-lagringsenheten togs bort"</string>
+    <string name="ext_media_badremoval_notification_message_otg">"Demontera USB-lagringsenheten före borttagning för att undvika dataförlust."</string>
+    <string name="ext_media_nomedia_notification_message_otg">"USB-lagringsenheten har tagits bort. Sätt i en ny."</string>
+    <string name="ext_media_unmountable_notification_title_otg">"Skadad USB-lagringsenhet"</string>
+    <string name="ext_media_unmountable_notification_message_otg">USB-lagringen är skadad. Du måste kanske formattera om den.</string>
+    <string name="ext_media_nofs_notification_title_otg">"Tom USB-lagringsenhet"</string>
+    <string name="ext_media_nofs_notification_message_otg">USB-lagringen är tom eller har ett filsystem som inte stöds.</string>
+    <string name="ext_media_safe_unmount_notification_title_otg">"Säkert att ta bort USB-enhet"</string>
+    <string name="ext_media_safe_unmount_notification_message_otg">"Det är nu säkert att ta bort USB-lagringsenheten."</string>
+    
+    
+    <string name="drm_protection_status">Skyddsstatus:</string>
+    <string name="drm_can_forward">Kan vidarebefordras.</string>
+    <string name="drm_can_not_forward">Kan inte vidarebefordras.</string>
+    <string name="drm_no_limitation">Ingen begränsning.</string>
+    <string name="drm_no_license">Ingen tillgänglig DRM-licens.</string>
+    <string name="drm_begin">Starta:</string>
+    <string name="drm_end">Avsluta:</string>
+    <string name="drm_use_left">Antal kvar:</string>
+    <string name="drm_protectioninfo_renew">Förnya</string>
+    <string name="drm_protectioninfo_title">Skyddsinformation</string>
+    <string name="drm_licenseacquisition_title">Anskaffa DRM-licens</string>
+    <string name="drm_licenseacquisition_message">%1$s har ingen tillgänglig DRM-licens. Du kan trycka på "Förnya" för att anskaffa en DRM-licens.</string>
+    <string name="drm_toast_license_expired">DRM-licensen har utgått.</string>
+    <string name="drm_forwardforbidden_title">Vidarebefordran förbjuden</string>
+    <string name="drm_forwardforbidden_message">Vissa skyddade filer kan inte vidarebefordras.</string>
+    <string name="drm_license_install_success">Installation av DRM-licens slutförd.</string>
+    <string name="drm_license_install_fail">Installation av DRM-licens misslyckades.</string>
+    <string name="drm_secure_timer_title">Ogiltig DRM säker klocka</string>
+    <string name="drm_secure_timer_message">Det gick inte att använda DRM-skyddade filer. Kontrollera att dataanslutning är tillgänglig.</string>
+    <string name="drm_consume_title">Rättigheter i DRM-innehåll</string>
+    <string name="drm_consume_message">Din åtgärd kommer att förbruka DRM-rättigheter.</string>
+    <string name="drm_forward_forbidden">En eller fler skyddade filer kan inte vidarebefordras.</string>
+    
+    
+
+    <string name="recip_unsupport_operator">RecipientsView stöder inte användning av tecken, använd verktygsfältet för att kontrollera mottagare.</string>
+    <string name="recip_unsupport_selection">Vi kan tyvärr inte flytta textmarkören till början när det finns mottagare i RecipientsView.</string>
+    
+    <string name="virtual_sim_on_slot1">Virtual SIM 1 PÅ</string>
+    <string name="virtual_sim_on_slot2">Virtual SIM 2 PÅ</string>
+    <string name="virtual_sim_on_slot3">Virtual SIM 3 PÅ</string>
+    <string name="virtual_sim_on_slot4">Virtual SIM 4 PÅ</string>
+    <string name="virtual_sim_on">Virtual SIM PÅ</string>
+    
+    <string name="sim_missing_slot1">Kortplats 1: Inget SIM-kort upptäckt</string>
+    <string name="sim_missing_slot2">Kortplats 2: Inget SIM-kort upptäckt</string>
+    <string name="sim_missing_slot3">Kortplats 3: Inget SIM-kort upptäckt</string>
+    <string name="sim_missing_slot4">Kortplats 4: Inget SIM-kort upptäckt</string>
+    <string name="sim_missing">Inget SIM-kort upptäckt</string>
+    <string name="sim_missing_detail">Kontrollera att SIM-kortet är klart</string>
+    <string name="sim_missing_slot1_card">Kortplats 1: Inget kort upptäckt</string>
+    <string name="sim_missing_slot2_card">Kortplats 2: Inget kort upptäckt</string>
+    <string name="sim_missing_card">Inget kort upptäckt</string>
+    <string name="sim_missing_detail_card">Kontrollera att kortet är klart</string>
+    
+    <string name="wap_push_setting_noti_ticker">Acceptera Auto-push-tjänsten eller inte?</string>
+    <string name="wap_push_setting_noti_title">Acceptera Auto-push-tjänsten eller inte?</string>
+    <string name="wap_push_setting_noti_text">Tryck för att välja</string>
+    <string name="url_dialog_choice_title">Meddelanden</string>
+    <string name="url_dialog_choice_message">Denna åtgärd öppnar webbläsaren, vill du fortsätta?</string>
+
+    
+    
+    <string name="deleteApp">Avinstallera program</string>    
+    <string name="deleteMail">Säkerhetskopiera e-postmeddelanden och frigör lagringsutrymme</string>    
+
+    <string name="storage_withsd">Telefonens lagringsutrymme har inte nog med ledigt utrymme. Frigör lagringsutrymme eller ändra standard skrivenhet i inställningarna.</string>
+    <string name="storage_withoutsd">Telefonens lagringsutrymme har inte nog med ledigt utrymme. Frigör lagringsutrymme eller sätt in ett SD-kort.</string>
+    <string name="storage_sd">SD-kortet har inte nog med ledigt utrymme. Frigör lagringsutrymme eller ändra standard skrivenhet i inställningarna.</string>   
+    <string name="usb_ums_notification_title">Anslut till USB-lagring</string>
+    
+    <string name="usb_charging_notification_title">Endast USB-laddning</string>
+    
+    
+    
+    <string name="gps_time_sync_fail_str">Kunde inte hämta tid från GPS</string>
+
+    
+    <string name="calibration_data">Ingen kalibrering ännu. Hämta kalibreringsdata! Annars kanske enheten inte kan kampa på nätverk.[MTK Intern Användar]</string>
+
+        
+    <string name="invalid_card">Ogiltigt kort</string>
+        
+    <string name="RejectCauseTitle">Nätverk avvisningsorsak</string>
+        
+    <string name="MMRejectCause2">SIM ej allokerat MM #2</string>
+        
+    <string name="MMRejectCause3">SIM ej tillåtet MM #3</string>
+        
+    <string name="MMRejectCause5">Samtal misslyckades MM #5</string>
+        
+    <string name="MMRejectCause6">Telefon ej tillåten MM #6</string>    
+    
+    <string name="MMRejectCause13">Endast LARM/Nödsamtal</string>
+
+    
+    <string name="find_previous">Föregående</string>
+    <string name="find_next">Nästa</string>
+
+    <string name="tethered_notification_message_for_hotspot"><xliff:g id="connected">%1$d</xliff:g> ansluten, <xliff:g id="blocked">%2$d</xliff:g> blockerad</string>
+    <string name="tethered_notification_message_bandwidth_set">Bandbredden har ställts in</string>
+    
+    <string name="usbint_notification_title">USB-Internet aktivt</string>
+
+    
+    <string name="default_wallpaper_name">Standard</string>
+
+
+    
+    
+    
+    
+    <string name="keyguard_accessibility_alarm_unlock">Avstängningsalarm</string>
+    
+    <string name="alarm_alert_dismiss_text">Stäng av</string>
+    
+    <string name="description_direction_right">Skjut höger för att stänga av</string>
+    
+    <string name="alarm_alert_snooze_text">Snooza</string>
+    
+    <string name="description_direction_left">Skjut vänster för att snooza</string>
+    
+    <string name="description_direction_up">Skjut uppåt för att stänga av</string>
+    
+    <string name="description_direction_down">Skjut nedåt för att snooza</string>
+    <string name="every_day">Varje dag</string>
+    <string name="never">"Aldrig"</string>
+    <string name="day_concat">", "</string>
+    
+    <string name="default_label">"Larm"</string>
+    
+    <string name="dismiss_power_on">Stäng av och slå på enheten</string>   
+    
+    <string name="dismiss_power_off">Stäng av och stäng av enheten</string>
+    
+
+    
+    <string name="voice_unlock_service_error">Fel på rösttjänsten!</string>
+    <string name="voice_unlock_password_wrong">Vi kan tyvärr inte känna igen din röst.</string>
+    <string name="voice_unlock_noisy">Det är för mycket bakgrundsljud för att höra dig ordentligt.</string>
+    <string name="voice_unlock_weak">Kan inte höra din röst.</string>
+    <string name="voice_unlock_media_playing">Upplåsning via röst är inaktiverat under uppspelning av media.</string>
+    <string name="voiceunlock_multiple_failures">Det högsta antalet upplåsningsförsök har överskridits</string>
+    
+    
+    <string name="voiceui_notify_string">Du kan säga</string>
+    <string name="voiceui_control_poweroff_alarm">för att kontrollera avstängningslarmet.</string>
+    <string name="voiceui_comma">,</string>
+    <string name="voiceui_quota_start">"</string>
+    <string name="voiceui_quota_end">"</string>
+    <string name="voiceui_or">eller</string>
+
+    
+    <string name="dialog_color_picker">Färgblandaren</string>
+    <string name="press_color_to_apply">Tryck på färg för att verkställa</string>
+    <string name="color_picker_select">-&gt;</string>
+
+    
+
+    
+    <string name="wifi_display_bt_hdmi_off_wfd_on">HDMI stängs av när du slår på trådlös display. Vill du fortsätta?</string> 
+    
+    <string name="wifi_display_wfd_off_hdmi_on">Trådlös display stängs av när du slår på HDMI. Vill du fortsätta?</string> 
+    
+    <string name="wifi_display_wfd_off_bt_on">Trådlös display stängs av när du aktiverar Bluetooth. Vill du fortsätta?</string> 
+    
+    <string name="wifi_display_wifi_p2p_disconnect_wfd_connect">Nuvarande Wi-Fi Direct-anslutning kopplas från när du ansluter till den trådlösa displayenheten. Vill du fortsätta?</string>
+    
+    <string name="wifi_display_unstable_connection">Instabil anslutning</string>
+    
+    <string name="wifi_display_connection_is_not_steady">Nuvarande anslutning för den trådlösa displayen är inte stabil.</string>
+    
+    
+    <string name="wifi_display_unstable_suggestion">Nuvarande anslutning för den trådlösa displayen är inte stabil. Försök gå närmare displayenheten.</string>
+    
+    <string name="wifi_display_reconnect">Återanslut</string> 
+    
+    <string name="wifi_display_disconnect_then_reconnect">Den trådlösa displayen kopplades från. Vill du återansluta?</string> 
+    
+    <string name="wifi_display_disconnected">Trådlös display frånkopplad.</string>
+     
+    <string name="wifi_wps_failed_overlap">En annan WPS-session har upptäckts. Försök igen om några minuter.</string>
+    
+    <string name="wifi_display_wfd_and_wifi_are_turned_on">Trådlös display och Wi-Fi är på.</string>
+    
+    <string name="wifi_display_sound_path_reminder">Multimedialjud kommer inte att spelas upp i ditt headset.</string>  
+    
+    <string name="wifi_display_change_resolution_reminder">Om upplösningen ändras kommer den trådlösa displayen att återanslutas automatiskt.</string>  
+    
+    <string name="wifi_display_do_not_remind_again">Påminn mig inte igen.</string>
+
+    
+    <string name="sdcard_ready_title">SD-kort klart</string>
+    <string name="sdcard_select_default_path">Vill du ändra standard skrivenhet?</string>
+    <string name="sdcard_default_path_change">Standard skrivenhet har ändrats.</string>
+    <string name="usb_storage_ready_title">Extern USB-lagring är klar</string>
+    
+
+    
+    <string name="pin_pass">Kod godkänd</string>
+    <string name="puk_pass">Blockering av PIN-kod har hävts</string>
+    
+    
+    <string name="headset_pin_recognition">Dina hörlurar är inte kompatibla med telefonen. Försök med ett annat par</string>
+    
+    
+    <string name="msensor_toast_text">Störning av kompass. Vinka med telefonen i bild 8-rörelsen för att kalibrera om kompassen.</string> 
+
+
+    
+    <string name="sd_accessing_swtich_user_title">Växla användare?</string>
+    <string name="sd_accessing_swtich_user_message">All osparad data i ägarkontot kommer att tappas eller skadas.</string>
+
+    
+    <string name="usb_autorun_cdrom_notification_title">Ansluten som en CD-rom som körs automatiskt</string>
+    
+    
+    <string name="ct_net_name">"CTNET"</string>
+    <string name="ct_wap_name">"CTWAP"</string>    
+
+    
+    <string name="hdmi_notification_title">HDMI-kabel ansluten</string>
+    <string name="hdmi_notification_content">Klicka för att konfigurera HDMI</string>
+    <string name="hdmi_hdvideo_toast">HDMI kan inte spela upp 4K-videon, anslutningen kommer att kopplas fårn.</string>
+    
+    
+
+    
+    <string name="safe_media_volume_warning_title">Varning</string>
+    
+    <string name="aerr_application_lowstorage">Internminnet håller på att ta slut, programmet har stoppats. Frigör utrymme och försök igen.</string>
+    <string name="aerr_process_lowstorage">Internminnet håller på att ta slut, processen har stoppats. Frigör utrymme och försök igen.</string>
+    <string name="low_storage_warning_message">Frigör mer utrymme, annars fungerar kanske vissa program eller systemfunktioner felaktigt.</string>
+</resources>

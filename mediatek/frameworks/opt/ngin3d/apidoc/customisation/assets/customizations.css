@@ -1,0 +1,35 @@
+/* *******************************************************************
+ * Existing content of customisations file.  Not clear why it's put
+ * here by doclava, however, the 'header' section is responsible for
+ * the line under the header and the 'search' section defines the
+ * highlight colour for the search box. As it's here we set divider
+ * line colour to MTK orange and added text colour as MTK blue.
+ */
+
+#header {
+  border-bottom: 3px solid #e86c1f;
+  color: #0076bf;
+}
+
+#search_filtered .jd-selected {
+  background-color: #e86c1f;
+}
+
+
+/* *******************************************************************
+ * Actual Customisations
+ */
+
+/* Make Deprecations more obvious. Deprecations use the 'caution'
+ * paragraph style. The default is a thin yellow sidebar.
+ * This sets thick red sidebars and a big yellow banner.  Let's see
+ * someone miss it now!
+ */
+p.caution {
+  margin: 1em;
+  padding: 10px 0 10px .5em;
+  border-left: 8px solid;
+  border-right: 8px solid;
+  border-color: #ff0000;
+  background-color: #ffff00;
+}

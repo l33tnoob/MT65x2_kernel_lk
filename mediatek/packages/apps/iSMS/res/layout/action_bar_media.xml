@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+     <ImageButton
+        android:id="@+id/ib_navigate"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_previous" />
+
+    <Button
+        android:id="@+id/tv_title"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="#fff"
+        android:layout_toRightOf="@+id/ib_navigate"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_title_number"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/ib_back"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+         />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bintiny_mkswap Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type tiny_mkswap_exec , exec_type, file_type;
+type tiny_mkswap ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive tiny_mkswap;
+init_daemon_domain(tiny_mkswap)
+
+
+# 20131122 Add Set Property Rule
+allow tiny_mkswap  property_type:property_service set;

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="alert_delete_multiple">Αυτά τα στοιχεία θα διαγραφούν</string>
+    <string name="alert_delete_single">Αυτό το στοιχείο θα διαγραφεί</string>
+    <string name="app_name">Διαχείριση αρχείων</string>
+    <string name="cancel">Άκυρο</string>
+    <string name="copy">"Αντιγραφή"</string>
+    <string name="copy_deny">Δεν έχετε δικαίωμα αντιγραφής</string>
+    <string name="create_folder">Δημιουργία φακέλου</string>
+    <string name="cut">"Αποκοπή"</string>
+    <string name="cut_deny">Δεν έχετε δικαίωμα αποκοπής</string>
+    <string name="delete">Διαγραφή</string>
+    <string name="delete_deny">Δεν έχετε δικαίωμα διαγραφής</string>
+    <string name="delete_fail">Η διαγραφή απέτυχε</string>
+    <string name="deleting">Διαγραφή</string>
+    <string name="deselect_all">Κατάργηση επιλογής όλων</string>
+    <string name="select_all">Επιλογή όλων</string>
+    <string name="details">Λεπτομέρειες</string>
+    <string name="done">"Τέλος"</string>
+    <string name="empty_msg">(Κενός φάκελος)</string>
+    <string name="executable">Με δυνατότητα εκτέλεσης</string>
+    <string name="insufficient_memory">Ανεπαρκής μνήμη</string>
+    <string name="invalid_empty_name">Το όνομα αρχείου ή φακέλου δεν μπορεί να είναι κενό</string>
+    <string name="loading">Γίνεται φόρτωση</string>
+    <string name="modified_time">Τροποποιήθηκε</string>
+    <string name="name">Όνομα</string>
+    <string name="new_folder">Νέος φάκελος</string>
+    <string name="no">"Όχι"</string>
+    <string name="ok">ΟΚ</string>
+    <string name="paste">"Επικόλληση"</string>
+    <string name="pasting">Γίνεται επικόλληση</string>
+    <string name="paste_fail">Η επικόλληση απέτυχε</string>
+    <string name="paste_same_folder">Δεν είναι δυνατή η επικόλληση του στοιχείου %s στον ίδιο κατάλογο</string>
+    <string name="readable">Με δυνατότητα ανάγνωσης</string>
+    <string name="rename">Μετονομασία</string>
+    <string name="selected">Έχει γίνει επιλογή</string>
+    <string name="send_file">Αποστολή αρχείου</string>
+    <string name="share">"Κοινή χρ."</string>
+    <string name="size">Μέγεθος</string>
+    <string name="sort_by">Ταξινόμηση κατά</string>
+    <string name="wait">Περιμένετε\u2026</string>
+    <string name="writable">Με δυνατότητα εγγραφής</string>
+    <string name="yes">Ναι</string>
+    <string name="confirm_rename">Επιβεβαίωση μετονομασίας</string>
+    <string name="invalid_char_prompt">Έχετε εισαγάγει μη έγκυρο χαρακτήρα</string>
+    <string name="msg_rename_ext">Αλλάζετε την επέκταση του ονόματος αρχείου. Αυτό ίσως έχει ως αποτέλεσμα να μην αναγνωρίζεται το αρχείο. Είστε βέβαιοι ότι θέλετε να προχωρήσετε;</string>
+    <string name="msg_unable_open_file">Η μορφή αρχείου δεν υποστηρίζεται.</string>
+
+    <string-array name="sort_by">
+        <item>Τύπος</item>
+        <item>Όνομα (Α - Ω)</item>
+        <item>Μέγεθος (μεγάλο - μικρό)</item>
+        <item>Χρόνος (νέο - παλιό)</item>
+    </string-array>
+
+    <string name="more">Περισσότερα</string>
+    <string name="search">Αναζήτηση</string>
+    <string name="sort">Ταξινόμηση</string>
+    <string name="show_file">Εμφάνιση κρυφών αρχείων</string>
+    <string name="hide_file">Απόκρυψη κρυφών αρχείων</string>
+    <string name="default_search_text">Αναζήτηση αρχείων</string>
+    <string name="search_text_empty">Τα περιεχόμενα της αναζήτησης δεν πρέπει να είναι κενά.</string>
+    <string name="free_space">Ελεύθερος χώρος</string>
+    <string name="total_space">Συνολικός χώρος</string>
+    <string name="paste_sub_folder">Δεν είναι δυνατή η επικόλληση σε υποφάκελο</string>
+    <string name="operation_fail">Κάποια λειτουργία αρχείων απέτυχε</string>
+    <string name="search_files">Αναζήτηση αρχείων</string>
+    <string name="search_result">%2$d αποτελέσματα για \"%1$s\"</string>
+    <string name="already_exists">Το %1$s χρησιμοποιείται ήδη</string>
+    <string name="unmounted">%1$s έχει αποσυνδεθεί</string>
+    <string name="create_hidden_file">Το αρχείο θα είναι κρυφό εάν το όνομά του αρχίζει από \'.\'</string>
+    <string name="modify_hidden_file">Το αρχείο δεν θα είναι κρυφό εάν το όνομά του δεν αρχίζει από \'.\'</string>
+    <string name="file_name_too_long">Το όνομα εισόδου είναι πολύ μεγάλο</string>
+    <string name="some_paste_fail">Κάποιες λειτουργίες επικόλλησης απέτυχαν</string>
+    <string name="some_delete_fail">Κάποιες λειτουργίες διαγραφής απέτυχαν</string>
+    <string name="search_empty">Τα περιεχόμενα της αναζήτησης δεν πρέπει να είναι κενά</string>
+    <string name="search_setting_description">Τοπικά αρχεία και φάκελοι</string>
+    <string name="path_not_exists">Η διαδρομή %1$s δεν υπάρχει</string>
+    <string name="change_mode">Επιλογή αρχείου ή φακέλου</string>
+    <string name="folder_beam_forbidden_title">Δεν είναι δυνατή η μεταβίβαση του φακέλου</string>
+    <string name="folder_beam_forbidden_message">Η μεταβίβαση του φακέλου δεν υποστηρίζεται. Επιλέξτε πολλαπλά αρχεία για μεταβίβαση.</string>
+    <string name="drm_beam_forbidden_title">Η μεταβίβαση απαγορεύεται</string>
+    <string name="drm_beam_forbidden_message">Δεν είναι δυνατή η μεταβίβαση των αρχείων που προστατεύονται με DRM (διαχείριση δικαιωμάτων ψηφιακού περιεχομένου).</string>
+
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"Sistem güncellemeleri"</string>
+
+
+    <string name="none_package">Geçerli güncelleme paketi mevcut değil.</string>
+    <string name="new_version_query">Güncelleme kontrol ediliyor\u2026</string>
+    <string name="menu_stats_refresh">"Yenile"</string>
+    <string name="network_error">Ağ bağlantısı başarısız</string>
+    <string name="no_new_version">Sisteminiz şu anda güncel.</string>
+    <string name="not_support_version">Hedefiniz Havadan Açık iletişimi desteklemiyor</string>
+    <string name="query_sd_insufficient_space"><xliff:g id="path">%s</xliff:g> için yetersiz alan</string>
+    <string name="ota_category_title">OTA</string>
+    <string name="sd_category_title">SD KART GÜNCELLEMESİ</string>
+    <string name="ota_preference_summary">Sunucuda bir sistem güncellemesi bulundu</string>
+
+
+    <string name="notes_summary">Ürün yazılımı güncellemesi makine kararlılığını artırabilir ve hataları onarabilir. Sürüm güncellemesi</string>
+    <string name="ask_for_install_ota">Sistem güncellemesini şimdi yüklemek ister misiniz?</string>
+    <string name="warning_install_ota" product="tablet">Kurulum sırasında tabletinizi kullanamayacak ya da acil durum çağrısı yapamayacaksınız. Lütfen pili ve SD kartı çıkarmayın ya da tableti kapatmayın.</string>
+    <string name="warning_install_ota" product="default">Kurulum sırasında telefonunuzu kullanamayacak ya da acil durum çağrısı yapamayacaksınız. Lütfen pili ve SD kartı çıkarmayın ya da telefonu kapatmayın.</string>
+    <string name="ask_for_install_sd">En son sistem güncelleme paketleri SD-kartınızda bulundu, kurmak ister misiniz?</string>
+    <string name="warning_install_sd" product="tablet">Kurulum sırasında tabletinizi kullanamayacak ya da acil durum çağrısı yapamayacaksınız. Lütfen pili ve SD kartı çıkarmayın ya da tableti kapatmayın. \nKuruluma başlamadan önce lütfen paketin resmi siteden indirilmediğinden ve bozuk olmadığından emin olun.</string>
+    <string name="warning_install_sd" product="default">Kurulum sırasında telefonunuzu kullanamayacak ya da acil durum çağrısı yapamayacaksınız. Lütfen pili ve SD kartı çıkarmayın ya da telefonu kapatmayın. \nKuruluma başlamadan önce lütfen paketin resmi siteden indirilmediğinden ve bozuk olmadığından emin olun.</string>
+    <string name="ask_for_download_ota">Sistem optimizasyon güncellemesini karşıdan yüklemek istiyor musunuz?</string>
+    <string name="warning_download_ota">Bu güncellemeyi uygulamak için ücretsiz bir Wi-Fi etkin nokta veya bir sınırsız veri planı kullanmanızı öneririz. Bunların dışında, standart veri bağlantısı ücretleri uygulanabilir. \nGüncellemeden önce lütfen önce verilerinizi yedekleyin.</string>
+        
+    <string name="notification_content_title">Sistem güncellemesi</string>
+    <string name="downloading_title">"İndiriliyor…"</string>   
+    <string name="wifi_only_check">Yalnız Wi-Fi</string>     
+    
+    
+    
+    
+    
+    <string name="btn_install">"Yükle"</string>
+    <string name="btn_cancel">çıkar</string>
+    <string name="btn_download">İndir ve Yükle</string>
+    <string name="btn_resume">"İndir"</string>
+    
+    <string name="warn_data_cost_title">Güncellemeyi karşıdan yükle</string>
+    <string name="warn_data_cost_content">Mobil ağlar üzerinden indirmek ek ücrete neden olabilir. Devam etmek istiyor musunuz?</string>
+    <string name="warn_data_cost_yes">Evet</string>
+    <string name="warn_data_cost_no">Hayır</string>
+
+    <string name="notification_download_complete_title">Sistem güncellemesi hazır</string>
+    <string name="notification_download_complete_context">Sistem güncellemesini kurmak için dokunun</string>
+        
+    <string name="sdcard_crash_or_unmount">SD kartı hatası. Lütfen SD kartınızı kontrol edin ve yeniden deneyin.</string>
+    <string name="unmount_sdcard">SD kart bağlama hatası, lütfen kontrol edin.</string>
+    <string name="insufficient_space_content">There is no enough storage space! This installation need at least  <xliff:g id="deltasize" example="3.5M">%s</xliff:g>. Check your app manager to release extra space please. </string>
+
+    
+    
+    
+    
+    <string name="install_sd_title">Güncellemeyi yükle</string>
+    <string name="install_sd_message">Lütfen paketin resmi siteden indirilmediğinden ve bozuk olmadığından emin olun. Aksi halde sistem sorunları meydana gelebilir.</string>
+    <string name="install_reminder_now">Şimdi kur</string>
+    <string name="install_reminder_not_now">"Şimdi değil"</string>
+    
+    
+
+    <string name="notification_content_text_completed">İndirme başarılı</string> 
+
+    <string name="unknown_per">"Bilinmiyor"</string>    
+    <string name="unknown_error">Unknown error</string>
+    <string name="unknown_error_content">Bilinmeyen bir hata oluştu. Lütfen sayfayı terk ederek yeniden deneyin.</string>
+    <string name="insufficient_space_title">Yeterli alan yok</string>
+    <string name="error_sdcard">SD kartı bilgileri</string>
+    <string name="insufficient_space">SD kartta yeterli alan yok.</string>
+    <string name="package_deleted_error">Yükseltme geçersiz olduğu için sistem güncellemesi durdu.</string>
+    
+    <string name="cancel_download_title">İndirmeyi iptal et</string>
+    <string name="cancel_download_content">Bu işlem karşıdan yüklenen dosyayı çıkarır.</string>
+
+    
+    <string name="change_network_title">"İndir"</string>
+    <string name="change_network_content">"Geçerli APN karşıdan yüklemeyi desteklemiyor, başka bir  APN'ye geçmek ya da Wi-Fi'yi kapatmak ister misiniz?"</string>
+    <string name="change_network_wifi_btn">Wi-Fi Kullan</string>
+    <string name="change_network_apn_btn">APN Değiştir</string>
+    <string name="change_network_discard_btn">çıkar</string>    
+    <string name="package_error_title">Yükleme başarısız</string>
+    <string name="package_error_message_invalid">Paket hatası. Lütfen güncellemeyi kontrol edin ve tekrar indirin.</string>
+    <string name="package_error_message_insuff" product="tablet">Aygıtta yeterli alan yok.</string>
+    <string name="package_error_message_insuff" product="default">Telefonda yeterli alan yok</string>
+    <string name="package_error_message_crash">Kullanıcı verilerine erişilemiyor</string>
+    <string name="package_error_message_full">Parçanın durumu değiştiğinden tam paket gerekiyor.</string>    
+    <string name="updateSuccess" product="tablet">Tebrikler! Aygıtınız başarıyla  <xliff:g id="version" example="gb.p37">%s</xliff:g> sürümüne güncellendi. </string> 
+    <string name="updateSuccess" product="default">Tebrikler! Telefonunuz başarıyla  <xliff:g id="version" example="gb.p37">%s</xliff:g> sürümüne güncellendi. </string> 
+    <string name="updateFailed">  <xliff:g id="version" example="gb.p37">%s</xliff:g> sürümüne güncellenemedi. </string>
+    <string name="package_unzip">Paket sıkıştırması açılıyor\u2026</string>
+    <string name="package_unzip_error">Unzip error</string>
+    
+    <string name="installing_message">Telefonunuz kapanacak\u2026</string>
+    <string name="install_sd_info">Yükseltmeye devam etmek için paketin telefon depolama birimine kopyalanması gereklidir.\nTelefonunuzda yeterli boş alan yoktur.</string>
+    <string name="sdcard_crash_or_unmount_when_install">Sistem güncellemesi SD kart takılı olmadığı için durduruldu.</string>
+    <string name="sdcard_inserted">Daha faza güncelleme paketi bulmak için SD kartınızı taramak istiyor musunuz?</string>
+    
+    <string name="new_version_detected">Sistem güncellemesi mevcut</string>
+    <string name="sdcard_unmount">SD kartı çıkarıldı</string>
+    <string name="server_version_error">Sunucu hatası: Lütfen güncelleme sunucu kaynağını güncelleyin.</string>
+    <string name="cta_warning">Sistem sadece resmi web sitesi ya da sunucudan firmware güncellemesini destekler. Kullanıcı bir 3. şahıs ROM imajı ve/veya başka bir root yöntemi kullanarak firmware güncellemesi yaparsa telefonun kararlılığı etkilenebilir. Tüm bu davranışlarla ilgili olarak tüm sorumluluğun kullanıcıya ait olduğunu lütfen unutmayın.</string>
+</resources>

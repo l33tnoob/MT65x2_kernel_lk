@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="app_name">Послуга стільникового підключення</string>
+	<string name="button_ok">ОК</string>
+	<string name="button_cancel">"Скасувати"</string>
+	<string name="confirm_radio_title">Вимкнена SIM</string>
+	<string name="confirm_radio_title_uim">Вимкнено UIM</string>
+	<string name="confirm_radio_title_card">Карту вимкнено</string>
+
+	<string name="confirm_radio_msg"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> зараз вимкнено. Бажаєте увімкнути цю карту SIM?</string>
+  <string name="confirm_radio_msg_uim"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> зараз вимкнено. Бажаєте увімкнути цю карту UIM?</string>
+  <string name="confirm_radio_msg_card"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> зараз вимкнено. Бажаєте увімкнути цю карту?</string>
+
+	<string name="confirm_radio_flight_mode_on_and_msg">Увімкнено режим Літак і</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> зараз вимкнено. Бажаєте вимкнути режим Літак і увімкнути цю SIM карту?</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg_uim"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> зараз вимкнено. Бажаєте вимкнути режим Літак і увімкнути цю UIM карту?</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg_card"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> зараз вимкнено. Бажаєте вимкнути режим Літак і увімкнути цю карту?</string>	
+	<string name="confirm_radio_flight_mode_on_sim_on_msg">Увімкнено режим Літак. Бажаєте вимкнути режим Літак?</string>  
+	<string name="confirm_radio_msg_single">Зараз увімкнено режим Літак. Бажаєте вимкнути його?</string>
+	<string name="confirm_pin_title">Блоковано SIM</string>
+	<string name="confirm_pin_title_uim">Блоковано UIM</string>
+	<string name="confirm_pin_title_card">Блоковано карту</string>
+	<string name="confirm_pin_msg">Вибрана карта SIM зараз заблокована. Будь ласка, спочатку розблокуйте.</string>
+	<string name="confirm_pin_msg_uim">Вибрана карта UIM зараз заблокована. Будь ласка, спочатку розблокуйте.</string>
+	<string name="confirm_pin_msg_card">Вибрана карта зараз заблокована. Будь ласка, спочатку розблокуйте.</string>
+	<string name="confirm_simmelock_title">Блоковано SIM ME</string>
+	<string name="confirm_simmelock_msg">Зараз блоковано вибраний отвір SIM. Будь ласка, спочатку розблокуйте його.</string>
+	<string name="confirm_simmelock_msg_uim">Зараз блоковано вибраний отвір UIM. Будь ласка, спочатку розблокуйте його.</string>
+	<string name="confirm_simmelock_msg_card">Зараз блоковано вибраний отвір. Будь ласка, спочатку розблокуйте його.</string>
+	<string name="confirm_fdn_title">Активовано FDN</string>
+	<string name="confirm_fdn_msg">Активовано набір фіксованих номерів.</string>
+	<string name="confirm_roaming_title">Попередження роумінгу</string>
+	<string name="confirm_roaming_msg">Карта, якою ви скористаєтесь, зараз знаходиться у роумінгу. Зараз недоступні локальні SIM. Бажаєте продовжити?</string>
+	<string name="confirm_roaming_msg_uim">Карта, якою ви скористаєтесь, зараз знаходиться у роумінгу. Зараз недоступні локальні UIM. Бажаєте продовжити?</string>
+	<string name="confirm_roaming_msg_card">Карта, якою ви скористаєтесь, зараз знаходиться у роумінгу. Зараз недоступні локальні. Бажаєте продовжити?</string>
+  <string name="confirm_roaming_withPrefer_msg">Карта, якою ви скористаєтесь, зараз знаходиться у роумінгу. Бажаєте продовжити через локальну SIM?</string>
+  <string name="confirm_roaming_withPrefer_msg_uim">Карта SIM, якою ви скористаєтесь, зараз знаходиться у роумінгу. Бажаєте продовжити через локальну UIM?</string>
+  <string name="confirm_roaming_withPrefer_msg_card">Карта SIM, якою ви скористаєтесь, зараз знаходиться у роумінгу. Бажаєте продовжити через локальну карту?</string>
+  <string name="confirm_roaming_lbutton">"Продовжити"</string>
+  <string name="confirm_roaming_rbutton">"Скасувати"</string>
+  <string name="confirm_roamingWithPrefer_lbutton">Локальна SIM</string>
+  <string name="confirm_roamingWithPrefer_lbutton_uim">Локальна UIM</string>
+  <string name="confirm_roamingWithPrefer_lbutton_card">Локальна карта</string>
+  <string name="confirm_roamingWithPrefer_rbutton">SIM роумінгу</string>
+  <string name="confirm_roamingWithPrefer_rbutton_uim">UIM роумінгу</string>
+  <string name="confirm_roamingWithPrefer_rbutton_card">Карта роумінгу</string>
+	<string name="confirm_roaming_for3Sims_msg">Карта SIM, якою ви скористаєтесь, зараз знаходиться у роумінгу. Бажаєте продовжити?</string>
+  <string name="confirm_roaming_for3Sims_msg_uim">Карта UIM, якою ви скористаєтесь, зараз знаходиться у роумінгу. Бажаєте продовжити?</string>
+  <string name="confirm_roaming_for3Sims_msg_card">Карта, якою ви скористаєтесь, зараз знаходиться у роумінгу. Бажаєте продовжити?</string>
+	<string name="confirm_radio_lbutton">Увімкнути</string>
+	<string name="confirm_unlock_lbutton">Розблокувати</string>
+	<string name="confirm_unlock_fail">Скасовано операцію</string>
+	<string name="confirm_turnon_radio_fail">Скасовано операцію</string>
+	<string name="confirm_permit_roaming_fail">Ви скасовуєте цю дію на SIM роумінгу</string>
+	<string name="confirm_permit_roaming_fail_uim">Ви скасовуєте цю дію на UIM роумінгу</string>
+	<string name="confirm_permit_roaming_fail_card">Ви скасовуєте цю дію на карті роумінгу</string>
+	<string name="confirm_sim_locked_message">Карта SIM назавжди заблокована</string>
+	<string name="confirm_sim_locked_message_uim">Карта UIM назавжди заблокована</string>
+	<string name="confirm_sim_locked_message_card">Карта назавжди заблокована</string>	
+    <string name="confirm_slot_locked_message">Отвір назавжди заблокований</string>
+	<string name="button_yes">"Так"</string>  
+	<string name="button_no">"Ні"</string>  
+</resources>

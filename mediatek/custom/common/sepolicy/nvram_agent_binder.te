@@ -1,0 +1,52 @@
+# ==============================================
+# Policy File of /system/binnvram_agent_binder Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type nvram_agent_binder_exec , exec_type, file_type;
+type nvram_agent_binder ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive nvram_agent_binder;
+init_daemon_domain(nvram_agent_binder)
+
+# 20131028 CTS_05
+allow nvram_agent_binder dumpstate:fd use;
+allow nvram_agent_binder dumpstate:unix_stream_socket { read write };
+
+
+# 20131028 CTS_06
+allow nvram_agent_binder app_data_file:file write;
+allow nvram_agent_binder untrusted_app:fd use;
+
+
+# 20131028 CTS_16
+allow nvram_agent_binder linker_exec:file read;
+
+
+# 20131028 CTS_18
+allow nvram_agent_binder device:chr_file { read ioctl open };
+allow nvram_agent_binder servicemanager:binder { transfer call };
+
+
+
+# 20131122 Add Set Property Rule
+allow nvram_agent_binder  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_CTS_02
+allow nvram_agent_binder system_data_file:file { write open };
+

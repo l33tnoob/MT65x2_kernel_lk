@@ -1,0 +1,146 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type drmserver, domain;
+type drmserver_exec, exec_type, file_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# drmserver - DRM service
+permissive drmserver;
+
+init_daemon_domain(drmserver)
+# unconfined_domain(drmserver)
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# drmserver - DRM service
+permissive drmserver;
+
+# init_daemon_domain(drmserver)
+# unconfined_domain(drmserver)
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive drmserver;
+# 20131024 Sanity_02
+allow drmserver drm_data_file:dir search;
+allow drmserver drm_data_file:file { read getattr open };
+allow drmserver platform_app:fd use;
+allow drmserver sdcard_external:file read;
+
+
+# 20131024 CTS_01
+allow drmserver device:chr_file { read ioctl open };
+allow drmserver drm_data_file:dir { write search add_name };
+allow drmserver drm_data_file:file { read getattr open };
+allow drmserver dumpstate:fd use;
+allow drmserver dumpstate:unix_stream_socket { read write };
+allow drmserver nfc:fd use;
+allow drmserver platform_app:fd use;
+allow drmserver sdcard_external:file read;
+allow drmserver servicemanager:binder call;
+allow drmserver system_server:binder call;
+
+
+# 20131024 Sanity_03
+allow drmserver media_app:fd use;
+allow drmserver platform_app:dir search;
+allow drmserver platform_app:file { read getattr open };
+allow drmserver untrusted_app:fd use;
+
+
+# 20131024 CTS_02
+allow drmserver drm_data_file:dir { remove_name getattr setattr };
+allow drmserver drm_data_file:file { write create unlink setattr };
+
+
+# 20131028 CTS_03
+allow drmserver linker_exec:file read;
+
+
+# 20131028 CTS_04
+allow drmserver app_data_file:file read;
+
+
+# 20131028 CTS_05
+allow drmserver app_data_file:file write;
+allow drmserver untrusted_app:dir search;
+allow drmserver untrusted_app:file { read getattr open };
+
+
+# 20131028 CTS_06
+allow drmserver aee_aed:process sigchld;
+
+
+# 20131028 Sanity_13
+allow drmserver drm_data_file:dir create;
+
+# 20131028 CTS_08
+allow drmserver mediaserver:fd use;
+
+
+# 20131028 CTS_13
+allow drmserver system_app:fd use;
+
+
+# 20131119 FeatureSQC
+allow drmserver drm_data_file:dir create;
+allow drmserver mediaserver:fd use;
+allow drmserver platform_app_data_file:file read;
+allow drmserver radio:fd use;
+allow drmserver radio_data_file:file read;
+allow drmserver sdcard_external:file { getattr open };
+allow drmserver sdcard_internal:file read;
+allow drmserver servicemanager:binder transfer;
+allow drmserver system_app:fd use;
+
+
+
+# 20131122 Add Set Property Rule
+allow drmserver property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow drmserver asec_apk_file:file read;
+allow drmserver drm_data_file:dir { read open };
+allow drmserver drm_data_file:file rename;
+allow drmserver logwrapper:fd use;
+allow drmserver media_app:dir search;
+allow drmserver media_app:file { read getattr open };
+allow drmserver radio_data_file:file { getattr open };
+allow drmserver release_app:dir search;
+allow drmserver release_app:fd use;
+allow drmserver release_app:file { read getattr open };
+allow drmserver sdcard_internal:dir { write remove_name search add_name };
+allow drmserver sdcard_internal:file { rename write getattr create unlink open };
+allow drmserver shared_app:dir search;
+allow drmserver shared_app:fd use;
+allow drmserver shared_app:file { read getattr open };
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow drmserver drm_data_file:dir { read open };
+allow drmserver drm_data_file:file rename;
+allow drmserver media_app:dir search;
+allow drmserver media_app:file { read getattr open };
+allow drmserver mediaserver:binder call;
+allow drmserver nvram_agent_binder:binder call;
+allow drmserver port:tcp_socket name_connect;
+allow drmserver radio_data_file:file { getattr open };
+allow drmserver release_app:fd use;
+allow drmserver sdcard_internal:dir { write remove_name search add_name };
+allow drmserver sdcard_internal:file { write getattr open create };
+allow drmserver self:tcp_socket { write getattr setopt read getopt create connect };
+allow drmserver self:udp_socket { write read create ioctl connect };
+allow drmserver shared_app:fd use;
+allow drmserver untrusted_app:binder call;
+

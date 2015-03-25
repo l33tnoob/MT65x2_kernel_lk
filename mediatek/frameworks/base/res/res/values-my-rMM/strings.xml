@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+/* //device/apps/common/assets/res/any/strings.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">  
+    <string name="keyguard_pinword_enter_pinword_code">သော့ဖွင့်ရန်ပင်နံပါတ်ထည့်ပါ။</string>  
+    <string name="badPin2">သင်ရိုက်ထည့်သည့် ပင်၂ အဟောင်းမှာ မမှန်ပါ။</string>  
+    <string name="badPuk2">သင်ရိုက်ထည့်သည့် PUK၂ အဟောင်းမှာ မမှန်ပါ။</string>  
+    <string name="checkPwdLen">သင့်စကားဝှက်မှာ ဂဏန်း ၄လုံးမှ ၈လုံးအထိပါရန် စစ်ဆေးပါ။</string>  
+    <string name="pinNotEnabled">မပြောင်းလဲခင် ကျေးဇူးပြု၍ပင်ကို အလုပ်လုပ်အောင်ဖွင့်ပါ။</string>  
+    <string name="puk1Blocked">ပင်ကိုပိတ်ဆို့ထားသည်။</string>  
+    <string name="puk2Blocked">ပင်၂ကိုပိတ်ဆို့ထားသည်။</string>  
+    <string name="fdnFailMmi">FDN စစ်ဆေးရာတွင်မအောင်မြင်။</string>  
+    <string name="callBarringFailMmi">ခေါ်ဆိုခြင်းများတားဆီးရာတွင်မအောင်မြင်။</string>  
+    <string name="Pin2Mmi">ပင်၂ပြောင်းရန်</string>  
+    <string name="PukMmi">ပင်ကို သော့ဖွင့်ရန်</string>  
+    <string name="Puk2Mmi">ပင်၂ကို သော့ဖွင့်ရန်</string>  
+    <string name="serviceProvisioned">ဝန်ဆောင်မှုပေးထားသည်။</string>  
+    <string name="serviceUnknown">ချိတ်ဆက်ခြင်းပြဿနာ သို့မဟုတ် မမှန်သော MMI ကုဒ်။</string>  
+    <string name="cfServiceNotForwarded">ဆက်လက်မပို့ထားပါ။</string>  
+    <string name="permlab_receiveCbSms">CB SMS လက်ခံရန်</string>  
+    <string name="permdesc_receiveCbSms">CB SMS သတင်းတိုများကိုလက်ခံရန်နှင့် လုပ်ဆောင်ရန် လုပ်ငန်းသုံးပရိုဂရမ်အား ခွင့်ပြုသည်။ အလိုမရှိသော ပရိုဂရမ်များသည် သင့်သတင်းတိုများကို စောင့်ကြည့်နိုင်သည် သို့မဟုတ် သင့်အားမပြဘဲ ဖျက်ပစ်နိုင်သည်။</string>  
+    <string name="keyguard_password_enter_puk_code">PUK ကုဒ်ထည့်ရန်</string>  
+    <string name="keyguard_password_wrong_puk_code">PUK ကုဒ်အမှား။</string>  
+    <string name="keyguard_password_enter_new_pin_code">ပင်နံပါတ်အသစ်ကိုထည့်ရန်</string>  
+    <string name="keyguard_password_Confirm_pin_code">ပင်နံပတ်အသစ်ကိုအတည်ပြုရန်</string>  
+    <string name="invalidPuk">ဂဏန်း ၈ လုံးထည့်ရန်</string>  
+    <string name="sim_permanently_locked">မမှန်သော PUK ကုဒ်ကို ၁၀ ကြိမ်ထည့်ပိုထည့်မှုပါက SIM ကတ်ကိုအမြဲတမ်း သော့ပိတ်သွားစေနိုင်သည်။</string>  
+    <string name="pin_length_indicate">(ဂဏန်း ၄-၈ လုံး)</string>  
+    <string name="puk_length_indicate">(ဂဏန်း ၈ လုံး)</string>  
+    <string name="one_retry_left">နောက်ထပ်ကြိုးစားဖို့ ၁ ခါကျန်သည်</string>  
+    <string name="retries_left">ကျန်သည် - 
+        <xliff:g id="number">%d</xliff:g> 
+    </string>  
+    <string name="invalid_imei">တရားမဝင်သော IMEI</string>  
+    <string name="same_imei">အလားတူ IMEI</string>  
+    <string name="oper_long_46000">ချိုင်းနားမိုဘိုင်း</string>  
+    <string name="oper_long_46001">ချိုင်းနားယူနီကွမ်း</string>  
+    <string name="oper_long_46003">ချိုင်းနားတယ်လီကွမ်း</string>  
+    <string name="oper_long_46601">ဖားအိ(စ်ထ်)တုန်း</string>  
+    <string name="oper_long_46692">ချုန်းဟွာတယ်လီကွမ်း</string>  
+    <string name="oper_long_46697">တိုင်ဝမ်မိုဘိုင်း</string>  
+    <string name="oper_long_99998">အဲန်းဒရိုက် ၁</string>  
+    <string name="oper_long_99999">အဲန်းဒရိုက်</string>  
+    <string name="oper_short_46000">CMCC</string>  
+    <string name="oper_short_46001">CU-GSM</string>  
+    <string name="oper_short_46003">ချိုင်းနားတယ်လီကွမ်း</string>  
+    <string name="oper_short_46601">FET</string>  
+    <string name="oper_short_46692">ချုန်းဟွာ</string>  
+    <string name="oper_short_46697">TWN</string>  
+    <string name="oper_short_99997">AD1</string>  
+    <string name="oper_short_99999">AD</string>  
+    <string name="unable_launch_the_ap">လုပ်ငန်းသုံးပရိုဂရမ်ကိုစတင်ဖို့မလုပ်ဆောင်နိုင်ပါ</string>  
+    <string name="keyguard_password_enter_sim1_pin_code">SIM ၁ ပင်ကုဒ်ထည့်ရန်</string>  
+    <string name="RestrictedChangedTitle_SIM1">SIM ၁ ကန့်သတ်ချက်ပြောင်းလဲပြီး</string>  
+    <string name="RestrictedChangedTitle_SIM2">SIM ၂ ကန့်သတ်ချက်ပြောင်းလဲပြီး</string>  
+    <string name="keyguard_password_enter_sim2_pin_code">SIM ၂ ပင်ကုဒ်ထည့်ရန်</string>  
+    <string name="keyguard_password_wrong_sim1_pin_code">မမှန်သော SIM ၁ ပင်ကုဒ်။</string>  
+    <string name="keyguard_password_wrong_sim2_pin_code">မမှန်သော SIM ၂ ပင်ကုဒ်။</string>  
+    <string name="keyguard_password_enter_sim1_puk_code">SIM ၁ PUK ကုဒ်ထည့်ရန်</string>  
+    <string name="keyguard_password_enter_sim2_puk_code">SIM ၂ PUK ကုဒ်ထည့်ရန်</string>  
+    <string name="lockscreen_sim1_puk_locked_message">SIM ကတ်၁ကို PUK သော့ချထားသည်။</string>  
+    <string name="lockscreen_sim2_puk_locked_message">SIM ကတ်၂ကို PUK သော့ချထားသည်။</string>  
+    <string name="choose_bootup_mode">ကျေးဇူးပြု၍ SIM ရွေးပါ</string>  
+    <string name="choose_gprs_mode">ကျေးဇူးပြု၍ဒေတာချိတ်ဆက်မှု ရွေးပါ</string>  
+    <string name="sim_close">SIM ကတ်ပိတ်ရန်</string>  
+    <string name="lockscreen_sim_puk_locked_message_short">PUK သော့ချထားသည်</string>  
+    <string name="lockscreen_sim_locked_message_short">SIM ကတ်သော့ချထားသည်</string>  
+    <string name="simlock_slot_locked_message">အပေါက်ကိုအမြဲတမ်း သော့ချထားသည်။</string>
+    <string name="simlock_entersimmelock">"SIM ME သော့ခတ်ခြင်း ထည့်သွင်းပါ"</string>  
+    <string name="slot_id">အပေါက် <xliff:g id="number">%d</xliff:g>:</string>
+    <string name="new_simcard">SIM ကဒ်အသစ်</string>
+    <string name="lockscreen_missing_sim_dialog_message">"SIM ကဒ်မထည့်ရသေးပါ၊
+သင့် SIM ကဒ်ကောင်းမွန်စွာ ထည့်ထား မထား သေချာအောင် ပြုလုပ်ပါ။"</string>
+    <string name="permlab_receiveDmRegisterSms">DM စာရင်းသွင်းသော SMS လက်ခံရရှိရန်</string>  
+    <string name="permdesc_receiveDmRegisterSms">DM စာရင်းသွင်းသော SMS သတင်းတိုများ လက်ခံရရှိရန်နှင့် ဆောင်ရွက်ရန် လုပ်ငန်းသုံးပရိုဂရမ်အား ခွင့်ပြုသည်။ ဤအရာကို DM APP မှလွဲ၍ မည်သည့်လုပ်ငန်းသုံးပရိုဂရမ်ကမှ မသုံးသင့်။</string>  
+    <string name="lockscreen_password_error">စကားဝှက်အမှား၊ ကျေးဇူးပြု၍နောက်ထပ်ကြိုးစားပါ</string>  
+    <string name="lockscreen_pinword_error">ပင်နံပါတ်အမှား၊ ကျေးဇူးပြု၍နောက်ထပ်ကြိုးစားပါ</string>  
+    <string name="music_no_artist">အဆိုတော်အမည်မသိရ</string>  
+    <string name="music_play">ဖွင့်ရန်</string>  
+    <string name="music_pause">ရပ်ရန်</string>  
+    <string name="music_library">စာကြည့်တိုက်</string>  
+    <string name="music_no_songs">သီချင်းများမရှိ</string>  
+    <string name="serviceClassVideo">ဗီဒီယို</string>  
+    <string name="aerr_application_lowmem">ဖုန်းသိမ်းဆည်းရန်နေရာ ပြည့်နေပြီး လုပ်ငန်းသုံးပရိုဂရမ်ကို ရပ်တန့်ခံရသည်။ ကျေးဇူးပြု၍ နေရာလွတ်အောင်လုပ်ပြီး နောက်ထပ်ကြိုးစားပါ။</string>  
+    <string name="aerr_process_lowmem">ဖုန်းသိမ်းဆည်းရန်နေရာ ပြည့်နေပြီး လုပ်ဆောင်ချက်ကို ရပ်တန့်ခံရသည်။ ကျေးဇူးပြု၍ နေရာလွတ်အောင်လုပ်ပြီး နောက်ထပ်ကြိုးစားပါ။</string>  
+    <string name="free_memory_btn">"လွတ်သောနေရာ"</string>  
+    <string name="free_memory_text">"မမ်မိုရီနည်းနေသည်။ ကျေးဇူးပြု၍မမ်မိုရီနေရာလွတ်အောင်လုပ်ပါ။"</string>  
+    <string name="mem_low_title">ကျေးဇူးပြု၍မမ်မိုရီနေရာလွတ်အောင်လုပ်ပါ။</string>  
+    <string name="unread_message">မဖတ်ရသေးသောသတင်းတို %d</string>  
+    <string name="unread_messages">မဖတ်ရသေးသောသတင်းတိုများ %d</string>  
+    <string name="missed_call">မထူးမိသောခေါ်ဆိုခြင်း %d</string>  
+    <string name="missed_calls">မထူးမိသောခေါ်ဆိုခြင်းများ %d</string>  
+    <string name="no_favorite_contacts">အနှစ်သက်ဆုံးအဆက်အသွယ်များမရှိ</string>  
+    <string name="contact_widget_loading">တင်နေသည် \u2026</string>  
+    <string name="volume_fm">FM အတိုးအကျယ်</string>  
+    <string name="volume_matv">မိုဘိုင်းတီဗီအတိုးအကျယ်</string>  
+    <string name="media_controller_buffering">"ကြားခံထည့်နေသည်%d%%..."</string>  
+    <string name="media_controller_live">"တိုက်ရိုက်ထုတ်လွှင့်ခြင်း"</string>  
+    <string name="media_controller_playing">"ပြနေသည်"</string>  
+    <string name="media_controller_connecting">"ချိတ်ဆက်နေသည်…"</string>  
+    <string name="media_controller_weak_signal">"ထုတ်လွှင့်ချက်အားနည်းသည်"</string>  
+    <string name="VideoView_error_text_bad_file">"ဖိုင်မကောင်းပါ။ ဤဗီဒီယိုကိုမဖွင့်နိုင်ပါ"</string>  
+    <string name="VideoView_error_text_cannot_connect_to_server">"ဆာဗာသို့မချိတ်ဆက်နိုင်ပါ"</string>  
+    <string name="VideoView_error_text_type_not_supported">"မီဒီယာဖိုင်အမျိုးအစားကိုမထောက်ပံ့ပါ"</string>  
+    <string name="VideoView_error_text_drm_not_supported">"DRM ကိုကာကွယ်ထားသည်။ ဤဗီဒီယိုကိုမဖွင့်နိုင်ပါ"</string>  
+    <string name="VideoView_error_text_invalid_connection">"မမှန်သောချိတ်ဆက်ခြင်း။ (တားမြစ်ချက် ၄၀၃)"</string>  
+    <string name="wikiPediaName" translatable="false">wikipedia</string>  
+    <string name="redo">ပြန်ပြင်ရန်</string>  
+    <string name="undo">ယခင်အတိုင်းပြန်လုပ်ရန်</string>  
+    <string name="undoAll">အားလုံးယခင်အတိုင်းပြန်လုပ်ရန်</string>  
+    <string name="new_sim">SIM အသစ်</string>  
+    <string name="edit">တည်းဖြတ်ရန်</string>  
+    <string name="delete">ဖျက်ရန်</string>  
+    <string name="sim_card_changed_dialog_title">SIM ကဒ်ပြောင်းပြီး</string>
+    <string name="change_setting_for_onenewsim">SIM ကတ်အသစ်ရှာဖွေတွေ့ရှိသည်။ ယင်းကိုဤသို့စာတန်းကပ်ထားသည်</string>  
+    <string name="change_setting_for_twonewsim">SIM ကတ်အသစ်ရှာဖွေတွေ့ရှိသည်။ ယင်းတို့ကိုဤသို့စာတန်းကပ်ထားသည်</string>  
+    <string name="change_settings">ပြောင်းရန်</string>  
+    <string name="sim_card_removed">SIM ကဒ်ဖယ်ရှားပြီး။</string>
+    <string name="sim_card_swapped">SIM ကဒ်လဲပြီး။</string>
+    <string name="keyguard_voice_call">အသံဖြင့်ခေါ်ဆိုခြင်း -</string>  
+    <string name="keyguard_sms">သတင်းတိုပို့ခြင်း -</string>  
+    <string name="keyguard_data">ဒေတာချိတ်ဆက်မှု -</string>  
+    <string name="keyguard_alwaysask">အမြဲတမ်းမေးရန်</string>  
+    <string name="keyguard_data_none">ပိတ်</string>  
+    <string name="dismiss">ဖယ်ရန်</string>  
+    <string name="keyguard_wrong_code_input">ကုဒ်အမှား -</string>  
+    <string name="keyguard_code_length_prompt">၄-၈ လုံးဖြည့်သွင်းပါ။</string>  
+    <string name="keyguard_code_donnot_mismatch">မကိုက်ညီပါ။</string>  
+    <string name="for_text">အတွက်</string>  
+    <string name="keyguard_internal_call">ဒေသတွင်းဖုန်းခေါ်ခြင်း</string>  
+    <string name="keyguard_not_set">သတ်မှတ်မထားပါ</string>  
+    <string name="network_searching">ကွန်ယက်အသစ်ကိုရှာဖွေနေသည်</string>  
+    <string name="searching_simcard">ရှာဖွေနေသည် …</string>  
+    <string name="keyguard_close">ပိတ်ရန်</string>  
+    <string name="for_first_simcard">ပထမ SIM အတွက်</string>  
+    <string name="for_second_simcard">ဒုတိယ SIM အတွက်</string>  
+    <string name="for_third_simcard">တတိယ SIM အတွက်</string>
+    <string name="for_fourth_simcard">စတုတ္ထ SIM အတွက်</string>
+    <string name="default_sim_setting_prompt">အခုအလိုအလျောက် SIM ဆက်တင်များမှာ -</string>  
+    <string name="keyguard_video_call">ဗီဒီယိုခေါ်ဆိုခြင်း -</string>  
+    <string name="dm_prompt">တာမင်နယ်ကို သော့ချပြီးဖြစ်သည်။</string>  
+    <string name="lockscreen_pin_too_many_failed_attempts_dialog_message">သင်သည် သင်၏ PIN ကို 
+        <xliff:g id="number">%d</xliff:g> ကြိမ် မှားယွင်းစွာ ထည့်သွင်းခဲ့သည်။\n\nကျေးဇူးပြု၍ 
+        <xliff:g id="number">%d</xliff:g> စက္ကန့်အကြာတွင် ထပ်မံကြိုးစားပါ။
+    </string>  
+    <string name="lockscreen_password_too_many_failed_attempts_dialog_message">သင်သည် သင်၏ စကားဝှက်ကို 
+        <xliff:g id="number">%d</xliff:g> ကြိမ် မှားယွင်းစွာ ထည့်သွင်းခဲ့သည်။ \n\nကျေးဇူးပြု၍ 
+        <xliff:g id="number">%d</xliff:g> စက္ကန့်အကြာတွင် ထပ်မံကြိုးစားပါ။
+    </string>  
+    <string name="wap_browser_pakcage" translatable="false">com.myriad.android.kunbrowser</string>  
+    <string name="wap_browser_component" translatable="false">com.myriad.android.kunbrowser.BrowserActivity</string>  
+    <string name="wap_browser_keyword" translatable="false">s.139.com</string>  
+    <string name="wap_browser_url_flag" translatable="false">search_url</string>  
+    <string name="criticallowtitle">နေရာမရှိပါ</string>  
+    <string name="criticallowmessage">ဖုန်းထဲတွင် သိမ်းဆည်းနေရာ ပြည့်နေသည်။ အသုံးမပြုသော ဖိုင်များကို ကျေးဇူးပြု၍ ဖျက်ပါ။ မဖျက်ပါက အသုံးချပရိုဂရမ်သည် မမျှော်လင့်ပဲ ထွက်သွားနိုင်သည်။</string>  
+    <string name="nq_sms_filter_title">SMS စစ်ထုတ်မှု</string>  
+    <string name="nq_sms_filter_message">ဤသတင်းတိုသည် အခကြေးငွေ ဖြတ်နိုင်သည်။ သင်ဆက်လက်လုပ်ဆောင်လိုပါသလား။</string>  
+    <string name="nq_sms_filter_yes">မှန်</string>  
+    <string name="nq_sms_filter_no">မှား</string>  
+    <string name="ext_media_checking_notification_title_sd2">SD ကတ်ကို ပြင်ဆင်ရန်</string>  
+    <string name="ext_media_checking_notification_title_otg">USB သိမ်းဆည်းနေရာကို ပြင်ဆင်ရန်</string>  
+    <string name="ext_media_badremoval_notification_title_otg">USB သိမ်းဆည်းနေရာကို မမျှော်လင့်ဘဲ ဖယ်ရှားခဲ့သည်</string>  
+    <string name="ext_media_nomedia_notification_title_otg">ဖယ်ရှားခဲ့သော USB သိမ်းဆည်းနေရာ</string>  
+    <string name="ext_media_badremoval_notification_message_otg">ဒေတာပျက်စီးမှုမဖြစ်စေရန် USB သိမ်းဆည်းနေရာကို မဖြုတ်မီ ချိတ်ဆက်မှုကို ဖြတ်တောက်ပါ။</string>  
+    <string name="ext_media_nomedia_notification_message_otg">USB သိမ်းဆည်းနေရာ ဖယ်ရှားခဲ့သည်။ မီဒီယာအသစ်ကို ထည့်ပါ။</string>  
+    <string name="ext_media_unmountable_notification_title_otg">ပျက်စီးနေသော USB သိမ်းဆည်းနေရာ</string>  
+    <string name="ext_media_unmountable_notification_message_otg">USB သိမ်းဆည်းနေရာ ပျက်စီးနေသည်။ ယင်းကို ဖောမက်ပြန်ချရန် လိုအပ်ကောင်းလိုအပ်မည်။</string>  
+    <string name="ext_media_nofs_notification_title_otg">USB သိမ်းဆည်းနေရာကို ဘာမျှမရှိတော့ဘဲ လွတ်သွားအောင်လုပ်ရန်</string>  
+    <string name="ext_media_nofs_notification_message_otg">USB သိမ်းဆည်းနေရာတွင် ဘာမျှမရှိပါ သို့မဟုတ် ထောက်ပံ့မှုမပြုသော ဖိုင်စနစ်ရှိသည်။</string>  
+    <string name="ext_media_safe_unmount_notification_title_otg">USB သိမ်းဆည်းနေရာသည် ဖယ်ရှားရန် စိတ်ချရပါပြီ</string>  
+    <string name="ext_media_safe_unmount_notification_message_otg">USB သိမ်းဆည်းနေရာကို စိတ်ချစွာ ဖယ်ရှားနိုင်ပါသည်။</string>  
+    <string name="drm_protection_status">ကာကွယ်မှု အခြေအနေ-</string>  
+    <string name="drm_can_forward">ဆက်လက်ပေးပို့နိုင်သည်။</string>  
+    <string name="drm_can_not_forward">ဆက်လက်မပေးပို့နိုင်ပါ။</string>  
+    <string name="drm_no_limitation">အကန့်အသတ်မရှိပါ</string>  
+    <string name="drm_no_license">DRM လိုင်စင်ကို မရနိုင်ပါ။</string>  
+    <string name="drm_begin">အစ-</string>  
+    <string name="drm_end">အဆုံး-</string>  
+    <string name="drm_use_left">လက်ကျန်အရေအတွက်-</string>  
+    <string name="drm_protectioninfo_renew">အသစ်ပြန်လုပ်ရန်</string>  
+    <string name="drm_protectioninfo_title">ကာကွယ်မှုဆိုင်ရာ သတင်းအချက်အလက်</string>  
+    <string name="drm_licenseacquisition_title">DRM လိုင်စင် ရယူခြင်း</string>  
+    <string name="drm_licenseacquisition_message">%1$s တွင် ရရှိနိုင်သည့် ဒစ်ဂျစ်တယ်ထုတ်ကုန်ပစ္စည်းပိုင်ရှင်၏ အသုံးပြုပိုင်ခွင့်ခွင့်ပြုချက်နည်းပညာလိုင်စင် မရှိပါ။ ဒစ်ဂျစ်တယ်ထုတ်ကုန်ပစ္စည်းပိုင်ရှင်၏ အသုံးပြုပိုင်ခွင့်ခွင့်ပြုချက်နည်းပညာလိုင်စင်ကို ရယူရန် "အသစ်ပြန်ပြုလုပ်ပါ" ခလုတ်ကို နှိပ်ပါ။</string> 
+    <string name="drm_toast_license_expired">DRM လိုင်စင် သက်တမ်းကုန်နေပြီ။</string>  
+    <string name="drm_forwardforbidden_title">ဆက်လက်ပေးပို့မှုကို တားမြစ်ထားသည်</string>  
+    <string name="drm_forwardforbidden_message">ကာကွယ်မှုပြုထားသော ဖိုင်အချို့ကို ဆက်လက်ပေးပို့၍ မရနိုင်ပါ။</string>  
+    <string name="drm_license_install_success">DRM လိုင်စင်တပ်ဆင်မှု အောင်မြင်သည်။</string>  
+    <string name="drm_license_install_fail">DRM လိုင်စင်တပ်ဆင်မှု မအောင်မြင်ပါ။</string>  
+    <string name="drm_secure_timer_title">DRM လုံခြုံရေးနာရီ မမှန်ပါ</string>  
+    <string name="drm_secure_timer_message">DRM ကာကွယ်မှုပြုထားသောဖိုင်များကို သင်အသုံးမပြုနိုင်ပါ။ ဒေတာချိတ်ဆက်မှုသည် သုံးနိုင်ကြောင်း ကျေးဇူးပြု၍ သေချာအောင် ပြုလုပ်ပါ။</string>  
+    <string name="drm_consume_title">DRM ရပိုင်ခွင့်များကို သုံးရန်</string>  
+    <string name="drm_consume_message">သင့်လုပ်ဆောင်မှုသည် DRM ရပိုင်ခွင့်များကို သုံးလိမ့်မည်။</string>  
+    <string name="drm_forward_forbidden">ကာကွယ်မှုပြုထားသော တစ်ဖိုင် သို့မဟုတ် ထို့ထက်များသော ဖိုင်ကို ဆက်လက်မပေးပို့နိုင်ပါ။</string>  
+    <string name="recip_unsupport_operator">လက်ခံသူများမြင်ကွင်းသည် အက္ခရာ လုပ်ငန်းများကို မထောက်ပံ့ပါ၊ လက်ခံသူများကို စီမံခန့်ခွဲရန် ကိရိယာဘားကို ကျေးဇူးပြု၍ အသုံးပြုပါ။</string>  
+    <string name="recip_unsupport_selection">ဝမ်းနည်းပါသည်။ လက်ခံသူများသည် လက်ခံသူများမြင်ကွင်းတွင် ရှိနေသည့်အခါ စာကျကြောင်းပြအမှတ်အသားကို အစနေရာသို့ သင်မရွှေ့နိုင်ပါ။</string>  
+    <string name="sim_missing_slot1">SIM ကတ်ရှာမတွေ့ပါ(Slot၁)</string>  
+    <string name="sim_missing_slot2">SIM ကတ်ရှာမတွေ့ပါ(Slot၂)</string>  
+    <string name="sim_missing">SIM ကတ်ရှာမတွေ့ပါ</string>  
+    <string name="sim_missing_detail">SIM ကတ် အဆင်သင့်ရှိပါက ကျေးဇူးပြု၍ စစ်ဆေးပါ</string>  
+    <string name="wap_push_setting_noti_ticker">အလိုအလျောက်-ပွတ်(ရှ်) ဝန်ဆောင်မှုကို လက်ခံမှာလား၊ လက်မခံဘူးလား။</string>  
+    <string name="wap_push_setting_noti_title">အလိုအလျောက်-ပွတ်(ရှ်) ဝန်ဆောင်မှုကို လက်ခံမှာလား၊ လက်မခံဘူးလား။</string>  
+    <string name="wap_push_setting_noti_text">ရွေးချယ်ရန် ကျေးဇူးပြု၍ အသာအယာပုတ်ပါ</string>  
+    <string name="url_dialog_choice_title">သတင်းတိုများ</string>  
+    <string name="url_dialog_choice_message">ယင်းသည် ဘရောက်ဆာကို ဖွင့်လိမ့်မည်။ ဆက်လုပ်မှာလား။</string>  
+    <string name="wifi_tether_configure_ssid_default_for_cmcc" translatable="false">MTK Athens15</string>  
+    <string name="deleteApp">အသုံးချပရိုဂရမ်များကို တပ်ဆင်ထားခြင်းမှပြန်ဖြုတ်ရန်</string>  
+    <string name="deleteMail">စာများကို အရန်အဖြစ်သိမ်းထားပြီး သိမ်းဆည်းနေရာကို လွှတ်ရန်</string>  
+    <string name="default_label">နှိုးစက်</string>  
+    <string name="dismiss_power_on">ဖြုတ်ပြီး ပါဝါဖွင့်ရန်</string>  
+    <string name="dismiss_power_off">ဖြုတ်ပြီး ပါဝါပိတ်ရန်</string>  
+    <string name="alarm_alert_snooze_text">တစ်ရေးမှေးဦးမည်</string>  
+    <string name="never">ဘယ်တော့မျှ</string>  
+    <string name="day_concat">", "</string>  
+    <string name="every_day">နေ့စဉ်</string>  
+    <string name="repeat_weekdays">တနင်္လာမှသောကြာ</string>  
+    <string name="storage_withsd">ဖုန်းသိမ်းဆည်းနေရာတွင် နေရာအလုံအလောက်မရှိပါ။ ကျေးဇူးပြု၍ အချို့နေရာများကို လွှတ်လိုက်ပါ သို့မဟုတ် ဆက်တင်များထဲတွင် မူလသတ်မှတ်ထားသော ဓာတ်ပြားရေးသားမှုကို ပြောင်းလိုက်ပါ။</string>  
+    <string name="storage_withoutsd">ဖုန်းသိမ်းဆည်းနေရာတွင် နေရာအလုံအလောက်မရှိပါ။ ကျေးဇူးပြု၍ အချို့နေရာများကို လွှတ်လိုက်ပါ သို့မဟုတ် SD ကတ်တစ်ခုကို ထည့်ပါ။</string>  
+    <string name="storage_sd">SD ကတ်တွင် နေရာအလုံအလောက်မရှိပါ။ ကျေးဇူးပြု၍ အချို့နေရာများကို လွှတ်လိုက်ပါ သို့မဟုတ် ဆက်တင်များထဲတွင် မူလသတ်မှတ်ထားသော ဓာတ်ပြားရေးသားမှုကို ပြောင်းလိုက်ပါ။</string>  
+    <string name="usb_ums_notification_title">USB သိမ်းဆည်းနေရာအဖြစ် ချိတ်ဆက်ထားသည်</string>  
+    <string name="usb_charging_notification_title">USB အားသွင်းမှုသာ</string>  
+    <string name="gps_time_sync_fail_str">GPS ထောက်ပံ့ပေးသော အချိန်ကို ရယူရန် မအောင်မြင်ပါ</string>
+
+    <string name="tethered_notification_message_for_hotspot">
+        <xliff:g id="connected">%1$d</xliff:g> ချိတ်ဆက်ထားသော 
+        <xliff:g id="blocked">%2$d</xliff:g> ပိတ်ဆို့ထားသော
+    </string> 
+    <string name="tethered_notification_message_bandwidth_set">ဘန်ဝစ်သ်ကို သတ်မှတ်သည်</string>
+    <string name="default_wallpaper_name">မူလပုံစံ</string> 
+    <string name="invalid_sim_title">SIM ကဒ်အသုံးမရှိ</string>
+    <string name="invalid_sim_message">UIM/SIM ကဒ်အား မမှတ်မိပါ</string>
+    <!-- voice unlock start -->
+    <string name="voice_unlock_service_error">အသံဖြင့်သော့ဖွင့်ခြင်း ဝန်ဆောင်မှုအမှားဖြစ်။</string>
+    <string name="voice_unlock_password_wrong">ဆောရီး၊ သင့်အသံကို မမှတ်မိနိုင်ပါ။</string>
+    <string name="voice_unlock_noisy">ဆူညံလွန်းသဖြင့် သင့်အသံကို ပြတ်သားစွာ မကြားနိုင်ပါ။</string>
+    <string name="voice_unlock_weak">သင့်အသံကို မကြားနိုင်ပါ။</string>
+    <string name="voice_unlock_media_playing">မီဒီယာဖွင့်နေစဉ် အသံဖြင့်သော့ဖွင့်ခြင်းအား ပိတ်ထားသည်။</string>
+    <!-- voice unlock end -->
+    <string name="voiceunlock_multiple_failures">အသံဖြင့်သော့ဖွင့်ခြင်း ကြိုးစားမှု အမြင့်ဆုံးသတ်မှတ်ချက်ထက် ကျော်လွန်</string>    
+
+    <string name="wifi_display_bt_hdmi_off_wfd_on">သင်ဝိုင်ယာလက်စ်ပြသခြင်းကို ဖွင့်လိုက်သောအခါ ဘလူးတုသ်နှင့် HDMI သည် ပိတ်သွားမည်ဖြစ်သည်။ သင်ဆက်လက်လုပ်ဆောင်လိုပါသလား။</string> 
+    <string name="wifi_display_wfd_off_hdmi_on">သင် HDMI ကို ဖွင့်လိုက်သောအခါ ဝိုင်ယာလက်စ်ပြသခြင်းသည် ပိတ်သွားမည်ဖြစ်သည်။ သင်ဆက်လက်လုပ်ဆောင်လိုပါသလား။</string> 
+    <string name="wifi_display_wfd_off_bt_on">Bluetooth ကိုဖွင့်ပါက Wireless ဆက်သွယ်မှု ပိတ်သွားလိမ့်မည်။ သင်ဆက်လုပ်ချင်ပါသလား?</string>
+    <string name="wifi_display_wifi_p2p_disconnect_wfd_connect">Wireless ကိုဆက်သွယ်ပါက လက်ရှိ Wi-Fi တိုက်ရိုက်ဆက်သွယ်မှု ပြတ်တောက်သွားမည်။ သင်ဆက်လုပ်ချင်ပါသလား?</string>
+    <string name="wifi_display_unstable_connection">မတည်ငြိမ်သော ချိတ်ဆက်မှု</string>
+    <string name="wifi_display_connection_is_not_steady">လက်ရှိ ဝါယာလက်စ် ချိတ်ဆက်ခြင်း ဖော်ပြမှုသည် မတည်ငြိမ်ပါ။ </string>
+    <string name="wifi_display_unstable_suggestion">လက်ရှိ ဝါယာလက်စ် ချိတ်ဆက်ခြင်း ဖော်ပြမှုသည် မတည်ငြိမ်ပါ၊ သင့်ဖော်ပြသည့် ကိရိယာဖြင့် ပိုနီးကပ်စွာထားရန် ကြိုးစားပါ။</string>
+    <string name="wifi_display_reconnect">ပြန်ချိတ်ဆက်ပါ</string> 
+    <string name="wifi_display_disconnect_then_reconnect">ဝါယာလက်စ် ဖော်ပြမှု ပြတ်တောက်နေသည်။ သင်ပြန်ချိတ်ဆက် လိုပါသလား။</string> 
+    <string name="wifi_display_disconnected">ဝါယာလက်စ် ဖော်ပြမှု ပြတ်တောက်နေသည်။</string>
+    <string name="wifi_wps_failed_overlap">အခြားWPS ဆက်ရှင်တစ်ခုကို ရှာဖွေတွေ့သည်။ ကျေးဇူးပြု၍ နောက်မိနစ်အနည်းငယ်ကြာမှ ထပ်မံကြိုးစားပါ။</string>
+    <string name="wifi_display_wfd_and_wifi_are_turned_on">ဝါယာလက်စ်ဖော်ပြမှုနှင့် ဝိုင်-ဖိုင်ကို ဖွင့်ထားသည်။</string>
+    <string name="wifi_display_sound_path_reminder">မာလ်တီမီဒီယာ အသံသည် သင့်နားကြပ်မှ ပွင့်လိမ့်မည်မဟုတ်ပါ။</string>  
+    <string name="wifi_display_change_resolution_reminder">ပုံရိပ်ပြတ်သားမှု ပြောင်းလဲခြင်းသည် ဝါယာလက်စ်ဖော်ပြမှုကို အလိုအလျောက် ပြန်ချိတ်ဆက်လိမ့်မည်။</string>  
+    <string name="wifi_display_do_not_remind_again">နောက်တစ်ကြိမ် သတိမပေးပါနှင့်။</string>
+    <string name="wifi_display_wifi_ap_affects_quality">လက်ရှိ ဝိုင်-ဖိုင်သည် ဝါယာလက်စ်ဖော်ပြမှု အရည်အသွေးကို ထိခိုက်စေနိုင်သည်။</string>
+    
+    <!-- Add for AT&T to show toast when pass pin/puk lock -->
+    <string name="pin_pass">ကုဒ် လက်ခံပြီးပြီ</string>
+    <string name="puk_pass">PIN ပိတ်ဆို့မှုပြန်ဖွင့်ပြီးပြီ</string>
+    <!-- MountService start -->
+    <string name="sdcard_ready_title">SD ကဒ် အဆင်သင့်</string>
+    <string name="sdcard_select_default_path">ပုံသေရေးသားသည့် ဒစ်က်စ် ကို ပြောင်းလိုသလား။</string>
+    <string name="sdcard_default_path_change">ပုံသေရိုက်ရန်ဒစ်က်စ်ကို ပြောင်းပြီးပြီ။</string>
+    <string name="usb_storage_ready_title">ပြင်ပ USB သိမ်းဆည်းမှု အဆင်သင့်</string>
+    <!-- MountService end -->
+
+  
+    <string name="sd_accessing_swtich_user_title">သုံးသူပြောင်းမလား။</string>
+    
+    <string name="sd_accessing_swtich_user_message">ပိုင်ဆိုင်သူအကောင့်မှ မသိမ်းထားသော ဒေတာအားလုံးသည် ဆုံးရှုံး (သို့) ပျက်စီးလိမ့်မည်။</string> 
+    
+    <string name="calibration_data">စံကိုက်ချိန်ညှိခြင်း မရှိသေးပါ။ စံကိုက်ချိန်ညှိခြင်း ဒေတာ ဒေါင်းလုဒ်လုပ်ပါ။ သို့မဟုတ်ပါက ကိရိယာသည် ကွန်ရက်တွင် မချိတ်နိုင်ပါ။ [MTK အတွင်း အသုံးပြုသူ]</string>
+    <string name="invalid_card">ကဒ်မမှန်ပါ</string>
+    <string name="usbint_notification_title">USB အင်တာနက် သက်ဝင်နေသည်</string>
+
+    <string name="hdmi_notification_title">HDMI ကြိုး ချိတ်ဆက်ခဲ့သည်</string>  
+    <string name="hdmi_notification_content">HDMI ကို သီးသန့်စီစဉ်ထားရှိရန် နှိပ်ပါ</string>
+    <string name="hdmi_hdvideo_toast">HDMI သည် 4K ဗွီဒီယိုကို မဖွင့်နိုင်ပါ၊ ချိတ်ဆက်မှုကို ကြားဖြတ်နှောင့်ယှက် လိမ့်မည်။</string>
+
+    <!-- VolumePanel -->
+    <string name="safe_media_volume_warning_title">သတိပေးချက်</string> 
+    
+    <!-- Low Storage -->
+    <string name="aerr_application_lowstorage">အတွင်းသိုလှောင်ရုံ နေရာလွတ်မကျန်သဖြင့်အသုံးချပရိုဂရမ် ရပ်သွားသည်။ နေရာအချို့လွတ်ရန် ပြုလုပ်၍ ထပ်ကြိုးစားပါ။</string>
+    <string name="aerr_process_lowstorage">အတွင်းသိုလှောင်ရုံ နေရာလွတ်မကျန်သဖြင့်လုပ်ငန်း ရပ်သွားသည်။ နေရာအချို့လွတ်ရန် ပြုလုပ်၍ ထပ်ကြိုးစားပါ။</string>
+    <string name="low_internal_storage_view_title">အတွင်းသိုလှောင်ရုံ နေရာလွတ် မကျန်တော့ပါ</string>
+    <string name="deleteMails">မေးလ်များကို ဖျက်ပါ</string>
+    <string name="low_storage_warning_message">နေရာအချို့လွတ်ရန် ပြုလုပ်ပါ၊ သို့မဟုတ်ပါက အချို့ အသုံးချပရိုဂရမ်များနှင့် စနစ် လုပ်ဆောင်ချက်များ ကောင်းစွာ အလုပ်မလုပ်နိုင်ပါ။</string>
+
+    <!-- KK translation task -->
+    <string name="virtual_sim_on_slot1">ဗာကျူရယ် SIM ၁ ဖွင့်</string>
+    <string name="virtual_sim_on_slot2">ဗာကျူရယ် SIM ၂ ဖွင့်</string>
+    <string name="virtual_sim_on_slot3">ဗာကျူရယ် SIM ၃ ဖွင့်</string>
+    <string name="virtual_sim_on_slot4">ဗာကျူရယ် SIM ၄ ဖွင့်</string>
+    <string name="virtual_sim_on">ဗာကျူရယ် SIM ဖွင့်</string>
+    <string name="RejectCauseTitle">ကွန်ရက်ပယ်ချမှု အကျိုးအကြောင်း</string>
+    <string name="MMRejectCause2">MM #2 ကို အထောက်အပံ့ မပေးသော SIM</string>
+    <string name="MMRejectCause3">MM #3 ကို အထောက်အပံ့ မပေးသော SIM</string>
+    <string name="MMRejectCause5">MM #5 ကို ခေါ်ဆိုမှု မအောင်မြင်ပါ</string>
+    <string name="MMRejectCause6">MM #6 ကို ခွင့်မပြုသောဖုန်း</string>
+    <string name="MMRejectCause13">SOS/အရေးပေါ် ခေါ်ဆိုမှုများသာ</string>
+    <string name="keyguard_accessibility_alarm_unlock">ပါဝါပိတ်နှိုးစက်</string>
+    <string name="dialog_color_picker">အရောင်ရွေးရန်နေရာ</string>
+    <string name="press_color_to_apply">အသုံးပြုရန် အရောင်ပေါ်တွင် နှိပ်ပါ</string>
+    <string name="keyguard_sim_auto">အလိုအလျောက်</string>
+    <string name="keyguard_domestic_zone_name">ဘေဂျင်း</string>
+    <string name="sim_missing_slot3">SIM ကတ်ရှာမတွေ့ပါ(Slot၁)</string>
+    <string name="sim_missing_slot4">SIM ကတ်ရှာမတွေ့ပါ(Slot၁)</string>
+    <string name="sim_missing_slot1_card">ကဒ်အထိုင် ၁- ကဒ်မတွေ့ပါ</string>
+    <string name="sim_missing_slot2_card">ကဒ်အထိုင် ၂- ကဒ်မတွေ့ပါ</string>
+    <string name="sim_missing_card">ကဒ်မတွေ့ပါ</string>
+    <string name="sim_missing_detail_card">ကဒ်အဆင်သင့်ဖြစ်၊ မဖြစ် စစ်ဆေးပါ</string>
+    <string name="find_previous">ယခင်</string>
+    <string name="find_next">နောက်</string>
+    <string name="alarm_alert_dismiss_text">ဖယ်ရန်</string>
+    <string name="description_direction_right">ပယ်ချရန် ညာဘက်သို့ ပွတ်ဆွဲပါ</string>
+    <string name="description_direction_left">ခဏပြန်အိပ်ရန် ဘယ်ဘက်သို့ ပွတ်ဆွဲပါ</string>
+    <string name="description_direction_up">ပယ်ချရန် အပေါ်သို့ ပွတ်ဆွဲပါ</string>
+    <string name="description_direction_down">တစ်ရေးပြန်နှိုးရန် အောက်သို့ ဆွဲချပါ</string>
+    <string name="voiceui_notify_string">သင်ပြောနိုင်သည်</string>
+    <string name="voiceui_control_poweroff_alarm">ပါဝါပိတ်နှိုးစက်ကို ထိန်းချုပ်ရန်</string>
+    <string name="voiceui_or">သို့မဟုတ်</string>
+    <string name="headset_pin_recognition">သင်၏ နားကြပ်များသည် ဖုန်းနှင့် မကိုက်ညီပါ။ အခြားနားကြပ်များနှင့် ကြိုးစားကြည့်ပါ။</string>
+    <string name="msensor_toast_text">သံလိုက်အိမ်မြှောင် နှောင့်ယှက်မှု။ သံလိုက်အိမ်မြှောင်ကို ပြန်ညှိရန် 8 ပုံသဏ္ဍာန်အတိုင်း လှုပ်ရှား၍ဖုန်းကို ဝေ့ရမ်းပါ။</string>
+    <string name="usb_autorun_cdrom_notification_title">အလိုအလျောက်ဖွင့် cdrom တစ်ခုအဖြစ် ချိတ်ဆက်ပြီး</string>
+    <string name="ct_net_name">"CTNET"</string>
+    <string name="ct_wap_name">"CTWAP"</string>
+</resources>

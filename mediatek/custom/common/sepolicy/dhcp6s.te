@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bindhcp6s Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type dhcp6s_exec , exec_type, file_type;
+type dhcp6s ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive dhcp6s;
+init_daemon_domain(dhcp6s)
+
+
+# 20131122 Add Set Property Rule
+allow dhcp6s  property_type:property_service set;

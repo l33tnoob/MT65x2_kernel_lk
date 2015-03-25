@@ -1,0 +1,134 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type nfc, domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# nfc subsystem
+permissive nfc;
+app_domain(nfc)
+# unconfined_domain(nfc)
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# nfc subsystem
+permissive nfc;
+# app_domain(nfc)
+# unconfined_domain(nfc)
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive nfc;
+# 20131024 Sanity_01
+allow nfc sdcard_external:dir search;
+allow nfc system_data_file:dir { write remove_name };
+allow nfc system_data_file:sock_file unlink;
+
+
+# 20131024 Sanity_02
+allow nfc nfc_data_file:dir { write remove_name };
+
+
+# 20131024 CTS_01
+allow nfc device:chr_file { read ioctl open getattr };
+allow nfc dumpstate:unix_stream_socket write;
+allow nfc mt6605_device:chr_file { read write getattr open ioctl };
+allow nfc nfc_data_file:dir { write remove_name };
+allow nfc nfc_data_file:file { read getattr open };
+allow nfc sdcard_external:file { read write getattr open };
+
+
+# 20131024 Sanity_03
+allow nfc nfc_data_file:dir add_name;
+allow nfc nfc_data_file:file { rename write ioctl setattr create unlink };
+
+
+# 20131024 CTS_02
+allow nfc nfcstackp_exec:file execute;
+
+
+# 20131028 CTS_03
+allow nfc dumpstate:fd use;
+allow nfc dumpstate:unix_stream_socket read;
+allow nfc linker_exec:file { read execute open };
+allow nfc nfcstackp_exec:file { read open execute_no_trans };
+allow nfc system_data_file:dir add_name;
+allow nfc system_data_file:sock_file { write create setattr };
+
+
+# 20131028 CTS_04
+allow nfc nfc_data_file:dir search;
+
+
+# 20131028 Sanity_09
+allow nfc sdcard_external:dir { write add_name };
+allow nfc sdcard_external:file create;
+
+
+# 20131028 CTS_08
+allow nfc system_data_file:file append;
+
+
+# 20131028 CTS_13
+allow nfc nfc_data_file:dir { create setattr };
+
+
+# 20131119 FeatureSQC
+allow nfc adbd:unix_stream_socket setopt;
+allow nfc nfc_data_file:dir { create setattr };
+allow nfc sdcard_internal:dir search;
+
+
+# 20131121 Sanity_QA
+allow nfc init:unix_stream_socket read;
+allow nfc logwrapper:fd use;
+allow nfc logwrapper:process sigchld;
+allow nfc logwrapper_tmpfs:file read;
+allow nfc sdcard_internal:file { read write getattr open };
+
+
+
+# 20131122 Add Set Property Rule
+allow nfc property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow nfc aee_aed:process sigchld;
+allow nfc aee_aed:unix_stream_socket connectto;
+allow nfc device:chr_file write;
+allow nfc dumpstate:unix_stream_socket { getopt getattr };
+allow nfc init:binder { transfer call };
+allow nfc init:unix_stream_socket { write read setopt };
+allow nfc init_tmpfs:file read;
+allow nfc logwrapper:fd use;
+allow nfc mali_device:chr_file { read write ioctl };
+allow nfc node:tcp_socket node_bind;
+allow nfc port:tcp_socket name_bind;
+allow nfc sdcard_internal:dir { write remove_name create add_name };
+allow nfc sdcard_internal:file { rename create };
+allow nfc self:netlink_socket read;
+allow nfc self:tcp_socket { setopt read bind create accept getattr connect getopt listen };
+allow nfc surfaceflinger:dir search;
+allow nfc surfaceflinger:file { read getattr open };
+allow nfc unlabeled:sock_file { write create unlink setattr };
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow nfc device:chr_file write;
+allow nfc init:binder { transfer call };
+allow nfc init:unix_stream_socket { write setopt };
+allow nfc init_tmpfs:file read;
+allow nfc sdcard_internal:dir { write add_name };
+allow nfc sdcard_internal:file create;
+allow nfc system_data_file:file write;
+allow nfc unlabeled:sock_file { write create unlink setattr };
+

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/TableLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt"
+                android:text="@string/NSRX_StrPattern" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/NSRX_PatternSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </Spinner>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt"
+                android:text="@string/NSRX_StrPocketType" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/NSRX_PocketTypeSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </Spinner>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt"
+                android:text="@string/NSRX_StrFrequency" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/NSRX_editFrequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numeric="integer"
+                android:singleLine="true" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt"
+                android:text="@string/NSRX_StrAddress" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/NSRX_editTesterAddr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="8"
+                android:singleLine="true" >
+            </EditText>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/NSRX_StartTest"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/NSRX_StartTest" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/TableLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt"
+                android:text="@string/NSRX_StrPackCnt" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/NSRX_StrPackCnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt"
+                android:text="@string/NSRX_StrPackErrRate" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/NSRX_StrPackErrRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt"
+                android:text="@string/NSRX_StrPackByteCnt" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/NSRX_StrPackByteCnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt"
+                android:text="@string/NSRX_StrBitErrRate" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/NSRX_StrBitErrRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

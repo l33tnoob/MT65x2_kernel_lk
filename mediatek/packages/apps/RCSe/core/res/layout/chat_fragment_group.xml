@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--* Copyright Statement:
+ *
+ * This software/firmware and related documentation ("MediaTek Software") are
+ * protected under relevant copyright laws. The information contained herein
+ * is confidential and proprietary to MediaTek Inc. and/or its licensors.
+ * Without the prior written permission of MediaTek inc. and/or its licensors,
+ * any reproduction, modification, use or disclosure of MediaTek Software,
+ * and information contained herein, in whole or in part, shall be strictly prohibited.
+ *
+ * MediaTek Inc. (C) 2012. All rights reserved.
+ *
+ * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+ * THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+ * RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO RECEIVER ON
+ * AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+ * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+ * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+ * SUPPLIED WITH THE MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+ * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+ * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+ * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+ * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+ * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+ * CUMULATIVE LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+ * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+ * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+ * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+ *
+ * The following software/firmware and/or related documentation ("MediaTek Software")
+ * have been modified by MediaTek Inc. All revisions are subject to any receiver's
+ * applicable license agreements with MediaTek Inc.
+ */  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:id="@+id/participant_list_area"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ListView
+            android:id="@+id/participant_banner"
+            android:layout_width="144dp"
+            android:layout_height="match_parent"
+            android:background="#ffffffff">
+        </ListView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/participant_banner"
+            android:src="@*android:drawable/list_divider_holo_light" />
+
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="-1dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/participant_list_area"
+        android:layout_alignParentRight="true">
+            
+        <RelativeLayout
+            android:id="@+id/chat_content_operation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffffff"
+            android:gravity="center"
+            android:padding="10dp" >
+
+            <ImageButton
+                android:id="@+id/btn_chat_emoticon"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="@dimen/input_text_height"
+                android:layout_height="@dimen/input_text_height"
+                android:layout_alignParentLeft="true"
+                android:drawablePadding="0dip"
+                android:nextFocusLeft="@+id/et_chat_message"
+                android:src="@drawable/emoticon" />
+            <ImageButton
+                android:id="@+id/btn_chat_add"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="@dimen/input_text_height"
+                android:layout_height="@dimen/input_text_height"
+                android:layout_toRightOf="@id/btn_chat_emoticon"
+                android:src="@drawable/rcse_share"/>    
+            <ImageButton
+                android:id="@+id/btn_chat_send"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="@dimen/input_text_height"
+                android:layout_height="@dimen/input_text_height"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="0dip"
+                android:nextFocusLeft="@+id/et_chat_message"
+                android:src="@drawable/icon_button_send" />
+
+            <EditText
+                android:id="@+id/et_chat_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/btn_chat_add"
+                android:layout_toLeftOf="@id/btn_chat_send"
+                android:hint="@string/text_chat_hint_compose"
+                android:maxLines="3"
+                android:minHeight="@dimen/input_text_height"
+                android:textSize="16sp" 
+                android:imeOptions="actionDone"/>
+            <GridView
+                android:id="@+id/gv_share_gridview"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:hapticFeedbackEnabled="true"
+		        android:numColumns="3"
+		        android:scrollbars="none"
+		        android:stretchMode="columnWidth"
+		        android:visibility="gone"
+		        android:layout_below="@id/et_chat_message" >
+		    </GridView>
+            <LinearLayout android:id="@+id/emotions_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical"
+                android:layout_below="@id/et_chat_message"
+                android:visibility="gone">
+                <com.mediatek.rcse.emoticons.ScrollLayout
+                    android:id="@+id/chat_emotions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:id="@+id/page_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:gravity="center"/>
+        </LinearLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/chat_message_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@id/chat_content_operation"
+            android:layout_alignParentTop="true"
+            android:cacheColorHint="@android:color/transparent"
+            android:fastScrollEnabled="true"
+            android:transcriptMode="alwaysScroll" >
+        </ListView>
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chat_message_list"
+            android:background="@*android:drawable/list_divider_holo_light" />
+
+        <TextView
+            android:id="@+id/text_typing_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_above="@id/chat_content_operation"
+            android:background="#ccefefef"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/all_participants_left"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_above="@id/chat_content_operation"
+            android:background="#ccefefef"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_rejoining_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_above="@id/chat_content_operation"
+            android:background="#ccefefef"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_message_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_above="@id/chat_content_operation"
+            android:background="#ccc6dcef"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:singleLine="true"
+            android:textColor="#515151"
+            android:textSize="16dp"
+            android:visibility="gone" />
+        
+        <TextView
+            android:id="@+id/unread_message"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:background="#cce1eed2"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="12dp"
+            android:singleLine="true"
+            android:textColor="#515151"
+            android:textSize="16dp"
+            android:visibility="gone" />
+            
+        <TextView
+            android:id="@+id/text_network_error"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:background="#ccfff799"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="12dp"
+            android:singleLine="true"
+            android:text="@string/network_error_remind"
+            android:textColor="#515151"
+            android:textSize="16dp"
+            android:visibility="gone" />
+        
+        <TextView
+            android:id="@+id/text_blocked_participant"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:background="#ccfff799"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="12dp"
+            android:singleLine="true"
+            android:textColor="#515151"
+            android:textSize="16dp"
+            android:visibility="gone" />
+        
+        <ImageView
+            android:id="@+id/image_forward_settings"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignBottom="@+id/text_network_error"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignTop="@+id/text_network_error"
+            android:layout_marginRight="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_forward_holo_light"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

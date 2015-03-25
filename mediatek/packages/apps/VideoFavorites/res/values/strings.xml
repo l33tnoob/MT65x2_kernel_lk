@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Video Favorites</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_dialog_title">Delete favorite</string>
+    <string name="delete_dialog_prompt">Delete <xliff:g id="name" example="John">%1$s</xliff:g> from widget?</string>
+    <string name="transcoding_prompt">"Converting video"</string>
+    <string name="video_file_name_format" translatable="false">"_yyyyMMdd_HHmmss"</string>
+    <string name="toast_video_add_cancelled">Failed to add video</string>
+    <string name="img_thumb_desc" translatable="false">video thumbnail</string>
+    <string name="img_del_desc"  translatable="false">delete icon</string>
+    <string name="img_new_desc"  translatable="false">new icon</string>
+    <string name="img_edit_desc"  translatable="false">edit button</string>
+    <string name="img_rec_desc"  translatable="false">record button</string>
+    <string name="toast_video_unsupported_resolution">Video resolution is not supported.</string>
+    <string name="toast_low_storage" product="nosdcard">Your USB storage is full.</string>
+    <string name="toast_low_storage" product="default">Your SD card is Full.</string>
+    <string name="toast_invalid_video">Unsupported video format.</string>
+</resources>

@@ -1,0 +1,58 @@
+# ==============================================
+# Policy File of /system/binGoogleOtaBinder Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type GoogleOtaBinder_exec , exec_type, file_type;
+type GoogleOtaBinder ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive GoogleOtaBinder;
+init_daemon_domain(GoogleOtaBinder)
+
+# 20131028 CTS_04
+allow GoogleOtaBinder dumpstate:fd use;
+allow GoogleOtaBinder dumpstate:unix_stream_socket { read write };
+
+
+# 20131028 CTS_06
+allow GoogleOtaBinder app_data_file:file write;
+allow GoogleOtaBinder untrusted_app:fd use;
+
+
+# 20131028 CTS_09
+allow GoogleOtaBinder device:chr_file { read ioctl open };
+
+
+# 20131028 CTS_15
+allow GoogleOtaBinder linker_exec:file read;
+allow GoogleOtaBinder servicemanager:binder { transfer call };
+
+
+
+# 20131122 Add Set Property Rule
+allow GoogleOtaBinder  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow GoogleOtaBinder block_device:blk_file { write read open };
+allow GoogleOtaBinder device:chr_file write;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow GoogleOtaBinder block_device:blk_file { write read open };
+allow GoogleOtaBinder device:chr_file write;
+

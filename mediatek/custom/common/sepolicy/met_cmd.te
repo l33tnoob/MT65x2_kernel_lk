@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binmet_cmd Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type met_cmd_exec , exec_type, file_type;
+type met_cmd ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive met_cmd;
+init_daemon_domain(met_cmd)
+
+
+# 20131122 Add Set Property Rule
+allow met_cmd  property_type:property_service set;

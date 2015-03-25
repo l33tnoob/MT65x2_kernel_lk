@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binstagefright Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type stagefright_exec , exec_type, file_type;
+type stagefright ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive stagefright;
+init_daemon_domain(stagefright)
+
+
+# 20131122 Add Set Property Rule
+allow stagefright  property_type:property_service set;

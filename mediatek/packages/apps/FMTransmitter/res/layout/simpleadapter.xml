@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:minHeight="48dip">
+<TextView
+    android:id="@+id/lv_station_freq"
+    android:gravity="center_vertical"
+    android:layout_width="60dip"
+    android:layout_height="42dip"
+    android:textStyle="bold"
+    android:textAppearance="?android:attr/textAppearanceMedium"/>
+<ImageView
+	android:id="@+id/lv_station_type"
+    android:layout_toRightOf="@+id/lv_station_freq"
+    android:layout_width="60dip"
+    android:layout_height="42dip"/>
+<TextView
+    android:id="@+id/lv_station_name"
+    android:gravity="center_vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="42dip"
+    android:textStyle="bold"
+    android:layout_marginLeft="10dip"
+    android:layout_toRightOf="@+id/lv_station_type"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:singleLine="true"
+    android:marqueeRepeatLimit="marquee_forever"
+    android:ellipsize="marquee"/>
+</RelativeLayout>

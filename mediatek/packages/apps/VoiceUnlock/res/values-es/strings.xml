@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="unlock_set_unlock_mode_voice_weak">Desbloqueo de voz</string>
+    <string name="voice_unlock_setup_intro_header">Grabar comando de voz</string>
+    <string name="voice_command_select_title">Seleccionar comando</string>
+    <string name="voice_command_launch_app_title">Iniciar aplicación</string>
+    <string name="reset_command_title">Restablecer comando</string>
+    <string name="reset_command_prompt">El comando actual se restablecerá y no se recuperará.</string>
+    <string name="reset_command_prompt_last">Solamente se restablecerá el comando de voz. El bloqueo de pantalla cambiará a diapositiva.</string>
+    <string name="voice_unlock_options_title">Opciones</string>
+    <string name="voice_unlock_ok_label">"Aceptar"</string>
+    <string name="voice_unlock_cancel_label">"Cancelar"</string>
+    <string name="voice_unlock_retry_label">Reintentar</string>
+    <string name="voice_unlock_record_label">"Grabar"</string>
+    <string name="voice_unlock_continue_label">"Seguir"</string>
+    <string name="voice_unlock_setup_intro">Diga un comando que tenga entre 2 y 6 sílabas y, a continuación, repítalo entre 3 y 6 veces.</string>
+    <string name="voice_unlock_command">Desbloquear comando</string>
+    <string name="voice_command1">Reactivar comando 1</string>
+    <string name="voice_command2">Reactivar comando 2</string>
+    <string name="voice_command3">Reactivar comando 3</string>
+    <string name="command_summary">Desbloquear e iniciar <xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_command_primary">Iniciar <xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_command_customize">"Personalizar"</string>
+    <string name="voice_command_secondary">Iniciar <xliff:g id="app_name">%1$s</xliff:g> después de desbloquear</string>
+    <string name="voice_command_record_description_unlock_screen">Desbloquear la pantalla</string>
+    <string name="voice_command_record_description_command">Desbloquear pantalla e iniciar <xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_service_error_title">Error en el servicio de desbloqueo de voz.</string>
+    <string name="stop_playing_title">Detener reproducción multimedia</string>
+    <string name="stop_playing_message">Detenga la reproducción multimedia antes de grabar.</string>
+    <string name="voice_command_record_introdution">Toque el botón GRABAR y DIGA su comando de voz.</string>
+    <string name="voice_command_record_prepare">En preparación. Espere...</string>
+    <string name="voice_command_record_first_recording">DIGA su comando por favor.\nSe recomienda decir entre 2 y 6 sílabas.</string>
+    <string name="voice_command_record_non_first_recording">REPITA su comando de voz.</string>
+    <string name="voice_command_record_one_round_ok">LISTO.</string>
+    <string name="voice_command_record_one_round_noisy">Hay demasiado ruido para captar su voz. Inténtelo de nuevo.</string>
+    <string name="voice_command_record_one_round_weak">No se puede escuchar su voz con claridad. Inténtelo de nuevo.</string>
+    <string name="voice_command_record_one_round_diff">Ha proporcionado un comando diferente a los anteriores.</string>
+    <string name="voice_command_record_one_round_exist">Es muy parecido al comando de voz existente. Pruebe con otro diferente.</string>
+    <string name="voice_command_record_recording_ok">El comando de voz se ha configurado correctamente.</string>
+    <string name="voice_unlock_setup_end_all_done">Finalizado.</string>
+    <string name="voice_unlock_setup_end_prompt">Para desbloquear el teléfono, simplemente diga su comando de voz.</string>
+    <string name="pass_word_file_missing">No se puede reproducir el comando de voz.</string>
+    <string name="time_out_title">Tiempo de espera</string>
+    <string name="time_out_message">No se recibió ninguna entrada de voz durante 5 segundos. Inténtelo de nuevo.</string>
+    <string name="during_call_title">Grabación no disponible</string>
+    <string name="during_call_message">El "comando de grabación de voz" no está disponible durante una llamada.</string>
+</resources>

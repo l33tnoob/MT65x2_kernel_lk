@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/strings.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="keyguard_pinword_enter_pinword_code">Enter PIN to unlock</string>
+        <!-- MTK new add Strings -->
+    <string name="badPin2">The old PIN2 you typed is not correct.</string>
+    <string name="badPuk2">The PUK2 you typed is not correct.</string>
+    <!-- Displayed when a SIM PIN PUK password is too long or too short. -->
+    <string name="checkPwdLen">Check your password is 4 to 8 digits.</string>
+    <!-- Displayed to prompt the user to enable PIN before change it. -->
+    <string name="pinNotEnabled">Please enable PIN before change it.</string>
+    <!-- Displayed to prompt the user PUK1 is blocked -->
+    <string name="puk1Blocked">PIN is blocked.</string>
+    <!-- Displayed to prompt the user PUK2 is blocked -->
+    <string name="puk2Blocked">PIN2 is blocked.</string>
+
+    <!-- Displayed to prompt the user action fail by FDN-->
+    <string name="fdnFailMmi">Fail on FDN Check.</string>
+    <!-- Displayed to prompt the user action fail by Call Barring-->
+    <string name="callBarringFailMmi">Fail on Call Barring.</string>
+    <string name="Pin2Mmi">PIN2 change</string>
+    <string name="PukMmi">Unblock PIN</string>
+    <string name="Puk2Mmi">Unblock PIN2</string>
+    <!-- Displayed to tell the user that caller ID is provisioned for their SIM. -->
+    <string name="serviceProvisioned">Service provisioned.</string>
+
+    <!-- Displayed to tell the user that provisioned status unknown -->
+    <string name="serviceUnknown">Connection problem or invalid MMI code.</string>
+    <string name="cfServiceNotForwarded">Not forwarded</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_receiveCbSms">receive CB SMS</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_receiveCbSms">Allows application to receive
+      and process CB SMS messages. Malicious applications may monitor
+      your messages or delete them without showing them to you.</string>
+
+    <string name="keyguard_password_enter_puk_code">Enter PUK code</string>
+
+    <string name="keyguard_password_wrong_puk_code">Incorrect PUK code!</string>
+
+    <string name="keyguard_password_enter_new_pin_code">Enter new PIN</string>
+
+    <string name="keyguard_password_Confirm_pin_code">Confirm new PIN</string>
+
+    <string name="invalidPuk">Input 8 digits.</string>
+
+    <string name="sim_permanently_locked">Entering incorrect PUK code more than 10 times,SIM card has been permanently locked.</string>
+
+    <string name="pin_length_indicate">(4-8 digits)</string>
+
+    <string name="puk_length_indicate">(8 digits)</string>
+
+    <string name="one_retry_left">1 retry left</string>
+
+    <string name="retries_left">Remains:<xliff:g id="number">%d</xliff:g></string>
+    <!-- Add by MTK:Check IMEI information -->
+    <string name="invalid_imei">Invalid IMEI</string>
+    <string name="same_imei">Same IMEI</string>
+
+    <!-- Add by MTK:Operator name mapping table, long name -->
+    <string name="oper_long_46000">CMCC</string>
+    <string name="oper_long_46001">CU</string>
+    <string name="oper_long_46003">China Telecom</string>    
+    <string name="oper_long_46601">Far EasTone</string>
+    <string name="oper_long_46692">Chunghwa Telecom</string>
+    <string name="oper_long_46697">Taiwan Mobile</string>
+    <string name="oper_long_99998">Android1</string>
+    <string name="oper_long_99999">Android</string>
+
+    <!-- Add by MTK:Operator name mapping table, short name -->
+    <string name="oper_short_46000">CMCC</string>
+    <string name="oper_short_46001">CU-GSM</string>
+    <string name="oper_short_46003">China Telecom</string>    
+    <string name="oper_short_46601">FET</string>
+    <string name="oper_short_46692">Chunghwa</string>
+    <string name="oper_short_46697">TWN</string>
+    <string name="oper_short_99997">AD1</string>
+    <string name="oper_short_99999">AD</string>
+
+    <!-- activity thread used string -->
+    <string name="unable_launch_the_ap">Unable to launch the application.</string>
+    <!-- Instructions telling the user to enter their pin to unlock the keyguard.
+         Displayed in one line in a large font.  -->
+    <string name="keyguard_password_enter_sim1_pin_code">Enter SIM 1 PIN code</string>
+
+    <!-- Add by MTK:Restricted Change Notification for Gemini -->
+    <string name="RestrictedChangedTitle_SIM1">SIM1 Restricted access changed</string>
+    <string name="RestrictedChangedTitle_SIM2">SIM2 Restricted access changed</string>
+    <!-- Instructions telling the user to enter their pin to unlock the keyguard.
+         Displayed in one line in a large font.  -->
+    <string name="keyguard_password_enter_sim2_pin_code">Enter SIM 2 PIN code</string>
+
+
+    <string name="keyguard_password_wrong_sim1_pin_code">Incorrect SIM 1 PIN code!</string>
+
+    <string name="keyguard_password_wrong_sim2_pin_code">Incorrect SIM 2 PIN code!</string>
+
+    <string name="keyguard_password_enter_sim1_puk_code">Enter SIM 1 PUK code</string>
+
+    <string name="keyguard_password_enter_sim2_puk_code">Enter SIM 2 PUK code</string>
+
+    <!-- When the user enters a wrong sim pin too many times, it becomes
+         PUK locked (Pin Unlock Kode) -->
+    <string name="lockscreen_sim1_puk_locked_message">SIM card 1 is PUK-locked.</string>
+
+    <!-- When the user enters a wrong sim pin too many times, it becomes
+         PUK locked (Pin Unlock Kode) -->
+    <string name="lockscreen_sim2_puk_locked_message">SIM card 2 is PUK-locked.</string>
+
+    <string name="choose_bootup_mode">Please select SIM card</string>
+    <string name="choose_gprs_mode">Please select data connection</string>
+    <string name="sim_close">SIM card close</string>
+    <string name="lockscreen_sim_puk_locked_message_short">PUK-locked</string>
+    <string name="lockscreen_sim_locked_message_short">SIM card locked</string>
+    <string name="simlock_slot_locked_message">The slot has been permanently locked</string>
+    <string name="simlock_entersimmelock">Enter SIM ME lock</string>
+    <string name="slot_id">Slot <xliff:g id="number">%d</xliff:g>:</string>
+    <string name="new_simcard">New SIM card</string>
+    <string name="lockscreen_missing_sim_dialog_message">"SIM card is unplugged. Please make sure your SIM card is properly plugged in."</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_receiveDmRegisterSms">receive DM Register SMS</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_receiveDmRegisterSms">Allows application to receive
+      and process DM Register SMS messages. Any Application except DM APP should
+      not use this</string>
+
+    <string name="lockscreen_password_error">Password error, please try again</string>
+  	  <string name="lockscreen_pinword_error">PIN error, please try again</string>
+
+    <string name="music_no_artist">Unknown artist name</string>
+    <string name="music_play">Play</string>
+    <string name="music_pause">Pause</string>
+    <string name="music_library">Library</string>
+    <string name="music_no_songs">No songs</string>
+    
+    <!-- Meaning: unknown.  Example: Service was enabled for: Voice, PAD -->
+    <string name="serviceClassVideo">Video</string>
+  <string name="aerr_application_lowmem">Phone storage full,the application has been stopped. Please free space and try again.</string>
+  <!-- Text of the alert that is displayed when an application has crashed. -->
+  <string name="aerr_process_lowmem">Phone storage full,the process has been stopped. Please free space and try again.</string>
+  <string name="free_memory_btn">"Free Space"</string>
+  <string name="free_memory_text">"Low memory. Please free memory."</string>		
+<string name="mem_low_title">Please free memory</string>
+   <!-- LockScreen -->
+   <string name="unread_message">%d Unread message</string>
+   <string name="unread_messages">%d Unread messages</string>
+   <string name="missed_call">%d Missed call</string>
+   <string name="missed_calls">%d Missed calls</string>
+  <!-- Contacts Widget -->
+  <string name="no_favorite_contacts">No favorite contacts</string>
+  <string name="contact_widget_loading">Loading\u2026</string>
+   <!-- Title of the dialog where the user is adjusting the audio volume fm -->
+   <string name="volume_fm">FM volume</string>
+   <!-- Title of the dialog where the user is adjusting the audio volume matv -->
+   <string name="volume_matv">Mobile TV volume</string>
+
+   <!-- add new style for mtk streaming video player start -->
+   <string name="media_controller_buffering">"Buffering %d%%..."</string>
+   <string name="media_controller_live">"Live"</string>
+   <string name="media_controller_playing">"Playing"</string>
+   <string name="media_controller_connecting">"Connecting..."</string>
+   <string name="media_controller_weak_signal">"weak signal"</string>
+   <string name="VideoView_error_text_bad_file">"Bad file, this video cannot be played."</string>
+   <string name="VideoView_error_text_cannot_connect_to_server">"Cannot connect to server."</string>
+   <string name="VideoView_error_text_type_not_supported">"Media file type not supported."</string>
+   <string name="VideoView_error_text_drm_not_supported">"DRM protected, this video cannot be played."</string>
+   <string name="VideoView_error_text_invalid_connection">"Invalid connection. (403 Forbidden)"</string>
+   <!-- add new style for mtk streaming video player end -->
+
+   <!-- added new string for SearchDialog, used to indicate WikiPedia--> 
+   <string name="wikiPediaName" translatable="false">wikipedia</string>
+
+    <!-- support TextView undo tool bar -->
+    <string name="redo">Redo</string>
+    <string name="undo">Undo</string>
+    <string name="undoAll">Undo all</string>
+    <string name="new_sim">New SIM</string>
+
+    <!-- support RecipientsView recipient bar -->
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
+    <!-- string for gemini enhancement-->
+    <string name="sim_card_changed_dialog_title">SIM card changed</string>
+    <string name="change_setting_for_onenewsim">New SIM card detected. It\'s labeled as</string>
+    <string name="change_setting_for_twonewsim">New SIM card detected. They are labeled as</string>
+    <string name="sim_card_removed">SIM card removed.</string>
+    <string name="sim_card_swapped">SIM card swapped.</string>
+    <string name="change_settings">Change</string>
+    <string name="keyguard_voice_call">Voice call:</string>
+    <string name="keyguard_sms">Messaging:</string>
+    <string name="keyguard_data">Data connection:</string>
+    <string name="keyguard_alwaysask">Always ask</string>
+    <string name="keyguard_data_none">Off</string>
+    <string name="keyguard_sim_auto">Auto</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="keyguard_wrong_code_input">Wrong Code.</string>
+    <string name="keyguard_code_length_prompt">Input 4-8 digits.</string>
+    <string name="keyguard_code_donnot_mismatch">Don\'t match.</string>
+    <string name="for_text">for</string>
+    <string name="keyguard_internal_call">Internal call</string>
+    <string name="keyguard_not_set">Not set</string>
+    <string name="network_searching">Searching for new network</string>
+    <string name="searching_simcard">Detecting...</string>
+    <string name="keyguard_close">Close</string>
+    <string name="for_first_simcard">For the first SIM</string>
+    <string name="for_second_simcard">For the second SIM</string>
+    <string name="for_third_simcard">For the third SIM</string>
+    <string name="for_fourth_simcard">For the fourth SIM</string>
+    <string name="default_sim_setting_prompt">Now default settings are:</string>
+    <string name="keyguard_video_call">Video call:</string>
+    <string name="dm_prompt">Terminal has already been locked</string>
+    <string name="keyguard_domestic_zone_name">Beijing</string>
+     <!-- string for gemini enhancement end-->
+
+    <!-- add for lock screen,Alert Dialog title that telling the user that the SIM card is invalid.-->
+    <string name="invalid_sim_title">Invalid SIM card</string>
+    
+    <!-- add for lock screen,Alert Dialog message telling the user that the SIM card is invalid.-->
+    <string name="invalid_sim_message">The UIM/SIM card is not recognized.</string>
+     
+     <!-- For the unlock screen, Information message shown in dialog when user has too many failed attempts -->    
+    <string name="lockscreen_pin_too_many_failed_attempts_dialog_message">
+        You have incorrectly input your PIN <xliff:g id="number">%d</xliff:g> times.
+        \n\nPlease try again in <xliff:g id="number">%d</xliff:g> seconds.
+    </string>
+    
+    <string name="lockscreen_password_too_many_failed_attempts_dialog_message">
+        You have incorrectly input your password <xliff:g id="number">%d</xliff:g> times.
+        \n\nPlease try again in <xliff:g id="number">%d</xliff:g> seconds.
+    </string>
+
+   <!-- string for cmcc mobile search-->
+    <string name="wap_browser_pakcage" translatable="false">com.myriad.android.kunbrowser</string>
+    <string name="wap_browser_component" translatable="false">com.myriad.android.kunbrowser.BrowserActivity</string>
+    <string name="wap_browser_keyword" translatable="false">s.139.com</string>
+    <string name="wap_browser_url_flag" translatable="false">search_url</string>
+       
+    <string name="aerr_application_lowstorage">Internal storage is running out, the application has been stopped. Please free up some space and try again.</string>
+    <string name="aerr_process_lowstorage">Internal storage is running out, the process has been stopped. Please free up some space and try again.</string>
+    <string name="low_internal_storage_view_title">Internal storage running out</string>
+    <string name="low_storage_warning_message">Please free up some space, or some applications and system functions may not work well.</string>
+    <string name="deleteMails">Delete Mails</string>
+    
+    <string name="criticallowtitle">No space</string>
+    <string name="criticallowmessage">Please free up some space, or some applications and system functions may not work well.</string> 
+
+    <string name="nq_sms_filter_title">SMS filter</string>
+    <string name="nq_sms_filter_message">This message may deduct fees. Do you want to continue?</string>
+    <string name="nq_sms_filter_yes">Yes</string>
+    <string name="nq_sms_filter_no">No</string>
+    
+    <!-- string for external media-->
+    <string name="ext_media_checking_notification_title_sd2">Prepare SD card</string>
+    <string name="ext_media_checking_notification_title_otg">Prepare USB storage</string>
+    <string name="ext_media_badremoval_notification_title_otg">USB storage unexpectedly removed</string>
+    <string name="ext_media_nomedia_notification_title_otg">Removed USB storage</string>
+    <string name="ext_media_badremoval_notification_message_otg">Unmount USB storage before removing to avoid data loss.</string>
+    <string name="ext_media_nomedia_notification_message_otg">USB storage removed. Insert new media.</string>
+    <string name="ext_media_unmountable_notification_title_otg">Damaged USB storage</string>
+    <string name="ext_media_unmountable_notification_message_otg">USB storage damaged. You may have to reformat it.</string>
+    <string name="ext_media_nofs_notification_title_otg">Blank USB storage</string>
+    <string name="ext_media_nofs_notification_message_otg">USB storage blank or has unsupported filesystem.</string>
+    <string name="ext_media_safe_unmount_notification_title_otg">USB storage safe to remove</string>
+    <string name="ext_media_safe_unmount_notification_message_otg">You can safely remove USB storage.</string>
+    
+    <!-- add for drm start -->
+    <string name="drm_protection_status">Protection status:</string>
+    <string name="drm_can_forward">Can be forwarded.</string>
+    <string name="drm_can_not_forward">Cannot be forwarded.</string>
+    <string name="drm_no_limitation">No limitation.</string>
+    <string name="drm_no_license">No available DRM license.</string>
+    <string name="drm_begin">Begin:</string>
+    <string name="drm_end">End:</string>
+    <string name="drm_use_left">Count left:</string>
+    <string name="drm_protectioninfo_renew">Renew</string>
+    <string name="drm_protectioninfo_title">Protection Info</string>
+    <string name="drm_licenseacquisition_title">DRM License Acquisition</string>
+    <string name="drm_licenseacquisition_message">%1$s has no available DRM license. You can press "Renew" button to acquire DRM license.</string>
+    <string name="drm_toast_license_expired">DRM License has expired.</string>
+    <string name="drm_forwardforbidden_title">Forward Forbidden</string>
+    <string name="drm_forwardforbidden_message">Some protected files cannot be forwarded.</string>
+    <string name="drm_license_install_success">DRM License installation succeeded.</string>
+    <string name="drm_license_install_fail">DRM License installation failed.</string>
+    <string name="drm_secure_timer_title">Invalid DRM secure clock</string>
+    <string name="drm_secure_timer_message">You could not use DRM protected files. Please make sure data connection is available.</string>
+    <string name="drm_consume_title">Consume DRM rights</string>
+    <string name="drm_consume_message">Your action will consume DRM rights.</string>
+    <string name="drm_forward_forbidden">One or more protected files cannot be forwarded.</string>
+    <!-- add for drm end -->
+    
+
+    <string name="recip_unsupport_operator">RecipientsView does not support character operations, please use toolbar to operate recipients.</string>
+    <string name="recip_unsupport_selection">Sorry, you can not move the caret to the start when there are recipients in RecipientsView.</string>
+    
+    <string name="virtual_sim_on_slot1">Virtual SIM 1 ON</string>
+    <string name="virtual_sim_on_slot2">Virtual SIM 2 ON</string>
+    <string name="virtual_sim_on_slot3">Virtual SIM 3 ON</string>
+    <string name="virtual_sim_on_slot4">Virtual SIM 4 ON</string>
+    <string name="virtual_sim_on">Virtual SIM ON</string>
+    
+    <string name="sim_missing_slot1">Slot 1: No SIM card detected</string>
+    <string name="sim_missing_slot2">Slot 2: No SIM card detected</string>
+    <string name="sim_missing_slot3">Slot 3: No SIM card detected</string>
+    <string name="sim_missing_slot4">Slot 4: No SIM card detected</string>
+    <string name="sim_missing">No SIM card detected</string>
+    <string name="sim_missing_detail">Please check if SIM card is ready</string>
+    <string name="sim_missing_slot1_card">Slot 1: No card detected</string>
+    <string name="sim_missing_slot2_card">Slot 2: No card detected</string>
+    <string name="sim_missing_card">No card detected</string>
+    <string name="sim_missing_detail_card">Please check if card is ready</string>
+    
+    <string name="wap_push_setting_noti_ticker">Accept Auto-push service or not?</string>
+    <string name="wap_push_setting_noti_title">Accept Auto-push service or not?</string>
+    <string name="wap_push_setting_noti_text">Please tap to select</string>
+    <string name="url_dialog_choice_title">Messages</string>
+    <string name="url_dialog_choice_message">It will open the browser, continue?</string>
+
+    <string name="wifi_tether_configure_ssid_default_for_cmcc" translatable="false">MTK Athens15</string>
+    
+    <string name="deleteApp" >Uninstall appliactions</string>    
+    <string name="deleteMail" >Backup mails and release stroage</string>    
+
+    <string name="storage_withsd">The phone storage does not have enough space. Please release some storage or change the default write disk in the settings.</string>
+    <string name="storage_withoutsd">The phone storage does not have enough space. Please release some storage or insert a SD card.</string>
+    <string name="storage_sd" >The SD card does not have enough space. Please release some storage or change the default write disk in the settings.</string>   
+    <string name="usb_ums_notification_title">Connected as USB Storage</string>
+    <!-- USB_PREFERENCES: Notification for when the user connects the phone to a computer via USB in mass storage mode (for installer CD image).  This is the title -->
+    <string name="usb_charging_notification_title">USB Charge Only</string>
+    <!-- USB_PREFERENCES: Notification for when the function has been changed to USB charging only mode.  This is the title -->
+    
+    <!-- The Toast hints for GPS time sync failure -->
+    <string name="gps_time_sync_fail_str">Failed to get GPS provided time</string>
+
+    <!-- Shown when the phone does not download calibration data -->
+    <string name="calibration_data">No calibration yet. Please download calibration data! Otherwise the device may not camp on network.[MTK Internal User]</string>
+
+    <!-- Displayed to tell the user that the SIM is IMEI locked. -->    
+    <string name="invalid_card">Invalid Card</string>
+    <!-- Displayed to tell the user that the network reject cause. -->    
+    <string name="RejectCauseTitle">Network Rejection Cause</string>
+    <!-- Displayed to tell the user that the network reject cause. -->    
+    <string name="MMRejectCause2">SIM not provisioned MM #2</string>
+    <!-- Displayed to tell the user that the network reject cause. -->    
+    <string name="MMRejectCause3">SIM not allowed MM #3</string>
+    <!-- Displayed to tell the user that the network reject cause. -->    
+    <string name="MMRejectCause5">Call Failed MM #5</string>
+    <!-- Displayed to tell the user that the network reject cause. -->    
+    <string name="MMRejectCause6">Phone not allowed MM #6</string>    
+    <!-- Displayed to tell the user that the network reject cause. -->
+    <string name="MMRejectCause13">SOS/Emergency calls only</string>
+
+    <!-- The Toast hints for webview search -->
+    <string name="find_previous">Previous</string>
+    <string name="find_next">Next</string>
+
+    <string name="tethered_notification_message_for_hotspot"><xliff:g id="connected">%1$d</xliff:g> connected, <xliff:g id="blocked">%2$d</xliff:g> blocked</string>
+    <string name="tethered_notification_message_bandwidth_set">Bandwidth is set</string>
+    <!--  Strings for Usb Internet -->
+    <string name="usbint_notification_title">USB Internet active</string>
+
+    <!-- add for showing current wallpaper name in Settings.-->
+    <string name="default_wallpaper_name">Default</string>
+
+<!-- This is CU customization info for APN -->
+    <string name="cu_3gnet_name" translatable="false">"沃3G连接互联网"</string>
+    <string name="cu_3gwap_name" translatable="false">"沃3G手机上网"</string>
+    
+    <!--   power-off alarm start  -->
+    <string name="keyguard_accessibility_alarm_unlock">Power-off Alarm</string>
+    <!-- Button labels on the alarm dialog: Dismiss -->
+    <string name="alarm_alert_dismiss_text">Dismiss</string>
+    <!-- Description of the right direction in the alarm alert screen. [CHAR LIMIT=NONE] -->
+    <string name="description_direction_right">Slide right to dismiss</string>
+    <!-- Button labels on the alarm dialog: Snooze -->
+    <string name="alarm_alert_snooze_text">Snooze</string>
+    <!-- Description of the left direction in the alarm alert screen. [CHAR LIMIT=NONE] -->
+    <string name="description_direction_left">Slide left to snooze</string>
+    <!-- Description of the up direction in the alarm alert screen. [CHAR LIMIT=NONE] -->
+    <string name="description_direction_up">Slide up to dismiss</string>
+    <!-- Description of the down direction in the alarm alert screen. [CHAR LIMIT=NONE] -->
+    <string name="description_direction_down">Slide down to snooze</string>
+    <string name="every_day">Every day</string>
+    <string name="never">Never</string>
+    <string name="day_concat">", "</string>
+    <!-- Default label to display for an alarm -->
+    <string name="default_label">Alarm</string>
+    <!-- button to Dismiss and power on device -->
+    <string name="dismiss_power_on">Dismiss and power on</string>   
+    <!-- button to Dismiss and power off device -->
+    <string name="dismiss_power_off">Dismiss and power off</string>
+    <!--   power-off alarm end  -->
+
+    <!-- voice unlock start -->
+    <string name="voice_unlock_service_error">Voice service error!</string>
+    <string name="voice_unlock_password_wrong">Sorry, cannot recogize your voice.</string>
+    <string name="voice_unlock_noisy">Too noisy so that can\'t hear you clearly.</string>
+    <string name="voice_unlock_weak">Can\'t hear your voice.</string>
+    <string name="voice_unlock_media_playing">Voice unlock is disabled during media playing.</string>
+    <string name="voiceunlock_multiple_failures">Maximum Voice Unlock attempts exceeded</string>
+    <!-- voice unlock end -->
+    <!-- voice ui start -->
+    <string name="voiceui_notify_string">You can say</string>
+    <string name="voiceui_control_poweroff_alarm">to control power-off alarm.</string>
+    <string name="voiceui_comma">,</string>
+    <string name="voiceui_quota_start">"</string>
+    <string name="voiceui_quota_end">"</string>
+    <string name="voiceui_or">or</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on Color to apply</string>
+    <string name="color_picker_select">-></string>
+
+    <!-- voice ui end -->
+
+    <!-- Content of a dialog to turn off BT and HDMI when WFD on. -->
+    <string name="wifi_display_bt_hdmi_off_wfd_on">HDMI will be turned off when you turn on wireless display. Do you want to continue?</string> 
+    <!-- Content of a dialog to turn off WFD when HDMI on. -->
+    <string name="wifi_display_wfd_off_hdmi_on">Wireless display will be turned off when you turn on HDMI. Do you want to continue?</string> 
+    <!-- Content of a dialog to turn off WFD when BT on. -->
+    <string name="wifi_display_wfd_off_bt_on">Wireless display will be turned off when you turn on Bluetooth. Do you want to continue?</string> 
+    <!-- Content of a dialog to disconnect previous Wi-Fi direct connection when WFD is connected. -->
+    <string name="wifi_display_wifi_p2p_disconnect_wfd_connect">Current Wi-Fi Direct connection will be disconnected when you connect to the wireless display device. Do you want to continue?</string>
+    <!-- Title of a notification to notify user WIFI display connection is unstable  -->
+    <string name="wifi_display_unstable_connection">Unstable connection</string>
+    <!-- Content of a toast to notify user connection is not steady -->
+    <string name="wifi_display_connection_is_not_steady">The current connection of wireless display is not steady.</string>
+    
+    <!-- Content of a notification to suggest user to get closer to the display device -->
+    <string name="wifi_display_unstable_suggestion">The current connection of wireless display is not steady, please try to get closer to your display device.</string>
+    <!-- Title of a dialog to reconnect. -->
+    <string name="wifi_display_reconnect">Reconnect</string> 
+    <!-- Content of a dialog to disconnect then connect. -->
+    <string name="wifi_display_disconnect_then_reconnect">Wireless display disconnect. Do you want to reconnect?</string> 
+    <!-- Content of a toast to notify disconnected. -->
+    <string name="wifi_display_disconnected">Wireless display disconnected.</string>
+     <!-- Text displayed when WPS fails due to another session [CHAR LIMIT=150] -->
+    <string name="wifi_wps_failed_overlap">Another WPS session was detected. Please try again in a few minutes.</string>
+    <!-- Content of a toast to notify user wifi display and wifi are turned on -->
+    <string name="wifi_display_wfd_and_wifi_are_turned_on">Wireless display and Wi-Fi are turned on.</string>
+    <!-- Content of a dialog to notify user multimedia sound will not play from headset -->
+    <string name="wifi_display_sound_path_reminder">Multimedia sound won\'t play from your headset.</string>  
+    <!-- Content of a dialog to notify user change resolution will reconnect wireless display -->
+    <string name="wifi_display_change_resolution_reminder">Change resolution will reconnect wireless display automatically.</string>  
+    <!-- Content in a dialog to ask user if do not remind again -->
+    <string name="wifi_display_do_not_remind_again">Do not remind again.</string>
+    <!-- Content of a toast to notify user currenty Wi-Fi AP may affect the quality of wireless display -->
+    <string name="wifi_display_wifi_ap_affects_quality">Current Wi-Fi AP may affect the quality of Wireless display.</string>
+    
+    <!-- MountService start -->
+    <string name="sdcard_ready_title">SD card ready</string>
+    <string name="sdcard_select_default_path">Do you want to change the default write disk?</string>
+    <string name="sdcard_default_path_change">Default write disk was changed.</string>
+    <string name="usb_storage_ready_title">External USB storage ready</string>
+    <!-- MountService end -->
+
+    <!-- Add for AT&T to show toast when pass pin/puk lock -->
+    <string name="pin_pass">Code accepted</string>
+    <string name="puk_pass">PIN unblocked</string>
+    
+    <!-- Add for Headset feature PIN recognition -->
+    <string name="headset_pin_recognition">Your earphones are not compatible with the Phone.Please try another ones</string>
+    
+    <!-- msensor toast text -->
+    <string name="msensor_toast_text">Compass interference. Wave the phone in figure 8 motion to re-calibrate the compass.</string> 
+
+
+    <!-- sdcard&otg only for owner -->
+    <string name="sd_accessing_swtich_user_title">Switch user?</string>
+    <string name="sd_accessing_swtich_user_message">All unsaved data in owner account will be lost or damaged.</string>
+
+    <!-- USB_PREFERENCES: Notification for when the function has been changed to VIA cdrom mode.  This is the title -->
+    <string name="usb_autorun_cdrom_notification_title">Connected as an autorun cdrom</string>
+    
+    <!-- This is CT customization info for APN -->
+    <string name="ct_net_name">"CTNET"</string>
+    <string name="ct_wap_name">"CTWAP"</string>    
+
+    <!-- HDMI start -->
+    <string name="hdmi_notification_title">HDMI cable connected</string>
+    <string name="hdmi_notification_content">Click to configure HDMI</string>
+    <string name="hdmi_hdvideo_toast">HDMI cannot play the 4K video, connection will be interrupted.</string>
+    <string name="hdmi_replace_hdmi" translatable="false">HDMI</string>
+    <string name="hdmi_replace_mhl" translatable="false">MHL</string>
+    <!-- HDMI end -->
+
+    <!-- VolumePanel -->
+    <string name="safe_media_volume_warning_title">Warning</string>
+
+    <!-- For CS domain network not registered, PS is registered scenario -->
+    <string name="data_conn_only">Data connection only</string>
+</resources>

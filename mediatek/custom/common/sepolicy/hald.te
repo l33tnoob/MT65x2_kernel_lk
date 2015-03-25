@@ -1,0 +1,57 @@
+# ==============================================
+# Policy File of /system/binhald Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type hald_exec , exec_type, file_type;
+type hald ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive hald;
+init_daemon_domain(hald)
+
+# 20131024 CTS_01
+allow hald property_socket:sock_file write;
+allow hald self:capability net_admin;
+allow hald self:netlink_socket read;
+allow hald self:udp_socket { create ioctl };
+
+
+# 20131024 Sanity_03
+allow hald device:chr_file { write open };
+
+
+# 20131024 CTS_02
+allow hald device:chr_file { read ioctl };
+allow hald system_prop:property_service set;
+
+
+# 20131028 CTS_09
+allow hald linker_exec:file read;
+
+
+# 20131028 CTS_21
+allow hald self:netlink_socket { write bind create setopt getopt };
+
+
+# 20131119 FeatureSQC
+allow hald linker_exec:file read;
+
+
+
+# 20131122 Add Set Property Rule
+allow hald  property_type:property_service set;

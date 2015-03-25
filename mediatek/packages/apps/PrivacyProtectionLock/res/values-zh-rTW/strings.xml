@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">手機防盜</string>
+    <string name="status_enabled">已開啟</string>
+    <string name="status_provisioned">遠程鎖定手機或遠程銷毀數據</string>
+    <string name="status_unprovisioned">遠程鎖定手機或遠程銷毀數據</string>
+    <string name="status_pending">遠程鎖定手機或遠程銷毀數據</string>
+    <string name="status_control_panel_enabled">防盜已開啟</string>
+    <string name="status_control_panel_disabled">防盜已關閉</string>
+    <string name="checkbox_show_password">顯示密碼</string>
+    <string name="checkbox_send_sms">通過短信備份遠程控制指令給緊急聯系人</string>
+    <string name="button_control_panel_change_password">修改防盜密碼</string>
+    <string name="button_control_panel_update_emergency_contacts">更新緊急聯系人</string>
+    <string name="button_control_panel_view_instructions">查看遠程控制指令</string>
+    <string name="button_control_panel_disable">關閉手機防盜</string>
+    <string name="button_next">下一步</string>
+    <string name="button_confirm">確定</string>
+    <string name="button_finish">完成</string>
+    <string name="button_send_sms">發送短信</string>
+    <string name="button_add_contact_line">增加一個緊急聯系人</string>
+    <string name="title_access_lock">請輸入防盜密碼</string>
+    <string name="title_setup_password">開啟防盜 （1/3）</string>
+    <string name="title_setup_trusted_contact">開啟防盜 （2/3）</string>
+    <string name="title_setup_send_manual">開啟防盜 （3/3）</string>
+    <string name="title_view_instruction">查看遠程控制指令</string>
+    <string name="title_choose_enable_mode">開啟防盜</string>
+    <string name="title_control_panel_contacts">您設置的緊急聯系人</string>
+    <string name="title_choose_sim">選擇SIM卡</string>
+    <string name="title_choose_number">選擇號碼</string>
+    <string name="title_update_trusted_contact">更新緊急聯系人</string>
+    <string name="title_change_password">修改防盜密碼</string>
+    <string name="summary_setup_password">設置防盜密碼</string>
+    <string name="summary_setup_trusted_contact">設置緊急聯系人</string>
+    <string name="summary_update_trusted_contact">設置緊急聯系人</string>
+    <string name="summary_setup_send_manual">遠程控制指令</string>
+    <string name="summary_view_instruction">遠程控制指令</string>
+    <string name="description_disable_confirm">關閉手機防盜後，你將無法遠程鎖定手機或遠程銷毀用戶數據。確定要關閉麽？</string>
+    <string name="description_turnoff_airplane_mode_confirm">飛行模式已啟用。是否關閉飛行模式？</string>
+    <string name="description_setup_password">每次進入手機防盜設置均需輸入密碼進行身份驗證。</string>
+    <string name="description_setup_trusted_contact">1. 緊急聯系人用於發送遠程控制指令；\n2. 當手機SIM卡被更換時，自動發送短信通知到緊急聯系人。通知短信內容如下：“我的手機可能被盜，請保留發送此短信的號碼。”</string>
+    <string name="description_update_trusted_contact">1. 緊急聯系人用於發送遠程控制指令；\n2. 當手機SIM卡被更換時，自動發送短信通知到緊急聯系人。通知短信內容如下：“我的手機可能被盜，請保留發送此短信的號碼。”</string>
+    <string name="description_setup_send_manual">手機丟失後，您可以通過緊急聯系人手機給被盜手機發送短信實現遠程控制。</string>
+    <string name="description_view_instruction">手機丟失後，您可以通過緊急聯系人手機給被盜手機發送短信實現遠程控制。</string>
+    <string name="hint_setup_password_input_1">請輸入密碼（最少6位，最多12位）</string>
+    <string name="hint_setup_password_input_2">請再次輸入密碼</string>
+    <string name="hint_trusted_contact">建議使用親友的手機號</string>
+    <string name="hint_update_trusted_contact">建議使用親友的手機號</string>
+    <string name="content_setup_send_manual"><![CDATA["<p>1. 遠程鎖定</p><p>發送短信 <font color="#33B5E5">#suoding#</font></p><p>2. 遠程銷毀數據</p><p>發送短信 <font color="#33B5E5">#xiaohui#</font></p><p>3. 找回防盜密碼</p><p>發送短信 <font color="#33B5E5">#mima#</font></p>"]]></string>
+    <string name="toast_passwords_do_not_match">兩次密碼不一致。</string>
+    <string name="toast_password_is_incorrect">密碼錯誤</string>
+    <string name="toast_no_phone_number">聯系人沒有號碼</string>
+    <string name="toast_no_sim">手機無SIM卡，不能開啟手機防盜功能。</string>
+    <string name="toast_instruction_send_succeeded">遠程控制指令備份短信發送成功。</string>
+    <string name="toast_instruction_send_failed">遠程控制指令備份短信發送失敗。</string>
+    <string name="ppl_manager_permission_description">訪問手機防盜關鍵數據。如不了解，請不要允許此權限。</string>
+    <string name="item_sim_n">SIM卡</string>
+    <string name="image_button_description_add">從聯系人添加號碼</string>
+    <string name="image_button_description_delete">刪除此號碼</string>
+    <string name="test_entry_launch">啟動</string>
+    <string name="test_entry_status">狀態</string>
+    <string name="test_entry_enabled">開啟</string>
+    <string name="test_entry_provisioned">配置</string>
+    
+</resources>

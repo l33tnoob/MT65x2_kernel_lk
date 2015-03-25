@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="10dip" >
+
+    <com.hissage.ui.view.NmsServiceIndicator
+        android:id="@+id/tv_type"
+        style="@style/out_going_type_style" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/out_going_time_style" />
+    
+    <TextView
+        android:id="@+id/tv_sending"
+        style="@style/out_going_time_style"
+        android:text="@string/STR_NMS_SENDING_TEXT" />
+
+    <ImageView
+        android:id="@+id/iv_status"
+        android:layout_width="16dp"
+        android:layout_height="16dp" />
+
+    <ImageView
+        android:id="@+id/iv_important"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/ic_important"
+        android:visibility="gone" />
+
+</LinearLayout>

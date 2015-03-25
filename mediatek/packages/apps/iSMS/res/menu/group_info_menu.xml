@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_add_members"
+        android:icon="@drawable/ic_action_addperson"
+        android:showAsAction="always"
+        android:title="@string/STR_NMS_ADDCONTACT"
+        
+    />
+        
+    <item
+        android:id="@+id/menu_edit"
+        android:icon="@drawable/ic_action_edit"
+        android:showAsAction="always"
+        android:title="@string/STR_NMS_EDIT_GROUP_TITLE"
+     />
+
+    <item
+        android:id="@+id/menu_view_all_media"
+        android:showAsAction="never|withText"
+        android:title="@string/STR_NMS_VIEW_ALL_MEDIA"/>
+
+    <item
+        android:id="@+id/menu_view_all_locations"
+        android:showAsAction="never|withText"
+        android:title="@string/STR_NMS_VIEW_ALL_LOCATIONS"/>
+
+    <item
+        android:id="@+id/menu_chat_settings"
+        android:showAsAction="never|withText"
+        android:title="@string/STR_NMS_CHAT_SETTINGS"/>
+
+    <item
+        android:id="@+id/menu_leave_group"
+        android:showAsAction="never|withText"
+        android:title="@string/STR_NMS_LEAVE_GROUP"/>
+    
+</menu>

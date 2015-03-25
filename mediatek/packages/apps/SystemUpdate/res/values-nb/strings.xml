@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"Systemoppdateringer"</string>
+
+
+    <string name="none_package">Det finnes ingen gyldige oppdateringspakker.</string>
+    <string name="new_version_query">Ser etter oppdatering \u2026</string>
+    <string name="menu_stats_refresh">"Oppdater"</string>
+    <string name="network_error">Nettverkstilkobling mislyktes</string>
+    <string name="server_version_error">Serverfeil: Oppdater serverkildekode.</string>    
+    <string name="no_new_version">Systemet er nå oppdatert.</string>
+    <string name="not_support_version">Målet støtter ikke Over-the-Air.</string>
+    <string name="query_sd_insufficient_space">Utilstrekkelig plass for <xliff:g id="path">%s</xliff:g></string>
+    <string name="ota_category_title">OTA</string>
+    <string name="sd_category_title">SD-KORTOPPDATERING</string>
+    <string name="ota_preference_summary">En systemoppdatering ble funnet på serveren</string>
+
+
+    <string name="notes_summary">Fastvareoppdateringen kan forbedre maskinens stabilitet og rette feil.</string>
+    <string name="ask_for_install_ota">Vil du installere systemoppdateringen nå?</string>
+    <string name="warning_install_ota" product="tablet">Du vil ikke kunne bruke nettbrettet eller ringe nødnumre under installasjonen. Ikke ta ut batteriet eller SD-kortet eller slå av nettbrettet.</string>
+    <string name="warning_install_ota" product="default">Du vil ikke kunne bruke telefonen eller ringe nødnumre under installasjonen. Ikke ta ut batteriet eller SD-kortet eller slå av telefonen.</string>
+    <string name="ask_for_install_sd">Den nyeste systemoppdateringspakken ble funnet på SD-kortet. Vil du installere?</string>
+    <string name="warning_install_sd" product="tablet">Du vil ikke kunne bruke nettbrettet eller ringe nødnumre under installasjonen. Ikke ta ut batteriet eller SD-kortet eller slå av nettbrettet. \nFør du starter installasjonen, må du sørge for at pakken er lastet ned fra den offisielle nettsiden og ikke er skadet.</string>
+    <string name="warning_install_sd" product="default">Du vil ikke kunne bruke telefonen eller ringe nødnumre under installasjonen. Ikke ta ut batteriet eller SD-kortet eller slå av telefonen. \nFør du starter installasjonen, må du sørge for at pakken er lastet ned fra den offisielle nettsiden og ikke er skadet.</string>
+    <string name="ask_for_download_ota">Vil du laste ned systemoptimaliseringsoppdateringen?</string>
+    <string name="warning_download_ota">For å laste ned oppdateringen anbefaler vi bruk av et gratis trådløst tilgangspunkt eller et abonnement med ubegrenset datatrafikk. Hvis ikke gjelder standard datakostnader for tilkoblingen. \nSikkerhetskopier dataene dine før du oppgraderer.</string>
+        
+    <string name="notification_content_title">Systemoppdatering</string>
+    <string name="downloading_title">"Laster ned\u2026"</string>   
+    <string name="wifi_only_check">"Kun Wi-Fi"</string>     
+    
+    
+    
+    
+    
+    <string name="btn_install">"Installer"</string>
+    <string name="btn_cancel">Forkast</string>
+    <string name="btn_download">Last ned og installer</string>
+    <string name="btn_resume">"Nedlasting"</string>
+    
+    <string name="warn_data_cost_title">Last ned oppdatering</string>
+    <string name="warn_data_cost_content">Nedlasting via mobile nettverk kan føre til ekstra kostnader. Vil du fortsette?</string>
+    <string name="warn_data_cost_yes">"Ja"</string>
+    <string name="warn_data_cost_no">"Nei"</string>
+
+    <string name="notification_download_complete_title">Systemoppdateringen er klar</string>
+    <string name="notification_download_complete_context">Trykk for å installere systemoppdateringen</string>
+        
+    <string name="sdcard_crash_or_unmount">SD-kortfeil. Kontroller SD-kortet og prøv på nytt.</string>
+    <string name="unmount_sdcard">Feil ved montering av SD-kort. Kontroller SD-kortet.</string>
+    <string name="insufficient_space_content">Installasjonen trenger minst <xliff:g id="deltasize" example="3.5M">%s</xliff:g> byte med lagring. Frigjør plass for å fortsette.</string>
+
+    
+    
+    
+    
+    <string name="install_sd_title">Installer oppdatering</string>
+    <string name="install_sd_message">Kontroller at pakken er lastet ned fra den offisielle nettsiden og at pakken ikke er ødelagt. Ellers kan det føre til systemproblemer.</string>
+    <string name="install_reminder_now">Installer nå</string>
+    <string name="install_reminder_not_now">"Ikke nå"</string>
+    
+    
+
+    <string name="notification_content_text_completed">Nedlastning var vellykket</string> 
+
+    <string name="unknown_per">"ukjent"</string>    
+    <string name="unknown_error">Ukjent feil</string>
+    <string name="unknown_error_content">En ukjent feil oppstod. Gå vekk fra denne siden og prøv på nytt.</string>
+    <string name="insufficient_space_title">Ikke nok plass</string>
+    <string name="error_sdcard">SD-kortinfo</string>
+    <string name="insufficient_space">Ikke nok plass på SD-kortet.</string>
+    <string name="package_deleted_error">System oppdateringen er stoppet på grunn av at oppgraderingen er ugyldig.</string>
+    
+    <string name="cancel_download_title">Avbryt nedlasting</string>
+    <string name="cancel_download_content">Operasjonen vil forkaste den nedlastede filen.</string>
+
+    
+    <string name="change_network_title">"Nedlasting"</string>
+    <string name="change_network_content">Nåværende APN støtter ikke nedlasting. Vil du endre til et annet APN eller slå på Wi-Fi?</string>
+    <string name="change_network_wifi_btn">Bruk Wi-Fi</string>
+    <string name="change_network_apn_btn">Endre APN</string>
+    <string name="change_network_discard_btn">Forkast</string>    
+    <string name="package_error_title">Installering mislyktes</string>
+    <string name="package_error_message_invalid">Pakkefeil. Kontroller oppdateringen, og last den ned på nytt.</string>
+    <string name="package_error_message_insuff" product="tablet">Ikke nok plass på enheten.</string>
+    <string name="package_error_message_insuff" product="default">Ikke nok plass på telefonen.</string>
+    <string name="package_error_message_crash">Får ikke tilgang til datapartisjonen.</string>
+    <string name="package_error_message_full">Trenger full pakke når partisjonen er endret.</string>    
+    <string name="updateSuccess" product="tablet">Gratulerer! Enheten har blitt oppdatert til versjon <xliff:g id="version" example="gb.p37">%s</xliff:g>.</string> 
+    <string name="updateSuccess" product="default">Gratulerer! Telefonen er oppdatert til versjon <xliff:g id="version" example="gb.p37">%s</xliff:g>.</string> 
+    <string name="updateFailed">Kunne ikke oppdatere til versjon <xliff:g id="version" example="gb.p37">%s</xliff:g>.</string>
+    <string name="package_unzip">Pakker ut pakke\u2026</string>
+    <string name="package_unzip_error">Feil ved utpakking</string>
+    
+    <string name="installing_message">Telefonen vil bli slått av\u2026</string>
+    <string name="install_sd_info">Pakken må kopieres til telefonens lagringsområde for å fortsette oppgraderingen.\nDet er ikke nok plass på telefonen.</string>
+    <string name="sdcard_crash_or_unmount_when_install">Systemoppdateringen stoppet på grunn av at SD-kortet er demontert.</string>
+    <string name="sdcard_inserted">Vil du skanne SD-kortet for å finne flere oppdateringspakker?</string>
+    
+    <string name="new_version_detected">Systemoppdatering er tilgjengelig</string>
+    <string name="sdcard_unmount">SD-kortet er demontert</string>
+    <string name="cta_warning">Systemet støtter kun fastvareoppgraderinger fra offisielt nettsted eller server. Hvis brukeren bruker et tredjeparts ROM-bilde og/eller andre rotmetoder for å oppgradere fastvaren, vil det føre til at telefonen blir ustabil. Brukeren skal ta alt ansvar for slik atferd.</string>
+</resources>

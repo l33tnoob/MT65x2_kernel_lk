@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bincodec Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type codec_exec , exec_type, file_type;
+type codec ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive codec;
+init_daemon_domain(codec)
+
+
+# 20131122 Add Set Property Rule
+allow codec  property_type:property_service set;

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/Wfd_Display_Toast_Time"
+                android:layout_width="170dip"
+                android:layout_height="wrap_content"
+                android:text="@string/wfd_display_toast_time" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/Wfd_Display_Toast_Time_Edit"
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                android:numeric="integer" >
+            </EditText>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/Wfd_Display_Notif_Time"
+                android:layout_width="170dip"
+                android:layout_height="wrap_content"
+                android:text="@string/wfd_display_notif_time" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/Wfd_Display_Notif_Time_Edit"
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                android:numeric="integer" >
+            </EditText>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/Wfd_Sqc_Info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wfd_sqc_tx" >
+        </CheckBox>
+        
+        <CheckBox
+            android:id="@+id/Wfd_qe_Info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wfd_qe_tx" >
+        </CheckBox>
+        
+        <CheckBox
+            android:id="@+id/Wfd_acs_Info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wfd_acs_tx" >
+        </CheckBox> 
+        <Button
+            android:id="@+id/Wfd_Done"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/wfd_Done" />
+    </LinearLayout>
+
+</ScrollView>

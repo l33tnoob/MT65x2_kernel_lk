@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="alert_delete_multiple">Ces éléments seront supprimés.</string>
+    <string name="alert_delete_single">Cet élément sera supprimé.</string>
+    <string name="app_name">Gestionnaire de fichiers</string>
+    <string name="cancel">Annuler</string>
+    <string name="copy">"Copier"</string>
+    <string name="copy_deny">Aucune permission pour copier</string>
+    <string name="create_folder">Créer un dossier</string>
+    <string name="cut">"Couper"</string>
+    <string name="cut_deny">Aucune permission pour couper</string>
+    <string name="delete">"Supprimer"</string>
+    <string name="delete_deny">Aucune permission pour supprimer</string>
+    <string name="delete_fail">Echec de la suppression</string>
+    <string name="deleting">Suppression</string>
+    <string name="deselect_all">Désélect. Tout</string>
+    <string name="details">Détails</string>
+    <string name="done">"OK"</string>
+    <string name="empty_msg">(Dossier vide)</string>
+    <string name="executable">Exécutable</string>
+    <string name="insufficient_memory">Mémoire insuffisante</string>
+    <string name="invalid_empty_name">Le nom du fichier ou du dossier ne peut être vide</string>
+    <string name="loading">Chargement</string>
+    <string name="modified_time">Modifié</string>
+    <string name="name">"Nom"</string>
+    <string name="new_folder">Nouveau dossier</string>
+    <string name="no">"Non"</string>
+    <string name="ok">OK</string>
+    <string name="paste">"Coller"</string>
+    <string name="pasting">Collage en cours</string>
+    <string name="paste_fail">Echec de la copie</string>
+    <string name="paste_same_folder">Impossible de coller dans le même répertoire</string>
+    <string name="readable">Lisible</string>
+    <string name="rename">Renommer</string>
+    <string name="select_all">"Tout sélectionner"</string>
+    <string name="send_file">Envoyer le fichier</string>
+    <string name="share">"Partager"</string>
+    <string name="size">Taille</string>
+    <string name="sort_by">Trier par</string>
+    <string name="wait">Veuillez patienter...</string>
+    <string name="writable">Modifiable</string>
+    <string name="yes">"Oui"</string>
+    <string name="confirm_rename">Confirmer Renommage</string>
+    <string name="msg_rename_ext">En modifiant l\'extension du fichier, celui-ci peut ne plus être reconnu correctement. Souhaitez-vous continuer?</string>
+    <string name="msg_unable_open_file">Impossible d\'ouvrir le fichier.</string>
+
+    <string-array name="sort_by">
+        <item>Type</item>
+        <item>Nom (A - Z)</item>
+        <item>Taille (petit - grand)</item>
+        <item>Chronologie (récent - ancien)</item>
+    </string-array>
+
+    <string name="more">Plus</string>
+    <string name="selected">Sélectionné</string>
+    <string name="mutil_selected">Sélectionnés</string>
+    <string name="invalid_char_prompt">Vous avez saisi un caractère invalide</string>
+    <string name="search">Rechercher</string>
+    <string name="sort">Classer par</string>
+    <string name="show_file">Afficher les fichiers masqués</string>
+    <string name="hide_file">Cacher les fichiers masqués</string>
+    <string name="default_search_text">Rechercher les fichiers</string>
+    <string name="search_text_empty">Le champ de recherche ne peut être vide.</string>
+    <string name="free_space">Espace libre</string>
+    <string name="total_space">Espace total</string>
+    <string name="paste_sub_folder">Impossible de coller dans le sous-dossier</string>
+    <string name="operation_fail">Certaines opérations de fichiers ont échoué</string>
+    <string name="search_files">Rechercher les fichiers</string>
+    <string name="search_result">%2$d résultats pour \"%1$s\"</string>
+    <string name="already_exists">"%1$s est déjà en cours d'utilisation"</string>
+    <string name="unmounted">%1$s est démonté</string>
+    <string name="create_hidden_file">Le fichier sera masqué si son nom commence par \'.\'</string>
+    <string name="modify_hidden_file">Le fichier ne sera pas masqué si son nom ne commence pas par \'.\'</string>
+    <string name="file_name_too_long">Le nom saisi est trop long</string>
+    <string name="some_paste_fail">Certaines opérations de collage ont échoué</string>
+    <string name="some_delete_fail">Certaines opérations de suppression ont échoué</string>
+    <string name="search_empty">Le champ de recherche ne doit pas être vide</string>
+    <string name="search_setting_description">Fichiers et dossiers locaux</string>
+    <string name="path_not_exists">"%1$s n'existe pas"</string>
+    <string name="change_mode">Sélectionnez un fichier ou dossier</string>
+    <string name="folder_beam_forbidden_title">Beam du dossier impossible</string>
+    <string name="folder_beam_forbidden_message">"Le dossier Beam n'est pas pris en charge. Veuillez sélectionner de multiples fichiers pour le beam."</string>
+    <string name="drm_beam_forbidden_title">Beam interdit</string>
+    <string name="drm_beam_forbidden_message">Les fichiers à GND (gestion numérique des droits) ne peuvent pas être envoyés par Beam.</string>
+
+</resources>

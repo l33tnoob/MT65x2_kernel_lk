@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binscreenshot Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type screenshot_exec , exec_type, file_type;
+type screenshot ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive screenshot;
+init_daemon_domain(screenshot)
+
+
+# 20131122 Add Set Property Rule
+allow screenshot  property_type:property_service set;

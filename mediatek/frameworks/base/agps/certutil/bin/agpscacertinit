@@ -1,0 +1,53 @@
+#!/system/bin/sh
+
+mkdir /data/agps_supl  2> /dev/null
+mkdir /data/agps_supl/cacerts  2> /dev/null
+
+chown gps.system /data/agps_supl
+chown gps.system /data/agps_supl/cacerts
+chmod 0771 /data/agps_supl
+chmod 0775 /data/agps_supl/cacerts
+
+#
+# To find out if anything was in cacerts-added but is removed.
+#
+for cert in `ls /data/agps_supl/cacerts`
+  do
+   if x=`ls -d /system/etc/security/cacerts/${cert} 2> /dev/null`
+   then
+     continue
+   fi
+   if x=`ls -d /data/misc/keychain/cacerts-added/${cert} 2> /dev/null`
+   then
+     continue
+   fi
+   rm /data/agps_supl/cacerts/${cert}
+done
+
+
+for cert in `ls /system/etc/security/cacerts`
+  do
+   if x=`ls -d /data/misc/keychain/cacerts-removed/${cert} 2> /dev/null`
+   then
+     continue
+   fi
+   ln -s /system/etc/security/cacerts/${cert} /data/agps_supl/cacerts/${cert} 2> /dev/null
+done
+
+for cert in `ls /data/misc/keychain/cacerts-removed 2> /dev/null`
+  do
+   rm /data/agps_supl/cacerts/${cert}
+done
+
+# These files are in DER format
+# So we have to generate a PEM copy.
+for cert in `ls /data/misc/keychain/cacerts-added 2> /dev/null`
+  do
+   if x=`ls -d /data/agps_supl/cacerts/${cert} 2> /dev/null`
+   then
+     continue
+   fi
+   certutil x509 -in /data/misc/keychain/cacerts-added/${cert} -inform DER -out /data/agps_supl/cacerts/${cert} 2> /dev/null
+   chmod 0644 /data/agps_supl/cacerts/${cert} 2> /dev/null
+done
+

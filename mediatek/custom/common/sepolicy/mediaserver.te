@@ -1,0 +1,229 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type mediaserver, domain;
+type mediaserver_exec, exec_type, file_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# mediaserver - multimedia daemon
+permissive mediaserver;
+
+net_domain(mediaserver)
+init_daemon_domain(mediaserver)
+# unconfined_domain(mediaserver)
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# mediaserver - multimedia daemon
+permissive mediaserver;
+
+# net_domain(mediaserver)
+# init_daemon_domain(mediaserver)
+# unconfined_domain(mediaserver)
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive mediaserver;
+# 20131024 Sanity_01
+allow mediaserver kd_camera_hw_device:chr_file ioctl;
+allow mediaserver mmp_device:chr_file ioctl;
+allow mediaserver system_server:binder { transfer call };
+
+
+# 20131024 Sanity_02
+allow mediaserver MTK_SMI_device:chr_file { read ioctl open };
+allow mediaserver audio_device:chr_file ioctl;
+allow mediaserver camera_isp_device:chr_file ioctl;
+allow mediaserver camera_pipemgr_device:chr_file { read ioctl open };
+allow mediaserver device:chr_file { write ioctl };
+allow mediaserver devmap_device:chr_file { read ioctl open };
+allow mediaserver drmserver:binder call;
+allow mediaserver kd_camera_flashlight_device:chr_file { read write ioctl open };
+allow mediaserver mtk_disp_device:chr_file ioctl;
+allow mediaserver mtk_jpeg_device:chr_file { read ioctl open };
+allow mediaserver platform_app:binder call;
+allow mediaserver platform_app:fd use;
+allow mediaserver property_socket:sock_file write;
+allow mediaserver sdcard_external:file { read open };
+allow mediaserver servicemanager:binder call;
+allow mediaserver surfaceflinger:fd use;
+allow mediaserver sysfs:file write;
+
+
+# 20131024 CTS_01
+allow mediaserver MTK_SMI_device:chr_file { read ioctl open };
+allow mediaserver audio_device:chr_file ioctl;
+allow mediaserver camera_isp_device:chr_file ioctl;
+allow mediaserver camera_pipemgr_device:chr_file { read ioctl open };
+allow mediaserver cgroup:dir { create add_name };
+allow mediaserver device:chr_file { read write ioctl open };
+allow mediaserver devmap_device:chr_file { read ioctl open };
+allow mediaserver drmserver:binder call;
+allow mediaserver ebc_device:chr_file { read write open };
+allow mediaserver kd_camera_flashlight_device:chr_file { read write ioctl open };
+allow mediaserver linker_exec:file read;
+allow mediaserver media_app:fd use;
+allow mediaserver mmp_device:chr_file { read open };
+allow mediaserver mtk_disp_device:chr_file ioctl;
+allow mediaserver mtk_jpeg_device:chr_file { read ioctl open };
+allow mediaserver nfc:fd use;
+allow mediaserver platform_app:binder call;
+allow mediaserver platform_app:fd use;
+allow mediaserver property_socket:sock_file write;
+allow mediaserver radio:binder call;
+allow mediaserver release_app:binder call;
+allow mediaserver sdcard_external:file { read open };
+allow mediaserver self:capability { net_admin setuid };
+allow mediaserver self:netlink_kobject_uevent_socket { read bind create setopt };
+allow mediaserver servicemanager:binder call;
+allow mediaserver surfaceflinger:fd use;
+allow mediaserver sysfs:file write;
+
+
+# 20131024 Sanity_03
+allow mediaserver FM50AF_device:chr_file { read write ioctl open };
+allow mediaserver M4U_device_device:chr_file { read ioctl open };
+allow mediaserver camera_isp_device:chr_file { read write open };
+allow mediaserver camera_sysram_device:chr_file { read ioctl open };
+allow mediaserver ccci_device:chr_file ioctl;
+allow mediaserver kd_camera_hw_device:chr_file { read write open };
+allow mediaserver mtk_disp_device:chr_file { read open };
+allow mediaserver sdcard_external:dir search;
+allow mediaserver sdcard_external:file { write getattr };
+allow mediaserver shared_app:binder call;
+allow mediaserver surfaceflinger:binder call;
+allow mediaserver system_data_file:dir { write add_name };
+allow mediaserver system_data_file:file create;
+allow mediaserver untrusted_app:binder call;
+allow mediaserver untrusted_app:fd use;
+
+
+# 20131024 Sanity_04
+allow mediaserver audio_device:chr_file { read write open };
+allow mediaserver system_data_file:file { write open setattr };
+
+
+# 20131024 CTS_02
+allow mediaserver dumpstate:fd use;
+allow mediaserver dumpstate:unix_stream_socket { read write };
+
+
+# 20131028 CTS_04
+allow mediaserver app_data_file:file { read getattr open };
+allow mediaserver mtk_sched_device:chr_file { read write ioctl open };
+allow mediaserver qtaguid_device:chr_file { read open };
+allow mediaserver qtaguid_proc:file { write open };
+
+
+# 20131028 Sanity_08
+allow mediaserver system_app:binder call;
+
+
+# 20131028 CTS_05
+allow mediaserver app_data_file:file write;
+allow mediaserver ccci_device:chr_file { read write open };
+allow mediaserver self:capability { ipc_lock dac_override };
+allow mediaserver servicemanager:binder transfer;
+
+
+# 20131028 CTS_07
+allow mediaserver aee_aed:process sigchld;
+
+
+# 20131028 CTS_08
+allow mediaserver bootanimation:binder { transfer call };
+
+
+# 20131028 CTS_13
+allow mediaserver system_app:fd use;
+
+
+# 20131119 FeatureSQC
+allow mediaserver bootanimation:binder { transfer call };
+allow mediaserver mali_device:chr_file { read write getattr open ioctl };
+allow mediaserver media_app:binder call;
+allow mediaserver platform_app_data_file:file { read getattr };
+allow mediaserver radio:fd use;
+allow mediaserver radio_data_file:file { read getattr open };
+allow mediaserver sdcard_external:dir { write add_name };
+allow mediaserver sdcard_external:file create;
+allow mediaserver sdcard_internal:file { read write getattr open };
+allow mediaserver system_app:fd use;
+allow mediaserver vtservice:binder { transfer call };
+
+
+
+# 20131122 Add Set Property Rule
+allow mediaserver property_type:property_service set;
+
+# 20131213 KKMR1_CTS_01
+allow mediaserver surfaceflinger:binder transfer;
+
+
+# 20131213 KKMR1_CQ_01
+allow mediaserver CAM_CAL_DRV_device:chr_file { read write ioctl open };
+allow mediaserver aee_aed:unix_stream_socket connectto;
+allow mediaserver asec_apk_file:file { read getattr open };
+allow mediaserver bluetooth:binder call;
+allow mediaserver bluetooth:unix_dgram_socket sendto;
+allow mediaserver bt_a2dp_stream_socket:sock_file write;
+allow mediaserver bt_int_adp_socket:sock_file write;
+allow mediaserver debugfs:file { read ioctl };
+allow mediaserver device:chr_file getattr;
+allow mediaserver drmserver:binder transfer;
+allow mediaserver dumpstate:unix_stream_socket getattr;
+allow mediaserver ebc_device:chr_file ioctl;
+allow mediaserver graphics_device:chr_file { read write ioctl open };
+allow mediaserver init:binder { transfer call };
+allow mediaserver kernel:system module_request;
+allow mediaserver mtkbt:binder call;
+allow mediaserver mtkbt:unix_dgram_socket sendto;
+allow mediaserver nfc:binder call;
+allow mediaserver platform_app:dir search;
+allow mediaserver platform_app:file { read getattr open };
+allow mediaserver qemu_device:chr_file { read write open };
+allow mediaserver release_app:fd use;
+allow mediaserver sdcard_internal:dir { write search read remove_name create open add_name };
+allow mediaserver sdcard_internal:file { create unlink };
+allow mediaserver shared_app:fd use;
+allow mediaserver surfaceflinger:binder transfer;
+allow mediaserver surfaceflinger:dir search;
+allow mediaserver surfaceflinger:file { read getattr open };
+allow mediaserver sysfs_wake_lock:file { read write open };
+allow mediaserver tmpfs:lnk_file read;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow mediaserver CAM_CAL_DRV_device:chr_file { read write ioctl open };
+allow mediaserver adbd:binder call;
+allow mediaserver aee_aed:unix_stream_socket connectto;
+allow mediaserver bluetooth:binder call;
+allow mediaserver bluetooth:unix_dgram_socket sendto;
+allow mediaserver bt_a2dp_stream_socket:sock_file write;
+allow mediaserver bt_int_adp_socket:sock_file write;
+allow mediaserver debugfs:file { read ioctl };
+allow mediaserver init_shell:binder { transfer call };
+allow mediaserver mtkbt:unix_dgram_socket sendto;
+allow mediaserver nfc:binder call;
+allow mediaserver platform_app:dir search;
+allow mediaserver platform_app:file { read getattr open };
+allow mediaserver platform_app_data_file:dir search;
+allow mediaserver release_app:fd use;
+allow mediaserver sdcard_internal:dir { write remove_name search add_name };
+allow mediaserver sdcard_internal:file { create unlink append };
+allow mediaserver shared_app:fd use;
+allow mediaserver surfaceflinger:binder transfer;
+allow mediaserver sysfs_wake_lock:file { read write open };
+allow mediaserver untrusted_app:dir search;
+allow mediaserver untrusted_app:file { read getattr open };
+

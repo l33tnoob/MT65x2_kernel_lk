@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	android:versionCode="1" android:versionName="1.0" package="com.mediatek.bluetooth"
+	android:sharedUserId="android.uid.mtkbt">
+
+	<application android:label="@string/app_label" 
+                android:persistent="true"
+		android:icon="@drawable/bluetooth" android:description="@string/app_description">
+	
+<!-- BLUEANGEL::IF MTK_BT_PROFILE_SIMAP -->
+
+    <!-- bluetooth SIMAP service -->
+    <service android:name=".simap.BluetoothSimapService"
+    	android:exported="true" >
+        <intent-filter>
+            <action android:name="android.bluetooth.IBluetoothSimap" />
+        </intent-filter>
+    </service>
+	<receiver android:name=".simap.BluetoothSimapReceiver">
+	    <intent-filter>
+		<action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+	    </intent-filter>
+
+		<!-- *#*#87819#*#* to send STATUS_IND for fake SIM unavailable -->
+		<!-- 87819: BTSAP. B:8, T:7, S:8, A:1, P:9 -->
+      <intent-filter>
+        <action android:name="android.provider.Telephony.SECRET_CODE" />
+        <data android:scheme="android_secret_code" android:host="87819" />
+	    </intent-filter>	    
+	</receiver>
+    <activity android:name=".simap.BluetoothSimapActivity"
+        android:excludeFromRecents="true"
+        android:theme="@*android:style/Theme.Holo.Dialog.Alert">
+        android:launchMode="singleInstance" 
+        <intent-filter>
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    <activity android:name=".simap.BluetoothSimapConnNotification"
+        android:excludeFromRecents="true"
+        android:theme="@*android:style/Theme.Holo.Dialog.Alert">
+        android:launchMode="singleInstance" 
+        <intent-filter>
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+
+    </activity>
+
+<!-- SIMAP end -->
+
+		<!-- ********************************************************************************** -->
+
+<!-- BLUEANGEL::FI MTK_BT_PROFILE_SIMAP -->
+
+	</application>
+
+
+	<uses-sdk android:minSdkVersion="6" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission android:name="android.permission.BLUETOOTH"/>
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />	
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.FLASHLIGHT"/>
+	
+</manifest> 

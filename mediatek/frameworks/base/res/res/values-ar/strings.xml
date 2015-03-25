@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><!--
+/* //device/apps/common/assets/res/any/strings.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+--><resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="untitled">&lt;غير معنون&gt;</string>
+    <string name="emptyPhoneNumber">(لا يوجد رقم هاتف)</string>
+    <string name="unknownName">(غير معروف)</string>
+    <string name="RestrictedOnAllVoice">تم حظر جميع خدمات الصوت.</string>
+    <string name="RestrictedOnAll">تم حظر جميع خدمات الصوت/البيانات/الرسائل النصية (SMS).</string>
+    <string name="cfTemplateNotForwarded"><xliff:g id="bearer_service_code">{0}</xliff:g>: لم تتم إعادة التوجيه</string>
+    <string name="cfTemplateForwardedTime"><xliff:g id="bearer_service_code">{0}</xliff:g>: <xliff:g id="dialing_number">{1}</xliff:g> بعد <xliff:g id="time_delay">{2}</xliff:g> ثانية</string>
+    <string name="cfTemplateRegistered"><xliff:g id="bearer_service_code">{0}</xliff:g>: لم تتم إعادة التوجيه</string>
+    <string name="cfTemplateRegisteredTime"><xliff:g id="bearer_service_code">{0}</xliff:g>: لم تتم إعادة التوجيه</string>
+    <string name="httpErrorFailedSslHandshake">تعذر إجراء اتصال آمن.</string>
+    <string name="global_actions_toggle_airplane_mode">وضع الطيران</string>
+    <string name="global_actions_airplane_mode_on_status">وضع الطيران قيد التشغيل</string>
+    <string name="global_actions_airplane_mode_off_status">وضع الطيران قيد الإيقاف</string>
+    <string name="permgroupdesc_costMoney">السماح للتطبيقات بإجراء الأشياء التي قد تحملك دفع نقود.</string>
+    <string name="permgroupdesc_network">السماح للتطبيقات بالوصول إلى مزايا الشبكة المختلفة.</string>
+    <string name="permgroupdesc_accounts">الوصول إلى الحسابات المتاحة.</string>
+    <string name="permgroupdesc_storage" product="nosdcard">الدخول على وحدة تخزين USB. </string>
+    <string name="permgroupdesc_storage" product="default">الدخول على وحدة تخزين USB. </string>
+    <string name="permdesc_reorderTasks">السماح للتطبيقات بنقل المهام إلى المقدمة والخلفية. وقد تجبر التطبيقات الضارة نفسها على المقدمة دون سيطرتك.</string>
+    <string name="permdesc_forceBack">السماح للتطبيقات بإجبار الأنشطة في المقدمة على الإغلاق والرجوع للخلف. فلا ينبغي مطلقًا أن تحتاج التطبيقات العادية لذلك.</string>
+    <string name="permdesc_setAnimationScale">السماح للتطبيقات بتغيير السرعة العامة للرسوم المتحركة (رسوم متحركة أسرع أو أبطأ) في أي وقت.</string>
+    <string name="permdesc_injectEvents">السماح للتطبيقات بتوفير أحداث إدخالاتها الخاصة (ضغطات المفاتيح وما إلى ذلك) إلى التطبيقات الأخرى. وقد تستخدم التطبيقات الضارة ذلك للتحكم في هاتفك.</string>
+    <string name="permdesc_setOrientation">السماح للتطبيقات بتغيير دوران الشاشة في أي وقت. فلا ينبغي مطلقًا أن تحتاج التطبيقات العادية لذلك.</string>
+    <string name="permdesc_persistentActivity">السماح للتطبيقات بجعل أجزاء منها دائمة، مما يمنع النظام من استخدامها للتطبيقات الأخرى.</string>
+    <string name="permdesc_deletePackages">السماح للتطبيقات بحذف باقات Android. وقد تستخدم التطبيقات الضارة ذلك لحذف التطبيقات المهمة.</string>
+    <string name="permdesc_clearAppUserData">السماح للتطبيقات بمسح بيانات المستخدم.</string>
+    <string name="permdesc_deleteCacheFiles">السماح للتطبيقات بحذف ملفات ذاكرة التخزين المؤقت.</string>
+    <string name="permdesc_installPackages">السماح للتطبيقات بتثبيت باقات Android الجديدة أو المُحدثة. وقد تستخدم التطبيقات الضارة ذلك لإضافة تطبيقات جديدة بأذونات قوية على نحو تعسفي.</string>
+    <string name="permdesc_clearAppCache">السماح للتطبيقات بإخلاء ذاكرة تخزين الهاتف من خلال حذف الملفات الموجودة في دليل ذاكرة التخزين المؤقت للتطبيقات. وعادةً ما يكون الوصول مقتصرًا للغاية على عمليات النظام.</string>
+    <string name="permdesc_movePackage">السماح للتطبيقات بنقل موارد التطبيقات من الوسائط الداخلية إلى الخارجية والعكس.</string>
+    <string name="permdesc_diagnostic">السماح للتطبيقات بقراءة أي مورد تملكه مجموعة التشخيصات والكتابة عليه، مثل الملفات في ‎/dev. وقد يؤثر ذلك على استقرار النظام وأمانه. وينبغي استخدام ذلك فقط للتشخيصات الخاصة بالمكونات المادية من قِبل جهة التصنيع أو مشغل الخدمة.</string>
+    <string name="permdesc_changeComponentState">السماح للتطبيقات بتغيير إمكانية تمكين مكون لتطبيق آخر أم لا. وقد تستخدم التطبيقات الضارة ذلك لتعطيل إمكانات مهمة بالهاتف. فيجب توخي الحذر عند الإذن بذلك، فمن المحتمل أن تصبح حالة مكونات التطبيقات غير قابلة للاستخدام أو غير ثابتة أو غير مستقرة.
+    </string>
+    <string name="permdesc_writeSettings">السماح للتطبيقات بتعديل بيانات إعدادات النظام. وقد تتلف التطبيقات الضارة تهيئة النظام خاصتك.</string>
+    <string name="permdesc_writeSecureSettings">السماح للتطبيقات بتعديل بيانات الإعدادات الآمنة للنظام. وهذا غير مخصص للاستخدام بواسطة التطبيقات العادية.</string>
+    <string name="permdesc_writeGservices">السماح للتطبيقات بتعديل خريطة خدمات Google.  وهذا غير مخصص للاستخدام بواسطة التطبيقات العادية.</string>
+    <string name="permdesc_readContacts">السماح للتطبيقات بقراءة جميع بيانات الاتصال (العنوان) المخزنة على هاتفك. وقد تستخدم التطبيقات الضارة ذلك لإرسال بياناتك إلى الآخرين.</string>
+    <string name="permdesc_writeContacts">السماح للتطبيقات بتعديل بيانات الاتصال (العنوان) المخزنة على هاتفك. وقد تستخدم التطبيقات الضارة ذلك لمسح بيانات الاتصال خاصتك أو تعديلها.</string>
+    <string name="permdesc_readCalendar">السماح للتطبيقات بقراءة جميع أحداث التقويم المخزنة على هاتفك. وقد تستخدم التطبيقات الضارة ذلك لإرسال أحداث تقويمك إلى الآخرين.</string>
+    <string name="permlab_writeCalendar">إضافة أو تعديل أحداث التقويم وإرسال بريد إلكتروني إلى الضيوف</string>
+    <string name="permdesc_writeCalendar">السماح للتطبيقات بإضافة أو تغيير الأحداث في تقويمك، والتي قد ترسل رسائل بريد إلكتروني إلى الضيوف. وقد تستخدم التطبيقات الضارة ذلك لمسح أو تعديل أحداث تقويمك أو لإرسال بريد إلكتروني إلى الضيوف.</string>
+    <string name="permlab_accessLocationExtraCommands">الوصول إلى أوامر مزوّد الموقع الإضافية</string>
+    <string name="permdesc_accessLocationExtraCommands">الوصول إلى أوامر مزوّد الموقع الإضافية. وقد تستخدم التطبيقات الضارة ذلك للتداخل مع عملية تشغيل نظام تحديد المواقع العالمي (GPS) أو مصادر المواقع الأخرى.</string>
+    <string name="permdesc_accessFineLocation">الوصول إلى مصادر المواقع الجيدة، مثل نظام تحديد المواقع العالمي، على الهاتف، حيثما توفر ذلك. وقد تستخدم التطبيقات الضارة ذلك لتحديد مكانك، كما قد تستنزف المزيد من طاقة البطارية.</string>
+    <string name="permdesc_accessCoarseLocation">الوصول إلى مصادر الموقع المهمة، مثل قاعدة بيانات الشبكة الخلوية، لتحديد موقع تقريبي للهاتف، حيثما توفر ذلك. وقد تستخدم التطبيقات الضارة ذلك لتحديد مكانك تقريبًا.</string>
+    <string name="permlab_accessSurfaceFlinger">الوصول إلى SurfaceFlinger</string>
+    <string name="permlab_accessUsb">الوصول إلى أجهزة USB</string>
+    <string name="permlab_checkinProperties">خصائص تسجيل الوصول</string>
+    <string name="permdesc_wakeLock">السماح للتطبيقات بمنع الهاتف من الدخول في وضع السكون.</string>
+    <string name="permdesc_masterClear">السماح للتطبيقات بإعادة الضبط التامة للنظام على إعدادات المصنع الافتراضية، مما يؤدي إلى مسح جميع البيانات والتهيئة والتطبيقات المُثبتة.</string>
+    <string name="permdesc_setTime">السماح للتطبيقات بتغيير توقيت ساعة الهاتف.</string>
+    <string name="permdesc_setTimeZone">السماح للتطبيقات بتغيير المنطقة الزمنية الهاتف.</string>
+    <string name="permlab_accountManagerService">العمل كخدمة مدير الحسابات</string>
+    <string name="permdesc_getAccounts">السماح للتطبيقات بالحصول على لائحة بالحسابات المعروفة للهاتف.</string>
+    <string name="permlab_authenticateAccounts">العمل كالمُصدِّق على الحسابات</string>
+    <string name="permdesc_writeApnSettings">السماح للتطبيقات بتعديل إعدادات اسم نقطة الوصول (APN)، مثل بروكسي ومنفذ أي اسم نقطة وصول (APN).</string>
+    <string name="permdesc_changeNetworkState">السماح للتطبيقات بتغيير حالة اتصال الشبكة.</string>
+    <string name="permdesc_changeTetherState">السماح للتطبيقات بتغيير حالة اتصال الشبكة القائم.</string>
+    <string name="permdesc_changeBackgroundDataSetting">السماح للتطبيقات بتغيير إعداد استخدام بيانات الخلفية.</string>
+    <string name="permdesc_changeWifiState">السماح للتطبيقات بالاتصال بنقاط وصول Wi-Fi وقطع الاتصال بها، وبإجراء تغييرات على شبكات Wi-Fi المُهيأة.</string>
+    <string name="permlab_changeWifiMulticastState">السماح باستقبال بث Wi-Fi المتعدد</string>
+    <string name="permdesc_bluetoothAdmin">السماح للتطبيقات بتهيئة هاتف Bluetooth المحلي، وباكتشاف الأجهزة البعيدة والإقران معها.</string>
+    <string name="permdesc_nfc">السماح للتطبيقات بالاتصال بالبطاقات التعريفية والبطاقات والقارئات الخاصة باتصالات المجال القريب (NFC).</string>
+    <string name="permdesc_disableKeyguard">السماح للتطبيقات بتعطيل قفل المفاتيح وأي نظام أمان كلمة مرور مصاحب. والنمط الصحيح لذلك هو تعطيل الهاتف لقفل المفاتيح عند تلقي مكالمة هاتفية واردة، ثم إعادة تمكين قفل المفاتيح عند انتهاء المكالمة.</string>
+    <string name="permdesc_writeSyncSettings">السماح للتطبيقات بتعديل إعدادات المزامنة، مثل تمكين المزامنة لجهات الاتصال أم لا.</string>
+    <string name="permdesc_subscribedFeedsRead">السماح للتطبيقات بالحصول على تفاصيل حول المواجز المتزامنة حاليًا.</string>
+    <string name="permdesc_subscribedFeedsWrite">السماح للتطبيقات بتعديل المواجز المتزامنة حاليًا خاصتك. وقد يسمح ذلك للتطبيقات الضارة بتغيير المواجز المتزامنة خاصتك.</string>
+    <string name="permdesc_readDictionary">السماح للتطبيقات بقراءة أي كلمات وأسماء وعبارات خاصة قد يكون المستخدم قام بتخزينها في قاموس المستخدم.</string>
+    <string name="permlab_cache_filesystem">الوصول إلى نظام ملفات ذاكرة التخزين المؤقت</string>
+    <string name="permdesc_cache_filesystem">السماح للتطبيقات بقراءة نظام ملفات ذاكرة التخزين المؤقت والكتابة عليها.</string>
+    <string name="contact_status_update_attribution_with_date"><xliff:g example="3 hours ago" id="date">%1$s</xliff:g> عبر <xliff:g example="Google Talk" id="source">%2$s</xliff:g></string>
+    <string name="lockscreen_carrier_default">(لا توجد خدمة)</string>
+
+
+    <string name="lockscreen_glogin_forgot_pattern">فتح قفل الحساب</string>
+    <string name="permdesc_writeHistoryBookmarks">السماح للتطبيقات بتعديل محفوظات المتصفح وإشاراته المرجعية المخزنة على هاتفك. وقد تستخدم التطبيقات الضارة ذلك لمسح بيانات المتصفح أو تعديلها.</string>
+    <string name="permdesc_writeGeolocationPermissions">السماح للتطبيقات بتعديل أذونات الموقع الجغرافي للمتصفح. وقد تستخدم التطبيقات الضارة ذلك للسماح بإرسال معلومات الموقع إلى مواقع الويب التعسفية.</string>
+    <string name="oneMonthDurationPast">منذ 1 شهر</string>
+    <plurals name="num_seconds_ago">
+        <item quantity="one">منذ 1 ثانية</item>
+        <item quantity="other">منذ <xliff:g id="count">%d</xliff:g> ثانية</item>
+    </plurals>
+
+    <plurals name="num_minutes_ago">
+        <item quantity="one">منذ 1 دقيقة</item>
+        <item quantity="other">منذ <xliff:g id="count">%d</xliff:g> دقائق</item>
+    </plurals>
+
+    <plurals name="num_hours_ago">
+        <item quantity="one">منذ 1 ساعة</item>
+        <item quantity="other">منذ <xliff:g id="count">%d</xliff:g> ساعة</item>
+    </plurals>
+
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="one">منذ 1 ثانية</item>
+        <item quantity="other">منذ <xliff:g id="count">%d</xliff:g> ثوانٍ</item>
+    </plurals>
+
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="one">منذ 1 دقيقة</item>
+        <item quantity="other">منذ <xliff:g id="count">%d</xliff:g> دقيقة</item>
+    </plurals>
+
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="one">منذ 1 ساعة</item>
+        <item quantity="other">منذ <xliff:g id="count">%d</xliff:g> ساعة</item>
+    </plurals>
+
+    <string name="noon">"الظهر"</string>
+    <string name="Noon">"الظهر"</string>
+    <string name="midnight">"منتصف الليل"</string>
+    <string name="Midnight">"منتصف الليل"</string>
+
+    <string name="anr_activity_application">النشاط <xliff:g id="activity">%1$s</xliff:g> (في تطبيق <xliff:g id="application">%2$s</xliff:g>) لا يستجيب.</string>
+    <string name="anr_activity_process">النشاط <xliff:g id="activity">%1$s</xliff:g> (في عملية <xliff:g id="process">%2$s</xliff:g>) لا يستجيب.</string>
+    <string name="launch_warning_replace"><xliff:g id="app_name">%1$s</xliff:g> يعمل حاليًا.</string>
+    <string name="launch_warning_original">تم تشغيل <xliff:g id="app_name">%1$s</xliff:g> من البداية.</string>
+    <string name="heavy_weight_notification"><xliff:g id="app">%1$s</xliff:g> قيد التشغيل</string>
+    <string name="volume_alarm">مستوى صوت المنبه</string>
+    <string name="sms_control_message">يتم الآن إرسال عدد كبير من الرسائل النصية (SMS). اختر \"OK\" (موافق) للمتابعة، أو "\Cancel"\ (إلغاء) لإيقاف الإرسال.</string>
+    <string name="grant_permissions_header_text">طلب وصول</string>
+    <string name="accessibility_binding_label">الوصول</string>
+ 
+    <string name="VideoView_error_text_bad_file">".ملف فاسد، لا يمكن تشغيل هذا الفيديو"</string>
+    <string name="VideoView_error_text_cannot_connect_to_server">".لا يمكن الاتصال بجهاز الخادم"</string>
+    <string name="media_controller_connecting">"جاري الاتصال"</string>
+    <string name="VideoView_error_text_drm_not_supported">"حماية وفقاً لإدارة الحقوق الرقمية، لا يمكن تشغيل هذا الفيديو."</string>
+    <string name="free_memory_btn">"قم بمسح بعض الأشياء من الذاكرة" </string>
+    <string name="media_controller_live">"مباشر"</string>
+    <string name="free_memory_text">"ذاكرة غير كافية. يُرجى مسح بعض الملفات."</string>
+    <string name="VideoView_error_text_type_not_supported">".نوع ملف الوسائط غير مدعوم"</string>
+    <string name="media_controller_playing">"جاري التشغيل"</string>
+    <string name="media_controller_weak_signal">"إشارة ضعيفة"</string>
+    <string name="missed_call"> %d مكالمة لم يتم الرد عليها</string>
+    <string name="missed_calls">%d مكالمات لم يتم الرد عليها</string>
+    <string name="retries_left">متبقي:%d</string>
+    <string name="unread_message">%d رسالة لم تتم قراءتها </string>
+    <string name="unread_messages">%d رسائل لم تتم قراءتها </string>
+    <string name="battery_status_text_percent_format">%d%%</string>
+    <string name="battery_low_percent_format">%d%% 
+متبقية أو أقل. </string>
+    <string name="pin_length_indicate">(4-8 رقم)</string>
+    <string name="puk_length_indicate">(8 أرقام)</string>
+    <string name="one_retry_left">عدد 1 محاولة متبقية</string>
+    <string name="permdesc_readOwnerData">يسمح للتطبيق بقراءة 
+     بيانات المالك المخزنة على هاتفك. يمكن أن تستغل التطبيقات المؤذية
+     تلك البيانات لقراءة بيانات مالك الهاتف.  </string>
+    <string name="permdesc_writeOwnerData">يسمح للتطبيق بتعديل 
+     بيانات المالك المخزنة على هاتفك. يمكن أن تستغل التطبيقات المؤذية 
+     تلك البيانات لمسح أو تعديل بيانات المالك. </string>
+    <string name="permdesc_sdcardWrite">يسمح للتطبيق بالكتابة على وحدة التخزين USB. </string>
+    <string name="permdesc_receiveCbSms">يسمح للتطبيق باستقبال 
+     ومعالجة الرسائل النصية القصيرة CB. ويمكن أن تقوم التطبيقات المؤذية بمراقبة 
+رسائلك أو مسحها بدون أن تراها. </string>
+    <string name="permdesc_receiveDmRegisterSms">يسمح للتطبيق باستقبال 
+     ومعالجة الرسائل النصية القصيرة لتسجيل إدارة جهاز الهاتف. ولا ينبغي لأي تطبيق بخلاف برامج إدارة 
+     الجهاز استخدام هذا</string>
+    <string name="oper_long_99999">أندرويد </string>
+    <string name="extmedia_format_message">هل تريد إعادة تهيئة وحدة التخزين USB، ومسح كل الملفات المخزنة عليها؟ لن تتمكن من عكس هذا الإجراء! </string>
+    <string name="battery_low_why">استخدام البطارية.</string>
+    <string name="usb_storage_stop_message">قبل إيقاف وحدة التخزين USB، تأكد من أنك قد فصلت ("أخرجت") وحدة التخزين USB الخاصة ببرنامج أندرويد  من جهاز الكمبيوتر. </string>
+    <string name="ext_media_nofs_notification_title">وحدة تخزين USB فارغة</string>
+    <string name="media_controller_buffering">جاري التخزين المؤقت %d\u200f%%...</string>
+    <string name="battery_status_charging">جار الشحن/u2026</string>
+    <string name="checkPwdLen">تحقق من أن كلمة المرور مكونة من 4 إلى 8 أرقام. </string>
+    <string name="oper_long_46000">CMCC</string>
+    <string name="oper_long_46001">China Unicom</string>
+    <string name="oper_short_46692">Chunghwa</string>
+    <string name="oper_long_46692">Chunghwa Telecom</string>
+    <string name="status_bar_clear_all_button">مسح</string>
+    <string name="keyguard_password_Confirm_pin_code">تأكيد رقم التعريف الشخصي</string>
+    <string name="serviceUnknown">هناك مشكلة في الاتصال، أو أن كود واجهة المستخدم غير صحيح.</string>
+    <string name="copyAll">نسخ الكل</string>
+    <string name="oper_short_46001">CU-GSM</string>
+    <string name="cutAll">قطع الكل</string>
+    <string name="ext_media_unmountable_notification_title">وحدة تخزين USB غير سليمة</string>
+    <string name="keyguard_password_enter_new_pin_code">أدخل رقم التعريف الشخصي الجديد</string>
+    <string name="keyguard_pinword_enter_pinword_code">أدخل رقم التعريف الشخصي للفتح</string>
+    <string name="keyguard_password_enter_puk_code">أدخل مفتاح فك الإقفال الشخصي </string>
+    <string name="keyguard_password_enter_sim1_pin_code">أدخل رقم التعريف الشخصي الخاص بشريحة البطاقة رقم 1</string>
+    <string name="keyguard_password_enter_sim1_puk_code">أدخل مفتاح الإقفال الشخصي الخاص بشريحة البطاقة رقم 1</string>
+    <string name="keyguard_password_enter_sim2_pin_code">أدخل رقم التعريف الشخصي الخاص بشريحة البطاقة رقم 2</string>
+    <string name="keyguard_password_enter_sim2_puk_code">أدخل مفتاح الإقفال الشخصي الخاص بشريحة البطاقة رقم 2</string>
+    <string name="sim_permanently_locked">تم إدخال مفتاح الإقفال الشخصي أكثر من 10 مرات، وقد تم إقفال شريحة البطاقة نهائياً. </string>
+    <string name="progress_erasing">جاري مسح وحدة التخزين USB...</string>
+    <string name="callBarringFailMmi">لم يتم حظر المكالمات.</string>
+    <string name="fdnFailMmi">لم يتم التحقق من رقم الاتصال الثابت. </string>
+    <string name="format_error">لم يتم مسح البيانات الموجودة على وحدة التخزين USB.</string>
+    <string name="oper_long_46601">Far EasTone</string>
+    <string name="oper_short_46601">FET</string>
+    <string name="volume_fm">مستوى تضمين التردد (FM)</string>
+    <string name="extmedia_format_title">إعادة تهيئة وحدة التخزين USB</string>
+    <string name="keyguard_password_wrong_puk_code">رقم الإقفال الشخصي غير صحيح!</string>
+    <string name="keyguard_password_wrong_sim1_pin_code">رقم التعريف الشخصي لشريحة البطاقة رقم 1 غير صحيح!</string>
+    <string name="keyguard_password_wrong_sim2_pin_code">رقم التعريف الشخصي لشريحة البطاقة رقم 2 غير صحيح!</string>
+    <string name="invalid_imei">رقم IMEI غير صحيح</string>
+    <string name="music_library">مكتبة</string>
+    <string name="contact_widget_loading">جاري التحميل...</string>
+    <string name="volume_matv">حجم التليفزيون المحمول</string>
+    <string name="permlab_sdcardWrite">تعديل/حذف محتويات وحدة التخزين USB </string>
+    <string name="no_favorite_contacts">لا يوجد أسماء مفضلة </string>
+    <string name="status_bar_no_notifications_title">لا توجد إخطارات</string>
+    <string name="music_no_songs">لا توجد أغاني</string>
+    <string name="cfServiceNotForwarded">لم يتم الإرسال</string>
+    <string name="status_bar_latest_events_title">الإخطارات</string>
+    <string name="status_bar_ongoing_events_title">مستمر</string>
+    <string name="lockscreen_password_error">خطأ في كلمة المرور، يُرجى إعادة المحاولة</string>
+    <string name="lockscreen_pinword_error">خطأ في رقم التعريف الشخصي، يُرجى إعادة المحاولة</string>
+    <string name="puk1Blocked">تم حجب رقم التعريف الشخصي.</string>
+    <string name="Pin2Mmi">تغيير رقم التعريف الشخصي 2</string>
+    <string name="puk2Blocked">تم حجب رقم التعريف الشخصي 2.</string>
+    <string name="music_play">تشغيل</string>
+    <string name="battery_low_title">يُرجى توصيل الشاحن</string>
+    <string name="pinNotEnabled">يُرجى تشغيل رقم التعريف الشخصي قبل تغييره. </string>
+    <string name="mem_low_title">يُرجى توفير مكان على الذاكرة</string>
+    <string name="choose_gprs_mode">يُرجى اختيار وسيلة اتصال للبيانات</string>
+    <string name="choose_bootup_mode">اختر شريحة البطاقة</string>
+    <string name="ext_media_checking_notification_title">تجهيز وحدة التخزين USB</string>
+    <string name="lockscreen_sim_puk_locked_message_short">إقفال رقم الإقفال الشخصي</string>
+    <string name="permlab_readOwnerData">قراءة بيانات المالك</string>
+    <string name="permlab_receiveCbSms">استقبال الرسائل النصية القصيرة التي يتم بثها</string>
+    <string name="permlab_receiveDmRegisterSms">استقبال رسائل تسجيل إدارة الجهاز </string>
+    <string name="ext_media_nomedia_notification_title">وحدة التخزين USB التي تم فصلها</string>
+    <string name="same_imei">رقم IMEI نفسه</string>
+    <string name="ext_media_nofs_notification_message">وحدة التخزين USB فارغة أو أن نظام الملفات لا يدعمها. </string>
+    <string name="ext_media_unmountable_notification_message">لقد تعرضت وحدة التخزين USB للتلف. قد تحتاج إلى إعادة تهيئتها مرة أخرى. </string>
+    <string name="media_checking">يتم التحقق الآن من وحدة التخزين USB. </string>
+    <string name="media_shared">يستخدم الكمبيوتر حالياً وحدة التخزين USB. </string>
+    <string name="ext_media_nomedia_notification_message">تم فصل وحدة التخزين USB. أدخل وسائط أخرى. </string>
+    <string name="ext_media_safe_unmount_notification_title">من الممكن فصل وحدة التخزين USB بأمان</string>
+    <string name="ext_media_badremoval_notification_title">تم فصل وحدة التخزين USB بشكل غير متوقع </string>
+    <string name="serviceProvisioned">خدمة مشروطة. </string>
+    <string name="lockscreen_sim1_puk_locked_message">شريحة البطاقة رقم 1 مغلقة برقم الإقفال الشخصي. </string>
+    <string name="lockscreen_sim2_puk_locked_message">شريحة البطاقة رقم 2 مغلقة برقم الإقفال الشخصي. </string>
+    <string name="sim_close">إغلاق شريحة البطاقة</string>
+    <string name="lockscreen_sim_locked_message_short">إقفال شريحة البطاقة</string>
+    <string name="simlock_slot_locked_message">تم قفل الفتحة بشكل دائم</string>
+    <string name="simlock_entersimmelock">"أدخل قفل SIM ME"</string>
+    <string name="slot_id">فتحة <xliff:g id="number">%d</xliff:g>:</string>
+    <string name="new_simcard">بطاقة SIM جديدة</string>
+    <string name="lockscreen_missing_sim_dialog_message">"بطاقة SIM غير متصلة، لذا يرجى التأكد من اتصال بطاقة SIM بطريقة مناسبة."</string>
+    <string name="RestrictedChangedTitle_SIM1">تغيير الدخول المقيد على شريحة البطاقة 1</string>
+    <string name="stopSelectingText">إيقاف اختيار النصوص</string>
+    <string name="oper_long_46697">Taiwan Mobile</string>
+    <string name="aerr_application_lowmem">التطبيق %1$s 
+       لقد توقفت(معالجة %2$s)  بشكل غير متوقع. وقد يتسبب هذا في تقليل مساحة الذاكرة المتاحة. يُرجى مسح بعض الملفات لتوفير مساحة على الذاكرة ثم حاول مرة أخرى. </string>
+    <string name="battery_low_subtitle">مستوى شحن البطارية بدأ في الانخفاض: </string>
+    <string name="badPin2">رقم التعريف الشخصي 2 القديم الذي أدخلته غير صحيح. </string>
+    <string name="aerr_process_lowmem">لقد توقفت معالجة %1$s  بشكل
+    غير متوقع. وقد يتسبب هذا في تقليل مساحة الذاكرة المتاحة. يُرجى مسح بعض الملفات لتوفير مساحة على الذاكرة ثم حاول مرة أخرى. </string>
+    <string name="badPuk2">رقم الإقفال الشخصي 2 الذي أدخلته غير صحيح. </string>
+    <string name="usb_storage_error_message">هناك مشكلة تتعلق باستخدام وحدة التخزين عبر وحدة التخزين USB. </string>
+    <string name="oper_short_46697">TWN</string>
+    <string name="invalidPuk">أدخل 8 أرقام.</string>
+    <string name="needPuk2">ادخل رقم الإقفال الشخصي 2 للفتح. </string>
+    <string name="unable_launch_the_ap">غير قادر على تشغيل البرنامج. </string>
+    <string name="PukMmi">فك الإغلاق برقم التعريف الشخصي</string>
+    <string name="Puk2Mmi">فك الإغلاق برقم التعريف الشخصي 2</string>
+    <string name="music_no_artist">اسم فنان غير معروف</string>
+    <string name="ext_media_badremoval_notification_message">أخرج وحدة التخزين USB قبل الفصل لتجنب فقد البيانات.</string>
+    <string name="progress_unmounting">جاري فصل وحدة التخزين USB...</string>
+    <string name="serviceClassVideo">فيديو</string>
+    <string name="permlab_writeOwnerData">كتابة بيانات المالك</string>
+    <string name="ext_media_safe_unmount_notification_message">يمكنك فصل وحدة التخزين USB بأمان. </string>
+    <string name="usb_storage_message">لقد وصلت هاتفك بجهاز الكمبيوتر عبر مدخل USB. اختر الزر الموجود بالأسفل إذا كنت تريد نسخ الملفات بين جهاز الكمبيوتر ووحدة التخزين USB الخاصة بنظام أندرويد . </string>
+
+    <string name="redo">إعادة</string>
+    <string name="undo">تراجع</string>
+    <string name="undoAll">تراجع عن الكل</string>
+
+    <string name="keyguard_alwaysask">السؤال دائمًا</string>
+    <string name="change_settings">تغيير</string>
+    <string name="keyguard_data">اتصال البيانات:</string>
+    <string name="sim_card_removed">تم إزالة بطاقة SIM.</string>
+    <string name="sim_card_swapped">تم تبديل بطاقة SIM.</string>
+    <string name="delete">حذف</string>
+    <string name="dismiss">رفض</string>
+    <string name="keyguard_data_none">إيقاف</string>
+    <string name="keyguard_code_donnot_mismatch">غير متطابق.</string>
+    <string name="edit">تحرير</string>
+    <string name="for_text">مع</string>
+    <string name="keyguard_code_length_prompt">أدخل 4-8 أرقام.</string>
+    <string name="keyguard_internal_call">مكالمة عبر الإنترنت</string>
+    <string name="keyguard_close">إغلاق</string>
+    <string name="new_sim">بطاقة SIM جديدة</string>
+    <string name="change_setting_for_onenewsim">تم اكتشاف بطاقة SIM جديدة. الآن إعدادات SIM الافتراضية هي:</string>
+    <string name="change_setting_for_twonewsim">تم اكتشاف بطاقة SIM جديدة. الآن إعدادات SIM الافتراضية هي:</string>
+    <string name="default_sim_setting_prompt"> الآن إعدادات SIM الافتراضية هي:</string>
+    <string name="sim_card_changed_dialog_title">تم تغيير بطاقة SIM</string>
+    <string name="keyguard_not_set">غير معين</string>
+    <string name="keyguard_sms">SMS:</string>
+    <string name="network_searching">بحث عن شبكة جديدة</string>
+    <string name="keyguard_voice_call">مكالمة صوتية:</string>
+    <string name="keyguard_video_call">مكالمة فيديو:</string>
+    <string name="keyguard_wrong_code_input">رمز خاطئ.</string>
+    
+    <string name="for_first_simcard">لبطاقة SIM الأولى</string>
+    <string name="for_second_simcard">لبطاقة SIM الثانية</string>
+    <string name="for_third_simcard">خاص ببطاقة SIM الثالثة</string>
+    <string name="for_fourth_simcard">خاص ببطاقة SIM الرابعة</string>
+     <string name="missed_call_display">مكالمة فائتة:</string>
+   <string name="missed_message_display">رسالة فائتة:</string>
+    <!-- added new string for SearchDialog, used to indicate WikiPedia--> 
+    <string name="wikiPediaName">wikipedia_ar</string>
+    
+    <string name="ext_media_checking_notification_title_sd2">إعداد بطاقة SD2</string>
+    
+    <!-- add for drm start -->
+    <string name="drm_protection_status">وضع الحماية:</string>
+    <string name="drm_can_forward">يمكن إعادة التوجيه.</string>
+    <string name="drm_can_not_forward">لا يمكن إعادة التوجيه.</string>
+    <string name="drm_no_limitation">لا يوجد قيد.</string>
+    <string name="drm_no_license">لا يوجد ترخيص DRM.</string>
+    <string name="drm_begin">البداية:</string>
+    <string name="drm_end">النهاية:</string>
+    <string name="drm_use_left">العدد المتبقي:</string>
+    <string name="drm_protectioninfo_renew">تجديد</string>
+    <string name="drm_protectioninfo_title">معلومات الحماية</string>
+    <string name="drm_licenseacquisition_title">الحصول على ترخيص DRM</string>
+    <string name="drm_licenseacquisition_message">لا يوجد ترخيص DRM بخصوص %1$s. يمكن الضغط على زر "تجديد" للحصول على ترخيص DRM.</string>
+    <string name="drm_toast_license_expired">انتهت صلاحية ترخيص DRM.</string>
+    <string name="drm_forwardforbidden_title">إعادة التوجيه محظور</string>
+    <string name="drm_forwardforbidden_message">لا يمكن إعادة توجيه بعض الملفات المحمية.</string>
+    <string name="drm_license_install_success">تم تثبيت ترخيص DRM بنجاح.</string>
+    <string name="drm_license_install_fail">فشل تثبيت ترخيص DRM.</string>
+    <string name="drm_secure_timer_title">ساعة أمان ترخيص DRM غير صالح</string>
+    <string name="drm_secure_timer_message">لا يمكن استخدام ملفات DRM المحمية. يرجى التأكد من توافر بيانات الاتصال.</string>
+    <string name="drm_consume_title">استهلاك حقوق DRM</string>
+    <string name="drm_consume_message">سيؤدي إجرائك إلى استهلاك حقوق DRM.</string>
+    <!-- add for drm end -->
+        
+    <string name="recip_unsupport_operator">لا يدعم RecipientsView عمليات الحروف، يرجى استخدام شريط الأدوات للتحقق من المستلمين.</string>
+    <string name="recip_unsupport_selection">معذرة، لا يمكنك تحريك علامة الإقحام إلى البداية عندما يكون هناك مستلمين في RecipientsView.</string>  
+
+    <!--     add for alarm boot           -->
+    <string name="default_label" >"المنبه"</string>
+    <string name="dismiss_power_on">رفض وتشغيل الطاقة</string>
+    <string name="dismiss_power_off">رفض وإيقاف تشغيل الطاقة</string>
+    <string name="alarm_alert_snooze_text" >"غفوة"</string>
+    <string name="never" >"مطلقًا"</string>
+    <string name="day_concat" >"، "</string>
+    <string name="every_day" >"كل يوم"</string>
+   <!-- <string name="repeat_weekdays">Weekdays</string> -->
+
+    <string name="usb_ums_notification_title">تم التوصيل كتخزين USB</string>
+    <string name="usb_charging_notification_title">شحن USB فقط</string>
+
+    <string name="sim_missing_slot1">الفتحة 1: لم يتم اكتشاف بطاقة SIM</string>  
+    <string name="sim_missing_slot2">الفتحة 2: لم يتم اكتشاف بطاقة SIM</string>  
+    <string name="sim_missing">لم يتم اكتشاف بطاقة SIM</string>  
+    <string name="sim_missing_detail">يُرجى التحقق من جاهزية بطاقة SIM</string> 
+
+    <!-- add for webview find -->
+    <string name="find_previous">السابق</string>
+    <string name="find_next">التالي</string>
+
+    <string name="tethered_notification_message_for_hotspot">
+        <xliff:g id="connected">%1$d</xliff:g> متصل, 
+        <xliff:g id="blocked">%2$d</xliff:g> محظور
+    </string>
+    <string name="tethered_notification_message_bandwidth_set">تم تعيين النطاق الترددي</string>
+    <string name="default_wallpaper_name">"افتراضي"</string> 
+    <string name="invalid_sim_title">بطاقة SIM غير صالحة</string>
+    <string name="invalid_sim_message">لم يتم التعرف على بطاقة UIM/SIM</string>
+    <!-- voice unlock start -->
+    <string name="voice_unlock_service_error">خطأ في خدمة إلغاء القفل بالأوامر الصوتية.</string>
+    <string name="voice_unlock_password_wrong">نأسف؛ يتعذر التعرف على صوتك.</string>
+    <string name="voice_unlock_noisy">يتعذر \سماع صوتك بوضوح لوجود ضوضاء.</string>
+    <string name="voice_unlock_weak">يتعذر سماع صوتك.</string>
+    <string name="voice_unlock_media_playing">يتم تعطيل خدمة إلغاء القفل بالأوامر الصوتية عند تشغيل الوسائط.</string>
+    <string name="voiceunlock_multiple_failures">تم تجاوز الحد الأقصى لمحاولات إلغاء القفل بالأوامر الصوتية</string>
+    <!-- voice unlock end -->
+    
+    <string name="wifi_display_bt_hdmi_off_wfd_on">سيتم إيقاف تشغيل Bluetooth وHDMI عند تشغيل العرض اللاسلكي. هل ترغب في الاستمرار؟</string>
+    <string name="wifi_display_wfd_off_hdmi_on">سيتم إيقاف تشغيل العرض اللاسلكي عند تشغيل HDMI. هل ترغب في الاستمرار؟</string>
+    <string name="wifi_display_wfd_off_bt_on">سيتم إيقاف تشغيل العرض اللاسلكي عند تشغيل Bluetooth. هل ترغب في الاستمرار؟</string> 
+    <string name="wifi_display_wifi_p2p_disconnect_wfd_connect">سيتم قطع اتصال شبكة Wi-Fi المباشر عند الاتصال بجهاز العرض اللاسلكي. هل ترغب في الاستمرار؟</string> 
+    <string name="wifi_display_unstable_connection">اتصال غير ثابت</string>
+    <string name="wifi_display_connection_is_not_steady">الاتصال الحالي للعرض اللاسلكي غير ثابت.</string>
+    <string name="wifi_display_unstable_suggestion">الاتصال الحالي للعرض اللاسلكي غير ثابت يرجى الاقتراب من جهاز العرض.</string>
+    <string name="wifi_display_reconnect">إعادة الاتصال</string> 
+    <string name="wifi_display_disconnect_then_reconnect">تم قطع اتصال عرض النظام اللاسلكي. هل ترغب في إعادة الاتصال؟</string> 
+    <string name="wifi_display_disconnected">تم قطع اتصال عرض النظام اللاسلكي.</string>    
+    <string name="wifi_wps_failed_overlap">"تم اكتشاف جلسة WPS أخرى، الرجاء إعادة المحاولة خلال بضع دقائق."</string>
+    <string name="wifi_display_wfd_and_wifi_are_turned_on">تم تشغيل الشاشة اللاسلكية واتصال Wi-Fi.</string>
+    <string name="wifi_display_sound_path_reminder">لن يتم تشغيل صوت الوسائط المتعددة من سماعة الرأس.</string>  
+    <string name="wifi_display_change_resolution_reminder">سيؤدي تغيير الدقة إلى إعادة توصيل الشاشة اللاسلكية تلقائياً.</string>  
+    <string name="wifi_display_do_not_remind_again">لا تذكرني ثانية.</string>
+    <string name="wifi_display_wifi_ap_affects_quality">يمكن أن تؤثر نقطة وصول Wi-Fi الحالية على جودة العرض اللاسلكي. </string>
+    
+    <!-- Add for AT&T to show toast when pass pin/puk lock -->
+    <string name="pin_pass">قبول الرمز</string>
+    <string name="puk_pass">إلغاء حظر رمز PIN</string>
+    <!-- MountService start -->
+    <string name="sdcard_ready_title">بطاقة SD جاهزة</string>
+    <string name="sdcard_select_default_path">هل تريد تغيير قرص التخزين الافتراضي؟</string>
+    <string name="sdcard_default_path_change">تم تغيير قرص الكتابة الافتراضي.</string>
+    <string name="usb_storage_ready_title">وحدة تخزين USB الخارجية جاهزة</string>
+    <!-- MountService end -->
+
+
+    <string name="sd_accessing_swtich_user_title">تبديل المستخدم؟</string>
+    <string name="sd_accessing_swtich_user_message">سيؤدي هذا إلى فقد أو إتلاف كل البيانات غير المحفوظة في حساب المالك.</string>
+
+    <string name="music_pause">وفوف مؤقت</string>
+    <string name="VideoView_error_text_invalid_connection">"اتصال غير صالح. (خطأ 403)"</string>
+    <string name="dm_prompt">تم قفل طرف التوصيل بالفعل</string>
+    <string name="criticallowmessage">ذاكرة تخزين الهاتف ممتلئة، يُرجى حذف الملفات عديمة الفائدة وإلا قد يتم الخروج من التطبيق على نحو غير متوقع</string>
+    <string name="nq_sms_filter_title">مرشح SMS</string>
+    <string name="nq_sms_filter_message">قد تتطلب هذه الرسالة خصم رسوم. هل ترغب في المتابعة؟</string>
+    <string name="nq_sms_filter_yes">"نعم"</string>
+    <string name="nq_sms_filter_no">"لا"</string>
+    <string name="drm_forward_forbidden">لا يمكن إرسال ملف أو أكثر من الملفات المحمية.</string>
+    <string name="wap_push_setting_noti_text">يُرجى النقر للتحديد</string>
+    <string name="url_dialog_choice_title">الرسائل</string>
+    <string name="url_dialog_choice_message">سيتم فتح المتصفح، متابعة؟</string>
+    <string name="deleteApp">إلغاء تحميل التطبيقات</string>
+    <string name="deleteMail">نسخ احتياطي للبريد وتوفير مساحة بالذاكرة</string>
+    <string name="storage_withsd">لا توجد مساحة كافية على ذاكرة تخزين الهاتف. يُرجى توفير بعض المساحة أو تغيير قرص الكتابة الافتراضي من خلال الإعدادات.</string>
+    <string name="storage_withoutsd">لا توجد مساحة كافية على ذاكرة تخزين الهاتف. يُرجى توفير بعض المساحة أو إدخال بطاقة SD.</string>
+    <string name="storage_sd">لا توجد مساحة كافية على بطاقة SD. يُرجى توفير بعض المساحة أو تغيير قرص الكتابة الافتراضي من خلال الإعدادات.</string>
+    <string name="criticallowtitle">لا توجد مساحة كافية</string>
+    <string name="calibration_data">لا توجد معايرة حتى الآن. يرجى تنزيل بيانات المعايرة! وإلا قد يتعذر العثور على الشبكة[المستخدم الداخلي لـ MTK]</string>
+    <string name="invalid_card">بطاقة غير صالحة</string>
+    <string name="usbint_notification_title">تفعيل إنترنت USB</string>
+
+    <string name="hdmi_notification_title">كبل HDMI متصل</string>  
+    <string name="hdmi_notification_content">اضغط لتهيئة HDMI</string>
+    <string name="hdmi_hdvideo_toast">سيتم قطع الاتصال لأن هذه الخاصية لا تستطيع تشغيل فيديو بحجم 4 كيلو بايت.</string>
+
+    <!-- VolumePanel -->
+    <string name="safe_media_volume_warning_title">تحذير</string> 
+    
+    <!-- Low Storage -->
+    <string name="aerr_application_lowstorage">لا توجد مساحة تخزين داخلية، تم إيقاف التطبيق، يرجى تفريغ مساحة وإعادة المحاولة.</string>
+    <string name="aerr_process_lowstorage">لا توجد مساحة تخزين داخلية، تم إيقاف العملية، يرجى تفريغ مساحة وإعادة المحاولة.</string>
+    <string name="low_internal_storage_view_title">لا توجد مساحة تخزين داخلية</string>
+    <string name="deleteMails">حذف رسائل البريد الإلكتروني</string>
+    <string name="low_storage_warning_message">يرجى تفريغ مساحة وإلا فقد لا تعمل بعض التطبيقات ووظائف النظام على نحوٍ جيد.</string>
+    
+    <!-- KK translation task -->
+    <string name="virtual_sim_on_slot1">بطاقة SIM 1 الافتراضية قيد التشغيل</string>
+    <string name="virtual_sim_on_slot2">بطاقة SIM 2 الافتراضية قيد التشغيل</string>
+    <string name="virtual_sim_on_slot3">بطاقة SIM 3 الافتراضية قيد التشغيل</string>
+    <string name="virtual_sim_on_slot4">بطاقة SIM 4 الافتراضية قيد التشغيل</string>
+    <string name="virtual_sim_on">بطاقة SIM الافتراضية قيد التشغيل</string>
+    <string name="RejectCauseTitle">سبب رفض الشبكة</string>
+    <string name="MMRejectCause2">بطاقة SIM غير مشروطة MM #2</string>
+    <string name="MMRejectCause3">بطاقة SIM غير مسموح بها MM #3</string>
+    <string name="MMRejectCause5">فشلت المكالمة MM #5</string>
+    <string name="MMRejectCause6">الهاتف غير مسموح به MM #6</string>
+    <string name="MMRejectCause13">أرقام SOS/مكالمات الطوارئ فقط</string>
+    <string name="keyguard_accessibility_alarm_unlock">تنبيه إيقاف التشغيل</string>
+    <string name="dialog_color_picker">منتقي الألوان</string>
+    <string name="press_color_to_apply">يرجى الضغط على اللون المراد تطبيقه</string>
+    <string name="oper_long_46003">تشاينا تيليكوم</string>
+    <string name="oper_long_99998">Android1</string>
+    <string name="oper_short_46000">CMCC</string>
+    <string name="oper_short_46003">تشاينا تيليكوم</string>
+    <string name="oper_short_99997">AD1</string>
+    <string name="oper_short_99999">AD</string>
+    <string name="RestrictedChangedTitle_SIM2">تم تغيير الوصول المقيد ببطاقة SIM2</string>
+    <string name="keyguard_sim_auto">"تلقائي"</string>
+    <string name="searching_simcard">جار الكشف...</string>
+    <string name="keyguard_domestic_zone_name">"بكين"</string>
+    <string name="lockscreen_pin_too_many_failed_attempts_dialog_message">لقد أدخلت رمز PIN بشكل غير صحيح <xliff:g id="number">%d</xliff:g> مرة. \n\nالرجاء إعادة المحاولة خلال <xliff:g id="number">%d</xliff:g> ثانية.</string>
+    <string name="lockscreen_password_too_many_failed_attempts_dialog_message">لقد أدخلت كلمة المرور بطريقة خاطئة <xliff:g id="number">%d</xliff:g> مرة. \n\nالرجاء إعادة المحاولة خلال <xliff:g id="number">%d</xliff:g> ثانية.</string>
+    <string name="ext_media_checking_notification_title_otg">إعداد وحدة تخزين USB</string>
+    <string name="ext_media_badremoval_notification_title_otg">"تمت إزالة وحدة تخزين USB على غير المتوقع"</string>
+    <string name="ext_media_nomedia_notification_title_otg">"تمت إزالة وحدة تخزين USB"</string>
+    <string name="ext_media_badremoval_notification_message_otg">"إلغاء تركيب وحدة تخزين USB قبل الإزالة لتجنب فقد البيانات."</string>
+    <string name="ext_media_nomedia_notification_message_otg">"تمت إزالة وحدة تخزين USB. أدرج وسائط جديدة."</string>
+    <string name="ext_media_unmountable_notification_title_otg">"وحدة تخزين USB تالفة"</string>
+    <string name="ext_media_unmountable_notification_message_otg">"تلف وحدة تخزين USB. ربما يتوجب عليك إعادة تهيئتها."</string>
+    <string name="ext_media_nofs_notification_title_otg">"وحدة تخزين USB فارغة"</string>
+    <string name="ext_media_nofs_notification_message_otg">"وحدة تخزين USB فارغة أو بها نظام ملفات غير صالح."</string>
+    <string name="ext_media_safe_unmount_notification_title_otg">"يمكنك إزالة وحدة تخزين USB بشكل آمن"</string>
+    <string name="ext_media_safe_unmount_notification_message_otg">"يمكنك إزالة وحدة تخزين USB بشكل آمن."</string>
+    <string name="sim_missing_slot3">الفتحة 3: لم يتم اكتشاف بطاقة SIM</string>
+    <string name="sim_missing_slot4">الفتحة 4 لم يتم اكتشاف بطاقة SIM</string>
+    <string name="sim_missing_slot1_card">الفتحة 1: لم يتم اكتشاف بطاقة</string>
+    <string name="sim_missing_slot2_card">الفتحة 2: لم يتم اكتشاف بطاقة</string>
+    <string name="sim_missing_card">لم يتم اكتشاف بطاقة</string>
+    <string name="sim_missing_detail_card">يُرجى التحقق من جاهزية البطاقة</string>
+    <string name="wap_push_setting_noti_ticker">هل تقبل خدمة الرسائل الدفعية التلقائية أم لا؟</string>
+    <string name="wap_push_setting_noti_title">هل تقبل خدمة الرسائل الدفعية التلقائية أم لا؟</string>
+    <string name="gps_time_sync_fail_str">فشل في الحصول على الموقت المقدم من GPS</string>
+    <string name="alarm_alert_dismiss_text">رفض</string>
+    <string name="description_direction_right">"التمرير إلى اليسار للتجاهل"</string>
+    <string name="description_direction_left">"التمرير إلى اليمين للغفوة"</string>
+    <string name="description_direction_up">"التمرير لأعلى للتجاهل"</string>
+    <string name="description_direction_down">"التمرير لأسفل للغفوة"</string>
+    <string name="voiceui_notify_string">يمكنك قول</string>
+    <string name="voiceui_control_poweroff_alarm">للتحكم في تنبيه إيقاف التشغيل.</string>
+    <string name="voiceui_or">أو</string>
+    <string name="headset_pin_recognition">سماعات الأذن الخاصة بك غير متوافقة مع الهاتف، يرجى تجربة سماعات أخرى</string>
+    <string name="msensor_toast_text">تداخل البوصلة، حرك الهاتف بنفس حركة الشكل رقم 8 لإعادة معايرة البوصلة.</string>
+    <string name="usb_autorun_cdrom_notification_title">تم التوصيل كـ cdrom تلقائي التشغيل</string>
+    <string name="ct_net_name">"CTNET"</string>
+    <string name="ct_wap_name">"CTWAP"</string>
+</resources>

@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.mtk.sanitytest.smstest">
+    <application >
+        <uses-library android:name="android.test.runner" />
+	 <uses-library android:name="com.jayway.android.robotium"/>
+    </application>
+    <instrumentation android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.android.mms"
+        android:label="ReceiveAndReplyMMSTest_GEMINI">
+    </instrumentation>
+    
+    <!--
+    For JUnit report in Hudson CI.
+    -->
+    <instrumentation android:name="com.zutubi.android.junitreport.JUnitReportTestRunner"
+                     android:targetPackage="com.android.mms"
+                     android:label="Tests for com.android.mms"/>
+                         
+    <uses-permission android:name="android.permission.INJECT_EVENTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest> 

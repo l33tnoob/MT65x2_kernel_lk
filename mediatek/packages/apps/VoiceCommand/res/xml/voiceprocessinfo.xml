@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VoiceProcessInfos>
+    <VoiceProcessInfo FeatureName="com.mediatek.voicecommand"
+        ProcessName="com.mediatek.voicecommand" ID="10000" CommandID="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15"
+        PermissionID="1,2,3,4,5,6,7" RelationProcess="android.mediatek.feature" Enable="TRUE" />
+    <VoiceProcessInfo FeatureName="com.android.keyguard" ProcessName="com.android.systemui,com.android.keyguard"
+        ID="0" CommandID="0" PermissionID="1,4,6" Enable="TRUE" />
+    <!--VoiceProcessInfo FeatureName="com.android.phone"
+        ProcessName="com.android.phone" ID="1" CommandID="1,2" PermissionID="1,2,6"
+        Enable="FALSE" /-->
+    <VoiceProcessInfo FeatureName="com.android.gallery3d"
+        ProcessName="com.android.gallery3d" ID="2" CommandID="3,4"
+        PermissionID="1,2,6" Enable="FALSE" />
+    <!--VoiceProcessInfo FeatureName="com.android.deskclock"
+        ProcessName="com.android.deskclock" ID="3" CommandID="5,6"
+        PermissionID="1,2,6" RelationProcess="powerOffAlarm" Enable="FALSE" /-->
+    <!--VoiceProcessInfo FeatureName="com.android.music"
+        ProcessName="com.android.music" ID="4" CommandID="1,7,8,9,10,11,12,13"
+        PermissionID="1,2,6" Enable="FALSE" /-->
+    <!--VoiceProcessInfo FeatureName="powerOffAlarm"
+        ProcessName="com.android.systemui,com.android.keyguard" ID="3" CommandID="5,16,17" PermissionID="1,2,6"
+        RelationProcess="android.mediatek.feature" Enable="FALSE" /-->
+    <VoiceProcessInfo FeatureName="com.mediatek.voiceunlock"
+        ProcessName="com.mediatek.voiceunlock" ID="0" CommandID="0"
+        PermissionID="3" Enable="TRUE" />
+    <VoiceProcessInfo FeatureName="com.android.contacts"
+        ProcessName="com.android.contacts" ID="5" CommandID="0"
+        PermissionID="7" Enable="TRUE" />
+</VoiceProcessInfos>

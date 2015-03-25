@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="app_name">CellConnectionService</string>
+	<string name="button_ok">OK</string>
+	<string name="button_cancel">"Cancel"</string>
+	<string name="confirm_radio_title">SIM turned off</string>
+	<string name="confirm_radio_title_uim">UIM turned off</string>
+	<string name="confirm_radio_title_card">Card turned off</string>
+
+	<string name="confirm_radio_msg"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> is off. Do you want to turn this SIM card on?</string>
+  <string name="confirm_radio_msg_uim"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> is off. Do you want to turn this UIM card on?</string>
+  <string name="confirm_radio_msg_card"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> is off. Do you want to turn this card on?</string>
+
+	<string name="confirm_radio_flight_mode_on_and_msg">Flight mode is on and</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> is off. Do you want to turn flight mode off and the SIM card on?</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg_uim"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> is off. Do you want to turn flight mode off and the UIM card on?</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg_card"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> is 	off. Do you want to turn flight mode off and the card on?</string>	
+	<string name="confirm_radio_flight_mode_on_sim_on_msg">Flight mode is on. Do you want to turn it off?</string>  
+	<string name="confirm_radio_msg_single">Airplane mode is on, would you like to turn it off?</string>
+	<string name="confirm_pin_title">SIM locked</string>
+	<string name="confirm_pin_title_uim">UIM locked</string>
+	<string name="confirm_pin_title_card">Card locked</string>
+	<string name="confirm_pin_msg">The selected SIM card is locked. Please unlock.</string>
+	<string name="confirm_pin_msg_uim">The selected UIM card is locked. Please unlock.</string>
+	<string name="confirm_pin_msg_card">The selected card is locked. Please unlock.</string>
+	<string name="confirm_simmelock_title">SIM ME locked</string>
+	<string name="confirm_simmelock_msg">The selected SIM slot is locked. Please unlock.</string>
+	<string name="confirm_simmelock_msg_uim">The selected UIM slot is locked. Please unlock.</string>
+	<string name="confirm_simmelock_msg_card">The selected slot is locked. Please unlock.</string>
+	<string name="confirm_fdn_title">FDN enabled</string>
+	<string name="confirm_fdn_msg">The fixed dialling numbers are enabled.</string>
+	<string name="confirm_roaming_title">Roaming warning</string>
+	<string name="confirm_roaming_msg">The SIM card you are about to use is 		 roaming. No local SIM is available. Do you want to continue??</string>
+	<string name="confirm_roaming_msg_uim">The UIM card you are about to use is roaming. No local UIM is available. Do you want to continue?</string>
+	<string name="confirm_roaming_msg_card">The card you are about to use is roaming. No local Card is available. Do you want to continue?</string>
+  <string name="confirm_roaming_withPrefer_msg">The SIM card you are about to use is now roaming. Do you want to continue using the local SIM?</string>
+  <string name="confirm_roaming_withPrefer_msg_uim">The UIM card you are about to use is roaming. Do you want to continue, using the local UIM?</string>
+  <string name="confirm_roaming_withPrefer_msg_card">The SIM card you are about to use is roaming. Do you want to continue, using the local Card?</string>
+  <string name="confirm_roaming_lbutton">"Continue"</string>
+  <string name="confirm_roaming_rbutton">"Cancel"</string>
+  <string name="confirm_roamingWithPrefer_lbutton">Local SIM</string>
+  <string name="confirm_roamingWithPrefer_lbutton_uim">Local UIM</string>
+  <string name="confirm_roamingWithPrefer_lbutton_card">Local Card</string>
+  <string name="confirm_roamingWithPrefer_rbutton">Roaming SIM</string>
+  <string name="confirm_roamingWithPrefer_rbutton_uim">Roaming UIM</string>
+  <string name="confirm_roamingWithPrefer_rbutton_card">Roaming Card</string>
+	<string name="confirm_roaming_for3Sims_msg">The SIM card you are about to use is roaming. Do you want to continue?</string>
+  <string name="confirm_roaming_for3Sims_msg_uim">The UIM card you are about to use is roaming. Do you want to continue?</string>
+  <string name="confirm_roaming_for3Sims_msg_card">The card you are about to use is roaming. Do you want to continue?</string>
+	<string name="confirm_radio_lbutton">Turn on</string>
+	<string name="confirm_unlock_lbutton">Unlock</string>
+	<string name="confirm_unlock_fail">Operation cancelled</string>
+	<string name="confirm_turnon_radio_fail">Operation cancelled</string>
+	<string name="confirm_permit_roaming_fail">Cancel SIM roaming.</string>
+	<string name="confirm_permit_roaming_fail_uim">Cancel UIM roaming.</string>
+	<string name="confirm_permit_roaming_fail_card">Cancel roaming for this card.</string>
+	<string name="confirm_sim_locked_message">SIM card has been permanently locked</string>
+	<string name="confirm_sim_locked_message_uim">UIM card has been permanently locked</string>
+	<string name="confirm_sim_locked_message_card">Card has been permanently locked</string>	
+    <string name="confirm_slot_locked_message">The slot has been permanently locked</string>
+	<string name="button_yes">Yes</string>  
+	<string name="button_no">No</string>  
+</resources>

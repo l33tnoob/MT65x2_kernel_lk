@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation = "vertical"
+  >
+  <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_weight="1"
+        android:fillViewport="true"
+    >
+    <LinearLayout
+	 		android:layout_width="fill_parent"
+	 		android:layout_height="fill_parent"
+	 		android:orientation = "vertical"
+	>
+    <TextView 
+		android:id="@+id/idInputPassword" 
+		android:layout_width="fill_parent" 
+		android:layout_height="40dp"
+		android:text="@string/strInputPassword"
+		android:textSize = "20sp"
+		android:layout_marginTop = "20dp"
+		android:gravity = "left" 
+	/>
+	<EditText
+		android:id="@+id/idEditInputPassword" 
+		android:layout_width="200dp" 
+		android:layout_height="wrap_content"
+		android:layout_gravity = "center"		
+		android:contentDescription="@string/strInputPassword"
+	/>
+	<TextView 
+		android:id="@+id/idInputPasswordAgain" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:text="@string/strInputPasswordAgain"
+		android:textSize = "20sp"
+		android:layout_marginTop = "20dp" 
+		android:gravity = "left"
+		android:visibility = "gone"
+	/>
+	<EditText
+		android:id="@+id/idEditInputPasswordAgain" 
+		android:layout_width="200dp" 
+		android:layout_height="wrap_content"
+		android:layout_gravity = "center"
+		android:visibility = "gone"
+		android:contentDescription="@string/strInputPasswordAgain"
+	/>	
+	</LinearLayout>
+    </ScrollView>
+	<LinearLayout
+	 		android:layout_width="fill_parent"
+	 		android:layout_height="50dp"
+	 		android:orientation = "horizontal"
+	 		android:gravity = "center"
+	 		android:layout_alignParentBottom = "true"
+	 		style="@android:style/ButtonBar"
+	>
+		<Button 
+			android:id="@+id/idButtonConfirm" 
+			android:layout_width="0dp" 
+			android:layout_height="50dp"
+			android:text="@string/strConfirm"
+			android:textSize = "20sp"
+			android:layout_weight="1"			
+		/>
+		<Button
+			android:id="@+id/idButtonCancel" 
+			android:layout_width="0dp" 
+			android:layout_height="50dp"
+			android:text="@string/strCancel"
+			android:textSize = "20sp"
+			android:layout_weight="1"
+		/>
+	</LinearLayout> 
+</LinearLayout>
+
+
+

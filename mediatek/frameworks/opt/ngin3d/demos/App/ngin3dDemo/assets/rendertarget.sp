@@ -1,0 +1,10 @@
+1.0
+vertex_source_file rendertarget.vert
+fragment_source_file rendertarget.frag
+
+uniform u_t_modelViewProjection T_MODEL_VIEW_PROJECTION
+uniform u_t_normal T_NORMAL_MODEL
+
+uniform u_m_diffuseTexture M_DIFFUSE_TEXTURE
+
+uniform u_time TIME

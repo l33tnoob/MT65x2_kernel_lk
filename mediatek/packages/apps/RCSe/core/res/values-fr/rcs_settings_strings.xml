@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ * Copyright Statement:
+ *
+ * This software/firmware and related documentation ("MediaTek Software") are
+ * protected under relevant copyright laws. The information contained herein
+ * is confidential and proprietary to MediaTek Inc. and/or its licensors.
+ * Without the prior written permission of MediaTek inc. and/or its licensors,
+ * any reproduction, modification, use or disclosure of MediaTek Software,
+ * and information contained herein, in whole or in part, shall be strictly prohibited.
+ *
+ * MediaTek Inc. (C) 2012. All rights reserved.
+ *
+ * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+ * THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+ * RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO RECEIVER ON
+ * AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+ * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+ * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+ * SUPPLIED WITH THE MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+ * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+ * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+ * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+ * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+ * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+ * CUMULATIVE LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+ * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+ * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+ * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+ *
+ * The following software/firmware and/or related documentation ("MediaTek Software")
+ * have been modified by MediaTek Inc. All revisions are subject to any receiver's
+ * applicable license agreements with MediaTek Inc.
+ */
+-->
+<resources> 
+    <string name="rcs_settings_label_clear">"Effacer"</string>  
+    <string name="rcs_settings_summary_rcs_service_on">Sélectionnez pour désactiver le service joyn</string>  
+    <string name="rcs_settings_summary_rcs_service_off">Sélectionnez pour activer le service joyn</string>  
+    <string name="rcs_settings_summary_rcs_roaming">Connexion au service joyn en itinérance</string>  
+    <string name="rcs_settings_label_rcs_service">Service joyn</string>  
+    <string name="rcs_settings_label_rcs_roaming">Itinérance</string>  
+    <string name="rcse_settings_title">Réglages joyn</string>  
+    <string name="rcse_settings_enable_rcse_service">Souhaitez-vous activer le service joyn dès maintenant? Vous pouvez activer/désactiver le service joyn sous réglages joyn</string>  
+    <string name="rcse_settings_disable_rcse_service">Le service joyn sera arrêté</string>  
+    <string name="rcse_settings_enable_rcse_service_roaming">"Autoriser le service joyn en itinérance? Des frais d'itinérance significatifs peuvent s'appliquer!"</string>  
+    <string name="rcse_settings_disable_rcse_service_roaming">Le service joyn ne fonctionnera pas en itinérance</string>  
+    <string name="rcse_notification_settings">"Paramètres de notification"</string>  
+    <string name="rcse_notification_title">"Notifications"</string>  
+    <string name="rcse_notification_summary">"Annoncer l'arrivée d'un message dans la barre système"</string>  
+    <string name="rcse_ringtone_title">"Sonnerie"</string>  
+    <string name="rcse_ringtone_summary">Activer la sonnerie de rappel</string>  
+    <string name="rcse_vibrate_title">Vibrer</string>  
+    <string name="rcse_vibrate_summary">Activer la vibration de rappel</string>  
+    <string name="rcse_large_file_reminder_title">Rappel de fichier volumineux</string>  
+    <string name="rcse_large_file_reminder_summary">"M'avertir en cas de réception d'un fichier volumineux via connexion de données"</string>  
+    <string name="rcse_send_read_receipt_title">Envoyer un accusé de réception</string>  
+    <string name="rcse_send_read_receipt_summary">Signaler que vous avez lu le message</string>  
+    <string name="rcse_privacy_settings">"Paramètres de confidentialité"</string>  
+    <string name="rcse_clear_history_title">"Supprimer l'historique de discussion"</string>  
+    <string name="rcse_storage_settings">Réglages de stockage</string>  
+    <string name="rcse_save_received_files_title">Enregistrer les fichiers reçus dans</string>  
+    <string name="rcse_save_received_files_summary">/mnt/sdcard/Joyn/reçu</string>  
+    <string name="rcse_clear_chat_history_confirm_title">"Supprimer l'historique de discussion"</string>  
+    <string name="rcse_clear_chat_history_confirm_message">"L'historique sera supprimé et ne pourra plus être récupéré."</string>  
+    <string name="rcse_clear_chat_history_clearing">Suppression…</string>  
+    <string name="rcse_clear_chat_history_completed">"Suppression de l'historique de discussion réussie"</string>  
+    <string name="rcs_roaming_message_with_enable_roaming">Vous êtes en itinérance, le réglage \'Itinérance\' est activé mais va engendrer des frais supplémentaires. Souhaitez-vous désactiver ce service?</string>  
+    <string name="rcs_roaming_message_with_disable_roaming">Vous ête en itinérance, le réglage \'Itinérance\' est désactivé. Le service joyn va être désactivé!</string>  
+    <string name="rcs_unroaming_message">"Vous n'êtes pas en itinérance!"</string>  
+    <string name="rcs_message_dialog_title">Itinérance</string>  
+    <string name="rcse_toast_profile_not_exist">"Sélection d'un compte MTK impossible, veuillez insérer une carte SIM Vodafone ou utiliser l'approvisionnement pour mettre en place votre compte fictif"</string> 
+    <string name="rcse_general_settings">Réglages de base</string>  
+    <string name="rcse_chat_wallpaper_title">Papier-peint de discussion</string>  
+    <string name="rcse_chat_wallpaper_summary">Sélectionner papier-peint de discussion par défaut</string>  
+    <string name="text_choose_wallpaper_title">Sélectionner un papier peint depuis</string>  
+    <string name="text_set_wallpaper">"Régler fond d'écran"</string>  
+    <string name="text_wallpaper">"Fonds d'écran"</string>  
+    <string name="text_gallery">"Galerie"</string>  
+    <string name="text_camera">"Appareil photo"</string>  
+    <string name="rcse_compress_image_summary">"Compresser l'image avant envoi"</string>  
+    <string name="rcse_compress_image_title">Compresser image</string> 
+</resources>

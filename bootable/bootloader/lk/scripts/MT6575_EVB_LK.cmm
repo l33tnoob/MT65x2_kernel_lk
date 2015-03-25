@@ -1,0 +1,65 @@
+SYSTEM.Reset
+SYSTEM.CPU CortexA9MPCore
+System.Option Cflush on    	;flush the cache to avoid data consistency
+SYSTEM.OPTION ENRESET On
+SYSTEM.OPTION TRST On
+SYStem.Option ResBreak OFF
+SYStem.Option WaitReset OFF
+SYStem.JtagClock 5MHz
+
+;R-T Memory Access
+SYSTEM.MULTICORE MEMORYACCESSPORT 0
+SYSTEM.MULTICORE DEBUGACCESSPORT 1
+
+;Setting Core debug register access
+SYSTEM.MULTICORE COREBASE APB:0x80070000
+
+sys.mode go
+
+wait 1.ms
+SYStem.Up
+
+; set_hw_breakpoint_by_def
+; setting attribute of breakpoints
+Break.Select Program OnChip
+Break.Select Hll OnChip
+;Break.Select Spot OnChip
+Break.Select Read OnChip
+Break.Select Write OnChip
+
+D.S SD:0xC0000000 %LE %LONG 0x00002226 ;disable wdt
+break.set a:0xF0000000 /write /onchip /cmd "D.S A:0xF0000000 %LE %LONG 0x00002226" /resume
+
+; disable DABORT and PABORT breakpoint
+tronchip.set dabort off
+tronchip.set pabort off
+tronchip.set undef off
+
+;
+; board init
+;
+do MT6575_EVB_PLL.cmm			; Init PLL.
+do MT6575_EVB_DDR.cmm			; Init DDR rank 1.
+D.S SD:0xC0004110 %LE %LONG 0x0805114B	; Swap CS0<->CS1.
+do MT6575_EVB_DDR.cmm			; Init DDR rank 2.
+D.S SD:0xC0004110 %LE %LONG 0x08051143	; Swap CS1<->CS0 back.
+
+print "loading lk image"
+d.load.elf ../build-mt6575_evb/lk
+
+;print "loading bootimg image"
+;d.load.binary ../boot.img 0x10000000 /word /noclear
+
+Y.SPATH.RESET ; reset all source path
+Y.SPATH.SRD ../app
+Y.SPATH.SRD ../arch/arm
+Y.SPATH.SRD ../dev
+Y.SPATH.SRD ../include
+Y.SPATH.SRD ../kernel
+Y.SPATH.SRD ../lib
+Y.SPATH.SRD ../platform/mt6575
+
+d.l
+
+enddo
+

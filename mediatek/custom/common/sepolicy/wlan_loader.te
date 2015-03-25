@@ -1,0 +1,35 @@
+# ==============================================
+# Policy File of /system/binwlan_loader Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type wlan_loader_exec , exec_type, file_type;
+type wlan_loader ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive wlan_loader;
+init_daemon_domain(wlan_loader)
+
+# 20131028 CTS_13
+allow wlan_loader linker_exec:file read;
+
+# 20131028 CTS_14
+allow wlan_loader device:chr_file { read ioctl open };
+
+
+# 20131122 Add Set Property Rule
+allow wlan_loader  property_type:property_service set;

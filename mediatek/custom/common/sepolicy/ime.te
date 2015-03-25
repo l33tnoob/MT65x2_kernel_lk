@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binime Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type ime_exec , exec_type, file_type;
+type ime ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive ime;
+init_daemon_domain(ime)
+
+
+# 20131122 Add Set Property Rule
+allow ime  property_type:property_service set;

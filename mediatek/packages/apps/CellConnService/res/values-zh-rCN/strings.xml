@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="button_ok">确定</string>
+	<string name="button_cancel">取消</string>
+	<string name="confirm_radio_title">SIM卡关闭</string>
+	<string name="confirm_radio_title_uim">UIM卡关闭</string>
+	<string name="confirm_radio_title_card">卡关闭</string>
+	<string name="confirm_radio_msg"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		卡已关闭。是否打开?</string>
+	<string name="confirm_radio_msg_uim"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		卡已关闭。是否打开?</string>
+	<string name="confirm_radio_msg_card"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		卡已关闭。是否打开?</string>
+	<string name="confirm_radio_flight_mode_on_and_msg">飞行模式已启用且</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> 已关闭。是否要关闭飞行模式並打开此 SIM 卡？</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg_uim"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> 已关闭。是否要关闭飞行模式並打开此 UIM 卡？</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg_card"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> 已关闭。是否要关闭飞行模式並打开此卡？</string>
+	<string name="confirm_radio_flight_mode_on_sim_on_msg">飞行模式已启用。是否要关闭飞行模式？</string>  
+	<string name="confirm_radio_msg_single">SIM卡已关闭。是否打开?</string>
+	<string name="confirm_pin_title">SIM 锁</string>
+  <string name="confirm_pin_title_uim">UIM 锁</string>
+  <string name="confirm_pin_title_card">卡锁</string>
+	<string name="confirm_pin_msg">你所使用的SIM卡已锁。是否要解锁？</string>
+	<string name="confirm_pin_msg_uim">你所使用的UIM卡已锁。是否要解锁？</string>
+	<string name="confirm_pin_msg_card">你所使用的卡已锁。是否要解锁？</string>
+	<string name="confirm_simmelock_title">SIM ME 锁</string>
+	<string name="confirm_simmelock_msg">你所使用的SIM卡槽已锁。是否要解锁？</string>
+	<string name="confirm_simmelock_msg_uim">你所使用的UIM卡槽已锁。是否要解锁？</string>
+	<string name="confirm_simmelock_msg_card">你所使用的卡槽已锁。是否要解锁？</string>
+	<string name="confirm_fdn_title">固定拨号启用</string>
+	<string name="confirm_fdn_msg">固定拨号已启用.</string>
+	<string name="confirm_roaming_title">漫游提醒</string>
+	<string name="confirm_roaming_msg">你使用的SIM卡处于漫游状态，目前无可用的本地SIM卡，是否继续？</string>
+	<string name="confirm_roaming_msg_uim">你使用的UIM卡处于漫游状态，目前无可用的本地UIM卡，是否继续？</string>
+	<string name="confirm_roaming_msg_card">你使用的卡处于漫游状态，目前无可用的本地卡，是否继续？</string>
+	<string name="confirm_roaming_withPrefer_msg">你使用的SIM卡处于漫游状态，是否使用本地SIM卡？</string>
+	<string name="confirm_roaming_withPrefer_msg_uim">你使用的UIM卡处于漫游状态，是否使用本地UIM卡？</string>
+	<string name="confirm_roaming_withPrefer_msg_card">你使用的卡处于漫游状态，是否使用本地卡？</string>
+	<string name="confirm_roaming_lbutton">继续</string>
+	<string name="confirm_roaming_rbutton">取消</string>
+	<string name="confirm_roamingWithPrefer_lbutton">本地SIM卡</string>
+	<string name="confirm_roamingWithPrefer_lbutton_uim">本地UIM卡</string>
+	<string name="confirm_roamingWithPrefer_lbutton_card">本地卡</string>
+	<string name="confirm_roamingWithPrefer_rbutton">漫游SIM卡</string>
+	<string name="confirm_roamingWithPrefer_rbutton_uim">漫游UIM卡</string>
+	<string name="confirm_roamingWithPrefer_rbutton_card">漫游卡</string>
+	<string name="confirm_roaming_for3Sims_msg">你使用的SIM卡处于漫游状态，是否继续？</string>
+	<string name="confirm_roaming_for3Sims_msg_uim">你使用的UIM卡处于漫游状态，是否继续？</string>
+	<string name="confirm_roaming_for3Sims_msg_card">你使用的卡处于漫游状态，是否继续？</string>
+	<string name="confirm_radio_lbutton">打开</string>
+	<string name="confirm_unlock_lbutton">解锁</string>
+	<string name="confirm_unlock_fail">操作已取消</string>
+	<string name="confirm_turnon_radio_fail">操作已取消</string>
+	<string name="confirm_permit_roaming_fail">操作已取消</string>
+	<string name="confirm_permit_roaming_fail_uim">操作已取消</string>
+	<string name="confirm_permit_roaming_fail_card">操作已取消</string>
+	<string name="confirm_sim_locked_message">"SIM 卡已被永久锁定"</string>
+	<string name="confirm_sim_locked_message_uim">"UIM 卡已被永久锁定"</string>
+	<string name="confirm_sim_locked_message_card">"卡已被永久锁定"</string>
+    <string name="confirm_slot_locked_message">"卡槽已被永久锁定"</string>
+	<string name="button_yes">是</string>  
+	<string name="button_no">否</string>  
+<string name="app_name">CellConnectionService</string>
+    </resources>

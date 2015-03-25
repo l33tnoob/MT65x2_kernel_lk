@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbinstrace Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type strace_exec , exec_type, file_type;
+type strace ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive strace;
+init_daemon_domain(strace)
+
+
+# 20131122 Add Set Property Rule
+allow strace  property_type:property_service set;

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#bb000000" >
+
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:id="@+id/bg"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal" >
+
+       <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/voice_guide_icon"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="24dp" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/vcs_guide_title"
+                    style="@style/textShadowTitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="81dp"
+                    android:ellipsize="marquee"
+                    android:text="@string/vcs_guide_title" />
+
+                <TextView
+                    android:id="@+id/vcs_guide_summary"
+                    style="@style/textShadowSummary"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/vcs_guide_summary" />
+
+            </LinearLayout>
+
+   </LinearLayout>
+   <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" />
+
+    <Button
+        android:id="@+id/ok_btn"
+        style="@style/bottom_ok_button"
+        android:gravity="center"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="20dp" />
+
+</LinearLayout>

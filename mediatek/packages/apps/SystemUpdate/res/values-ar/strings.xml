@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"تحديثات النظام"</string>
+
+
+    <string name="none_package">لا توجد حزم تحديث صالحة.</string>
+    <string name="new_version_query">الفحص للتحديث\u2026</string>
+    <string name="menu_stats_refresh">"تحديث"</string>
+    <string name="network_error">فشل اتصال الشبكة</string>
+    <string name="no_new_version">نظامك محدث حاليًا.</string>
+    <string name="not_support_version">هدفك لا/ يدعم عبر الأثير</string>
+    <string name="query_sd_insufficient_space">لا توجد مساحة كافية للعنصر <xliff:g id="path">%s</xliff:g></string>
+    <string name="ota_category_title">OTA</string>
+    <string name="sd_category_title">تحديث بطاقة SD</string>
+    <string name="ota_preference_summary">تم العثور على تحديث للنظام على الخادم</string>
+
+
+    <string name="notes_summary">يساعد تحديث البرنامج الثابت في تعزيز استقرار الجهاز ومعالجة الأخطاء. قم بتحديث النسخة</string>
+    <string name="ask_for_install_ota">هل ترغب في تثبيت تحديث النظام الآن؟</string>
+    <string name="warning_install_ota" product="tablet">لن تتمكن من استخدام الكمبيوتر اللوحي الخاص بك أو إجراء مكالمات طوارئ أثناء عملية التثبيت. برجاء عدم نزع البطارية أو بطاقة SD أو إيقاف تشغيل الكمبيوتر اللوحي.</string>
+    <string name="warning_install_ota" product="default">لن تتمكن من استخدام هاتفك أو إجراء مكالمات طوارئ أثناء عملية التثبيت. برجاء عدم نزع البطارية أو بطاقة SD أو إيقاف تشغيل الهاتف.</string>
+    <string name="ask_for_install_sd">تم العثور على أحدث حزمة لتحديثات النظام في بطاقة SD خاصتك, هل ترغب في التثبيت؟</string>
+    <string name="warning_install_sd" product="tablet">لن تتمكن من استخدام الكمبيوتر اللوحي الخاص بك أو إجراء مكالمات طوارئ أثناء عملية التثبيت.  برجاء عدم نزع البطارية أو بطاقة SD أو إيقاف تشغيل الكمبيوتر اللوحي. \nقبل البدء في عملية التثبيت, برجاء التأكد من تنزيل الحزمة من موقع الويب الرسمي وعدم تلفها.</string>
+    <string name="warning_install_sd" product="default">لن تتمكن من استخدام هاتفك أو إجراء مكالمات طوارئ أثناء عملية التثبيت.  برجاء عدم نزع البطارية أو بطاقة SD أو إيقاف تشغيل الهاتف. \nقبل البدء في عملية التثبيت, برجاء التأكد من تنزيل الحزمة من موقع الويب الرسمي وعدم تلفها.</string>
+    <string name="ask_for_download_ota">هل ترغب في تنزيل تحديث تحسين النظام؟</string>
+    <string name="warning_download_ota">نوصي باستخدام نقطة اتصال WiFi خالية أو خطة بيانات غير محدودة لتطبيق هذا التحديث, وإلا قد يتم تطبيق رسوم توصيل البيانات القياسية. \nبرجاء عمل نسخة احتياطية من بياناتك أولاً قبل إجراء عملية الترقية.</string>
+        
+    <string name="notification_content_title">تحديث النظام</string>
+    <string name="downloading_title">"جارٍ التنزيل..."</string>   
+    <string name="wifi_only_check">Wi-Fi فقط</string>     
+    
+    
+    
+    
+    
+    <string name="btn_install">"تثبيت"</string>
+    <string name="btn_cancel">تجاهل</string>
+    <string name="btn_download">التنزيل والتثبيت</string>
+    <string name="btn_resume">"تنزيل"</string>
+    
+    <string name="warn_data_cost_title">تنزيل التحديث</string>
+    <string name="warn_data_cost_content">قد يكلفك التنزيل من خلال شبكات الهاتف رسومًا إضافية. هل ترغب في المتابعة؟</string>
+    <string name="warn_data_cost_yes">"نعم"</string>
+    <string name="warn_data_cost_no">"لا"</string>
+
+    <string name="notification_download_complete_title">تحديث النظام جاهز</string>
+    <string name="notification_download_complete_context">اضغط لتثبيت تحديث النظام</string>
+        
+    <string name="sdcard_crash_or_unmount">خطأ بطاقة SD. يرجى فحص بطاقة SD والمحاولة مرة أخرى.</string>
+    <string name="unmount_sdcard">خطأ تركيب بطاقة SD. يرجى فحص البطاقة.</string>
+    <string name="insufficient_space_content">لا يوجد مساحة خالية كافية! تحتاج عملية التنزيل هذه على الأقل  <xliff:g id="deltasize" example="3.5M">%s</xliff:g>. يرحى مراجعة مدير التطبيقات لديك للحصول على مساحة خالية أكبر. </string>
+
+    
+    
+    
+    
+    <string name="install_sd_title">تثبيت التحديث</string>
+    <string name="install_sd_message">يرجى التأكد من تنزيل الحزمة من موقع الويب الرسمي وعدم تعرضها للتلف, وإلا فقد يحدث مشاكل بالنظام.</string>
+    <string name="install_reminder_now">تثبيت الآن</string>
+    <string name="install_reminder_not_now">"ليس الآن"</string>
+    
+    
+
+    <string name="notification_content_text_completed">تم نجاح التحميل</string> 
+
+    <string name="unknown_per">"غير معروف"</string>    
+    <string name="unknown_error">خطأ غير معروف</string>
+    <string name="unknown_error_content">حدث خطأ غير معروف. رجاء ترك هذه الصفحة والمحاولة مرة أخرى.</string>
+    <string name="insufficient_space_title">لا يوجد مساحة خالية كافية</string>
+    <string name="error_sdcard">معلومات بطاقة SD</string>
+    <string name="insufficient_space">لا توجد مساحة كافية على بطاقة SD.</string>
+    <string name="package_deleted_error">توقفت تحديثات النظام لأن الترقية غير صالحة.</string>
+    
+    <string name="cancel_download_title">إلغاء التحميل</string>
+    <string name="cancel_download_content">ستتجاهل هذه العملية الملف الذي تم تنزيله.</string>
+
+    
+    <string name="change_network_title">"تنزيل"</string>
+    <string name="change_network_content">لا يدعم APN الحالي عملية التحميل، هل تريد التغيير إلى APN آخر أم تشغيل Wi-Fi؟</string>
+    <string name="change_network_wifi_btn">استخدام Wi-Fi</string>
+    <string name="change_network_apn_btn">تغيير APN</string>
+    <string name="change_network_discard_btn">تجاهل</string>    
+    <string name="package_error_title">تعذر التثبيت</string>
+    <string name="package_error_message_invalid">خطأ في الحزمة. يرجى فحص التحديث وإعادة التنزيل مرة أخرى.</string>
+    <string name="package_error_message_insuff" product="tablet">لا توجد مساحة كافية على الجهاز.</string>
+    <string name="package_error_message_insuff" product="default">لا توجد مساحة كافية على الهاتف.</string>
+    <string name="package_error_message_crash">لا يمكن الوصول إلى قسم البيانات.</string>
+    <string name="package_error_message_full">يتطلب وجود حزمة كاملة لحالة القسم المتغيرة.</string>    
+    <string name="updateSuccess" product="tablet">تهانينا! لقد تم تحديث الجهاز للإصدار  <xliff:g id="version" example="gb.p37">%s</xliff:g> بنجاح. </string> 
+    <string name="updateSuccess" product="default">تهانينا! لقد تم تحديث الهاتف للإصدار  <xliff:g id="version" example="gb.p37">%s</xliff:g> بنجاح. </string> 
+    <string name="updateFailed">فشل التحديث للإصدار  <xliff:g id="version" example="gb.p37">%s</xliff:g>. </string>
+    <string name="package_unzip">فك ضغط الحزمة\u2026</string>
+    <string name="package_unzip_error">خطأ فك الضغط</string>
+    
+    <string name="installing_message">سيتوقف هاتفك عن العمل\u2026</string>
+    <string name="install_sd_info">قم بنسخ الحزمة إلى مخزن الهاتف لمتابعة الترقية.\nلا يوجد مساحة كافية على هاتفك.</string>
+    <string name="sdcard_crash_or_unmount_when_install">توقفت تحديثات النظام لأن بطاقة SD غير مثبتة.</string>
+    <string name="sdcard_inserted">هل ترغب في مسح بطاقة SD خاصتك ضوئيًا للتعرف على المزيد من حزم التحديث؟</string>
+    
+    <string name="new_version_detected">يوجد تحديث للنظام </string>
+    <string name="sdcard_unmount">تمت إزالة بطاقة SD</string>
+    <string name="server_version_error">خطأ في الخادم: يرجى تحديث رمز مصدر الخادم.</string>
+    <string name="cta_warning">يدعم النظام ترقية البرامج الثابتة من الخادم أو الموقع الرسمي فقط. وفي حالة استخدام المستخدم لأي من صور ROM الخاصة بجهات أخرى أو أي طريقة أخرى للترقية فسيؤدي ذلك إلى عدم استقرار أداء الهاتف. يرجى العلم أن المستخدم يتحمل المسؤولية كاملة عن كل هذه السلوكيات.</string>
+</resources>

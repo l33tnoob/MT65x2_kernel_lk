@@ -1,0 +1,81 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type isolated_app, domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+###
+### Services with isolatedProcess=true in their manifest.
+###
+### This file defines the rules for isolated apps. An "isolated
+### app" is an APP with UID between AID_ISOLATED_START (99000)
+### and AID_ISOLATED_END (99999).
+###
+### isolated_app includes all the appdomain rules, plus the
+### additional following rules:
+###
+
+permissive isolated_app;
+app_domain(isolated_app)
+
+# Appdomain interaction with isolated apps
+r_dir_file(appdomain, isolated_app)
+
+# Already connected, unnamed sockets being passed over some other IPC
+# hence no sock_file or connectto permission. This appears to be how
+# Chrome works, may need to be updated as more apps using isolated services
+# are examined.
+allow isolated_app appdomain:unix_stream_socket { read write };
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+###
+### Services with isolatedProcess=true in their manifest.
+###
+### This file defines the rules for isolated apps. An "isolated
+### app" is an APP with UID between AID_ISOLATED_START (99000)
+### and AID_ISOLATED_END (99999).
+###
+### isolated_app includes all the appdomain rules, plus the
+### additional following rules:
+###
+
+permissive isolated_app;
+# app_domain(isolated_app)
+
+# Already connected, unnamed sockets being passed over some other IPC
+# hence no sock_file or connectto permission. This appears to be how
+# Chrome works, may need to be updated as more apps using isolated services
+# are examined.
+allow isolated_app appdomain:unix_stream_socket { read write };
+
+allow isolated_app dalvikcache_data_file:file execute;
+allow isolated_app apk_data_file:dir getattr;
+
+allow isolated_app init:unix_stream_socket { read write getattr getopt };
+allow isolated_app init_tmpfs:file read;
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive isolated_app;
+
+# 20131122 Add Set Property Rule
+allow isolated_app property_type:property_service set;         
+
+# 20131213 KKMR1_CQ_01
+allow isolated_app release_app:fifo_file write;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow isolated_app init:unix_stream_socket setopt;
+

@@ -1,0 +1,319 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type netd, domain;
+type netd_exec, exec_type, file_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# network manager
+
+init_daemon_domain(netd)
+allow netd self:capability { net_admin net_raw kill fsetid };
+allow netd self:netlink_kobject_uevent_socket *;
+allow netd self:netlink_route_socket *;
+allow netd self:netlink_nflog_socket *;
+allow netd self:rawip_socket *;
+allow netd self:{ tcp_socket udp_socket } *;
+allow netd node:{ tcp_socket udp_socket } node_bind;
+allow netd port:{ tcp_socket udp_socket } name_bind;
+allow netd port:tcp_socket name_connect;
+allow netd self:unix_stream_socket *;
+allow netd shell_exec:file rx_file_perms;
+allow netd system_file:file x_file_perms;
+allow netd devpts:chr_file rw_file_perms;
+
+# For /proc/sys/net/ipv[46]/route/flush.
+# XXX Split /proc/sys/net into its own type.
+allow netd proc:file write;
+
+# For /sys/modules/bcmdhd/parameters/firmware_path
+# XXX Split into its own type.
+allow netd sysfs:file write;
+
+# Set dhcp lease for PAN connection
+unix_socket_connect(netd, property, init)
+allow netd system_prop:property_service set;
+
+# Connect to PAN
+domain_auto_trans(netd, dhcp_exec, dhcp)
+allow netd dhcp:process signal;
+
+# Needed to update /data/misc/wifi/hostapd.conf
+# TODO: See what we can do to reduce the need for
+# these capabilities
+allow netd self:capability { dac_override chown fowner };
+allow netd wifi_data_file:file create_file_perms;
+allow netd wifi_data_file:dir rw_dir_perms;
+
+# Allow netd to spawn hostapd in it's own domain
+domain_auto_trans(netd, hostapd_exec, hostapd)
+allow netd hostapd:process signal;
+
+# Allow netd to spawn dnsmasq in it's own domain
+domain_auto_trans(netd, dnsmasq_exec, dnsmasq)
+allow netd dnsmasq:process signal;
+
+# Allow netd to start clatd in its own domain
+domain_auto_trans(netd, clatd_exec, clatd)
+allow netd clatd:process signal;
+
+# Support netd running mdnsd
+# TODO: prune this back further
+allow netd ctl_default_prop:property_service set;
+allow netd device:sock_file write;
+
+###
+### Neverallow rules
+###
+### netd should NEVER do any of this
+
+# Block device access.
+neverallow netd dev_type:blk_file { read write };
+
+# Kernel memory access.
+neverallow netd kmem_device:chr_file { read write };
+
+# Setting SELinux enforcing status or booleans.
+# Conditionally allowed to system_app for SEAndroidManager.
+neverallow netd kernel:security { setenforce setbool };
+
+# Load security policy.
+neverallow netd kernel:security load_policy;
+
+# ptrace any other app
+neverallow netd { domain }:process ptrace;
+
+# Write to /system.
+neverallow netd system_file:dir_file_class_set write;
+
+# Write to files in /data/data or system files on /data
+# modify by MTK due to rule "allow netd system_data_file:sock_file write; " violation
+#neverallow netd { app_data_file system_data_file }:dir_file_class_set write;
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# network manager
+
+# init_daemon_domain(netd)
+allow netd self:capability { net_admin net_raw kill };
+allow netd self:netlink_kobject_uevent_socket *;
+allow netd self:netlink_route_socket *;
+allow netd self:netlink_nflog_socket *;
+allow netd self:rawip_socket *;
+allow netd self:udp_socket *;
+allow netd node:udp_socket node_bind;
+allow netd port:udp_socket name_bind;
+allow netd self:unix_stream_socket *;
+allow netd shell_exec:file rx_file_perms;
+allow netd system_file:file x_file_perms;
+allow netd devpts:chr_file rw_file_perms;
+
+# For /proc/sys/net/ipv[46]/route/flush.
+# XXX Split /proc/sys/net into its own type.
+allow netd proc:file write;
+
+# For /sys/modules/bcmdhd/parameters/firmware_path
+# XXX Split into its own type.
+allow netd sysfs:file write;
+
+# Set dhcp lease for PAN connection
+unix_socket_connect(netd, property, init)
+allow netd system_prop:property_service set;
+
+# Connect to PAN
+# domain_auto_trans(netd, dhcp_exec, dhcp)
+allow netd dhcp:process signal;
+
+# Needed to update /data/misc/wifi/hostapd.conf
+# TODO: See what we can do to reduce the need for
+# these capabilities
+allow netd self:capability { dac_override chown fowner };
+allow netd wifi_data_file:file create_file_perms;
+allow netd wifi_data_file:dir rw_dir_perms;
+
+# Allow netd to spawn hostapd in it's own domain
+# domain_auto_trans(netd, hostapd_exec, hostapd)
+allow netd hostapd:process signal;
+
+# Allow netd to spawn dnsmasq in it's own domain
+# domain_auto_trans(netd, dnsmasq_exec, dnsmasq)
+allow netd dnsmasq:process signal;
+
+# Allow netd to start clatd in its own domain
+# domain_auto_trans(netd, clatd_exec, clatd)
+allow netd clatd:process signal;
+
+# Support netd running mdnsd
+# TODO: prune this back further
+allow netd ctl_default_prop:property_service set;
+allow netd device:sock_file write;
+
+###
+### Neverallow rules
+###
+### netd should NEVER do any of this
+
+# Block device access.
+neverallow netd dev_type:blk_file { read write };
+
+# Kernel memory access.
+neverallow netd kmem_device:chr_file { read write };
+
+# Setting SELinux enforcing status or booleans.
+neverallow netd kernel:security { setenforce setbool };
+
+# Load security policy.
+neverallow netd kernel:security load_policy;
+
+# ptrace any other app
+neverallow netd { domain }:process ptrace;
+
+# Write to /system.
+neverallow netd system_file:dir_file_class_set write;
+
+# Write to files in /data/data or system files on /data
+# modify by MTK due to rule "allow netd system_data_file:sock_file write; " violation
+#neverallow netd { app_data_file system_data_file }:dir_file_class_set write;
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+#permissive netd;
+
+# 20131024 Sanity_01
+allow netd iptables_exec:file { read execute open execute_no_trans };
+allow netd linker_exec:file { read execute open };
+
+
+# 20131024 Sanity_02
+allow netd ip_exec:file { read execute open execute_no_trans };
+
+
+# 20131024 CTS_01
+allow netd device:chr_file { read ioctl open };
+allow netd hald:unix_stream_socket connectto;
+allow netd hald_socket:sock_file write;
+allow netd ip_exec:file { read execute open execute_no_trans };
+
+
+# 20131024 Sanity_03
+allow netd ip6tables_exec:file { read execute open execute_no_trans };
+
+
+# 20131028 Sanity_05
+allow netd kernel:system module_request;
+allow netd self:capability sys_module;
+
+
+# 20131119 FeatureSQC
+allow netd iptables_exec:file getattr;
+allow netd system_data_file:sock_file write;
+allow netd tc_exec:file { read execute open execute_no_trans };
+allow netd wide_dhcpv6_data_file:dir { write remove_name };
+allow netd wide_dhcpv6_data_file:file unlink;
+allow netd wifi_data_file:sock_file { create unlink setattr };
+allow netd wpa:unix_dgram_socket sendto;
+
+
+# 20131119 Sanity_QA
+allow netd device:chr_file { read ioctl open };
+
+
+# 20131121 Sanity_QA
+allow netd device:chr_file write;
+
+
+# 20131122 Add Set Property Rule
+allow netd property_type:property_service set;
+
+#============= netd ==============
+allow netd toolbox_exec:file execute;
+
+#============= netd ==============
+allow netd mdnsd_socket:sock_file write;
+allow netd mdnsd:unix_stream_socket connectto;
+
+#============= netd ==============
+allow netd dhcp6s_exec:file { read execute execute_no_trans open };
+
+#============= netd ==============
+allow netd self:capability setgid;
+
+#============= netd ==============
+allow netd self:capability setuid;
+
+#============= netd ==============
+allow netd cgroup:dir { create add_name };
+allow netd wide_dhcpv6_data_file:dir add_name;
+
+#============= netd ==============
+allow netd dhcp_data_file:dir write;
+allow netd system_data_file:dir { write remove_name };
+allow netd system_data_file:file unlink;
+allow netd wide_dhcpv6_data_file:dir search;
+allow netd wide_dhcpv6_data_file:file { write create open getattr };
+
+#============= netd ==============
+allow netd dhcp_data_file:dir search;
+
+#============= netd ==============
+allow netd dhcp_data_file:dir add_name;
+
+#============= netd ==============
+allow netd dhcp_data_file:file { write read append create open getattr };
+
+#============= netd ==============
+allow netd self:capability net_bind_service;
+
+#============= netd ==============
+allow netd radvd_exec:file { write read execute execute_no_trans open };
+
+#============= netd ==============
+allow netd system_data_file:file { write create open };
+
+#============= netd ==============
+allow netd system_data_file:dir add_name;
+
+#============= netd ==============
+allow netd clatd_exec:file { write read execute execute_no_trans open };
+
+#============= netd ==============
+allow netd hostapd_exec:file { write read execute execute_no_trans open };
+
+#============= netd ==============
+allow netd dnsmasq_exec:file { write read execute execute_no_trans open };
+#============= netd ==============
+allow netd aee_aed:unix_stream_socket connectto;
+
+#============= netd ==============
+allow netd self:netlink_socket { create getattr setopt bind getopt read write listen };
+
+#============= netd ==============
+allow netd self:packet_socket { create getattr setopt bind getopt read write listen };
+
+#============= netd ==============
+allow netd wifi_data_file:file { write create open getattr };
+
+#============= netd ==============
+allow netd wifi_data_file:dir { create getattr setattr rmdir search read write remove_name };
+
+# 20131213 KKMR1_CQ_CTS_02
+allow netd tun_device:chr_file { read write ioctl open };
+
+
+#============= netd ==============
+allow netd wifi_data_file:sock_file { write read };
+
+
+#============= netd ==============
+allow netd system_data_file:file setattr;
+

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!--
+        /* * Copyright (C) 2007-2008 Esmertec AG. * Copyright (C)
+        2007-2008 The Android Open Source Project * * Licensed under the
+        Apache License, Version 2.0 (the "License"); * you may not use
+        this file except in compliance with the License. * You may
+        obtain a copy of the License at * *
+        http://www.apache.org/licenses/LICENSE-2.0 * * Unless required
+        by applicable law or agreed to in writing, software *
+        distributed under the License is distributed on an "AS IS"
+        BASIS, * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+        express or implied. * See the License for the specific language
+        governing permissions and * limitations under the License. */
+    -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Used as the title and message type information. -->
+    <string name="configuration_message">הודעת תצורה</string>
+    <!-- %d unread messages -->
+    <string name="notification_multiple">
+        <xliff:g id="count">%s</xliff:g>
+        הודעות שלא נקראו.
+    </string>
+    <!-- Used as part of notification description string. -->
+    <string name="notification_multiple_title">הודעות חדשות</string>
+    <!-- Menu text. Clicking the menu leads to a new UI. -->
+    <string name="view">הצג</string>
+    <!-- Button text. Clicking the button will delete messages. -->
+    <string name="delete">מחק</string>
+    <!--
+        Menu text. Clicking the menu leads to a alert dialog showing the
+        detail information to user.
+    -->
+    <string name="view_message_detail">הצג פרטי הודעות</string>
+    <!-- Menu text. Clicking the menu will delete all the messages. -->
+    <string name="delete_all">מחק הכל</string>
+    <!-- Title of a context menu. -->
+    <string name="message_options">אפשרויות הודעה</string>
+    <!-- Title of the main UI when the UI is loading. -->
+    <string name="refreshing">מרענן\u2026</string>
+    <!-- Button text. Clicking the button will just closing the dialog. -->
+    <string name="no">ביטול</string>
+    <!-- Title of a alert dialog. -->
+    <string name="message_details_title">פרטי הודעות</string>
+    <!-- An short identifier string, should be as short as possible. -->
+    <string name="installed_indicator">מותקן</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="message_type_label">סוג:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="from_label">מאת:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="received_label">התקבלה:\u0020</string>
+    <!-- Dialog message to alert user. -->
+    <string name="confirm_delete_all_messages">כל ההודעות יימחקו.</string>
+    <!-- Dialog message to alert user. -->
+    <string name="confirm_delete_message">ההודעה הזו תימחק.</string>
+    <!-- Button text. Clicking the button will perform installation. -->
+    <string name="full_install_text">התקנה מלאה</string>
+    <!--
+        Button text. Clicking the button will lead to an selection
+        dialog.
+    -->
+    <string name="custom_install_text">התקנה מותאמת אישית</string>
+    <!-- Button text. Clicking the button will perform installation. -->
+    <string name="install_text">התקן</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="application_label">יישום:\u0020</string>
+    <!-- Result of installation, should be as short as possible. -->
+    <string name="result_success">הצליחה</string>
+    <!-- Result of installation, should be as short as possible. -->
+    <string name="result_failed">נכשלה</string>
+    <!-- Result of installation, should be as short as possible. -->
+    <string name="unknown">לא מוכרת</string>
+    <!-- Application name -->
+    <string name="mms_app_name">MMS</string>
+    <!-- Application name -->
+    <string name="browser_app_name">דפדפן</string>
+    <!-- Application name -->
+    <string name="apn_app_name">שם נקודת גישה</string>
+    <!-- Application name -->
+    <string name="email_app_name">דוא"ל</string>
+    <!-- Application name -->
+    <string name="email_smtp_app_name">דוא"ל-SMTP</string>
+    <!-- Application name -->
+    <string name="email_pop3_app_name">דוא"ל-POP3</string>
+    <!-- Application name -->
+    <string name="email_imap4_app_name">דוא"ל-IMAP4</string>
+    <!-- Application name -->
+    <string name="dm_app_name">ניהול התקנים</string>
+    <!-- Application name -->
+    <string name="agps_app_name">A-GPS</string>
+    <!-- Application name -->
+    <string name="rtsp_app_name">פרוטוקול זרימה בזמן אמת</string>
+    <!-- Application name -->
+    <string name="ds_app_name">סנכרון נתונים</string>
+    <!-- Application name -->
+    <string name="imps_app_name">העברת הודעות מיידיות ושירות נוכחות</string>
+    <!-- Title of an alert dialog. -->
+    <string name="installation_report">דוח התקנה</string>
+    <!-- Button text. Clicking the button will close the dialog. -->
+    <string name="yes">אישור</string>
+    <!-- Progress dialog message to tell user it is now installing. -->
+    <string name="installing_progress_message">מתקין...</string>
+    <!-- Error text. -->
+    <string name="install_timeout_error_msg">שגיאת התקנה.</string>
+    <!-- Dialog message to alert user. -->
+    <string name="re_install_notify_message">ההגדרות הנוכחיות של היישומים יימחקו, להמשיך?</string>
+    <!-- Title of an alert dialog. -->
+    <string name="re_install_notify_title">אישור</string>
+    <!-- Dialog message to indicate user. -->
+    <string name="unlock_pin_dialog_title">הזן PIN</string>
+    <!-- Title of a UI. -->
+    <string name="detail_activity_label">פרטי הגדרות</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="bookmark_label">כתובת URL:‏\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="homepage_label">דף בית:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mmsc_label">MMSC:‏\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="server_address_label">כתובת שרת:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="port_number_label">יציאה:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_outbound_label">יוצא:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_inbound_label">נכנס:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_account_label">חשבון:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_need_sign_label">נדרשת כניסה:\u0020</string>
+    <string name="email_need_sign_yes">כן</string>
+    <string name="email_need_sign_no">לא</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="rtsp_netinfo_label">פרטי רשת:\u0020</string>
+    <!--
+        Label, should be as short as possible. UDP is the short form of
+        "User Datagram Protocol"
+    -->
+    <string name="rtsp_max_udp_port_label">יציאת Max UDP:</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="rtsp_min_udp_port_label">יציאת Min UDP:</string>
+    <!--
+        Label, should be as short as possible. Short form of "Access
+        Point Name"
+    -->
+    <string name="apn_apn_label">APN:‏\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="apn_mms_proxy_label">MMS Proxy:‏\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="apn_mms_port_label">יציאת MMS:‏\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="apn_auth_type_label">סוג אימות:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="apn_type_label">סוג APN:‏\u0020</string>
+    <string name="info_unsupport">לא נתמך</string>
+    <string name="info_unavaliable">לא זמין</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="bookmark_folder_label">תיקיית סימניות:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="proxy_label">Proxy:‏\u0020</string>
+    <!--
+        Label, should be as short as possible. Short form of "Network
+        Access Point"
+    -->
+    <string name="nap_label">NAP:‏\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="bookmark_name_label">שם סימנייה:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="user_name_label">שם משתמש:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="password_label">סיסמה:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mmsc_name_label">שם MMSC:‏\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mms_cm_label">מצב יצירה:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mms_rm_label">מצב שליחה מחדש:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mms_ms_label">גודל מרבי מותר של הודעת מולטימדיה:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mms_pc_addr_label">כתובת שירות גלויות:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mms_ma_label">תמיכה בממשק MMS A:‏\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="server_id_label">מזהה שרת:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="server_name_label">שם שרת:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="server_addr_type_label">סוג כתובת שרת:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="auth_level_label">רמת אבטחה:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="auth_type_label">סוג אבטחה:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="auth_data_label">נתונים מאובטחים:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="dm_init_label">נדרש אתחול:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_setting_name_label">שם הגדרה:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_secure_label">אבטחה:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_from_label">מאת:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_rt_address_label">מענה לכתובת:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="rtsp_max_bandwidth_label">רוחב פס מרבי:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="ds_database_name_label">שם מסד נתונים:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="ds_database_url_label">URI של מסד נתונים:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="content_type_label">סוג תוכן:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="ds_cliuri_label">URI של מסד נתונים של לקוח:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="ds_sync_type_label">סוג סנכרון:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="imps_services_label">שירותים:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="imps_cid_prefix_label">קידומת מזהה לקוח:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="name_label">שם:\u0020</string>
+    <!-- Dialog message to alert user. -->
+    <string name="detail_invalid_setting_error_msg">הגדרה לא חוקית.</string>
+    <!-- Title of dialog. -->
+    <string name="error">שגיאה</string>
+    <string name="app_label">Omacp</string>
+</resources>

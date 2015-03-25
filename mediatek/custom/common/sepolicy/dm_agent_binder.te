@@ -1,0 +1,65 @@
+# ==============================================
+# Policy File of /system/bindm_agent_binder Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type dm_agent_binder_exec , exec_type, file_type;
+type dm_agent_binder ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive dm_agent_binder;
+init_daemon_domain(dm_agent_binder)
+
+# 20131024 CTS_02
+allow dm_agent_binder device:chr_file read;
+
+
+# 20131028 CTS_03
+allow dm_agent_binder device:chr_file { ioctl open };
+
+
+# 20131028 CTS_04
+allow dm_agent_binder dumpstate:fd use;
+allow dm_agent_binder dumpstate:unix_stream_socket { read write };
+
+
+# 20131028 CTS_06
+allow dm_agent_binder app_data_file:file write;
+allow dm_agent_binder untrusted_app:fd use;
+
+
+# 20131028 CTS_12
+allow dm_agent_binder linker_exec:file read;
+
+
+# 20131028 CTS_15
+allow dm_agent_binder property_socket:sock_file write;
+allow dm_agent_binder servicemanager:binder { transfer call };
+
+
+
+# 20131122 Add Set Property Rule
+allow dm_agent_binder  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow dm_agent_binder system_data_file:dir { write };
+allow dm_agent_binder system_data_file:file open;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow dm_agent_binder system_data_file:dir { write create add_name };
+

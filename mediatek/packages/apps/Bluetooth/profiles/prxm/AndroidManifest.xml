@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		package="com.mediatek.bluetooth"
+		android:versionCode="1"
+		android:versionName="1.0">
+
+<application android:icon="@drawable/bluetooth" 
+		android:label="@string/app_label"
+		android:description="@string/app_description">
+
+<!-- BLUEANGEL::IF MTK_BT_PROFILE_PRXM -->
+
+	<!-- BLE Proximity Monitor [+] ********************************************************************* -->
+
+	<receiver android:name="com.mediatek.bluetooth.prx.monitor.PrxmBroadcastReceiver"/>
+
+	<provider android:authorities="com.mediatek.provider.bluetooth.prxm"
+			android:name="com.mediatek.bluetooth.prx.monitor.PrxmProvider"/>
+
+	<activity android:name="com.mediatek.bluetooth.prx.monitor.PrxmDeviceMgmtActivity"
+			android:label="@string/bt_prxm_device_mgmt_label"
+			android:icon="@drawable/bt_prxm_launcher"
+			android:configChanges="orientation|screenSize|mcc|mnc"
+			android:taskAffinity="com.mediatek.bluetooth.prxm">
+		<intent-filter>
+			<action android:name="android.intent.action.MAIN" />
+			<category android:name="android.intent.category.LAUNCHER" />
+		</intent-filter>
+	</activity>
+
+	<activity android:name="com.mediatek.bluetooth.prx.monitor.PrxmDeviceSettingActivity"
+			android:configChanges="orientation|screenSize|locale|mcc|mnc">
+		<intent-filter>
+			<action android:name="com.mediatek.bluetooth.prx.monitor.device.setting.action.START" />
+			<category android:name="android.intent.category.DEFAULT"/>
+		</intent-filter>
+	</activity>
+
+	<!-- BLE Proximity Monitor [-] ********************************************************************* -->
+
+<!-- BLUEANGEL::FI MTK_BT_PROFILE_PRXM -->
+
+</application>
+
+</manifest> 

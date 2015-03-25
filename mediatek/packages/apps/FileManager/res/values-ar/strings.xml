@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="alert_delete_multiple">سيتم حذف هذه العناصر</string>
+    <string name="alert_delete_single">سيتم حذف هذا العنصر</string>
+    <string name="app_name">مدير الملف</string>
+    <string name="cancel">"إلغاء"</string>
+    <string name="copy">"نسخ"</string>
+    <string name="copy_deny">لا يوجد تصريح للنسخ</string>
+    <string name="create_folder">إنشاء مجلد</string>
+    <string name="cut">"قص"</string>
+    <string name="cut_deny">لا يوجد تصريح للقص</string>
+    <string name="delete">حذف</string>
+    <string name="delete_deny">لا يوجد تصريح للحذف</string>
+    <string name="delete_fail">فشل الحذف</string>
+    <string name="deleting">جاري الحذف</string>
+    <string name="deselect_all">إلغاء تحديد الكل</string>
+    <string name="details">التفاصيل</string>
+    <string name="done">"تم"</string>
+    <string name="empty_msg">(ملف خالي)</string>
+    <string name="executable">قابل للتنفيذ</string>
+    <string name="insufficient_memory">ذاكرة غير كافية</string>
+    <string name="invalid_empty_name">لا يمكن ترك اسم الملف أو المجلد فارغًا</string>
+    <string name="loading">جارٍ التحميل</string>
+    <string name="modified_time">معدل</string>
+    <string name="name">الاسم</string>
+    <string name="new_folder">ملف جديد</string>
+    <string name="no">"لا"</string>
+    <string name="ok">موافق</string>
+    <string name="paste">"لصق"</string>
+    <string name="pasting">جاري اللصق</string>
+    <string name="paste_fail">تعذر اللصق</string>
+    <string name="paste_same_folder">تعذر لصق بالدليل نفسه</string>
+    <string name="readable">قابل للقراءة</string>
+    <string name="rename">إعادة تسمية</string>
+    <string name="select_all">تحديد الكل</string>
+    <string name="send_file">إرسال ملف</string>
+    <string name="share">"مشاركة"</string>
+    <string name="size">الحجم</string>
+    <string name="sort_by">فرز حسب</string>
+    <string name="wait">يرجى الانتظار…</string>
+    <string name="writable">قابل للكتابة</string>
+    <string name="yes">نعم</string>
+    <string name="confirm_rename">تأكيد إعادة التسمية</string>
+    <string name="msg_rename_ext">إنك تقوم بتغيير امتداد الملف، الأمر الذي قد يؤدي إلى عدم التعرف على الملف. هل تريد بالتأكيد القيام بذلك؟</string>
+    <string name="msg_unable_open_file">تعذر فتح الملف.</string>
+    <string-array name="sort_by">
+        <item>النوع</item>
+        <item>الاسم (أ - ي)</item>
+        <item>الحجم (كبير - صغير)</item>
+        <item>الوقت (حديث - قديم)</item>
+    </string-array>
+    <string name="more">المزيد</string>
+    <string name="selected">تم التحديد</string>
+    <string name="invalid_char_prompt">لقد أدخلت حرفًا غير صالح</string>
+    <string name="search">بحث</string>
+    <string name="sort">فرز</string>
+    <string name="show_file">إظهار الملفات المخفية</string>
+    <string name="hide_file">إخفاء الملفات المخفية</string>
+    <string name="default_search_text">بحث عن الملفات</string>
+    <string name="search_text_empty">لا يجب ترك محتويات البحث فارغة.</string>
+    <string name="free_space">المساحة الخالية</string>
+    <string name="total_space">المساحة الكلية</string>
+    <string name="paste_sub_folder">يتعذر لصق المجلد الفرعي</string>
+    <string name="operation_fail">فشل بعض عمليات الملفات</string>
+    <string name="search_files">بحث عن الملفات</string>
+    <string name="search_result">%2$d نتيجة لـ \"%1$s\"</string>
+    <string name="already_exists">%1$s مستخدم بالفعل</string>
+    <string name="unmounted">%1$s غير محملة</string>
+    <string name="create_hidden_file">سيتم إخفاء الملف إذا بدأ اسمه بـ \'.\'</string>
+    <string name="modify_hidden_file">سيتم إخفاء الملف إذا بدأ اسمه بـ \'.\'</string>
+    <string name="file_name_too_long">الاسم المدخل طويل للغاية</string>
+    <string name="some_paste_fail">فشلت بعض عمليات اللصق</string>
+    <string name="some_delete_fail">فشلت بعض عمليات الحذف</string>
+    <string name="search_empty">لا يجب ترك محتويات البحث فارغة</string>
+    <string name="search_setting_description">الملفات والمجلدات المحلية</string>
+    <string name="path_not_exists">‎‎%‎‏1‎‏$s‎‏‎ غير موجود</string>
+    <string name="change_mode">حدد ملف أو مجلد</string>
+    <string name="folder_beam_forbidden_title">لا يمكن إرسال المجلد</string>
+    <string name="folder_beam_forbidden_message">خاصية إرسال المجلد غير مدعومة. يُرجى تحديد عدة ملفات لإرسالها.</string>
+    <string name="drm_beam_forbidden_title">الإرسال ممنوع</string>
+    <string name="drm_beam_forbidden_message">لا يمكن إرسال الملفات المحمية بواسطة DRM (إدارة الحقوق الرقمية).</string>
+
+</resources>

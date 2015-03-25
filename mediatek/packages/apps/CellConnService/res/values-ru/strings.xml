@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="confirm_radio_title">SIM-карта выключена</string>
+	<string name="confirm_radio_msg"> 		<xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		 сейчас выключена. Включить эту SIM-карту? 	</string>
+	<string name="confirm_radio_msg_single">"Сейчас включен режим «В самолете», отключить его?"</string>
+	<string name="confirm_pin_title">Блокировка PIN-кода</string>
+	<string name="confirm_pin_msg">SIM-карта, которую вы собираетесь использовать, заблокирована. Разблокировать карту?</string>
+	<string name="confirm_simmelock_title">Блокировка SIM-карты ME</string>
+	<string name="confirm_simmelock_msg">Слот SIM-карты, которую вы собираетесь использовать, заблокирован. Разблокировать слот?</string>
+	<string name="confirm_fdn_title">Фиксированный набор включен</string>
+	<string name="confirm_fdn_msg">Фиксированный набор номеров включен.</string>
+	<string name="confirm_roaming_title">Предупреждение: роуминг</string>
+	<string name="confirm_roaming_msg">"Выбранная SIM-карта работает в режиме роуминга. SIM-карта для \"домашней\" сети недоступна. Продолжить?"</string>
+	<string name="confirm_roaming_withPrefer_msg">"Выбранная SIM-карта работает в режиме роуминга. Переключиться на SIM-карту \"домашней\" сети?"</string>
+	<string name="confirm_roaming_lbutton">Продолжить</string>
+	<string name="confirm_roaming_rbutton">Отмена</string>
+	<string name="confirm_roamingWithPrefer_lbutton">\"Домашняя\" SIM-карта</string>
+	<string name="confirm_roamingWithPrefer_rbutton">Роуминг SIM-карты</string>
+	<string name="confirm_radio_lbutton">Включить</string>
+	<string name="confirm_unlock_lbutton">Разблокировать</string>
+	<string name="confirm_unlock_fail">Операция отменена</string>
+	<string name="confirm_turnon_radio_fail">Операция отменена</string>
+	<string name="confirm_permit_roaming_fail">Вы отключили это действие для SIM-карты в роуминге</string>
+	<string name="confirm_sim_locked_message">"SIM-карта безвозвратно заблокирована."</string>
+	<string name="confirm_slot_locked_message">"Гнездо заблокировано навсегда."</string>
+	<string name="app_name">CellConnectionService</string>  
+	<string name="button_ok">Ok</string>  
+<string name="button_cancel">"Отмена"</string>
+    <string name="confirm_radio_title_uim">UIM-карта отключена</string>
+    <string name="confirm_radio_title_card">Карта отключена</string>
+    <string name="confirm_radio_msg_uim"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> сейчас отключен. Подключить данную UIM-карту?</string>
+    <string name="confirm_radio_msg_card"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> сейчас отключен. Подключить данную карту?</string>
+    <string name="confirm_radio_flight_mode_on_and_msg">Режим полета включен и</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> сейчас отключен. Отключить режим полета и подключить данную SIM-карту?</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg_uim"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> сейчас отключен. Отключить режим полета и подключить данную UIM-карту?</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg_card"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> сейчас отключен. Отключить режим полета и подключить данную карту?</string>
+    <string name="confirm_radio_flight_mode_on_sim_on_msg">Режим полета включен. Отключить режим полета?</string>
+    <string name="confirm_pin_title_uim">UIM-карта заблокирована</string>
+    <string name="confirm_pin_title_card">Карта заблокирована</string>
+    <string name="confirm_pin_msg_uim">Выбранная UIM-карта заблокирована. Сначала разблокируйте ее.</string>
+    <string name="confirm_pin_msg_card">Выбранная карта заблокирована. Сначала разблокируйте ее.</string>
+    <string name="confirm_simmelock_msg_uim">Выбранное гнездо UIM-карты заблокировано. Сначала разблокируйте его.</string>
+    <string name="confirm_simmelock_msg_card">Выбранное гнездо карты заблокировано. Сначала разблокируйте его.</string>
+    <string name="confirm_roaming_msg_uim">Данная UIM-карта работает в режиме роуминга. В данный момент нет доступной UIM-карты. Продолжить?</string>
+    <string name="confirm_roaming_msg_card">Данная карта работает в режиме роуминга. В данный момент нет доступной локальной карты. Продолжить?</string>
+    <string name="confirm_roaming_withPrefer_msg_uim">Данная SIM-карта работает в режиме роуминга. Продолжить с помощью локальной UIM-карты?</string>
+    <string name="confirm_roaming_withPrefer_msg_card">Данная SIM-карта работает в режиме роуминга. Продолжить с помощью локальной карты?</string>
+    <string name="confirm_roamingWithPrefer_lbutton_uim">Локальная UIM-карта</string>
+    <string name="confirm_roamingWithPrefer_lbutton_card">Локальная карта</string>
+    <string name="confirm_roamingWithPrefer_rbutton_uim">Роуминг UIM-карты</string>
+    <string name="confirm_roamingWithPrefer_rbutton_card">Роуминг карты</string>
+    <string name="confirm_roaming_for3Sims_msg">Данная SIM-карта работает в режиме роуминга. Продолжить?</string>
+    <string name="confirm_roaming_for3Sims_msg_uim">Данная UIM-карта работает в режиме роуминга. Продолжить?</string>
+    <string name="confirm_roaming_for3Sims_msg_card">Данная карта работает в режиме роуминга. Продолжить?</string>
+    <string name="confirm_permit_roaming_fail_uim">Операция отменена вами в режиме роуминга UIM-карты</string>
+    <string name="confirm_permit_roaming_fail_card">Операция отменена вами в режиме роуминга карты</string>
+    <string name="confirm_sim_locked_message_uim">UIM-карта заблокирована постоянно</string>
+    <string name="confirm_sim_locked_message_card">Карта заблокирована постоянно</string>
+    <string name="button_yes">"Да"</string>
+    <string name="button_no">"Нет"</string>
+    </resources>

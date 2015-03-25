@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.mediatek.voiceunlock" 
+        android:sharedUserId="android.uid.system">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.HARDWARE_TEST" />
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.COPY_PROTECTED_DATA" />
+    <uses-permission android:name="android.permission.MANAGE_USERS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application android:label="@string/unlock_set_unlock_mode_voice_weak"
+            android:icon="@mipmap/ic_launcher_settings"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Holo"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:hardwareAccelerated="true"
+            android:supportsRtl="true">    
+        <activity android:name="com.mediatek.voiceunlock.VoiceUnlock" android:exported="true"/>
+        <activity android:name="com.mediatek.voiceunlock.VoiceUnlockSetupIntro" android:exported="false"/>
+        <activity android:name="com.mediatek.voiceunlock.VoiceCommandSelect" 
+                  android:exported="false"
+                  android:configChanges="orientation|keyboardHidden|screenSize|mnc|mcc" />
+        <activity android:name="com.mediatek.voiceunlock.VoiceCommandRecord" android:exported="false"
+                  android:configChanges="orientation|keyboardHidden|screenSize|mnc|mcc" />
+        <activity android:name="com.mediatek.voiceunlock.VoiceUnlockSetupEnd" android:exported="false"/>
+    </application>
+</manifest>

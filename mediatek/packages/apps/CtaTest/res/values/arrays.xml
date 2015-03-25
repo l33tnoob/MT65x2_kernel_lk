@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="test_case_array">
+        <item>@string/cta_test_1_phone_call</item>
+        <item>4.3.1.1.1 拨打电话 (Intent)</item>
+        <item>4.3.1.1.1 拨打电话 (反射实现)</item>
+        <item>4.3.1.1.1 结束通话</item>
+        <item>@string/cta_test_2_send_sms</item>
+        <item>4.3.1.1.3 发送短信 (API实现)</item>
+        <item>4.3.1.1.3 发送短信 (反射实现1)</item>
+        <item>4.3.1.1.3 发送短信 (反射实现2)</item>
+        <item>4.3.1.1.3 发送短信 (反射实现3)</item>
+        <item>4.3.1.1.4 发送彩信 (pdu)</item>
+        <item>4.3.1.1.4 发送彩信 (Intent)</item>
+        <item>@string/cta_test_3_data_conn</item>
+        <item>4.3.1.1.6.2 开启网络数据连接(反射实现)</item>
+        <item>4.3.1.1.6.2 开启网络数据连接(Intent)</item>
+        <item>@string/cta_test_4_wifi</item>
+        <item>4.3.1.2.1 定位功能开关 (Intent)</item>
+        <item>4.3.1.2.1 定位功能开关 (Intent, 无界面)</item>
+        <item>@string/cta_test_5_location_request</item>
+        <item>@string/cta_test_5_location_get_last</item>
+        <item>@string/cta_test_6_record_phone</item>
+        <item>4.3.1.2.2 启动通话录音\n(use AudioRecord)</item>
+        <item>@string/cta_test_7_record</item>
+        <item>4.3.1.2.3 启动本地录音\n(use AudioRecord)</item>
+        <item>@string/cta_test_8_camera</item>
+        <item>4.3.1.2.4 摄像</item>
+        <item>@string/cta_test_9_read_sms</item>
+        <item>@string/cta_test_9_read_mms</item>
+        <item>@string/cta_test_9_read_contacts</item>
+        <item>@string/cta_test_9_read_calllog</item>
+        <item>@string/cta_test_10_bt</item>
+        <item>4.4.1.1.2 开启NFC</item>
+        <item>@string/cta_test_11_imei</item>
+    </string-array>
+</resources>

@@ -1,0 +1,137 @@
+package com.mediatek.build {
+
+  public final class SdkVersion {
+    method public static int getAppVersion();
+    method public static int getPlatformVersion();
+    method public static boolean isCompatible();
+  }
+
+}
+
+package com.mediatek.camcorder {
+
+  public class CamcorderProfileEx {
+    ctor public CamcorderProfileEx();
+    method public static android.media.CamcorderProfile getProfile(int);
+    method public static android.media.CamcorderProfile getProfile(int, int);
+  }
+
+}
+
+package com.mediatek.hardware {
+
+  public class CameraEx {
+    method public static void setMavCallback(com.mediatek.hardware.CameraEx.MavCallback, android.hardware.Camera);
+    method public static void startMav(int, android.hardware.Camera);
+    method public static void stopMav(int, android.hardware.Camera);
+  }
+
+  public static abstract interface CameraEx.MavCallback {
+    method public abstract void onFrame();
+  }
+
+}
+
+package com.mediatek.hotknot {
+
+  public final class HotKnotAdapter {
+    method public static com.mediatek.hotknot.HotKnotAdapter getDefaultAdapter(android.content.Context);
+    method public boolean isEnabled();
+    method public void setHotKnotBeamUris(android.net.Uri[], android.app.Activity);
+    method public void setHotKnotBeamUrisCallback(com.mediatek.hotknot.HotKnotAdapter.CreateHotKnotBeamUrisCallback, android.app.Activity);
+    method public void setHotKnotMessage(com.mediatek.hotknot.HotKnotMessage, android.app.Activity, android.app.Activity...);
+    method public void setHotKnotMessageCallback(com.mediatek.hotknot.HotKnotAdapter.CreateHotKnotMessageCallback, android.app.Activity, android.app.Activity...);
+    method public void setOnHotKnotCompleteCallback(com.mediatek.hotknot.HotKnotAdapter.OnHotKnotCompleteCallback, android.app.Activity, android.app.Activity...);
+    field public static final java.lang.String ACTION_ADAPTER_STATE_CHANGED = "com.mediatek.hotknot.action.ADAPTER_STATE_CHANGED";
+    field public static final java.lang.String ACTION_HOTKNOT_SETTINGS = "mediatek.settings.HOTKNOT_SETTINGS";
+    field public static final java.lang.String ACTION_MESSAGE_DISCOVERED = "com.mediatek.hotknot.action.MESSAGE_DISCOVERED";
+    field public static final int ERROR_DATA_TOO_LARGE = 1; // 0x1
+    field public static final int ERROR_SUCCESS = 0; // 0x0
+    field public static final java.lang.String EXTRA_ADAPTER_STATE = "com.mediatek.hotknot.extra.ADAPTER_STATE";
+    field public static final java.lang.String EXTRA_DATA = "com.mediatek.hotknot.extra.DATA";
+    field public static final int STATE_DISABLED = 1; // 0x1
+    field public static final int STATE_ENABLED = 2; // 0x2
+  }
+
+  public static abstract interface HotKnotAdapter.CreateHotKnotBeamUrisCallback {
+    method public abstract android.net.Uri[] createHotKnotBeamUris();
+  }
+
+  public static abstract interface HotKnotAdapter.CreateHotKnotMessageCallback {
+    method public abstract com.mediatek.hotknot.HotKnotMessage createHotKnotMessage();
+  }
+
+  public static abstract interface HotKnotAdapter.OnHotKnotCompleteCallback {
+    method public abstract void onHotKnotComplete(int);
+  }
+
+  public final class HotKnotMessage implements android.os.Parcelable {
+    ctor public HotKnotMessage(java.lang.String, byte[]);
+    method public int describeContents();
+    method public byte[] getData();
+    method public java.lang.String getMimeType();
+    method public void writeToParcel(android.os.Parcel, int);
+  }
+
+}
+
+package com.mediatek.media {
+
+  public class MediaRecorderEx {
+    ctor public MediaRecorderEx();
+    method public static void pause(android.media.MediaRecorder) throws java.lang.IllegalStateException;
+    method public static void setAlbumTag(android.media.MediaRecorder, java.lang.String) throws java.lang.IllegalStateException;
+    method public static void setArtistTag(android.media.MediaRecorder, java.lang.String) throws java.lang.IllegalStateException;
+    method public static void setHDRecordMode(android.media.MediaRecorder, int, boolean) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException;
+  }
+
+  public final class MediaRecorderEx.HDRecordMode {
+    field public static final int INDOOR = 1; // 0x1
+    field public static final int NORMAL = 0; // 0x0
+    field public static final int OUTDOOR = 2; // 0x2
+  }
+
+}
+
+package com.mediatek.telephony {
+
+  public class SmsManagerEx {
+    method public java.util.ArrayList<java.lang.String> divideMessage(java.lang.String);
+    method public static com.mediatek.telephony.SmsManagerEx getDefault();
+    method public void sendDataMessage(java.lang.String, java.lang.String, short, byte[], android.app.PendingIntent, android.app.PendingIntent, int);
+    method public void sendDataMessage(java.lang.String, java.lang.String, short, short, byte[], android.app.PendingIntent, android.app.PendingIntent, int);
+    method public void sendMultipartTextMessage(java.lang.String, java.lang.String, java.util.ArrayList<java.lang.String>, java.util.ArrayList<android.app.PendingIntent>, java.util.ArrayList<android.app.PendingIntent>, int);
+    method public void sendMultipartTextMessageWithExtraParams(java.lang.String, java.lang.String, java.util.ArrayList<java.lang.String>, android.os.Bundle, java.util.ArrayList<android.app.PendingIntent>, java.util.ArrayList<android.app.PendingIntent>, int);
+    method public void sendTextMessage(java.lang.String, java.lang.String, java.lang.String, android.app.PendingIntent, android.app.PendingIntent, int);
+    method public void sendTextMessageWithExtraParams(java.lang.String, java.lang.String, java.lang.String, android.os.Bundle, android.app.PendingIntent, android.app.PendingIntent, int);
+  }
+
+  public class TelephonyManagerEx {
+    ctor public TelephonyManagerEx(android.content.Context);
+    method public int getCallState(int);
+    method public android.telephony.CellLocation getCellLocation(int);
+    method public int getDataActivity(int);
+    method public int getDataState(int);
+    method public java.lang.String getDeviceId(int);
+    method public java.lang.String getLine1Number(int);
+    method public java.util.List<android.telephony.NeighboringCellInfo> getNeighboringCellInfo(int);
+    method public java.lang.String getNetworkCountryIso(int);
+    method public java.lang.String getNetworkOperator(int);
+    method public java.lang.String getNetworkOperatorName(int);
+    method public int getNetworkType(int);
+    method public int getPhoneType(int);
+    method public java.lang.String getSimCountryIso(int);
+    method public java.lang.String getSimOperator(int);
+    method public java.lang.String getSimOperatorName(int);
+    method public java.lang.String getSimSerialNumber(int);
+    method public int getSimState(int);
+    method public java.lang.String getSubscriberId(int);
+    method public java.lang.String getVoiceMailAlphaTag(int);
+    method public java.lang.String getVoiceMailNumber(int);
+    method public boolean hasIccCard(int);
+    method public boolean isNetworkRoaming(int);
+    method public void listen(android.telephony.PhoneStateListener, int, int);
+  }
+
+}
+

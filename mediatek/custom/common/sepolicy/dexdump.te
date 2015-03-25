@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbindexdump Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type dexdump_exec , exec_type, file_type;
+type dexdump ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive dexdump;
+init_daemon_domain(dexdump)
+
+
+# 20131122 Add Set Property Rule
+allow dexdump  property_type:property_service set;

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/wifi_sdio_layout_tab_config"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <LinearLayout
+        android:id="@id/wifi_sdio_layout_server"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dip"
+            android:text="@string/wifi_sdio_server_ip"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@id/wifi_sdio_server_ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/wifi_sdio_server_ip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/wifi_sdio_layout_ap"
+        android:layout_width="match_parent"
+        android:layout_height="120dip"
+        android:orientation="vertical"
+        android:paddingTop="5dip" >
+
+        <TextView
+            android:id="@id/wifi_sdio_ap_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi_sdio_ap_selection"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@id/wifi_sdio_ap_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            sytle="?android:attr/progressBarStyleLarge" />
+
+        <ListView
+            android:id="@id/wifi_sdio_ap_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        >
+            <TableLayout
+                android:id="@id/wifi_sdio_layout_ap_config"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+        
+                <TableRow>
+        
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/wifi_sdio_ap_username" />
+        
+                    <EditText
+                        android:id="@id/wifi_sdio_ap_username"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:hint="@string/wifi_sdio_ap_username"
+                        android:inputType="text" />
+                </TableRow>
+        
+                <TableRow>
+        
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/wifi_sdio_ap_password" />
+        
+                    <EditText
+                        android:id="@id/wifi_sdio_ap_password"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:hint="@string/wifi_sdio_ap_password"
+                        android:inputType="textPassword" />
+                </TableRow>
+        
+                <TableRow>
+        
+                    <CheckBox
+                        android:id="@id/wifi_sdio_default_enable_cmd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+        
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/wifi_sdio_cmd_edge" />
+        
+                    <EditText
+                        android:id="@id/wifi_sdio_default_cmd_edge"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLength="1" />
+        
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/wifi_sdio_cmd_delay" />
+        
+                    <EditText
+                        android:id="@id/wifi_sdio_default_cmd_delay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLength="2" />
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@id/wifi_sdio_layout_iperf_config"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="5dip" >
+        
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wifi_sdio_iperf_config"
+                    android:textStyle="bold" />
+        
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+        
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/wifi_sdio_iperf_time" />
+        
+                    <EditText
+                        android:id="@id/wifi_sdio_iperf_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:maxLength="8" />
+        
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/wifi_sdio_iperf_stream" />
+        
+                    <EditText
+                        android:id="@id/wifi_sdio_iperf_stream"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:maxLength="2" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                    
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/wifi_sdio_iperf_window" />
+        
+                    <EditText
+                        android:id="@id/wifi_sdio_iperf_window"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/wifi_sdio_iperf_mss" />
+        
+                    <EditText
+                        android:id="@id/wifi_sdio_iperf_mss"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/wifi_sdio_run_count" />
+        
+                    <EditText
+                        android:id="@+id/wifi_sdio_lrun_count"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:maxLength="2" />
+        
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/wifi_sdio_lrun_time" />
+        
+                    <EditText
+                        android:id="@+id/wifi_sdio_lrun_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/wifi_sdio_layout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@id/wifi_sdio_btn_start"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:text="@string/wifi_sdio_btn_start" />
+        
+                <Button
+                    android:id="@id/wifi_sdio_btn_stop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:text="@string/wifi_sdio_btn_stop" />
+            </LinearLayout>
+        </LinearLayout>
+   </ScrollView>
+</LinearLayout>

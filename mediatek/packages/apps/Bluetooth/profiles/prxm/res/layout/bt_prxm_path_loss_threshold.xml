@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+<!--  android:id="@+id/plt_layout" -->
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:gravity="center_horizontal"
+		android:paddingBottom="20dip">
+
+		<!-- dialog icon -->
+		<ImageView
+			android:src="@drawable/bt_prxm_plt"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="20dip" />
+
+		<!-- text: current path loss rssi -->
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/bt_prxm_plt_current_rssi"
+			android:paddingTop="10dip"
+			android:paddingLeft="20dip" 
+			android:paddingRight="20dip" />
+
+		<!-- seekbar: current path loss rssi -->
+		<SeekBar android:id="@+id/current_rssi_seekbar"
+			android:thumb="@drawable/bt_prxm_plt_device"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="2dip"
+			android:paddingLeft="20dip" 
+			android:paddingRight="20dip" />
+
+		<!-- checkbox -->
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal"
+			android:gravity="center_vertical">
+
+			<!-- checkbox: using current rssi -->
+			<CheckBox android:id="@+id/using_current_rssi_cb"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="6dip"
+				android:layout_marginLeft="20dip"  />
+			<TextView 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/bt_prxm_plt_using_current_rssi"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:paddingTop="6dip"
+				android:paddingRight="20dip" />
+		</LinearLayout>
+
+		<!-- text: path loss threshold -->
+        <TextView android:id="@+id/path_loss_threshold_title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/bt_prxm_plt_path_loss_threshold_title"
+			android:paddingTop="6dip"
+			android:paddingLeft="20dip" 
+			android:paddingRight="20dip" />
+
+        <!-- Used for the notification volume -->
+        <SeekBar android:id="@+id/path_loss_threshold_seekbar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="2dip"
+			android:paddingLeft="20dip" 
+			android:paddingRight="20dip" />
+
+    </LinearLayout>
+     
+</ScrollView>  

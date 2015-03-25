@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bingsm0710muxdmd2 Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type gsm0710muxdmd2_exec , exec_type, file_type;
+type gsm0710muxdmd2 ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive gsm0710muxdmd2;
+init_daemon_domain(gsm0710muxdmd2)
+
+
+# 20131122 Add Set Property Rule
+allow gsm0710muxdmd2  property_type:property_service set;

@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bincontent Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type content_exec , exec_type, file_type;
+type content ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive content;
+init_daemon_domain(content)
+
+
+# 20131122 Add Set Property Rule
+allow content  property_type:property_service set;

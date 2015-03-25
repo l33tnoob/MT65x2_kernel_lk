@@ -1,0 +1,64 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<Preference android:key="bluetooth" android:title="@string/Bluetooth"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.bluetooth.BtList" />
+	</Preference>
+    <Preference android:key="cds_information" android:title="@string/cds_information"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.connectivity"
+			android:targetClass="com.mediatek.connectivity.CdsInfoActivity" />
+	</Preference>
+	<Preference android:key="fm_receiver" android:title="@string/fm_receiver"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.FMRadio" android:targetClass="com.mediatek.FMRadio.FMRadioEMActivity" />
+	</Preference>
+	<Preference android:key="fm_transmitter" android:title="@string/fm_transmitter"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.FMTransmitter"
+			android:targetClass="com.mediatek.FMTransmitter.FMTxEMActivity" />
+	</Preference>
+
+	<Preference android:key="hqanfc" android:title="@string/nfc_6605"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+                        android:targetClass="com.mediatek.engineermode.hqanfc.NfcMainPage" />
+	</Preference>
+	<Preference android:key="nfc" android:title="@string/nfc_3110"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode" 
+                        android:targetClass="com.mediatek.engineermode.nfc.NfcEntry" />
+	</Preference>
+    <Preference android:key="nfc_dta" android:title="@string/nfc_dta"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.nfc.dta" 
+                        android:targetClass="com.mediatek.nfc.dta.DeviceTestApp" />
+	</Preference>
+	<Preference android:key="wifi" android:title="@string/wifi"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.wifi.WiFi" />
+	</Preference>
+
+	<Preference android:key="wifi_ctia" android:title="@string/wifi_ctia"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.wifi.WifiTestSetting" />
+	</Preference>
+	<Preference android:key="wfd_settings" android:title="@string/wfd_settings"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.wfdsettings.WfdList" />
+	</Preference>
+</PreferenceScreen>

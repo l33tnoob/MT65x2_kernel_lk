@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	android:versionCode="1" android:versionName="1.0" package="com.mediatek.bluetooth"
+	android:sharedUserId="android.uid.mtkbt">
+
+	<application android:label="@string/app_label" 
+                android:persistent="true"
+		android:icon="@drawable/bluetooth" android:description="@string/app_description">
+	
+<!-- BLUEANGEL::IF MTK_BT_PROFILE_FTP -->
+		<service android:name=".ftp.BluetoothFtpService"
+				 android:exported="true" >
+			<!-- android:process=":service" -->
+			<intent-filter>
+				<action android:name="android.bluetooth.ftp.action.BIND_SERVER" />
+				<action android:name="android.bluetooth.ftp.action.BIND_CLIENT" />
+				<action android:name="android.bluetooth.IBluetoothFtp" />
+				<action android:name="android.bluetooth.IBluetoothFtpServer" />
+				<action android:name="com.mediatek.bluetooth.ftp.IBluetoothFtpServerNotify" />
+				<action android:name="com.mediatek.bluetooth.ftp.IBluetoothFtpClient" />
+			</intent-filter>
+		</service>
+
+		<activity android:name=".ftp.BluetoothFtpServerNotify"
+				  android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"
+				  android:launchMode="singleInstance"
+				  android:excludeFromRecents="true"
+				  android:taskAffinity="com.mediatek.bluetooth.ftp.server"
+				  android:configChanges="keyboardHidden|orientation|screenSize" />
+
+		<activity android:name=".ftp.BluetoothFtpClient"
+				  android:alwaysRetainTaskState="true"
+				  android:taskAffinity="com.mediatek.bluetooth.ftp"
+				  android:excludeFromRecents="true" />
+				  <!-- android:configChanges="keyboardHidden|orientation|screenSize" -->
+				  <!-- android:launchMode="singleTask" -->
+
+		<activity android:name=".ftp.BluetoothFtpLocalBrowser"
+				  android:excludeFromRecents="true"
+				  android:taskAffinity="com.mediatek.bluetooth.ftp"
+				  android:configChanges="keyboardHidden|orientation|screenSize" />
+
+		<activity android:name=".ftp.BluetoothFtpSeveralMarker"
+				  android:excludeFromRecents="true"
+				  android:taskAffinity="com.mediatek.bluetooth.ftp"
+				  android:configChanges="keyboardHidden|orientation|screenSize" />
+
+		<provider android:name=".ftp.BluetoothFtpProvider"
+				  android:authorities="com.mediatek.provider.bluetooth.ftp" />
+<!-- BLUEANGEL::FI MTK_BT_PROFILE_FTP -->
+
+	</application>
+
+</manifest> 

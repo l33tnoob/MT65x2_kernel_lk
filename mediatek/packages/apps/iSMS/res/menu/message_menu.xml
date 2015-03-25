@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   <group android:id="@+id/callP" >
+        <item
+            android:id="@+id/call"
+            android:icon="@drawable/ic_menu_call"
+            android:showAsAction="always"
+            android:title="@string/STR_NMS_MENU_CALL"/>
+    </group>
+    
+	<group android:id="@+id/infoP" >
+	    <item
+	        android:id="@+id/info"
+	        android:title="@string/STR_NMS_MENU_GROUPINFO"
+	        android:icon="@drawable/isms_chat_info"
+	        android:showAsAction="always"/>
+	</group>
+    
+    <group android:id="@+id/inviteToChatP">
+	　　<item android:id="@+id/inviteToChat"
+	    	android:showAsAction="never"
+	    	android:title="@string/STR_NMS_MENU_INVITE_CHAT"/>
+　　</group>
+
+    <group android:id="@+id/inviteToISMSP">
+	　　<item android:id="@+id/inviteToISMS"
+	    	android:showAsAction="never"
+	    	android:title="@string/STR_NMS_MENU_INVITE_ISMS"/>
+　　</group>
+    
+    <group android:id="@+id/selectMessageP">
+	　　<item android:id="@+id/selectMessage"
+			android:showAsAction="never"
+			android:title="@string/STR_NMS_MENU_SELECT_MSG"/>
+	</group>
+
+    <group android:id="@+id/markAsSpamP">
+	　　   <item android:id="@+id/markAsSpam"
+	        android:showAsAction="never"
+	        android:title="@string/STR_NMS_MENU_MARK_SPAM"/>
+　　</group>
+
+	<group android:id="@+id/removeSpamP">
+	　　  <item android:id="@+id/removeSpam"
+	        android:showAsAction="never"
+	        android:title="@string/STR_NMS_MENU_REMOVE_SPAM"/>
+　　 </group>
+	
+    <group android:id="@+id/ViewAllMediaP">
+	　　<item android:id="@+id/ViewAllMedia"
+			android:showAsAction="never"
+			android:title="@string/STR_NMS_MENU_VIEW_ALLMEDIA"/>
+　　</group>
+
+    <group android:id="@+id/ViewAllLocationP">
+		<item android:id="@+id/ViewAllLocation"
+			android:showAsAction="never"
+			android:title="@string/STR_NMS_MENU_VIEW_ALLLOCATION"/>
+	</group>
+	
+    <group android:id="@+id/editGroupP">
+		<item android:id="@+id/editGroup"
+			android:showAsAction="never"
+			android:title="@string/STR_NMS_MENU_EDIT_GROUP"/>
+	</group>
+	
+    <group android:id="@+id/ChatSettingP">
+		<item android:id="@+id/ChatSetting"
+			android:showAsAction="never"
+			android:title="@string/STR_NMS_MENU_CHAT_SETTING"/>
+	</group>
+	
+    <group android:id="@+id/InsertQuickTextP">
+		<item android:id="@+id/InsertQuickText"
+			android:showAsAction="never"
+			android:title="@string/STR_NMS_MENU_INSERT_QUICK_TEXT"/>
+	</group>
+	
+    <group android:id="@+id/clearChatHistoryP">
+		<item android:id="@+id/clearChatHistory"
+			android:showAsAction="never"
+			android:title="@string/STR_NMS_MENU_CLEAR_HISTORY"/>
+	</group>
+	
+    <group android:id="@+id/leaveGroupP">
+		<item android:id="@+id/leaveGroup"
+			android:showAsAction="never"
+			android:title="@string/STR_NMS_MENU_LEAVE_GROUP"/>
+	</group>
+	
+    <group android:id="@+id/discardP">
+		<item android:id="@+id/discard"
+			android:showAsAction="never"
+			android:title="@string/STR_NMS_MENU_DISCARD"/>
+	</group>
+</menu>

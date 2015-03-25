@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/media_controller"
+  android:layout_width="match_parent"
+  android:layout_height="76dip" >
+  <ImageView
+    android:id="@+id/media_controller_background"
+    android:layout_width="match_parent"
+    android:layout_height="46dip"
+    android:background="@drawable/mtk_ic_video_widget_panel" />
+  <android.widget.video.MTKWidgetSeekBar
+    android:id="@+id/video_progress"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:saveEnabled="false"
+    android:indeterminate="false"
+    android:layout_width="match_parent"
+    android:layout_height="10dip"
+    android:minHeight="2dip"
+    android:maxHeight="2dip"
+    android:indeterminateDrawable="@drawable/mtk_ic_video_widget_seekbar_background"
+    android:thumb="@drawable/mtk_ic_video_widget_indicator" 
+    android:thumbOffset="0dip" />
+  <ImageView 
+    android:id="@+id/video_fullscreen"
+    android:layout_width="wrap_content"
+    android:layout_height="32dip"
+    android:layout_below="@id/video_progress"
+    android:paddingTop="1dip"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="4dip"
+    android:paddingLeft="6dip"
+    android:paddingRight="6dip"
+    android:paddingBottom="6dip"
+    android:src="@drawable/mtk_video_widget_button_fullscreen"  />
+  <ImageView 
+    android:id="@+id/video_replay"
+    android:layout_width="wrap_content"
+    android:layout_height="32dip"
+    android:layout_below="@id/video_progress"
+    android:paddingTop="1dip"
+    android:layout_toRightOf="@id/video_fullscreen"
+    android:layout_marginLeft="20dip"
+    android:paddingLeft="6dip"
+    android:paddingRight="6dip"
+    android:paddingBottom="6dip"
+    android:src="@drawable/mtk_video_widget_button_replay"  />
+  <ImageView 
+    android:id="@+id/video_pause"
+    android:layout_width="wrap_content"
+    android:layout_height="52dip"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/video_progress"
+    android:layout_marginTop="8dip"
+    android:src="@drawable/mtk_ic_video_widget_start_icon"  />
+  <ImageView 
+    android:id="@+id/video_pick"
+    android:layout_width="wrap_content"
+    android:layout_height="32dip"
+    android:layout_below="@id/video_progress"
+    android:paddingTop="1dip"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="4dip"
+    android:paddingRight="6dip"
+    android:paddingLeft="6dip"
+    android:paddingBottom="6dip"
+    android:src="@drawable/mtk_video_widget_button_pick"   />
+</RelativeLayout>

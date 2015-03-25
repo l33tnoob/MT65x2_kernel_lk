@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binlogcat Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type logcat_exec , exec_type, file_type;
+type logcat ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive logcat;
+init_daemon_domain(logcat)
+
+
+# 20131122 Add Set Property Rule
+allow logcat  property_type:property_service set;

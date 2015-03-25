@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical" >
+
+        <include layout="@layout/package_info" />
+
+        <TextView
+            android:id="@+id/textAskForInstallSd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ask_for_install_sd"
+            android:textColor="#bbbbbb"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textWarningForInstallSd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/warning_install_sd"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <include layout="@layout/release_note" />
+    </LinearLayout>
+
+</ScrollView>

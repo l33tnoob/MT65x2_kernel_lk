@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binbtif_tester Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type btif_tester_exec , exec_type, file_type;
+type btif_tester ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive btif_tester;
+init_daemon_domain(btif_tester)
+
+
+# 20131122 Add Set Property Rule
+allow btif_tester  property_type:property_service set;

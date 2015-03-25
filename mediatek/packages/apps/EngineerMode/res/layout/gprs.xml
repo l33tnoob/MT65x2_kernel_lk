@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/Sim1"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:text="@string/SIM1" >
+            </Button>
+
+            <Button
+                android:id="@+id/Sim2"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:text="@string/SIM2" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/IMEI_VALUE"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="15"
+                android:numeric="decimal" >
+            </EditText>
+
+            <Button
+                android:id="@+id/IMEI"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:text="@string/IMEI" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/DefSIMText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/DefSIMText"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/DefSIM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="20px"
+                android:layout_y="40px"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <RadioButton
+                    android:id="@+id/SIM1Enabled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_sim1"
+                    android:visibility="gone" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/SIM2Enabled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_sim2"
+                    android:visibility="gone" >
+                </RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/Attached"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:text="@string/GPRS_Attached" >
+            </Button>
+
+            <Button
+                android:id="@+id/Detached"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:text="@string/GPRS_Detached" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/GprsAttachType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="20px"
+                android:layout_y="40px"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/GprsAlwaysAttach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/GPRS_ALWAYS_ATTACH" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/GprsWhenNeeded"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/GPRS_WHEN_NEEDED" >
+                </RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+       <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal">		
+           <Button android:layout_weight="1" android:layout_height="wrap_content" android:id="@+id/always_mode_continue" android:text="@string/GPRS_ALWAYS_ATTACH_CONTINUE" android:layout_width="wrap_content"></Button>
+      	   <Button android:layout_weight="1" android:layout_height="wrap_content" android:id="@+id/when_needed_continue" android:text="@string/GPRS_WHEN_NEEDED_CONTINUE" android:layout_width="wrap_content"></Button>
+           <Button android:layout_weight="1" android:layout_height="wrap_content" android:id="@+id/not_specify" android:text="@string/GPRS_CANCEL_SPECIFY" android:layout_width="wrap_content"></Button>
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/PDPSelect"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/FirstPDP"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/GPRS_1st_PDP" >
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/SecondPDP"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/GPRS_2nd_PDP" >
+                </RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <View
+                android:id="@+id/SpacerTop"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginBottom="6dip"
+                android:layout_marginTop="6dip"
+                android:background="#00FF00" >
+            </View>
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioGroup
+                    android:id="@+id/UsageSelect"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/Primary"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/GPRS_As_Primary" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/Secondary"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/GPRS_As_Secondary" >
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Spinner
+                    android:id="@+id/ContextNumber"
+                    android:layout_width="240dip"
+                    android:layout_height="wrap_content" >
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/Activate"
+                    android:layout_width="160dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/GPRS_Activate_PDP" >
+                </Button>
+
+                <Button
+                    android:id="@+id/Deactivate"
+                    android:layout_width="160dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/GPRS_Deactivate_PDP" >
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/DataLength"
+                    android:layout_width="120dip"
+                    android:layout_height="wrap_content"
+                    android:numeric="integer"
+                    android:text="@string/GPRS_1000" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/SendData"
+                    android:layout_width="120dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/GPRS_Send_Data" >
+                </Button>
+            </LinearLayout>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/pdn_reuse_on"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:text="@string/GPRS_pdn_reuse_on" >
+            </Button>
+
+            <Button
+                android:id="@+id/pdn_reuse_off"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:text="@string/GPRS_pdn_reuse_off" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal" >
+	            <EditText
+	                android:id="@+id/CSD_NUM"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:maxLength="20" 
+	                android:hint="Please input csd num...">
+	            </EditText>
+
+
+	            <EditText
+	                android:id="@+id/CSD_SLOT"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:maxLength="1"
+	                android:numeric="decimal" >
+	            </EditText>            
+	        </LinearLayout>            
+	        
+            <Button
+                android:id="@+id/DialUpCsd"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:text="@string/GPRS_CSD_DIAL" >
+            </Button>
+        </LinearLayout>
+        
+        <!--
+	<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent">
+		<View android:layout_width="fill_parent" android:id="@+id/SpacerTop" android:layout_height="1dip" android:layout_marginBottom="6dip" android:layout_marginTop="6dip" android:background="#00FF00"></View>
+	</LinearLayout>
+        -->
+
+    </LinearLayout>
+
+</ScrollView>

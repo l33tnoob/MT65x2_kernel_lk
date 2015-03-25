@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">CellConnectionService</string>
+    <string name="button_ok">확인</string>
+    <string name="button_cancel">취소</string>
+    <string name="confirm_radio_title">SIM이 꺼짐</string>
+    <string name="confirm_radio_msg"> <xliff:g id="operator_name" example="CMCC">%1$s</xliff:g>이(가) 이제 꺼집니다. 이 SIM 카드를 켜시겠습니까? </string>
+    <string name="confirm_radio_msg_single">비행기 모드가 이제 켜집니다. 끄시겠습니까?</string>
+    <string name="confirm_pin_title">SIM이 잠가짐</string>
+    <string name="confirm_pin_msg">선택한 SIM 카드가 이제 잠가집니다. 먼저 잠금을 해제하십시오.</string>
+    <string name="confirm_simmelock_title">SIM ME가 잠가짐</string>
+    <string name="confirm_simmelock_msg">선택한 SIM 카드가 이제 잠가집니다. 먼저 잠금을 해제하십시오.</string>
+    <string name="confirm_fdn_title">FDN이 활성화됨</string>
+    <string name="confirm_fdn_msg">고정 다이얼 번호가 활성화되었습니다.</string>
+    <string name="confirm_roaming_title">로밍 경고</string>
+    <string name="confirm_roaming_msg">사용하려는 SIM 카드가 현재 로밍 중입니다. 지금 사용할 수 있는 로컬 SIM이 없습니다. 계속하시겠습니까? </string>
+    <string name="confirm_roaming_withPrefer_msg">사용하려는 SIM 카드가 현재 로밍 중입니다. 로컬 SIM을 통해 계속하시겠습니까? </string>
+    <string name="confirm_roaming_lbutton">계속</string>
+    <string name="confirm_roaming_rbutton">취소</string>
+    <string name="confirm_roamingWithPrefer_lbutton">로컬 SIM</string>
+    <string name="confirm_roamingWithPrefer_rbutton">로밍 SIM</string>
+    <string name="confirm_radio_lbutton">켜기</string>
+    <string name="confirm_unlock_lbutton">잠금 해제</string>
+    <string name="confirm_unlock_fail">작동이 취소됨</string>
+    <string name="confirm_turnon_radio_fail">작동이 취소됨</string>
+    <string name="confirm_permit_roaming_fail">로밍 SIM에서 이 동작을 취소할 수 없습니다.</string>
+    <string name="confirm_sim_locked_message">SIM 카드가 영구적으로 잠가졌습니다.</string>
+    <string name="confirm_slot_locked_message">슬롯이 영구적으로 잠가졌습니다.</string>
+<string name="confirm_radio_title_uim">UIM이 꺼져 있음</string>
+    <string name="confirm_radio_title_card">카드가 꺼져 있음</string>
+    <string name="confirm_radio_msg_uim">지금 <xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 이(가) 꺼져 있습니다. 이 UIM 카드를 켜시겠습니까?</string>
+    <string name="confirm_radio_msg_card">지금 <xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 이(가) 꺼져 있습니다. 이 카드를 켜시겠습니까?</string>
+    <string name="confirm_radio_flight_mode_on_and_msg">비행 모드가 켜지고</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg">지금 <xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> 이(가) 꺼져 있습니다. 비행 모드를 끄고 이 SIM 카드를 켜시겠습니까?</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg_uim">지금 <xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> 이(가) 꺼져 있습니다. 비행 모드를 끄고 이 UIM 카드를 켜시겠습니까?</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg_card">지금 <xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> 이(가) 꺼져 있습니다. 비행 모드를 끄고 이 카드를 켜시겠습니까?</string>
+    <string name="confirm_radio_flight_mode_on_sim_on_msg">비행 모드가 켜져 있습니다. 비행 모드를 끄시겠습니까?</string>
+    <string name="confirm_pin_title_uim">UIM이 잠가짐</string>
+    <string name="confirm_pin_title_card">카드가 잠가짐</string>
+    <string name="confirm_pin_msg_uim">선택한 UIM 카드가 지금 잠가져 있습니다. 먼저 이를 푸십시오.</string>
+    <string name="confirm_pin_msg_card">선택한 카드가 지금 잠가져 있습니다. 먼저 이를 푸십시오.</string>
+    <string name="confirm_simmelock_msg_uim">선택한 UIM 슬롯이 지금 잠가져 있습니다. 먼저 이를 푸십시오.</string>
+    <string name="confirm_simmelock_msg_card">선택한 슬롯이 지금 잠가져 있습니다. 먼저 이를 푸십시오.</string>
+    <string name="confirm_roaming_msg_uim">사용하려는 UIM 카드가 지금 로밍 중입니다. 지금 사용할 수 있는 로컬 UIM이 없습니다. 계속하시겠습니까?</string>
+    <string name="confirm_roaming_msg_card">사용하려는 카드가 지금 로밍 중입니다. 지금 사용할 수 있는 로컬 카드 이 없습니다. 계속하시겠습니까?</string>
+    <string name="confirm_roaming_withPrefer_msg_uim">사용하려는 SIM 카드가 지금 로밍 중입니다. 로컬 UIM을 통해 계속하시겠습니까?</string>
+    <string name="confirm_roaming_withPrefer_msg_card">사용하려는 SIM 카드가 지금 로밍 중입니다. 로컬 카드를 통해 계속하시겠습니까?</string>
+    <string name="confirm_roamingWithPrefer_lbutton_uim">로컬 UIM</string>
+    <string name="confirm_roamingWithPrefer_lbutton_card">로컬 카드</string>
+    <string name="confirm_roamingWithPrefer_rbutton_uim">로밍UIM</string>
+    <string name="confirm_roamingWithPrefer_rbutton_card">로밍 카드</string>
+    <string name="confirm_roaming_for3Sims_msg">사용하려는 SIM 카드가 지금 로밍 중입니다. 계속하시겠습니까?</string>
+    <string name="confirm_roaming_for3Sims_msg_uim">사용하려는 UIM 카드가 지금 로밍 중입니다. 계속하시겠습니까?</string>
+    <string name="confirm_roaming_for3Sims_msg_card">사용하려는 카드가 지금 로밍 중입니다. 계속하시겠습니까?</string>
+    <string name="confirm_permit_roaming_fail_uim">로밍 UIM에 대한 이 동작을 취소합니다.</string>
+    <string name="confirm_permit_roaming_fail_card">로밍 카드에 대한 이 동작을 취소합니다.</string>
+    <string name="confirm_sim_locked_message_uim">UIM 카드가 영구적으로 잠가졌습니다.</string>
+    <string name="confirm_sim_locked_message_card">카드가 영구적으로 잠가졌습니다.</string>
+    <string name="button_yes">"예"</string>
+    <string name="button_no">거절</string>
+    </resources>

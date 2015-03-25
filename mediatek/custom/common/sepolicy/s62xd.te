@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bins62xd Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type s62xd_exec , exec_type, file_type;
+type s62xd ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive s62xd;
+init_daemon_domain(s62xd)
+
+
+# 20131122 Add Set Property Rule
+allow s62xd  property_type:property_service set;

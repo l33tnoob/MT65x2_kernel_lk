@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="app_name">Soluyhteyspalvelu</string>
+	<string name="button_ok">OK</string>
+	<string name="button_cancel">"Peruuta"</string>
+	<string name="confirm_radio_title">SIM kytketty pois päältä</string>
+	<string name="confirm_radio_title_uim">UIM kytketty pois päältä</string>
+	<string name="confirm_radio_title_card">Kortti kytketty pois päältä</string>
+
+	<string name="confirm_radio_msg"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> on nyt kytketty pois päältä. Haluatko kytkeä tämän SIM-kortin päälle?</string>
+  <string name="confirm_radio_msg_uim"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> on nyt kytketty pois päältä. Haluatko kytkeä tämän UIM-kortin päälle?</string>
+  <string name="confirm_radio_msg_card"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> on nyt kytketty pois päältä. Haluatko kytkeä tämän kortin päälle?</string>
+
+	<string name="confirm_radio_flight_mode_on_and_msg">Lentotila on päällä ja</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> on nyt kytketty pois päältä. Haluatko kytkeä lentotilan pois päältä ja kytkeä tämän SIM-kortin päälle?</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg_uim"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> on nyt kytketty pois päältä. Haluatko kytkeä lentotilan pois päältä ja kytkeä tämän UIM-kortin päälle?</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg_card"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> on nyt kytketty pois päältä. Haluatko kytkeä lentotilan pois päältä ja kytkeä tämän kortin päälle?</string>	
+	<string name="confirm_radio_flight_mode_on_sim_on_msg">Lentotila on päällä. Haluatko kytkeä lentotilan pois päältä?</string>  
+	<string name="confirm_radio_msg_single">Lentokonetila on nyt kytketty päälle. Haluatko kytkeä sen pois päältä?</string>
+	<string name="confirm_pin_title">SIM lukittu</string>
+	<string name="confirm_pin_title_uim">UIM lukittu</string>
+	<string name="confirm_pin_title_card">Kortti lukittu</string>
+	<string name="confirm_pin_msg">Valittu SIM-kortti on nyt lukittu. Avaa ensin sen lukitus.</string>
+	<string name="confirm_pin_msg_uim">Valittu UIM-kortti on nyt lukittu. Avaa ensin sen lukitus.</string>
+	<string name="confirm_pin_msg_card">Valittu kortti on nyt lukittu. Avaa ensin sen lukitus.</string>
+	<string name="confirm_simmelock_title">SIM ME lukittu</string>
+	<string name="confirm_simmelock_msg">Valittu SIM-korttipaikka on nyt lukittu. Avaa ensin sen lukitus.</string>
+	<string name="confirm_simmelock_msg_uim">Valittu UIM-korttipaikka on nyt lukittu. Avaa ensin sen lukitus.</string>
+	<string name="confirm_simmelock_msg_card">Valittu korttipaikka on nyt lukittu. Avaa ensin sen lukitus.</string>
+	<string name="confirm_fdn_title">FDN otettu käyttöön</string>
+	<string name="confirm_fdn_msg">Kiinteät soittonumerot on otettu käyttöön.</string>
+	<string name="confirm_roaming_title">Verkkovierailuvaroitus</string>
+	<string name="confirm_roaming_msg">SIM-kortti, jota aiot käyttää, on nyt verkkovierailutilassa. Paikallista SIM-korttia ei ole nyt käytettävissä. Haluatko jatkaa?</string>
+	<string name="confirm_roaming_msg_uim">UIM-kortti, jota aiot käyttää, on nyt verkkovierailutilassa. Paikallista UIM-korttia ei ole nyt käytettävissä. Haluatko jatkaa?</string>
+	<string name="confirm_roaming_msg_card">Kortti, jota aiot käyttää, on nyt verkkovierailutilassa. Paikallista korttia ei ole nyt käytettävissä. Haluatko jatkaa?</string>
+  <string name="confirm_roaming_withPrefer_msg">SIM-kortti, jota aiot käyttää, on nyt verkkovierailutilassa. Haluatko jatkaa paikallisella SIM-kortilla?</string>
+  <string name="confirm_roaming_withPrefer_msg_uim">SIM-kortti, jota aiot käyttää, on nyt verkkovierailutilassa. Haluatko jatkaa paikallisella UIM-kortilla?</string>
+  <string name="confirm_roaming_withPrefer_msg_card">SIM-kortti, jota aiot käyttää, on nyt verkkovierailutilassa. Haluatko jatkaa paikallisella kortilla?</string>
+  <string name="confirm_roaming_lbutton">"Jatka"</string>
+  <string name="confirm_roaming_rbutton">"Peruuta"</string>
+  <string name="confirm_roamingWithPrefer_lbutton">Paikallinen SIM</string>
+  <string name="confirm_roamingWithPrefer_lbutton_uim">Paikallinen UIM</string>
+  <string name="confirm_roamingWithPrefer_lbutton_card">Paikallinen kortti</string>
+  <string name="confirm_roamingWithPrefer_rbutton">Verkkovierailu SIM-kortilla</string>
+  <string name="confirm_roamingWithPrefer_rbutton_uim">Verkkovierailu UIM-kortilla</string>
+  <string name="confirm_roamingWithPrefer_rbutton_card">Verkkovierailu kortilla</string>
+	<string name="confirm_roaming_for3Sims_msg">SIM-kortti, jota aiot käyttää, on nyt verkkovierailutilassa. Haluatko jatkaa?</string>
+  <string name="confirm_roaming_for3Sims_msg_uim">UIM-kortti, jota aiot käyttää, on nyt verkkovierailutilassa. Haluatko jatkaa?</string>
+  <string name="confirm_roaming_for3Sims_msg_card">Kortti, jota aiot käyttää, on nyt verkkovierailutilassa. Haluatko jatkaa?</string>
+	<string name="confirm_radio_lbutton">Käynnistä</string>
+	<string name="confirm_unlock_lbutton">Poista lukitus</string>
+	<string name="confirm_unlock_fail">Käyttö peruttu</string>
+	<string name="confirm_turnon_radio_fail">Käyttö peruttu</string>
+	<string name="confirm_permit_roaming_fail">Perut tämän toiminnan verkkovierailutilassa olevassa SIM-kortissa</string>
+	<string name="confirm_permit_roaming_fail_uim">Perut tämän toiminnan verkkovierailutilassa olevassa UIM-kortissa</string>
+	<string name="confirm_permit_roaming_fail_card">Perut tämän toiminnan verkkovierailutilassa olevassa kortissa</string>
+	<string name="confirm_sim_locked_message">SIM-kortti on lukittu pysyvästi</string>
+	<string name="confirm_sim_locked_message_uim">UIM-kortti on lukittu pysyvästi</string>
+	<string name="confirm_sim_locked_message_card">Kortti on lukittu pysyvästi</string>	
+    <string name="confirm_slot_locked_message">Korttipaikka on lukittu pysyvästi</string>
+	<string name="button_yes">"Kyllä"</string>  
+	<string name="button_no">"Ei"</string>  
+</resources>

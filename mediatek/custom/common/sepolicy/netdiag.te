@@ -1,0 +1,243 @@
+# ==============================================
+# Policy File of /system/binnetdiag Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type netdiag_exec , exec_type, file_type;
+type netdiag ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive netdiag;
+init_daemon_domain(netdiag)
+
+# 20131024 Sanity_01
+allow netdiag atci_service:dir search;
+allow netdiag atci_service:file { read open };
+allow netdiag init:dir search;
+allow netdiag init:file { read open };
+allow netdiag kernel:dir search;
+allow netdiag kernel:file { read open };
+allow netdiag property_socket:sock_file write;
+allow netdiag sdcard_external:dir { read open };
+allow netdiag self:packet_socket { read ioctl };
+
+
+# 20131024 CTS_01
+allow netdiag linker_exec:file { read execute open };
+allow netdiag shell_exec:file { read execute open execute_no_trans };
+allow netdiag toolbox_exec:file { getattr execute };
+
+
+# 20131024 Sanity_03
+allow netdiag sdcard_external:dir { write create add_name };
+allow netdiag tcpdump_exec:file { getattr execute };
+
+
+# 20131024 Sanity_04
+allow netdiag device:chr_file { read ioctl open };
+allow netdiag ip_exec:file { read getattr open execute execute_no_trans };
+allow netdiag sdcard_external:file { read write create open };
+allow netdiag self:capability net_raw;
+allow netdiag self:netlink_route_socket create;
+allow netdiag self:packet_socket { create setopt };
+allow netdiag tcpdump_exec:file { read open execute_no_trans };
+
+
+# 20131024 CTS_02
+allow netdiag atcid:dir search;
+allow netdiag atcid:file { read open };
+allow netdiag qtaguid_proc:file { read getattr open };
+allow netdiag sdcard_external:dir remove_name;
+allow netdiag sdcard_external:file { rename getattr };
+allow netdiag servicemanager:dir search;
+allow netdiag servicemanager:file read;
+
+
+# 20131028 CTS_03
+allow netdiag toolbox_exec:file { read open execute_no_trans };
+
+
+# 20131028 Sanity_05
+allow netdiag aal:dir search;
+allow netdiag matv:dir search;
+allow netdiag matv:file { read open };
+allow netdiag mediaserver:dir search;
+allow netdiag mediaserver:file { read open };
+allow netdiag surfaceflinger:file { read open };
+allow netdiag vtservice:dir search;
+
+
+# 20131028 Sanity_06
+allow netdiag sdcard_external:dir search;
+
+
+# 20131028 CTS_05
+allow netdiag shell_prop:property_service set;
+
+
+# 20131028 Sanity_12
+allow netdiag featured:dir search;
+allow netdiag featured:file { read open };
+allow netdiag logwrapper:dir search;
+allow netdiag logwrapper:file read;
+allow netdiag servicemanager:file open;
+allow netdiag vold:dir search;
+allow netdiag vold:file { read open };
+
+
+# 20131028 Sanity_14
+allow netdiag iptables_exec:file { getattr execute };
+
+# 20131028 CTS_09
+allow netdiag self:capability setgid;
+
+
+# 20131028 CTS_10
+allow netdiag self:capability setuid;
+
+
+# 20131028 CTS_22
+allow netdiag iptables_exec:file { read open execute_no_trans };
+allow netdiag self:netlink_route_socket { write getattr setopt read bind nlmsg_read };
+allow netdiag self:tcp_socket { create ioctl };
+
+
+# 20131119 FeatureSQC
+allow netdiag aee_aed:dir search;
+allow netdiag aee_aed:file { read open };
+allow netdiag ccci_fsd:dir search;
+allow netdiag ccci_fsd:file { read open };
+allow netdiag ccci_mdinit:dir search;
+allow netdiag ccci_mdinit:file { read open };
+allow netdiag default_prop:property_service set;
+allow netdiag iptables_exec:file { getattr execute };
+allow netdiag logwrapper:file open;
+allow netdiag sdcard_external:file unlink;
+allow netdiag sdcard_internal:dir { write search read remove_name create open add_name };
+allow netdiag sdcard_internal:file { rename write getattr read create open };
+allow netdiag self:capability net_admin;
+allow netdiag self:netlink_route_socket { write getattr setopt read bind nlmsg_read };
+allow netdiag self:packet_socket getopt;
+allow netdiag self:tcp_socket { create ioctl };
+
+
+
+# 20131122 Add Set Property Rule
+allow netdiag  property_type:property_service set;
+
+# 20131213 KKMR1_CTS_01
+allow netdiag healthd:dir search;
+allow netdiag healthd:file { read open };
+allow netdiag mobile_log_d:dir search;
+allow netdiag mobile_log_d:file { read open };
+allow netdiag netd:dir search;
+allow netdiag netd:file { read open };
+allow netdiag surfaceflinger:dir search;
+
+
+# 20131213 KKMR1_CQ_01
+allow netdiag BGW:dir search;
+allow netdiag BGW:file { read open };
+allow netdiag aal:file { read open };
+allow netdiag cgroup:dir { create add_name };
+allow netdiag drmserver:dir search;
+allow netdiag drmserver:file { read open };
+allow netdiag gsm0710muxd:dir search;
+allow netdiag gsm0710muxd:file { read open };
+allow netdiag healthd:dir search;
+allow netdiag healthd:file { read open };
+allow netdiag installd:dir search;
+allow netdiag installd:file { read open };
+allow netdiag kernel:system module_request;
+allow netdiag keystore:dir search;
+allow netdiag keystore:file { read open };
+allow netdiag mdlogger:dir search;
+allow netdiag mdlogger:file { read open };
+allow netdiag mobile_log_d:dir search;
+allow netdiag mobile_log_d:file { read open };
+allow netdiag mtk_agpsd:dir search;
+allow netdiag mtk_agpsd:file read;
+allow netdiag mtkbt:dir search;
+allow netdiag mtkbt:file { read open };
+allow netdiag netcfg_exec:file { read getattr open execute execute_no_trans };
+allow netdiag netd:dir search;
+allow netdiag netd:file { read open };
+allow netdiag nvram_agent_binder:dir search;
+allow netdiag nvram_agent_binder:file { read open };
+allow netdiag rild:dir search;
+allow netdiag sdcard_internal:file unlink;
+allow netdiag self:rawip_socket { getopt create };
+allow netdiag self:udp_socket { create ioctl };
+allow netdiag surfaceflinger:dir search;
+allow netdiag system_data_file:dir { read open };
+allow netdiag thermal:file read;
+allow netdiag tmpfs:lnk_file read;
+allow netdiag vtservice:file { read open };
+allow netdiag zygote:dir search;
+allow netdiag zygote:file { read open };
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow netdiag GoogleOtaBinder:dir search;
+allow netdiag GoogleOtaBinder:file { read open };
+allow netdiag aal:file { read open };
+allow netdiag aee_aed:process sigchld;
+allow netdiag aee_aed:unix_stream_socket connectto;
+allow netdiag aee_exec:file { read getattr open execute execute_no_trans };
+allow netdiag akmd8963:dir search;
+allow netdiag akmd8963:file { read open };
+allow netdiag batterywarning:dir search;
+allow netdiag batterywarning:file { read open };
+allow netdiag bmm050d:dir search;
+allow netdiag dm_agent_binder:dir search;
+allow netdiag dm_agent_binder:file { read open };
+allow netdiag em_svr:dir search;
+allow netdiag em_svr:file read;
+allow netdiag healthd:dir search;
+allow netdiag healthd:file { read open };
+allow netdiag init_shell:dir search;
+allow netdiag media_app:dir search;
+allow netdiag mobile_log_d:dir search;
+allow netdiag mobile_log_d:file { read open };
+allow netdiag mtk_agpsd:file open;
+allow netdiag netcfg_exec:file { read getattr open execute execute_no_trans };
+allow netdiag netd:dir search;
+allow netdiag netd:file { read open };
+allow netdiag platform_app:dir search;
+allow netdiag platform_app:file { read open };
+allow netdiag release_app:file { read open };
+allow netdiag resmon:dir search;
+allow netdiag resmon:file { read open };
+allow netdiag sdcard_internal:file unlink;
+allow netdiag self:rawip_socket { getopt create };
+allow netdiag self:udp_socket { create ioctl };
+allow netdiag shared_app:dir search;
+allow netdiag shared_app:file { read open };
+allow netdiag surfaceflinger:dir search;
+allow netdiag system_server:dir search;
+allow netdiag system_server:file { read open };
+allow netdiag terservice:dir search;
+allow netdiag terservice:file { read open };
+allow netdiag thermal:dir search;
+allow netdiag thermal:file open;
+allow netdiag thermald:dir search;
+allow netdiag thermald:file { read open };
+allow netdiag ueventd:dir search;
+allow netdiag ueventd:file { read open };
+allow netdiag zygote:dir search;
+allow netdiag zygote:file { read open };
+

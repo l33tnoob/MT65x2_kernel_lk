@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbinprocmem Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type procmem_exec , exec_type, file_type;
+type procmem ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive procmem;
+init_daemon_domain(procmem)
+
+
+# 20131122 Add Set Property Rule
+allow procmem  property_type:property_service set;

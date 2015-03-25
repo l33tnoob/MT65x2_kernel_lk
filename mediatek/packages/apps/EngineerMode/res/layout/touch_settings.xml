@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TouchScreen_Settings_TextSpinner"
+                android:layout_width="110dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/TouchScreen_Settings_TextSpinner" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/TouchScreen_Settings_Spinner"
+                android:layout_width="170dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="10dip" >
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TouchScreen_Settings_TextValue"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/TouchScreen_Settings_TextValue" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/TouchScreen_Settings_Value"
+                android:layout_width="170dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="10dip"
+                android:numeric="integer"
+                android:text="@string/TouchScreen_Settings_Value" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/TouchScreen_Settings_TextSet"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/TouchScreen_Settings_TextSet" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

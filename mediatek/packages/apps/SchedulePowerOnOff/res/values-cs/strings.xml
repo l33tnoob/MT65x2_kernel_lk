@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+--><resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">    
+   <!-- Schedule power on/off settings -->  
+    <!-- Main Settings screen setting option name to go into the power on/off settings-->  
+    <string name="schedule_power_on_off_settings_title">Naplánovat zapnutí/vypnutí</string>  
+    <!-- Main Settings screen setting option summary text for the item to go into the date and time settings. -->  
+    <string name="schedule_power_on_off_time">Čas</string>  
+    <!-- Date & time setting screen setting check box title if the date and time should be determined automatically -->  
+    <string name="schedule_power_on_off_repeat">Opakovat</string>  
+    <!-- Date & time setting screen setting option summary text when Automatic check box is selected (that is, when date and time should be determined automatically) -->  
+    <string name="schedule_power_on_off_set">Nastavit plán zapnutí/vypnutí</string>  
+    <string name="schedule_power_on_set">Nastavit plán zapnutí</string>  
+    <string name="schedule_power_off_set">Nastavit plán vypnutí</string>  
+    <!-- Context Menu Item on Alarm Settings screen: Enable alarm -->  
+    <string name="enable_schpwr">Povolit</string>  
+    <!-- Context Menu Item on Alarm Settings screen: Disable alarm -->  
+    <string name="disable_schpwr">Zakázat</string>  
+    <!-- Alarm confirmation toast: Describes how long from now until
+         alarm fires -->  
+    <string-array name="alarm_set"> 
+        <item>Toto zapnutí je nastaveno na méně než 1 minutu od tohoto okamžiku.</item>  
+        <item>Toto zapnutí je nastaveno na 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g> od tohoto okamžiku.
+        </item>  
+        <item>Toto zapnutí je nastaveno na 
+            <xliff:g id="HOURS" example="2hodiny">%2$s</xliff:g> od tohoto okamžiku.
+        </item>  
+        <item>Toto zapnutí je nastaveno na 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g> a 
+            <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> od tohoto okamžiku.
+        </item>  
+        <item>Toto zapnutí je nastaveno na 
+            <xliff:g id="MINUTES" example="2minuty">%3$s</xliff:g> od tohoto okamžiku.
+        </item>  
+        <item>Toto zapnutí je nastaveno na 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g> a 
+            <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> od tohoto okamžiku.
+        </item>  
+        <item>Toto zapnutí je nastaveno na 
+            <xliff:g id="HOURS" example="2hodiny">%2$s</xliff:g> a 
+            <xliff:g id="MINUTES" example="2minuty">%3$s</xliff:g> od tohoto okamžiku.
+        </item>  
+        <item>Toto zapnutí je nastaveno na 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g>, 
+            <xliff:g id="HOURS" example="2hours">%2$s</xliff:g>, a 
+            <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> od tohoto okamžiku.
+        </item>  
+        <item>Toto vypnutí je nastaveno na méně než 1 minutu od tohoto okamžiku.</item>  
+        <item>Toto vypnutí je nastaveno na 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g> od tohoto okamžiku.
+        </item>  
+        <item>Toto vypnutí je nastaveno na 
+            <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> od tohoto okamžiku.
+        </item>  
+        <item>Toto vypnutí je nastaveno na 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g> a 
+            <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> od tohoto okamžiku.
+        </item>  
+        <item>Toto vypnutí je nastaveno na 
+            <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> od tohoto okamžiku.
+        </item>  
+        <item>Toto vypnutí je nastaveno na 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g> a 
+            <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> od tohoto okamžiku.
+        </item>  
+        <item>Toto vypnutí je nastaveno na 
+            <xliff:g id="HOURS" example="2hodiny">%2$s</xliff:g> a 
+            <xliff:g id="MINUTES" example="2minuty">%3$s</xliff:g> od tohoto okamžiku.
+        </item>  
+        <item>Toto vypnutí je nastaveno na 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g>, 
+            <xliff:g id="HOURS" example="2hours">%2$s</xliff:g>, a 
+            <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> od tohoto okamžiku.
+        </item> 
+    </string-array>  
+    <!-- Alarm confirmation toast: singular day -->  
+    <string name="day">"1 den"</string>  
+    <!-- Alarm confirmation toast: plural days -->  
+    <string name="days">" 
+        <xliff:g id="dny">%s</xliff:g> dny"
+    </string>  
+    <!-- Alarm confirmation toast: singular hour -->  
+    <string name="hour">"1 hodina"</string>  
+    <!-- Alarm confirmation toast: plural hours -->  
+    <string name="hours"> 
+        <xliff:g id="hodiny">%s</xliff:g> hodiny
+    </string>  
+    <!-- Alarm confirmation toast: singular minute  -->  
+    <string name="minute">"1 minuta"</string>  
+    <!-- Alarm confirmation toast: plural minutes  -->  
+    <string name="minutes">" 
+        <xliff:g id="minuty">%s</xliff:g> minuty"
+    </string>  
+    <!-- Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: special case for when
+         the alarm is set to repeat every day -->  
+    <string name="every_day">každý den</string>  
+    <!-- Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: special case for when
+         the alarm is set to never repeat -->  
+    <string name="never">Nikdy</string>  
+    <!-- Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: concatenate days with
+         this character, i.e. "Mon, Tue, Wed" -->  
+    <!-- Done button when editing an alarm. -->  
+    <string name="done">Hotovo</string>  
+    <!-- Revert button when editing an alarm. -->  
+    <string name="revert">"Vrátit zpět"</string>  
+    <string name="schpwr_shutdown_message">"Zařízení se vypne během 
+        <xliff:g id="seconds">%s</xliff:g> sekund"
+    </string>  
+    <string name="schpwr_shutdown_message_second">"Zařízení se vypne během 
+        <xliff:g id="second">%s</xliff:g> sekund"
+    </string>  
+</resources>

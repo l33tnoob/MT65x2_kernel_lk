@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="app_name">CellConnectionService</string>
+	<string name="button_ok">OK</string>
+	<string name="button_cancel">Abbrechen</string>
+	<string name="confirm_radio_title">SIM ausgeschaltet</string>
+	<string name="confirm_radio_title_uim">UIM ausgeschaltet</string>
+	<string name="confirm_radio_title_card">Karte ausgeschaltet</string>
+
+	<string name="confirm_radio_msg"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> ist nun deaktiviert. Wollen Sie die SIM-Karte aktivieren?</string>
+  <string name="confirm_radio_msg_uim"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> ist nun deaktiviert. Wollen Sie die UIM-Karte aktivieren?</string>
+  <string name="confirm_radio_msg_card"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> ist nun deaktiviert. Wollen Sie diese Karte aktivieren?</string>
+
+	<string name="confirm_radio_flight_mode_on_and_msg">Flugmodus ist an und</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> ist nun deaktiviert. Wollen Sie den Flugmodus aus- und diese SIM-Karte einschalten?</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg_uim"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> ist nun deaktiviert. Wollen Sie den Flugmodus aus- und diese UIM-Karte einschalten?</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg_card"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> ist nun deaktiviert. Wollen Sie den Flugmodus aus- und diese Karte einschalten?</string>	
+	<string name="confirm_radio_flight_mode_on_sim_on_msg">Flugmodus ist an. Wollen Sie den Flugmodus ausschalten?</string>  
+	<string name="confirm_radio_msg_single">Der Flugmodus ist eingeschaltet, wollen Sie ihn ausschalten?</string>
+	<string name="confirm_pin_title">SIM gesperrt</string>
+	<string name="confirm_pin_title_uim">UIM entsperrt</string>
+	<string name="confirm_pin_title_card">Karte gesperrt</string>
+	<string name="confirm_pin_msg">Die gewählte SIM-Karte ist nun gesperrt. Bitte zuerst entsperren.</string>
+	<string name="confirm_pin_msg_uim">Die gewählte UIM-Karte ist nun gesperrt. Bitte zuerst entsperren.</string>
+	<string name="confirm_pin_msg_card">Die gewählte Karte ist nun gesperrt. Bitte zuerst entsperren.</string>
+	<string name="confirm_simmelock_title">SIM ME gesperrt</string>
+	<string name="confirm_simmelock_msg">Der gewählte SIM-Einschub ist nun gesperrt. Bitte zuerst entsperren.</string>
+	<string name="confirm_simmelock_msg_uim">Der gewählte UIM-Einschub ist nun gesperrt. Bitte zuerst entsperren.</string>
+	<string name="confirm_simmelock_msg_card">Der gewählte Einschub ist nun gesperrt. Bitte zuerst entsperren.</string>
+	<string name="confirm_fdn_title">FDN aktiviert</string>
+	<string name="confirm_fdn_msg">Die Kurzwahlnummern sind nun aktiviert.</string>
+	<string name="confirm_roaming_title">Roaming-Warnung</string>
+	<string name="confirm_roaming_msg">Die ausgewählte SIM-Karte befindet sich im Roaming-Modus. Zur Zeit ist keine lokale SIM-Karte verfügbar. Wollen Sie fortfahren?</string>
+	<string name="confirm_roaming_msg_uim">Die ausgewählte UIM-Karte befindet sich im Roaming-Modus. Zur Zeit ist keine lokale UIM-Karte verfügbar. Wollen Sie fortfahren?</string>
+	<string name="confirm_roaming_msg_card">Die ausgewählte Karte befindet sich im Roaming-Modus. Zur Zeit ist keine lokale Karte verfügbar. Wollen Sie fortfahren?</string>
+  <string name="confirm_roaming_withPrefer_msg">Die ausgewählte SIM-Karte befindet sich im Roaming-Modus. Wollen Sie mit einer lokalen SIM-Karte fortfahren?</string>
+  <string name="confirm_roaming_withPrefer_msg_uim">Die ausgewählte SIM-Karte befindet sich im Roaming-Modus. Wollen Sie mit einer lokalen UIM-Karte fortfahren?</string>
+  <string name="confirm_roaming_withPrefer_msg_card">Die ausgewählte SIM-Karte befindet sich im Roaming-Modus. Wollen Sie mit einer lokalen Karte fortfahren?</string>
+  <string name="confirm_roaming_lbutton">Fortfahren</string>
+  <string name="confirm_roaming_rbutton">Abbrechen</string>
+  <string name="confirm_roamingWithPrefer_lbutton">Lokale SIM</string>
+  <string name="confirm_roamingWithPrefer_lbutton_uim">Lokale UIM</string>
+  <string name="confirm_roamingWithPrefer_lbutton_card">Lokale Karte</string>
+  <string name="confirm_roamingWithPrefer_rbutton">SIM im Roaming-Modus</string>
+  <string name="confirm_roamingWithPrefer_rbutton_uim">UIM im Roaming-Modus</string>
+  <string name="confirm_roamingWithPrefer_rbutton_card">Karte im Roaming-Modus</string>
+	<string name="confirm_roaming_for3Sims_msg">Die ausgewählte SIM-Karte befindet sich im Roaming-Modus. Wollen Sie fortfahren?</string>
+  <string name="confirm_roaming_for3Sims_msg_uim">Die ausgewählte UIM-Karte befindet sich im Roaming-Modus. Wollen Sie fortfahren?</string>
+  <string name="confirm_roaming_for3Sims_msg_card">Die ausgewählte Karte befindet sich im Roaming-Modus. Wollen Sie fortfahren?</string>
+	<string name="confirm_radio_lbutton">Einschalten</string>
+	<string name="confirm_unlock_lbutton">Entsperren</string>
+	<string name="confirm_unlock_fail">Aktion abgebrochen</string>
+	<string name="confirm_turnon_radio_fail">Aktion abgebrochen</string>
+	<string name="confirm_permit_roaming_fail">Sie brechen diese Aktion auf der SIM im Roaming-Modus ab.</string>
+	<string name="confirm_permit_roaming_fail_uim">Sie brechen diese Aktion auf der UIM im Roaming-Modus ab.</string>
+	<string name="confirm_permit_roaming_fail_card">Sie brechen diese Aktion auf der Karte im Roaming-Modus ab.</string>
+	<string name="confirm_sim_locked_message">SIM-Karte wurde dauerhaft gesperrt</string>
+	<string name="confirm_sim_locked_message_uim">UIM-Karte wurde dauerhaft gesperrt</string>
+	<string name="confirm_sim_locked_message_card">Karte wurde dauerhaft gesperrt</string>	
+    <string name="confirm_slot_locked_message">Der Einschub wurde dauerhaft gesperrt.</string>
+	<string name="button_yes">Ja</string>  
+	<string name="button_no">Nein</string>  
+</resources>

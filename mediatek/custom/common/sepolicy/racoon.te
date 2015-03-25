@@ -1,0 +1,35 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type racoon, domain;
+type racoon_exec, exec_type, file_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# IKE key management daemon
+permissive racoon;
+
+# unconfined_domain(racoon)
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# IKE key management daemon
+permissive racoon;
+
+# unconfined_domain(racoon)
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive racoon;
+
+# 20131122 Add Set Property Rule
+allow racoon property_type:property_service set;

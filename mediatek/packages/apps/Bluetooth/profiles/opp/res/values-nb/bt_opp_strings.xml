@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	
+
+	
+	<string name="bt_opp_notification_in_coming_ticker">"Innkommende filforespørsel"</string>
+	<string name="bt_opp_notification_in_coming_title">"Innkommende filforespørsel (fra: %1$s)"</string>
+	<string name="bt_opp_notification_in_coming_message">"Velg å godta innkommende fil."</string>
+	<string name="bt_opp_notification_in_ongoing_ticker">"Innkommende fil"</string>
+	<string name="bt_opp_notification_in_ongoing_message">"Mottar: %1$s (%2$s)"</string>
+	<string name="bt_opp_notification_out_ongoing_ticker">"Utgående fil"</string>
+	<string name="bt_opp_notification_out_ongoing_message">"Sender: %1$s (%2$s)"</string>
+
+	
+	<string name="bt_opp_cancel_task_title">"Filoverføring"</string>
+	<string name="bt_opp_cancel_task_message">"Avbryte denne overføringen?"</string>
+	<string name="bt_opp_cancel_task_yes">"Ja"</string>
+	<string name="bt_opp_cancel_task_no">"Nei"</string>
+
+	
+	<string name="bt_opp_canceling_task_message">"Avbryter overføring. Vent litt …"</string>
+
+	
+	<string name="bt_opps_confirm_push_title">"Bluetooth – Innkommende objekt"</string>
+	<string name="bt_opps_confirm_push_message">"Innkommende fil: %1$s (%2$s) fra %3$s. Godta?"</string>
+	<string name="bt_opps_confirm_push_yes">"Godta"</string>
+	<string name="bt_opps_confirm_push_no">"Avvis"</string>
+
+	
+	<string name="bt_oppc_push_action_label">"Bluetooth"</string>
+	<string name="bt_oppc_push_toast_sending_file">"Sender fil til %1$s"</string>
+	<string name="bt_oppc_push_toast_sending_files">"Sender filer til %1$s"</string>
+	<string name="bt_oppc_push_toast_unsupported_uri">"Ustøttet deleinnhold: %1$s"</string>
+	<string name="bt_oppc_push_toast_unknown_device">"Ukjent enhet"</string>
+	<string name="bt_opps_toast_storage_unavailable">"Ingen SD-kort eller ikke nok lagringsplass for innkommende fil."</string>
+	<string name="bt_oppc_toast_disk_full">" Ikke nok diskplass for lagring av sendeinfo."</string>
+	<string name="bt_opps_push_toast_invalid_request">"Ugyldig deleforespørsel fra ekstern enhet."</string>
+
+	<string name="permlab_bluetoothWhitelist">"Godkjenne tilgang for Bluetooth-enheter."</string>
+	<string name="permdesc_bluetoothWhitelist">Lar appen midlertidig sette en enhet i en Bluetooth-hvitliste, som gjør at enheten kan sende filer til denne enheten uten brukerbekreftelse.</string>
+
+	
+	<string name="permlab_handoverStatus">"Motta BT-kringkastinger for leveringsoverføring."</string>
+	<string name="permdesc_handoverStatus">Tillater mottak av overføringsstatus informasjon fra Bluetooth.</string>
+</resources>

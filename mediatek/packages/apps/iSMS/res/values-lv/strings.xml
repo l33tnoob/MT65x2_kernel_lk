@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="STR_NMS_MAIN">iSMS</string>
+    <string name="STR_NMS_HISSAGE">iSMS</string>
+    <string name="STR_NMS_INVITE_SMS_CONTENT">Sveiki! iSMS ir lielisks tērzēšanas rīks. Tas ir ērts, un par to nav jāmaksā. Vairāk informācijas skatiet vietnē http://isms.hissage.com.</string>
+    <string name="STR_NMS_NO_SDCARD">Nav atrasta SD karte. iSMS neļaus veikt noteiktas darbības.</string>
+    <string name="STR_NMS_MOUNT_SDCARD">SD karte ir pieejama lietošanai</string>
+    <string name="STR_NMS_SEND_MMS_FAIL">Nevar nosūtīt ziņu. Tā tiks nosūtīta automātiski, tiklīdz būs pieejams tīkls.</string>
+    <string name="STR_NMS_RECV_MMS_FAIL">Nevar veikt lejupielādi. Lūdzu, mēģiniet vēlreiz vēlāk.</string>
+    <string name="STR_NMS_GROUP_CHAT_ME">es</string>
+    <string name="STR_NMS_GROUP_CHAT_I">Es</string>
+    <string name="STR_NMS_GROUP_CHAT_YOU">Tu</string>
+    <string name="STR_NMS_GROUP_CREATE_MSG">%1$s aicina %2$s piedalīties grupas tērzēšanā.</string>
+    <string name="STR_NMS_GROUP_ADD_MSG">%1$s pievienojās grupas tērzēšanai.</string>
+    <string name="STR_NMS_GROUP_DELETE_MSG">%1$s dzēš %2$s no grupas tērzēšanas.</string>
+    <string name="STR_NMS_GROUP_QUITE_MSG">%1$s izgāja no grupas tērzēšanas.</string>
+    <string name="STR_NMS_GROUP_CHAT_PLACE_HOLDER_MSG_BODY">Jūs pievienojāties šai grupai</string>
+    <string name="STR_NMS_PICTURE">attēls</string>
+    <string name="STR_NMS_TAPE">audio</string>
+    <string name="STR_NMS_VCARD">kontaktpersona</string>
+    <string name="STR_NMS_LOCATION">atrašanās vieta</string>
+    <string name="STR_NMS_SKETCH">skice</string>
+    <string name="STR_NMS_VIDEO">video</string>
+    <string name="STR_NMS_CALENDAR">kalendārs</string>
+    <string name="STR_NMS_UNKNOWN">nezināms</string>
+    <string name="STR_NMS_READ_MODE_PIC">attēls</string>
+    <string name="STR_NMS_READ_MODE_TAPE">audiopiezīme</string>
+    <string name="STR_NMS_READ_MODE_VCARD">kontaktpersonas</string>
+    <string name="STR_NMS_READ_MODE_LOCATION">atrašanās vieta</string>
+    <string name="STR_NMS_READ_MODE_SKETCH">skice</string>
+    <string name="STR_NMS_READ_MODE_VIDEO">video</string>
+    <string name="STR_NMS_READ_MODE_CALENDAR">kalendārs</string>
+    <string name="STR_NMS_ISMS_ENABLE">(iSMS Iespējot)</string>
+    <string name="STR_NMS_READ_MODE_UNKNOWN">nezināms fails</string>
+    <string name="STR_NMS_ALL_MSG">Visas ziņas</string>
+    <string name="STR_NMS_SAVED">Saglabātās</string>
+    <string name="STR_NMS_BLOCKMSG">Bloķētās</string>
+    <string name="STR_NMS_SMS_TYPE">SMS</string>
+    <string name="STR_NMS_VERSION_ID">v5.2.16.696</string>
+    <string name="STR_NMS_NO_SIM">SIM karte nav atrasta</string>
+    <string name="STR_NMS_ILLEGAL_ADDRESS">Nederīgs numurs</string>
+    <string name="STR_NMS_REMIND_USER_SET_NAME">Lūdzu, atjauniniet savu profilu</string>
+    <string name="STR_NMS_OK">Labi</string>
+    <string name="STR_NMS_BACK">Atpakaļ</string>
+    <string name="STR_NMS_CANCEL">Atcelt</string>
+    <string name="STR_NMS_NETWORK_UNAVL">Lūdzu, nodrošiniet funkcionālu datu savienojumu, piemēram, 3G, GPRS vai Wi-Fi</string>
+    <string name="STR_NMS_TODAY">Šodien</string>
+    <string name="STR_NMS_YESTERDAY">Vakar</string>
+    <string name="STR_NMS_NOW">Tagad</string>
+    <string name="STR_NMS_NO_SIM_CARD">Nav atrasta SIM karte, jums tā jāievieto.</string>
+    <string name="STR_NMS_NO_CONNECTION">Nav pieejams tīkls, vai ir ieslēgts lidojuma režīms. Lūdzu, pārbaudiet.</string>
+    <string name="STR_NMS_ATTACH_SHARE">%1$s kopīgoja %2$s</string>
+    <string name="STR_NMS_WAIT">Uzgaidiet…</string>
+    <string name="STR_NMS_TIPTITLE">Padoms</string>
+
+    <string name="STR_NMS_OPEN">Atvērt</string>
+    <string name="STR_NMS_PLAY">Atskaņot</string>
+    
+    
+
+    <string name="STR_NMS_VCARD_NAME">%1$s kontaktpersonas</string>
+    <string name="STR_NMS_SHARE_VCARD_FAILED">neizdevās kopīgot kontaktpersonu</string>
+
+    <!-- upgrade info -->
+    <string name="STR_NMS_UPGRADE_URL">http://ismsi.hissage.com/webservice/hss/hssVersionUpdate.php</string>
+    <string name="STR_NMS_UPGRADE_TICKER">Versijas jaunināšana</string>
+    <string name="STR_NMS_UPGRADE_ERROR_TITLE">Jaunināšanas kļūda</string>
+    <string name="STR_NMS_UPGRADE_ERROR_CONTENT">Jaunināšanas kļūda! Lūdzu, jauniniet, izmantojot iSMS klientu.</string>
+    <string name="STR_NMS_INSTALLED_TITLE">Jaunināšana veiksmīga</string>
+    <string name="STR_NMS_INSTALLED_CONTENT">Jaunināšana tālrunī veiksmīga</string>
+    <string name="STR_NMS_PROMPT_DLG_TITLE">Noteikta jauna versija</string>
+    <string name="STR_NMS_PROMPT_DLG_DOWNLOAD">Lejupielādēt</string>
+    <string name="STR_NMS_PROMPT_DLG_LATER">Vēlāk</string>
+    <string name="STR_NMS_UPGRADING">Notiek jaunināšana</string>
+    <string name="STR_NMS_UPGRADE_TIME">Pēdējā pārbaude: %s</string>
+    
+    <!-- ext protocol -->
+    <string name="STR_NMS_OFFLINE_URL">http://ismsi.hissage.com/webservice/nmsmail/notifyOffline.php</string>
+    
+    <!-- Activation start -->
+    <string name="STR_NMS_PRELOAD_IP_MSG_CONTENT">&quot;Esiet sveicināti programmā iSMS.&quot;</string>
+    <string name="STR_NMS_ACTIVAT_TITLE">iSMS vienu reizi nosūtīs jums īsziņu jūsu tālruņa numura verifikācijai. Var tikt piemērota operatora noteiktā maksa.</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE">Verificējiet tālruni</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE2">Verificējiet tālruni</string>
+    <string name="STR_NMS_YOUR_COUNTRY_TITLE">JŪSU VALSTS</string>
+    <string name="STR_NMS_YOUR_PHONE_TITLE">JŪSU TĀLRUŅA NUMURS</string>
+    <string name="STR_NMS_VERIFY_FAIL_TITLE">Neizdevās pabeigt verifikāciju ar īsziņu.</string>
+    <string name="STR_NMS_VERIFY_FAIL_CONTENT">Lūdzu, pārbaudiet, vai tālruņa numurs ievadīts pareizi.</string>
+    <string name="STR_NMS_WORKING_SMS_TIP">Lūdzu, nodrošiniet funkcionālu īsziņu plānu.</string>
+    <string name="STR_NMS_VERIFYING">Gaida, kad tiks automātiski noteikta īsziņa, kas nosūtīta</string>
+    <string name="STR_NMS_RETRY">Mēģināt vēlreiz</string>
+    <string name="STR_NMS_EDIT_NUMBER">Rediģēt numuru</string>
+    <string name="STR_NMS_UPDATE_PROFILE">Atjaunināt profilu</string>
+    <string name="STR_NMS_START_ISMS">Startēt iSMS</string>
+    <string name="STR_NMS_SEND">Sūtīt</string>
+    <string name="STR_NMS_CONGRATULATIONS_TITLE">Apsveicam!</string>
+    <string name="STR_NMS_CONGRATULATIONS_CONTENT">Pateicamies, ka aktivizējāt iSMS.\n Tagad varat sākt lietot pakalpojumu.\nNovēlam lietot iSMS ar prieku!</string>
+    <string name="STR_NMS_WELCOME_BACK">Ar atgriešanos.</string>
+    <string name="STR_NMS_SEND_SMS_FAIL">Verifikācija neizdevās. Lūdzu, pārbaudiet:\n 1. Vai tālruņa numurs ir pareizs.\n 2. Vai ir izslēgta drošības programmatūra.\n 3. Citus iespējamos iemeslus, kuru dēļ varētu būt bloķēta SMS sūtīšana.\nPārbaudiet un mēģiniet vēlreiz vēlāk.</string>
+    <string name="STR_NMS_ACTIVE">Aktivizēt iSMS</string>
+    <string name="STR_NMS_WELCOME_ACTIVE">Esiet sveicināts programmā iSMS</string>
+    <string name="STR_NMS_CONNECTING">Veido savienojumu...</string>
+    <!-- Activation end -->
+
+
+    <!-- Notification start -->
+    <string name="STR_NMS_NEW_MSG_TITLE">Jauna iSMS ziņa</string>
+    <string name="STR_NMS_NEW_SMG_CONTENT">%d nelasīta ziņa</string>
+    <!-- Notification End -->
+
+    <string name="STR_NMS_MSG_DUMPER_MSG_SMS">SMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_MMS">MMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_IP">IP ziņa</string>
+    <string name="STR_NMS_MSG_DUMPER_SEND_MSG">Nosūtīta %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_RECEIVE_MSG">Saņemta %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TIME">Laiks: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TEXT">Teksts</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_PIC">Attēls</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_SKETCH">Skice</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VOICE">Balss</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VIDEO">Video</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CALENDAR">Kalendārs</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION_IMG">Atrašanās vietas attēls</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VCARD">Vcard</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION">Atrašanās vieta</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CAPTION">Paraksts: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_URL">Url: </string>
+    <string name="STR_NMS_MSG_DUMPER_DURATION">Ilgums: </string>
+    <string name="STR_NMS_MSG_DUMPER_COORDINATE">Koordināte: </string>
+    <string name="STR_NMS_MSG_DUMPER_ADDRESS">Adrese: </string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_SENDER">Sūtītājs: </string>
+    <string name="STR_NMS_MSG_DUMPER_NORMAL_DETAIL">Sesijas informācija:</string>
+    <string name="STR_NMS_MSG_DUMPER_NAME">Vārds: </string>
+    <string name="STR_NMS_MSG_DUMPER_NUMBER">Numurs: </string>
+    <string name="STR_NMS_MSG_DUMPER_PORTRAIT">Portrets</string>
+    <string name="STR_NMS_MSG_DUMPER_MULTI_SEND_DETAIL">Apraide:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_DETAIL">Grupas tērzēšana:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_CREATER">Veidotājs: </string>
+    <string name="STR_NMS_MSG_DUMPER_MEMBERS">Dalībnieki: </string>
+    <string name="STR_NMS_MSG_DUMPER_VCARD_NAME">Vārds: </string>
+    <string name="STR_NMS_MSG_DUMPER_CALENDAR_SUMMARY">Kopsavilkums: </string>
+
+    <!-- Chat Settings -->
+    <string name="STR_NMS_CHAT_SETTING_TITLE">Tērzēšanas iestatījumi</string>
+    <string name="STR_NMS_DISPLAY">Rādīt</string>
+    <string name="STR_NMS_CHAT_WALLPAPER">Tērzēšanas fona tapete</string>
+    <string name="STR_NMS_SYS_WALLPAPER">Atlasīt fona tapeti</string>
+    <string name="STR_NMS_CAMEARPHOTO">Uzņemt fotoattēlu</string>
+    <string name="STR_NMS_SYS_GALLERY">Atlasīt no galerijas</string>
+    <string name="STR_NMS_DEFAULT_WALLPAPER">Noklusējums</string>
+    <string name="STR_NMS_NOTIFICATION_CATEGORY">Paziņojums</string>
+    <string name="STR_NMS_NOTIFICATION_TITLE">iSMS paziņojums</string>
+    <string name="STR_NMS_NOTIFICATION_CONTENT">Rādīt, kad tiek saņemti paziņojumi</string>
+    <string name="STR_NMS_MUTE">Klusums</string>
+    <string name="STR_NMS_MUTE_OFF">Izslēgts</string>
+    <string name="STR_NMS_MUTE_1">Izslēgt skaņu uz 1 stundu</string>
+    <string name="STR_NMS_MUTE_4">Izslēgt skaņu uz 4 stundām</string>
+    <string name="STR_NMS_MUTE_8">Izslēgt skaņu uz 8 stundām</string>
+    <string name="STR_NMS_RINGTONE_TITLE">Zvana signāls</string>
+    <string name="STR_NMS_RINGTONE_CONTENT">Iestatīt zvana signālu jauniem paziņojumiem </string>
+    <string name="STR_NMS_VIBRATE_TITLE">Vibrācija</string>
+    <string name="STR_NMS_VIBRATE_CONTENT">Vibrācija, saņemot paziņojumus</string>
+    <string name="STR_NMS_ACTIONS">Darbības</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_TITLE">Lejupielādēt tērzēšanas vēsturi</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_CONTENT">Saglabāt SD kartē zip formātā</string>
+    <string name="STR_NMS_EMAIL_HISTORY_TITLE">Nosūtīt tērzēšanas vēsturi pa e-pastu</string>
+    <string name="STR_NMS_EMAIL_HISTROY_CONTENT">Nosūtīt tērzēšanas vēsturi pa e-pastu zip formātā</string>
+    <string name="STR_NMS_CLEAR_HISTROY">Notīrīt tērzēšanas vēsturi</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_DLG">Lejupielādē...</string>
+    <string name="STR_NMS_DOWNLOAD_OK">Tērzēšanas vēstures lejupielāde ir pabeigta, saglabājiet to kā %s</string>
+    <string name="STR_NMS_DOWNLOAD_ERROR">Tērzēšanas vēstures lejupielādes kļūda.</string>
+    <string name="STR_NMS_DOWNLOAD_EMPTY">Nav nekā lejupielādējama.</string>
+    <string name="STR_NMS_CLEARING">Notiek vēstures tīrīšana. Lūdzu, uzgaidiet...</string>
+    <string name="STR_NMS_WAIT_SAVE_WALLPAPER">Notiek tapetes saglabāšana. Lūdzu, uzgaidiet...</string>
+    <string name="STR_NMS_SAVE_WALLPAPER_OK">Fona tapete saglabāta veiksmīgi.</string>
+    <string name="STR_NMS_CLEARDONE">Vēstures tīrīšana ir pabeigta.</string>
+    <string name="STR_NMS_SVAE_TITLE">Saglabāt SD kartē</string>
+    <string name="STR_NMS_SAVE_CONTENT">Saglabāt šo tērzēšanas sarunu SD kartē kā zip failu</string>
+    <string name="STR_NMS_EMAIL_TITLE">Kopīgot, izmantojot e-pastu</string>
+    <string name="STR_NMS_EMAIL_CONTENT">Kopīgot šo tērzēšanas sarunu kā e-pasta pielikumu zip formātā</string>
+
+    <!-- Chat Settings End -->
+
+
+    <!-- Profile Settings -->
+    <string name="STR_NMS_PROFILE_TITLE">Profils</string>
+    <string name="STR_NMS_TAP_AVATAR_TIP">Pieskarieties, lai rediģētu profila attēlu</string>
+    <string name="STR_NMS_DISPLAY_NAME_TIP">PARĀDĀMAIS VĀRDS</string>
+    <string name="STR_NMS_ACCOUNT_TIP">ISMS KONTS</string>
+    <string name="STR_NMS_NO_APP">Šo darbību nevar veikt neviena lietojumprogramma.</string>
+    <string name="STR_NMS_NO_NAME">Iestatiet savu vārdu</string>
+    <string name="STR_NMS_SAVE_AVATAR_FAILD">Atvainojiet, neizdevās saglabāt profila attēlu.</string>
+    <string name="STR_NMS_INPUT_NAME">Vārds</string>
+    <string name="STR_NMS_TERM_WARN_ACTIVATE">Šo līdzekli atbalsta vienīgi iSMS pakalpojums.\n\niSMS ir bezmaksas tūlītējās ziņojumapmaiņas pakalpojums, kuru izmantojot, varat tērzēt un kopīgot multivides saturu draugiem jebkurā laikā un vietā, izmantojot interneta datu savienojumu (Wi-Fi, 2G/3G utt.).\nKad iSMS pakalpojums tiek aktivizēts pirmo reizi, tas automātiski nosūta jums īsziņu reģistrācijas pabeigšanai. Var tikt piemēroti SMS ierobežojumi vai maksa.\n\n Lietotāja līgums\n</string>
+    <string name="STR_NMS_TERM_WARN_WELCOME">iSMS ir bezmaksas tūlītējās ziņojumapmaiņas pakalpojums, kuru izmantojot, varat tērzēt un kopīgot multivides saturu draugiem jebkurā laikā un vietā, izmantojot interneta datu savienojumu (Wi-Fi, 2G/3G utt.).\nKad iSMS pakalpojums tiek aktivizēts pirmo reizi, tas automātiski nosūta jums īsziņu reģistrācijas pabeigšanai. Var tikt piemēroti SMS ierobežojumi vai maksa.\n\n Lietotāja līgums\n</string>
+    <string name="STR_NMS_TERM_KEY">Noteikumi un nosacījumi</string>
+    <string name="STR_NMS_AGREE_AND_CONTINUE">Pieņemt un turpināt</string>
+    <string name="STR_NMS_ACTIVE_BNT">Aktivizēt</string>
+    <string name="STR_NMS_SET_PROFILE_OK">Profils veiksmīgi iestatīts</string>
+    <string name="STR_NMS_SET_PROFILE_FAIL">Neizdevās iestatīt profilu</string>
+    <string name="STR_NMS_ILLEGAL_PROFILE_NAME">Neatļauts vārds</string>
+    <string name="STR_NMS_NO_ACTIVITED">Nav aktivizēta vai iespējota SIM karte.</string>
+    <!-- Profile Settings End -->
+
+
+    <!-- Term Activity -->
+    <string name="STR_NMS_REJECT">Noraidīt</string>
+    <string name="STR_NMS_AGREE">Pieņemt</string>
+    <string name="STR_NMS_TERM_TITLE">Pakalpojuma noteikumi</string>
+    <string name="STR_NMS_TERM_CONTENT">Jūs saprotat, ka Pakalpojums un Pakalpojumam izmantotā programmatūra var ietvert drošības komponentus, kas ļauj aizsargāt digitālus materiālus, un ka šo materiālai lietošanai piemērojami lietošanas noteikumi, ko noteicis uzņēmums AF PushMail un/vai satura nodrošinātāji, kuri nodrošina saturu Pakalpojumam. Jūs nedrīkstat ignorēt vai neievērot nevienu no šī Pakalpojuma lietošanas noteikumiem. Pilna vai daļēja Pakalpojumā nodrošināto materiālu nesankcionēta reproducēšana, publicēšana, tālāka izplatīšana vai publiska demonstrēšana ir stingri aizliegta.</string>
+    <!-- Term Activity End -->
+
+
+    <!-- System Settings -->
+    <string name="STR_NMS_SYS_SETTING_TITLE">iSMS ziņa</string>
+    <string name="STR_NMS_SETTINGS_TITLE">PROFILS</string>
+    <string name="STR_NMS_PREFERENCE_CATE">PREFERENCES</string>
+    <string name="STR_NMS_SEND_SMS_TITLE">Sūtīt kā SMS</string>
+    <string name="STR_NMS_SEND_SMS_CONTENT">Sūtīt kā SMS, kad nav pieejams iSMS. Var tikt piemērota operatora noteiktā maksa par ziņojumapmaiņu. Šīs noteikums neattiecas uz grupas tērzēšanu</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_TITLE">Automātiskā lejupielāde</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_CONTENT">Automātiski lejupielādēt multivides objektus</string>
+    <string name="STR_NMS_CAPTION_TITLE">Paraksti</string>
+    <string name="STR_NMS_CAPTION_CONTENT">Kopīgot failu ar parakstiem</string>
+    <string name="STR_NMS_SYSTEM_CATE">SISTĒMA</string>
+    <string name="STR_NMS_UPDATE_TITLE">Programmatūras atjaunināšana</string>
+    <string name="STR_NMS_UPDATE_CONTENT">Pēdējā pārbaude: Nekad</string>
+    <string name="STR_NMS_NETWORK_USAGE_TITLE">Tīkla lietojums</string>
+    <string name="STR_NMS_NETWORK_USAGE_CONTENT">Skatīt kopējo nosūtīto/saņemto datu lietojumu</string>
+    <string name="STR_NMS_NETWORK_DLG_CONTENT">Nosūtīts: %1$.3f K \nSaņemts: %2$.3f K\nPēdējā atiestate: %3$s</string>
+    <string name="STR_NMS_VERSION_TITLE">Versija</string>
+    <string name="STR_NMS_NEVER_CLEAR">Nekad</string>
+    <string name="STR_NMS_RESET">Atiestatīt</string>
+    <string name="STR_NMS_SWITCH_ON">IESLĒGTS</string>
+    <string name="STR_NMS_SWITCH_OFF">IZSLĒGTS</string>
+    <string name="STR_NMS_SYSTEM_SETTING_TITLE">Iestatījumi</string>
+    <string name="STR_NMS_COPYRGIHT">Hesine Technologies, Inc.</string>
+    <string name="STR_NMS_ABOUT">Par iSMS</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_TITLE">Rādīt lasīšanas statusu</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_CONTENT">Rādīt lasīšanas statusu ziņu sarakstā</string>
+    <string name="STR_NMS_SHOW_REMIND_TITLE">Rādīt atgādinājumus</string>
+    <string name="STR_NMS_SHOW_REMIND_CONTENT">Rādīt tērzēšanas ekrānā iSMS atgādinājumus</string>
+    <string name="STR_NMS_MENU_RESET_SETTING">Atjaunot noklusējumu</string>
+    <string name="STR_NMS_MENU_FUNCTION_INTRODUCTION">Līdzekļi</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT">Lietotāja līgums</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION">Autortiesības</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT_TITLE">HESINE iSMS LIETOTĀJA LICENCES LĪGUMS</string>
+    <string name="STR_NMS_MENU_FUNCTION">Funkciju saraksts</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION_DETAIL">\nHesine Technologies Inc.\nCopyright© 2008-2013\nVisas tiesības aizsargātas.\n</string>
+    <!-- System Settings End -->
+
+
+    <!-- Caption Settings -->
+    <string name="STR_NMS_AUDIO_TITLE">Audio</string>
+    <string name="STR_NMS_VIDEO_TITLE">Video</string>
+    <string name="STR_NMS_PHOTO_TITLE">Fotoattēli</string>
+    <!-- Caption Settings End -->
+
+
+    <!-- Map String start -->
+    <string name="STR_NMS_MAP_TITLE">Kopīgot atrašanās vietu</string>
+    <string name="STR_NMS_MAP_PROMPT">Karti nevar parādīt, jo nav ieslēgts atrašanās vietas noteikšanas pakalpojums. Zemāk redzamā adrese ir aptuveni noteikta, pamatojoties uz jūsu šūnas informāciju. \nLai precīzāk noteiktu atrašanās vietu, ieteicams ieslēgt atrašanās vietas noteikšanas pakalpojumu.</string>
+    <string name="STR_NMS_MAP_NOTE_1">Lūdzu, sistēmas iestatījumos iespējojiet atrašanās vietas avotu</string>
+    <string name="STR_NMS_MAP_SHARE">Kopīgot</string>
+    <string name="STR_NMS_MAP_SETTINGS">Iestatījumi</string>
+    <string name="STR_NMS_MAP_OK">Labi</string>
+    <string name="STR_NMS_MAP_CANCEL">Atcelt</string>
+    <string name="STR_NMS_MAP_EDIT">Rediģēt atrašanās vietu</string>
+    <string name="STR_NMS_MAP_SEARCH_HINT">Meklēt tuvumā esošas vietas</string>
+    <string name="STR_NMS_MAP_WAIT">Lūdzu, uzgaidiet...</string>
+    <string name="STR_NMS_MAP_EDIT_LIMIT">Sasniegts maksimālais atļauto rakstzīmju skaits</string>
+    <string name="STR_NMS_MAP_ADDR_LEN">Adrese ir pārāk gara</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR_LOCATING">Nosaka jūsu pašreizējo atrašanās vietu...</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN_LOCATING">Nosaka jūsu atzīmēto atrašanās vietu...</string>
+    <string name="STR_NMS_MAP_LINEONE_SEARCH_LOCATING">Nosaka meklētās pozīcijas atrašanās vietu...</string>
+    <string name="STR_NMS_MAP_LINETHREE_NEARBY_LOCATING">Meklē tuvumā esošas vietas...</string>
+    <string name="STR_NMS_MAP_LINEONE_FAILED">Jūsu atrašanās vieta pašlaik nav pieejama</string>
+    <string name="STR_NMS_MAP_LINETWO_FAILED">Pārliecinieties, vai ir ieslēgts atrašanās vietas noteikšanas pakalpojums un vai ir pieejams tīkls</string>
+    <string name="STR_NMS_MAP_LINETHREE_FAILED">Tuvumā nav atrasta neviena vieta</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR">Kopīgot pašreizējo atrašanās vietu</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN">Kopīgot atzīmēto atrašanās vietu</string>
+    <string name="STR_NMS_MAP_MY_LOCATION">Mana atrašanās vieta</string>
+    <string name="STR_NMS_MAP_SEARCH">Meklēt</string>
+    <string name="STR_NMS_MAP_ERROR_1">Nevar iegūt platumu un garumu</string>
+    <string name="STR_NMS_MAP_ERROR_2">Google serveri atgriež kļūdu</string>
+    <!-- Map String end -->
+
+
+    <!-- All Media String start -->
+    <string name="STR_NMS_ALL_MEDIA_TITLE">Visa multivide</string>
+    <string name="STR_NMS_ALL_MEDIA_WAIT">Lūdzu, uzgaidiet...</string>
+    <string name="STR_NMS_ALL_MEDIA_ERROR">Neizdevās ielādēt. Lūdzu, mēģiniet vēlreiz vēlāk</string>
+    <string name="STR_NMS_ALL_MEDIA_EMPTY">Tukšs</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_WEEK">Šonedēļ</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_MONTH">Šomēnes</string>
+    <string name="STR_NMS_ALL_MEDIA_JAN">Janvāris</string>
+    <string name="STR_NMS_ALL_MEDIA_FEB">Februāris</string>
+    <string name="STR_NMS_ALL_MEDIA_MAR">Marts</string>
+    <string name="STR_NMS_ALL_MEDIA_APR">Aprīlis</string>
+    <string name="STR_NMS_ALL_MEDIA_MAY">Maijs</string>
+    <string name="STR_NMS_ALL_MEDIA_JUN">Jūnijs</string>
+    <string name="STR_NMS_ALL_MEDIA_JUL">Jūlijs</string>
+    <string name="STR_NMS_ALL_MEDIA_AUG">Augusts</string>
+    <string name="STR_NMS_ALL_MEDIA_SEPT">Septembris</string>
+    <string name="STR_NMS_ALL_MEDIA_OCT">Oktobris</string>
+    <string name="STR_NMS_ALL_MEDIA_NOV">Novembris</string>
+    <string name="STR_NMS_ALL_MEDIA_DEC">Decembris</string>
+    <string name="STR_NMS_ADDCONTACT">Pievienot kontaktpersonu</string>
+    <string name="STR_NMS_ADD_PHONE_CONTACT">Vai pievienot \&quot;%1$s\&quot; to kontaktpersonām?</string>
+    <string name="STR_NMS_DELETE_MEDIA">Multivide tiks dzēsta. Vai turpināt?</string>
+    <string name="STR_NMS_MEDIA_SHARE_MESSAGE">%1$s kopīgots %2$s</string>
+
+    <!-- All Media String end -->
+
+
+    <!-- All Locations String start -->
+    <string name="STR_NMS_ALL_LOCATIONS_TITLE">Visas vietas</string>
+    <string name="STR_NMS_ALL_LOCATIONS_LOC">Atrašanās vieta</string>
+    <string name="STR_NMS_ALL_LOCATIONS_WAIT">Lūdzu, uzgaidiet...</string>
+    <!-- All Locations String end -->
+
+
+    <!-- Sketch -->
+    <string name="STR_NMS_SKETCH_TITLE">Zīmēt skici</string>
+    <string name="STR_NMS_REDO">Atcelt atsaukšanu</string>
+    <string name="STR_NMS_UNDO">Atsaukt</string>
+    <string name="STR_NMS_SKETCH_CUSTOM">Pielāgots</string>
+    <string name="STR_NMS_PEN_SIZE">Izmērs</string>
+    <string name="STR_NMS_SKETCH_TOOLS_PEN">Zīmulis</string>
+    <string name="STR_NMS_SKETCH_TOOLS_ERASER">Dzēšgumija</string>
+    <string name="STR_NMS_SKETCH_CUSTOM_COLOR">Pielāgota krāsa</string>
+    <string name="STR_NMS_CLEAR_SKETCH_TITLE">Notīrīt skici</string>
+    <string name="STR_NMS_CLEAR_SKETCH_CONTENT">Vai tiešām vēlaties notīrīt šo skici?</string>
+    <string name="STR_NMS_SIZE_SKETCH_TITLE">Izmērs</string>
+    <string name="STR_NMS_SIZE_SKETCH_MAX">72</string>
+    <string name="STR_NMS_SIZE_SKETCH_MIN">2</string>
+    <string name="STR_NMS_COLOR_SKETCH_TITLE">Krāsa</string>
+    <string name="STR_NMS_SKETCH_ERROR">Neizdevās izveidot skici.</string>
+    <string name="STR_NMS_BACK_TITLE">Apstiprinājums</string>
+    <string name="STR_NMS_FINISH_SKETCH_CONTENT">Vai tiešām vēlaties atstāt skicēšanu?</string>
+    <string name="STR_NMS_LEAVE_SKETCH_CONTENT">Vai tiešām vēlaties atmest šo skici?</string>
+    <string name="STR_NMS_NOTREDO">Nav nekā, kam atcelt atsaukšanu</string>
+    <string name="STR_NMS_NOTUNDO">Nav nekā atsaucama</string>
+    <string name="STR_NMS_SKETCH_DELETE">Notīrīt</string>
+    <string name="STR_NMS_DISCARD">Atmest</string>
+
+    <!-- Sketch end -->
+
+
+    <!-- Selection Contact -->
+    <string name="STR_NMS_DONE">Labi</string>
+    <string name="STR_NMS_SELECTALL">Atlasīt visu</string>
+    <string name="STR_NMS_DESELECTED">Noņemt visas atzīmes</string>
+    <string name="STR_NMS_SELECTED">Atlasīts: %1$s</string>
+    <string name="STR_NMS_CONTACT_SEARCH">Atrast kontaktpersonas</string>
+    <string name="STR_NMS_SEARCH">Meklēt</string>
+    <string name="STR_NMS_CONTACT_SELECT">Atlasīt kontaktpersonu</string>
+    <string name="STR_NMS_SELECT_MEMBER_FULL">Atlasīts pārāk daudz kontaktpersonu</string>
+    <string name="STR_NMS_SELECT_MEMBER_EMPTY">Nav atlasīta neviena kontaktpersona</string>
+    <string name="STR_NMS_SELECT_CONTAT_WAIT">Lūdzu, uzgaidiet...</string>
+    <string name="STR_NMS_SELECT_CONTAT_EMPTY">Nav iSMS kontaktpersonu</string>
+    <string name="STR_NMS_SELECT_NO_RESULT">Nekas nav atrasts</string>
+    <string name="STR_NMS_EMPTY">Nav kontaktpersonu</string>
+    <string name="STR_NMS_ALL_CONTACTS">VISI</string>
+    <string name="STR_NMS_GROUPS_MEM"> %1$s dalībnieki</string>
+    <string name="STR_NMS_GROUPS_CONTACTS">VISAS GRUPAS</string>
+    <!-- Selection Contact end -->
+
+    <!-- Group chat -->
+    <string name="STR_NMS_CREATE_GROUP_TITLE">Izveidot grupu</string>
+    <string name="STR_NMS_GROUP_INFO_TITLE">Grupas informācija</string>
+    <string name="STR_NMS_EDIT_GROUP_TITLE">Rediģēt grupu</string>
+    <string name="STR_NMS_SELECT_ACTION_TITLE">Atlasīt darbību</string>
+    <string name="STR_NMS_ADD_TO_BOOKMARK">Pievienot grāmatzīmēm</string>
+    <string name="STR_NMS_ADD_TO_CONTACTS">Pievienot %1$s kontaktpersonām</string>
+    <string name="STR_NMS_GROUP_NAME">GRUPAS NOSAUKUMS</string>
+    <string name="STR_NMS_GROUP_INFO">GRUPAS INFORMĀCIJA</string>
+    <string name="STR_NMS_GROUP_MEMBERS">GRUPAS DALĪBNIEKI</string>
+    <string name="STR_NMS_GROUP_NAME_HIT">Grupas nosaukums</string>
+    <string name="STR_NMS_GROUP_NAME_EMPTY">Grupas nosaukums nav ievadīts</string>
+    <string name="STR_NMS_CONFIRM_LEAVE_TITLE">Atstāt šo grupu</string>
+    <string name="STR_NMS_LEAVE_GROUP_CONTENT">Vai tiešām vēlaties atstāt šo grupu?</string>
+    <string name="STR_NMS_LEAVE_GROUP_SUCCESS">Grupa veiksmīgi atstāta</string>
+    <string name="STR_NMS_LEAVE_GROUP_FAILED">Neizdevās atstāt šo grupu</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_SUCCESS">Grupas nosaukums veiksmīgi atjaunināts</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_SUCCESS">Pievienoti jauni grupas dalībnieki</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_FAILED">Neizdevās pievienot grupas dalībnieku</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_FAILED">Neizdevās atjaunināt grupas nosaukumu</string>
+    <string name="STR_NMS_CREATE_GROUP_NAME_FAILED">Neizdevās izveidot grupas tērzēšanu</string>
+    <string name="STR_NMS_DELETE_GROUP_MEMBER_FAILED">Neizdevās noņemt grupas dalībnieku</string>
+    <string name="STR_NMS_UPDATE_GROUP_SUCCESS">Grupas informācija veiksmīgi atjaunināta</string>
+    <string name="STR_NMS_UPDATE_GROUP_FAILED">Neizdevās atjaunināt grupas informāciju</string>
+    <string name="STR_NMS_GROUP_CHAT_BACK">Vai vēlaties atmest šo darbību?</string>
+    <string name="STR_NMS_GROUP_MEMEBER_YOU">TU</string>
+    <string name="STR_NMS_GROUP_INVITE_MORE">Uzaicināt citus</string>
+    <string name="STR_NMS_LEAVE_GROUP">Atstāt šo grupu</string>
+    <string name="STR_NMS_CHAT">Tērzēšana</string>
+    <string name="STR_NMS_CONFIRM_REMOVE_TITLE">Noņemt no grupas dalībnieku saraksta</string>
+    <string name="STR_NMS_REMOVE_OK">Noņemt</string>
+    <string name="STR_NMS_REMOVE_CANCEL">Atcelt</string>
+    <string name="STR_NMS_REMOVE_CONTENT">Vai vēlaties to noņemt no saraksta?</string>
+    <string name="STR_NMS_VIEW_ALL_MEDIA">Skatīt visu multividi</string>
+    <string name="STR_NMS_VIEW_ALL_LOCATIONS">Skatīt visas atrašanās vietas</string>
+    <string name="STR_NMS_CHAT_SETTINGS">Tērzēšanas iestatījumi</string>
+    <string name="STR_NMS_VIEW_GROUP_FAILED">Jūs atstājāt šo grupas tērzēšanu.</string>
+    <string name="STR_NMS_VIEW_HISTORY">Skatīt grupas vēsturi</string>
+    <string name="STR_NMS_ISMS_ENABLE_TITLE">Iespējot iSMS</string>
+    <string name="STR_NMS_ISMS_ENABLE_CONTENT">Šo līdzekli atbalsta tikai iSMS pakalpojums. Vai tūlīt iespējot jūsu iSMS kontu?</string>
+    <string name="STR_NMS_ENABLE">Iespējot</string>
+    <string name="STR_NMS_LATER">Nerādīt</string>
+    <string name="STR_NMS_SWITCH_TITLE">SIM pārslēgšana</string>
+    <string name="STR_NMS_SWITCH_MESSAGE">Grupas tērzēšana tiek atbalstīta tikai ar aktivizētu iSMS pakalpojumu, taču šī SIM karte nav aktivizēta. Vai pārslēgt uz aktivizēto SIM karti?</string>
+    <string name="STR_NMS_SWITCH_EDIT_MESSAGE">Šī SIM karte nav saistīta ar šo grupu. Vai pārslēgt uz otru SIM karti?</string>
+    <string name="STR_NMS_LEAVE_GROUP_NOTICE">Jūs esat atstājis šo grupu, un nevarēsit pievienoties šai grupas tērzēšanai, ja vien netiksit atkal uzaicināts</string>
+    <string name="STR_NMS_LOSE_SIM_NOTICE">Sākotnēji tērzēšanai izmantotā SIM karte ir izņemta, šajā grupā jūs varat tērzēt tikai, izmantojot sākotnējo SIM karti</string>
+    <string name="STR_NMS_SWITCH">Pārslēgt</string>
+
+    <!-- Group chat end -->
+
+
+    <!-- chat details screen long press item start -->
+    <string name="STR_NMS_LONG_PRESS_TITLE">Ziņas opcijas</string>
+    <string name="STR_NMS_SEND_VIA_TEXT">Sūtīt, izmantojot SMS</string>
+    <string name="STR_NMS_TRY_AGAIN">Mēģināt vēlreiz</string>
+    <string name="STR_NMS_TRY_ALL_AGAIN">Mēģināt vēlreiz visas</string>
+    <string name="STR_NMS_CONTINUE_TRY">Turpināt mēģinājumus</string>
+    <string name="STR_NMS_COPY">Kopēt</string>
+    
+    <string name="STR_NMS_FORWARD">Pārsūtīt</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_TITLE">Lejupielādēt</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD">Lai pārsūtītu iSMS, vispirms jālejupielādē multivides saturs.</string>
+    <string name="STR_NMS_FORWARD_CONTIUE">Turpināt</string>
+    <string name="STR_NMS_FORWARD_FAILED">Pārsūtīšana neizdevās.</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_MULTI">Lai veiktu multipārsūtīšanu, vispirms jāveic dažu iSMS lejupielāde.</string>
+    <string name="STR_NMS_FORWARD_SOME_FAILED">Neizdevās pārsūtīt dažas iSMS.</string>
+    <string name="STR_NMS_FORWARD_ALL_FAILED">Lejupielāde neizdevās, multipārsūtīšana atmesta</string>
+    
+    <string name="STR_NMS_SEND_VIA_MULTIMEDIA">Sūtīt, izmantojot MMS</string>
+    <string name="STR_NMS_SHARE">Kopīgot</string>
+    <string name="STR_NMS_DELETE">Dzēst</string>
+    <string name="STR_NMS_FLAG_IMPORTANT">Atzīmēt kā svarīgu</string>
+    <string name="STR_NMS_REMOVE_IMPORTANT">Noņemt atzīmi &quot;svarīgs&quot;</string>
+    <string name="STR_NMS_SAVE_IN_SDCARD">Eksportēt uz SD karti</string>
+    <string name="STR_NMS_SAVE_FILE">Faila saglabāšanas vieta: %1$s</string>
+    <string name="STR_NMS_SHARE_TITLE">Labākais kopīgošanas veids</string>
+    <string name="STR_NMS_VIEW_DETAILS">Skatīt informāciju</string>
+    <string name="STR_NMS_VIEW_DETAILS_TITLE">Ziņas informācija</string>
+    <string name="STR_NMS_SEND_MSG_DETAILS">Veids: IP ziņa\nNosūtīta: %1$s</string>
+    <!-- chat details screen long press item end -->
+
+
+    <!-- chat details screen delete item start -->
+    <string name="STR_NMS_DELETE_TITLE">Dzēst</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_TITLE">Svarīgas ziņas dzēšana</string>
+    <string name="STR_NMS_DELETE_WARNING">Ziņa tiks dzēsta.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_WARNING">Vai tiešām vēlaties dzēst šo svarīgo ziņu?</string>
+    <string name="STR_NMS_DELETE_MSG">Atlasītās ziņas tiks dzēstas.</string>
+    <string name="STR_NMS_DELETE_WAITTING">Dzēš</string>
+    <string name="STR_NMS_CLEAR_HISTORY_CONTENT">Visa tērzēšanas vēsture šajā tērzēšanas telpā tiks notīrīta</string>
+    <string name="STR_NMS_DELETE_IMPORTANT">Iekļaut ziņas, kas atzīmētas kā svarīgas</string>
+    <!-- chat details screen delete item end -->
+
+
+    <!-- chat details actionBar option start -->
+    <string name="STR_NMS_MENU_CALL">Zvanīt</string>
+    <string name="STR_NMS_MENU_GROUPINFO">Grupas informācija</string>
+    <string name="STR_NMS_MENU_INVITE_CHAT">Uzaicināt draugus tērzēt</string>
+    <string name="STR_NMS_MENU_INVITE_ISMS">Uzaiciniet draugus izmantot iSMS</string>
+    <string name="STR_NMS_MENU_SELECT_MSG">Atlasīt ziņu</string>
+    <string name="STR_NMS_MENU_MARK_SPAM">Pievienot nevēlamajām</string>
+    <string name="STR_NMS_MENU_REMOVE_SPAM">Izņemt no nevēlamajām</string>
+    <string name="STR_NMS_MENU_ADD_SHORTCUT">Pievienot saīsni</string>
+    <string name="STR_NMS_MENU_VIEW_ALLMEDIA">Skatīt visu multividi</string>
+    <string name="STR_NMS_MENU_VIEW_ALLLOCATION">Skatīt visas atrašanās vietas</string>
+    <string name="STR_NMS_MENU_EDIT_GROUP">Rediģēt grupu</string>
+    <string name="STR_NMS_MENU_CHAT_SETTING">Tērzēšanas iestatījumi</string>
+    <string name="STR_NMS_MENU_INSERT_QUICK_TEXT">Ievietot ātro tekstu</string>
+    <string name="STR_NMS_MENU_CLEAR_HISTORY">Notīrīt tērzēšanas vēsturi</string>
+    <string name="STR_NMS_MENU_LEAVE_GROUP">Atstāt šo grupu</string>
+    <string name="STR_NMS_MENU_DISCARD">Atmest</string>
+    <string name="STR_NMS_MENU_DELETE">Dzēst</string>
+    <string name="STR_NMS_MENU_IMPORTANT">Atzīmēt kā svarīgu</string>
+    <string name="STR_NMS_MENU_FORWARD">Pārsūtīt</string>
+    <!-- chat details actionBar option end -->
+
+
+    <!-- chat details share item start -->
+    <string name="STR_NMS_TAKE_PHOTO">Uzņemt fotoattēlu</string>
+    <string name="STR_NMS_RECORD_VIDEO">Ierakstīt video</string>
+    <string name="STR_NMS_DRAW_SKETCH">Zīmēt skici</string>
+    <string name="STR_NMS_SHARE_CONTACT">Kopīgot kontaktpersonu</string>
+    <string name="STR_NMS_CHOOSE_PHOTO">Izvēlēties fotoattēlu</string>
+    <string name="STR_NMS_CHOOSE_VIDEO">Izvēlēties video</string>
+    <string name="STR_NMS_RECORD_AUDIO">Ierakstīt audioierakstu</string>
+    <string name="STR_NMS_SHARE_LOCATION">Kopīgot atrašanās vietu</string>
+    <string name="STR_NMS_CHOOSE_AUDIO">Izvēlēties audioierakstu</string>
+    <string name="STR_NMS_SHARE_CALENDAR">Kopīgot kalendāru</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_TITLE">Pievienot mūziku</string>
+    <string name="STR_NMS_CHOOSE_RINGTONE_ITEM">Zvana signāls</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_ITEM">Audio</string>
+    <string name="STR_NMS_INSERT_SDCARD">Lūdzu, ievietojiet SD karti!</string>
+    <!-- chat details share item start -->
+
+
+    <!-- record audio start -->
+    <string name="STR_NMS_AUDIO_TIMER_FORMAT" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <string name="STR_NMS_AUDIO_LABLE">Audiopiezīmju ierakstītājs</string>
+    <string name="STR_NMS_RECORD_AUDIO_CONT">Pieskarieties, lai ierakstītu</string>
+    <string name="STR_NMS_PLAY_AUDIO_CONT">Pieskarieties, lai atskaņotu</string>
+    <string name="STR_NMS_ACTION_SEND">Sūtīt</string>
+    <string name="audio_db_artist_name">Jūsu ieraksti</string>
+    <string name="audio_db_album_name">Audioieraksti</string>
+    <string name="STR_NMS_SELECT_AUDIO">Atlasīt audio</string>
+    <!-- record audio end -->
+
+
+    <!-- chat & group details screen start -->
+
+    <string name="STR_NMS_UNREAD_FORMAT">%1$d nelasītas ziņas</string>
+    <string name="STR_NMS_NOT_DELIVERED_TITLE">Nav vēl piegādāts</string>
+    <string name="STR_NMS_FAILED_TITLE">Sūtīšanas kļūda</string>
+    <string name="STR_NMS_GROUP_SUBTITLE">%1$s, +%2$d</string>
+    <string name="STR_NMS_GROUP_DEAD_SUBTITLE">%1$s, %2$d</string>
+    <string name="STR_NMS_SAVE_AS_DRAFT">Saglabāts ziņas melnraksts</string>
+    <string name="STR_NMS_NO_SD_TITLE">SD kartes kļūda</string>
+    <string name="STR_NMS_CANT_SHARE">Nevar piekļūt SD kartei. Visi ar multividi saistītie līdzekļi īslaicīgi nav pieejami.\n\nLūdzu, pārbaudiet SD karti un mēģiniet vēlreiz vēlāk.</string>
+    <string name="STR_NMS_CANT_SAVE">Nav atrasta SD karte, nevar saglabāt failu</string>
+    <string name="STR_NMS_SDSPACE_NOT_ENOUGH">SD kartē nepietiek vietas, nevar saglabāt failu.</string>
+    <string name="STR_NMS_REAEND_ALL">Mēģināt vēlreiz visas...</string>
+    <string name="STR_NMS_FILE_LIMIT">Pārāk liels</string>
+    <string name="STR_NMS_LOAD_ALL_MESSAGE">Ielādēt visu ziņu</string>
+    <string name="STR_NMS_DOWNLOAD_FAILED">Lejupielāde neizdevās</string>
+    <string name="STR_NMS_INPUT_HINT">Ievadīt saturu</string>
+    <string name="STR_NMS_INPUT_HINT_ISMS">Ievadīt iSMS ziņu</string>
+    <string name="STR_NMS_CAPTION_HINT">Ievadīt parakstus</string>
+    <string name="STR_NMS_PROTOCOL_SMS">SMS</string>
+    <string name="STR_NMS_PROTOCOL_MMS">MMS</string>
+    <string name="STR_NMS_PROTOCOL_IP">iSMS</string>
+    <string name="STR_NMS_SWITCH_BOTTON">Pārslēgt SIM</string>
+    <string name="STR_NMS_TURN_ON_BOTTON">Ieslēgt</string>
+    <string name="STR_NMS_SWITCH_TEXT_FORMAT">Lai turpinātu grupas tērzēšanu, vispirms pārslēdziet uz %1$s SIM.</string>
+    <string name="STR_NMS_ENABLE_TEXT_FORMAT">Lai turpinātu grupas tērzēšanu, vispirms SIM kartē %1$s ieslēdziet iSMS pakalpojumu.</string>
+    <string name="STR_NMS_REPLACE_ATTACH_TITLE">Aizstāt pielikumu</string>
+    <string name="STR_NMS_REPLACE_ATTACH_MSG">Pielikums jau pastāv. Vai aizstāt to?</string>
+    <string name="STR_NMS_TRUNC_CAPTION">Paraksts ir apcirsts.</string>
+    <string name="STR_NMS_MAX_CHARACTERS_REACHED">Sasniegts ziņas lieluma ierobežojums.</string>
+    <string name="STR_NMS_MAX_EMOTICON_REACHED">Pielāgot emocijzīmju ierobežojumam</string>
+    <string name="STR_NMS_ENABLE_PROCESS">Apstrādā...</string>
+    <string name="STR_NMS_ERR_FILE">Nederīgs fails</string>
+    <string name="STR_NMS_SENDING_TEXT">Sūta...</string>
+    <!-- chat & group details screen end --> <!-- Error code tips -->
+    <string name="STR_NMS_ERR_GENERAL">Vispārēja kļūda</string>
+    <string name="STR_NMS_ERR_INVALID_ARGUMENT">Nederīgs arguments</string>
+    <string name="STR_NMS_ERR_NETWORK_BLOCK">Tīkls nedarbojas pareizi</string>
+    <string name="STR_NMS_ERR_PHONE_NOT_ACTIVATED">Nav aktivizēts</string>
+    <string name="STR_NMS_ERR_SIM_NOT_ACTIVATED">SIM karte nav aktivizēta</string>
+    <string name="STR_NMS_ERR_INVALID_MSG_DB_ID">Nederīgs ziņu DB ID</string>
+    <string name="STR_NMS_ERR_ADD_MSG_DB_FAILED">Neizdevās ievietot DB</string>
+    <string name="STR_NMS_ERR_UPDATE_MSG_DB_FAILED">Neizdevās atjaunināt DB</string>
+    <string name="STR_NMS_ERR_GET_MSG_DB_DATA_FAILED">Neizdevās ienest ziņu</string>
+    <string name="STR_NMS_ERR_INVALID_CONTACT_DB_ID">Nederīgs kontaktpersonu DB ID</string>
+    <string name="STR_NMS_ERR_ADD_CONTACT_DB_FAILED">Neizdevās pievienot kontaktpersonai</string>
+    <string name="STR_NMS_ERR_UPDATE_CONTACT_DB_FAILED">Neizdevās atjaunināt kontaktpersonu DB</string>
+    <string name="STR_NMS_ERR_GET_CONTACT_DB_DATA_FAILED">Neizdevās ienest kontaktpersonu, izmantojot ID</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_ERROR_FORMAT">Nederīgs IP ziņas formāts</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_INVALID_TO">Nederīgs adresāts</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_WITH_UNKNOWN_USER">Nederīgs, nezināms lietotājs-adresāts</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_NO_MBMBER">Nav grupas tērzēšanas dalībnieku</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_GCHAT_DEAD">Grupas tērzēšana nav aktivizēta</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_INVALID_SIM_ID">Šī SIM karte nav grupas tērzēšanai izmantotā</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_FOR_SYS_MSG">Sūtīt sistēmas ziņojumu vēlreiz</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_INVALID_STATUS">IP ziņa nav gatava</string>
+    <string name="STR_NMS_ERR_GCHAT_IS_DEAD">Šī grupas tērzēšana vairs nepastāv</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBERS">Nederīgi grupas dalībnieki</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBER_WITH_SELF">Neizdevās izveidot grupu. Jūs nevarat norādīt sevi kā dalībnieku</string>
+    <string name="STR_NMS_ERR_GCHAT_EXCEED_MAX_MEMBER_COUNT">Sasniegts maksimālais grupas dalībnieku skaits</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_NAME">Nederīgs grupas tērzēšanas nosaukums</string>
+    <string name="STR_NMS_ERR_GCHAT_SIM_IS_NOT_ACTIVATED">Nav aktivizēta grupas tērzēšanai izmantotā SIM karte</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_NOT_INBOX_MSG">Neizdevās iegūt lejupielādes URL</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_INVALID_URL">Nederīgs lejupielādes URL</string>
+    <string name="STR_NMS_ERR_GET_ATTACH_NAME_INVALID_BODY_FORMAT">Neizdevās iegūt lejupielādējamā faila nosaukumu</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_INVALID_FILE_NAME">Nederīgs lejupielādējamā faila nosaukums</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_EXIST">Lejupielādējamais fails nepastāv</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_INBOX_MSG">Neizdevās iestatīt lejupielādējamo failu</string>
+    <string name="STR_NMS_ERR_SIM_INFO_NOT_FOUND">Nav atrasta SIM kartes informācija</string>
+    <string name="STR_NMS_ERR_SIM_IN_INVALID_STATUS">Nederīgs SIM kartes stāvoklis</string>
+    <string name="STR_NMS_ERR_CMD_PROCESSING">Sistēma ir aizņemta, nevar izpildīt sistēmas konfigurēšanas komandu</string>
+    <string name="STR_NMS_ERR_CMD_GENERAL">Vispārēja sistēmas konfigurēšanas kļūda</string>
+    <string name="STR_NMS_ERR_CODE_END">Nezināmās kļūdas kods</string>
+    <!-- Error code tips -->
+    <string name="STR_NMS_SEND_MMS_QUERY_TITLE">Brīdinājums</string>
+    <string name="STR_NMS_SEND_MMS_QUERY">Adresāts nav iSMS lietotājs. Vai nosūtīt, izmantojot MMS?</string>
+    <!-- Service center start -->
+    <string name="STR_NMS_SERVICE_TITLE">iSMS pakalpojumu centrs</string>
+    <string name="STR_NMS_INTRODUCTION">Izmantojot iSMS, jūs varēsit acumirklī bez maksas nogādāt adresātam ziņas, kā arī centralizēti uzglabāt tērzēšanas vēsturi. Lai gūtu šo jauno pieredzi, jānospiež tikai viena poga.</string>
+    <string name="STR_NMS_TERMS">Noteikumi un nosacījumi</string>
+    <string name="STR_NMS_ACTIVATION_BUTTON">Aktivizēt tūlīt</string>
+    <string name="STR_NMS_LOSE_SDCARD">SD karte nav atrasta</string>
+    <!-- Service center end -->
+
+
+    <!-- conversation empty tips -->
+    <string name="STR_NMS_SPAM_EMPTY">Jums nav surogātpasta sarunu. \nSUROGĀTPASTĀ nonāk visas sarunas, kas atzīmētas kā surogātpasts. Paziņojums tiek izslēgts pēc noklusējuma. Tas palīdz izvairīties no liekiem traucējumiem. \n\nVarat atzīmēt sūtītāju kā surogātpastu, aizturot sarunu un atlasot ikonu Atzīmēt kā surogātpastu. Ja saruna ir atzīmēta kā surogātpasts, automātiski parādās paziņojumu izslēgšanas ikona, un saruna tiek pārvietota uz surogātpastu.</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_FROM">+86123456789</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_SUBJECT">Šis ir surogātpasta ziņas piemērs.</string>
+    <string name="STR_NMS_GROUPCHAT_EMPTY">Jums nav grupas tērzēšanas ziņu. \nGRUPAS TĒRZĒŠANĀS nonāk visas grupas tērzēšanas ziņas, ko esat izveidojis vai kam esat pievienojies. Tādējādi varat vienkārši atrast un pārvaldīt savas grupas tērzēšanas. \n\nLai izveidotu grupas tērzēšanu, varat piesist pa pogu Izveidot grupas tērzēšanu ekrāna apakšā un uzaicināt draugus pievienoties grupai.</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_FROM">Grupas nosaukums</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_SUBJECT">Jūsu draugs:\nMan patīk grupas tērzēšanas funkcija!</string>
+    <string name="STR_NMS_IMPORTANT_EMPTY">Jums nav svarīgu ziņu. \nSVARĪGI ietver visas ziņas, kas atzīmētas kā svarīgas. Tādējādi var vienkārši atrast svarīgās ziņas. \n\nVarat atzīmēt ziņu kā svarīgu, aizturot ziņu un opciju izvēlnē atlasot Atzīmēt kā svarīgu. Ja ziņa ir atzīmēta kā svarīga, redzama sarkana karodziņa ikona (kā parādīts tālāk).</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TITLE">Šis ir piemērs ziņai, kas atzīmēta kā svarīga. Parādīsies sarkans karodziņš.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TIME">10:55</string>
+    <string name="STR_NMS_ALLCHAT_EMPTY">Nav sarunu</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_CONTENT">Lai izmantotu šo funkciju, vispirms jāaktivizē iSMS pakalpojums. Neuztraucieties! Ja jums pakalpojums nepatiks, vienmēr varēsit to izslēgt iestatījumos. Izmēģiniet to tūlīt!</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_TITLE">Aktivizēt iSMS</string>
+    <!-- conversation empty tips -->
+    
+    <string name="STR_NMS_CLEAR_USER_DATA">Dati veiksmīgi notīrīti</string>
+    
+    <!-- get file err start -->
+    <string name="STR_NMS_NO_SUCH_FILE">Šāda faila nav</string>
+    <string name="STR_NMS_OVER_FILE_LIMIT">Faila lielums ir atkarīgs no ierobežojuma</string>
+    <string name="STR_NMS_INVALID_FILE_TYPE">Šis veids netiek atbalstīts</string>
+    <!-- get file err end -->
+
+    <string name="STR_NMS_DELIVERY_BODY">%s saņēma ziņu</string>
+    <string name="STR_NMS_SIM_SELECT_TITLE">Atlasīt SIM</string>
+    
+    <string name="STR_NMS_SHORTCUT_SUCCESS">Izveidota saīsne %1$s.</string>
+    <string name="STR_NMS_SHORTCUT_REFRESHING">Atsvaidzina</string>
+    
+    <string name="STR_NMS_DISABLE_FAILED">Neizdevās veikt darbību. Lūdzu, mēģiniet vēlreiz</string>
+    <string name="STR_NMS_ENABLE_FAILED">Neizdevās veikt darbību. Lūdzu, mēģiniet vēlreiz</string>
+    <string name="STR_NMS_ENABLE_SUCCESS">Jūs veiksmīgi aktivizējāt iSMS pakalpojumu</string>
+    <string name="STR_NMS_DISABLE_SUCCESS">Jūs veiksmīgi deaktivizējāt iSMS pakalpojumu</string>
+    
+	<string name="STR_NMS_SD_CARD_FULL">SD karte ir pilna</string>
+    <string name="STR_NMS_SEND_MSG_FAILED">Neizdevās nosūtīt ziņu!</string>
+    <string name="STR_NMS_SETTING_COMMENT">„iSMS“ tai šaunus pokalbių įrankis. Jis nemokamas ir patogus.Uzzināt vairāk</string>
+    <string name="STR_NMS_KNOW_MORE">Uzzināt vairāk</string>
+    <string name="STR_NMS_RECEIVED_MSG_DETAILS">Veids: IP ziņa\nNo: %1$s\nNosūtīt laiks: %2$s\nSaņemta: %3$s</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH_ADD">iSMS pakalpojums īslaicīgi nav pieejams, jo trūkst atmiņas.</string>
+    <string name="STR_NMS_SERVER_AUTO_ECHO_MSG">Ziņa saņemta. Paldies!</string>
+    
+     <string name="imsp_ip_message">iSMS ziņa</string>
+    <string name="imsp_invite_chat_frequently"><b>Vai bieži tērzējat ar %s?</b>\nVarat uzaicināt %s izmantot iSMS, lai ietaupītu jūs abi!</string>
+    <string name="imsp_enable_chat_frequently"><b>%s iSMS pakalpojums ir atspējots!</b>\nVarat iespējot savu iSMS pakalpojumu, lai ietaupītu jūs abi!</string>
+    <string name="imsp_invite">Uzaicināt</string>
+    <string name="imsp_enable_notice">Vai tiešām iespējot iSMS pakalpojumu?</string>
+    <string name="imsp_activate_chat_frequently"><b>Vai bieži tērzējat ar draugiem?</b>\nVarat aktivizēt iSMS pakalpojumu un tērzēt bez SMS maksas!</string>
+    <string name="imsp_activate_note">Vai tiešām aktivizēt iSMS?</string>
+    <string name="imsp_dismiss_content">Vai tiešām noraidīt šo piezīmi?</string>
+    <string name="imsp_divider_online">%s ir tiešsaistē</string>
+    <string name="imsp_divider_offline">Pēdējais tiešsaistes laiks: %s</string>
+    <string name="imsp_divider_never_online">Nekad tiešsaistē</string>
+    <string name="imsp_failed_title">Neizdevās nosūtīt</string>
+    <string name="imsp_resend_via_sms">Tā vietā sūtīt SMS</string>
+    <string name="imsp_resend_via_mms">Tā vietā sūtīt MMS</string>
+    <string name="imsp_typing_text">Raksta</string>
+    <string name="imsp_save_attachment">Saglabāt pielikumu</string>
+    <string name="imsp_view">Skatīt</string>
+    <string name="imsp_convert_to_mms">Pārveidot par MMS.</string>
+    <string name="imsp_convert_to_sms">Pārveidot par SMS.</string>
+    <string name="imsp_convert_to_isms">Pārveidot par iSMS.</string>
+    <string name="imsp_convert_to_mms_for_service">iSMS pakalpojums šajā atlasītajā SIM kartē nav pieejams. Šo ziņu šajā SIM kartē var nosūtīt tikai, izmantojot MMS. Vai tomēr turpināt?</string>
+    <string name="imsp_convert_to_sms_for_service">iSMS pakalpojums šajā atlasītajā SIM kartē nav pieejams. Šo ziņu šajā SIM kartē var nosūtīt tikai, izmantojot SMS. Vai tomēr turpināt?</string>
+    <string name="imsp_convert_to_mms_for_recipients">Adresāts(-i) nav iSMS lietotājs(-i). Šo ziņu var nosūtīt tikai, izmantojot MMS. Vai tomēr turpināt?</string>
+    <string name="imsp_convert_to_sms_for_recipients">Adresāts(-i) nav iSMS lietotājs(-i). Šo ziņu var nosūtīt tikai, izmantojot SMS. Vai tomēr turpināt?</string>
+    <string name="imsp_sms_convert_to_isms">iSMS pakalpojums šajā atlasītajā SIM kartē ir pieejams. Lai ietaupītu maksu par SMS, ieteicams pārslēgt ziņu uz iSMS. Vai pārslēgt tūlīt?</string>
+    <string name="imsp_mms_convert_to_isms">iSMS pakalpojums šajā atlasītajā SIM kartē ir pieejams. Lai ietaupītu maksu par MMS, ieteicams pārslēgt ziņu uz iSMS. Vai pārslēgt tūlīt?</string>
+    <string name="imsp_keep_mms">Atstāt MMS</string>
+    <string name="imsp_keep_sms">Atstāt SMS</string>
+    <string name="imsp_resend_discard_message">Lai ziņu nosūtītu atkārtoti, jūsu pašlaik veidotā ziņa tiks atmesta.</string>
+    <string name="imsp_no_sim_card">Nav SIM kartes!</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">"Nav atrasts aktīvs Interneta savienojums! Lūdzu, vēlāk mēģiniet vēlreiz."</string>
+    <string name="imsp_chat_setting_updating">atjaunina...</string>
+    <string name="imsp_dialog_clear_title">Notīrīt</string>
+    <string name="imsp_dialog_clear_description">Visa tērzēšanas vēsture šajā tērzēšanas telpā tiks notīrīta</string>
+    <string name="imsp_chat_setting_saving">saglabā...</string>
+    <string name="imsp_chat_setting_sending">sūta...</string>
+    <string name="imsp_save_chat_history_failed">neizdevās saglabāt</string>
+    <string name="imsp_send_chat_history_failed">Neizdevās nosūtīt e-pastu</string>
+    <string name="imsp_conversation_list_all">Ziņojumi</string>
+    <string name="imsp_conversation_list_important">Svarīgi</string>
+    <string name="imsp_conversation_list_group_chats">Grupas</string>
+    <string name="imsp_conversation_list_spam">Surogātpasts</string>
+    <string name="imsp_mark_as_spam_tips">Ziņojumi, kas atzīmēti kā surogātpasts, tiek pārvietoti uz surogātpasta sarakstu, un paziņojums par tiem tiek izslēgts automātiski.</string>
+    <string name="imsp_typing">"Raksta..."</string>
+    <string name="imsp_type_to_compose_text">"Rakstīt SMS/iSMS ziņu"</string>
+    <string name="imsp_no_sdcard">Nav SDcard</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">Lai nosūtītu uzaicinājumu, jūsu pašlaik veidotā ziņa tiks atmesta.</string>
+    <string name="imsp_current_sim_enabled">Iespējota pašreizējā SIM karte.</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">Atlasiet SIM karti, lai aktivizētu iSMS</string>
+    <string name="imsp_activate_message">Šo līdzekli atbalsta tikai iSMS pakalpojums. Vai tūlīt aktivizēt jūsu iSMS kontu?</string>
+    <string name="imsp_enable_message">Šo līdzekli atbalsta tikai iSMS pakalpojums. Vai tūlīt iespējot jūsu iSMS kontu?</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">Atlasiet SIM, lai iespējotu iSMS</string>
+    <string name="imsp_switch_sim_title">Pārslēgt SIM</string>
+    <string name="imsp_switch_sim_message">Pašreizējā SIM neatbalsta iSMS. Vai pārslēgt uz citu SIM?</string>
+    <string name="imsp_switch_sim_successfully">SIM pārslēgšana izdevās!</string>
+    <string name="imsp_dailog_multi_forward">Ziņu pārsūtīšana</string>
+    <string name="imsp_dialog_send_result">Sūtīšanas rezultāts</string>
+    <string name="imsp_dlg_send_all">Visas: %s</string>
+    <string name="imsp_dlg_send_sucess">Nosūtītās: %s</string>
+    <string name="imsp_dlg_send_failed">Neizdevās: %s</string>
+    <string name="imsp_multi_forward_sim_info">Iegūst SIM informāciju</string>
+    <string name="imsp_multi_forward_no_sim">Nav SIM informācijas</string>
+    <string name="imsp_get_sim_failed">Neizdevās iegūt SIM informāciju</string>
+    <string name="imsp_sim_status_error">SIM statusa kļūda</string>
+    <string name="imsp_forward_norecipients">Pārsūtāmajai ziņai nav adresāta(-u)</string>
+    <string name="imsp_multiforward_no_message">Nav ziņas(-u), ko varētu pārsūtīt</string>
+    <string name="imsp_need_input_recipients">Vispirms, lūdzu, norādiet vismaz vienu adresātu</string>
+    <string name="imsp_spam_empty">Jums nav surogātpasta sarunu. \nSUROGĀTPASTĀ nonāk visas sarunas, kas atzīmētas kā surogātpasts. Paziņojums tiek izslēgts pēc noklusējuma. Tas palīdz izvairīties no liekiem traucējumiem. \n\nVarat atzīmēt sūtītāju kā surogātpastu, aizturot sarunu un atlasot ikonu Atzīmēt kā surogātpastu. Ja saruna ir atzīmēta kā surogātpasts, automātiski parādās paziņojumu izslēgšanas ikona, un saruna tiek pārvietota uz surogātpastu.</string>
+    <string name="imsp_groupchat_empty">Jums nav grupas tērzēšanas ziņu. \nGRUPAS TĒRZĒŠANĀS nonāk visas grupas tērzēšanas ziņas, ko esat izveidojis vai kam esat pievienojies. Tādējādi varat vienkārši atrast un pārvaldīt savas grupas tērzēšanas. \n\nLai izveidotu grupas tērzēšanu, varat piesist pa pogu Izveidot grupas tērzēšanu ekrāna apakšā un uzaicināt draugus pievienoties grupai.</string>
+    <string name="imsp_important_empty">Jums nav svarīgu ziņu. \nSVARĪGI ietver visas ziņas, kas atzīmētas kā svarīgas. Tādējādi var vienkārši atrast svarīgās ziņas. \n\nVarat atzīmēt ziņu kā svarīgu, aizturot ziņu un opciju izvēlnē atlasot Atzīmēt kā svarīgu. Ja ziņa ir atzīmēta kā svarīga, redzama sarkana karodziņa ikona (kā parādīts tālāk).</string>
+    <string name="imsp_allchat_empty">Nav sarunu</string>
+    <string name="imsp_attach_slideshow">Slaidrāde</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">Lejupielādē...</string>
+    <string name="imsp_invite_friends_to_ipmsg">Uzaiciniet draugus izmantot iSMS</string>
+    <string name="imsp_multi_forward_tips_content">Lai veiktu multipārsūtīšanu, vispirms jāveic dažu iSMS lejupielāde.</string>
+    <string name="imsp_multi_forward_failed_part">Neizdevās pārsūtīt dažas iSMS.</string>
+
+</resources>

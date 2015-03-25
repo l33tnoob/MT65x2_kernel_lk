@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binresmon_test Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type resmon_test_exec , exec_type, file_type;
+type resmon_test ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive resmon_test;
+init_daemon_domain(resmon_test)
+
+
+# 20131122 Add Set Property Rule
+allow resmon_test  property_type:property_service set;

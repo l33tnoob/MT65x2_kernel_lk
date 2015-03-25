@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hissage.ui.view.NmsMessageItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/time_divider_zone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="14dip"
+        android:paddingTop="4dip" >
+
+        <include
+            android:id="@+id/time_divider"
+            layout="@layout/time_diviter_item" />
+
+        <include
+            android:id="@+id/unread_divider"
+            layout="@layout/unread_divider_item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip" >
+
+        <CheckBox
+            android:id="@+id/cb_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dip"
+            android:clickable="false"
+            android:focusable="false"
+            android:visibility="gone" />
+
+        <QuickContactBadge
+            android:id="@+id/iv_sender_photo"
+            android:layout_width="@dimen/group_photo_width"
+            android:layout_height="@dimen/group_photo_width"
+            android:layout_gravity="top"
+            android:layout_marginRight="6dip"
+            android:layout_marginTop="15dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_contact_picture"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="45dip"
+            android:background="@drawable/incoming_selector"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_sender_name"
+                style="@style/group_member_name_style"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/sender_name_separator"
+                style="@style/bubble_name_separator_style"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_text_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:linksClickable="false"
+                android:textColor="#222222"
+                android:textSize="14sp" />
+
+            <include
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/in_coming_status" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.hissage.ui.view.NmsMessageItemView>

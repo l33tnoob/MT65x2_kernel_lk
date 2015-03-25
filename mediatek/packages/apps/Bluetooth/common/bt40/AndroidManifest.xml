@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mediatek.bluetooth"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <application
+        android:description="@string/app_description"
+        android:icon="@drawable/bluetooth"
+        android:label="@string/app_label" >
+
+        <!-- Test [+] ************************************************************************************** -->
+
+        <activity
+            android:label="@string/app_label"
+            android:name="com.mediatek.bluetooth.TestMainActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.mediatek.bluetooth.sys.ts.TestStackService" >
+            <intent-filter >
+                <action android:name="com.mediatek.bluetooth.sys.ts.action.START_STACK_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <!-- Test [-] ************************************************************************************** -->
+
+
+        <!-- BLUEANGEL::IF MTK_BT_SUPPORT = yes -->
+
+        <activity
+            android:name="com.mediatek.activity.MessageActivity"
+            android:theme="@*android:style/Theme.Holo.Dialog.Alert" />
+
+        <service 
+            android:exported="true"
+            android:name="com.mediatek.bluetooth.AdvancedService"/>    
+
+        <receiver android:name=".BluetoothReceiver" >
+            <intent-filter >
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <!--
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                -->
+                <action android:name="com.mediatek.bluetooth.receiver.action.SHOW_TOAST" />
+                <action android:name="android.bluetooth.profilemanager.action.DISABLE_PROFILES" />
+            </intent-filter>
+            <intent-filter >
+                <!--
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                -->
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        
+        <!-- BLUEANGEL::Disable BIP Entry 
+        <activity
+            android:configChanges="orientation|screenSize|mcc|mnc|locale"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:name=".BluetoothShareGatewayActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter >
+                <action android:name="com.mediatek.bluetooth.sharegateway.action.DEVICE_SELECTED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.ALTERNATIVE" />
+                <category android:name="android.intent.category.SELECTED_ALTERNATIVE" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+                <data android:mimeType="video/*" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="text/x-vcard" />
+                <data android:mimeType="text/x-vcalendar" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="text/html" />
+                <data android:mimeType="application/*" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="x-mixmedia/*" />
+                <data android:mimeType="image/*" />
+                <data android:mimeType="video/*" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="text/x-vcard" />
+                <data android:mimeType="text/x-vcalendar" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="text/html" />
+                <data android:mimeType="application/*" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".BluetoothShareGatewayReceiver" >
+            <intent-filter >
+                <action android:name="android.btopp.intent.action.OPEN_RECEIVED_FILES" />
+                <action android:name="com.mediatek.bluetooth.sharegateway.action.ACTION_SETTINGS" />
+            </intent-filter>
+        </receiver>
+        -->
+
+        <activity
+            android:excludeFromRecents="true"
+            android:name=".share.BluetoothShareMgmtActivity"
+            android:taskAffinity="" />
+        <activity
+            android:excludeFromRecents="true"
+            android:name=".share.BluetoothShareTabActivity" />
+
+        <provider
+            android:authorities="com.mediatek.provider.bluetooth.share"
+            android:name=".share.BluetoothShareProvider" />
+
+        <!-- BLE System [+] ******************************************************************************** 
+        <receiver android:name="com.mediatek.bluetooth.psm.PsmBluetoothReceiver" >
+            <intent-filter >
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        -->
+        
+        <service
+            android:exported="true"
+            android:name="com.mediatek.bluetooth.ProfileService" >
+            <intent-filter >
+                <action android:name="com.mediatek.bluetooth.service.IBluetoothPrxm" />
+                <action android:name="com.mediatek.bluetooth.service.IBluetoothPrxr" />
+                <action android:name="com.mediatek.bluetooth.service.IBluetoothTimec" />
+                <action android:name="com.mediatek.bluetooth.service.IBluetoothTimes" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:launchMode="singleTop"
+            android:name="com.mediatek.bluetooth.settings.BluetoothAdvancedSettingsActivity" >
+            <intent-filter >
+                <action android:name="com.mediatek.bluetooth.settings.action.START_BT_ADV_SETTING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- BLE System [-] ******************************************************************************** -->
+
+
+        <!-- BLUEANGEL::FI MTK_BT_SUPPORT -->
+
+    </application>
+
+</manifest>

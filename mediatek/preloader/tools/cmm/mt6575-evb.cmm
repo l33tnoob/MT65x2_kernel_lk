@@ -1,0 +1,105 @@
+RESET
+;SYSTEM.OPTION ENRESET OFF
+;SYSTEM.OPTION ENRESET ON
+SYSTEM.OPTION RESBREAK OFF
+SYSTEM.CPU CortexA9MPCore
+
+;R-T Memory Access
+SYSTEM.MULTICORE MEMORYACCESSPORT 1
+SYSTEM.MULTICORE DEBUGACCESSPORT 1
+
+;Setting Core debug register access
+SYSTEM.MULTICORE COREBASE APB:0x80070000
+
+;Setting PTM
+SYSTEM.MULTICORE ETMBASE APB:0x8007C000
+
+;Setting ETB
+;SYSTEM.MULTICORE ETBBASE APB:0x80001000
+
+;Setting TPIU
+;SYSTEM.MULTICORE TPIUBASE APB:0x80013000
+
+;Setting Funnel
+SYSTEM.MULTICORE FUNNELBASE APB:0x80014000 
+SYSTEM.MULTICORE ETMFUNNELPORT 0
+
+SYStem.Up
+
+; Initialize EMI
+&init_emi=0 ; 0: not init 
+            ; 1: init 
+IF &init_emi==1
+(   
+    D.S SD:0xC0003000 %LE %LONG 0x3012 ; one channel 
+    
+    ;DRAM controller initialization, channel 0
+    D.S SD:0xC00040e4 %LE %LONG 0x00000004
+    ;wait for 200 clock cycles
+wait 1.ms
+    D.S SD:0xC00041e4 %LE %LONG 0x00000004 ;PREA enable
+    D.S SD:0xC00041e4 %LE %LONG 0x00000000 ;disable
+    D.S SD:0xC00041e4 %LE %LONG 0x00000008 ;1st REF enable
+    D.S SD:0xC00041e4 %LE %LONG 0x00000000 ;disable
+    D.S SD:0xC00041e4 %LE %LONG 0x00000008 ;2nd REF enable
+    D.S SD:0xC00041e4 %LE %LONG 0x00000000 ;disable
+    D.S SD:0xC00041e4 %LE %LONG 0x00000008 ;3rd REF enable
+    D.S SD:0xC00041e4 %LE %LONG 0x00000000 ;disable
+    D.S SD:0xC00041e4 %LE %LONG 0x00000008 ;4th REF enable
+    D.S SD:0xC00041e4 %LE %LONG 0x00000000 ;disable
+    D.S SD:0xC00041e4 %LE %LONG 0x00000008 ;5th REF enable
+    D.S SD:0xC00041e4 %LE %LONG 0x00000000 ;disable
+    D.S SD:0xC00041e4 %LE %LONG 0x00000008 ;6th REF enable
+    D.S SD:0xC00041e4 %LE %LONG 0x00000000 ;disable
+    D.S SD:0xC00041e4 %LE %LONG 0x00000008 ;7th REF enable
+    D.S SD:0xC00041e4 %LE %LONG 0x00000000 ;disable
+    D.S SD:0xC00041e4 %LE %LONG 0x00000008 ;8th REF enable
+    D.S SD:0xC00041e4 %LE %LONG 0x00000000 ;disable
+    D.S SD:0xC0004088 %LE %LONG 0x00000021 ;MRS: BL2, CL2
+    D.S SD:0xC00041e4 %LE %LONG 0x00000010 ;NOP enable
+    D.S SD:0xC00041e4 %LE %LONG 0x00000000 ;disable
+    D.S SD:0xC00041e4 %LE %LONG 0x00000001 ;MRS write enable
+    D.S SD:0xC00041e4 %LE %LONG 0x00000000 ;disable
+    D.S SD:0xC0004000 %LE %LONG 0x22021124 ;AC Timing setting
+    D.S SD:0xC0004004 %LE %LONG 0x00000441 ;TRRD, Burst length, bus width
+    D.S SD:0xC0004008 %LE %LONG 0x0000000d ;REF rate 7.8us for 27MHz clock
+;    D.S SD:0xC0004008 %LE %LONG 0x00000005 ;REF rate 7.8us for 24MHz clock
+    D.S SD:0xC000407c %LE %LONG 0x00002010 ;AC Timing setting (TRTP,TR2W)
+    D.S SD:0xC00041e0 %LE %LONG 0x20000000 ;enable CTO protocol
+    D.S SD:0xC0003060 %LE %LONG 0x00000400 ;ungate dram
+)
+
+; set_hw_breakpoint_by_def
+; setting attribute of breakpoints
+Break.Select Program OnChip
+Break.Select Hll OnChip
+Break.Select Spot OnChip
+Break.Select Read OnChip
+Break.Select Write OnChip
+
+D.S C15:0x1 0				; Turn off MMU
+D.S SD:0xC0000000 %LE %LONG 0x00002226 ;disable wdt
+;
+; board init
+;
+
+print "loading pre-loader image"
+d.load.elf ../../bin/preloader_mt6575_evb.elf
+
+Y.SPATH.RESET ; reset all source path
+Y.SPATH.SRD ../../../platform/mt6575/preloader/src/core
+Y.SPATH.SRD ../../../platform/mt6575/preloader/src/drivers
+Y.SPATH.SRD ../../../platform/mt6575/preloader/src/init
+Y.SPATH.SRD ../../../platform/mt6575/preloader/src/lib
+Y.SPATH.SRD ../../../custom/mt6575_evb/preloader
+
+
+R.S T 0
+
+;winclear
+d.l
+enddo
+
+
+
+

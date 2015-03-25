@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binip Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type ip_exec , exec_type, file_type;
+type ip ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive ip;
+init_daemon_domain(ip)
+
+
+# 20131122 Add Set Property Rule
+allow ip  property_type:property_service set;

@@ -1,0 +1,127 @@
+# ==============================================
+# Policy File of /system/binmobile_log_d Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type mobile_log_d_exec , exec_type, file_type;
+type mobile_log_d ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive mobile_log_d;
+init_daemon_domain(mobile_log_d)
+
+# 20131024 Sanity_01
+allow mobile_log_d kernel:system syslog_mod;
+allow mobile_log_d property_socket:sock_file write;
+allow mobile_log_d sdcard_external:dir { write create add_name };
+allow mobile_log_d sdcard_external:file { read create open append };
+allow mobile_log_d system_data_file:file { open append };
+
+
+# 20131024 Sanity_02
+allow mobile_log_d mtkbt:unix_stream_socket connectto;
+allow mobile_log_d sdcard_external:dir remove_name;
+allow mobile_log_d sdcard_external:file { rename getattr };
+allow mobile_log_d self:capability2 syslog;
+
+
+# 20131024 CTS_01
+allow mobile_log_d device:chr_file { read ioctl open };
+allow mobile_log_d mtkbt:unix_stream_socket connectto;
+allow mobile_log_d sdcard_external:dir { remove_name search };
+allow mobile_log_d sdcard_external:file { rename getattr unlink };
+allow mobile_log_d self:capability2 syslog;
+allow mobile_log_d system_data_file:dir { write rmdir read remove_name open add_name };
+allow mobile_log_d system_data_file:file { rename write };
+
+
+# 20131024 CTS_02
+allow mobile_log_d system_data_file:file unlink;
+
+
+# 20131028 CTS_03
+allow mobile_log_d system_data_file:file create;
+
+
+# 20131028 CTS_09
+allow mobile_log_d linker_exec:file read;
+
+
+# 20131028 CTS_10
+allow mobile_log_d self:capability { setuid setgid };
+
+
+# 20131028 CTS_11
+allow mobile_log_d system_data_file:file setattr;
+
+
+# 20131028 CTS_13
+allow mobile_log_d devmap_device:chr_file { read ioctl open };
+
+
+# 20131028 CTS_18
+allow mobile_log_d linker_exec:file { execute open };
+allow mobile_log_d shell_exec:file { read execute open execute_no_trans };
+
+
+# 20131028 CTS_19
+allow mobile_log_d toolbox_exec:file getattr;
+
+
+# 20131028 CTS_20
+allow mobile_log_d toolbox_exec:file { read execute open execute_no_trans };
+
+
+# 20131028 CTS_21
+allow mobile_log_d system_data_file:dir create;
+
+
+# 20131119 FeatureSQC
+allow mobile_log_d devmap_device:chr_file read;
+allow mobile_log_d linker_exec:file read;
+allow mobile_log_d sdcard_internal:dir { write remove_name search create add_name };
+allow mobile_log_d sdcard_internal:file { rename getattr read create unlink open append };
+allow mobile_log_d self:capability { setuid setgid };
+allow mobile_log_d shell_prop:property_service set;
+allow mobile_log_d system_data_file:dir create;
+allow mobile_log_d system_data_file:file setattr;
+
+
+# 20131121 Sanity_QA
+allow mobile_log_d sdcard_internal:dir { read open };
+
+
+
+# 20131122 Add Set Property Rule
+allow mobile_log_d  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow mobile_log_d aee_aed:process sigchld;
+allow mobile_log_d aee_aed:unix_stream_socket connectto;
+allow mobile_log_d aee_exec:file { read getattr open execute execute_no_trans };
+allow mobile_log_d cgroup:dir { create add_name };
+allow mobile_log_d mobile_log_d_tmpfs:file { rename create };
+allow mobile_log_d sdcard_internal:dir { read open };
+allow mobile_log_d tmpfs:dir { write remove_name add_name };
+allow mobile_log_d tmpfs:lnk_file read;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow mobile_log_d aee_aed:unix_stream_socket connectto;
+allow mobile_log_d aee_exec:file { read getattr open execute execute_no_trans };
+allow mobile_log_d mobile_log_d_tmpfs:file { unlink open append };
+

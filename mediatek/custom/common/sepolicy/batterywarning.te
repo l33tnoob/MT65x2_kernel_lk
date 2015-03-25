@@ -1,0 +1,279 @@
+# ==============================================
+# Policy File of /system/binbatterywarning Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type batterywarning_exec , exec_type, file_type;
+type batterywarning ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive batterywarning;
+init_daemon_domain(batterywarning)
+
+# 20131024 Sanity_01
+allow batterywarning BGW:dir { read getattr open search };
+allow batterywarning BGW:file { read open };
+allow batterywarning GoogleOtaBinder:dir { read getattr open search };
+allow batterywarning GoogleOtaBinder:file { read open };
+allow batterywarning aal:dir { read getattr open search };
+allow batterywarning aal:file { read open };
+allow batterywarning aee_aed:dir { read getattr open search };
+allow batterywarning aee_aed:file { read open };
+allow batterywarning atci_service:dir { read getattr open search };
+allow batterywarning atci_service:file { read open };
+allow batterywarning atcid:dir { read getattr open search };
+allow batterywarning atcid:file { read open };
+allow batterywarning bmm050d:dir { read getattr open search };
+allow batterywarning bmm050d:file { read open };
+allow batterywarning ccci_fsd:dir { getattr search };
+allow batterywarning ccci_fsd:file { read open };
+allow batterywarning ccci_mdinit:dir { read getattr open search };
+allow batterywarning dm_agent_binder:dir { read getattr open search };
+allow batterywarning dm_agent_binder:file { read open };
+allow batterywarning em_svr:file { read open };
+allow batterywarning featured:dir getattr;
+allow batterywarning featured:file read;
+allow batterywarning gsm0710muxd:dir { getattr search };
+allow batterywarning hald:dir { getattr search };
+allow batterywarning init:dir { read getattr open search };
+allow batterywarning init:file { read open };
+allow batterywarning installd:dir { read getattr open search };
+allow batterywarning installd:file { read open };
+allow batterywarning kernel:dir { read getattr open search };
+allow batterywarning kernel:file { read open };
+allow batterywarning keystore:dir { getattr search };
+allow batterywarning keystore:file { read open };
+allow batterywarning linker_exec:file { read execute open };
+allow batterywarning media_app:dir { read getattr open search };
+allow batterywarning media_app:file { read open };
+allow batterywarning mobile_log_d:dir { read getattr open search };
+allow batterywarning mtk_agpsd:dir { read getattr open search };
+allow batterywarning mtk_agpsd:file { read open };
+allow batterywarning mtkbt:dir { read getattr open search };
+allow batterywarning mtkbt:file { read open };
+allow batterywarning netd:file { read open };
+allow batterywarning netdiag:file { read open };
+allow batterywarning nvram_agent_binder:dir { read getattr open search };
+allow batterywarning nvram_agent_binder:file { read open };
+allow batterywarning platform_app:dir { getattr search };
+allow batterywarning platform_app:file { read open };
+allow batterywarning radio:dir { read getattr open search };
+allow batterywarning radio:file { read open };
+allow batterywarning resmon:file { read open };
+allow batterywarning servicemanager:dir { read getattr open search };
+allow batterywarning servicemanager:file { read open };
+allow batterywarning shared_app:dir { read getattr open search };
+allow batterywarning shared_app:file { read open };
+allow batterywarning shell:dir { read getattr search };
+allow batterywarning shell_exec:file { read execute open execute_no_trans };
+allow batterywarning surfaceflinger:dir { getattr search };
+allow batterywarning surfaceflinger:file { read open };
+allow batterywarning system_app:dir { read getattr open search };
+allow batterywarning system_app:file { read open };
+allow batterywarning system_server:dir { read getattr open search };
+allow batterywarning system_server:file { read open };
+allow batterywarning thermal:file { read open };
+allow batterywarning thermald:dir { getattr search };
+allow batterywarning thermald:file { read open };
+allow batterywarning toolbox_exec:file { read getattr open execute execute_no_trans };
+allow batterywarning vold:dir { read getattr open search };
+allow batterywarning vold:file { read open };
+allow batterywarning vtservice:dir { read getattr open search };
+allow batterywarning vtservice:file { read open };
+allow batterywarning zygote:dir { read getattr open search };
+
+
+# 20131024 Sanity_02
+allow batterywarning adbd:dir { read getattr open search };
+allow batterywarning adbd:file { read open };
+allow batterywarning bluetooth:dir { read getattr open search };
+allow batterywarning ccci_fsd:dir { read open };
+allow batterywarning ccci_mdinit:file { read open };
+allow batterywarning drmserver:dir { read getattr open search };
+allow batterywarning drmserver:file { read open };
+allow batterywarning em_svr:dir { read getattr open search };
+allow batterywarning featured:dir { read search open };
+allow batterywarning featured:file open;
+allow batterywarning gsm0710muxd:dir { read open };
+allow batterywarning gsm0710muxd:file { read open };
+allow batterywarning hald:dir { read open };
+allow batterywarning hald:file { read open };
+allow batterywarning init_shell:dir { read getattr open search };
+allow batterywarning init_shell:file { read open };
+allow batterywarning keystore:dir { read open };
+allow batterywarning logwrapper:dir { read getattr open search };
+allow batterywarning logwrapper:file { read open };
+allow batterywarning matv:dir { read getattr open search };
+allow batterywarning matv:file { read open };
+allow batterywarning mdlogger:dir { read getattr open search };
+allow batterywarning mdlogger:file { read open };
+allow batterywarning mediaserver:dir { read getattr open search };
+allow batterywarning mediaserver:file { read open };
+allow batterywarning mnld:dir { read getattr open search };
+allow batterywarning mnld:file { read open };
+allow batterywarning mobile_log_d:file { read open };
+allow batterywarning netd:dir { read getattr open search };
+allow batterywarning netdiag:dir { read getattr open search };
+allow batterywarning nfc:dir { read getattr open search };
+allow batterywarning nfc:file { read open };
+allow batterywarning platform_app:dir { read open };
+allow batterywarning release_app:dir { getattr search };
+allow batterywarning release_app:file { read open };
+allow batterywarning resmon:dir { read getattr open search };
+allow batterywarning rild:dir { read getattr open search };
+allow batterywarning rild:file { read open };
+allow batterywarning shell:dir open;
+allow batterywarning shell:file { read open };
+allow batterywarning surfaceflinger:dir { read open };
+allow batterywarning thermal:dir { read getattr open search };
+allow batterywarning thermald:dir { read open };
+allow batterywarning untrusted_app:dir { read getattr open search };
+allow batterywarning untrusted_app:file { read open };
+allow batterywarning zygote:file { read open };
+
+
+# 20131024 CTS_01
+allow batterywarning adbd:dir { read getattr open search };
+allow batterywarning adbd:file { read open };
+allow batterywarning bluetooth:dir { read getattr open search };
+allow batterywarning bluetooth:file { read open };
+allow batterywarning bootanimation:dir getattr;
+allow batterywarning ccci_fsd:dir { read open };
+allow batterywarning ccci_mdinit:file { read open };
+allow batterywarning device:chr_file { read ioctl open };
+allow batterywarning drmserver:dir { read getattr open search };
+allow batterywarning drmserver:file { read open };
+allow batterywarning dumpstate:dir { read getattr open search };
+allow batterywarning em_svr:dir { read getattr open search };
+allow batterywarning featured:dir { read search open };
+allow batterywarning featured:file open;
+allow batterywarning gsm0710muxd:dir { read open };
+allow batterywarning gsm0710muxd:file { read open };
+allow batterywarning hald:dir { read open };
+allow batterywarning hald:file { read open };
+allow batterywarning init_shell:dir { read getattr open search };
+allow batterywarning init_shell:file { read open };
+allow batterywarning keystore:dir { read open };
+allow batterywarning logwrapper:dir { read getattr open search };
+allow batterywarning logwrapper:file { read open };
+allow batterywarning matv:dir { read getattr open search };
+allow batterywarning matv:file { read open };
+allow batterywarning mdlogger:dir { read getattr open search };
+allow batterywarning mdlogger:file { read open };
+allow batterywarning mediaserver:dir { read getattr open search };
+allow batterywarning mediaserver:file { read open };
+allow batterywarning mnld:dir { read getattr open search };
+allow batterywarning mnld:file { read open };
+allow batterywarning mobile_log_d:file { read open };
+allow batterywarning netd:dir { read getattr open search };
+allow batterywarning netdiag:dir { read getattr open search };
+allow batterywarning nfc:dir { read getattr open search };
+allow batterywarning nfc:file { read open };
+allow batterywarning nvram_daemon:dir { read getattr open search };
+allow batterywarning nvram_daemon:file { read open };
+allow batterywarning platform_app:dir { read open };
+allow batterywarning release_app:dir { read getattr open search };
+allow batterywarning release_app:file { read open };
+allow batterywarning resmon:dir { read getattr open search };
+allow batterywarning rild:dir { read getattr open search };
+allow batterywarning rild:file { read open };
+allow batterywarning shell:dir open;
+allow batterywarning shell:file { read open };
+allow batterywarning sn:dir { read getattr open search };
+allow batterywarning sn:file { read open };
+allow batterywarning surfaceflinger:dir { read open };
+allow batterywarning thermal:dir { read getattr open search };
+allow batterywarning thermald:dir { read open };
+allow batterywarning untrusted_app:dir { read getattr open search };
+allow batterywarning untrusted_app:file { read open };
+allow batterywarning zygote:file { read open };
+
+
+# 20131024 CTS_02
+allow batterywarning bootanimation:dir { read search open };
+allow batterywarning bootanimation:file { read open };
+allow batterywarning dumpstate:file { read open };
+
+
+# 20131028 Sanity_05
+allow batterywarning clatd:dir { read getattr open search };
+allow batterywarning clatd:file { read open };
+
+
+# 20131028 CTS_08
+allow batterywarning wlan_loader:dir { read getattr open search };
+allow batterywarning wlan_loader:file { read open };
+
+
+# 20131028 CTS_11
+allow batterywarning terservice:dir getattr;
+allow batterywarning xlog:dir { read getattr open search };
+allow batterywarning xlog:file { read open };
+
+
+# 20131028 CTS_12
+allow batterywarning pq:dir { getattr search };
+allow batterywarning pq:file { read open };
+allow batterywarning terservice:dir { read search open };
+allow batterywarning terservice:file { read open };
+
+
+# 20131028 CTS_13
+allow batterywarning msensord:dir { read getattr open search };
+allow batterywarning msensord:file { read open };
+allow batterywarning pq:dir { read open };
+
+
+# 20131028 CTS_17
+allow batterywarning property_socket:sock_file write;
+
+
+# 20131028 CTS_20
+allow batterywarning boot_logo_updater:dir { read getattr open search };
+allow batterywarning boot_logo_updater:file { read open };
+
+
+# 20131028 CTS_22
+allow batterywarning thermal_manager:dir { read getattr open search };
+allow batterywarning thermal_manager:file { read open };
+
+
+# 20131119 FeatureSQC
+allow batterywarning dnsmasq:dir { read getattr open search };
+allow batterywarning dnsmasq:file { read open };
+allow batterywarning sdcardd:dir { read getattr open search };
+allow batterywarning sdcardd:file { read open };
+allow batterywarning terservice:dir getattr;
+allow batterywarning wpa:dir { read getattr open search };
+allow batterywarning wpa:file { read open };
+allow batterywarning xlog:dir { read getattr open search };
+allow batterywarning xlog:file { read open };
+
+
+
+# 20131122 Add Set Property Rule
+allow batterywarning  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_CTS_02
+allow batterywarning am_exec:file { read getattr open execute execute_no_trans };
+allow batterywarning ashmem_device:chr_file execute;
+allow batterywarning healthd:dir { read getattr open search };
+allow batterywarning healthd:file { read open };
+allow batterywarning servicemanager:binder call;
+allow batterywarning system_server:binder { transfer call };
+allow batterywarning zygote_exec:file { read getattr open execute execute_no_trans };
+

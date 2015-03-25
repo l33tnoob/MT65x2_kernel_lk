@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/hqa_version_tv_mw_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5pt"
+        android:layout_marginTop="40dp"
+        android:text="@string/hqa_nfc_mw_version"
+        android:textSize="16sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/hqa_version_tv_fw_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5pt"
+        android:layout_marginTop="10dp"
+        android:text="@string/hqa_nfc_fw_version"
+        android:textSize="16sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/hqa_version_tv_hw_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5pt"
+        android:layout_marginTop="10dp"
+        android:text="@string/hqa_nfc_hw_version"
+        android:textSize="16sp" >
+    </TextView>
+
+    <Button
+        android:id="@+id/hqa_version_btn_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/hqa_nfc_return"
+        android:width="100dp" />
+</LinearLayout>

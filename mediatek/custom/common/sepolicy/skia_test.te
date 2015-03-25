@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binskia_test Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type skia_test_exec , exec_type, file_type;
+type skia_test ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive skia_test;
+init_daemon_domain(skia_test)
+
+
+# 20131122 Add Set Property Rule
+allow skia_test  property_type:property_service set;

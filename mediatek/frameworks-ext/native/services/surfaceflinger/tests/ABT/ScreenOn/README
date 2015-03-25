@@ -1,0 +1,10 @@
+1. INSTALL
+adb uninstall com.mtk.me2
+adb install apk/ScreenOn.apk
+
+2. RUN
+adb shell am start -n com.mtk.me2/com.mtk.me2.ScreenActivity
+
+3. UNINSTALL
+adb shell am force-stop com.mtk.me2
+adb uninstall com.mtk.me2

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<Container xmlns:android="http://schemas.android.com/apk/res/android" 
+                 xmlns:ngin3d="http://schemas.android.com/apk/res/com.mediatek.ngin3d.tests"
+                 android:id="@+id/container3" >
+            
+     <Image android:id="@+id/image1" 
+     	         ngin3d:src="@drawable/earth"
+                 ngin3d:width="300px"
+                 ngin3d:height="200px"
+                 />
+ 
+     <Image android:id="@+id/image2" 
+     	         ngin3d:src="@drawable/danger"
+                 ngin3d:width="300px"
+                 ngin3d:height="200px"
+                 />
+
+
+     <Container xmlns:android="http://schemas.android.com/apk/res/android" 
+                     xmlns:ngin3d="http://schemas.android.com/apk/res/com.mediatek.ngin3d.tests"
+                     android:id="@+id/container4" >
+                     
+           <Image android:id="@+id/image3" 
+           	         ngin3d:src="@drawable/icon_video_frame"
+                       ngin3d:width="300px"
+                       ngin3d:height="200px"
+                       />
+
+     </Container>    
+
+     <Image android:id="@+id/image4" 
+     	         ngin3d:src="@drawable/portal_photo_demo"
+                ngin3d:width="300px"
+                ngin3d:height="200px"
+                />
+
+     <Container xmlns:android="http://schemas.android.com/apk/res/android" 
+                     xmlns:ngin3d="http://schemas.android.com/apk/res/com.mediatek.ngin3d.tests"
+                     android:id="@+id/container5" >
+
+          <Text xmlns:android="http://schemas.android.com/apk/res/android" 
+                    xmlns:ngin3d="http://schemas.android.com/apk/res/com.mediatek.ngin3d.tests"
+                    android:id="@+id/text7" 
+                    ngin3d:text="ngin3d Test"
+                    />
+
+     </Container>  
+
+</Container>    
+

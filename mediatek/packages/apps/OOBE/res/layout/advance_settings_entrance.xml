@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mediatek.oobe.utils.ProportionalOuterFrame xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include 
+        android:id="@+id/title_area"
+        layout="@layout/title_panel"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_area"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical" >
+
+        <ScrollView 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/basic_congratulation_summary"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/oobe_advance_settings_entrance_summary"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <ImageView
+                    android:id="@+id/advance_settings_entrance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_launcher_settings" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:text="@string/oobe_advance_settings_entrance_title"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <include layout="@layout/button_panel" />
+
+    </LinearLayout>
+
+</com.mediatek.oobe.utils.ProportionalOuterFrame>

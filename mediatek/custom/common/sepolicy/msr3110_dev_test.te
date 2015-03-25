@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binmsr3110_dev_test Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type msr3110_dev_test_exec , exec_type, file_type;
+type msr3110_dev_test ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive msr3110_dev_test;
+init_daemon_domain(msr3110_dev_test)
+
+
+# 20131122 Add Set Property Rule
+allow msr3110_dev_test  property_type:property_service set;

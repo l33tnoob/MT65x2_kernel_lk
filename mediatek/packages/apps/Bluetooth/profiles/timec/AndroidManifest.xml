@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		package="com.mediatek.bluetooth"
+		android:versionCode="1"
+		android:versionName="1.0">
+
+<application android:icon="@drawable/bluetooth" 
+		android:label="@string/app_label"
+		android:description="@string/app_description">
+
+	<receiver android:name="com.mediatek.bluetooth.time.client.TimeClientReceiver" />
+
+	<activity android:name="com.mediatek.bluetooth.time.client.TimeClient"
+		android:label="@string/bt_timec_label"
+		android:taskAffinity="com.mediatek.bluetooth.time.client"
+		>
+		<intent-filter>
+			<action android:name="android.intent.action.MAIN" />
+			<category android:name="android.intent.category.LAUNCHER" />
+		</intent-filter>
+	</activity>
+
+	<activity android:name="com.mediatek.bluetooth.time.client.TimeClientSettings"
+		android:taskAffinity="com.mediatek.bluetooth.time.client"
+		>
+		<intent-filter>
+			<action android:name="com.mediatek.bluetooth.time.client.settings.action.START" />
+			<category android:name="android.intent.category.DEFAULT" />
+		</intent-filter>
+	</activity>
+
+</application>
+
+</manifest> 

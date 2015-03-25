@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/chat_list_bg"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lv_list"
+        style="?android:attr/listViewWhiteStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="1dip"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbarStyle="insideOverlay"
+        android:smoothScrollbar="false"
+        android:transcriptMode="normal" >
+    </ListView>
+
+</LinearLayout>

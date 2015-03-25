@@ -1,0 +1,50 @@
+# ==============================================
+# Policy File of /system/binmatv Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type matv_exec , exec_type, file_type;
+type matv ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive matv;
+init_daemon_domain(matv)
+
+# 20131024 CTS_01
+allow matv linker_exec:file read;
+
+
+# 20131028 CTS_08
+allow matv device:chr_file { read ioctl open };
+
+
+# 20131119 FeatureSQC
+allow matv device:chr_file { read ioctl open };
+
+
+
+# 20131122 Add Set Property Rule
+allow matv  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow matv MATV_device:chr_file { read write ioctl open };
+allow matv servicemanager:binder call;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow matv servicemanager:binder call;
+

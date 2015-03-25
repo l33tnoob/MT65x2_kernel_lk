@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binstream Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type stream_exec , exec_type, file_type;
+type stream ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive stream;
+init_daemon_domain(stream)
+
+
+# 20131122 Add Set Property Rule
+allow stream  property_type:property_service set;

@@ -1,0 +1,44 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type debuggerd, domain;
+type debuggerd_exec, exec_type, file_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# debugger interface
+permissive debuggerd;
+
+init_daemon_domain(debuggerd)
+# unconfined_domain(debuggerd)
+relabelto_domain(debuggerd)
+allow debuggerd tombstone_data_file:dir relabelto;
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# debugger interface
+permissive debuggerd;
+
+# init_daemon_domain(debuggerd)
+# unconfined_domain(debuggerd)
+relabelto_domain(debuggerd)
+allow debuggerd tombstone_data_file:dir relabelto;
+
+# Connect to system_server via /data/system/ndebugsocket.
+unix_socket_connect(debuggerd, system_ndebug, system_server)
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive debuggerd;
+
+# 20131122 Add Set Property Rule
+allow debuggerd property_type:property_service set;

@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binsf2 Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type sf2_exec , exec_type, file_type;
+type sf2 ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive sf2;
+init_daemon_domain(sf2)
+
+
+# 20131122 Add Set Property Rule
+allow sf2  property_type:property_service set;

@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binradiooptions Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type radiooptions_exec , exec_type, file_type;
+type radiooptions ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive radiooptions;
+init_daemon_domain(radiooptions)
+
+
+# 20131122 Add Set Property Rule
+allow radiooptions  property_type:property_service set;

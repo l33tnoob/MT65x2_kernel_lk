@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bincheck_prereq Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type check_prereq_exec , exec_type, file_type;
+type check_prereq ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive check_prereq;
+init_daemon_domain(check_prereq)
+
+
+# 20131122 Add Set Property Rule
+allow check_prereq  property_type:property_service set;

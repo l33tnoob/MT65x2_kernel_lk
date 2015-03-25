@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+   
+    <string name="badPin2">PIN2 lama yang anda taip tidak betul.</string>
+    <string name="badPuk2">PUK2 yang anda taip tidak betul.</string>
+    <string name="checkPwdLen">Pastikan kata laluan anda adalah 4 hingga 8 digit.</string>
+    <string name="pinNotEnabled">Sila dayakan PIN sebelum mengubahnya.</string>
+    <string name="puk1Blocked">PIN disekat.</string>
+    <string name="puk2Blocked">PIN2 disekat.</string>
+    <string name="fdnFailMmi">Gagal pada Pemeriksaan FDN.</string>
+    <string name="callBarringFailMmi">Gagal kerana Sekatan Panggilan.</string>
+    <string name="Pin2Mmi">Tukar PIN2</string>
+    <string name="PukMmi">Nyahsekat PIN</string>
+    <string name="Puk2Mmi">Nyahsekat PIN2</string>
+    <string name="serviceProvisioned">Perkhidmatan diuntukkan.</string>
+    <string name="serviceUnknown">Masalah sambungan atau kod MMI tidak sah.</string>
+    <string name="cfServiceNotForwarded">Tidak dimajukan</string>
+    <string name="permlab_receiveCbSms">terima SMS CB</string>
+    <string name="permdesc_receiveCbSms">Membolehkan aplikasi menerima dan memproses mesej SMS CB. Aplikasi jahat boleh memantau mesej anda atau memadamnya tanpa menunjukkannya kepada anda.</string>
+    <string name="keyguard_password_enter_puk_code">Masukkan kod PUK</string>
+    <string name="keyguard_password_wrong_puk_code">Kod PUK salah!</string>
+    <string name="keyguard_password_enter_new_pin_code">Masukan PIN Baru</string>
+    <string name="keyguard_password_Confirm_pin_code">Sahkan PIN baru</string>
+    <string name="invalidPuk">8 digit input.</string>
+    <string name="sim_permanently_locked">Memasukkan kod PUK yang salah lebih daripada 10 kali, kad SIM telah dikunci secara kekal.</string>
+    <string name="pin_length_indicate">(4-8 digit)</string>
+    <string name="puk_length_indicate">(8 digit)</string>
+    <string name="one_retry_left">Tinggal 1 cubaan semula</string>
+    <string name="retries_left">Kekalkan:<xliff:g id="number">%d</xliff:g></string>
+    <string name="invalid_imei">IMEI tidak sah</string>
+    <string name="same_imei">IMEI sama</string>
+    <string name="unable_launch_the_ap">Tidak dapat melancarkan aplikasi.</string>
+    <string name="keyguard_password_enter_sim1_pin_code">Masukkan kod PIN SIM1</string>
+    <string name="RestrictedChangedTitle_SIM1">Akses terhad SIM1 diubah</string>
+    <string name="RestrictedChangedTitle_SIM2">Akses terhad SIM2 diubah</string>
+    <string name="keyguard_password_enter_sim2_pin_code">Masukkan kod PIN SIM2</string>
+    <string name="keyguard_password_wrong_sim1_pin_code">Kod PIN SIM1 salah!</string>
+    <string name="keyguard_password_wrong_sim2_pin_code">Kod PIN SIM2 salah!</string>
+    <string name="keyguard_password_enter_sim1_puk_code">Kod PUK SIM1 salah!</string>
+    <string name="keyguard_password_enter_sim2_puk_code">Kod PUK SIM2 salah!</string>
+    <string name="lockscreen_sim1_puk_locked_message">Kad SIM 1 terkunci PUK.</string>
+    <string name="lockscreen_sim2_puk_locked_message">Kad SIM 2 terkunci PUK.</string>
+    <string name="choose_bootup_mode">Sila pilih SIM</string>
+    <string name="choose_gprs_mode">Sila pilih sambungan data</string>
+    <string name="sim_close">Kad SIM tutup</string>
+    <string name="lockscreen_sim_puk_locked_message_short">Dikunci PUK</string>
+    <string name="lockscreen_sim_locked_message_short">Kad SIM dikunci</string>
+    <string name="simlock_slot_locked_message">"Slot telah dikunci secara kekal."</string>
+    <string name="simlock_entersimmelock">"Masukkan kunci SIM ME"</string>
+    <string name="slot_id">Slot <xliff:g id="number">%d</xliff:g>:</string>
+    <string name="new_simcard">Kad SIM baru</string>
+    <string name="lockscreen_missing_sim_dialog_message">"Kad SIM telah ditanggalkan. Sila pastikan bahawa kad SIM anda dimasukkan dengan betul."</string>
+    <string name="lockscreen_password_error">Ralat kata laluan, sila cuba lagi</string>
+
+   <string name="aerr_application_lowmem">Aplikasi %1$s (proses %2$s) berhenti tanpa diduga. Ini mungkin disebabkan oleh ruang memori yang rendah. Sila bebaskan memori dan cuba semula.</string>
+   <string name="aerr_process_lowmem">Proses %1$s berhenti tanpa diduga. Ini mungkin disebabkan oleh ruang memori yang rendah. Sila bebaskan memori dan cuba semula.</string>
+   <string name="free_memory_btn">"Bebaskan memori"</string>
+   <string name="free_memory_text">"Memori rendah. Sila bebaskan memori."</string>		
+ <string name="mem_low_title">Sila bebaskan memori</string>
+<string name="keyguard_pinword_enter_pinword_code">Masukkan PIN untuk buka kunci</string>
+    <string name="lockscreen_pinword_error">PIN salah, sila cuba lagi</string>
+   <string name="no_favorite_contacts">Tiada kenalan kegemaran</string>
+   <string name="contact_widget_loading">Memuatkan\u2026</string>
+   <string name="volume_fm">"Kelantangan FM"</string> 
+   <string name="volume_matv">"Kelantangan TV Mudah Alih"</string> 
+      
+   <!-- add new style for mtk streaming video player start -->
+   <string name="media_controller_buffering">"Menimbal %d%%..."</string>
+   <string name="media_controller_live">"Langsung"</string>
+   <string name="media_controller_playing">"Memainkan"</string>
+   <string name="media_controller_connecting">"Menyambung..."</string>
+   <string name="media_controller_weak_signal">"Isyarat lemah"</string>
+   <string name="VideoView_error_text_bad_file">"Fail tidak elok, video ini tidak dapat dimainkan."</string>
+   <string name="VideoView_error_text_cannot_connect_to_server">"Tidak dapat bersambung ke pelayan."</string>
+   <string name="VideoView_error_text_type_not_supported">"Jenis fail media tidak disokong."</string>
+   <string name="VideoView_error_text_drm_not_supported">"DRM dilindungi, video ini tidak dapat dimainkan."</string>
+   <!-- add new style for mtk streaming video player end -->
+
+   <!-- added new string for SearchDialog, used to indicate WikiPedia--> 
+   <string name="wikiPediaName">wikipedia_ms</string>
+   
+    <!-- support TextView undo tool bar -->
+    <string name="redo">Buat semula</string>
+    <string name="undo">Buat asal</string>
+    <string name="undoAll">Buat Asal Semua</string>
+   <string name="new_sim">SIM Baru</string>
+
+    <!-- support RecipientsView recipient bar -->
+    <string name="edit">Edit</string>
+    <string name="delete">Padam</string>
+    
+    <!-- string for gemini enhancement-->
+    <string name="sim_card_changed_dialog_title">Kad SIM diubah</string>
+    <string name="change_setting_for_onenewsim">SIM kad baru dikesan. Tetapan SIM lalai kini adalah:</string>
+    <string name="change_setting_for_twonewsim">SIM kad baru dikesan. Tetapan SIM lalai kini adalah:</string>
+    <string name="default_sim_setting_prompt">Tetapan SIM lalai kini adalah:</string>
+    <string name="change_settings">Ubah</string>
+    <string name="sim_card_removed">Kad SIM dikeluarkan.</string>
+    <string name="sim_card_swapped">Kad SIM ditukarkan.</string>
+    <string name="keyguard_voice_call">Panggilan suara:</string>
+    <string name="keyguard_sms">SMS:</string>
+    <string name="keyguard_data">Sambungan data:</string>
+    <string name="keyguard_alwaysask">Sentiasa bertanya</string>
+    <string name="keyguard_data_none">Dimatikan</string>
+    <string name="keyguard_close">Tutup</string>
+    <string name="dismiss">Buang</string>
+    <string name="keyguard_wrong_code_input">Kod salah.</string>
+    <string name="keyguard_code_length_prompt">4-8 digit input.</string>
+    <string name="keyguard_code_donnot_mismatch">Tidak Sepadan.</string>
+    <string name="for_text">untuk</string>
+    <string name="keyguard_internal_call">Panggilan Internet</string>
+    <string name="keyguard_not_set">Tidak ditetapkan</string>
+    <string name="network_searching">Mencari rangkaian baru</string>
+    <string name="searching_simcard">Detecting...</string>
+    
+    <string name="for_first_simcard">untuk SIM pertama</string>
+    <string name="for_second_simcard">untuk SIM kedua</string>
+    <string name="for_third_simcard">Untuk SIM yang ketiga</string>
+    <string name="for_fourth_simcard">Untuk SIM yang keempat</string>
+     <string name="missed_call_display">Panggilan Terlepas:</string>
+   <string name="missed_message_display">Mesej Terlepas:</string>
+     <!-- string for gemini enhancement end-->
+
+    <!-- For the unlock screen, Information message shown in dialog when user has too many failed attempts -->
+    <string name="lockscreen_pin_too_many_failed_attempts_dialog_message">Anda telah salah memasukkan PIN anda <xliff:g id="number">%d</xliff:g> kali. \nSila cuba lagi dalam  <xliff:g id="number">%d</xliff:g> saat.</string>
+    <string name="lockscreen_password_too_many_failed_attempts_dialog_message">Anda telah salah memasukkan PIN anda <xliff:g id="number">%d</xliff:g> kali. \nSila cuba lagi dalam  <xliff:g id="number">%d</xliff:g> saat.</string>
+    
+    <string name="ext_media_checking_notification_title_sd2">menyediakan kad2 SD</string> 
+    
+    <!-- add for drm start -->
+    <string name="drm_protection_status">Status perlindungan:</string>
+    <string name="drm_can_forward">Boleh dimajukan.</string>
+    <string name="drm_can_not_forward">Tidak boleh dimajukan.</string>
+    <string name="drm_no_limitation">Tiada batasan.</string>
+    <string name="drm_no_license">Lesen DRM tidak tersedia.</string>
+    <string name="drm_begin">Bermula:</string>
+    <string name="drm_end">Tamat:</string>
+    <string name="drm_use_left">Kiraan yang tinggal:</string>
+    <string name="drm_protectioninfo_renew">Membaharui</string>
+    <string name="drm_protectioninfo_title">Maklumat Perlindungan</string>
+    <string name="drm_licenseacquisition_title">Perolehan Lesen DRM</string>
+    <string name="drm_licenseacquisition_message">%1$s tidak mempunyai lesen DRM tersedia. Anda boleh menekan butang “Membaharui” untuk memperoleh lesen DRM.</string>
+    <string name="drm_toast_license_expired">Lesen DRM tamat tempoh.</string>
+    <string name="drm_forwardforbidden_title">Larangan Dimajukan</string>
+    <string name="drm_forwardforbidden_message">Beberapa fail terlindung tidak boleh dimajukan.</string>
+    <string name="drm_license_install_success">Berjaya memasang Lesen DRM.</string>
+    <string name="drm_license_install_fail">Gagal memasang Lesen DRM.</string>
+    <string name="drm_secure_timer_title">Jam selamat DRM tidak sah</string>
+    <string name="drm_secure_timer_message">Anda tidak boleh menggunakan fail terlindung DRM. Sila pastikan sambungan data tersedia.</string>
+    <string name="drm_consume_title">Memakan hak DRM</string>
+    <string name="drm_consume_message">Tindakan anda akan memakan hak DRM.</string>
+    <!-- add for drm end -->
+
+    <string name="recip_unsupport_operator">Paparan Penerima tidak menyokong operasi aksara, sila gunakan bar alat untuk mengendalikan penerima.</string>
+    <string name="recip_unsupport_selection">Maaf, anda tidak boleh memindahkan karet ke permulaan apabila terdapat penerima dalam Paparan Penerima.</string>
+
+    <string name="default_label" >"Penggera"</string>
+    <string name="alarm_alert_snooze_text" >"Tidur sekejap"</string>
+    <string name="every_day" >"Setiap hari"</string>
+    <string name="never" >"Jangan sekali-kali"</string>
+    <string name="day_concat" >", "</string>
+    <string name="power_on">Tolak dan hidupkan</string>
+    <string name="power_off">Tolak dan matikan</string>
+    
+    <string name="gps_time_sync_fail_str">Gagal mendapatkan waktu yang diberikan oleh GPS</string>
+
+    <string name="usb_ums_notification_title">Disambungkan sebagai Storan USB</string>
+    <string name="usb_charging_notification_title">Cas USB Sahaja</string>    
+
+    <string name="sim_missing_slot1">Slot 1: Tiada kad SIM dikesan</string>  
+    <string name="sim_missing_slot2">Slot 2: Tiada kad SIM dikesan</string>  
+    <string name="sim_missing">Tiada kad SIM dikesan</string>  
+    <string name="sim_missing_detail">Sila semak jika kad SIM sudah bersedia</string> 
+
+    <!-- add for webview find -->
+    <string name="find_previous">sebelumnya</string>
+    <string name="find_next">seterusnya</string>
+
+    <string name="tethered_notification_message_for_hotspot">
+        <xliff:g id="connected">%1$d</xliff:g> disambungkan, 
+        <xliff:g id="blocked">%2$d</xliff:g> disekat
+    </string>
+    <string name="tethered_notification_message_bandwidth_set">Lebar jalur ditetapkan</string>
+    <string name="default_wallpaper_name">"Lalai"</string> 
+    <string name="invalid_sim_title">Kad SIM tidak sah</string>
+    <string name="invalid_sim_message">Kad UIM/SIM tidak dikenali</string>
+    <!-- voice unlock start -->
+    <string name="voice_unlock_service_error">Ralat perkhidmatan buka kunci suara.</string>
+    <string name="voice_unlock_password_wrong">Maaf, tidak dapat mengenali suara anda.</string>
+    <string name="voice_unlock_noisy">Tidak dapat mendengar anda dengan jelas kerana terlalu bising.</string>
+    <string name="voice_unlock_weak">Tidak dapat mendengar suara anda.</string>
+    <string name="voice_unlock_media_playing">Buka kunci suara dinyahdayakan semasa media dimainkan.</string>
+    <string name="voiceunlock_multiple_failures">Telah melepasi had cubaan Buka Kunci Suara</string>    
+    <!-- voice unlock end -->
+
+    <string name="wifi_display_bt_hdmi_off_wfd_on">Bluetooth dan HDMI akan dimatikan semasa anda menghidupkan paparan wayarles. Adakah anda ingin meneruskan?</string> 
+    <string name="wifi_display_wfd_off_hdmi_on">Paparan wayarles akan dimatikan semasa anda menghidupkan HDMI. Adakah anda ingin meneruskan?</string> 
+    <string name="wifi_display_wfd_off_bt_on">Paparan wayarles akan dimatikan apabila anda menghidupkan Bluetooth. Adakah anda ingin meneruskan?</string> 
+    <string name="wifi_display_wifi_p2p_disconnect_wfd_connect">Sambungan Wi-Fi Direct semasa akan diputuskan apabila anda bersambung ke peranti paparan wayarles. Adakah anda ingin meneruskan?</string>
+    <string name="wifi_display_unstable_connection">Sambungan tidak stabil.</string>
+    <string name="wifi_display_connection_is_not_steady">Sambungan paparan wayarles semasa tidak stabil.</string>
+    <string name="wifi_display_unstable_suggestion">Sambungan paparan wayarles semasa tidak stabil, sila bergerak untuk mendekati peranti paparan anda.</string>
+    <string name="wifi_display_reconnect">Sambung semula</string> 
+    <string name="wifi_display_disconnect_then_reconnect">Paparan wayarles diputuskan sambungan. Adakah anda ingin menyambung semula?</string> 
+    <string name="wifi_display_disconnected">Paparan wayarles diputuskan sambungan.</string> 
+    <string name="wifi_wps_failed_overlap">"Sesi WPS lain dikesan. Sila cuba lagi dalam beberapa minit."</string>
+    <string name="wifi_display_wfd_and_wifi_are_turned_on">Paparan wayarles and Wi-Fi dihidupkan.</string>
+    <string name="wifi_display_sound_path_reminder">Audio multimedia tidak dapat dimainkan daripada set kepala anda.</string>  
+    <string name="wifi_display_change_resolution_reminder">Menukar resolusi akan menyambung semula paparan wayarles secara automatik.</string>  
+    <string name="wifi_display_do_not_remind_again">Jangan ingatkan lagi.</string>
+    <string name="wifi_display_wifi_ap_affects_quality">AP Wi-Fi semasa boleh menjejaskan kualiti paparan Wayarles.</string>
+    
+    <!-- Add for AT&T to show toast when pass pin/puk lock -->
+    <string name="pin_pass">kod diterima</string>
+    <string name="puk_pass">PIN disekat</string>
+    <!-- MountService start -->
+    <string name="sdcard_ready_title">Kad SD sedia</string>
+    <string name="sdcard_select_default_path">Adakah anda ingin menukar cakera tulis lalai?</string>
+    <string name="sdcard_default_path_change">Cakera tulis lalai telah ditukar.</string>
+    <string name="usb_storage_ready_title">Storan USB luaran bersedia</string>
+    <!-- MountService end -->
+
+
+    <string name="sd_accessing_swtich_user_title">Tukar pengguna?</string>
+    <string name="sd_accessing_swtich_user_message">Semua data dalam akaun pemilik yang belum disimpan akan hilang atau rosak.</string> 
+    
+    <string name="music_no_artist">Nama artis tidak diketahui</string>
+    <string name="music_play">"Main"</string>
+    <string name="music_pause">Jeda</string>
+    <string name="music_library">Pustaka</string>
+    <string name="music_no_songs">Tiada lagu</string>
+    <string name="serviceClassVideo">Video</string>
+    <string name="VideoView_error_text_invalid_connection">"Sambungan tidak sah. (403 Forbidden)"</string>
+    <string name="keyguard_video_call">Panggilan video:</string>
+    <string name="dm_prompt">Terminal sudah dikunci</string>
+    <string name="criticallowmessage">Storan telefon penuh, sila padam fail yang tidak digunakan, jika tidak, aplikasi mungkin keluar tanpa dijangka</string>
+    <string name="nq_sms_filter_title">Penapis SMS</string>
+    <string name="nq_sms_filter_message">Mesej ini boleh menolak bayaran. Adakah anda mahu meneruskan?</string>
+    <string name="nq_sms_filter_yes">Ya</string>
+    <string name="nq_sms_filter_no">Tidak</string>
+    <string name="drm_forward_forbidden">Satu atau lebih fail yang dilindungi tidak dapat dikirim semula.</string>
+    <string name="wap_push_setting_noti_text">Sila ketik untuk memilih</string>
+    <string name="url_dialog_choice_title">Mesej</string>
+    <string name="url_dialog_choice_message">Ia akan membuka pelayar, teruskan?</string>
+    <string name="deleteApp">Nyahpasang aplikasi</string>
+    <string name="deleteMail">Buat sandaran mel dan lepaskan storan</string>
+    <string name="storage_withsd">Storan telefon tidak mempunyai ruang mencukupi. Sila lepaskan sedikit storan atau tukar cakera tulis lalai dalam tetapan.</string>
+    <string name="storage_withoutsd">Storan telefon tidak mempunyai ruang mencukupi. Sila lepaskan sedikit storan atau masukkan kad SD.</string>
+    <string name="storage_sd">Kad SD tidak mempunyai ruang mencukupi. Sila lepaskan sedikit storan atau tukar cakera tulis lalai dalam tetapan.</string>
+    <string name="criticallowtitle">Tiada ruang</string>
+    <string name="calibration_data">Tiada penentukuran lagi. Sila muat turun data penentukuran! Jika tidak peranti tersebut tidak dapat disambungkan ke rangkaian.[Pengguna Dalaman MTK]</string>
+    <string name="invalid_card">Kad Tidak Sah</string>
+    <string name="usbint_notification_title">USB Internet aktif</string>
+
+    <string name="hdmi_notification_title">Kabel HDMI disambungkan</string>  
+    <string name="hdmi_notification_content">Klik untuk mengkonfigurasi HDMI</string>
+    <string name="hdmi_hdvideo_toast">HDMI tidak boleh memainkan video 4K, sambungan akan terganggu.</string>
+
+    <!-- VolumePanel -->
+    <string name="safe_media_volume_warning_title">Amaran</string> 
+    
+    <!-- Low Storage -->
+    <string name="aerr_application_lowstorage">Storan dalaman hampir penuh, aplikasi telah dihentikan. Sila kosongkan sedikit ruang dan cuba lagi.</string>
+    <string name="aerr_process_lowstorage">Storan dalaman hampir penuh, proses telah dihentikan. Sila kosongkan sedikit ruang dan cuba lagi.</string>
+    <string name="low_internal_storage_view_title">Storan dalaman hampir penuh</string>
+    <string name="deleteMails">Padam Mel</string>
+    <string name="low_storage_warning_message">Sila kosongkan sedikit ruang atau beberapa aplikasi dan fungsi sistem mungkin tidak dapat berfungsi dengan betul.</string>
+
+    <!-- KK translation task -->
+    <string name="virtual_sim_on_slot1">SIM MAYA 1 HIDUP</string>
+    <string name="virtual_sim_on_slot2">SIM MAYA 2 HIDUP</string>
+    <string name="virtual_sim_on_slot3">SIM MAYA 3 HIDUP</string>
+    <string name="virtual_sim_on_slot4">SIM MAYA 4 HIDUP</string>
+    <string name="virtual_sim_on">SIM MAYA HIDUP</string>
+    <string name="RejectCauseTitle">Sebab Penolakan Rangkaian</string>
+    <string name="MMRejectCause2">SIM tidak diperuntukkan MM #2</string>
+    <string name="MMRejectCause3">SIM tidak dibenarkan MM #3</string>
+    <string name="MMRejectCause5">Panggilan Gagal MM #5</string>
+    <string name="MMRejectCause6">Telefon tidak dibenarkan MM #6</string>
+    <string name="MMRejectCause13">SOS/Panggilan kecemasan sahaja</string>
+    <string name="keyguard_accessibility_alarm_unlock">Matikan Penggera</string>
+    <string name="dialog_color_picker">Pemilih Warna</string>
+    <string name="press_color_to_apply">Tekan pada Warna untuk menggunakan</string>
+    <string name="oper_long_46000">CMCC</string>
+    <string name="oper_long_46001">CU</string>
+    <string name="oper_long_46003">China Telecom</string>
+    <string name="oper_long_46601">Far EasTone</string>
+    <string name="oper_long_46692">Chunghwa Telecom</string>
+    <string name="oper_long_46697">Taiwan Mobile</string>
+    <string name="oper_long_99998">Android1</string>
+    <string name="oper_long_99999">Android</string>
+    <string name="oper_short_46000">CMCC</string>
+    <string name="oper_short_46001">CU-GSM</string>
+    <string name="oper_short_46003">China Telecom</string>
+    <string name="oper_short_46601">FET</string>
+    <string name="oper_short_46692">Chunghwa</string>
+    <string name="oper_short_46697">TWN</string>
+    <string name="oper_short_99997">AD1</string>
+    <string name="oper_short_99999">AD</string>
+    <string name="permlab_receiveDmRegisterSms">terima SMS DM Register</string>
+    <string name="permdesc_receiveDmRegisterSms">Membenarkan aplikasi menerima dan memproses mesej SMS DM Register. Sebarang Aplikasi kecuali DM APP tidak seharusnya menggunakan ini</string>
+    <string name="unread_message">%d Mesej belum dibaca</string>
+    <string name="unread_messages">%d Mesej belum dibaca</string>
+    <string name="missed_call">%d Panggilan terlepas</string>
+    <string name="missed_calls">%d Panggilan terlepas</string>
+    <string name="keyguard_sim_auto">"auto"</string>
+    <string name="keyguard_domestic_zone_name">"Beijing"</string>
+    <string name="ext_media_checking_notification_title_otg">Sediakan storan USB</string>
+    <string name="ext_media_badremoval_notification_title_otg">"Strn USB dialh klr tnpa dijgka"</string>
+    <string name="ext_media_nomedia_notification_title_otg">"Storan USB dialih keluar"</string>
+    <string name="ext_media_badremoval_notification_message_otg">"Nyahlekap storan USB sebelum mengeluarkannya untuk mengelakkan kehilangan data."</string>
+    <string name="ext_media_nomedia_notification_message_otg">"Storan USB dikeluarkan. Sisipkan media baru."</string>
+    <string name="ext_media_unmountable_notification_title_otg">"Storan USB rosak"</string>
+    <string name="ext_media_unmountable_notification_message_otg">"Storan USB rosak. Anda mungkin perlu memformatkannya semula."</string>
+    <string name="ext_media_nofs_notification_title_otg">"Storan USB kosong"</string>
+    <string name="ext_media_nofs_notification_message_otg">"Storan USB kosong atau mempunyai sistem fail yang tidak disokong."</string>
+    <string name="ext_media_safe_unmount_notification_title_otg">"Strn USB slamat utk dikluarkan"</string>
+    <string name="ext_media_safe_unmount_notification_message_otg">"Anda boleh mengeluarkan storan USB dengan selamat."</string>
+    <string name="sim_missing_slot3">Slot 3: Tiada kad SIM dikesan</string>
+    <string name="sim_missing_slot4">Slot 4: Tiada kad SIM dikesan</string>
+    <string name="sim_missing_slot1_card">Slot 1: Tiada kad dikesan</string>
+    <string name="sim_missing_slot2_card">Slot 2: Tiada kad dikesan</string>
+    <string name="sim_missing_card">Tiada kad dikesan</string>
+    <string name="sim_missing_detail_card">Sila semak jika kad sudah bersedia</string>
+    <string name="wap_push_setting_noti_ticker">Terima perkhidmatan Auto tolak atau tidak?</string>
+    <string name="wap_push_setting_noti_title">Terima perkhidmatan Auto tolak atau tidak?</string>
+    <string name="alarm_alert_dismiss_text">Buang</string>
+    <string name="description_direction_right">"Luncurkan ke kanan untuk ketepikan"</string>
+    <string name="description_direction_left">"Luncurkan ke kiri untuk menunda"</string>
+    <string name="description_direction_up">"Luncurkan ke atas untuk ketepikan"</string>
+    <string name="description_direction_down">"Luncurkan ke bawah untuk menunda"</string>
+    <string name="dismiss_power_on">Tolak dan hidupkan</string>
+    <string name="dismiss_power_off">Tolak dan matikan</string>
+    <string name="voiceui_notify_string">Anda boleh menyebut</string>
+    <string name="voiceui_control_poweroff_alarm">untuk mengawal untuk mematikan penggera.</string>
+    <string name="voiceui_or">atau</string>
+    <string name="headset_pin_recognition">Fon telinga anda tidak serasi dengan Telefon. Sila cuba yang lain</string>
+    <string name="msensor_toast_text">Gangguan kompas. Gerakkan telefon dalam pergerakan berbentuk 8 untuk menentukur semula kompas.</string>
+    <string name="usb_autorun_cdrom_notification_title">Disambungkan sebagai cdrom autojalan</string>
+    <string name="ct_net_name">"CTNET"</string>
+    <string name="ct_wap_name">"CTWAP"</string>
+</resources>
+

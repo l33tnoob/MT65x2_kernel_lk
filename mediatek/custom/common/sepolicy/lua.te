@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binlua Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type lua_exec , exec_type, file_type;
+type lua ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive lua;
+init_daemon_domain(lua)
+
+
+# 20131122 Add Set Property Rule
+allow lua  property_type:property_service set;

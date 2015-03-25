@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:orientation="vertical" >
+
+     <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginTop="10dip">
+	    <EditText android:id="@+id/pllcg_clkmux_id_edit"
+	        android:layout_width="140dip"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dip"
+	        android:numeric="decimal"
+	        android:hint="@string/pllcg_clkmux_id"/>
+       <Button
+          android:id="@+id/pllcg_clkmux_btn"
+          android:layout_width="100dip"
+          android:layout_height="wrap_content"
+          android:layout_gravity="right"
+          android:layout_marginLeft="50dip"
+          android:text="@string/pllcg_clkmux" >
+        </Button>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <EditText android:id="@+id/pllcg_cg_id_edit"
+        android:layout_width="140dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:numeric="decimal"
+        android:hint="@string/pllcg_cg_id"/>
+    <Button
+        android:id="@+id/pllcg_enable_btn"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dip"
+        android:layout_gravity="right"
+        android:text="@string/pllcg_enable" >
+    </Button>
+    </LinearLayout>
+     <Button
+         android:id="@+id/pllcg_disable_btn"
+         android:layout_width="100dip"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="200dip"
+         android:text="@string/pllcg_disable" />
+     <Button
+         android:id="@+id/pllcg_read_all_btn"
+         android:layout_width="100dip"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="200dip"
+         android:text="@string/pllcg_read_all" />
+  </LinearLayout>
+

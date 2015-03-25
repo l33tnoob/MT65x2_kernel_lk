@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView                   
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/ScrollView01"                  
+     android:layout_width="fill_parent"                  
+     android:layout_height="fill_parent">
+<LinearLayout
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:paddingLeft="10dip">
+  <TextView android:id="@+id/prompt"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:textColor="#FFFFFFFF">
+  </TextView>
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="3dip">
+    <TextView android:id="@+id/first_sim_name" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFFFF"
+              android:maxWidth="@dimen/sim_card_infotext_maxwidth"
+              android:singleLine="true"
+              android:ellipsize="middle">
+    </TextView>
+    <TextView android:id="@+id/second_sim_name" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFFFF"
+              android:layout_marginLeft="4dip"
+              android:maxWidth="@dimen/sim_card_infotext_maxwidth"
+              android:singleLine="true"
+              android:ellipsize="middle">
+    </TextView>
+    <TextView android:id="@+id/third_sim_name"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFFFF"
+              android:layout_marginLeft="4dip"
+              android:maxWidth="@dimen/sim_card_infotext_maxwidth"
+              android:singleLine="true"
+              android:visibility="gone"
+              android:ellipsize="middle">
+    </TextView>
+    <TextView android:id="@+id/fourth_sim_name"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFFFF"
+              android:layout_marginLeft="4dip"
+              android:maxWidth="@dimen/sim_card_infotext_maxwidth"
+              android:singleLine="true"
+              android:visibility="gone"
+              android:ellipsize="middle">
+    </TextView>
+  </LinearLayout>
+  <TextView android:id="@+id/sim_setting_prompt"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:textColor="#FFFFFFFF">
+  </TextView>
+  <LinearLayout
+    android:id="@+id/voice_call_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="3dip">
+    <TextView android:id="@+id/voice_call" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFFFF">
+              </TextView>
+    <TextView android:id="@+id/voice_call_opr" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFFFF"
+              android:layout_marginLeft="4dip"
+              android:singleLine="true"
+              android:maxWidth="@dimen/sim_card_infotext_maxwidth"
+              android:ellipsize="middle">
+    </TextView>
+  </LinearLayout>
+   <LinearLayout
+    android:id="@+id/video_call_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="3dip">
+    <TextView android:id="@+id/video_call" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFFFF">
+              </TextView>
+    <TextView android:id="@+id/video_call_opr" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFFFF"
+              android:layout_marginLeft="4dip"
+              android:singleLine="true"
+              android:maxWidth="@dimen/sim_card_infotext_maxwidth"
+              android:ellipsize="middle">
+    </TextView>
+   </LinearLayout>
+   
+    <LinearLayout
+    android:id="@+id/sms_item" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="3dip">
+    <TextView android:id="@+id/sms" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFFFF">
+              </TextView>
+    <TextView android:id="@+id/sms_opr" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFFFF"
+              android:layout_marginLeft="4dip"
+              android:singleLine="true"
+              android:maxWidth="@dimen/sim_card_infotext_maxwidth"
+              android:ellipsize="middle">
+    </TextView>
+  </LinearLayout>
+  <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="3dip"
+    android:layout_marginBottom="6dip">
+    <TextView android:id="@+id/data" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFFFF">
+              </TextView>
+    <TextView android:id="@+id/data_opr" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:textColor="#FFFFFFFF"
+              android:layout_marginLeft="4dip"
+              android:singleLine="true"
+              android:maxWidth="@dimen/sim_card_infotext_maxwidth"
+              android:ellipsize="middle">
+    </TextView>
+  </LinearLayout>
+</LinearLayout>
+</ScrollView>

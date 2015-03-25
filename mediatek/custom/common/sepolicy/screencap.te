@@ -1,0 +1,40 @@
+# ==============================================
+# Policy File of /system/binscreencap Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type screencap_exec , exec_type, file_type;
+type screencap ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive screencap;
+init_daemon_domain(screencap)
+
+
+# 20131122 Add Set Property Rule
+allow screencap  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow screencap device:chr_file { read ioctl open };
+allow screencap init:fifo_file { write getattr };
+allow screencap init:unix_stream_socket { read write };
+allow screencap linker_exec:file read;
+allow screencap logwrapper:binder call;
+allow screencap servicemanager:binder call;
+allow screencap surfaceflinger:binder { transfer call };
+allow screencap surfaceflinger:fd use;
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Spinner
+            android:id="@+id/Audio_SpEnhancement_ModeType"
+            android:layout_width="240dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:layout_marginTop="40dip" >
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/Audio_SpEnhancement_ParaType"
+            android:layout_width="240dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:layout_marginTop="20dip" >
+        </Spinner>
+
+        <TextView
+            android:id="@+id/Audio_SpEnhancement_TextView"
+            android:layout_width="240dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:layout_marginTop="20dip"
+            android:text="@string/Audio_SpEnhancement_TextView" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/Audio_SpEnhancement_EditText"
+            android:layout_width="240dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:layout_marginTop="20dip"
+            android:numeric="integer"
+            android:text="@string/Audio_SpEnhancement_EditText" >
+        </EditText>
+
+        <Button
+            android:id="@+id/Audio_SpEnhancement_Button"
+            android:layout_width="240dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:layout_marginTop="20dip"
+            android:text="@string/Audio_SpEnhancement_Button" >
+        </Button>
+    </LinearLayout>
+
+</ScrollView>

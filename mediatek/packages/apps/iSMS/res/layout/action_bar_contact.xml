@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btn_select"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/contact_spinner_selector"
+        android:singleLine="true"
+        android:text="@string/STR_NMS_CONTACT_SELECT"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <requestFocus />
+    </View>
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:iconifiedByDefault="true"
+        android:inputType="textFilter" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:background="#26ffffff" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/contact_action_selector"
+        android:gravity="center"
+        android:text="@string/STR_NMS_CANCEL"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:background="#26ffffff" />
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/contact_action_selector"
+        android:gravity="center"
+        android:text="@string/STR_NMS_DONE"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+</LinearLayout>

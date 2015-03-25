@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.mediatek.CellConnService" android:sharedUserId="android.uid.phone">
+
+
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:clearTaskOnLaunch="true" android:process="com.android.phone">
+		
+		<activity android:name=".ConfirmDlgActivity"
+			android:label="@string/app_name"
+			android:launchMode="singleInstance"
+            android:theme="@style/CustomTheme_Dialog"
+			android:configChanges="orientation|screenSize|keyboardHidden"
+			android:excludeFromRecents="true">
+			<intent-filter>
+				<action android:name="android.intent.action.CONFIRMDLG" />
+			</intent-filter>
+		</activity>
+
+		<service android:name=".PhoneStatesMgrService">
+			<intent-filter>
+				<action android:name="android.intent.action.CELLCONNSERVICE" />
+				<action android:name="com.mediatek.CellConnService.IPhoneStatesMgrService" />
+			</intent-filter>
+		</service>
+	</application>
+</manifest>

@@ -1,0 +1,42 @@
+# ==============================================
+# Policy File of /system/binthermald Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type thermald_exec , exec_type, file_type;
+type thermald ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive thermald;
+init_daemon_domain(thermald)
+
+# 20131028 CTS_16
+allow thermald linker_exec:file read;
+
+
+# 20131028 CTS_17
+allow thermald device:chr_file { read ioctl open };
+allow thermald proc:file write;
+
+
+# 20131119 FeatureSQC
+allow thermald proc:file write;
+
+
+
+# 20131122 Add Set Property Rule
+allow thermald  property_type:property_service set;

@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binaudioloop Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type audioloop_exec , exec_type, file_type;
+type audioloop ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive audioloop;
+init_daemon_domain(audioloop)
+
+
+# 20131122 Add Set Property Rule
+allow audioloop  property_type:property_service set;

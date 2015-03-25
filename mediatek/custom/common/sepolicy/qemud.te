@@ -1,0 +1,38 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type qemud, domain;
+type qemud_exec, exec_type, file_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# qemu support daemon
+permissive qemud;
+
+init_daemon_domain(qemud)
+# unconfined_domain(qemud)
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# qemu support daemon
+permissive qemud;
+
+# init_daemon_domain(qemud)
+# unconfined_domain(qemud)
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive qemud;
+
+# 20131122 Add Set Property Rule
+allow qemud property_type:property_service set;
+

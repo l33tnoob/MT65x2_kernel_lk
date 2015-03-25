@@ -1,0 +1,212 @@
+<!-- This file defines the base public resources exported by the
+     platform, which must always exist. -->
+
+<!-- ***************************************************************
+     ***************************************************************
+     IMPORTANT NOTE FOR ANYONE MODIFYING THIS FILE
+     READ THIS BEFORE YOU MAKE ANY CHANGES
+
+     This file defines the binary compatibility for resources.  As such,
+     you must be very careful when making changes here, or you will
+     completely break backwards compatibility with old applications.
+
+     To avoid breaking compatibility, all new resources must be placed
+     at the end of the list of resources of the same type.  Placing a resource
+     in the middle of type will cause all following resources to be
+     assigned new resource numbers, breaking compatibility.
+
+     ***************************************************************
+     *************************************************************** -->
+<resources>
+
+  <!-- We don't want to publish private symbols in com.mediatek.R as part of the
+       SDK.  Instead, put them here. -->
+<!-- ===============================================================
+     Resources for version 1 of the platform.
+     =============================================================== -->
+  <eat-comment />
+  <public type="array" name="bootup_mode" id="0x02040000" />
+  <public type="array" name="gprs_mode_1" id="0x02040001" />
+  <public type="array" name="gprs_mode_2" id="0x02040002" />
+  <public type="drawable" name="ic_clock" id="0x02020001" />
+  <public type="drawable" name="ic_dialog_menu_generic" id="0x02020002" />
+  <public type="raw" name="gemini_sac" id="0x02030000" />
+  <public type="string" name="Pin2Mmi" id="0x02050009" />
+  <public type="string" name="Puk2Mmi" id="0x0205000b" />
+  <public type="string" name="PukMmi" id="0x0205000a" />
+  <public type="string" name="RestrictedChangedTitle_SIM1" id="0x0205002d" />
+  <public type="string" name="RestrictedChangedTitle_SIM2" id="0x0205002e" />
+  <public type="string" name="VideoView_error_text_bad_file" id="0x02050057" />
+  <public type="string" name="VideoView_error_text_cannot_connect_to_server" id="0x02050058" />
+  <public type="string" name="VideoView_error_text_drm_not_supported" id="0x0205005a" />
+  <public type="string" name="VideoView_error_text_type_not_supported" id="0x02050059" />
+  <public type="string" name="aerr_application_lowmem" id="0x02050045" />
+  <public type="string" name="aerr_process_lowmem" id="0x02050046" />
+  <public type="string" name="badPin2" id="0x02050001" />
+  <public type="string" name="badPuk2" id="0x02050002" />
+  <public type="string" name="callBarringFailMmi" id="0x02050008" />
+  <public type="string" name="cfServiceNotForwarded" id="0x0205000e" />
+  <public type="string" name="checkPwdLen" id="0x02050003" />
+  <public type="string" name="choose_bootup_mode" id="0x02050036" />
+  <public type="string" name="choose_gprs_mode" id="0x02050037" />
+  <public type="string" name="contact_widget_loading" id="0x02050050" />
+  <public type="string" name="fdnFailMmi" id="0x02050007" />
+  <public type="string" name="free_memory_btn" id="0x02050047" />
+  <public type="string" name="free_memory_text" id="0x02050048" />
+  <public type="string" name="invalidPuk" id="0x02050015" />
+  <public type="string" name="invalid_imei" id="0x0205001b" />
+  <public type="string" name="keyguard_password_Confirm_pin_code" id="0x02050014" />
+  <public type="string" name="keyguard_password_enter_new_pin_code" id="0x02050013" />
+  <public type="string" name="keyguard_password_enter_puk_code" id="0x02050011" />
+  <public type="string" name="keyguard_password_enter_sim1_pin_code" id="0x0205002c" />
+  <public type="string" name="keyguard_password_enter_sim1_puk_code" id="0x02050032" />
+  <public type="string" name="keyguard_password_enter_sim2_pin_code" id="0x0205002f" />
+  <public type="string" name="keyguard_password_enter_sim2_puk_code" id="0x02050033" />
+  <public type="string" name="keyguard_password_wrong_puk_code" id="0x02050012" />
+  <public type="string" name="keyguard_password_wrong_sim1_pin_code" id="0x02050030" />
+  <public type="string" name="keyguard_password_wrong_sim2_pin_code" id="0x02050031" />
+  <public type="string" name="keyguard_pinword_enter_pinword_code" id="0x02050000" />
+  <public type="string" name="lockscreen_password_error" id="0x0205003d" />
+  <public type="string" name="lockscreen_pinword_error" id="0x0205003e" />
+  <public type="string" name="lockscreen_sim1_puk_locked_message" id="0x02050034" />
+  <public type="string" name="lockscreen_sim2_puk_locked_message" id="0x02050035" />
+  <public type="string" name="lockscreen_sim_locked_message_short" id="0x0205003a" />
+  <public type="string" name="lockscreen_sim_puk_locked_message_short" id="0x02050039" />
+  <public type="string" name="media_controller_buffering" id="0x0205004f" />
+  <public type="string" name="media_controller_connecting" id="0x02050055" />
+  <public type="string" name="media_controller_live" id="0x02050053" />
+  <public type="string" name="media_controller_playing" id="0x02050054" />
+  <public type="string" name="media_controller_weak_signal" id="0x02050056" />
+  <public type="string" name="mem_low_title" id="0x02050049" />
+  <public type="string" name="missed_call" id="0x0205004c" />
+  <public type="string" name="missed_calls" id="0x0205004d" />
+  <public type="string" name="music_library" id="0x02050042" />
+  <public type="string" name="music_no_artist" id="0x0205003f" />
+  <public type="string" name="music_no_songs" id="0x02050043" />
+  <public type="string" name="music_pause" id="0x02050041" />
+  <public type="string" name="music_play" id="0x02050040" />
+  <public type="string" name="no_favorite_contacts" id="0x0205004e" />
+  <public type="string" name="one_retry_left" id="0x02050019" />
+  <public type="string" name="oper_long_46000" id="0x0205001d" />
+  <public type="string" name="oper_long_46001" id="0x0205001e" />
+  <public type="string" name="oper_long_46601" id="0x0205001f" />
+  <public type="string" name="oper_long_46692" id="0x02050020" />
+  <public type="string" name="oper_long_46697" id="0x02050021" />
+  <public type="string" name="oper_long_99998" id="0x02050022" />
+  <public type="string" name="oper_long_99999" id="0x02050023" />
+  <public type="string" name="oper_short_46000" id="0x02050024" />
+  <public type="string" name="oper_short_46001" id="0x02050025" />
+  <public type="string" name="oper_short_46601" id="0x02050026" />
+  <public type="string" name="oper_short_46692" id="0x02050027" />
+  <public type="string" name="oper_short_46697" id="0x02050028" />
+  <public type="string" name="oper_short_99997" id="0x02050029" />
+  <public type="string" name="oper_short_99999" id="0x0205002a" />
+  <public type="string" name="permdesc_receiveCbSms" id="0x02050010" />
+  <public type="string" name="permdesc_receiveDmRegisterSms" id="0x0205003c" />
+  <public type="string" name="permlab_receiveCbSms" id="0x0205000f" />
+  <public type="string" name="permlab_receiveDmRegisterSms" id="0x0205003b" />
+  <public type="string" name="pinNotEnabled" id="0x02050004" />
+  <public type="string" name="pin_length_indicate" id="0x02050017" />
+  <public type="string" name="puk1Blocked" id="0x02050005" />
+  <public type="string" name="puk2Blocked" id="0x02050006" />
+  <public type="string" name="puk_length_indicate" id="0x02050018" />
+  <public type="string" name="retries_left" id="0x0205001a" />
+  <public type="string" name="same_imei" id="0x0205001c" />
+  <public type="string" name="serviceClassVideo" id="0x02050044" />
+  <public type="string" name="serviceProvisioned" id="0x0205000c" />
+  <public type="string" name="serviceUnknown" id="0x0205000d" />
+  <public type="string" name="sim_close" id="0x02050038" />
+  <public type="string" name="sim_permanently_locked" id="0x02050016" />
+  <public type="string" name="unable_launch_the_ap" id="0x0205002b" />
+  <public type="string" name="unread_message" id="0x0205004a" />
+  <public type="string" name="unread_messages" id="0x0205004b" />
+  <public type="string" name="volume_fm" id="0x02050051" />
+  <public type="string" name="volume_matv" id="0x02050052" />
+  <public type="string" name="recip_unsupport_operator" id="0x02050060" />
+  <public type="string" name="recip_unsupport_selection" id="0x02050061" />
+  <public type="string" name="drm_protectioninfo_title" id="0x02050062" />
+
+<public type="string" name="oper_long_46003" id="0x02050063" />
+  <public type="string" name="oper_short_46003" id="0x02050064" />
+  <public type="string" name="calibration_data" id="0x02050065" />
+
+  <public type="string" name="invalid_card" id="0x02050066" />
+  <public type="string" name="RejectCauseTitle" id="0x02050067" />
+  <public type="string" name="MMRejectCause2" id="0x02050068" />  
+  <public type="string" name="MMRejectCause3" id="0x02050069" />
+  <public type="string" name="MMRejectCause5" id="0x02050070" />  
+  <public type="string" name="MMRejectCause6" id="0x02050071" />  
+  <public type="string" name="usbint_notification_title" id="0x02050072" />  
+  <public type="string" name="wifi_display_bt_hdmi_off_wfd_on" id="0x02050073" />
+  <public type="string" name="wifi_display_wfd_off_hdmi_on" id="0x02050074" />
+  <public type="string" name="wifi_display_wfd_off_bt_on" id="0x02050075" />
+  <public type="string" name="wifi_display_wifi_p2p_disconnect_wfd_connect" id="0x02050076" />
+  <public type="string" name="sdcard_ready_title" id="0x02050077" />
+  <public type="string" name="sdcard_select_default_path" id="0x02050078" />
+  <public type="string" name="sdcard_default_path_change" id="0x02050079" />
+  <public type="string" name="wifi_display_unstable_connection" id="0x02050080" />
+  <public type="string" name="wifi_display_connection_is_not_steady" id="0x02050081" />
+  <public type="string" name="wifi_display_unstable_suggestion" id="0x02050082" />
+  <public type="string" name="usb_storage_ready_title" id="0x02050083" />
+  <public type="string" name="wifi_display_reconnect" id="0x02050084" />
+  <public type="string" name="wifi_display_disconnect_then_reconnect" id="0x02050085" />
+  <public type="string" name="wifi_display_disconnected" id="0x02050086" />
+  <public type="string" name="wifi_wps_failed_overlap" id="0x02050087" />
+  <public type="string" name="wifi_display_wfd_and_wifi_are_turned_on" id="0x02050088" />
+  <public type="string" name="wifi_display_sound_path_reminder" id="0x02050089" />
+  <public type="string" name="wifi_display_change_resolution_reminder" id="0x02050090" />
+  <public type="string" name="wifi_display_do_not_remind_again" id="0x02050091" />
+  <public type="string" name="wifi_display_wifi_ap_affects_quality" id="0x02050092" />
+  <public type="string" name="data_conn_only" id="0x02050093" />
+
+  <!-- ===============================================================
+     Resource attributes proposed for MTK.
+     =============================================================== -->
+  <public type="attr" name="promptHorzOffset" id="0x02010000" />  
+  <public type="attr" name="promptVertOffset" id="0x02010001" />
+  <public type="attr" name="sectionFontSize" id="0x02010002" />
+  <public type="attr" name="fullSectionsId" id="0x02010003" />
+  <public type="attr" name="replacedSectionsId" id="0x02010004" />
+  <public type="attr" name="sectionBaselinesId" id="0x02010005" />
+  <public type="attr" name="bladeIndicator" id="0x02010006" />
+  <public type="attr" name="indicatorTopsId" id="0x02010007" />
+  <public type="attr" name="promptAnimationDuration" id="0x02010008" />
+  <public type="attr" name="bladeIndicatorWidth" id="0x02010009" />
+  <public type="attr" name="bladeIndicatorHeight" id="0x0201000a" />
+  <public type="attr" name="enableSectionColor" id="0x0201000b" />
+  <public type="attr" name="disableSectionColor" id="0x0201000c" />
+  <public type="attr" name="enablePromptColor" id="0x0201000d" />
+  <public type="attr" name="disablePromptColor" id="0x0201000e" />
+  <!--for theme resource package -->
+  <public type="attr" name="isThemePackage" id="0x0201000f" />
+  <public type="attr" name="themeNameId" id="0x02010010" />
+  <public type="attr" name="hasUsedCustomerView" id="0x02010011" />
+
+  <!--for bookmarkview -->
+  <public type="attr" name="imageDispWidth" id="0x02010012" />
+  <public type="attr" name="imageDispHeight" id="0x02010013" />
+  <public type="attr" name="spaceBetweenItems" id="0x02010014" />
+  <public type="attr" name="dotGap" id="0x02010015" />
+  <public type="attr" name="imageReflection" id="0x02010016" />
+  <public type="attr" name="maxZoomOut" id="0x02010017" />
+  <public type="attr" name="titleColor" id="0x02010018" />
+  <public type="attr" name="infoColor" id="0x02010019" />
+  
+  <!-- for TextView SmartFit -->
+  <public type="attr" name="smartFit" id="0x0201001a" />
+
+  <public type="color" name="theme_slicer_backgroud_color" id="0x02060000" />
+  <public type="color" name="theme_slicer_pressed_color" id="0x02060001" />
+  <public type="color" name="theme_slicer_focused_color" id="0x02060002" />
+
+  <public type="color" name="theme_slicer_email_item_background_unread" id="0x02060003" />
+  <public type="color" name="theme_slicer_email_item_background_read" id="0x02060004" />
+
+  <public type="color" name="theme_slicer_mms_item_background_unread" id="0x02060005" />
+  <public type="color" name="theme_slicer_mms_item_background_read" id="0x02060006" />
+
+  <public type="color" name="theme_slicer_expandinglist_child_background_color" id="0x02060007" />
+
+  <!-- Long string feature for ImageSwitch -->
+  <public type="style" name="ImageSwitch" id="0x020f0000" />
+</resources>

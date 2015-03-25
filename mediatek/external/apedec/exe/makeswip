@@ -1,0 +1,62 @@
+#! /bin/bash
+#  WCP1/SD/SP2 SWIP Build Script
+
+user=`whoami`
+echo "makeswip launched by ${user}"
+echo
+
+
+if test "${1}" == ""
+then 	
+	echo "makeswip [option] [target]"
+	echo "    (1). omit the option field to build the specified target"
+	echo "    (2). the target name is required in both build and clean processes"
+	echo "    (3). result shared library (target.so) will be copied to current directory"
+	echo "example:"
+	echo "    makeswip clean helloworld"
+	echo "        clean previous built result for helloworld.a"
+	echo "    makeswip helloworld"
+	echo "        build helloworld.a"
+	echo "    makeswip helloworld sp"
+	echo "        build helloworld.a for project of smart phone"
+	echo "    makeswip helloworld box_tv"
+	echo "        build helloworld.a for project of box/tv"
+	
+elif test "${1}" == "clean"
+then
+	swip=${2}
+	echo "cleaning target ${swip}.a..."
+	rm -r ../../../../out/target/product/oppo/obj/EXECUTABLES/${swip}_intermediates
+	rm -f ${swip}.a
+else
+  mkdir ../lib/android
+  mkdir ../lib/android/box_tv
+  mkdir ../lib/android/sp
+  
+  chmod 775 ../lib/android/box_tv
+  chmod 775 ../lib/android/sp
+  
+  swip=${1}
+  proj=${2}  
+	
+	shared_lib=${swip}
+	echo "environment setting..."
+	source ../../../../build/envsetup.sh
+	mm TARGET_PRODUCT=oppo sp2_swip=${swip} proj=${proj}  	
+	cp ../../../../out/target/product/oppo/obj/EXECUTABLES/${swip}_intermediates/${shared_lib} ../lib/android/${proj}
+
+	if test $? = 0
+	then 
+		echo
+		echo "********************************************"
+  	echo "${shared_lib} : success"
+		echo "********************************************"
+	else
+		echo
+		echo "********************************************"
+  	echo "${shared_lib} : fail"
+		echo "********************************************"
+	fi
+fi
+
+echo

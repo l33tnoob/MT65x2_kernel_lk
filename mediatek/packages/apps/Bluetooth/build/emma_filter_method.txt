@@ -1,0 +1,81 @@
+#The test case is only surpport avrcp 1.0
+#Filter for AVRCP 1.4
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.testBrowser(): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.connectCnf(int): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.onBind(Intent): IBinder
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.sendAvrcpKeyEventInd(int, byte): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.informDisplayCharsetInd(byte, short[]): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.informBatteryStatusofctInd(byte): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.getElementAttributesInd(long, byte, int[]): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.registerNotificationInd(byte, int): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.notificationBatteryStatusChanged(byte, byte, byte): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.notificationSystemStatusChanged(byte, byte, byte): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.notificationVolumeChanged(byte, byte, byte): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.abortContinueInd(): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.setAbsoluteVolumeInd(byte, byte): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.setAddressedplayerInd(short): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.setBrowsedplayerInd(short): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.changePathInd(int, byte, long): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.getItemAttributesInd(byte, long, short, byte, int[]): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.playItemsInd(byte, long, short): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.searchInd(short, String): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.addTonowplayingInd (byte, long, short): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.getSearchedItemStartRspNative(): boolean
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.getSearchedItemFileAttrRspNative(byte, byte, byte, int, short, short, String): boolean
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.getSearchedItemFileRspNative(byte, byte, byte, long, byte, short, short, String): boolean
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.getSearchedItemRspNative(byte, byte, short): boolean
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.abortContinueInd(): void
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.setAbsoluteVolume(byte): boolean
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.getAbsoluteVolume(): byte
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.sendAvrcpKeyEvent(int, byte): void
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.getElementAttribute(long, int): String
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.handleKeyMessageKeyEvent(Message): void
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.stopToBind(): void
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.informBatteryStatus(byte): void
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.informDisplayCharset(byte, short[]): boolean
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.notificationBatteryStatusChanged(byte, byte, byte): void
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.notificationSystemStatusChanged(byte, byte, byte): void
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.notificationVolumeChanged(byte, byte, byte): void
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.registerNotification(byte, int): boolean
+#Filter for AVRCP 1.3
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.getPlayerstatusInd(): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.listPlayerAppAttributeInd(): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.listPlayerAppValueInd(byte): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.getCurPlayerAppValueInd(byte, byte[]): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.setPlayerAppValueInd(byte, byte[], byte[]): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.getPlayerAppAttrTextInd(byte, byte[]): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.getPlayerAppValueTextInd(byte, byte, byte[]): void
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.getPlayerstatus(): byte
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.getPlayerstatusSongLength(): int
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.getPlayerstatusSongPos(): int
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.playerAppCapabilities(): byte[]
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.listPlayerAppAttribute(): byte[]
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.listPlayerAppValue(byte): byte[]
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.getCurPlayerAppValue(byte): byte
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.setPlayerAppValue(byte, byte): boolean
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.getPlayerAppAttrText(byte): String
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.getPlayerAppValueText(byte, byte): String
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.getNowPlayingItemStartRspNative(): boolean
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.getNowPlayingItemFileAttrRspNative(byte, byte, byte, int, short, short, String): boolean
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.getNowPlayingItemFileRspNative(byte, byte, byte, long, byte, short, short, String): boolean
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.getNowPlayingItemRspNative(byte, byte, short): boolean
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.playerAppCapabilitiesInd(int): void
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.checkAndBindMusicService(): void
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.checkAndBindPlayService(): void
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.playItems(long): boolean
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.addToNowPlaying(long): boolean
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.getNowPlaying(): long[]
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.getMediaPlayerList(int, int): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.getFileSystemitemsList(int, int, byte, int[]): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.getSearchResultitemsList(int, int, byte, int[]): void
+-com.mediatek.bluetooth.avrcp.BluetoothAvrcpService.getNowPlayingitemsList(int, int, byte, int[]): void
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.passNotifyMsg (int, int): boolean
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.handleSettingMessage (Message): void
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.startToBindPlayService (): void
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.updateMusicTrackInfo (Intent): void
+-com.mediatek.bluetooth.avrcp.BTAvrcpMusicAdapter.getSupportVersion (): byte
+#for Pbap no used code
+-com.android.bluetooth.pbap.BluetoothVCardComposer.appendIms (StringBuilder, Map): void
+-com.android.bluetooth.pbap.VCardUtils.getPhoneTypeFromStrings (Collection): Object
+-com.android.bluetooth.pbap.VCardUtils.isValidPhoneAttribute(String, int): boolean
+-com.android.bluetooth.pbap.VCardUtils.insertStructuredPostalDataUsingContactsStruct(int, ContentProviderOperation$Builder, ContactStruct$PostalData): void

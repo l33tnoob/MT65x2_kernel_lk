@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.mediatek.stk.tests">
+      
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />  
+      
+    <application android:process="com.android.phone">
+    	<uses-library android:name="android.test.runner" />
+      <uses-library android:name="com.jayway.android.robotium"/>
+    </application>
+
+    <instrumentation android:name=".StkAppServiceFunctionRunner"
+    	android:targetPackage="com.android.stk"
+    	android:label="stk app functional auto-tests" />
+    	
+</manifest> 

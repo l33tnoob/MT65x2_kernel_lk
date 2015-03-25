@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="8396461461738434341">"SIM 툴킷"</string>
+    <string name="menu_end_session" msgid="7368541737750982217">"세션 끝내기"</string>
+    <string name="help" msgid="9209980881219397319">"도움말"</string>
+    <string name="menu_back" msgid="301227740977453364">"뒤로"</string>
+    <string name="service_name" msgid="6860303747999592491">"서비스 이름"</string>
+    <string name="stk_no_service" msgid="5427773116839809131">"서비스를 사용할 수 없음"</string>
+    <string name="button_ok" msgid="5760722312558549555">"확인"</string>
+    <string name="button_cancel" msgid="1997847915560800261">"취소"</string>
+    <string name="button_yes" msgid="624420260648337203">"예"</string>
+    <string name="button_no" msgid="1824959157582605627">"아니요"</string>
+    <string name="alphabet" msgid="1583185545938805861">"영문자"</string>
+    <string name="digits" msgid="1746796679021682388">"숫자(0-9, *, #, +)"</string>
+    <string name="default_call_setup_msg" msgid="7960194995759849940">"전화 거는 중..."</string>
+    <string name="stk_app_state" msgid="18582277302584082">"응용프로그램 상태"</string>
+    <string name="enable_app" msgid="3701224550936728203">"사용"</string>
+    <string name="disable_app" msgid="6725081975611415214">"사용 안함"</string>
+
+    <string name="lable_display_text">텍스트 표시</string>  
+    <string name="lable_get_inkey">인키 불러오기</string>  
+    <string name="lable_get_input">입력 불러오기</string>  
+    <string name="lable_launch_browser">브라우저 시작</string>  
+    <string name="lable_play_tone">벨소리 재생</string>  
+    <string name="lable_refresh">새로 고침</string>  
+    <string name="lable_select_item">항목 선택</string>  
+    <string name="lable_send_ss">SS 보내기</string>  
+    <string name="lable_send_ussd">USSD 보내기</string>  
+    <string name="lable_send_sms">SMS 보내기</string>  
+    <string name="lable_send_dtmf">DTMF 보내기</string>  
+    <string name="lable_setup_event_list">이벤트 목록 설정</string>  
+    <string name="lable_setup_idle_modetext">유휴 모드 텍스트 설정</string>  
+    <string name="lable_setup_menu">메뉴 설정</string>  
+    <string name="lable_setup_call">통화 설정</string>  
+    <string name="lable_more_time">시간 추가</string>  
+    <string name="lable_poll_interval">폴 간격</string>  
+    <string name="lable_polling_off">폴링 오프</string>  
+    <string name="lable_provide_local_information">현지 정보 제공</string>  
+    <string name="lable_timer_management">타이머 관리</string>  
+    <string name="lable_perform_card_apdu">카드 APDU 수행</string>  
+    <string name="lable_power_on_card">카드 전원 켜기</string>  
+    <string name="lable_power_off_card">카드 전원 끄기</string>  
+    <string name="lable_get_reader_status">리더 상태 불러오기</string>  
+    <string name="lable_run_at_command">AT 명령 실행</string>  
+    <string name="lable_language_notification">언어 알림</string>  
+    <string name="lable_open_channel">채널 열기</string>  
+    <string name="lable_close_channel">채널 닫기</string>  
+    <string name="lable_receive_data">데이터 수신</string>  
+    <string name="lable_send_data">데이터 보내기</string>  
+    <string name="lable_get_channel_status">채널 상태 불러오기</string>  
+    <string name="lable_service_search">서비스 검색</string>  
+    <string name="lable_get_service_information">서비스 정보 불러오기</string>  
+    <string name="lable_declare_service">서비스 선언</string>  
+    <string name="lable_set_frame">프레임 설정</string>  
+    <string name="lable_get_frame_status">프레임 상태 불러오기</string>  
+    <string name="lable_retrieve_multimedia_message">멀티미디어 메시지 검색</string>  
+    <string name="lable_submit_multimedia_message">멀티미디어 메시지 보내기</string>  
+    <string name="lable_display_multimedia_message">멀티미디어 메시지 표시</string>  
+    <string name="lable_activate">활성화</string>  
+    <string name="action_launch_browser">브라우저 시작</string>  
+    <string name="action_setup_call">다이얼</string>  
+    <string name="lable_busy_on_bip">BIP 명령에서 앱이 사용 중입니다. 나중에 다시 시도하세요.</string>  
+    <string name="main_menu_not_initialized">주 메뉴가 초기화되지 않았습니다.</string>  
+    <string name="lable_busy_on_call">전화가 통화 중입니다. 먼저 통화를 마치세요.</string>  
+    <string name="lable_on_flight_mode">이 앱은 비행기 모드에서 사용할 수 없습니다.</string>
+</resources>

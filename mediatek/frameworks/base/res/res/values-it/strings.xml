@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/* //device/apps/common/assets/res/any/strings.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+        <!-- MTK new add Strings -->
+    <string name="badPin2">"Il vecchio PIN2 inserito non è corretto."</string>
+    <string name="badPuk2">"Il PUK2 inserito non è corretto."</string>
+    <string name="checkPwdLen">"Verificare che la lunghezza della password sia compresa tra 4 e 8 cifre."</string>
+    <string name="pinNotEnabled">"Abilitare il PIN prima di cambiarlo."</string>
+    <string name="puk1Blocked">"Il PIN è bloccato."</string>
+    <string name="puk2Blocked">"Il PIN2 è bloccato."</string>
+    <string name="fdnFailMmi">"Errore su Controllo FDN."</string>
+    <string name="callBarringFailMmi">"Errore su Blocco chiamate."</string>
+    <string name="Pin2Mmi">"Cambio PIN2"</string>
+    <string name="PukMmi">"Sblocca PIN"</string>
+    <string name="Puk2Mmi">"Sblocca PIN2"</string>
+    <string name="serviceProvisioned">"Servizio predisposto."</string>
+    <string name="serviceUnknown">"Problema di connessione o codice MMI non valido."</string>
+    <string name="cfServiceNotForwarded">"Non inoltrato"</string>
+    <string name="permlab_receiveCbSms">"Ricevi SMS CB"</string>
+    <string name="permdesc_receiveCbSms">"Permette all’applicazione di ricevere ed elaborare gli SMS CB. Applicazioni maligne potrebbero monitorare i messaggi o eliminarli senza venirne a conoscenza."</string>
+    <string name="keyguard_password_enter_puk_code">"Inserire il PUK"</string>
+    <string name="keyguard_password_wrong_puk_code">"PUK non corretto!"</string>
+    <string name="keyguard_password_enter_new_pin_code">"Inserire il nuovo PIN"</string>
+    <string name="keyguard_password_Confirm_pin_code">"Confermare il nuovo PIN"</string>
+    <string name="invalidPuk">"Immettere 8 cifre."</string>
+    <string name="sim_permanently_locked">"È stato inserito per più di 10 volte il PUK scorretto, la scheda SIM è stata bloccata permanentemente."</string>
+    <string name="pin_length_indicate">"(4-8 cifre)"</string>
+    <string name="puk_length_indicate">"(8 cifre)"</string>
+    <string name="one_retry_left">"1 tentativo rimanente"</string>
+    <string name="retries_left">"Restanti: <xliff:g id="number">%d</xliff:g>"</string>
+    <string name="invalid_imei">"IMEI non valido"</string>
+    <string name="same_imei">"Stesso IMEI"</string>
+    <string name="unable_launch_the_ap">"Impossibile avviare l'applicazione."</string>
+    <string name="keyguard_password_enter_sim1_pin_code">"Inserire il PIN SIM1"</string>
+    <string name="RestrictedChangedTitle_SIM1">"Modificato accesso limitato SIM1"</string>
+    <string name="RestrictedChangedTitle_SIM2">"Modificato accesso limitato SIM2"</string>
+    <string name="keyguard_password_enter_sim2_pin_code">"Inserire il PIN SIM2"</string>
+    <string name="keyguard_password_wrong_sim1_pin_code">"PIN SIM1 non corretto!"</string>
+    <string name="keyguard_password_wrong_sim2_pin_code">"PIN SIM2 non corretto!"</string>
+    <string name="keyguard_password_enter_sim1_puk_code">"Inserire il PUK SIM1"</string>
+    <string name="keyguard_password_enter_sim2_puk_code">"Inserire il PUK SIM2"</string>
+    <string name="lockscreen_sim1_puk_locked_message">"La scheda SIM1 ha il blocco PUK."</string>
+    <string name="lockscreen_sim2_puk_locked_message">"La scheda SIM2 ha il blocco PUK."</string>
+    <string name="choose_bootup_mode">"Selezionare la SIM"</string>
+    <string name="choose_gprs_mode">Selezionare la connessione dati</string>
+    <string name="sim_close">"Scheda SIM chiusa"</string>
+    <string name="lockscreen_sim_puk_locked_message_short">"Blocco PUK"</string>
+    <string name="lockscreen_sim_locked_message_short">"Scheda SIM bloccata"</string>
+    <string name="simlock_slot_locked_message">"Slot bloccato in modo permanente."</string>
+    <string name="simlock_entersimmelock">"Inserisci blocco SIM ME"</string>
+    <string name="slot_id">alloggio <xliff:g id="number">%d</xliff:g>:</string>
+    <string name="new_simcard">Nuova scheda SIM</string>
+    <string name="lockscreen_missing_sim_dialog_message">"La scheda SIM è scollegata. Assicurarsi che la scheda SIM sia inserita in modo appropriato."</string>
+    <string name="lockscreen_password_error">Errore password, riprovare</string>
+
+   <string name="aerr_application_lowmem">"Interruzione imprevista dell'applicazione <xliff:g id="application">%1$s</xliff:g>
+        ((processo <xliff:g id="process">%2$s</xliff:g>). Ciò potrebbe dipendere da uno scarso spazio in memoria. Liberare la memoria e riprovare."</string>
+   <string name="aerr_process_lowmem">"Interruzione imprevista del processo <xliff:g id="process">%1$s</xliff:g>. Ciò potrebbe dipendere da uno scarso spazio in memoria. Liberare la memoria e riprovare."</string>
+   <string name="free_memory_btn">"Libera memoria"</string>
+   <string name="free_memory_text">"Memoria scarsa. Liberare la memoria."</string>		
+ <string name="mem_low_title">Liberare la memoria</string>
+<string name="keyguard_pinword_enter_pinword_code">Inserire PIN per sbloccare</string>
+    <string name="lockscreen_pinword_error">PIN non corretto, riprovare</string>
+   <string name="no_favorite_contacts">Nessun contatto preferito</string>
+   <string name="contact_widget_loading">Caricamento\u2026</string>
+  <string name="volume_fm">"Volume FM"</string> 
+  <string name="volume_matv">"Volume TV mobile"</string>
+  
+    
+   <!-- add new style for mtk streaming video player start -->
+   <string name="media_controller_buffering">"Buffering %d%%..."</string>
+   <string name="media_controller_live">"Dal vivo"</string>
+   <string name="media_controller_playing">"Riproduzione"</string>
+   <string name="media_controller_connecting">"Connessione..."</string>
+   <string name="media_controller_weak_signal">"Segnale debole"</string>
+   <string name="VideoView_error_text_bad_file">"File corrotto, impossibile riprodurre il video."</string>
+   <string name="VideoView_error_text_cannot_connect_to_server">"Impossibile effettuare la connessione al server."</string>
+   <string name="VideoView_error_text_type_not_supported">"Tipo file multimediale non supportato."</string>
+   <string name="VideoView_error_text_drm_not_supported">"Protetto da DRM, questo video non può essere riprodotto."</string>
+   <!-- add new style for mtk streaming video player end -->
+
+   <!-- added new string for SearchDialog, used to indicate WikiPedia--> 
+   <string name="wikiPediaName">wikipedia_it</string>
+   
+    <!-- support TextView undo tool bar -->
+    <string name="redo">Ripeti</string>
+    <string name="undo">Annulla</string>
+    <string name="undoAll">Annulla tutto</string>
+   <string name="new_sim">Nuova SIM</string>
+
+    <!-- support RecipientsView recipient bar -->
+    <string name="edit">Modifica</string>
+    <string name="delete">Elimina</string>
+    
+    <!-- string for gemini enhancement-->
+    <string name="sim_card_changed_dialog_title">Scheda SIM cambiata</string>
+    <string name="change_setting_for_onenewsim">"Nuova SIM rilevata. Le impostazioni SIM predefinite sono:"</string>
+    <string name="change_setting_for_twonewsim">"Nuova SIM rilevata. Le impostazioni SIM predefinite sono:"</string>
+    <string name="default_sim_setting_prompt">Le impostazioni SIM predefinite sono:</string>
+    <string name="change_settings">Cambia</string>
+    <string name="sim_card_removed">Scheda SIM rimossa.</string>
+    <string name="sim_card_swapped">Scheda SIM scambiata.</string>
+    <string name="keyguard_voice_call">Chiamata vocale:</string>
+    <string name="keyguard_sms">SMS:</string>
+    <string name="keyguard_data">Connessione dati:</string>
+    <string name="keyguard_alwaysask">Chiedi sempre</string>
+    <string name="keyguard_data_none">Arrêt</string>
+    <string name="keyguard_close">Chiudi</string>
+    <string name="dismiss">Ignora</string>
+    <string name="keyguard_wrong_code_input">Code erroné.</string>
+    <string name="keyguard_code_length_prompt">Immettere 4-8 cifre.</string>
+    <string name="keyguard_code_donnot_mismatch">Non corrisponde.</string>
+    <string name="for_text">per</string>
+    <string name="keyguard_internal_call">Appel Internet</string>
+    <string name="keyguard_not_set">Non impostato</string>
+    <string name="network_searching">Ricerca di nuova rete</string>
+    <string name="searching_simcard">Detecting...</string>
+    
+    <string name="for_first_simcard">per la prima SIM</string>
+    <string name="for_second_simcard">per la seconda SIM</string>
+    <string name="for_third_simcard">Per la terza SIM</string>
+    <string name="for_fourth_simcard">Per la quarta SIM</string>
+     <string name="missed_call_display">Chiamata persa:</string>
+   <string name="missed_message_display">Messaggio non letto:</string>
+     <!-- string for gemini enhancement end-->
+
+    <!-- For the unlock screen, Information message shown in dialog when user has too many failed attempts -->
+    <string name="lockscreen_pin_too_many_failed_attempts_dialog_message">"PIN inserito in modo incorretto <xliff:g id="NUMBER_0">%d</xliff:g> volte. "\n\n"Riprova fra <xliff:g id="NUMBER_1">%d</xliff:g> secondi."</string>
+    <string name="lockscreen_password_too_many_failed_attempts_dialog_message">"Password inserita in modo incorretto <xliff:g id="NUMBER_0">%d</xliff:g> volte. "\n\n"Riprova fra <xliff:g id="NUMBER_1">%d</xliff:g> secondi."</string>
+    
+    <string name="ext_media_checking_notification_title_sd2">Preparazione scheda SD 2</string> 
+    
+    <!-- add for drm start -->
+    <string name="drm_protection_status">Stato protezione:</string>
+    <string name="drm_can_forward">Può essere inoltrato.</string>
+    <string name="drm_can_not_forward">Non può essere inoltrato.</string>
+    <string name="drm_no_limitation">Nessun limite.</string>
+    <string name="drm_no_license">Nessuna licenza DRM disponibile.</string>
+    <string name="drm_begin">Inizio:</string>
+    <string name="drm_end">Fine:</string>
+    <string name="drm_use_left">Conteggio rimasto:</string>
+    <string name="drm_protectioninfo_renew">Rinnova</string>
+    <string name="drm_protectioninfo_title">Info protezione</string>
+    <string name="drm_licenseacquisition_title">Acquisizione licenza DRM</string>
+    <string name="drm_licenseacquisition_message">%1$s non dispone di licenza DRM. Premere il tasto “Rinnova” per acquisire la licenza DRM.</string>
+    <string name="drm_toast_license_expired">Licenza DRM scaduta.</string>
+    <string name="drm_forwardforbidden_title">Inoltro proibito</string>
+    <string name="drm_forwardforbidden_message">Alcuni file protetti non possono essere inoltrati.</string>
+    <string name="drm_license_install_success">Installazione licenza DRM riuscita.</string>
+    <string name="drm_license_install_fail">Installazione licenza DRM non riuscita.</string>
+    <string name="drm_secure_timer_title">Clock protezione DRM non valido</string>
+    <string name="drm_secure_timer_message">Impossibile usare file protetti DRM. Assicurarsi che la connessione dati sia disponibile.</string>
+    <string name="drm_consume_title">Consuma diritti DRM</string>
+    <string name="drm_consume_message">L\'azione consumerà diritti DRM.</string>
+    <!-- add for drm end -->
+
+    <string name="recip_unsupport_operator">"RecipientsView non supporta operazioni di caratteri. Usare la barra degli strumenti per azionare destinatari."</string>
+    <string name="recip_unsupport_selection">"Spiacenti, impossibile spostare punto di inserimento all'inizio quando vi sono destinatari in RecipientsView."</string>
+
+    <string name="default_label" >"Allarme"</string>
+    <string name="alarm_alert_snooze_text" >"Posponi"</string>
+    <string name="dismiss_power_on">Elimina e accendi</string>
+    <string name="dismiss_power_off">Elimina e spegni</string>
+    <string name="every_day" >"Ogni giorno"</string>
+    <string name="never" >"Mai"</string>
+    <string name="day_concat" >", "</string>
+   
+    <string name="gps_time_sync_fail_str">Ora fornita dal GPS non ottenuta</string>
+
+    <string name="usb_ums_notification_title">Connesso come memoria USB</string>
+    <string name="usb_charging_notification_title">Solo carica USB</string>
+
+    <string name="sim_missing_slot1">Slot 1: Nessuna scheda SIM rilevata</string>  
+    <string name="sim_missing_slot2">Slot 2: Nessuna scheda SIM rilevata</string>  
+    <string name="sim_missing">Nessuna scheda SIM rilevata</string>  
+    <string name="sim_missing_detail">Controllare se la scheda SIM è pronta</string> 
+
+    <!-- add for webview find -->
+    <string name="find_previous">precedente</string>
+    <string name="find_next">successivo</string>
+
+    <string name="tethered_notification_message_for_hotspot">
+        <xliff:g id="connected">%1$d</xliff:g> connesso, 
+        <xliff:g id="blocked">%2$d</xliff:g> bloccato
+    </string>
+    <string name="tethered_notification_message_bandwidth_set">La larghezza di banda è impostata</string>
+    <string name="default_wallpaper_name">"Predefinito"</string> 
+    <string name="invalid_sim_title">Scheda SIM non valida</string>
+    <string name="invalid_sim_message">La scheda UIM/SIM non è riconosciuta</string>
+    <!-- voice unlock start -->
+    <string name="voice_unlock_service_error">Errore servizio di sblocco vocale.</string>
+    <string name="voice_unlock_password_wrong">Spiacente, impossibile riconoscere la tua voce.</string>
+    <string name="voice_unlock_noisy">Troppo rumore, non riesco a sentirti chiaramente.</string>
+    <string name="voice_unlock_weak">Non riesco a sentire la tua voce.</string>
+    <string name="voice_unlock_media_playing">Lo sblocco vocale è disabilitato durante la riproduzione multimediale.</string>
+    <string name="voiceunlock_multiple_failures">Numero massimo di tentativi di sblocco vocali ecceduto</string>    
+    <!-- voice unlock end -->
+
+    <string name="wifi_display_bt_hdmi_off_wfd_on">Bluetooth e HDMI saranno disattivati quando si attiva il display wireless. Continuare?</string> 
+    <string name="wifi_display_wfd_off_hdmi_on">Il display wireless sarà disattivato quando si attiva HDMI. Continuare?</string> 
+    <string name="wifi_display_wfd_off_bt_on">Il display wireless sarà disattivato quando si attiva Bluetooth. Continuare?</string> 
+    <string name="wifi_display_wifi_p2p_disconnect_wfd_connect">La connessione Wi-Fi corrente sarà disconnessa quando si esegue il collegamento al dispositivo di visualizzazione wireless. Continuare?</string> 
+    <string name="wifi_display_unstable_connection">Connessione instabile</string>
+    <string name="wifi_display_connection_is_not_steady">La connessione corrente del display wireless non è stabile.</string>
+    <string name="wifi_display_unstable_suggestion">La connessione corrente del display wireless non è stabile, cercare di avvicinarsi al dispositivo di visualizzazione.</string>
+    <string name="wifi_display_reconnect">Riconnetti</string> 
+    <string name="wifi_display_disconnect_then_reconnect">Display wireless disconnesso. Ristabilire la connessione?</string> 
+    <string name="wifi_display_disconnected">Display wireless disconnesso.</string>
+    <string name="wifi_wps_failed_overlap">"È stata rilevata un\'altra sessione WPS. Riprova tra qualche minuto."</string>
+    <string name="wifi_display_wfd_and_wifi_are_turned_on">Il display wireless e la Wi-Fi sono accesi.</string>
+    <string name="wifi_display_sound_path_reminder">Il suono multimediale non sarà riprodotto dalle cuffie.</string>  
+    <string name="wifi_display_change_resolution_reminder">Cambiando la risoluzione il display wireless sarà ricollegato automaticamente.</string>  
+    <string name="wifi_display_do_not_remind_again">Non ricordarmelo di nuovo.</string>
+    <string name="wifi_display_wifi_ap_affects_quality">Il corrente punto d’accesso Wi-Fi potrebbe influenzare la qualità della visualizzazione wireless.</string>
+    
+    <!-- Add for AT&T to show toast when pass pin/puk lock -->
+    <string name="pin_pass">Codice accettato</string>
+    <string name="puk_pass">PIN sbloccato</string>
+    <!-- MountService start -->
+    <string name="sdcard_ready_title">Scheda SD pronta</string>
+    <string name="sdcard_select_default_path">Modificare il disco predefinito per la scrittura?</string>
+    <string name="sdcard_default_path_change">Il disco di scrittura predefinito è stato modificato.</string>
+    <string name="usb_storage_ready_title">Dispositivo esterno d’archiviazione USB pronto</string>
+    <!-- MountService end -->
+
+
+    <string name="sd_accessing_swtich_user_title">Cambiare utente?</string>
+    <string name="sd_accessing_swtich_user_message">"Tutti i dati non salvati dell'account utente andranno persi o saranno danneggiati."</string> 
+    
+    <string name="music_no_artist">Nome artista sconosciuto</string>
+    <string name="music_play">"Riproduci"</string>
+    <string name="music_pause">Pausa</string>
+    <string name="music_library">Raccolta</string>
+    <string name="music_no_songs">Nessun brano</string>
+    <string name="serviceClassVideo">Video</string>
+    <string name="VideoView_error_text_invalid_connection">"Connessione non valida. (403 proibito)"</string>
+    <string name="keyguard_video_call">Videochiamata:</string>
+    <string name="dm_prompt">Terminale già bloccato</string>
+    <string name="criticallowmessage">"Memoria del telefono piena. Eliminare i file inutili per evitare che l'applicazione si chiuda all'improvviso"</string>
+    <string name="nq_sms_filter_title">Filtro SMS</string>
+    <string name="nq_sms_filter_message">Questo messaggio potrebbe comportare spese. Continuare?</string>
+    <string name="nq_sms_filter_yes">Sì</string>
+    <string name="nq_sms_filter_no">No</string>
+    <string name="drm_forward_forbidden">Impossibile inoltrare uno o più file protetti.</string>
+    <string name="wap_push_setting_noti_text">Toccare per selezionare</string>
+    <string name="url_dialog_choice_title">Messaggi</string>
+    <string name="url_dialog_choice_message">Apre il browser. Continuare?</string>
+    <string name="deleteApp">Disinstalla applicazioni</string>
+    <string name="deleteMail">Esegui il backup di e-mail e libera spazio sulla memoria</string>
+    <string name="storage_withsd">Memoria insufficiente sul telefono. Liberare spazio sulla memoria o passare alle impostazioni predefinite di scrittura su disco.</string>
+    <string name="storage_withoutsd">Memoria insufficiente sul telefono. Liberare spazio sulla memoria o inserire una scheda SD.</string>
+    <string name="storage_sd">Memoria insufficiente sulla scheda SD. Liberare spazio sulla memoria o passare alle impostazioni predefinite di scrittura su disco.</string>
+    <string name="criticallowtitle">Nessuno spazio</string>
+    <string name="calibration_data">Calibratura non ancora eseguita. Scaricare i dati di calibratura! Diversamente il dispositivo non può utilizzare la rete.[Utente interno MTK]</string>
+    <string name="invalid_card">Scheda non valida</string>
+    <string name="usbint_notification_title">Interntet USB attivo</string>
+    
+    <string name="hdmi_notification_title">Cavo HDMI collegato</string>  
+    <string name="hdmi_notification_content">Fare clic per configurare HDMI</string>
+    <string name="hdmi_hdvideo_toast">HDMI non può riprodurre il video 4K, la connessione sarà interrotta.</string>
+
+    <!-- VolumePanel -->
+    <string name="safe_media_volume_warning_title">Avviso</string> 
+    
+    <!-- Low Storage -->
+    <string name="aerr_application_lowstorage">La memoria interna si sta esaurendo, l’applicazione è stata arrestata. Liberare dello spazio e ritentare.</string>
+    <string name="aerr_process_lowstorage">La memoria interna si sta esaurendo, la procedura è stata arrestata. Liberare dello spazio e ritentare.</string>
+    <string name="low_internal_storage_view_title">La memoria interna si sta esaurendo</string>
+    <string name="deleteMails">Eliminare i messaggi di posta</string>
+    <string name="low_storage_warning_message">Liberare dello spazio, diversamente alcune applicazioni e funzioni di sistema potrebbero non funzionare correttamente.</string>
+
+    <!-- KK translation task -->
+    <string name="virtual_sim_on_slot1">SIM virtuale 1 attiva</string>
+    <string name="virtual_sim_on_slot2">SIM virtuale 2 attiva</string>
+    <string name="virtual_sim_on_slot3">SIM virtuale 3 attiva</string>
+    <string name="virtual_sim_on_slot4">SIM virtuale 4 attiva</string>
+    <string name="virtual_sim_on">SIM virtuale attiva</string>
+    <string name="RejectCauseTitle">Causa del rifiuto di rete</string>
+    <string name="MMRejectCause2">SIM non predisposta MM #2</string>
+    <string name="MMRejectCause3">SIM non consentita MM #3</string>
+    <string name="MMRejectCause5">Chiamata non riuscita MM #5</string>
+    <string name="MMRejectCause6">Telefono non consentito MM #6</string>
+    <string name="MMRejectCause13">Solo chiamate SOS/Emergenza</string>
+    <string name="keyguard_accessibility_alarm_unlock">Allarme spegnimento</string>
+    <string name="dialog_color_picker">Selezione colori</string>
+    <string name="press_color_to_apply">Selezionare il colore per applicare</string>
+    <string name="oper_long_46000">CMCC</string>
+    <string name="oper_long_46001">CU</string>
+    <string name="oper_long_46003">China Telecom</string>
+    <string name="oper_long_46601">Far EasTone</string>
+    <string name="oper_long_46692">Chunghwa Telecom</string>
+    <string name="oper_long_46697">Taiwan Mobile</string>
+    <string name="oper_long_99998">Android1</string>
+    <string name="oper_long_99999">Android</string>
+    <string name="oper_short_46000">CMCC</string>
+    <string name="oper_short_46001">CU-GSM</string>
+    <string name="oper_short_46003">China Telecom</string>
+    <string name="oper_short_46601">FET</string>
+    <string name="oper_short_46692">Chunghwa</string>
+    <string name="oper_short_46697">TWN</string>
+    <string name="oper_short_99997">AD1</string>
+    <string name="oper_short_99999">AD</string>
+    <string name="permlab_receiveDmRegisterSms">ricezione SMS registro DM</string>
+    <string name="permdesc_receiveDmRegisterSms">"Consente il ricevimento e l'elaborazione di SMS registro DM da parte dell'applicazione. Tutte le applicazioni, eccetto DM APP, non devono utilizzarlo"</string>
+    <string name="unread_message">%d messaggio non letto</string>
+    <string name="unread_messages">%d messaggi non letti</string>
+    <string name="missed_call">%d chiamata senza risposta</string>
+    <string name="missed_calls">%d chiamate senza risposta</string>
+    <string name="keyguard_sim_auto">"auto"</string>
+    <string name="keyguard_domestic_zone_name">"Pechino"</string>
+    <string name="ext_media_checking_notification_title_otg">Preparazione memoria USB</string>
+    <string name="ext_media_badremoval_notification_title_otg">"Rimozione imprevista archivio USB"</string>
+    <string name="ext_media_nomedia_notification_title_otg">"Archivio USB rimosso"</string>
+    <string name="ext_media_badremoval_notification_message_otg">"Smonta l\'archivio USB prima della rimozione per evitare la perdita di dati."</string>
+    <string name="ext_media_nomedia_notification_message_otg">"Archivio USB rimosso. Inserisci un nuovo supporto."</string>
+    <string name="ext_media_unmountable_notification_title_otg">"Archivio USB danneggiato"</string>
+    <string name="ext_media_unmountable_notification_message_otg">"Archivio USB danneggiato. Potrebbe essere necessario riformattarlo."</string>
+    <string name="ext_media_nofs_notification_title_otg">"Archivio USB vuoto"</string>
+    <string name="ext_media_nofs_notification_message_otg">"Archivio USB vuoto o con filesystem non supportato."</string>
+    <string name="ext_media_safe_unmount_notification_title_otg">"Puoi rimuovere l\'archivio USB"</string>
+    <string name="ext_media_safe_unmount_notification_message_otg">"Puoi rimuovere l\'archivio USB in tutta sicurezza."</string>
+    <string name="sim_missing_slot3">Slot 3: Nessuna scheda SIM rilevata</string>
+    <string name="sim_missing_slot4">Slot 4: Nessuna scheda SIM rilevata</string>
+    <string name="sim_missing_slot1_card">Alloggio 1: nessuna scheda rilevata</string>
+    <string name="sim_missing_slot2_card">Alloggio 2: nessuna scheda rilevata</string>
+    <string name="sim_missing_card">Nessuna scheda rilevata</string>
+    <string name="sim_missing_detail_card">Verificare se la scheda è pronta</string>
+    <string name="wap_push_setting_noti_ticker">Accettare il servizio di push automatico?</string>
+    <string name="wap_push_setting_noti_title">Accettare il servizio di push automatico?</string>
+    <string name="alarm_alert_dismiss_text">Ignora</string>
+    <string name="description_direction_right">"Fai scorrere il dito verso destra per eliminare"</string>
+    <string name="description_direction_left">"Fai scorrere il dito verso sinistra per ripetizione allarme attiva"</string>
+    <string name="description_direction_up">"Fai scorrere il dito verso l\'alto per eliminare"</string>
+    <string name="description_direction_down">"Fai scorrere il dito verso il basso per ripetizione allarme attiva"</string>
+    <string name="voiceui_notify_string">Si può dire</string>
+    <string name="voiceui_control_poweroff_alarm">"per controllare l'allarme di spegnimento"</string>
+    <string name="voiceui_or">oppure</string>
+    <string name="headset_pin_recognition">Le cuffie non sono compatibili con il telefono. Provarne delle altre.</string>
+    <string name="msensor_toast_text">Interferenza bussola. Eseguire un movimento a forma di 8 con il telefono per ricalibrare la bussola.</string>
+    <string name="usb_autorun_cdrom_notification_title">Connesso come un CDROM a esecuzione automatica</string>
+    <string name="ct_net_name">"CTNET"</string>
+    <string name="ct_wap_name">"CTWAP"</string>
+</resources>

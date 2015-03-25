@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+/* //device/apps/common/assets/res/any/strings.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">  
+    <string name="keyguard_pinword_enter_pinword_code">បញ្ចូល PIN ដើម្បីដោះសោ</string>  
+    <string name="badPin2">PIN2 ចាស់ដែលអ្នកវាញបញ្ចូល មិនត្រឹមត្រូវទេ ។</string>  
+    <string name="badPuk2">PUK2 ដែលអ្នកវាយបញ្ចូល មិនត្រឹមត្រូវទេ ។</string>  
+    <string name="checkPwdLen">ឆែកមើល ពាក្យសម្ងាត់របស់អ្នកគឺ 4 ទៅ 8 ខ្ទង់ ។</string>  
+    <string name="pinNotEnabled">សូម PIN សកម្មមុននឹងប្តូរវា ។</string>  
+    <string name="puk1Blocked">PIN ត្រូវបានរារាំង ។</string>  
+    <string name="puk2Blocked">PIN2 ត្រូវបានរារាំង ។</string>  
+    <string name="fdnFailMmi">បរាជ័យក្នុងការឆែក FDN ។</string>  
+    <string name="callBarringFailMmi">បរាជ័យលើរនាំងការហៅ ។</string>  
+    <string name="Pin2Mmi">ប្តូរ PIN2</string>  
+    <string name="PukMmi">ដោះសោ PIN</string>  
+    <string name="Puk2Mmi">ដោះសោ PIN2</string>  
+    <string name="serviceProvisioned">សេវាកម្មបានផ្តល់ជូន ។</string>  
+    <string name="serviceUnknown">បញ្ហាការតភ្ជាប់ ឬកូដ MMI ដែលមិនមានសុពលភាព ។</string>  
+    <string name="cfServiceNotForwarded">មិនបានបញ្ជូនទេ</string>  
+    <string name="permlab_receiveCbSms">ទទួល CB SMS</string>  
+    <string name="permdesc_receiveCbSms">អនុញ្ញាតឲ្យកម្មវិធីទទួ និងដំណើរការសារ CB SMS ។ កម្មវិធីដែលមិនល្អ អាចត្រួតពិនិត្យសាររបស់អ្នក ឬលុបវាចោល ដោយមិនបានបង្ហាញឲ្យអ្នកបានដឹង ។</string>  
+    <string name="keyguard_password_enter_puk_code">បញ្ចូលកូដ PUK</string>  
+    <string name="keyguard_password_wrong_puk_code">កូដ PUK មិនត្រឹមត្រូវតេ!</string>  
+    <string name="keyguard_password_enter_new_pin_code">បញ្ចូល PIN ថ្មី</string>  
+    <string name="keyguard_password_Confirm_pin_code">បញ្ជាក់ PIN ថ្មី</string>  
+    <string name="invalidPuk">បញ្ចូលលេខ 8 ខ្ទង់ ។</string>  
+    <string name="sim_permanently_locked">បញ្ចូលកូដ PUK ខុសចំនួនច្រើនជាង 10 ដង SIM កាតបានត្រូវចាក់សោជាប់ជាអចិន្ត្រៃយ៍ ។</string>  
+    <string name="pin_length_indicate">(4-8 ខ្ទង់)</string>  
+    <string name="puk_length_indicate">(8 ខ្ទង់)</string>  
+    <string name="one_retry_left">1 សាកល្បងទៅឆ្វេង</string>  
+    <string name="retries_left">នៅសល់ ៖ 
+        <xliff:g id="number">%d</xliff:g> 
+    </string>  
+    <string name="invalid_imei">IMEI ដែលមិនមានសុពលភាព</string>  
+    <string name="same_imei">IMEI ដដែល</string>  
+    <string name="oper_long_46000">China Mobile</string>  
+    <string name="oper_long_46001">China Unicom</string>  
+    <string name="oper_long_46003">China Telecom</string>  
+    <string name="oper_long_46601">Far EasTone</string>  
+    <string name="oper_long_46692">Chunghwa Telecom</string>  
+    <string name="oper_long_46697">Taiwan Mobile</string>  
+    <string name="oper_long_99998">Android1</string>  
+    <string name="oper_long_99999">Android</string>  
+    <string name="oper_short_46000">CMCC</string>  
+    <string name="oper_short_46001">CU-GSM</string>  
+    <string name="oper_short_46003">China Telecom</string>  
+    <string name="oper_short_46601">FET</string>  
+    <string name="oper_short_46692">Chunghwa</string>  
+    <string name="oper_short_46697">TWN</string>  
+    <string name="oper_short_99997">AD1</string>  
+    <string name="oper_short_99999">AD</string>  
+    <string name="unable_launch_the_ap">មិនអាចចាប់ផ្តើមកម្មវិធីបានទេ ។</string>  
+    <string name="keyguard_password_enter_sim1_pin_code">បញ្ចូលកូដ PIN របស់ SIM 1</string>  
+    <string name="RestrictedChangedTitle_SIM1">ការមធ្យ័តចូលបើកមើល SIM1 បានប្តូរ</string>  
+    <string name="RestrictedChangedTitle_SIM2">ការមធ្យ័តចូលបើកមើល SIM2 បានប្តូរ</string>  
+    <string name="keyguard_password_enter_sim2_pin_code">បញ្ចូលកូដ PIN SIM 2</string>  
+    <string name="keyguard_password_wrong_sim1_pin_code">កូដ PIN របស់ SIM 1 មិនត្រឹមត្រូវទេ!</string>  
+    <string name="keyguard_password_wrong_sim2_pin_code">កូន PIN របស់ SIM 2 មិនត្រឹមត្រូវទេ!</string>  
+    <string name="keyguard_password_enter_sim1_puk_code">បញ្ចូលកូដ PUK របស់ SIM 1</string>  
+    <string name="keyguard_password_enter_sim2_puk_code">បញ្ចូលកូដ PUK របស់ SIM 2</string>  
+    <string name="lockscreen_sim1_puk_locked_message">SIM កាត 1 ជាប់សោ PUK ។</string>  
+    <string name="lockscreen_sim2_puk_locked_message">SIM កាត 2 ជាប់សោ PUK ។</string>  
+    <string name="choose_bootup_mode">សូមជ្រើសរើស SIM</string>  
+    <string name="choose_gprs_mode">សូមជ្រើសរើសការតភ្ជាប់ទិន្នន័យ</string>  
+    <string name="sim_close">SIM កាតបានបិទ</string>  
+    <string name="lockscreen_sim_puk_locked_message_short">ចាក់សោ PUK</string>  
+    <string name="lockscreen_sim_locked_message_short">SIM កាតជាប់សោ</string>  
+    <string name="simlock_slot_locked_message">ប្រឡោះកាតត្រូវបានចាក់សោជាអចិន្ត្រៃយ៍</string>
+    <string name="simlock_entersimmelock">"បញ្ចូលសោ SIM ME"</string>  
+    <string name="slot_id">រន្ធ <xliff:g id="number">%d</xliff:g>:</string>
+    <string name="new_simcard">ស៊ីម កាដថ្មី</string>
+    <string name="lockscreen_missing_sim_dialog_message">"អត់មានដាក់ SIM កាដទេ។ សូមធ្វើឲ្យប្រាកដថា មានការដាក់ SIM កាដ​អ្នកបានត្រឹមត្រូវហើយ។"</string>
+    <string name="permlab_receiveDmRegisterSms">ទទួល DM ចុះឈ្មោះ SMS</string>  
+    <string name="permdesc_receiveDmRegisterSms">អនុញ្ញាតឲ្យកម្មវិធីអាចទទួល និងដំណើរការចុះឈ្មោះ DM សារ SMS ។ កម្មវិធីណាក៏បាន លើកលែងតែកម្មវិធី DM APP មិនគួរប្រើសកម្មភាពនេះទេ</string>  
+    <string name="lockscreen_password_error">កំហុសពាក្យសម្ងាត់ សូមសាកល្បងម្តងទៀត</string>  
+    <string name="lockscreen_pinword_error">កំហុស PIN សូមសាកល្បងម្តងទៀត</string>  
+    <string name="music_no_artist">ឈ្មោះអ្នកចម្រៀងដែលមិនស្គាល់</string>  
+    <string name="music_play">លេង</string>  
+    <string name="music_pause">ឈប់បន្តិច</string>  
+    <string name="music_library">បណ្ណាល័យ</string>  
+    <string name="music_no_songs">មិនមានចម្រៀង</string>  
+    <string name="serviceClassVideo">វិដេអូ</string>  
+    <string name="aerr_application_lowmem">កន្លែងផ្ទុកឯកសារក្នុងទូរស័ព្ទពេញហើយ កម្មវិធីបានឈប់ដំណើរការ ។ សូមលុបឯកសារចោលខ្លះ សហើយសាកល្បងម្តងទៀត ។</string>  
+    <string name="aerr_process_lowmem">កន្លែងផ្ទុកឯកសារក្នុងទូរស័ព្ទពេញហើយ ដំណើរការត្រូវបានបញ្ឈប់ ។ សូមលុបឯកសារចោលខ្លះ ហើយសាកល្បងម្តងទៀត ។</string>  
+    <string name="free_memory_btn">"លុបឯកសារចោល"</string>  
+    <string name="free_memory_text">"អង្គចងចាំទាប ។ សូមបញ្ចេញអង្គចងចាំចោល ។"</string>  
+    <string name="mem_low_title">សូមបញ្ចេញអ្វីៗក្នុងអង្គចងចាំចោល</string>  
+    <string name="unread_message">%d សារដែលមិនបានអាន</string>  
+    <string name="unread_messages">%d សារដែលមិនបានអាន</string>  
+    <string name="missed_call">%d ការហៅដែលមិនបានទទួល</string>  
+    <string name="missed_calls">%d ការហៅដែលមិនបានទទួល</string>  
+    <string name="no_favorite_contacts">មិនមានលេខទំនាក់ទំនងដែលពេញចិត្តទេ</string>  
+    <string name="contact_widget_loading">កំពុងឡូត\u2026</string>  
+    <string name="volume_fm">វ៉ូលូម FM</string>  
+    <string name="volume_matv">វ៉ូលូម TV ចល័ត</string>  
+    <string name="media_controller_buffering">"កំពុងខាត់ %d%%..."</string>  
+    <string name="media_controller_live">"ផ្ទាល់"</string>  
+    <string name="media_controller_playing">"កំពុងលេង"</string>  
+    <string name="media_controller_connecting">"កំពុងតភ្ជាប់..."</string>  
+    <string name="media_controller_weak_signal">"រលកសញ្ញាខ្សោយ"</string>  
+    <string name="VideoView_error_text_bad_file">"ឯកសារខូច មិនអាចលេងវីដេអូនេះបានទេ ។"</string>  
+    <string name="VideoView_error_text_cannot_connect_to_server">"មិនអាចតភ្ជាប់ទៅកាន់ម៉ាស៊ីនមេបានទេ ។"</string>  
+    <string name="VideoView_error_text_type_not_supported">"ប្រភេទឯកសារមេឌាដែលមិនអាចប្រើបាន ។"</string>  
+    <string name="VideoView_error_text_drm_not_supported">"DRM បានត្រូវការពារ វីដេអូនេះមិនអាចលេងបានទេ ។"</string>  
+    <string name="VideoView_error_text_invalid_connection">"ការតភ្ជាប់ដែលមិនមានសុពលភាព ។ (403 ត្រូវបានហាមឃាត់)"</string>  
+    <string name="wikiPediaName" translatable="false">wikipedia</string>  
+    <string name="redo">ធ្វើម្តងទៀត</string>  
+    <string name="undo">មិនធ្វើ</string>  
+    <string name="undoAll">មិនធ្វើទាំងអស់</string>  
+    <string name="new_sim">SIM ថ្មី</string>  
+    <string name="edit">កែសម្រួល</string>  
+    <string name="delete">លុបចោល</string>  
+    <string name="sim_card_changed_dialog_title">បានប្តូរ SIM កាត</string>
+    <string name="change_setting_for_onenewsim">បានរកឃើញ SIM កាតថ្មី ។ វា\មានស្លាកសញ្ញាជា</string>  
+    <string name="change_setting_for_twonewsim">បានរកឃើញ SIM កាតថ្មី ។ ពួកវាមានស្លាកសញ្ញាជា</string>  
+    <string name="change_settings">ប្តូរ</string>  
+    <string name="sim_card_removed">បានដក SIM កាតចេញ ។</string>
+    <string name="sim_card_swapped">បានដូរ SIM កាត ។</string>
+    <string name="keyguard_voice_call">ការហៅជាសម្លេង ៖</string>  
+    <string name="keyguard_sms">ការផ្ញើសារ ៖</string>  
+    <string name="keyguard_data">ការតភ្ជាប់ទិន្នន័យ ៖</string>  
+    <string name="keyguard_alwaysask">សួរជានិច្ច</string>  
+    <string name="keyguard_data_none">បិទ</string>  
+    <string name="dismiss">ទាត់ចោល</string>  
+    <string name="keyguard_wrong_code_input">ខុសកូដ ។</string>  
+    <string name="keyguard_code_length_prompt">បញ្ចូលលេខ 4-8 ខ្ទង់ ។</string>  
+    <string name="keyguard_code_donnot_mismatch">មិ\នអាចផ្គូផ្គងគ្នាបានឡើយ ។</string>  
+    <string name="for_text">សម្រាប់</string>  
+    <string name="keyguard_internal_call">ការហៅខាងក្នុង</string>  
+    <string name="keyguard_not_set">មិនបានសិត</string>  
+    <string name="network_searching">កំពុងរាវរាកបណ្តាញថ្មី</string>  
+    <string name="searching_simcard">កំពុងរកឃើញ ...</string>  
+    <string name="keyguard_close">បិទ</string>  
+    <string name="for_first_simcard">សម្រាប់ SIM ទីមួយ</string>  
+    <string name="for_second_simcard">សម្រាប់ SIM ទីពីរ</string>
+    <string name="for_third_simcard">សម្រាប់ SIM ទីបី</string>
+    <string name="for_fourth_simcard">សម្រាប់ SIM ទីបួន</string>
+    <string name="default_sim_setting_prompt">ឥឡូវការសិត SIM ពីរោងចក្រគឺ ៖</string>  
+    <string name="keyguard_video_call">ការហៅជាវីដេអូ ៖</string>  
+    <string name="dm_prompt">ស្ថានីយត្រូវបានជាប់សោហើយ</string>  
+    <string name="lockscreen_pin_too_many_failed_attempts_dialog_message">អ្នកបានបញ្ចូល PIN របស់អ្នកដែលមិនត្រឹមត្រូវចំនួន 
+        <xliff:g id="number">%d</xliff:g> ដង ។ \n\nសូមសាកល្បងម្តងទៀតក្នុងពេល 
+        <xliff:g id="number">%d</xliff:g> វិនាទី ។
+    </string>  
+    <string name="lockscreen_password_too_many_failed_attempts_dialog_message">អ្នកបានបញ្ចូលពាក្យសម្ងាត់របស់អ្នកដែលមិនត្រូវចំនួន 
+        <xliff:g id="number">%d</xliff:g> ដង ។ \n\nសូមសាកល្បងម្តងទៀតក្នុងពេល 
+        <xliff:g id="number">%d</xliff:g> វិនាទី ។
+    </string>  
+    <string name="wap_browser_pakcage" translatable="false">com.myriad.android.kunbrowser</string>  
+    <string name="wap_browser_component" translatable="false">com.myriad.android.kunbrowser.BrowserActivity</string>  
+    <string name="wap_browser_keyword" translatable="false">s.139.com</string>  
+    <string name="wap_browser_url_flag" translatable="false">search_url</string>  
+    <string name="criticallowtitle">ហាមដកឃ្លា</string>  
+    <string name="criticallowmessage">កន្លែងផ្ទុកឯកសារក្នុងទូរស័ព្ទពេញហើយ សូមដកឯកសារដែលមិនបានការចោល បើមិនដូច្នេះទេ កម្មវិធីនេះអាចចាកចេញដោយមិនបានដឹងជាមុន</string>  
+    <string name="nq_sms_filter_title">ចម្រោះ SMS</string>  
+    <string name="nq_sms_filter_message">សារនេះ អាចកាត់ថ្លៃពីអ្នក ។ តើអ្នកចង់បន្តទៅមុខទេ?</string>  
+    <string name="nq_sms_filter_yes">បាទ</string>  
+    <string name="nq_sms_filter_no">ទេ</string>  
+    <string name="ext_media_checking_notification_title_sd2">រៀបចំកាត SD</string>  
+    <string name="ext_media_checking_notification_title_otg">រៀបចំឧបករណ៍ USB</string>  
+    <string name="ext_media_badremoval_notification_title_otg">ឧបករណ៍ USB ត្រូវបានដកចេញដោយមិនបានដឹងជាមុន</string>  
+    <string name="ext_media_nomedia_notification_title_otg">បានដកឧបករណ៍ USB ចេញ</string>  
+    <string name="ext_media_badremoval_notification_message_otg">បិទឧបករណ៍ USB មុនពេលដកវាចេញ ដើម្បីចៀសវាងការបាត់បបង់ទិន្នន័យ ។</string>  
+    <string name="ext_media_nomedia_notification_message_otg">ឧបករណ៍ USB ត្រូវបានដកចេញ ។ ស៊កបញ្ចូលមេឌាថ្មី ។</string>  
+    <string name="ext_media_unmountable_notification_title_otg">ឧបករណ៍ USB ដែលខូច</string>  
+    <string name="ext_media_unmountable_notification_message_otg">ឧបករណ៍ USB ខូច ។ អ្នកត្រូវធ្វើទ្រង់ទ្រាយវាថ្មី ។</string>  
+    <string name="ext_media_nofs_notification_title_otg">ឧបករណ៍ USB ទទេ</string>  
+    <string name="ext_media_nofs_notification_message_otg">ឧបករណ៍ USB ទទេ ឬមានប្រព័ន្ធឯកសារដែលមិនអាចប្រើបាន ។</string>  
+    <string name="ext_media_safe_unmount_notification_title_otg">មានសុវត្ថិភាពក្នុងការដកឧបករណ៍ USB ចេញ</string>  
+    <string name="ext_media_safe_unmount_notification_message_otg">អ្នកអាចដកឧបករណ៍ USB ចេញបានដោយសុវត្ថិភាព ។</string>  
+    <string name="drm_protection_status">ស្ថានភាពការពារ ៖</string>  
+    <string name="drm_can_forward">អាចបញ្ជូនបាន ។</string>  
+    <string name="drm_can_not_forward">មិនអាចបញ្ជូនបាន ។</string>  
+    <string name="drm_no_limitation">មិនមានដែនកំណត់ ។</string>  
+    <string name="drm_no_license">មិនមានអាជ្ញាប័ណ្ណ DRM ។</string>  
+    <string name="drm_begin">ចាប់ផ្តើម ៖</string>  
+    <string name="drm_end">ចប់ ៖</string>  
+    <string name="drm_use_left">រាប់ឆ្វេង ៖</string>  
+    <string name="drm_protectioninfo_renew">ធ្វើថ្មី</string>  
+    <string name="drm_protectioninfo_title">ព័ត៌មានការពារ</string>  
+    <string name="drm_licenseacquisition_title">ការបានទទួលអាជ្ញាប័ណ្ណ DRM</string>  
+    <string name="drm_licenseacquisition_message">%1$s មិនមានអាជ្ញាប័ណ្ណ DRM ទេ ។ អ្នកអាចចុចលើប៊ូតុង "ធ្វើសាថ្មី" ដើម្បីបានទទួលអាជ្ញាប័ណ្ណ DRM ។</string> 
+    <string name="drm_toast_license_expired">អាជ្ញាប័ណ្ណ DRM បានផុតកំណត់ហើយ ។</string>  
+    <string name="drm_forwardforbidden_title">ការបញ្ជូនត្រូវបានហាមឃាត់</string>  
+    <string name="drm_forwardforbidden_message">ឯកសារដែលការពារខ្លះមិនអាចបញ្ជូនទៅបាន ។</string>  
+    <string name="drm_license_install_success">ការតម្លើងអាជ្ញាប័ណ្ណ DRM បានជោគជ័យហើយ ។</string>  
+    <string name="drm_license_install_fail">ការតម្លើងអាជ្ញាប័ណ្ណ DRM ត្រូវបរាជ័យ ។</string>  
+    <string name="drm_secure_timer_title">សុវត្ថិភាពនាឡិការ DRM គ្មានសុពលភាព</string>  
+    <string name="drm_secure_timer_message">អ្នកមិនអាចប្រើឯកសារដែលការពារដោយ DRM ឡើយ ។ សូមប្រាកដថា មានការតភ្ជាប់ទិន្នន័យ ។</string>  
+    <string name="drm_consume_title">ប្រើសិទ្ធិ DRM</string>  
+    <string name="drm_consume_message">សកម្មភាពរបស់អ្នកប្រើសិទ្ធិ DRM ។</string>  
+    <string name="drm_forward_forbidden">ឯកសារមួយ ឬច្រើនដែលបានការពារ មិនអាចបញ្ជូនទៅបានទេ ។</string>  
+    <string name="recip_unsupport_operator">ការមើលរបស់អ្នកទទួល មិនអាចប្រើបានចំពោះតួអក្សរប្រតិបត្តិការ សូមប្រើខ្សែឧបករណ៍ ដើម្បីប្រតិបត្តិការអ្នកទទួល ។</string>  
+    <string name="recip_unsupport_selection">សូមទោស អ្នកមិនអាចដូរកន្លែងសញ្ញាសម្រាប់បន្ថែមពាក្យរំលងទៅដាក់ខាងដើម ពេលដែលមានអ្នកទទួល ក្នុងការមើលអ្នកទទួល ។</string>  
+    <string name="sim_missing_slot1">រកមិនឃើញ SIM កាតទេ(ប្រឡោះ1)</string>  
+    <string name="sim_missing_slot2">រកមិនឃើញ SIM កាតទេ(ប្រឡោះ2)</string>  
+    <string name="sim_missing">រកមិនឃើញ SIM កាតទេ</string>  
+    <string name="sim_missing_detail">សូមឆែកមើល ថាតើ SIM កាតរួចរាល់ហើយឬនៅ</string>  
+    <string name="wap_push_setting_noti_ticker">ទទួលយកសេវារុញដោយស្វ័យប្រវត្តិឬទេ?</string>  
+    <string name="wap_push_setting_noti_title">ទទួលយកសេវារុញដោយស្វ័យប្រវត្តិឬទេ?</string>  
+    <string name="wap_push_setting_noti_text">សូមថេបដើម្បីជ្រើសរើស</string>  
+    <string name="url_dialog_choice_title">សារ</string>  
+    <string name="url_dialog_choice_message">ខ្ញុំនឹងបើកប្រូស័រ ចង់បន្តទេ?</string>  
+    <string name="wifi_tether_configure_ssid_default_for_cmcc" translatable="false">MTK Athens15</string>  
+    <string name="deleteApp">មិនតម្លើងកម្មវិធី</string>  
+    <string name="deleteMail">ចម្លងសំបុត្រទុក ហើយធ្វើឲ្យកន្លែងផ្ទុកឯកសារកើនឡើង</string>  
+    <string name="default_label">ពញ្ញាក់អារម្មណ៍</string>  
+    <string name="dismiss_power_on">តាត់ចោល និងបើកថាមពល</string>  
+    <string name="dismiss_power_off">ទាត់ចោល និងបិទថាមពល</string>  
+    <string name="alarm_alert_snooze_text">ដេកបន្តិច</string>  
+    <string name="never">មិនដែល</string>  
+    <string name="day_concat">", "</string>  
+    <string name="every_day">រៀងរាល់ថ្ងៃ</string>  
+    <string name="repeat_weekdays">ថ្ងៃធ្វើការ</string>  
+    <string name="storage_withsd">កន្លែងផ្ទុកឯកសារក្នុងទូរស័ព្ទមិនមានគ្រប់គ្រាន់ទេ ។ សូមបញ្ចេញចោលេកសារខ្លះ ឬប្តូរការសរសេរថាស សិតពីរោងចក្រ នៅក្នុងការសិត ។</string>  
+    <string name="storage_withoutsd">ទូរស័ព្ទមិនមានកន្លែងគ្រប់គ្រាន់ដើម្បីផ្ទុកឯកសារទេ ។ សូមលុបឯកសារចោលខ្លះ ឬស៊កបញ្ចូលកាត SD ។</string>  
+    <string name="storage_sd">កាត SD មិនមានកន្លែងទំនេរគ្រប់គ្រាន់ទេ ។ សូមលុបឯកសារចោលខ្លះ ឬដូរការសេសរចូលថាសដែលសិតពីរោងចក្រ​ នៅក្នុងការសិត ។</string>  
+    <string name="usb_ums_notification_title">បានតភ្ជាប់ជាឧបករណ៍ USB ។</string>  
+    <string name="usb_charging_notification_title">សាកតែ USB ទេ</string>  
+    <string name="gps_time_sync_fail_str">បរាជ័យក្នុងការបានទទួលម៉ោងដែលផ្តល់ដោយ GPS</string>   
+    <string name="tethered_notification_message_for_hotspot">
+        <xliff:g id="connected">%1$d</xliff:g> បានតភ្ជាប់ជាមួយ, <xliff:g id="blocked">%2$d</xliff:g> បានរារាំង
+    </string>
+    <string name="tethered_notification_message_bandwidth_set">កម្រិតបញ្ជូន​ទទួលបាន​ការកំណត់</string>
+    <string name="default_wallpaper_name">សិតពីរោងចក្រ</string> 
+    <string name="invalid_sim_title">SIM កាតដែលមិនមានសុពលភាព</string>
+    <string name="invalid_sim_message">UIM/SIM កាតមិនបានទទួលស្គាល់ឡើយ </string>
+    <!-- voice unlock start -->
+    <string name="voice_unlock_service_error">កំហុសសេវាដោះសោសំឡេង។</string>
+    <string name="voice_unlock_password_wrong">សូមអភ័យទោស! មិនអាចស្គាល់សំឡេងអ្នកបានទេ។</string>
+    <string name="voice_unlock_noisy">សំឡេងអ៊ូអរខ្លាំង ដូច្នេះមិនអាច\ស្ដាប់ឮអ្នកច្បាស់ទេ។</string>
+    <string name="voice_unlock_weak">មិនអាច\ស្ដាប់ឮអ្នកច្បាស់ទេ។</string>
+    <string name="voice_unlock_media_playing">មានបិទលទ្ធភាពមុខងារដោះសោសំឡេង ខណៈមេឌៀកំពុងចាក់លេង។</string>
+    <!-- voice unlock end -->
+    <string name="voiceunlock_multiple_failures">ការប៉ុនប៉ងដោះសោដោយប្រើសម្លេងហួសកម្រិតអតិបរមាហើយ </string>    
+
+    <string name="wifi_display_bt_hdmi_off_wfd_on">នឹងបិទការបង្ហាញប្រព័ន្ធប៊្លូធូស (BT) និង HDMI នៅពេលអ្នកបើកការបង្ហាញឲ្យឃើប្រព័ន្ធអត់ខ្សែ។ តើអ្នកចង់បន្តឬ?</string> 
+    <string name="wifi_display_wfd_off_hdmi_on">នឹងបិទរូបភាពបង្ហាញប្រព័ន្ធអត់ខ្សែ នៅពេលអ្នកបើក HDMI។ តើអ្នកចង់បន្តឬ?</string> 
+    <string name="wifi_display_wfd_off_bt_on">នឹងមានការបិទផ្នែកបង្ហាញបណ្ដាញឥតខ្សែ នៅពេលដែលអ្នកបើកប្រព័ន្ធប៊្លូធូស។  តើអ្នកចង់បន្តឬ?</string>
+    <string name="wifi_display_wifi_p2p_disconnect_wfd_connect">នឹងមានការផ្ដាច់ Wi-Fi Direct ដែលមានឥឡូវនេះ នៅពេលដែលអ្នកភ្ជាប់​ឧបករណ៍/ទូរសព្ទ​មានបង្ហាញ​បណ្ដាញ​ឥតខ្សែ។  តើអ្នកចង់បន្តឬ?</string>
+    <string name="wifi_display_unstable_connection">ការភ្ជាប់ដែលអស្ថេរភាព</string>
+    <string name="wifi_display_connection_is_not_steady">រូបភាពការភ្ជាប់ប្រព័ន្ធអត់ខ្សែ​កំពុងមាននេះ​គ្មានលំនឹង។</string>
+    <string name="wifi_display_unstable_suggestion">រូបភាពការភ្ជាប់ប្រព័ន្ធអត់ខ្សែ​កំពុងមាននេះ​គ្មានលំនឹង សូមព្យាយាមដាក់ឲ្យកាន់តែជិតទៅនឹងឧបករណ៍/ទូរសព្ទអ្នក។</string>
+    <string name="wifi_display_reconnect">ភ្ជាប់ឡើងវិញ</string> 
+    <string name="wifi_display_disconnect_then_reconnect">រូបភាពបង្ហាញប្រព័ន្ធ​អត់ខ្សែ​ដាច់។ តើអ្នកចង់ភ្ជាប់ឡើងវិញឬ?</string> 
+    <string name="wifi_display_disconnected">ដាច់រូបភាពបង្ហាញ​ប្រព័ន្ធ​អត់ខ្សែ​។</string>
+    <string name="wifi_display_wfd_and_wifi_are_turned_on">ការបង្ហាញ​រូបភាព​ប្រព័ន្ធ​អត់ខ្សែ និង Wi-Fi ស្ថិត​ក្នុង​ស្ថានភាព​បិទ។</string>
+    <string name="wifi_display_sound_path_reminder">សំឡេង​ពហុព័ត៌មាន​នឹង​ចាក់លេង​ចេញ​ពីកាស​ស្ដាប់​អ្នក។</string>  
+    <string name="wifi_display_change_resolution_reminder">មុខងារ​ប្ដូរដំណោះស្រាយ​បង្ហាញ​រូបភាព​នឹង​ស្វ័យ​ភ្ជាប់ការ​បង្ហាញ​រូបភាព​ប្រព័ន្ធ​អត់​ខ្សែ​ឡើង​វិញ។</string>  
+    <string name="wifi_display_do_not_remind_again">កុំ​រំឭក​សាជាថ្មី</string>
+    <string name="wifi_display_wifi_ap_affects_quality">Wi-Fi AP ដែល​កំពុង​មាន​អាច​នឹង​ប៉ះពាល់​ដល់​គុណភាព​បង្ហាញ​រូបភាព​បណ្ដាញ​ឥតខ្សែ។</string>
+    
+    <!-- Add for AT&T to show toast when pass pin/puk lock -->
+    <string name="pin_pass">មានការទទួលយកកូដបាន</string>
+    <string name="puk_pass">បានដោះការទប់ស្កាត់ PIN ហើយ</string>
+    <!-- MountService start -->
+    <string name="sdcard_ready_title">កាដ SD មានលក្ខណៈស្រេចបាច់ហើយ</string>
+    <string name="sdcard_select_default_path">តើអ្នកចង់ប្ដូរសំណេរថាសតាមលំនាំដើមឬ?</string>
+    <string name="sdcard_default_path_change">មាន​ការ​ប្ដូរ​ឌីស​សរសេរ​​(ឌីស​បម្លែង)​ពី​នាយ​ហើយ។</string>
+    <string name="usb_storage_ready_title">បន្ទុក USB ខាងក្រៅ​ស្រេចបាច់ហើយ</string>
+    <!-- MountService end -->
+
+    
+    <string name="sd_accessing_swtich_user_title">ប្ដូរអ្នកប្រើឬ?</string>
+    
+    <string name="sd_accessing_swtich_user_message">នឹង​បាត់ ឬ​ខូចទិន្នន័យទាំងអស់​ដែលមិនបានរក្សាទុកនៅក្នុងគណនី​នៃ​ម្ចាស់។</string>
+    
+    <string name="calibration_data">មិន​ទាន់​មាន​ការក្រិត​តាម​ខ្នាត​នៅ​ឡើងយ​ទេ។ សូមទាញយក/​ដោនឡូដ​ទិន្នន័យ​ការក្រិត​តាម​ខ្នាត! ផ្សេង​ពី​នេះ ឧបករណ៍/ទូរសព្ទ​មិន​អាច​ដើរ​បាន​ធម្មតា​នៅ​លើ​បណ្ដាញ​បាន​ទេ។[អ្នក​ប្រើ​ផ្ទៃ​ក្នុង MTK]</string>
+    <string name="invalid_card">កាដ​មិន​ត្រឹមត្រូវ</string>
+    <string name="usbint_notification_title">អ៊ីនធឺណិត​តាម USB កំពុង​ដើរ</string>
+      
+    <string name="hdmi_notification_title">ខ្សែ HDMI ត្រូវបានតភ្ជាប់</string>  
+    <string name="hdmi_notification_content">ចុចដើម្បីធ្វើរូបសណ្ឋាន HDMI</string>
+    <string name="hdmi_hdvideo_toast">HDMI មិនអាចចាក់លេង​វីដេអូ 4K បាន​ដែល​ការភ្ជាប់នឹងមានការរំខាន។</string>
+
+    <!-- VolumePanel -->
+    <string name="safe_media_volume_warning_title">ការព្រមាន</string> 
+    
+    <!-- Low Storage -->
+    <string name="aerr_application_lowstorage">កំពុង​អស់​បន្ទុក​ខាង​ក្នុង កម្មវិធី​ត្រូវ​បាន​បញ្ឈប់ហើយ។ សូម​ទុក​ចន្លោះ​ទំនេរ​ខ្លះៗ ហើយ​សាកល្បង​ម្ដង​ទៀត។</string>
+    <string name="aerr_process_lowstorage">កំពុង​អស់​បន្ទុក​ខាង​ក្នុង ដំណើរការ​​ត្រូវ​បាន​បញ្ឈប់ហើយ។ សូម​ទុក​ចន្លោះ​ទំនេរ​ខ្លះៗ ហើយ​សាកល្បង​ម្ដង​ទៀត។</string>
+    <string name="low_internal_storage_view_title">កំពុង​អស់​បន្ទុក​ខាង​ក្នុង</string>
+    <string name="deleteMails">លុបចោល​សារ​នានា</string>
+    <string name="low_storage_warning_message">សូម​ទុក​ចន្លោះ​ទំនេរ​ខ្លះៗ បើ​មិន​ដូច្នោះ​ទេ កម្មវិធី​ និង​មុខងារ​ប្រព័ន្ធ​មួយ​ចំនួន​មិន​អាច​ដើរ​បាន​ស្រួល​ទេ។</string>
+
+    <!-- KK translation task -->
+    <string name="virtual_sim_on_slot1">ស៊ីម​និម្មិត​ទី 1 បើក</string>
+    <string name="virtual_sim_on_slot2">ស៊ីម​និម្មិត​ទី 2 បើក</string>
+    <string name="virtual_sim_on_slot3">ស៊ីម​និម្មិត​ទី 3 បើក</string>
+    <string name="virtual_sim_on_slot4">ស៊ីម​និម្មិត​ទី 4 បើក</string>
+    <string name="virtual_sim_on">ស៊ីម​និម្មិត​បើក</string>
+    <string name="RejectCauseTitle">មូលហេតុនៃការបដិសេធ​បណ្ដាញ</string>
+    <string name="MMRejectCause2">មិន​មាន​ការផ្ដល់ឲ្យស៊ីម​ប្រើ MM #3</string>
+    <string name="MMRejectCause3">គ្មានការអនុញ្ញាតឲ្យស៊ីមប្រើ MM #4</string>
+    <string name="MMRejectCause5">ការហៅដោយប្រើ MM #6 មិនសម្រេច</string>
+    <string name="MMRejectCause6">គ្មានការអនុញ្ញាតឲ្យទូរសព្ទប្រើ MM #7</string>
+    <string name="MMRejectCause13">SOS/ការហៅបន្ទាន់ប៉ុណ្ណោះ</string>
+    <string name="keyguard_accessibility_alarm_unlock">សំឡេងរោទិ៍ពេលបិទថាមពល</string>
+    <string name="dialog_color_picker">អង្គជ្រើសពណ៌</string>
+    <string name="press_color_to_apply">ចុចលើពណ៌ដើម្បីប្រើ</string>
+    <string name="keyguard_sim_auto">ស្វ័យប្រវត្តិ</string>
+    <string name="keyguard_domestic_zone_name">ប៉េកាំង</string>
+    <string name="sim_missing_slot3">រកមិនឃើញ SIM កាតទេ(ប្រឡោះ3)</string>
+    <string name="sim_missing_slot4">រកមិនឃើញ SIM កាតទេ(ប្រឡោះ4)</string>
+    <string name="sim_missing_slot1_card">រន្ធទី 1: រកមិនឃើញមានកាដ</string>
+    <string name="sim_missing_slot2_card">រន្ធទី 2: រកមិនឃើញមានកាដ</string>
+    <string name="sim_missing_card">រកមិនឃើញមានកាដ</string>
+    <string name="sim_missing_detail_card">សូមពិនិត្យមើលភាពស្រេចបាច់នៃកាដ</string>
+    <string name="find_previous">ពីមុន</string>
+    <string name="find_next">បន្ទាប់</string>
+    <string name="alarm_alert_dismiss_text">ទាត់ចោល</string>
+    <string name="description_direction_right">រំអិលទៅខាងស្តាំដើម្បីបោះចោល</string>
+    <string name="description_direction_left">រំអិលទៅខាងឆ្វេងដើម្បីដេកបន្តិច</string>
+    <string name="description_direction_up">រំអិលទៅខាងលើដើម្បីបោះចោល</string>
+    <string name="description_direction_down">រំអិលចុះក្រោមដើម្បីដេកបន្តិច</string>
+    <string name="voiceui_notify_string">អ្នកអាចនិយាយ</string>
+    <string name="voiceui_control_poweroff_alarm">ដើម្បីគ្រប់គ្រងសំឡេងរោទិ៍ពេលបិទថាមពល</string>
+    <string name="voiceui_or">ឬ</string>
+    <string name="wifi_wps_failed_overlap">បានរកឃើញសកម្មភាព WPS មួយទៀត ។ សូមសាកល្បងម្តងទៀតមួយសន្ទុះក្រោយ ។</string>
+    <string name="headset_pin_recognition">កាសស្តាប់ត្រចៀកអ្នកមិនត្រូវគ្នានឹងទូរសព្ទ។ សូមព្យាយាមប្រើកាសស្ដាប់ផ្សេងទៀត</string>
+    <string name="msensor_toast_text">មានការរំខានពី Compass។ គ្រវីទូរសព្ទតាមគន្លងចលនានៃលេខ 8 ដើម្បីកម្រិតទំហំថ្មីនៃ Compass។</string>
+    <string name="usb_autorun_cdrom_notification_title">បានភ្ជាប់ជាស៊ីឌីរ៉ូមស្វ័យដំណើរការ</string>
+    <string name="ct_net_name">"CTNET"</string>
+    <string name="ct_wap_name">"CTWAP"</string>
+</resources>

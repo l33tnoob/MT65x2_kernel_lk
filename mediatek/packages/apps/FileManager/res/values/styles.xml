@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="FileManagerOperTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/FileManagerOperActionBarStyle</item>
+    </style>
+
+    <style name="FileManagerOperActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:displayOptions"></item>
+    </style>
+
+    <style name="transparent">
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item> -->
+    </style>
+
+</resources>

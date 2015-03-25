@@ -1,0 +1,83 @@
+# ==============================================
+# Policy File of /system/xbinmnld Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type mnld_exec , exec_type, file_type;
+type mnld ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive mnld;
+init_daemon_domain(mnld)
+
+# 20131024 Sanity_02
+allow mnld mtk_agpsd:unix_dgram_socket sendto;
+allow mnld system_data_file:dir { write add_name };
+allow mnld system_data_file:file { write create open };
+allow mnld system_data_file:sock_file write;
+
+
+# 20131024 CTS_01
+allow mnld mtk_agpsd:unix_dgram_socket sendto;
+allow mnld system_data_file:dir { write add_name };
+allow mnld system_data_file:file { write create open };
+allow mnld system_data_file:sock_file write;
+
+
+# 20131024 Sanity_04
+allow mnld device:chr_file { read ioctl open };
+allow mnld linker_exec:file read;
+allow mnld sysfs:file write;
+
+
+# 20131028 Sanity_05
+allow mnld device:chr_file write;
+allow mnld gps_device:chr_file { read write };
+allow mnld libmnlp_mt6582_exec:file { read execute open execute_no_trans };
+allow mnld linker_exec:file { execute open };
+allow mnld property_socket:sock_file write;
+allow mnld system_data_file:file setattr;
+
+
+# 20131028 Sanity_06
+allow mnld gps_device:chr_file open;
+allow mnld node:tcp_socket node_bind;
+allow mnld port:tcp_socket name_bind;
+allow mnld self:tcp_socket { bind create setopt accept listen };
+allow mnld system_data_file:dir remove_name;
+allow mnld system_data_file:file unlink;
+allow mnld system_data_file:sock_file create;
+
+
+# 20131028 Sanity_07
+allow mnld system_data_file:sock_file setattr;
+
+
+# 20131121 Sanity_QA
+allow mnld self:tcp_socket { read write };
+allow mnld system_data_file:file append;
+allow mnld system_data_file:sock_file unlink;
+
+
+
+# 20131122 Add Set Property Rule
+allow mnld  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_CTS_02
+allow mnld sdcard_internal:dir { write search add_name };
+allow mnld sdcard_internal:file { write getattr read create open append };
+

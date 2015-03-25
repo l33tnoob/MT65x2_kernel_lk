@@ -1,0 +1,656 @@
+#include <string.h>
+#include <stdint.h>
+#include <stdlib.h>
+
+#include "atci_wlan_cmd.h"
+#include "atci_service.h"
+#include "atcid_util.h"
+
+#include <lgerft.h>
+
+/*******************************************************************************
+ *                                 M A C R O S
+ *******************************************************************************
+ */
+
+#ifndef BIT
+#define BIT(n)          ((uint32_t) 1 << (n))
+#define BITS(m,n)       (~(BIT(m)-1) & ((BIT(n) - 1) | BIT(n)))
+#endif /* BIT */
+
+#define MAC_ADDR_LEN                6
+
+#define IS_BMCAST_MAC_ADDR(_pucDestAddr)            \
+        ((bool) ( ((uint8_t *)(_pucDestAddr))[0] & BIT(0) ))
+
+#define EQUAL_MAC_ADDR(_pucDestAddr, _pucSrcAddr)   \
+        (!memcmp(_pucDestAddr, _pucSrcAddr, MAC_ADDR_LEN))
+
+
+/*******************************************************************************
+ *                              C O N S T A N T S
+ *******************************************************************************
+ */
+#define NULL_MAC_ADDR               {0x00, 0x00, 0x00, 0x00, 0x00, 0x00}
+
+#define WLAN_MODE_B         'B'
+#define WLAN_MODE_G         'G'
+#define WLAN_MODE_N         'N'
+#define WLAN_MODE_OFF       '0'
+#define WLAN_MODE_CMD       '\"'
+
+#define WLAN_MIXED_PREAMBLE 'M'
+#define WLAN_GREEN_PREAMBLE 'G'
+
+#define WLAN_LONG_GI        'L'
+#define WLAN_SHORT_GI       'S'
+
+#define RF_AT_PARAM_TX_PKTCNT_UNLIMITED     0
+#define DEFAULT_POWER_FOR_B_RATE            20
+#define DEFAULT_POWER_FOR_G_RATE            18
+#define DEFAULT_POWER_FOR_N_RATE            18
+
+/*******************************************************************************
+ *                             D A T A   T Y P E S
+ *******************************************************************************
+ */
+typedef enum _ENUM_RX_RESULT_TYPE_T {
+    RX_RESULT_TYPE_CHANNEL_PER,
+    RX_RESULT_TYPE_PACKET_PER,
+    RX_RESULT_TYPE_RSSI,
+    RX_RESULT_TYPE_NUM
+} ENUM_RX_RESULT_TYPE_T, *P_ENUM_RX_RESULT_TYPE_T;
+
+/*******************************************************************************
+ *                           P R I V A T E   D A T A
+ *******************************************************************************
+ */
+static int wlanChannel          = 1;
+static int wlanRateNum          = 1;
+static char wlanMode            = WLAN_MODE_B;
+static char wlanPreambleMode    = WLAN_MIXED_PREAMBLE;
+static char wlanGI              = WLAN_LONG_GI;
+
+
+/*******************************************************************************
+*                  F U N C T I O N   D E C L A R A T I O N S
+********************************************************************************
+*/
+
+/*******************************************************************************
+ *                              F U N C T I O N S
+ *******************************************************************************
+ */
+static void
+wlan_generate_rate_information(
+    char *response
+    )
+{
+    if(wlanMode == WLAN_MODE_B || wlanMode == WLAN_MODE_G) {
+        sprintf(response, "\r\nWLAN ON %c%d\r\nOK\r\n\r\n", wlanMode, wlanRateNum);
+    }
+    else if(wlanMode == WLAN_MODE_N) {
+        sprintf(response, "\r\nWLAN ON %c%c%c%d\r\nOK\r\n\r\n", wlanMode, wlanPreambleMode, wlanGI, wlanRateNum);
+    }
+    else {
+        sprintf(response, "\r\nWLAN ON\r\nOK\r\n\r\n");
+    }
+
+    return;
+}
+
+static void
+wlan_generate_rx_result(
+    ENUM_RX_RESULT_TYPE_T eType,
+    char *response,
+    char *cmdline
+    )
+{
+    int RSSI;
+    int good_frames, err_frames;
+    float PER;
+
+    LGE_RFT_FRGood(&good_frames);
+    LGE_RFT_FRError(&err_frames);
+    LGE_RFT_RSSI(&RSSI);
+
+    PER = (float)100 * (float)err_frames / ((float)good_frames + (float)err_frames);
+
+    if(eType == RX_RESULT_TYPE_CHANNEL_PER) {
+        sprintf(response, "\r\n\"%d\", \"%3.1f\"\r\nOK\r\n\r\n", wlanChannel, PER);
+    }
+    else if(eType == RX_RESULT_TYPE_PACKET_PER) {
+        sprintf(response, "\r\n\"%d\", \"%3.1f\"\r\nOK\r\n\r\n", good_frames + err_frames, PER);
+    }
+    else if(eType == RX_RESULT_TYPE_RSSI) {
+        sprintf(response, "\r\n\%d\r\nOK\r\n\r\n", RSSI);
+    }
+    else {
+        sprintf(response, "\r\n\r\nNOT IMPLEMENTED\r\n\r\n");
+    }
+
+    return;
+}
+
+
+int
+wlan_generic_cmd_handler(
+    char* cmdline,
+    ATOP_t at_op,
+    char* response
+    )
+{
+    int rate = -1;
+    char *tok, *tok2;
+    char *ptr = NULL;
+    int ret = -1;
+
+    if(at_op == AT_SET_OP) {
+        switch(cmdline[0]) {
+        case WLAN_MODE_B:
+            wlanMode = WLAN_MODE_B;
+            rate = atoi(&(cmdline[1]));
+            if(rate == 1
+                    || rate == 2
+                    || rate == 5
+                    || rate == 11) {
+                wlanRateNum = rate;
+            }
+            else {
+                rate = -1;
+            }
+
+            break;
+
+        case WLAN_MODE_G:
+            wlanMode = WLAN_MODE_G;
+            rate = atoi(&(cmdline[1]));
+            if(rate == 6 
+                    || rate == 9 
+                    || rate == 12
+                    || rate == 18
+                    || rate == 24
+                    || rate == 36
+                    || rate == 48
+                    || rate == 54) {
+                wlanRateNum = rate;
+            }
+            else {
+                rate = -1;
+            }
+
+            break;
+
+        case WLAN_MODE_N:
+            wlanMode = WLAN_MODE_N;
+            if(cmdline[1] == WLAN_MIXED_PREAMBLE 
+                    || cmdline[1] == WLAN_GREEN_PREAMBLE) {
+                wlanPreambleMode = cmdline[1];
+
+                if(cmdline[2] == WLAN_LONG_GI
+                    || cmdline[2] == WLAN_SHORT_GI) {
+                    wlanGI = cmdline[2];
+
+                    rate = atoi(&(cmdline[3]));
+
+                    if((rate >= 0 && rate <= 7) || rate == 32) {
+                        wlanRateNum = rate;
+                    }
+                    else {
+                        rate == -1;
+                    }
+                }
+            }
+
+            break;
+
+        /* leave from WLAN test mode */
+        case WLAN_MODE_OFF:
+            LGE_RFT_CloseDUT();
+
+            sprintf(response, "\r\nWLAN OFF\r\nOK\r\n\r\n");
+            ret = 0;
+            break;
+
+        /* AT command for iperf */
+        case WLAN_MODE_CMD:
+            tok = strchr(cmdline, '\"');
+            tok2 = strrchr(cmdline, '\"');
+
+            if(tok != NULL && tok2 != NULL && tok != tok2) {
+                ptr = (char *)malloc(sizeof(char) * ((tok2 - tok) + 1));
+
+                if(ptr != NULL) {
+                    strncpy(ptr, tok + 1, tok2 - tok - 1);
+                    ptr[tok2-tok-1] = '&';
+                    ptr[tok2-tok] = '\0';
+
+                    system(ptr);
+
+                    free(ptr);
+
+                    sprintf(response, "\r\nOK\r\n\r\n");
+                    ret = 0;
+                }
+            }
+            break;
+
+        default:
+            break;
+        }
+
+        if(ret != 0 && rate >= 0) {
+            /* enter WLAN test mode */
+            LGE_RFT_OpenDUT();
+
+            /* set rate string */
+            if(wlanMode == WLAN_MODE_N) {
+                /* specify default power */
+                LGE_RFT_TxGain(DEFAULT_POWER_FOR_N_RATE);
+
+                /* specify rate */
+                LGE_RFT_TxDataRate11n(wlanRateNum + 1,
+                        wlanPreambleMode == WLAN_MIXED_PREAMBLE ? 1 : 2,
+                        wlanGI == WLAN_LONG_GI ? 1 : 2
+                        );
+            }
+            else if(wlanMode == WLAN_MODE_B || wlanMode == WLAN_MODE_G) {
+                /* specify default power */
+                if(wlanMode == WLAN_MODE_B) {
+                    LGE_RFT_TxGain(DEFAULT_POWER_FOR_B_RATE);
+                }
+                else {
+                    LGE_RFT_TxGain(DEFAULT_POWER_FOR_G_RATE);
+                }
+
+                switch(wlanRateNum) {
+//Haman changed for TC3
+//                case 1:
+//                    LGE_RFT_TxDataRate(LGE_RFT_RATE_1MBPS);
+//                    break;
+//
+//                case 2:
+//                    LGE_RFT_TxDataRate(LGE_RFT_RATE_2MBPS);
+//                    break;
+//
+//                case 5:
+//                    LGE_RFT_TxDataRate(LGE_RFT_RATE_5_5MBPS);
+//                    break;
+//
+//                case 11:
+//                    LGE_RFT_TxDataRate(LGE_RFT_RATE_11MBPS);
+//                    break;
+//
+//                case 6:
+//                    LGE_RFT_TxDataRate(LGE_RFT_RATE_6MBPS);
+//                    break;
+//
+//                case 9:
+//                    LGE_RFT_TxDataRate(LGE_RFT_RATE_9MBPS);
+//                    break;
+//
+//                case 12:
+//                    LGE_RFT_TxDataRate(LGE_RFT_RATE_12MBPS);
+//                    break;
+//
+//                case 18:
+//                    LGE_RFT_TxDataRate(LGE_RFT_RATE_18MBPS);
+//                    break;
+//
+//                case 24:
+//                    LGE_RFT_TxDataRate(LGE_RFT_RATE_24MBPS);
+//                    break;
+//
+//                case 36:
+//                    LGE_RFT_TxDataRate(LGE_RFT_RATE_36MBPS);
+//                    break;
+//
+//                case 48:
+//                    LGE_RFT_TxDataRate(LGE_RFT_RATE_48MBPS);
+//                    break;
+//
+//                case 54:
+//                    LGE_RFT_TxDataRate(LGE_RFT_RATE_54MBPS);
+//                    break;
+//change end
+                default:
+                    break;
+                }
+            }
+
+            wlan_generate_rate_information(response);
+            ret = 0;
+        }
+    }
+    /* query for WLAN test mode */
+//Haman change for TC3
+/*
+    else if(at_op == AT_NONE_OP
+            || at_op == AT_READ_OP
+            || at_op == AT_TEST_OP
+            || at_op == AT_ACTION_OP) {
+        if(LGE_RFT_IsRunning() == true) {
+            wlan_generate_rate_information(response);
+        }
+        else {
+            sprintf(response, "\r\nWLAN OFF\r\nOK\r\n\r\n");
+        }
+*/
+//change end
+        ret = 0;
+    }
+
+    if(ret != 0) {
+        /* generate error message */
+        sprintf(response, "\r\n\r\nNOT IMPLEMENTED\r\n\r\n");
+    }
+
+    return ret;
+}
+
+
+int
+wlan_rx_test_cmd_handler(
+    char* cmdline,
+    ATOP_t at_op,
+    char* response
+    )
+{
+    int channel = -1;
+    char *tok, *tok2;
+    char *ptr = NULL;
+    int ret = -1;
+    const uint8_t aucRxMacAddr[] = {0x00, 0x90, 0x0c, 0xba, 0xcd, 0x88};
+
+    if(at_op == AT_SET_OP) {
+        /* channel assign command */
+        if(cmdline[0] == '\"') {
+            tok = strchr(cmdline, '\"');
+            tok2 = strrchr(cmdline, '\"');
+            channel = atoi(&(cmdline[1]));
+
+            if(tok != NULL &&
+                    tok2 != NULL &&
+                    tok != tok2 &&
+                    LGE_RFT_OpenDUT() == true &&
+                    LGE_RFT_Channel(channel) == true) {
+                wlanChannel = channel;
+
+                /* configure address for RX */
+                LGE_RFT_TxDestAddress((unsigned char *)aucRxMacAddr);
+
+                /* start RX test */
+                LGE_RFT_RxStart(NULL);
+
+                sprintf(response, "\r\n\"%d\"\r\nOK\r\n\r\n", wlanChannel);
+                ret = 0;
+            }
+        }
+        /* action command */
+        else {
+            switch(cmdline[0]) {
+            case '0': /* RX Test Stop */
+                LGE_RFT_RxStop(NULL);
+
+                sprintf(response, "\r\nRX Test Stop\r\nOK\r\n\r\n");
+                ret = 0;
+                break;
+
+            case '1': /* return number of packet received */
+                wlan_generate_rx_result(RX_RESULT_TYPE_PACKET_PER, response, cmdline);
+                ret = 0;
+                break;
+
+            case '2': /* clear numbers */
+                LGE_RFT_RxStop(NULL);
+                LGE_RFT_RxStart(NULL);
+
+                sprintf(response, "\r\nClear OK\r\n\r\n");
+                ret = 0;
+                break;
+
+            case '3':
+                wlan_generate_rx_result(RX_RESULT_TYPE_RSSI, response, cmdline);
+                ret = 0;
+                break;
+
+            default:
+                break;
+            }
+        }
+    }
+    /* query for WLAN RX */
+    else if(at_op == AT_NONE_OP
+            || at_op == AT_READ_OP
+            || at_op == AT_TEST_OP
+            || at_op == AT_ACTION_OP) {
+        wlan_generate_rx_result(RX_RESULT_TYPE_CHANNEL_PER, response, cmdline);
+        ret = 0;
+    }
+
+    if(ret != 0) {
+        /* generate error message */
+        sprintf(response, "\r\n\r\nNOT IMPLEMENTED\r\n\r\n");
+    }
+
+    return ret;
+}
+
+
+int
+wlan_tx_test_cmd_handler(
+    char* cmdline,
+    ATOP_t at_op,
+    char* response
+    )
+{
+    int ret = -1;
+    char *tok, *tok2;
+    char *ptr = NULL;
+    int channel = -1;
+
+    if(at_op == AT_SET_OP) {
+        /* channel assign command */
+        if(cmdline[0] == '\"') {
+            tok = strchr(cmdline, '\"');
+            tok2 = strrchr(cmdline, '\"');
+            channel = atoi(&(cmdline[1]));
+
+            if(tok != NULL &&
+                    tok2 != NULL &&
+                    tok != tok2 &&
+                    LGE_RFT_OpenDUT() == true &&
+                    LGE_RFT_Channel(channel) == true &&
+                    LGE_RFT_TxBurstFrames(RF_AT_PARAM_TX_PKTCNT_UNLIMITED) == true) {
+                wlanChannel = channel;
+
+                /* start TX test */
+                LGE_RFT_TxStart();
+
+                sprintf(response, "\r\n\"%d\"\r\nOK\r\n\r\n", wlanChannel);
+                ret = 0;
+            }
+        }
+        /* action command */
+        else {
+            switch(cmdline[0]) {
+            case '0': /* TX Test Stop */
+                LGE_RFT_TxStop();
+
+                sprintf(response, "\r\nTX Test Stop\r\nOK\r\n\r\n");
+                ret = 0;
+                break;
+
+            default:
+                break;
+            }
+        }
+    }
+    /* query for WLAN TX */
+    else if(at_op == AT_NONE_OP 
+            || at_op == AT_READ_OP
+            || at_op == AT_TEST_OP
+            || at_op == AT_ACTION_OP) {
+        sprintf(response, "\r\n\"%d\"\r\nOK\r\n\r\n", wlanChannel);
+        ret = 0;
+    }
+
+    if(ret != 0) {
+        /* generate error message */
+        sprintf(response, "\r\n\r\nNOT IMPLEMENTED\r\n\r\n");
+    }
+
+    return ret;
+}
+
+
+int
+wlan_macaddr_rw_cmd_handler(
+    char* cmdline,
+    ATOP_t at_op,
+    char* response
+    )
+{
+    int i, valid_num;
+    unsigned char macAddr[6];
+    int ret = -1;
+
+    if(at_op == AT_SET_OP) {
+        /* Assign Commands */
+        /* zeroize */
+        memset(macAddr, 0, sizeof(char) * 6);
+
+        for(i = 0, valid_num = 0 ; valid_num < 12 && cmdline[i] != '\0' ; i++) {
+            switch(cmdline[i]) {
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8':
+            case '9':
+            case '0':
+                if(valid_num % 2 == 0) {
+                    macAddr[valid_num / 2] |= ((cmdline[i] - '0') << 4);
+                }
+                else {
+                    macAddr[valid_num / 2] |= cmdline[i] - '0';
+                }
+
+                valid_num++;
+                break;
+
+            case 'A':
+            case 'B':
+            case 'C':
+            case 'D':
+            case 'E':
+            case 'F':
+                if(valid_num % 2 == 0) {
+                    macAddr[valid_num / 2] |= ((10 + cmdline[i] - 'A') << 4);
+                }
+                else {
+                    macAddr[valid_num / 2] |= (10 + cmdline[i] - 'A');
+                }
+
+                valid_num++;
+                break;
+
+            case 'a':
+            case 'b':
+            case 'c':
+            case 'd':
+            case 'e':
+            case 'f':
+                if(valid_num % 2 == 0) {
+                    macAddr[valid_num / 2] |= ((10 + cmdline[i] - 'a') << 4);
+                }
+                else {
+                    macAddr[valid_num / 2] |= (10 + cmdline[i] - 'a');
+                }
+
+                valid_num++;
+                break;
+
+            case ',':
+                continue;
+
+            default:
+                break;
+            }
+        }
+
+        if(LGE_RFT_SetMACAddr(macAddr) == true) {
+            sprintf(response, "\r\nMAC ADDRESS WRITE OK\r\n\r\n");
+        }
+        else {
+            sprintf(response, "\r\nMAC ADDRESS WRITE FAILURE\r\n\r\n");
+        }
+
+        ret = 0;
+    }
+    /* query for WLAN MAC */
+    else if(at_op == AT_NONE_OP
+            || at_op == AT_READ_OP
+            || at_op == AT_ACTION_OP) {
+        if(LGE_RFT_GetMACAddr(macAddr) == true) {
+            sprintf(response,
+                    "\r\n%02X%02X%02X%02X%02X%02X\r\nOK\r\n\r\n", 
+                    macAddr[0], 
+                    macAddr[1],
+                    macAddr[2],
+                    macAddr[3],
+                    macAddr[4],
+                    macAddr[5]);
+        }
+        else {
+            sprintf(response, "\r\nPlease try again (not ready)\r\n\r\n");
+        }
+
+        ret = 0;
+    }
+    else if(at_op == AT_TEST_OP) {
+        sprintf(response, "\r\nATMAC=[MAC ADDR : 12 HEX nibble => 6 Bytes]\r\nOK\r\n\r\n");
+        ret = 0;
+    }
+
+    if(ret != 0) {
+        /* generate error message */
+        sprintf(response, "\r\n\r\nNOT IMPLEMENTED\r\n\r\n");
+    }
+
+    return ret;
+}
+
+
+int
+wlan_macaddr_check_cmd_handler(
+    char* cmdline,
+    ATOP_t at_op,
+    char* response
+    )
+{
+    const uint8_t aucZeroMacAddr[] = NULL_MAC_ADDR;
+    unsigned char macAddr[6];
+    int retval;
+
+    if(LGE_RFT_GetMACAddr(macAddr) == true) {
+        if(IS_BMCAST_MAC_ADDR(macAddr) || EQUAL_MAC_ADDR(aucZeroMacAddr, macAddr)) {
+            retval = 1;
+        }
+        else {
+            retval = 0;
+        }
+    }
+    else {
+        retval = 1;
+    }
+
+    /* generate response string */
+    sprintf(response, "\r\n%d\r\nOK\r\n\r\n", retval);
+
+    return retval;
+}
+

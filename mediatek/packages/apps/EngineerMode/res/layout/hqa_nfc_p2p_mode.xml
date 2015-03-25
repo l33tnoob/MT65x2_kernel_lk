@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/hqa_p2pmode_cb_typea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/hqa_nfc_typea" />
+
+        <RadioGroup
+            android:id="@+id/hqa_p2pmode_rg_typea"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/hqa_p2pmode_rb_typea_106"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_106" />
+
+            <RadioButton
+                android:id="@+id/hqa_p2pmode_rb_typea_212"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_212" />
+
+            <RadioButton
+                android:id="@+id/hqa_p2pmode_rb_typea_424"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_424" />
+
+            <RadioButton
+                android:id="@+id/hqa_p2pmode_rb_typea_848"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_848" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="3pt"
+            android:layout_marginRight="5pt"
+            android:background="#FF909090" >
+        </View>
+
+        <CheckBox
+            android:id="@+id/hqa_p2pmode_cb_typef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/hqa_nfc_typef" />
+
+        <RadioGroup
+            android:id="@+id/hqa_p2pmode_rg_typef"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/hqa_p2pmode_rb_typef_212"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_212" />
+
+            <RadioButton
+                android:id="@+id/hqa_p2pmode_rb_typef_424"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_424" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="3pt"
+            android:layout_marginRight="5pt"
+            android:background="#FF909090" >
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/hqa_p2pmode_cb_passive_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_passive_mode" />
+
+            <CheckBox
+                android:id="@+id/hqa_p2pmode_cb_active_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_active_mode" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/hqa_p2pmode_cb_initiator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_initiator" />
+
+            <CheckBox
+                android:id="@+id/hqa_p2pmode_cb_target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_target" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/hqa_p2pmode_cb_disable_card_emul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/hqa_nfc_disable_card_emul" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="3pt"
+            android:layout_marginRight="5pt"
+            android:background="#FF909090" >
+        </View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp" >
+
+            <Button
+                android:id="@+id/hqa_p2pmode_btn_select_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_select_all"
+                android:width="100dp" />
+
+            <Button
+                android:id="@+id/hqa_p2pmode_btn_clear_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:text="@string/hqa_nfc_clear_all"
+                android:width="100dp" />
+
+            <Button
+                android:id="@+id/hqa_p2pmode_btn_start_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="210dp"
+                android:text="@string/hqa_nfc_start"
+                android:width="100dp" />
+
+            <Button
+                android:id="@+id/hqa_p2pmode_btn_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/hqa_nfc_return"
+                android:width="100dp" />
+
+            <Button
+                android:id="@+id/hqa_p2pmode_btn_run_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/hqa_nfc_run_back"
+                android:width="205dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

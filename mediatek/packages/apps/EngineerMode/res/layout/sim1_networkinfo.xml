@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/View_2G"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_Cell"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_Cell" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_Ch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_Ch" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_Ctrl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_Ctrl" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_RACH"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_RACH" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_LAI"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_LAI" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_Radio"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_Radio" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_Meas"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_Meas" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_Ca"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_Ca" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_Control"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_Control" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_SI2Q"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_SI2Q" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_MI"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_MI" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_BLK"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_BLK" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_TBF"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_TBF" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_GPRS"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_GPRS" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_xGCsceEMNeighCellSStatusInd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_xGCsceEMNeighCellSStatusInd" >
+                </CheckBox>
+            </LinearLayout>
+        </ScrollView>
+        <!-- FOR 3G -->
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/View_3G_COMMON"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_3GMmEmInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_3GMmEmInfo" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_3GTcmMmiEmInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_3GTcmMmiEmInfo" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_3GCsceEMServCellSStatusInd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_3GCsceEMServCellSStatusInd" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_3GCsceEmInfoMultiPlmn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_3GCsceEmInfoMultiPlmn" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_3GMemeEmPeriodicBlerReportInd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_3GMemeEmPeriodicBlerReportInd" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_3GUrrUmtsSrncId"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_3GUrrUmtsSrncId" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_3GMemeEmInfoHServCellInd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_3GMemeEmInfoHServCellInd" >
+                </CheckBox>
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/View_3G_FDD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_3GMemeEmInfoUmtsCellStatus"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_3GMemeEmInfoUmtsCellStatus" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_3GSlceEmPsDataRateStatusInd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_3GSlceEmPsDataRateStatusInd" >
+                </CheckBox>
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/View_3G_TDD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_3GHandoverSequenceIndStuct"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_3GHandoverSequenceIndStuct" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_3GUl2EmAdmPoolStatusIndStruct"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_3GUl2EmAdmPoolStatusIndStruct" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_3GUl2EmPsDataRateStatusIndStruct"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_3GUl2EmPsDataRateStatusIndStruct" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_3Gul2EmHsdschReconfigStatusIndStruct"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_3Gul2EmHsdschReconfigStatusIndStruct" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_3GUl2EmUrlcEventStatusIndStruct"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_3GUl2EmUrlcEventStatusIndStruct" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/NetworkInfo_3GUl2EmPeriodicBlerReportInd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DualTalkNetworkInfo_3GUl2EmPeriodicBlerReportInd" >
+                </CheckBox>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</ScrollView>

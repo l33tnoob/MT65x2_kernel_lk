@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binmonkey Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type monkey_exec , exec_type, file_type;
+type monkey ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive monkey;
+init_daemon_domain(monkey)
+
+
+# 20131122 Add Set Property Rule
+allow monkey  property_type:property_service set;

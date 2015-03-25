@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<Preference
+		android:key="add_device"
+		android:title="@string/bt_prxm_device_mgmt_add_device"
+	/>
+
+	<PreferenceCategory 
+		android:key="registered_device_list"
+		android:title="@string/bt_prxm_device_mgmt_device_list"
+		android:orderingFromXml="false"
+	/>
+
+</PreferenceScreen>

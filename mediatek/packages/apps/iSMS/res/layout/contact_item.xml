@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_contact_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:paddingRight="10dp"
+    >
+ 
+       <TextView  
+             android:id="@+id/listview_divider"  
+             android:layout_width="fill_parent"  
+             android:layout_height="1dp"  
+             android:visibility="gone"  
+             android:background="#ffe0e0e0"/> 
+             
+       <TextView  
+             android:id="@+id/alpha"  
+             android:layout_width="fill_parent"  
+             android:layout_height="30sp"  
+             android:paddingLeft="10dip"        
+             android:visibility="gone"  
+             android:textSize="14sp"
+             android:textStyle="bold"
+             android:textColor="#ff33b5e5"
+             android:background="@drawable/list_section_divider_holo_custom"/>  
+             
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+            android:layout_below="@id/alpha"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cb_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="false"
+            android:focusable="false" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="0dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_contact_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18sp"
+                    android:textColor="#222222"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/tv_contact_phonenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#878787"
+                    android:singleLine="true"
+                    android:ellipsize="middle" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/isms" />
+
+            <ImageView
+                android:id="@+id/qcb_avatar"
+                style="?android:attr/quickContactBadgeStyleWindowSmall"
+                android:src="@drawable/ic_contact_picture" />
+    </LinearLayout>
+
+</RelativeLayout>

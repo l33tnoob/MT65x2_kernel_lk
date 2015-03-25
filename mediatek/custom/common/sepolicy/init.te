@@ -1,0 +1,726 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type init, domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# init switches to init domain (via init.rc).
+permissive init;
+# init is unconfined.
+# unconfined_domain(init)
+tmpfs_domain(init)
+relabelto_domain(init)
+# add a rule to handle unlabelled mounts
+allow init unlabeled:filesystem mount;
+
+allow init {fs_type dev_type file_type}:dir_file_class_set relabelto;
+allow init kernel:security load_policy;
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# init switches to init domain (via init.rc).
+permissive init;
+# init is unconfined.
+# unconfined_domain(init)
+# tmpfs_domain(init)
+relabelto_domain(init)
+# add a rule to handle unlabelled mounts
+allow init unlabeled:filesystem mount;
+
+allow init {fs_type dev_type file_type}:dir_file_class_set relabelto;
+allow init kernel:security load_policy;
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive init;
+# 20131024 Sanity_01
+allow init self:netlink_kobject_uevent_socket read;
+allow init system_data_file:dir { write remove_name add_name };
+allow init system_data_file:file { write rename create unlink open };
+allow init tmpfs:chr_file write;
+
+
+# 20131024 CTS_01
+allow init block_device:blk_file { read open };
+allow init device:chr_file { read ioctl open };
+allow init graphics_device:chr_file { read ioctl open };
+allow init kernel:security { compute_create compute_av };
+allow init logwrapper:unix_dgram_socket create;
+allow init misc_sd_device:chr_file { read open };
+allow init property_socket:sock_file { create setattr };
+allow init rild:unix_stream_socket create;
+allow init selinuxfs:dir search;
+allow init selinuxfs:file { read write open };
+allow init socket_device:dir { write add_name };
+allow init system_data_file:dir { read open };
+allow init tmpfs:file unlink;
+
+
+# 20131024 Sanity_03
+allow init ccci_fsd:process sigkill;
+allow init logwrapper:process sigkill;
+allow init logwrapper:unix_dgram_socket bind;
+allow init mnld:unix_stream_socket { bind create };
+allow init mnld_socket:sock_file { create setattr };
+allow init rild:process sigkill;
+allow init rild:unix_stream_socket bind;
+allow init rild_atci_socket:sock_file { create unlink setattr };
+allow init rild_mtk_modem_socket:sock_file { create unlink setattr };
+allow init self:capability { fowner chown fsetid kill setgid };
+allow init socket_device:dir remove_name;
+allow init wpa_wlan0_socket:sock_file { create unlink setattr };
+
+
+# 20131024 Sanity_04
+allow init self:capability setuid;
+
+
+# 20131024 CTS_02
+allow init atci_serv_fw_socket:sock_file { create setattr };
+allow init atci_service:unix_stream_socket { bind create };
+allow init atci_service_socket:sock_file { create setattr };
+allow init dumpstate:unix_stream_socket { bind create };
+allow init dumpstate_socket:sock_file { create setattr };
+allow init input_device:dir { write add_name };
+allow init installd:unix_stream_socket { bind create };
+allow init installd_socket:sock_file { create setattr };
+allow init keystore:unix_stream_socket { bind create };
+allow init rild4_socket:sock_file create;
+allow init rild_debug_socket:sock_file { create setattr };
+allow init rild_mtk_ut_2_socket:sock_file { create setattr };
+allow init rild_mtk_ut_socket:sock_file { create setattr };
+allow init rild_oem_socket:sock_file { create setattr };
+allow init self:capability mknod;
+allow init soc_vt_stk_socket:sock_file { create setattr };
+allow init soc_vt_tcv_socket:sock_file { create setattr };
+
+
+# 20131028 CTS_03
+allow init input_device:chr_file { create setattr };
+allow init rild2_socket:sock_file { create setattr };
+allow init rild3_socket:sock_file { create setattr };
+allow init rild4_socket:sock_file setattr;
+allow init rild_socket:sock_file { create setattr };
+
+
+# 20131028 CTS_04
+allow init ccci_device:chr_file { create setattr };
+allow init debugfs:file getattr;
+allow init input_device:chr_file unlink;
+allow init input_device:dir remove_name;
+allow init self:capability { net_raw sys_resource };
+allow init self:udp_socket { create ioctl };
+
+
+# 20131028 Sanity_05
+allow init gsm0710muxd:process sigkill;
+allow init rild2_socket:sock_file unlink;
+allow init rild3_socket:sock_file unlink;
+allow init rild4_socket:sock_file unlink;
+allow init rild_debug_socket:sock_file unlink;
+allow init rild_mtk_ut_2_socket:sock_file unlink;
+allow init rild_mtk_ut_socket:sock_file unlink;
+allow init rild_oem_socket:sock_file unlink;
+allow init rild_socket:sock_file unlink;
+
+
+# 20131028 Sanity_06
+allow init mdlogger:process sigkill;
+
+
+# 20131028 CTS_05
+allow init debugfs:file setattr;
+allow init dumpstate_socket:sock_file unlink;
+allow init sysfs:dir setattr;
+allow init ttyGS0_device:chr_file getattr;
+allow init ttyGS1_device:chr_file getattr;
+allow init vold:unix_stream_socket { bind create };
+allow init vold_socket:sock_file { create setattr };
+
+
+# 20131028 CTS_06
+allow init debuggerd_exec:lnk_file read;
+allow init dfo_socket:sock_file { create setattr };
+allow init featured:unix_stream_socket { bind create };
+allow init mdns_socket:sock_file { create setattr };
+allow init netd:unix_stream_socket { bind create };
+
+
+# 20131028 CTS_07
+allow init dnsproxyd_socket:sock_file { create setattr };
+allow init netd_socket:sock_file { create setattr };
+allow init netdiag:unix_stream_socket { bind create };
+allow init netdiag_socket:sock_file create;
+
+
+# 20131028 CTS_08
+allow init hald:unix_stream_socket { bind create };
+allow init hald_socket:sock_file { create setattr };
+allow init netdiag_socket:sock_file setattr;
+allow init vtservice:unix_dgram_socket create;
+allow init zygote:unix_stream_socket { bind create };
+allow init zygote_socket:sock_file { create setattr };
+
+
+# 20131028 CTS_09
+allow init agpsd_socket:sock_file { create setattr };
+allow init keystore_socket:sock_file { create setattr };
+allow init mtk_agpsd:unix_stream_socket { bind create };
+allow init mtkbt:unix_dgram_socket create;
+allow init soc_vt_svc_socket:sock_file { create setattr };
+allow init vtservice:unix_dgram_socket bind;
+
+
+# 20131028 CTS_10
+allow init mnld:process sigkill;
+allow init mnld_socket:sock_file unlink;
+allow init self:netlink_selinux_socket { bind create };
+allow init selinuxfs:dir { read open };
+allow init selinuxfs:file getattr;
+
+
+# 20131028 CTS_12
+allow init bt_a2dp_stream_socket:sock_file { create setattr };
+allow init bt_int_adp_socket:sock_file { create setattr };
+allow init mtkbt:unix_dgram_socket bind;
+
+
+# 20131028 CTS_13
+allow init adbd:process { siginh rlimitinh transition noatsecure };
+allow init adbd:unix_stream_socket { bind create };
+allow init adbd_socket:sock_file { create setattr };
+allow init console_device:chr_file { read write open };
+allow init debugfs:dir setattr;
+allow init proc:file write;
+allow init rootfs:file { execute execute_no_trans };
+allow init self:capability dac_override;
+
+
+# 20131028 CTS_14
+allow init sysfs:file write;
+
+
+# 20131028 CTS_15
+allow init console_device:chr_file ioctl;
+
+
+# 20131028 CTS_16
+allow init device:dir { write remove_name };
+allow init wmtdetect_device:chr_file unlink;
+
+
+# 20131028 CTS_20
+allow init sysfs:file setattr;
+
+
+# 20131028 CTS_21
+allow init cgroup:dir { create add_name };
+
+
+# 20131028 CTS_22
+allow init loop_device:blk_file setattr;
+
+
+# 20131119 FeatureSQC
+allow init adb_keys_file:dir { create getattr };
+allow init adbd:process { siginh rlimitinh transition sigkill noatsecure };
+allow init adbd:unix_stream_socket { bind create };
+allow init adbd_socket:sock_file { create unlink setattr };
+allow init block_device:blk_file { create unlink setattr };
+allow init block_device:dir { write search remove_name create getattr add_name };
+allow init block_device:lnk_file { create unlink };
+allow init bt_a2dp_stream_socket:sock_file { create setattr };
+allow init bt_int_adp_socket:sock_file { create setattr };
+allow init cgroup:dir add_name;
+allow init debugfs:dir setattr;
+allow init device:chr_file create;
+allow init device:dir { write add_name };
+allow init dontpanic_data_file:dir { create getattr setattr };
+allow init hald:unix_stream_socket { bind create };
+allow init hald_socket:sock_file { create setattr };
+allow init ipohctl_socket:sock_file { create unlink setattr };
+allow init keystore_socket:sock_file create;
+allow init logwrapper:unix_stream_socket { bind create };
+allow init mobile_log_d:process sigkill;
+allow init mtkbt:unix_dgram_socket { bind create };
+allow init netdiag_socket:sock_file setattr;
+allow init platform_app:process sigkill;
+allow init release_app:process sigkill;
+allow init rootfs:file { execute execute_no_trans };
+allow init sdcardd:process sigkill;
+allow init self:capability dac_override;
+allow init selinuxfs:dir { read open };
+allow init selinuxfs:file getattr;
+allow init shared_app:process sigkill;
+allow init sysfs:file { write setattr };
+allow init system_data_file:dir { create setattr };
+allow init tmpfs:dir { write add_name setattr };
+allow init usb_device:chr_file { create unlink setattr };
+allow init usb_device:dir { write remove_name add_name };
+allow init vtservice:unix_dgram_socket create;
+allow init zygote:unix_stream_socket { bind create };
+allow init zygote_socket:sock_file { create setattr };
+
+
+# 20131121 Sanity_QA
+allow init adb_device:chr_file { read write open };
+allow init device:chr_file write;
+allow init devpts:chr_file { read write open };
+allow init sdcard_internal:file { read open };
+
+
+
+# 20131122 Add Set Property Rule
+allow init property_type:property_service set;
+
+# 20131213 KKMR1_CTS_01
+allow init node:tcp_socket node_bind;
+allow init port:tcp_socket name_bind;
+allow init property_socket:sock_file write;
+allow init sdcard_internal:dir { read remove_name create open search };
+allow init sdcard_internal:file { getattr unlink };
+allow init self:tcp_socket { bind create setopt };
+allow init shell_data_file:dir { write add_name };
+allow init shell_data_file:file { write create open setattr };
+
+
+# 20131213 KKMR1_CQ_01
+allow init M4U_device_device:chr_file { read ioctl open };
+allow init adb_device:chr_file { read write open };
+allow init adb_keys_file:dir setattr;
+allow init adb_keys_file:file { read getattr open };
+allow init aed_device:chr_file ioctl;
+allow init als_ps_device:chr_file { read ioctl open };
+allow init app_data_file:dir { write remove_name add_name };
+allow init app_data_file:file write;
+allow init app_data_file:lnk_file { getattr unlink create };
+allow init asec_image_file:dir { read open };
+allow init ashmem_device:chr_file execute;
+allow init audio_device:chr_file { read write ioctl open };
+allow init block_device:blk_file ioctl;
+allow init bluetooth:binder transfer;
+allow init bluetooth:dir search;
+allow init bluetooth:file { read open };
+allow init bluetooth:process { dyntransition sigkill };
+allow init bluetooth:unix_dgram_socket sendto;
+allow init bluetooth_data_file:dir { getattr setattr };
+allow init bt_a2dp_stream_socket:sock_file unlink;
+allow init camera_isp_device:chr_file { read write ioctl open };
+allow init ccci_device:chr_file ioctl;
+allow init dalvikcache_data_file:file { write setattr };
+allow init debugfs:dir mounton;
+allow init debugfs:filesystem mount;
+allow init device:chr_file { write unlink };
+allow init device:lnk_file create;
+allow init devmap_device:chr_file { read ioctl open };
+allow init devpts:chr_file { write ioctl setattr read open getattr };
+allow init dhcp6c:process sigkill;
+allow init dnsproxyd_socket:sock_file unlink;
+allow init drm_data_file:file { read getattr open };
+allow init drmserver:process sigkill;
+allow init dumpstate:fd use;
+allow init dumpstate:unix_stream_socket { read write };
+allow init ebc_device:chr_file { read write open };
+allow init fuse_device:chr_file { read write open };
+allow init graphics_device:chr_file write;
+allow init gsensor_device:chr_file { read ioctl open };
+allow init gyroscope_device:chr_file { read ioctl open };
+allow init healthd:dir { read search open getattr };
+allow init healthd:file { read getattr open };
+allow init healthd:lnk_file { read getattr };
+allow init installd_socket:sock_file unlink;
+allow init ipod:process sigkill;
+allow init ipod:unix_stream_socket { bind create };
+allow init kd_camera_hw_device:chr_file { read write ioctl open };
+allow init kernel:dir { read search open getattr };
+allow init kernel:file { read getattr open };
+allow init kernel:lnk_file { read getattr };
+allow init kernel:process setsched;
+allow init kernel:security check_context;
+allow init kernel:system syslog_mod;
+allow init keystore:process sigkill;
+allow init keystore_data_file:dir { getattr setattr };
+allow init keystore_socket:sock_file unlink;
+allow init labeledfs:filesystem remount;
+allow init loop_device:blk_file { read write open };
+allow init mdns_socket:sock_file unlink;
+allow init mdnsd:process sigkill;
+allow init mdnsd:unix_stream_socket { bind create };
+allow init mdnsd_socket:sock_file { create unlink setattr };
+allow init media_app:binder transfer;
+allow init media_app:dir { search getattr };
+allow init media_app:fd use;
+allow init media_app:file { read open };
+allow init media_app:process { dyntransition sigkill };
+allow init mediaserver:binder call;
+allow init mediaserver:fd use;
+allow init mediaserver:process sigkill;
+allow init memsicd3416x:process sigkill;
+allow init misc_sd_device:chr_file ioctl;
+allow init msensor_device:chr_file { read write ioctl open };
+allow init mtkfb_vsync_device:chr_file { read ioctl open };
+allow init mtp:process sigkill;
+allow init mtp:unix_stream_socket { bind create };
+allow init mtpd_socket:sock_file { create unlink setattr };
+allow init netd:process sigkill;
+allow init netd_socket:sock_file unlink;
+allow init nfc:binder call;
+allow init nfc:dir { search getattr };
+allow init nfc:fd use;
+allow init nfc:file { read open };
+allow init nfc:process { dyntransition sigkill };
+allow init node:tcp_socket node_bind;
+allow init node:udp_socket node_bind;
+allow init platform_app:binder { transfer call };
+allow init platform_app:dir { read search open getattr };
+allow init platform_app:fd use;
+allow init platform_app:file { read getattr open };
+allow init platform_app:lnk_file getattr;
+allow init platform_app:process { dyntransition setpgid };
+allow init platform_app_data_file:dir { write getattr setattr remove_name create add_name };
+allow init platform_app_data_file:file { write getattr setattr read create unlink open };
+allow init port:tcp_socket { name_bind name_connect };
+allow init port:udp_socket name_bind;
+allow init ppp:process sigkill;
+allow init property_socket:sock_file write;
+allow init racoon_exec:file { read getattr open execute execute_no_trans };
+allow init racoon_socket:sock_file { create unlink setattr };
+allow init radio:binder { transfer call };
+allow init radio:dir { search getattr };
+allow init radio:file { read open };
+allow init radio:process { dyntransition sigkill };
+allow init radio_data_file:dir { write remove_name getattr add_name };
+allow init radio_data_file:file { write getattr setattr read create unlink open };
+allow init release_app:binder { transfer call };
+allow init release_app:dir { read search open getattr };
+allow init release_app:fd use;
+allow init release_app:file { read getattr open };
+allow init release_app:lnk_file { read getattr };
+allow init release_app:process { dyntransition setpgid };
+allow init rootfs:dir { write create add_name setattr mounton };
+allow init rootfs:lnk_file create;
+allow init screencap:process signal;
+allow init sdcard_external:dir { rename rmdir read remove_name create open };
+allow init sdcard_external:file { rename write getattr read open append };
+allow init sdcard_external:filesystem mount;
+allow init sdcard_internal:dir { search setattr read create write rmdir remove_name open add_name };
+allow init sdcard_internal:file { rename setattr read lock create write getattr unlink open append };
+allow init sdcard_internal:filesystem mount;
+allow init self:binder { transfer call };
+allow init self:capability { net_admin sys_boot sys_ptrace ipc_lock setpcap };
+allow init self:capability2 syslog;
+allow init self:key_socket { write read create setopt };
+allow init self:netlink_kobject_uevent_socket { bind create setopt getopt };
+allow init self:netlink_nflog_socket create;
+allow init self:netlink_route_socket { setopt nlmsg_write read bind create nlmsg_read write getattr getopt };
+allow init self:netlink_socket { read write };
+allow init self:packet_socket { read bind ioctl create setopt };
+allow init self:process ptrace;
+allow init self:rawip_socket { getopt create setopt };
+allow init self:tcp_socket { write setopt read bind create listen connect };
+allow init self:udp_socket { write getattr setopt getopt read bind connect };
+allow init servicemanager:binder { transfer call };
+allow init shared_app:binder transfer;
+allow init shared_app:dir { search getattr };
+allow init shared_app:fd use;
+allow init shared_app:file { read open };
+allow init shared_app:process dyntransition;
+allow init shell_data_file:dir { write remove_name search add_name setattr };
+allow init shell_data_file:file { write getattr setattr read create unlink open };
+allow init surfaceflinger:process sigkill;
+allow init sysfs_wake_lock:file { read write getattr open setattr };
+allow init system_app:binder transfer;
+allow init system_app:dir { search getattr };
+allow init system_app:fd use;
+allow init system_app:file { read open };
+allow init system_app:process { dyntransition sigkill };
+allow init system_data_file:dir rmdir;
+allow init system_data_file:fifo_file { read open };
+allow init system_data_file:file setattr;
+allow init system_file:dir { write remove_name add_name };
+allow init system_file:file { write create unlink execute_no_trans setattr };
+allow init system_server:binder { transfer call };
+allow init system_server:dir { read search open getattr };
+allow init system_server:file { read getattr open };
+allow init system_server:lnk_file { read getattr };
+allow init system_server:process { dyntransition getpgid sigkill };
+allow init system_server:unix_dgram_socket sendto;
+allow init systemkeys_data_file:dir { getattr setattr };
+allow init tmpfs:dir mounton;
+allow init tmpfs:lnk_file read;
+allow init unlabeled:fifo_file { read open };
+allow init unlabeled:filesystem getattr;
+allow init unlabeled:sock_file unlink;
+allow init untrusted_app:dir { read open };
+allow init untrusted_app:fd use;
+allow init untrusted_app:file getattr;
+allow init untrusted_app:lnk_file { read getattr };
+allow init untrusted_app:process { dyntransition sigkill };
+allow init vold_socket:sock_file unlink;
+allow init vpn_data_file:dir { write getattr add_name setattr };
+allow init vpn_data_file:file { write create open };
+allow init wifi_data_file:dir getattr;
+allow init zygote:process sigkill;
+allow init zygote_socket:sock_file unlink;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow init BGW_exec:file execute_no_trans;
+allow init GoogleOtaBinder:binder call;
+allow init GoogleOtaBinder:process sigkill;
+allow init M4U_device_device:chr_file { read ioctl open };
+allow init MTK_SMI_device:chr_file { read ioctl open };
+allow init adb_keys_file:file { read getattr open };
+allow init aed_device:chr_file { read write ioctl open };
+allow init aee_aed:process sigchld;
+allow init aee_aed:unix_stream_socket connectto;
+allow init aee_aed_exec:file execute_no_trans;
+allow init aee_dumpstate_exec:file execute_no_trans;
+allow init als_ps_device:chr_file { read ioctl open };
+allow init am_exec:file execute_no_trans;
+allow init asec_apk_file:dir create;
+allow init atci_serv_fw_socket:sock_file unlink;
+allow init atci_service:process sigkill;
+allow init atcid:process sigkill;
+allow init audio_device:chr_file { read write ioctl open };
+allow init backup_data_file:dir getattr;
+allow init block_device:blk_file { getattr ioctl };
+allow init bluetooth:binder transfer;
+allow init bluetooth:dir { getattr search };
+allow init bluetooth:file { read open };
+allow init bluetooth:process { dyntransition sigkill };
+allow init bluetooth:unix_dgram_socket sendto;
+allow init bluetooth_data_file:dir { read search open getattr setattr };
+allow init bootanimation_exec:file execute_no_trans;
+allow init bt_int_adp_socket:sock_file { write unlink };
+allow init cache_file:dir create;
+allow init camera_isp_device:chr_file { read write ioctl open };
+allow init camera_pipemgr_device:chr_file ioctl;
+allow init camera_sysram_device:chr_file ioctl;
+allow init ccci_device:chr_file { read write ioctl open };
+allow init ccci_fsd_exec:file execute_no_trans;
+allow init cgroup:filesystem mount;
+allow init debugfs:file read;
+allow init device:chr_file { getattr unlink };
+allow init device:file getattr;
+allow init device:lnk_file { create unlink };
+allow init devmap_device:chr_file { read ioctl open };
+allow init devpts:chr_file { getattr ioctl setattr };
+allow init dhcp_data_file:dir { write remove_name search add_name };
+allow init dhcp_data_file:file { write getattr read lock create unlink open };
+allow init dhcp_exec:file execute_no_trans;
+allow init dhcp_system_file:dir { read search open };
+allow init dhcp_system_file:file { read execute open getattr execute_no_trans };
+allow init dm_agent_binder:process sigkill;
+allow init dnsmasq:process sigkill;
+allow init dnsproxyd_socket:sock_file write;
+allow init download_file:dir getattr;
+allow init drmserver:binder call;
+allow init dumpstate:unix_stream_socket { getattr accept listen };
+allow init dumpstate_exec:file execute_no_trans;
+allow init dumpsys_exec:file execute_no_trans;
+allow init em_svr:process sigkill;
+allow init featured:file read;
+allow init full_device:chr_file { create setattr };
+allow init fuse_device:chr_file { read write open };
+allow init gps_device:chr_file { read write open };
+allow init graphics_device:chr_file write;
+allow init gsensor_device:chr_file open;
+allow init gsm0710muxd_exec:file execute_no_trans;
+allow init gyroscope_device:chr_file { read open };
+allow init healthd:binder call;
+allow init healthd:dir { read search open getattr };
+allow init healthd:file { read getattr open };
+allow init hostapd:process sigkill;
+allow init init_tmpfs:file { write create open };
+allow init input_device:dir search;
+allow init ip6tables_exec:file execute_no_trans;
+allow init ip_exec:file execute_no_trans;
+allow init ipod:unix_stream_socket { bind create };
+allow init iptables_exec:file execute_no_trans;
+allow init kd_camera_hw_device:chr_file ioctl;
+allow init kernel:dir { read search open getattr };
+allow init kernel:file { read getattr open };
+allow init kernel:lnk_file { read getattr };
+allow init kernel:process setsched;
+allow init kernel:security check_context;
+allow init kernel:system { module_request syslog_read syslog_mod };
+allow init keystore:binder call;
+allow init keystore:file { read getattr open };
+allow init kmem_device:chr_file { create setattr };
+allow init kmsg_device:chr_file { create setattr };
+allow init labeledfs:filesystem remount;
+allow init librank_exec:file execute_no_trans;
+allow init logcat_exec:file execute_no_trans;
+allow init logwrapper:unix_dgram_socket { read write };
+allow init logwrapper_exec:file execute_no_trans;
+allow init mdlogger_exec:file execute_no_trans;
+allow init mdns_socket:sock_file unlink;
+allow init mdnsd:unix_stream_socket { read write accept listen };
+allow init mdnsd_exec:file execute_no_trans;
+allow init media_app:binder transfer;
+allow init media_app:dir { search getattr };
+allow init media_app:fd use;
+allow init media_app:file { read open };
+allow init media_app:process { dyntransition sigkill setpgid };
+allow init mediaserver:dir { read search open getattr };
+allow init mediaserver:file { read getattr open };
+allow init mediaserver:process { sigstop sigkill ptrace };
+allow init mediaserver_exec:file execute_no_trans;
+allow init misc_sd_device:chr_file ioctl;
+allow init mnld:unix_stream_socket { read write accept listen };
+allow init mnld_exec:file execute_no_trans;
+allow init msensor_device:chr_file { read write ioctl open };
+allow init mtk_agpsd:unix_dgram_socket sendto;
+allow init mtk_disp_device:chr_file ioctl;
+allow init mtk_sched_device:chr_file { read write ioctl open };
+allow init mtkbt:process sigkill;
+allow init mtkfb_vsync_device:chr_file { read ioctl open };
+allow init mtp:unix_stream_socket { read accept shutdown listen };
+allow init mtp_exec:file execute_no_trans;
+allow init netcfg_exec:file execute_no_trans;
+allow init netd:file { read getattr open };
+allow init netd:process sigkill;
+allow init netd:unix_stream_socket { connectto write read getopt accept listen };
+allow init netd_exec:file execute_no_trans;
+allow init nfc:binder { transfer call };
+allow init nfc:dir { search getattr };
+allow init nfc:fd use;
+allow init nfc:file { read open };
+allow init nfc:process { dyntransition sigkill };
+allow init node:tcp_socket node_bind;
+allow init node:udp_socket node_bind;
+allow init null_device:chr_file { create setattr };
+allow init nvram_agent_binder:binder call;
+allow init nvram_agent_binder:dir { read search open };
+allow init nvram_agent_binder:process sigkill;
+allow init ping_exec:file { read execute open };
+allow init platform_app:binder { transfer call };
+allow init platform_app:dir { search getattr };
+allow init platform_app:fd use;
+allow init platform_app:file { read getattr open };
+allow init platform_app:process { dyntransition setpgid };
+allow init platform_app_data_file:dir { read search open getattr setattr };
+allow init platform_app_data_file:file { read getattr open };
+allow init port:tcp_socket { name_bind name_connect };
+allow init port:udp_socket name_bind;
+allow init property_socket:sock_file write;
+allow init qtaguid_proc:file { read write getattr open };
+allow init radio:binder { transfer call };
+allow init radio:dir { search getattr };
+allow init radio:file { read open };
+allow init radio:process { dyntransition sigkill };
+allow init radio_data_file:dir setattr;
+allow init radio_data_file:file { read open };
+allow init release_app:binder { transfer call };
+allow init release_app:dir { search getattr };
+allow init release_app:fd use;
+allow init release_app:file { read getattr open };
+allow init release_app:process { dyntransition setpgid };
+allow init resmon:process sigkill;
+allow init rild:unix_stream_socket { write read listen accept getopt };
+allow init rild_exec:file execute_no_trans;
+allow init rootfs:dir { write create add_name setattr mounton };
+allow init rootfs:lnk_file create;
+allow init sdcard_external:dir { rename read create write rmdir remove_name open add_name };
+allow init sdcard_external:file { rename setattr read create write getattr unlink open append };
+allow init sdcard_external:filesystem { mount unmount };
+allow init sdcard_internal:dir { search setattr read create write rmdir remove_name open add_name };
+allow init sdcard_internal:file { rename setattr lock create write getattr unlink append };
+allow init sdcard_internal:filesystem { mount unmount };
+allow init sdcardd_exec:file execute_no_trans;
+allow init self:binder { transfer call };
+allow init self:capability { sys_ptrace ipc_lock net_admin sys_time net_bind_service setpcap };
+allow init self:capability2 syslog;
+allow init self:netlink_kobject_uevent_socket { getopt create setopt };
+allow init self:netlink_nflog_socket { bind create setopt getopt };
+allow init self:netlink_route_socket { setopt nlmsg_write read bind create nlmsg_read write getattr getopt };
+allow init self:netlink_socket { write getattr setopt read bind create };
+allow init self:packet_socket { write getopt create setopt };
+allow init self:process ptrace;
+allow init self:rawip_socket { write getopt create read setopt };
+allow init self:tcp_socket { setopt read bind create accept write getattr connect getopt listen };
+allow init self:udp_socket { write getattr setopt getopt read bind connect };
+allow init servicemanager:binder { transfer call };
+allow init servicemanager:dir { read search open };
+allow init servicemanager:file { read open };
+allow init shared_app:binder { transfer call };
+allow init shared_app:dir { search getattr };
+allow init shared_app:fd use;
+allow init shared_app:file { read getattr open };
+allow init shared_app:process { dyntransition setpgid };
+allow init shell_data_file:dir { write create add_name setattr getattr };
+allow init shell_data_file:file { write getattr setattr read create open };
+allow init shell_exec:file execute_no_trans;
+allow init stpgps_device:chr_file { read write ioctl open };
+allow init surfaceflinger:binder { transfer call };
+allow init surfaceflinger:fd use;
+allow init surfaceflinger:process sigkill;
+allow init sysctl_socket:sock_file { create setattr };
+allow init sysfs:dir mounton;
+allow init sysfs_wake_lock:file { read write open };
+allow init system_app:binder transfer;
+allow init system_app:dir { read search open getattr };
+allow init system_app:fd use;
+allow init system_app:file { read getattr open };
+allow init system_app:process { dyntransition sigkill setpgid };
+allow init system_data_file:file { setattr append };
+allow init system_data_file:sock_file { write create unlink setattr };
+allow init system_file:dir create;
+allow init system_ndebug_socket:sock_file write;
+allow init system_server:binder { transfer call };
+allow init system_server:dir { read search open getattr };
+allow init system_server:file { read getattr open };
+allow init system_server:lnk_file { read getattr };
+allow init system_server:process { dyntransition getpgid };
+allow init system_server:unix_stream_socket connectto;
+allow init system_wpa_socket:sock_file write;
+allow init thermal:dir { read open };
+allow init thermal:file { read open };
+allow init thermal:process sigkill;
+allow init thermald:process sigkill;
+allow init tmpfs:chr_file getattr;
+allow init tmpfs:dir { create mounton };
+allow init tmpfs:filesystem mount;
+allow init toolbox_exec:file execute_no_trans;
+allow init ueventd:dir { read search open };
+allow init ueventd:file { read getattr open };
+allow init ueventd:lnk_file read;
+allow init ueventd:process { siginh rlimitinh transition noatsecure };
+allow init unlabeled:fifo_file { read open };
+allow init unlabeled:filesystem getattr;
+allow init unlabeled:sock_file write;
+allow init untrusted_app:binder { transfer call };
+allow init untrusted_app:dir { getattr search };
+allow init untrusted_app:file { read open };
+allow init untrusted_app:process { sigstop dyntransition sigkill ptrace };
+allow init vdc_exec:file execute_no_trans;
+allow init vold:dir { read search open };
+allow init vold:file { read getattr open };
+allow init vold:unix_stream_socket connectto;
+allow init vold_socket:sock_file write;
+allow init vtservice:dir search;
+allow init vtservice:file { read getattr open };
+allow init wifi_data_file:dir { write remove_name rmdir setattr add_name };
+allow init wifi_data_file:file { read write getattr open };
+allow init wifi_data_file:sock_file { create unlink setattr };
+allow init wpa:process sigkill;
+allow init wpa:unix_dgram_socket { bind create };
+allow init wpa_exec:file execute_no_trans;
+allow init xlog_exec:file execute_no_trans;
+allow init zero_device:chr_file { create setattr };
+allow init zygote:process sigkill;
+allow init zygote:unix_stream_socket { read write getattr listen };
+allow init zygote_exec:file execute_no_trans;
+allow init zygote_socket:sock_file unlink;
+

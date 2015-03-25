@@ -1,0 +1,24 @@
+#Filter the log output from irrelevant modules
+DisabledModules = 10
+DebugLevel = 40
+
+LogFile=/data/DxDrm/Logs/cln
+
+LogcatLogs=True
+
+#log the HTTP communication
+#JavaHTTPLog=true
+
+PlayReadyLog = /data/DxDrm/Logs/
+
+#Provisioning data
+SecureDBPath = /data/DxDrm/DxSecureDB
+NVSPath = /data/DxDrm/NVS
+DeviceKeyPath = /data/DxDrm/DxDeviceKey
+#PlayReadyStorePath = /data/DxDrm/DxPlayReadyDB.hds
+mbcba=False
+AutoProvisionPlayReady = PlayReady, /data/DxDrm/Credentials/PlayReady/
+
+#GoogleFrameworkPluginName = newPluginName
+
+#SupportAllMimeTypes=true

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/pkgInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/imageViewAndroid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/android" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="0dp"
+                android:orientation="vertical" 
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textAndroidNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textVerNum"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        android:textStyle="bold" 
+                        android:singleLine="true"
+                        android:layout_weight="1" 
+                        android:ellipsize="marquee"/>
+
+                    <TextView
+                        android:id="@+id/textPkgSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="5dp"
+                        android:textColor="#bbbbbb"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <ProgressBar
+                    android:id="@+id/downloaingProBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:paddingEnd="15dip"
+                    android:progress="0" />
+
+                <LinearLayout
+                    android:id="@+id/downloaingRatio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" >
+
+                    <View
+                        android:id="@+id/gapView1"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/downloadingRatio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textAskForDLOta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ask_for_download_ota"
+            android:textColor="#bbbbbb"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textWarningForDLOta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/warning_download_ota"
+            android:textColor="#bbbbbb"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/checkWifiOnly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifi_only_check"
+            android:textColor="#bbbbbb"
+            android:textSize="14sp" 
+            android:layout_marginBottom="2dp"/>
+
+        <include layout="@layout/release_note" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cw_test_times"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3pt"
+            android:text="@string/cw_test_times_tx" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/cw_test_times_content"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:numeric="integer" >
+        </EditText>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cw_test_interval"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3pt"
+            android:text="@string/cw_test_interval_tx" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/cw_test_interval_content"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:numeric="integer" >
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3pt"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cw_test_start_btn"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:text="@string/cw_test_start" >
+        </Button>
+
+        <Button
+            android:id="@+id/cw_test_stop_btn"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:text="@string/cw_test_stop" >
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cw_test_current_times"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3pt"
+            android:text="@string/cw_test_cur_times_tx" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/cw_test_current_times_content"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content" >
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cw_test_cnr_id"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3pt"
+            android:text="@string/cw_test_cnr" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/cw_test_cnr_content"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cw_test_clock_drift_id"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3pt"
+            android:text="@string/cw_test_clock_drift" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/cw_test_clock_drift_content"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content" >
+        </TextView>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cw_test_max_cnr_id"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3pt"
+            android:text="@string/cw_test_max_cnr" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/cw_test_max_cnr_content"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content" >
+        </TextView>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cw_test_min_cnr_id"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3pt"
+            android:text="@string/cw_test_min_cnr" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/cw_test_min_cnr_content"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content" >
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

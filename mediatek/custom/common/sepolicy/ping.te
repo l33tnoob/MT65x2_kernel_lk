@@ -1,0 +1,33 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type ping, domain;
+type ping_exec, file_type, exec_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+permissive ping;
+domain_auto_trans(shell, ping_exec, ping)
+# unconfined_domain(ping)
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+permissive ping;
+# domain_auto_trans(shell, ping_exec, ping)
+# unconfined_domain(ping)
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive ping;
+
+# 20131122 Add Set Property Rule
+allow ping property_type:property_service set;

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:addStatesFromChildren="true"
+    android:gravity="bottom"
+    android:background="@drawable/edit_text_holo_light"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_attach_thumbnail"
+            android:layout_width="38dip"
+            android:layout_height="38dip"
+            android:layout_marginRight="3dip"
+            android:padding="3dip"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_attach_thumbnail_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:src="@drawable/ic_input_field_image_delete"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/et_embedded_text_editor"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1.0"
+        android:autoText="true"
+        android:background="@null"
+        android:capitalize="sentences"
+        android:hint="@string/STR_NMS_INPUT_HINT"
+        android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+        android:maxLength="2048"
+        android:maxLines="6"
+        android:minHeight="@dimen/bottom_panel_min_height"
+        android:nextFocusRight="@+id/send_button"
+        android:textColor="@android:color/black"
+        android:textCursorDrawable="@null"
+        android:textSize="16sp" />
+
+</LinearLayout>

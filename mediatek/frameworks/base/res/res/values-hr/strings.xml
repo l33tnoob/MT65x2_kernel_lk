@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/strings.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+--><resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="keyguard_pinword_enter_pinword_code">Unesite PIN za otključavanje</string>
+        
+    <string name="badPin2">Stari PIN2 koji ste unijeli nije točan.</string>
+    <string name="badPuk2">PUK2 koji ste unijeli nije točan.</string>
+    
+    <string name="checkPwdLen">Provjerite sadrži li vaša lozinka 4 do 8 znamenki.</string>
+    
+    <string name="pinNotEnabled">Omogućite PIN prije nego ga promijenite.</string>
+    
+    <string name="puk1Blocked">PIN je blokiran.</string>
+    
+    <string name="puk2Blocked">PIN2 je blokiran.</string>
+
+    
+    <string name="fdnFailMmi">Greška u FDN provjeri.</string>
+    
+    <string name="callBarringFailMmi">Greška u zabrani poziva.</string>
+    <string name="Pin2Mmi">Promjena PIN2</string>
+    <string name="PukMmi">Deblokiraj PIN</string>
+    <string name="Puk2Mmi">Deblokiraj PIN2</string>
+    
+    <string name="serviceProvisioned">Usluga je rezervirana.</string>
+
+    
+    <string name="serviceUnknown">Problem s vezom ili nevažeći MMI kôd.</string>
+    <string name="cfServiceNotForwarded">Nije proslijeđeno</string>
+    
+    <string name="permlab_receiveCbSms">primanje CB SMS-a</string>
+    
+    <string name="permdesc_receiveCbSms">Dozvoljava aplikaciji primanje i obradu CB SMS poruka. Zlonamjerne aplikacije mogu pratiti vaše poruke ili ih brisati bez njihova prethodnog prikaza.</string>
+
+    <string name="keyguard_password_enter_puk_code">Unesi PUK kod</string>
+
+    <string name="keyguard_password_wrong_puk_code">Netočan PUK kod!</string>
+
+    <string name="keyguard_password_enter_new_pin_code">Unesite novi PIN</string>
+
+    <string name="keyguard_password_Confirm_pin_code">"Potvrdite novi PIN"</string>
+
+    <string name="invalidPuk">Unesite 8 znamenki.</string>
+
+    <string name="sim_permanently_locked">Netočan PUK kod unesen je više od 10 puta, SIM kartica je trajno zaključana.</string>
+
+    <string name="pin_length_indicate">(4-8 znamenki)</string>
+
+    <string name="puk_length_indicate">(8 znamenki)</string>
+
+    <string name="one_retry_left">Ostao je 1 pokušaj</string>
+
+    <string name="retries_left">Ostaje:<xliff:g id="number">%d</xliff:g></string>
+    
+    <string name="invalid_imei">Neispravan IMEI</string>
+    <string name="same_imei">Isti IMEI</string>
+
+    
+    <string name="oper_long_46000">CMCC</string>
+    <string name="oper_long_46001">CU</string>
+    <string name="oper_long_46003">China Telecom</string>    
+    <string name="oper_long_46601">Far EasTone</string>
+    <string name="oper_long_46692">Chunghwa Telecom</string>
+    <string name="oper_long_46697">Taiwan Mobile</string>
+    <string name="oper_long_99998">Android1</string>
+    <string name="oper_long_99999">Android</string>
+
+    
+    <string name="oper_short_46000">CMCC</string>
+    <string name="oper_short_46001">CU-GSM</string>
+    <string name="oper_short_46003">China Telecom</string>    
+    <string name="oper_short_46601">FET</string>
+    <string name="oper_short_46692">Chunghwa</string>
+    <string name="oper_short_46697">TWN</string>
+    <string name="oper_short_99997">AD1</string>
+    <string name="oper_short_99999">AD</string>
+
+    
+    <string name="unable_launch_the_ap">Ne može se pokrenuti aplikacija.</string>
+    
+    <string name="keyguard_password_enter_sim1_pin_code">Unesite SIM 1 PIN kod</string>
+
+    
+    <string name="RestrictedChangedTitle_SIM1">Promijenjen je ograničeni pristup za SIM1</string>
+    <string name="RestrictedChangedTitle_SIM2">Promijenjen je ograničeni pristup za SIM2</string>
+    
+    <string name="keyguard_password_enter_sim2_pin_code">Unesite PIN za  SIM 2</string>
+
+
+    <string name="keyguard_password_wrong_sim1_pin_code">Netočan PIN za SIM 1!</string>
+
+    <string name="keyguard_password_wrong_sim2_pin_code">Netočan PIN za SIM 2!</string>
+
+    <string name="keyguard_password_enter_sim1_puk_code">Unesite PUK za  SIM 1</string>
+
+    <string name="keyguard_password_enter_sim2_puk_code">Unesite PUK za  SIM 2</string>
+
+    
+    <string name="lockscreen_sim1_puk_locked_message">SIM kartica 1 zaključana je PUK-om.</string>
+
+    
+    <string name="lockscreen_sim2_puk_locked_message">SIM kartica 2 zaključana je PUK-om.</string>
+
+    <string name="choose_bootup_mode">Odaberite SIM karticu</string>
+    <string name="choose_gprs_mode">Odaberite podatkovnu vezu</string>
+    <string name="sim_close">SIM kartica zatvorena</string>
+    <string name="lockscreen_sim_puk_locked_message_short">Zaključano PUK-om</string>
+    <string name="lockscreen_sim_locked_message_short">SIM kartica je zaključana</string>
+    <string name="simlock_slot_locked_message">Utor je trajno zaključan</string>
+    <string name="simlock_entersimmelock">Unesite SIM ME blokadu</string>
+    <string name="slot_id">Utor <xliff:g id="number">%d</xliff:g>:</string>
+    <string name="new_simcard">Nova SIM kartica</string>
+    <string name="lockscreen_missing_sim_dialog_message">"SIM kartica je isključena. Provjerite je li vaša SIM kartica priključena na odgovarajući način."</string>
+
+    
+    <string name="permlab_receiveDmRegisterSms">primaj DM Register SMS</string>
+    
+    <string name="permdesc_receiveDmRegisterSms">Dozvoljava aplikaciji primanje i obradu DM Register SMS poruka. Bilo koja aplikacija, osim DM aplikacije, ne smije ovo koristiti</string>
+
+    <string name="lockscreen_password_error">Greška lozinke, pokušajte ponovno</string>
+  	  <string name="lockscreen_pinword_error">Greška PIN-a, pokušajte ponovno</string>
+
+    <string name="music_no_artist">Nepoznato ime izvođača</string>
+    <string name="music_play">Reproduciraj</string>
+    <string name="music_pause">Stanka</string>
+    <string name="music_library">Biblioteka</string>
+    <string name="music_no_songs">Nema pjesama</string>
+    
+    
+    <string name="serviceClassVideo">Video zapis</string>
+  <string name="aerr_application_lowmem">Ponestaje mjesta na unutarnjoj pohrani, aplikacija je zaustavljena. Oslobodite nešto mjesta i pokušajte ponovno.</string>
+  
+  <string name="aerr_process_lowmem">Ponestaje mjesta na unutarnjoj pohrani, postupak je zaustavljen. Oslobodite nešto mjesta i pokušajte ponovno.</string>
+  <string name="free_memory_btn">"Oslobodite prostor"</string>
+  <string name="free_memory_text">"Malo memorije. Oslobodite memoriju."</string>		
+<string name="mem_low_title">Oslobodite memoriju</string>
+   
+   <string name="unread_message">%d nepročitana poruka</string>
+   <string name="unread_messages">%d nepročitanih poruka</string>
+   <string name="missed_call">%d propušteni poziv</string>
+   <string name="missed_calls">%d propuštenih poziva</string>
+  
+  <string name="no_favorite_contacts">Nema omiljenih kontakata</string>
+  <string name="contact_widget_loading">Učitava se\u2026</string>
+   
+   <string name="volume_fm">FM glasnoća</string>
+   
+   <string name="volume_matv">Glasnoća mobilne TV</string>
+
+   
+   <string name="media_controller_buffering">"Spremanje u međuspremnik %d%%..."</string>
+   <string name="media_controller_live">"Uživo"</string>
+   <string name="media_controller_playing">"Reprodukcija"</string>
+   <string name="media_controller_connecting">"Povezivanje..."</string>
+   <string name="media_controller_weak_signal">"slab signal"</string>
+   <string name="VideoView_error_text_bad_file">"Neispravna datoteka, ovaj videozapis ne može se reproducirati."</string>
+   <string name="VideoView_error_text_cannot_connect_to_server">"Ne mogu se povezati s poslužiteljem."</string>
+   <string name="VideoView_error_text_type_not_supported">"Ta vrsta medijske datoteke nije podržana."</string>
+   <string name="VideoView_error_text_drm_not_supported">"DRM zaštićeno, ovaj video zapis ne može se reproducirati."</string>
+   <string name="VideoView_error_text_invalid_connection">"Neispravna veza. (403 Zabranjeno)"</string>
+   
+
+    
+   
+
+    
+    <string name="redo">Ponovi</string>
+    <string name="undo">Poništi</string>
+    <string name="undoAll">Poništi sve</string>
+    <string name="new_sim">Nova SIM kartica</string>
+
+    
+    <string name="edit">Uredi</string>
+    <string name="delete">Izbriši</string>
+
+    
+    <string name="sim_card_changed_dialog_title">SIM kartica promijenjena</string>
+    <string name="change_setting_for_onenewsim">Otkrivena je nova SIM kartica. Označena je kao</string>
+    <string name="change_setting_for_twonewsim">Otkrivena je nova SIM kartica. One su označene kao</string>
+    <string name="sim_card_removed">SIM kartica uklonjena.</string>
+    <string name="sim_card_swapped">SIM kartica zamijenjena.</string>
+    <string name="change_settings">Promijeni</string>
+    <string name="keyguard_voice_call">Glasovni poziv:</string>
+    <string name="keyguard_sms">Slanje poruka:</string>
+    <string name="keyguard_data">Podatkovna veza:</string>
+    <string name="keyguard_alwaysask">Uvijek pitaj</string>
+    <string name="keyguard_data_none">Isključeno</string>
+    <string name="keyguard_sim_auto">Automatski</string>
+    <string name="dismiss">Odbaci</string>
+    <string name="keyguard_wrong_code_input">Pogrešan kod.</string>
+    <string name="keyguard_code_length_prompt">Unesite 4-8 znamenki.</string>
+    <string name="keyguard_code_donnot_mismatch">Ne podudara se.</string>
+    <string name="for_text">za</string>
+    <string name="keyguard_internal_call">Interni poziv</string>
+    <string name="keyguard_not_set">Nije postavljeno</string>
+    <string name="network_searching">Traži se nova mreža</string>
+    <string name="searching_simcard">Otkrivanje...</string>
+    <string name="keyguard_close">Zatvori</string>
+    <string name="for_first_simcard">Za prvu SIM</string>
+    <string name="for_second_simcard">Za drugu SIM</string>
+    <string name="for_third_simcard">Za treću SIM</string>
+    <string name="for_fourth_simcard">Za četvrtu SIM</string>
+    <string name="default_sim_setting_prompt">Zadane postavke sada su:</string>
+    <string name="keyguard_video_call">Video poziv:</string>
+    <string name="dm_prompt">Terminal je već zaključan</string>
+    <string name="keyguard_domestic_zone_name">Peking</string>
+     
+
+    
+    <string name="invalid_sim_title">Neispravna SIM kartica</string>
+    
+    
+    <string name="invalid_sim_message">UIM/SIM kartica nije prepoznata.</string>
+     
+         
+    <string name="lockscreen_pin_too_many_failed_attempts_dialog_message">Netočno ste unijeli PIN <xliff:g id="number">%d</xliff:g> puta. \n\nPokušajte ponovno za <xliff:g id="number">%d</xliff:g> sekundi.</string>
+    
+    <string name="lockscreen_password_too_many_failed_attempts_dialog_message">Netočno ste unijeli lozinku <xliff:g id="number">%d</xliff:g> puta. \n\nPokušajte ponovno za <xliff:g id="number">%d</xliff:g> sekundi.</string>
+
+   
+    
+    
+    
+    
+       
+    <string name="low_internal_storage_view_title">Ponestaje mjesta na unutarnjoj pohrani</string>
+    <string name="deleteMails">Izbriši poruke pošte</string>
+    <string name="criticallowtitle">Nema mjesta</string>
+    <string name="criticallowmessage">Oslobodite nešto mjesta ili neke aplikacije i funkcije sustava neće ispravno raditi.</string> 
+
+    <string name="nq_sms_filter_title">SMS filtar</string>
+    <string name="nq_sms_filter_message">Ova poruka može se naplatiti. Želite li nastaviti?</string>
+    <string name="nq_sms_filter_yes">Da</string>
+    <string name="nq_sms_filter_no">Ne</string>
+    
+    
+    <string name="ext_media_checking_notification_title_sd2">Pripremite SD karticu</string>
+    <string name="ext_media_checking_notification_title_otg">Pripremite USB pohranu</string>
+    <string name="ext_media_badremoval_notification_title_otg">"Memorija USB nenadano uklonjena"</string>
+    <string name="ext_media_nomedia_notification_title_otg">"Memorija USB uklonjena"</string>
+    <string name="ext_media_badremoval_notification_message_otg">"Isključite USB memoriju na siguran način prije uklanjanja kako biste izbjegli gubitak podataka."</string>
+    <string name="ext_media_nomedia_notification_message_otg">"Memorija USB uklonjena. Umetnite novi medij."</string>
+    <string name="ext_media_unmountable_notification_title_otg">"Oštećena USB memorija"</string>
+    <string name="ext_media_unmountable_notification_message_otg">USB pohrana je oštećena. Morat ćete je ponovo formatirati.</string>
+    <string name="ext_media_nofs_notification_title_otg">"Prazna memorija USB"</string>
+    <string name="ext_media_nofs_notification_message_otg">USB pohrana prazna je ili ima nepodržani sustav datoteka.</string>
+    <string name="ext_media_safe_unmount_notification_title_otg">"Sigurno uklanjanje memorije USB"</string>
+    <string name="ext_media_safe_unmount_notification_message_otg">"USB memoriju možete sigurno ukloniti."</string>
+    
+    
+    <string name="drm_protection_status">Stanje zaštite:</string>
+    <string name="drm_can_forward">Može se proslijediti.</string>
+    <string name="drm_can_not_forward">Ne može se proslijediti.</string>
+    <string name="drm_no_limitation">Nema ograničenja.</string>
+    <string name="drm_no_license">Nema dostupne DRM licence.</string>
+    <string name="drm_begin">Početak:</string>
+    <string name="drm_end">Kraj:</string>
+    <string name="drm_use_left">Preostali broj:</string>
+    <string name="drm_protectioninfo_renew">Obnovi</string>
+    <string name="drm_protectioninfo_title">Podaci o zaštiti</string>
+    <string name="drm_licenseacquisition_title">Pribavljanje DRM licence</string>
+    <string name="drm_licenseacquisition_message">%1$s nema dostupnu DRM licencu. Pritisnite gumb "Obnovi" za pribavljanje DRM licence.</string>
+    <string name="drm_toast_license_expired">DRM licenca je istekla.</string>
+    <string name="drm_forwardforbidden_title">Zabranjeno prosljeđivanje</string>
+    <string name="drm_forwardforbidden_message">Neke zaštićene datoteke ne mogu se proslijediti.</string>
+    <string name="drm_license_install_success">Uspjela je instalacija DRM licence.</string>
+    <string name="drm_license_install_fail">Nije uspjela instalacija DRM licence.</string>
+    <string name="drm_secure_timer_title">Neispravan DRM sigurni sat</string>
+    <string name="drm_secure_timer_message">Ne možete koristiti DRM zaštićene datoteke. Uvjerite se da je dostupna podatkovna veza.</string>
+    <string name="drm_consume_title">Koristi DRM prava</string>
+    <string name="drm_consume_message">Vašom radnjom koristit će se DRM prava.</string>
+    <string name="drm_forward_forbidden">Jedna ili više zaštićenih datoteka ne može se proslijediti.</string>
+    
+    
+
+    <string name="recip_unsupport_operator">RecipientsView ne podržava radnje sa znakovima, koristite programsku traku pri postupanju s primateljima.</string>
+    <string name="recip_unsupport_selection">Žao nam je, ne možete pomaknuti znak za umetanje na početak ako ima primatelja u RecipientsView.</string>
+    
+    <string name="virtual_sim_on_slot1">Virtualni SIM 1 UKLJUČEN</string>
+    <string name="virtual_sim_on_slot2">Virtualni SIM 2 UKLJUČEN</string>
+    <string name="virtual_sim_on_slot3">Virtualni SIM 3 UKLJUČEN</string>
+    <string name="virtual_sim_on_slot4">Virtualni SIM 4 UKLJUČEN</string>
+    <string name="virtual_sim_on">Virtualni SIM UKLJUČEN</string>
+    
+    <string name="sim_missing_slot1">Utor 1: Nema otkrivene SIM kartice</string>
+    <string name="sim_missing_slot2">Utor 2: Nema otkrivene SIM kartice</string>
+    <string name="sim_missing_slot3">Utor 3: Nema otkrivene SIM kartice</string>
+    <string name="sim_missing_slot4">Utor 4: Nema otkrivene SIM kartice</string>
+    <string name="sim_missing">Nema otkrivene SIM kartice</string>
+    <string name="sim_missing_detail">Provjerite je li SIM kartica spremna</string>
+    <string name="sim_missing_slot1_card">Utor 1: Nema otkrivene kartice</string>
+    <string name="sim_missing_slot2_card">Utor 2: Nema otkrivene kartice</string>
+    <string name="sim_missing_card">Nema otkrivene kartice</string>
+    <string name="sim_missing_detail_card">Provjerite je li kartica spremna</string>
+    
+    <string name="wap_push_setting_noti_ticker">Prihvatiti ili ne prihvatiti uslugu automatskog slanja?</string>
+    <string name="wap_push_setting_noti_title">Prihvatiti ili ne prihvatiti uslugu automatskog slanja?</string>
+    <string name="wap_push_setting_noti_text">Dodirnite za odabir</string>
+    <string name="url_dialog_choice_title">Poruke</string>
+    <string name="url_dialog_choice_message">Time će se otvoriti preglednik, nastaviti?</string>
+
+    
+    
+    <string name="deleteApp">Deinstaliraj aplikacije</string>    
+    <string name="deleteMail">Arhiviraj poruke pošte i oslobodi mjesto za pohranu</string>    
+
+    <string name="storage_withsd">U pohrani telefona nema dovoljno mjesta. Oslobodite nešto mjesta za pohranu ili u postavkama promijenite zadani disk za upis.</string>
+    <string name="storage_withoutsd">U pohrani telefona nema dovoljno mjesta. Oslobodite nešto mjesta za pohranu ili umetnite SD karticu.</string>
+    <string name="storage_sd">Na SD kartici nema dovoljno mjesta. Oslobodite nešto mjesta za pohranu ili u postavkama promijenite zadani disk za upis.</string>   
+    <string name="usb_ums_notification_title">Priključeno kao USB pohrana</string>
+    
+    <string name="usb_charging_notification_title">Samo USB punjenje</string>
+    
+    
+    
+    <string name="gps_time_sync_fail_str">Nije uspjelo dohvaćanje GPS vremena</string>
+
+    
+    <string name="calibration_data">Još nema kalibracije. Preuzmite podatke o kalibraciji! U suprotnom uređaj neće kampirati na mreži.[MTK interni korisnik]</string>
+
+        
+    <string name="invalid_card">Neispravna kartica</string>
+        
+    <string name="RejectCauseTitle">Uzrok odbijanja mreže</string>
+        
+    <string name="MMRejectCause2">SIM nije rezerviran MM #2</string>
+        
+    <string name="MMRejectCause3">SIM nije dozvoljen MM #3</string>
+        
+    <string name="MMRejectCause5">Poziv nije uspio MM #5</string>
+        
+    <string name="MMRejectCause6">Telefon nije dozvoljen MM #6</string>    
+    
+    <string name="MMRejectCause13">Samo SOS/hitni pozivi</string>
+
+    
+    <string name="find_previous">Prethodno</string>
+    <string name="find_next">Sljedeće</string>
+
+    <string name="tethered_notification_message_for_hotspot"><xliff:g id="connected">%1$d</xliff:g> spojeno, <xliff:g id="blocked">%2$d</xliff:g> blokirano</string>
+    <string name="tethered_notification_message_bandwidth_set">Postavljena je širina pojasa</string>
+    
+    <string name="usbint_notification_title">Aktivan je USB internet</string>
+
+    
+    <string name="default_wallpaper_name">Zadano</string>
+
+
+    
+    
+    
+    
+    <string name="keyguard_accessibility_alarm_unlock">Alarm za isključivanje</string>
+    
+    <string name="alarm_alert_dismiss_text">Odbaci</string>
+    
+    <string name="description_direction_right">Povucite udesno za odbacivanje</string>
+    
+    <string name="alarm_alert_snooze_text">Odgodi alarm</string>
+    
+    <string name="description_direction_left">Povucite ulijevo za odgodu alarma</string>
+    
+    <string name="description_direction_up">Povucite gore za odbacivanje</string>
+    
+    <string name="description_direction_down">Povucite dolje za odgodu alarma</string>
+    <string name="every_day">Svaki dan</string>
+    <string name="never">"Nikad"</string>
+    <string name="day_concat">", "</string>
+    
+    <string name="default_label">"Alarm"</string>
+    
+    <string name="dismiss_power_on">Odbaci i uključi</string>   
+    
+    <string name="dismiss_power_off">Odbaci i isključi</string>
+    
+
+    
+    <string name="voice_unlock_service_error">Greška glasovne usluge!</string>
+    <string name="voice_unlock_password_wrong">Žao nam je, ne možemo prepoznati vaš glas.</string>
+    <string name="voice_unlock_noisy">Prebučno je, ne čujemo vas jasno.</string>
+    <string name="voice_unlock_weak">Ne možemo čuti vaš glas.</string>
+    <string name="voice_unlock_media_playing">Otključavanje glasa je onemogućeno za vrijeme reprodukcije medija.</string>
+    <string name="voiceunlock_multiple_failures">Prekoračen je maksimalan broj pokušaja otključavanja glasom</string>
+    
+    
+    <string name="voiceui_notify_string">Možete govorom</string>
+    <string name="voiceui_control_poweroff_alarm">upravljati alarmom za isključivanje.</string>
+    <string name="voiceui_comma">,</string>
+    <string name="voiceui_quota_start">"</string>
+    <string name="voiceui_quota_end">"</string>
+    <string name="voiceui_or">ili</string>
+
+    
+    <string name="dialog_color_picker">Odabir boje</string>
+    <string name="press_color_to_apply">Pritisnite na Boja za primjenu</string>
+    <string name="color_picker_select">-&gt;</string>
+
+    
+
+    
+    <string name="wifi_display_bt_hdmi_off_wfd_on">HDMI će se isključiti kada uključite bežični zaslon. Želite li nastaviti?</string> 
+    
+    <string name="wifi_display_wfd_off_hdmi_on">Bežični zaslon će se isključiti kada uključite HDMI. Želite li nastaviti?</string> 
+    
+    <string name="wifi_display_wfd_off_bt_on">Bežični zaslon će se isključiti kada uključite Bluetooth. Želite li nastaviti?</string> 
+    
+    <string name="wifi_display_wifi_p2p_disconnect_wfd_connect">Trenutna Wi-Fi izravna veza će se prekinuti kada se spojite s uređajem za bežični prikaz. Želite li nastaviti?</string>
+    
+    <string name="wifi_display_unstable_connection">Nestabilna veza</string>
+    
+    <string name="wifi_display_connection_is_not_steady">Trenutna veza bežičnog zaslona nije stabilna.</string>
+    
+    
+    <string name="wifi_display_unstable_suggestion">Trenutna veza bežičnog zaslona nije stabilna, pokušajte se približiti vašem uređaju za prikaz.</string>
+    
+    <string name="wifi_display_reconnect">Ponovno spajanje</string> 
+    
+    <string name="wifi_display_disconnect_then_reconnect">Odspajanje bežičnog zaslona. Želite li ponovno spajanje?</string> 
+    
+    <string name="wifi_display_disconnected">Bežični zaslon je odspojen.</string>
+     
+    <string name="wifi_wps_failed_overlap">Otkrivena je druga WPS sesija. Pokušajte ponovno za nekoliko minuta.</string>
+    
+    <string name="wifi_display_wfd_and_wifi_are_turned_on">Uključeni su bežični  zaslon i Wi-Fi.</string>
+    
+    <string name="wifi_display_sound_path_reminder">Ne reproducira se multimedijski zvuk u vašem naglavnom kompletu.</string>  
+    
+    <string name="wifi_display_change_resolution_reminder">Promjena razlučivosti automatski će ponovno spojiti bežični zaslon.</string>  
+    
+    <string name="wifi_display_do_not_remind_again">Nemojte podsjećati ponovno.</string>
+
+    
+    <string name="sdcard_ready_title">SD kartica je spremna</string>
+    <string name="sdcard_select_default_path">Želite li promijeniti zadani disk za upis?</string>
+    <string name="sdcard_default_path_change">Zadani disk za upis je promijenjen.</string>
+    <string name="usb_storage_ready_title">Vanjski USB prostor za pohranu je spreman</string>
+    
+
+    
+    <string name="pin_pass">Kod je prihvaćen</string>
+    <string name="puk_pass">PIN je deblokiran</string>
+    
+    
+    <string name="headset_pin_recognition">Vaše slušalice nisu kompatibilne s telefonom. Probajte s drugima</string>
+    
+    
+    <string name="msensor_toast_text">Smetnje kompasa. Pomičite telefon u obliku broja 8 kako bi se ponovno kalibrirao kompas.</string> 
+
+
+    
+    <string name="sd_accessing_swtich_user_title">Promijeniti korisnika?</string>
+    <string name="sd_accessing_swtich_user_message">Svi nespremljeni podaci u vlasničkom računu će biti izgubljeni ili oštećeni.</string>
+
+    
+    <string name="usb_autorun_cdrom_notification_title">Spojen kao cdrom za automatsko pokretanje</string>
+    
+    
+    <string name="ct_net_name">"CTNET"</string>
+    <string name="ct_wap_name">"CTWAP"</string>    
+
+    
+    <string name="hdmi_notification_title">HDMI kabel je priključen</string>
+    <string name="hdmi_notification_content">Kliknite za konfiguraciju HDMI-a</string>
+    <string name="hdmi_hdvideo_toast">HDMI ne može reproducirati 4K video, veza će se prekinuti.</string>
+    
+    
+
+    
+    <string name="safe_media_volume_warning_title">Upozorenje</string>
+    
+    <string name="aerr_application_lowstorage">Ponestaje mjesta na unutarnjoj pohrani, aplikacija je zaustavljena. Oslobodite nešto mjesta i pokušajte ponovno.</string>
+    <string name="aerr_process_lowstorage">Ponestaje mjesta na unutarnjoj pohrani, postupak je zaustavljen. Oslobodite nešto mjesta i pokušajte ponovno.</string>
+    <string name="low_storage_warning_message">Oslobodite nešto mjesta ili neke aplikacije i funkcije sustava neće ispravno raditi.</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	
+
+	
+	<string name="bt_opp_notification_in_coming_ticker">"Żądanie pliku przychodzącego"</string>
+	<string name="bt_opp_notification_in_coming_title">"Żądanie pliku przychodzącego (od: %1$s)"</string>
+	<string name="bt_opp_notification_in_coming_message">"Wybierz, aby zaakceptować plik przychodzący."</string>
+	<string name="bt_opp_notification_in_ongoing_ticker">"Plik przychodzący"</string>
+	<string name="bt_opp_notification_in_ongoing_message">"Odbieranie: %1$s (%2$s)"</string>
+	<string name="bt_opp_notification_out_ongoing_ticker">"Plik wychodzący"</string>
+	<string name="bt_opp_notification_out_ongoing_message">"Wysyłanie: %1$s (%2$s)"</string>
+
+	
+	<string name="bt_opp_cancel_task_title">"Przesyłanie pliku"</string>
+	<string name="bt_opp_cancel_task_message">"Anulować ten transfer?"</string>
+	<string name="bt_opp_cancel_task_yes">"Tak"</string>
+	<string name="bt_opp_cancel_task_no">"Nie"</string>
+
+	
+	<string name="bt_opp_canceling_task_message">"Czekaj, trwa anulowanie transferu..."</string>
+
+	
+	<string name="bt_opps_confirm_push_title">"Bluetooth — obiekt przychodzący"</string>
+	<string name="bt_opps_confirm_push_message">"Plik przychodzący: %1$s (%2$s) od %3$s. Zaakceptować?"</string>
+	<string name="bt_opps_confirm_push_yes">"Zaakceptuj"</string>
+	<string name="bt_opps_confirm_push_no">"Odrzuć"</string>
+
+	
+	<string name="bt_oppc_push_action_label">"Bluetooth"</string>
+	<string name="bt_oppc_push_toast_sending_file">"Wysyłanie pliku do %1$s"</string>
+	<string name="bt_oppc_push_toast_sending_files">"Wysyłanie plików do %1$s"</string>
+	<string name="bt_oppc_push_toast_unsupported_uri">"Nieobsługiwana zawartość do udostępnienia: %1$s"</string>
+	<string name="bt_oppc_push_toast_unknown_device">"Nieznane urządzenie"</string>
+	<string name="bt_opps_toast_storage_unavailable">"Brak karty SD lub za mało miejsca w pamięci na plik przychodzący."</string>
+	<string name="bt_oppc_toast_disk_full">" Za mało miejsca na dysku, aby zapisać informacje o wysyłaniu."</string>
+	<string name="bt_opps_push_toast_invalid_request">"Nieprawidłowe żądanie udostępniania z urządzenia zdalnego."</string>
+
+	<string name="permlab_bluetoothWhitelist">"Dodaj urządzenie Bluetooth do zaufanych."</string>
+	<string name="permdesc_bluetoothWhitelist">Umożliwia aplikacji tymczasowe dodanie urządzenia Bluetooth do listy dozwolonych, aby urządzenie to mogło wysłać pliki do tego urządzenia bez potwierdzenia użytkownika.</string>
+
+	
+	<string name="permlab_handoverStatus">"Otrzymuj informacje o transferze Bluetooth."</string>
+	<string name="permdesc_handoverStatus">Umożliwia otrzymywanie informacji o stanie transferu przekazania za pomocą funkcji Bluetooth.</string>
+</resources>

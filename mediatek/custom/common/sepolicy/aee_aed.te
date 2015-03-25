@@ -1,0 +1,560 @@
+# ==============================================
+# Policy File of /system/binaee_aed Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type aee_aed_exec , exec_type, file_type;
+type aee_aed ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive aee_aed;
+init_daemon_domain(aee_aed)
+
+# 20131024 Sanity_01
+allow aee_aed aee_dumpstate_exec:file { read getattr open execute execute_no_trans };
+allow aee_aed device:chr_file ioctl;
+allow aee_aed sdcard_external:file getattr;
+allow aee_aed self:capability dac_override;
+
+
+# 20131024 Sanity_02
+allow aee_aed aed_device:chr_file ioctl;
+allow aee_aed am_exec:file { read execute open execute_no_trans };
+allow aee_aed atci_service:dir { read getattr open };
+allow aee_aed atcid:dir { read getattr open };
+allow aee_aed linker_exec:file { read execute open };
+allow aee_aed rild:dir search;
+allow aee_aed rild:file { read getattr open };
+allow aee_aed sdcard_external:dir { write search rmdir create add_name };
+allow aee_aed sdcard_external:file { write create open };
+allow aee_aed servicemanager:dir getattr;
+allow aee_aed shell_exec:file { read execute open execute_no_trans };
+allow aee_aed vold:dir { read getattr };
+
+
+# 20131024 CTS_01
+allow aee_aed aed_device:chr_file ioctl;
+allow aee_aed am_exec:file { read execute open execute_no_trans };
+allow aee_aed ashmem_device:chr_file execute;
+allow aee_aed atci_service:dir { read getattr open search };
+allow aee_aed atcid:dir { read getattr open };
+allow aee_aed debugfs:file read;
+allow aee_aed device:chr_file { read open };
+allow aee_aed dm_agent_binder:dir search;
+allow aee_aed dm_agent_binder:file read;
+allow aee_aed drmserver:file { read open };
+allow aee_aed em_svr:dir search;
+allow aee_aed em_svr:file { read getattr open };
+allow aee_aed hald:dir search;
+allow aee_aed hald:file { read getattr open };
+allow aee_aed init:dir { search getattr };
+allow aee_aed init:file { read getattr open };
+allow aee_aed kernel:dir { search getattr };
+allow aee_aed kernel:file { read open };
+allow aee_aed kernel:system syslog_read;
+allow aee_aed keystore:file { read getattr open };
+allow aee_aed librank_exec:file { read execute open execute_no_trans };
+allow aee_aed linker_exec:file { read execute open };
+allow aee_aed logcat_exec:file { read execute open execute_no_trans };
+allow aee_aed mediaserver:dir search;
+allow aee_aed mobile_log_d:file { read getattr open };
+allow aee_aed mtk_agpsd:dir search;
+allow aee_aed netcfg_exec:file { read execute open execute_no_trans };
+allow aee_aed proc:file write;
+allow aee_aed procrank_exec:file { read execute open execute_no_trans };
+allow aee_aed property_socket:sock_file write;
+allow aee_aed radio:dir search;
+allow aee_aed resmon:dir search;
+allow aee_aed rild:dir search;
+allow aee_aed rild:file { read getattr open };
+allow aee_aed screencap_exec:file { read execute open execute_no_trans };
+allow aee_aed sdcard_external:dir { search setattr read create write rmdir remove_name open add_name };
+allow aee_aed sdcard_external:file { rename setattr read lock create write unlink open };
+allow aee_aed self:capability { fowner chown fsetid sys_resource };
+allow aee_aed self:udp_socket { create ioctl };
+allow aee_aed servicemanager:binder call;
+allow aee_aed servicemanager:dir getattr;
+allow aee_aed shell_exec:file { read execute open execute_no_trans };
+allow aee_aed surfaceflinger:binder call;
+allow aee_aed sysfs:file write;
+allow aee_aed system_app:dir search;
+allow aee_aed system_app:file { read getattr open };
+allow aee_aed system_server:binder { transfer call };
+allow aee_aed system_server:process signal;
+allow aee_aed toolbox_exec:file { read getattr open execute execute_no_trans };
+allow aee_aed untrusted_app:dir search;
+allow aee_aed untrusted_app:file { read getattr open };
+allow aee_aed vold:dir { read getattr };
+allow aee_aed vtservice:dir search;
+allow aee_aed vtservice:file { read getattr open };
+allow aee_aed zygote:dir search;
+allow aee_aed zygote:file { read getattr open };
+allow aee_aed zygote_exec:file { read getattr open execute execute_no_trans };
+
+
+# 20131024 Sanity_03
+allow aee_aed atci_service:file { read getattr open };
+allow aee_aed dalvikcache_data_file:file { write setattr };
+allow aee_aed init:dir { read open };
+allow aee_aed kernel:dir { read open };
+allow aee_aed kernel:file getattr;
+allow aee_aed media_app:dir { getattr search };
+allow aee_aed media_app:file { read open };
+allow aee_aed mnld:dir { read getattr open };
+allow aee_aed radio:dir { read getattr open };
+allow aee_aed self:capability2 syslog;
+allow aee_aed shell:dir search;
+allow aee_aed shell:file { read getattr open };
+allow aee_aed surfaceflinger:binder transfer;
+
+
+# 20131028 CTS_03
+allow aee_aed adbd:dir search;
+allow aee_aed adbd:file { read getattr open };
+allow aee_aed atcid:dir search;
+allow aee_aed atcid:file { read getattr open };
+allow aee_aed bluetooth:dir search;
+allow aee_aed bluetooth:file { read getattr open };
+allow aee_aed ccci_fsd:dir getattr;
+allow aee_aed featured:dir getattr;
+allow aee_aed init_shell:dir search;
+allow aee_aed init_shell:file { read open };
+allow aee_aed logwrapper:dir getattr;
+allow aee_aed platform_app:dir search;
+allow aee_aed platform_app:file { read getattr open };
+allow aee_aed radio:file { read open };
+allow aee_aed resmon:file { read getattr open };
+allow aee_aed self:capability sys_ptrace;
+allow aee_aed servicemanager:dir search;
+allow aee_aed servicemanager:file { read getattr open };
+allow aee_aed shared_app:dir search;
+allow aee_aed shared_app:file { read getattr open };
+allow aee_aed showmap_exec:file { read execute open execute_no_trans };
+allow aee_aed thermald:dir search;
+allow aee_aed thermald:file { read getattr open };
+allow aee_aed vold:dir search;
+allow aee_aed vold:file read;
+
+
+# 20131028 CTS_04
+allow aee_aed GoogleOtaBinder:dir search;
+allow aee_aed GoogleOtaBinder:file { getattr open };
+allow aee_aed aal:dir getattr;
+allow aee_aed aal:file { read open };
+allow aee_aed batterywarning:dir search;
+allow aee_aed batterywarning:file { read getattr open };
+allow aee_aed bluetooth:dir getattr;
+allow aee_aed ccci_fsd:dir { read search open };
+allow aee_aed ccci_fsd:file { read getattr open };
+allow aee_aed ccci_mdinit:dir getattr;
+allow aee_aed ccci_mdinit:file { read getattr open };
+allow aee_aed drmserver:dir search;
+allow aee_aed drmserver:file getattr;
+allow aee_aed dumpsys_exec:file { read execute open execute_no_trans };
+allow aee_aed featured:dir { read search open };
+allow aee_aed featured:file { read getattr open };
+allow aee_aed installd:dir search;
+allow aee_aed logwrapper:dir { read search };
+allow aee_aed logwrapper:file { read getattr open };
+allow aee_aed matv:dir search;
+allow aee_aed matv:file { read getattr open };
+allow aee_aed media_app:file getattr;
+allow aee_aed mediaserver:file { read getattr open };
+allow aee_aed mobile_log_d:dir { search getattr };
+allow aee_aed netd:dir getattr;
+allow aee_aed netdiag:dir getattr;
+allow aee_aed nfc:dir getattr;
+allow aee_aed nvram_agent_binder:dir search;
+allow aee_aed nvram_agent_binder:file { read getattr open };
+allow aee_aed release_app:dir getattr;
+allow aee_aed servicemanager:dir { read open };
+allow aee_aed surfaceflinger:dir { read search open getattr };
+allow aee_aed surfaceflinger:file { read getattr open };
+allow aee_aed system_data_file:file open;
+allow aee_aed unlabeled:filesystem getattr;
+allow aee_aed untrusted_app:dir { read getattr open };
+allow aee_aed untrusted_app:lnk_file { read getattr };
+allow aee_aed vold:dir open;
+allow aee_aed vold:file { getattr open };
+
+
+# 20131028 Sanity_05
+allow aee_aed GoogleOtaBinder:file read;
+allow aee_aed ccci_mdinit:dir { read search open };
+allow aee_aed dm_agent_binder:file { getattr open };
+allow aee_aed logwrapper:dir open;
+allow aee_aed mobile_log_d:dir { read open };
+allow aee_aed mtkbt:dir search;
+allow aee_aed mtkbt:file { read getattr open };
+allow aee_aed netd:dir search;
+allow aee_aed netd:file { read getattr open };
+allow aee_aed thermal:dir search;
+allow aee_aed thermal:file { read open };
+
+
+# 20131028 Sanity_06
+allow aee_aed aal:dir search;
+allow aee_aed aal:file getattr;
+allow aee_aed mnld:dir search;
+allow aee_aed mnld:file { read getattr open };
+allow aee_aed netd:dir { read open };
+allow aee_aed netdiag:dir { read search open };
+allow aee_aed netdiag:file { read getattr open };
+allow aee_aed nfc:dir search;
+allow aee_aed nfc:file { read getattr open };
+allow aee_aed radio:file getattr;
+allow aee_aed release_app:dir search;
+allow aee_aed release_app:file { read getattr open };
+allow aee_aed system_server:dir search;
+allow aee_aed system_server:file { read getattr open };
+
+
+# 20131028 Sanity_07
+allow aee_aed BGW:dir search;
+allow aee_aed BGW:file { read getattr open };
+allow aee_aed aal:dir { read open };
+allow aee_aed drmserver:dir { read open };
+allow aee_aed hald:dir { read open };
+allow aee_aed installd:file { read open };
+allow aee_aed keystore:dir search;
+allow aee_aed mediaserver:dir read;
+allow aee_aed mtk_agpsd:file { read getattr open };
+allow aee_aed zygote:dir { read open };
+
+
+# 20131028 Sanity_08
+allow aee_aed bmm050d:dir search;
+allow aee_aed installd:dir { read open };
+allow aee_aed installd:file getattr;
+allow aee_aed keystore:dir { read open };
+allow aee_aed matv:dir { read open };
+allow aee_aed mediaserver:dir open;
+allow aee_aed surfaceflinger:fd use;
+allow aee_aed vtservice:dir { read open };
+
+
+# 20131028 CTS_05
+allow aee_aed aed_device:chr_file { read open };
+allow aee_aed batterywarning:dir { read getattr open };
+allow aee_aed bluetooth:dir { read open };
+allow aee_aed bmm050d:dir { read getattr open };
+allow aee_aed bmm050d:file { read getattr open };
+allow aee_aed dalvikvm_exec:file { read getattr open };
+allow aee_aed dm_agent_binder:dir { read getattr open };
+allow aee_aed drmserver:dir getattr;
+allow aee_aed gsm0710muxd:dir search;
+allow aee_aed gsm0710muxd:file { read getattr open };
+allow aee_aed hald:dir getattr;
+allow aee_aed init_shell:file getattr;
+allow aee_aed installd:dir getattr;
+allow aee_aed keystore:dir getattr;
+allow aee_aed linker_exec:file getattr;
+allow aee_aed matv:dir getattr;
+allow aee_aed mdlogger:dir search;
+allow aee_aed mdlogger:file { read getattr open };
+allow aee_aed mediaserver:dir getattr;
+allow aee_aed mtk_agpsd:dir { read getattr open };
+allow aee_aed mtkbt:dir { read open };
+allow aee_aed nfc:dir { read open };
+allow aee_aed release_app:dir { read open };
+allow aee_aed sdcard_external:file append;
+allow aee_aed self:capability kill;
+allow aee_aed shell:dir { read getattr open };
+allow aee_aed shell:process { sigstop signal ptrace };
+allow aee_aed surfaceflinger:process { signal ptrace };
+allow aee_aed surfaceflinger_exec:file { read getattr open };
+allow aee_aed system_data_file:dir { write create add_name setattr };
+allow aee_aed system_data_file:file { write create setattr };
+allow aee_aed system_ndebug_socket:sock_file write;
+allow aee_aed system_server:dir { read getattr open };
+allow aee_aed system_server:lnk_file { read getattr };
+allow aee_aed system_server:unix_stream_socket connectto;
+allow aee_aed thermal:file getattr;
+allow aee_aed untrusted_app:process { sigstop signal ptrace };
+allow aee_aed vtservice:dir getattr;
+allow aee_aed zygote:dir getattr;
+
+
+# 20131028 CTS_06
+allow aee_aed GoogleOtaBinder:dir { read getattr open };
+allow aee_aed adbd:dir getattr;
+allow aee_aed drmserver:process ptrace;
+allow aee_aed drmserver_exec:file read;
+allow aee_aed em_svr:dir getattr;
+allow aee_aed gsm0710muxd:dir { read getattr open };
+allow aee_aed init_shell:dir getattr;
+allow aee_aed mtkbt:dir getattr;
+allow aee_aed nvram_agent_binder:dir { read getattr open };
+allow aee_aed resmon:dir { read getattr open };
+allow aee_aed self:capability sys_admin;
+allow aee_aed shared_app:dir { read getattr open };
+allow aee_aed shared_app:lnk_file { read getattr };
+allow aee_aed thermal:dir { read getattr open };
+allow aee_aed thermald:dir { read getattr open };
+
+
+# 20131028 Sanity_09
+allow aee_aed BGW:dir { read getattr open };
+allow aee_aed adbd:dir { read open };
+allow aee_aed em_svr:dir { read open };
+allow aee_aed init_shell:dir { read open };
+allow aee_aed system_app:dir { read getattr open };
+
+
+# 20131028 Sanity_10
+allow aee_aed mdlogger:dir { read getattr open };
+allow aee_aed media_app:dir { read open };
+allow aee_aed platform_app:dir { read getattr open };
+allow aee_aed rild:dir { read getattr open };
+
+# 20131028 Sanity_11
+allow aee_aed clatd:dir { read search open getattr };
+allow aee_aed clatd:file { read getattr open };
+
+
+# 20131028 CTS_07
+allow aee_aed drmserver:process signal;
+allow aee_aed drmserver_exec:file { getattr open };
+allow aee_aed mediaserver:process ptrace;
+allow aee_aed mediaserver_exec:file { read getattr open };
+
+
+# 20131028 CTS_08
+allow aee_aed block_device:blk_file { read write open };
+allow aee_aed device:chr_file write;
+allow aee_aed logcat_exec:file getattr;
+allow aee_aed mediaserver:process signal;
+allow aee_aed sn:dir { read search open getattr };
+allow aee_aed sn:file { read getattr open };
+
+
+# 20131028 CTS_09
+allow aee_aed system_data_file:dir { read open };
+allow aee_aed system_server:process ptrace;
+
+
+# 20131028 CTS_10
+allow aee_aed devmap_device:chr_file { read open };
+
+
+# 20131028 CTS_11
+allow aee_aed aed_device:chr_file write;
+allow aee_aed devmap_device:chr_file ioctl;
+allow aee_aed system_data_file:dir remove_name;
+allow aee_aed system_data_file:file { unlink append };
+
+
+# 20131119 FeatureSQC
+allow aee_aed platform_app:process { sigstop signal ptrace };
+allow aee_aed system_data_file:dir { read remove_name open };
+allow aee_aed system_data_file:file { rename lock unlink };
+
+
+# 20131121 Sanity_QA
+allow aee_aed logwrapper:process { signal ptrace };
+
+
+
+# 20131122 Add Set Property Rule
+allow aee_aed  property_type:property_service set;
+
+# 20131213 KKMR1_CTS_01
+allow aee_aed healthd:dir { getattr search };
+allow aee_aed healthd:file { read open };
+allow aee_aed init_shell:process { sigstop signal ptrace };
+allow aee_aed sdcard_internal:dir { search setattr read create write rmdir remove_name open add_name };
+allow aee_aed sdcard_internal:file { rename setattr read lock create write getattr unlink open };
+allow aee_aed system_file:file execute_no_trans;
+
+
+# 20131213 KKMR1_CQ_01
+allow aee_aed aal:process { sigstop signal ptrace };
+allow aee_aed aal_exec:file { read getattr open };
+allow aee_aed aee_aed_exec:file { getattr open };
+allow aee_aed aee_aed_tmpfs:file { write getattr setattr lock create open };
+allow aee_aed am_exec:file getattr;
+allow aee_aed bluetooth:lnk_file { read getattr };
+allow aee_aed bluetooth:process { sigstop signal ptrace };
+allow aee_aed bootanimation:dir { read getattr open search };
+allow aee_aed bootanimation:file { read getattr open };
+allow aee_aed bootanimation:process { signal ptrace };
+allow aee_aed bootanimation_exec:file { read getattr open };
+allow aee_aed ccci_device:chr_file getattr;
+allow aee_aed ccci_mdinit:process ptrace;
+allow aee_aed dalvikcache_data_file:dir { write remove_name add_name };
+allow aee_aed dalvikcache_data_file:file { create unlink };
+allow aee_aed device:chr_file getattr;
+allow aee_aed dexopt_exec:file { read execute open execute_no_trans };
+allow aee_aed dm_agent_binder:process signal;
+allow aee_aed dnsmasq:dir { read search open getattr };
+allow aee_aed dnsmasq:file { read getattr open };
+allow aee_aed emcsmdlogger:dir { read search getattr };
+allow aee_aed emcsmdlogger:file { read getattr open };
+allow aee_aed gsm0710muxd:lnk_file getattr;
+allow aee_aed gsm0710muxd:process { sigstop signal ptrace };
+allow aee_aed gsm0710muxd_exec:file { read getattr open };
+allow aee_aed healthd:dir { read search open getattr };
+allow aee_aed healthd:file { read getattr open };
+allow aee_aed healthd:process { signal ptrace };
+allow aee_aed hostapd:dir { read getattr open search };
+allow aee_aed hostapd:file { read getattr open };
+allow aee_aed init:lnk_file { read getattr };
+allow aee_aed init:process ptrace;
+allow aee_aed init:unix_stream_socket { read write setopt shutdown };
+allow aee_aed init_shell:process { sigstop signal ptrace };
+allow aee_aed ipod:dir { read search open getattr };
+allow aee_aed ipod:file { read getattr open };
+allow aee_aed ipod:lnk_file { read getattr };
+allow aee_aed ipod:process { signal ptrace };
+allow aee_aed isolated_app:dir { search getattr };
+allow aee_aed isolated_app:file { read getattr open };
+allow aee_aed kernel:process ptrace;
+allow aee_aed kernel:system module_request;
+allow aee_aed lcdc_screen_cap:dir { read getattr open search };
+allow aee_aed lcdc_screen_cap:file { read open };
+allow aee_aed logwrapper:binder { transfer call };
+allow aee_aed logwrapper:process { signal ptrace };
+allow aee_aed mali_device:chr_file getattr;
+allow aee_aed mdlogger:lnk_file { read getattr };
+allow aee_aed media_app:lnk_file { read getattr };
+allow aee_aed media_app:process ptrace;
+allow aee_aed mediaserver:lnk_file { read getattr };
+allow aee_aed mediaserver:process sigstop;
+allow aee_aed memsicd3416x:dir { read getattr open search };
+allow aee_aed memsicd3416x:file { read getattr open };
+allow aee_aed mobile_log_d:process ptrace;
+allow aee_aed mtkbt:lnk_file { read getattr };
+allow aee_aed mtkbt:process { sigstop signal ptrace };
+allow aee_aed mtkbt_exec:file { read getattr open };
+allow aee_aed mtp:dir { search getattr };
+allow aee_aed mtp:file read;
+allow aee_aed nfc:lnk_file { read getattr };
+allow aee_aed nfc:process { sigstop signal ptrace };
+allow aee_aed nvram_daemon:dir { search getattr };
+allow aee_aed nvram_daemon:file { read getattr open };
+allow aee_aed platform_app:lnk_file { read getattr };
+allow aee_aed platform_app_data_file:file getattr;
+allow aee_aed ppp:dir { read search open getattr };
+allow aee_aed procmem_exec:file { read execute open execute_no_trans };
+allow aee_aed radio:lnk_file { read getattr };
+allow aee_aed radio:process { signal ptrace };
+allow aee_aed release_app:lnk_file { read getattr };
+allow aee_aed release_app:process { sigstop signal ptrace };
+allow aee_aed rild:lnk_file { read getattr };
+allow aee_aed rild:process { sigstop signal ptrace };
+allow aee_aed rild_exec:file { read getattr open };
+allow aee_aed rtt_exec:file { read getattr open };
+allow aee_aed screencap:dir { read getattr search };
+allow aee_aed screencap:file { read open };
+allow aee_aed sdcard_internal:dir { search setattr read create write rmdir remove_name open add_name };
+allow aee_aed sdcard_internal:file { rename setattr read lock create write getattr unlink open append };
+allow aee_aed sdcardd:dir { read search open getattr };
+allow aee_aed sdcardd:file { read getattr open };
+allow aee_aed sdcardd:process { signal ptrace };
+allow aee_aed sdcardd_exec:file { read getattr open };
+allow aee_aed self:process ptrace;
+allow aee_aed shared_app:process { sigstop signal ptrace };
+allow aee_aed shell_data_file:file { read getattr open };
+allow aee_aed surfaceflinger:lnk_file { read getattr };
+allow aee_aed surfaceflinger:process sigstop;
+allow aee_aed system_app:lnk_file { read getattr };
+allow aee_aed system_app:process ptrace;
+allow aee_aed system_data_file:dir rmdir;
+allow aee_aed system_file:file execute_no_trans;
+allow aee_aed tmpfs:dir { write create add_name setattr };
+allow aee_aed tmpfs:lnk_file read;
+allow aee_aed unlabeled:sock_file write;
+allow aee_aed vtservice:process { sigstop ptrace };
+allow aee_aed vtservice_exec:file { read getattr open };
+allow aee_aed zygote:lnk_file { read getattr };
+allow aee_aed zygote:process { sigstop signal ptrace };
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow aee_aed adbd:lnk_file { read getattr };
+allow aee_aed adbd:process { sigstop signal ptrace };
+allow aee_aed aee_aed_tmpfs:file rename;
+allow aee_aed aee_core_forwarder_exec:file { read getattr open };
+allow aee_aed akmd8963:dir { read getattr open search };
+allow aee_aed akmd8963:file { read getattr open };
+allow aee_aed am_exec:file getattr;
+allow aee_aed bluetooth:lnk_file { read getattr };
+allow aee_aed bluetooth:process { sigstop ptrace };
+allow aee_aed bootanimation:dir { read search open getattr };
+allow aee_aed bootanimation:file { read getattr open };
+allow aee_aed bootanimation:lnk_file { read getattr };
+allow aee_aed bootanimation:process sigstop;
+allow aee_aed ccci_mdinit:lnk_file { read getattr };
+allow aee_aed ccci_mdinit_exec:file { read getattr open };
+allow aee_aed dalvikcache_data_file:file create;
+allow aee_aed emcsmdlogger:dir { search open getattr };
+allow aee_aed graphics_device:chr_file { read ioctl open };
+allow aee_aed gsm0710muxd:lnk_file read;
+allow aee_aed gsm0710muxd:process { sigstop signal ptrace };
+allow aee_aed gsm0710muxd_exec:file { read getattr open };
+allow aee_aed healthd:dir { read search open getattr };
+allow aee_aed healthd:file { read getattr open };
+allow aee_aed init:process { sigstop signal };
+allow aee_aed init:unix_stream_socket { read write setopt shutdown };
+allow aee_aed init_shell:lnk_file { read getattr };
+allow aee_aed ipod:dir { read search open getattr };
+allow aee_aed ipod:file { read getattr open };
+allow aee_aed isolated_app:dir { read open };
+allow aee_aed kernel:process signal;
+allow aee_aed lcdc_screen_cap:dir search;
+allow aee_aed lcdc_screen_cap:file { read getattr open };
+allow aee_aed media_app:process signal;
+allow aee_aed mediaserver:lnk_file { read getattr };
+allow aee_aed mediaserver:process sigstop;
+allow aee_aed memsicd3416x:dir { search getattr };
+allow aee_aed memsicd3416x:file { read getattr open };
+allow aee_aed mobile_log_d:process signal;
+allow aee_aed mobile_log_d_exec:file { read getattr open };
+allow aee_aed netd:lnk_file { read getattr };
+allow aee_aed netd:process ptrace;
+allow aee_aed netd_exec:file { read getattr open };
+allow aee_aed netdiag:lnk_file { read getattr };
+allow aee_aed netdiag:process { sigstop signal ptrace };
+allow aee_aed netdiag_exec:file { read getattr open };
+allow aee_aed nfcstackp_exec:file getattr;
+allow aee_aed nvram_daemon:dir { read open };
+allow aee_aed platform_app:lnk_file { read getattr };
+allow aee_aed radio:process signal;
+allow aee_aed release_app:lnk_file getattr;
+allow aee_aed release_app:process { signal ptrace };
+allow aee_aed resmon:lnk_file { read getattr };
+allow aee_aed resmon:process { sigstop signal ptrace };
+allow aee_aed resmon_exec:file { read getattr open };
+allow aee_aed rild:process { signal ptrace };
+allow aee_aed sdcard_internal:dir { search setattr read create write rmdir remove_name open add_name };
+allow aee_aed sdcard_internal:file { rename setattr read lock create write getattr unlink open append };
+allow aee_aed sdcardd:dir { read search open getattr };
+allow aee_aed sdcardd:file { read getattr open };
+allow aee_aed sdcardd:process { signal ptrace };
+allow aee_aed sdcardd_exec:file { read getattr open };
+allow aee_aed self:capability net_raw;
+allow aee_aed shared_app:process signal;
+allow aee_aed system_data_file:dir rmdir;
+allow aee_aed system_file:file execute_no_trans;
+allow aee_aed system_server:process sigstop;
+allow aee_aed tmpfs:dir rmdir;
+allow aee_aed tmpfs:file open;
+allow aee_aed ueventd:dir { read search open getattr };
+allow aee_aed ueventd:file { read getattr open };
+allow aee_aed wpa:dir { read search open getattr };
+allow aee_aed wpa:file { read getattr open };
+

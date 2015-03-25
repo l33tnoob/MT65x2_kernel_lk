@@ -1,0 +1,46 @@
+# ==============================================
+# Policy File of /system/binxlog Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type xlog_exec , exec_type, file_type;
+type xlog ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive xlog;
+init_daemon_domain(xlog)
+
+# 20131028 CTS_04
+allow xlog device:chr_file { read ioctl open };
+allow xlog linker_exec:file read;
+allow xlog property_socket:sock_file write;
+
+
+# 20131028 CTS_05
+allow xlog self:capability dac_override;
+allow xlog system_data_file:file { write open };
+
+
+# 20131119 FeatureSQC
+allow xlog self:capability { fowner chown fsetid };
+allow xlog system_data_file:dir { write add_name };
+allow xlog system_data_file:file { create setattr };
+
+
+
+# 20131122 Add Set Property Rule
+allow xlog  property_type:property_service set;

@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binmalloc_debug_test Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type malloc_debug_test_exec , exec_type, file_type;
+type malloc_debug_test ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive malloc_debug_test;
+init_daemon_domain(malloc_debug_test)
+
+
+# 20131122 Add Set Property Rule
+allow malloc_debug_test  property_type:property_service set;

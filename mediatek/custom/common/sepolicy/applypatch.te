@@ -1,0 +1,40 @@
+# ==============================================
+# Policy File of /system/binapplypatch Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type applypatch_exec , exec_type, file_type;
+type applypatch ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive applypatch;
+init_daemon_domain(applypatch)
+
+
+# 20131122 Add Set Property Rule
+allow applypatch  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow applypatch linker_exec:file read;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow applypatch block_device:blk_file { read write open };
+allow applypatch device:chr_file { read write open };
+allow applypatch linker_exec:file read;
+allow applypatch self:capability dac_override;
+

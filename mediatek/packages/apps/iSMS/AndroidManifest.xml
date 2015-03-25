@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hissage"
+    android:installLocation="internalOnly"
+    android:versionCode="2"
+    android:versionName="1.00"
+    android:sharedUserId="android.uid.mms" >
+
+    <uses-sdk android:minSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+
+    <!-- For test only, remove it in publish version -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <!-- gcm b -->
+    <permission
+        android:name="com.hissage.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.hissage.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- gcm e -->
+
+
+    <!-- hpe b -->
+    <permission android:name="com.hissage.permission.MESSAGE" />
+
+    <uses-permission android:name="com.hissage.permission.MESSAGE" />
+    <!-- hpe e -->
+
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" /> 
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" /> 
+
+    <application
+        android:icon="@drawable/isms"
+        android:label="@string/STR_NMS_MAIN"
+        android:name="com.hissage.pn.HpnsApplication"
+        android:manageSpaceActivity="com.hissage.ui.activity.NmsClearDataActivity" >
+        <activity
+            android:name="com.hissage.ui.activity.NmsActivationActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar.MinWidth"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="com.hissage.ui.activity.NmsActivationActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hissage.ui.activity.NmsTermActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" 
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="com.hissage.ui.activity.NmsTermActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hissage.ui.activity.NmsClearDataActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="user" >
+        </activity>
+        <activity
+            android:name="com.hissage.ui.activity.NmsChatSettingsActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/STR_NMS_CHAT_SETTING_TITLE"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+            <intent-filter>
+                <action android:name="com.hissage.ui.activity.NmsChatSettingsActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hissage.ui.activity.NmsSystemSettingsActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/STR_NMS_SYSTEM_SETTING_TITLE"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+            <intent-filter>
+                <action android:name="com.hissage.ui.activity.NmsSystemSettingsActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hissage.ui.activity.NmsAboutActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/STR_NMS_ABOUT"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.hissage.ui.activity.NmsLicenseAgreementActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/STR_NMS_MENU_LICENSE_AGREEMENT"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.hissage.ui.activity.NmsFunctionIntroductionActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/STR_NMS_MENU_FUNCTION_INTRODUCTION"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.hissage.ui.activity.NmsCaptionSettingsActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/STR_NMS_CAPTION_TITLE"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.hissage.ui.activity.NmsProfileSettingsActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/STR_NMS_PROFILE_TITLE"
+            android:theme="@style/NMS_PROFILE_STYLE" >
+            <intent-filter>
+                <action android:name="com.hissage.ui.activity.NmsProfileSettingsActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hissage.ui.view.NmsWallpaperChooser"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/STR_NMS_SYS_WALLPAPER" >
+        </activity>
+        <activity
+            android:name="com.hissage.ui.activity.NmsAllMediaActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+            <intent-filter>
+                <action android:name="com.hissage.ui.activity.NmsAllMediaActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hissage.ui.activity.NmsLocationNoMapActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/STR_NMS_MAP_TITLE"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light.Dialog"
+            android:windowSoftInputMode="adjustNothing" >
+            <intent-filter>
+                <action android:name="com.hissage.ui.activity.NmsLocationNoMapActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hissage.ui.activity.NmsLocationActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+            android:windowSoftInputMode="adjustNothing" >
+            <intent-filter>
+                <action android:name="com.hissage.ui.activity.NmsLocationActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hissage.ui.activity.NmsNewEditGroupChatActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+            <intent-filter>
+                <action android:name="com.hissage.ui.activity.NmsNewEditGroupChatActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hissage.ui.activity.NmsContactSelectionActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/NMS_CONTACT_STYLE"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <intent-filter>
+                <action android:name="com.hissage.ui.activity.NmsContactSelectionActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hissage.ui.activity.NmsAllMediaDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <intent-filter>
+                <action android:name="com.hissage.ui.activity.NmsAllMediaDetailsActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hissage.ui.activity.NmsReadedBurnDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <intent-filter>
+                <action android:name="com.hissage.ui.activity.NmsReadedBurnDetailsActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hissage.ui.activity.NmsAllLocationsActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+            <intent-filter>
+                <action android:name="com.hissage.ui.activity.NmsAllLocationsActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hissage.ui.activity.NmsGroupChatInfoActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.hissage.ui.activity.NmsSketchActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="true"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <intent-filter>
+                <action android:name="com.hissage.ui.activity.NmsSketchActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.NmsVideoPlayActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.hissage.ui.activity.NmsQuickContactActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar.MinWidth" >
+            <intent-filter>
+                <action android:name="com.hissage.ui.activity.NmsQuickContactActivity" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="false" />
+
+        <activity
+            android:name="com.hissage.ui.activity.NmsChatDetailsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.ChatDetailHoloLight"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="com.isms.view" />
+                <action android:name="com.hissage.ui.activity.NmsChatDetailsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.NmsAudioActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="@string/STR_NMS_AUDIO_LABLE"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="com.hissage.ui.activity.NmsAudioActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.NmsServiceCenterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="com.hissage.ui.activity.NmsServiceCenterActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.hissage.service.NmsService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.isms.rpc_action" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </service>
+        <service android:name="com.baidu.location.f" android:enabled="true"
+			android:process=":remote"
+			android:permission="android.permission.BAIDU_LOCATION_SERVICE">  
+		</service>
+        <receiver android:name="com.hissage.receiver.system.NmsAutoStartReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.hissage.receiver.app.NmsSendSmsBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="com.hissage.nmssendmessage.sent_action" />
+                <action android:name="com.hissage.nmssendmessage.deliver_action" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.hissage.receiver.app.NmsAssertAlertReceiver" >
+            <intent-filter>
+                <action android:name="com.hissage.assertalert" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.hissage.receiver.system.NmsSMSObserver" >
+            <intent-filter android:priority="100" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.provider.Telephony.SMS_REJECTED" />
+                <action android:name="android.provider.Telephony.WAP_PUSH_RECEIVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DATA_SMS_RECEIVED" />
+
+                <data
+                    android:host="localhost"
+                    android:scheme="sms" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.hissage.receiver.contact.NmsContactChangedReceiver" >
+            <intent-filter>
+                <action android:name="com.isms.nms.updateGroup" />
+                <action android:name="com.isms.nms.refreshContactList" />
+                <action android:name="com.isms.nms.updateSystemContact" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.hissage.receiver.system.NmsMediaStateReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+
+        <!-- gcm -->
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.hissage" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.hissage.GCMIntentService" />
+
+       <!-- if you want to use PN SDK ,you should add follow content -->
+        <receiver android:name="com.hissage.pn.hpnsReceiver" >
+            <intent-filter>
+                <action android:name="com.hpns.android.intent.RECEIVE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.hpns.android.intent.REGISTRATION" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.hpns.android.intent.UNREGISTER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.hpns.android.intent.RECONNECT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.hissage.hpe.receiver.HpnsPackageReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.hpns.android.intent.MASTERCHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.hissage.hpe.receiver.HpnsAutoStartReeceiver" >
+            <intent-filter>
+<!--                 <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" /> -->
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.hissage.richpush.Popup"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="user"
+            android:taskAffinity="com.hesine.hpe"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <service android:name="com.hissage.hpe.Service"
+                 android:exported="true">
+            <intent-filter>
+                <action android:name="com.hpns.android.intent.CHECK" />
+                <action android:name="com.hpns.android.intent.REGISTER" />
+                <action android:name="com.hpns.android.intent.UNREGISTER" />
+                <action android:name="com.hpns.android.intent.RECONNECT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="HPNS_APP_ID"
+            android:value="805832216" />
+        <meta-data
+            android:name="HPNS_ACCOUNT_ID"
+            android:value="4bcd68c659956190" />
+        <meta-data
+            android:name="OpenException"
+            android:value="true" />
+
+        <!-- if you want to use PN SDK ,you should add above content -->
+        <provider android:name="com.hissage.api.NmsApiProvider"
+            android:authorities="com.hissage.remote.api.providers"
+            android:syncable="true"
+            android:enabled="true"
+            android:exported="true"/>
+
+        <!-- Mms Plugin Start-->
+        <service android:name="com.mediatek.imsp.IpMessagePluginExt" android:exported="true">
+            <intent-filter>
+                <action android:name="com.mediatek.mms.ipmessage.IIpMessagePlugin" />
+            </intent-filter>
+            <meta-data android:name="class" android:value="com.mediatek.imsp.IpMessagePluginExt" />
+            <meta-data android:name="version" android:value="2.0.0" />
+        </service>
+        <!-- Mms Plugin End-->
+
+    </application>
+
+</manifest>

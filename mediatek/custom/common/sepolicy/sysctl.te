@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbinsysctl Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type sysctl_exec , exec_type, file_type;
+type sysctl ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive sysctl;
+init_daemon_domain(sysctl)
+
+
+# 20131122 Add Set Property Rule
+allow sysctl  property_type:property_service set;

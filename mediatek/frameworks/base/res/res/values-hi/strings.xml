@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><!--
+/* //device/apps/common/assets/res/any/strings.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+--><resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="untitled">&lt;बिना शीर्षक का&gt;</string>
+    <string name="emptyPhoneNumber">(कोई फोन नंबर नहीं)</string>
+    <string name="unknownName">(अज्ञात)</string>
+    <string name="RestrictedOnAllVoice">समस्‍त वॉयस सेवाओं को ब्‍लॉक किया जाएगा।</string>
+    <string name="RestrictedOnAll">समस्‍त वॉयस/डेटा/एसएमएस सेवाएं ब्‍लॉक की गई।</string>
+    <string name="cfTemplateNotForwarded"><xliff:g id="bearer_service_code">{0}</xliff:g>: को अग्रेषित नहीं किया गया</string>
+    <string name="cfTemplateForwardedTime"><xliff:g id="time_delay">{2}</xliff:g> सेकेंड के बाद <xliff:g id="bearer_service_code">{0}</xliff:g>: <xliff:g id="dialing_number">{1}</xliff:g> </string>
+    <string name="cfTemplateRegistered"><xliff:g id="bearer_service_code">{0}</xliff:g>: को अग्रेषित नहीं किया गया</string>
+    <string name="cfTemplateRegisteredTime"><xliff:g id="bearer_service_code">{0}</xliff:g>: को अग्रेषित नहीं किया गया</string>
+    <string name="httpErrorFailedSslHandshake">सुरक्षित कनेक्‍शन स्‍थापित नहीं किया जा सका।</string>
+    <string name="global_actions_toggle_airplane_mode">एयरप्‍लेन मोड</string>
+    <string name="global_actions_airplane_mode_on_status">एयरप्‍लेन मोड ऑन है</string>
+    <string name="global_actions_airplane_mode_off_status">एयरप्लेन मोड ऑफ है</string>
+    <string name="permgroupdesc_costMoney">एप्‍लीकेशनों को ऐसे कार्य करने की अनुमति दें जिनसे आपका धन खर्च हो सकता है।</string>
+    <string name="permgroupdesc_network">एप्‍लीकेशनों को विभिन्‍न नेटवर्क फीचर एक्‍सेस करने की अनुमति दें।</string>
+    <string name="permgroupdesc_accounts">उपलब्‍ध खातों को एक्‍सेस करें।</string>
+    <string name="permgroupdesc_storage" product="nosdcard">यूएसबी स्‍टोरेज तक पहुंचें।</string>
+    <string name="permgroupdesc_storage" product="default">यूएसबी स्‍टोरेज तक पहुंचें।</string>
+    <string name="permdesc_reorderTasks">एप्‍लीकेशन को टास्‍क को अग्रभाग व बैकग्रांउड में ले जाने की अनुमति दें। गलत मंशा वाली एप्‍लीकेशन आपके नियंत्रण के बगैर स्‍वयं को आगे ला सकती हैं।</string>
+    <string name="permdesc_forceBack">एप्‍लीकेशन को कोई भी ऐसी गतिविधि करने की अनुमति दें जो अग्रभाग में मौजूद गतिविधि को बंद करें और वापिस जाए। सामान्‍य एप्‍लीकेशन के लिए जरूरी नहीं।</string>
+    <string name="permdesc_setAnimationScale">एप्‍लीकेशन को किसी भी समय ग्‍लोबल एनीमेशन स्‍पीड (तेज या धीमे एनीमेशन) बदलने की अनुमति दें।</string>
+    <string name="permdesc_injectEvents">एप्‍लीकेशन को अन्‍य एप्‍लीकेशन को इसके स्‍वंय के इनपुट इवेंट (की प्रेस, आदि) देने की अनुमति दें। गलत मंशा वाली इसका उपयोग फोन पर अधिकार करने के लिए कर सकती हैं।</string>
+    <string name="permdesc_setOrientation">एप्‍लीकेशन को किसी भी समय स्‍क्रीन की रोटेशन बदलने की अनुमति दें। मान्‍य एप्‍लीकेशन के जरूरी नहीं है।</string>
+    <string name="permdesc_persistentActivity">एप्‍लीकेशन को इसके स्‍थायी हिस्‍से बनाने की अनुमति दें ताकि सिस्‍टम इसका उपयोग अन्‍य एप्‍लीकेशन के लिए न कर सकें।</string>
+    <string name="permdesc_deletePackages">एप्‍लीकेशन को एंड्रॉएड पैकेज डिलीट करने की अनुमति दें। गलत मंशा वाली एप्‍लीकेशन इसका उपयोग महत्‍वपूर्ण एप्‍लीकेशन डिलीट करने के लिए कर सकती हैं।</string>
+    <string name="permdesc_clearAppUserData">एप्‍लीकेशन को यूजर डेटा हटाने  की अनुमति दें।</string>
+    <string name="permdesc_deleteCacheFiles">एप्‍लीकेशन को कैशे फाइलें डिलीट करने की अनुमति दें।</string>
+    <string name="permdesc_installPackages">एप्‍लीकेशन को नए या अपडेट एंड्रॉएड पैकेज संस्‍थापित करने की अनुमति दें। गलत मंशा वाली एप्‍लीकेशन इसका उपयोग स्‍वेच्‍छा से सशक्‍त अनुमति वाली नई एप्‍लीकेशन जोड़ने के लिए कर सकती है।</string>
+    <string name="permdesc_clearAppCache">एप्‍लीकेशन को एप्‍लीकेशन कैशे डायरेक्‍ट्री में फाइलें डिलीट करके फोन स्‍टोरेज खाली करने की अनुमति दें। आमतौर पर सिस्‍टम प्रोसेस के लिए एक्‍सेस बेहद सीमित होती है। </string>
+    <string name="permdesc_movePackage">एप्‍लीकेशन को एप्‍लीकेशन संसाधानों को आंतरिक मीडिया से बाहरी मीडिया और इसके उलट ले जाने की अनुमति दें।</string>
+    <string name="permdesc_diagnostic">एप्‍लीकेशन को डिएग ग्रुप के स्‍वामित्‍व वाले किसी भी संसाधन को पढ़ने या लिखने की अनुमति दें; उदाहरण के लिए,  /डेव. में फाइलें। यह संभावित रूप से सिस्‍टम स्थिरता और सुरक्षा पर असर डाल सकता है। इसके केवल निर्माता या ऑपरेटर द्वारा हार्डवेयर आधारित डायग्‍नोस्टिक के लिए प्रयोग किया जाना चाहिए।</string>
+    <string name="permdesc_changeComponentState">एप्‍लीकेशन को यह बदलने की अनुमति दें कि क्‍या अन्‍य एप्‍लीकेशन का हिस्‍सा सक्षम हो या नहीं। गलत मंशा वाली एप्‍लीकेशन इसका उपयोग महत्‍वपूर्ण फोन संबंधी क्षमताओं को अक्षम करने में कर सकती हैं। अनुमति के साथ सावधानी रखनी चाहिए, क्‍योंकि एप्‍लीकेशन के हिस्‍सों का अप्रयुक्‍त, अंतराल सहित, या अस्थिर स्थिति में होना संभव है।</string>
+    <string name="permdesc_writeSettings">एप्‍लीकेशन को सिस्‍टम का सेटिंग डेटा बदलने की अनुमति दें। गलत मंशा वाली एप्‍लीकेशन इसका उपयोग आपके सिस्‍टम की कन्फिगरेशन को करप्‍ट करने के लिए कर सकती हैं।</string>
+   
+    <string name="permdesc_writeSecureSettings">एप्‍लीकेशन को सिस्‍टम के सुरक्षा सेटिंग डेट को संशोधित करने की अनुमति दें। सामान्‍य एप्‍लीकेशन के प्रयोग के लिए  नहीं।</string>
+    <string name="permdesc_writeGservices">एप्‍लीकेशन को गूगल सर्विस मैप संशोधित करने की अनुमति दें। सामान्‍य एप्‍लीकेशन के प्रयोग के लिए  नहीं।</string>
+    <string name="permdesc_readContacts">एप्‍लीकेशन को आपके फोन में सहेजे गए सारे संपर्क (पता) डेटा पढ़ने की अनुमति दें। गलत मंशा वाली एप्‍लीकेशन इसका उपयोग आपका डेटा दूसरे लोगों को भेजने के लिए कर सकती है।</string>
+    <string name="permdesc_writeContacts">एप्‍लीकेशन को अपने फोन में सहेजे गए संपर्क (पता) डेटा को संशोधित करने की अनुमति दें। गलत मंशा वाली एप्‍लीकेशन इसका उपयोग आपके संपर्क डेटा को मिटाने या संशोधित करने के लिए कर सकती हैं।</string>
+    <string name="permdesc_readCalendar">एप्‍लीकेशन को आपके फोन में सहेजे गए सभी कैलेंडर इवेंट पढ़ने की अनुमति दें। गलत मंशा वाली एप्‍लीकेशन इसका उपयोग आपके कैलेंडर इवेंट दूसरे लोगों को भेजने के लिए कर सकती है।</string>
+
+    <string name="permlab_writeCalendar">कैलेंडर इवेंट को जोड़ें या संशोधित करें और अतिथियों को ईमेल भेजें</string>
+    <string name="permdesc_writeCalendar">अपने कैलेंडर में इवेंट जोड़ने या बदलने की अनुमति एप्‍लीकेशन को दें, जो अतिथियों को ईमेल भेज सके। गलत मंशा वाली एप्‍लीकेशन इसका उपयोग आपके कैलेंडर इवेंट को मिटाने या संशोधित करने या अतिथियों को ईमेल भेजने के लिए कर सकती हैं।</string>
+    <string name="permlab_accessLocationExtraCommands">अतिरिक्‍त लोकेशन प्रदाता आदेश को एक्‍सेस करें</string>
+    <string name="permdesc_accessLocationExtraCommands">अतिरिक्‍त चिह्नित स्‍थान प्रदाता आदेश को एक्‍सेस करें। गलत मंशा वाली एप्‍लीकेशन इसका उपयोग जीपीएस या अन्‍य लोकेशन सोर्स के परिचालन में हस्‍तक्षेप करने के लिए कर सकती हैं।</string>
+    <string name="permdesc_accessFineLocation">फोन पर ग्‍लोबल पोजीशनिंग सिस्‍टम जैसे अच्‍छे लोकेशन सोर्स को एक्‍सेस करें, जहां उपलब्‍ध हो। गलत मंशा वाली एप्‍लीकेशन इसका उपयोग आपकी उपस्थिति का पता लगाने के लिए कर सकती हैं, और बैटरी की अतिरिक्‍त पॉवर खर्च कर सकती हैं।</string>
+    <string name="permdesc_accessCoarseLocation">फोन की अनुमानित जगह निर्धारित करने के लिए कोएर्स लोकेशन सोर्स जैसे कि सेल्‍यूलर नेटवर्क डेटाबेस तक एक्‍सेस करें, जहां यह उपलब्‍ध हो। गलत मंशा वाली एप्‍लीकेशन इसका उपयोग आपकी अनुमानित जगह का पता लगाने के लिए कर सकती हैं।</string>
+    <string name="permlab_accessSurfaceFlinger">सरफेसफलिंगर को एक्‍सेस करें</string>
+    <string name="permlab_accessUsb">यूएसबी उपकरण को एक्‍सेस करें</string>
+    <string name="permlab_checkinProperties">चेकिन प्रॉपर्टी को एक्‍सेस करें</string>
+    <string name="permdesc_wakeLock">एप्‍लीकेशन को फोन को स्‍लीप मोड में जाने से रोकने की अनुमति दें।</string>
+    <string name="permdesc_masterClear">एप्‍लीकेशन द्वारा सिस्‍टम को, सारा डेटा, कन्फिगरेशन, और संस्‍थापित एप्‍लकेशन हटाते हुए, इसकी फैक्‍ट्री सेटिंग पर रिसेट करने की अनुमति दें।</string>
+    <string name="permdesc_setTime">एप्‍लीकेशन को फोन की घड़ी के समय को बदलने की अनुमति दें।</string>
+    <string name="permdesc_setTimeZone">एप्‍लीकेशन को फोन के टाइम जोन को बदलने की अनुमति दें।</string>
+    <string name="permlab_accountManagerService">एकाउंटमैनेजरसर्विस के तौर पर काम करें</string>
+    <string name="permdesc_getAccounts">एप्‍लीकेशन को फोन द्वारा ज्ञात खातों की सूची पाने की अनुमति दें।</string>
+    <string name="permlab_authenticateAccounts">एकाउंट ऑथेंटिकेटर के तौर पर काम करें</string>
+    <string name="permdesc_writeApnSettings">एप्‍लीकेशन को एपीएन सेटिंग, जैसे कि प्रॉक्‍सी और किसी पोर्ट की एपीएन को संशोधित करने की अनुमति दें।</string>
+    <string name="permdesc_changeNetworkState">एप्‍लीकेशन को नेटवर्क कनेक्‍टीविटी की स्थिति बदलने की अनुमति दें।</string>
+    <string name="permdesc_changeTetherState">एप्‍लीकेशन को टीथर्ड नेटवर्क कनेक्‍टीविटी बदलने की अनुमति दें।</string>
+    <string name="permdesc_changeBackgroundDataSetting">एप्‍लीकेशन को बैकग्राउंड डेटा यूसेज सेटाग बदलने की अनुमति दें।</string>
+    <string name="permdesc_changeWifiState">एप्‍लीकेशन को Wi-Fi एक्‍सेस प्‍वाइंट से कनेक्‍ट व डिस्‍कनेक्‍ट करने, और कन्फिगर Wi-Fi नेटवर्क में परिवर्तन करने की अनुमति दें।</string>
+    <string name="permlab_changeWifiMulticastState">Wi-Fi मल्‍टीकास्‍ट रिसेप्‍शन की अनुमति दें</string>  
+    <string name="permdesc_bluetoothAdmin">एप्‍लीकेशन को स्‍थानीय ब्लूटूथ फोन को कन्फिगर करने, और दूरस्‍थ उपकरणों को खोजने व उनके साथ पेयर करने की अनुमति दें।</string>
+
+    <string name="permdesc_nfc">एप्‍लीकेशन को नीयर फील्‍ड कम्‍युनिकेशन (एनएफसी) टैग्‍, कार्ड, व रीडर के साथ संवाद करने की अनुमति दें।</string>
+    
+    <string name="permdesc_disableKeyguard">एप्‍लीकेशन को कीलॉक और कोई भी अन्‍य संबंधित पासवर्ड सुरक्षा को अक्षम करने की अनुमति दें। इसका एक मान्‍य उदाहरण फोन द्वारा इनकमिंग कॉल प्राप्‍त करते समय कीलॉक को  अक्षम करना, और कॉल समाप्‍त होने पर कीलॉक को दोबारा सक्षम करना है।</string>
+    <string name="permdesc_writeSyncSettings">एप्‍लीकेशन को सिंक सेटिंग की अनुमति दें, जैसे कि क्‍या सिंक संपर्कों के लिए सक्षम है।</string>
+    <string name="permdesc_subscribedFeedsRead">एप्‍लीकेशन को फिलहाल सिंक किए हुए फीड  के बारे में विवरण पाने की अनुमति दें।</string>
+    <string name="permdesc_subscribedFeedsWrite">एप्‍लीकेशन को आपके वर्तमान सिंक फीड को संशोधित करने की अनुमति दें। इससे गलत मंशा वाली एप्‍लीकेशन को आपकी सिंक फीड बदलने की अनुमति मिल सकती है।</string>
+    <string name="permdesc_readDictionary">एप्‍लीकेशन को कोई भी निजी शब्‍द, नाम और वाक्‍शंश पढ़ने की अनुमति दें जिसे प्रयोक्‍ता ने शब्‍दकोष में सहेजा है।</string>
+    <string name="permlab_cache_filesystem">कैशे फाइलसिस्‍टम को एक्‍सेस करें</string>
+    <string name="permdesc_cache_filesystem">एप्‍लीकेशन को कैशे फाइल सिस्‍टम पढ़ने व लिखने की अनुमति दें।</string>
+    <string name="lockscreen_carrier_default">(कोई सेवा नहीं)</string>
+    <string name="lockscreen_glogin_forgot_pattern">खाते को अनलॉक किया गया</string>
+    <string name="permdesc_writeHistoryBookmarks">एप्‍लीकेशन को आपके फोन की ब्राउजर हिस्‍ट्री या सहेजे गए बुकमार्क को संशोधित करने की अनुमति दें। गलत मंशा वाली एप्‍लीकेशन इसका उपयोग आपके ब्राउजर डेटा को मिटाने या संशोधित करने के लिए कर सकती हैं।</string>
+    <string name="permdesc_writeGeolocationPermissions">एप्‍लीकेशन को ब्राउजर की भौगोलिक स्थिति को संशोधित करने की अनुमति दें। गलत मंशा वाली एप्‍लीकेशन इसका उपयोग स्‍वेच्‍छा से काम करने वाली वेबसाइटों को लोकेशन जानकारी भेजने की अनुमति के लिए कर सकती हैं।</string>
+    <string name="oneMonthDurationPast">1 महीने पहले</string>
+    <plurals name="num_seconds_ago">
+        <item quantity="one">1 सेकेंड पहले</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> सेकेंड</item>
+    </plurals>
+
+    <plurals name="num_minutes_ago">
+        <item quantity="one">1 मिनट पहले</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> मिनट पहले</item>
+    </plurals>
+
+    <plurals name="num_hours_ago">
+        <item quantity="one">1 घंटे पहले</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> घंटे पहले</item>
+    </plurals>
+
+    <plurals name="abbrev_num_seconds_ago">
+        <item quantity="one">1 सेकेंड पहले</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> सेकेंड पहले</item>
+    </plurals>
+
+    <plurals name="abbrev_num_minutes_ago">
+        <item quantity="one">1 मिनट पहले</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> मिनट पहले</item>
+    </plurals>
+
+    <plurals name="abbrev_num_hours_ago">
+        <item quantity="one">1 घंटे पहले</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> घंटे पहले</item>
+    </plurals>
+
+    <string name="noon">"मध्‍याह्न"</string>
+    <string name="Noon">"मध्‍याह्न"</string>
+    <string name="midnight">"मध्‍य-रात्रि"</string>
+    <string name="Midnight">"मध्‍य-रात्रि"</string>
+
+    <string name="addToDictionary">शब्‍दकोष में \"<xliff:g example="rickroll" id="word">%s</xliff:g>\" जोड़ें</string>
+    <string name="anr_activity_application">गतिविधि <xliff:g id="activity">%1$s</xliff:g> (एप्‍लीकेशन <xliff:g id="application">%2$s</xliff:g> में) का उत्तर नहीं मिल रहा है।</string>
+    <string name="anr_activity_process">गतिविधि <xliff:g id="activity">%1$s</xliff:g> (प्रक्रिया <xliff:g id="process">%2$s</xliff:g> में) का उत्तर नहीं मिल रहा है।</string>
+    <string name="launch_warning_replace"><xliff:g id="app_name">%1$s</xliff:g> अभी चल रहा है।</string>
+    <string name="launch_warning_original">मूलरूप  से <xliff:g id="app_name">%1$s</xliff:g> को आरंभ किया गया था।</string>
+    <string name="heavy_weight_notification"><xliff:g id="app">%1$s</xliff:g> चल रहा है।</string>
+    <string name="volume_alarm">अलार्म की आवाज</string>
+    <string name="sms_control_message">बड़ी संख्‍या में एसएमएस संदेश भेजे जा रहे हैं। जारी रखने के लिए \"ओके\" चुनें, या भेजना रोकने के लिए \"कैंसल\" चुनें।</string>
+    <string name="accessibility_binding_label">एक्‍सेस करने की क्षमता </string>
+
+    <string name="VideoView_error_text_bad_file">"खराब फाइल, यह वीडियो प्‍ले नहीं किया जा सकता।"</string>
+    <string name="VideoView_error_text_cannot_connect_to_server">"सर्वर से कनेक्‍ट नहीं कर सकता।"</string>
+    <string name="media_controller_connecting">"कनेक्‍ट कर रहा है"</string>
+    <string name="VideoView_error_text_drm_not_supported">"डीआरएम सुरक्षित, यह वीडियो प्‍ले नहीं किया जा सकता।"</string>
+    <string name="free_memory_btn">"खाली मैमोरी"</string>
+    <string name="media_controller_live">"लाइव"</string>
+    <string name="free_memory_text">"कम मैमोरी। कृपया मैमोरी खाली करें।"</string>
+    <string name="VideoView_error_text_type_not_supported">"मीडिया फाइल टाइप समर्थित नहीं।"</string>
+    <string name="media_controller_playing">"प्‍ले कर रहा है"</string>
+    <string name="media_controller_weak_signal">"कमजोर सिग्‍नल"</string>
+    <string name="missed_call">%d मिस्‍ड कॉल</string>
+    <string name="missed_calls">%d मिस्‍ड कॉल</string>
+    <string name="retries_left">शेष:%d</string>
+    <string name="unread_message">%d अनरीड संदेश</string>
+    <string name="unread_messages">%d अनरीड संदेश</string>
+    <string name="battery_status_text_percent_format">%d%%</string>
+    <string name="battery_low_percent_format">%d%%
+   या कम बचे हैं।</string>
+    <string name="pin_length_indicate">(4-8 अंक)</string>
+    <string name="puk_length_indicate">(8 अंक)</string>
+    <string name="one_retry_left">रिट्राई बचा है </string>
+    <string name="permdesc_readOwnerData">एप्‍लीकेशन को आपके
+      फोन पर सहेजे फोन स्‍वामी का डेटा पढ़ने की 
+      अनुमति दें। गलत मंशा वाली एप्‍लीकेशन इसका 
+      उपयोग फोन स्‍वामी का डेटा पढ़ने के लिए कर सकती हैं।</string>
+    <string name="permdesc_writeOwnerData">एप्‍लीकेशन को आपके
+      फोन पर सहेजे फोन स्‍वामी का डेटा संशोधित करने की 
+      अनुमति दें। गलत मंशा वाली एप्‍लीकेशन इसका उपयोग 
+      फोन स्‍वामी का डेटा मिटाने या संशोधित कऱने के लिए 
+      कर सकती हैं।</string>
+    <string name="permdesc_sdcardWrite">एप्‍लीकेशन  को यूएसबी स्‍टोरेज पर लिखने की अनुमति दें।</string>
+    <string name="permdesc_receiveCbSms">एप्‍लीकेशन  को सीबी एसएमएस
+   संदेश प्राप्‍त करने व उनपर काम करने की अनुमति दें। गलत मंशा वाली एप्‍लीकेशन  
+      आपके संदेश पर निगरानी रख सकती है या उन्‍हें आपको दिखाए बगैर मिटा सकती है।</string>
+    <string name="permdesc_receiveDmRegisterSms">एप्‍लीकेशन को डीएम रजिस्‍टर एसएमएस
+   संदेश प्राप्‍त करने व उनपर काम करने की अनुमति दें। डीएम एपीपी के अतिरिक्‍त अन्‍य एप्‍लीकेशन को इसका 
+   उपयोग नहीं करना चाहिए </string>
+    <string name="oper_long_99999">एंड्रॉएड</string>
+    <string name="extmedia_format_message">यूएसबी स्‍टोरेज को फॉर्मेट करके, क्‍या वहां सहेजी सारी फाइलें मिटा दें? यह कार्य वापिस नहीं हो सकता है!</string>
+    <string name="battery_low_why">बैटरी उपयोग</string>
+    <string name="usb_storage_stop_message">यूएसबी स्‍टोरेज को ऑफ करने से पहले, निश्चित करें कि आपने अपने कंप्‍यूटर से एंड्रॉएड का यूएसबी स्‍टोरेज अनमाउंट ("निकाल") कर लिया है।</string>
+    <string name="ext_media_nofs_notification_title">खाली यूएसबी स्‍टोरेज</string>
+    <string name="media_controller_buffering">बफरिंग %d%%...</string>
+    <string name="battery_status_charging">चार्ज हो रही है\u2026</string>
+    <string name="checkPwdLen">जांच करें कि आपका पासवर्ड 4 से 8 अंकों का है।</string>
+    <string name="oper_long_46000">China Mobile</string>
+    <string name="oper_long_46001">China Unicom</string>
+    <string name="oper_short_46692">Chunghwa</string>
+    <string name="oper_long_46692">Chunghwa Telecom</string>
+    <string name="status_bar_clear_all_button">हटाएं</string>
+    <string name="keyguard_password_Confirm_pin_code">नए पिन की पुष्टि करें</string>
+    <string name="serviceUnknown">कनेक्‍शन समस्‍या या अमान्‍य एमएमआई कोड।</string>
+    <string name="copyAll">सभी को कॉपी करें</string>
+    <string name="oper_short_46001">CU-GSM</string>
+    <string name="cutAll">सभी को कट करें</string>
+    <string name="ext_media_unmountable_notification_title">क्षतिग्रस्‍त यूएसबी स्‍टोरेज</string>
+    <string name="keyguard_password_enter_new_pin_code">नया पिन डालें</string>
+    <string name="keyguard_pinword_enter_pinword_code">अनलॉक करने के लिए पिन डालें</string>
+    <string name="keyguard_password_enter_puk_code">पीयूके कोड डालें</string>
+    <string name="keyguard_password_enter_sim1_pin_code">सिम 1 पिन कोड डालें</string>
+    <string name="keyguard_password_enter_sim1_puk_code">सिम 1 पीयूके कोड डालें</string>
+    <string name="keyguard_password_enter_sim2_pin_code">सिम 2 पिन कोड डालें</string>
+    <string name="keyguard_password_enter_sim2_puk_code">सिम 2 पीयूके कोड डालें</string>
+    <string name="sim_permanently_locked">गलत पीयूके कोड को 10 से ज्‍यादा गलत डालने से, सिमकार्ड हमेशा के लिए लॉक हो गया।</string>
+    <string name="progress_erasing">यूएसबी स्‍टोरेज से मिटा रहा है...</string>
+    <string name="callBarringFailMmi">कॉल रोकने में विफल।</string>
+    <string name="fdnFailMmi">एफडीएन चेक में विफल।</string>
+    <string name="format_error">यूएसबी स्‍टोरेज मिटाने में विफल।</string>
+    <string name="oper_long_46601">Far EasTone</string>
+    <string name="oper_short_46601">FET</string>
+    <string name="volume_fm">एफएम वॉल्‍यूम</string>
+    <string name="extmedia_format_title">यूएसबी स्‍टोरेज को फॉर्मेट करें</string>
+    <string name="keyguard_password_wrong_puk_code">गलत पीयूके कोड!</string>
+    <string name="keyguard_password_wrong_sim1_pin_code">गलत सिम 1 पिन कोड! कोड!</string>
+    <string name="keyguard_password_wrong_sim2_pin_code">गलत सिम 2 पिन कोड! कोड!</string>
+    <string name="invalid_imei">अमान्‍य आईएमईआई</string>
+    <string name="music_library">लाइब्रेरी</string>
+    <string name="contact_widget_loading">लोड हो रहा है...</string>
+    <string name="volume_matv">मोबाइल टीवी की आवाज</string>
+    <string name="permlab_sdcardWrite">यूएसबी स्‍टोरेज सामग्री संशोधित करें/मिटाएं</string>
+    <string name="no_favorite_contacts">पसंदीदा संपर्क नहीं</string>
+    <string name="status_bar_no_notifications_title">सूचना नहीं</string>
+    <string name="music_no_songs">गाने नहीं</string>
+    <string name="cfServiceNotForwarded">आगे नहीं ले जाया गया</string>
+    <string name="status_bar_latest_events_title">सूचनाएं</string>
+    <string name="status_bar_ongoing_events_title">जारी</string>
+    <string name="lockscreen_password_error">पासवर्ड त्रुटि, कृपया फिर से कोशिश </string>
+    <string name="lockscreen_pinword_error">पिन त्रुटि, कृपया फिर से कोशिश </string>
+    <string name="puk1Blocked">पिन को ब्‍लॉक किया गया।</string>
+    <string name="Pin2Mmi">पिन2 बदलें</string>
+    <string name="puk2Blocked">पिन2 ब्‍लॉक किया गया।</string>
+    <string name="music_play">प्‍ले करें</string>
+    <string name="battery_low_title">कृपया चार्जर से कनेक्‍ट करें</string>
+    <string name="pinNotEnabled">कृपया बदलने से पहले पिन सक्षम करें।</string>
+    <string name="mem_low_title">कृपया मैमोरी खाली करें</string>
+    <string name="choose_gprs_mode">कृपया डेटा कनेक्‍शन चुनें</string>
+    <string name="choose_bootup_mode">कृपया सिम चुनें</string>
+    <string name="ext_media_checking_notification_title">यूएसबी स्‍टोरेज को तैयार कर रहा है</string>
+    <string name="lockscreen_sim_puk_locked_message_short">पीयूके-लॉक हुआ</string>
+    <string name="permlab_readOwnerData">स्‍वामी डेटा पढ़ें</string>
+    <string name="permlab_receiveCbSms">सीबी एसएमएस प्राप्‍त करें</string>
+    <string name="permlab_receiveDmRegisterSms">डीएम रजिस्‍टर एसएमएस प्राप्‍त करें</string>
+    <string name="ext_media_nomedia_notification_title">यूएसबी स्‍टोरेज को हटाया गया</string>
+    <string name="same_imei">समान आईएमईआई</string>
+    <string name="ext_media_nofs_notification_message">यूएसबी स्‍टोरेज खाली है या असमर्थित फाइलसिस्‍टम है।</string>
+    <string name="ext_media_unmountable_notification_message">यूएसबी स्‍टोरेज क्षतिग्रस्‍त हुआ। आपको इसे दोबारा फॉर्मेट करना होगा।</string>
+    <string name="media_checking">यूएसबी स्‍टोरेज को फिलहाल जांचा जा रहा है।</string>
+    <string name="media_shared">यूएसबी स्‍टोरेज फिलहाल कंप्‍यूटर द्वारा प्रयोग हो रहा है।</string>
+    <string name="ext_media_nomedia_notification_message">यूएसबी स्‍टोरेज हटाया गया। नया मीडिया डालें।</string>
+    <string name="ext_media_safe_unmount_notification_title">यूएसबी स्‍टोरेज निकालने के लिए सुरक्षित है</string>
+    <string name="ext_media_badremoval_notification_title">यूएसबी स्‍टोरेज को अचानक निकाला गया</string>
+    <string name="serviceProvisioned">दी जाने वाली सेवाएं।</string>
+    <string name="lockscreen_sim1_puk_locked_message">सिम कार्ड 1 पीयूके-लॉक है।</string>
+    <string name="lockscreen_sim2_puk_locked_message">सिम कार्ड 2 पीयूके-लॉक है।</string>
+    <string name="sim_close">सिम कार्ड बंद है</string>
+    <string name="lockscreen_sim_locked_message_short">सिम कार्ड लॉक है</string>
+    <string name="simlock_slot_locked_message">स्लॉट स्थायी रूप से लॉक कर दिया गया है</string>
+    <string name="simlock_entersimmelock">"SIM ME लॉक दर्ज करें"</string>
+    <string name="slot_id">स्लॉट <xliff:g id="number">%d</xliff:g>:</string>
+    <string name="new_simcard">नया सिम कार्ड</string>
+    <string name="lockscreen_missing_sim_dialog_message">"सिम कार्ड अनप्लग्ड है कृपया अपने सिम कार्ड का ठीक प्रकार से प्लग इन होना सुनिश्चित करें।"</string>
+    <string name="RestrictedChangedTitle_SIM1">सिम1 </string>
+    <string name="stopSelectingText">टैक्‍स्‍ट चुनना बंद करें</string>
+    <string name="oper_long_46697">Taiwan Mobile</string>
+    <string name="aerr_application_lowmem">एप्‍लीकेशन  %1$s
+        (प्रोसेस %2$s) अचानक रूका। यह कम मैमोरी स्‍पेस की वजह से हो सकता है। कृपया मैमोरी स्‍पेस खाली करें और फिर से कोशिश करें।</string>
+    <string name="battery_low_subtitle">बैटरी कम हो रही है:</string>
+    <string name="badPin2">आपके द्वारा टाइप की गई पुरानी पिन2 सही नहीं है।</string>
+    <string name="aerr_process_lowmem">प्रोसेस  %1$s
+      अचानक रूका। यह कम मैमोरी स्‍पेस की वजह से हो सकता है। कृपया मैमोरी स्‍पेस खाली करें और फिर से कोशिश करें।</string>
+    <string name="badPuk2">आपके द्वारा टाइप पीयूके2 सही नहीं है।</string>
+    <string name="usb_storage_error_message">यूएसबी मॉस स्‍टोरेज के लिए आपका यूएसबी स्‍टोरेज प्रयोग करने में समस्‍या है।</string>
+    <string name="oper_short_46697">TWN</string>
+    <string name="invalidPuk">8 अंक इनपुट करें.</string>
+    <string name="needPuk2">पीयूके2 कोड को अनब्‍लॉक करने के लिए टाइप करें।</string>
+    <string name="unable_launch_the_ap">एप्‍लीकेशन  को आरंभ करने में अक्षम।</string>
+    <string name="PukMmi">पिन को अनब्‍लॉक करें</string>
+    <string name="Puk2Mmi">पिन2 को अनब्‍लॉक करें</string>
+    <string name="music_no_artist">अज्ञात कलाकार का नाम</string>
+    <string name="ext_media_badremoval_notification_message">डेटा खोने से बचने के लिए हटाने से पहले यूएसबी स्‍टोरेज को अनमाउंट करें।</string>
+    <string name="progress_unmounting">यूएसबी स्‍टोरेज को अनमाउंट कर रहा है...</string>
+    <string name="serviceClassVideo">वीडियो</string>
+    <string name="permlab_writeOwnerData">स्‍वामी डेटा लिखें</string>
+    <string name="ext_media_safe_unmount_notification_message">आप सुरक्षित ढंग से यूएसबी स्‍टोरेज निकाल सकते हैं।</string>
+    <string name="usb_storage_message">आपने अपने फोन को अपने कंप्‍यूटर से यूएसबी के जरिए कनेक्‍ट किया है। यदि आप अपने कंप्‍यूटर और एंड्रॉएड के यूएसबी स्‍टोरेज के बीच फाइलें कॉपी करना चाहते हैं तो नीचे बटन चुनें।</string>
+    <string name="oper_long_99998">एंड्रॉएड1</string>
+    <string name="oper_short_46000">CMCC</string>
+    <string name="oper_short_99997">AD1</string>
+    <string name="oper_short_99999">AD</string>
+    <string name="RestrictedChangedTitle_SIM2">सिम2 रोकी गई एक्‍सेस को बदला गया</string>
+    <string name="music_pause">रोकने के लिए दबाएं</string>
+    <string name="redo">फिर से करें</string>
+    <string name="undo">पूर्ववत करें</string>
+    <string name="undoAll">सभी को पूर्ववत करें</string>
+    <string name="keyguard_alwaysask">हमेशा पूछें</string>
+    <string name="change_settings">बदलें</string>
+    <string name="keyguard_data">डेटा कनेक्शन:</string>
+    <string name="delete">हटाएँ</string>
+    <string name="dismiss">ख़ारिज करें</string>
+    <string name="keyguard_data_none">ऑफ</string>
+    <string name="keyguard_code_donnot_mismatch">मैच न करें.</string>
+    <string name="edit">संपादन </string>
+    <string name="for_text">इसके लिए</string>
+    <string name="keyguard_code_length_prompt">4-8 अंक इनपुट करें.</string>
+    <string name="keyguard_internal_call">इंटरनेट कॉल</string>
+    <string name="new_sim">नया SIM</string>
+    <string name="change_setting_for_onenewsim">नया SIM कार्ड मिला है. अब डिफ़ॉल्ट SIM सेटिंग्स हैं:</string>
+    <string name="change_setting_for_twonewsim">नया SIM कार्ड मिला है. अब डिफ़ॉल्ट SIM सेटिंग्स हैं:</string>
+    <string name="default_sim_setting_prompt">अब डिफ़ॉल्ट SIM सेटिंग कर रहे हैं:</string>
+    <string name="sim_card_changed_dialog_title">सिम कार्ड बदला</string>
+    <string name="keyguard_not_set">सेट नहीं है</string>
+    <string name="keyguard_sms">SMS:</string>
+    <string name="network_searching">नए नेटवर्क के लिए खोज हो रही है</string>
+    <string name="sim_card_removed">सिम कार्ड हटा।</string>
+    <string name="sim_card_swapped">सिम कार्ड का अदल-बदल हुआ।</string>
+    <string name="keyguard_voice_call">ध्वनि कॉल:</string>
+    <string name="keyguard_video_call">वीडियो कॉल:</string>
+    <string name="keyguard_wrong_code_input">गलत कोड.</string>
+
+    <string name="for_first_simcard">प्रथम SIM के लिए</string>
+    <string name="for_second_simcard">द्वितीय SIM के लिए</string>
+    <string name="for_third_simcard">तीसरे सिम के लिए</string>
+    <string name="for_fourth_simcard">चौथे सिम के लिए</string>
+		<string name="ext_media_checking_notification_title_sd2">SD कार्ड2 तैयार हो रहा है</string> 
+		 <string name="missed_call_display">छूटी कॉलें:</string>
+   <string name="missed_message_display">छूटे संदेश:</string>
+	<!-- add for drm start -->
+    <string name="drm_protection_status">सुरक्षा स्थिति:</string>
+    <string name="drm_can_forward">अग्रेषित किया जा सकता है.</string>
+    <string name="drm_can_not_forward">अग्रेषित नहीं किया जा सकता है.</string>
+    <string name="drm_no_limitation">कोई सीमा नहीं.</string>
+    <string name="drm_no_license">कोई DRM लायसेंस उपलब्ध नहीं.</string>
+    <string name="drm_begin">प्रारंभ:</string>
+    <string name="drm_end">समाप्ति:</string>
+    <string name="drm_use_left">बची हुई संख्या:</string>
+    <string name="drm_protectioninfo_renew">नवीनीकृत कराएँ</string>
+    <string name="drm_protectioninfo_title">सुरक्षा जानकारी</string>
+    <string name="drm_licenseacquisition_title">DRM लायसेंस अधिग्रहण</string>
+    <string name="drm_licenseacquisition_message">%1$s के पास कोई DRM लायसेंस उपलब्ध नहीं है. DRM लायसेंस प्राप्त करने के लिए आप “नवीनीकृत कराएँ” बटन दबा सकते हैं.</string>
+    <string name="drm_toast_license_expired">DRM लायसेंस की समयावधि समाप्त हो गई है.</string>
+    <string name="drm_forwardforbidden_title">अग्रेषण निषिद्ध</string>
+    <string name="drm_forwardforbidden_message">कुछ सुरक्षित फ़ाइलों को अग्रेषित नहीं किया जा सकता है.</string>
+    <string name="drm_license_install_success">DRM लायसेंस स्थापना सफल रही.</string>
+    <string name="drm_license_install_fail">DRM लायसेंस स्थापना असफल रही.</string>
+    <string name="drm_secure_timer_title">अमान्य DRM सुरक्षा क्लॉक</string>
+    <string name="drm_secure_timer_message">आप DRM सुरक्षित फ़ाइलों का उपयोग नहीं कर पाए. कृपया सुनिश्चित करें कि डेटा कनेक्शन उपलब्ध है.</string>
+    <string name="drm_consume_title">DRM अधिकारों का उपभोग करें</string>
+    <string name="drm_consume_message">आपकी क्रिया DRM अधिकारों का उपभोग कर लेगी.</string>
+    <!-- add for drm end -->
+    
+    <string name="recip_unsupport_operator">प्राप्तकर्तादृश्य अक्षर कार्रवाई का समर्थन नहीं करता, कृपया प्राप्तकर्ताओं पर कार्रवाई करने के लिए टूलबार का उपयोग करें.</string>
+    <string name="recip_unsupport_selection">क्षमा करें, आप कैरेट को प्रारंभ पर नहीं ले जा सकते जहाँ प्राप्तकर्तादृश्य में प्राप्तकर्ता हैं.</string>  
+
+    <string name="sim_missing_slot1">स्लॉट 1: कोई सिम कार्ड नहीं मिला</string>  
+    <string name="sim_missing_slot2">स्ल़ट 2: कोई सिम कार्ड नहीं मिला</string>  
+    <string name="sim_missing">कोई सिम कार्ड नहीं मिला</string>  
+    <string name="sim_missing_detail">कृपया सिम कार्ड के तैयार होने की जाँच करें</string>
+
+    <string name="usb_ums_notification_title">USB भंडारण के रूप में कनेक्ट हों</string>
+    <string name="usb_charging_notification_title">केवल USB चार्ज</string>
+    <string name="keyguard_close">बंद करें</string>
+
+    <!-- add for webview find -->
+    <string name="find_previous">पहले</string>
+    <string name="find_next">अगला</string>
+
+    <string name="tethered_notification_message_for_hotspot">
+        <xliff:g id="connected">%1$d</xliff:g> कनेक्ट है, 
+        <xliff:g id="blocked">%2$d</xliff:g> अवरूद्ध
+    </string>
+    <string name="tethered_notification_message_bandwidth_set">बैंडविथ सेट है</string>
+    <string name="default_wallpaper_name">"डिफ़ॉल्ट"</string> 
+    <string name="invalid_sim_title">अमान्य SIM कार्ड</string>
+    <string name="invalid_sim_message">UIM/SIM कार्ड स्वीकृत नहीं है</string>
+    <!-- voice unlock start -->
+    <string name="voice_unlock_service_error">वॉयस अनलॉक सेवा त्रुटि।</string>
+    <string name="voice_unlock_password_wrong">क्षमा करें, आपकी आवाज़ को पहचान नहीं सकते।</string>
+    <string name="voice_unlock_noisy">बहुत शोर है इसलिए आपको स्पष्ट रूप से नहीं सुन सकते।</string>
+    <string name="voice_unlock_weak">आपकी आवाज़ नहीं सुन सकते।</string>
+    <string name="voice_unlock_media_playing">मीडिया चलने के दौरान वॉयस अनलॉक अक्षम होता है।</string>
+    <string name="voiceunlock_multiple_failures">ध्वनि अनलॉक करने का प्रयास अधिकतम सीमा से अधिक हुआ</string>    
+    <!-- voice unlock end -->
+
+    <string name="wifi_display_bt_hdmi_off_wfd_on">जब आप वायरलेस डिस्पले चालू करते हैं तो ब्लुटूथ और HDMI ऑफ़ कर दिया जाएगा। क्या आप जारी रखना चाहते हैं?</string> 
+    <string name="wifi_display_wfd_off_hdmi_on">जब आप HDMI चालू करते हैं तो वायरलेस डिस्पले ऑफ़ कर दिया जाएगा। क्या आप जारी रखना चाहते हैं?</string> 
+    <string name="wifi_display_wfd_off_bt_on">ब्लुटूथ चालू करने पर वायरलेस डिस्प्ले बंद हो जाएगा। क्या आप जारी रखना चाहते हैं?</string> 
+    <string name="wifi_display_wifi_p2p_disconnect_wfd_connect">वायरलेस डिस्प्ले डिवाइस से कनेक्ट होने पर वर्तमान Wi-Fi डायरेक्ट कनेक्शन टूट जाएगा। क्या आप जारी रखना चाहते हैं?</string> 
+    <string name="wifi_display_unstable_connection">अस्थिर कनेक्शन</string>
+    <string name="wifi_display_connection_is_not_steady">वायरलेस प्रदर्शन का वर्तमान कनेक्शन स्थिर नहीं है।</string>
+    <string name="wifi_display_unstable_suggestion">वायरलेस प्रदर्शन का वर्तमान कनेक्शन स्थिर नहीं है, कृपया प्रदर्शन उपकरण के निकट जाने का प्रयास करें।</string>
+    <string name="wifi_display_reconnect">पुनः कनेक्ट करें</string> 
+    <string name="wifi_display_disconnect_then_reconnect">वायरलेस प्रदर्शन डिस्कनेक्टेड है। क्या आप पुनः कनेक्ट करना चाहते हैं?</string> 
+    <string name="wifi_display_disconnected">वायरलेस प्रदर्शन डिस्कनेक्टेड है।</string>
+    <string name="wifi_wps_failed_overlap">"अन्‍य WPS सत्र का पता चला. कृपया कुछ मिनटों में पुन: प्रयास करें."</string>
+    <string name="wifi_display_wfd_and_wifi_are_turned_on">वायरलेस डिस्प्ले और Wi-Fi ऑन है।</string>
+    <string name="wifi_display_sound_path_reminder">मल्टीमीडिया ध्वनि आपके हेडसेट पर नहीं बजेगी।</string>  
+    <string name="wifi_display_change_resolution_reminder">रेज़ॉल्युशन परिवर्तन स्वतः वायरलेस डिस्प्ले से फिर से कनेक्ट कर देगा।</string>  
+    <string name="wifi_display_do_not_remind_again">दोबारा याद न दिलाएं।</string>
+    <string name="wifi_display_wifi_ap_affects_quality">वर्तमान Wi-Fi AP वायरलेस डिस्प्ले की गुणवत्ता को प्रभावित कर सकता है।</string>
+    
+    <!-- Add for AT&T to show toast when pass pin/puk lock -->
+    <string name="pin_pass">कोड स्वीकृत हुआ</string>
+    <string name="puk_pass">पिन अवरोध हटा</string>
+    <!-- MountService start -->
+    <string name="sdcard_ready_title">SD कार्ड तैयार है</string>
+    <string name="sdcard_select_default_path">क्या आप डिफ़ॉल्ट लेखन डिस्क बदलना चाहते हैं?</string>
+    <string name="sdcard_default_path_change">डिफ़ॉल्ट डिस्क लेखन परिवर्तित कर दिया गया था।</string>
+    <string name="usb_storage_ready_title">बाहरी USB भंडारण तैयार है</string>
+    <!-- MountService end -->
+
+
+    <string name="sd_accessing_swtich_user_title">उपयोगकर्ता बदलें?</string>
+    <string name="sd_accessing_swtich_user_message">स्वामी खाते का सभी अरक्षित डेटा गुम या क्षतिग्रस्त हो जाएगा।</string> 
+    
+    <string name="VideoView_error_text_invalid_connection">"अमान्य कनेक्शन। (403 निषिद्ध)"</string>
+    <string name="dm_prompt">टर्मिनल पहले से ही लॉक है</string>
+    <string name="criticallowmessage">फ़ोन भंडारण भरा है, कृपया अनुपयोगी फ़ाइलों को हटा दें, अन्यथा एप्लिकेशन अचानक बंद हो सकता है।</string>
+    <string name="nq_sms_filter_title">एसएमएस फ़िल्टर</string>
+    <string name="nq_sms_filter_message">इस संदेश से शुल्क लग सकता है। क्या आप जारी रखना चाहते हैं?</string>
+    <string name="nq_sms_filter_yes">हाँ</string>
+    <string name="nq_sms_filter_no">नहीं</string>
+    <string name="drm_forward_forbidden">एक या अधिक संरक्षित फ़ाइलों का अग्रेषण नहीं किया जा सकता।</string>
+    <string name="wap_push_setting_noti_text">कृपया चुनने के लिए टैप करें</string>
+    <string name="url_dialog_choice_title">संदेश</string>
+    <string name="url_dialog_choice_message">यह ब्राउजर खोल देगा, जारी रखें?</string>
+    <string name="deleteApp">एप्लिकेशन की स्थापना रद्द करें</string>
+    <string name="deleteMail">मेल का बैकअप लें और भंडारण खाली करें</string>
+    <string name="storage_withsd">फ़ोन भंडारण में पर्याप्त स्थान नहीं है। कृपया कुछ स्थान खाली करें या सेटिंग्स में डिफ़ॉल्ट लेखन डिस्क बदलें।</string>
+    <string name="storage_withoutsd">फ़ोन भंडारण में पर्याप्त स्थान नहीं है। कृपया कुछ स्थान खाली करें या एक SD कार्ड प्रविष्ट करें।</string>
+    <string name="storage_sd">SD कार्ड में पर्याप्त स्थान नहीं है। कृपया कुछ स्थान खाली करें या सेटिंग्स में डिफ़ॉल्ट लेखन डिस्क बदलें।</string>
+    <string name="criticallowtitle">कोई स्थान नहीं</string>
+    <string name="calibration_data">अभी तक कोई अंशांकन नहीं। कृपया अंशांकन डेटा डाउनलोड करें![MTK आंतरिक उपयोगकर्ता]</string>
+    <string name="invalid_card">अमान्य कार्ड</string>
+    <string name="usbint_notification_title">USB इंटरनेट सक्रिय</string>
+
+    <string name="hdmi_notification_title">HDMI केबल जुड़ा</string>  
+    <string name="hdmi_notification_content">HDMI कॉन्फ़िगर करने के लिए क्लिक करें</string>
+    <string name="hdmi_hdvideo_toast">HDMI 4K वीडियो नहीं चला सकता, कनेक्शन बाधित हो जाएगा।</string>
+
+    <!-- VolumePanel -->
+    <string name="safe_media_volume_warning_title">चेतावनी</string> 
+    
+    <!-- Low Storage -->
+    <string name="aerr_application_lowstorage">आंतरिक भंडारण समाप्त हो रहा है, एप्लिकेशन रोक दिया गया है। कृपया कुछ स्थान खाली करें और पुनः प्रयास करें।</string>
+    <string name="aerr_process_lowstorage">आंतरिक भंडारण समाप्त हो रहा है, प्रक्रिया रोक दी गई है। कृपया कुछ स्थान खाली करें और पुनः प्रयास करें।</string>
+    <string name="low_internal_storage_view_title">आंतरिक भंडारण समाप्त हो रहा है</string>
+    <string name="deleteMails">मेल हटाएं</string>
+    <string name="low_storage_warning_message">कृपया कुछ स्थान खाली करें, अन्यथा कुछ एप्लिकेशन और सिस्टम प्रकार्य संभवतः सुचारु रूप से कार्य न करे।</string>
+
+    <!-- KK translation task -->
+    <string name="virtual_sim_on_slot1">वर्चुअल सिम 1 ऑन</string>
+    <string name="virtual_sim_on_slot2">वर्चुअल सिम 2 ऑन</string>
+    <string name="virtual_sim_on_slot3">वर्चुअल सिम 3 ऑन</string>
+    <string name="virtual_sim_on_slot4">वर्चुअल सिम 4 ऑन</string>
+    <string name="virtual_sim_on">वर्चुअल सिम ऑन</string>
+    <string name="RejectCauseTitle">नेटवर्क अस्वीकृति कारण</string>
+    <string name="MMRejectCause2">सिम का प्रावधान नहीं MM #2</string>
+    <string name="MMRejectCause3">सिम स्वीकार्य नहीं MM #3</string>
+    <string name="MMRejectCause5">कॉल असफल MM #5</string>
+    <string name="MMRejectCause6">फ़ोन स्वीकार्य नहीं MM #6</string>
+    <string name="MMRejectCause13">केवल SOS/आपातकालीन कॉल</string>
+    <string name="keyguard_accessibility_alarm_unlock">पावर-ऑफ़ अलार्म</string>
+    <string name="dialog_color_picker">रंग चयनकर्ता</string>
+    <string name="press_color_to_apply">लागू करने के लिए ऑन दबाएँ</string>
+    <string name="oper_long_46003">चाइना टेलीकॉम</string>
+    <string name="oper_short_46003">चाइना टेलीकॉम</string>
+    <string name="keyguard_sim_auto">"स्वचालित"</string>
+    <string name="searching_simcard">खोज रहा है...</string>
+    <string name="keyguard_domestic_zone_name">"बीजिंग"</string>
+    <string name="lockscreen_pin_too_many_failed_attempts_dialog_message">आपने अपना PIN <xliff:g id="number">%d</xliff:g> बार गलत डाला है।\n\nकृपया <xliff:g id="number">%d</xliff:g> सेकेंड बाद दोबारा प्रयास करें।</string>
+    <string name="lockscreen_password_too_many_failed_attempts_dialog_message">आपने अपना पासवर्ड <xliff:g id="number">%d</xliff:g> बार गलत डाला है।\n\nकृपया <xliff:g id="number">%d</xliff:g> सेकेंड बाद दोबारा प्रयास करें।</string>
+    <string name="ext_media_checking_notification_title_otg">USB भंडारण तैयार करें</string>
+    <string name="ext_media_badremoval_notification_title_otg">"USB संग्रहण अप्रत्‍याशित रूप से निकाला गया"</string>
+    <string name="ext_media_nomedia_notification_title_otg">"USB संग्रहण निकाला गया"</string>
+    <string name="ext_media_badremoval_notification_message_otg">"डेटा हानि से बचने के लिए निकालने से पहले USB संग्रहण अनमाउंट करें."</string>
+    <string name="ext_media_nomedia_notification_message_otg">"USB संग्रहण निकाला गया. नया मीडिया सम्‍मिलित करें."</string>
+    <string name="ext_media_unmountable_notification_title_otg">"क्षतिग्रस्‍त USB संग्रहण"</string>
+    <string name="ext_media_unmountable_notification_message_otg">"USB संग्रहण क्षतिग्रस्‍त है. आपको उसे पुन: प्रारूपित करना पड़ सकता है."</string>
+    <string name="ext_media_nofs_notification_title_otg">"रिक्त USB संग्रहण"</string>
+    <string name="ext_media_nofs_notification_message_otg">"USB संग्रहण रिक्त है या फ़ाइल सिस्‍टम असमर्थित है."</string>
+    <string name="ext_media_safe_unmount_notification_title_otg">"USB संग्रहण निकालने के लिए सुरक्षित है"</string>
+    <string name="ext_media_safe_unmount_notification_message_otg">"आप USB संग्रहण को सुरक्षित रूप से निकाल सकते हैं."</string>
+    <string name="sim_missing_slot3">स्लॉट 3: कोई सिम कार्ड नहीं मिला</string>
+    <string name="sim_missing_slot4">स्लॉट 4: कोई सिम कार्ड नहीं मिला</string>
+    <string name="sim_missing_slot1_card">स्लॉट 1: कोई कार्ड नहीं मिला</string>
+    <string name="sim_missing_slot2_card">स्लॉट 2: कोई कार्ड नहीं मिला</string>
+    <string name="sim_missing_card">कोई कार्ड नहीं मिला</string>
+    <string name="sim_missing_detail_card">कृपया जाँचें कि क्या कार्ड तैयार है</string>
+    <string name="wap_push_setting_noti_ticker">स्वतः पुश सेवा स्वीकारें या नहीं?</string>
+    <string name="wap_push_setting_noti_title">स्वतः पुश सेवा स्वीकारें या नहीं?</string>
+    <string name="gps_time_sync_fail_str">GPS द्वारा प्रदान समय को प्राप्त करने में असफल</string>
+    <string name="alarm_alert_dismiss_text">ख़ारिज करें</string>
+    <string name="description_direction_right">"खारिज करने के लिए दाईं ओर स्लाइड करें"</string>
+    <string name="alarm_alert_snooze_text">"स्नूज़ करें"</string>
+    <string name="description_direction_left">"स्नूज़ करने के लिए बाईं ओर स्लाइड करें"</string>
+    <string name="description_direction_up">"खारिज करने के लिए ऊपर स्लाइड करें"</string>
+    <string name="description_direction_down">"स्नूज़ करने के लिए नीचे स्लाइड करें"</string>
+    <string name="every_day">"प्रत्येक दिन"</string>
+    <string name="never">"कभी नहीं"</string>
+    <string name="default_label">"अलार्म"</string>
+    <string name="dismiss_power_on">रद्द एवं पॉवर चालू</string>
+    <string name="dismiss_power_off">रद्द एवं पॉवर बंद</string>
+    <string name="voiceui_notify_string">आप कह सकते हैं</string>
+    <string name="voiceui_control_poweroff_alarm">पावर-ऑफ़ अलार्म नियंत्रित करने के लिए</string>
+    <string name="voiceui_or">या</string>
+    <string name="headset_pin_recognition">आपके ईयरफ़ोन फ़ोन के अनुकूल नहीं हैं। कृपया दूसरे आजमाएँ</string>
+    <string name="msensor_toast_text">कम्पास हस्तक्षेप। कम्पास फिर से मापने के लिए फ़ोन को चित्र 8 में प्रदान तरीके से हिलाएँ।</string>
+    <string name="usb_autorun_cdrom_notification_title">ऑटो रन cdrom की तरह जुड़ा है</string>
+    <string name="ct_net_name">"CTNET"</string>
+    <string name="ct_wap_name">"CTWAP"</string>
+</resources>

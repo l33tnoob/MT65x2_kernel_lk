@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.mediatek.smsreg"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/perm_sent_mms" android:label="@string/app_name">
+
+	<receiver android:name="com.mediatek.smsreg.SmsRegReceiver">  
+	    <intent-filter>  
+		<category android:name="android.intent.category.DEFAULT"></category>
+		<action android:name="android.intent.action.BOOT_COMPLETED"></action>
+		<action android:name="com.mediatek.smsreg.SEND_MESSAGE_CONFIRM_DIALOG_END"></action>
+		<!--<action android:name="android.intent.action.DM_REGISTER_SMS_RECEIVED"/>
+		<action android:name="android.intent.action.SIM_STATE_CHANGED"/>-->
+	    </intent-filter>  
+	</receiver> 
+
+	<service android:name="com.mediatek.smsreg.SmsRegService">
+        </service> 
+
+	<provider 
+	    android:name="com.mediatek.smsreg.SmsRegContentProvider"
+	    android:authorities="com.mediatek.providers.smsreg"
+	    android:readPermission="android.permission.READ_PHONE_STATE"
+		>
+	</provider> 
+
+    <!--  dialog activity when send message-->     
+    <activity android:name=".ui.SendMessageAlertActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/manage_permission_app_label"
+            android:launchMode="singleInstance"
+            android:taskAffinity="com.mediatek.smsreg"
+            android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc"
+            android:theme="@*android:style/Theme.Holo.Dialog.Alert">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <action android:name="com.mediatek.smsreg.SEND_MESSAGE_CONFIRM_DIALOG_START" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity> 
+    
+   </application>
+    <uses-sdk android:minSdkVersion="8" />
+
+<uses-permission android:name ="android.permission.RECEIVE_BOOT_COMPLETED" />
+<!--<uses-permission android:name= "android.permission.RECEIVE_DM_REGISTER_SMS" />  -->
+<uses-permission android:name="android.permission.SEND_SMS" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+</manifest> 
+
+

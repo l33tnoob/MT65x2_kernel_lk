@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:id="@+id/deleteP">
+	    <item android:id="@+id/delete"
+	        android:icon="@drawable/ic_menu_trash"
+	        android:showAsAction="always"
+	        android:title="@string/STR_NMS_MENU_DELETE"/>
+    </group>
+    <group android:id="@+id/forwardP">
+	　　<item android:id="@+id/forward"
+	    	android:icon="@drawable/ic_menu_forward"
+			android:showAsAction="always"
+			android:title="@string/STR_NMS_MENU_FORWARD"/>
+　　</group>
+　　<group android:id="@+id/importantP">
+	　　<item android:id="@+id/important"
+	    	android:showAsAction="never"
+	    	android:title="@string/STR_NMS_MENU_IMPORTANT"/>
+　　</group>
+	<group android:id="@+id/remove_importantP">
+	    <item android:id="@+id/remove_important"
+	    	android:showAsAction="never"
+	    	android:title="@string/STR_NMS_REMOVE_IMPORTANT"/>
+	</group>
+</menu>

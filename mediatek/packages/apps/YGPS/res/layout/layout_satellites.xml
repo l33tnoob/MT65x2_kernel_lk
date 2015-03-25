@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_satellites"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.mediatek.ygps.SatelliteSkyView
+        android:id="@+id/sky_view"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <com.mediatek.ygps.SatelliteSignalView
+        android:id="@+id/signal_view"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2" />
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:layout_marginTop="10dp"
+            android:text="@string/hqa_nfc_pnfc_text"
+            android:textSize="16sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/hqa_pnfc_et_pnfc"
+            android:layout_width="90pt"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35pt" >
+        </EditText>
+
+        <Button
+            android:id="@+id/hqa_pnfc_btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/hqa_nfc_send"
+            android:width="100dp" />
+
+        <Button
+            android:id="@+id/hqa_pnfc_btn_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/hqa_nfc_return"
+            android:width="100dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:id="@+id/hqa_pnfc_tv_reslut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp" >
+        </TextView>
+    </LinearLayout> 
+</LinearLayout>

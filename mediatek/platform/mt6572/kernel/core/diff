@@ -1,0 +1,229 @@
+--- mt_eint.c	2012-04-27 23:05:51.286690000 +0800
++++ mt_eint.c.PMIC_EMUL	2012-04-27 20:06:28.877665000 +0800
+@@ -34,7 +34,6 @@
+  */
+ //#define CTP
+ #define LDVT
+-//#define EINT_TEST
+ 
+ #ifdef LDVT
+ #include <linux/kernel.h>
+@@ -59,7 +58,7 @@
+ #include "eint.h"
+ #endif
+ 
+-#define EINT_DEBUG   0
++#define EINT_DEBUG   1
+ #if(EINT_DEBUG == 1)
+ #ifdef CTP
+ #define dbgmsg dbg_print
+@@ -76,7 +75,7 @@
+ 
+ typedef struct {
+ #ifdef CTP
+-	void (*eint_func[EINT_MAX_CHANNEL]) (unsigned int);
++	void (*eint_func[EINT_MAX_CHANNEL]) (int);
+ #else
+ 	void (*eint_func[EINT_MAX_CHANNEL]) (void);
+ #endif
+@@ -85,9 +84,6 @@
+ 	unsigned int is_deb_en[EINT_MAX_CHANNEL];
+ 	unsigned int deb_time[EINT_MAX_CHANNEL];
+ #ifndef CTP
+-#if defined(EINT_TEST)
+-	unsigned int softisr_called[EINT_MAX_CHANNEL];
+-#endif
+ 	struct timer_list eint_sw_deb_timer[EINT_MAX_CHANNEL];
+ #endif				/*!CTP */
+ } eint_func;
+@@ -202,12 +198,22 @@
+  */
+ void mt_eint_emu_set(unsigned int eint_num)
+ {
+-	unsigned int base = (eint_num / 32) * 4 + EINT_EMUL_BASE;
+-	unsigned int bit = 1 << (eint_num % 32);
+-	unsigned int value;
++        unsigned int base = 0;
++        unsigned int bit = 1 << (eint_num % 32);
++	unsigned int value = 0;
++
++        if (eint_num < EINT_AP_MAXNUMBER) {
++                base = (eint_num / 32) * 4 + EINT_EMUL_BASE;
++        } else {
++                base = PMIC_EINT_EMUL_BASE;
++        }
+ 	value = readl(base);
+ 	value = bit | value;
+-	writel(value, base);
++        writel(bit, base);
++
++        dbgmsg("[EINT] emul set addr:%x = %x\n", base, bit);
++
++
+ }
+ 
+ /*
+@@ -216,12 +222,21 @@
+  */
+ void mt_eint_emu_clr(unsigned int eint_num)
+ {
+-	unsigned int base = (eint_num / 32) * 4 + EINT_EMUL_BASE;
+-	unsigned int bit = 1 << (eint_num % 32);
+-	unsigned int value;
++        unsigned int base = 0;
++        unsigned int bit = 1 << (eint_num % 32);
++	unsigned int value = 0;
++
++        if (eint_num < EINT_AP_MAXNUMBER) {
++                base = (eint_num / 32) * 4 + EINT_EMUL_BASE;
++        } else {
++                base = PMIC_EINT_EMUL_BASE;
++        }
+ 	value = readl(base);
+ 	value = (~bit) & value;
+-	writel(value, base);
++        writel(bit, base);
++
++        dbgmsg("[EINT] emul clr addr:%x = %x\n", base, bit);
++
+ }
+ 
+ /*
+@@ -802,6 +817,31 @@
+ 		mt65xx_eint_unmask(eint_num);
+ 	}
+ }
++static ssize_t cur_eint_soft_set_show(struct device_driver *driver, char *buf)
++{
++    return snprintf(buf, PAGE_SIZE, "%d\n", cur_eint_num);
++}
++static ssize_t cur_eint_soft_set_store(struct device_driver *driver, const char *buf, size_t count)
++{
++    char *p = (char *)buf;
++    unsigned int num;
++
++    num = simple_strtoul(p, &p, 10);
++    if (num != 1) {
++        printk("invalid number:%d it should be 1 to trigger interrupt.\n", num);
++    } else {
++
++//#if 0
++#if defined(CONFIG_MT6585_FPGA)||defined(CONFIG_MT6589_FPGA)
++	mt_eint_emu_set(cur_eint_num);
++#else
++        mt_eint_soft_set(cur_eint_num);
++#endif
++    }
++
++    return count;
++}
++DRIVER_ATTR(current_eint_soft_set, 0664, cur_eint_soft_set_show, cur_eint_soft_set_store);
+ /*
+  * cur_eint_show: To show cur_eint_num.
+  */
+@@ -1050,46 +1090,10 @@
+ 
+ DRIVER_ATTR(current_eint_deb_en, 0644, cur_eint_deb_en_show,
+ 	    cur_eint_deb_en_store);
+-#if defined(EINT_TEST)
+-static ssize_t cur_eint_soft_set_show(struct device_driver *driver, char *buf)
++void mt_eint_soft_isr()
+ {
+-	unsigned int ret = EINT_FUNC.softisr_called[cur_eint_num];
+-	/* reset to 0 for the next testing. */
+-	EINT_FUNC.softisr_called[cur_eint_num] = 0;
+-	return snprintf(buf, PAGE_SIZE, "%d\n", ret);
+-}
+-/*
+- * set 1 to trigger and set 0 to clr this interrupt
+- */
+-static ssize_t cur_eint_soft_set_store(struct device_driver *driver, const char *buf, size_t count)
+-{
+-    char *p = (char *)buf;
+-    unsigned int num;
+-
+-    num = simple_strtoul(p, &p, 10);
+-    if (num == 1) {
+-#if defined(CONFIG_MT6585_FPGA)||defined(CONFIG_MT6589_FPGA)
+-	mt_eint_emu_set(cur_eint_num);
+-#else
+-        mt_eint_soft_set(cur_eint_num);
+-#endif
+-    } else if (num == 0) {
+-#if defined(CONFIG_MT6585_FPGA)||defined(CONFIG_MT6589_FPGA)
+-	mt_eint_emu_clr(cur_eint_num);
+-#else
+-        mt_eint_soft_clr(cur_eint_num);
+-#endif
+-    } else {
+-        printk("invalid number:%d it should be 1 to trigger interrupt or 0 to clr.\n", num);
+-    }
+-
+-    return count;
+-}
+-DRIVER_ATTR(current_eint_soft_set, 0664, cur_eint_soft_set_show, cur_eint_soft_set_store);
+-void mt_eint_soft_isr(void)
+-{
+-	EINT_FUNC.softisr_called[cur_eint_num] = 1;
+ 	printk("Got eint:%d\n", cur_eint_num);
++//#if 0
+ #if defined(CONFIG_MT6585_FPGA)||defined(CONFIG_MT6589_FPGA)
+ 	mt_eint_emu_clr(cur_eint_num);
+ #else
+@@ -1102,7 +1106,7 @@
+ 	/* if ISR has been registered return 1
+ 	 * else return 0
+ 	 */
+-	unsigned int sens, pol, deb, autounmask, base, dbnc;
++	unsigned int sens, pol, deb, *isr, autounmask, base, dbnc;
+ 	base = (cur_eint_num / 4) * 4 + EINT_DBNC_BASE;
+ 	sens = mt_eint_get_sens(cur_eint_num);
+ 	pol = mt_eint_get_polarity(cur_eint_num);
+@@ -1171,7 +1175,6 @@
+ 	return count;
+ }
+ DRIVER_ATTR(current_eint_reg_isr, 0644, cur_eint_reg_isr_show, cur_eint_reg_isr_store);
+-#endif
+ /*
+  * mt_eint_setdomain0: set all eint_num to domain 0.
+  */
+@@ -1186,6 +1189,7 @@
+ 		mt65xx_reg_sync_writel(val, base + (i * 4));
+ 		dbgmsg("[EINT] domain addr:%x = %x\n", base, readl(base));
+ 	}
++
+ 	base = PMIC_EINT_D0_EN_BASE;
+ 	mt65xx_reg_sync_writel(val, base);
+ 	dbgmsg("[EINT] domain addr:%x = %x\n", base, readl(base));
+@@ -1202,6 +1206,10 @@
+ 
+ 	/* assign to domain 0 for AP */
+ 	mt_eint_setdomain0();
++	
++#if 1   //for PMIC soft set
++        //mt65xx_reg_sync_writel(0xFFFFFFFF, PMIC_EINT_INPUT_MUX_SET_BASE);
++#endif
+ 	wake_lock_init(&EINT_suspend_lock, WAKE_LOCK_SUSPEND, "EINT wakelock");
+ 
+ 	for (i = 0; i < EINT_MAX_CHANNEL; i++) {
+@@ -1212,9 +1220,6 @@
+ 		EINT_FUNC.eint_sw_deb_timer[i].expires = 0;
+ 		EINT_FUNC.eint_sw_deb_timer[i].data = 0;
+ 		EINT_FUNC.eint_sw_deb_timer[i].function = NULL;
+-#if defined(EINT_TEST)
+-		EINT_FUNC.softisr_called[i] = 0;
+-#endif
+ #endif				/*!CTP */
+ 	}
+ 
+@@ -1233,10 +1238,8 @@
+ 	ret |= driver_create_file(&mt_eint_drv, &driver_attr_current_eint_pol);
+ 	ret |= driver_create_file(&mt_eint_drv, &driver_attr_current_eint_deb);
+ 	ret |= driver_create_file(&mt_eint_drv, &driver_attr_current_eint_deb_en);
+-#if defined(EINT_TEST)
+ 	ret |= driver_create_file(&mt_eint_drv, &driver_attr_current_eint_soft_set);
+ 	ret |= driver_create_file(&mt_eint_drv, &driver_attr_current_eint_reg_isr);
+-#endif
+ 	if (ret) {
+ 		printk("fail to create mt_eint sysfs files\n");
+ 	}

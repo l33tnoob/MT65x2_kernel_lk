@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+--><resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">    
+    <string name="schedule_power_on_off_settings_title">সিডিউল পাওয়ার চালু/বন্ধ</string>
+    <!-- Main Settings screen setting option summary text for the item to go into the date and time settings. -->  
+    <string name="schedule_power_on_off_time">সময়</string>
+    <!-- Date & time setting screen setting check box title if the date and time should be determined automatically -->  
+    <string name="schedule_power_on_off_repeat">পুনরাবৃত্তি করুন</string>
+    <!-- Date & time setting screen setting option summary text when Automatic check box is selected (that is, when date and time should be determined automatically) -->  
+    <string name="schedule_power_on_off_set">সিডিউল পাওয়ার চালু/বন্ধ সেট করুন</string>
+    <string name="schedule_power_on_set">শিডিউল পাওয়ার চালু সেট করুন</string>
+    <string name="schedule_power_off_set">শিডিউল পাওয়ার বন্ধ সেট করুন</string>
+    <!-- Context Menu Item on Alarm Settings screen: Enable alarm -->  
+    <string name="enable_schpwr">সক্রিয় করুন</string>
+    <!-- Context Menu Item on Alarm Settings screen: Disable alarm -->  
+    <string name="disable_schpwr">নিষ্ক্রিয় করুন</string>
+    <!-- Alarm confirmation toast: Describes how long from now until
+         alarm fires -->  
+    <string-array name="alarm_set">
+        <item>এখন থেকে ১ মিনিটেরও কম সময়ের জন্য এই পাওয়ার চালু সেট করা হয়েছে।</item>
+        <item>এখন থেকে 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g> জন্য এই পাওয়ার অন সেট করা হয়েছে।
+        </item>  
+        <item>এই পাওয়ার চালু সেট করা হয়েছে 
+            <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> এখন থেকে।
+        </item>  
+        <item>এখন থেকে 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g> and 
+            <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> জন্য এই পাওয়ার অন সেট করা হয়েছে।
+        </item>  
+        <item>এই পাওয়ার চালু সেট করা হয়েছে 
+            <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> এখন থেকে।
+        </item>  
+        <item>এখন থেকে 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g> and 
+            <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> জন্য এই পাওয়ার অন সেট করা হয়েছে।
+        </item>  
+        <item>এই পাওয়ার চালু সেট করা হয়েছে 
+            <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> এবং 
+            <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> এখন থেকে
+        </item>  
+        <item>এখন থেকে 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g>, 
+            <xliff:g id="HOURS" example="2hours">%2$s</xliff:g>, and 
+            <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> জন্য এই পাওয়ার অন সেট করা হয়েছে।
+        </item>  
+        <item>এখন থেকে ১ মিনিটেরও কম সময়ের জন্য এই পাওয়ার বন্ধ সেট করা হয়েছে।</item>
+        <item>এখন থেকে 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g> জন্য এই পাওয়ার অফ সেট করা হয়েছে।
+        </item>  
+        <item>এই পাওয়ার বন্ধ সেট করা হয়েছে 
+            <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> এখন থেকে।
+        </item>  
+        <item>এখন থেকে 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g> and 
+            <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> জন্য এই পাওয়ার অফ সেট করা হয়েছে।
+        </item>  
+        <item>এই পাওয়ার বন্ধ সেট করা হয়েছে 
+            <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> এখন থেকে।
+        </item>  
+        <item>এখন থেকে 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g> and 
+            <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> জন্য এই পাওয়ার অফ সেট করা হয়েছে।
+        </item>  
+        <item>এই পাওয়ার বন্ধ সেট করা হয়েছে 
+            <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> এবং 
+            <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> এখন থেকে।
+        </item>  
+        <item>এখন থেকে 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g>, 
+            <xliff:g id="HOURS" example="2hours">%2$s</xliff:g>, and 
+            <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> জন্য এই পাওয়ার অফ সেট করা হয়েছে।
+        </item> 
+    </string-array>
+    <!-- Alarm confirmation toast: singular day -->  
+    <string name="day">"১ দিন"</string>
+    <!-- Alarm confirmation toast: plural days -->  
+    <string name="days">" 
+        <xliff:g id="days">%s</xliff:g> days"
+    </string>  
+    <!-- Alarm confirmation toast: singular hour -->  
+    <string name="hour">১ ঘণ্টা</string>
+    <!-- Alarm confirmation toast: plural hours -->  
+    <string name="hours"> 
+        <xliff:g id="hours">%s</xliff:g> ঘণ্টা
+    </string>  
+    <!-- Alarm confirmation toast: singular minute  -->  
+    <string name="minute">"১ মিনিট"</string>
+    <!-- Alarm confirmation toast: plural minutes  -->  
+    <string name="minutes">" 
+        <xliff:g id="minutes">%s</xliff:g> মিনিট"
+    </string>  
+    <!-- Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: special case for when
+         the alarm is set to repeat every day -->  
+    <string name="every_day">প্রতি দিন</string>  
+    <!-- Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: special case for when
+         the alarm is set to never repeat -->  
+    <string name="never">কখনো না</string>  
+    <!-- Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: concatenate days with
+         this character, i.e. "Mon, Tue, Wed" -->  
+    <!-- Done button when editing an alarm. -->  
+    <string name="done">সম্পন্ন</string>  
+    <!-- Revert button when editing an alarm. -->  
+    <string name="revert">প্রত্যাবর্তন করুন</string>  
+    <string name="schpwr_shutdown_message">"আপনার ফোন 
+        <xliff:g id="seconds">%s</xliff:g> সেকেন্ডের মধ্যে বন্ধ হয়ে যাবে"
+    </string>  
+    <string name="schpwr_shutdown_message_second">"আপনার ফোন 
+        <xliff:g id="second">%s</xliff:g> সেকেন্ডের মধ্যে বন্ধ হয়ে যাবে"
+    </string>  
+</resources>

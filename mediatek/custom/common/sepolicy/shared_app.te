@@ -1,0 +1,161 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type shared_app, domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+###
+### Apps signed with the shared key.
+###
+
+permissive shared_app;
+app_domain(shared_app)
+platform_app_domain(shared_app)
+# Access the network.
+net_domain(shared_app)
+# Access bluetooth.
+bluetooth_domain(shared_app)
+# unconfined_domain(shared_app)
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+###
+### Apps signed with the shared key.
+###
+
+permissive shared_app;
+# app_domain(shared_app)
+# platform_app_domain(shared_app)
+# Access the network.
+# net_domain(shared_app)
+# Access bluetooth.
+# bluetooth_domain(shared_app)
+# unconfined_domain(shared_app)
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive shared_app;
+# 20131024 Sanity_01
+allow shared_app mali_device:chr_file ioctl;
+allow shared_app platform_app_data_file:dir { write search read remove_name open add_name };
+allow shared_app platform_app_data_file:file { lock create unlink open setattr };
+
+
+# 20131024 Sanity_02
+allow shared_app devmap_device:chr_file { read ioctl open };
+allow shared_app mali_device:chr_file { read write };
+allow shared_app platform_app_data_file:file { rename ioctl };
+
+
+# 20131024 CTS_01
+allow shared_app device:chr_file { read ioctl open };
+allow shared_app devmap_device:chr_file { read ioctl open };
+allow shared_app mali_device:chr_file { read write getattr open };
+allow shared_app platform_app_data_file:dir { create getattr setattr };
+allow shared_app platform_app_data_file:file { rename ioctl };
+
+
+# 20131024 Sanity_03
+allow shared_app sdcard_external:dir { write add_name };
+allow shared_app sdcard_external:file { write create open getattr };
+
+
+# 20131024 CTS_02
+allow shared_app dumpstate:fd use;
+allow shared_app dumpstate:unix_stream_socket { read write };
+
+
+# 20131028 CTS_06
+allow shared_app system_data_file:file append;
+
+
+# 20131028 Sanity_09
+allow shared_app sdcard_external:dir create;
+
+# 20131028 CTS_11
+allow shared_app adbd:unix_stream_socket setopt;
+
+
+# 20131119 FeatureSQC
+allow shared_app adbd:unix_stream_socket setopt;
+allow shared_app asec_apk_file:file { read getattr open };
+allow shared_app sdcard_external:dir { read open };
+allow shared_app sdcard_external:file read;
+allow shared_app system_data_file:dir { write remove_name add_name };
+allow shared_app system_data_file:file { rename write ioctl setattr lock create };
+
+
+# 20131121 Sanity_QA
+allow shared_app devpts:chr_file write;
+allow shared_app init:unix_stream_socket { read write };
+allow shared_app logwrapper:binder { transfer call };
+allow shared_app logwrapper:fd use;
+allow shared_app logwrapper:process sigchld;
+allow shared_app logwrapper:unix_stream_socket { read write };
+allow shared_app logwrapper_tmpfs:file read;
+allow shared_app self:netlink_socket { read bind create };
+
+
+
+# 20131122 Add Set Property Rule
+allow shared_app property_type:property_service set;
+
+# 20131213 KKMR1_CTS_01
+allow shared_app device:chr_file { write getattr };
+allow shared_app dfo_socket:sock_file write;
+allow shared_app featured:unix_stream_socket connectto;
+allow shared_app property_socket:sock_file write;
+
+
+# 20131213 KKMR1_CQ_01
+allow shared_app M4U_device_device:chr_file { read open };
+allow shared_app aee_aed:fd use;
+allow shared_app aee_aed:process sigchld;
+allow shared_app aee_aed:unix_stream_socket connectto;
+allow shared_app asec_apk_file:dir search;
+allow shared_app device:chr_file { write getattr };
+allow shared_app devpts:chr_file { write getattr };
+allow shared_app dfo_socket:sock_file write;
+allow shared_app dm_agent_binder:binder call;
+allow shared_app dumpstate:unix_stream_socket { getopt getattr };
+allow shared_app featured:unix_stream_socket connectto;
+allow shared_app init:binder { transfer call };
+allow shared_app init:unix_stream_socket { read write setopt };
+allow shared_app init_shell:binder call;
+allow shared_app init_tmpfs:file read;
+allow shared_app linker_exec:file { read execute open };
+allow shared_app logwrapper:binder { transfer call };
+allow shared_app logwrapper:fd use;
+allow shared_app logwrapper:process sigchld;
+allow shared_app logwrapper:unix_stream_socket { read write };
+allow shared_app logwrapper_tmpfs:file read;
+allow shared_app platform_app_data_file:lnk_file { read create };
+allow shared_app property_socket:sock_file write;
+allow shared_app sdcard_internal:dir { read write search open add_name };
+allow shared_app sdcard_internal:file { read write getattr open create };
+allow shared_app self:netlink_socket { write read create bind };
+allow shared_app toolbox_exec:file { read execute open execute_no_trans };
+allow shared_app wallpaper_file:file getattr;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow shared_app device:chr_file { write getattr };
+allow shared_app dfo_socket:sock_file write;
+allow shared_app featured:unix_stream_socket connectto;
+allow shared_app init:binder { transfer call };
+allow shared_app init:unix_stream_socket setopt;
+allow shared_app init_shell:binder call;
+allow shared_app init_tmpfs:file read;
+allow shared_app property_socket:sock_file write;
+allow shared_app sdcard_internal:file { read getattr open };
+

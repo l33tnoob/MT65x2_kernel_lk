@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+     <com.hissage.ui.view.NmsLevelControlLayout
+        android:id="@+id/sl_media"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#eee" >
+    </com.hissage.ui.view.NmsLevelControlLayout>
+        <LinearLayout
+        android:id="@+id/ll_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/pb_wait"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_prompt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/STR_NMS_SELECT_CONTAT_WAIT"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</LinearLayout>

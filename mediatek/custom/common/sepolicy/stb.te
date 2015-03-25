@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binstb Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type stb_exec , exec_type, file_type;
+type stb ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive stb;
+init_daemon_domain(stb)
+
+
+# 20131122 Add Set Property Rule
+allow stb  property_type:property_service set;

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">  
+
+  <LinearLayout android:layout_width="match_parent"
+  	android:layout_height="match_parent"
+  	android:id="@+id/text_linear_layout"
+  	android:layout_weight="1">  
+  	
+	  <ScrollView android:layout_width="match_parent" 
+	  		android:layout_height="wrap_content"
+	  		android:id="@+id/message_settings_detail_info_scroll"
+	  		>
+			
+	  	<TextView
+	  		android:id="@+id/message_settings_detail_info"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="6dip"
+	        android:layout_marginRight="5dip"
+	        android:layout_marginLeft="7dip"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignWithParentIfMissing="true"
+	  	/>
+	
+	  </ScrollView> 
+  </LinearLayout>
+  
+  <LinearLayout android:layout_width="match_parent"
+  	android:layout_height="wrap_content"
+  	android:layout_alignParentBottom="true"
+  	android:background="@drawable/btn_background"
+  	android:id="@+id/btn_linear_layout"
+  	
+  	android:gravity="center_vertical"
+  	android:focusable="false" android:orientation="horizontal">
+  	
+  	<Button android:id="@+id/full_install_btn"
+  		android:text="@string/full_install_text"
+	    android:layout_weight="1"
+	    android:layout_marginTop="2dip" android:layout_marginBottom="0dip"
+		android:layout_width="match_parent" android:layout_height="wrap_content" 
+		android:focusable="true" android:clickable="true" 
+		android:focusableInTouchMode="false"/>
+		
+	<Button android:id="@+id/custom_install_btn"
+		android:text="@string/custom_install_text"
+	    android:layout_weight="1"
+	    android:layout_marginTop="2dip" android:layout_marginBottom="0dip"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:focusable="true" android:clickable="true" 
+		android:focusableInTouchMode="false"/>
+		
+  </LinearLayout>
+  
+</LinearLayout>

@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binadb Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type adb_exec , exec_type, file_type;
+type adb ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive adb;
+init_daemon_domain(adb)
+
+
+# 20131122 Add Set Property Rule
+allow adb  property_type:property_service set;

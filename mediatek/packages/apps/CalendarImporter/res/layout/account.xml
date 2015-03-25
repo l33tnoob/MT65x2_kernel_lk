@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView 
+        style="?android:attr/windowTitleStyle"
+        android:id="@+id/account_title"
+        android:text="@string/import_to"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dip"
+        android:layout_marginLeft="10dip" 
+        android:layout_marginTop="15dip"/>
+    <View 
+        android:id="@+id/account_devide_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="10dip"
+        android:background="@android:color/holo_blue_light"/>
+    <ListView 
+        android:id="@+id/account_list"
+        android:layout_marginTop="0dip"
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:background="#FFFFFFFF">
+    </ListView>
+</LinearLayout>

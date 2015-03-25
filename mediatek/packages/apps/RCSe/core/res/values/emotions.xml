@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* Copyright Statement:
+ *
+ * This software/firmware and related documentation ("MediaTek Software") are
+ * protected under relevant copyright laws. The information contained herein
+ * is confidential and proprietary to MediaTek Inc. and/or its licensors.
+ * Without the prior written permission of MediaTek inc. and/or its licensors,
+ * any reproduction, modification, use or disclosure of MediaTek Software,
+ * and information contained herein, in whole or in part, shall be strictly prohibited.
+ *
+ * MediaTek Inc. (C) 2012. All rights reserved.
+ *
+ * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+ * THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+ * RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO RECEIVER ON
+ * AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+ * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+ * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+ * SUPPLIED WITH THE MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+ * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+ * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+ * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+ * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+ * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+ * CUMULATIVE LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+ * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+ * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+ * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+ *
+ * The following software/firmware and/or related documentation ("MediaTek Software")
+ * have been modified by MediaTek Inc. All revisions are subject to any receiver's
+ * applicable license agreements with MediaTek Inc.
+ */
+-->
+<!-- 
+/*
+ * Note: The location of emotion code and emotion resource id MUST be one to one 
+ * correspondence,otherwise the emotion code will map to a wrong emotion resource ID.
+ */
+ -->
+<resources>
+    <!-- Do Not Translate -->
+    <string-array name="emotion_codes">
+        <item>:-)</item>        <!-- 0:Happy -->
+        <item>;-)</item>        <!-- 1:Winking -->
+        <item>:-(</item>        <!-- 2:Sad -->
+        <item>:\'(</item>       <!-- 3:Crying-->
+        <item>B-)</item>        <!-- 4:Cool -->
+        <item>:-*</item>        <!-- 5:Kissing -->
+        <item>:-P</item>        <!-- 6:Tongue sticking -->
+        <item>:O</item>         <!-- 7:Yelling -->
+        <item>O:-)</item>       <!-- 8:Angel -->
+        <item>=-O</item>        <!-- 9:Surprised -->
+        <item>:-[</item>        <!-- 10:Embarrassed -->
+        <item>:-$</item>        <!-- 11:Money mouth -->
+        <item>:-!</item>        <!-- 12:Foot in mouth -->
+        <item>:-\\</item>       <!-- 13:Undecided -->
+        <item>:-D</item>        <!-- 14:Laughing -->
+        <item>o_O</item>        <!-- 15:Confused --> 
+        <item>:-SS</item>       <!-- 16:Lips are sealed-->
+        <item>&lt;3</item>      <!-- 17:Heart -->
+        <item>x-(</item>        <!-- 18:Mad -->
+        <item>:))</item>        <!-- 19:Smirk-->
+        <item>:-|</item>        <!-- 20:Pocker face -->
+        <item>:-zZ</item>       <!-- 21:Sleep -->
+        <item>:-E</item>        <!-- 22:Vomit -->
+        <item>;-o</item>        <!-- 23:Charming -->
+        <item>- -"</item>       <!-- 24:Speechless -->
+        <item>>:-)</item>       <!-- 25:Demons --> 
+        <item>T-T</item>        <!-- 26:Grievance -->
+        <item>0v0</item>        <!-- 27:Absorbed -->
+        <item>:\'-)</item>      <!-- 28:Cute -->
+        <item>|-O</item>        <!-- 29:Extend sleep -->
+        <item>VOV</item>        <!-- 30:Struggle -->
+        <item>:-@</item>        <!-- 31:Angry -->
+        <item>o0o</item>        <!-- 32:Horror -->
+        <item>X~X</item>        <!-- 33:Faint -->
+        <item>:-}</item>        <!-- 34:Slobber -->
+        <item>QVQ</item>        <!-- 35:Bad lol -->
+        <item>\\#/</item>       <!-- 36:Go ballistic -->
+        <item>O!!!</item>       <!-- 37:Bomb -->
+        <item>&amp;^&amp;</item><!-- 38:Domineering -->
+        <item>ORZ</item>        <!-- 39:Depressed -->
+        <item>\\(^o^)/~</item>  <!-- 40:Good -->
+        <item>╮(╯﹏╰)╭</item>   <!-- 41:No -->
+        <item>O(∩_∩)O</item>    <!-- 42:Ok -->
+        <item>^_^</item>        <!-- 43:Victory -->
+        <item>⊙╭╯</item>        <!-- 44:Seduce -->
+        <item>(ˇ_ˇ)</item>      <!-- 45:Down -->
+        <item>~~~~~~</item>     <!-- 46:Rain -->
+        <item>\\▽/</item>       <!-- 47:Lightning -->
+        <item>⊙</item>          <!-- 48:Sun -->
+        <item>╭∩╮</item>        <!-- 49:Microphone -->
+        <item>(o)</item>        <!-- 50:Clock -->
+        <item>( _ )</item>      <!-- 52:Email -->
+        <item>++</item>         <!-- 52:Candle -->
+        <item>Y(^o^)Y</item>    <!-- 53:Birthday cake -->
+        <item>{()}</item>       <!-- 54:Gift -->
+        <item>(*)</item>        <!-- 55:Star -->
+        <item>(L)or&lt;3</item> <!-- 56:Extend heart -->
+        <item>(u)</item>        <!-- 57:Broken heart -->
+        <item>*-:-)</item>      <!-- 58:Bulb -->
+        <item>-8</item>         <!-- 59:Music -->
+        <item>:-m</item>        <!-- 60:Shenma -->
+        <item>:-y</item>        <!-- 61:Fuyun -->
+        <item>:-//</item>       <!-- 62:Rice -->
+        <item>*&amp;*</item>    <!-- 63:Roses -->
+        <item>^-^</item>        <!-- 64:Film -->
+        <item>:-~~</item>       <!-- 65:Aeroplane -->
+        <item>^``^</item>       <!-- 66:Umbrella -->
+        <item>*^*</item>        <!-- 67:Caonima -->
+        <item>&lt;(\')</item>   <!-- 68:Penguin -->
+        <item>^o^</item>        <!-- 69:Pig -->
+    </string-array>
+        <!-- Do Not Translate -->
+        <string-array name="emotion_resid">
+        <item>@drawable/emotion_happy</item>            <!-- 0:Happy -->
+        <item>@drawable/emotion_winking</item>          <!-- 1:Winking -->
+        <item>@drawable/emotion_sad</item>              <!-- 2:Sad -->
+        <item>@drawable/emotion_crying</item>           <!-- 3:Crying-->
+        <item>@drawable/emotion_cool</item>             <!-- 4:Cool -->
+        <item>@drawable/emotion_kissing</item>          <!-- 5:Kissing -->
+        <item>@drawable/emotion_tongue</item>           <!-- 6:Tongue sticking -->
+        <item>@drawable/emotion_yelling</item>          <!-- 7:Yelling -->
+        <item>@drawable/emotion_angel</item>            <!-- 8:Angel -->
+        <item>@drawable/emotion_surprised</item>        <!-- 9:Surprised -->
+        <item>@drawable/emotion_embarrassed</item>      <!-- 10:Embarrassed -->
+        <item>@drawable/emotion_money</item>            <!-- 11:Money mouth -->
+        <item>@drawable/emotion_wrong</item>            <!-- 12:Foot in mouth -->
+        <item>@drawable/emotion_undecided</item>        <!-- 13:Undecided -->
+        <item>@drawable/emotion_laughing</item>         <!-- 14:Laughing -->
+        <item>@drawable/emotion_confused</item>         <!-- 15:Confused-->
+        <item>@drawable/emotion_lips_are_sealed</item>  <!-- 16:Lips are sealed -->
+        <item>@drawable/emotion_heart</item>            <!-- 17:Heart -->
+        <item>@drawable/emotion_mad</item>              <!-- 18:Mad -->
+        <item>@drawable/emotion_smirk</item>            <!-- 19:Smirk -->
+        <item>@drawable/emotion_poker_face</item>       <!-- 20:Pocker face -->
+        <item>@drawable/emotion_sleep</item>            <!-- 21:Sleep -->
+        <item>@drawable/emotion_vomit</item>            <!-- 22:Vomit -->
+        <item>@drawable/emotion_charming</item>         <!-- 23:Charming -->
+        <item>@drawable/emotion_speechless</item>       <!-- 24:Speechless -->
+        <item>@drawable/emotion_demons</item>           <!-- 25:Demons -->
+        <item>@drawable/emotion_grievance</item>        <!-- 26:Grievance -->
+        <item>@drawable/emotion_absorbed</item>         <!-- 27:Absorbed -->
+        <item>@drawable/emotion_cute</item>             <!-- 28:Cute -->
+        <item>@drawable/emotion_sleepy</item>           <!-- 29:Extend sleep -->
+        <item>@drawable/emotion_struggle</item>         <!-- 30:Struggle -->
+        <item>@drawable/emotion_angry</item>            <!-- 31:Angry -->
+        <item>@drawable/emotion_horror</item>           <!-- 32:Horror -->
+        <item>@drawable/emotion_faint</item>            <!-- 33:Faint -->
+        <item>@drawable/emotion_slobber</item>          <!-- 34:Slobber -->
+        <item>@drawable/emotion_bad_lol</item>          <!-- 35:Bad lol -->
+        <item>@drawable/emotion_go_ballistic</item>     <!-- 36:Go ballistic -->
+        <item>@drawable/emotion_bomb</item>             <!-- 37:Bomb -->
+        <item>@drawable/emotion_domineering</item>      <!-- 38:Domineering -->
+        <item>@drawable/emotion_depressed</item>        <!-- 39:Depressed -->
+        <item>@drawable/emotion_good</item>             <!-- 40:Good -->
+        <item>@drawable/emotion_no</item>               <!-- 41:No -->
+        <item>@drawable/emotion_ok</item>               <!-- 42:Ok -->
+        <item>@drawable/emotion_victory</item>          <!-- 43:Victory -->
+        <item>@drawable/emotion_seduce</item>           <!-- 44:Seduce -->
+        <item>@drawable/emotion_down</item>             <!-- 45:Down -->
+        <item>@drawable/emotion_rain</item>             <!-- 46:Rain -->
+        <item>@drawable/emotion_lightning</item>        <!-- 47:Lightning -->
+        <item>@drawable/emotion_sun</item>              <!-- 48:Sun -->
+        <item>@drawable/emotion_microphone</item>       <!-- 49:Microphone -->
+        <item>@drawable/emotion_clock</item>            <!-- 50:Clock -->
+        <item>@drawable/emotion_email</item>            <!-- 51:Email -->
+        <item>@drawable/emotion_candle</item>           <!-- 52:Candle -->
+        <item>@drawable/emotion_birthday_cake</item>    <!-- 53:Birthday cake -->
+        <item>@drawable/emotion_gift</item>             <!-- 54:Gift -->
+        <item>@drawable/emotion_star</item>             <!-- 55:Star -->
+        <item>@drawable/emotion_love</item>             <!-- 56:Extend heart -->
+        <item>@drawable/emotion_brokenheart</item>      <!-- 57:Broken heart -->
+        <item>@drawable/emotion_bulb</item>             <!-- 58:Bulb -->
+        <item>@drawable/emotion_music</item>            <!-- 59:Music -->
+        <item>@drawable/emotion_shenma</item>           <!-- 60:Shenma -->
+        <item>@drawable/emotion_fuyun</item>            <!-- 61:Fuyun -->
+        <item>@drawable/emotion_rice</item>             <!-- 62:Rice -->
+        <item>@drawable/emotion_roses</item>            <!-- 63:Roses -->
+        <item>@drawable/emotion_film</item>             <!-- 64:Film -->
+        <item>@drawable/emotion_aeroplane</item>        <!-- 65:Aeroplane -->
+        <item>@drawable/emotion_umbrella</item>         <!-- 66:Umbrella -->
+        <item>@drawable/emotion_caonima</item>          <!-- 67:Caonima -->
+        <item>@drawable/emotion_penguin</item>          <!-- 68:Penguin -->
+        <item>@drawable/emotion_pig</item>              <!-- 69:Pig -->
+    </string-array>
+</resources>

@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <!-- Camera Sensor Select -->
+        <LinearLayout 
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal">
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="8dip"
+	            android:text="@string/auto_clibr_camera_sensor"
+	            android:textColor="#FFFFFF"
+	            android:minWidth="170dip"
+	            android:textSize="18sp" />
+            <Spinner
+                    android:id="@+id/auto_clibr_camera_sensor_spnr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp">
+            </Spinner>
+        </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting"
+            android:textSize="15sp" />
+
+        <!-- Capture mode settings -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="5dip"
+            android:text="@string/auto_clibr_capture_mode"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <!-- Capture mode: Normal mode -->
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="40dip"
+                android:minWidth="260dip"
+                android:text="@string/auto_clibr_capture_normal"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/raido_capture_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="40dip"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/normal_capture_set"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dip"
+                    android:minWidth="150dip"
+                    android:text="@string/auto_clibr_capture_size"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/normal_capture_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/auto_calib_capture_size"
+                    android:minHeight="40dip"
+                    android:minWidth="90dip"
+                    android:textSize="14sp" >
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dip"
+                    android:minWidth="150dip"
+                    android:text="@string/auto_clibr_capture_type"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/normal_capture_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/auto_calib_capture_type"
+                    android:minHeight="40dip"
+                    android:minWidth="90dip"
+                    android:textSize="14sp" >
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dip"
+                    android:minWidth="150dip"
+                    android:text="@string/auto_clibr_capture_number"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/normal_capture_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/auto_calib_capture_number"
+                    android:minHeight="40dip"
+                    android:minWidth="90dip"
+                    android:textSize="14sp" >
+                </Spinner>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Capture mode: Multi Frame -->
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="50dip"
+                android:minWidth="260dip"
+                android:text="@string/auto_clibr_multi_frame"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/raido_capture_mult_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="40dip"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mult_frame_capture_set"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="40dip"
+                android:minWidth="150dip"
+                android:text="@string/auto_clibr_capture_number"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/mult_capture_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/auto_calib_multi_frame"
+                android:minHeight="40dip"
+                android:minWidth="90dip"
+                android:textSize="14sp" >
+            </Spinner>
+        </LinearLayout>
+
+        <!-- Capture mode: Video Clip -->
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="40dip"
+                android:minWidth="260dip"
+                android:text="@string/auto_clibr_video_clip"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/raido_capture_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="40dip"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/video_capture_set"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dip"
+                    android:minWidth="145dip"
+                    android:text="@string/auto_clibr_video_resolution"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/video_capture_resolution"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/auto_calib_video_clip"
+                    android:minHeight="40dip"
+                    android:minWidth="90dip"
+                    android:textSize="14sp" >
+                </Spinner>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- ISO setting -->
+
+        <ListView
+            android:id="@+id/listview_iso"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+        </ListView>
+
+        <!-- Flicker setting -->
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="50dip"
+                android:minWidth="200dip"
+                android:text="@string/tv_flicker"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/flicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/auto_calib_flicker_type"
+                android:minHeight="50dip"
+                android:minWidth="90dip"
+                android:textSize="18sp" >
+            </Spinner>
+        </LinearLayout>
+       <!-- Use for 2nd MP(JB2)  -->
+       <!--  LED flash setting  -->
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/auto_calib_strobe_mode_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="50dip"
+                android:minWidth="200dip"
+                android:text="@string/led_flash"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/led_flash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/auto_calib_led_flash"
+                android:minHeight="50dip"
+                android:minWidth="90dip"
+                android:textSize="18sp" >
+            </Spinner>
+        </LinearLayout>
+
+        <!-- HDR Debug  -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="50dip"
+                android:minWidth="200dip"
+                android:text="@string/auto_clibr_hdr_debug"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/hdr_debug"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/auto_calib_hdr_debug_value"
+                android:minHeight="50dip"
+                android:minWidth="90dip"
+                android:textSize="18sp" >
+            </Spinner>
+        </LinearLayout>
+        
+        <!-- Shutter Delay  -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/shutter_delay_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="50dip"
+                android:minWidth="200dip"
+                android:text="@string/auto_clibr_shutter_delay"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/shutter_delay_spn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/auto_clib_shutter_delay_vals"
+                android:minHeight="50dip"
+                android:minWidth="90dip"
+                android:textSize="18sp" >
+            </Spinner>
+        </LinearLayout>
+        
+        <!-- Shading Table  -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/shading_table_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="50dip"
+                android:minWidth="200dip"
+                android:text="@string/auto_clibr_shading_table"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/shading_table_spn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/auto_clib_shading_table_items"
+                android:minHeight="50dip"
+                android:minWidth="90dip"
+                android:textSize="18sp" >
+            </Spinner>
+        </LinearLayout>
+        
+        <!-- Output sdblk File  -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/output_sdblk_file_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="50dip"
+                android:minWidth="200dip"
+                android:text="@string/auto_clibr_output_sdblk_file"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/output_sdblk_file_spn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/auto_clib_output_sdblk_options"
+                android:minHeight="50dip"
+                android:minWidth="90dip"
+                android:textSize="18sp" >
+            </Spinner>
+        </LinearLayout>
+        
+        <!-- common option List-->
+        <ListView
+            android:id="@+id/common_option_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+        </ListView>
+        <!--  Pre flash setting  
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="50dip"
+                android:minWidth="200dip"
+                android:text="@string/pre_flash_lev"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/pre_flash_lev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/auto_calib_flash"
+                android:minHeight="50dip"
+                android:minWidth="90dip"
+                android:textSize="18sp" >
+            </Spinner>
+        </LinearLayout>
+
+        // Main flash setting  
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="50dip"
+                android:minWidth="200dip"
+                android:text="@string/main_flash_lev"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/main_flash_lev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/auto_calib_flash"
+                android:minHeight="50dip"
+                android:minWidth="90dip"
+                android:textSize="18sp" >
+            </Spinner>
+        </LinearLayout>-->
+        <!-- Af Setting -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:text="@string/auto_clibr_af_setting"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <!-- Af: Auto -->
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/camera_af_auto_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="40dip"
+                android:minWidth="260dip"
+                android:text="@string/auto_clibr_af_auto"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/raido_af_auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="40dip"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Af: Bracket -->
+        <LinearLayout
+            android:id="@+id/camera_af_bracket_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="40dip"
+                android:minWidth="260dip"
+                android:text="@string/auto_clibr_af_bracket"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/raido_af_bracket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="40dip"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/af_bracket_set"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dip"
+                    android:minWidth="200dip"
+                    android:text="@string/auto_clibr_af_bracket_range"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/af_bracket_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:minHeight="40dip"
+                    android:minWidth="90dip"
+                    android:textSize="14sp" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dip"
+                    android:minWidth="200dip"
+                    android:text="@string/auto_clibr_af_bracket_interval"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/af_bracket_interval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/auto_calib_af_bracket_interval"
+                    android:minHeight="40dip"
+                    android:minWidth="90dip"
+                    android:textSize="14sp" >
+                </Spinner>
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+        
+        <!-- Af: Full scan -->
+        <LinearLayout
+            android:id="@+id/camera_af_full_scan_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="40dip"
+                android:minWidth="260dip"
+                android:text="@string/auto_clibr_af_full"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/raido_af_full"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="40dip"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/af_full_scan_set_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dip"
+            android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dip"
+                    android:minWidth="200dip"
+                    android:text="@string/auto_clibr_full_scan_frame_interval"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/af_full_scan_frame_interval_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:minHeight="40dip"
+                    android:minWidth="90dip"
+                    android:textSize="14sp" >
+                </EditText>
+        </LinearLayout>
+        </LinearLayout>
+        
+        <!-- Af: Through focus -->
+        <LinearLayout
+            android:id="@+id/camera_af_through_focus_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="40dip"
+                android:minWidth="260dip"
+                android:text="@string/auto_clibr_af_through"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/raido_af_through"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="40dip"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/af_through_set"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dip"
+                    android:minWidth="170dip"
+                    android:text="@string/auto_clibr_af_through_interval"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/af_through_interval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:minHeight="40dip"
+                    android:minWidth="90dip"
+                    android:textSize="14sp" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dip"
+                    android:minWidth="170dip"
+                    android:text="@string/auto_clibr_af_through_dirct"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/af_through_dirct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/auto_calib_af_through_direct"
+                    android:minHeight="40dip"
+                    android:minWidth="90dip"
+                    android:textSize="14sp" >
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/through_focus_start_set"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dip"
+                    android:minWidth="170dip"
+                    android:text="@string/auto_clibr_manual_start"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/af_through_manual_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:minHeight="40dip"
+                    android:minWidth="90dip"
+                    android:textSize="14sp" >
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/through_focus_end_set"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dip"
+                    android:minWidth="170dip"
+                    android:text="@string/auto_clibr_manual_end"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/af_through_manual_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:minHeight="40dip"
+                    android:minWidth="90dip"
+                    android:textSize="14sp" >
+                </EditText>
+            </LinearLayout>
+            
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dip"
+                    android:minWidth="170dip"
+                    android:text="@string/auto_clibr_af_through_repeat"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/af_through_repeat_sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dip"
+                    android:minWidth="90dip"
+                    android:textSize="14sp" >
+                </Spinner>
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+        
+        <!-- AF Continuous -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/camera_af_continuous"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="40dip"
+                android:minWidth="260dip"
+                android:text="@string/auto_clibr_af_continuous"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/raido_af_continuous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="40dip"
+                android:textSize="18sp" />
+        </LinearLayout>
+        
+        <!-- custom parameters -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="@string/camera_custom_parameter"
+            android:textSize="15sp" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip">
+            <EditText android:id="@+id/camera_custom_param_0_edit"
+                android:layout_height="wrap_content"
+                android:layout_width="90dip"
+                android:textSize="14sp"/>
+            <EditText android:id="@+id/camera_custom_param_1_edit"
+                android:layout_height="wrap_content"
+                android:layout_width="90dip"
+                android:textSize="14sp"/>
+            <EditText android:id="@+id/camera_custom_param_2_edit"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="@string/camera_custom_param_hint_delimiter"
+                android:textSize="14sp"/>
+        </LinearLayout>
+        
+        <!-- Start preview -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="@string/capture"
+            android:textSize="15sp" />
+
+        <ListView
+            android:id="@+id/listview_capture"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+</ScrollView>

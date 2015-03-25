@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">系统升级</string>
+    
+<!-- Main Entry -->
+    <string name="none_package">无有效的升级包。</string>
+    <string name="new_version_query">升级版本检查中\u2026</string>
+    <string name="menu_stats_refresh">刷新</string>
+    <string name="network_error">网络连接失败</string>
+    <string name="server_version_error">服务器错误: 请更新服务器版本。</string>    
+    <string name="no_new_version">您的系统处于最新状态。</string>
+    <string name="not_support_version" product="tablet">您的设备不支持无线升级功能。</string>
+    <string name="not_support_version" product="default">您的手机不支持无线升级功能。</string>
+    <string name="query_sd_insufficient_space"><xliff:g id="path">%s</xliff:g>所需空间不足</string>
+    <string name="ota_category_title">无线升级</string>
+    <string name="sd_category_title">SD 卡升级</string>
+    <string name="ota_preference_summary">服务器上发现新版本</string>
+
+<!-- Download and Install -->
+    <string name="notes_summary">固件升级能够增强系统稳定性和解决一些存在的问题。</string>
+    <string name="ask_for_install_ota">您现在是否要安装系统升级？</string>
+    <string name="warning_install_ota" product="tablet">升级期间，您的平板电脑将无法使用也无法进行紧急呼叫。请勿拔除电池和 SD 卡或关闭平板电脑。</string>
+    <string name="warning_install_ota" product="default">升级期间，您的手机将无法使用也无法进行紧急呼叫。请勿拔除电池和 SD 卡或关闭手机。</string>
+    <string name="ask_for_install_sd">SD 卡中发现最新的系统升级包，您是否要安装此升级?</string>
+    <string name="warning_install_sd" product="tablet">升级期间，您的平板电脑将无法使用也无法进行紧急呼叫。请勿拔除电池和 SD 卡或关闭平板电脑。\n升级前，请确保此升级包是从官方网站下载并且正确无误。</string>
+    <string name="warning_install_sd" product="default">升级期间，您的手机将无法使用也无法进行紧急呼叫。请勿拔除电池和 SD 卡或关闭手机。\n升级前，请确保此升级包是从官方网站下载并且正确无误。</string>
+    <string name="ask_for_download_ota">您是否要下载系统更新？</string>
+    <string name="warning_download_ota">建议使用免费的 WLAN 热点或数据流量套餐下载系统更新。否则可能产生标准数据流量费用。\n请在升级前备份您的数据。</string>
+        
+    <string name="notification_content_title">系统升级</string>
+    <string name="downloading_title">"正在下载\u2026"</string>   
+    <string name="wifi_only_check">"仅使用 WLAN"</string>     
+   
+    
+    <string name="btn_install">安装</string>
+    <string name="btn_cancel">删除</string>
+    <string name="btn_download">下载并安装</string>
+    <string name="btn_resume">下载</string>
+    <string name="change_network_title">"下载"</string>
+    <string name="change_network_discard_btn">"删除"</string>
+    <string name="change_network_content">"当前 APN 不支持下载，您是否要切换到其他 APN 或打开 WLAN？"</string>
+    <string name="change_network_wifi_btn">"使用 WLAN"</string>
+    <string name="change_network_apn_btn">"更换 APN"</string>
+
+
+    <string name="warn_data_cost_title">下载更新</string>
+    <string name="warn_data_cost_content">通过移动网络下载可能会产生费用。是否继续？</string>
+    <string name="warn_data_cost_yes">是</string>
+    <string name="warn_data_cost_no">否</string>    
+    
+    <string name="notification_download_complete_title">系统更新下载完毕</string>
+    <string name="notification_download_complete_context">点击开始安装系统更新</string>
+    <string name="package_deleted_error">由于升级包无效，系统升级停止。</string>    
+    
+    <string name="sdcard_crash_or_unmount">SD 卡错误，请检查 SD 卡后重试。</string>
+    <string name="unmount_sdcard">SD 卡加载错误，请检查。</string>
+    <string name="insufficient_space_content">空间不足，请释放至少 
+        <xliff:g id="deltasize" example="3.5M">%s</xliff:g> 字节空间继续此安装。</string>
+
+    
+    <string name="install_sd_title">安装更新</string>
+    <string name="install_sd_message">请确保此升级包是从官方网站下载并且正确无误。否则可能会产生系统问题。</string>
+    <string name="install_reminder_now">立刻安装</string>
+    <string name="install_reminder_not_now">暂不安装</string>
+    <!-- bellow are old strings for MOTA-->
+    
+
+    <string name="notification_content_text_completed">下载成功</string> 
+    
+    <string name="unknown_error">未知错误</string>
+    <string name="unknown_error_content">发生错误，请退出后重试。</string>
+    <string name="insufficient_space_title">空间不足</string>
+    <string name="error_sdcard">SD 卡信息</string>
+    <string name="insufficient_space">SD 卡空间不足。</string>
+    
+    <string name="cancel_download_title">取消下载</string>
+    <string name="cancel_download_content">本操作将会删除已经下载的文件</string>
+    
+    <string name="package_error_title">安装失败</string>
+    <string name="package_error_message_invalid">升级包错误，请检查后再次下载。</string>
+    <string name="package_error_message_insuff" product="tablet">设备空间不足。</string>
+    <string name="package_error_message_insuff" product="default">手机空间不足。</string>
+    <string name="package_error_message_crash">不能访问用户数据。</string>
+    <string name="package_error_message_full" product="tablet">设备分区改变，需要整包进行升级。</string>    
+    <string name="package_error_message_full" product="default">手机分区改变，需要整包进行升级。</string>    
+    <string name="updateSuccess" product="tablet">恭喜您！您的设备已经成功升级到 
+        <xliff:g id="version" example="gb.p37">%s</xliff:g>。
+    </string>  
+    <string name="updateSuccess" product="default">恭喜您！您的手机已经成功升级到 
+        <xliff:g id="version" example="gb.p37">%s</xliff:g>。
+    </string>  
+    <string name="updateFailed">升级到 
+        <xliff:g id="version" example="gb.p37">%s</xliff:g> 失败。
+    </string>  
+    <string name="package_unzip">升级包解压中\u2026</string>
+    <string name="package_unzip_error">解压失败</string>
+    
+    <string name="installing_message">您的手机即将关闭\u2026</string>
+    <string name="install_sd_info">升级期间需要复制升级包到手机内存。\n手机内存不足。</string>
+    <string name="sdcard_crash_or_unmount_when_install">由于 SD 卡被拔除，系统升级停止。</string>
+    <string name="sdcard_inserted">您是否要重新扫描 SD 卡以查找更多的升级包？</string>
+    
+    <string name="new_version_detected">系统更新</string>
+    <string name="sdcard_unmount">SD 卡已卸载</string>
+
+    <string name="unknown_per">"未知"</string>
+    <string name="cta_warning">该操作系统仅支持官方提供的系统更新，若用户刷第三方ROM系统或采用任何破解的方式修改系统文件，可能会导致系统不稳定，用户需要为类似行为承担责任。</string>
+</resources>

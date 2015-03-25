@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binwfd Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type wfd_exec , exec_type, file_type;
+type wfd ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive wfd;
+init_daemon_domain(wfd)
+
+
+# 20131122 Add Set Property Rule
+allow wfd  property_type:property_service set;

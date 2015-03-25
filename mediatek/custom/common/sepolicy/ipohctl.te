@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binipohctl Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type ipohctl_exec , exec_type, file_type;
+type ipohctl ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive ipohctl;
+init_daemon_domain(ipohctl)
+
+
+# 20131122 Add Set Property Rule
+allow ipohctl  property_type:property_service set;

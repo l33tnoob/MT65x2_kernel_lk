@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	android:versionCode="1" android:versionName="1.0" package="com.mediatek.bluetooth"
+	android:sharedUserId="android.uid.mtkbt">
+
+	<application android:label="@string/app_label" 
+                android:persistent="true"
+		android:icon="@drawable/bluetooth" android:description="@string/app_description">
+
+		<!-- ********************************************************************************** -->
+		<!-- HID -->
+		<activity android:label="@string/bluetooth_hid_lable"
+			android:name=".hid.BluetoothHidActivity"
+		  	android:excludeFromRecents="false"
+		  	android:taskAffinity="com.mediatek.bluetooth.hid"
+		  	android:configChanges="orientation|screenSize|mcc|mnc|locale"
+			android:icon="@drawable/bthid_ic_launcher_wireless_keyboard">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+
+		</activity>
+		<service android:name=".hid.BluetoothHidService">
+			<intent-filter>
+            			<action android:name="android.bluetooth.IBluetoothHid" />
+        		</intent-filter>
+		</service>
+		
+		<activity android:name=".hid.BluetoothHidAlert"
+				  android:excludeFromRecents="true"
+                  android:theme="@*android:style/Theme.Holo.Dialog.Alert">
+		</activity>
+		
+		<receiver android:name=".hid.BluetoothHidReceiver">
+            <intent-filter>
+                <action android:name="android.bluetooth.devicepicker.action.DEVICE_SELECTED" />
+        		<action android:name="android.provider.Telephony.SECRET_CODE" />
+        		<data android:scheme="android_secret_code" android:host="87410" />
+            </intent-filter>
+        </receiver>
+        
+		<!-- HID -->
+		<!-- ********************************************************************************** -->
+
+	</application>
+
+</manifest> 

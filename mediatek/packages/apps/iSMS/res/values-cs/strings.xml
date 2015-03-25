@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="STR_NMS_MAIN">iSMS</string>
+    <string name="STR_NMS_HISSAGE">iSMS</string>
+    <string name="STR_NMS_INVITE_SMS_CONTENT">Dobrý den, iSMS je skvělý nástroj pro chatování. Je zdarma a je praktický. Další informace na http://isms.hissage.com.</string>
+    <string name="STR_NMS_NO_SDCARD">Karta SD nebyla nalezena, některé operace nebudou v iSMS povoleny</string>
+    <string name="STR_NMS_MOUNT_SDCARD">Karta SD je k dispozici</string>
+    <string name="STR_NMS_SEND_MMS_FAIL">Zprávu nelze odeslat. Bude odeslána automaticky, jakmile bude dostupná síť.</string>
+    <string name="STR_NMS_RECV_MMS_FAIL">Nelze stahovat. Opakujte akci později.</string>
+    <string name="STR_NMS_GROUP_CHAT_ME">mě</string>
+    <string name="STR_NMS_GROUP_CHAT_I">Já</string>
+    <string name="STR_NMS_GROUP_CHAT_YOU">Vy</string>
+    <string name="STR_NMS_GROUP_CREATE_MSG">%1$s pozval(a) %2$s do skupinového chatu.</string>
+    <string name="STR_NMS_GROUP_ADD_MSG">%1$s se připojil(a) ke skupinovému chatu.</string>
+    <string name="STR_NMS_GROUP_DELETE_MSG">%1$s odstranil(a) %2$s ze skupinového chatu.</string>
+    <string name="STR_NMS_GROUP_QUITE_MSG">%1$s opustil(a) skupinový chat.</string>
+    <string name="STR_NMS_GROUP_CHAT_PLACE_HOLDER_MSG_BODY">Připojili jste se ke skupině</string>
+    <string name="STR_NMS_PICTURE">obrázek</string>
+    <string name="STR_NMS_TAPE">zvuk</string>
+    <string name="STR_NMS_VCARD">kontakt</string>
+    <string name="STR_NMS_LOCATION">místo</string>
+    <string name="STR_NMS_SKETCH">skica</string>
+    <string name="STR_NMS_VIDEO">video</string>
+    <string name="STR_NMS_CALENDAR">kalendář</string>
+    <string name="STR_NMS_UNKNOWN">neznámý</string>
+    <string name="STR_NMS_READ_MODE_PIC">obrázek</string>
+    <string name="STR_NMS_READ_MODE_TAPE">zvuková poznámka</string>
+    <string name="STR_NMS_READ_MODE_VCARD">kontakty</string>
+    <string name="STR_NMS_READ_MODE_LOCATION">místo</string>
+    <string name="STR_NMS_READ_MODE_SKETCH">skica</string>
+    <string name="STR_NMS_READ_MODE_VIDEO">video</string>
+    <string name="STR_NMS_READ_MODE_CALENDAR">kalendář</string>
+    <string name="STR_NMS_ISMS_ENABLE">(Povolit iSMS)</string>
+    <string name="STR_NMS_READ_MODE_UNKNOWN">neznámý soubor</string>
+    <string name="STR_NMS_ALL_MSG">Všechny zprávy</string>
+    <string name="STR_NMS_SAVED">Uloženo</string>
+    <string name="STR_NMS_BLOCKMSG">Blokováno</string>
+    <string name="STR_NMS_SMS_TYPE">SMS</string>
+    <string name="STR_NMS_NO_SIM">SIM karta nebyla nalezena</string>
+    <string name="STR_NMS_ILLEGAL_ADDRESS">Neplatné číslo</string>
+    <string name="STR_NMS_REMIND_USER_SET_NAME">Aktualizujte si profil</string>
+    <string name="STR_NMS_OK">OK</string>
+    <string name="STR_NMS_BACK">Zpět</string>
+    <string name="STR_NMS_CANCEL">Storno</string>
+    <string name="STR_NMS_NETWORK_UNAVL">Ověřte, zda máte funkční datové připojení, např. 3G, GPRS nebo Wi-Fi</string>
+    <string name="STR_NMS_TODAY">Dnes </string>
+    <string name="STR_NMS_YESTERDAY">Včera</string>
+    <string name="STR_NMS_NOW">Nyní</string>
+    <string name="STR_NMS_NO_SIM_CARD">SIM karta nebyla nalezena, musíte vložit SIM kartu.</string>
+    <string name="STR_NMS_NO_CONNECTION">Síť není dostupná, nebo je aktivní režim v letadle. Proveďte kontrolu.</string>
+    <string name="STR_NMS_ATTACH_SHARE">%1$s sdílel(a) %2$s</string>
+    <string name="STR_NMS_WAIT">Moment...</string>
+    <string name="STR_NMS_TIPTITLE">Nápověda</string>
+
+    <string name="STR_NMS_OPEN">Otevřít</string>
+    <string name="STR_NMS_PLAY">Přehrát</string>
+    
+    
+
+    <string name="STR_NMS_VCARD_NAME">%1$s kontaktů</string>
+    <string name="STR_NMS_SHARE_VCARD_FAILED">sdílení kontaktů selhalo</string>
+
+    <!-- upgrade info -->
+    <string name="STR_NMS_UPGRADE_TICKER">Upgrade verze</string>
+    <string name="STR_NMS_UPGRADE_ERROR_TITLE">Chyba upgradu</string>
+    <string name="STR_NMS_UPGRADE_ERROR_CONTENT">Chyba upgradu, upgradujte přímo v iSMS</string>
+    <string name="STR_NMS_INSTALLED_TITLE">Upgrade byl úspěšný</string>
+    <string name="STR_NMS_INSTALLED_CONTENT">Upgrade na telefon byl úspěšný</string>
+    <string name="STR_NMS_PROMPT_DLG_TITLE">Byla nalezena nová verze</string>
+    <string name="STR_NMS_PROMPT_DLG_DOWNLOAD">Stáhnout</string>
+    <string name="STR_NMS_PROMPT_DLG_LATER">Později</string>
+    <string name="STR_NMS_UPGRADING">Upgradování</string>
+    <string name="STR_NMS_UPGRADE_TIME">Poslední kontrola: %s</string>
+    
+    <!-- ext protocol -->
+    <string name="STR_NMS_OFFLINE_URL">http://ismsi.hissage.com/webservice/nmsmail/notifyOffline.php</string>
+    
+    <!-- Activation start -->
+    <string name="STR_NMS_PRELOAD_IP_MSG_CONTENT">&quot;Vítá vás iSMS.&quot;</string>
+    <string name="STR_NMS_ACTIVAT_TITLE">iSMS vám pošle jednorázovou SMS pro ověření tel. čísla. Mohou být účtovány poplatky operátora.</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE">Ověřte své tel. číslo</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE2">Ověřte své tel. číslo</string>
+    <string name="STR_NMS_YOUR_COUNTRY_TITLE">VAŠE ZEMĚ</string>
+    <string name="STR_NMS_YOUR_PHONE_TITLE">VAŠE TEL. ČÍSLO</string>
+    <string name="STR_NMS_VERIFY_FAIL_TITLE">Oveření přes SMS se nezdařilo.</string>
+    <string name="STR_NMS_VERIFY_FAIL_CONTENT">Ověřte, zda jste zadali správné tel. číslo.</string>
+    <string name="STR_NMS_WORKING_SMS_TIP">Ověřte, zda máte aktivní tarif pro SMS.</string>
+    <string name="STR_NMS_VERIFYING">Čeká se automatickou detekci SMS odeslané na</string>
+    <string name="STR_NMS_RETRY">Opakovat</string>
+    <string name="STR_NMS_EDIT_NUMBER">Upravit číslo</string>
+    <string name="STR_NMS_UPDATE_PROFILE">Aktualizovat profil</string>
+    <string name="STR_NMS_START_ISMS">Spustit iSMS</string>
+    <string name="STR_NMS_SEND">Odeslat</string>
+    <string name="STR_NMS_CONGRATULATIONS_TITLE">Blahopřejeme!</string>
+    <string name="STR_NMS_CONGRATULATIONS_CONTENT">Děkujeme vám za aktivaci iSMS.\n Nyní můžete službu využívat.\nŠťastné iSMS!</string>
+    <string name="STR_NMS_WELCOME_BACK">Vítejte zpět.</string>
+    <string name="STR_NMS_SEND_SMS_FAIL">Ověření se nezdařilo, proveďte kontrolu:\n  1. Tel. číslo je správné;\n  2. Zabezpečovací software je vypnutý;\n  3. Další možný důvod zablokovaného odesílání SMS.\nProveďte kontrolu a opakujte akci.</string>
+    <string name="STR_NMS_ACTIVE">Aktivovat iSMS</string>
+    <string name="STR_NMS_WELCOME_ACTIVE">Vítá vás iSMS</string>
+    <string name="STR_NMS_CONNECTING">Připojování...</string>
+    <!-- Activation end -->
+
+
+    <!-- Notification start -->
+    <string name="STR_NMS_NEW_MSG_TITLE">Nová iSMS zpráva</string>
+    <string name="STR_NMS_NEW_SMG_CONTENT">%d nepřečtená zpráva</string>
+    <!-- Notification End -->
+
+    <string name="STR_NMS_MSG_DUMPER_MSG_SMS">SMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_MMS">MMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_IP">IP zpráva</string>
+    <string name="STR_NMS_MSG_DUMPER_SEND_MSG">Odesláno %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_RECEIVE_MSG">Přijato %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TIME">Čas: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TEXT">Text</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_PIC">Obrázek</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_SKETCH">Skica</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VOICE">Volání</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VIDEO">Video</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CALENDAR">Kalendář</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION_IMG">Obrázek místa</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VCARD">Vcard</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION">Poloha</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CAPTION">Titulek: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_URL">URL: </string>
+    <string name="STR_NMS_MSG_DUMPER_DURATION">Délka: </string>
+    <string name="STR_NMS_MSG_DUMPER_COORDINATE">Souřadnice: </string>
+    <string name="STR_NMS_MSG_DUMPER_ADDRESS">Adresa: </string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_SENDER">Odesílatel: </string>
+    <string name="STR_NMS_MSG_DUMPER_NORMAL_DETAIL">Podrobnosti relace:</string>
+    <string name="STR_NMS_MSG_DUMPER_NAME">Jméno: </string>
+    <string name="STR_NMS_MSG_DUMPER_NUMBER">Číslo: </string>
+    <string name="STR_NMS_MSG_DUMPER_PORTRAIT">Portrét</string>
+    <string name="STR_NMS_MSG_DUMPER_MULTI_SEND_DETAIL">Vysílání:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_DETAIL">Skupinový chat:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_CREATER">Autor: </string>
+    <string name="STR_NMS_MSG_DUMPER_MEMBERS">Členové: </string>
+    <string name="STR_NMS_MSG_DUMPER_VCARD_NAME">Jméno: </string>
+    <string name="STR_NMS_MSG_DUMPER_CALENDAR_SUMMARY">Přehled: </string>
+
+    <!-- Chat Settings -->
+    <string name="STR_NMS_CHAT_SETTING_TITLE">Nastavení chatu</string>
+    <string name="STR_NMS_DISPLAY">Zobrazení</string>
+    <string name="STR_NMS_CHAT_WALLPAPER">Tapeta chatu</string>
+    <string name="STR_NMS_SYS_WALLPAPER">Vybrat tapetu</string>
+    <string name="STR_NMS_CAMEARPHOTO">Pořídit fotografii</string>
+    <string name="STR_NMS_SYS_GALLERY">Vybrat z galerie</string>
+    <string name="STR_NMS_DEFAULT_WALLPAPER">Výchozí</string>
+    <string name="STR_NMS_NOTIFICATION_CATEGORY">Upozornění</string>
+    <string name="STR_NMS_NOTIFICATION_TITLE">Upozornění na iSMS</string>
+    <string name="STR_NMS_NOTIFICATION_CONTENT">Po přijetí zobrazit upozornění</string>
+    <string name="STR_NMS_MUTE">Ztlumit</string>
+    <string name="STR_NMS_MUTE_OFF">Vyp</string>
+    <string name="STR_NMS_MUTE_1">Ztlumit na 1 hod.</string>
+    <string name="STR_NMS_MUTE_4">Ztlumit na 4 hod.</string>
+    <string name="STR_NMS_MUTE_8">Ztlumit na 8 hod.</string>
+    <string name="STR_NMS_RINGTONE_TITLE">Vyzváněcí tón</string>
+    <string name="STR_NMS_RINGTONE_CONTENT">Vybrat vyzváněcí tón pro nová upozornění </string>
+    <string name="STR_NMS_VIBRATE_TITLE">Vibrovat</string>
+    <string name="STR_NMS_VIBRATE_CONTENT">Po přijetí upozornění vibrovat</string>
+    <string name="STR_NMS_ACTIONS">Akce</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_TITLE">Stáhnout historii chatu</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_CONTENT">Uložit na kartu SD ve formátu zip</string>
+    <string name="STR_NMS_EMAIL_HISTORY_TITLE">Poslat historii chatu e-mailem</string>
+    <string name="STR_NMS_EMAIL_HISTROY_CONTENT">Poslat historii chatu e-mailem ve formátu zip</string>
+    <string name="STR_NMS_CLEAR_HISTROY">Vymazat historii chatu</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_DLG">Stahování...</string>
+    <string name="STR_NMS_DOWNLOAD_OK">Stahování historie bylo dokončeno, uložte ji jako %s</string>
+    <string name="STR_NMS_DOWNLOAD_ERROR">Chyba stahování historie chatu</string>
+    <string name="STR_NMS_DOWNLOAD_EMPTY">Nelze stáhnout.</string>
+    <string name="STR_NMS_CLEARING">Vymazávání historie, čekejte prosím...</string>
+    <string name="STR_NMS_WAIT_SAVE_WALLPAPER">Ukládání tapety, čekejte prosím...</string>
+    <string name="STR_NMS_SAVE_WALLPAPER_OK">Uložení tapety bylo úspěšné.</string>
+    <string name="STR_NMS_CLEARDONE">Vymazávání historie bylo dokončeno.</string>
+    <string name="STR_NMS_SVAE_TITLE">Uložit na kartu SD</string>
+    <string name="STR_NMS_SAVE_CONTENT">Uložit toto vlákno chatu na kartu SD jako soubor zip</string>
+    <string name="STR_NMS_EMAIL_TITLE">Sdílet e-mailem</string>
+    <string name="STR_NMS_EMAIL_CONTENT">Sdílet toto vlákno chatu jako e-mailovou přílohu ve formátu zip</string>
+
+    <!-- Chat Settings End -->
+
+
+    <!-- Profile Settings -->
+    <string name="STR_NMS_PROFILE_TITLE">Profil</string>
+    <string name="STR_NMS_TAP_AVATAR_TIP">Klepnutím upravte obrázek profilu</string>
+    <string name="STR_NMS_DISPLAY_NAME_TIP">ZOBRAZOVANÉ JMÉNO</string>
+    <string name="STR_NMS_ACCOUNT_TIP">ÚČET ISMS</string>
+    <string name="STR_NMS_NO_APP">Tuto akci nemohou provádět žádné aplikace.</string>
+    <string name="STR_NMS_NO_NAME">Nastavte si jméno</string>
+    <string name="STR_NMS_SAVE_AVATAR_FAILD">Litujeme, ale nepodařilo se uložit obrázek profilu.</string>
+    <string name="STR_NMS_INPUT_NAME">Jméno</string>
+    <string name="STR_NMS_TERM_WARN_ACTIVATE">Tuto funkci podporuje pouze služba iSMS.\n\niSMS je bezplatná služba pro zasílání rychlých zpráv, díky které můžete chatovat a sdílet multimediální obsah se svými přáteli kdykoli a kdekoli prostřednictvím datového připojení (Wi-Fi, 2G/3G atd.).\nPři první aktivaci odešle aplikace iSMS automatickou SMS pro dokončení registrace. Mohou být účtovány kvóty/poplatky za SMS.\n\n Smlouva s uživatelem\n</string>
+    <string name="STR_NMS_TERM_WARN_WELCOME">iSMS je bezplatná služba pro zasílání rychlých zpráv, díky které můžete chatovat a sdílet multimediální obsah se svými přáteli kdykoli a kdekoli prostřednictvím datového připojení (Wi-Fi, 2G/3G atd.).\nPři první aktivaci odešle aplikace iSMS automatickou SMS pro dokončení registrace. Mohou být účtovány kvóty/poplatky za SMS.\n\n Smlouva s uživatelem\n</string>
+    <string name="STR_NMS_TERM_KEY">Podmínky a ujednání</string>
+    <string name="STR_NMS_AGREE_AND_CONTINUE">Souhlasím a chci pokračovat</string>
+    <string name="STR_NMS_ACTIVE_BNT">Aktivovat</string>
+    <string name="STR_NMS_SET_PROFILE_OK">Profil byl úspěšně nastaven</string>
+    <string name="STR_NMS_SET_PROFILE_FAIL">Profil se nepodařilo nastavit</string>
+    <string name="STR_NMS_ILLEGAL_PROFILE_NAME">Neplatné jméno</string>
+    <string name="STR_NMS_NO_ACTIVITED">Nebyla aktivována ani povolena žádná SIM karta.</string>
+    <!-- Profile Settings End -->
+
+
+    <!-- Term Activity -->
+    <string name="STR_NMS_REJECT">Odmítnout</string>
+    <string name="STR_NMS_AGREE">Souhlasit</string>
+    <string name="STR_NMS_TERM_TITLE">Podmínky služby</string>
+    <string name="STR_NMS_TERM_CONTENT">Berete na vědomí, že služba a software, které jsou součástí této služby, mohou obsahovat zabezpečovací prvky umožňující ochranu digitálních materiálů, a že používání těchto materiálů se řídí pravidly používání stanovenými poskytovateli služby AF PushMail a/nebo obsahu, kteří zajišťují obsah služby. Je zakázáno přepisovat nebo obcházet pravidla používání, která jsou součástí služby. Jakékoli neoprávněné kopírování, zveřejňování, další distribuce nebo veřejné provozování materiálů této služby, ať už celku nebo poměrné části, je přísně zakázáno.</string>
+    <!-- Term Activity End -->
+
+
+    <!-- System Settings -->
+    <string name="STR_NMS_SYS_SETTING_TITLE">iSMS zpráva</string>
+    <string name="STR_NMS_SETTINGS_TITLE">PROFIL</string>
+    <string name="STR_NMS_PREFERENCE_CATE">PŘEDVOLBY</string>
+    <string name="STR_NMS_SEND_SMS_TITLE">Odeslat jako SMS</string>
+    <string name="STR_NMS_SEND_SMS_CONTENT">Odeslat jako SMS, pokud iSMS není dostupná. Mohou být účtovány poplatky operátora za odesílání zpráv. Tato pravidla se nevztahují na skupinový chat</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_TITLE">Automatické stahování</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_CONTENT">Automaticky stáhnout multimediální objekty</string>
+    <string name="STR_NMS_CAPTION_TITLE">Titulky</string>
+    <string name="STR_NMS_CAPTION_CONTENT">Sdílet soubor s titulky</string>
+    <string name="STR_NMS_SYSTEM_CATE">SYSTÉM</string>
+    <string name="STR_NMS_UPDATE_TITLE">Aktualizace softwaru</string>
+    <string name="STR_NMS_UPDATE_CONTENT">Poslední kontrola: Nikdy</string>
+    <string name="STR_NMS_NETWORK_USAGE_TITLE">Využití sítě</string>
+    <string name="STR_NMS_NETWORK_USAGE_CONTENT">Zobrazit celkové využití odeslaných/přijatých dat</string>
+    <string name="STR_NMS_NETWORK_DLG_CONTENT">Odesláno %1$.3f K \nPřijato: %2$.3f K\nPoslední obnovení: %3$s</string>
+    <string name="STR_NMS_VERSION_TITLE">Verze</string>
+    <string name="STR_NMS_NEVER_CLEAR">Nikdy</string>
+    <string name="STR_NMS_RESET">Obnovit</string>
+    <string name="STR_NMS_SWITCH_ON">ZAP</string>
+    <string name="STR_NMS_SWITCH_OFF">VYP</string>
+    <string name="STR_NMS_SYSTEM_SETTING_TITLE">Nastavení</string>
+    <string name="STR_NMS_COPYRGIHT">Hesine Technologies, Inc.</string>
+    <string name="STR_NMS_ABOUT">O aplikaci iSMS</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_TITLE">Zobrazit stav přečtení</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_CONTENT">Zobrazit v seznamu zpráv stav přečtení</string>
+    <string name="STR_NMS_SHOW_REMIND_TITLE">Zobrazit připomenutí</string>
+    <string name="STR_NMS_SHOW_REMIND_CONTENT">Zobrazit připomenutí iSMS na obrazovce chatu</string>
+    <string name="STR_NMS_MENU_RESET_SETTING">Obnovit výchozí nastavení</string>
+    <string name="STR_NMS_MENU_FUNCTION_INTRODUCTION">Funkce</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT">Smlouva s uživatelem</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION">Copyright</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT_TITLE">LICENČNÍ SMLOUVA S UŽIVATELEM HESINE iSMS</string>
+    <string name="STR_NMS_MENU_FUNCTION">Seznam funkcí</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION_DETAIL">\nHesine Technologies Inc.\nCopyright© 2008-2013\nVšechna práva vyhrazena.\n</string>
+    <!-- System Settings End -->
+
+
+    <!-- Caption Settings -->
+    <string name="STR_NMS_AUDIO_TITLE">Zvuk</string>
+    <string name="STR_NMS_VIDEO_TITLE">Videa</string>
+    <string name="STR_NMS_PHOTO_TITLE">Fotografie</string>
+    <!-- Caption Settings End -->
+
+
+    <!-- Map String start -->
+    <string name="STR_NMS_MAP_TITLE">Sdílet místo</string>
+    <string name="STR_NMS_MAP_PROMPT">Mapu nelze zobrazit, protože lokalizační služba není zapnutá. Níže uvedená adresa byla odhadnuta na základě informací mob. telefonu. \nPřesnější určení polohy získáte zapnutím lokalizační služby.</string>
+    <string name="STR_NMS_MAP_NOTE_1">Povolte zdroj Moje poloha v nastavení systému</string>
+    <string name="STR_NMS_MAP_SHARE">Sdílet</string>
+    <string name="STR_NMS_MAP_SETTINGS">Nastavení</string>
+    <string name="STR_NMS_MAP_OK">OK</string>
+    <string name="STR_NMS_MAP_CANCEL">Storno</string>
+    <string name="STR_NMS_MAP_EDIT">Upravit polohu</string>
+    <string name="STR_NMS_MAP_SEARCH_HINT">Hledat místa v okolí</string>
+    <string name="STR_NMS_MAP_WAIT">Čekejte prosím...</string>
+    <string name="STR_NMS_MAP_EDIT_LIMIT">Byl dosažen limit zadaných znaků</string>
+    <string name="STR_NMS_MAP_ADDR_LEN">Adresa je příliš dlouhá</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR_LOCATING">Určování aktuální polohy...</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN_LOCATING">Určování polohy PIN kódu...</string>
+    <string name="STR_NMS_MAP_LINEONE_SEARCH_LOCATING">Určování vyhledané polohy...</string>
+    <string name="STR_NMS_MAP_LINETHREE_NEARBY_LOCATING">Hledání míst v okolí...</string>
+    <string name="STR_NMS_MAP_LINEONE_FAILED">Poloha není dostupná</string>
+    <string name="STR_NMS_MAP_LINETWO_FAILED">Ověřte, zda byla zapnuta lokalizační služba a zda je dostupná síť</string>
+    <string name="STR_NMS_MAP_LINETHREE_FAILED">Nebyla nalezena žádná místa v okolí</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR">Sdílet aktuální polohu</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN">Sdílet polohu PIN kódu</string>
+    <string name="STR_NMS_MAP_MY_LOCATION">Moje poloha</string>
+    <string name="STR_NMS_MAP_SEARCH">Hledat</string>
+    <string name="STR_NMS_MAP_ERROR_1">Nepodařilo se načíst zem. šířku a délku</string>
+    <string name="STR_NMS_MAP_ERROR_2">Servery Google vrátily chybu</string>
+    <!-- Map String end -->
+
+
+    <!-- All Media String start -->
+    <string name="STR_NMS_ALL_MEDIA_TITLE">Všechna média</string>
+    <string name="STR_NMS_ALL_MEDIA_WAIT">Čekejte prosím...</string>
+    <string name="STR_NMS_ALL_MEDIA_ERROR">Nepodařilo se načíst, opakujte akci později</string>
+    <string name="STR_NMS_ALL_MEDIA_EMPTY">Prázdné</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_WEEK">Tento týden</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_MONTH">Tento měsíc</string>
+    <string name="STR_NMS_ALL_MEDIA_JAN">Leden</string>
+    <string name="STR_NMS_ALL_MEDIA_FEB">Únor</string>
+    <string name="STR_NMS_ALL_MEDIA_MAR">Březen</string>
+    <string name="STR_NMS_ALL_MEDIA_APR">Duben</string>
+    <string name="STR_NMS_ALL_MEDIA_MAY">Květen</string>
+    <string name="STR_NMS_ALL_MEDIA_JUN">Červen</string>
+    <string name="STR_NMS_ALL_MEDIA_JUL">Červenec</string>
+    <string name="STR_NMS_ALL_MEDIA_AUG">Srpen</string>
+    <string name="STR_NMS_ALL_MEDIA_SEPT">Září</string>
+    <string name="STR_NMS_ALL_MEDIA_OCT">Říjen</string>
+    <string name="STR_NMS_ALL_MEDIA_NOV">Listopad</string>
+    <string name="STR_NMS_ALL_MEDIA_DEC">Prosinec</string>
+    <string name="STR_NMS_ADDCONTACT">Přidat kontakt</string>
+    <string name="STR_NMS_ADD_PHONE_CONTACT">Přidat \&quot;%1$s\&quot; do kontaktů?</string>
+    <string name="STR_NMS_DELETE_MEDIA">Médium bude odstraněno, pokračovat?</string>
+    <string name="STR_NMS_MEDIA_SHARE_MESSAGE">Sdíleno uživatelem %1$s v %2$s</string>
+
+    <!-- All Media String end -->
+
+
+    <!-- All Locations String start -->
+    <string name="STR_NMS_ALL_LOCATIONS_TITLE">Všechny polohy</string>
+    <string name="STR_NMS_ALL_LOCATIONS_LOC">Poloha</string>
+    <string name="STR_NMS_ALL_LOCATIONS_WAIT">Čekejte prosím...</string>
+    <!-- All Locations String end -->
+
+
+    <!-- Sketch -->
+    <string name="STR_NMS_SKETCH_TITLE">Nakreslit skicu</string>
+    <string name="STR_NMS_REDO">Opakovat</string>
+    <string name="STR_NMS_UNDO">Zpět</string>
+    <string name="STR_NMS_SKETCH_CUSTOM">Vlastní</string>
+    <string name="STR_NMS_PEN_SIZE">Velikost</string>
+    <string name="STR_NMS_SKETCH_TOOLS_PEN">Pero</string>
+    <string name="STR_NMS_SKETCH_TOOLS_ERASER">Guma</string>
+    <string name="STR_NMS_SKETCH_CUSTOM_COLOR">Vlastní barva</string>
+    <string name="STR_NMS_CLEAR_SKETCH_TITLE">Vymazat skicu</string>
+    <string name="STR_NMS_CLEAR_SKETCH_CONTENT">Chcete vymazat tuto skicu?</string>
+    <string name="STR_NMS_SIZE_SKETCH_TITLE">Velikost</string>
+    <string name="STR_NMS_SIZE_SKETCH_MAX">72</string>
+    <string name="STR_NMS_SIZE_SKETCH_MIN">2</string>
+    <string name="STR_NMS_COLOR_SKETCH_TITLE">Barva</string>
+    <string name="STR_NMS_SKETCH_ERROR">Skicu se nepodařilo vytvořit.</string>
+    <string name="STR_NMS_BACK_TITLE">Potvrzení</string>
+    <string name="STR_NMS_FINISH_SKETCH_CONTENT">Opravdu chcete skicu ukončit?</string>
+    <string name="STR_NMS_LEAVE_SKETCH_CONTENT">Opravdu chcete skicu zrušit?</string>
+    <string name="STR_NMS_NOTREDO">Nelze opakovat</string>
+    <string name="STR_NMS_NOTUNDO">Nelze vzít zpět</string>
+    <string name="STR_NMS_SKETCH_DELETE">Vymazat</string>
+    <string name="STR_NMS_DISCARD">Zrušit</string>
+
+    <!-- Sketch end -->
+
+
+    <!-- Selection Contact -->
+    <string name="STR_NMS_DONE">OK</string>
+    <string name="STR_NMS_SELECTALL">Vybrat vše</string>
+    <string name="STR_NMS_DESELECTED">Zrušit výběr</string>
+    <string name="STR_NMS_SELECTED">Vybráno %1$s</string>
+    <string name="STR_NMS_CONTACT_SEARCH">Najít kontakty</string>
+    <string name="STR_NMS_SEARCH">Hledat</string>
+    <string name="STR_NMS_CONTACT_SELECT">Vybrat kontakt</string>
+    <string name="STR_NMS_SELECT_MEMBER_FULL">Bylo vybráno příliš mnoho kontaktů</string>
+    <string name="STR_NMS_SELECT_MEMBER_EMPTY">Nebyly vybrány žádné kontakty</string>
+    <string name="STR_NMS_SELECT_CONTAT_WAIT">Čekejte prosím...</string>
+    <string name="STR_NMS_SELECT_CONTAT_EMPTY">Žádné iSMS kontakty</string>
+    <string name="STR_NMS_SELECT_NO_RESULT">Nenalezeno</string>
+    <string name="STR_NMS_EMPTY">Žádné kontakty</string>
+    <string name="STR_NMS_ALL_CONTACTS">VŠE</string>
+    <string name="STR_NMS_GROUPS_MEM"> %1$s členů</string>
+    <string name="STR_NMS_GROUPS_CONTACTS">VŠECHNY SKUPINY</string>
+    <!-- Selection Contact end -->
+
+    <!-- Group chat -->
+    <string name="STR_NMS_CREATE_GROUP_TITLE">Vytvořit skupinu</string>
+    <string name="STR_NMS_GROUP_INFO_TITLE">Informace o skupině</string>
+    <string name="STR_NMS_EDIT_GROUP_TITLE">Upravit skupinu</string>
+    <string name="STR_NMS_SELECT_ACTION_TITLE">Vybrat akci</string>
+    <string name="STR_NMS_ADD_TO_BOOKMARK">Přidat do záložek</string>
+    <string name="STR_NMS_ADD_TO_CONTACTS">Přidat %1$s do kontaktů</string>
+    <string name="STR_NMS_GROUP_NAME">NÁZEV SKUPINY</string>
+    <string name="STR_NMS_GROUP_INFO">INFORMACE O SKUPINĚ</string>
+    <string name="STR_NMS_GROUP_MEMBERS">ČLENOVÉ SKUPINY</string>
+    <string name="STR_NMS_GROUP_NAME_HIT">Název skupiny</string>
+    <string name="STR_NMS_GROUP_NAME_EMPTY">Název skupiny je prázdný</string>
+    <string name="STR_NMS_CONFIRM_LEAVE_TITLE">Opustit tuto skupinu</string>
+    <string name="STR_NMS_LEAVE_GROUP_CONTENT">Chcete opustit tuto skupinu?</string>
+    <string name="STR_NMS_LEAVE_GROUP_SUCCESS">Tuto skupinu jste úspěšně opustili</string>
+    <string name="STR_NMS_LEAVE_GROUP_FAILED">Tuto skupinu se nepodařilo opustit</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_SUCCESS">Aktualizace názvu skupiny byla úspěšná</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_SUCCESS">Byli přidáni noví členové skupiny</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_FAILED">Nepodařilo se přidat člena skupiny</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_FAILED">Nepodařilo se aktualizovat název skupiny</string>
+    <string name="STR_NMS_CREATE_GROUP_NAME_FAILED">Nepodařilo se vytvořit chat skupiny</string>
+    <string name="STR_NMS_DELETE_GROUP_MEMBER_FAILED">Nepodařilo se odebrat člena skupiny</string>
+    <string name="STR_NMS_UPDATE_GROUP_SUCCESS">Aktualizace informací o skupině byla úspěšná</string>
+    <string name="STR_NMS_UPDATE_GROUP_FAILED">Nepodařilo se aktualizovat informace o skupině</string>
+    <string name="STR_NMS_GROUP_CHAT_BACK">Chcete zrušit tuto operaci?</string>
+    <string name="STR_NMS_GROUP_MEMEBER_YOU">VY</string>
+    <string name="STR_NMS_GROUP_INVITE_MORE">Pozvat další</string>
+    <string name="STR_NMS_LEAVE_GROUP">Opustit tuto skupinu</string>
+    <string name="STR_NMS_CHAT">Chat</string>
+    <string name="STR_NMS_CONFIRM_REMOVE_TITLE">Odebrat ze seznamu členů skupin</string>
+    <string name="STR_NMS_REMOVE_OK">Odebrat</string>
+    <string name="STR_NMS_REMOVE_CANCEL">Storno</string>
+    <string name="STR_NMS_REMOVE_CONTENT">Chcete toto odebrat ze seznamu?</string>
+    <string name="STR_NMS_VIEW_ALL_MEDIA">Zobrazit všechna média</string>
+    <string name="STR_NMS_VIEW_ALL_LOCATIONS">Zobrazit všechna místa</string>
+    <string name="STR_NMS_CHAT_SETTINGS">Nastavení chatu</string>
+    <string name="STR_NMS_VIEW_GROUP_FAILED">Opustili jste tento skupinový chat.</string>
+    <string name="STR_NMS_VIEW_HISTORY">Zobrazit historii skupiny</string>
+    <string name="STR_NMS_ISMS_ENABLE_TITLE">Povolit iSMS</string>
+    <string name="STR_NMS_ISMS_ENABLE_CONTENT">Tuto funkci podporuje služba iSMS. Povolit nyní účet iSMS?</string>
+    <string name="STR_NMS_ENABLE">Povolit</string>
+    <string name="STR_NMS_LATER">Zrušit</string>
+    <string name="STR_NMS_SWITCH_TITLE">Změna SIM</string>
+    <string name="STR_NMS_SWITCH_MESSAGE">Skupinový chat podporuje pouze aktivní služba iSMS, aktuální SIM karta však není aktivní. Přepnout na aktivní SIM kartu?</string>
+    <string name="STR_NMS_SWITCH_EDIT_MESSAGE">Aktuální SIM karta není přiřazena této skupině. Přepnout na aktivní SIM kartu?</string>
+    <string name="STR_NMS_LEAVE_GROUP_NOTICE">Opustili jste tuto skupinu a nemůžete se připojit ke skupinovému chatu bez pozvání</string>
+    <string name="STR_NMS_LOSE_SIM_NOTICE">Původní SIM karta chatu byla odebrána, v této skupině můžete chatovat pouze s původní SIM kartou</string>
+    <string name="STR_NMS_SWITCH">Přepnout</string>
+
+    <!-- Group chat end -->
+
+
+    <!-- chat details screen long press item start -->
+    <string name="STR_NMS_LONG_PRESS_TITLE">Možnosti zpráv</string>
+    <string name="STR_NMS_SEND_VIA_TEXT">Odeslat přes SMS</string>
+    <string name="STR_NMS_TRY_AGAIN">Opakovat akci</string>
+    <string name="STR_NMS_TRY_ALL_AGAIN">Opakovat všechny akce</string>
+    <string name="STR_NMS_CONTINUE_TRY">Opakovat dál</string>
+    <string name="STR_NMS_COPY">Kopírovat</string>
+    
+    <string name="STR_NMS_FORWARD">Předat dál</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_TITLE">Stáhnout</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD">Chcete-li iSMS předat dál, musíte nejdříve stáhnout mediální obsah.</string>
+    <string name="STR_NMS_FORWARD_CONTIUE">Pokračovat</string>
+    <string name="STR_NMS_FORWARD_FAILED">Předání se nezdařilo.</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_MULTI">Chcete-li předat dál více položek, je nutné některé iSMS nejdříve stáhnout.</string>
+    <string name="STR_NMS_FORWARD_SOME_FAILED">Předání některých iSMS se nezdařilo.</string>
+    <string name="STR_NMS_FORWARD_ALL_FAILED">Stahování se nezdařilo, předání bylo zrušeno</string>
+    
+    <string name="STR_NMS_SEND_VIA_MULTIMEDIA">Odeslat přes MMS</string>
+    <string name="STR_NMS_SHARE">Sdílet</string>
+    <string name="STR_NMS_DELETE">Odstranit</string>
+    <string name="STR_NMS_FLAG_IMPORTANT">Označit jako důležité</string>
+    <string name="STR_NMS_REMOVE_IMPORTANT">Odebrat označení důležitosti</string>
+    <string name="STR_NMS_SAVE_IN_SDCARD">Exportovat na kartu SD</string>
+    <string name="STR_NMS_SAVE_FILE">Soubor byl uložen na %1$s</string>
+    <string name="STR_NMS_SHARE_TITLE">Způsob sdílení</string>
+    <string name="STR_NMS_VIEW_DETAILS">Zobrazit podrobnosti</string>
+    <string name="STR_NMS_VIEW_DETAILS_TITLE">Podrobnosti zpráv</string>
+    <string name="STR_NMS_SEND_MSG_DETAILS">Typ: IP zpráva\nOdesláno: %1$s</string>
+    <!-- chat details screen long press item end -->
+
+
+    <!-- chat details screen delete item start -->
+    <string name="STR_NMS_DELETE_TITLE">Odstranit</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_TITLE">Odstranit důležitou zprávu</string>
+    <string name="STR_NMS_DELETE_WARNING">Zpráva bude odstraněna.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_WARNING">Opravdu chcete odstranit tuto důležitou zprávu?</string>
+    <string name="STR_NMS_DELETE_MSG">Vybrané zprávy budou odstraněny.</string>
+    <string name="STR_NMS_DELETE_WAITTING">Odstraňování</string>
+    <string name="STR_NMS_CLEAR_HISTORY_CONTENT">Veškerá historie této chatovací místnosti bude odstraněna</string>
+    <string name="STR_NMS_DELETE_IMPORTANT">Zahrnout zprávy označené jako důležité</string>
+    <!-- chat details screen delete item end -->
+
+
+    <!-- chat details actionBar option start -->
+    <string name="STR_NMS_MENU_CALL">Hovor</string>
+    <string name="STR_NMS_MENU_GROUPINFO">Informace o skupině</string>
+    <string name="STR_NMS_MENU_INVITE_CHAT">Pozvat přátele do chatu</string>
+    <string name="STR_NMS_MENU_INVITE_ISMS">Pozvat přátele do iSMS</string>
+    <string name="STR_NMS_MENU_SELECT_MSG">Vybrat zprávu</string>
+    <string name="STR_NMS_MENU_MARK_SPAM">Přesunout do seznamu spamů</string>
+    <string name="STR_NMS_MENU_REMOVE_SPAM">Odebrat ze seznamu spamů</string>
+    <string name="STR_NMS_MENU_ADD_SHORTCUT">Přidat zástupce</string>
+    <string name="STR_NMS_MENU_VIEW_ALLMEDIA">Zobrazit všechna média</string>
+    <string name="STR_NMS_MENU_VIEW_ALLLOCATION">Zobrazit všechna místa</string>
+    <string name="STR_NMS_MENU_EDIT_GROUP">Upravit skupinu</string>
+    <string name="STR_NMS_MENU_CHAT_SETTING">Nastavení chatu</string>
+    <string name="STR_NMS_MENU_INSERT_QUICK_TEXT">Vložit rychlý text</string>
+    <string name="STR_NMS_MENU_CLEAR_HISTORY">Vymazat historii chatu</string>
+    <string name="STR_NMS_MENU_LEAVE_GROUP">Opustit tuto skupinu</string>
+    <string name="STR_NMS_MENU_DISCARD">Zrušit</string>
+    <string name="STR_NMS_MENU_DELETE">Odstranit</string>
+    <string name="STR_NMS_MENU_IMPORTANT">Označit jako důležité</string>
+    <string name="STR_NMS_MENU_FORWARD">Předat dál</string>
+    <!-- chat details actionBar option end -->
+
+
+    <!-- chat details share item start -->
+    <string name="STR_NMS_TAKE_PHOTO">Pořídit fotografii</string>
+    <string name="STR_NMS_RECORD_VIDEO">Nahrát video</string>
+    <string name="STR_NMS_DRAW_SKETCH">Nakreslit skicu</string>
+    <string name="STR_NMS_SHARE_CONTACT">Sdílet kontakt</string>
+    <string name="STR_NMS_CHOOSE_PHOTO">Vybrat fotografii</string>
+    <string name="STR_NMS_CHOOSE_VIDEO">Vybrat video</string>
+    <string name="STR_NMS_RECORD_AUDIO">Nahrát zvuk</string>
+    <string name="STR_NMS_SHARE_LOCATION">Sdílet místo</string>
+    <string name="STR_NMS_CHOOSE_AUDIO">Vybrat zvuk</string>
+    <string name="STR_NMS_SHARE_CALENDAR">Sdílet kalendář</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_TITLE">Přidat hudbu</string>
+    <string name="STR_NMS_CHOOSE_RINGTONE_ITEM">Vyzváněcí tón</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_ITEM">Zvuk</string>
+    <string name="STR_NMS_INSERT_SDCARD">Vložte kartu SD!</string>
+    <!-- chat details share item start -->
+
+
+    <!-- record audio start -->
+    <string name="STR_NMS_AUDIO_TIMER_FORMAT" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <string name="STR_NMS_AUDIO_LABLE">Záznam zvuk. poznámek</string>
+    <string name="STR_NMS_RECORD_AUDIO_CONT">Klepnutím nahrát</string>
+    <string name="STR_NMS_PLAY_AUDIO_CONT">Klepnutím přehrát</string>
+    <string name="STR_NMS_ACTION_SEND">Odeslat</string>
+    <string name="audio_db_artist_name">Vaše záznamy</string>
+    <string name="audio_db_album_name">Zvukové záznamy</string>
+    <!-- record audio end -->
+
+
+    <!-- chat & group details screen start -->
+
+    <string name="STR_NMS_UNREAD_FORMAT">%1$d nepřečtených zpráv</string>
+    <string name="STR_NMS_NOT_DELIVERED_TITLE">Zatím nedoručeno</string>
+    <string name="STR_NMS_FAILED_TITLE">Chyba odesílání</string>
+    <string name="STR_NMS_GROUP_SUBTITLE">%1$s, +%2$d</string>
+    <string name="STR_NMS_GROUP_DEAD_SUBTITLE">%1$s, %2$d</string>
+    <string name="STR_NMS_SAVE_AS_DRAFT">Zpráva uložena jako koncept</string>
+    <string name="STR_NMS_NO_SD_TITLE">Chyba karty SD</string>
+    <string name="STR_NMS_CANT_SHARE">Karta SD není k dispozici.Všechny multimediální funkce jsou dočasně nedostupné.\n\nOvěřte kartu SD a opakujte akci později.</string>
+    <string name="STR_NMS_CANT_SAVE">Karta SD nebyla rozpoznána, soubor nelze uložit</string>
+    <string name="STR_NMS_SDSPACE_NOT_ENOUGH">Na kartě SD není dostatek místa, soubor nelze uložit.</string>
+    <string name="STR_NMS_REAEND_ALL">Opakujte akci...</string>
+    <string name="STR_NMS_FILE_LIMIT">Příliš velká</string>
+    <string name="STR_NMS_LOAD_ALL_MESSAGE">Načíst všechny zprávy</string>
+    <string name="STR_NMS_DOWNLOAD_FAILED">Stahování se nezdařilo</string>
+    <string name="STR_NMS_INPUT_HINT">Zadat obsah</string>
+    <string name="STR_NMS_INPUT_HINT_ISMS">Napsat iSMS zprávu</string>
+    <string name="STR_NMS_CAPTION_HINT">Zadat titulky</string>
+    <string name="STR_NMS_PROTOCOL_SMS">SMS</string>
+    <string name="STR_NMS_PROTOCOL_MMS">MMS</string>
+    <string name="STR_NMS_PROTOCOL_IP">iSMS</string>
+    <string name="STR_NMS_SWITCH_BOTTON">Přepnout SIM</string>
+    <string name="STR_NMS_TURN_ON_BOTTON">Zapnout</string>
+    <string name="STR_NMS_SWITCH_TEXT_FORMAT">Chcete-li pokračovat ve skupinovém chatu, přepněte nejdříve na %1$s SIM.</string>
+    <string name="STR_NMS_ENABLE_TEXT_FORMAT">Chcete-li pokračovat ve skupinovém chatu, zapněte nejdříve službu iSMS na %1$s SIM.</string>
+    <string name="STR_NMS_REPLACE_ATTACH_TITLE">Nahradit přílohu</string>
+    <string name="STR_NMS_REPLACE_ATTACH_MSG">Je k dispozici příloha, chcete ji nahradit?</string>
+    <string name="STR_NMS_TRUNC_CAPTION">Titulek je poškozený.</string>
+    <string name="STR_NMS_MAX_CHARACTERS_REACHED">Bylo dosaženo max. velikost zprávy.</string>
+    <string name="STR_NMS_MAX_EMOTICON_REACHED">Byl dosažen limit emotikon</string>
+    <string name="STR_NMS_ENABLE_PROCESS">Zpracování...</string>
+    <string name="STR_NMS_ERR_FILE">Neplatný soubor</string>
+    <string name="STR_NMS_SENDING_TEXT">Odesílání...</string>
+    <!-- chat & group details screen end --> <!-- Error code tips -->
+    <string name="STR_NMS_ERR_GENERAL">Obecná chyba</string>
+    <string name="STR_NMS_ERR_INVALID_ARGUMENT">Neplatný argument</string>
+    <string name="STR_NMS_ERR_NETWORK_BLOCK">Síť není v pořádku</string>
+    <string name="STR_NMS_ERR_PHONE_NOT_ACTIVATED">Neaktivováno</string>
+    <string name="STR_NMS_ERR_SIM_NOT_ACTIVATED">SIM karta není aktivována</string>
+    <string name="STR_NMS_ERR_INVALID_MSG_DB_ID">Neplatné Id DB zprávy</string>
+    <string name="STR_NMS_ERR_ADD_MSG_DB_FAILED">Nepodařilo se vložit do DB</string>
+    <string name="STR_NMS_ERR_UPDATE_MSG_DB_FAILED">Nepodařilo se aktualizovat DB</string>
+    <string name="STR_NMS_ERR_GET_MSG_DB_DATA_FAILED">Nepodařilo se načíst zprávu</string>
+    <string name="STR_NMS_ERR_INVALID_CONTACT_DB_ID">Neplatné Id DB kontaktu</string>
+    <string name="STR_NMS_ERR_ADD_CONTACT_DB_FAILED">Nepodařilo se vložit do kontaktů</string>
+    <string name="STR_NMS_ERR_UPDATE_CONTACT_DB_FAILED">Nepodařilo se aktualizovat DB kontaktu</string>
+    <string name="STR_NMS_ERR_GET_CONTACT_DB_DATA_FAILED">Nepodařilo se načíst kontakt podle Id</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_ERROR_FORMAT">Neplatný formát IP zprávy</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_INVALID_TO">Neplatný příjemce</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_WITH_UNKNOWN_USER">Neplatný a neznámý příjemce</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_NO_MBMBER">Nejsou k dispozici žádní členové skupinového chatu</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_GCHAT_DEAD">Skupinový chat není aktivován</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_INVALID_SIM_ID">SIM karta skupinového chatu není aktuální SIM karta</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_FOR_SYS_MSG">Odeslat znovu zprávu systému</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_INVALID_STATUS">IP zpráva není připravena</string>
+    <string name="STR_NMS_ERR_GCHAT_IS_DEAD">Tento skupinový chat již není k dispozici</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBERS">Neplatní členové skupiny</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBER_WITH_SELF">Nepodařilo se vytvořit skupinu. Mezi členy nemůžete patřit vy</string>
+    <string name="STR_NMS_ERR_GCHAT_EXCEED_MAX_MEMBER_COUNT">Počet členů skupiny dosáhl limitu</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_NAME">Neplatný název skupinového chatu</string>
+    <string name="STR_NMS_ERR_GCHAT_SIM_IS_NOT_ACTIVATED">SIM karta skupinového chatu není aktivována</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_NOT_INBOX_MSG">Nepodařilo se stáhnout URL</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_INVALID_URL">Neplatný URL stahování</string>
+    <string name="STR_NMS_ERR_GET_ATTACH_NAME_INVALID_BODY_FORMAT">Nepodařilo se stáhnout název souboru</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_INVALID_FILE_NAME">Neplatný název souboru stahování</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_EXIST">Soubor stahování neexistuje</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_INBOX_MSG">Nepodařilo se nastavit soubor stahování</string>
+    <string name="STR_NMS_ERR_SIM_INFO_NOT_FOUND">Informace o SIM kartě nebyly nalezeny</string>
+    <string name="STR_NMS_ERR_SIM_IN_INVALID_STATUS">Neplatný stav SIM karty</string>
+    <string name="STR_NMS_ERR_CMD_PROCESSING">Systém je zaneprázdněn a nemůže provádět příkazy konfigurace systému</string>
+    <string name="STR_NMS_ERR_CMD_GENERAL">Obecná chyba konfigurace systému</string>
+    <string name="STR_NMS_ERR_CODE_END">Kód neznámé chyby</string>
+    <!-- Error code tips -->
+    <string name="STR_NMS_SEND_MMS_QUERY_TITLE">Upozornění</string>
+    <string name="STR_NMS_SEND_MMS_QUERY">Příjemce není uživatelem iSMS, chcete odeslat přes MMS?</string>
+    <!-- Service center start -->
+    <string name="STR_NMS_SERVICE_TITLE">Centrum služeb iSMS</string>
+    <string name="STR_NMS_INTRODUCTION">Díky službě iSMS můžete okamžitě doručovat zdarma zprávy a ukládat historii chatu na jediném místě. Stiskněte jediné tlačítko a vyzkoušejte nový zážitek!</string>
+    <string name="STR_NMS_TERMS">Podmínky a ujednání</string>
+    <string name="STR_NMS_ACTIVATION_BUTTON">Aktivovat nyní</string>
+    <string name="STR_NMS_LOSE_SDCARD">Karta SD nebyla nalezena</string>
+    <!-- Service center end -->
+
+
+    <!-- conversation empty tips -->
+    <string name="STR_NMS_SPAM_EMPTY">Nemáte žádné spamové konverzace. \nSložka SPAM obsahuje všechny konverzace označené jako spam. Upozornění budou ve výchozím nastavení vypnuta. Nebudete pak zbytečně rušeni. \n\nPodržením konverzace a označením ikony Označit jako spam označíte odesílatele jako spam. Pokud je konverzace označena jako spam, bude ikona vypnutí upozornění zobrazena automaticky a konverzace bude umístěna sem.</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_FROM">+86123456789</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_SUBJECT">Toto je příklad zprávy typu spam.</string>
+    <string name="STR_NMS_GROUPCHAT_EMPTY">Nemáte žádné zprávy skupinového chatu. \nSložka SKUPINOVÉ CHATY obsahují všechny zprávy skupinových chatů, které jste vytvořili nebo ke kterým jste se připojili. To umožňuje snadné hledání a správu skupinových chatů. \n\nSkupinový chat vytvoříte klepnutím na tlačítko Vytvořit skupinový chat v dolní části obrazovky. Pak do této skupiny pozvěte své přátele.</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_FROM">Název skupiny</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_SUBJECT">Vašim přátelům\n se bude líbit funkce skupinového chatu!</string>
+    <string name="STR_NMS_IMPORTANT_EMPTY">Nemáte žádné důležité zprávy. \nSložka DŮLEŽITÉ obsahuje všechny zprávy označené jako důležité. To umožňuje snadné hledání zpráv. \n\nPodržením zprávy a označením možnosti Označit jako důležité v nabídce Možnosti označíte zprávu jako důležitou. Pokud je zpráva označená jako důležité, bude zobrazena ikona červené vlajky.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TITLE">Toto je příklad zprávy, která byla označena jako důležitá. Bude zobrazena červená vlajka.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TIME">10:55</string>
+    <string name="STR_NMS_ALLCHAT_EMPTY">Žádné konverzace</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_CONTENT">Chcete-li použít tuto funkci, musíte nejdříve aktivovat službu iSMS. Buďte bez obav – pokud se vám služba nelíbí, můžete ji vypnout v části Nastavení. Ihned si ji vyzkoušejte!</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_TITLE">Aktivovat iSMS</string>
+    <!-- conversation empty tips -->
+    
+    <string name="STR_NMS_CLEAR_USER_DATA">Data byla úspěšně odstraněna</string>
+    
+    <!-- get file err start -->
+    <string name="STR_NMS_NO_SUCH_FILE">Žádný podobný soubor</string>
+    <string name="STR_NMS_OVER_FILE_LIMIT">Velikost souboru přesahuje limit</string>
+    <string name="STR_NMS_INVALID_FILE_TYPE">Nepodporuje tento typ</string>
+    <!-- get file err end -->
+
+    <string name="STR_NMS_DELIVERY_BODY">Zpráva přijata uživatelem %s</string>
+    <string name="STR_NMS_SIM_SELECT_TITLE">Vybrat SIM</string>
+    
+    <string name="STR_NMS_SHORTCUT_SUCCESS">Zástupce %1$s byl vytvořen.</string>
+    <string name="STR_NMS_SHORTCUT_REFRESHING">Aktualizace</string>
+    
+    <string name="STR_NMS_DISABLE_FAILED">Operace se nezdařila, opakujte akci</string>
+    <string name="STR_NMS_ENABLE_FAILED">Operace se nezdařila, opakujte akci</string>
+    <string name="STR_NMS_ENABLE_SUCCESS">Úspěšně jste aktivovali službu iSMS</string>
+    <string name="STR_NMS_DISABLE_SUCCESS">Úspěšně jste deaktivovali službu iSMS</string>
+    
+	<string name="STR_NMS_SD_CARD_FULL">Karta SD je plná</string>
+    <string name="STR_NMS_SEND_MSG_FAILED">Zprávu se nepodařilo odeslat!</string>
+    <string name="STR_NMS_SELECT_AUDIO">Vybrat zvuk</string>
+    
+    <string name="STR_NMS_SETTING_COMMENT">iSMS je skvělý nástroj pro chatování. Je zdarma a je praktický.Dozvědět se více</string>
+    <string name="STR_NMS_KNOW_MORE">Dozvědět se více</string>
+    <string name="STR_NMS_RECEIVED_MSG_DETAILS">Typ: IP zpráva\nOd: %1$s\nPoslat Time: %2$s\nPřijato: %3$s</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH_ADD">iSMS Služba je dočasně nedostupná z důvodu nedostatku úložného prostoru.</string>
+    <string name="STR_NMS_SERVER_AUTO_ECHO_MSG">Zpráva přijata. Díky!</string>
+    
+    <string name="imsp_ip_message">iSMS zpráva</string>
+    <string name="imsp_invite_chat_frequently"><b>Chatujete často s uživatelem %s ?</b>\nProč nepozvat uživatele %s do iSMS a neušetřit peníze?</string>
+    <string name="imsp_enable_chat_frequently"><b>Služba iSMS uživatele %s je neaktivní!</b>\nProč nepovolit službu iSMS a neušetřit peníze?</string>
+    <string name="imsp_invite">Pozvat</string>
+    <string name="imsp_enable_notice">Opravdu chcete povolit službu iSMS?</string>
+    <string name="imsp_activate_chat_frequently"><b>Chatujete často s přáteli?</b>\nProč si neaktivovat službu iSMS a chatovat bez poplatků za SMS?</string>
+    <string name="imsp_activate_note">Opravdu chcete aktivovat iSMS?</string>
+    <string name="imsp_dismiss_content">Opravdu chcete zrušit tuto upozornění?</string>
+    <string name="imsp_divider_online">%s je online</string>
+    <string name="imsp_divider_offline">Naposledy online v %s</string>
+    <string name="imsp_divider_never_online">Online nikdy</string>
+    <string name="imsp_failed_title">Odesílání selhalo</string>
+    <string name="imsp_resend_via_sms">Odeslat raději SMS</string>
+    <string name="imsp_resend_via_mms">Odeslat raději MMS</string>
+    <string name="imsp_typing_text">Píše</string>
+    <string name="imsp_save_attachment">Uložit přílohu</string>
+    <string name="imsp_view">Zobrazit</string>
+    <string name="imsp_convert_to_mms">Převeďte na MMS.</string>
+    <string name="imsp_convert_to_sms">Převeďte na SMS.</string>
+    <string name="imsp_convert_to_isms">Převeďte na iSMS.</string>
+    <string name="imsp_convert_to_mms_for_service">Služba iSMS není dostupná pro tuto vybranou SIM kartu. Tuto zprávu lze na této SIM kartě odeslat pouze přes MMS. Přesto pokračovat?</string>
+    <string name="imsp_convert_to_sms_for_service">Služba iSMS není dostupná pro tuto vybranou SIM kartu. Tuto zprávu lze na této SIM kartě odeslat pouze přes SMS. Přesto pokračovat?</string>
+    <string name="imsp_convert_to_mms_for_recipients">Příjemce není uživatelem iSMS. Tuto zprávu lze odeslat pouze přes MMS. Přesto pokračovat?</string>
+    <string name="imsp_convert_to_sms_for_recipients">Příjemce není uživatelem iSMS. Tuto zprávu lze odeslat pouze přes SMS. Přesto pokračovat?</string>
+    <string name="imsp_sms_convert_to_isms">Služba iSMS je dostupná pro tuto vybranou SIM kartu. Chcete-li ušetřit za SMS, doporučujeme přepnout na iSMS. Chcete přepnout?</string>
+    <string name="imsp_mms_convert_to_isms">Služba iSMS je dostupná pro tuto vybranou SIM kartu. Chcete-li ušetřit za MMS, doporučujeme přepnout na iSMS. Chcete přepnout?</string>
+    <string name="imsp_keep_mms">Ponechat MMS</string>
+    <string name="imsp_keep_sms">Ponechat SMS</string>
+    <string name="imsp_resend_discard_message">Opětovným odesláním bude zrušeno psaní aktuální zprávy.</string>
+    <string name="imsp_no_sim_card">Žádná SIM karta!</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">"Nebylo nalezeno funkční připojení k Internetu! Opakujte akci později."</string>
+    <string name="imsp_chat_setting_updating">aktualizace...</string>
+    <string name="imsp_dialog_clear_title">Vymazat</string>
+    <string name="imsp_dialog_clear_description">Veškerá historie této chatovací místnosti bude odstraněna</string>
+    <string name="imsp_chat_setting_saving">ukládání...</string>
+    <string name="imsp_chat_setting_sending">odesílání...</string>
+    <string name="imsp_save_chat_history_failed">uložení selhalo</string>
+    <string name="imsp_send_chat_history_failed">E-mail selhal</string>
+    <string name="imsp_conversation_list_all">Zprávy</string>
+    <string name="imsp_conversation_list_important">Důležité</string>
+    <string name="imsp_conversation_list_group_chats">Skupin. chaty</string>
+    <string name="imsp_conversation_list_spam">Spam</string>
+    <string name="imsp_mark_as_spam_tips">Zprávy označené jako Spam budou přesunuty do seznamu spamů a bude deaktivováno automatické upozornění.</string>
+    <string name="imsp_typing">"Píše..."</string>
+    <string name="imsp_type_to_compose_text">"Napsat SMS/iSMS zprávu"</string>
+    <string name="imsp_no_sdcard">Žádná SD karta</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">Pokud odešlete pozvánku, bude zrušeno psaní aktuálních zpráv.</string>
+    <string name="imsp_current_sim_enabled">Aktuální SIM je aktivní.</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">Vybrat SIM pro aktivaci iSMS</string>
+    <string name="imsp_activate_message">Tuto funkci podporuje pouze služba iSMS. Aktivovat nyní účet iSMS?</string>
+    <string name="imsp_enable_message">Tuto funkci podporuje pouze služba iSMS. Povolit nyní účet iSMS?</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">Vybrat SIM pro povolení iSMS</string>
+    <string name="imsp_switch_sim_title">Přepnout SIM</string>
+    <string name="imsp_switch_sim_message">Aktuální SIM nepodporuje iSMS. Přepnout na jinou SIM?</string>
+    <string name="imsp_switch_sim_successfully">SIM byla úspěšně změněna!</string>
+    <string name="imsp_dailog_multi_forward">Předávání zpráv</string>
+    <string name="imsp_dialog_send_result">Výsledek odesílání</string>
+    <string name="imsp_dlg_send_all">Vše: %s</string>
+    <string name="imsp_dlg_send_sucess">Odesláno: %s</string>
+    <string name="imsp_dlg_send_failed">Nesplněno: %s</string>
+    <string name="imsp_multi_forward_sim_info">Načítaní informací o SIM</string>
+    <string name="imsp_multi_forward_no_sim">Žádné informace o SIM</string>
+    <string name="imsp_get_sim_failed">Nepodařilo se načíst informace o SIM</string>
+    <string name="imsp_sim_status_error">Chyba stavu SIM</string>
+    <string name="imsp_forward_norecipients">Není k dispozici žádný příjemce pro předávání zprávy</string>
+    <string name="imsp_multiforward_no_message">Nejsou k dispozici žádné zprávy k předání</string>
+    <string name="imsp_need_input_recipients">Nejdříve zadejte alespoň jednoho příjemce</string>
+    <string name="imsp_spam_empty">Nemáte žádné spamové konverzace. \nSložka SPAM obsahuje všechny konverzace označené jako spam. Upozornění budou ve výchozím nastavení vypnuta. Nebudete pak zbytečně rušeni. \n\nPodržením konverzace a označením ikony Označit jako spam označíte odesílatele jako spam. Pokud je konverzace označena jako spam, bude ikona vypnutí upozornění zobrazena automaticky a konverzace bude umístěna sem.</string>
+    <string name="imsp_groupchat_empty">Nemáte žádné zprávy skupinového chatu. \nSložka SKUPINOVÉ CHATY obsahuje všechny zprávy skupinových chatů, které jste vytvořili nebo ke kterým jste se připojili. To umožňuje snadné hledání a správu skupinových chatů. \n\nSkupinový chat vytvoříte klepnutím na tlačítko Vytvořit skupinový chat v dolní části obrazovky. Pak do této skupiny pozvěte své přátele.</string>
+    <string name="imsp_important_empty">Nemáte žádné důležité zprávy. \nSložka DŮLEŽITÉ obsahuje všechny zprávy označené jako důležité. To umožňuje snadné hledání zpráv. \n\nPodržením zprávy a označením možnosti Označit jako důležité v nabídce Možnosti označíte zprávu jako důležitou. Pokud je zpráva označená jako důležitá, bude zobrazena ikona červené vlajky.</string>
+    <string name="imsp_allchat_empty">Žádné konverzace</string>
+    <string name="imsp_attach_slideshow">Prezentace</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">Stahování...</string>
+    <string name="imsp_invite_friends_to_ipmsg">Pozvat přátele do iSMS</string>
+    <string name="imsp_multi_forward_tips_content">Chcete-li předat dál více položek, je nutné některé iSMS nejdříve stáhnout.</string>
+    <string name="imsp_multi_forward_failed_part">Předání některých iSMS se nezdařilo.</string>
+</resources>

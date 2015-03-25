@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		package="com.mediatek.bluetooth"
+		android:versionCode="1"
+		android:versionName="1.0">
+
+<application android:icon="@drawable/bluetooth" 
+		android:label="@string/app_label"
+		android:description="@string/app_description">
+
+<!-- BLUEANGEL::IF MTK_BT_PROFILE_PRXR -->
+
+	<!-- BLE Proximity Reporter [+] ******************************************************************** -->
+
+	<receiver android:name="com.mediatek.bluetooth.prx.reporter.PrxrAlertReceiver">
+		<intent-filter>
+			<action android:name="com.mediatek.bluetooth.prx.action.LINK_LOSS" />
+			<action android:name="com.mediatek.bluetooth.prx.action.PATH_LOSS" />
+		</intent-filter>
+	</receiver>
+
+	<!-- BLE Proximity Reporter [-] ******************************************************************** -->
+
+<!-- BLUEANGEL::FI MTK_BT_PROFILE_PRXR -->
+
+</application>
+
+</manifest> 

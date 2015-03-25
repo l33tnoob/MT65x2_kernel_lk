@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bintiny_swapoff Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type tiny_swapoff_exec , exec_type, file_type;
+type tiny_swapoff ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive tiny_swapoff;
+init_daemon_domain(tiny_swapoff)
+
+
+# 20131122 Add Set Property Rule
+allow tiny_swapoff  property_type:property_service set;

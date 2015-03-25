@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="8dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lte_commands" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/commands"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textNoSuggestions|textCapCharacters|textMultiLine"
+            android:singleLine="false" >
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lte_inteval" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/inteval"
+                android:inputType="number"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/lte_send" >
+            </Button>
+
+            <Button
+                android:id="@+id/stop"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/lte_stop" >
+            </Button>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#FF909090" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lte_history" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </TextView>
+
+    </LinearLayout>
+</ScrollView>
+

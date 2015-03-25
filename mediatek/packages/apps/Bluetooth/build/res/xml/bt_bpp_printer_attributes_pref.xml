@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="paper_size_setting"
+        android:title="@string/paper_size"
+        android:summary="4 x 6"/>
+
+    <Preference
+        android:key="number_of_copies_setting"
+        android:title="@string/number_of_copies"
+        android:summary="1"/>
+       
+    <ListPreference
+        android:key="sides_setting"
+        android:title="@string/sides"
+        android:summary="One-sided"/>
+
+    <ListPreference
+        android:key="pages_per_sheet_setting"
+        android:title="@string/pages_per_sheet"
+        android:summary="1"/>
+
+    <ListPreference
+        android:key="orientation_setting"
+        android:title="@string/orientation"
+        android:summary="Portrait"/>
+
+    <ListPreference
+        android:key="quality_setting"
+        android:title="@string/quality"
+        android:summary="Normal"/>
+
+</PreferenceScreen>
+

@@ -1,0 +1,35 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.mediatek.apst.target.tests">
+
+	<application>
+		<uses-library android:name="android.test.runner" />
+	</application>
+
+	<instrumentation android:targetPackage="com.mediatek.apst.target"
+		android:label="APST functional test" android:name=".ApstFunctionalTestRunner">
+	</instrumentation>
+
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_CONTACTS"></uses-permission>
+	<uses-permission android:name="android.permission.BATTERY_STATS"></uses-permission>
+	<uses-permission android:name="android.permission.READ_SMS"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_SMS"></uses-permission>
+	<uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+	<uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+	<uses-permission android:name="android.permission.RECEIVE_MMS"></uses-permission>
+	<uses-permission android:name="android.permission.READ_MMS"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_MMS"></uses-permission>
+	<uses-permission android:name="android.permission.SEND_MMS"></uses-permission>
+	<uses-permission android:name="android.permission.READ_CALENDAR"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_CALENDAR"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+	<uses-permission
+		android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS">
+	</uses-permission>
+	<uses-permission
+		android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS">
+	</uses-permission>
+</manifest>

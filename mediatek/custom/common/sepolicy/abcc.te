@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binabcc Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type abcc_exec , exec_type, file_type;
+type abcc ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive abcc;
+init_daemon_domain(abcc)
+
+
+# 20131122 Add Set Property Rule
+allow abcc  property_type:property_service set;

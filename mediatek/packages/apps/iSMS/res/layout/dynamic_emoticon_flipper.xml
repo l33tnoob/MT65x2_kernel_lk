@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_share_flipper"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="6dip" >
+
+    <GridView
+        android:id="@+id/gv_dynamic_emoticon_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:verticalSpacing="12dp"
+        android:hapticFeedbackEnabled="true"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth" >
+    </GridView>
+
+</LinearLayout>

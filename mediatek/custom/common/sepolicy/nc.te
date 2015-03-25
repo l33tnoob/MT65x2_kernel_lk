@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbinnc Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type nc_exec , exec_type, file_type;
+type nc ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive nc;
+init_daemon_domain(nc)
+
+
+# 20131122 Add Set Property Rule
+allow nc  property_type:property_service set;

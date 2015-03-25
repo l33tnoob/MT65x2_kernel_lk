@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"עדכוני מערכת"</string>
+
+
+    <string name="none_package">אין חבילות עדכונים תקפות.</string>
+    <string name="new_version_query">מחפש עדכונים\u2026</string>
+    <string name="menu_stats_refresh">רענן</string>
+    <string name="network_error">חיבור הרשת נכשל</string>
+    <string name="no_new_version">המערכת מעודכנת.</string>
+    <string name="not_support_version">היעד אינו תומך בשידור אלחוטי</string>
+    <string name="query_sd_insufficient_space">אין מספיק שטח עבור <xliff:g id="path">%s</xliff:g></string>
+    <string name="ota_category_title">OTA</string>
+    <string name="sd_category_title">עדכון כרטיס SD</string>
+    <string name="ota_preference_summary">נמצא עדכון מערכת בשרת</string>
+
+
+    <string name="notes_summary">עדכון הקושחה יכול לשפר את יציבות המכשיר ולתקן באגים.</string>
+    <string name="ask_for_install_ota">האם ברצונך להתקין כעת את עדכון המערכת?</string>
+    <string name="warning_install_ota" product="tablet">במהלך ההתקנה לא תוכל להשתמש במחשב הלוח או לערוך שיחות חירום. אל תוציא את הסוללה ואת כרטיס ה-SD ואל תכבה את מחשב הלוח.</string>
+    <string name="warning_install_ota" product="default">במהלך ההתקנה לא תוכל להשתמש בטלפון או לערוך שיחות חירום. אל תוציא את הסוללה ואת כרטיס ה-SD ואל תכבה את הטלפון.</string>
+    <string name="ask_for_install_sd">חבילת העדכונים האחרונה של המערכת נמצאה בכרטיס ה-SD, האם ברצונך להתקינה?</string>
+    <string name="warning_install_sd" product="tablet">במהלך ההתקנה לא תוכל להשתמש במחשב הלוח או לערוך שיחות חירום. אל תוציא את הסוללה ואת כרטיס ה-SD ואל תכבה את מחשב הלוח. \nלפני תחילת ההתקנה, ודא שהחבילה הורדה מהאתר הרשמי ושהיא אינה פגומה.</string>
+    <string name="warning_install_sd" product="default">במהלך ההתקנה לא תוכל להשתמש בטלפון או לערוך שיחות חירום. אל תוציא את הסוללה ואת כרטיס ה-SD ואל תכבה את הטלפון. \nלפני תחילת ההתקנה, ודא שהחבילה הורדה מהאתר הרשמי ושהיא אינה פגומה.</string>
+    <string name="ask_for_download_ota">האם ברצונך להוריד את העדכון לאופטימיזציה של המערכת?</string>
+    <string name="warning_download_ota">אנו ממליצים להשתמש בנקודה חמה חינם של Wi-Fi או בחבילת נתונים בלתי מוגבלת כדי להחיל עדכון זה. אחרת, עלולים לחול חיובים בגין חיבור נתונים סלולרי. \nגבה ראשית את הנתונים שלך לפני תחילת השדרוג.</string>
+        
+    <string name="notification_content_title">עדכון מערכת</string>
+    <string name="downloading_title">"מוריד..."</string>   
+    <string name="wifi_only_check">רשת אלחוטית בלבד</string>     
+    
+    
+    
+    
+    
+    <string name="btn_install">"התקן"</string>
+    <string name="btn_cancel">בטל</string>
+    <string name="btn_download">הורד והתקן</string>
+    <string name="btn_resume">"הורד"</string>
+    
+    <string name="warn_data_cost_title">הורד עדכון</string>
+    <string name="warn_data_cost_content">הורדה ברשת סלולרית עלולה להביא לחיובים נוספים. האם ברצונך להמשיך?</string>
+    <string name="warn_data_cost_yes">"כן"</string>
+    <string name="warn_data_cost_no">"לא"</string>
+
+    <string name="notification_download_complete_title">עדכון המערכת מוכן</string>
+    <string name="notification_download_complete_context">הקש כדי להתקין את עדכון המערכת</string>
+        
+    <string name="sdcard_crash_or_unmount">שגיאת כרטיס SD. בדוק את כרטיס ה-SD ונסה שוב.</string>
+    <string name="unmount_sdcard">שגיאת הכנסה של כרטיס SD, אנא בדוק את הבעיה.</string>
+    <string name="insufficient_space_content">ההתקנה זקוקה לפחות לחסון של לפחות <xliff:g id="deltasize" example="3.5M">%s</xliff:g> בתים. הרפה ממקש הרווח כדי להמשיך.</string>
+
+    
+    
+    
+    
+    <string name="install_sd_title">התקן עדכון</string>
+    <string name="install_sd_message">ודא שהחבילה הורדה מהאתר הרשמי ושהיא אינה פגומה. אחרת, הדבר עלול לגרום בעיות במערכת.</string>
+    <string name="install_reminder_now">התקן כעת</string>
+    <string name="install_reminder_not_now">"לא כעת"</string>
+    
+    
+
+    <string name="notification_content_text_completed">ההורדה הצליחה</string> 
+
+    <string name="unknown_per">"לא ידוע"</string>    
+    <string name="unknown_error">שגיאה בלתי מוכרת</string>
+    <string name="unknown_error_content">אירעה שגיאה בלתי מוכרת. צא מהדף ונסה שוב.</string>
+    <string name="insufficient_space_title">אין מספיק שטח אחסון</string>
+    <string name="error_sdcard">פרטי כרטיס SD</string>
+    <string name="insufficient_space">אין מספיק שטח אחסון בכרטיס ה-SD.</string>
+    <string name="package_deleted_error">עדכוני המערכת הופסקו מכיוון שהשדרוג אינו חוקי.</string>
+    
+    <string name="cancel_download_title">בטל הורדה</string>
+    <string name="cancel_download_content">פעולה זו תמחק את הקובץ שהורד.</string>
+
+    
+    <string name="change_network_title">"הורד"</string>
+    <string name="change_network_content">ה-APN הנוכחי לא תומך בהורדה, האם ברצונך להחליף ל-APN אחר או להפעיל את ה-Wi-Fi?</string>
+    <string name="change_network_wifi_btn">השתמש ב-Wi-Fi</string>
+    <string name="change_network_apn_btn">החלף APN</string>
+    <string name="change_network_discard_btn">בטל</string>    
+    <string name="package_error_title">ההתקנה נכשלה</string>
+    <string name="package_error_message_invalid">שגיאת חבילה. בדוק את העדכון והורד שוב.</string>
+    <string name="package_error_message_insuff" product="tablet">אין מספיק שטח אחסון בהתקן.</string>
+    <string name="package_error_message_insuff" product="default">אין מספיק שטח אחסון בטלפון.</string>
+    <string name="package_error_message_crash">לא ניתן לגשת למחיצת הנתונים.</string>
+    <string name="package_error_message_full">נדרשת חבילה מלאה למקרה של שינוי מחיצה.</string>    
+    <string name="updateSuccess" product="tablet">מזל טוב! ההתקן שלך עודכן בהצלחה לגרסה <xliff:g id="version" example="gb.p37">%s</xliff:g>.</string> 
+    <string name="updateSuccess" product="default">מזל טוב! הטלפון שלך עודכן בהצלחה לגרסה <xliff:g id="version" example="gb.p37">%s</xliff:g>.</string> 
+    <string name="updateFailed">העדכון לגרסה <xliff:g id="version" example="gb.p37">%s</xliff:g> נכשל.</string>
+    <string name="package_unzip">מחלץ את תוכן החבילה\u2026</string>
+    <string name="package_unzip_error">שגיאה בביטול הדחיסה</string>
+    
+    <string name="installing_message">הטלפון שלך ייכבה\u2026</string>
+    <string name="install_sd_info">כדי להמשיך בשדרוג, העתק את החבילה לזיכרון של הטלפון.\nאין מספיק שטח אחסון פנוי בטלפון.</string>
+    <string name="sdcard_crash_or_unmount_when_install">עדכוני המערכת הופסקו, מכיוון שכרטיס ה-SD הוצא.</string>
+    <string name="sdcard_inserted">האם ברצונך לסרוק את כרטיס ה-SD כדי לחפש חבילות עדכונים נוספות?</string>
+    
+    <string name="new_version_detected">עדכון המערכת זמין</string>
+    <string name="sdcard_unmount">בוטלה טעינתו של כרטיס ה-SD </string>
+    <string name="server_version_error">שגיאת שרת: עדכן את קוד המקור של השרת.</string>
+    <string name="cta_warning">המערכת תומכת בשדרוג הקושחה רק מהאתר או מהשרת הרשמיים. אם המשתמש משתמש בתמונת ROM של צד שלישי ו/או בשיטת בסיס אחרת לשדרוג הקושחה, הדבר יגרום לטלפון להתנהג בצורה בלתי יציבה. שים לב לכך שהאחריות לכל ההתנהגויות האלה היא של המשתמש בלבד.</string>
+</resources>

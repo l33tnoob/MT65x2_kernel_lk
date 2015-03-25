@@ -1,0 +1,62 @@
+#
+# system.prop for generic sdk
+#
+
+rild.libpath=/system/lib/mtk-ril.so
+rild.libargs=-d /dev/ttyC0
+
+
+# MTK, Infinity, 20090720 {
+wifi.interface=wlan0
+# MTK, Infinity, 20090720 }
+
+# MTK, mtk03034, 20101210 {
+ro.mediatek.wlan.wsc=1
+# MTK, mtk03034 20101210}
+# MTK, mtk03034, 20110318 {
+ro.mediatek.wlan.p2p=1
+# MTK, mtk03034 20110318}
+
+# MTK, mtk03034, 20101213 {
+mediatek.wlan.ctia=0
+# MTK, mtk03034 20101213}
+
+
+#
+wifi.tethering.interface=ap0
+#
+
+ro.opengles.version=131072
+
+wifi.direct.interface=p2p0
+dalvik.vm.heapgrowthlimit=128m
+dalvik.vm.heapsize=256m
+
+# USB MTP WHQL
+ro.sys.usb.mtp.whql.enable=0
+
+# Power off opt in IPO
+sys.ipo.pwrdncap=2
+
+# Switching Menu of Mass storage and MTP
+ro.sys.usb.storage.type=mtp,mass_storage
+
+# USB BICR function
+ro.sys.usb.bicr=no
+
+# USB Charge only function
+ro.sys.usb.charging.only=yes
+
+# audio
+ro.camera.sound.forced=0
+ro.audio.silent=0
+
+ro.zygote.preload.enable=0
+
+#
+# switch bluetooth stack solution
+#
+ro.btstack=blueangel
+
+#GMS
+ro.com.google.clientidbase = android-wiko

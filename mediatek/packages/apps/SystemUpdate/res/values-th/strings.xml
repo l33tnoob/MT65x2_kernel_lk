@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"การอัปเดตระบบ"</string>
+
+
+    <string name="none_package">ไม่มีแพคเกจอัปเดตที่ถูกต้อง</string>
+    <string name="new_version_query">กำลังตรวจสอบการอัพเดท\u2026</string>
+    <string name="menu_stats_refresh">"รีเฟรช"</string>
+    <string name="network_error">การเชื่อมต่อเครือข่ายล้มเหลว</string>
+    <string name="no_new_version">ขณะนี้ระบบของคุณทันสมัย</string>
+    <string name="not_support_version">เป้าหมายของคุณไม่สนับสนุนการทำงานผ่านอากาศ</string>
+    <string name="query_sd_insufficient_space">ที่ว่างไม่เพียงพอสำหรับ <xliff:g id="path">%s</xliff:g></string>
+    <string name="ota_category_title">OTA</string>
+    <string name="sd_category_title">การอัพเดท SD การ์ด</string>
+    <string name="ota_preference_summary">พบอัปเดตระบบบนเซิร์ฟเวอร์</string>
+
+
+    <string name="notes_summary">การอัพเดตเฟิร์มแวร์สามารถเพิ่มความมีเสถียรภาพของเครื่อง และแก้ไขข้อผิดพลาดต่างๆ อัพเดตเป็นเวอร์ชั่น</string>
+    <string name="ask_for_install_ota">คุณต้องการติดตั้งการอัพเดทระบบเดี๋ยวนี้หรือไม่</string>
+    <string name="warning_install_ota" product="tablet">คุณจะไม่สามารถใช้แท็บเล็ตของคุณหรือทำการโทรฉุกเฉินได้ระหว่างการติดตั้ง โปรดอย่าถอดแบตเตอรี่และ SD การ์ดออก หรือปิดเครื่องแท็บเล็ต</string>
+    <string name="warning_install_ota" product="default">คุณจะไม่สามารถใช้โทรศัพท์ของคุณหรือทำการโทรฉุกเฉินได้ระหว่างการติดตั้ง โปรดอย่าถอดแบตเตอรี่และ SD การ์ดออก หรือปิดเครื่องโทรศัพท์</string>
+    <string name="ask_for_install_sd">พบแพคเกจอัปเดตระบบล่าสุดใน SD การ์ดของคุณ คุณต้องการติดตั้งหรือไม่?</string>
+    <string name="warning_install_sd" product="tablet">คุณจะไม่สามารถใช้แท็บเล็ตของคุณหรือทำการโทรฉุกเฉินได้ระหว่างการติดตั้ง โปรดอย่าถอดแบตเตอรี่และ SD การ์ดออก หรือปิดเครื่องแท็บเล็ต \nก่อนที่จะเริ่มการติดตั้ง โปรดมั่นใจว่าแพคเกจถูกดาวน์โหลดจากเว็บไซต์อย่างเป็นทางการ และแพคเกจไม่เสีย</string>
+    <string name="warning_install_sd" product="default">คุณจะไม่สามารถใช้โทรศัพท์ของคุณหรือทำการโทรฉุกเฉินได้ระหว่างการติดตั้ง โปรดอย่าถอดแบตเตอรี่และ SD การ์ดออก หรือปิดเครื่องโทรศัพท์ \nก่อนที่จะเริ่มการติดตั้ง โปรดมั่นใจว่าแพคเกจถูกดาวน์โหลดจากเว็บไซต์อย่างเป็นทางการ และแพคเกจไม่เสีย</string>
+    <string name="ask_for_download_ota">คุณต้องการดาวน์โหลดอัปเดตเพิ่มประสิทธิภาพระบบหรือไม่?</string>
+    <string name="warning_download_ota">ในการดำเนินการอัพเดทนี้ เราแนะนำให้ใช้ Wi-Fi ฮอตสปอตที่ไม่เสียค่าใช้จ่าย หรือแผนคิดค่าบริการแบบไม่จำกัดข้อมูล ไม่เช่นนั้นอาจมีการคิดค่าบริการเชื่อมต่อข้อมูลในอัตราปกติ \nโปรดสำรองข้อมูลของคุณก่อนการอัพเกรด</string>
+        
+    <string name="notification_content_title">การอัพเดทระบบ</string>
+    <string name="downloading_title">กำลังดาวน์โหลด...</string>   
+    <string name="wifi_only_check">Wi-Fi เท่านั้น</string>     
+    
+    
+    
+    
+    
+    <string name="btn_install">"ติดตั้ง"</string>
+    <string name="btn_cancel">ละทิ้ง</string>
+    <string name="btn_download">ดาวน์โหลดและติดตั้ง</string>
+    <string name="btn_resume">"ดาวน์โหลด"</string>
+    
+    <string name="warn_data_cost_title">ดาวน์โหลดอัพเดท</string>
+    <string name="warn_data_cost_content">การดาวน์โหลดผ่านเครือข่ายมือถืออาจทำให้เสียค่าใช้จ่ายเพิ่มเติม คุณต้องการทำต่อหรือไม่?</string>
+    <string name="warn_data_cost_yes">ใช่</string>
+    <string name="warn_data_cost_no">ไม่</string>
+
+    <string name="notification_download_complete_title">พร้อมอัพเดทระบบแล้ว</string>
+    <string name="notification_download_complete_context">แตะเพื่อติดตั้งการอัพเดทระบบ</string>
+        
+    <string name="sdcard_crash_or_unmount">SD การ์ดผิดพลาด โปรดตรวจสอบ SD การ์ดของคุณและลองอีกครั้ง</string>
+    <string name="unmount_sdcard">SD การ์ดเมาต์ผิดพลาด โปรดตรวจสอบ</string>
+    <string name="insufficient_space_content">There is no enough storage space! This installation need at least  <xliff:g id="deltasize" example="3.5M">%s</xliff:g>. Check your app manager to release extra space please. </string>
+
+    
+    
+    
+    
+    <string name="install_sd_title">ติดตั้งอัพเดท</string>
+    <string name="install_sd_message">โปรดมั่นใจว่าแพคเกจถูกดาวน์โหลดจากเว็บไซต์อย่างเป็นทางการ และไม่เสีย ไม่เช่นนั้นอาจทำให้ระบบเกิดปัญหา</string>
+    <string name="install_reminder_now">ติดตั้งเดี๋ยวนี้</string>
+    <string name="install_reminder_not_now">"ยังไม่ใช้งานขณะนี้"</string>
+    
+    
+
+    <string name="notification_content_text_completed">ดาวน์โหลดสำเร็จ</string> 
+
+    <string name="unknown_per">"ไม่ทราบ"</string>    
+    <string name="unknown_error">Unknown error</string>
+    <string name="unknown_error_content">เกิดข้อผิดพลาดที่ไม่รู้จัก โปรดออกจากหน้านี้ และลองอีกครั้ง</string>
+    <string name="insufficient_space_title">พื้นที่ไม่เพียงพอ</string>
+    <string name="error_sdcard">ข้อมูล SD การ์ด</string>
+    <string name="insufficient_space">พื้นที่บน SD การ์ดไม่เพียงพอ</string>
+    <string name="package_deleted_error">การอัพเดทระบบหยุดลง เนื่องจากการอัพเกรดไม่ถูกต้อง</string>
+    
+    <string name="cancel_download_title">ยกเลิกดาวน์โหลด</string>
+    <string name="cancel_download_content">การดำเนินการนี้จะละทิ้งไฟล์ที่ดาวน์โหลดแล้ว</string>
+
+    
+    <string name="change_network_title">"ดาวน์โหลด"</string>
+    <string name="change_network_content">APN ปัจจุบันไม่สนับสนุนการดาวน์โหลด คุณต้องการเปลี่ยนเป็น APN อื่นหรือเปิดใช้งาน Wi-Fi หรือไม่</string>
+    <string name="change_network_wifi_btn">ใช้ Wi-Fi</string>
+    <string name="change_network_apn_btn">เปลี่ยน APN</string>
+    <string name="change_network_discard_btn">ละทิ้ง</string>    
+    <string name="package_error_title">ติดตั้งล้มเหลว</string>
+    <string name="package_error_message_invalid">แพคเกจผิดพลาด โปรดตรวจสอบอัพเดต และดาวน์โหลดอีกครั้ง</string>
+    <string name="package_error_message_insuff" product="tablet">มีเนื้อที่ไม่เพียงพอบนอุปกรณ์นี้</string>
+    <string name="package_error_message_insuff" product="default">พื้นที่บนโทรศัพท์ไม่เพียงพอ</string>
+    <string name="package_error_message_crash">ไม่สามารถเข้าถึงข้อมูลผู้ใช้</string>
+    <string name="package_error_message_full">ต้องการแพคเกจเต็มสำหรับกรณีที่เปลี่ยนพาร์ติชั่น</string>    
+    <string name="updateSuccess" product="tablet">ขอแสดงความยินดี! ได้อัพเดทอุปกรณ์ของคุณเป็นเวอร์ชัน  <xliff:g id="version" example="gb.p37">%s</xliff:g> สำเร็จแล้ว </string> 
+    <string name="updateSuccess" product="default">ขอแสดงความยินดี! โทรศัพท์ของคุณได้อัพเดทไปยังเวอร์ชั่น  <xliff:g id="version" example="gb.p37">%s</xliff:g> สำเร็จแล้ว </string> 
+    <string name="updateFailed">อัพเดทไปยังเวอร์ชั่น  <xliff:g id="version" example="gb.p37">%s</xliff:g> ไม่สำเร็จ </string>
+    <string name="package_unzip">กำลังแตกแพคเกจ\u2026</string>
+    <string name="package_unzip_error">Unzip error</string>
+    
+    <string name="installing_message">โทรศัพท์ของคุณจะปิดการทำงาน\u2026</string>
+    <string name="install_sd_info">จำเป็นต้องคัดลอกแพคเกจไปยังที่เก็บข้อมูลบนโทรศัพท์เพื่อทำการอัปเกรดต่อ\nพื้นที่บนโทรศัพท์ของคุณไม่เพียงพอ</string>
+    <string name="sdcard_crash_or_unmount_when_install">กรอัพเดทรับบหยุดลง เนื่องจากไม่ได้อันเมาท์ SD การ์ด</string>
+    <string name="sdcard_inserted">คุณต้องการสแกน SD การ์ดเพื่อค้นหาแพคเกจอัปเดตเพิ่มเติมหรือไม่?</string>
+    
+    <string name="new_version_detected">การอัพเดทระบบพร้อมให้บริการ</string>
+    <string name="sdcard_unmount">SD การ์ดถูกเลิกเมาต์</string>
+    <string name="server_version_error">เซิร์ฟเวอร์ผิดพลาด: โปรดอัพเดตซอร์สโค้ดของเซิร์ฟเวอร์</string>
+    <string name="cta_warning">ระบบสนับสนุนการอัพเกรดเฟิร์มแวร์เฉพาะจากเว็บไซต์อย่างเป็นทางการเท่านั้น ถ้าผู้ใช้ใช้อิมเมจ ROM จากบุคคลที่ 3 และ/หรือวิธีการรูทอื่น ๆ เพื่ออัพเกรดเฟิร์มแวร์ จะทำให้โทรศัพท์ไม่มีเสถียรภาพ โปรดทราบว่าผู้ใช้ต้องรับผิดชอบสิ่งที่เกิดขึ้นทั้งหมดสำหรับพฤติกรรมเหล่านี้ทั้งหมด</string>
+</resources>

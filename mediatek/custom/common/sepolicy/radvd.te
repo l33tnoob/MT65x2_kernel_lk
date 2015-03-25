@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binradvd Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type radvd_exec , exec_type, file_type;
+type radvd ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive radvd;
+init_daemon_domain(radvd)
+
+
+# 20131122 Add Set Property Rule
+allow radvd  property_type:property_service set;

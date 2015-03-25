@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="alert_delete_multiple">รายการเหล่านี้จะถูกลบ</string>
+    <string name="alert_delete_single">รายการนี้จะถูกลบ</string>
+    <string name="app_name">ตัวจัดการไฟล์</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="copy">"คัดลอก"</string>
+    <string name="copy_deny">ไม่อนุญาตให้คัดลอก</string>
+    <string name="create_folder">สร้างโฟลเดอร์</string>
+    <string name="cut">"ตัด"</string>
+    <string name="cut_deny">ไม่อนุญาตให้ตัด</string>
+    <string name="delete">ลบ</string>
+    <string name="delete_deny">ไม่อนุญาตให้ลบ</string>
+    <string name="delete_fail">ไม่สามารถลบ</string>
+    <string name="deleting">กำลังลบ</string>
+    <string name="deselect_all">ยกเลิกการเลือกทั้งหมด</string>
+    <string name="details">รายละเอียด</string>
+    <string name="done">"เสร็จสิ้น"</string>
+    <string name="empty_msg">(โฟลเดอร์ว่าง)</string>
+    <string name="executable">สามารถทำงานได้</string>
+    <string name="insufficient_memory">หน่วยความจำไม่เพียงพอ</string>
+    <string name="invalid_empty_name">ชื่อไฟล์หรือโฟลเดอร์ไม่สามารถว่างได้</string>
+    <string name="loading">กำลังโหลด</string>
+    <string name="modified_time">แก้ไข</string>
+    <string name="name">ชื่อ</string>
+    <string name="new_folder">โฟลเดอร์ใหม่</string>
+    <string name="no">"ไม่"</string>
+    <string name="ok">ยกเลิก</string>
+    <string name="paste">"วาง"</string>
+    <string name="pasting">กำลังวาง</string>
+    <string name="paste_fail">ไม่สามารถวาง</string>
+    <string name="paste_same_folder">ไม่สามารถวาง ไปยังไดเรกทอรีเดียวกัน</string>
+    <string name="readable">สามารถอ่านได้</string>
+    <string name="rename">เปลี่ยนชื่อ</string>
+    <string name="select_all">เลือกทั้งหมด</string>
+    <string name="send_file">ส่งไฟล์</string>
+    <string name="share">"แบ่งปัน"</string>
+    <string name="size">ขนาด</string>
+    <string name="sort_by">เรียงตาม</string>
+    <string name="wait">โปรดรอ\u2026</string>
+    <string name="writable">สามารถเขียนได้</string>
+    <string name="yes">"ใช่"</string>
+    <string name="confirm_rename">ยืนยันการเปลี่ยนชื่อ</string>
+    <string name="msg_rename_ext">คุณกำลังเปลี่ยนนามสกุลไฟล์ ซึ่งอาจทำให้ระบบไม่รู้จักไฟล์ คุณต้องการเปลี่ยนหรือไม่</string>
+    <string name="msg_unable_open_file">ไม่สามารถเปิดไฟล์ได้</string>
+
+    <string-array name="sort_by">
+        <item>ชนิด</item>
+        <item>ชื่อ (A - Z)</item>
+        <item>ขนาด (ใหญ่ - เล็ก)</item>
+        <item>เวลา (ใหม่ - เก่า)</item>
+    </string-array>
+
+    <string name="more">เพิ่มเติม</string>
+    <string name="selected">เลือกแล้ว</string>
+    <string name="invalid_char_prompt">คุณป้อนตัวอักษรที่ไม่ถูกต้อง</string>
+    <string name="search">ค้นหา</string>
+    <string name="sort">เรียงตาม</string>
+    <string name="show_file">แสดงไฟล์ซ่อน</string>
+    <string name="hide_file">ซ่อนไฟล์ซ่อน</string>
+    <string name="default_search_text">ค้นหาไฟล์</string>
+    <string name="search_text_empty">การค้นหาเนื้อหาต้องไม่เว้นว่าง</string>
+    <string name="free_space">เนื้อที่ว่าง</string>
+    <string name="total_space">เนื้อที่ทั้งหมด</string>
+    <string name="paste_sub_folder">ไม่สามารถวางลงในโฟลเดอร์ย่อยได้</string>
+    <string name="operation_fail">การดำเนินการบางอย่างกับไฟล์ไม่สำเร็จ</string>
+    <string name="search_files">ค้นหาไฟล์</string>
+    <string name="search_result">ผลลัพธ์ %2$d สำหรับ \"%1$s\"</string>
+    <string name="already_exists">มีการใช้ %1$s อยู่แล้ว</string>
+    <string name="unmounted">%1$s ไม่ได้ถูกเมาท์</string>
+    <string name="create_hidden_file">ไฟล์จะถูกซ่อน ถ้าชื่อขึ้นต้นด้วย\'.\'</string>
+    <string name="modify_hidden_file">ไฟล์จะไม่ถูกซ่อน ถ้าชื่อไม่ได้ขึ้นต้นด้วย\'.\'</string>
+    <string name="file_name_too_long">ชื่อที่ใส่ยาวเกินไป</string>
+    <string name="some_paste_fail">การวางบางรายการไม่ประสบผลสำเร็จ</string>
+    <string name="some_delete_fail">การลบบางรายการไม่ประสบผลสำเร็จ</string>
+    <string name="search_empty">เนื้อหาของการค้นหาไม่ควรเว้นว่าง</string>
+    <string name="search_setting_description">ไฟล์และโฟลเดอร์ในเครื่อง</string>
+    <string name="path_not_exists">%1$s ไม่มีอยู่ในระบบ</string>
+    <string name="change_mode">เลือกไฟล์หรือโฟลเดอร์</string>
+    <string name="folder_beam_forbidden_title">ไม่\สามารถบีมโฟลเดอร์ได้</string>
+    <string name="folder_beam_forbidden_message">ไม่สนับสนุนการบีมโฟลเดอร์ โปรดเลือกไฟล์หลายไฟล์เพื่อบีม</string>
+    <string name="drm_beam_forbidden_title">ห้ามบีม</string>
+    <string name="drm_beam_forbidden_message">ไม่สามารถบีมไฟล์ DRM (การจัดการสิทธิ์ดิจิตอล) ได้</string>
+
+</resources>

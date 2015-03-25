@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/menu_media_trash"
+        android:icon="@drawable/ic_menu_trash"
+        android:showAsAction="always"
+        android:title="@string/STR_NMS_DELETE">
+    </item>
+    <item
+        android:id="@+id/menu_media_share"
+        android:icon="@drawable/ic_menu_share"
+        android:showAsAction="always"
+        android:title="@string/STR_NMS_SHARE"/>
+</menu>

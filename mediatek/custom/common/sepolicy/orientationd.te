@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binorientationd Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type orientationd_exec , exec_type, file_type;
+type orientationd ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive orientationd;
+init_daemon_domain(orientationd)
+
+
+# 20131122 Add Set Property Rule
+allow orientationd  property_type:property_service set;

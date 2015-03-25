@@ -1,0 +1,48 @@
+# ==============================================
+# Policy File of /system/binatci_service Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type atci_service_exec , exec_type, file_type;
+type atci_service ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive atci_service;
+init_daemon_domain(atci_service)
+
+# 20131028 CTS_04
+allow atci_service linker_exec:file read;
+
+
+# 20131119 FeatureSQC
+allow atci_service device:chr_file { read ioctl open };
+
+
+
+# 20131122 Add Set Property Rule
+allow atci_service  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_CTS_02
+allow atci_service block_device:blk_file { read write open };
+allow atci_service device:chr_file write;
+allow atci_service linker_exec:file { execute open };
+allow atci_service mt6605_device:chr_file { read write ioctl open getattr };
+allow atci_service nfcstackp_exec:file { read execute open execute_no_trans };
+allow atci_service sdcard_internal:dir search;
+allow atci_service system_data_file:dir { write remove_name add_name };
+allow atci_service system_data_file:sock_file { write create unlink setattr };
+

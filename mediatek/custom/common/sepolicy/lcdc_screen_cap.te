@@ -1,0 +1,55 @@
+# ==============================================
+# Policy File of /system/binlcdc_screen_cap Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type lcdc_screen_cap_exec , exec_type, file_type;
+type lcdc_screen_cap ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive lcdc_screen_cap;
+init_daemon_domain(lcdc_screen_cap)
+
+
+# 20131122 Add Set Property Rule
+allow lcdc_screen_cap  property_type:property_service set;
+
+# 20131213 KKMR1_CTS_01
+allow lcdc_screen_cap graphics_device:chr_file { read ioctl open };
+allow lcdc_screen_cap init:fifo_file write;
+allow lcdc_screen_cap init:unix_stream_socket { read write };
+allow lcdc_screen_cap linker_exec:file read;
+allow lcdc_screen_cap self:capability dac_override;
+
+
+# 20131213 KKMR1_CQ_01
+allow lcdc_screen_cap device:chr_file { read ioctl open };
+allow lcdc_screen_cap graphics_device:chr_file { read ioctl open };
+allow lcdc_screen_cap init:fifo_file { write read };
+allow lcdc_screen_cap init:unix_stream_socket { read write };
+allow lcdc_screen_cap linker_exec:file read;
+allow lcdc_screen_cap self:capability dac_override;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow lcdc_screen_cap block_device:blk_file read;
+allow lcdc_screen_cap graphics_device:chr_file { read ioctl open };
+allow lcdc_screen_cap init:fifo_file write;
+allow lcdc_screen_cap init:unix_stream_socket { read write };
+allow lcdc_screen_cap linker_exec:file read;
+allow lcdc_screen_cap self:capability dac_override;
+

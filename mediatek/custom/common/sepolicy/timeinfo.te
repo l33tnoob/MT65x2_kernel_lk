@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbintimeinfo Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type timeinfo_exec , exec_type, file_type;
+type timeinfo ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive timeinfo;
+init_daemon_domain(timeinfo)
+
+
+# 20131122 Add Set Property Rule
+allow timeinfo  property_type:property_service set;

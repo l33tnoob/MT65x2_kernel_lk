@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+    <style name="TabWidget" parent="android:style/Widget.TabWidget">  
+        <item name="android:textAppearance">@style/TabIndicatorTextAppearance</item>  
+    </style>  
+ 
+  
+    <style name="TabIndicatorTextAppearance" parent="android:style/TextAppearance.Widget.TabWidget">  
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+
+    </style> 
+</resources>

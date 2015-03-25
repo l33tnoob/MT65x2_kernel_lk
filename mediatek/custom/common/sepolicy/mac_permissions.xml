@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policy>
+
+<!-- 
+
+    Rules:
+    * A signature is a hex encoded X.509 certificate and is required for each signer tag.
+    * A <signer signature="" > element may have multiple child elements:
+        allow-permission : produces a set of maximal allowed permissions (whitelist).
+        deny-permission : produces a blacklist of permissions to deny.
+        allow-all : a wildcard tag that will allow every permission requested.
+        package : a complex tag which itself defines allow, deny, and wildcard sub elements for
+            a specific package name protected by the signature
+    * Zero or more global <package name=""> tags are allowed. These tags allow a policy
+      to be set outside any signature for specific package names.
+    * A <default> tag is allowed that can contain install policy for all apps not signed with a
+      previously listed cert and not having a per package global policy.
+    * Unknown tags at any level are skipped.
+    * Zero or more signer tags are allowed.
+    * Zero or more package tags are allowed per signer tag.
+    * A <package name=""> tag may not contain another <package name=""> tag. If found, it's skipped.
+    * When multiple sub elements appear for a tag the following logic is used to
+        ultimately determine the type of enforcement:
+       ** A blacklist is used if at least one deny-permission tag is found
+       ** A whitelist is used if not a blacklist and at least one allow-permission tag is found
+       ** A wildcard (accept all permission) policy is used if not a blacklist and not a whitelist
+          and at least one allow-all tag is present.
+       ** If a <package name=""> sub element is found then that sub element's policy is used
+          according to the above logic and overrides any signature global policy type.
+       ** In order for a policy stanza to be enforced at least one of the above situations must
+          apply. Meaning, empty signer, default or package tags will not be accepted.
+    * Each signer/default/package (global or attached to a signer) tag is allowed to contain one
+      <seinfo value=""/> tag. This tag represents additional info that each app can use in setting
+      a SELinux security context on the eventual process.
+    * Strict enforcing of any xml stanza is not enforced in most cases. This mainly applies to
+        duplicate tags which are allowed. In the event that a tag already exists, the original
+        tag is replaced.
+    * There are also no checks on the validity of permission names. Although valid android
+        permissions are expected, nothing prevents unknowns.
+    * Enforcement decisions:
+       - All signatures used to sign an app are checked for policy according to signer tags.
+         Only one of the signature policies has to pass however.
+       - In the event that none of the signature policies pass, or none even match, then
+         a global package policy is sought. If found, this policy mediates the install.
+       - The default tag is consulted last if needed.
+       - A local package policy always overrides any parent policy.
+       - If none of the cases apply then the app is denied.
+
+
+    Example global package policy
+    <package name="com.foo.com">
+      <allow-permission name="android.permission.INTERNET" />
+      <allow-permission name="android.permission.WRITE_EXTERNAL_STORAGE" />
+      <allow-permission name="android.permission.ACCESS_NETWORK_STATE" />
+    </package>
+
+    Sample stanzas are given below based on the AOSP developer keys.
+
+-->
+
+    <!-- Platform dev key in AOSP -->
+    <signer signature="@PLATFORM" >
+      <allow-all />
+      <seinfo value="platform" />
+    </signer>
+
+    <!-- Media dev key in AOSP -->
+    <signer signature="@MEDIA" >
+      <allow-permission name="android.permission.ACCESS_ALL_DOWNLOADS" />
+      <allow-permission name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+      <allow-permission name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+      <allow-permission name="android.permission.ACCESS_MTP" />
+      <allow-permission name="android.permission.ACCESS_NETWORK_STATE" />
+      <allow-permission name="android.permission.CONNECTIVITY_INTERNAL" />
+      <allow-permission name="android.permission.INTERACT_ACROSS_USERS" />
+      <allow-permission name="android.permission.INTERNET" />
+      <allow-permission name="android.permission.MANAGE_USERS" />
+      <allow-permission name="android.permission.MODIFY_NETWORK_ACCOUNTING" />
+      <allow-permission name="android.permission.READ_EXTERNAL_STORAGE" />
+      <allow-permission name="android.permission.RECEIVE_BOOT_COMPLETED" />
+      <allow-permission name="android.permission.RECEIVE_WAP_PUSH" />
+      <allow-permission name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" />
+      <allow-permission name="android.permission.UPDATE_DEVICE_STATS" />
+      <allow-permission name="android.permission.WAKE_LOCK" />
+      <allow-permission name="android.permission.WRITE_EXTERNAL_STORAGE" />
+      <allow-permission name="android.permission.WRITE_MEDIA_STORAGE" />
+      <allow-permission name="android.permission.WRITE_SETTINGS" />
+      <seinfo value="media" />
+    </signer>
+
+    <!-- shared dev key in AOSP -->
+    <signer signature="@SHARED" >
+      <allow-permission name="android.permission.ACCESS_COARSE_LOCATION" />
+      <allow-permission name="android.permission.ACCESS_FINE_LOCATION" />
+      <allow-permission name="android.permission.ACCESS_NETWORK_STATE" />
+      <allow-permission name="android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK" />
+      <allow-permission name="android.permission.BIND_APPWIDGET" />
+      <allow-permission name="android.permission.BIND_DIRECTORY_SEARCH" />
+      <allow-permission name="android.permission.BIND_WALLPAPER" />
+      <allow-permission name="android.permission.CALL_PHONE" />
+      <allow-permission name="android.permission.CALL_PRIVILEGED" />
+      <allow-permission name="android.permission.CAMERA" />
+      <allow-permission name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+      <allow-permission name="android.permission.GET_ACCOUNTS" />
+      <allow-permission name="android.permission.GLOBAL_SEARCH" />
+      <allow-permission name="android.permission.INTERNET" />
+      <allow-permission name="android.permission.MANAGE_ACCOUNTS" />
+      <allow-permission name="android.permission.MODIFY_AUDIO_SETTINGS" />
+      <allow-permission name="android.permission.MODIFY_PHONE_STATE" />
+      <allow-permission name="android.permission.NFC" />
+      <allow-permission name="android.permission.PACKAGE_USAGE_STATS" />
+      <allow-permission name="android.permission.READ_CALL_LOG" />
+      <allow-permission name="android.permission.READ_CONTACTS"/>
+      <allow-permission name="android.permission.READ_EXTERNAL_STORAGE" />
+      <allow-permission name="android.permission.READ_PHONE_STATE" />
+      <allow-permission name="android.permission.READ_PROFILE" />
+      <allow-permission name="android.permission.READ_SOCIAL_STREAM" />
+      <allow-permission name="android.permission.READ_SYNC_SETTINGS" />
+      <allow-permission name="android.permission.READ_SYNC_STATS" />
+      <allow-permission name="android.permission.READ_USER_DICTIONARY" />
+      <allow-permission name="android.permission.REBOOT" />
+      <allow-permission name="android.permission.RECEIVE_BOOT_COMPLETED" />
+      <allow-permission name="android.permission.RECORD_AUDIO" />
+      <allow-permission name="android.permission.SET_WALLPAPER" />
+      <allow-permission name="android.permission.SET_WALLPAPER_COMPONENT" />
+      <allow-permission name="android.permission.SET_WALLPAPER_HINTS" />
+      <allow-permission name="android.permission.SUBSCRIBED_FEEDS_READ" />
+      <allow-permission name="android.permission.SUBSCRIBED_FEEDS_WRITE" />
+      <allow-permission name="android.permission.UPDATE_APP_OPS_STATS" />
+      <allow-permission name="android.permission.USE_CREDENTIALS" />
+      <allow-permission name="android.permission.VIBRATE" />
+      <allow-permission name="android.permission.WAKE_LOCK" />
+      <allow-permission name="android.permission.WRITE_CALL_LOG" />
+      <allow-permission name="android.permission.WRITE_CONTACTS" />
+      <allow-permission name="android.permission.WRITE_EXTERNAL_STORAGE" />
+      <allow-permission name="android.permission.WRITE_PROFILE" />
+      <allow-permission name="android.permission.WRITE_SETTINGS" />
+      <allow-permission name="android.permission.WRITE_USER_DICTIONARY" />
+      <allow-permission name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+      <allow-permission name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+      <allow-permission name="com.android.launcher.permission.READ_SETTINGS" />
+      <allow-permission name="com.android.launcher.permission.WRITE_SETTINGS" />
+      <allow-permission name="com.android.voicemail.permission.ADD_VOICEMAIL" />
+      <allow-permission name="com.android.voicemail.permission.READ_WRITE_ALL_VOICEMAIL" />
+      <allow-permission name="com.google.android.googleapps.permission.GOOGLE_AUTH" />
+      <allow-permission name="com.google.android.googleapps.permission.GOOGLE_AUTH.cp" />
+      <allow-permission name="com.google.android.googleapps.permission.GOOGLE_AUTH.mail" />
+      <seinfo value="shared" />
+    </signer>
+
+    <!-- release dev key in AOSP -->
+    <signer signature="@RELEASE" >
+      <seinfo value="release" />
+      <deny-permission name="android.permission.BRICK" />
+      <deny-permission name="android.permission.READ_LOGS" />
+      <deny-permission name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+      <deny-permission name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
+      <package name="com.android.browser" >
+        <allow-permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <allow-permission name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+        <allow-permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <allow-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+        <allow-permission name="android.permission.ACCESS_WIFI_STATE"/>
+        <allow-permission name="android.permission.GET_ACCOUNTS"/>
+        <allow-permission name="android.permission.INTERNET" />
+        <allow-permission name="android.permission.MANAGE_ACCOUNTS" />
+        <allow-permission name="android.permission.NFC" />
+        <allow-permission name="android.permission.READ_CONTACTS" />
+        <allow-permission name="android.permission.READ_CALL_LOG" />
+        <allow-permission name="android.permission.READ_EXTERNAL_STORAGE" />
+        <allow-permission name="android.permission.READ_PROFILE" />
+        <allow-permission name="android.permission.READ_SYNC_SETTINGS" />
+        <allow-permission name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" />
+        <allow-permission name="android.permission.SET_WALLPAPER" />
+        <allow-permission name="android.permission.USE_CREDENTIALS"/>
+        <allow-permission name="android.permission.WAKE_LOCK"/>
+        <allow-permission name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <allow-permission name="android.permission.WRITE_SETTINGS" />
+        <allow-permission name="android.permission.WRITE_SYNC_SETTINGS" />
+        <allow-permission name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+        <allow-permission name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"/>
+        <allow-permission name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+        <seinfo value="release" />
+      </package>
+    </signer>
+
+    <!-- All other keys -->
+    <default>
+      <seinfo value="default" />
+      <deny-permission name="android.permission.ACCESS_COARSE_LOCATION" />
+      <deny-permission name="android.permission.ACCESS_FINE_LOCATION" />
+      <deny-permission name="android.permission.AUTHENTICATE_ACCOUNTS" />
+      <deny-permission name="android.permission.CALL_PHONE" />
+      <deny-permission name="android.permission.CAMERA" />
+      <deny-permission name="android.permission.READ_LOGS" />
+      <deny-permission name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    </default>
+
+</policy>

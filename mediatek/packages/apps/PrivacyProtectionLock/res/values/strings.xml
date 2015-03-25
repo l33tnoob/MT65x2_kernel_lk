@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mobile anti-theft</string>
+    <string name="status_enabled">On</string>
+    <string name="status_provisioned">Lock the phone or wipe data remotely</string>
+    <string name="status_unprovisioned">Lock the phone or wipe data remotely</string>
+    <string name="status_pending">Lock the phone or wipe data remotely</string>
+    <string name="status_control_panel_enabled">Anti-theft is on</string>
+    <string name="status_control_panel_disabled">Anti-theft is off</string>
+    <string name="checkbox_show_password">Show password</string>
+    <string name="checkbox_send_sms">Backup the remote control commands to emergency contacts via SMS</string>
+    <string name="button_control_panel_change_password">Change anti-theft PIN</string>
+    <string name="button_control_panel_update_emergency_contacts">Update emergency contacts</string>
+    <string name="button_control_panel_view_instructions">View remote control commands</string>
+    <string name="button_control_panel_disable">Turn off mobile anti-theft</string>
+    <string name="button_next">Next</string>
+    <string name="button_confirm">Done</string>
+    <string name="button_finish">Done</string>
+    <string name="button_send_sms">Send message</string>
+    <string name="button_add_contact_line">Add an emergency contact</string>
+    <string name="title_access_lock">Input anti-theft PIN</string>
+    <string name="title_setup_password">Turn on anti-theft (1/3)</string>
+    <string name="title_setup_trusted_contact">Turn on anti-theft (2/3)</string>
+    <string name="title_setup_send_manual">Turn on anti-theft (3/3)</string>
+    <string name="title_view_instruction">View remote control commands</string>
+    <string name="title_choose_enable_mode">Enable to</string>
+    <string name="title_control_panel_contacts">Your emergency contacts</string>
+    <string name="title_choose_sim">Choose SIM</string>
+    <string name="title_choose_number">Choose Number</string>
+    <string name="title_update_trusted_contact">Update emergency contacts</string>
+    <string name="title_change_password">Change anti-theft PIN</string>
+    <string name="summary_setup_password">Set the anti-theft PIN</string>
+    <string name="summary_setup_trusted_contact">Set emergency contacts</string>
+    <string name="summary_update_trusted_contact">Set emergency contacts</string>
+    <string name="summary_setup_send_manual">Remote control commands</string>
+    <string name="summary_view_instruction">Remote control commands</string>
+    <string name="description_disable_confirm">You will not be able to lock the phone or wipe date remotely after turning off the mobile anti-theft. Are you sure to turn it off?</string>
+    <string name="description_turnoff_airplane_mode_confirm">You must turn off airplane mode to send message. Proceed?</string>
+    <string name="description_setup_password">Anti-theft PIN is needed each time to enter the anti-theft settings.</string>
+    <string name="description_setup_trusted_contact">1. Emergency contacts are used to send remote control commands;\n2. When SIM cards are changed, notifications will be sent to emergency contacts via SMS. The SMS will be: My mobile may be stolen, please keep the sender number of this message.</string>
+    <string name="description_update_trusted_contact">1. Emergency contacts are used to send remote control commands;\n2. When SIM cards are changed, notifications will be sent to emergency contacts via SMS. The SMS will be: My mobile may be stolen, please keep the sender number of this message.</string>
+    <string name="description_setup_send_manual">When your mobile is lost, you can control it remotely by sending SMS to it via emergency contacts.</string>
+    <string name="description_view_instruction">When your mobile is lost, you can control it remotely by sending SMS to it via emergency contacts.</string>
+    <string name="hint_setup_password_input_1">Please input your PIN (6 to 12 digits)</string>
+    <string name="hint_setup_password_input_2">Please input again</string>
+    <string name="hint_trusted_contact">Number from your kith and kin suggested</string>
+    <string name="hint_update_trusted_contact">Number from your kith and kin suggested</string>
+    <string name="content_setup_send_manual"><![CDATA["<p>1. Remote phone lock</p><p>Send message <font color="#33B5E5">#suoding#</font></p><p>2. Remote data wipe</p><p>Send message <font color="#33B5E5">#xiaohui#</font></p><p>3. Fetch back anti-theft PIN</p><p>Send message <font color="#33B5E5">#mima#</font></p>"]]></string>
+    <string name="toast_passwords_do_not_match">Two inputted PINs are different.</string>
+    <string name="toast_password_is_incorrect">The password is incorrect</string>
+    <string name="toast_no_phone_number">No phone number found</string>
+    <string name="toast_no_sim">No SIM found</string>
+    <string name="toast_instruction_send_succeeded">Backup message of remote control commands sent out successfully.</string>
+    <string name="toast_instruction_send_failed">Failed to send backup message of remote control commands.</string>
+    <string name="item_sim_n">SIM </string>
+    <string name="image_button_description_add">Add number from contacts</string>
+    <string name="image_button_description_delete">Delete this number</string>
+    <string name="image_description_logo">Logo of Privacy Protection Lock</string>
+    <string name="ppl_permission_label">Access to Privacy Protection Lock settings</string>
+    <string name="ppl_permission_description">Access to critical settings of Privacy Protection Manager. You probably should NOT allow this permission.</string>
+    <string name="test_entry_launch">Launch</string>
+    <string name="test_entry_status">Status</string>
+    <string name="test_entry_enabled">Enabled</string>
+    <string name="test_entry_provisioned">Provisioned</string>
+
+</resources>

@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* //device/apps/common/assets/res/any/strings.xml
+**
+** Copyright 2006, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+--><resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="keyguard_pinword_enter_pinword_code">Įveskite PIN, kad atblokuotumėte</string>
+        
+    <string name="badPin2">Senas PIN2, kurį įrašėte, yra neteisingas.</string>
+    <string name="badPuk2">PUK2, kurį įrašėte, yra neteisingas.</string>
+    
+    <string name="checkPwdLen">Slaptažodis privalo būti sudarytas iš 4–8 skaitmenų.</string>
+    
+    <string name="pinNotEnabled">Suaktyvinkite PIN, prieš jį keisdami.</string>
+    
+    <string name="puk1Blocked">PIN užblokuotas.</string>
+    
+    <string name="puk2Blocked">PIN2 užblokuotas.</string>
+
+    
+    <string name="fdnFailMmi">Nepavyko FDN Check.</string>
+    
+    <string name="callBarringFailMmi">Nepavyko Call Barring.</string>
+    <string name="Pin2Mmi">PIN2 keitimas</string>
+    <string name="PukMmi">Atblokuoti PIN</string>
+    <string name="Puk2Mmi">Atblokuoti PIN2</string>
+    
+    <string name="serviceProvisioned">Atlikta techninė priežiūra.</string>
+
+    
+    <string name="serviceUnknown">Ryšio problema arba neteisingas MMI kodas.</string>
+    <string name="cfServiceNotForwarded">Neišsiųsta</string>
+    
+    <string name="permlab_receiveCbSms">gauti CB SMS</string>
+    
+    <string name="permdesc_receiveCbSms">Leidžia programai gauti ir apdoroti CB SMS pranešimus. Kenksmingos programos gali stebėti jūsų pranešimus arba ištrinti juos jums jų neparodę.</string>
+
+    <string name="keyguard_password_enter_puk_code">Įveskite PUK kodą</string>
+
+    <string name="keyguard_password_wrong_puk_code">Neteisingas PUK kodas!</string>
+
+    <string name="keyguard_password_enter_new_pin_code">Įveskite naują PIN</string>
+
+    <string name="keyguard_password_Confirm_pin_code">"Patvirtinti naują PIN kodą"</string>
+
+    <string name="invalidPuk">Įveskite 8 skaitmenis.</string>
+
+    <string name="sim_permanently_locked">SIM kortelė užblokuota neteisingai įvedus PUK kodą daugiau nei 10 kartų.</string>
+
+    <string name="pin_length_indicate">(4–8 skaitmenys)</string>
+
+    <string name="puk_length_indicate">(8 skaitmenys)</string>
+
+    <string name="one_retry_left">Liko 1 bandymas</string>
+
+    <string name="retries_left">Liko:<xliff:g id="number">%d</xliff:g></string>
+    
+    <string name="invalid_imei">Neteisingas IMEI</string>
+    <string name="same_imei">Toks pat IMEI</string>
+
+    
+    <string name="oper_long_46000">CMCC</string>
+    <string name="oper_long_46001">CU</string>
+    <string name="oper_long_46003">China Telecom</string>    
+    <string name="oper_long_46601">Far EasTone</string>
+    <string name="oper_long_46692">Chunghwa Telecom</string>
+    <string name="oper_long_46697">Taiwan Mobile</string>
+    <string name="oper_long_99998">Android1</string>
+    <string name="oper_long_99999">Android</string>
+
+    
+    <string name="oper_short_46000">CMCC</string>
+    <string name="oper_short_46001">CU-GSM</string>
+    <string name="oper_short_46003">China Telecom</string>    
+    <string name="oper_short_46601">FET</string>
+    <string name="oper_short_46692">Chunghwa</string>
+    <string name="oper_short_46697">TWN</string>
+    <string name="oper_short_99997">AD1</string>
+    <string name="oper_short_99999">AD</string>
+
+    
+    <string name="unable_launch_the_ap">Nepavyko paleisti programos.</string>
+    
+    <string name="keyguard_password_enter_sim1_pin_code">Įveskite SIM 1 PIN kodą</string>
+
+    
+    <string name="RestrictedChangedTitle_SIM1">SIM1 apribota prieiga pakeista</string>
+    <string name="RestrictedChangedTitle_SIM2">SIM2 apribota prieiga pakeista</string>
+    
+    <string name="keyguard_password_enter_sim2_pin_code">Įveskite SIM 2 PIN kodą</string>
+
+
+    <string name="keyguard_password_wrong_sim1_pin_code">Neteisingas SIM 1 PIN kodas!</string>
+
+    <string name="keyguard_password_wrong_sim2_pin_code">Neteisingas SIM 2 PIN kodas!</string>
+
+    <string name="keyguard_password_enter_sim1_puk_code">Įveskite SIM 1 PUK kodą</string>
+
+    <string name="keyguard_password_enter_sim2_puk_code">Įveskite SIM 2 PUK kodą</string>
+
+    
+    <string name="lockscreen_sim1_puk_locked_message">SIM 1 kortelės PUK užblokuotas.</string>
+
+    
+    <string name="lockscreen_sim2_puk_locked_message">SIM 2 kortelės PUK užblokuotas.</string>
+
+    <string name="choose_bootup_mode">Pasirinkite SIM kortelę</string>
+    <string name="choose_gprs_mode">Pasirinkite duomenų ryšį</string>
+    <string name="sim_close">SIM kortelė uždaryta</string>
+    <string name="lockscreen_sim_puk_locked_message_short">PUK užblokuotas</string>
+    <string name="lockscreen_sim_locked_message_short">SIM kortelės užblokuota</string>
+    <string name="simlock_slot_locked_message">Lizdas visam laikui užrakintas</string>
+    <string name="simlock_entersimmelock">Įveskite SIM ME raktą</string>
+    <string name="slot_id">Lizdas <xliff:g id="number">%d</xliff:g>:</string>
+    <string name="new_simcard">Nauja SIM kortelė</string>
+    <string name="lockscreen_missing_sim_dialog_message">"Išimta SIM kortelė. Patikrinkite, ar tinkamai įdėta SIM kortelė."</string>
+
+    
+    <string name="permlab_receiveDmRegisterSms">gauti DM Register SMS</string>
+    
+    <string name="permdesc_receiveDmRegisterSms">Leidžia programai gauti ir apdoroti DM Register SMS pranešimus. Jokia programa, išskyrus DM APP, neturi naudoti šio</string>
+
+    <string name="lockscreen_password_error">Slaptažodžio klaida; bandykite dar kartą</string>
+  	  <string name="lockscreen_pinword_error">PIN klaida; bandykite dar kartą</string>
+
+    <string name="music_no_artist">Nežinomas atlikėjo pavadinimas</string>
+    <string name="music_play">Groti</string>
+    <string name="music_pause">Pristabdyti</string>
+    <string name="music_library">Biblioteka</string>
+    <string name="music_no_songs">Nėra dainų</string>
+    
+    
+    <string name="serviceClassVideo">Vaizdas</string>
+  <string name="aerr_application_lowmem">Vidinė atmintis beveik išnaudota; programa sustabdyta. Atlaisvinkite vietos ir bandykite dar kartą.</string>
+  
+  <string name="aerr_process_lowmem">Vidinė atmintis beveik išnaudota; procesas sustabdytas. Atlaisvinkite vietos ir bandykite dar kartą.</string>
+  <string name="free_memory_btn">"Liko laisvos vietos"</string>
+  <string name="free_memory_text">"Trūksta atminties. Atlaisvinkite atmintį."</string>		
+<string name="mem_low_title">Atlaisvinkite atmintį</string>
+   
+   <string name="unread_message">%d neskaitytas pranešimas</string>
+   <string name="unread_messages">%d neskaityti pranešimai</string>
+   <string name="missed_call">%d praleistas skambutis</string>
+   <string name="missed_calls">%d praleisti skambučiai</string>
+  
+  <string name="no_favorite_contacts">Nėra jokių mėgstamų kontaktų</string>
+  <string name="contact_widget_loading">Įkeliama\u2026</string>
+   
+   <string name="volume_fm">FM garsumas</string>
+   
+   <string name="volume_matv">Mobiliosios televizijos garsumas</string>
+
+   
+   <string name="media_controller_buffering">"Daroma atsarginė kopija %d%%..."</string>
+   <string name="media_controller_live">"Gyvai"</string>
+   <string name="media_controller_playing">"Grojama"</string>
+   <string name="media_controller_connecting">"Jungiamasi..."</string>
+   <string name="media_controller_weak_signal">"silpnas signalas"</string>
+   <string name="VideoView_error_text_bad_file">"sugadintas failas; šio vaizdo įrašo paleisti negalima."</string>
+   <string name="VideoView_error_text_cannot_connect_to_server">"Nepavyksta prisijungti prie serverio."</string>
+   <string name="VideoView_error_text_type_not_supported">"Nepalaikomas medijos failo tipas."</string>
+   <string name="VideoView_error_text_drm_not_supported">"DRM apsaugotas; šio vaizdo įrašo paleisti negalima."</string>
+   <string name="VideoView_error_text_invalid_connection">"Neteisingas ryšys. (403 draudžiama)"</string>
+   
+
+    
+   
+
+    
+    <string name="redo">Perdaryti</string>
+    <string name="undo">Anuliuoti</string>
+    <string name="undoAll">Anuliuoti viską</string>
+    <string name="new_sim">Nauja SIM</string>
+
+    
+    <string name="edit">Redaguoti</string>
+    <string name="delete">Ištrinti</string>
+
+    
+    <string name="sim_card_changed_dialog_title">SIM kortelė pakeista</string>
+    <string name="change_setting_for_onenewsim">Aptikta nauja SIM kortelė. Ji\s pažymėta kaip</string>
+    <string name="change_setting_for_twonewsim">Aptikta nauja SIM kortelė. Jos pažymėtos kaip</string>
+    <string name="sim_card_removed">SIM kortelė išimta.</string>
+    <string name="sim_card_swapped">SIM kortelė sukeista.</string>
+    <string name="change_settings">Keisti</string>
+    <string name="keyguard_voice_call">Balso skambutis:</string>
+    <string name="keyguard_sms">Pranešimų siuntimas:</string>
+    <string name="keyguard_data">Duomenų ryšys:</string>
+    <string name="keyguard_alwaysask">Visada klausti</string>
+    <string name="keyguard_data_none">Išjungti</string>
+    <string name="keyguard_sim_auto">Auto</string>
+    <string name="dismiss">Atmesti</string>
+    <string name="keyguard_wrong_code_input">Klaidingas kodas.</string>
+    <string name="keyguard_code_length_prompt">Įveskite 4–8 skaitmenis.</string>
+    <string name="keyguard_code_donnot_mismatch">Ne\sutampa.</string>
+    <string name="for_text">kam</string>
+    <string name="keyguard_internal_call">Vidinis skambutis</string>
+    <string name="keyguard_not_set">Nenustatyta</string>
+    <string name="network_searching">Ieškoma naujo tinklo</string>
+    <string name="searching_simcard">Aptinkama...</string>
+    <string name="keyguard_close">Uždaryti</string>
+    <string name="for_first_simcard">Pirmai SIM</string>
+    <string name="for_second_simcard">Antrai SIM</string>
+    <string name="for_third_simcard">Trečiai SIM</string>
+    <string name="for_fourth_simcard">Ketvirtai SIM</string>
+    <string name="default_sim_setting_prompt">Dabar numatytieji parametrai yra:</string>
+    <string name="keyguard_video_call">Vaizdo skambutis:</string>
+    <string name="dm_prompt">Terminalas jau užblokuotas</string>
+    <string name="keyguard_domestic_zone_name">Pekinas</string>
+     
+
+    
+    <string name="invalid_sim_title">Negaliojanti SIM kortelė</string>
+    
+    
+    <string name="invalid_sim_message">UIM/SIM kortelė neatpažinta.</string>
+     
+         
+    <string name="lockscreen_pin_too_many_failed_attempts_dialog_message">Jūs neteisingai įvedėte savo PIN <xliff:g id="number">%d</xliff:g> kart. \n\nBandykite dar kartą po <xliff:g id="number">%d</xliff:g> sek.</string>
+    
+    <string name="lockscreen_password_too_many_failed_attempts_dialog_message">Jūs neteisingai įvedėte savo slaptažodį <xliff:g id="number">%d</xliff:g> kart. \n\nBandykite dar kartą po <xliff:g id="number">%d</xliff:g> sek.</string>
+
+   
+    
+    
+    
+    
+       
+    <string name="low_internal_storage_view_title">Vidinėje atmintyje beveik neliko vietos</string>
+    <string name="deleteMails">Ištrinkite el. pranešimus</string>
+    <string name="criticallowtitle">Nėra vietos</string>
+    <string name="criticallowmessage">Atlaisvinkite vietos, antraip kai kurios programos ir sistemos funkcijos tinkamai neveiks.</string> 
+
+    <string name="nq_sms_filter_title">SMS filtras</string>
+    <string name="nq_sms_filter_message">Šiam pranešimui gali būti taikomi mokesčiai. Norite tęsti?</string>
+    <string name="nq_sms_filter_yes">Taip</string>
+    <string name="nq_sms_filter_no">Ne</string>
+    
+    
+    <string name="ext_media_checking_notification_title_sd2">Paruoškite SD kortelę</string>
+    <string name="ext_media_checking_notification_title_otg">Paruoškite USB atminties įrenginį</string>
+    <string name="ext_media_badremoval_notification_title_otg">"USB atmintinė netikėtai pašal."</string>
+    <string name="ext_media_nomedia_notification_title_otg">"Pašalinta USB atmintinė"</string>
+    <string name="ext_media_badremoval_notification_message_otg">"Kad neprarastumėte duomenų, prieš pašalindami atjunkite USB atmintinę."</string>
+    <string name="ext_media_nomedia_notification_message_otg">"USB atmintinė pašalinta. Įdėti naują mediją."</string>
+    <string name="ext_media_unmountable_notification_title_otg">"Sugadinta USB atmintinė"</string>
+    <string name="ext_media_unmountable_notification_message_otg">Sugadintas USB atminties įrenginys. Jį gali tekti performatuoti.</string>
+    <string name="ext_media_nofs_notification_title_otg">"Tuščia USB atmintinė"</string>
+    <string name="ext_media_nofs_notification_message_otg">USB atminties įrenginys tuščias arba turi nepalaikomą failų sistemą.</string>
+    <string name="ext_media_safe_unmount_notification_title_otg">"Galima pašalinti USB atmintinę"</string>
+    <string name="ext_media_safe_unmount_notification_message_otg">"Galite saugiau pašalinti USB atmintinę."</string>
+    
+    
+    <string name="drm_protection_status">Apsaugos būsena:</string>
+    <string name="drm_can_forward">Galima perduoti.</string>
+    <string name="drm_can_not_forward">Negalima perduoti.</string>
+    <string name="drm_no_limitation">Apribojimų nėra.</string>
+    <string name="drm_no_license">Nėra galimos DRM licencijos.</string>
+    <string name="drm_begin">Pradžia:</string>
+    <string name="drm_end">Pabaiga:</string>
+    <string name="drm_use_left">Liko:</string>
+    <string name="drm_protectioninfo_renew">Atnaujinti</string>
+    <string name="drm_protectioninfo_title">Apsaugos info</string>
+    <string name="drm_licenseacquisition_title">DRM licencijos įsigijimas</string>
+    <string name="drm_licenseacquisition_message">%1$s neturi galimos DRM licencijos. Norėdami įsigyti DRM licenciją, galite paspausti mygtuką "Atnaujinti".</string>
+    <string name="drm_toast_license_expired">Baigėsi DRM licencijos galiojimo laikas.</string>
+    <string name="drm_forwardforbidden_title">Perdavimas draudžiamas</string>
+    <string name="drm_forwardforbidden_message">Kai kurių apsaugotų failų perduoti negalima.</string>
+    <string name="drm_license_install_success">DRM licencija sėkmingai įdiegta.</string>
+    <string name="drm_license_install_fail">DRM licencijos įdiegti nepavyko.</string>
+    <string name="drm_secure_timer_title">Klaidingas DRM apsaugos raktas</string>
+    <string name="drm_secure_timer_message">Jūs negalėjote naudoti DRM apsaugotų failų. Įsitikinkite, ar veikia duomenų ryšys.</string>
+    <string name="drm_consume_title">Naudoti DRM teises</string>
+    <string name="drm_consume_message">Šiuo jūsų veiksmu bus panaudotos DRM teisės.</string>
+    <string name="drm_forward_forbidden">Nepavyko perduoti vieno ar daugiau apsaugotų failų.</string>
+    
+    
+
+    <string name="recip_unsupport_operator">Gavėjų vaizdo nepalaiko raidinių įvesčių; naudokite įrankių juostą gavėjams tvarkyti.</string>
+    <string name="recip_unsupport_selection">Apgailestaujame, bet jūs negalite perkelti intarpo ženklo į pradžią, kai RecipientsView yra gavėjų.</string>
+    
+    <string name="virtual_sim_on_slot1">Virtuali SIM 1 VEIKIA</string>
+    <string name="virtual_sim_on_slot2">Virtuali SIM 2 VEIKIA</string>
+    <string name="virtual_sim_on_slot3">Virtuali SIM 3 VEIKIA</string>
+    <string name="virtual_sim_on_slot4">Virtuali SIM 4 VEIKIA</string>
+    <string name="virtual_sim_on">Virtuali SIM VEIKIA</string>
+    
+    <string name="sim_missing_slot1">Lizdas 1: SIM kortelė neaptikta</string>
+    <string name="sim_missing_slot2">Lizdas 2: SIM kortelė neaptikta</string>
+    <string name="sim_missing_slot3">Lizdas 3: SIM kortelė neaptikta</string>
+    <string name="sim_missing_slot4">Lizdas 4: SIM kortelė neaptikta</string>
+    <string name="sim_missing">SIM kortelė neaptikta</string>
+    <string name="sim_missing_detail">Patikrinkite, ar SIM kortelė yra parengta</string>
+    <string name="sim_missing_slot1_card">Lizdas 1: Neaptikta jokios kortelės</string>
+    <string name="sim_missing_slot2_card">Lizdas 2: Neaptikta jokios kortelės</string>
+    <string name="sim_missing_card">Neaptikta jokios kortelės</string>
+    <string name="sim_missing_detail_card">Patikrinkite, ar kortelė yra parengta</string>
+    
+    <string name="wap_push_setting_noti_ticker">Priimti automatinio siuntimo paslaugą ar ne?</string>
+    <string name="wap_push_setting_noti_title">Priimti automatinio siuntimo paslaugą ar ne?</string>
+    <string name="wap_push_setting_noti_text">Spustelėkite, kad pasirinktumėte</string>
+    <string name="url_dialog_choice_title">Pranešimai</string>
+    <string name="url_dialog_choice_message">Bus atidaryta naršyklė; tęsti?</string>
+
+    
+    
+    <string name="deleteApp">Pašalinti programas</string>    
+    <string name="deleteMail">Padaryti pranešimų kopijas ir atlaisvinti atmintį</string>    
+
+    <string name="storage_withsd">Telefono atmintyje nepakanka vietos. Atlaisvinkite vietos arba pakeiskite parametruose numatytąjį įrašymo diską.</string>
+    <string name="storage_withoutsd">Telefono atmintyje nepakanka vietos. Atlaisvinkite vietos arba įdėkite SD kortelę.</string>
+    <string name="storage_sd">SD kortelėje nepakanka vietos. Atlaisvinkite vietos arba pakeiskite parametruose numatytąjį įrašymo diską.</string>   
+    <string name="usb_ums_notification_title">Prijungtas kaip USB atminties įrenginys</string>
+    
+    <string name="usb_charging_notification_title">Tik USB krovimas</string>
+    
+    
+    
+    <string name="gps_time_sync_fail_str">Nepavyko gauti GPS pateikto laiko</string>
+
+    
+    <string name="calibration_data">Dar neatliktas joks kalibravimas. Atsisiųskite kalibravimo duomenis! Antraip prietaisas gali neprisijungti prie tinklo.[MTK Vidinis vartotojas]</string>
+
+        
+    <string name="invalid_card">Negaliojanti kortelė</string>
+        
+    <string name="RejectCauseTitle">Tinklo atmetimo priežastis</string>
+        
+    <string name="MMRejectCause2">SIM nepalaikoma MM #2</string>
+        
+    <string name="MMRejectCause3">SIM neleidžiama MM #3</string>
+        
+    <string name="MMRejectCause5">Paskambinti nepavyko MM #5</string>
+        
+    <string name="MMRejectCause6">Telefonas neleidžiamas MM #6</string>    
+    
+    <string name="MMRejectCause13">Tik SOS/avariniai skambučiai</string>
+
+    
+    <string name="find_previous">Atgal</string>
+    <string name="find_next">Toliau</string>
+
+    <string name="tethered_notification_message_for_hotspot"><xliff:g id="connected">%1$d</xliff:g> prijungtas, <xliff:g id="blocked">%2$d</xliff:g> užblokuotas</string>
+    <string name="tethered_notification_message_bandwidth_set">Danžių juostos plotis nustatytas</string>
+    
+    <string name="usbint_notification_title">USB internetas veikia</string>
+
+    
+    <string name="default_wallpaper_name">Numatytoji nuostata</string>
+
+
+    
+    
+    
+    
+    <string name="keyguard_accessibility_alarm_unlock">Išsijungimo įspėjimas</string>
+    
+    <string name="alarm_alert_dismiss_text">Atmesti</string>
+    
+    <string name="description_direction_right">Slinkite į dešinę, kad atmestumėte</string>
+    
+    <string name="alarm_alert_snooze_text">Snaudimas</string>
+    
+    <string name="description_direction_left">Slinkite į kairę, kad įjungtumėte snaudimą</string>
+    
+    <string name="description_direction_up">Slinkite į viršų, kad atmestumėte</string>
+    
+    <string name="description_direction_down">Slinkite žemyn, kad įjungtumėte snaudimą</string>
+    <string name="every_day">Kasdien</string>
+    <string name="never">"Niekada"</string>
+    <string name="day_concat">", "</string>
+    
+    <string name="default_label">"Signalas"</string>
+    
+    <string name="dismiss_power_on">Atmesti ir įjungti</string>   
+    
+    <string name="dismiss_power_off">Atmesti ir išjungti</string>
+    
+
+    
+    <string name="voice_unlock_service_error">Balso pranešimo klaida!</string>
+    <string name="voice_unlock_password_wrong">Apgailestaujame, nepavyko atpažinti jūsų balso.</string>
+    <string name="voice_unlock_noisy">Per daug triukšminga, todėl ne\aiškiai girdisi.</string>
+    <string name="voice_unlock_weak">Ne\sigirdi jūsų balso.</string>
+    <string name="voice_unlock_media_playing">Leidžiant mediją, atrakinimo balsu funkcija neveikia.</string>
+    <string name="voiceunlock_multiple_failures">Viršytas maksimalus bandymų atrakinti balsu skaičius</string>
+    
+    
+    <string name="voiceui_notify_string">Galite pasakyti</string>
+    <string name="voiceui_control_poweroff_alarm">kad valdytumėte išjungimo įspėjimą.</string>
+    <string name="voiceui_comma">,</string>
+    <string name="voiceui_quota_start">"</string>
+    <string name="voiceui_quota_end">"</string>
+    <string name="voiceui_or">arba</string>
+
+    
+    <string name="dialog_color_picker">Spalvų rinkiklis</string>
+    <string name="press_color_to_apply">Spustelėkite spalvą, kad ji būtų naudojama</string>
+    <string name="color_picker_select">-&gt;</string>
+
+    
+
+    
+    <string name="wifi_display_bt_hdmi_off_wfd_on">Įjungus belaidį ekraną, HDMI bus išjungtas. Norite tęsti?</string> 
+    
+    <string name="wifi_display_wfd_off_hdmi_on">Įjungus HDMI, belaidis ekranas bus išjungtas. Norite tęsti?</string> 
+    
+    <string name="wifi_display_wfd_off_bt_on">Įjungus Bluetooth, belaidis ekranas bus išjungtas. Norite tęsti?</string> 
+    
+    <string name="wifi_display_wifi_p2p_disconnect_wfd_connect">Prisijungus prie belaidžio rodymo prietaiso, dabar veikiantis Wi-Fi Direct ryšys bus nutrauktas. Norite tęsti?</string>
+    
+    <string name="wifi_display_unstable_connection">Nepastovus ryšys</string>
+    
+    <string name="wifi_display_connection_is_not_steady">Dabartinis ryšys su belaidžiu ekranu yra nepastovus.</string>
+    
+    
+    <string name="wifi_display_unstable_suggestion">Dabartinis ryšys su belaidžiu ekranu yra nepastovus; pabandykite prieiti arčiau prie rodymo prietaiso.</string>
+    
+    <string name="wifi_display_reconnect">Prisijungti iš naujo</string> 
+    
+    <string name="wifi_display_disconnect_then_reconnect">Nutrūko ryšys su belaidžiu ekranu. Norite prisijungti iš naujo?</string> 
+    
+    <string name="wifi_display_disconnected">Belaidis ekranas atjungtas.</string>
+     
+    <string name="wifi_wps_failed_overlap">Aptiktas kitas WPS seansas. Po kelių minučių bandykite dar kartą</string>
+    
+    <string name="wifi_display_wfd_and_wifi_are_turned_on">Belaidis ekranas ir Wi-Fi įjungti.</string>
+    
+    <string name="wifi_display_sound_path_reminder">Multimedijos garsas ne\sklis iš ausinių.</string>  
+    
+    <string name="wifi_display_change_resolution_reminder">Pakeitus vaizdo raišką, belaidis ekranas bus automatiškai vėl prijungtas.</string>  
+    
+    <string name="wifi_display_do_not_remind_again">Daugiau nepriminti.</string>
+
+    
+    <string name="sdcard_ready_title">SD kortelė parengta</string>
+    <string name="sdcard_select_default_path">Norite pakeisti numatytąjį įrašymo diską?</string>
+    <string name="sdcard_default_path_change">Numatytasis įrašymo diskas pakeistas.</string>
+    <string name="usb_storage_ready_title">Išorinis USB atminties įrenginys parengtas</string>
+    
+
+    
+    <string name="pin_pass">Kodas priimtas</string>
+    <string name="puk_pass">PIN atblokuotas</string>
+    
+    
+    <string name="headset_pin_recognition">Jūsų ausinės neveikia su šiuo Telefonu.Pabandykite prijungti kitas</string>
+    
+    
+    <string name="msensor_toast_text">Kompaso trukdžiai. Pamosuokite telefonu 8-to formos mostais, kad perkalibruotumėte kompasą.</string> 
+
+
+    
+    <string name="sd_accessing_swtich_user_title">Perjungti vartotoją?</string>
+    <string name="sd_accessing_swtich_user_message">Visi savininko paskyroje neišsaugoti duomenys bus prarasti arba sugadinti.</string>
+
+    
+    <string name="usb_autorun_cdrom_notification_title">Prijungtas kaip automatiškai paleidžiamas cdrom</string>
+    
+    
+    <string name="ct_net_name">"CTNET"</string>
+    <string name="ct_wap_name">"CTWAP"</string>    
+
+    
+    <string name="hdmi_notification_title">Prijungtas HDMI kabelis</string>
+    <string name="hdmi_notification_content">Spustelėkite, kad būtų sukonfigūruotas HDMI</string>
+    <string name="hdmi_hdvideo_toast">HDMI negali paleisti 4 K vaizdo įrašo; ryšys bus nutruktas</string>
+    
+    
+
+    
+    <string name="safe_media_volume_warning_title">Įspėjimas</string>
+    
+    <string name="aerr_application_lowstorage">Vidinė atmintis beveik išnaudota; programa sustabdyta. Atlaisvinkite vietos ir bandykite dar kartą.</string>
+    <string name="aerr_process_lowstorage">Vidinė atmintis beveik išnaudota; procesas sustabdytas. Atlaisvinkite vietos ir bandykite dar kartą.</string>
+    <string name="low_storage_warning_message">Atlaisvinkite vietos, antraip kai kurios programos ir sistemos funkcijos tinkamai neveiks.</string>
+</resources>

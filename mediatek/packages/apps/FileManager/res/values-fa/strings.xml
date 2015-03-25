@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="alert_delete_multiple">اين آيتم ها حذف می شود</string>
+    <string name="alert_delete_single">اين آيتم حذف می شود</string>
+    <string name="app_name">مدیر فایل</string>
+    <string name="cancel">لغو</string>
+    <string name="copy">"کپی"</string>
+    <string name="copy_deny">اجازه کپی وجود ندارد</string>
+    <string name="create_folder">ايجاد پوشه</string>
+    <string name="cut">"برش"</string>
+    <string name="cut_deny">اجازه برش وجود ندارد</string>
+    <string name="delete">حذف</string>
+    <string name="delete_deny">اجازه حذف وجود ندارد</string>
+    <string name="delete_fail">بروز اشکال در حذف</string>
+    <string name="deleting">در حال حذف</string>
+    <string name="deselect_all">انتخاب هیچکدام</string>
+    <string name="details">جزييات</string>
+    <string name="done">"انجام شد"</string>
+    <string name="empty_msg">(پوشه خالی)</string>
+    <string name="executable">قابل اجرا</string>
+    <string name="insufficient_memory">حافظه کافی نيست</string>
+    <string name="invalid_empty_name">نام فايل يا پوشه نمی تواند خالی باشد</string>
+    <string name="loading">در حال بارگذاری</string>
+    <string name="modified_time">تغيير داده شد</string>
+    <string name="name">نام</string>
+    <string name="new_folder">پوشه جديد</string>
+    <string name="no">"خیر"</string>
+    <string name="ok">تاييد</string>
+    <string name="paste">"جای گذاری"</string>
+    <string name="pasting">در حال چسباندن</string>
+    <string name="paste_fail">بروز اشکال در چسباندن</string>
+    <string name="paste_same_folder">چسباندن در پوشه مشابه امکان پذیر نیست</string>
+    <string name="readable">قابل خواندن</string>
+    <string name="rename">تغيير نام</string>
+    <string name="select_all">انتخاب همه</string>
+    <string name="send_file">ارسال فايل</string>
+    <string name="share">"اشتراک‌گذاری"</string>
+    <string name="size">اندازه</string>
+    <string name="sort_by">ترتيب بر اساس</string>
+    <string name="wait">"لطفاً منتظر بمانید…"</string>
+    <string name="writable">قابل نوشتن</string>
+    <string name="yes">بله</string>
+    <string name="confirm_rename">تغییر نام را تایید کنید</string>
+    <string name="msg_rename_ext">شما پسوند فایل را تغییر می دهید، که ممکن است موجب شناخته نشدن فایل شود. آیا از این کار مطمئن هستید؟</string>
+    <string name="msg_unable_open_file">باز کردن فایل امکان پذیر نیست.</string>
+
+    <string-array name="sort_by">
+        <item>نوع</item>
+        <item>نام (A-Z)</item>
+        <item>اندازه (نزولی)</item>
+        <item>زمان (جديد-قديمی)</item>
+    </string-array>
+
+    <string name="more">بیشتر</string>
+    <string name="selected">انتخاب شده</string>
+    <string name="invalid_char_prompt">کاراکتر نامعتبر وارد کرده اید</string>
+    <string name="search">جستجو</string>
+    <string name="sort">مرتب سازی</string>
+    <string name="show_file">نمایش فایل های مخفی</string>
+    <string name="hide_file">مخفی کردن فایل های مخفی</string>
+    <string name="default_search_text">جستجوی فایل ها</string>
+    <string name="search_text_empty">محتوای جستجو نباید خالی باشد.</string>
+    <string name="free_space">فضای خالی</string>
+    <string name="total_space">فضای کل</string>
+    <string name="paste_sub_folder">کپی کردن در زیرپوشه امکان پذیر نیست</string>
+    <string name="operation_fail">برخی از عملیات فایل ناموفق بود</string>
+    <string name="search_files">جستجوی فایل ها</string>
+    <string name="search_result">%2$d نتیجه برای \"%1$s\"</string>
+    <string name="already_exists">%1$s اکنون مشغول است</string>
+    <string name="unmounted">%1$s برداشته شد</string>
+    <string name="create_hidden_file">فایلهایی که نام آنها با \'.\' آغاز می‌شود، مخفی خواهند شد.</string>
+    <string name="modify_hidden_file">فایلهایی که نام آنها با \'.\' آغاز نمی‌شود، مخفی نخواهند شد.</string>
+    <string name="file_name_too_long">نام ورودی بسیار طولانی است</string>
+    <string name="some_paste_fail">بروز اشکال در برخی از عملیات چسباندن</string>
+    <string name="some_delete_fail">بروز اشکال در برخی از عملیات حذف کردن</string>
+    <string name="search_empty">محتوای جستجو نباید خالی باشد</string>
+    <string name="search_setting_description">فایل ها و پوشه های محلی</string>
+    <string name="path_not_exists">%1$s وجود ندارد</string>
+    <string name="change_mode">فایل یا پوشه را انتخاب کنید</string>
+    <string name="folder_beam_forbidden_title">هدایت پوشه امکان پذیر نیست</string>
+    <string name="folder_beam_forbidden_message">هدایت پوشه پشتیبانی نمی شود. لطفاً چندین فایل را برای هدایت انتخاب کنید.</string>
+    <string name="drm_beam_forbidden_title">هدایت ممنوع است</string>
+    <string name="drm_beam_forbidden_message">هدایت فایل هایی که توسط DRM (مدیریت حق دیجیتال) محافظت شده اند امکان پذیر نیست.</string>
+
+</resources>

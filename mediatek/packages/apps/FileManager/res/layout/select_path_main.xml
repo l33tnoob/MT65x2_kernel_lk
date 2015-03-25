@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/whole_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:id="@+id/bar_background"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dddddd">
+        <view class="com.mediatek.filemanager.AbsBaseActivity$SlowHorizontalScrollView"
+            android:id="@+id/navigation_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:fillViewport="true" >
+            <LinearLayout
+                android:id="@+id/tabs_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </view>
+
+        <ImageButton
+            android:id="@+id/btn_create_folder"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1px"
+            android:layout_weight="0"
+            android:background="@drawable/fm_bar_bg"
+            android:src="@drawable/actionbar_fm_create_folder" />
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/title_bar_line"
+        android:layout_below="@id/bar_background"/>
+
+    <LinearLayout
+        android:id="@+id/download_bottom_bar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        style="@android:style/Holo.ButtonBar">
+        <Button android:id="@+id/download_btn_cancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="1px"
+            android:text="@string/cancel"/>
+        <Button android:id="@+id/download_btn_save"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="1px"
+            android:text="@string/ok"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignTop="@id/download_bottom_bar"/>
+
+    <ListView android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar_background"
+        android:layout_above="@id/download_bottom_bar" />
+    <TextView android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/bar_background"
+        android:gravity="center"
+        android:text="@string/empty_msg"
+        android:textColor="#FFC0C0C0"
+        android:textAppearance="?android:attr/textAppearanceLarge" /> 
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    >
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/announce" />
+    
+    <LinearLayout    
+        android:orientation="horizontal"    
+        android:layout_width="wrap_content"    
+        android:layout_height="wrap_content"
+         >       
+
+        <Button android:id="@+id/snapshot"
+            android:layout_width="110dip"
+            android:layout_height="60dip"
+            android:text="@string/btn_snapshot" />
+
+        <Button android:id="@+id/exit"
+            android:layout_width="110dip"
+            android:layout_height="60dip"
+            android:text="@string/btn_exit"  />
+        
+        <Button android:id="@+id/clear"
+            android:layout_width="110dip"
+            android:layout_height="60dip"
+            android:text="@string/btn_clear"  />
+        
+    </LinearLayout>
+    
+    <ListView  android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="8dp"  />
+
+</LinearLayout>

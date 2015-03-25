@@ -1,0 +1,754 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type system_server, domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+#
+# System Server aka system_server spawned by zygote.
+# Most of the framework services run in this process.
+#
+permissive system_server;
+# unconfined_domain(system_server);
+relabelto_domain(system_server);
+
+# These are the capabilities assigned by the zygote to the
+# system server.
+allow system_server self:capability {
+    kill
+    net_admin
+    net_bind_service
+    net_broadcast
+    net_raw
+    sys_boot
+    sys_module
+    sys_nice
+    sys_resource
+    sys_time
+    sys_tty_config
+};
+
+# Create a socket for receiving info from wpa.
+type_transition system_server wifi_data_file:sock_file system_wpa_socket;
+allow system_server system_wpa_socket:sock_file create_file_perms;
+
+# Create a socket for connections from debuggerd.
+type_transition system_server system_data_file:sock_file system_ndebug_socket "ndebugsocket";
+allow system_server system_ndebug_socket:sock_file create_file_perms;
+
+allow system_server self:zygote { specifyids specifyrlimits specifyseinfo };
+
+# Read from HW RNG (needed by EntropyMixer).
+allow system_server hw_random_device:chr_file r_file_perms;
+
+allow system_server backup_data_file:dir relabelto;
+allow system_server cache_backup_file:dir relabelto;
+allow system_server anr_data_file:dir relabelto;
+allow system_server system_data_file:dir relabelto;
+allow system_server apk_data_file:file relabelto;
+allow system_server apk_tmp_file:file relabelto;
+allow system_server cache_backup_file:file relabelto;
+allow system_server apk_private_tmp_file:file relabelto;
+allow system_server wallpaper_file:file relabelto;
+
+# Access to wake locks
+allow system_server sysfs_wake_lock:file rw_file_perms;
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive system_server;
+
+# 20131024 Sanity_01
+allow system_server BGW:file { read open };
+allow system_server GoogleOtaBinder:dir search;
+allow system_server GoogleOtaBinder:file { read open };
+allow system_server aal:binder call;
+allow system_server aal:dir search;
+allow system_server aal:file { read open };
+allow system_server adbd:dir search;
+allow system_server aee_aed:dir search;
+allow system_server aee_aed:file { read open };
+allow system_server atci_service:dir search;
+allow system_server atci_service:file { read open };
+allow system_server atcid:dir search;
+allow system_server atcid:file { read open };
+allow system_server bluetooth:binder call;
+allow system_server bluetooth:dir { read open };
+allow system_server bmm050d:dir search;
+allow system_server bmm050d:file { read open };
+allow system_server ccci_fsd:dir search;
+allow system_server ccci_fsd:file { read open };
+allow system_server ccci_mdinit:dir search;
+allow system_server ccci_mdinit:file { read open };
+allow system_server dm_agent_binder:dir search;
+allow system_server dnsproxyd_socket:sock_file write;
+allow system_server drmserver:file { read open };
+allow system_server em_svr:file { read open };
+allow system_server featured:dir search;
+allow system_server featured:file { read open };
+allow system_server gsm0710muxd:dir search;
+allow system_server gsm0710muxd:file { read open };
+allow system_server hald:dir search;
+allow system_server hald:file { read open };
+allow system_server hwmsensor_device:chr_file ioctl;
+allow system_server init:dir search;
+allow system_server init:file { read open };
+allow system_server init_shell:dir search;
+allow system_server init_shell:file { read open };
+allow system_server installd:dir search;
+allow system_server installd:file { read open };
+allow system_server kernel:dir search;
+allow system_server kernel:file { read getattr open };
+allow system_server keystore:dir search;
+allow system_server keystore:file { read open };
+allow system_server logwrapper:dir search;
+allow system_server logwrapper:file { read open };
+allow system_server matv:dir search;
+allow system_server matv:file { read open };
+allow system_server mdlogger:dir search;
+allow system_server media_app:binder call;
+allow system_server media_app:dir { read search open };
+allow system_server media_app:file { read write getattr open };
+allow system_server mediaserver:binder call;
+allow system_server mediaserver:file { read open };
+allow system_server mobile_log_d:dir search;
+allow system_server mobile_log_d:file { read open };
+allow system_server mtk_agpsd:dir search;
+allow system_server mtk_agpsd:file read;
+allow system_server mtkbt:dir search;
+allow system_server mtkbt:file { read open };
+allow system_server netd:dir search;
+allow system_server netd:file { read open };
+allow system_server netd:unix_stream_socket connectto;
+allow system_server netdiag:dir search;
+allow system_server netdiag:file { read open };
+allow system_server nfc:binder call;
+allow system_server node:tcp_socket node_bind;
+allow system_server nvram_agent_binder:dir search;
+allow system_server nvram_agent_binder:file { read open };
+allow system_server platform_app:binder call;
+allow system_server platform_app:dir { read search open };
+allow system_server platform_app:file { write getattr open };
+allow system_server platform_app:process sigkill;
+allow system_server platform_app_data_file:dir getattr;
+allow system_server port:tcp_socket name_connect;
+allow system_server proc:file write;
+allow system_server property_socket:sock_file write;
+allow system_server qtaguid_proc:file write;
+allow system_server radio:binder call;
+allow system_server radio:fd use;
+allow system_server radio:file write;
+allow system_server release_app:binder call;
+allow system_server release_app:dir { read search open };
+allow system_server release_app:file { write read open };
+allow system_server release_app:process sigkill;
+allow system_server resmon:file { read open };
+allow system_server rild:file read;
+allow system_server self:netlink_kobject_uevent_socket read;
+allow system_server self:tcp_socket { bind create getattr connect };
+allow system_server self:udp_socket { getopt create ioctl getattr };
+allow system_server servicemanager:binder call;
+allow system_server servicemanager:dir search;
+allow system_server servicemanager:file { read open };
+allow system_server shared_app:binder call;
+allow system_server shared_app:dir { read search open };
+allow system_server shared_app:file { write read getattr open };
+allow system_server shell:binder call;
+allow system_server surfaceflinger:binder { transfer call };
+allow system_server surfaceflinger:dir search;
+allow system_server surfaceflinger:fd use;
+allow system_server surfaceflinger:file { read open };
+allow system_server surfaceflinger:unix_stream_socket read;
+allow system_server sysfs:file write;
+allow system_server system_app:binder call;
+allow system_server system_app:dir { read search open };
+allow system_server system_app:file { write getattr open };
+allow system_server system_app:process sigkill;
+allow system_server system_data_file:dir { write remove_name read add_name open };
+allow system_server system_data_file:file { rename setattr lock create write ioctl unlink open };
+allow system_server thermal:dir search;
+allow system_server thermal:file { read open };
+allow system_server thermald:dir search;
+allow system_server thermald:file { read open };
+allow system_server tmpfs:file execute;
+allow system_server untrusted_app:binder call;
+allow system_server untrusted_app:file read;
+allow system_server untrusted_app:process sigkill;
+allow system_server vold:dir search;
+allow system_server vold:file { read open };
+allow system_server vtservice:dir search;
+allow system_server vtservice:file { read open };
+allow system_server zygote:dir search;
+allow system_server zygote:fd use;
+allow system_server zygote:file { read open };
+allow system_server zygote:process sigchld;
+allow system_server zygote_tmpfs:file read;
+
+# 20131024 Sanity_02
+allow system_server BGW:dir search;
+allow system_server adbd:file { read open };
+allow system_server apk_data_file:dir { write remove_name add_name };
+allow system_server apk_data_file:file { write relabelfrom create unlink setattr };
+allow system_server apk_tmp_file:file { read write getattr open };
+allow system_server batterywarning:dir search;
+allow system_server batterywarning:file { read getattr open };
+allow system_server bluetooth:dir search;
+allow system_server bluetooth:file { read write open };
+allow system_server debugfs:file { read getattr };
+allow system_server dm_agent_binder:file { read open };
+allow system_server drmserver:dir search;
+allow system_server em_svr:dir search;
+allow system_server keystore:binder call;
+allow system_server mali_device:chr_file ioctl;
+allow system_server mdlogger:file { read open };
+allow system_server media_app:process sigkill;
+allow system_server mediaserver:dir search;
+allow system_server mnld:dir search;
+allow system_server mnld:file { read open };
+allow system_server mtk_agpsd:file open;
+allow system_server nfc:dir search;
+allow system_server nfc:file { read open };
+allow system_server platform_app:file read;
+allow system_server qtaguid_proc:file open;
+allow system_server radio:dir { read search open };
+allow system_server radio:file { read open };
+allow system_server radio:process sigkill;
+allow system_server release_app:process getsched;
+allow system_server resmon:dir search;
+allow system_server resmon:fd use;
+allow system_server resmon:fifo_file write;
+allow system_server rild:dir search;
+allow system_server rild:file open;
+allow system_server shared_app:process sigkill;
+allow system_server shell:dir search;
+allow system_server shell:file { read getattr open };
+allow system_server sn:dir search;
+allow system_server sn:file { read open };
+allow system_server system_app:file read;
+allow system_server system_data_file:dir { create rmdir setattr };
+allow system_server untrusted_app:dir search;
+allow system_server untrusted_app:file open;
+
+# 20131024 CTS_01
+allow system_server BGW:dir search;
+allow system_server adbd:file { read open };
+allow system_server aee_aed:binder call;
+allow system_server aee_aed:fd use;
+allow system_server aee_aed:file getattr;
+allow system_server aee_aed:unix_stream_socket connectto;
+allow system_server apk_data_file:dir { read write open add_name remove_name };
+allow system_server apk_data_file:file { write relabelfrom create unlink setattr };
+allow system_server apk_private_data_file:dir { read open };
+allow system_server apk_tmp_file:file { rename write getattr read setattr relabelfrom open };
+allow system_server app_data_file:dir getattr;
+allow system_server batterywarning:dir search;
+allow system_server batterywarning:file { read getattr open };
+allow system_server bluetooth:dir search;
+allow system_server bluetooth:file { read write getattr open };
+allow system_server bluetooth:process { signal sigkill };
+allow system_server bluetooth_data_file:dir getattr;
+allow system_server bootanimation:dir search;
+allow system_server bootanimation:file { read open };
+allow system_server ccci_fsd:file getattr;
+allow system_server dalvikcache_data_file:file { write setattr };
+allow system_server debugfs:file { read getattr };
+allow system_server device:chr_file { read ioctl open };
+allow system_server devmap_device:chr_file { read ioctl open };
+allow system_server dm_agent_binder:file { read open };
+allow system_server drmserver:dir search;
+allow system_server dumpstate:unix_stream_socket write;
+allow system_server em_svr:dir search;
+allow system_server hald:unix_stream_socket connectto;
+allow system_server hald_socket:sock_file write;
+allow system_server hwmsensor_device:chr_file { read open };
+allow system_server input_device:chr_file { read write ioctl open };
+allow system_server input_device:dir { read open };
+allow system_server installd:file getattr;
+allow system_server installd:unix_stream_socket connectto;
+allow system_server installd_socket:sock_file write;
+allow system_server keystore:binder call;
+allow system_server linker_exec:file { read execute open };
+allow system_server logwrapper:file getattr;
+allow system_server logwrapper:unix_dgram_socket sendto;
+allow system_server mali_device:chr_file { read write ioctl };
+allow system_server mdlogger:file { read open };
+allow system_server media_app:process sigkill;
+allow system_server mediaserver:dir search;
+allow system_server mediaserver:fd use;
+allow system_server mnld:dir search;
+allow system_server mnld:file { read open };
+allow system_server mtk_agpsd:file open;
+allow system_server netdiag:file getattr;
+allow system_server nfc:dir search;
+allow system_server nfc:file { read getattr open };
+allow system_server nfc:process signal;
+allow system_server nfc_data_file:dir getattr;
+allow system_server platform_app:fd use;
+allow system_server platform_app:file read;
+allow system_server platform_app:process signal;
+allow system_server qtaguid_proc:file open;
+allow system_server radio:dir { read search open };
+allow system_server radio:file { read getattr open };
+allow system_server radio:process { signal sigkill };
+allow system_server radio_data_file:dir getattr;
+allow system_server release_app:file getattr;
+allow system_server release_app:process { signal getsched };
+allow system_server resmon:dir search;
+allow system_server resmon:fd use;
+allow system_server resmon:fifo_file write;
+allow system_server rild:dir search;
+allow system_server rild:file open;
+allow system_server self:tcp_socket { write getopt read setopt };
+allow system_server servicemanager:binder transfer;
+allow system_server shared_app:fd use;
+allow system_server shared_app:process sigkill;
+allow system_server shell:dir search;
+allow system_server shell:file { read getattr open };
+allow system_server shell_data_file:dir getattr;
+allow system_server sn:dir search;
+allow system_server sn:file { read open };
+allow system_server surfaceflinger:unix_stream_socket { write setopt };
+allow system_server system_app:file read;
+allow system_server system_app:process signal;
+allow system_server system_data_file:dir { rename create rmdir setattr };
+allow system_server system_data_file:file { relabelfrom append };
+allow system_server toolbox_exec:file { read execute open execute_no_trans };
+allow system_server untrusted_app:dir { read search open };
+allow system_server untrusted_app:file { write getattr open };
+allow system_server vold_socket:sock_file write;
+allow system_server wallpaper_file:file { read write getattr open };
+allow system_server wifi_data_file:dir { write read open add_name remove_name };
+allow system_server wifi_data_file:file { write read create open getattr };
+
+
+# 20131024 Sanity_03
+allow system_server gps_device:chr_file { read open };
+allow system_server gsm0710muxd:file getattr;
+allow system_server mdlogger:file getattr;
+allow system_server mnld:file getattr;
+allow system_server mobile_log_d:file getattr;
+allow system_server qtaguid_device:chr_file { read open };
+allow system_server rild:file getattr;
+allow system_server wifi_data_file:dir search;
+allow system_server wifi_data_file:file setattr;
+
+# 20131024 Sanity_04
+allow system_server mnld:unix_stream_socket connectto;
+allow system_server mnld_socket:sock_file write;
+allow system_server system_data_file:sock_file { create setattr };
+
+# 20131024 CTS_02
+allow system_server agpsd_socket:sock_file write;
+allow system_server alarm_device:chr_file write;
+allow system_server ashmem_device:chr_file execute;
+allow system_server atci_service:file getattr;
+allow system_server atcid:file getattr;
+allow system_server ccci_mdinit:file getattr;
+allow system_server dm_agent_binder:binder call;
+allow system_server dumpstate:file getattr;
+allow system_server dumpstate:unix_stream_socket read;
+allow system_server featured:file getattr;
+allow system_server init:file getattr;
+allow system_server mdns_socket:sock_file write;
+allow system_server mediaserver:binder transfer;
+allow system_server mtk_agpsd:unix_stream_socket connectto;
+allow system_server netd:file getattr;
+allow system_server netd_socket:sock_file write;
+allow system_server nfc:dir { read open };
+allow system_server nfc:file write;
+allow system_server node:udp_socket node_bind;
+allow system_server nvram_daemon:dir search;
+allow system_server nvram_daemon:file read;
+allow system_server self:netlink_kobject_uevent_socket { bind create setopt };
+allow system_server self:udp_socket { write bind read setopt };
+allow system_server servicemanager:file getattr;
+allow system_server usbaccessory_device:chr_file { read write };
+allow system_server vold:file getattr;
+allow system_server vold:unix_stream_socket connectto;
+allow system_server zygote:unix_stream_socket connectto;
+allow system_server zygote_socket:sock_file write;
+
+
+# 20131028 CTS_03
+allow system_server aal:file getattr;
+allow system_server backup_data_file:dir { write getattr add_name };
+allow system_server backup_data_file:file { write getattr read create open ioctl };
+allow system_server cache_backup_file:dir getattr;
+allow system_server drmserver:file getattr;
+allow system_server dumpstate:dir search;
+allow system_server dumpstate:fd use;
+allow system_server dumpstate:file { read open };
+allow system_server hald:file getattr;
+allow system_server matv:file getattr;
+allow system_server mediaserver:file getattr;
+allow system_server nvram_daemon:file { getattr open };
+allow system_server surfaceflinger:file getattr;
+allow system_server usbaccessory_device:chr_file { ioctl open };
+allow system_server vtservice:file getattr;
+allow system_server zygote:file getattr;
+
+
+# 20131028 CTS_04
+allow system_server BGW:file getattr;
+allow system_server GoogleOtaBinder:file getattr;
+allow system_server app_data_file:file write;
+allow system_server backup_data_file:dir { read remove_name open };
+allow system_server backup_data_file:file unlink;
+allow system_server bmm050d:file getattr;
+allow system_server bootanimation:file getattr;
+allow system_server device:dir read;
+allow system_server dm_agent_binder:file getattr;
+allow system_server keystore:file getattr;
+allow system_server media_app:fd use;
+allow system_server mtk_agpsd:file getattr;
+allow system_server mtkbt:file getattr;
+allow system_server nfc:process sigkill;
+allow system_server nvram_agent_binder:file getattr;
+allow system_server sdcard_external:file write;
+allow system_server sn:file getattr;
+allow system_server system_data_file:sock_file write;
+allow system_server thermal:file getattr;
+allow system_server thermald:file getattr;
+allow system_server untrusted_app:fd use;
+allow system_server untrusted_app:process { signal getsched };
+allow system_server untrusted_app:udp_socket { read write };
+allow system_server usb_device:chr_file { read write open };
+allow system_server usb_device:dir { read open };
+
+
+# 20131028 Sanity_05
+allow system_server clatd:dir search;
+allow system_server clatd:file { read open };
+allow system_server mali_device:chr_file { getattr open };
+allow system_server mdlogger:binder call;
+allow system_server self:tcp_socket shutdown;
+
+# 20131028 Sanity_07
+allow system_server clatd:file getattr;
+
+# 20131028 CTS_05
+allow system_server adbd:file getattr;
+allow system_server em_svr:file getattr;
+allow system_server init_shell:file getattr;
+allow system_server resmon:file getattr;
+
+
+# 20131028 CTS_06
+allow system_server shared_app:process signal;
+
+
+# 20131028 CTS_07
+allow system_server system_data_file:sock_file unlink;
+
+
+# 20131028 Sanity_12
+allow system_server release_app:fd use;
+
+# 20131028 CTS_08
+allow system_server atci_service:dir { read open };
+allow system_server atcid:dir { read open };
+allow system_server dontpanic_data_file:dir search;
+allow system_server init:dir { read open };
+allow system_server kernel:dir { read open };
+
+
+# 20131028 CTS_09
+allow system_server ccci_fsd:dir { read open };
+allow system_server featured:dir { read open };
+allow system_server logwrapper:dir { read open };
+allow system_server servicemanager:dir { read open };
+allow system_server vold:dir { read open };
+
+
+# 20131028 CTS_10
+allow system_server platform_app:process getsched;
+
+
+# 20131028 CTS_11
+allow system_server adbd:unix_stream_socket setopt;
+allow system_server devpts:chr_file { read write };
+
+
+# 20131028 CTS_13
+allow system_server aee_aed:dir { read open };
+allow system_server backup_data_file:dir create;
+allow system_server ccci_mdinit:dir { read open };
+allow system_server dalvikcache_data_file:dir { read open };
+allow system_server mobile_log_d:dir { read open };
+allow system_server netd:dir { read open };
+allow system_server netdiag:dir { read open };
+allow system_server system_data_file:dir relabelfrom;
+
+
+# 20131028 CTS_18
+allow system_server aal:dir { read open };
+allow system_server drmserver:dir { read open };
+allow system_server hald:dir { read open };
+allow system_server surfaceflinger:dir { read open };
+allow system_server zygote:dir { read open };
+
+
+# 20131028 CTS_20
+allow system_server default_prop:property_service set;
+
+
+# 20131119 FeatureSQC
+allow system_server adbd:unix_stream_socket setopt;
+allow system_server asec_apk_file:file { read getattr open };
+allow system_server backup_data_file:dir create;
+allow system_server cache_file:dir { write relabelfrom create add_name remove_name };
+allow system_server cache_file:file { write create unlink open };
+allow system_server dalvikcache_data_file:dir { read open };
+allow system_server devpts:chr_file { read write };
+allow system_server dnsmasq:dir search;
+allow system_server dnsmasq:file { read getattr open };
+allow system_server dontpanic_data_file:dir search;
+allow system_server logwrapper:binder call;
+allow system_server platform_app:process getsched;
+allow system_server platform_app_data_file:dir search;
+allow system_server release_app:fd use;
+allow system_server sdcard_external:file read;
+allow system_server sdcardd:dir search;
+allow system_server sdcardd:file { read getattr open };
+allow system_server system_data_file:dir relabelfrom;
+allow system_server system_data_file:lnk_file create;
+allow system_server systemkeys_data_file:dir { write search add_name };
+allow system_server systemkeys_data_file:file { write getattr read create open ioctl };
+allow system_server wpa:dir search;
+allow system_server wpa:file { read getattr open };
+allow system_server wpa:unix_dgram_socket sendto;
+
+
+# 20131121 Sanity_QA
+allow system_server dfo_socket:sock_file write;
+allow system_server emcsmdlogger:binder call;
+allow system_server emcsmdlogger:dir search;
+allow system_server emcsmdlogger:file { read open };
+allow system_server featured:unix_stream_socket connectto;
+allow system_server healthd:binder { transfer call };
+allow system_server healthd:dir search;
+allow system_server healthd:file { read getattr open };
+allow system_server init:unix_stream_socket write;
+allow system_server logwrapper:binder transfer;
+allow system_server logwrapper:fd use;
+allow system_server logwrapper:process { signal sigchld };
+allow system_server logwrapper:unix_stream_socket { read write };
+allow system_server logwrapper_tmpfs:file read;
+allow system_server media_app:process signal;
+allow system_server self:netlink_socket create;
+allow system_server wpa_wlan0_socket:sock_file write;
+
+
+
+# 20131122 Add Set Property Rule
+allow system_server property_type:property_service set;
+
+# 20131213 KKMR1_CTS_01
+allow system_server apk_tmp_file:file unlink;
+allow system_server device:chr_file { write getattr };
+allow system_server dumpstate:unix_stream_socket { getopt getattr };
+allow system_server emcsmdlogger:file getattr;
+allow system_server init_shell:binder call;
+allow system_server memsicd3416x:dir search;
+allow system_server memsicd3416x:file { read getattr open };
+allow system_server sdcard_internal:file { write getattr };
+allow system_server wifi_data_file:sock_file unlink;
+
+
+# 20131213 KKMR1_CQ_01
+allow system_server BGW:dir { read open };
+allow system_server GoogleOtaBinder:dir { read open };
+allow system_server adbd_socket:sock_file write;
+allow system_server aee_aed:process { signal sigchld };
+allow system_server apk_tmp_file:file unlink;
+allow system_server app_data_file:file getattr;
+allow system_server asec_apk_file:dir { read open };
+allow system_server backup_data_file:dir search;
+allow system_server batterywarning:dir { read open };
+allow system_server bmm050d:dir { read open };
+allow system_server bootanimation:dir { read open };
+allow system_server cache_file:file ioctl;
+allow system_server debuggerd:dir search;
+allow system_server debuggerd:file { read getattr open };
+allow system_server device:chr_file { write getattr };
+allow system_server device:dir { write remove_name };
+allow system_server device:file { getattr unlink open };
+allow system_server devpts:chr_file getattr;
+allow system_server dhcp6c:dir search;
+allow system_server dhcp6c:file { read getattr open };
+allow system_server dhcp_data_file:file { read getattr open };
+allow system_server dm_agent_binder:dir { read open };
+allow system_server dumpstate:unix_stream_socket { getopt getattr };
+allow system_server em_svr:dir { read open };
+allow system_server emcsmdlogger:dir search;
+allow system_server emcsmdlogger:file { read getattr open };
+allow system_server gsm0710muxd:dir { read open };
+allow system_server healthd:binder { transfer call };
+allow system_server healthd:dir { read search open };
+allow system_server healthd:file { read getattr open };
+allow system_server hostapd:dir search;
+allow system_server hostapd:file { read getattr open };
+allow system_server hostapd:unix_dgram_socket sendto;
+allow system_server init:binder { transfer call };
+allow system_server init:process signal;
+allow system_server init:unix_dgram_socket sendto;
+allow system_server init:unix_stream_socket { read write setopt };
+allow system_server init_shell:binder { transfer call };
+allow system_server init_shell:dir { read open };
+allow system_server init_tmpfs:file read;
+allow system_server input_device:dir search;
+allow system_server installd:dir { read open };
+allow system_server ipod:binder call;
+allow system_server ipod:dir search;
+allow system_server ipod:file { read getattr open };
+allow system_server isolated_app:binder call;
+allow system_server isolated_app:dir { read search open };
+allow system_server isolated_app:file { read write getattr open };
+allow system_server isolated_app:process sigkill;
+allow system_server kernel:process signal;
+allow system_server kernel:system module_request;
+allow system_server keystore:dir { read open };
+allow system_server lcdc_screen_cap:dir search;
+allow system_server lcdc_screen_cap:file { read getattr open };
+allow system_server logwrapper:binder transfer;
+allow system_server logwrapper:fd use;
+allow system_server logwrapper:process sigchld;
+allow system_server logwrapper:unix_stream_socket { write read connectto };
+allow system_server logwrapper_tmpfs:file read;
+allow system_server matv:dir { read open };
+allow system_server mdlogger:dir { read open };
+allow system_server mdnsd:dir search;
+allow system_server mdnsd:file { read getattr open };
+allow system_server mediaserver:dir { read open };
+allow system_server mediaserver:process signal;
+allow system_server mediaserver:tcp_socket { read write getattr setopt getopt };
+allow system_server mediaserver:udp_socket { read write getattr setopt getopt };
+allow system_server memsicd3416x:dir search;
+allow system_server memsicd3416x:file { read getattr open };
+allow system_server mnld:dir { read open };
+allow system_server mobile_log_d:process signal;
+allow system_server mtk_agpsd:dir { read open };
+allow system_server mtkbt:dir { read open };
+allow system_server mtp:dir search;
+allow system_server mtp:file { read getattr open };
+allow system_server mtp:unix_stream_socket connectto;
+allow system_server mtpd_socket:sock_file write;
+allow system_server nvram_agent_binder:dir { read open };
+allow system_server ppp:dir search;
+allow system_server ppp:file { read getattr open };
+allow system_server qemu_device:chr_file { read write open };
+allow system_server qemud:dir search;
+allow system_server racoon_socket:sock_file write;
+allow system_server resmon:dir { read open };
+allow system_server resmon:process signal;
+allow system_server rild:dir { read open };
+allow system_server screencap:dir search;
+allow system_server screencap:file { read getattr open };
+allow system_server sdcard_internal:file { write read getattr };
+allow system_server sdcardd:dir { read open };
+allow system_server self:netlink_socket { read bind create write };
+allow system_server self:process ptrace;
+allow system_server shared_app:process getsched;
+allow system_server surfaceflinger:process signal;
+allow system_server system_app:fd use;
+allow system_server system_app:process { setsched getsched };
+allow system_server thermal:dir { read open };
+allow system_server thermald:dir { read open };
+allow system_server tmpfs:dir { write create add_name };
+allow system_server tmpfs:file ioctl;
+allow system_server ueventd:dir search;
+allow system_server ueventd:file { read getattr open };
+allow system_server unlabeled:sock_file { create unlink getattr setattr };
+allow system_server untrusted_app:fifo_file { write getattr };
+allow system_server untrusted_app:process setsched;
+allow system_server untrusted_app:udp_socket { getopt getattr };
+allow system_server vpn_data_file:dir { write remove_name };
+allow system_server vpn_data_file:file { read getattr unlink };
+allow system_server vtservice:dir { read open };
+allow system_server wallpaper_file:file unlink;
+allow system_server wifi_data_file:sock_file { write unlink };
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow system_server GoogleOtaBinder:dir { read open };
+allow system_server adb_keys_file:dir { write add_name };
+allow system_server adb_keys_file:file { write getattr setattr read create open append };
+allow system_server adbd:binder { transfer call };
+allow system_server adbd:dir { read open };
+allow system_server adbd_socket:sock_file write;
+allow system_server aee_aed:process sigchld;
+allow system_server aee_aed_tmpfs:file setattr;
+allow system_server akmd8963:dir { read search open };
+allow system_server akmd8963:file { read getattr open };
+allow system_server apk_tmp_file:file unlink;
+allow system_server app_data_file:file getattr;
+allow system_server backup_data_file:file rename;
+allow system_server batterywarning:binder call;
+allow system_server cache_backup_file:file { write read getattr unlink open };
+allow system_server cache_file:file ioctl;
+allow system_server dalvikcache_data_file:dir { write remove_name };
+allow system_server dalvikcache_data_file:file unlink;
+allow system_server device:chr_file { write getattr };
+allow system_server devpts:chr_file getattr;
+allow system_server dm_agent_binder:dir { read open };
+allow system_server emcsmdlogger:dir { read open };
+allow system_server emcsmdlogger:file getattr;
+allow system_server healthd:dir { read open };
+allow system_server hostapd:dir search;
+allow system_server hostapd:file { read open };
+allow system_server hostapd:unix_dgram_socket sendto;
+allow system_server init:binder { transfer call };
+allow system_server init:unix_dgram_socket sendto;
+allow system_server init:unix_stream_socket { read setopt };
+allow system_server init_shell:binder { transfer call };
+allow system_server init_tmpfs:file read;
+allow system_server installd:dir { read open };
+allow system_server ipod:binder call;
+allow system_server ipod:dir search;
+allow system_server ipod:file { read getattr open };
+allow system_server keystore:dir read;
+allow system_server lcdc_screen_cap:dir search;
+allow system_server lcdc_screen_cap:file { read getattr open };
+allow system_server matv:dir { read open };
+allow system_server mediaserver:dir { read open };
+allow system_server mediaserver:tcp_socket { read getopt getattr write setopt };
+allow system_server mediaserver:udp_socket { read write getattr getopt };
+allow system_server memsicd3416x:dir { read search open };
+allow system_server memsicd3416x:file { read getattr open };
+allow system_server mtkbt:dir { read open };
+allow system_server nvram_agent_binder:dir read;
+allow system_server resmon:dir { read open };
+allow system_server sdcard_internal:file { write read getattr };
+allow system_server self:process ptrace;
+allow system_server sn:dir { read open };
+allow system_server terservice:dir search;
+allow system_server terservice:file { read open };
+allow system_server tmpfs:dir remove_name;
+allow system_server tmpfs:file { rename write lock create unlink open append };
+allow system_server tmpfs:sock_file create;
+allow system_server ueventd:dir { read open };
+allow system_server unlabeled:sock_file { create getattr setattr };
+allow system_server usb_device:dir search;
+allow system_server vdc:dir search;
+allow system_server vdc:file { read getattr open };
+allow system_server vpn_data_file:dir search;
+allow system_server vpn_data_file:file open;
+allow system_server vtservice:dir { read open };
+allow system_server wifi_data_file:sock_file unlink;
+allow system_server wpa:dir { read open };
+allow system_server wpa_socket:sock_file unlink;
+

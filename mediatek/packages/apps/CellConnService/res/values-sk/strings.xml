@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="app_name">CellConnectionService</string>
+	<string name="button_ok">OK</string>
+	<string name="button_cancel">"Zrušiť"</string>
+	<string name="confirm_radio_title">Karta SIM je vypnutá</string>
+	<string name="confirm_radio_title_uim">Karta UIM je vypnutá</string>
+	<string name="confirm_radio_title_card">Karta je vypnutá</string>
+
+	<string name="confirm_radio_msg"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> je teraz vypnutá. Chcete zapnúť túto kartu SIM?</string>
+  <string name="confirm_radio_msg_uim"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> je teraz vypnutá. Chcete zapnúť túto kartu UIM?</string>
+  <string name="confirm_radio_msg_card"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> je teraz vypnutá. Chcete zapnúť túto kartu?</string>
+
+	<string name="confirm_radio_flight_mode_on_and_msg">Režim Lietadlo je zapnutý a</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> je teraz vypnutá. Chcete vypnúť režim Lietadlo a zapnúť túto kartu SIM?</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg_uim"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> je teraz vypnutá. Chcete vypnúť režim Lietadlo a zapnúť túto kartu UIM?</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg_card"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> je teraz vypnutá. Chcete vypnúť režim Lietadlo a zapnúť túto kartu?</string>	
+	<string name="confirm_radio_flight_mode_on_sim_on_msg">Režim Lietadlo je zapnutý. Chcete vypnúť režim Lietadlo?</string>  
+	<string name="confirm_radio_msg_single">Režim Lietadlo je teraz zapnutý. Chcete ho vypnúť?</string>
+	<string name="confirm_pin_title">Karta SIM je zablokovaná</string>
+	<string name="confirm_pin_title_uim">Karta UIM je zablokovaná</string>
+	<string name="confirm_pin_title_card">Karta je zablokovaná</string>
+	<string name="confirm_pin_msg">Vybraná karta SIM je teraz zablokovaná. Najskôr ju odblokujte.</string>
+	<string name="confirm_pin_msg_uim">Vybraná karta UIM je teraz zablokovaná. Najskôr ju odblokujte.</string>
+	<string name="confirm_pin_msg_card">Vybraná karta je teraz zablokovaná. Najskôr ju odblokujte.</string>
+	<string name="confirm_simmelock_title">Karta SIM ME je zablokovaná</string>
+	<string name="confirm_simmelock_msg">Vybraná zásuvka pre kartu SIM je teraz zablokovaná. Najskôr ju odblokujte.</string>
+	<string name="confirm_simmelock_msg_uim">Vybraná zásuvka pre kartu UIM je teraz zablokovaná. Najskôr ju odblokujte.</string>
+	<string name="confirm_simmelock_msg_card">Vybraná zásuvka je teraz zablokovaná. Najskôr ju odblokujte.</string>
+	<string name="confirm_fdn_title">FND sú povolené</string>
+	<string name="confirm_fdn_msg">Vytáčania vopred stanovených čísel je povolené.</string>
+	<string name="confirm_roaming_title">Upozornenie na roaming</string>
+	<string name="confirm_roaming_msg">Karta SIM, ktorú sa chystáte použiť, je teraz v režime roamingu. Teraz nie je k dispozícii žiadna miestna karta SIM. Chcete pokračovať?</string>
+	<string name="confirm_roaming_msg_uim">Karta UIM, ktorú sa chystáte použiť, je teraz v režime roamingu. Teraz nie je k dispozícii žiadna miestna karta UIM. Chcete pokračovať?</string>
+	<string name="confirm_roaming_msg_card">Karta, ktorú sa chystáte použiť, je teraz v režime roamingu. Teraz nie je k dispozícii žiadna miestna karta. Chcete pokračovať?</string>
+  <string name="confirm_roaming_withPrefer_msg">SIM Karta, ktorú sa chystáte použiť, je teraz v režime roamingu. Chcete pokračovať cez miestnu kartu SIM?</string>
+  <string name="confirm_roaming_withPrefer_msg_uim">SIM Karta, ktorú sa chystáte použiť, je teraz v režime roamingu. Chcete pokračovať cez miestnu kartu UIM?</string>
+  <string name="confirm_roaming_withPrefer_msg_card">SIM Karta, ktorú sa chystáte použiť, je teraz v režime roamingu. Chcete pokračovať cez miestnu kartu?</string>
+  <string name="confirm_roaming_lbutton">"Pokračovať"</string>
+  <string name="confirm_roaming_rbutton">"Zrušiť"</string>
+  <string name="confirm_roamingWithPrefer_lbutton">Miestna karta SIM</string>
+  <string name="confirm_roamingWithPrefer_lbutton_uim">Miestna karta UIM</string>
+  <string name="confirm_roamingWithPrefer_lbutton_card">Miestna karta</string>
+  <string name="confirm_roamingWithPrefer_rbutton">Karta SIM je v režime roamingu</string>
+  <string name="confirm_roamingWithPrefer_rbutton_uim">Karta UIM je v režime roamingu</string>
+  <string name="confirm_roamingWithPrefer_rbutton_card">Karta je v režime roamingu</string>
+	<string name="confirm_roaming_for3Sims_msg">Karta SIM, ktorú sa chystáte použiť, je teraz v režime roamingu. Chcete pokračovať?</string>
+  <string name="confirm_roaming_for3Sims_msg_uim">Karta UIM, ktorú sa chystáte použiť, je teraz v režime roamingu. Chcete pokračovať?</string>
+  <string name="confirm_roaming_for3Sims_msg_card">Karta, ktorú sa chystáte použiť, je teraz v režime roamingu. Chcete pokračovať?</string>
+	<string name="confirm_radio_lbutton">Zapnúť</string>
+	<string name="confirm_unlock_lbutton">Odblokovať</string>
+	<string name="confirm_unlock_fail">Operácia je zrušená</string>
+	<string name="confirm_turnon_radio_fail">Operácia je zrušená</string>
+	<string name="confirm_permit_roaming_fail">Túto akciu môžete zrušiť na karte SIM v režime roamingu</string>
+	<string name="confirm_permit_roaming_fail_uim">Túto akciu môžete zrušiť na karte UIM v režime roamingu</string>
+	<string name="confirm_permit_roaming_fail_card">Túto akciu môžete zrušiť na karte v režime roamingu</string>
+	<string name="confirm_sim_locked_message">Karta SIM je trvale zablokovaná</string>
+	<string name="confirm_sim_locked_message_uim">Karta UIM je trvale zablokovaná</string>
+	<string name="confirm_sim_locked_message_card">Karta je trvale zablokovaná</string>	
+    <string name="confirm_slot_locked_message">Zásuvka je trvale zablokovaná</string>
+	<string name="button_yes">"Áno"</string>  
+	<string name="button_no">"Nie"</string>  
+</resources>

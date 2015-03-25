@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="confirm_radio_msg">%1$s في وضع إيقاف الآن. هل ترغب في تشغيل بطاقة SIM هذه؟</string>
+    <string name="button_cancel">إلغاء</string>
+    <string name="app_name">CellConnectionService</string>
+    <string name="confirm_fdn_title">تمكين FDN</string>
+    <string name="button_ok">موافق</string>
+    <string name="confirm_roaming_title">تحذير التجوال</string>
+    <string name="confirm_simmelock_title">بطاقة SIM ME  مقفلة</string>
+    <string name="confirm_pin_title">بطاقة SIM مقفلة</string>
+    <string name="confirm_radio_title">بطاقة SIM قيد إيقاف التشغيل</string>
+    <string name="confirm_roaming_msg">بطاقة SIM التي على وشك استخدامها في وضع التجوال الآن، لا توجد بطاقة SIM محلية الآن، هل ترغب في الاستمرار؟</string>
+  <string name="confirm_roaming_withPrefer_msg">ببطاقة SIM التي على وشك استخدامها في وضع التجوال الآن. هل ترغب في الاستمرار عبر SIM محلية؟</string>
+  <string name="confirm_roaming_lbutton">استمرار</string>
+  <string name="confirm_roaming_rbutton">إلغاء</string>
+  <string name="confirm_roamingWithPrefer_lbutton">بطاقة SIM محلية</string>
+  <string name="confirm_roamingWithPrefer_rbutton">طاقبطاقة SIM تجوال</string>
+    <string name="confirm_fdn_msg">تم تمكين أرقام الاتصال الثابت.</string>
+    <string name="confirm_pin_msg">بطاقة SIM المحددة مقفلة الآن. يرجى إلغاء القفل أولاً.</string>
+    <string name="confirm_simmelock_msg">فتحة بطاقة SIM المحددة مقفلة الآن. يرجى إلغاء القفل أولاً.</string>
+    <string name="confirm_radio_lbutton">تشغيل</string>
+    <string name="confirm_turnon_radio_fail">تم إلغاء العملية</string>
+    <string name="confirm_unlock_fail">تم إلغاء العملية</string>
+    <string name="confirm_unlock_lbutton">إلغاء القفل</string>
+    <string name="confirm_permit_roaming_fail">ستقوم بإلغاء هذا الإجراء في بطاقة SIM للتجوال</string>
+   <string name="confirm_radio_msg_single">وضع الطيران قيد التشغيل الآن، هل ترغب في إيقاف تشغيله؟</string>
+   <string name="confirm_sim_locked_message">تم قفا بطاقة SIM بشكل دائم</string>
+   <string name="confirm_slot_locked_message">تم قفل الفتحة بشكل دائم</string>
+<string name="confirm_radio_title_uim">بطاقة UIM مغلقة</string>
+    <string name="confirm_radio_title_card">بطاقة مغلقة</string>
+    <string name="confirm_radio_msg_uim"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		قيد إيقاف التشغيل الآن. هل ترغب في تشغيل بطاقة UIM هذه؟</string>
+    <string name="confirm_radio_msg_card"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		قيد إيقاف التشغيل الآن. هل ترغب في تشغيل هذه البطاقة؟</string>
+    <string name="confirm_radio_flight_mode_on_and_msg">وضع الطيران قيد التشغيل و</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> 		قيد إيقاف التشغيل الآن. هل ترغب في إيقاف تشغيل وضع الطيران وتشغيل بطاقة SIM؟</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg_uim"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> 		قيد إيقاف التشغيل الآن. هل ترغب في إيقاف تشغيل وضع الطيران وتشغيل بطاقة UIM؟</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg_card"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> 		قيد إيقاف التشغيل الآن. هل ترغب في إيقاف تشغيل وضع الطيران وتشغيل هذه البطاقة؟</string>
+    <string name="confirm_radio_flight_mode_on_sim_on_msg">وضع الطيران قيد التشغيل. هل ترغب في إيقاف وضع الطيران؟</string>
+    <string name="confirm_pin_title_uim">UIM مقفلة</string>
+    <string name="confirm_pin_title_card">البطاقة مقفلة</string>
+    <string name="confirm_pin_msg_uim">بطاقة UIM المحددة مقفلة الآن. يرجى إلغاء القفلً 		أولاً.</string>
+    <string name="confirm_pin_msg_card">البطاقة المحددة مقفلة الآن. يرجى إلغاء القفل 		أولاً.</string>
+    <string name="confirm_simmelock_msg_uim">بطاقة UIM المحددة مقفلة الآن. يرجى إلغاء القفل أولاً. 		أولاً.</string>
+    <string name="confirm_simmelock_msg_card">البطاقة المحددة مقفلة الآن. يرجى إلغاء القفل 		أولاً.</string>
+    <string name="confirm_roaming_msg_uim">بطاقة UIM التي ستستخدمها 		في التجوال الآن, لم تتوفر بطاقة UIM المحلية حتى الآن, هل ترغب في المتابعة؟</string>
+    <string name="confirm_roaming_msg_card">البطاقة التي ستستخدمها 		في التجوال الآن لم تتوفر بطاقة محلية حتى الآن, هل ترغب في المتابعة؟</string>
+    <string name="confirm_roaming_withPrefer_msg_uim">بطاقة SIM التي ستستخدمها في التجوال الآن, هل ترعب في المتابعة عبر بطاقة UIM المحلية؟</string>
+    <string name="confirm_roaming_withPrefer_msg_card">بطاقة SIM التي ستستخدمها في التجوال الآن, هل ترغب في المتابعة عبر البطاقة المحلية؟</string>
+    <string name="confirm_roamingWithPrefer_lbutton_uim">بطاقة UIM المحلية</string>
+    <string name="confirm_roamingWithPrefer_lbutton_card">البطاقة المحلية</string>
+    <string name="confirm_roamingWithPrefer_rbutton_uim">بطاقة UIM المتجولة</string>
+    <string name="confirm_roamingWithPrefer_rbutton_card">البطاقة المتجولة</string>
+    <string name="confirm_roaming_for3Sims_msg">بطاقة SIM التي ستستخدمها 		في التجوال الآن, هل ترغب في المتابعة؟</string>
+    <string name="confirm_roaming_for3Sims_msg_uim">بطاقة UIM التي ستستخدمها 		في التجوال الآن, هل ترغب في المتابعة؟</string>
+    <string name="confirm_roaming_for3Sims_msg_card">البطاقة التي ستستخدمها 		في التجوال الآن, هل ترغب في المتابعة؟</string>
+    <string name="confirm_permit_roaming_fail_uim">ستقوم بإلغاء هذا الإجراء في بطاقة UIM للتجوال</string>
+    <string name="confirm_permit_roaming_fail_card">ستقوم بإلغاء هذا الإجراء في بطاقة التجوال</string>
+    <string name="confirm_sim_locked_message_uim">تم إغلاق بطاقة UIM بصورة دائمة</string>
+    <string name="confirm_sim_locked_message_card">تم إغلاق البطاقة بصورة دائمة</string>
+    <string name="button_yes">"نعم"</string>
+    <string name="button_no">"لا"</string>
+    </resources>

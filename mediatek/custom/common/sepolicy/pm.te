@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binpm Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type pm_exec , exec_type, file_type;
+type pm ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive pm;
+init_daemon_domain(pm)
+
+
+# 20131122 Add Set Property Rule
+allow pm  property_type:property_service set;

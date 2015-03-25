@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/ll_time_divider"
+        layout="@layout/time_diviter_item" />
+
+    <com.hissage.ui.view.NmsAllMediaCustomGridView
+        android:id="@+id/cgv_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="@dimen/all_media_thumb_width"
+        android:gravity="center"
+        android:horizontalSpacing="8dip"
+        android:numColumns="auto_fit"
+        android:padding="8dip"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" >
+    </com.hissage.ui.view.NmsAllMediaCustomGridView>
+
+</LinearLayout>

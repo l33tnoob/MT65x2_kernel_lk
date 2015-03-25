@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright Statement:
+ *
+ * This software/firmware and related documentation ("MediaTek Software") are
+ * protected under relevant copyright laws. The information contained herein
+ * is confidential and proprietary to MediaTek Inc. and/or its licensors.
+ * Without the prior written permission of MediaTek inc. and/or its licensors,
+ * any reproduction, modification, use or disclosure of MediaTek Software,
+ * and information contained herein, in whole or in part, shall be strictly prohibited.
+ *
+ * MediaTek Inc. (C) 2012. All rights reserved.
+ *
+ * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+ * THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+ * RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO RECEIVER ON
+ * AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+ * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+ * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+ * SUPPLIED WITH THE MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+ * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+ * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+ * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+ * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+ * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+ * CUMULATIVE LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+ * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+ * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+ * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+ *
+ * The following software/firmware and/or related documentation ("MediaTek Software")
+ * have been modified by MediaTek Inc. All revisions are subject to any receiver's
+ * applicable license agreements with MediaTek Inc.
+ */
+-->
+<resources>
+    <string name="rcs_settings_label_clear">Clear</string>
+	<string name="rcs_settings_label_ok">OK</string>
+	<string name="rcs_settings_label_cancel">Cancel</string>
+	<string name="integrated_mode">Integrated Mode</string>
+	<string name="debug_mode">Debug Mode</string>
+	<string name="debug_mode_live">Live Sim</string>
+	<string name="debug_mode_dummy">Dummy Sim</string>
+	<string name="full_integrated_mode">Fully Integrated Mode</string>
+	<string name="converged_integrated_mode">Converged Inbox Mode</string>
+    <string name="rcs_settings_title_settings">Settings</string>
+	<string name="rcs_settings_title_about">About joyn</string>
+	<string name="rcs_settings_title_userprofile_settings">User profile settings</string>
+	<string name="rcs_settings_title_presence_settings">Presence settings</string>
+	<string name="rcs_settings_title_presence_invitation">Presence invitation settings</string>
+    <string name="rcs_settings_title_freetexts">Predefined freetexts</string>
+	<string name="rcs_settings_title_messaging_settings">Messaging settings</string>
+	<string name="rcs_settings_title_filetransfer_invitation">File transfer invitation settings</string>
+	<string name="rcs_settings_title_chat_invitation">Chat invitation settings</string>
+    <string name="rcs_settings_title_edit_freetext">Type your free text</string>
+	<string name="rcs_settings_title_csh_settings">Content sharing settings</string>
+	<string name="rcs_settings_title_csh_invitation">Content sharing invitation settings</string>
+	<string name="rcs_settings_title_csh_available">Content sharing notification</string>
+
+	<string name="rcs_settings_menu_about">About</string>
+	<string name="rcs_settings_menu_help">More infos</string>
+
+	<string name="rcs_settings_summary_csh_ringtone">Ringtone for incoming content sharing invitation</string>
+	<string name="rcs_settings_summary_csh_settings">Manage content sharing settings</string>
+	<string name="rcs_settings_summary_csh_vibrate">Vibrate for incoming content sharing invitation</string>
+	<string name="rcs_settings_summary_presence_settings">Manage presence settings</string>
+	<string name="rcs_settings_summary_messaging_settings">Manage messaging settings</string>
+	<string name="rcs_settings_summary_presence_vibrate">Vibrate for incoming presence sharing invitation</string>
+	<string name="rcs_settings_summary_filetransfer_vibrate">Vibrate for incoming file transfer invitation</string>
+	<string name="rcs_settings_summary_chat_vibrate">Vibrate for incoming chat invitation</string>
+	<string name="rcs_settings_summary_presence_ringtone">Ringtone for incoming presence sharing invitation</string>
+	<string name="rcs_settings_summary_filetransfer_ringtone">Ringtone for incoming file transfer invitation</string>
+	<string name="rcs_settings_summary_chat_ringtone">Ringtone for incoming chat invitation</string>
+    <string name="rcs_settings_summary_chat_displayed_notification">Send displayed notification during a chat</string>
+    <string name="rcs_settings_summary_rcs_service_on">Select to turn off the joyn service</string>
+    <string name="rcs_settings_summary_rcs_service_off">Select to turn on the joyn service</string>
+    <string name="rcs_settings_summary_rcs_roaming">Connect to joyn service when roaming</string>
+	<string name="rcs_settings_summary_edit_freetext">Edit your predefined free text</string>
+	<string name="rcs_settings_summary_csh_available">Beep when a content sharing may be initiated during the voice call</string>
+    <string name="rcs_settings_summary_min_battery_level">Stop the joyn service if battery low</string>
+    <string name="rcs_settings_summary_min_storage">Disable File transfer and Image sharing capabilities if memory low</string>
+    
+	<string name="rcs_settings_label_beep">Phone beep</string>
+    <string name="rcs_settings_label_vibrate">Phone vibrate</string>
+    <string name="rcs_settings_label_ringtone">Phone ringtone</string>
+    <string name="rcs_settings_label_displayed_notification">Displayed notification</string>
+    <string name="rcs_settings_label_rcs_service">joyn service</string>
+    <string name="rcs_settings_label_rcs_roaming">Roaming</string>
+	<string name="rcs_settings_label_confirm">Confirmation</string>
+	<string name="rcs_settings_label_rcs_service_shutdown">joyn service will be terminated</string>
+    <string name="rcs_settings_label_rcs_service_roaming_shutdown">You are currently in roaming, joyn service will be terminated</string>
+	<string name="rcs_settings_label_about">joyn application</string>
+	<string name="rcs_settings_label_copyrights">Apache License Version 2.0</string>
+	<string name="rcs_settings_label_release">Release</string>
+<string name="rcs_settings_label_min_battery_level">Minimum battery level</string>
+    <string name="rcs_settings_label_default_min_battery_level">0</string>
+    <string-array name="rcs_settings_list_battery_level_value">
+        <item>0</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="rcs_settings_list_battery_level_label">
+        <item>Never stop</item>
+        <item>5%</item>
+        <item>10%</item>
+        <item>20%</item>
+    </string-array>
+
+    <string name="rcs_settings_label_min_storage">Minimum storage</string>
+    <string name="rcs_settings_label_default_min_storage">10240</string>
+    <string-array name="rcs_settings_list_storage_value">
+        <item>0</item>
+        <item>10240</item>
+        <item>51200</item>
+        <item>204800</item>
+    </string-array>
+    <string-array name="rcs_settings_list_storage_label">
+        <item>Never block</item>
+        <item>10MB</item>
+        <item>50MB</item>
+        <item>200MB</item>
+    </string-array>
+    <string name="rcse_settings_title">joyn settings</string>
+    <string name="rcse_settings_enable_rcse_service">Would you like to turn on joyn service now? You can switch joyn on/off in joyn settings</string>
+    <string name="rcse_settings_disable_rcse_service">joyn service will be terminated</string>
+    <string name="rcse_settings_enable_rcse_service_roaming">Allow joyn service when roaming? You may incur significant roaming charges!</string>
+    <string name="rcse_settings_disable_rcse_service_roaming">When roaming, joyn service will not work</string>
+    <string name="rcse_settings_disable_rcse_masterswitch">Disabling joyn will remove all your messages and data related to joyn. Are you sure you want to disable?</string>
+	<string name="rcs_settings_summary_userprofile_settings">Manage user profile settings</string>
+	<string name="rcs_settings_title_caller_id">Caller identity</string>
+	<string name="rcs_settings_title_displayname">Display name</string>
+	<string name="rcs_settings_summary_edit_displayname">Display name associated to my phone number in outgoing calls</string>
+    <string name="master_Switch_Title">Joyn master switch</string>
+	<string name="joyn_user_alias_title">Joyn user alias</string>
+    <string name="rcse_notification_settings">NOTIFICATION SETTINGS</string>
+    <string name="rcse_notification_title">Notifications</string>
+    <string name="rcse_notification_summary">Notify in system bar when message arrives</string>
+    <string name="rcse_ringtone_title">Ringtone</string>
+    <string name="rcse_ringtone_summary">Turn on the ringtone to reminder</string>
+    <string name="rcse_vibrate_title">Vibrate</string>
+    <string name="rcse_vibrate_summary">Turn on the vibrate to reminder</string>
+    <string name="rcse_large_file_reminder_title">Large file reminder</string>
+    <string name="rcse_large_file_reminder_summary">Remind when receiving large file via data connection</string>
+    <string name="rcse_ft_autoaccept_roaming">Enable to auto accept file transfer when roaming</string>
+    
+    <string name="rcse_ftautoaccept_title">File auto accept</string> 
+    <string name="rcse_ftautoaccept_summary">Accept incoming files without permission</string> 
+    <string name="rcse_ftautoaccept_nonroaming_title">File transfer </string> 
+    <string name="rcse_ftautoaccept_nonroaming_summary">Automatically accept received files</string> 
+    <string name="rcse_ftautoaccept_roaming_title">File transfer roaming </string> 
+    <string name="rcse_ftautoaccept_roaming_summary">Automatically accept received files when roaming</string> 
+    
+    <string name="rcse_send_read_receipt_title">Send read receipt</string>
+    <string name="rcse_send_read_receipt_summary">Notify you have read the messages</string>
+    <string name="rcse_privacy_settings">PRIVACY SETTINGS</string>
+    <string name="rcse_clear_history_title">Clear chat history</string>
+    <string name="rcse_storage_settings">STORAGE SETTINGS</string>
+    <string name="rcse_save_received_files_title">Save received files to</string>
+    <string name="rcse_save_received_files_summary">/mnt/sdcard/Joyn/received</string>
+    <string name="rcse_clear_chat_history_confirm_title">Clear chat history</string>
+    <string name="rcse_clear_chat_history_confirm_message">All the history will be deleted, and can not be recovered.</string>
+    <string name="rcse_clear_chat_history_clearing">Clearing...</string>
+    <string name="rcse_clear_chat_history_completed">Clear chat history successfully</string>
+    <string name="rcs_roaming_message_with_enable_roaming">You are currently in roaming,the \'Roaming\' settings is checked but will generate extra charges. Would you like to disable the service?</string>
+    <string name="rcs_roaming_message_with_disable_roaming">You are currently in roaming,and the \'Roaming\' settings is unchecked. The joyn service will be disabled!</string>
+    <string name="rcs_unroaming_message">You are not in roaming now!</string>
+    <string name="rcs_message_dialog_title">Roaming</string>
+	<string name="rcse_toast_profile_not_exist">Unable to select an MTK account, please insert a Vodafone SIM card or use Provisioning to implement a your own dummy account</string>
+    <string name="rcse_general_settings">GENERAL SETTINGS</string>
+    <string name="rcse_chat_wallpaper_title">Chat wallpaper</string>
+    <string name="rcse_chat_wallpaper_summary">Select default chat wallpaper</string>
+    <string name="text_choose_wallpaper_title">Choose wallpaper from</string>
+    <string name="text_set_wallpaper">Set wallpaper</string>
+    <string name="text_wallpaper">Wallpapers</string>
+    <string name="text_gallery">Gallery</string>
+    <string name="text_camera">Camera</string>
+    <string name="rcse_compress_image_summary">Compress image before sending</string>
+    <string name="rcse_compress_image_title">Compress image</string>
+    <string name="rcse_no_external_storage_for_file_transfer">Auto reject the file transfer because of no SD card detected!</string>
+    <string name="rcse_no_enough_storage_for_file_transfer">Auto reject the file transfer because of no enough storage!</string>
+    <string name="rcse_no_external_storage_for_image_share">Auto reject the image share because of no SD card detected!</string>
+    <string name="rcse_no_enough_storage_for_image_share">Auto reject the image share because of no enough storage!</string>
+</resources>

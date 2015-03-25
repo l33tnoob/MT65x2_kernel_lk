@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+        android:id="@+id/sleep_mode_contrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+	        <TextView
+	            android:layout_width="240dip"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dip"
+	            android:layout_marginLeft="10dip"
+	            android:text="@string/sleep_mode_6572" >
+	        </TextView>
+	
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal">
+	            <RadioGroup
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+	                <RadioButton android:id="@+id/sleep_mode_disable"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="10dip"
+	                    android:text="@string/sleep_mode_disable"/>
+                    <RadioButton android:id="@+id/sleep_mode_legacy_sleep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/sleep_mode_legacy_sleep"/>   
+                    <RadioButton android:id="@+id/sleep_mode_shutdown"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="10dip"
+	                    android:text="@string/sleep_mode_shutdown"/>       
+	            </RadioGroup>
+	        </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout
+        android:id="@+id/sleep_mode_wake_timer_contrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+	        <TextView
+	            android:layout_width="240dip"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dip"
+	            android:text="@string/sleep_mode_wakeup_timer" >
+	        </TextView>
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical">
+	                <RadioButton android:id="@+id/sleep_mode_timer_disable"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="10dip"
+	                    android:text="@string/sleep_mode_disable"/>
+	                <RadioButton android:id="@+id/sleep_mode_timer_fuel_gauge"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="10dip"
+	                    android:text="@string/sleep_mode_fuel_gauge"/>
+	                <LinearLayout 
+	                    android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:orientation="horizontal">
+                    <RadioButton android:id="@+id/sleep_mode_timer_val_set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"/>
+                    <EditText
+		                android:id="@+id/sleep_mode_timer_val"
+		                android:layout_width="100dip"
+		                android:layout_height="wrap_content"
+		                android:maxLength="7"
+		                android:numeric="integer" />
+      				<TextView
+			            android:layout_width="240dip"
+			            android:layout_height="wrap_content"
+			            android:text="@string/sleep_mode_timer_val_tip" />
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/sleep_mode_start_timer"
+			            android:layout_width="240dip"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="20dip"
+			            android:layout_marginTop="5dip"
+			            android:text="@string/sleep_mode_start_timer" />
+	        </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical">
+         <Button
+            android:id="@+id/sleep_mode_get_setting"
+            android:layout_width="240dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/sleep_mode_get_setting" >
+        </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

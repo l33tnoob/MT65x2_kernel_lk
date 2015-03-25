@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--
+        /* * Copyright (C) 2007-2008 Esmertec AG. * Copyright (C)
+        2007-2008 The Android Open Source Project * * Licensed under the
+        Apache License, Version 2.0 (the "License"); * you may not use
+        this file except in compliance with the License. * You may
+        obtain a copy of the License at * *
+        http://www.apache.org/licenses/LICENSE-2.0 * * Unless required
+        by applicable law or agreed to in writing, software *
+        distributed under the License is distributed on an "AS IS"
+        BASIS, * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+        express or implied. * See the License for the specific language
+        governing permissions and * limitations under the License. */
+    -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_label">Omacp</string>
+
+    <string name="configuration_message">Wiadomość konfiguracyjna</string>
+
+    <string name="notification_multiple">
+        Liczba nieprzeczytanych wiadomości:
+        <xliff:g id="count">%s</xliff:g>
+        .
+    </string>
+
+    <string name="notification_multiple_title">"Nowe wiadomości"</string>
+
+    <string name="view">"Wyświetl"</string>
+
+    <string name="delete">"Delete"</string>
+
+    <string name="view_message_detail">Wyświetl szczegóły wiadomości</string>
+
+    <string name="delete_all">Usuń wszystko</string>
+
+    <string name="message_options">"Opcje wiadomości"</string>
+
+    <string name="refreshing">Trwa odświeżanie\u2026</string>
+
+    <string name="no">"Anuluj"</string>
+
+    <string name="message_details_title">Szczegóły wiadomości</string>
+
+    <string name="installed_indicator">Zainstalowano</string>
+
+    <string name="message_type_label">Typ:\u0020</string>
+
+    <string name="from_label">Od:\u0020</string>
+
+    <string name="received_label">Odebrano:\u0020</string>
+
+    <string name="confirm_delete_all_messages">Wszystkie wiadomości zostaną usunięte.</string>
+
+    <string name="confirm_delete_message">"Wiadomość zostanie usunięta."</string>
+
+    <string name="full_install_text">Instalacja pełna</string>
+
+    <string name="custom_install_text">Instalacja niestandardowa</string>
+
+    <string name="install_text">Zainstaluj</string>
+
+    <string name="application_label">Aplikacja:\u0020</string>
+
+    <string name="result_success">Powodzenie</string>
+
+    <string name="result_failed">Niepowodzenie</string>
+
+    <string name="unknown">"Nieznany"</string>
+
+    <string name="mms_app_name">"Wiadomość MMS"</string>
+
+    <string name="browser_app_name">"Przeglądarka"</string>
+
+    <string name="apn_app_name">Nazwa punktu dostępu</string>
+
+    <string name="email_app_name">"e-mail"</string>
+
+    <string name="email_smtp_app_name">E-mail-SMTP</string>
+
+    <string name="email_pop3_app_name">E-mail-POP3</string>
+
+    <string name="email_imap4_app_name">E-mail-IMAP4</string>
+
+    <string name="dm_app_name">Zarządzanie urządzeniem</string>
+
+    <string name="agps_app_name">A-GPS</string>
+
+    <string name="rtsp_app_name">Protokół przesyłania strumieniowego w czasie
+        rzeczywistym</string>
+
+    <string name="ds_app_name">Synchronizacja danych</string>
+
+    <string name="imps_app_name">Wiadomości błyskawiczne i usługa obecności</string>
+
+    <string name="installation_report">Raport o instalacji</string>
+
+    <string name="yes">"OK"</string>
+
+    <string name="installing_progress_message">Trwa instalowanie...</string>
+
+    <string name="install_timeout_error_msg">Błąd instalacji.</string>
+
+    <string name="re_install_notify_message">Bieżące ustawienia aplikacji zostaną zastąpione;
+        kontynuować?</string>
+
+    <string name="re_install_notify_title">Potwierdzenie</string>
+
+    <string name="unlock_pin_dialog_title">Wpisz kod PIN</string>
+
+    <string name="detail_activity_label">Szczegóły ustawień</string>
+
+    <string name="bookmark_label">URL:\u0020</string>
+
+    <string name="homepage_label">Strona główna:\u0020</string>
+
+    <string name="mmsc_label">MMSC:\u0020</string>
+
+    <string name="server_address_label">Adres serwera:\u0020</string>
+
+    <string name="port_number_label">Port:\u0020</string>
+
+    <string name="email_outbound_label">Wychodzące:\u0020</string>
+
+    <string name="email_inbound_label">Przychodzące:\u0020</string>
+
+    <string name="email_account_label">Konto:\u0020</string>
+
+    <string name="email_need_sign_label">Wymagane logowanie:\u0020</string>
+    <string name="email_need_sign_yes">"Tak"</string>
+    <string name="email_need_sign_no">"Nie"</string>
+
+    <string name="rtsp_netinfo_label">Informacje o sieci:\u0020</string>
+
+    <string name="rtsp_max_udp_port_label">Maks. port UDP:</string>
+
+    <string name="rtsp_min_udp_port_label">Min. port UDP:</string>
+
+    <string name="apn_apn_label">APN:\u0020</string>
+
+    <string name="apn_mms_proxy_label">Serwer proxy wiad. MMS:\u0020</string>
+
+    <string name="apn_mms_port_label">Port wiad. MMS:\u0020</string>
+
+    <string name="apn_auth_type_label">Typ uwierzytelniania:\u0020</string>
+
+    <string name="apn_type_label">Typ APN:\u0020</string>
+    <string name="info_unsupport">Brak obsługi</string>
+    <string name="info_unavaliable">"Niedostępny"</string>
+
+    <string name="bookmark_folder_label">Folder zakładek:\u0020</string>
+
+    <string name="proxy_label">Serwer proxy:\u0020</string>
+
+    <string name="nap_label">NAP:\u0020</string>
+
+    <string name="bookmark_name_label">Nazwa zakładki:\u0020</string>
+
+    <string name="user_name_label">Nazwa użytkownika:\u0020</string>
+
+    <string name="password_label">Hasło:\u0020</string>
+
+    <string name="mmsc_name_label">Nazwa MMSC:\u0020</string>
+
+    <string name="mms_cm_label">Tryb tworzenia:\u0020</string>
+
+    <string name="mms_rm_label">Tryb ponow. przesyłania:\u0020</string>
+
+    <string name="mms_ms_label">Maks. autoryzow. rozmiar MM:\u0020</string>
+
+    <string name="mms_pc_addr_label">Adres usługi pocztówek:\u0020</string>
+
+    <string name="mms_ma_label">Obsługa interfejsu MMS A:\u0020</string>
+
+    <string name="server_id_label">Identyfikator serwera:\u0020</string>
+
+    <string name="server_name_label">Nazwa serwera:\u0020</string>
+
+    <string name="server_addr_type_label">Typ adresu serwera:\u0020</string>
+
+    <string name="auth_level_label">Poziom zabezpieczeń:\u0020</string>
+
+    <string name="auth_type_label">Typ zabezpieczeń:\u0020</string>
+
+    <string name="auth_data_label">Dane zabezpieczeń:\u0020</string>
+
+    <string name="dm_init_label">Wymagane zainicjowanie:\u0020</string>
+
+    <string name="email_setting_name_label">Nazwa ustawienia:\u0020</string>
+
+    <string name="email_secure_label">Zabezpiecz:\u0020</string>
+
+    <string name="email_from_label">Od:\u0020</string>
+
+    <string name="email_rt_address_label">Odpowiedź na adres:\u0020</string>
+
+    <string name="rtsp_max_bandwidth_label">Maks. przepustowość:\u0020</string>
+
+    <string name="ds_database_name_label">Nazwa bazy danych:\u0020</string>
+
+    <string name="ds_database_url_label">Identyfikator URI bazy danych:\u0020</string>
+
+    <string name="content_type_label">Typ zawartości:\u0020</string>
+
+    <string name="ds_cliuri_label">Identyfikator URI bazy danych klienta:\u0020</string>
+
+    <string name="ds_sync_type_label">Typ synchronizacji:\u0020</string>
+
+    <string name="imps_services_label">Usługi:\u0020</string>
+
+    <string name="imps_cid_prefix_label">Prefiks identyfikatora klienta:\u0020</string>
+
+    <string name="name_label">Nazwa:\u0020</string>
+
+    <string name="detail_invalid_setting_error_msg">Nieprawidłowe ustawienie.</string>
+
+    <string name="error">"Błąd"</string>
+</resources>

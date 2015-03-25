@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+ * Copyright (C) 2007-2008 Esmertec AG.
+ * Copyright (C) 2007-2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="imsp_ip_message">iSMS 设置</string>
+    <string name="imsp_invite_chat_frequently"><b>经常和  %s 聊天？</b>\n使用iSMS聊天，免费发信息。邀请  %s 使用iSMS？</string>
+    <string name="imsp_enable_chat_frequently"><b>%s 的iSMS服务没有开启！</b>\n使用iSMS聊天，免费发信息。是否开启你的iSMS？</string>
+    <string name="imsp_invite">邀请</string>
+    <string name="imsp_enable_notice">是否开启iSMS服务？</string>
+    <string name="imsp_activate_chat_frequently"><b>经常和朋友聊天?</b>\n使用iSMS聊天，免费发信息。是否激活你的iSMS？</string>
+    <string name="imsp_activate_note">是否激活 iSMS？</string>
+    <string name="imsp_dismiss_content">是否忽略该提醒？</string>
+    <string name="imsp_divider_online">%s在线</string>
+    <string name="imsp_divider_offline">最后一次上线时间在 %s</string>
+    <string name="imsp_divider_never_online">从未上线</string>
+    <string name="imsp_failed_title">发送失败</string>
+    <string name="imsp_resend_via_sms">转为短信发送</string>
+    <string name="imsp_resend_via_mms">转为彩信发送</string>
+    <string name="imsp_typing_text">正在输入</string>
+    <string name="imsp_save_attachment">保存附件</string>
+    <string name="imsp_view">查看</string>
+    <string name="imsp_convert_to_mms">转为彩信</string>
+    <string name="imsp_convert_to_sms">转为短信</string>
+    <string name="imsp_convert_to_isms">转为iSMS</string>
+    <string name="imsp_convert_to_mms_for_service">当前SIM开未开通iSMS服务，只能通过这张SIM卡发送彩信。是否继续？</string>
+    <string name="imsp_convert_to_sms_for_service">当前SIM开未开通iSMS服务，只能通过这张SIM卡发送短信。是否继续？</string>
+    <string name="imsp_convert_to_mms_for_recipients">接收者不是iSMS用户，这条信息只能通过彩信发送。是否继续？</string>
+    <string name="imsp_convert_to_sms_for_recipients">接收者不是iSMS用户，这条信息只能通过短信发送。是否继续？</string>
+    <string name="imsp_sms_convert_to_isms">您选择的SIM卡已经开启iSMS服务，为了节省您的短信费用，建议您使用iSMS信息发送。是否现在切换？</string>
+    <string name="imsp_mms_convert_to_isms">您选择的SIM卡已经开启iSMS服务，为了节省您的彩信费用，建议您使用iSMS信息发送。是否现在切换？</string>
+    <string name="imsp_keep_mms">保持彩信</string>
+    <string name="imsp_keep_sms">保持短信</string>
+    <string name="imsp_resend_discard_message">重新发送信息，当前正在编辑的信息将被舍弃。</string>
+    <string name="imsp_no_sim_card">当前没有SIM卡！</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">"没有可用的网络连接！请稍后再试。"</string>
+    <string name="imsp_chat_setting_updating">更新中...</string>
+    <string name="imsp_dialog_clear_title">清空聊天记录</string>
+    <string name="imsp_dialog_clear_description">当前聊天会话中所有的聊天记录将被清空</string>
+    <string name="imsp_chat_setting_saving">保存中...</string>
+    <string name="imsp_chat_setting_sending">发送中...</string>
+    <string name="imsp_save_chat_history_failed">保存失败</string>
+    <string name="imsp_send_chat_history_failed">发送邮件失败</string>
+    <string name="imsp_conversation_list_all">全部信息</string>
+    <string name="imsp_conversation_list_important">重要信息</string>
+    <string name="imsp_conversation_list_group_chats">群组信息</string>
+    <string name="imsp_conversation_list_spam">黑名单</string>
+    <string name="imsp_mark_as_spam_tips">标为黑名单的会话将被移到黑名单列表，并且通知被禁用。</string>
+    <string name="imsp_typing">"正在输入..."</string>
+    <string name="imsp_type_to_compose_text">"请输入 SMS/iSMS 内容"</string>
+    <string name="imsp_no_sdcard">"无存储卡"</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">发送好友邀请，你编辑的信息将被舍弃。</string>
+    <string name="imsp_current_sim_enabled">当前SIM卡已开启服务。</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">请选择激活iSMS的SIM卡</string>
+    <string name="imsp_activate_message">该功能只有开启iSMS服务之后才可以使用。是否立即激活你的iSMS帐号？</string>
+    <string name="imsp_enable_message">该功能只有开启iSMS服务之后才可以使用。是否立即开启你的iSMS帐号？</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">请选择开启iSMS服务的SIM卡</string>
+    <string name="imsp_switch_sim_title">切换SIM卡</string>
+    <string name="imsp_switch_sim_message">当前SIM卡未开启iSMS服务。是否切换到另一张SIM卡？</string>
+    <string name="imsp_switch_sim_successfully">成功切换SIM卡！</string>
+    <string name="imsp_dailog_multi_forward">转发中 </string>
+    <string name="imsp_dialog_send_result">发送结果</string>
+    <string name="imsp_dlg_send_all">全部：  %s</string>
+    <string name="imsp_dlg_send_sucess">成功： %s</string>
+    <string name="imsp_dlg_send_failed">失败：  %s</string>
+    <string name="imsp_multi_forward_sim_info">获取SIM卡信息中</string>
+    <string name="imsp_multi_forward_no_sim">检测不到SIM卡信息</string>
+    <string name="imsp_get_sim_failed">获取SIM卡信息失败</string>
+    <string name="imsp_sim_status_error">SIM 卡状态错误</string>
+    <string name="imsp_forward_norecipients">未选择收件人，请重新选择</string>
+    <string name="imsp_multiforward_no_message">未选择信息，请重新选择</string>
+    <string name="imsp_need_input_recipients">请至少指定一个收件人</string>
+    <string name="imsp_spam_empty">您当前黑名单聊天列表没有内容。 \n这里显示所有被标记为“黑名单”的聊天会话。被标记为黑名单的会话聊天的消息提示默认会被关掉，它能阻止一些不必要的骚扰 。 \n\n您可以长按一个聊天会话，并通过点击黑名单菜单标记它为黑名单。 当一个聊天会话被标记为黑名单时，聊天会话上会显示一个无信息提示图标，该聊天会话同时会被放到当前黑名单列表。 </string>
+    <string name="imsp_groupchat_empty">您当前群组聊天列表没有内容。\n这里显示所有的您所创建或参与的群组聊天会话。在这里您可以很容易找到并管理您的群组聊天。\n\n点击屏幕下方的“创建群组”按钮，您可以创建一个群组，并邀请您的好友加入群组。</string>
+    <string name="imsp_important_empty">您当前重要聊天列表没有内容。\n这里显示所有您标记为“重要”的信息所在的聊天会话，在这里您可以很容易的看到被标记为“重要”的信息。\n\n您可以长按一条信息，在菜单中选择“标为重要”，把这条信息标记为“重要”。当这条信息被标记为重要，在这条信息的下方，您会看到一个小红旗。</string>
+    <string name="imsp_allchat_empty">没有聊天会话</string>
+    <string name="imsp_attach_slideshow">"幻灯片"</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">下载....</string>
+    <string name="imsp_invite_friends_to_ipmsg">邀请朋友使用iSMS</string>
+    <string name="imsp_multi_forward_tips_content">部分消息需先下载多媒体内容，才能完成多条转发。</string>
+    <string name="imsp_multi_forward_failed_part">部分消息转发失败。</string>
+</resources>

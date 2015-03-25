@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<PropertyAnimation xmlns:android="http://schemas.android.com/apk/res/android"
+                              xmlns:ngin3d="http://schemas.android.com/apk/res/com.mediatek.ngin3d.tests"
+                              android:id="@+id/animation1" 
+                              ngin3d:target="@+id/image1"
+                              ngin3d:property="rotation"
+                              ngin3d:from="0, 0, 0"
+                              ngin3d:to="0, 0, 360"
+                              />
+

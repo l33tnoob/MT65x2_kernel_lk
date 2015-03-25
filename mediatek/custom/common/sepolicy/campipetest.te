@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bincampipetest Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type campipetest_exec , exec_type, file_type;
+type campipetest ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive campipetest;
+init_daemon_domain(campipetest)
+
+
+# 20131122 Add Set Property Rule
+allow campipetest  property_type:property_service set;

@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binomx_ut Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type omx_ut_exec , exec_type, file_type;
+type omx_ut ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive omx_ut;
+init_daemon_domain(omx_ut)
+
+
+# 20131122 Add Set Property Rule
+allow omx_ut  property_type:property_service set;

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="unlock_set_unlock_mode_voice_weak">語音解鎖</string>
+    <string name="voice_unlock_setup_intro_header">錄語音指令</string>
+    <string name="voice_command_select_title">選擇指令</string>
+    <string name="voice_command_launch_app_title">啟用 app</string>
+    <string name="reset_command_title">重設指令</string>
+    <string name="reset_command_prompt">目前的指令將被取消且無法恢復。</string>
+    <string name="reset_command_prompt_last">僅有的語音指令將被取消，螢幕鎖將被改為滑動。</string>
+    <string name="voice_unlock_options_title">選項</string>
+    <string name="voice_unlock_ok_label">"確定"</string>
+    <string name="voice_unlock_cancel_label">"取消"</string>
+    <string name="voice_unlock_retry_label">重試</string>
+    <string name="voice_unlock_record_label">"錄音"</string>
+    <string name="voice_unlock_continue_label">"繼續"</string>
+    <string name="voice_unlock_setup_intro">唸一個有 2-6 個字的指令，重複 3-6 次。</string>
+    <string name="voice_unlock_command">解鎖指令</string>
+    <string name="voice_command1">喚醒指令 1</string>
+    <string name="voice_command2">喚醒指令 2</string>
+    <string name="voice_command3">喚醒指令 3</string>
+    <string name="command_summary">解鎖並啟用<xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_command_primary">啟用<xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_command_customize">"自訂"</string>
+    <string name="voice_command_secondary">解鎖後啟用<xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_command_record_description_unlock_screen">解鎖螢幕</string>
+    <string name="voice_command_record_description_command">解鎖螢幕並啟用<xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_service_error_title">語音解鎖服務錯誤。</string>
+    <string name="stop_playing_title">停止播放媒體</string>
+    <string name="stop_playing_message">錄音前請停止播放媒體。</string>
+    <string name="voice_command_record_introdution">觸按錄音鈕後唸出您的語音指令。</string>
+    <string name="voice_command_record_prepare">準備中，請稍候…</string>
+    <string name="voice_command_record_first_recording">請唸出您的指令。\n最好有 2-6 個字。</string>
+    <string name="voice_command_record_non_first_recording">重複您的語音指令。</string>
+    <string name="voice_command_record_one_round_ok">收到。</string>
+    <string name="voice_command_record_one_round_noisy">雜音太多聽不清楚您的語音，請再試一次。</string>
+    <string name="voice_command_record_one_round_weak">聽不清楚您的聲音，請再試一次。</string>
+    <string name="voice_command_record_one_round_diff">您給了一個不同的指令。</string>
+    <string name="voice_command_record_one_round_exist">幾乎與現有的語音指令相同，請改試別的指令。</string>
+    <string name="voice_command_record_recording_ok">語音指令已設定完成。</string>
+    <string name="voice_unlock_setup_end_all_done">全部完成。</string>
+    <string name="voice_unlock_setup_end_prompt">唸出您的語音指令即可將手機解鎖。</string>
+    <string name="pass_word_file_missing">無法播放語音指令。</string>
+    <string name="time_out_title">逾時</string>
+    <string name="time_out_message">已連續 5 秒未收到語音輸入。請重試。</string>
+    <string name="during_call_title">無法錄製</string>
+    <string name="during_call_message">通話期間無法使用"錄音指令"。</string>
+</resources>

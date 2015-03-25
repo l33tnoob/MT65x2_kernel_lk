@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binAudioSetParam Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type AudioSetParam_exec , exec_type, file_type;
+type AudioSetParam ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive AudioSetParam;
+init_daemon_domain(AudioSetParam)
+
+
+# 20131122 Add Set Property Rule
+allow AudioSetParam  property_type:property_service set;

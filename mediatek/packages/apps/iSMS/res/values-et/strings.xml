@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="STR_NMS_MAIN">iSMS</string>
+    <string name="STR_NMS_HISSAGE">iSMS</string>
+    <string name="STR_NMS_INVITE_SMS_CONTENT">Tere, iSMS on lahe vestlusvahend. See on mugav ja tasuta. Põhjalikumat teavet leiate leheküljelt http://isms.hissage.com.</string>
+    <string name="STR_NMS_NO_SDCARD">Seade ei leia SD kaarti; iSMS ei luba teatud toiminguid</string>
+    <string name="STR_NMS_MOUNT_SDCARD">SD kaart on kasutamiseks valmis</string>
+    <string name="STR_NMS_SEND_MMS_FAIL">Sõnumi saatmine ebaõnnestus. See saadetakse automaatselt, kui võrk on jälle saadaval.</string>
+    <string name="STR_NMS_RECV_MMS_FAIL">Allalaadimine ebaõnnestus. Palun proovige hiljem uuesti.</string>
+    <string name="STR_NMS_GROUP_CHAT_ME">mind</string>
+    <string name="STR_NMS_GROUP_CHAT_I">Mina</string>
+    <string name="STR_NMS_GROUP_CHAT_YOU">Sina</string>
+    <string name="STR_NMS_GROUP_CREATE_MSG">%1$s kutsub %2$s grupivestlusesse.</string>
+    <string name="STR_NMS_GROUP_ADD_MSG">%1$s liitus grupivestlusega.</string>
+    <string name="STR_NMS_GROUP_DELETE_MSG">%1$s kustutas %2$s grupivestlusest.</string>
+    <string name="STR_NMS_GROUP_QUITE_MSG">%1$s lahkus grupivestlusest.</string>
+    <string name="STR_NMS_GROUP_CHAT_PLACE_HOLDER_MSG_BODY">Te liitusite selle grupiga</string>
+    <string name="STR_NMS_PICTURE">foto</string>
+    <string name="STR_NMS_TAPE">audio</string>
+    <string name="STR_NMS_VCARD">kontakt</string>
+    <string name="STR_NMS_LOCATION">koht</string>
+    <string name="STR_NMS_SKETCH">visand</string>
+    <string name="STR_NMS_VIDEO">video</string>
+    <string name="STR_NMS_CALENDAR">kalender</string>
+    <string name="STR_NMS_UNKNOWN">puudub</string>
+    <string name="STR_NMS_READ_MODE_PIC">foto</string>
+    <string name="STR_NMS_READ_MODE_TAPE">audiomärkmed</string>
+    <string name="STR_NMS_READ_MODE_VCARD">kontaktid</string>
+    <string name="STR_NMS_READ_MODE_LOCATION">koht</string>
+    <string name="STR_NMS_READ_MODE_SKETCH">visand</string>
+    <string name="STR_NMS_READ_MODE_VIDEO">video</string>
+    <string name="STR_NMS_READ_MODE_CALENDAR">kalender</string>
+    <string name="STR_NMS_ISMS_ENABLE">(luba iSMS)</string>
+    <string name="STR_NMS_READ_MODE_UNKNOWN">tundmatu fail</string>
+    <string name="STR_NMS_ALL_MSG">Kõik sõnumid</string>
+    <string name="STR_NMS_SAVED">Salvestatud</string>
+    <string name="STR_NMS_BLOCKMSG">Blokeeritud</string>
+    <string name="STR_NMS_SMS_TYPE">SMS</string>
+    <string name="STR_NMS_VERSION_ID">v5.2.16.696</string>
+    <string name="STR_NMS_NO_SIM">SIM kaarti ei leitud</string>
+    <string name="STR_NMS_ILLEGAL_ADDRESS">Kehtetu number</string>
+    <string name="STR_NMS_REMIND_USER_SET_NAME">Palun uuendage oma profiili</string>
+    <string name="STR_NMS_OK">OK</string>
+    <string name="STR_NMS_BACK">Tagasi</string>
+    <string name="STR_NMS_CANCEL">Loobu</string>
+    <string name="STR_NMS_NETWORK_UNAVL">Palun kontrollige töötava andmesidesüsteemi olemasolu, näiteks 3G, GPRS või Wi-Fi</string>
+    <string name="STR_NMS_TODAY">Täna</string>
+    <string name="STR_NMS_YESTERDAY">Eile</string>
+    <string name="STR_NMS_NOW">Praegu</string>
+    <string name="STR_NMS_NO_SIM_CARD">SIM kaart puudub, peate paigaldama SIM kaardi.</string>
+    <string name="STR_NMS_NO_CONNECTION">Võrk puudub või olete sisse lülitanud lennurežiimi; palun kontrollige.</string>
+    <string name="STR_NMS_ATTACH_SHARE">%1$s jagas %2$s</string>
+    <string name="STR_NMS_WAIT">Oota…</string>
+    <string name="STR_NMS_TIPTITLE">Vihje</string>
+
+    <string name="STR_NMS_OPEN">Ava</string>
+    <string name="STR_NMS_PLAY">Mängi</string>
+    
+    
+
+    <string name="STR_NMS_VCARD_NAME">%1$s kontaktid</string>
+    <string name="STR_NMS_SHARE_VCARD_FAILED">kontakti jagamine ebaõnnestus</string>
+
+    <!-- upgrade info -->
+    <string name="STR_NMS_UPGRADE_URL">http://ismsi.hissage.com/webservice/hss/hssVersionUpdate.php</string>
+    <string name="STR_NMS_UPGRADE_TICKER">Versiooni uuendamine</string>
+    <string name="STR_NMS_UPGRADE_ERROR_TITLE">Viga uuendamisel</string>
+    <string name="STR_NMS_UPGRADE_ERROR_CONTENT">Viga uuendamisel, palun uuendage iSMS kliendikontos</string>
+    <string name="STR_NMS_INSTALLED_TITLE">Uuendamine õnnestus</string>
+    <string name="STR_NMS_INSTALLED_CONTENT">Telefon edukalt uuendatud</string>
+    <string name="STR_NMS_PROMPT_DLG_TITLE">Leiti uus versioon</string>
+    <string name="STR_NMS_PROMPT_DLG_DOWNLOAD">Lae alla</string>
+    <string name="STR_NMS_PROMPT_DLG_LATER">Hiljem</string>
+    <string name="STR_NMS_UPGRADING">Uuendamine</string>
+    <string name="STR_NMS_UPGRADE_TIME">Viimane kontroll: %s</string>
+    
+    <!-- ext protocol -->
+    <string name="STR_NMS_OFFLINE_URL">http://ismsi.hissage.com/webservice/nmsmail/notifyOffline.php</string>
+    
+    <!-- Activation start -->
+    <string name="STR_NMS_PRELOAD_IP_MSG_CONTENT">&quot;Tere tulemast iSMS\'i.&quot;</string>
+    <string name="STR_NMS_ACTIVAT_TITLE">iSMS saadab teie telefoninumbri kontrollimiseks ühe SMS-i. Lisanduda võivad võrguoperaatori tasud.</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE">Kontrolli tel. numbrit</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE2">Kontrolli tel. numbrit</string>
+    <string name="STR_NMS_YOUR_COUNTRY_TITLE">TEIE RIIK</string>
+    <string name="STR_NMS_YOUR_PHONE_TITLE">TEIE TELEFONINUMBER</string>
+    <string name="STR_NMS_VERIFY_FAIL_TITLE">SMS kontroll ebaõnnestus.</string>
+    <string name="STR_NMS_VERIFY_FAIL_CONTENT">Palun kontrollige, kas sisestasite õige telefoninumbri.</string>
+    <string name="STR_NMS_WORKING_SMS_TIP">Palun kontrollige, kas teil on võimalik SMS-e saata ja vastu võtta.</string>
+    <string name="STR_NMS_VERIFYING">Automaatselt tuvastatakse SMS-i, mis saadeti</string>
+    <string name="STR_NMS_RETRY">Proovi uuesti</string>
+    <string name="STR_NMS_EDIT_NUMBER">Muuda numbrit</string>
+    <string name="STR_NMS_UPDATE_PROFILE">Värskenda profiili</string>
+    <string name="STR_NMS_START_ISMS">Alusta iSMS\'ga</string>
+    <string name="STR_NMS_SEND">Saada</string>
+    <string name="STR_NMS_CONGRATULATIONS_TITLE">Õnnitleme!</string>
+    <string name="STR_NMS_CONGRATULATIONS_CONTENT">Täname, et aktiveerisite iSMS.\n Võite kohe teenust kasutama hakata.\nIlusat iSMS\'st!</string>
+    <string name="STR_NMS_WELCOME_BACK">Tere tulemast tagasi.</string>
+    <string name="STR_NMS_SEND_SMS_FAIL">Kontroll ebaõnnestus, palun kontrollige:\n 1. et teie telefoninumber oleks õige;\n 2. et turvatarkvara oleks välja lülitatud;\n 3. muid võimalikke põhjuseid, miks SMS saatmine on häiritud.\nKontrollige ja proovige hiljem uuesti.</string>
+    <string name="STR_NMS_ACTIVE">Aktiveerige iSMS</string>
+    <string name="STR_NMS_WELCOME_ACTIVE">Tere tulemast iSMS\'i</string>
+    <string name="STR_NMS_CONNECTING">Ühendab...</string>
+    <!-- Activation end -->
+
+
+    <!-- Notification start -->
+    <string name="STR_NMS_NEW_MSG_TITLE">Uus iSMS sõnum</string>
+    <string name="STR_NMS_NEW_SMG_CONTENT">%d lugemata sõnum</string>
+    <!-- Notification End -->
+
+    <string name="STR_NMS_MSG_DUMPER_MSG_SMS">SMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_MMS">MMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_IP">IP sõnum</string>
+    <string name="STR_NMS_MSG_DUMPER_SEND_MSG">Saadetud %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_RECEIVE_MSG">Vastu võetud %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TIME">Aeg: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TEXT">Tekst</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_PIC">Pilt</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_SKETCH">Visand</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VOICE">Hääl</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VIDEO">Video</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CALENDAR">Kalender</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION_IMG">Koha pilt</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VCARD">Vcard</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION">Koht</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CAPTION">Pealkiri: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_URL">Url: </string>
+    <string name="STR_NMS_MSG_DUMPER_DURATION">Kestus: </string>
+    <string name="STR_NMS_MSG_DUMPER_COORDINATE">Koordinaat: </string>
+    <string name="STR_NMS_MSG_DUMPER_ADDRESS">Aadress: </string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_SENDER">Saatja: </string>
+    <string name="STR_NMS_MSG_DUMPER_NORMAL_DETAIL">Sessiooni üksikasjad:</string>
+    <string name="STR_NMS_MSG_DUMPER_NAME">Nimi: </string>
+    <string name="STR_NMS_MSG_DUMPER_NUMBER">Number: </string>
+    <string name="STR_NMS_MSG_DUMPER_PORTRAIT">Portree</string>
+    <string name="STR_NMS_MSG_DUMPER_MULTI_SEND_DETAIL">Ülekanne:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_DETAIL">Grupivestlus:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_CREATER">Looja: </string>
+    <string name="STR_NMS_MSG_DUMPER_MEMBERS">Liikmed: </string>
+    <string name="STR_NMS_MSG_DUMPER_VCARD_NAME">Nimi: </string>
+    <string name="STR_NMS_MSG_DUMPER_CALENDAR_SUMMARY">Kokkuvõte: </string>
+
+    <!-- Chat Settings -->
+    <string name="STR_NMS_CHAT_SETTING_TITLE">Vestluse seaded</string>
+    <string name="STR_NMS_DISPLAY">Kuva</string>
+    <string name="STR_NMS_CHAT_WALLPAPER">Vestluse tapeet</string>
+    <string name="STR_NMS_SYS_WALLPAPER">Vali tapeet</string>
+    <string name="STR_NMS_CAMEARPHOTO">Tee foto</string>
+    <string name="STR_NMS_SYS_GALLERY">Vali galeriist</string>
+    <string name="STR_NMS_DEFAULT_WALLPAPER">Vaikimisi</string>
+    <string name="STR_NMS_NOTIFICATION_CATEGORY">Teavitus</string>
+    <string name="STR_NMS_NOTIFICATION_TITLE">iSMS teavitus</string>
+    <string name="STR_NMS_NOTIFICATION_CONTENT">Näita saadud teavitusi</string>
+    <string name="STR_NMS_MUTE">Vaigista</string>
+    <string name="STR_NMS_MUTE_OFF">Väljas</string>
+    <string name="STR_NMS_MUTE_1">Vaigista üheks tunniks</string>
+    <string name="STR_NMS_MUTE_4">Vaigista neljaks tunniks</string>
+    <string name="STR_NMS_MUTE_8">Vaigista kaheksaks tunniks</string>
+    <string name="STR_NMS_RINGTONE_TITLE">Helin</string>
+    <string name="STR_NMS_RINGTONE_CONTENT">Vali uute teavituste helin </string>
+    <string name="STR_NMS_VIBRATE_TITLE">Vibreerimine</string>
+    <string name="STR_NMS_VIBRATE_CONTENT">Vibreeri uute teavituste puhul</string>
+    <string name="STR_NMS_ACTIONS">Toimingud</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_TITLE">Lae alla vestluste ajalugu</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_CONTENT">Salvesta SD kaardile zip formaadis</string>
+    <string name="STR_NMS_EMAIL_HISTORY_TITLE">E-posti vestluste ajalugu</string>
+    <string name="STR_NMS_EMAIL_HISTROY_CONTENT">E-posti vestluste ajalugu zip formaadis</string>
+    <string name="STR_NMS_CLEAR_HISTROY">Kustuta vestluse ajalugu</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_DLG">Allalaadimine...</string>
+    <string name="STR_NMS_DOWNLOAD_OK">Vestluste ajalugu on alla laetud, salvesta %s</string>
+    <string name="STR_NMS_DOWNLOAD_ERROR">Viga vestluste ajaloo allalaadimisel.</string>
+    <string name="STR_NMS_DOWNLOAD_EMPTY">Allalaetav sisu puudub.</string>
+    <string name="STR_NMS_CLEARING">Ajaloo kustutamine, palun oodake...</string>
+    <string name="STR_NMS_WAIT_SAVE_WALLPAPER">Tapeedi salvestamine, palun oodake...</string>
+    <string name="STR_NMS_SAVE_WALLPAPER_OK">Tapeedi salvestamine õnnestus.</string>
+    <string name="STR_NMS_CLEARDONE">Ajalugu on kustutatud.</string>
+    <string name="STR_NMS_SVAE_TITLE">Salvesta SD kaardile</string>
+    <string name="STR_NMS_SAVE_CONTENT">Salvesta antud teemalõng SD kaardile zip failina</string>
+    <string name="STR_NMS_EMAIL_TITLE">Jaga e-posti teel</string>
+    <string name="STR_NMS_EMAIL_CONTENT">Jaga seda teemalõnga e-kirja manusena zip formaadis</string>
+
+    <!-- Chat Settings End -->
+
+
+    <!-- Profile Settings -->
+    <string name="STR_NMS_PROFILE_TITLE">Profiil</string>
+    <string name="STR_NMS_TAP_AVATAR_TIP">Klõpsa profiilipildi muutmiseks</string>
+    <string name="STR_NMS_DISPLAY_NAME_TIP">KUVA NIME</string>
+    <string name="STR_NMS_ACCOUNT_TIP">ISMS KONTO</string>
+    <string name="STR_NMS_NO_APP">Puudub rakendus, millega toimingut sooritada.</string>
+    <string name="STR_NMS_NO_NAME">Seadista oma nime</string>
+    <string name="STR_NMS_SAVE_AVATAR_FAILD">Vabandame, profiilipildi salvestamine ebaõnnestus.</string>
+    <string name="STR_NMS_INPUT_NAME">Nimi</string>
+    <string name="STR_NMS_TERM_WARN_ACTIVATE">Käesolevat funktsiooni toetab ainult iSMS teenus.\n\niSMS on tasuta kiirsuhtlusteenus, mis võimaldab interneti andmeside (Wi-Fi, 2G/3G, jne.) abil vestelda ja jagada meediafaile sõpradega, kus ja millal iganes soovite.\nEsmakordsel aktiveerimisel saadab iSMS automaatselt SMS-i, et registreerimine lõpule viia. Kehtida võivad SMS tasud.\n\n Kasutusleping\n</string>
+    <string name="STR_NMS_TERM_WARN_WELCOME">iSMS on tasuta kiirsuhtlusteenus, mis võimaldab tänu interneti andmesidele (Wi-Fi, 2G/3G, jne.) vestelda ja jagada meediafaile sõpradega, kus ja millal iganes soovite.\nEsmakordsel aktiveerimisel saadab iSMS automaatselt SMS-i, et registreerimine lõpule viia. Kehtida võivad SMS tasud.\n\n Kasutusleping\n</string>
+    <string name="STR_NMS_TERM_KEY">Tingimused</string>
+    <string name="STR_NMS_AGREE_AND_CONTINUE">Nõustu ja jätka</string>
+    <string name="STR_NMS_ACTIVE_BNT">Aktiveeri</string>
+    <string name="STR_NMS_SET_PROFILE_OK">Profiili loomine õnnestus</string>
+    <string name="STR_NMS_SET_PROFILE_FAIL">Profiili loomine ebaõnnestus</string>
+    <string name="STR_NMS_ILLEGAL_PROFILE_NAME">Nimi pole lubatud</string>
+    <string name="STR_NMS_NO_ACTIVITED">SIM kaart pole aktiveeritud.</string>
+    <!-- Profile Settings End -->
+
+
+    <!-- Term Activity -->
+    <string name="STR_NMS_REJECT">Keeldu</string>
+    <string name="STR_NMS_AGREE">Nõustu</string>
+    <string name="STR_NMS_TERM_TITLE">Kasutustingimused</string>
+    <string name="STR_NMS_TERM_CONTENT">Käesolevaga teavitame teid, et teenus ja teenuse raames pakutav tarkavara võib sisaldada turvakomponente, mis võimaldavad kaitsta digitaalset materjali; nimetatud materjalide kasutusele kehtivad AF PushMail\'i ja/või teenusele sisu loovate sisupakkujate poolt kehtestatud reeglid. Teenusesse integreeritud kasutusreeglite alistamine või eiramine on keelatud. Käesoleva teenuse poolt pakutava materjali või selle osade volitamata kopeerimine, avaldamine, levitamine või avalik esitamine on rangelt keelatud.</string>
+    <!-- Term Activity End -->
+
+
+    <!-- System Settings -->
+    <string name="STR_NMS_SYS_SETTING_TITLE">iSMS sõnum</string>
+    <string name="STR_NMS_SETTINGS_TITLE">PROFIIL</string>
+    <string name="STR_NMS_PREFERENCE_CATE">EELISTUSED</string>
+    <string name="STR_NMS_SEND_SMS_TITLE">Saada SMS-na</string>
+    <string name="STR_NMS_SEND_SMS_CONTENT">Saada SMS-na, kui iSMS pole saadaval. Kehtida võivad võrguoperaatori teenustasud. Antud reegel ei kehti grupivestluse puhul</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_TITLE">Automaatne allalaadimine</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_CONTENT">Lae meediafailid automaatselt alla</string>
+    <string name="STR_NMS_CAPTION_TITLE">Pealdised</string>
+    <string name="STR_NMS_CAPTION_CONTENT">Jaga faile koos pealdistega</string>
+    <string name="STR_NMS_SYSTEM_CATE">SÜSTEEM</string>
+    <string name="STR_NMS_UPDATE_TITLE">Tarkvara värskendus</string>
+    <string name="STR_NMS_UPDATE_CONTENT">Viimane kontroll: Mitte kunagi</string>
+    <string name="STR_NMS_NETWORK_USAGE_TITLE">Võrgukasutus</string>
+    <string name="STR_NMS_NETWORK_USAGE_CONTENT">Vaata saadetud/vastuvõetud andmekasutuse koguhulka</string>
+    <string name="STR_NMS_NETWORK_DLG_CONTENT">Saadetud: %1$.3f K \nVastu võetud: %2$.3f K\nViimane lähtestamine: %3$s</string>
+    <string name="STR_NMS_VERSION_TITLE">Versioon</string>
+    <string name="STR_NMS_NEVER_CLEAR">Mitte kunagi</string>
+    <string name="STR_NMS_RESET">Lähtestamine</string>
+    <string name="STR_NMS_SWITCH_ON">SEES</string>
+    <string name="STR_NMS_SWITCH_OFF">VÄLJAS</string>
+    <string name="STR_NMS_SYSTEM_SETTING_TITLE">Seaded</string>
+    <string name="STR_NMS_COPYRGIHT">Hesine Technologies, Inc.</string>
+    <string name="STR_NMS_ABOUT">iSMS kohta</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_TITLE">Näita sõnumi olekut</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_CONTENT">Näita lugemise olekut sõnumite nimekirjas</string>
+    <string name="STR_NMS_SHOW_REMIND_TITLE">Näita meeldetuletusi</string>
+    <string name="STR_NMS_SHOW_REMIND_CONTENT">Näita iSMS meeldetuletusi vestlusekraanil</string>
+    <string name="STR_NMS_MENU_RESET_SETTING">Taasta vaikimisi seaded</string>
+    <string name="STR_NMS_MENU_FUNCTION_INTRODUCTION">Funktsioonid</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT">Kasutusleping</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION">Autoriõigused</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT_TITLE">HESINE iSMS KASUTUSLITSENTSI LEPING</string>
+    <string name="STR_NMS_MENU_FUNCTION">Funktsioonide nimekiri</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION_DETAIL">\nHesine Technologies Inc.\nCopyright© 2008-2013\nKõik õigused kaitstud.\n</string>
+    <!-- System Settings End -->
+
+
+    <!-- Caption Settings -->
+    <string name="STR_NMS_AUDIO_TITLE">Audio</string>
+    <string name="STR_NMS_VIDEO_TITLE">Videod</string>
+    <string name="STR_NMS_PHOTO_TITLE">Fotod</string>
+    <!-- Caption Settings End -->
+
+
+    <!-- Map String start -->
+    <string name="STR_NMS_MAP_TITLE">Jaga asukohta</string>
+    <string name="STR_NMS_MAP_PROMPT">Kaarti ei saa kuvada, sest et teie kohateenus ei ole sisselülitatud. Alljärgnev aadress on ligilähedane ja põhineb teie mobiiltelefoni andmetel. \nTäpsema kohateenuse tarbeks soovitame kohateenuse sisse lülitada.</string>
+    <string name="STR_NMS_MAP_NOTE_1">Palun lülitage sisse \'Minu asukoht\' süsteemi seadetes</string>
+    <string name="STR_NMS_MAP_SHARE">Jaga</string>
+    <string name="STR_NMS_MAP_SETTINGS">Seaded</string>
+    <string name="STR_NMS_MAP_OK">OK</string>
+    <string name="STR_NMS_MAP_CANCEL">Loobu</string>
+    <string name="STR_NMS_MAP_EDIT">Muuda asukohta</string>
+    <string name="STR_NMS_MAP_SEARCH_HINT">Otsi lähedal asuvaid kohti</string>
+    <string name="STR_NMS_MAP_WAIT">Palun oota...</string>
+    <string name="STR_NMS_MAP_EDIT_LIMIT">Sisestavate tähemärkide arvu limiit on ületatud</string>
+    <string name="STR_NMS_MAP_ADDR_LEN">Aadress on liiga pikk</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR_LOCATING">Teie praeguse asukoha tuvastamine...</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN_LOCATING">Teie PIN positsiooni tuvastamine...</string>
+    <string name="STR_NMS_MAP_LINEONE_SEARCH_LOCATING">Otsitava asukoha kindlaks tegemine...</string>
+    <string name="STR_NMS_MAP_LINETHREE_NEARBY_LOCATING">Lähedal asuvate kohtade otsing...</string>
+    <string name="STR_NMS_MAP_LINEONE_FAILED">Teie koht pole praegu saadaval</string>
+    <string name="STR_NMS_MAP_LINETWO_FAILED">Palun kontrollige, et teie kohateenus on sisse lülitatud ja et võrk on saadaval</string>
+    <string name="STR_NMS_MAP_LINETHREE_FAILED">Lähedal asuvaid kohti ei leitud</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR">Jaga praegust asukohta</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN">Jagage PIN asukohta</string>
+    <string name="STR_NMS_MAP_MY_LOCATION">Minu asukoht</string>
+    <string name="STR_NMS_MAP_SEARCH">Otsi</string>
+    <string name="STR_NMS_MAP_ERROR_1">Ei leia pikkus- ja laiuskraadi</string>
+    <string name="STR_NMS_MAP_ERROR_2">Google\'i serverid edastasid veateate</string>
+    <!-- Map String end -->
+
+
+    <!-- All Media String start -->
+    <string name="STR_NMS_ALL_MEDIA_TITLE">Kogu meedia</string>
+    <string name="STR_NMS_ALL_MEDIA_WAIT">Palun oota...</string>
+    <string name="STR_NMS_ALL_MEDIA_ERROR">Laadimine ebaõnnestus, proovi hiljem uuesti</string>
+    <string name="STR_NMS_ALL_MEDIA_EMPTY">Tühi</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_WEEK">See nädal</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_MONTH">See kuu</string>
+    <string name="STR_NMS_ALL_MEDIA_JAN">Jaanuar</string>
+    <string name="STR_NMS_ALL_MEDIA_FEB">Veebruar</string>
+    <string name="STR_NMS_ALL_MEDIA_MAR">Märts</string>
+    <string name="STR_NMS_ALL_MEDIA_APR">Aprill</string>
+    <string name="STR_NMS_ALL_MEDIA_MAY">Mai</string>
+    <string name="STR_NMS_ALL_MEDIA_JUN">Juuni</string>
+    <string name="STR_NMS_ALL_MEDIA_JUL">Juuli</string>
+    <string name="STR_NMS_ALL_MEDIA_AUG">August</string>
+    <string name="STR_NMS_ALL_MEDIA_SEPT">September</string>
+    <string name="STR_NMS_ALL_MEDIA_OCT">Oktoober</string>
+    <string name="STR_NMS_ALL_MEDIA_NOV">November</string>
+    <string name="STR_NMS_ALL_MEDIA_DEC">Detsember</string>
+    <string name="STR_NMS_ADDCONTACT">Lisa kontakt</string>
+    <string name="STR_NMS_ADD_PHONE_CONTACT">Kas lisada \&quot;%1$s\&quot; kontaktidesse?</string>
+    <string name="STR_NMS_DELETE_MEDIA">Meediafail kustutatakse, jätkata?</string>
+    <string name="STR_NMS_MEDIA_SHARE_MESSAGE">%1$s jagas %2$s</string>
+
+    <!-- All Media String end -->
+
+
+    <!-- All Locations String start -->
+    <string name="STR_NMS_ALL_LOCATIONS_TITLE">Kõik kohad</string>
+    <string name="STR_NMS_ALL_LOCATIONS_LOC">Koht</string>
+    <string name="STR_NMS_ALL_LOCATIONS_WAIT">Palun oota...</string>
+    <!-- All Locations String end -->
+
+
+    <!-- Sketch -->
+    <string name="STR_NMS_SKETCH_TITLE">Joonista</string>
+    <string name="STR_NMS_REDO">Uuesti</string>
+    <string name="STR_NMS_UNDO">Kustuta</string>
+    <string name="STR_NMS_SKETCH_CUSTOM">Kohandatud</string>
+    <string name="STR_NMS_PEN_SIZE">Suurus</string>
+    <string name="STR_NMS_SKETCH_TOOLS_PEN">Pliiats</string>
+    <string name="STR_NMS_SKETCH_TOOLS_ERASER">Kustutuskumm</string>
+    <string name="STR_NMS_SKETCH_CUSTOM_COLOR">Kohandatud värv</string>
+    <string name="STR_NMS_CLEAR_SKETCH_TITLE">Kustuta joonistus</string>
+    <string name="STR_NMS_CLEAR_SKETCH_CONTENT">Kas soovite joonistuse kustutada?</string>
+    <string name="STR_NMS_SIZE_SKETCH_TITLE">Suurus</string>
+    <string name="STR_NMS_SIZE_SKETCH_MAX">72</string>
+    <string name="STR_NMS_SIZE_SKETCH_MIN">2</string>
+    <string name="STR_NMS_COLOR_SKETCH_TITLE">Värv</string>
+    <string name="STR_NMS_SKETCH_ERROR">Joonistuse loomine ebaõnnestus.</string>
+    <string name="STR_NMS_BACK_TITLE">Kinnitus</string>
+    <string name="STR_NMS_FINISH_SKETCH_CONTENT">Kas soovite lahkida joonistusprogrammist?</string>
+    <string name="STR_NMS_LEAVE_SKETCH_CONTENT">Kas soovite joonistuse pooleli jätta?</string>
+    <string name="STR_NMS_NOTREDO">Pole, mida uuesti teha</string>
+    <string name="STR_NMS_NOTUNDO">Pole, mida kustutada</string>
+    <string name="STR_NMS_SKETCH_DELETE">Kustuta kõik</string>
+    <string name="STR_NMS_DISCARD">Loobu</string>
+
+    <!-- Sketch end -->
+
+
+    <!-- Selection Contact -->
+    <string name="STR_NMS_DONE">OK</string>
+    <string name="STR_NMS_SELECTALL">Vali kõik</string>
+    <string name="STR_NMS_DESELECTED">Tühista valik</string>
+    <string name="STR_NMS_SELECTED">%1$s valitud</string>
+    <string name="STR_NMS_CONTACT_SEARCH">Otsi kontaktidest</string>
+    <string name="STR_NMS_SEARCH">Otsi</string>
+    <string name="STR_NMS_CONTACT_SELECT">Vali kontakt</string>
+    <string name="STR_NMS_SELECT_MEMBER_FULL">Valiti liiga palju kontakte</string>
+    <string name="STR_NMS_SELECT_MEMBER_EMPTY">Ühtki kontakti pole valitud</string>
+    <string name="STR_NMS_SELECT_CONTAT_WAIT">Palun oota...</string>
+    <string name="STR_NMS_SELECT_CONTAT_EMPTY">iSMS kontaktid puuduvad</string>
+    <string name="STR_NMS_SELECT_NO_RESULT">Ühtki ei leitud</string>
+    <string name="STR_NMS_EMPTY">Kontakte pole</string>
+    <string name="STR_NMS_ALL_CONTACTS">KÕIK</string>
+    <string name="STR_NMS_GROUPS_MEM"> %1$s liikmed</string>
+    <string name="STR_NMS_GROUPS_CONTACTS">KÕIK GRUPID</string>
+    <!-- Selection Contact end -->
+
+    <!-- Group chat -->
+    <string name="STR_NMS_CREATE_GROUP_TITLE">Loo grupp</string>
+    <string name="STR_NMS_GROUP_INFO_TITLE">Grupiinfo</string>
+    <string name="STR_NMS_EDIT_GROUP_TITLE">Muuda gruppi</string>
+    <string name="STR_NMS_SELECT_ACTION_TITLE">Vali toiming</string>
+    <string name="STR_NMS_ADD_TO_BOOKMARK">Lisa järjehoidja</string>
+    <string name="STR_NMS_ADD_TO_CONTACTS">Lisa %1$s kontaktidesse</string>
+    <string name="STR_NMS_GROUP_NAME">GRUPI NIMI</string>
+    <string name="STR_NMS_GROUP_INFO">GRUPI INFO</string>
+    <string name="STR_NMS_GROUP_MEMBERS">GRUPI LIIKMED</string>
+    <string name="STR_NMS_GROUP_NAME_HIT">Grupi nimi</string>
+    <string name="STR_NMS_GROUP_NAME_EMPTY">Grupil pole nime</string>
+    <string name="STR_NMS_CONFIRM_LEAVE_TITLE">Lahku grupist</string>
+    <string name="STR_NMS_LEAVE_GROUP_CONTENT">Kas soovite grupist lahkuda?</string>
+    <string name="STR_NMS_LEAVE_GROUP_SUCCESS">Grupist lahkumine õnnestus</string>
+    <string name="STR_NMS_LEAVE_GROUP_FAILED">Grupist lahkumine ebaõnnestus</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_SUCCESS">Grupi nime muutmine õnnestus</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_SUCCESS">Uus grupiliige lisatud</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_FAILED">Uue grupiliikme lisamine ebaõnnestus</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_FAILED">Grupi nime muutmine ebaõnnestus</string>
+    <string name="STR_NMS_CREATE_GROUP_NAME_FAILED">Grupivestluse loomine ebaõnnestus</string>
+    <string name="STR_NMS_DELETE_GROUP_MEMBER_FAILED">Grupiliikme eemaldamine ebaõnnestus</string>
+    <string name="STR_NMS_UPDATE_GROUP_SUCCESS">Grupiinfo värskendamine õnnestus</string>
+    <string name="STR_NMS_UPDATE_GROUP_FAILED">Grupiinfo värskendamine ebaõnnestus</string>
+    <string name="STR_NMS_GROUP_CHAT_BACK">Kas soovite toimingu tühistada?</string>
+    <string name="STR_NMS_GROUP_MEMEBER_YOU">SINA</string>
+    <string name="STR_NMS_GROUP_INVITE_MORE">Kutsu veel</string>
+    <string name="STR_NMS_LEAVE_GROUP">Lahku grupist</string>
+    <string name="STR_NMS_CHAT">Vestlus</string>
+    <string name="STR_NMS_CONFIRM_REMOVE_TITLE">Eemalda grupiliikmete nimekirjast</string>
+    <string name="STR_NMS_REMOVE_OK">Eemalda</string>
+    <string name="STR_NMS_REMOVE_CANCEL">Loobu</string>
+    <string name="STR_NMS_REMOVE_CONTENT">Kas soovite seda nimekirjast eemaldada?</string>
+    <string name="STR_NMS_VIEW_ALL_MEDIA">Vaata kõiki meediafaile</string>
+    <string name="STR_NMS_VIEW_ALL_LOCATIONS">Vaata kõiki asukohti</string>
+    <string name="STR_NMS_CHAT_SETTINGS">Vestluse seaded</string>
+    <string name="STR_NMS_VIEW_GROUP_FAILED">Olete lahkunud grupivestlusest.</string>
+    <string name="STR_NMS_VIEW_HISTORY">Tutvuge grupi ajalooga</string>
+    <string name="STR_NMS_ISMS_ENABLE_TITLE">Lubage iSMS</string>
+    <string name="STR_NMS_ISMS_ENABLE_CONTENT">Antud funktsiooni toetab üksnes iSMS. Aktiveerida teie iSMS kontot kohe?</string>
+    <string name="STR_NMS_ENABLE">Aktiveeri</string>
+    <string name="STR_NMS_LATER">Loobu</string>
+    <string name="STR_NMS_SWITCH_TITLE">SIM vahetus</string>
+    <string name="STR_NMS_SWITCH_MESSAGE">Grupivestlust toetatakse ainult juhul, kui iSMS teenus on aktiveeritud ja SIM kaart pole aktiveeritud. Ümberlülitus SIM kaardile on aktiveeritud?</string>
+    <string name="STR_NMS_SWITCH_EDIT_MESSAGE">Praegune SIM kaart pole selle grupiga seotud. Lülita ümber teisele SIM kaardile?</string>
+    <string name="STR_NMS_LEAVE_GROUP_NOTICE">Olete grupist lahkunud ja ei saa grupivestlusega liituda, välja arvatud juhul, kui teid uuesti kutsutakse</string>
+    <string name="STR_NMS_LOSE_SIM_NOTICE">Algse vestluse SIM kaart on eemaldatud, saate antud grupiga vestelda ainult algse SIM kaardi abil</string>
+    <string name="STR_NMS_SWITCH">Vaheta</string>
+
+    <!-- Group chat end -->
+
+
+    <!-- chat details screen long press item start -->
+    <string name="STR_NMS_LONG_PRESS_TITLE">Sõnumi valikud</string>
+    <string name="STR_NMS_SEND_VIA_TEXT">Saada SMS-i kaudu</string>
+    <string name="STR_NMS_TRY_AGAIN">Proovi uuesti</string>
+    <string name="STR_NMS_TRY_ALL_AGAIN">Proovi kõiki uuesti</string>
+    <string name="STR_NMS_CONTINUE_TRY">Jätka proovimist</string>
+    <string name="STR_NMS_COPY">Kopeeri</string>
+    
+    <string name="STR_NMS_FORWARD">Edasta</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_TITLE">Lae alla</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD">iSMS\'i edastamiseks peate kõigepealt meedia sisu alla laadima.</string>
+    <string name="STR_NMS_FORWARD_CONTIUE">Jätka</string>
+    <string name="STR_NMS_FORWARD_FAILED">Edastamine ebaõnnestus.</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_MULTI">Mitmikedastamiseks peab kõigepealt alla laadima mõned iSMS-d.</string>
+    <string name="STR_NMS_FORWARD_SOME_FAILED">iSMS edasisaatmine ebaõnnestus osaliselt.</string>
+    <string name="STR_NMS_FORWARD_ALL_FAILED">Allalaadimine ebaõnnestus, mitmikedastamine tühistati</string>
+    
+    <string name="STR_NMS_SEND_VIA_MULTIMEDIA">Saada MMS kaudu</string>
+    <string name="STR_NMS_SHARE">Jaga</string>
+    <string name="STR_NMS_DELETE">Kustuta</string>
+    <string name="STR_NMS_FLAG_IMPORTANT">Märgi oluliseks</string>
+    <string name="STR_NMS_REMOVE_IMPORTANT">Eemalda märgistus</string>
+    <string name="STR_NMS_SAVE_IN_SDCARD">Ekspordi SD kaardile</string>
+    <string name="STR_NMS_SAVE_FILE">Fail salvestati %1$s</string>
+    <string name="STR_NMS_SHARE_TITLE">Parim jagamisviis</string>
+    <string name="STR_NMS_VIEW_DETAILS">Vaata detaile</string>
+    <string name="STR_NMS_VIEW_DETAILS_TITLE">Sõnumidetailid</string>
+    <string name="STR_NMS_SEND_MSG_DETAILS">Trüki: IP sõnum\nSaadetud: %1$s</string>
+    <!-- chat details screen long press item end -->
+
+
+    <!-- chat details screen delete item start -->
+    <string name="STR_NMS_DELETE_TITLE">Kustuta</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_TITLE">Kustuta oluline sõnum</string>
+    <string name="STR_NMS_DELETE_WARNING">Sõnum kustutatakse.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_WARNING">Kas soovite kindlasti selle olulise sõnumi kustutada?</string>
+    <string name="STR_NMS_DELETE_MSG">Valitud sõnumid kustutatakse.</string>
+    <string name="STR_NMS_DELETE_WAITTING">Kustutamine</string>
+    <string name="STR_NMS_CLEAR_HISTORY_CONTENT">Selles jututoas kustutakse kogu vestluste ajalugu</string>
+    <string name="STR_NMS_DELETE_IMPORTANT">Kaasaarvatud sõnumid, mis on märgitud oluliseks</string>
+    <!-- chat details screen delete item end -->
+
+
+    <!-- chat details actionBar option start -->
+    <string name="STR_NMS_MENU_CALL">Helista</string>
+    <string name="STR_NMS_MENU_GROUPINFO">Grupiinfo</string>
+    <string name="STR_NMS_MENU_INVITE_CHAT">Kutsu sõpru vestlusesse</string>
+    <string name="STR_NMS_MENU_INVITE_ISMS">Kutsu sõpru iSMS kasutama</string>
+    <string name="STR_NMS_MENU_SELECT_MSG">Vali sõnum</string>
+    <string name="STR_NMS_MENU_MARK_SPAM">Liiguta spämmi nimekirja</string>
+    <string name="STR_NMS_MENU_REMOVE_SPAM">Eemalda spämmist</string>
+    <string name="STR_NMS_MENU_ADD_SHORTCUT">Lisa otsetee</string>
+    <string name="STR_NMS_MENU_VIEW_ALLMEDIA">Vaata kõiki meediafaile</string>
+    <string name="STR_NMS_MENU_VIEW_ALLLOCATION">Vaata kõiki asukohti</string>
+    <string name="STR_NMS_MENU_EDIT_GROUP">Muuda gruppi</string>
+    <string name="STR_NMS_MENU_CHAT_SETTING">Vestluse seaded</string>
+    <string name="STR_NMS_MENU_INSERT_QUICK_TEXT">Lisa Quick Text</string>
+    <string name="STR_NMS_MENU_CLEAR_HISTORY">Kustuta vestluse ajalugu</string>
+    <string name="STR_NMS_MENU_LEAVE_GROUP">Lahku grupist</string>
+    <string name="STR_NMS_MENU_DISCARD">Loobu</string>
+    <string name="STR_NMS_MENU_DELETE">Kustuta</string>
+    <string name="STR_NMS_MENU_IMPORTANT">Märgi oluliseks</string>
+    <string name="STR_NMS_MENU_FORWARD">Edasta</string>
+    <!-- chat details actionBar option end -->
+
+
+    <!-- chat details share item start -->
+    <string name="STR_NMS_TAKE_PHOTO">Tee foto</string>
+    <string name="STR_NMS_RECORD_VIDEO">Salvesta video</string>
+    <string name="STR_NMS_DRAW_SKETCH">Joonista</string>
+    <string name="STR_NMS_SHARE_CONTACT">Jaga kontakti</string>
+    <string name="STR_NMS_CHOOSE_PHOTO">Vali foto</string>
+    <string name="STR_NMS_CHOOSE_VIDEO">Vali video</string>
+    <string name="STR_NMS_RECORD_AUDIO">Salvesta audiofail</string>
+    <string name="STR_NMS_SHARE_LOCATION">Jaga asukohta</string>
+    <string name="STR_NMS_CHOOSE_AUDIO">Vali audiofail</string>
+    <string name="STR_NMS_SHARE_CALENDAR">Jaga kalendrit</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_TITLE">Lisa muusikat</string>
+    <string name="STR_NMS_CHOOSE_RINGTONE_ITEM">Helin</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_ITEM">Audio</string>
+    <string name="STR_NMS_INSERT_SDCARD">Palun sisesta SD kaart!</string>
+    <!-- chat details share item start -->
+
+
+    <!-- record audio start -->
+    <string name="STR_NMS_AUDIO_TIMER_FORMAT" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <string name="STR_NMS_AUDIO_LABLE">Audiomärkmete salvestaja</string>
+    <string name="STR_NMS_RECORD_AUDIO_CONT">Vajuta salvestamiseks</string>
+    <string name="STR_NMS_PLAY_AUDIO_CONT">Vajuta mängimiseks</string>
+    <string name="STR_NMS_ACTION_SEND">Saada</string>
+    <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
+    <string name="audio_db_artist_name">Teie salvestused</string>
+    <string name="audio_db_album_name">Audiofailid</string>
+    <string name="STR_NMS_SELECT_AUDIO">Valige audiofail</string>
+    <!-- record audio end -->
+
+
+    <!-- chat & group details screen start -->
+
+    <string name="STR_NMS_UNREAD_FORMAT">%1$d lugemata sõnumit</string>
+    <string name="STR_NMS_NOT_DELIVERED_TITLE">Pole veel saadetud</string>
+    <string name="STR_NMS_FAILED_TITLE">Viga saatmisel</string>
+    <string name="STR_NMS_GROUP_SUBTITLE">%1$s, +%2$d</string>
+    <string name="STR_NMS_GROUP_DEAD_SUBTITLE">%1$s, %2$d</string>
+    <string name="STR_NMS_SAVE_AS_DRAFT">Sõnum salvestatud mustanditesse</string>
+    <string name="STR_NMS_NO_SD_TITLE">SD kaardi viga</string>
+    <string name="STR_NMS_CANT_SHARE">SD kaardile ei pääse ligi. Ühtegi multimeedia funktsiooni ajutiselt kasutada ei saa.\n\nPalun kontrolli oma SD kaarti ja proovi hiljem uuesti.</string>
+    <string name="STR_NMS_CANT_SAVE">SD kaarti ei leitud, faili ei saa salvestada</string>
+    <string name="STR_NMS_SDSPACE_NOT_ENOUGH">SD kaardil pole piisavalt ruumi, faili ei saa salvestada.</string>
+    <string name="STR_NMS_REAEND_ALL">Proovi uuesti...</string>
+    <string name="STR_NMS_FILE_LIMIT">Liiga suur</string>
+    <string name="STR_NMS_LOAD_ALL_MESSAGE">Lae kõik sõnumid</string>
+    <string name="STR_NMS_DOWNLOAD_FAILED">Allalaadimine ebaõnnestus</string>
+    <string name="STR_NMS_INPUT_HINT">Sisendandmed</string>
+    <string name="STR_NMS_INPUT_HINT_ISMS">Trüki iSMS sõnum</string>
+    <string name="STR_NMS_CAPTION_HINT">Trüki pealdised</string>
+    <string name="STR_NMS_PROTOCOL_SMS">SMS</string>
+    <string name="STR_NMS_PROTOCOL_MMS">MMS</string>
+    <string name="STR_NMS_PROTOCOL_IP">iSMS</string>
+    <string name="STR_NMS_SWITCH_BOTTON">Vaheta SIM</string>
+    <string name="STR_NMS_TURN_ON_BOTTON">Lülita sisse</string>
+    <string name="STR_NMS_SWITCH_TEXT_FORMAT">Grupivestluse jätkamiseks lülitu kõigepealt ümber %1$s SIM kaardile.</string>
+    <string name="STR_NMS_ENABLE_TEXT_FORMAT">Grupivestluse jätkamiseks lülita kõigepealt %1$s SIM kaardil iSMS teenus sisse.</string>
+    <string name="STR_NMS_REPLACE_ATTACH_TITLE">Asenda manus</string>
+    <string name="STR_NMS_REPLACE_ATTACH_MSG">Manus on juba olemas, asendada?</string>
+    <string name="STR_NMS_TRUNC_CAPTION">Pealdist on kärbitud.</string>
+    <string name="STR_NMS_MAX_CHARACTERS_REACHED">Sõnumi suuruse piirang on ületatud.</string>
+    <string name="STR_NMS_MAX_EMOTICON_REACHED">Saavuta emotikonide piirmäärad</string>
+    <string name="STR_NMS_ENABLE_PROCESS">Töötlemine...</string>
+    <string name="STR_NMS_ERR_FILE">Vigane fail</string>
+    <string name="STR_NMS_SENDING_TEXT">Saatmine...</string>
+    <!-- chat & group details screen end --> <!-- Error code tips -->
+    <string name="STR_NMS_ERR_GENERAL">Üldine viga</string>
+    <string name="STR_NMS_ERR_INVALID_ARGUMENT">Vigane argument</string>
+    <string name="STR_NMS_ERR_NETWORK_BLOCK">Võrgu rike</string>
+    <string name="STR_NMS_ERR_PHONE_NOT_ACTIVATED">Pole aktiveeritud</string>
+    <string name="STR_NMS_ERR_SIM_NOT_ACTIVATED">SIM kaart pole aktiveeritud</string>
+    <string name="STR_NMS_ERR_INVALID_MSG_DB_ID">Kehtetu sõnumite andmebaasi identifikaator</string>
+    <string name="STR_NMS_ERR_ADD_MSG_DB_FAILED">Andmebaasi sisestamine ebaõnnestus</string>
+    <string name="STR_NMS_ERR_UPDATE_MSG_DB_FAILED">Andmebaasi värskendamine ebaõnnestus</string>
+    <string name="STR_NMS_ERR_GET_MSG_DB_DATA_FAILED">Sõnumi võtmine ebaõnnestus</string>
+    <string name="STR_NMS_ERR_INVALID_CONTACT_DB_ID">Kontaktide andmebaasi identifikaator on kehtetu</string>
+    <string name="STR_NMS_ERR_ADD_CONTACT_DB_FAILED">Kontakti sisestamine ebaõnnestus</string>
+    <string name="STR_NMS_ERR_UPDATE_CONTACT_DB_FAILED">Kontaktide andmebaasi värskendamine ebaõnnestus</string>
+    <string name="STR_NMS_ERR_GET_CONTACT_DB_DATA_FAILED">Kontakti võtmine identifikaatori järgi ebaõnnestus</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_ERROR_FORMAT">Kehtetu IP sõnumiformaat</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_INVALID_TO">Kehtetu adressaat</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_WITH_UNKNOWN_USER">Kehtetu tundmatust adressaadist kasutaja</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_NO_MBMBER">Grupivestluse liikmeid pole</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_GCHAT_DEAD">Grupivestlus pole aktiveeritud</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_INVALID_SIM_ID">Grupivestluse SIM kaart pole hetkel kasutatav SIM kaart</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_FOR_SYS_MSG">Saada uuesti süsteemisõnum</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_INVALID_STATUS">IP sõnum pole valmis</string>
+    <string name="STR_NMS_ERR_GCHAT_IS_DEAD">Grupivestlust ei eksisteeri enam</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBERS">Kehtetud grupiliikmed</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBER_WITH_SELF">Grupi loomine ebaõnnestus. Sina ei kuulu liikmete hulka</string>
+    <string name="STR_NMS_ERR_GCHAT_EXCEED_MAX_MEMBER_COUNT">Grupiliikmete arv on täis</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_NAME">Kehtetu grupivestluse nimi</string>
+    <string name="STR_NMS_ERR_GCHAT_SIM_IS_NOT_ACTIVATED">Grupivestluse SIM kaart pole aktiveeritud</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_NOT_INBOX_MSG">Allalaadimise URL\'i hankimine ebaõnnetus</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_INVALID_URL">Kehtetu allalaadimise URL</string>
+    <string name="STR_NMS_ERR_GET_ATTACH_NAME_INVALID_BODY_FORMAT">Allalaetava faili nime hankimine ebaõnnestus</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_INVALID_FILE_NAME">Kehtetu allalaetava faili nimi</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_EXIST">Allalaetavat faili pole olemas</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_INBOX_MSG">Allalaetava faili määramine ebaõnnestus</string>
+    <string name="STR_NMS_ERR_SIM_INFO_NOT_FOUND">SIM kaardi andmeid ei leitud</string>
+    <string name="STR_NMS_ERR_SIM_IN_INVALID_STATUS">SIM kaardi olek on kehtetu</string>
+    <string name="STR_NMS_ERR_CMD_PROCESSING">Süsteem on ülekoormatud ja ei suuda täita süsteemi konfiguratsiooni käsklust</string>
+    <string name="STR_NMS_ERR_CMD_GENERAL">Üldine süsteemi konfiguratsiooni viga</string>
+    <string name="STR_NMS_ERR_CODE_END">Tundmatu veakood</string>
+    <!-- Error code tips -->
+    <string name="STR_NMS_SEND_MMS_QUERY_TITLE">Hoiatus</string>
+    <string name="STR_NMS_SEND_MMS_QUERY">Saaja ei ole iSMS kasutaja, saata MMS-i teel?</string>
+    <!-- Service center start -->
+    <string name="STR_NMS_SERVICE_TITLE">iSMS teeninduskeskus</string>
+    <string name="STR_NMS_INTRODUCTION">iSMS-ga saate kiiresti saata tasuta sõnumeid ja hoiab vestluste ajalugu ühes kohas, Vajutage ühele nupule, saate uue kogemuse!</string>
+    <string name="STR_NMS_TERMS">Tingimused</string>
+    <string name="STR_NMS_ACTIVATION_BUTTON">Aktiveeri kohe</string>
+    <string name="STR_NMS_LOSE_SDCARD">SD kaarti ei leitud</string>
+    <!-- Service center end -->
+
+
+    <!-- conversation empty tips -->
+    <string name="STR_NMS_SPAM_EMPTY">Rämpsvestlusi pole. \nSPÄMMI kogutakse kõik vestlused, mida märgitakse spämmiks. Teavitused lülitatakse vaikimisi välja. See hoiab ära ebavajaliku tülitamise. \n\nVõite saatja märkida spämmiks, valides vestluse ja klõpsates \'Märgi spämmiks\' ikoonile. Kui vestlus märgitakse spämmiks, siis kuvatakse automaatselt teavituste väljalülitamise ikooni ja vestlus saadetakse siia.</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_FROM">+86123456789</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_SUBJECT">See on spämm-sõnumi näide.</string>
+    <string name="STR_NMS_GROUPCHAT_EMPTY">Teil pole ühtki grupivestluse sõnumit. \nGRUPIVESTLUSED kogub kõik grupivestlused, mille olete loonud või millega liitunud. See võimaldab teil hõlpsasti leida ja hallata grupivestlusi. \n\nGrupivestluse loomiseks võite klõpsata \'Loo grupivestlus\' nupule ekraani alumises ääres ja kutsuda oma sõpru vestlusega ühinema.</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_FROM">Grupi nimi</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_SUBJECT">Teie sõber:\nI grupivestluse funktsioon meeldib!</string>
+    <string name="STR_NMS_IMPORTANT_EMPTY">Teil pole olulisi sõnumeid. \nFaili \'OLULINE\' kogutakse kõik sõnumid, mis märgitakse oluliseks. See võimaldab hõlpsalt üles leida olulisi sõnumeid. \n\nVõite märkida sõnumi oluliseks, valides sõnumi ja seejärel \'Valikute\' menüüst \'Märgi oluliseks\'. Kui sõnum märgitakse oluliseks, siis näete allpool punase lipuga ikooni.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TITLE">Näide sõnumist, mis on oluliseks märgitud. Näete punast lippu.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TIME">10:55</string>
+    <string name="STR_NMS_ALLCHAT_EMPTY">Vestlused puuduvad</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_CONTENT">Funktsiooni kasutamiseks peate kõigepealt aktiveerima iSMS teenuse. Ärge muretsege — kui teile teenus ei meeldi, siis võite selle alati seadetest välja lülitada. Proovige kohe!</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_TITLE">Aktiveerige iSMS</string>
+    <!-- conversation empty tips -->
+    
+    <string name="STR_NMS_CLEAR_USER_DATA">Andmed edukalt kustutatud</string>
+    
+    <!-- get file err start -->
+    <string name="STR_NMS_NO_SUCH_FILE">Sellist faili pole olemas</string>
+    <string name="STR_NMS_OVER_FILE_LIMIT">Faili suurus ületab limiidi</string>
+    <string name="STR_NMS_INVALID_FILE_TYPE">Seda tüüpi ei toetata</string>
+    <!-- get file err end -->
+
+    <string name="STR_NMS_DELIVERY_BODY">%s sai sõnumi kätte</string>
+    <string name="STR_NMS_SIM_SELECT_TITLE">Valige SIM</string>
+    
+    <string name="STR_NMS_SHORTCUT_SUCCESS">Otsetee %1$s on loodud.</string>
+    <string name="STR_NMS_SHORTCUT_REFRESHING">Värskendamine</string>
+    
+    <string name="STR_NMS_DISABLE_FAILED">Toiming ebaõnnestus, palun proovige uuesti</string>
+    <string name="STR_NMS_ENABLE_FAILED">Toiming ebaõnnestus, palun proovige uuesti</string>
+    <string name="STR_NMS_ENABLE_SUCCESS">Olete edukalt aktiveerinud iSMS teenuse</string>
+    <string name="STR_NMS_DISABLE_SUCCESS">Olete edukalt iSMS teenuse välja lülitanud</string>
+    
+	<string name="STR_NMS_SD_CARD_FULL">SD kaart on täis</string>
+    <string name="STR_NMS_SEND_MSG_FAILED">Sõnumi saatmine ebaõnnestus!</string>
+    
+    <string name="STR_NMS_SETTING_COMMENT">iSMS on lahe vestlusvahend. See on mugav ja tasuta.Lähemalt</string>
+    <string name="STR_NMS_KNOW_MORE">Lähemalt</string>
+    <string name="STR_NMS_RECEIVED_MSG_DETAILS">Trüki: IP sõnum\nVorm: %1$s\nSaada Time: %2$s\nVastu võetud: %3$s</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH_ADD">iSMS teenus ei ole hetkel puudumise tõttu ruumi.</string>
+    <string name="STR_NMS_SERVER_AUTO_ECHO_MSG">Sõnumit. Aitäh!</string>
+    
+	     <string name="imsp_ip_message">iSMS sõnum</string>
+    <string name="imsp_invite_chat_frequently"><b>Vestlete sageli %s ?</b>\nMiks mitte kutsuda %s kasutama iSMS, et säästa teie mõlema raha?</string>
+    <string name="imsp_enable_chat_frequently"><b>%s iSMS teenus on välja lülitatud!</b>\nMiks mitte oma iSMS teenus sisse lülitada, et säästa teie mõlema raha?</string>
+    <string name="imsp_invite">Kutsu</string>
+    <string name="imsp_enable_notice">Olete kindel, et soovite iSMS teenuse aktiveerida?</string>
+    <string name="imsp_activate_chat_frequently"><b>Vestlete sageli sõpradega?</b>\nMiks mitte aktiveerida iSMS teenuse, et vestelda ilma SMS tasusid maksmata?</string>
+    <string name="imsp_activate_note">Olete kindel, et soovite iSMS\'i aktiveerida?</string>
+    <string name="imsp_dismiss_content">Olete kindel, et soovite teadet eirata?</string>
+    <string name="imsp_divider_online">%s on võrgus</string>
+    <string name="imsp_divider_offline">Viimati oli võrgus kell %s</string>
+    <string name="imsp_divider_never_online">Mitte kunagi võrgus</string>
+    <string name="imsp_failed_title">Saatmine ebaõnnestus</string>
+    <string name="imsp_resend_via_sms">Saada selle asemel SMS</string>
+    <string name="imsp_resend_via_mms">Saada selle asemel MMS</string>
+    <string name="imsp_typing_text">Trükkimine</string>
+    <string name="imsp_save_attachment">Salvesta manus</string>
+    <string name="imsp_view">Vaata</string>
+    <string name="imsp_convert_to_mms">Konverdi MMS\'ks.</string>
+    <string name="imsp_convert_to_sms">Konverdi SMS\'ks.</string>
+    <string name="imsp_convert_to_isms">Konverdi iSMS\'ks.</string>
+    <string name="imsp_convert_to_mms_for_service">iSMS teenus ei ole valitud SIM kaardiga saadaval. Käesolevat sõnumit saab selle SIM kaardiga saata ainult MMS-na. Jätkata?</string>
+    <string name="imsp_convert_to_sms_for_service">iSMS teenus ei ole valitud SIM kaardiga saadaval. Sõnumit saab selle SIM kaardiga saata ainult SMS-na. Jätkata?</string>
+    <string name="imsp_convert_to_mms_for_recipients">Saaja(-d) ei ole iSMS kasutaja(-d). Käesolevat sõnumit saab saata ainult MMS-na. Jätkata?</string>
+    <string name="imsp_convert_to_sms_for_recipients">Saaja(-d) ei ole iSMS kasutaja(-d). Käesolevat sõnumit saab saata ainult SMS-na. Jätkata?</string>
+    <string name="imsp_sms_convert_to_isms">iSMS teenust saab valitud SIM kaardiga kasutada. SMS teenustasude vähendamiseks on soovitatav saata sõnum iSMS kaudu. Kas kasutada teist teenust?</string>
+    <string name="imsp_mms_convert_to_isms">iSMS teenust saab valitud SIM kaardiga kasutada. MMS teenustasude vähendamiseks on soovitatav saata sõnum iSMS kaudu. Kas kasutada teist teenust?</string>
+    <string name="imsp_keep_mms">Kasuta MMS-i</string>
+    <string name="imsp_keep_sms">Kasuta SMS-i</string>
+    <string name="imsp_resend_discard_message">Sõnumi uuesti saatmiseks kustutatakse hetkel koostatav sõnum.</string>
+    <string name="imsp_no_sim_card">SIM kaart puudub!</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">"Puudub toimiv internetiühendus! Palun proovige hiljem uuesti."</string>
+    <string name="imsp_chat_setting_updating">värskendamine...</string>
+    <string name="imsp_dialog_clear_title">Kustuta kõik</string>
+    <string name="imsp_dialog_clear_description">Selles jututoas kustutakse kogu vestluste ajalugu</string>
+    <string name="imsp_chat_setting_saving">salvestamine...</string>
+    <string name="imsp_chat_setting_sending">saatmine...</string>
+    <string name="imsp_save_chat_history_failed">salvestamine ebaõnnestus</string>
+    <string name="imsp_send_chat_history_failed">E-kirja saatmine ebaõnnestus</string>
+    <string name="imsp_conversation_list_all">Sõnumid</string>
+    <string name="imsp_conversation_list_important">Oluline</string>
+    <string name="imsp_conversation_list_group_chats">Grupivestlused</string>
+    <string name="imsp_conversation_list_spam">Spämm</string>
+    <string name="imsp_mark_as_spam_tips">Sõnumid, mis märgitakse spämmiks, viiakse üle \'Spämmi\' faili ja teavitus lülitatakse automaatselt välja.</string>
+    <string name="imsp_typing">"Trükib..."</string>
+    <string name="imsp_type_to_compose_text">"Trüki SMS/iSMS sõnum"</string>
+    <string name="imsp_no_sdcard">SD kaart puudub</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">Kutse saatmiseks kustutatakse koostamisel olevad sõnumid.</string>
+    <string name="imsp_current_sim_enabled">Praegune SIM on aktiveeritud.</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">Valige SIM, et aktiveerida iSMS</string>
+    <string name="imsp_activate_message">Antud funktsiooni toetab üksnes iSMS. Aktiveerida teie iSMS konto kohe?</string>
+    <string name="imsp_enable_message">Antud funktsiooni toetab üksnes iSMS. Aktiveerida teie iSMS kontot kohe?</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">Valige SIM, et lubada iSMS\'i</string>
+    <string name="imsp_switch_sim_title">Vaheta SIM</string>
+    <string name="imsp_switch_sim_message">Praegune SIM ei toeta iSMS\'i. Võtta kasutusele teine SIM?</string>
+    <string name="imsp_switch_sim_successfully">SIM edukalt vahetatud!</string>
+    <string name="imsp_dailog_multi_forward">Sõnumite edastamine</string>
+    <string name="imsp_dialog_send_result">Saatmise tulemused</string>
+    <string name="imsp_dlg_send_all">Kõik: %s</string>
+    <string name="imsp_dlg_send_sucess">Saadetud: %s</string>
+    <string name="imsp_dlg_send_failed">Ebaõnnestunud: %s</string>
+    <string name="imsp_multi_forward_sim_info">SIM andmete hankimine</string>
+    <string name="imsp_multi_forward_no_sim">SIM andmed puuduvad</string>
+    <string name="imsp_get_sim_failed">SIM andmete hankimine ebaõnnestus</string>
+    <string name="imsp_sim_status_error">SIM oleku viga</string>
+    <string name="imsp_forward_norecipients">Sõnumi edastamiseks puuduvad adressaadid</string>
+    <string name="imsp_multiforward_no_message">Puudub(-vad) sõnum(-id), mida edastada</string>
+    <string name="imsp_need_input_recipients">Palun valige kõigepealt vähemalt üks adressaat</string>
+    <string name="imsp_spam_empty">Rämpsvestlusi pole. \nSPÄMMI kogutakse kõik vestlused, mida märgitakse spämmiks. Teavitused lülitatakse vaikimisi välja. See hoiab ära ebavajaliku tülitamise. \n\nVõite saatja märkida spämmiks, valides vestluse ja klõpsates \'Märgi spämmiks\' ikoonile. Kui vestlus märgitakse spämmiks, siis kuvatakse automaatselt teavituste väljalülitamise ikooni ja vestlus saadetakse siia.</string>
+    <string name="imsp_groupchat_empty">Teil pole ühtki grupivestluse sõnumit. \nGRUPIVESTLUSED kogub kõik grupivestlused, mille olete loonud või millega liitunud. See võimaldab teil hõlpsasti leida ja hallata grupivestlusi. \n\nGrupivestluse loomiseks võite klõpsata \'Loo grupivestlus\' nupule ekraani alumises ääres ja kutsuda oma sõpru vestlusega ühinema.</string>
+    <string name="imsp_important_empty">Teil pole olulisi sõnumeid. \nFaili \'OLULINE\' kogutakse kõik sõnumid, mis märgitakse oluliseks. See võimaldab hõlpsalt üles leida olulisi sõnumeid. \n\nVõite märkida sõnumi oluliseks, valides sõnumi ja seejärel \'Valikute\' menüüst \'Märgi oluliseks\'. Kui sõnum märgitakse oluliseks, siis näete allpool punase lipuga ikooni.</string>
+    <string name="imsp_allchat_empty">Vestlused puuduvad</string>
+    <string name="imsp_attach_slideshow">Slaidiseanss</string>
+    <string name="imsp_download_history_dlg">Allalaadimine...</string>
+    <string name="imsp_invite_friends_to_ipmsg">Kutsu sõpru iSMS kasutama</string>
+    <string name="imsp_multi_forward_tips_content">Mitmikedastamiseks peab kõigepealt alla laadima mõned iSMS-d.</string>
+    <string name="imsp_multi_forward_failed_part">iSMS edasisaatmine ebaõnnestus osaliselt.</string>
+</resources>

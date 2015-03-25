@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- General -->
+    <skip />
+    <!-- Application name -->
+    <string name="wallpapers">MTK Live Wallpapers</string>
+
+    <!-- Wallpapers: -->
+    <skip />
+
+    <!-- Video Live Wallpaper -->
+    <string name="vlw">Wallpaper Video</string>
+    <string name="vlw_desc">
+        Tetapkan video sebagai wallpaper langsung.
+    </string>
+    
+	<!-- VideoScene -->
+    <!-- Text for error alert when a video container is not valid for progressive download/playback. -->
+    <string name="VideoScene_error_text_invalid_progressive_playback">Maaf, video ini tidak valid untuk streaming ke perangkat ini.</string>
+    <!-- Text for error alert when a video cannot be played. -->
+    <string name="VideoScene_error_text_unknown">Maaf, video ini tidak dapat diputar.</string>
+    <!-- Text for error alert when external media file is removed. -->
+    <string name="VideoScene_error_media_removed">File media dihapus</string>
+    <!-- Text for error alert when SD card is unmounted. -->
+	<string name="VideoScene_error_sdcard_unmounted">Kartu SD dikeluarkan</string>
+	<!-- Text for error alert when start up and the SD card is not prepared -->
+	<string name="VideoScene_info_wait_sdcard">Menunggu persiapan kartu SD</string>
+	<!-- Text for error alert when the media file can not be found. -->
+	<string name="VideoScene_error_media_not_found">File media tidak ada saat ini</string>
+	<string name="VideoScene_error_be_set">Maaf, video tidak dapat ditetapkan sebagai wallpaper video</string>
+
+
+	<!-- VideoSelector -->
+    <!-- Title for error alert when no video selected or a video cannot be played. -->
+    <string name="VideoEditor_error_title">Tidak dapat memutar video</string>
+    <!-- Button to close error alert when a video cannot be played -->
+    <string name="VideoEditor_error_button">OK</string>
+    <!-- Text for error alert when no video selected or a video cannot be played. -->
+    <string name="VideoEditor_error_no_video_selected">Tidak ada video yang dipilih</string>
+
+	<!-- Text for error alert when no video is selected for preview. -->
+	<string name="VideoEditor_warning_limited_duration">Pilih video berdurasi minimal 1 detik untuk diputar</string>
+	
+	<string name="VideoScene_reload_after_mount">Memuat video dari kartu SD, tunggu beberapa saat.</string>
+
+    <string name="select_video">Kartu SD</string>
+    <string name="select_default">Default</string>
+    <string name="select">Pilih Video</string>
+    <string name="set_wallpaper">Tetapkan</string>
+    <string name="title">Wallpaper Video</string>
+    <string name="default_title">Video Default</string>
+    
+    <string name="capture_video">kamera</string>
+    <string name="menu_item_add_item">Pilih video dari kartu SD</string>
+    <string name="group_video">Pilih satu video</string>
+    <string name="group_folder">Pilih folder</string>
+    <string name="folder_info">video &lt;br&gt;dari&lt;br&gt;</string>
+<string name="depth_tuning_title">Penyetelan kedalaman</string>
+    <string name="btn_cancel">"Batal"</string>
+    <string name="btn_ok">"Setel"</string>
+</resources>

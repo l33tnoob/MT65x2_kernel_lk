@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	
+
+	
+	<string name="bt_opp_notification_in_coming_ticker">"Saapuva tiedostopyyntö"</string>
+	<string name="bt_opp_notification_in_coming_title">"Saapuva tiedostopyyntö (kohteesta: %1$s)"</string>
+	<string name="bt_opp_notification_in_coming_message">"Valitse saapuvan tiedoston hyväksyminen."</string>
+	<string name="bt_opp_notification_in_ongoing_ticker">"Saapuva tiedosto"</string>
+	<string name="bt_opp_notification_in_ongoing_message">"Vastaanotetaan: %1$s (%2$s)"</string>
+	<string name="bt_opp_notification_out_ongoing_ticker">"Lähtevä tiedosto"</string>
+	<string name="bt_opp_notification_out_ongoing_message">"Lähetetään: %1$s (%2$s)"</string>
+
+	
+	<string name="bt_opp_cancel_task_title">"Tiedostonsiirto"</string>
+	<string name="bt_opp_cancel_task_message">"Perutaanko tämä siirto?"</string>
+	<string name="bt_opp_cancel_task_yes">"Kyllä"</string>
+	<string name="bt_opp_cancel_task_no">"Ei"</string>
+
+	
+	<string name="bt_opp_canceling_task_message">"Siirto perutaan. Odota..."</string>
+
+	
+	<string name="bt_opps_confirm_push_title">"Bluetooth - Saapuva kohde"</string>
+	<string name="bt_opps_confirm_push_message">"Saapuva tiedosto: %1$s (%2$s) kohteesta %3$s. Hyväksytäänkö?"</string>
+	<string name="bt_opps_confirm_push_yes">"Hyväksy"</string>
+	<string name="bt_opps_confirm_push_no">"Hylkää"</string>
+
+	
+	<string name="bt_oppc_push_action_label">"Bluetooth"</string>
+	<string name="bt_oppc_push_toast_sending_file">"Lähetetään tiedosto kohteeseen %1$s"</string>
+	<string name="bt_oppc_push_toast_sending_files">"Lähetetään tiedostoja kohteeseen %1$s"</string>
+	<string name="bt_oppc_push_toast_unsupported_uri">"Jaettava sisältö ei tuettu: %1$s"</string>
+	<string name="bt_oppc_push_toast_unknown_device">"Tuntematon laite"</string>
+	<string name="bt_opps_toast_storage_unavailable">"Ei SD-korttia tai tallennustila ei riitä saapuvalle tiedostolle."</string>
+	<string name="bt_oppc_toast_disk_full">" Levytila ei riitä lähetettyjen tietojen tallentamiseen."</string>
+	<string name="bt_opps_push_toast_invalid_request">"Etälaitteesta tuleva jakopyyntö ei kelpaa."</string>
+
+	<string name="permlab_bluetoothWhitelist">"Käyttö Bluetooth-laitteella, jolla on tilapäinen käyttöoikeus."</string>
+	<string name="permdesc_bluetoothWhitelist">Antaa sovelluksen lisätä tilapäisesti Bluetooth-laitteen sallittujen luetteloon ja sallii kyseiselle laitteelle tiedostojen lähettämisen tälle laitteelle ilman käyttäjän vahvistusta.</string>
+
+	
+	<string name="permlab_handoverStatus">"Vastaanota BT:n handover-siirtolähetyksiä."</string>
+	<string name="permdesc_handoverStatus">Sallii luovutussiirtotilatietojen vastaanoton Bluetoothilla.</string>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="alert_delete_multiple">Указанные объекты будут удалены.</string>
+    <string name="alert_delete_single">Указанный объект будет удален.</string>
+    <string name="app_name">Диспетчер файлов</string>
+    <string name="cancel">Отменить</string>
+    <string name="copy">"Копировать"</string>
+    <string name="copy_deny">Нет разрешения на копирование</string>
+    <string name="create_folder">Создать папку</string>
+    <string name="cut">"Вырезать"</string>
+    <string name="cut_deny">Нет разрешения на вырезание</string>
+    <string name="delete">"Удалить"</string>
+    <string name="delete_deny">Нет разрешения на удаление</string>
+    <string name="delete_fail">Сбой удаления</string>
+    <string name="deleting">Удаление</string>
+    <string name="deselect_all">Отменить выбор всего</string>
+    <string name="details">Сведения</string>
+    <string name="done">"Готово"</string>
+    <string name="empty_msg">(Пустая папка)</string>
+    <string name="executable">Разрешено исполнение</string>
+    <string name="insufficient_memory">Недостаточно памяти</string>
+    <string name="invalid_empty_name">Имя файла или папки не может быть пустым</string>
+    <string name="loading">Идет загрузка</string>
+    <string name="modified_time">Время изменения</string>
+    <string name="name">"Имя"</string>
+    <string name="new_folder">Создать папку</string>
+    <string name="no">"Нет"</string>
+    <string name="ok">ОК</string>
+    <string name="paste">"Вставить"</string>
+    <string name="pasting">Вставка</string>
+    <string name="paste_fail">Сбой вставки</string>
+    <string name="paste_same_folder">Нельзя вставить в тот же самый каталог</string>
+    <string name="readable">Разрешено чтение</string>
+    <string name="rename">Переименовать</string>
+    <string name="select_all">"Выбрать все"</string>
+    <string name="send_file">Отправить файл</string>
+    <string name="share">"Отправить"</string>
+    <string name="size">Размер</string>
+    <string name="sort_by">Сортировка по</string>
+    <string name="wait">Подождите...</string>
+    <string name="writable">Разрешена запись</string>
+    <string name="yes">"Да"</string>
+    <string name="confirm_rename">Подтвердить переименование</string>
+    <string name="msg_rename_ext">Вы изменяете расширение файла, после этого файл может быть не распознан. Действительно выполнить операцию?</string>
+    <string name="msg_unable_open_file">Невозможно открыть файл.</string>
+
+    <string-array name="sort_by">
+        <item>Тип</item>
+        <item>Имя (A–Z)</item>
+        <item>Размер (больший – меньший)</item>
+        <item>Время (новые – старые)</item>
+    </string-array>
+
+    <string name="more">Больше</string>
+    <string name="selected">Выбран</string>
+    <string name="invalid_char_prompt">Вы указали неверный символ</string>
+    <string name="search">Поиск</string>
+    <string name="sort">Сортировка</string>
+    <string name="show_file">Показать скрытые файлы</string>
+    <string name="hide_file">Скрыть скрытые файлы</string>
+    <string name="default_search_text">Поиск по файлам</string>
+    <string name="search_text_empty">Содержимое поиска не должно быть пустым</string>
+    <string name="free_space">Свободно</string>
+    <string name="total_space">Всего</string>
+    <string name="paste_sub_folder">Вставка в подпапку невозможна</string>
+    <string name="operation_fail">Сбой одной из файловых операций</string>
+    <string name="search_files">Поиск по файлам</string>
+    <string name="search_result">%2$d для \"%1$s\"</string>
+    <string name="already_exists">%1$s уже используется</string>
+    <string name="unmounted">%1$s размонтирован</string>
+    <string name="create_hidden_file">Файл будет скрыт, если его имя начинается с \'.\'</string>
+    <string name="modify_hidden_file">Файл не будет скрыт, если его имя начинается с \'.\'</string>
+    <string name="file_name_too_long">Слишком длинное входное имя</string>
+    <string name="some_paste_fail">Некоторые операции вставки не удались</string>
+    <string name="some_delete_fail">Некоторые операции удаления не удались</string>
+    <string name="search_empty">Содержимое для поиска не должно быть пустым</string>
+    <string name="search_setting_description">Локальные файлы и папки</string>
+    <string name="path_not_exists">%1$s не существует</string>
+    <string name="change_mode">Выберите файл или папку</string>
+    <string name="folder_beam_forbidden_title">Невозможно передать папку</string>
+    <string name="folder_beam_forbidden_message">Передача папок не поддерживается. Для передачи выберите несколько файлов.</string>
+    <string name="drm_beam_forbidden_title">Передача запрещена</string>
+    <string name="drm_beam_forbidden_message">Файлы, защищенные по технологии DRM (Цифровая защита авторских прав) нельзя передать.</string>
+
+</resources>

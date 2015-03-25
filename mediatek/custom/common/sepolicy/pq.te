@@ -1,0 +1,44 @@
+# ==============================================
+# Policy File of /system/binpq Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type pq_exec , exec_type, file_type;
+type pq ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive pq;
+init_daemon_domain(pq)
+
+# 20131024 CTS_02
+allow pq linker_exec:file read;
+
+
+# 20131028 CTS_08
+allow pq device:chr_file { read ioctl open };
+allow pq mtk_disp_device:chr_file { read ioctl open };
+
+
+# 20131119 FeatureSQC
+allow pq device:chr_file { read ioctl open };
+allow pq mtk_disp_device:chr_file { read ioctl open };
+allow pq property_socket:sock_file write;
+
+
+
+# 20131122 Add Set Property Rule
+allow pq  property_type:property_service set;

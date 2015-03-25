@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binatrace Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type atrace_exec , exec_type, file_type;
+type atrace ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive atrace;
+init_daemon_domain(atrace)
+
+
+# 20131122 Add Set Property Rule
+allow atrace  property_type:property_service set;

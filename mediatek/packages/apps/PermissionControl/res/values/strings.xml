@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Permission Control</string>
+    <string name="accept_perm">Allow</string>
+    <string name="deny_perm">Deny</string>
+    
+    <!-- Dialog message body for different permission -->
+    <string name="notify_check_hint">Do not remind again.</string>
+	<string name="notify_dialog_title">Security warning</string>
+	<string name="notify_dialog_msg_body"><xliff:g id="pkg_name">%s</xliff:g> is trying to <xliff:g id="perm_name">%s</xliff:g>.</string>
+	<string name="time_count_down_hint">(Deny automatically after <xliff:g id="time">%s</xliff:g> seconds.)</string>
+  
+	<!-- Notification on power on -->
+    <string name="notification_control_state_title">App permission</string>
+    <string name="notification_control_state_summary">App permission management is closed.</string>
+    <!-- Toast information for different permission -->
+    <string name="toast_deny_msg_body"><xliff:g id="pkg_name">%s</xliff:g> is denied to <xliff:g id="perm_name">%s</xliff:g>.</string>
+   
+    <!-- Permission manager UI  -->
+    <string name="manage_permission_app_label">App permissions</string>
+    <string name="manage_permission_summary">Manage app permissions for security and privacy protection</string>
+    <string name="permissions_label">Permissions</string>
+    <string name="apps">Apps</string>
+    <string name="no_applications">No apps.</string>
+    <string name="version_text">version <xliff:g id="version_num">%1$s</xliff:g></string>
+
+    <!-- app count/permission count -->
+    <string name="app_count_unit_single">app</string>
+    <string name="app_count_unit_plural">apps</string>
+    <string name="perm_count_unit_single">permission</string>
+    <string name="perm_count_unit_plural">permissions</string>
+    
+    <!-- empty text for listview -->
+    <string name="no_app_use_perm">No apps use this permission.</string>
+    <string name="no_perm_is_used">No permissions are used this app.</string>
+    <string name="notify_user_switch_on">Turn on the switch to manage app permissions.</string>
+    
+    <!-- alert dialog when turn off the switch -->
+    <string name="alert_dlg_title">Turn off protection?</string>
+    <string name="alert_dlg_mgs">Apps will directly get permissions without your confirmation.</string>
+    <!-- Foreground notification -->
+    <string  name="foreground_notification_title">App permission management is running</string>
+    <string  name="foreground_notification_summary">Touch to view detailed settings for app permissions.</string>
+    
+    <!-- auto boot part begin -->
+    <string  name="auto_boot_pref_title">Auto-start management</string>
+    <string  name="auto_boot_pref_summary">Allow or deny app auto-start during system bootup</string>
+    <string  name="no_auto_boot_app">No auto-start apps.</string>
+
+    <plurals name="autoboot_app_desc_allow">
+        <item quantity="one"><xliff:g id="app_count">%1$d</xliff:g> app allowed,</item>
+        <item quantity="other"><xliff:g id="app_count">%1$d</xliff:g> apps allowed,</item>
+    </plurals>
+    
+   <plurals name="autoboot_app_desc_deny">
+        <item quantity="one"><xliff:g id="app_count">%1$d</xliff:g> app denied.</item>
+        <item quantity="other"><xliff:g id="app_count">%1$d</xliff:g> apps denied.</item>
+   </plurals>
+   <!-- auto boot part end -->
+</resources>

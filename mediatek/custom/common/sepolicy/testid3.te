@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bintestid3 Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type testid3_exec , exec_type, file_type;
+type testid3 ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive testid3;
+init_daemon_domain(testid3)
+
+
+# 20131122 Add Set Property Rule
+allow testid3  property_type:property_service set;

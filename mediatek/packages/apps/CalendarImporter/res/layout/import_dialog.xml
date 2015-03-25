@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <TextView 
+        style="?android:attr/windowTitleStyle"
+        android:id="@+id/result_title"
+        android:text="@string/import_title"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dip"
+        android:layout_marginLeft="10dip" 
+        android:layout_marginTop="15dip"/>
+    <View 
+        android:id="@+id/result_divide_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="10dip"
+        android:background="@android:color/holo_blue_light"/>
+    
+    <TextView
+        android:id="@+id/import_tip" 
+        android:text="@string/importing"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="5dip"
+        style="?android:attr/textAppearanceMedium"/>
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+        android:layout_marginTop="5dip">
+        <TextView android:text="@string/progresshundred" 
+            android:id="@+id/progress_number"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:textColor="#000000"
+            android:layout_marginRight="15dip"
+            android:layout_marginLeft="15dip"
+            android:gravity="right"/>
+        <ProgressBar android:id="@+id/import_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:layout_marginLeft="15dip"
+            android:layout_below="@id/progress_number"
+            android:progress="0"
+            android:max="100"/>
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginTop="30dip"
+        android:background="#ffCCCCCC"/>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        style="?android:attr/buttonBarStyle"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button android:id="@+id/button_open" 
+            android:text="@string/open"
+            android:visibility="gone" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@+id/button_done" 
+            android:text="@string/done"
+            android:visibility="gone" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle" />
+       <!--  
+        <Button android:id="@+id/button_import_cancel" 
+            android:text="@string/cancel"
+            android:layout_centerInParent="true"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="40dip"
+            android:layout_marginRight="40dip"
+            android:visibility="visible"
+            android:layout_height="wrap_content" 
+            style="?android:attr/buttonBarButtonStyle" 
+            android:textSize="16dip"/>
+        -->
+    </LinearLayout>
+</LinearLayout>
+

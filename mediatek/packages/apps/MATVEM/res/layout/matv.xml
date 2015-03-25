@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/em_matv">
+    
+        <ListPreference
+            android:key="frame_rate"
+            android:title="@string/matv_frame_rate_title"
+            android:summary="@string/matv_frame_rate_summary"
+            android:persistent="true"
+            android:entries="@array/matv_frame_rate_entries"
+            android:entryValues="@array/matv_frame_rate_values" />
+
+        <ListPreference
+                android:key="nr_level"
+                android:title="@string/matv_nr_level_title"
+                android:summary="@string/matv_nr_level_summary"
+                android:persistent="true"
+                android:entries="@array/matv_nr_level_entries"
+                android:entryValues="@array/matv_nr_level_values" />
+        <ListPreference
+                android:key="audio_path"
+                android:title="@string/matv_audio_path_title"
+                android:summary="@string/matv_audio_path_summary"
+                android:persistent="true"
+                android:entries="@array/matv_audio_path_entries"
+                android:entryValues="@array/matv_audio_path_values" />                 
+       
+</PreferenceScreen>
+

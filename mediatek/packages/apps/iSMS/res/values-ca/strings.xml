@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="STR_NMS_MAIN">iSMS</string>
+    <string name="STR_NMS_HISSAGE">iSMS</string>
+    <string name="STR_NMS_INVITE_SMS_CONTENT">Hola, iSMS és una eina per xatejar genial, que és gratuïta i molt pràctica. Visiteu http://isms.hissage.com per obtenir més informació.</string>
+    <string name="STR_NMS_NO_SDCARD">No s\'ha pogut detectar la targeta SD i algunes operacions no podran efectuar-se amb iSMS</string>
+    <string name="STR_NMS_MOUNT_SDCARD">La targeta SD ja està disponible per fer-se servir</string>
+    <string name="STR_NMS_SEND_MMS_FAIL">No s\'ha pogut enviar el missatge. S\'enviarà automàticament un cop la xarxa torni a estar disponible.</string>
+    <string name="STR_NMS_RECV_MMS_FAIL">No s\'ha pogut descarregar el fitxer. Torneu-ho a provar més tard.</string>
+    <string name="STR_NMS_GROUP_CHAT_ME">a mi</string>
+    <string name="STR_NMS_GROUP_CHAT_I">Jo</string>
+    <string name="STR_NMS_GROUP_CHAT_YOU">Vós</string>
+    <string name="STR_NMS_GROUP_CREATE_MSG">%1$s ha invitat %2$s al xat de grup.</string>
+    <string name="STR_NMS_GROUP_ADD_MSG">%1$s s\'ha unit al xat de grup.</string>
+    <string name="STR_NMS_GROUP_DELETE_MSG">%1$s ha eliminat %2$s del xat de grup.</string>
+    <string name="STR_NMS_GROUP_QUITE_MSG">%1$s ha deixat el xat de grup.</string>
+    <string name="STR_NMS_GROUP_CHAT_PLACE_HOLDER_MSG_BODY">S\'ha unit a aquest grup</string>
+    <string name="STR_NMS_PICTURE">imatge</string>
+    <string name="STR_NMS_TAPE">àudio</string>
+    <string name="STR_NMS_VCARD">contacte</string>
+    <string name="STR_NMS_LOCATION">localització</string>
+    <string name="STR_NMS_SKETCH">esbós</string>
+    <string name="STR_NMS_VIDEO">vídeo</string>
+    <string name="STR_NMS_CALENDAR">calendari</string>
+    <string name="STR_NMS_UNKNOWN">desconegut</string>
+    <string name="STR_NMS_READ_MODE_PIC">una imatge</string>
+    <string name="STR_NMS_READ_MODE_TAPE">una nota d\'àudio</string>
+    <string name="STR_NMS_READ_MODE_VCARD">contactes</string>
+    <string name="STR_NMS_READ_MODE_LOCATION">una localització</string>
+    <string name="STR_NMS_READ_MODE_SKETCH">un esbós</string>
+    <string name="STR_NMS_READ_MODE_VIDEO">un vídeo</string>
+    <string name="STR_NMS_READ_MODE_CALENDAR">un calendari</string>
+    <string name="STR_NMS_ISMS_ENABLE">(iSMS habilitat)</string>
+    <string name="STR_NMS_READ_MODE_UNKNOWN">un arxiu desconegut</string>
+    <string name="STR_NMS_ALL_MSG">Tots els missatges</string>
+    <string name="STR_NMS_SAVED">Desat</string>
+    <string name="STR_NMS_BLOCKMSG">Bloquejats</string>
+    <string name="STR_NMS_SMS_TYPE">SMS</string>
+    <string name="STR_NMS_NO_SIM">No s\'ha pogut detectar la targeta SIM</string>
+    <string name="STR_NMS_ILLEGAL_ADDRESS">Aquest número no és vàlid</string>
+    <string name="STR_NMS_REMIND_USER_SET_NAME">Actualitzeu el vostre perfil</string>
+    <string name="STR_NMS_OK">D\'acord</string>
+    <string name="STR_NMS_BACK">Enrere</string>
+    <string name="STR_NMS_CANCEL">Cancel·leu</string>
+    <string name="STR_NMS_NETWORK_UNAVL">Assegureu-vos que disposeu d\'una connexió de dades adequada com ara 3G, GPRS o Wi-Fi</string>
+    <string name="STR_NMS_TODAY">Avui</string>
+    <string name="STR_NMS_YESTERDAY">Ahir</string>
+    <string name="STR_NMS_NOW">Ara</string>
+    <string name="STR_NMS_NO_SIM_CARD">No s\'ha pogut detectar cap targeta SIM; cal que inseriu una targeta SIM.</string>
+    <string name="STR_NMS_NO_CONNECTION">Comproveu que la xarxa estigui disponible o si el Mode Avió està activat.</string>
+    <string name="STR_NMS_ATTACH_SHARE">%1$s ha compartit amb %2$s</string>
+    <string name="STR_NMS_WAIT">Espereu…</string>
+    <string name="STR_NMS_TIPTITLE">Consell</string>
+
+    <string name="STR_NMS_OPEN">Obrir</string>
+    <string name="STR_NMS_PLAY">Reproduir</string>
+    
+    
+
+    <string name="STR_NMS_VCARD_NAME">%1$s contactes</string>
+    <string name="STR_NMS_SHARE_VCARD_FAILED">s\'ha produït un error en compartir el contacte</string>
+
+    <!-- upgrade info -->
+    <string name="STR_NMS_UPGRADE_TICKER">Actualització de la versió</string>
+    <string name="STR_NMS_UPGRADE_ERROR_TITLE">Error en l\'actualització</string>
+    <string name="STR_NMS_UPGRADE_ERROR_CONTENT">Error en l\'actualització; actualitzeu el client iSMS</string>
+    <string name="STR_NMS_INSTALLED_TITLE">L\'actualització s\'ha efectuat correctament</string>
+    <string name="STR_NMS_INSTALLED_CONTENT">L\'actualització per al telèfon s\'ha efectuat correctament</string>
+    <string name="STR_NMS_PROMPT_DLG_TITLE">S\'ha detectat una nova versió</string>
+    <string name="STR_NMS_PROMPT_DLG_DOWNLOAD">Descarregar</string>
+    <string name="STR_NMS_PROMPT_DLG_LATER">Més tard</string>
+    <string name="STR_NMS_UPGRADING">S\'està actualitzant</string>
+    <string name="STR_NMS_UPGRADE_TIME">Última comprovació: %s</string>
+    
+    <!-- ext protocol -->
+    <string name="STR_NMS_OFFLINE_URL">http://ismsi.hissage.com/webservice/nmsmail/notifyOffline.php</string>
+    
+    <!-- Activation start -->
+    <string name="STR_NMS_PRELOAD_IP_MSG_CONTENT">&quot;Us donem la benvinguda a iSMS&quot;.</string>
+    <string name="STR_NMS_ACTIVAT_TITLE">iSMS us enviarà un missatge curt un sol cop per verificar el vostre número de telèfon. És possible que se us apliqui un recàrrec per part de la companyia de telèfon.</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE">Verifiqueu el vostre núm</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE2">Verifiqueu el vostre núm</string>
+    <string name="STR_NMS_YOUR_COUNTRY_TITLE">EL VOSTRE PAÍS</string>
+    <string name="STR_NMS_YOUR_PHONE_TITLE">EL VOSTRE NÚMERO DE TELÈFON</string>
+    <string name="STR_NMS_VERIFY_FAIL_TITLE">S\'ha produït un error en completar la verificació de l\'SMS.</string>
+    <string name="STR_NMS_VERIFY_FAIL_CONTENT">Assegureu-vos que heu introduït el vostre número de telèfon correctament.</string>
+    <string name="STR_NMS_WORKING_SMS_TIP">Assegureu-vos que disposeu d\'un pla d\'SMS actiu.</string>
+    <string name="STR_NMS_VERIFYING">S\'està esperant a detectar automàticament l\'SMS enviat a</string>
+    <string name="STR_NMS_RETRY">Torneu-ho a provar</string>
+    <string name="STR_NMS_EDIT_NUMBER">Editar el número</string>
+    <string name="STR_NMS_UPDATE_PROFILE">Actualitzar el perfil</string>
+    <string name="STR_NMS_START_ISMS">Iniciar iSMS</string>
+    <string name="STR_NMS_SEND">Enviar</string>
+    <string name="STR_NMS_CONGRATULATIONS_TITLE">Felicitats.</string>
+    <string name="STR_NMS_CONGRATULATIONS_CONTENT">Gràcies per activar iSMS.\n Ja podeu començar a gaudir del nostre servei.\nFeliç iSMS!</string>
+    <string name="STR_NMS_WELCOME_BACK">Us tornem a donar la benvinguda.</string>
+    <string name="STR_NMS_SEND_SMS_FAIL">S\'ha produït un error en la verificació de les dades, comproveu-les si:\n  1. El número de telèfon és correcte;\n  2. El software de seguretat no està activat;\n  3. Altres possibles raons per bloquejar l\'enviament d\'SMS.\nAssegureu-vos que tot és correcte i torneu-ho a provar més tard.</string>
+    <string name="STR_NMS_ACTIVE">Activar iSMS</string>
+    <string name="STR_NMS_WELCOME_ACTIVE">Us donem la benvinguda a iSMS</string>
+    <string name="STR_NMS_CONNECTING">S\'està connectant...</string>
+    <!-- Activation end -->
+
+
+    <!-- Notification start -->
+    <string name="STR_NMS_NEW_MSG_TITLE">Nou missatge iSMS</string>
+    <string name="STR_NMS_NEW_SMG_CONTENT">%d missatges sense llegir</string>
+    <!-- Notification End -->
+
+    <string name="STR_NMS_MSG_DUMPER_MSG_SMS">SMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_MMS">MMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_IP">Missatge IP</string>
+    <string name="STR_NMS_MSG_DUMPER_SEND_MSG">Enviat %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_RECEIVE_MSG">Rebut %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TIME">Hora: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TEXT">Text</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_PIC">Imatge</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_SKETCH">Esbós</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VOICE">Veu</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VIDEO">Vídeo</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CALENDAR">Calendari</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION_IMG">Imatge de la localització</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VCARD">Vcard</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION">Localització</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CAPTION">Llegenda: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_URL">Url: </string>
+    <string name="STR_NMS_MSG_DUMPER_DURATION">Durada: </string>
+    <string name="STR_NMS_MSG_DUMPER_COORDINATE">Coordinada: </string>
+    <string name="STR_NMS_MSG_DUMPER_ADDRESS">Adreça: </string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_SENDER">Remitent: </string>
+    <string name="STR_NMS_MSG_DUMPER_NORMAL_DETAIL">Dades de la sessió:</string>
+    <string name="STR_NMS_MSG_DUMPER_NAME">Nom: </string>
+    <string name="STR_NMS_MSG_DUMPER_NUMBER">Número: </string>
+    <string name="STR_NMS_MSG_DUMPER_PORTRAIT">Vertical</string>
+    <string name="STR_NMS_MSG_DUMPER_MULTI_SEND_DETAIL">Difusió:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_DETAIL">Xat de grup:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_CREATER">Autor: </string>
+    <string name="STR_NMS_MSG_DUMPER_MEMBERS">Membres: </string>
+    <string name="STR_NMS_MSG_DUMPER_VCARD_NAME">Nom: </string>
+    <string name="STR_NMS_MSG_DUMPER_CALENDAR_SUMMARY">Resum: </string>
+
+    <!-- Chat Settings -->
+    <string name="STR_NMS_CHAT_SETTING_TITLE">Configuració del xat</string>
+    <string name="STR_NMS_DISPLAY">Visualitza</string>
+    <string name="STR_NMS_CHAT_WALLPAPER">Empaperat del xat</string>
+    <string name="STR_NMS_SYS_WALLPAPER">Seleccioneu un empaperat</string>
+    <string name="STR_NMS_CAMEARPHOTO">Feu una foto</string>
+    <string name="STR_NMS_SYS_GALLERY">Seleccioneu una imatge des de la galeria</string>
+    <string name="STR_NMS_DEFAULT_WALLPAPER">Predeterminat</string>
+    <string name="STR_NMS_NOTIFICATION_CATEGORY">Notificació</string>
+    <string name="STR_NMS_NOTIFICATION_TITLE">Notificació iSMS</string>
+    <string name="STR_NMS_NOTIFICATION_CONTENT">Mostrar en rebre notificacions</string>
+    <string name="STR_NMS_MUTE">Silenci</string>
+    <string name="STR_NMS_MUTE_OFF">Desactivat</string>
+    <string name="STR_NMS_MUTE_1">Silencia durant 1 hora</string>
+    <string name="STR_NMS_MUTE_4">Silencia durant 4 hores</string>
+    <string name="STR_NMS_MUTE_8">Silencia durant 8 hores</string>
+    <string name="STR_NMS_RINGTONE_TITLE">To de trucada</string>
+    <string name="STR_NMS_RINGTONE_CONTENT">Seleccioneu un to de trucada per a les noves notificacions </string>
+    <string name="STR_NMS_VIBRATE_TITLE">Vibració</string>
+    <string name="STR_NMS_VIBRATE_CONTENT">Vibrar en rebre notificacions</string>
+    <string name="STR_NMS_ACTIONS">Accions</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_TITLE">Descarregar l\'historial del xat</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_CONTENT">Desa en targeta SD en format Zip</string>
+    <string name="STR_NMS_EMAIL_HISTORY_TITLE">Envia l\'historial del xat per correu</string>
+    <string name="STR_NMS_EMAIL_HISTROY_CONTENT">Envia l\'historial per correu en format Zip</string>
+    <string name="STR_NMS_CLEAR_HISTROY">Elimina l\'historial del xat</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_DLG">S\'està descarregant...</string>
+    <string name="STR_NMS_DOWNLOAD_OK">S\'ha completat la descàrrega de l\'historial del xat; deseu-la com a %s</string>
+    <string name="STR_NMS_DOWNLOAD_ERROR">S\'ha produït un error en la descàrrega de l\'historial del xat.</string>
+    <string name="STR_NMS_DOWNLOAD_EMPTY">No hi ha res per descarregar.</string>
+    <string name="STR_NMS_CLEARING">S\'està netejant l\'historial, espereu...</string>
+    <string name="STR_NMS_WAIT_SAVE_WALLPAPER">S\'està desant l\'empaperat, espereu...</string>
+    <string name="STR_NMS_SAVE_WALLPAPER_OK">L\'empaperat s\'ha desat correctament.</string>
+    <string name="STR_NMS_CLEARDONE">S\'ha completat la neteja de l\'historial.</string>
+    <string name="STR_NMS_SVAE_TITLE">Desa en targeta SD</string>
+    <string name="STR_NMS_SAVE_CONTENT">Desa aquest fil de xat en una targeta SD com a fitxer Zip</string>
+    <string name="STR_NMS_EMAIL_TITLE">Compartiu per correu electrònic</string>
+    <string name="STR_NMS_EMAIL_CONTENT">Compartiu aquest fil de xat com un adjunt per correu electrònic en format Zip</string>
+
+    <!-- Chat Settings End -->
+
+
+    <!-- Profile Settings -->
+    <string name="STR_NMS_PROFILE_TITLE">Perfil</string>
+    <string name="STR_NMS_TAP_AVATAR_TIP">Premeu aquí per editar la imatge del perfil</string>
+    <string name="STR_NMS_DISPLAY_NAME_TIP">NOM DE VISUALITZACIÓ</string>
+    <string name="STR_NMS_ACCOUNT_TIP">COMPTE ISMS</string>
+    <string name="STR_NMS_NO_APP">No està permès que els sol·licitants efectuïn aquesta acció.</string>
+    <string name="STR_NMS_NO_NAME">Configureu el vostre nom</string>
+    <string name="STR_NMS_SAVE_AVATAR_FAILD">S\'ha produït un error en desar la imatge del perfil.</string>
+    <string name="STR_NMS_INPUT_NAME">Nom</string>
+    <string name="STR_NMS_TERM_WARN_ACTIVATE">Aquesta funció només és compatible mitjançant el servei iSMS.\n\niSMS és un servei de missatgeria instantània gratuït que us permet xatejar i compartir contingut multimèdia amb els amics en qualsevol moment i en qualsevol lloc a través d\'una connexió de dades a Internet (Wi-Fi, 2G/3G, etc.).\nEn activar-lo per primer cop, iSMS us enviarà automàticament un SMS perquè en completeu el registre. És possible que se us apliqui una quota o tarifa per SMS.\n\n Acord d\'usuari\n</string>
+    <string name="STR_NMS_TERM_WARN_WELCOME">iSMS és un servei de missatgeria instantània gratuït que us permet xatejar i compartir contingut multimèdia amb els amics en qualsevol moment i en qualsevol lloc a través d\'una connexió de dades a Internet (Wi-Fi, 2G/3G, etc.).\nEn activar-lo per primer cop, iSMS us enviarà automàticament un SMS perquè en completeu el registre. És possible que se us apliqui una quota o tarifa per SMS.\n\n Acord d\'usuari\n</string>
+    <string name="STR_NMS_TERM_KEY">Termes i condicions</string>
+    <string name="STR_NMS_AGREE_AND_CONTINUE">Accepteu i continueu</string>
+    <string name="STR_NMS_ACTIVE_BNT">Activar</string>
+    <string name="STR_NMS_SET_PROFILE_OK">El perfil s\'ha configurat correctament</string>
+    <string name="STR_NMS_SET_PROFILE_FAIL">S\'ha produït un error en configurar el perfil</string>
+    <string name="STR_NMS_ILLEGAL_PROFILE_NAME">Nom il·legal</string>
+    <string name="STR_NMS_NO_ACTIVITED">No hi ha cap targeta SIM activada o habilitada.</string>
+    <!-- Profile Settings End -->
+
+
+    <!-- Term Activity -->
+    <string name="STR_NMS_REJECT">Rebutjar</string>
+    <string name="STR_NMS_AGREE">Acceptar</string>
+    <string name="STR_NMS_TERM_TITLE">Termes del servei</string>
+    <string name="STR_NMS_TERM_CONTENT">Enteneu que aquest servei i el programari que incorpora poden incloure components de seguretat per protegir els materials digitals, i que l\'ús d\'aquests materials està subjecte a les normes d\'ús establertes per AF PushMail i/o els proveïdors de continguts que proporcionen el Servei, i no està permès substituir o eludir cap d\'aquestes normes d\'ús. Queda estrictament prohibida la reproducció, publicació, distribució o exposició pública, total o parcial, no autoritzada dels materials que es faciliten a través del servei.</string>
+    <!-- Term Activity End -->
+
+
+    <!-- System Settings -->
+    <string name="STR_NMS_SYS_SETTING_TITLE">Missatge iSMS </string>
+    <string name="STR_NMS_SETTINGS_TITLE">PERFIL</string>
+    <string name="STR_NMS_PREFERENCE_CATE">PREFERÈNCIES</string>
+    <string name="STR_NMS_SEND_SMS_TITLE">Enviar com a SMS</string>
+    <string name="STR_NMS_SEND_SMS_CONTENT">Enviar com a SMS quan iSMS està disponible. És possible que se us apliqui una tarifa de missatgeria per part de la companyia de telefonia Aquesta norma no és vàlida per al xat de grup</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_TITLE">Descarrega automàtica</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_CONTENT">Descarregar automàticament objectes multimèdia</string>
+    <string name="STR_NMS_CAPTION_TITLE">Llegendes</string>
+    <string name="STR_NMS_CAPTION_CONTENT">Compartir arxius amb llegenda</string>
+    <string name="STR_NMS_SYSTEM_CATE">SYSTEMA</string>
+    <string name="STR_NMS_UPDATE_TITLE">Actualització del programari</string>
+    <string name="STR_NMS_UPDATE_CONTENT">Última comprovació: Mai</string>
+    <string name="STR_NMS_NETWORK_USAGE_TITLE">Ús de la xarxa</string>
+    <string name="STR_NMS_NETWORK_USAGE_CONTENT">Visualitza l\'ús total de les dades enviades/rebudes</string>
+    <string name="STR_NMS_NETWORK_DLG_CONTENT">Enviat: %1$.3f K \nRebut: %2$.3f K\nÚltima reiniciació: %3$s</string>
+    <string name="STR_NMS_VERSION_TITLE">Versió</string>
+    <string name="STR_NMS_NEVER_CLEAR">Mai</string>
+    <string name="STR_NMS_RESET">Reiniciar</string>
+    <string name="STR_NMS_SWITCH_ON">ACTIU</string>
+    <string name="STR_NMS_SWITCH_OFF">DESACTIVAT</string>
+    <string name="STR_NMS_SYSTEM_SETTING_TITLE">Configuració</string>
+    <string name="STR_NMS_COPYRGIHT">Hesine Technologies, Inc.</string>
+    <string name="STR_NMS_ABOUT">Sobre iSMS</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_TITLE">Mostra estat de lectura</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_CONTENT">Mostra estat de lectura en la llista de missatges</string>
+    <string name="STR_NMS_SHOW_REMIND_TITLE">Mostra recordatoris</string>
+    <string name="STR_NMS_SHOW_REMIND_CONTENT">Mostra recordatoris d\'iSMS en la pantalla del xat</string>
+    <string name="STR_NMS_MENU_RESET_SETTING">Restaura la configuració per defecte</string>
+    <string name="STR_NMS_MENU_FUNCTION_INTRODUCTION">Característiques</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT">Acord d\'usuari</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION">Copyright</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT_TITLE">ACORD DE LLICÈNCA D\'USUARI D\'iSMS DE HESINE</string>
+    <string name="STR_NMS_MENU_FUNCTION">Llista de característiques</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION_DETAIL">\nHesine Technologies Inc.\nCopyright© 2008-2013\nTots els drets reservats.\n</string>
+    <!-- System Settings End -->
+
+
+    <!-- Caption Settings -->
+    <string name="STR_NMS_AUDIO_TITLE">Àudio</string>
+    <string name="STR_NMS_VIDEO_TITLE">Vídeos</string>
+    <string name="STR_NMS_PHOTO_TITLE">Fotos</string>
+    <!-- Caption Settings End -->
+
+
+    <!-- Map String start -->
+    <string name="STR_NMS_MAP_TITLE">Compartir localització</string>
+    <string name="STR_NMS_MAP_PROMPT">No s\'ha pogut mostrar el mapa perquè no teniu el servei de localització activat. L\'adreça que es mostra a continuació s\'ha estimat segons la vostra informació del telèfon. \nPer obtenir una localització més exacta, us suggerim activar el servei de localització.</string>
+    <string name="STR_NMS_MAP_NOTE_1">Des de l\'opció de configuració del sistema, habiliteu un carpeta origen per a Les meves localitzacions</string>
+    <string name="STR_NMS_MAP_SHARE">Compartir</string>
+    <string name="STR_NMS_MAP_SETTINGS">Configuració</string>
+    <string name="STR_NMS_MAP_OK">D\'acord</string>
+    <string name="STR_NMS_MAP_CANCEL">Cancel·leu</string>
+    <string name="STR_NMS_MAP_EDIT">Editar localització</string>
+    <string name="STR_NMS_MAP_SEARCH_HINT">Cerca llocs propers</string>
+    <string name="STR_NMS_MAP_WAIT">Espereu...</string>
+    <string name="STR_NMS_MAP_EDIT_LIMIT">S\'ha excedit el nombre de caràcters</string>
+    <string name="STR_NMS_MAP_ADDR_LEN">L\'adreça és massa llarga</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR_LOCATING">S\'està local. la vostra pos. actual...</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN_LOCATING">S\'està localitzant la posició del vostre PIN...</string>
+    <string name="STR_NMS_MAP_LINEONE_SEARCH_LOCATING">S\'està localitzant la posició de la cerca...</string>
+    <string name="STR_NMS_MAP_LINETHREE_NEARBY_LOCATING">S\'estan cercant llocs propers...</string>
+    <string name="STR_NMS_MAP_LINEONE_FAILED">La vostra local. no està disp.</string>
+    <string name="STR_NMS_MAP_LINETWO_FAILED">Assegureu-vos que el servei de localització està activat i que la xarxa està disponible</string>
+    <string name="STR_NMS_MAP_LINETHREE_FAILED">No s\'han trobat llocs propers</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR">Compartir la localització actual</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN">Compartir la localització del PIN</string>
+    <string name="STR_NMS_MAP_MY_LOCATION">La meva localització</string>
+    <string name="STR_NMS_MAP_SEARCH">Cerca</string>
+    <string name="STR_NMS_MAP_ERROR_1">No s\'ha pogut obtenir cap latitud ni longitud</string>
+    <string name="STR_NMS_MAP_ERROR_2">Els servidors de Google retornen un error</string>
+    <!-- Map String end -->
+
+
+    <!-- All Media String start -->
+    <string name="STR_NMS_ALL_MEDIA_TITLE">Tots els sup.</string>
+    <string name="STR_NMS_ALL_MEDIA_WAIT">Espereu...</string>
+    <string name="STR_NMS_ALL_MEDIA_ERROR">S\'ha produït un error en efectuar la càrrega, torneu-ho a provar més tard</string>
+    <string name="STR_NMS_ALL_MEDIA_EMPTY">Buit</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_WEEK">Aquesta setmana</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_MONTH">Aquest mes</string>
+    <string name="STR_NMS_ALL_MEDIA_JAN">Gener</string>
+    <string name="STR_NMS_ALL_MEDIA_FEB">Febrer</string>
+    <string name="STR_NMS_ALL_MEDIA_MAR">Març</string>
+    <string name="STR_NMS_ALL_MEDIA_APR">Abril</string>
+    <string name="STR_NMS_ALL_MEDIA_MAY">Maig</string>
+    <string name="STR_NMS_ALL_MEDIA_JUN">Juny</string>
+    <string name="STR_NMS_ALL_MEDIA_JUL">Juliol</string>
+    <string name="STR_NMS_ALL_MEDIA_AUG">Agost</string>
+    <string name="STR_NMS_ALL_MEDIA_SEPT">Setembre</string>
+    <string name="STR_NMS_ALL_MEDIA_OCT">Octubre</string>
+    <string name="STR_NMS_ALL_MEDIA_NOV">Novembre</string>
+    <string name="STR_NMS_ALL_MEDIA_DEC">Desembre</string>
+    <string name="STR_NMS_ADDCONTACT">Afegir un contacte</string>
+    <string name="STR_NMS_ADD_PHONE_CONTACT">¿Desitgeu afegir \&quot;%1$s\&quot; als contactes?</string>
+    <string name="STR_NMS_DELETE_MEDIA">Els dispositius seran eliminats, desitgeu continuar?</string>
+    <string name="STR_NMS_MEDIA_SHARE_MESSAGE">S\'ha compartit %1$s a %2$s</string>
+
+    <!-- All Media String end -->
+
+
+    <!-- All Locations String start -->
+    <string name="STR_NMS_ALL_LOCATIONS_TITLE">Totes les loc.</string>
+    <string name="STR_NMS_ALL_LOCATIONS_LOC">Localització</string>
+    <string name="STR_NMS_ALL_LOCATIONS_WAIT">Espereu...</string>
+    <!-- All Locations String end -->
+
+
+    <!-- Sketch -->
+    <string name="STR_NMS_SKETCH_TITLE">Dibuixar un esbós</string>
+    <string name="STR_NMS_REDO">Tornar a fer</string>
+    <string name="STR_NMS_UNDO">Desfer l\'acció</string>
+    <string name="STR_NMS_SKETCH_CUSTOM">Personalitzar</string>
+    <string name="STR_NMS_PEN_SIZE">Mida</string>
+    <string name="STR_NMS_SKETCH_TOOLS_PEN">Llapis</string>
+    <string name="STR_NMS_SKETCH_TOOLS_ERASER">Esborrador</string>
+    <string name="STR_NMS_SKETCH_CUSTOM_COLOR">Color personalitzat</string>
+    <string name="STR_NMS_CLEAR_SKETCH_TITLE">Netejar esbós</string>
+    <string name="STR_NMS_CLEAR_SKETCH_CONTENT">Desitgeu eliminar l\'esbós?</string>
+    <string name="STR_NMS_SIZE_SKETCH_TITLE">Mida</string>
+    <string name="STR_NMS_SIZE_SKETCH_MAX">72</string>
+    <string name="STR_NMS_SIZE_SKETCH_MIN">2</string>
+    <string name="STR_NMS_COLOR_SKETCH_TITLE">Color</string>
+    <string name="STR_NMS_SKETCH_ERROR">S\'ha produït un error en crear l\'esbós.</string>
+    <string name="STR_NMS_BACK_TITLE">Confirmació</string>
+    <string name="STR_NMS_FINISH_SKETCH_CONTENT">Esteu segur que voleu abandonar l\'esbós?</string>
+    <string name="STR_NMS_LEAVE_SKETCH_CONTENT">Esteu segur que voleu deixar aquest esbóç?</string>
+    <string name="STR_NMS_NOTREDO">No hi ha cap acció per tornar a efectuar.</string>
+    <string name="STR_NMS_NOTUNDO">No hi ha cap acció per desfer.</string>
+    <string name="STR_NMS_SKETCH_DELETE">Eliminar</string>
+    <string name="STR_NMS_DISCARD">Descartar</string>
+
+    <!-- Sketch end -->
+
+
+    <!-- Selection Contact -->
+    <string name="STR_NMS_DONE">D\'acord</string>
+    <string name="STR_NMS_SELECTALL">Seleccioneu tots els elements</string>
+    <string name="STR_NMS_DESELECTED">Desfeu la selecció de tots els elements</string>
+    <string name="STR_NMS_SELECTED">S\'ha seleccionat %1$s</string>
+    <string name="STR_NMS_CONTACT_SEARCH">Cerca contactes</string>
+    <string name="STR_NMS_SEARCH">Cerca</string>
+    <string name="STR_NMS_CONTACT_SELECT">Seleccioneu un contacte</string>
+    <string name="STR_NMS_SELECT_MEMBER_FULL">S\'han seleccionat massa contactes</string>
+    <string name="STR_NMS_SELECT_MEMBER_EMPTY">No s\'ha seleccionat cap contacte</string>
+    <string name="STR_NMS_SELECT_CONTAT_WAIT">Espereu...</string>
+    <string name="STR_NMS_SELECT_CONTAT_EMPTY">No s\'han trobat contactes iSMS</string>
+    <string name="STR_NMS_SELECT_NO_RESULT">No s\'ha trobat cap contacte</string>
+    <string name="STR_NMS_EMPTY">No s\'han trobat contactes</string>
+    <string name="STR_NMS_ALL_CONTACTS">TOTHOM</string>
+    <string name="STR_NMS_GROUPS_MEM"> %1$s membres</string>
+    <string name="STR_NMS_GROUPS_CONTACTS">TOTS ELS GRUPS</string>
+    <!-- Selection Contact end -->
+
+    <!-- Group chat -->
+    <string name="STR_NMS_CREATE_GROUP_TITLE">Crear grup</string>
+    <string name="STR_NMS_GROUP_INFO_TITLE">Inf. sobre el grup</string>
+    <string name="STR_NMS_EDIT_GROUP_TITLE">Editar grup</string>
+    <string name="STR_NMS_SELECT_ACTION_TITLE">Seleccioneu una acció</string>
+    <string name="STR_NMS_ADD_TO_BOOKMARK">Afegir a marcadors</string>
+    <string name="STR_NMS_ADD_TO_CONTACTS">Desitgeu afegir \&quot;%1$s\&quot; als contactes?</string>
+    <string name="STR_NMS_GROUP_NAME">NOM DEL GRUP</string>
+    <string name="STR_NMS_GROUP_INFO">INFORMACIÓ SOBRE EL GRUP</string>
+    <string name="STR_NMS_GROUP_MEMBERS">MEMBRES DEL GRUP</string>
+    <string name="STR_NMS_GROUP_NAME_HIT">Nom del grup</string>
+    <string name="STR_NMS_GROUP_NAME_EMPTY">El nom del grup està buit</string>
+    <string name="STR_NMS_CONFIRM_LEAVE_TITLE">Deixa aquest grup</string>
+    <string name="STR_NMS_LEAVE_GROUP_CONTENT">Desitgeu deixar aquest grup?</string>
+    <string name="STR_NMS_LEAVE_GROUP_SUCCESS">Ha deixat aquest grup correctament</string>
+    <string name="STR_NMS_LEAVE_GROUP_FAILED">S\'ha produït un error en deixar aquest grup</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_SUCCESS">El nom del grup s\'ha actualitzat correctament</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_SUCCESS">S\'han afegit nous membres al grup</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_FAILED">S\'ha produït un error en afegir un membre al grup</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_FAILED">S\'ha produït un error en actualitzar el nom del grup</string>
+    <string name="STR_NMS_CREATE_GROUP_NAME_FAILED">S\'ha produït un error en crear el xat de grup</string>
+    <string name="STR_NMS_DELETE_GROUP_MEMBER_FAILED">S\'ha produït un error en eliminar un membre del grup</string>
+    <string name="STR_NMS_UPDATE_GROUP_SUCCESS">La informació sobre el grup s\'ha actualitzat correctament</string>
+    <string name="STR_NMS_UPDATE_GROUP_FAILED">S\'ha produït un error en actualitzar la informació sobre el grup</string>
+    <string name="STR_NMS_GROUP_CHAT_BACK">Desitgeu descartar aquesta operació?</string>
+    <string name="STR_NMS_GROUP_MEMEBER_YOU">VÓS</string>
+    <string name="STR_NMS_GROUP_INVITE_MORE">Invita més</string>
+    <string name="STR_NMS_LEAVE_GROUP">Deixa aquest grup</string>
+    <string name="STR_NMS_CHAT">Xat</string>
+    <string name="STR_NMS_CONFIRM_REMOVE_TITLE">Eliminar de la llista de membres del grup</string>
+    <string name="STR_NMS_REMOVE_OK">Elimineu</string>
+    <string name="STR_NMS_REMOVE_CANCEL">Cancel·leu</string>
+    <string name="STR_NMS_REMOVE_CONTENT">Desitgeu eliminar-lo de la llista?</string>
+    <string name="STR_NMS_VIEW_ALL_MEDIA">Visualitza tots els suports</string>
+    <string name="STR_NMS_VIEW_ALL_LOCATIONS">Visual. totes les loc.</string>
+    <string name="STR_NMS_CHAT_SETTINGS">Configuració del xat</string>
+    <string name="STR_NMS_VIEW_GROUP_FAILED">Heu deixat aquest xat de grup.</string>
+    <string name="STR_NMS_VIEW_HISTORY">Visualitza l\'historial del grup</string>
+    <string name="STR_NMS_ISMS_ENABLE_TITLE">Habilitar iSMS</string>
+    <string name="STR_NMS_ISMS_ENABLE_CONTENT">Aquesta funció només és compatible a través del servei d\'iSMS. Desitgeu habilitar el vostre compte d\'iSMS ara?</string>
+    <string name="STR_NMS_ENABLE">Habiliteu</string>
+    <string name="STR_NMS_LATER">Descarteu</string>
+    <string name="STR_NMS_SWITCH_TITLE">Canvi de la SIM</string>
+    <string name="STR_NMS_SWITCH_MESSAGE">El xat de grup només és compatible quan el servei iSMS està activat, però la targeta SIM actual no està activada. Desitgeu canviar a la targeta SIM activada?</string>
+    <string name="STR_NMS_SWITCH_EDIT_MESSAGE">Aquesta targeta SIM no està associada amb aquest grup. Desitgeu canviar a l\'altra targeta SIM?</string>
+    <string name="STR_NMS_LEAVE_GROUP_NOTICE">Heu abandonat aquest grup i no podeu unir-vos al seu xat tret que se us torni a invitar</string>
+    <string name="STR_NMS_LOSE_SIM_NOTICE">S\'ha tret la targeta SIM original del xat, només podeu xatejar en aquest grup amb la targeta SIM original</string>
+    <string name="STR_NMS_SWITCH">Canviar</string>
+
+    <!-- Group chat end -->
+
+
+    <!-- chat details screen long press item start -->
+    <string name="STR_NMS_LONG_PRESS_TITLE">Opcions de missatge</string>
+    <string name="STR_NMS_SEND_VIA_TEXT">Enviar a través d\'SMS</string>
+    <string name="STR_NMS_TRY_AGAIN">Torneu-ho a provar</string>
+    <string name="STR_NMS_TRY_ALL_AGAIN">Torneu-ho a provar tot</string>
+    <string name="STR_NMS_CONTINUE_TRY">Continuar intentant</string>
+    <string name="STR_NMS_COPY">Copiar</string>
+    
+    <string name="STR_NMS_FORWARD">Reenviar</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_TITLE">Descarregar</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD">Per reenviar l\'iSMS, cal que abans descarregueu els continguts multimèdia.</string>
+    <string name="STR_NMS_FORWARD_CONTIUE">Continuar</string>
+    <string name="STR_NMS_FORWARD_FAILED">S\'ha produït un error en el reenviament.</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_MULTI">Per reenviar a diversos destinataris, cal que abans descarregueu els iSMS.</string>
+    <string name="STR_NMS_FORWARD_SOME_FAILED">S\'ha produït un error en reenviar alguns dels iSMS.</string>
+    <string name="STR_NMS_FORWARD_ALL_FAILED">S\'ha produït un error en la descàrrega i s\'ha descartat el reenviament a diversos destinataris</string>
+    
+    <string name="STR_NMS_SEND_VIA_MULTIMEDIA">Enviar a través d\'MMS</string>
+    <string name="STR_NMS_SHARE">Compartir</string>
+    <string name="STR_NMS_DELETE">Eliminar</string>
+    <string name="STR_NMS_FLAG_IMPORTANT">Marcar com a important</string>
+    <string name="STR_NMS_REMOVE_IMPORTANT">Eliminar la marca d\'importància</string>
+    <string name="STR_NMS_SAVE_IN_SDCARD">Exportar a targeta SD</string>
+    <string name="STR_NMS_SAVE_FILE">El fitxer s\'ha desat a %1$s</string>
+    <string name="STR_NMS_SHARE_TITLE">La manera de compartir</string>
+    <string name="STR_NMS_VIEW_DETAILS">Detalls de la vista</string>
+    <string name="STR_NMS_VIEW_DETAILS_TITLE">Detalls del missatge</string>
+    <string name="STR_NMS_SEND_MSG_DETAILS">Tipus: Missatge IP\nEnviat: %1$s</string>
+    <!-- chat details screen long press item end -->
+
+
+    <!-- chat details screen delete item start -->
+    <string name="STR_NMS_DELETE_TITLE">Eliminar</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_TITLE">Eliminar un missatge important</string>
+    <string name="STR_NMS_DELETE_WARNING">El missatge s\'eliminarà.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_WARNING">Esteu segur que desitgeu eliminar aquest missatge important?</string>
+    <string name="STR_NMS_DELETE_MSG">S\'eliminaran els missatges seleccionats.</string>
+    <string name="STR_NMS_DELETE_WAITTING">S\'està eliminant</string>
+    <string name="STR_NMS_CLEAR_HISTORY_CONTENT">S\'eliminarà tot l\'historial del xat d\'aquesta sala</string>
+    <string name="STR_NMS_DELETE_IMPORTANT">Incloure missatges marcats com a importants</string>
+    <!-- chat details screen delete item end -->
+
+
+    <!-- chat details actionBar option start -->
+    <string name="STR_NMS_MENU_CALL">Trucar</string>
+    <string name="STR_NMS_MENU_GROUPINFO">Informació sobre el grup</string>
+    <string name="STR_NMS_MENU_INVITE_CHAT">Invitar amics al xat</string>
+    <string name="STR_NMS_MENU_INVITE_ISMS">Invitar amics a utilitzar iSMS</string>
+    <string name="STR_NMS_MENU_SELECT_MSG">Seleccioneu un missatge</string>
+    <string name="STR_NMS_MENU_MARK_SPAM">Moure a la llista de c. br.</string>
+    <string name="STR_NMS_MENU_REMOVE_SPAM">Eliminar de la llista de c. br.</string>
+    <string name="STR_NMS_MENU_ADD_SHORTCUT">Afegir una drecera</string>
+    <string name="STR_NMS_MENU_VIEW_ALLMEDIA">Visualitza tots els suports</string>
+    <string name="STR_NMS_MENU_VIEW_ALLLOCATION">Visual. totes les loc.</string>
+    <string name="STR_NMS_MENU_EDIT_GROUP">Editar grup</string>
+    <string name="STR_NMS_MENU_CHAT_SETTING">Configuració del xat</string>
+    <string name="STR_NMS_MENU_INSERT_QUICK_TEXT">Inseriu text ràpid</string>
+    <string name="STR_NMS_MENU_CLEAR_HISTORY">Elimina l\'historial del xat</string>
+    <string name="STR_NMS_MENU_LEAVE_GROUP">Deixa aquest grup</string>
+    <string name="STR_NMS_MENU_DISCARD">Descartar</string>
+    <string name="STR_NMS_MENU_DELETE">Eliminar</string>
+    <string name="STR_NMS_MENU_IMPORTANT">Marcar com a important</string>
+    <string name="STR_NMS_MENU_FORWARD">Reenviar</string>
+    <!-- chat details actionBar option end -->
+
+
+    <!-- chat details share item start -->
+    <string name="STR_NMS_TAKE_PHOTO">Feu una foto</string>
+    <string name="STR_NMS_RECORD_VIDEO">Gravar un vídeo</string>
+    <string name="STR_NMS_DRAW_SKETCH">Dibuixar un esbós</string>
+    <string name="STR_NMS_SHARE_CONTACT">Compartir un contacte</string>
+    <string name="STR_NMS_CHOOSE_PHOTO">Seleccioneu una foto</string>
+    <string name="STR_NMS_CHOOSE_VIDEO">Seleccioneu una foto</string>
+    <string name="STR_NMS_RECORD_AUDIO">Gravar un fitxer d\'àudio</string>
+    <string name="STR_NMS_SHARE_LOCATION">Compartir localització</string>
+    <string name="STR_NMS_CHOOSE_AUDIO">Seleccioneu un fitxer d\'àudio</string>
+    <string name="STR_NMS_SHARE_CALENDAR">Compartir calendari</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_TITLE">Afegir música</string>
+    <string name="STR_NMS_CHOOSE_RINGTONE_ITEM">To de trucada</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_ITEM">Àudio</string>
+    <string name="STR_NMS_INSERT_SDCARD">Inseriu una targeta SD</string>
+    <!-- chat details share item start -->
+
+
+    <!-- record audio start -->
+    <string name="STR_NMS_AUDIO_TIMER_FORMAT" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <string name="STR_NMS_AUDIO_LABLE">Enregistrador de notes d\'àudio</string>
+    <string name="STR_NMS_RECORD_AUDIO_CONT">Premeu per gravar</string>
+    <string name="STR_NMS_PLAY_AUDIO_CONT">Premeu per reproduir</string>
+    <string name="STR_NMS_ACTION_SEND">Enviar</string>
+    <string name="audio_db_artist_name">Els vostres enregistraments</string>
+    <string name="audio_db_album_name">Enregistraments d\'àudio</string>
+    <!-- record audio end -->
+
+
+    <!-- chat & group details screen start -->
+
+    <string name="STR_NMS_UNREAD_FORMAT">%1$d missatges sense llegir</string>
+    <string name="STR_NMS_NOT_DELIVERED_TITLE">Encara no s\'ha entregat</string>
+    <string name="STR_NMS_FAILED_TITLE">S\'ha produït un error en l\'enviament</string>
+    <string name="STR_NMS_GROUP_SUBTITLE">%1$s, +%2$d</string>
+    <string name="STR_NMS_GROUP_DEAD_SUBTITLE">%1$s, %2$d</string>
+    <string name="STR_NMS_SAVE_AS_DRAFT">S\'ha desat el missatge com a esborrany</string>
+    <string name="STR_NMS_NO_SD_TITLE">Error en la targeta SD</string>
+    <string name="STR_NMS_CANT_SHARE">No es pot accedir a la targeta SD. Les característiques multimèdia estan fora de servei temporalment.\n\nComproveu la targeta SD i torneu-ho a provar més tard.</string>
+    <string name="STR_NMS_CANT_SAVE">No s\'ha detectat la targeta SD i no s\'ha pogut desar el fitxer</string>
+    <string name="STR_NMS_SDSPACE_NOT_ENOUGH">L\'espai disponible de la targeta SD no és suficient i no s\'ha pogut desar el fitxer</string>
+    <string name="STR_NMS_REAEND_ALL">Torneu-ho a provar...</string>
+    <string name="STR_NMS_FILE_LIMIT">El fitxer és massa gran</string>
+    <string name="STR_NMS_LOAD_ALL_MESSAGE">Pujar tot el missatge</string>
+    <string name="STR_NMS_DOWNLOAD_FAILED">S\'ha produït un error en la descàrrega</string>
+    <string name="STR_NMS_INPUT_HINT">Introduir contingut</string>
+    <string name="STR_NMS_INPUT_HINT_ISMS">Escriure missatge iSMS</string>
+    <string name="STR_NMS_CAPTION_HINT">Escriure llegendes</string>
+    <string name="STR_NMS_PROTOCOL_SMS">SMS</string>
+    <string name="STR_NMS_PROTOCOL_MMS">MMS</string>
+    <string name="STR_NMS_PROTOCOL_IP">iSMS</string>
+    <string name="STR_NMS_SWITCH_BOTTON">Canviar la SIM</string>
+    <string name="STR_NMS_TURN_ON_BOTTON">Activar</string>
+    <string name="STR_NMS_SWITCH_TEXT_FORMAT">Per continuar amb el xat de grup, cal que abans canvieu la SIM %1$s.</string>
+    <string name="STR_NMS_ENABLE_TEXT_FORMAT">Per continuar amb el xat de grup, cal que abans activeu el servei iSMS a la SIM %1$s.</string>
+    <string name="STR_NMS_REPLACE_ATTACH_TITLE">Substituir l\'adjunt</string>
+    <string name="STR_NMS_REPLACE_ATTACH_MSG">Ja existeix un adjunt, desitgeu substituir-lo?</string>
+    <string name="STR_NMS_TRUNC_CAPTION">S\'ha truncat la llegenda.</string>
+    <string name="STR_NMS_MAX_CHARACTERS_REACHED">S\'ha excedit el límit de la capacitat de missatges.</string>
+    <string name="STR_NMS_MAX_EMOTICON_REACHED">Assolir els límits d\'emoticones</string>
+    <string name="STR_NMS_ENABLE_PROCESS">S\'està processant...</string>
+    <string name="STR_NMS_ERR_FILE">El fitxer no és vàlid</string>
+    <string name="STR_NMS_SENDING_TEXT">S\'està enviant...</string>
+    <!-- chat & group details screen end --> <!-- Error code tips -->
+    <string name="STR_NMS_ERR_GENERAL">Error general </string>
+    <string name="STR_NMS_ERR_INVALID_ARGUMENT">L\'argument no és vàlid</string>
+    <string name="STR_NMS_ERR_NETWORK_BLOCK">La xarxa no funciona correctament</string>
+    <string name="STR_NMS_ERR_PHONE_NOT_ACTIVATED">No s\'ha activat</string>
+    <string name="STR_NMS_ERR_SIM_NOT_ACTIVATED">No s\'ha pogut activar la targeta SIM</string>
+    <string name="STR_NMS_ERR_INVALID_MSG_DB_ID">La identificació del missatge DB no és vàlida</string>
+    <string name="STR_NMS_ERR_ADD_MSG_DB_FAILED">S\'ha produït un error en inserir en DB</string>
+    <string name="STR_NMS_ERR_UPDATE_MSG_DB_FAILED">S\'ha produït un error en actualitzar DB</string>
+    <string name="STR_NMS_ERR_GET_MSG_DB_DATA_FAILED">S\'ha produït un error en la cerca del missatge</string>
+    <string name="STR_NMS_ERR_INVALID_CONTACT_DB_ID">La identificació del contacte DB no és vàlida</string>
+    <string name="STR_NMS_ERR_ADD_CONTACT_DB_FAILED">S\'ha produït un error en inserir als contactes</string>
+    <string name="STR_NMS_ERR_UPDATE_CONTACT_DB_FAILED">S\'ha produït un error en actualitzar el contacte DB</string>
+    <string name="STR_NMS_ERR_GET_CONTACT_DB_DATA_FAILED">S\'ha produït un error en buscar el contacte per identificació</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_ERROR_FORMAT">El format del missatge IP no és vàlid</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_INVALID_TO">El destinatari no és vàlid</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_WITH_UNKNOWN_USER">L\'usuari destinatari desconegut no és vàlid</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_NO_MBMBER">No hi ha membres del xat de grup</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_GCHAT_DEAD">El xat de grup no està activat</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_INVALID_SIM_ID">La targeta SIM del xat de grup no és la targeta SIM actual</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_FOR_SYS_MSG">Tornar a enviar el missatge del sistema.</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_INVALID_STATUS">El missatge IP no està llest</string>
+    <string name="STR_NMS_ERR_GCHAT_IS_DEAD">Aquest xat de grup ja no existeix</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBERS">Els membres del grup no són vàlids</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBER_WITH_SELF">S\'ha produït un error en crear el grup. Els membres no us inclouen</string>
+    <string name="STR_NMS_ERR_GCHAT_EXCEED_MAX_MEMBER_COUNT">S\'ha assolit el nombre límit de membres per al grup</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_NAME">El nom del xat de grup no és vàlid</string>
+    <string name="STR_NMS_ERR_GCHAT_SIM_IS_NOT_ACTIVATED">La targeta SIM del xat de grup no està activada</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_NOT_INBOX_MSG">S\'ha produït un error en obtenir la descàrrega de la URL</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_INVALID_URL">La URL descarregada no és vàlida</string>
+    <string name="STR_NMS_ERR_GET_ATTACH_NAME_INVALID_BODY_FORMAT">S\'ha produït un error en obtenir la descàrrega del nom del fitxer</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_INVALID_FILE_NAME">El nom del fitxer de la descàrrega no és vàlid</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_EXIST">El fitxer de descàrrega ja no existeix</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_INBOX_MSG">S\'ha produït un error en configurar la descàrrega del fitxer</string>
+    <string name="STR_NMS_ERR_SIM_INFO_NOT_FOUND">No s\'ha pogut trobar la informació sobre la targeta SIM</string>
+    <string name="STR_NMS_ERR_SIM_IN_INVALID_STATUS">L\'estat de la targeta SIM no és vàlid</string>
+    <string name="STR_NMS_ERR_CMD_PROCESSING">El sistema està ocupat i no s\'ha pogut gestionar l\'ordre de la configuració del sistema</string>
+    <string name="STR_NMS_ERR_CMD_GENERAL">S\'ha produït un error de configuració general del sistema</string>
+    <string name="STR_NMS_ERR_CODE_END">Codi d\'error desconegut</string>
+    <!-- Error code tips -->
+    <string name="STR_NMS_SEND_MMS_QUERY_TITLE">Advertiment</string>
+    <string name="STR_NMS_SEND_MMS_QUERY">El destinatari no és un usuari iSMS; desitgeu enviar-ho mitjançant MMS?</string>
+    <!-- Service center start -->
+    <string name="STR_NMS_SERVICE_TITLE">Centre de serveis iSMS</string>
+    <string name="STR_NMS_INTRODUCTION">Amb iSMS podeu enviar missatges instantanis gratuïtament i guardar els vostres historials de xat en un sol lloc. Només cal que premeu un únic botó i ja podeu començar a gaudir d\'aquesta nova experiència.</string>
+    <string name="STR_NMS_TERMS">Termes i condicions</string>
+    <string name="STR_NMS_ACTIVATION_BUTTON">Activar ara</string>
+    <string name="STR_NMS_LOSE_SDCARD">No s\'ha pogut detectar la targeta SD</string>
+    <!-- Service center end -->
+
+
+    <!-- conversation empty tips -->
+    <string name="STR_NMS_SPAM_EMPTY">No teniu cap conversa a la carpeta de correu brossa \nBROSSA recull les converses que s\'han marcat com a brossa. L\'opció per rebre notificacions està desactivada de manera predeterminada. Això és per evitar-vos interrupcions innecessàries. \n\nPodeu marcar qualsevol remitent com a brossa seleccionant una conversa i prement la icona Marcar com a brossa. En marcar una conversa com a brossa, apareixerà automàticament una icona de desactivació de notificacions i la conversa es mourà aquí.</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_FROM">+86123456789</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_SUBJECT">El següent és un exemple de missatge brossa.</string>
+    <string name="STR_NMS_GROUPCHAT_EMPTY">No teniu cap missatge al xat de grup. \nXATS DE GRUP recull tots els missatges del xat de grup que es creen o als quals us uniu. Això us permet trobar i gestionar els vostres xats de grup fàcilment. \n\nPer crear un xat de grup, premeu el botó Crear xat de grup que trobareu en la part inferior de la pantalla i inviteu els amics a unir-se al vostre grup.</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_FROM">Nom del grup</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_SUBJECT">Al vostre amic:\nI li agrada la funció del xat de grup.</string>
+    <string name="STR_NMS_IMPORTANT_EMPTY">No teniu cap missatge important. \nIMPORTANT recull tots els missatges que s\'han marcat com a importants. D\'aquesta manera podeu trobar fàcilment tots els missatges importants. \n\nPodeu marcar els missatges com a importants seleccionant-los i prement la icona Marcar com a brossa del menú Opcions. En marcar un missatge com a important, apareixerà una icona indicadora vermella com la que us mostrem a continuació.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TITLE">A continuació, us mostrem un exemple de missatge marcat com a important. Apareixerà un indicador vermell.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TIME">10:55</string>
+    <string name="STR_NMS_ALLCHAT_EMPTY">No hi ha converses</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_CONTENT">Per fer servir aquesta funció, abans heu d\'activar el servei iSMS. Si no us agrada el nostre servei, podeu desactivar-lo des de l\'opció de configuració. Proveu-ho ara.</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_TITLE">Activar iSMS</string>
+    <!-- conversation empty tips -->
+    
+    <string name="STR_NMS_CLEAR_USER_DATA">Les dades s\'han esborrat correctament</string>
+    
+    <!-- get file err start -->
+    <string name="STR_NMS_NO_SUCH_FILE">Aquest fitxer no existeix</string>
+    <string name="STR_NMS_OVER_FILE_LIMIT">La mida del fitxer supera el límit establert</string>
+    <string name="STR_NMS_INVALID_FILE_TYPE">No és compatible amb aquest tipus</string>
+    <!-- get file err end -->
+
+    <string name="STR_NMS_DELIVERY_BODY">Missatge rebut per %s</string>
+    <string name="STR_NMS_SIM_SELECT_TITLE">Seleccioneu la SIM</string>
+    
+    <string name="STR_NMS_SHORTCUT_SUCCESS">S\'ha creat la drecera %1$s.</string>
+    <string name="STR_NMS_SHORTCUT_REFRESHING">S\'està actualitzant</string>
+    
+    <string name="STR_NMS_DISABLE_FAILED">S\'ha produït un error en l\'operació, torneu-ho a provar</string>
+    <string name="STR_NMS_ENABLE_FAILED">S\'ha produït un error en l\'operació, torneu-ho a provar</string>
+    <string name="STR_NMS_ENABLE_SUCCESS">Heu activat el servei iSMS correctament</string>
+    <string name="STR_NMS_DISABLE_SUCCESS">Heu desactivat el servei iSMS correctament</string>
+    
+	<string name="STR_NMS_SD_CARD_FULL">La targeta SD està plena</string>
+    <string name="STR_NMS_SEND_MSG_FAILED">S\'ha produït un error en enviar el missatge.</string>
+    <string name="STR_NMS_SELECT_AUDIO">Seleccionar so</string>
+    
+    <string name="STR_NMS_SETTING_COMMENT">iSMS és una eina per xatejar genial, que és gratuïta i molt pràctica.Més informació</string>
+    <string name="STR_NMS_KNOW_MORE">Més informació</string>
+    <string name="STR_NMS_RECEIVED_MSG_DETAILS">Tipus: Missatge IP\nDe: %1$s\nEnviat: %2$s\nRebut: %3$s</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH_ADD">El servei de iSMS està temporalment fora de servei a causa de la manca d\'espai d\'emmagatzematge.</string>
+    <string name="STR_NMS_SERVER_AUTO_ECHO_MSG">Missatge rebut. Gràcies!</string>
+    
+    <string name="imsp_ip_message">Missatge iSMS</string>
+    <string name="imsp_invite_chat_frequently"><b>Xateja sovint amb %s?</b>\nPer què no inviteu a %s a utilizar iSMS per ahorrar-vos calers?</string>
+    <string name="imsp_enable_chat_frequently"><b>El servei iSMS de %s està desactivat!</b>\nPer què no activeu el seu servei iSMS i ambdós us ahorreu calers?</string>
+    <string name="imsp_invite">Invitar</string>
+    <string name="imsp_enable_notice">Segur que voleu activar el servei iSMS?</string>
+    <string name="imsp_activate_chat_frequently"><b>Parlar sovint amb amics?</b>\nPer què no activeu el servei iSMS per xatejar sense la quota de SMS?</string>
+    <string name="imsp_activate_note">Segur que voleu activar el iSMS?</string>
+    <string name="imsp_dismiss_content">Segur que voleu descartar la nota?</string>
+    <string name="imsp_divider_online">%s està en línia</string>
+    <string name="imsp_divider_offline">Últim cop en línia: %s</string>
+    <string name="imsp_divider_never_online">Mai en línia</string>
+    <string name="imsp_failed_title">Enviament fallit</string>
+    <string name="imsp_resend_via_sms">Millor enviî un SMS</string>
+    <string name="imsp_resend_via_mms">Millor enviî un MMS</string>
+    <string name="imsp_typing_text">Escrivint</string>
+    <string name="imsp_save_attachment">Guardar adjunt</string>
+    <string name="imsp_view">Veure</string>
+    <string name="imsp_convert_to_mms">Convertir a MMS.</string>
+    <string name="imsp_convert_to_sms">Convertir a SMS.</string>
+    <string name="imsp_convert_to_isms">Convertir a iSMS.</string>
+    <string name="imsp_convert_to_mms_for_service">El servei iSMS no està disponible en aquesta targeta SIM. El missatge solament pot ser enviat per MMS en aquesta targeta SIM. Continuar de tota manera?</string>
+    <string name="imsp_convert_to_sms_for_service">El servei iSMS no està disponible en aquesta targeta SIM. El missatge només pot ser enviat per SMS amb aquesta targeta SIM. Continuar de tota manera?</string>
+    <string name="imsp_convert_to_mms_for_recipients">El(s) destinatari(s) no son usuari(s) de iSMS. El missatge només pot ser enviat per MMS. Continuar de tota manera?</string>
+    <string name="imsp_convert_to_sms_for_recipients">El(s) destinatari(s) no son usuari(s) de iSMS. El missatge només pot ser enviat per SMS. Continuar de tota manera?</string>
+    <string name="imsp_sms_convert_to_isms">El servei iSMS està disponible en aquesta targeta SIM. Per ahorrar quota de SMS, es recomana canviar el missatge a iSMS. Canviar ara?</string>
+    <string name="imsp_mms_convert_to_isms">El servei iSMS està disponible en aquesta targeta SIM. Per ahorrar quota de MMS, es recomana canviar el missatge a iSMS. Canviar ara?</string>
+    <string name="imsp_keep_mms">Mantenir MMS</string>
+    <string name="imsp_keep_sms">Mantenir SMS</string>
+    <string name="imsp_resend_discard_message">Per a reenviar el missatge, el seu missatge d\'escritura en curs serà descartat.</string>
+    <string name="imsp_no_sim_card">No hi ha targeta SIM!</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">&quot;No s\'ha trobat connexió a internet! Torneu-ho a provar més tard.&quot;</string>
+    <string name="imsp_chat_setting_updating">actualitzant...</string>
+    <string name="imsp_dialog_clear_title">Eliminar</string>
+    <string name="imsp_dialog_clear_description">S\'eliminarà tot l\'historial del xat d\'aquesta sala</string>
+    <string name="imsp_chat_setting_saving">guardant...</string>
+    <string name="imsp_chat_setting_sending">enviant...</string>
+    <string name="imsp_save_chat_history_failed">Guardat fallit</string>
+    <string name="imsp_send_chat_history_failed">Correu electrònic fallit</string>
+    <string name="imsp_conversation_list_all">Missatges</string>
+    <string name="imsp_conversation_list_important">Important</string>
+    <string name="imsp_conversation_list_group_chats">Xats de grup</string>
+    <string name="imsp_conversation_list_spam">Brossa</string>
+    <string name="imsp_mark_as_spam_tips">Els missatges marcats com a Brossa aniran a la llista de Brossa i la notificació es desactivarà automàticament.</string>
+    <string name="imsp_typing">&quot;Escrivint...&quot;</string>
+    <string name="imsp_type_to_compose_text">&quot;Escriure missatge SMS/iSMS&quot;</string>
+    <string name="imsp_no_sdcard">No hi ha SDcard</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">Per a enviar una invitació, el seu missatge d\'escritura en curs serà descartat.</string>
+    <string name="imsp_current_sim_enabled">La SIM actual està activada.</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">Elegiu la SIM per a activar el iSMS</string>
+    <string name="imsp_activate_message">Aquesta funció només és compatible a través del servei d\'iSMS. Desitgeu habilitar el vostre compte d\'iSMS ara?</string>
+    <string name="imsp_enable_message">Aquesta funció només és compatible a través del servei d\'iSMS. Desitgeu habilitar el vostre compte d\'iSMS ara?</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">Elegiu la SIM per a activar el iSMS</string>
+    <string name="imsp_switch_sim_title">Canviar la SIM</string>
+    <string name="imsp_switch_sim_message">La SIM actual no suporta iSMS. Desitgeu canviar a una altra targeta SIM?</string>
+    <string name="imsp_switch_sim_successfully">La SIM s\'ha canviat correctament!</string>
+    <string name="imsp_dailog_multi_forward">Reenviant missatges</string>
+    <string name="imsp_dialog_send_result">Enviar resultat</string>
+    <string name="imsp_dlg_send_all">Tot: %s</string>
+    <string name="imsp_dlg_send_sucess">Enviat: %s</string>
+    <string name="imsp_dlg_send_failed">Fallida: %s</string>
+    <string name="imsp_multi_forward_sim_info">Obtenint info de SIM</string>
+    <string name="imsp_multi_forward_no_sim">No hi ha info de SIM</string>
+    <string name="imsp_get_sim_failed">Obtenir info de SIM fallida</string>
+    <string name="imsp_sim_status_error">Error d\'estat de SIM</string>
+    <string name="imsp_forward_norecipients">No hi ha destinatari(s) a qui reenviar el missatge</string>
+    <string name="imsp_multiforward_no_message">No hi ha missatges a reenviar</string>
+    <string name="imsp_need_input_recipients">Primer especifiqui almenys un destinatari</string>
+    <string name="imsp_spam_empty">No teniu cap conversa a la carpeta de correu brossa. \nBROSSA recull les converses que s\'han marcat com a brossa. L\'opció per rebre notificacions serà desactivada de manera predeterminada. Això és per evitar-vos interrupcions innecessàries. \n\nPodeu marcar qualsevol remitent com a brossa seleccionant una conversa i prement la icona Marcar com a brossa. En marcar una conversa com a brossa, apareixerà automàticament una icona de desactivació de notificacions i la conversa es mourà aquí.</string>
+    <string name="imsp_groupchat_empty">No teniu cap missatge al xat de grup. \nXATS DE GRUP recull tots els missatges del xat de grup que es creen o als quals us uniu. Això us permet trobar i gestionar els vostres xats de grup fàcilment. \n\nPer crear un xat de grup, premeu el botó Crear xat de grup que trobareu en la part inferior de la pantalla i inviteu els amics a unir-se al vostre grup.</string>
+    <string name="imsp_important_empty">No teniu cap missatge important. \nIMPORTANT recull tots els missatges que s\'han marcat com a importants. D\'aquesta manera podeu trobar fàcilment tots els missatges importants. \n\nPodeu marcar els missatges com a importants seleccionant-los i prement la icona Marcar com a brossa del menú Opcions. En marcar un missatge com a important, apareixerà una icona indicadora vermella com la que us mostrem a continuació.</string>
+    <string name="imsp_allchat_empty">No hi ha converses</string>
+    <string name="imsp_attach_slideshow">Diapositives</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">S\'està descarregant...</string>
+    <string name="imsp_invite_friends_to_ipmsg">Invitar amics a utilitzar iSMS</string>
+    <string name="imsp_multi_forward_tips_content">Per reenviar a diversos destinataris, cal que abans descarregueu els iSMS.</string>
+    <string name="imsp_multi_forward_failed_part">S\'ha produït un error en reenviar alguns dels iSMS.</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name"  translatable="false">HotKnotBeam Service</string>
+    
+   
+    <!-- Short representation of download progress percentage. [CHAR LIMIT=8] -->
+    <string name="download_percent" translatable="false"><xliff:g id="number">%d</xliff:g><xliff:g id="percent">%%</xliff:g></string>
+    
+    <!-- When a download completes, a notification is displayed, and this
+        string is used to indicate that the download successfully completed.
+        Note that such a download could have been initiated by a variety of
+        applications, including (but not limited to) the browser, an email
+        application, a content marketplace. -->
+    <string name="notification_download_complete">Download complete.</string>
+
+    <!-- When a download completes, a notification is displayed, and this
+        string is used to indicate that the download failed.
+        Note that such a download could have been initiated by a variety of
+        applications, including (but not limited to) the browser, an email
+        application, a content marketplace. -->
+    <string name="notification_download_failed">Download unsuccessful.</string>
+    
+    <string name="cancel">Cancel</string>
+                    
+    <!-- Text for a toast appearing when a user clicks on a completed download, informing the user
+         that there is no application on the device that can open the file that was downloaded
+         [CHAR LIMIT=200] -->
+    <string name="download_no_application_title">Can\'t open file</string>                
+</resources>

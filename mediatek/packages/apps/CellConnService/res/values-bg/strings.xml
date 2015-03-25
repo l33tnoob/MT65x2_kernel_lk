@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="app_name">Услуга клетъчна връзка</string>
+	<string name="button_ok">ОК</string>
+	<string name="button_cancel">"Отказ"</string>
+	<string name="confirm_radio_title">SIM е изключена</string>
+	<string name="confirm_radio_title_uim">UIM изключена</string>
+	<string name="confirm_radio_title_card">Картата изключена</string>
+
+	<string name="confirm_radio_msg"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> сега е изключена. Искате ли да включите тази SIM карта?</string>
+  <string name="confirm_radio_msg_uim"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> сега е изключена. Искате ли да включите тази UIM карта?</string>
+  <string name="confirm_radio_msg_card"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> сега е изключена. Искате ли да включите тази карта?</string>
+
+	<string name="confirm_radio_flight_mode_on_and_msg">Режим самолет включен и</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> сега е изключена. Искате ли да изключите режим самолет и давключите тази SIM карта?</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg_uim"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> сега е изключена. Искате ли да изключите режим самолет и давключите тази UIM карта?</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg_card"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> сега е изключена. Искате ли да изключите режим самолет и давключите тази карта?</string>	
+	<string name="confirm_radio_flight_mode_on_sim_on_msg">Режим самолет включен. Искате ли да изключите този режим?</string>  
+	<string name="confirm_radio_msg_single">Сега е включен режим самолет - искате ли да го изключите?</string>
+	<string name="confirm_pin_title">SIM карта заключена</string>
+	<string name="confirm_pin_title_uim">UIM карта заключена</string>
+	<string name="confirm_pin_title_card">Картата заключена</string>
+	<string name="confirm_pin_msg">Избраната SIM карта е заключена. Първо трябва да я отключите.</string>
+	<string name="confirm_pin_msg_uim">Избраната UIM карта е заключена. Първо трябва да я отключите.</string>
+	<string name="confirm_pin_msg_card">Избраната карта е заключена. Първо трябва да я отключите.</string>
+	<string name="confirm_simmelock_title">SIM МЕ карта заключена</string>
+	<string name="confirm_simmelock_msg">Избраното гнездо за SIM карта е заключено. Първо трябва да го отключите.</string>
+	<string name="confirm_simmelock_msg_uim">Избраното гнездо за UIM карта е заключено. Първо трябва да го отключите.</string>
+	<string name="confirm_simmelock_msg_card">Избраното гнездо е заключено. Първо трябва да го отключите.</string>
+	<string name="confirm_fdn_title">FDN разрешено</string>
+	<string name="confirm_fdn_msg">Стационарни номера за набиране разрешение.</string>
+	<string name="confirm_roaming_title">Предупреждение за роуминг</string>
+	<string name="confirm_roaming_msg">SIM картата, която искате да ползвате, е в роуминг. Сега няма достъпна локална SIM карта. Продължаваме ли?</string>
+	<string name="confirm_roaming_msg_uim">UIM картата, която искате да ползвате, е в роуминг. Сега няма достъпна локална UIM карта. Продължаваме ли?</string>
+	<string name="confirm_roaming_msg_card">Картата, която искате да ползвате, е в роуминг. Сега няма достъпна локална карта. Продължаваме ли?</string>
+  <string name="confirm_roaming_withPrefer_msg">SIM картата, която искате да ползвате, е в роуминг. Да продължаваме ли през локална SIM карта?</string>
+  <string name="confirm_roaming_withPrefer_msg_uim">SIM картата, която искате да ползвате, е в роуминг. Да продължаваме ли през локална UIM карта?</string>
+  <string name="confirm_roaming_withPrefer_msg_card">SIM картата, която искате да ползвате, е в роуминг. Да продължаваме ли през локална карта?</string>
+  <string name="confirm_roaming_lbutton">"Напред"</string>
+  <string name="confirm_roaming_rbutton">"Отказ"</string>
+  <string name="confirm_roamingWithPrefer_lbutton">Локална SIM</string>
+  <string name="confirm_roamingWithPrefer_lbutton_uim">Локална UIM</string>
+  <string name="confirm_roamingWithPrefer_lbutton_card">Локална карта</string>
+  <string name="confirm_roamingWithPrefer_rbutton">SIM в роуминг</string>
+  <string name="confirm_roamingWithPrefer_rbutton_uim">UIM в роуминг</string>
+  <string name="confirm_roamingWithPrefer_rbutton_card">Карта в роуминг</string>
+	<string name="confirm_roaming_for3Sims_msg">SIM картата, която искате да ползвате, е в роуминг. Продължаваме ли?</string>
+  <string name="confirm_roaming_for3Sims_msg_uim">UIM картата, която искате да ползвате, е в роуминг. Продължаваме ли?</string>
+  <string name="confirm_roaming_for3Sims_msg_card">Картата, която искате да ползвате, е в роуминг. Продължаваме ли?</string>
+	<string name="confirm_radio_lbutton">Включи</string>
+	<string name="confirm_unlock_lbutton">Отключване</string>
+	<string name="confirm_unlock_fail">Операцията отказана</string>
+	<string name="confirm_turnon_radio_fail">Операцията отказана</string>
+	<string name="confirm_permit_roaming_fail">Отказахте това действие на SIM в роуминг</string>
+	<string name="confirm_permit_roaming_fail_uim">Отказахте това действие на UIM в роуминг</string>
+	<string name="confirm_permit_roaming_fail_card">Отказахте това действие на карта в роуминг</string>
+	<string name="confirm_sim_locked_message">SIM картата е заключена за постоянно</string>
+	<string name="confirm_sim_locked_message_uim">UIM картата е заключена за постоянно</string>
+	<string name="confirm_sim_locked_message_card">Картата е заключена за постоянно</string>	
+    <string name="confirm_slot_locked_message">Гнездото е заключено за постоянно</string>
+	<string name="button_yes">"Да"</string>  
+	<string name="button_no">"Не"</string>  
+</resources>

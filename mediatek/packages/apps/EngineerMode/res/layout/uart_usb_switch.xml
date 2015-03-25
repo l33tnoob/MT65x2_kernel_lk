@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dip"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="@string/uart_usb_switch_current"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/uart_usb_switch_current_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:text="@string/uart_usb_switch_force_switch" />
+
+    <RadioGroup
+        android:id="@+id/uart_usb_switch_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/uart_usb_switch_mode_usb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dip"
+            android:checked="true"
+            android:text="@string/uart_usb_switch_usb" />
+
+        <RadioButton
+            android:id="@+id/uart_usb_switch_mode_uart"
+            android:layout_width="0dp"
+            android:layout_margin="10dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/uart_usb_switch_uart" />
+    </RadioGroup>
+
+</LinearLayout>

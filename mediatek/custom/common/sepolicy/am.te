@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binam Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type am_exec , exec_type, file_type;
+type am ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive am;
+init_daemon_domain(am)
+
+
+# 20131122 Add Set Property Rule
+allow am  property_type:property_service set;

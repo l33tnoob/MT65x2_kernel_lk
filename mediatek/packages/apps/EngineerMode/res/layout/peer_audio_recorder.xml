@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/peer_audio_recorder_service_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="@string/service_raw" >
+    </CheckBox>
+
+    <!-- <CheckBox -->
+    <!-- android:id="@+id/working_mode_media_loopback" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_margin="10dip" -->
+    <!-- android:text="@string/mal_supported_format_3gp" > -->
+    <!-- </CheckBox> -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="@string/mal_supported_format" >
+    </TextView>
+
+    <Spinner
+        android:id="@+id/audio_mal_supported_format_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip" >
+    </Spinner>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/peer_audio_recorder_btn"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:textAppearance="?android:attr/textAppearanceMedium" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

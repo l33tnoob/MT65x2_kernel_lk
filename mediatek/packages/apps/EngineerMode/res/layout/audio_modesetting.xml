@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/Audio_Fir_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="5dip"
+                android:text="@string/Audio_Fir_Title" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/Audio_Fir_Spinner"
+                android:layout_width="240dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip"
+                android:layout_marginTop="10dip" >
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="5dip"
+                android:text="@string/Audio_ModeSetting_Title" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/Audio_ModeSetting"
+                android:layout_width="240dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip"
+                android:layout_marginTop="20dip" >
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="5dip"
+                android:text="@string/Audio_Level_Text" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/Audio_Level"
+                android:layout_width="240dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip"
+                android:layout_marginTop="20dip" >
+            </Spinner>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/Audio_ModeSetting_TextView"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/Audio_ModeSetting_TextView" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/Audio_ModeSetting_EditText"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="10dip"
+                    android:numeric="integer"
+                    android:text="@string/Audio_ModeSetting_EditText" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/Audio_ModeSetting_Button"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/Audio_ModeSetting_Button" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/Audio_MaxVol_Text" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/Audio_MaxVol_Edit"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="10dip"
+                android:numeric="integer" >
+            </EditText>
+
+            <Button
+                android:id="@+id/Audio_MaxVol_Set"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/Audio_MaxVol_Set" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

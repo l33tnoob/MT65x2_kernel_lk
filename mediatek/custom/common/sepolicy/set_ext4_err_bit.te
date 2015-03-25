@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binset_ext4_err_bit Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type set_ext4_err_bit_exec , exec_type, file_type;
+type set_ext4_err_bit ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive set_ext4_err_bit;
+init_daemon_domain(set_ext4_err_bit)
+
+
+# 20131122 Add Set Property Rule
+allow set_ext4_err_bit  property_type:property_service set;

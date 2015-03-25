@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binservice Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type service_exec , exec_type, file_type;
+type service ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive service;
+init_daemon_domain(service)
+
+
+# 20131122 Add Set Property Rule
+allow service  property_type:property_service set;

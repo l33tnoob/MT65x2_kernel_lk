@@ -1,0 +1,11 @@
+on init
+    mkdir /fat 0700 root root
+on fs_property:ro.mount.fs=YAFFS
+    mount yaffs2 mtd@fat /fat nosuid nodev
+on fs_property:ro.mount.fs=UBIFS
+    write /proc/bootprof "INIT:PROTECT:fat start"
+#    mount ubifs ubi@fat /fat nosuid nodev wait
+    mount yaffs2 mtd@fat /fat nosuid nodev
+    write /proc/bootprof "INIT:PROTECT:fat end"
+on early-boot
+    exec /system/bin/vdc fatcreation

@@ -1,0 +1,209 @@
+# ==============================================
+# Policy File of /system/binmtkbt Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type mtkbt_exec , exec_type, file_type;
+type mtkbt ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive mtkbt;
+init_daemon_domain(mtkbt)
+
+# 20131024 CTS_01
+allow mtkbt bluetooth:unix_dgram_socket sendto;
+allow mtkbt device:chr_file { read ioctl open };
+allow mtkbt self:netlink_socket read;
+
+
+# 20131024 Sanity_03
+allow mtkbt device:chr_file write;
+allow mtkbt input_device:chr_file setattr;
+allow mtkbt servicemanager:binder { transfer call };
+allow mtkbt system_data_file:file { write open setattr };
+
+
+# 20131024 Sanity_04
+allow mtkbt property_socket:sock_file write;
+allow mtkbt system_data_file:dir { read write open add_name remove_name };
+allow mtkbt system_data_file:file { create unlink };
+
+
+# 20131028 CTS_03
+allow mtkbt bluetooth:binder transfer;
+
+
+# 20131028 CTS_04
+allow mtkbt app_data_file:file write;
+allow mtkbt untrusted_app:fd use;
+
+
+# 20131028 CTS_07
+allow mtkbt dumpstate:fd use;
+allow mtkbt dumpstate:unix_stream_socket { read write };
+
+
+# 20131028 CTS_13
+allow mtkbt system_data_file:dir { create setattr };
+
+
+# 20131028 CTS_14
+allow mtkbt linker_exec:file read;
+
+
+# 20131119 FeatureSQC
+allow mtkbt system_data_file:dir { create setattr };
+
+
+# 20131121 Sanity_QA
+allow mtkbt self:capability fowner;
+
+
+
+# 20131122 Add Set Property Rule
+allow mtkbt  property_type:property_service set;
+
+# 20131213 KKMR1_CTS_01
+allow mtkbt bt_int_adp_socket:sock_file write;
+allow mtkbt sysfs_wake_lock:file { read write open };
+
+
+# 20131213 KKMR1_CQ_01
+allow mtkbt GoogleOtaBinder:dir search;
+allow mtkbt GoogleOtaBinder:file { read getattr open };
+allow mtkbt aee_aed:dir search;
+allow mtkbt aee_aed:file { read getattr open };
+allow mtkbt aee_aed:process sigchld;
+allow mtkbt aee_aed:unix_stream_socket connectto;
+allow mtkbt atci_service:dir search;
+allow mtkbt atci_service:file { read getattr open };
+allow mtkbt atcid:dir search;
+allow mtkbt atcid:file { read getattr open };
+allow mtkbt batterywarning:dir search;
+allow mtkbt batterywarning:file { read getattr open };
+allow mtkbt block_device:blk_file { read write open };
+allow mtkbt bmm050d:dir search;
+allow mtkbt bmm050d:file { read getattr open };
+allow mtkbt bt_int_adp_socket:sock_file write;
+allow mtkbt btn_device:chr_file { read write ioctl open };
+allow mtkbt ccci_fsd:dir search;
+allow mtkbt ccci_fsd:file { read getattr open };
+allow mtkbt ccci_mdinit:dir search;
+allow mtkbt ccci_mdinit:file { read getattr open };
+allow mtkbt dm_agent_binder:dir search;
+allow mtkbt dm_agent_binder:file { read getattr open };
+allow mtkbt drmserver:dir search;
+allow mtkbt drmserver:file { read getattr open };
+allow mtkbt featured:dir search;
+allow mtkbt featured:file { read getattr open };
+allow mtkbt healthd:dir search;
+allow mtkbt healthd:file { read getattr open };
+allow mtkbt hid_keyboard_device:chr_file { write ioctl open getattr };
+allow mtkbt init:dir search;
+allow mtkbt init:file { read getattr open };
+allow mtkbt init_shell:dir search;
+allow mtkbt init_shell:file { read getattr open };
+allow mtkbt installd:dir search;
+allow mtkbt installd:file { read getattr open };
+allow mtkbt kernel:dir search;
+allow mtkbt kernel:file { read getattr open };
+allow mtkbt kernel:system module_request;
+allow mtkbt keystore:dir search;
+allow mtkbt keystore:file { read getattr open };
+allow mtkbt logwrapper:dir search;
+allow mtkbt logwrapper:file { read getattr open };
+allow mtkbt matv:dir search;
+allow mtkbt matv:file { read getattr open };
+allow mtkbt mediaserver:binder { transfer call };
+allow mtkbt mediaserver:dir search;
+allow mtkbt mediaserver:file { read getattr open };
+allow mtkbt mobile_log_d:dir search;
+allow mtkbt mobile_log_d:file { read getattr open };
+allow mtkbt mtk_agpsd:dir search;
+allow mtkbt mtk_agpsd:file { read getattr open };
+allow mtkbt netd:dir search;
+allow mtkbt netd:file { read getattr open };
+allow mtkbt netdiag:dir search;
+allow mtkbt netdiag:file { read getattr open };
+allow mtkbt nvram_agent_binder:dir search;
+allow mtkbt nvram_agent_binder:file { read getattr open };
+allow mtkbt resmon:dir search;
+allow mtkbt self:capability { net_admin dac_override };
+allow mtkbt self:netlink_socket { write bind create setopt };
+allow mtkbt self:tun_socket create;
+allow mtkbt servicemanager:dir search;
+allow mtkbt servicemanager:file { read getattr open };
+allow mtkbt surfaceflinger:dir search;
+allow mtkbt surfaceflinger:file { read getattr open };
+allow mtkbt sysfs_wake_lock:file { read write open };
+allow mtkbt thermal:dir search;
+allow mtkbt thermal:file { read getattr open };
+allow mtkbt thermald:dir search;
+allow mtkbt thermald:file { read getattr open };
+allow mtkbt tun_device:chr_file { read write ioctl open };
+allow mtkbt vold:dir search;
+allow mtkbt vold:file { read getattr open };
+allow mtkbt vtservice:dir search;
+allow mtkbt vtservice:file { read getattr open };
+allow mtkbt zygote:dir search;
+allow mtkbt zygote:file { read getattr open };
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow mtkbt aal:dir search;
+allow mtkbt aal:file { read getattr open };
+allow mtkbt aee_aed:dir search;
+allow mtkbt aee_aed:file { read getattr open };
+allow mtkbt akmd8963:dir search;
+allow mtkbt akmd8963:file { read getattr open };
+allow mtkbt atci_service:dir search;
+allow mtkbt atci_service:file { read getattr open };
+allow mtkbt atcid:dir search;
+allow mtkbt atcid:file { read getattr open };
+allow mtkbt bt_int_adp_socket:sock_file write;
+allow mtkbt ccci_fsd:file { read getattr open };
+allow mtkbt ccci_mdinit:dir search;
+allow mtkbt ccci_mdinit:file { read getattr open };
+allow mtkbt em_svr:dir search;
+allow mtkbt em_svr:file { read getattr open };
+allow mtkbt featured:dir search;
+allow mtkbt healthd:dir search;
+allow mtkbt healthd:file { read open };
+allow mtkbt hid_keyboard_device:chr_file { write ioctl open getattr };
+allow mtkbt init:dir search;
+allow mtkbt init:file { read getattr open };
+allow mtkbt kernel:dir search;
+allow mtkbt kernel:file { read getattr open };
+allow mtkbt kernel:system module_request;
+allow mtkbt logwrapper:dir search;
+allow mtkbt logwrapper:file { read getattr open };
+allow mtkbt matv:file { read open };
+allow mtkbt memsicd3416x:dir search;
+allow mtkbt memsicd3416x:file { read getattr open };
+allow mtkbt mobile_log_d:dir search;
+allow mtkbt resmon:file { read getattr open };
+allow mtkbt sdcardd:dir search;
+allow mtkbt sdcardd:file { read getattr open };
+allow mtkbt self:capability net_admin;
+allow mtkbt self:netlink_socket { write bind create setopt };
+allow mtkbt sn:dir search;
+allow mtkbt sn:file { read getattr open };
+allow mtkbt stpbt_device:chr_file { read write open };
+allow mtkbt sysfs_wake_lock:file { read write open };
+allow mtkbt ueventd:dir search;
+allow mtkbt ueventd:file { read getattr open };
+

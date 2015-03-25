@@ -1,0 +1,49 @@
+<manifest package="com.mediatek.deviceregister"
+	android:versionCode="1"
+	android:versionName="1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<uses-sdk	android:minSdkVersion="8" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.SEND_SMS"/>
+	<uses-permission android:name="android.permission.RECEIVE_SMS"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+	<application> 		
+		
+        <receiver
+            android:name="com.mediatek.deviceregister.RegisterFeasibleReceiver" 
+            android:permission="android.permission.SEND_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.CDMA_AUTO_SMS_REGISTER_FEASIBLE" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver
+            android:name="com.mediatek.deviceregister.BootReceiver"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+		
+ 		     
+        <receiver
+        	android:name="com.mediatek.deviceregister.ConfirmedSmsReceiver" >
+            <intent-filter>
+                <action android:name="android.telephony.sms.CDMA_REG_SMS_ACTION" />
+            </intent-filter>
+        </receiver>    
+        
+        <receiver 
+        	android:name="com.mediatek.deviceregister.SoftwareUpdateReceiver">
+        	<intent-filter>
+        		<action android:name="android.intent.action.PRE_BOOT_COMPLETED"/>
+        	</intent-filter>
+        </receiver>
+            
+        
+		<service android:name="com.mediatek.deviceregister.RegisterService" />
+	</application>
+
+</manifest>

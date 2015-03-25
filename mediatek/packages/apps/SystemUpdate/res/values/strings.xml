@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">System updates</string>
+
+<!-- Main Entry -->
+    <string name="none_package">There are no valid update packages.</string>
+    <string name="new_version_query">Checking for update\u2026</string>
+    <string name="menu_stats_refresh">Refresh</string>
+    <string name="network_error">Network connection failed</string>
+    <string name="server_version_error">Server error: Please update server source code.</string>    
+    <string name="no_new_version">Your system is currently up to date.</string>
+    <string name="not_support_version">Your target doesn\'t support Over-the-Air.</string>
+    <string name="query_sd_insufficient_space">Insufficient space for <xliff:g id="path">%s</xliff:g></string>
+    <string name="ota_category_title">OTA</string>
+    <string name="sd_category_title">SD CARD UPDATE</string>
+    <string name="ota_preference_summary">A system update found on server</string>
+
+<!-- Download and Install -->
+    <string name="notes_summary">Firmware update can enhance machine stability and patch bugs.</string>
+    <string name="ask_for_install_ota">Would you like to install the system update now?</string>
+    <string name="warning_install_ota" product="tablet">You will not be able to use your tablet or make emergency calls during the installation. Please do not remove the battery and your SD card or turn off the tablet.</string>
+    <string name="warning_install_ota" product="default">You will not be able to use your phone or make emergency calls during the installation. Please do not remove the battery and your SD card or turn off the phone.</string>
+    <string name="ask_for_install_sd">The latest system updates package was found in your SD-card, would you like to install?</string>
+    <string name="warning_install_sd" product="tablet">You will not be able to use your tablet or make emergency calls during the installation. 
+        Please do not remove the battery and your SD card or turn off the tablet. \nBefore starting installation, 
+        please ensure that the package is downloaded from the official 
+        website and is not corrupted.</string>
+    <string name="warning_install_sd" product="default">You will not be able to use your phone or make emergency calls during the installation. 
+        Please do not remove the battery and your SD card or turn off the phone. \nBefore starting installation, 
+        please ensure that the package is downloaded from the official 
+        website and is not corrupted.</string>
+    <string name="ask_for_download_ota">Would you like to download the system optimization update?</string>
+    <string name="warning_download_ota">We would recommended using a free Wi-Fi hotspot or 
+        an unlimited data plan to apply this update. If not standard data connection 
+        charges may apply. \nPlease back up your data first before upgrading.</string>
+        
+    <string name="notification_content_title">System update</string>
+    <string name="downloading_title">"Downloading\u2026"</string>   
+    <string name="wifi_only_check">"Wi-Fi only"</string>     
+    <string name="download_per_info_M" translatable="false"><xliff:g id="percent">%1$d</xliff:g>%% <xliff:g id="currentsize">%2$.2f</xliff:g> / <xliff:g id="totalsize">%3$.2f</xliff:g> (MB)</string>
+    <string name="download_per_info_K" translatable="false"><xliff:g id="percent">%1$d</xliff:g>%% <xliff:g id="currentsize">%2$.2f</xliff:g> / <xliff:g id="totalsize">%3$.2f</xliff:g> (KB)</string>
+    <string name="download_per_info_B" translatable="false"><xliff:g id="percent">%1$d</xliff:g>%% <xliff:g id="currentsize">%2$d</xliff:g> / <xliff:g id="totalsize">%3$d</xliff:g> (Bytes)</string>
+    
+    
+    <string name="btn_install">Install</string>
+    <string name="btn_cancel">Discard</string>
+    <string name="btn_download">Download and Install</string>
+    <string name="btn_resume">Download</string>
+    
+    <string name="warn_data_cost_title">Download update</string>
+    <string name="warn_data_cost_content">Downloading via mobile networks may cause additional charges. Would you like to continue?</string>
+    <string name="warn_data_cost_yes">Yes</string>
+    <string name="warn_data_cost_no">No</string>
+
+    <string name="notification_download_complete_title">System update is ready</string>
+    <string name="notification_download_complete_context">Tap to install the system update</string>
+        
+    <string name="sdcard_crash_or_unmount">SD card error. Please check your SD card and try again.</string>
+    <string name="unmount_sdcard">SD card mount error, please check it.</string>
+    <string name="insufficient_space_content">The installation need at least <xliff:g id="deltasize" example="3.5M">%s</xliff:g> bytes storage. Please release space to continue.</string>
+
+    <string name="size_M" translatable="false">(%1$.2f MB)</string>
+    <string name="size_K" translatable="false">(%1$.2f KB)</string>
+    <string name="size_B" translatable="false">(%1$.2f Bytes)</string>
+    
+    <string name="install_sd_title">Install update</string>
+    <string name="install_sd_message">Please ensure that the package is downloaded from the official website and the package is not corrupted. Otherwise it may cause system problems.</string>
+    <string name="install_reminder_now">Install now</string>
+    <string name="install_reminder_not_now">Not now</string>
+    <!-- bellow are old strings for MOTA-->
+    
+
+    <string name="notification_content_text_completed">Download successfully</string> 
+
+    <string name="unknown_per">Unknown</string>    
+    <string name="unknown_error">Unknown error</string>
+    <string name="unknown_error_content">An unknown error occurs. Please leave this page and try again.</string>
+    <string name="insufficient_space_title">No enough space</string>
+    <string name="error_sdcard">SD card Info</string>
+    <string name="insufficient_space">No enough space on the SD card.</string>
+    <string name="package_deleted_error">System updates stopped, due to the upgrade is invalid.</string>
+    
+    <string name="cancel_download_title">Cancel download</string>
+    <string name="cancel_download_content">This operation will discard the downloaded file.</string>
+
+    
+    <string name="change_network_title">Download</string>
+    <string name="change_network_content">The current APN does not support the downloading, would you like to change to another APN or turn on Wi-Fi?</string>
+    <string name="change_network_wifi_btn">Use Wi-Fi</string>
+    <string name="change_network_apn_btn">Change APN</string>
+    <string name="change_network_discard_btn">Discard</string>    
+    <string name="package_error_title">Install failed</string>
+    <string name="package_error_message_invalid">Package error. Please check update and download again.</string>
+    <string name="package_error_message_insuff" product="tablet">No enough space on the device.</string>
+    <string name="package_error_message_insuff" product="default">No enough space on the phone.</string>
+    <string name="package_error_message_crash">Cannot access data partition.</string>
+    <string name="package_error_message_full">Need full package for partition changed case.</string>    
+    <string name="updateSuccess"  product="tablet">Congratulations! Your device has been updated successfully to version <xliff:g id="version" example="gb.p37">%s</xliff:g>.</string> 
+    <string name="updateSuccess"  product="default">Congratulations! Your phone has been updated successfully to version <xliff:g id="version" example="gb.p37">%s</xliff:g>.</string> 
+    <string name="updateFailed">Failed to update to version <xliff:g id="version" example="gb.p37">%s</xliff:g>.</string>
+    <string name="package_unzip">Package unzipping\u2026</string>
+    <string name="package_unzip_error">Unzip error</string>
+    
+    <string name="installing_message">Your phone will shut down\u2026</string>
+    <string name="install_sd_info">Copy the package to phone storage is required to continue the upgrade.\nNo enough space on your phone.</string>
+    <string name="sdcard_crash_or_unmount_when_install">System updates stopped, due to SD card is unmounted.</string>
+    <string name="sdcard_inserted">Do you want to scan your SD card to find out more update packages?</string>
+    
+    <string name="new_version_detected">System update is available</string>
+    <string name="sdcard_unmount">SD card is unmounted</string>
+    <string name="cta_warning">System supports firmware upgrade only from official website or server. If user uses 3rd party ROM image and/or any other root method to upgrade firmware, it will cause phone unstable. Please be noted user should take all responsibility for all these behaviors.</string>
+</resources>

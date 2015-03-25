@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hissage.ui.view.NmsSwitchSIMView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#d5d4d5"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/bottom_panel_min_height"
+    android:orientation="horizontal"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip" >
+
+    <TextView
+        android:id="@+id/tv_switch_text"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:textColor="#333333"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btn_switch_sim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:text="@string/STR_NMS_SWITCH_BOTTON"
+        android:textColor="#333333"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/sw_enable_sim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:text="@string/STR_NMS_TURN_ON_BOTTON"
+        android:textColor="#333333"
+        android:textSize="14sp" />
+
+</com.hissage.ui.view.NmsSwitchSIMView>

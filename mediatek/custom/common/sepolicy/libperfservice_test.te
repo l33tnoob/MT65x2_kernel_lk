@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binlibperfservice_test Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type libperfservice_test_exec , exec_type, file_type;
+type libperfservice_test ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive libperfservice_test;
+init_daemon_domain(libperfservice_test)
+
+
+# 20131122 Add Set Property Rule
+allow libperfservice_test  property_type:property_service set;

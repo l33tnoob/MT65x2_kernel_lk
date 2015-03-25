@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.mediatek.ngin3d.tests">
+
+    <!-- disable keyguard for instrument test-->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <!-- get wake lock permission for instrument test-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- get internet permission for instrument test-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_COMPONENT" />
+    <!-- add ngin3d live wallpaper demo-->
+    <uses-feature android:name="android.software.live_wallpaper" android:required="true" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true"
+                 android:hardwareAccelerated="true">
+
+        <uses-library android:name="android.test.runner"/>
+
+        <activity android:name="com.mediatek.ngin3d.tests.PresentationStubActivity" android:label="PresentationStubActivity"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.TEST"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.ngin3d.tests.TextureViewActivity" android:label="TextureViewActivity"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.TEST"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mediatek.ngin3d.tests.MyWallpaperTester" android:label="MyWallpaperTester"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.TEST"/>
+            </intent-filter>
+        </activity>
+
+        <service android:label="@string/service_label" android:name="MyWallpaperService"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper"
+                android:resource="@xml/myglwallpaper" />
+        </service>
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="8"/>
+
+    <!--
+    This declares that this app uses the instrumentation test runner targeting
+    the package of com.mediatek.ngin3dn3d.app.  To run the tests use the command:
+    "adb shell am instrument -w com.mediatek.ngin3dn3d.app/android.test.InstrumentationTestRunner"
+    -->
+    <instrumentation android:name="android.test.InstrumentationTestRunner"
+                     android:targetPackage="com.mediatek.ngin3d.tests"
+                     android:label="Tests for ngin3d and ja3m APIs."/>
+
+    <!--
+    Using JUnit for auto test on Hudson
+    -->
+    <instrumentation android:name="com.zutubi.android.junitreport.JUnitReportTestRunner"
+                     android:targetPackage="com.mediatek.ngin3d.tests"
+                     android:label="Tests for ja3m and ngin3d APIs."/>
+
+</manifest>

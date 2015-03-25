@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	android:versionCode="1" android:versionName="1.0" package="com.mediatek.bluetooth"
+	android:sharedUserId="android.uid.mtkbt">
+
+	<application android:label="@string/app_label" 
+                android:persistent="true"
+		android:icon="@drawable/bluetooth" android:description="@string/app_description">
+	
+	<!-- AVRCP Start -->
+        <service android:name=".avrcp.BluetoothAvrcpService" android:exported="true" >
+            <intent-filter>
+                <action android:name="com.mediatek.bluetooth.avrcp.IBTAvrcpService"/>
+                <action android:name="com.mediatek.bluetooth.avrcp.BluetoothAvrcpService"/>
+            </intent-filter>
+        </service>        
+        <receiver android:name=".avrcp.BluetoothAvrcpReceiver" android:exported="true">
+            <intent-filter>
+        		<action android:name="android.mediatek.bluetooth.avrcp.pts" />
+        		<action android:name="android.mediatek.bluetooth.avrcp.connect" />
+        		<action android:name="android.mediatek.bluetooth.avrcp.disconnect" />
+        	</intent-filter>
+        </receiver>
+        <receiver android:name=".avrcp.BluetoothAvrcpReceiver" android:exported="true">
+            <intent-filter>
+                <!-- action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/ -->
+        		<action android:name="android.provider.Telephony.SECRET_CODE" />
+        		<data android:scheme="android_secret_code" android:host="2872714" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".avrcp.BluetoothAvrcpReceiver" android:exported="true">
+            <intent-filter>
+                <!-- action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/ -->
+        		<action android:name="android.provider.Telephony.SECRET_CODE" />
+        		<data android:scheme="android_secret_code" android:host="2872713" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".avrcp.BluetoothAvrcpReceiver" android:exported="true">
+            <intent-filter>
+                <!-- action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/ -->
+        		<action android:name="android.provider.Telephony.SECRET_CODE" />
+        		<data android:scheme="android_secret_code" android:host="2872710" />
+            </intent-filter>
+        </receiver>
+
+	</application>
+
+</manifest> 

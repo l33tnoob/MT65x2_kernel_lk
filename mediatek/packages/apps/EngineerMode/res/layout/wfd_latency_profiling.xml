@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+
+        <TextView
+            android:id="@+id/Wfd_Chosen_Latency_tx"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wfd_lp_capability" >
+        </TextView>
+
+        
+        <TextView
+            android:id="@+id/Wfd_CL_Content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="20dip">
+        </TextView>
+        
+
+        <TextView
+            android:id="@+id/Wfd_Wifi_Info_tx"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wfd_wifi_info" >
+        </TextView>
+
+        
+        <TextView
+            android:id="@+id/Wfd_Wifi_Content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="20dip">
+        </TextView>
+        
+ 
+        <TextView
+            android:id="@+id/Wfd_Latency_tx"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wfd_latency" >
+        </TextView>
+
+        
+        <TextView
+            android:id="@+id/Wfd_Latency_Content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="20dip">
+        </TextView>
+        
+        <CheckBox
+            android:id="@+id/Wfd_Profiling_Screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/wfd_profiling_on" />
+    
+    </LinearLayout>
+
+</ScrollView>

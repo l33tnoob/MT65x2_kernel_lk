@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="350dp"
+            android:minWidth="140dp"
+            android:maxWidth="200dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:contentDescription="@string/STR_NMS_TAP_AVATAR_TIP"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_contact_picture" />
+        
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:background="#79403e3c"
+            android:drawableRight="@drawable/ic_person" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:background="#79403e3c"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:fadingEdgeLength="0dip"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_call" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#33b5e5" />
+
+        <LinearLayout
+            android:id="@+id/footer_disambig"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/lv_phonelist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e2e2e2"
+                android:divider="#cbcbcb"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none"
+                android:scrollbarStyle="outsideOverlay" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="bottom"
+            android:background="#33b5e5" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.mediatek.FMTransmitter"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/fmtx_ic_launcher" android:label="@string/app_name">
+        <activity android:name=".FMTransmitterActivity"
+                  android:label="@string/main_title"
+                  android:configChanges="orientation|screenSize"
+                  android:launchMode="singleTop"
+                  android:clearTaskOnLaunch="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+               
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FMTransmitterAdvanced"
+                  android:label="@string/advanced_title"
+                  android:configChanges="orientation|screenSize">
+        </activity>
+                <activity android:name=".FMTxEMActivity"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait"
+                  android:launchMode="singleTask"
+                  >
+          <intent-filter>
+                <action android:name="com.mediatek.FMTransmitter.FMTxEMActivity"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="FMTransmitterUpgradeReceiver">
+            <!-- This broadcast is sent after the core system has finished
+                 booting, before the home app is launched or BOOT_COMPLETED
+                 is sent. -->
+            <intent-filter>
+                <action android:name="android.intent.action.PRE_BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="FMTransmitterBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PRE_BOOT_COMPLETED"/>
+                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name=".FMTransmitterService" >
+			<intent-filter>
+				<action android:name="com.mediatek.FMTransmitter.IFMTransmitterService"></action>
+			</intent-filter>
+		</service>
+
+		<provider android:name=".FMTransmitterContentProvider"
+			android:authorities="com.mediatek.FMTransmitter.FMTransmitterContentProvider" />
+	
+    </application>
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission 
+		android:name="android.permission.MODIFY_AUDIO_SETTINGS">
+	</uses-permission>
+	<uses-permission android:name = "android.permission.ACCESS_MTK_MMHW"/>
+	<user-permission android:name = "android.permission.WAKE_LOCK"/>
+	<user-permission android:name = "android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest> 

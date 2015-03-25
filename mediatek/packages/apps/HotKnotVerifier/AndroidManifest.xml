@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.mediatek.hotknot.verifier">
+
+    <uses-permission android:name="android.permission.HOTKNOT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    
+    <application android:label="@string/app_name"
+            android:icon="@drawable/ic_settings_hotknot"
+            >
+        <activity
+            android:name="com.mediatek.hotknot.verifier.HotKnotAppListActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mediatek.hotknot.verifier.HotKnotActivityA"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name" >
+            <intent-filter>                
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mediatek.hotknot.verifier.HotKnotActivityRxA"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.mediatek.hotknot.action.MESSAGE_DISCOVERED" />
+                <data android:mimeType="com.mediatek.hotknot.verifier/com.mediatek.hotknot.verifier.HotKnotActivityAA" />
+                <data android:mimeType="com.mediatek.hotknot.verifier/com.mediatek.hotknot.verifier.HotKnotActivityAB" />
+                <data android:mimeType="com.mediatek.hotknot.verifier/com.mediatek.hotknot.verifier.HotKnotActivityAC" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter> 
+        </activity>
+        <activity
+            android:name="com.mediatek.hotknot.verifier.HotKnotBeamActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>                           	
+    </application>
+
+</manifest>

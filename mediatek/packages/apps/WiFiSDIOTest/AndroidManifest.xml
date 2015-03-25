@@ -1,0 +1,60 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mediatek.wifisdiotest"
+    android:sharedUserId="android.uid.phone"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-sdk
+        android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/wifi_sdio_title" >
+        <activity
+            android:name=".WifiSdioTestTab"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/wifi_sdio_title"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WifiSdioTestConfig"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/wifi_sdio_title_config"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".WifiSdioTestResult"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/wifi_sdio_title_result"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="adjustPan" />
+
+        <service
+            android:name=".WifiSdioTestService"
+            android:exported="true" >
+        </service>
+        <service
+            android:name=".WifiAdmService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.mediatek.wifisdiotest.wifi_adm" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

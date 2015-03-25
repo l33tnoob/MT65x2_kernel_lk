@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"Обновление системы"</string>
+
+
+    <string name="none_package">Нет пакетов для обновления.</string>
+    <string name="new_version_query">Проверка обновлений\u2026</string>
+    <string name="menu_stats_refresh">"Обновить"</string>
+    <string name="network_error">Сбой подключения к сети</string>
+    <string name="no_new_version">Используется система последней версии.</string>
+    <string name="not_support_version">Цель не поддерживает обновление по беспроводной сети</string>
+    <string name="query_sd_insufficient_space">Недостаточный объем памяти: <xliff:g id="path">%s</xliff:g></string>
+    <string name="ota_category_title">OTA</string>
+    <string name="sd_category_title">ОБНОВЛЕНИЕ SD-КАРТЫ</string>
+    <string name="ota_preference_summary">На сервере обнаружено обновление системы</string>
+
+
+    <string name="notes_summary">Обновление прошивки может повысить стабильность устройства и исправить ошибки. Установите версию</string>
+    <string name="ask_for_install_ota">Установить обновление системы сейчас?</string>
+    <string name="warning_install_ota" product="tablet">В процессе установки вы не сможете пользоваться планшетом и делать экстренные вызовы. Не извлекайте батарею и SD-карту и не выключайте планшет.</string>
+    <string name="warning_install_ota" product="default">В процессе установки вы не сможете пользоваться телефоном и делать экстренные вызовы. Не извлекайте батарею и SD-карту и не выключайте телефон.</string>
+    <string name="ask_for_install_sd">На SD-карте обнаружена последняя версия обновления системы, установить?</string>
+    <string name="warning_install_sd" product="tablet">В процессе установки вы не сможете пользоваться планшетом и делать экстренные вызовы.  Не извлекайте батарею и SD-карту и не выключайте планшет. \nПеред запуском процедуры обновления загрузите пакет обновления с официального веб-сайта и проверьте его целостность.</string>
+    <string name="warning_install_sd" product="default">В процессе установки вы не сможете пользоваться телефоном и делать экстренные вызовы.  Не извлекайте батарею и SD-карту и не выключайте телефон. \nПеред запуском процедуры обновления загрузите пакет обновления с официального веб-сайта и проверьте его целостность.</string>
+    <string name="ask_for_download_ota">Загрузить обновление оптимизации системы?</string>
+    <string name="warning_download_ota">Для применения данного обновления мы рекомендуем использовать горячую точку доступа Wi-Fi или пакет неограниченного доступа к передаче данных. При нестандартном подключении возможна дополнительная оплата услуг по передаче данных. \nПеред обновлением ПО создайте резервную копию ваших данных.</string>
+        
+    <string name="notification_content_title">Обновление системы</string>
+    <string name="downloading_title">"Загрузка..."</string>   
+    <string name="wifi_only_check">Только Wi-Fi</string>     
+    
+    
+    
+    
+    
+    <string name="btn_install">"Установить"</string>
+    <string name="btn_cancel">отменить</string>
+    <string name="btn_download">Загрузить и установить</string>
+    <string name="btn_resume">"Загрузить"</string>
+    
+    <string name="warn_data_cost_title">Загрузить пакет обновления</string>
+    <string name="warn_data_cost_content">При загрузке через мобильные сети может потребоваться дополнительная оплата. Продолжить?</string>
+    <string name="warn_data_cost_yes">Да</string>
+    <string name="warn_data_cost_no">Нет</string>
+
+    <string name="notification_download_complete_title">Обновление системы готово</string>
+    <string name="notification_download_complete_context">Щелкните для установки обновления системы</string>
+        
+    <string name="sdcard_crash_or_unmount">Ошибка карты SD. Проверьте карту SD и повторите попытку.</string>
+    <string name="unmount_sdcard">Ошибка при установке SD-карты, проверьте.</string>
+    <string name="insufficient_space_content">There is no enough storage space! This installation need at least  <xliff:g id="deltasize" example="3.5M">%s</xliff:g>. Check your app manager to release extra space please. </string>
+
+    
+    
+    
+    
+    <string name="install_sd_title">Установить пакет обновления</string>
+    <string name="install_sd_message">Загрузите пакет обновления с официального веб-сайта и проверьте его целостность. В противном случае, возможны проблемы, связанные с системой.</string>
+    <string name="install_reminder_now">Установить сейчас</string>
+    <string name="install_reminder_not_now">"Не сейчас"</string>
+    
+    
+
+    <string name="notification_content_text_completed">Загрузка выполнена</string> 
+
+    <string name="unknown_per">"Неизвестно"</string>    
+    <string name="unknown_error">Unknown error</string>
+    <string name="unknown_error_content">Неустановленная ошибка. Закройте данную страницу и повторите попытку.</string>
+    <string name="insufficient_space_title">Недостаточно места</string>
+    <string name="error_sdcard">Сведения о карте SD</string>
+    <string name="insufficient_space">Недостаточно места на карте SD.</string>
+    <string name="package_deleted_error">Обновление системы остановлено из-за неверной модернизации. </string>
+    
+    <string name="cancel_download_title">Отменить загрузку</string>
+    <string name="cancel_download_content">Эта операция приведет к удалению загруженного файла.</string>
+
+    
+    <string name="change_network_title">"Загрузить"</string>
+    <string name="change_network_content">Текущее имя точки доступа не поддерживает загрузку, переключиться на другую точку доступа или включить режим Wi-Fi?</string>
+    <string name="change_network_wifi_btn">Использовать Wi-Fi</string>
+    <string name="change_network_apn_btn">Изменить имя точки доступа</string>
+    <string name="change_network_discard_btn">отменить</string>    
+    <string name="package_error_title">Сбой установки</string>
+    <string name="package_error_message_invalid">Ошибка пакета. Проверьте обновление и повторите загрузку.</string>
+    <string name="package_error_message_insuff" product="tablet">Недостаточно места на устройстве.</string>
+    <string name="package_error_message_insuff" product="default">Недостаточно места на телефоне</string>
+    <string name="package_error_message_crash">Нет доступа к пользовательским данным</string>
+    <string name="package_error_message_full">Для измененного раздела требуется полный пакет.</string>    
+    <string name="updateSuccess" product="tablet">Устройство успешно обновлено до версии  <xliff:g id="version" example="gb.p37">%s</xliff:g>. </string> 
+    <string name="updateSuccess" product="default">Поздравляем! Ваш телефон успешно обновлен до версии  <xliff:g id="version" example="gb.p37">%s</xliff:g>. </string> 
+    <string name="updateFailed">Не удалось выполнить обновление до версии  <xliff:g id="version" example="gb.p37">%s</xliff:g>. </string>
+    <string name="package_unzip">Распаковка пакета обновлений\u2026</string>
+    <string name="package_unzip_error">Unzip error</string>
+    
+    <string name="installing_message">Телефон будет отключен\u2026</string>
+    <string name="install_sd_info">Для продолжения обновления нужно скопировать пакет обновления в память телефона.\nНедостаточный объем памяти в телефоне.</string>
+    <string name="sdcard_crash_or_unmount_when_install">Обновление системы остановлено, так как SD-карта извлечена.</string>
+    <string name="sdcard_inserted">Просмотреть SD-карту для поиска других пакетов обновления?</string>
+    
+    <string name="new_version_detected">Доступно обновление системы</string>
+    <string name="sdcard_unmount">SD карта отключена</string>
+    <string name="server_version_error">Ошибка сервера: обновите исходный код сервера.</string>
+    <string name="cta_warning">Система поддерживает обновление встроенного ПО только с официального веб-сайта или сервера. Использование образа ПЗУ стороннего производителя и/или других способов прошивки для обновления встроенного ПО может привести к нестабильной работе телефона. В таких случаях вся ответственность ложится на пользователя.</string>
+</resources>

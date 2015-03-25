@@ -1,0 +1,1016 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mediatek.engineermode"
+    android:sharedUserId="android.uid.phone"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.DIAGNOSTIC" />
+    <uses-permission android:name="android.permission.HARDWARE_TEST" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_BLUETOOTH_SHARE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="com.google.android.gm.permission.WRITE_GMAIL" />
+    <uses-permission android:name="com.google.android.gm.permission.READ_GMAIL" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.HARDWARE_TEST" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOVE_PACKAGE" />
+    <uses-permission android:name="android.permission.MANAGE_USB" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.REBOOT" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+
+    <application android:label="@string/app_name" 
+	android:theme="@android:style/Theme.Holo">
+        <activity
+            android:name=".EngineerMode"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".wifi.WifiStateListener" >
+        </service>
+
+        <activity
+            android:name="FeatureHelpPage"
+            android:label="@string/help"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BatteryLog"
+            android:label="@string/BatteryLog"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MobileDataPreferred"
+            android:label="@string/pch_data_prefer_title"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".GPRS"
+            android:label="@string/GPRS"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".touchscreen.TouchScreenList"
+            android:label="@string/TouchScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".touchscreen.TsHandWriting"
+            android:label="@string/TouchScreen_HandWriting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".touchscreen.TsRateReport"
+            android:label="@string/TouchScreen_HandWriting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".touchscreen.TsVerifyList"
+            android:label="@string/TouchScreen_Verification"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".touchscreen.TsVerifyLine"
+            android:label="@string/TouchScreen_VerificationLine"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".touchscreen.TsVerifyShakingPoint"
+            android:label="@string/TouchScreen_VerificationShaking"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".touchscreen.TsMultiTouch"
+            android:label="@string/TouchScreen_MultiTouch"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".touchscreen.TouchScreenSettings"
+            android:label="@string/TouchScreen_Settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- new start -->
+        <activity
+            android:name=".nonsleep.NonSleepMode"
+            android:label="@string/non_sleep_mode"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".display.Display"
+            android:label="@string/Display"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".memory.Memory"
+            android:label="@string/memory"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".memory.NandFlash"
+            android:label="@string/memory_title_flash"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".memory.EmiRegister"
+            android:label="@string/memory_title_emi"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".io.IoList"
+            android:label="@string/IO"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".io.Eint"
+            android:label="@string/EINT"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".io.Gpio"
+            android:label="@string/GPIO"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".io.MsdcDrivSet"
+            android:label="@string/MSDC_Driving"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".io.MsdcSelect"
+            android:label="@string/MSDC_Select"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".io.MsdcHopSet"
+            android:label="@string/MSDC_HopSet"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".io.MsdcSd3Test"
+            android:label="@string/MSDC_Sd3test"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".desense.DesenseActivity"
+            android:label="@string/desense_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".desense.DesensePllsActivity"
+            android:label="@string/desense_plls_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".desense.PllDetailActivity"
+            android:label="@string/desense_plls_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".desense.FreqHoppingSet"
+            android:label="@string/desense_freqhopping"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".desense.MemPllSet"
+            android:label="@string/desense_mempll"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".power.Power"
+            android:label="@string/Power"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".power.PMU"
+            android:label="@string/PMU"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".power.PMU6575"
+            android:label="@string/PMU"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".power.ChargeBattery"
+            android:label="@string/ChargeBattery"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".baseband.Baseband"
+            android:label="@string/Baseband"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- ======================================== HQA.CPUSTRESS ================================= -->
+        <activity
+            android:name=".cpustress.CpuStressTest"
+            android:label="@string/hqa_cpustress_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".cpustress.ApMcu"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/hqa_cpustress_apmcu_name"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".cpustress.ClockSwitch"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/hqa_cpustress_clockswitch_name"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".cpustress.SwVideoCodec"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/hqa_cpustress_swvideo_name"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <service
+            android:name=".cpustress.CpuStressTestService"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+        </service>
+        <!-- new end -->
+        <activity
+            android:name=".audio.Audio"
+            android:label="@string/Audio"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".audio.AudioModeSetting"
+            android:label="@string/Audio_ModeSetting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".audio.AudioSpeechEnhancement"
+            android:label="@string/Audio_SpeechEnhancement"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".audio.AudioDebugInfo"
+            android:label="@string/Audio_DebugInfo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".audio.AudioDebugSession"
+            android:label="@string/Audio_DebugSession"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".audio.AudioSpeechLoggerX"
+            android:label="@string/Audio_SpeechLogger"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".audio.AudioAudioLogger"
+            android:label="@string/Audio_AudioLogger"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".camera.Camera"
+            android:label="@string/Camera"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".camera.CameraPreview"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|screenSize|keyboardHidden|mnc|mcc"
+            android:label="@string/Camera_Preview"
+            android:screenOrientation="landscape"
+            android:taskAffinity="android.task.camera"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.mediatek.engineermode.cameranew.Camera"
+            android:configChanges="orientation|screenSize|keyboardHidden|mnc|mcc"
+            android:screenOrientation="portrait"
+            android:clearTaskOnLaunch="true"
+            android:taskAffinity="android.task.camera"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        </activity>
+        <activity
+            android:name="com.mediatek.engineermode.cameranew.AutoCalibration"
+            android:label="@string/Camera"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mediatek.engineermode.drivingcurrent.CameraMclk"
+            android:label="@string/Camera"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".wifi.WiFi"
+            android:label="@string/wifi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wifi.WiFiEeprom"
+            android:label="@string/wifi_eeprom"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wifi.WiFiMcr"
+            android:label="@string/wifi_mcr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wifi.WiFiTx6620"
+            android:label="@string/wifi_tx"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wifi.WiFiRx6620"
+            android:label="@string/wifi_rx"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wifi.WifiTestSetting"
+            android:label="@string/wifi_ctia"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".networkinfo.NetworkInfo"
+            android:label="@string/NetworkInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".networkinfo.NetworkInfoInfomation"
+            android:label="@string/NetworkInfo_Info"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dualtalknetworkinfo.NetworkInfoSimType"
+            android:label="@string/Dual_Talk_NetworkInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dualtalknetworkinfo.NetworkInfo"
+            android:label="@string/dualtalk_NetworkInfo"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".dualtalknetworkinfo.NetworkInfoInfomation"
+            android:label="@string/dualtalk_NetworkInfo_Info"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AutoAnswer"
+            android:label="@string/AutoAnswer"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videotelephone.VideoTelephony"
+            android:label="VideoTelephony"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videotelephone.WorkingMode"
+            android:label="WorkingMode"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videotelephone.Configuration"
+            android:label="Configuration"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videotelephone.VTAutoAnswer"
+            android:label="VTAutoAnswer"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videotelephone.PeerAudioRecorder"
+            android:label="PeerAudioRecorder"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videotelephone.PeerVideoRecorder"
+            android:label="PeerVideoRecorder"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videotelephone.LogFilter"
+            android:label="LogFilter"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videotelephone.TagsSelectActivity"
+            android:label="TagsSelectActivity"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" />
+        <!-- BT PART -->
+        <activity
+            android:name=".bluetooth.BtList"
+            android:label="@string/BluetoothTitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bluetooth.BtRelayerModeActivity"
+            android:label="@string/BT_RelayerModeTitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bluetooth.BtChipInfoActivity"
+            android:label="@string/BT_chipTitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bluetooth.TxOnlyTestActivity"
+            android:label="@string/BTTXTitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bluetooth.NoSigRxTestActivity"
+            android:label="@string/BTNSRXTitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bluetooth.TestModeActivity"
+            android:label="@string/BTTMTitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bluetooth.SspDebugModeActivity"
+            android:label="@string/BTSSPDMTitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bluetooth.BleTestMode"
+            android:label="@string/BLETestMode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bluetooth.BtDebugFeatureActivity"
+            android:label="@string/BtDebugFeatureTitle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bluetooth.BtClockSelectionActivity"
+            android:label="@string/ClockSelectionTitle"
+            android:screenOrientation="portrait" />
+        <!--
+        <activity
+            android:name=".bluetooth.BLE_Scan"
+            android:label="@string/BLEScan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bluetooth.BLE_WhiteList"
+            android:label="@string/BLEWhiteList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bluetooth.BLE_Advertise"
+            android:label="@string/BLEAdvertise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bluetooth.BLE_Initiate"
+            android:label="@string/BLEInitiate"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".bluetooth.RxOnlyTestActivity"
+            android:label="@string/BTRxTitle"
+            android:screenOrientation="portrait" />
+        -->
+        <!-- BT PART -->
+        <activity
+            android:name=".modemtest.ModemTestActivity"
+            android:label="ModemTestActivity"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modemwarning.ModemWarning"
+            android:label="@string/modem_warning_title"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usb.UsbList"
+            android:label="USB_TEST"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".usb.UsbTest"
+            android:label="@string/USB_IF_TEST"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".devicemgr.DeviceMgr"
+            android:label="@string/device_mgr"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bandselect.BandSelect"
+            android:label="@string/BandSelect"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bandselect.BandModeSimSelect"
+            android:label="@string/BandModeSIMSelect"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ratmode.SimSelect"
+            android:label="@string/SIMList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ratmode.RadioInfo"
+            android:label="@string/Phone_info"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ratmode.BandMode"
+            android:label="@string/Phone_info"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fastdormancy.FastDormancy"
+            android:label="Fast Dormancy"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fastdormancy.ConfigFD"
+            android:label="Config Fast Dormancy"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cfu.CfuActivity"
+            android:label="CFU"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".swla.SwlaActivity"
+            android:label="SWLA"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sdtest.SDLogActivity"
+            android:label="SDLogActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".settingsfontsize.SettingsFontSize"
+            android:label="Set font scale"
+            android:screenOrientation="portrait" />
+       <!-- hqa nfc Start -->
+        <activity
+            android:name=".hqanfc.NfcMainPage"
+            android:label="@string/nfc_6605"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".hqanfc.ReaderMode"
+            android:label="@string/hqa_nfc_always_reader_mode"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".hqanfc.RwFunction"
+            android:label="@string/hqa_nfc_rw_function"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".hqanfc.PeerToPeerMode"
+            android:label="@string/hqa_nfc_always_p2p_mode"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".hqanfc.CardEmulationMode"
+            android:label="@string/hqa_nfc_always_card_emulation_mode"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".hqanfc.PollingLoopMode"
+            android:label="@string/hqa_nfc_polling_loop_mode"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".hqanfc.TxCarrierSignal"
+            android:label="@string/hqa_nfc_tx_carrier_signal"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".hqanfc.VirtualCardFunction"
+            android:label="@string/hqa_nfc_virtual_card_function"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".hqanfc.PnfcCommand"
+            android:label="@string/hqa_nfc_pnfc_command"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".hqanfc.FunctionRead"
+            android:label="@string/hqa_nfc_rw_read"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".hqanfc.FunctionWrite"
+            android:label="@string/hqa_nfc_rw_write"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".hqanfc.VersionQuery"
+            android:label="@string/hqa_nfc_version_query"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".hqanfc.Option"
+            android:label="@string/hqa_nfc_option"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".hqanfc.LoopBackTest"
+            android:label="@string/hqa_nfc_loopback_test"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".hqanfc.SwpTest"
+            android:label="@string/hqa_nfc_swp_test"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- hqa nfc end -->
+
+        <activity
+            android:name=".rfdesense.RfDesenseTest"
+            android:label="@string/rf_desense_test"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".rfdesense.RfDesenseTxTest"
+            android:label="@string/rf_desense_tx_test"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".rfdesense.RfDesenseTxTestGsm"
+            android:label="@string/rf_desense_tx_test"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".rfdesense.RfDesenseTxTestTd"
+            android:label="@string/rf_desense_tx_test"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver
+            android:name=".EngineerModeReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SECRET_CODE" />
+
+                <data
+                    android:host="3646633"
+                    android:scheme="android_secret_code" />
+            </intent-filter>
+        </receiver>
+        
+        <activity
+            android:name=".networkselect.NetworkSelectActivity"
+            android:label="Network Selecting"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".networkselect.NetworkSelectSimType"
+            android:label="SIM Select"
+            android:screenOrientation="portrait" >
+        </activity>
+        <service android:name=".DailyUseSettingService"/>
+        <!-- Merge NFC code to EM -->
+        <activity 
+            android:name=".nfc.NfcEntry"
+            android:label="@string/NFC_Entry_Text"
+	    android:screenOrientation="portrait">
+	</activity>
+	<activity
+            android:name=".nfc.NfcSettings"
+            android:label="@string/NFC_Settings_Text"
+	    android:screenOrientation="portrait">
+	</activity>
+	<activity 
+            android:name=".nfc.NfcSettingsResult"
+            android:label="@string/NFC_Settings_Result_Text"
+	    android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+	</activity>
+	<activity
+            android:name=".nfc.NfcRawData"
+            android:label="@string/NFC_RawData_Text"
+	    android:screenOrientation="portrait">
+	</activity>		
+        <activity
+            android:name=".nfc.NfcSoftwareStack"
+            android:label="@string/NFC_SoftwareStack_Text"
+	    android:screenOrientation="portrait">
+	</activity>
+	<activity
+            android:name=".nfc.NfcSoftwareStackScan"
+            android:label="@string/NFC_SoftwareStackScan_Text"
+       	    android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+	</activity>
+	<activity
+            android:name=".nfc.NfcSoftwareStackSecure"
+	    android:label="@string/NFC_SoftwareStackSecure_Text"
+	    android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+	</activity>
+	<activity
+            android:name=".nfc.NfcSoftwareStackP2PInitDect"
+	    android:label="@string/NFC_SoftwareStack_P2P_InitDect_Text"
+     	    android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+	</activity>
+	<activity
+            android:name=".nfc.NfcSoftwareStackScanReadTag"
+	    android:label="@string/NFC_SoftwareStackScan_Read_Text"
+	    android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+	</activity>
+	<activity
+            android:name=".nfc.NfcSoftwareStackScanWriteTag"
+	    android:label="@string/NFC_SoftwareStackScan_Write_Text"
+	    android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+	</activity>
+	<activity
+            android:name=".nfc.NfcSoftwareStackRawCommand"
+	    android:label="@string/NFC_SoftwareStackScan_RawCommand_Text"
+	    android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+	</activity>
+        <activity android:name=".hspainfo.HspaInfo"
+            android:label="@string/hspa_info_title" android:process="com.android.phone"
+            android:screenOrientation="portrait">
+        </activity>
+    <activity
+        android:name=".lcm.LCM"
+        android:label="@string/hqa_lcm_name" >
+    </activity>
+    <service android:name=".nonsleep.EMWakeLockService"/>
+	<activity android:name=".mcdi.McdiSetting"
+			android:label="@string/mcdi_setting_label" 
+			android:screenOrientation="portrait">
+	</activity>
+	<activity android:name=".dvfs.CpuDvfs"
+			android:label="@string/cpu_dvfs_label" 
+			android:screenOrientation="portrait">
+	</activity>
+	<activity android:name=".pllcg.PllCgActivity"
+			android:label="@string/pllcg_title" 
+			android:screenOrientation="portrait">
+	</activity>
+	<activity android:name=".desense.FreqHoppingSetting6572"
+			android:label="@string/desense_freqhopping" 
+			android:screenOrientation="portrait">
+	</activity>
+	<activity android:name=".dcm.DcmList"
+			android:label="@string/dcm_label" 
+			android:screenOrientation="portrait">
+	</activity>
+	<activity android:name=".dcm.ApdcmActivity"
+			android:label="@string/dcm_apdcm" 
+			android:screenOrientation="portrait">
+	</activity>
+	<activity android:name=".dcm.LpmActivity"
+			android:label="@string/dcm_lpm" 
+			android:screenOrientation="portrait">
+	</activity>
+	<activity android:name=".sleepmode.SleepModeActivity"
+			android:label="@string/sleep_mode_setting" 
+			android:screenOrientation="portrait">
+	</activity>
+	<activity android:name=".deepidle.DeepIdleSettingActivity"
+			android:label="@string/deep_idle_setting" 
+			android:screenOrientation="portrait">
+	</activity>
+
+    <activity
+        android:name=".UartUsbSwitch"
+        android:label="@string/uart_usb_switch" >
+    </activity>
+    <activity
+            android:name=".wfdsettings.WfdQuality"
+            android:label="@string/wfd_quality"
+	    android:screenOrientation="portrait">
+	</activity>
+	<activity
+            android:name=".wfdsettings.WfdList"
+            android:label="@string/wfd_settings"
+	        android:screenOrientation="portrait">
+	</activity>
+	<activity
+            android:name=".wfdsettings.WfdVdoCapability"
+            android:label="@string/wfd_video_capability"
+	        android:screenOrientation="portrait">
+	</activity>
+	<activity
+            android:name=".wfdsettings.WfdPowerSaving"
+            android:label="@string/wfd_power_saving"
+	        android:screenOrientation="portrait">
+	</activity>
+	<activity
+            android:name=".wfdsettings.WfdSecurity"
+            android:label="@string/wfd_security"
+	        android:screenOrientation="portrait">
+	</activity>
+	<activity
+            android:name=".wfdsettings.WfdLatency"
+            android:label="@string/wfd_latency_profiling"
+	        android:screenOrientation="portrait">
+	</activity>
+    <activity
+        android:name=".worldphone.ModemSwitch"
+        android:label="@string/modem_switch"
+        android:process="com.android.phone"
+        android:screenOrientation="portrait">
+    </activity>
+    <activity
+            android:name=".sensor.Sensor"
+            android:label="@string/sensor"
+            android:screenOrientation="portrait">
+    </activity>
+    <activity
+            android:name=".sensor.SensorCalibrationSelect"
+            android:label="@string/sensor_calibration"
+            android:screenOrientation="portrait">
+    </activity>
+    <activity
+            android:name=".sensor.SensorCalibration"
+            android:label="@string/sensor_calibration_gsensor"
+            android:screenOrientation="portrait">
+    </activity>
+    <activity
+        android:name=".sensor.MSensorCurrentActivity"
+        android:label="@string/msensor_current_data"
+        android:screenOrientation="portrait">
+    </activity>
+    <activity
+        android:name=".sensor.MSensor"
+        android:label="@string/sensor_data"
+        android:screenOrientation="portrait">
+    </activity>
+    
+    <activity
+        android:name=".sensor.PSensorCollection"
+        android:label="@string/psensor_data_collection"
+        android:screenOrientation="portrait">
+    </activity>
+    <activity
+        android:name=".sensor.PSensor"
+        android:label="@string/sensor_ps"
+        android:screenOrientation="portrait">
+    </activity>
+    <activity
+        android:name=".sensor.PSensorCalibration"
+        android:label="@string/psensor_calibration"
+        android:screenOrientation="portrait">
+    </activity>
+    <activity
+        android:name=".sensor.PSensorChangeThreshold"
+        android:label="@string/psensor_change_threshold"
+        android:screenOrientation="portrait">
+    </activity>
+    <activity
+        android:name=".sensor.PSensorCalibrationSelect"
+        android:label="@string/psensor_calibration_select"
+        android:screenOrientation="portrait">
+    </activity>
+        <activity
+            android:name=".usbacm.UsbAcm"
+            android:label="@string/usbacm"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".cdmanetworkselect.NetworkSelectActivity"
+            android:label="@string/cdma_network_select"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait" >
+        </activity>
+	<activity android:name=".DeviceRegister"
+			android:label="@string/ct_device_register" 
+			android:screenOrientation="portrait">
+	</activity>
+    <activity
+        android:name=".cwtest.CWTest"
+        android:label="@string/cw_test"
+        android:screenOrientation="portrait">
+    </activity>
+        <activity
+            android:name=".lte.LteConfiguration"
+            android:label="@string/lte_config"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".lte.LteNetworkMode"
+            android:label="@string/lte_network_mode"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".lte.LteNetworkInfo"
+            android:label="@string/lte_network_info"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".lte.LteNetworkInfoDetail"
+            android:label="@string/lte_network_info"
+            android:process="com.android.phone"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".lte.CommandTool"
+            android:process="com.android.phone"
+            android:label="@string/lte_tool">
+        </activity>
+        <activity
+            android:name=".lte.CommandToolEdit"
+            android:process="com.android.phone"
+            android:label="@string/lte_tool">
+        </activity>
+        <service
+            android:name=".lte.CommandToolService"
+            android:process="com.android.phone"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+        </service>
+        <activity
+            android:name=".dfo.Dfo"
+            android:label="@string/dfo"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".dfo.DfoResolution"
+            android:label="@string/dfo_resolution"
+            android:screenOrientation="portrait">
+        </activity>
+	    <activity android:name=".cip.CipPropContentActivity"
+			android:label="@string/cip_prop_content" 
+			android:screenOrientation="portrait">
+	    </activity>
+        <activity
+            android:name=".modemdebug.ModemDebug"
+            android:label="@string/modem_reset_debug"
+            android:screenOrientation="portrait" >
+        </activity> 
+
+	    <receiver
+            android:name=".wifi.WifiStateReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+       <activity
+            android:name=".user2root.User2rootActivity"
+            android:label="@string/user2root" >
+            <!-- no show in main menu
+               <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+                  <category android:name="android.intent.category.LAUNCHER" />
+               </intent-filter>
+            -->
+       </activity>
+    </application>
+
+</manifest>

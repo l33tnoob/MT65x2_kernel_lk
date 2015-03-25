@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cds_socket_info" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         >
+
+        <Button android:id="@+id/btn_refresh"
+            android:layout_width="110dip"
+            android:layout_height="60dip"
+            android:text="@string/btn_refresh" />
+
+<!--
+        <Button android:id="@+id/btn_snapshot"
+            android:layout_width="110dip"
+            android:layout_height="60dip"
+            android:text="@string/btn_snapshot" />
+-->
+
+    </LinearLayout>
+
+    <ListView  android:id="@+id/SocketListview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="8dp"  />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#777777" ></View>        
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/socket_info" />        
+    </LinearLayout>
+</LinearLayout>

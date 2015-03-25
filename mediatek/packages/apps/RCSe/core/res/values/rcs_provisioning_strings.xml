@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="provisioning_app_name">Provisioning</string>
+    <string name="label_ok">OK</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_save">Save</string>
+    <string name="label_reboot_service">The joyn service should be restarted before to take into account the modifications</string>
+	<string name="label_edit_msisdn">Enter your phone number in international format:</string>
+	<string name="label_edit_msisdn_config">To setup your application and start using joyn, please type in your phone number below in international format</string>
+	<string name="label_msisdn_confirm_dialog">Confim is this the number?</string>
+	<string name="label_msisdn_error_dialog">The Phone number seems wrong. Please enter the number again</string>
+	<string name="label_select_ims">Select an IMS platform:</string>
+	<string name="label_generate_profile">Generate profile</string>
+    <string name="label_no_certificate">No certificate</string>
+    
+    <string name="max_photo_size">Max photo-icon size (kB):</string>
+    <string name="max_free_text1_len">Max length of the freetext:</string>
+    <string name="max_participants_num">Max number of participants in a group chat:</string>
+    <string name="max_chat_len">Max length of a chat message:</string>
+    <string name="max_group_chat_len">Max length of a group chat message:</string>
+    <string name="chat_idle_duration">Idle duration of a chat session (seconds):</string>
+    <string name="max_file_size">Max size of a file transfer (kB):</string>
+    <string name="file_size_threshold">Threshold warning on file transfer size (kB):</string>
+    <string name="max_image_size">Max size of an image share (kB):</string> 
+    <string name="max_video_duration">Max duration of a video share (seconds):</string>
+    <string name="max_chat_sessions">Max number of simultaneous chat sessions:</string>
+    <string name="max_ft_sessions">Max number of simultaneous file transfer sessions:</string>
+    <string name="max_ip_call_sessions">Max number of simultaneous IP call sessions:</string>
+    <string name="im_start_mode">IM session start mode:</string>
+    <string name="max_chat_entries">Max entries per contact for chat history:</string>
+    <string name="max_richcall_entries">Max entries per contact for richcall history:</string>
+    <string name="max_ipcall_entries">Max entries per contact for IP call history:</string>
+    <string name="max_geolocation_length">Max length of a geolocation label:</string>
+    <string name="geolocation_expiry_time">Expiration time of a geolocation (seconds):</string>
+    <string name="photos_path">Directory path to store photos:</string>
+    <string name="videos_path">Directory path to store videos:</string>
+    <string name="files_store_path">Directory path to store files:</string>
+    <string name="sms_fall_back">SMS Fallback Sevice</string>
+    <string name="store_forward_service_warning">Store and Forward Service Warning</string>
+    <string name="auto_accept_ft">Auto Accept file Transfer</string>
+    <string name="auto_accept_chat">Auto Accept Chat</string>
+    <string name="auto_accept_group_chat">Auto Accept Group Chat</string>
+    
+    <string name="app_traces">Application traces</string>
+    <string name="sip_traces">SIP traces</string>
+    <string name="media_traces">Media traces</string>
+    <string name="sip_trace_file">SIP traces file:</string>
+    <string name="trace_level">Trace level:</string>
+    
+    <string name="ims_authentication_procedure_mobile">IMS authentication procedure for Mobile access:</string>
+    <string name="ims_authentication_procedure_wifi">IMS authentication procedure for Wi-Fi access:</string>
+    <string name="ims_username">IMS username:</string>
+    <string name="ims_display_name">IMS display name:</string>
+    <string name="ims_home_domain">IMS home domain:</string>
+    <string name="ims_private_uri">IMS private URI for HTTP Digest:</string>
+    <string name="ims_password">IMS password for HTTP Digest:</string>
+    <string name="ims_realm">IMS realm for HTTP Digest:</string>
+    <string name="CISF_address_mobile">P-CSCF address for Mobile access:</string>
+    <string name="CISF_port_mobile">P-CSCF port for Mobile access:</string>
+    <string name="CISF_address_wifi">P-CSCF address for Wi-Fi access:</string>
+    <string name="CISF_port_wifi">P-CSCF port for Wi-Fi access:</string>
+    <string name="XDM_server_address">XDM server address:</string>
+    
+    <string name="XDM_sever_login">XDM server login:</string>
+    <string name="XDM_sever_passwd">XDM server password:</string>
+    <string name="FT_http_server_address">FT HTTP server address:</string>
+    
+    <string name="FT_http_server_login">FT HTTP server login:</string>
+    <string name="FT_http_server_passwd">FT HTTP server password:</string>
+    
+    <string name="im_conference_ui">IM conference URI:</string>
+    <string name="end_user_uri">End user confirmation URI:</string>
+    <string name="provisioning_apn">APN:</string>
+    
+    <string name="provisioning_country_code">Country code:</string>
+    <string name="provisioning_country_area_code">Country area code:</string>
+    <string name="provisioning_capabilities">Capabilities:</string>
+    
+    <string name="provisioning_image_sharinge">Image sharing</string>
+    <string name="provisioning_video_sharinge">Video sharing</string>
+    <string name="provisioning_file_transfer">File transfer</string>
+    <string name="provisioning_file_transfer_http">File transfer HTTP</string>
+    <string name="provisioning_im_session">IM session"</string>
+    <string name="provisioning_group_sesion">IM Group session</string>
+    
+    <string name="provisioning_ip_voice_call">IP Voice call</string>
+    <string name="provisioning_ip_video_call">IP Video call</string>
+    <string name="provisioning_cs_video">CS video</string>
+    <string name="provisioning_presence_dicovery">Presence discovery:</string>
+    <string name="provisioning_social_presence">Social presence</string>
+    <string name="provisioning_geolocation_push">Geolocation push</string>
+    <string name="provisioning_ft_thumbnail">File transfer thumbnail</string>
+    <string name="provisioning_ft_store_and_forward">File transfer Store and Forward</string>
+     <string name="provisioning_group_chat_store_and_forward">Group chat Store and Forward</string>
+     <string name="provisioning_sip_automata">SIP automata</string>
+     <string name="provisioning_use_only_the_secondary_provisioning_server">Use only the secondary provisioning server</string>
+     <string name="provisioning_gsma_release">GSMA release:</string>
+    
+     
+	<string name="provisioning_auto_config_mode">Auto config mode</string>
+	<string name="provisioning_server">Provisioning server</string>
+	<string name="provisioning_network_access">Network access</string>
+	<string name="provisioning_IMS_service_polling_period_secs">IMS service polling period (seconds)</string>
+	<string name="provisioning_default_protocol_for_file_transfer">Default protocol for file transfer</string>
+	<string name="provisioning_default_SIP_protocol_for_Mobile_access">Default SIP protocol for Mobile access</string>
+	<string name="provisioning_default_SIP_protocol_for_Wi_Fi_access">Default SIP protocol for Wi-Fi access</string>
+	<string name="provisioning_TLS_root_or_self_signed_certificate_from__sdcard">TLS root or self-signed certificate from /sdcard</string>
+	<string name="provisioning_TLS_intermediate_certificate_from_sdcard">TLS intermediate certificate from /sdcard</string>
+	<string name="provisioning_default_SIP_port">Default SIP port</string>
+	<string name="provisioning_SIP_timer_base_T1_milli_secs">SIP timer base T1 milli_secs</string>
+	<string name="provisioning_SIP_timer_T2_milli_secs">SIP timer T2 milli_secs</string>
+	<string name="provisioning_SIP_timer_T4_milli_secs">SIP timer T4 milli_secs</string>
+	<string name="provisioning_SIP_keep_alive_period_secs">SIP keep-alive period (seconds)</string>
+	<string name="provisioning_SIP_transaction_timeout_secs">SIP transaction timeout (seconds)</string>
+	<string name="provisioning_default_TCP_port_for_MSRP_session">Default TCP port for MSRP session</string>
+	<string name="provisioning_default_UDP_port_for_RTP_session">Default UDP port for RTP session</string>
+	<string name="provisioning_MSRP_transaction_timeout_secs">MSRP transaction timeout (seconds)</string>
+	<string name="provisioning_registration_expire_period_secs">Registration expire period (seconds)</string>
+	<string name="provisioning_registration_retry_base_time_secs">Registration retry base time (seconds)</string>
+	<string name="provisioning_registration_retry_max_time_secs">Registration retry max time (seconds)</string>
+	<string name="provisioning_publish_expire_period_secs">Publish expire period (seconds)</string>
+	<string name="provisioning_revoke_timeout_secs">Revoke timeout (seconds)</string>
+	<string name="provisioning_ringing_session_period_secs">Ringing session period (seconds)</string>
+	<string name="provisioning_subscribe_expiration_timeout_secs">Subscribe expiration timeout (seconds)</string>
+	<string name="provisioning_Is_composing_timeout_for_chat_secs">Is-composing timeout for chat (seconds)</string>
+	<string name="provisioning_session_refresh_expire_period_secs">Session refresh expire period (seconds)</string>
+	<string name="provisioning_capability_refresh_timeout_secs">Capability refresh timeout (seconds)</string>
+	<string name="provisioning_capability_expiry_timeout_secs">Capability expiry timeout (seconds)</string>
+	<string name="provisioning_capability_polling_period_secs">Capability polling period (seconds)</string>
+	<string name="provisioning_enable_SIP_keep_alive">Enable SIP keep-alive</string>
+	<string name="provisioning_Tel_URI_format">Tel-URI format</string>
+	<string name="provisioning_IM_always_on">IM always-on</string>
+	<string name="provisioning_FT_always_on">FT always-on</string>
+	<string name="provisioning_IM_delivery_reports">IM delivery reports</string>
+	<string name="provisioning_permanent_state_mode">Permanent state mode</string>
+	<string name="provisioning_GRUU">GRUU</string>
+	<string name="provisioning_CPU_Always_on">CPU Always on</string>
+	<string name="provisioning_secure_MSRP_over_Wi_Fi_access">Secure MSRP over Wi-Fi access</string>
+	<string name="provisioning_secure_RTP_over_Wi_Fi_access">Secure RTP over Wi-Fi access</string>
+	<string name="provisioning_IMEI_as_device_ID">IMEI as device ID</string>
+	<string name="secondary_provisioning_server">Secondary provisining Server</string>
+</resources>

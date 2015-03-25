@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+--><resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">    
+    
+    
+    <string name="schedule_power_on_off_settings_title">Задаване график за вкл/изкл</string>
+    
+    <string name="schedule_power_on_off_time">Време</string>
+    
+    <string name="schedule_power_on_off_repeat">Повтаряне</string>
+    
+    <string name="schedule_power_on_off_set">Задайте график за вкл/изкл</string>
+    <string name="schedule_power_on_set">Задайте график за вкл</string>
+    <string name="schedule_power_off_set">Задайте график за изкл</string>
+    
+    <string name="enable_schpwr">Разрешаване</string>
+    
+    <string name="disable_schpwr">Забрана</string>
+    
+    <string-array name="alarm_set">
+        <item>Зададено е включване след по-малко от 1 минута.</item>
+        <item>Включването е зададено за <xliff:g id="DAYS" example="2days">%1$s</xliff:g> от този момент.</item>
+        <item>Включването е зададено за <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> от този момент.</item>
+        <item>Включването е зададено за <xliff:g id="DAYS" example="2days">%1$s</xliff:g> и <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> от този момент.</item>
+        <item>Включването е зададено за <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> от този момент.</item>
+        <item>Включването е зададено за <xliff:g id="DAYS" example="2days">%1$s</xliff:g> и <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> от този момент.</item>
+        <item>Включването е зададено за <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> и <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> от този момент.</item>
+        <item>Включването е зададено за <xliff:g id="DAYS" example="2days">%1$s</xliff:g>, <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> и <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> от този момент.</item>
+        <item>Зададено е изключване след по-малко от 1 минута.</item>
+        <item>Изключването е зададено за <xliff:g id="DAYS" example="2days">%1$s</xliff:g> от този момент.</item>
+        <item>Изключването е зададено за <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> от този момент.</item>
+        <item>Изключването е зададено за <xliff:g id="DAYS" example="2days">%1$s</xliff:g> и <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> от този момент.</item>
+        <item>Изключването е зададено за <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> от този момент.</item>
+        <item>Изключването е зададено за <xliff:g id="DAYS" example="2days">%1$s</xliff:g> и <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> от този момент.</item>
+        <item>Изключването е зададено за <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> и <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> от този момент.</item>
+        <item>Изключването е зададено за <xliff:g id="DAYS" example="2days">%1$s</xliff:g>, <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> и <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> от този момент.</item>
+    </string-array>
+
+    
+    <string name="day">"1 ден"</string>
+
+    
+    <string name="days">"<xliff:g id="days">%s</xliff:g> дни"</string>
+    
+    <string name="hour">"1 час"</string>
+
+    
+    <string name="hours"><xliff:g id="hours">%s</xliff:g> часа"</string>
+
+    
+    <string name="minute">"1 минута"</string>
+    
+    <string name="minutes">"<xliff:g id="minutes">%s</xliff:g> минути"</string>
+
+    
+    <string name="every_day">Всеки ден</string>
+
+    
+    <string name="never">"Никога"</string>
+
+    
+    
+
+    
+    <string name="done">"Готово"</string>
+
+    
+    <string name="revert">Връщане</string>
+    <string name="schpwr_shutdown_message">"У-вото ще се изключи след <xliff:g id="seconds">%s</xliff:g> секунди"</string>
+    <string name="schpwr_shutdown_message_second">"У-вото ще се изключи след <xliff:g id="second">%s</xliff:g> секунди"</string>
+</resources>

@@ -1,0 +1,416 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type init_shell, domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# Restricted domain for shell processes spawned by init
+permissive init_shell;
+domain_auto_trans(init, shell_exec, init_shell)
+# unconfined_domain(init_shell)
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# Restricted domain for shell processes spawned by init
+permissive init_shell;
+# domain_auto_trans(init, shell_exec, init_shell)
+# unconfined_domain(init_shell)
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive init_shell;
+# 20131028 CTS_06
+allow init_shell sysfs:file write;
+
+
+# 20131028 CTS_07
+allow init_shell tiny_mkswap_exec:file { read getattr open execute execute_no_trans };
+
+
+# 20131028 CTS_09
+allow init_shell device:chr_file read;
+
+
+# 20131028 CTS_10
+allow init_shell block_device:blk_file { read write getattr open ioctl };
+allow init_shell device:chr_file { ioctl open };
+allow init_shell tiny_swapon_exec:file { read getattr open execute execute_no_trans };
+
+
+# 20131028 CTS_15
+allow init_shell console_device:chr_file { read write getattr };
+
+
+# 20131028 CTS_16
+allow init_shell console_device:chr_file ioctl;
+allow init_shell linker_exec:file read;
+
+
+# 20131028 CTS_17
+allow init_shell property_socket:sock_file write;
+
+
+# 20131028 CTS_18
+allow init_shell toolbox_exec:file getattr;
+
+
+# 20131028 CTS_20
+allow init_shell linker_exec:file { execute open };
+allow init_shell toolbox_exec:file { read execute open execute_no_trans };
+
+
+# 20131119 FeatureSQC
+allow init_shell console_device:chr_file read;
+allow init_shell linker_exec:file read;
+allow init_shell lost_found_data_file:dir { read open };
+allow init_shell property_socket:sock_file write;
+allow init_shell rootfs:chr_file { read write ioctl getattr };
+allow init_shell toolbox_exec:file { getattr execute };
+
+
+# 20131119 Sanity_QA
+allow init_shell unlabeled:filesystem getattr;
+
+
+# 20131121 Sanity_QA
+allow init_shell devpts:chr_file { write read };
+allow init_shell init:unix_stream_socket { read write };
+allow init_shell sdcard_internal:dir { read search open };
+allow init_shell sdcard_internal:file getattr;
+
+
+
+# 20131122 Add Set Property Rule
+allow init_shell property_type:property_service set;
+
+# 20131213 KKMR1_CTS_01
+allow init_shell aee_aed:process sigchld;
+allow init_shell aee_aed:unix_stream_socket connectto;
+allow init_shell am_exec:file { read getattr open execute execute_no_trans };
+allow init_shell ashmem_device:chr_file execute;
+allow init_shell bugreport_exec:file { read getattr open execute execute_no_trans };
+allow init_shell content_exec:file { read getattr open execute execute_no_trans };
+allow init_shell dalvikcache_data_file:file { write setattr };
+allow init_shell dalvikvm_exec:file { read getattr open execute execute_no_trans };
+allow init_shell devpts:chr_file { getattr ioctl };
+allow init_shell dumpstate:unix_stream_socket connectto;
+allow init_shell input_exec:file { read getattr open execute execute_no_trans };
+allow init_shell logcat_exec:file { read getattr open execute execute_no_trans };
+allow init_shell pm_exec:file { read getattr open execute execute_no_trans };
+allow init_shell sdcard_internal:dir { write remove_name create add_name rmdir };
+allow init_shell sdcard_internal:file { read write create unlink open };
+allow init_shell self:capability { fowner fsetid dac_override };
+allow init_shell self:capability2 syslog;
+allow init_shell servicemanager:binder call;
+allow init_shell shell_data_file:dir { write remove_name };
+allow init_shell shell_data_file:file unlink;
+allow init_shell shell_exec:file { open execute_no_trans };
+allow init_shell system_server:binder { transfer call };
+allow init_shell tmpfs:file execute;
+allow init_shell zygote_exec:file { read getattr open execute execute_no_trans };
+
+
+# 20131213 KKMR1_CQ_01
+allow init_shell BGW:dir { getattr search };
+allow init_shell BGW:file { read open };
+allow init_shell CAM_CAL_DRV_device:chr_file getattr;
+allow init_shell FM50AF_device:chr_file getattr;
+allow init_shell GoogleOtaBinder:binder call;
+allow init_shell GoogleOtaBinder:dir { read search open };
+allow init_shell GoogleOtaBinder:file { read getattr open };
+allow init_shell M4U_device_device:chr_file getattr;
+allow init_shell MTK_SMI_device:chr_file getattr;
+allow init_shell aal:dir { read search open getattr };
+allow init_shell aal:file { read getattr open };
+allow init_shell adb_device:chr_file getattr;
+allow init_shell aed_device:chr_file getattr;
+allow init_shell aee_aed:dir { getattr search };
+allow init_shell aee_aed:file { read getattr open };
+allow init_shell aee_aed:process sigchld;
+allow init_shell aee_aed:unix_stream_socket connectto;
+allow init_shell aee_exec:file { read getattr open execute execute_no_trans };
+allow init_shell alarm_device:chr_file write;
+allow init_shell als_ps_device:chr_file getattr;
+allow init_shell am_exec:file { read getattr open execute execute_no_trans };
+allow init_shell apk_private_data_file:dir getattr;
+allow init_shell app_data_file:dir getattr;
+allow init_shell app_data_file:lnk_file getattr;
+allow init_shell asec_image_file:dir getattr;
+allow init_shell ashmem_device:chr_file execute;
+allow init_shell atci_service:dir { read getattr open search };
+allow init_shell atci_service:file { read getattr open };
+allow init_shell atcid:dir { read getattr open search };
+allow init_shell atcid:file { read getattr open };
+allow init_shell atrace_exec:file { read execute open execute_no_trans };
+allow init_shell audio_device:chr_file getattr;
+allow init_shell audio_device:dir getattr;
+allow init_shell backup_data_file:dir getattr;
+allow init_shell batterywarning:dir { read search open getattr };
+allow init_shell batterywarning:file { read open };
+allow init_shell block_device:dir { search getattr };
+allow init_shell bluetooth_data_file:dir getattr;
+allow init_shell bmm050d:file { read getattr open };
+allow init_shell btn_device:chr_file getattr;
+allow init_shell bugreport_exec:file { read getattr open execute execute_no_trans };
+allow init_shell cache_backup_file:dir getattr;
+allow init_shell camera_isp_device:chr_file getattr;
+allow init_shell camera_pipemgr_device:chr_file getattr;
+allow init_shell camera_sysram_device:chr_file getattr;
+allow init_shell ccci_device:chr_file { read write ioctl open getattr };
+allow init_shell ccci_fsd:dir { getattr search };
+allow init_shell ccci_fsd:file { read getattr };
+allow init_shell ccci_mdinit:dir { getattr search };
+allow init_shell ccci_mdinit:file { read open };
+allow init_shell content_exec:file { read getattr open execute execute_no_trans };
+allow init_shell dalvikcache_data_file:dir { write add_name };
+allow init_shell dalvikcache_data_file:file { write create setattr };
+allow init_shell dalvikvm_exec:file { read getattr open execute execute_no_trans };
+allow init_shell debugfs:file read;
+allow init_shell device:chr_file { write getattr setattr };
+allow init_shell device:dir { read open };
+allow init_shell devmap_device:chr_file getattr;
+allow init_shell devpts:chr_file { read write getattr ioctl };
+allow init_shell dexopt_exec:file { read execute open execute_no_trans };
+allow init_shell dm_agent_binder:binder call;
+allow init_shell dm_agent_binder:dir { read search open };
+allow init_shell dm_agent_binder:file { read getattr open };
+allow init_shell dm_device:chr_file getattr;
+allow init_shell dnsproxyd_socket:sock_file write;
+allow init_shell dontpanic_data_file:dir getattr;
+allow init_shell drm_data_file:dir { read getattr open };
+allow init_shell drmserver:binder call;
+allow init_shell drmserver:dir { search getattr };
+allow init_shell drmserver:file { read getattr open };
+allow init_shell dumpstate:unix_stream_socket connectto;
+allow init_shell dumpstate_socket:sock_file write;
+allow init_shell dumpsys_exec:file { read getattr open execute execute_no_trans };
+allow init_shell ebc_device:chr_file getattr;
+allow init_shell featured:dir { getattr search };
+allow init_shell full_device:chr_file getattr;
+allow init_shell fuse_device:chr_file getattr;
+allow init_shell gps_device:chr_file getattr;
+allow init_shell gsensor_device:chr_file getattr;
+allow init_shell gyroscope_device:chr_file getattr;
+allow init_shell healthd:binder call;
+allow init_shell healthd:dir { read getattr open search };
+allow init_shell healthd:file { read getattr open };
+allow init_shell init:binder call;
+allow init_shell init:dir { read getattr open search };
+allow init_shell init:fifo_file { read write };
+allow init_shell init:file { read getattr open };
+allow init_shell init:unix_stream_socket { read write shutdown };
+allow init_shell input_device:chr_file { read write getattr open ioctl };
+allow init_shell input_device:dir { read open };
+allow init_shell input_exec:file { read getattr open execute execute_no_trans };
+allow init_shell installd:dir { search getattr };
+allow init_shell installd:file { read open };
+allow init_shell kernel:dir { read search open getattr };
+allow init_shell kernel:file { read getattr open };
+allow init_shell kernel:system { syslog_read syslog_mod };
+allow init_shell keystore:binder call;
+allow init_shell keystore:dir { read search open getattr };
+allow init_shell keystore:file { read getattr open };
+allow init_shell kmem_device:chr_file getattr;
+allow init_shell kmsg_device:chr_file getattr;
+allow init_shell logcat_exec:file { read getattr open execute execute_no_trans };
+allow init_shell logwrapper:dir getattr;
+allow init_shell lost_found_data_file:dir getattr;
+allow init_shell matv:dir { read search open getattr };
+allow init_shell matv:file { read getattr open };
+allow init_shell media_app:dir getattr;
+allow init_shell mediaserver:binder call;
+allow init_shell mediaserver:dir { read search open getattr };
+allow init_shell mediaserver:file { read getattr open };
+allow init_shell mediaserver:process signal;
+allow init_shell mmp_device:chr_file getattr;
+allow init_shell mobile_log_d:dir { getattr search };
+allow init_shell mobile_log_d:file { read open };
+allow init_shell monkey_exec:file { read getattr open execute execute_no_trans };
+allow init_shell mt_otg_test_device:chr_file getattr;
+allow init_shell mtk_agpsd:dir { read search open getattr };
+allow init_shell mtk_agpsd:file { read getattr open };
+allow init_shell mtkbt:binder call;
+allow init_shell mtkbt:dir { read search open getattr };
+allow init_shell mtkbt:file { read getattr open };
+allow init_shell muxreport_exec:file { read getattr open execute execute_no_trans };
+allow init_shell netcfg_exec:file { read getattr open execute execute_no_trans };
+allow init_shell netd:dir { getattr search };
+allow init_shell netd:file { read open };
+allow init_shell netd:unix_stream_socket connectto;
+allow init_shell netdiag:dir { getattr search };
+allow init_shell nfc_data_file:dir getattr;
+allow init_shell nvram_agent_binder:binder call;
+allow init_shell nvram_agent_binder:dir search;
+allow init_shell nvram_agent_binder:file { read getattr open };
+allow init_shell platform_app:dir { search getattr };
+allow init_shell platform_app:file { read open };
+allow init_shell platform_app_data_file:dir { read getattr open };
+allow init_shell platform_app_data_file:file getattr;
+allow init_shell pm_exec:file { read getattr open execute execute_no_trans };
+allow init_shell ppp_device:chr_file getattr;
+allow init_shell proc:file write;
+allow init_shell radio:binder call;
+allow init_shell radio_data_file:dir { read create write getattr rmdir remove_name open add_name };
+allow init_shell radio_data_file:file { write getattr setattr read lock unlink open };
+allow init_shell release_app:dir { getattr search };
+allow init_shell release_app:file { read open };
+allow init_shell resmon:dir search;
+allow init_shell resource_cache_data_file:dir getattr;
+allow init_shell sdcard_internal:dir { search read create write rmdir remove_name open add_name };
+allow init_shell sdcard_internal:file { rename write getattr read create unlink open };
+allow init_shell self:capability { setuid dac_override net_raw chown fsetid kill setgid fowner };
+allow init_shell self:capability2 syslog;
+allow init_shell self:packet_socket { read getopt ioctl create setopt };
+allow init_shell self:udp_socket { create ioctl };
+allow init_shell service_exec:file { read getattr open execute execute_no_trans };
+allow init_shell servicemanager:binder call;
+allow init_shell servicemanager:dir getattr;
+allow init_shell servicemanager:file { read getattr open };
+allow init_shell shared_app:dir getattr;
+allow init_shell shell_data_file:dir { read create write getattr rmdir remove_name open add_name };
+allow init_shell shell_data_file:file { execute setattr read lock create execute_no_trans write getattr unlink open append };
+allow init_shell shell_exec:file { open execute_no_trans };
+allow init_shell socket_device:dir getattr;
+allow init_shell sqlite3_exec:file { read getattr open execute execute_no_trans };
+allow init_shell su_exec:file { read getattr open execute execute_no_trans };
+allow init_shell surfaceflinger:binder { transfer call };
+allow init_shell surfaceflinger:dir { read search open getattr };
+allow init_shell surfaceflinger:fd use;
+allow init_shell surfaceflinger:file { read getattr open };
+allow init_shell system_app:dir { search getattr };
+allow init_shell system_app:file { read open };
+allow init_shell system_data_file:dir { write setattr read remove_name create open add_name };
+allow init_shell system_data_file:file { write execute setattr create unlink open execute_no_trans };
+allow init_shell system_data_file:lnk_file getattr;
+allow init_shell system_data_file:sock_file getattr;
+allow init_shell system_file:file { execute_no_trans setattr };
+allow init_shell system_server:binder { transfer call };
+allow init_shell system_server:dir getattr;
+allow init_shell tc_exec:file { read getattr open execute execute_no_trans };
+allow init_shell tcpdump_exec:file { read getattr open execute execute_no_trans };
+allow init_shell thermal:dir { getattr search };
+allow init_shell thermal:file { read open };
+allow init_shell thermald:dir { getattr search };
+allow init_shell thermald:file { read open };
+allow init_shell tmpfs:file execute;
+allow init_shell tmpfs:lnk_file { read getattr };
+allow init_shell tun_device:chr_file getattr;
+allow init_shell uiautomator_exec:file { read getattr open execute execute_no_trans };
+allow init_shell vold:dir getattr;
+allow init_shell vold:file { read getattr open };
+allow init_shell vtservice:binder call;
+allow init_shell vtservice:dir { getattr search };
+allow init_shell vtservice:file { read open };
+allow init_shell wifi_data_file:dir { write remove_name add_name };
+allow init_shell wifi_data_file:sock_file { create unlink setattr };
+allow init_shell wpa_cli_exec:file { read getattr open execute execute_no_trans };
+allow init_shell zygote:dir { read search open getattr };
+allow init_shell zygote:file { read getattr open };
+allow init_shell zygote_exec:file { read getattr open execute execute_no_trans };
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow init_shell BGW:dir getattr;
+allow init_shell GoogleOtaBinder:dir getattr;
+allow init_shell aal:binder call;
+allow init_shell acdapi_data_file:dir getattr;
+allow init_shell adb_keys_file:dir { read getattr open rmdir };
+allow init_shell aee_aed:unix_stream_socket connectto;
+allow init_shell aee_aed_tmpfs:file getattr;
+allow init_shell aee_exec:file { read getattr open execute execute_no_trans };
+allow init_shell am_exec:file { read getattr open execute execute_no_trans };
+allow init_shell apk_private_data_file:dir getattr;
+allow init_shell asec_image_file:dir getattr;
+allow init_shell ashmem_device:chr_file execute;
+allow init_shell atci_service:dir { getattr search };
+allow init_shell atrace_exec:file { read execute open execute_no_trans };
+allow init_shell backup_data_file:dir getattr;
+allow init_shell batterywarning:dir { getattr search };
+allow init_shell block_device:dir search;
+allow init_shell bluetooth_data_file:dir { read open };
+allow init_shell ccci_fsd:file open;
+allow init_shell dalvikcache_data_file:file { write setattr };
+allow init_shell devpts:chr_file { getattr ioctl };
+allow init_shell dhcp_data_file:dir getattr;
+allow init_shell dm_agent_binder:dir getattr;
+allow init_shell dontpanic_data_file:dir getattr;
+allow init_shell drm_data_file:dir getattr;
+allow init_shell dumpsys_exec:file { read getattr open execute execute_no_trans };
+allow init_shell em_svr:dir { getattr search };
+allow init_shell em_svr:file read;
+allow init_shell featured:file { read open };
+allow init_shell init:dir { getattr search };
+allow init_shell init:fifo_file { read write };
+allow init_shell init:file { read open };
+allow init_shell init:unix_stream_socket setopt;
+allow init_shell input_device:chr_file { write getattr open };
+allow init_shell input_exec:file { read getattr open execute execute_no_trans };
+allow init_shell kernel:dir { getattr search };
+allow init_shell kernel:file { read open };
+allow init_shell kernel:system syslog_mod;
+allow init_shell keystore:dir { getattr search };
+allow init_shell keystore:file { read open };
+allow init_shell keystore_data_file:dir getattr;
+allow init_shell logcat_exec:file { read getattr open execute execute_no_trans };
+allow init_shell logwrapper:dir search;
+allow init_shell logwrapper:file { read open };
+allow init_shell lost_found_data_file:dir getattr;
+allow init_shell mediaserver:binder transfer;
+allow init_shell mediaserver:fd use;
+allow init_shell monkey_exec:file { read getattr open execute execute_no_trans };
+allow init_shell mtk_agpsd:file { read open };
+allow init_shell netdiag:file { read open };
+allow init_shell nfc:binder call;
+allow init_shell nvram_agent_binder:dir getattr;
+allow init_shell nvram_daemon_tmpfs:file getattr;
+allow init_shell ping_exec:file { read getattr open execute execute_no_trans };
+allow init_shell platform_app_data_file:dir { read open };
+allow init_shell platform_app_data_file:file getattr;
+allow init_shell pm_exec:file { read getattr open execute execute_no_trans };
+allow init_shell ppp_data_file:dir getattr;
+allow init_shell radio_data_file:dir { read open };
+allow init_shell radio_data_file:file getattr;
+allow init_shell resource_cache_data_file:dir getattr;
+allow init_shell sdcard_internal:dir { write remove_name create add_name rmdir };
+allow init_shell sdcard_internal:file { rename write read create unlink open };
+allow init_shell sdcardd:dir { getattr search };
+allow init_shell sdcardd:file { read open };
+allow init_shell self:capability { fowner fsetid dac_override };
+allow init_shell self:capability2 syslog;
+allow init_shell self:rawip_socket create;
+allow init_shell self:udp_socket { create connect getattr };
+allow init_shell servicemanager:binder call;
+allow init_shell servicemanager:dir search;
+allow init_shell shell_data_file:dir { write getattr setattr read remove_name open add_name };
+allow init_shell shell_data_file:file { setattr read lock create write getattr unlink open append };
+allow init_shell shell_exec:file { open execute_no_trans };
+allow init_shell surfaceflinger:binder call;
+allow init_shell system_data_file:dir { read open rmdir };
+allow init_shell system_data_file:file rename;
+allow init_shell system_data_file:lnk_file getattr;
+allow init_shell system_file:dir { write remove_name create add_name };
+allow init_shell system_file:file unlink;
+allow init_shell system_ndebug_socket:sock_file getattr;
+allow init_shell system_server:binder { transfer call };
+allow init_shell systemkeys_data_file:dir getattr;
+allow init_shell tmpfs:chr_file { read write ioctl getattr };
+allow init_shell tmpfs:file execute;
+allow init_shell uiautomator_exec:file { read getattr open execute execute_no_trans };
+allow init_shell untrusted_app:dir search;
+allow init_shell untrusted_app:file { read open };
+allow init_shell vold:dir search;
+allow init_shell vpn_data_file:dir getattr;
+allow init_shell wide_dhcpv6_data_file:dir getattr;
+allow init_shell wifi_data_file:dir getattr;
+allow init_shell zygote_exec:file { read getattr open execute execute_no_trans };
+

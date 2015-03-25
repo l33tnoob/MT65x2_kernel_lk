@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+--><resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">    
+    <!-- Schedule power on/off settings -->  
+    <!-- Main Settings screen setting option name to go into the power on/off settings-->  
+    <string name="schedule_power_on_off_settings_title">הפעלה/כיבוי מתוזמנים</string>  
+    <!-- Main Settings screen setting option summary text for the item to go into the date and time settings. -->  
+    <string name="schedule_power_on_off_time">שעה</string>  
+    <!-- Date & time setting screen setting check box title if the date and time should be determined automatically -->  
+    <string name="schedule_power_on_off_repeat">השמעה חוזרת</string>  
+    <!-- Date & time setting screen setting option summary text when Automatic check box is selected (that is, when date and time should be determined automatically) -->  
+    <string name="schedule_power_on_off_set">הגדר הפעלה/כיבוי מתוזמנים</string>  
+    <string name="schedule_power_on_set">הגדר הפעלה מתוזמנת</string>  
+    <string name="schedule_power_off_set">הגדר כיבוי מתוזמן</string>  
+    <!-- Context Menu Item on Alarm Settings screen: Enable alarm -->  
+    <string name="enable_schpwr">הפוך לזמין</string>  
+    <!-- Context Menu Item on Alarm Settings screen: Disable alarm -->  
+    <string name="disable_schpwr">הפוך ללא זמין</string>  
+    <!-- Alarm confirmation toast: Describes how long from now until
+         alarm fires -->  
+    <string-array name="alarm_set"> 
+        <item>הפעלה זו מוגדרת לפחות מדקה אחת מרגע זה.</item>  
+        <item>הפעלה זו מוגדרת ל- 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g> מרגע זה.
+        </item>  
+        <item>הפעלה זו מוגדרת ל- 
+            <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> מרגע זה.
+        </item>  
+        <item>הפעלה זו מוגדרת ל- 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g> ו- 
+            <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> מרגע זה.
+        </item>  
+        <item>הפעלה זו מוגדרת ל- 
+            <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> מרגע זה.
+        </item>  
+        <item>הפעלה זו מוגדרת ל- 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g> ו- 
+            <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> מרגע זה.
+        </item>  
+        <item>הפעלה זו מוגדרת ל- 
+            <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> ו- 
+            <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> מרגע זה.
+        </item>  
+        <item>הפעלה זו מוגדרת ל- 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g>, ‏ 
+            <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> ו- 
+            <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> מרגע זה.
+        </item>  
+        <item>כיבוי זה מוגדר לפחות מדקה אחת מרגע זה.</item>  
+        <item>כיבוי זה מוגדר ל- 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g> מרגע זה.
+        </item>  
+        <item>כיבוי זה מוגדר ל- 
+            <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> מרגע זה.
+        </item>  
+        <item>כיבוי זה מוגדר ל- 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g> ו- 
+            <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> מרגע זה.
+        </item>  
+        <item>כיבוי זה מוגדר ל- 
+            <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> מרגע זה.
+        </item>  
+        <item>כיבוי זה מוגדר ל- 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g> ו- 
+            <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> מרגע זה.
+        </item>  
+        <item>כיבוי זה מוגדר ל- 
+            <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> ו- 
+            <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> מרגע זה.
+        </item>  
+        <item>כיבוי זה מוגדר ל- 
+            <xliff:g id="DAYS" example="2days">%1$s</xliff:g>, ‏ 
+            <xliff:g id="HOURS" example="2hours">%2$s</xliff:g> ו- 
+            <xliff:g id="MINUTES" example="2minutes">%3$s</xliff:g> מרגע זה.
+        </item> 
+    </string-array>  
+    <!-- Alarm confirmation toast: singular day -->  
+    <string name="day">"יום אחד"</string>  
+    <!-- Alarm confirmation toast: plural days -->  
+    <string name="days">" 
+        <xliff:g id="days">%s</xliff:g> ימים"
+    </string>  
+    <!-- Alarm confirmation toast: singular hour -->  
+    <string name="hour">שעה אחת</string>  
+    <!-- Alarm confirmation toast: plural hours -->  
+    <string name="hours"> 
+        <xliff:g id="hours">%s</xliff:g> שעות
+    </string>  
+    <!-- Alarm confirmation toast: singular minute  -->  
+    <string name="minute">"דקה אחת"</string>  
+    <!-- Alarm confirmation toast: plural minutes  -->  
+    <string name="minutes">" 
+        <xliff:g id="minutes">%s</xliff:g> דקות"
+    </string>  
+    <!-- Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: special case for when
+         the alarm is set to repeat every day -->  
+    <string name="every_day">כל יום</string>  
+    <!-- Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: special case for when
+         the alarm is set to never repeat -->  
+    <string name="never">אף פעם</string>  
+    <!-- Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: concatenate days with
+         this character, i.e. "Mon, Tue, Wed" -->  
+    <!-- Done button when editing an alarm. -->  
+    <string name="done">סיום</string>  
+    <!-- Revert button when editing an alarm. -->  
+    <string name="revert">חזרה למצב הקודם</string>  
+    <string name="schpwr_shutdown_message">"ההתקן יכובה תוך 
+        <xliff:g id="seconds">%s</xliff:g> שניות"
+    </string>  
+    <string name="schpwr_shutdown_message_second">"ההתקן יכובה תוך שנייה 
+        <xliff:g id="seconds">%s</xliff:g>"
+    </string>  
+</resources>

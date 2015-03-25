@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bindualmdlogger Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type dualmdlogger_exec , exec_type, file_type;
+type dualmdlogger ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive dualmdlogger;
+init_daemon_domain(dualmdlogger)
+
+
+# 20131122 Add Set Property Rule
+allow dualmdlogger  property_type:property_service set;

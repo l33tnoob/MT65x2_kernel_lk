@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="48dip"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:gravity="center_vertical"
+    android:orientation = "horizontal"
+    android:paddingRight="?android:attr/scrollbarSize">
+    
+    <RelativeLayout android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dip"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+    
+        <ImageView android:id = "@+id/item_image"
+            android:layout_marginTop="8dip"
+            android:layout_height = "32dip"
+            android:layout_width = "32dip"
+            android:gravity="center_vertical"
+            android:scaleType="centerInside"/>
+        
+        <TextView android:id="@+id/item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft = "12dip"
+            android:layout_toRightOf = "@id/item_image"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <CheckBox android:id="@+id/item_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:checked="true"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:orientation="vertical" />
+    </LinearLayout>

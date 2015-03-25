@@ -1,0 +1,132 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type installd, domain;
+type installd_exec, exec_type, file_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# installer daemon
+
+init_daemon_domain(installd)
+relabelto_domain(installd)
+typeattribute installd mlstrustedsubject;
+allow installd self:capability { chown dac_override fowner fsetid setgid setuid };
+allow installd system_data_file:file create_file_perms;
+allow installd system_data_file:lnk_file create;
+allow installd dalvikcache_data_file:file create_file_perms;
+allow installd data_file_type:dir create_dir_perms;
+allow installd data_file_type:dir { relabelfrom relabelto };
+allow installd data_file_type:{ file_class_set } { getattr unlink };
+allow installd apk_data_file:file r_file_perms;
+allow installd apk_tmp_file:file r_file_perms;
+allow installd system_file:file x_file_perms;
+allow installd cgroup:dir create_dir_perms;
+allow installd download_file:dir { r_dir_perms };
+allow installd download_file:file { r_file_perms };
+dontaudit installd self:capability sys_admin;
+# Check validity of SELinux context before use.
+selinux_check_context(installd)
+# Read /seapp_contexts and /data/security/seapp_contexts
+security_access_policy(installd)
+# ASEC
+allow installd platform_app_data_file:lnk_file { create setattr };
+allow installd app_data_file:lnk_file { create setattr };
+allow installd asec_apk_file:file r_file_perms;
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# installer daemon
+
+# init_daemon_domain(installd)
+relabelto_domain(installd)
+typeattribute installd mlstrustedsubject;
+allow installd self:capability { chown dac_override fowner fsetid setgid setuid };
+allow installd system_data_file:file create_file_perms;
+allow installd system_data_file:lnk_file create;
+allow installd dalvikcache_data_file:file create_file_perms;
+allow installd data_file_type:dir create_dir_perms;
+allow installd data_file_type:dir { relabelfrom relabelto };
+allow installd data_file_type:{ file_class_set } { getattr unlink };
+allow installd apk_data_file:file r_file_perms;
+allow installd apk_tmp_file:file r_file_perms;
+allow installd system_file:file x_file_perms;
+allow installd cgroup:dir create_dir_perms;
+allow installd download_file:dir { read getattr };
+dontaudit installd self:capability sys_admin;
+# Check validity of SELinux context before use.
+selinux_check_context(installd)
+# Read /seapp_contexts and /data/security/seapp_contexts
+security_access_policy(installd)
+# ASEC
+allow installd platform_app_data_file:lnk_file { create setattr };
+allow installd app_data_file:lnk_file { create setattr };
+allow installd asec_apk_file:file r_file_perms;
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+#permissive installd;
+# 20131024 Sanity_01
+allow installd dexopt_exec:file { read execute open execute_no_trans };
+
+
+# 20131024 Sanity_02
+allow installd linker_exec:file { read execute open };
+
+
+# 20131024 CTS_01
+allow installd device:chr_file { read ioctl open };
+allow installd linker_exec:file { read execute open };
+
+
+# 20131024 Sanity_03
+allow installd radio_data_file:lnk_file create;
+
+
+# 20131028 CTS_17
+allow installd property_socket:sock_file write;
+
+
+# 20131119 FeatureSQC
+allow installd sdcard_external:file getattr;
+
+
+# 20131119 Sanity_QA
+allow installd device:chr_file { read ioctl open };
+
+
+# 20131122 Add Set Property Rule
+allow installd property_type:property_service set;
+
+# 20131203 ALPS01250435
+allow installd sdcard_external:dir search;
+
+# 20131211 encryption phone
+allow installd block_device:blk_file read;
+allow installd tmpfs:dir { create write add_name remove_name setattr rename reparent };
+allow installd tmpfs:lnk_file { create read };
+allow installd installd_tmpfs:file { create write open unlink rename};
+
+# 20131216 platform app data
+allow installd platform_app_data_file:file { rename setattr };
+
+# 20131217 App info->force stop->clear data. 
+# 20140106 add write permission
+allow installd download_file:dir { write rmdir remove_name };
+
+# 20140117 for NE
+allow installd aee_aed:unix_stream_socket connectto;
+allow installd self:process ptrace;
+allow installd aee_aed:process sigchld;
+
+# 20140120 APPIOT clean master
+allow installd download_file:file unlink;

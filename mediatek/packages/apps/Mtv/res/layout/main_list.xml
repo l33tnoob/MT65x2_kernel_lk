@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@+id/whole_view"
+         android:orientation="vertical" 
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         >
+         <ListView android:layout_width="fill_parent"
+                   android:layout_height="fill_parent" 
+                   android:id="@+id/android:list"
+					/>         
+        <RelativeLayout android:id="@+id/empty"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent" 
+         android:gravity ="center"
+         android:layout_below ="@+id/select_all_header"
+         >
+			<ImageView
+				android:id="@+id/atv_logo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_above ="@+id/empty_note"				
+				android:layout_centerHorizontal="true"
+	            android:src="@drawable/ic_atv_image"/> 
+	        <TextView android:id="@+id/empty_note"
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+				android:gravity ="center"      
+                android:textSize="20dp"				
+	            android:paddingBottom="30dip"	
+				android:layout_centerHorizontal="true"	            
+				android:layout_centerInParent="true"	            
+	            android:text="@string/no_channels_hint"/>      
+	        <LinearLayout 
+                android:orientation="horizontal"
+            	android:gravity ="center"      
+            	android:layout_centerHorizontal="true"
+				android:layout_below ="@+id/empty_note"	               	
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                > 
+	        <Button android:id="@+id/choose_location"
+	            android:layout_width="130dp" 
+	            android:layout_height="wrap_content"
+	            android:gravity ="center"
+	            android:textStyle="bold"
+	            android:typeface="serif"	            
+	            android:textSize="15dp"		
+	            android:minLines="2"	            
+	            android:text="@string/select_location"/>                  
+	        <Button android:id="@+id/refresh_list"
+	            android:layout_width="130dp" 
+	            android:layout_height="wrap_content"
+	            android:gravity ="center"
+				android:layout_marginLeft="15dp"	            
+	            android:layout_gravity="center"  
+				android:layout_toRightOf ="@+id/choose_location"	            
+	            android:textStyle="bold"
+	            android:typeface="serif"	            
+	            android:textSize="15dp"	
+	            android:minLines="2"
+	            android:text="@string/scan"/>            
+
+	            </LinearLayout> 
+        </RelativeLayout>                	
+</RelativeLayout>

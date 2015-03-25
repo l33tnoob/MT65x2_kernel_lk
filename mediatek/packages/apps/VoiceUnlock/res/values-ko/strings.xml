@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="unlock_set_unlock_mode_voice_weak">음성 잠금해제</string>
+    <string name="voice_unlock_setup_intro_header">음성 녹음 명령</string>
+    <string name="voice_command_select_title">명령 선택</string>
+    <string name="voice_command_launch_app_title">앱 시작</string>
+    <string name="reset_command_title">명령 재설정</string>
+    <string name="reset_command_prompt">현재 명령이 재설정되고, 복구되지 않습니다.</string>
+    <string name="reset_command_prompt_last">유일한 음성 명령이 재설정됩니다. 화면 잠금이 슬라이드로 변경됩니다.</string>
+    <string name="voice_unlock_options_title">옵션</string>
+    <string name="voice_unlock_ok_label">"확인"</string>
+    <string name="voice_unlock_cancel_label">"취소"</string>
+    <string name="voice_unlock_retry_label">재시도</string>
+    <string name="voice_unlock_record_label">레코드</string>
+    <string name="voice_unlock_continue_label">"계속"</string>
+    <string name="voice_unlock_setup_intro">2-6음절로 명령을 말한 후, 3-6번 반복하십시오.</string>
+    <string name="voice_unlock_command">잠금해제 명령</string>
+    <string name="voice_command1">웨이크업 명령 1</string>
+    <string name="voice_command2">웨이크업 명령 2</string>
+    <string name="voice_command3">웨이크업 명령 3</string>
+    <string name="command_summary"><xliff:g id="app_name">%1$s</xliff:g> 을(를) 잠금해제하고 시작</string>
+    <string name="voice_command_primary"><xliff:g id="app_name">%1$s</xliff:g> 을(를) 시작</string>
+    <string name="voice_command_customize">"맞춤설정"</string>
+    <string name="voice_command_secondary">잠금해제 후 <xliff:g id="app_name">%1$s</xliff:g> 을(를) 시작</string>
+    <string name="voice_command_record_description_unlock_screen">화면 잠금해제</string>
+    <string name="voice_command_record_description_command">화면을 잠금해제하고 <xliff:g id="app_name">%1$s</xliff:g> 을(를) 시작</string>
+    <string name="voice_service_error_title">음성 잠금해제 서비스가 오류입니다.</string>
+    <string name="stop_playing_title">미디어 재생 정지</string>
+    <string name="stop_playing_message">레코딩하기 전에 미디어 재생을 정지하십시오.</string>
+    <string name="voice_command_record_introdution">레코드 버튼을 누르고 음성 명령을 말하십시오.</string>
+    <string name="voice_command_record_prepare">준비 중입니다. 기다리십시오…</string>
+    <string name="voice_command_record_first_recording">명령을 말하십시오.\n2-6음절을 제안합니다.</string>
+    <string name="voice_command_record_non_first_recording">음성 명령을 반복하십시오.</string>
+    <string name="voice_command_record_one_round_ok">알았습니다.</string>
+    <string name="voice_command_record_one_round_noisy">너무 시끄러워 음성을 들을 수 없습니다. 다시 시도하십시오.</string>
+    <string name="voice_command_record_one_round_weak">음성이 잘 들리지 않습니다. 다시 시도하십시오.</string>
+    <string name="voice_command_record_one_round_diff">이전 명령과 다른 명령을 요청하고 있습니다.</string>
+    <string name="voice_command_record_one_round_exist">기존의 음성 명령과 거의 같습니다. 다른 명령을 시도하십시오.</string>
+    <string name="voice_command_record_recording_ok">음성 명령이 성공적으로 설정되었습니다.</string>
+    <string name="voice_unlock_setup_end_all_done">모두 완료되었습니다.</string>
+    <string name="voice_unlock_setup_end_prompt">전화를 잠금해제하려면, 음성 명령을 말하기만 하면 됩니다.</string>
+    <string name="pass_word_file_missing">음성 명령을 재생할 수 없습니다.</string>
+    <string name="time_out_title">제한 시간</string>
+    <string name="time_out_message">5초 동안 음성 입력이 수신되지 않았습니다. 다시 시도하십시오.</string>
+    <string name="during_call_title">녹음을 사용할 수 없습니다.</string>
+    <string name="during_call_message">통화 중에는 "음성 녹음 명령"을 사용할 수 없습니다.</string>
+</resources>

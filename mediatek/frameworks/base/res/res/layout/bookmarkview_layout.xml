@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_gravity="center_horizontal">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">
+
+		<TextView android:id="@+id/bookmarkTitle" 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:textSize="20sp"
+			android:gravity="center"
+			android:singleLine="true"
+			android:ellipsize="marquee"
+			android:fadingEdge="horizontal" />
+
+		<TextView android:id="@+id/bookmarkInfo" 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:textSize="15sp"
+			android:gravity="center"
+			android:singleLine="true"
+			android:ellipsize="marquee"
+			android:fadingEdge="horizontal" />
+
+		<BounceCoverFlow android:id="@+id/bookmarkCoverflow"
+			android:layout_width="fill_parent" 
+			android:layout_centerInParent="true"
+			android:layout_height="0dip" 
+			android:layout_weight="1"
+			android:layout_gravity="center" 
+			android:gravity="center_vertical" />
+
+        <LinearLayout
+		    android:id="@+id/bookmarkIndicators"
+           	android:layout_width="match_parent"
+           	android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+           	android:orientation="horizontal"
+           	android:gravity="center"
+           	/>
+	</LinearLayout>
+</merge>

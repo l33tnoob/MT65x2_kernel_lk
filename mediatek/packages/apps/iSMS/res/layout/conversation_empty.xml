@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#f6f6f6"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_empty_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:gravity="center_vertical|left"
+            android:textColor="#5a5a5a"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/ll_empty_spam"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/conversation_example_bg"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <QuickContactBadge
+                android:id="@+id/tv_avatar"
+                style="?android:attr/quickContactBadgeStyleWindowSmall"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_contact_picture" />
+
+            <TextView
+                android:id="@+id/tv_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="3dip"
+                android:layout_toRightOf="@+id/tv_avatar"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="@string/STR_NMS_SPAM_EXAMPLE_FROM"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dip"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/volume_muted"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_below="@+id/tv_from"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/tv_avatar"
+                android:ellipsize="end"
+                android:lines="2"
+                android:textColor="#5a5a5a"
+                android:text="@string/STR_NMS_SPAM_EXAMPLE_SUBJECT"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_empty_groupchat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/conversation_example_bg"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <QuickContactBadge
+                android:id="@+id/qcb_avatar"
+                style="?android:attr/quickContactBadgeStyleWindowSmall"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/group_example" />
+
+            <TextView
+                android:id="@+id/tv_group_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="3dip"
+                android:layout_toRightOf="@+id/qcb_avatar"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="@string/STR_NMS_GROUP_EXAMPLE_FROM"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_group_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_below="@+id/tv_group_from"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/qcb_avatar"
+                android:ellipsize="end"
+                android:lines="2"
+                android:textColor="#5a5a5a"
+                android:text="@string/STR_NMS_GROUP_EXAMPLE_SUBJECT"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_empty_important"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/isms_chat_bubble_grey"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_nms_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/STR_NMS_IMPORTANT_EXAMPLE_TITLE"
+                android:textColor="#5a5a5a"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_nms_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_important"
+                android:text="@string/STR_NMS_IMPORTANT_EXAMPLE_TIME"
+                android:textColor="#5a5a5a"
+                android:textSize="14sp" />
+        </LinearLayout>
+        
+         <LinearLayout
+            android:id="@+id/ll_empty_activate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_activate_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/STR_NMS_EMPTY_ACTIVATE_CONTENT"
+                android:textColor="#5a5a5a"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_activate"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="#50b1d2"
+                android:text="@string/STR_NMS_EMPTY_ACTIVATE_TITLE"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

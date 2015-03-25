@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbinopcontrol Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type opcontrol_exec , exec_type, file_type;
+type opcontrol ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive opcontrol;
+init_daemon_domain(opcontrol)
+
+
+# 20131122 Add Set Property Rule
+allow opcontrol  property_type:property_service set;

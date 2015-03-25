@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="keyguard_pinword_enter_pinword_code">Ipasok ang PIN na ia-unlock</string>
+    <string name="badPin2">Mali ang lumang PIN2 na pinasok mo.</string>
+    <string name="badPuk2">Mali ang PUK2 na pinasok mo.</string>
+    <string name="checkPwdLen">Suriin na ang password mo ay 4 hanggang 8 digit.</string>
+    <string name="pinNotEnabled">Pakipaganahin ang PIN ito palitan.</string>
+    <string name="puk1Blocked">Nakaharang ang PIN.</string>
+    <string name="puk2Blocked">Nakaharang ang PIN2 .</string>
+    <string name="fdnFailMmi">Bigo sa FDN Check.</string>
+    <string name="callBarringFailMmi">Bigo sa Call Barring.</string>
+    <string name="Pin2Mmi">PIN2 palitan</string>
+    <string name="PukMmi">I-unblock ang PIN</string>
+    <string name="Puk2Mmi">I-unblock ang PIN2</string>
+    <string name="serviceProvisioned">Naprobisyonang serbisyo.</string>
+    <string name="serviceUnknown">Problema sa koneksyon o hindi balidong MMI code.</string>
+    <string name="cfServiceNotForwarded">Hindi naipasa</string>
+    <string name="permlab_receiveCbSms">tumanggap ng CB SMS</string>
+    <string name="permdesc_receiveCbSms">Pinahihintulutan ang aplikasyon na makatanggap at magproseso ng CB SMS na mga mensahe. Ang mga mapanirang aplikasyon ay maaaring sumubaybay sa mga mensahe mo o tanggalin sila nang hindi ito pinapakita sa iyo.</string>
+    <string name="keyguard_password_enter_puk_code">Ipasok ang PUK code</string>
+    <string name="keyguard_password_wrong_puk_code">Maling PUK code!</string>
+    <string name="keyguard_password_enter_new_pin_code">Magpasok ng bagong PIN</string>
+    <string name="keyguard_password_Confirm_pin_code">Kumpirmahin ang bagong PIN</string>
+    <string name="invalidPuk">Magpasok ng 8 digit.</string>
+    <string name="sim_permanently_locked">Dahil sa pagpasok ng maling PUK code nang mahigit sa 10 beses,ang SIM card ay permanenteng na-lock</string>
+    <string name="pin_length_indicate">(4-8 digit)</string>
+    <string name="puk_length_indicate">(8 digit)</string>
+    <string name="one_retry_left">1 pagsubok natitira</string>
+    <string name="retries_left">Natitira:<xliff:g id="number">%d</xliff:g></string>
+    <string name="invalid_imei">Hindi balidong IMEI</string>
+    <string name="same_imei">Parehong IMEI</string>
+    <string name="oper_long_46000">China Mobile</string>
+    <string name="oper_long_46001">China Unicom</string>
+    <string name="oper_long_46601">Far EasTone</string>
+    <string name="oper_long_46692">Chunghwa Telecom</string>
+    <string name="oper_long_46697">Taiwan Mobile</string>
+    <string name="oper_long_99998">Android1</string>
+    <string name="oper_long_99999">Android</string>
+    <string name="oper_short_46000">CMCC</string>
+    <string name="oper_short_46001">CU-GSM</string>
+    <string name="oper_short_46601">FET</string>
+    <string name="oper_short_46692">Chunghwa</string>
+    <string name="oper_short_46697">TWN</string>
+    <string name="oper_short_99997">AD1</string>
+    <string name="oper_short_99999">AD</string>
+    <string name="unable_launch_the_ap">Hindi mailunsad ang aplikasyon.</string>
+    <string name="keyguard_password_enter_sim1_pin_code">Ipasok ang SIM 1 PIN code</string>
+    <string name="RestrictedChangedTitle_SIM1">Nabago ang restricted na access ng SIM1 </string>
+    <string name="RestrictedChangedTitle_SIM2">Nabago ang restricted na access ng SIM2</string>
+    <string name="keyguard_password_enter_sim2_pin_code">Ipasok ang SIM 2 PIN code</string>
+    <string name="keyguard_password_wrong_sim1_pin_code">Maling SIM 1 PIN code!</string>
+    <string name="keyguard_password_wrong_sim2_pin_code">Maling SIM 2 PIN code!</string>
+    <string name="keyguard_password_enter_sim1_puk_code">Ipasok ang SIM 1 PUK code</string>
+    <string name="keyguard_password_enter_sim2_puk_code">Ipasok ang SIM 2 PUK code</string>
+    <string name="lockscreen_sim1_puk_locked_message">Naka PUK-lock ang SIM card 1 card.</string>
+    <string name="lockscreen_sim2_puk_locked_message">Naka PUK-lock ang SIM card 2 card.</string>
+    <string name="choose_bootup_mode">Pakipili ng SIM</string>
+    <string name="choose_gprs_mode">Pakipili ng koneksyon ng datos</string>
+    <string name="sim_close">Sarado ang SIM card </string>
+    <string name="lockscreen_sim_puk_locked_message_short">Naka-PUK-lock</string>
+    <string name="lockscreen_sim_locked_message_short">Naka lock ang SIM card</string>
+    <string name="simlock_slot_locked_message">Permanenteng na-lock ang slot</string> 
+    <string name="simlock_entersimmelock">"Ipasok ang SIM ME lock"</string>
+    <string name="slot_id">Slot <xliff:g id="number">%d</xliff:g>:</string>
+    <string name="new_simcard">Bagong SIM card</string>
+    <string name="lockscreen_missing_sim_dialog_message">"Hindi nakasaksak ang SIM card. Pakisiguro na maayos nakasaksak ang iyong SIM card."</string>
+    <string name="permlab_receiveDmRegisterSms">tanggapin ang DM Register SMS</string>
+    <string name="permdesc_receiveDmRegisterSms">Pinahihintulutan ang aplikasyon na makatanggap at magproseso ng DM Register SMS na mga mensahe. Ang anumang Aplikasyon maliban sa DM APP ay hindi dapat gumamit nito</string>
+    <string name="lockscreen_password_error">Password error, pakisubukan muli</string>
+    <string name="lockscreen_pinword_error">PIN error, pakisubukan muli</string>
+    <string name="music_no_artist">Hindi kilalang pangalan ng artist</string>
+    <string name="music_play">I-play</string>
+    <string name="music_pause">Ihinto Pansamantala</string>
+    <string name="music_library">Library</string>
+    <string name="music_no_songs">Walang mga kanta</string>
+    <string name="serviceClassVideo">Video</string>
+    <string name="aerr_application_lowmem">Ang aplikasyong <xliff:g id="application">%1$s</xliff:g> (process <xliff:g id="process">%2$s</xliff:g>) ay hindi inaasahang huminto. Maaaring dahil ito sa mababang espasyo ng memorya Pakiluwagan ang espasyo ng memorya at subukan muli.</string>
+    <string name="aerr_process_lowmem">Ang prosesong <xliff:g id="process">%1$s</xliff:g> ay hindi inaasahang huminto. Maaaring dahil ito sa mababang espasyo ng memorya Pakiluwagan ang espasyo ng memorya at subukan muli.</string>
+    <string name="free_memory_btn">"Libreng Memorya"</string>
+    <string name="free_memory_text">"Mababang memorya Pakiluwagan ang memorya."</string>
+    <string name="mem_low_title">Pakiluwagan ang memorya</string>
+    <string name="unread_message">%d Hindi nabasang mensahe</string>
+    <string name="unread_messages">%d Hindi nabasang mga mensahe</string>
+    <string name="missed_call">%d hindi nasagot na tawag</string>
+    <string name="missed_calls">%d mga hindi nasagot na tawag</string>
+    <string name="no_favorite_contacts">Walang mga paboritong kontak</string>
+    <string name="contact_widget_loading">Nilo-load\u2026</string>
+    <string name="volume_fm">Volume ng FM </string>
+    <string name="volume_matv">Volume ng Mobile TV </string>
+    <string name="media_controller_buffering">"Bina-buffer %d%%..."</string>
+    <string name="media_controller_live">"Live"</string>
+    <string name="media_controller_playing">"Pinatutugtog"</string>
+    <string name="media_controller_connecting">"Kumokonekta…"</string>
+    <string name="media_controller_weak_signal">"mahinang signal"</string>
+    <string name="VideoView_error_text_bad_file">"Masamang file, hindi maipatugtog ang video na ito."</string>
+    <string name="VideoView_error_text_cannot_connect_to_server">"Hindi makakonekta sa server."</string>
+    <string name="VideoView_error_text_type_not_supported">"Ang uri ng media file ay hindi suportado."</string>
+    <string name="VideoView_error_text_drm_not_supported">"DRM protektado, hindi maipatugtog ang video na ito."</string>
+    <string name="VideoView_error_text_invalid_connection">"Hindi balidong koneksiyon. (403 Forbidden)"</string>
+    <string name="redo">Gawin Muli</string>
+    <string name="undo">I-undo</string>
+    <string name="undoAll">I-undo lahat</string>
+    <string name="new_sim">Bagong SIM</string>
+    <string name="edit">I-edit</string>
+    <string name="delete">Tanggalin</string>
+    <string name="sim_card_changed_dialog_title">Pinalitan ang SIM card</string>
+    <string name="change_setting_for_onenewsim">Natukoy ang SIM card.Naka-label ito bilang</string>
+    <string name="change_setting_for_twonewsim">Natukoy ang bagong SIM card.Naka-label ito bilang</string>
+    <string name="change_settings">Baguhin</string>
+    <string name="sim_card_removed">Inalis ang SIM card.</string>
+    <string name="sim_card_swapped">Pinagpalit ang SIM card.</string>
+    <string name="keyguard_voice_call">Voice na tawag:</string>
+    <string name="keyguard_sms">Pagmemensahe:</string>
+    <string name="keyguard_data">Koneksiyon ng datos:</string>
+    <string name="keyguard_alwaysask">Laging magtanong</string>
+    <string name="keyguard_data_none">Off</string>
+    <string name="dismiss">Balewalain</string>
+    <string name="keyguard_wrong_code_input">Maling Code</string>
+    <string name="keyguard_code_length_prompt">Magpasok ng 4-8 digit.</string>
+    <string name="keyguard_code_donnot_mismatch">Hindi Tugma.</string>
+    <string name="for_text">para sa</string>
+    <string name="keyguard_internal_call">Panloob na tawag</string>
+    <string name="keyguard_not_set">Hindi naka-set</string>
+    <string name="network_searching">Naghahanap para sa bagong network</string>
+    <string name="searching_simcard">Tinutukoy...</string>
+    <string name="keyguard_close">Sarhan</string>
+    <string name="for_first_simcard">Para sa unang SIM</string>
+    <string name="for_second_simcard">Para sa pangalawang SIM</string>
+    <string name="for_third_simcard">Para sa ikatlong SIM</string>
+    <string name="for_fourth_simcard">Para sa ika-apat na SIM</string>
+    <string name="default_sim_setting_prompt">Ang default SIM na mga setting ngayon ay:</string>
+    <string name="keyguard_video_call">Video na tawag:</string>
+    <string name="lockscreen_pin_too_many_failed_attempts_dialog_message"> Mali mong ipinasok ang iyong PIN nang <xliff:g id="number">%d</xliff:g> na beses. \n\nPakisubukan muli sa <xliff:g id="number">%d</xliff:g> segundo.</string>
+    <string name="lockscreen_password_too_many_failed_attempts_dialog_message"> Mali mong ipinasok ang iyong password nang <xliff:g id="number">%d</xliff:g> na beses. \n\nPakisubukan muli sa <xliff:g id="number">%d</xliff:g> segundo.</string>
+    <string name="criticallowtitle">Walang espasyo</string>
+    <string name="criticallowmessage">Puno ang imbakan ng telepono, pakitanggal ang mga file na walang katuturan, kung hindi, maaaring hindi inaasahang lumabas ang aplikasyon</string>
+    <string name="nq_sms_filter_title">Filter ng SMS</string>
+    <string name="nq_sms_filter_message">Ang mensaheng ito ay maaaring magbawas ng mga bayad. Nais mo bang magpatuloy?</string>
+    <string name="nq_sms_filter_yes">Oo</string>
+    <string name="nq_sms_filter_no">Hindi</string>
+    <string name="ext_media_checking_notification_title_sd2">Ihanda ang SD card2</string>
+    <string name="drm_protection_status">Kalagayan ng proteksiyon:</string>
+    <string name="drm_can_forward">Maipapasa.</string>
+    <string name="drm_can_not_forward">Hindi maipapasa.</string>
+    <string name="drm_no_limitation">Walang limitasyon.</string>
+    <string name="drm_no_license">Walang magagamit na DRM na lisensiya.</string>
+    <string name="drm_begin">Simulan:</string>
+    <string name="drm_end">Tapusin:</string>
+    <string name="drm_use_left">Bilang na natitira:</string>
+    <string name="drm_protectioninfo_renew">Baguhin</string>
+    <string name="drm_protectioninfo_title">Impormasyon sa Proteksiyon</string>
+    <string name="drm_licenseacquisition_title">Pagkuha ng DRM na Lisensiya</string>
+    <string name="drm_licenseacquisition_message">Ang %1$s ay walang DRM na lisensiya. Maaari mong pindutin ang ?enew??na button upang kumuha ng lisensya ng DRM.</string>
+    <string name="drm_toast_license_expired">Napaso ang DRM na lisensiya.</string>
+    <string name="drm_forwardforbidden_title">Bawal Ipasa</string>
+    <string name="drm_forwardforbidden_message">Ang ilang mga protektadong file ay hindi maipapasa.</string>
+    <string name="drm_license_install_success">Tagumpay ang instalasyon ng DRM na lisensiya.</string>
+    <string name="drm_license_install_fail">Nabigo ang instalasyon ng DRM na lisensiya.</string>
+    <string name="drm_secure_timer_title">Hindi balidong DRM ligtas na orasan</string>
+    <string name="drm_secure_timer_message">Hindi mo magagamit ang mga DRM na protektadong file. Pakisiguro na mayroong koneksiyon ng datos.</string>
+    <string name="drm_consume_title">Gamitin ang DRM na mga karapatan</string>
+    <string name="drm_consume_message">Ang pagkilos mo ay gagamit ng mga DRM na karapatan.</string>
+
+    <string name="default_label">"Alarm"</string>   
+    <string name="alarm_alert_snooze_text">"I-snooze"</string>
+    <string name="every_day" >"Araw-araw"</string>
+    <string name="never">"Hindi Kailanman"</string>
+    <string name="day_concat">", "</string>
+    <string name="dismiss_power_on">Balewalain at i-on</string>
+    <string name="dismiss_power_off">Balewalain at i-off</string>
+
+    <string name="gps_time_sync_fail_str">Nabigong kunin ang nilaan na oras ng GPS</string>
+
+    <string name="usb_ums_notification_title">Konektado sa USB na imbaka</string>
+    <string name="usb_charging_notification_title">USB Charge Lang</string>      
+
+    <string name="sim_missing_slot1">Slot 1: Walang natukoy na SIM card</string>  
+    <string name="sim_missing_slot2">Slot 2: Walang natukoy na SIM card</string>  
+    <string name="sim_missing">Walang natukoy na SIM card</string>  
+    <string name="sim_missing_detail">Pakisuri kung handa na ang SIM card</string> 
+
+    <!-- add for webview find -->
+    <string name="find_previous">nakaraan</string>
+    <string name="find_next">susunod</string>
+
+    <string name="tethered_notification_message_for_hotspot">
+        <xliff:g id="connected">%1$d</xliff:g> konektado, 
+        <xliff:g id="blocked">%2$d</xliff:g> naka-block
+    </string>
+    <string name="tethered_notification_message_bandwidth_set">Nakatakda ang bandwidth </string>
+    <string name="default_wallpaper_name">"Default"</string> 
+    <string name="invalid_sim_title">Hindi balidong SIM card</string>
+    <string name="invalid_sim_message">Ang UIM/SIM carday di kilala</string>
+    <!-- voice unlock start -->
+    <string name="voice_unlock_service_error">Error sa boses na unlock na serbisyo.</string>
+    <string name="voice_unlock_password_wrong">Paumanhin, hindi makilala ang boses mo.</string>
+    <string name="voice_unlock_noisy">Masyadong maingay na hindi ka malinaw na marinig.</string>
+    <string name="voice_unlock_weak">Hindi marinig ang boses mo.</string>
+    <string name="voice_unlock_media_playing">Hindi pinagagana ang boses na unlock sa pagpapatugtog ng media.</string>
+    <string name="voiceunlock_multiple_failures">Nalagpasan ang Pinakamaraming pagtangka sa Voice na Unlock</string>    
+    <!-- voice unlock end -->
+
+    <string name="wifi_display_bt_hdmi_off_wfd_on">Io-off ang Bluetooth at HDMI kapag in-on mo ang wireless na display. Gusto mo bang magpatuloy?</string> 
+    <string name="wifi_display_wfd_off_hdmi_on">Io-off ang wireless na display kapag in-on mo ang HDMI. Gusto mo bang magpatuloy?</string> 
+    <string name="wifi_display_wfd_off_bt_on">Io-off ang Wireless na display kapag in-on mo ang Bluetooth. Gusto mo bang magpatuloy?</string>
+    <string name="wifi_display_wifi_p2p_disconnect_wfd_connect">Ididiskonekta ang Wi-Fi Direct na koneksiyon kapag kumonekta ka sa wireless display na aparato. Gusto mo bang magpatuloy?</string>
+    <string name="wifi_display_unstable_connection">Hindi matatag na koneksyon</string>
+    <string name="wifi_display_connection_is_not_steady">Ang kasalukuyang koneksyon ng wireless na display ay hindi panay.</string>
+    <string name="wifi_display_unstable_suggestion">Ang kasalukuyang koneksyon ng wireless na display ay hindi panay, pakisubukang lumapit sa iyong aparatong pang-display.</string>
+    <string name="wifi_display_reconnect">Muling Ikonekta</string> 
+    <string name="wifi_display_disconnect_then_reconnect">Hindi nakakonekta ang wireless na display. Gusto mo bang kumonekta muli?</string> 
+    <string name="wifi_display_disconnected">Hindi nakakonekta ang wireless na display.</string>
+    <string name="wifi_wps_failed_overlap">"Natunton ang isa pang sesyon ng WPS. Pakisubukang muli sa loob ng ilang minuto."</string>
+    <string name="wifi_display_wfd_and_wifi_are_turned_on">Ang display ng wireless at Wi-Fi ay naka-on.</string>
+    <string name="wifi_display_sound_path_reminder">Hindu tutugtog ang multimedia sound mula sa headset mo.</string>  
+    <string name="wifi_display_change_resolution_reminder">Ang pagpalit ng resolution ay awtomatikong muling magkakabit sa display.</string>  
+    <string name="wifi_display_do_not_remind_again">Huwag muling ipaalala.</string>
+    <string name="wifi_display_wifi_ap_affects_quality">Maaaring makaapekto ang kasalukuyang Wi-Fi AP sa kalidad ng Wireless display.</string>
+    
+    <!-- Add for AT&T to show toast when pass pin/puk lock -->
+    <string name="pin_pass">Tinanggap ang code</string>
+    <string name="puk_pass">In-unblock ang PIN</string>
+    <!-- MountService start -->
+    <string name="sdcard_ready_title">Handa na ang SD card</string>
+    <string name="sdcard_select_default_path">Gusto mo bang palitan ang default na susulatang disk?</string>
+    <string name="sdcard_default_path_change">Nabago ang default na susulatang disk.</string>
+    <string name="usb_storage_ready_title">Handa para sa Panlabas na USB na imbakan</string>
+    <!-- MountService end -->
+
+
+    <string name="sd_accessing_swtich_user_title">Magpalit ng gumagamit?</string>
+    <string name="sd_accessing_swtich_user_message">Lahat ng hindi naka-save na datos sa account ng may-ari ay mawawala o masisira.</string> 
+    <string name="dm_prompt">Naka-lock na ang terminal</string>
+    <string name="drm_forward_forbidden">Isa o higit pang mga protektadong file ay hindi maipasa.</string>
+    <string name="wap_push_setting_noti_text">Pakitapik upang piliin</string>
+    <string name="url_dialog_choice_title">Mga mensahe</string>
+    <string name="url_dialog_choice_message">Bubuksan nito ang browser, magpatuloy?</string>
+    <string name="deleteApp">I-uninstall ang mga aplikasyon</string>
+    <string name="deleteMail">I-backup ang mga mail at pakawalan ang impakan</string>
+    <string name="storage_withsd">Hindi sapat ang espasyo sa imbakan ng telepono. Pakipakawalan ang ilang imbakan o palitan ang default na susulatang disk sa mga setting.</string>
+    <string name="storage_withoutsd">Hindi sapat ang espasyo sa imbakan ng telepono. Pakipakawalan ang ilang imbakan o magpasok ng SD card.</string>
+    <string name="storage_sd">Hindi sapat ang espasyo sa imbakan ng SD card. Pakipakawalan ang ilang imbakan o palitan ang default na susulatang disk sa mga setting.</string>
+    <string name="calibration_data">Wala pang kalibrasyon. Paki-download ang data ng kalibrasyon! Kung hindi ay hindi maaaring mag-camp ang aparato sa network.[Panloob na User ng MTK]</string>
+    <string name="invalid_card">Hindi Wastong Card</string>
+    <string name="usbint_notification_title">Aktibo ang Internet sa USB</string>
+
+    <string name="hdmi_notification_title">Konektado ang HDMI cable</string>  
+    <string name="hdmi_notification_content">I-click upang ikumpigura ang HDMI</string>
+    <string name="hdmi_hdvideo_toast">Hindi mapatugtog ng HDMI ang 4K na video, puputulin ang koneksyon.</string>
+
+    <!-- VolumePanel -->
+    <string name="safe_media_volume_warning_title">Babala</string> 
+    
+    <!-- Low Storage -->
+    <string name="aerr_application_lowstorage">Papaubos na ang internal na storage, hininto ang aplikasyon. Paki-alisan ng laman ang ilang espasyo at subukan muli.</string>
+    <string name="aerr_process_lowstorage">Papaubos na ang internal na storage, hininto ang proseso. Paki-alisan ng laman ang ilang espasyo at subukan muli.</string>
+    <string name="low_internal_storage_view_title">Papaubos na ang internal na storage</string>
+    <string name="deleteMails">Tanggalin ang Mga Mail</string>
+    <string name="low_storage_warning_message">Paki-alisan ang laman ng ilang espasyo o maaaring hindi gumana nang maayos ang ilang mga aplikasyon.</string>
+
+    <!-- KK translation task -->
+    <string name="virtual_sim_on_slot1">Virtual SIM 1 ON</string>
+    <string name="virtual_sim_on_slot2">Virtual SIM 2 ON</string>
+    <string name="virtual_sim_on_slot3">Virtual SIM 3 ON</string>
+    <string name="virtual_sim_on_slot4">Virtual SIM 4 ON</string>
+    <string name="virtual_sim_on">Virtual SIM ON</string>
+    <string name="RejectCauseTitle">Sanhi ng Pagtanggi sa Network</string>
+    <string name="MMRejectCause2">Hindi nakalaan ang SIM MM #2</string>
+    <string name="MMRejectCause3">Hindi pinahihintulutan ang SIM MM #3</string>
+    <string name="MMRejectCause5">Nabigo ang Tawag MM #5</string>
+    <string name="MMRejectCause6">Hindi pinahintulutan ang telepono MM #6</string>
+    <string name="MMRejectCause13">SOS/Emergency na tawag lang</string>
+    <string name="keyguard_accessibility_alarm_unlock">Alarma sa Pag-power off</string>
+    <string name="dialog_color_picker">Pamili ng Kulay</string>
+    <string name="press_color_to_apply">Pindutin ang Kulay upang ilapat</string>
+    <string name="oper_long_46003">China Telecom</string>
+    <string name="oper_short_46003">China Telecom</string>
+    <string name="keyguard_sim_auto">"awtomatiko"</string>
+    <string name="keyguard_domestic_zone_name">"Beijing"</string>
+    <string name="ext_media_checking_notification_title_otg">Ihanda ang imbakang USB</string>
+    <string name="ext_media_badremoval_notification_title_otg">"Di inasahan naalis USB storage"</string>
+    <string name="ext_media_nomedia_notification_title_otg">"Inalis na imbakan na USB"</string>
+    <string name="ext_media_badremoval_notification_message_otg">"I-unmount ang imbakan na USB bago alisin upang maiwasan ang pagkawala ng data."</string>
+    <string name="ext_media_nomedia_notification_message_otg">"Inalis ang imbakan na USB. Magpasok ng bagong media."</string>
+    <string name="ext_media_unmountable_notification_title_otg">"Nasirang imbakan na USB"</string>
+    <string name="ext_media_unmountable_notification_message_otg">"Nasira ang imbakan na USB. Maaaring kailangan mo itong i-reformat."</string>
+    <string name="ext_media_nofs_notification_title_otg">"Blangkong imbakan na USB"</string>
+    <string name="ext_media_nofs_notification_message_otg">"Blangko ang imbakan na USB o may hindi sinusuportahang filesystem."</string>
+    <string name="ext_media_safe_unmount_notification_title_otg">"Ligtas na alisin imbakan na USB"</string>
+    <string name="ext_media_safe_unmount_notification_message_otg">"Maaari mong ligtas na alisin ang imbakan na USB."</string>
+    <string name="recip_unsupport_operator">Hindi sinusuportahan ng RecipientsView ang mga operasyon ng karakter, pakigamit ang toolbar upang paganahin ang mga tatanggap.</string>
+    <string name="recip_unsupport_selection">Paumanhin, hindi mo maililipat ang caret sa simula kapag may mga tatanggap sa RecipientsView.</string>
+    <string name="sim_missing_slot3">Slot 3: Walang natukoy na SIM card</string>
+    <string name="sim_missing_slot4">Slot 4: Walang natukoy na SIM card</string>
+    <string name="sim_missing_slot1_card">Slot 1: Walang natukoy na card</string>
+    <string name="sim_missing_slot2_card">Slot 2: Walang natukoy na card</string>
+    <string name="sim_missing_card">Walang natukoy na card</string>
+    <string name="sim_missing_detail_card">Pakisuri kung handa na ang card</string>
+    <string name="wap_push_setting_noti_ticker">Tanggapin o hindi ang Auto-push na serbisyo?</string>
+    <string name="wap_push_setting_noti_title">Tanggapin o hindi ang Auto-push na serbisyo?</string>
+    <string name="alarm_alert_dismiss_text">Balewalain</string>
+    <string name="description_direction_right">"Mag-slide pakanan upang i-dismiss"</string>
+    <string name="description_direction_left">"Mag-slide pakaliwa upang mag-snooze"</string>
+    <string name="description_direction_up">"Mag-slide pataas upang i-dismiss"</string>
+    <string name="description_direction_down">"Mag-slide pababa upang mag-snooze"</string>
+    <string name="voiceui_notify_string">Masasabi mong</string>
+    <string name="voiceui_control_poweroff_alarm">kontrolin ang power-off na alarma.</string>
+    <string name="voiceui_or">o</string>
+    <string name="headset_pin_recognition">Hindi tugma sa Telepono ang earphones mo. Pakisubukan ng iba</string>
+    <string name="msensor_toast_text">Interference sa compass. Iwagayway ang telepono nang pigurang 8 mosyon upang ikalibra muli ang compass.</string>
+    <string name="usb_autorun_cdrom_notification_title">Konektado bilang autorun na cdrom</string>
+    <string name="ct_net_name">"CTNET"</string>
+    <string name="ct_wap_name">"CTWAP"</string>
+</resources>
+

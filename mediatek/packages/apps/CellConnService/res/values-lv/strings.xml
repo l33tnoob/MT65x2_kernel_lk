@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="app_name">CellConnectionService</string>
+	<string name="button_ok">Labi</string>
+	<string name="button_cancel">"Atcelt"</string>
+	<string name="confirm_radio_title">SIM karte izslēgta</string>
+	<string name="confirm_radio_title_uim">UIM ir izslēgta</string>
+	<string name="confirm_radio_title_card">Karte ir izslēgta</string>
+
+	<string name="confirm_radio_msg"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		tagad ir izslēgts. Vai vēlaties ieslēgt šo SIM karti?</string>
+  <string name="confirm_radio_msg_uim"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		tagad ir izslēgts. Vai vēlaties ieslēgt šo UIM karti?</string>
+  <string name="confirm_radio_msg_card"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		tagad ir izslēgts. Vai vēlaties ieslēgt šo karti?</string>
+
+	<string name="confirm_radio_flight_mode_on_and_msg">Lidojuma režīms ir ieslēgts un</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> 		tagad ir izslēgts. Vai vēlaties izslēgt lidojuma režīmu un ieslēgt šo SIM karti?</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg_uim"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> 		tagad ir izslēgts. Vai vēlaties izslēgt lidojuma režīmu un ieslēgt šo UIM karti?</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg_card"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> 		tagad ir izslēgts. Vai vēlaties izslēgt lidojuma režīmu un ieslēgt šo karti?</string>	
+	<string name="confirm_radio_flight_mode_on_sim_on_msg">Lidojuma režīms ir ieslēgts. Vai vēlaties izslēgt lidojuma režīmu?</string>  
+	<string name="confirm_radio_msg_single">Lidojuma režīms tagad ir ieslēgts. Vai vēlaties to izslēgt?</string>
+	<string name="confirm_pin_title">SIM bloķēta</string>
+	<string name="confirm_pin_title_uim">UIM ir bloķēta</string>
+	<string name="confirm_pin_title_card">Karte ir bloķēta</string>
+	<string name="confirm_pin_msg">Atlasītā SIM karte ir bloķēta. Lūdzu, vispirms 		atbloķējiet to.</string>
+	<string name="confirm_pin_msg_uim">Atlasītā UIM karte ir bloķēta. Lūdzu, vispirms 		atbloķējiet to.</string>
+	<string name="confirm_pin_msg_card">Atlasītā karte ir bloķēta. Lūdzu, vispirms 		atbloķējiet to.</string>
+	<string name="confirm_simmelock_title">SIM ME ir bloķēta</string>
+	<string name="confirm_simmelock_msg">Atlasītā SIM atvere ir bloķēta. Lūdzu, vispirms 		atbloķējiet to.</string>
+	<string name="confirm_simmelock_msg_uim">Atlasītā UIM atvere ir bloķēta. Lūdzu, vispirms 		atbloķējiet to.</string>
+	<string name="confirm_simmelock_msg_card">Atlasītā atvere ir bloķēta. Lūdzu, vispirms 		atbloķējiet to.</string>
+	<string name="confirm_fdn_title">FDN iespējots</string>
+	<string name="confirm_fdn_msg">Iespējoti fiksētie numuru sastādīšanas numuri.</string>
+	<string name="confirm_roaming_title">Viesabonēšanas brīdinājums</string>
+	<string name="confirm_roaming_msg">SIM kartei, kuru grasāties lietot, 		notiek viesabonēšana. Nav pieejama lokālā SIM karte. Vai vēlaties turpināt?</string>
+	<string name="confirm_roaming_msg_uim">UIM kartei, kuru grasāties lietot, 		notiek viesabonēšana. Nav pieejama lokālā UIM karte. Vai vēlaties turpināt?</string>
+	<string name="confirm_roaming_msg_card">Kartei, kuru grasāties lietot, 		notiek viesabonēšana. Nav pieejama lokālā karte. Vai vēlaties turpināt?</string>
+  <string name="confirm_roaming_withPrefer_msg">SIM kartei, kuru grasāties lietot, notiek viesabonēšana. Vai vēlaties turpināt lietot lokālo SIM karti?</string>
+  <string name="confirm_roaming_withPrefer_msg_uim">SIM kartei, kuru grasāties lietot, notiek viesabonēšana. Vai vēlaties turpināt lietot lokālo UIM karti?</string>
+  <string name="confirm_roaming_withPrefer_msg_card">SIM kartei, kuru grasāties lietot, notiek viesabonēšana. Vai vēlaties turpināt lietot lokālo karti?</string>
+  <string name="confirm_roaming_lbutton">"Turpināt"</string>
+  <string name="confirm_roaming_rbutton">"Atcelt"</string>
+  <string name="confirm_roamingWithPrefer_lbutton">Lokālā SIM karte</string>
+  <string name="confirm_roamingWithPrefer_lbutton_uim">Lokālā UIM karte</string>
+  <string name="confirm_roamingWithPrefer_lbutton_card">Lokālā karte</string>
+  <string name="confirm_roamingWithPrefer_rbutton">Viesabonētā SIM karte</string>
+  <string name="confirm_roamingWithPrefer_rbutton_uim">Viesabonētā UIM karte</string>
+  <string name="confirm_roamingWithPrefer_rbutton_card">Viesabonētā karte</string>
+	<string name="confirm_roaming_for3Sims_msg">SIM kartei, kuru grasāties lietot, 		notiek viesabonēšana. Vai vēlaties turpināt?</string>
+  <string name="confirm_roaming_for3Sims_msg_uim">UIM kartei, kuru grasāties lietot, 		notiek viesabonēšana. Vai vēlaties turpināt?</string>
+  <string name="confirm_roaming_for3Sims_msg_card">Kartei, kuru grasāties lietot, 		notiek viesabonēšana. Vai vēlaties turpināt?</string>
+	<string name="confirm_radio_lbutton">Ieslēgt</string>
+	<string name="confirm_unlock_lbutton">Atbloķēt</string>
+	<string name="confirm_unlock_fail">Darbība atcelta</string>
+	<string name="confirm_turnon_radio_fail">Darbība atcelta</string>
+	<string name="confirm_permit_roaming_fail">Šo darbību var atcelt viesabonētajā SIM kartē</string>
+	<string name="confirm_permit_roaming_fail_uim">Šo darbību var atcelt viesabonētajā UIM kartē</string>
+	<string name="confirm_permit_roaming_fail_card">Šo darbību var atcelt viesabonētajā kartē</string>
+	<string name="confirm_sim_locked_message">SIM karte ir neatgriezeniski bloķēta</string>
+	<string name="confirm_sim_locked_message_uim">UIM karte ir neatgriezeniski bloķēta</string>
+	<string name="confirm_sim_locked_message_card">Karte ir neatgriezeniski bloķēta</string>	
+    <string name="confirm_slot_locked_message">Atvere ir neatgriezeniski bloķēta</string>
+	<string name="button_yes">"Jā"</string>  
+	<string name="button_no">"Nē"</string>  
+</resources>

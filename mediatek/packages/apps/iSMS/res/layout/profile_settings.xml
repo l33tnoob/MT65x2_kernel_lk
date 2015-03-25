@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="center_vertical"
+                android:minHeight="?android:attr/listPreferredItemHeight" >
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dip"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/STR_NMS_TAP_AVATAR_TIP"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_contact_picture" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="36dip"
+                    android:layout_gravity="bottom"
+                    android:background="#60000000"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/STR_NMS_TAP_AVATAR_TIP"
+                    android:textColor="@color/white" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginTop="4dip"
+                    android:text="@string/STR_NMS_DISPLAY_NAME_TIP"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/STR_NMS_HISSAGE"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+ 
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

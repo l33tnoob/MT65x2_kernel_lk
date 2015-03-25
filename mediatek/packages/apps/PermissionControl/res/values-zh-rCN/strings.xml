@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">权限监控</string>
+    <string name="accept_perm">允许</string>
+    <string name="deny_perm">拒绝</string>
+    
+    <!-- Dialog message body for different permission -->
+    <string name="notify_check_hint">记住我的选择。</string>
+	<string name="notify_dialog_title">安全警告</string>
+	<string name="notify_dialog_msg_body"><xliff:g id="pkg_name">%s</xliff:g> 正在尝试 <xliff:g id="perm_name">%s</xliff:g>。</string>
+	<string name="time_count_down_hint">(<xliff:g id="time">%s</xliff:g> 秒后自动拒绝。)</string>
+	
+    <!-- Toast information for different permission -->
+    <string name="toast_deny_msg_body"><xliff:g id="pkg_name">%s</xliff:g><xliff:g id="perm_name">%s</xliff:g>的尝试被拒绝。</string>
+ 
+    <string name="notification_control_state_title">应用权限</string>
+    <string name="notification_control_state_summary">应用权限管理未开启。</string>
+    <!-- Permission manager UI  -->
+    <string name="manage_permission_app_label">﻿应用权限</string>
+    <string name="manage_permission_summary">管理应用权限以保障安全和隐私</string>
+    <string name="permissions_label">权限</string>
+    <string name="apps">应用</string>
+    <string name="no_applications">无应用。</string>
+    <string name="version_text">版本 <xliff:g id="version_num">%1$s</xliff:g></string>
+    
+    <!-- app count/permission count -->
+    <string name="app_count_unit_single">款应用</string>
+    <string name="app_count_unit_plural">款应用</string>
+    <string name="perm_count_unit_single">项权限</string>
+    <string name="perm_count_unit_plural">项权限</string>
+    
+    <!-- empty text for listview -->
+    <string name="no_app_use_perm">未发现涉及该权限的应用。</string>
+    <string name="no_perm_is_used">该应用不涉及任何权限。</string>
+    <string name="notify_user_switch_on">打开开关进行应用权限管理</string>
+    
+    <!-- alert dialog when turn off the switch -->
+    <string name="alert_dlg_title">关闭权限保护？</string>
+    <string name="alert_dlg_mgs">应用将直接获得权限，不再需要经过您的确认。</string>
+    <!-- Foreground notification -->
+    <string  name="foreground_notification_title">﻿应用权限管理运行中</string>
+    <string  name="foreground_notification_summary">触摸可查看应用权限的详细设置。</string>
+    
+    <!-- auto boot part begin -->
+    <string name="auto_boot_pref_title">自启动管理</string>
+    <string name="auto_boot_pref_summary">允许或禁止应用开机自动运行</string>
+    <string name="no_auto_boot_app">无开机自动运行的应用。</string>
+
+    <plurals name="autoboot_app_desc_allow">
+        <item quantity="one">允许<xliff:g id="app_count">%1$d</xliff:g>款应用，</item>
+        <item quantity="other">允许<xliff:g id="app_count">%1$d</xliff:g>款应用，</item>
+    </plurals>
+    <plurals name="autoboot_app_desc_deny">
+        <item quantity="one">禁止<xliff:g id="app_count">%1$d</xliff:g>款应用开机自动运行。</item>
+        <item quantity="other">禁止<xliff:g id="app_count">%1$d</xliff:g>款应用开机自动运行。</item>
+    </plurals>
+    <!-- auto boot part end -->
+
+</resources>

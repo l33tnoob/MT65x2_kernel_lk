@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_share_flipper"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <GridView
+        android:id="@+id/gv_share_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hapticFeedbackEnabled="true"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth" >
+    </GridView>
+
+</LinearLayout>

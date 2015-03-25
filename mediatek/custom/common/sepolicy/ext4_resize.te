@@ -1,0 +1,40 @@
+# ==============================================
+# Policy File of /system/binext4_resize Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type ext4_resize_exec , exec_type, file_type;
+type ext4_resize ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive ext4_resize;
+init_daemon_domain(ext4_resize)
+
+# 20131119 FeatureSQC
+allow ext4_resize rootfs:file { execute execute_no_trans };
+
+
+
+# 20131122 Add Set Property Rule
+allow ext4_resize  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_CTS_02
+allow ext4_resize block_device:blk_file { read ioctl open };
+allow ext4_resize block_device:dir search;
+allow ext4_resize linker_exec:file read;
+allow ext4_resize tmpfs:chr_file { read write };
+

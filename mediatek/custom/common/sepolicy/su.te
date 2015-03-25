@@ -1,0 +1,37 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type su, domain;
+type su_exec, file_type, exec_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+permissive su;
+domain_auto_trans(shell, su_exec, su)
+
+# su is unconfined.
+# unconfined_domain(su)
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+permissive su;
+# domain_auto_trans(shell, su_exec, su)
+
+# su is unconfined.
+# unconfined_domain(su)
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive su;
+
+# 20131122 Add Set Property Rule
+allow su property_type:property_service set;

@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binsensorservice Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type sensorservice_exec , exec_type, file_type;
+type sensorservice ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive sensorservice;
+init_daemon_domain(sensorservice)
+
+
+# 20131122 Add Set Property Rule
+allow sensorservice  property_type:property_service set;

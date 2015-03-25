@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bingzip Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type gzip_exec , exec_type, file_type;
+type gzip ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive gzip;
+init_daemon_domain(gzip)
+
+
+# 20131122 Add Set Property Rule
+allow gzip  property_type:property_service set;

@@ -1,0 +1,28 @@
+# ==============================================
+# Policy File of /sbinmeta_tst Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type meta_tst_exec , exec_type, file_type;
+type meta_tst ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive meta_tst;
+
+
+# 20131122 Add Set Property Rule
+allow meta_tst  property_type:property_service set;

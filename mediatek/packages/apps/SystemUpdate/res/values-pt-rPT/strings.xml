@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"Actualizações do sistema"</string>
+
+
+    <string name="none_package">Não existem pacotes de atualização válidos.</string>
+    <string name="new_version_query">A procurar actualizações\u2026</string>
+    <string name="menu_stats_refresh">Atualizar</string>
+    <string name="network_error">Conexão de rede falhou</string>
+    <string name="no_new_version">Seu sistema está atualmente atualizado.</string>
+    <string name="not_support_version">Sua meta não suporta a função Over-the-Air</string>
+    <string name="query_sd_insufficient_space">Espaço insuficiente para <xliff:g id="path">%s</xliff:g></string>
+    <string name="ota_category_title">OTA</string>
+    <string name="sd_category_title">ACTUALIZAÇÃO DO CARTÃO SD</string>
+    <string name="ota_preference_summary">Foi encontrada uma atualização do sistema no servidor</string>
+
+
+    <string name="notes_summary">Atualização do firmware pode melhorar a estabilidade da máquina e consertar bugs. Atualize para a versão</string>
+    <string name="ask_for_install_ota">Deseja instalar a actualização do sistema agora?</string>
+    <string name="warning_install_ota" product="tablet">Não poderá utilizar o tablet nem efectuar chamadas de emergência durante a instalação. Não remova a bateria e o cartão SD nem desligue o tablet.</string>
+    <string name="warning_install_ota" product="default">Não poderá utilizar o telefone nem efectuar chamadas de emergência durante a instalação. Não remova a bateria e o cartão SD nem desligue o telefone.</string>
+    <string name="ask_for_install_sd">Foi encontrado um pacote de atualização mais recente no cartão SD. Deseja instalar?</string>
+    <string name="warning_install_sd" product="tablet">Não poderá utilizar o tablet nem efectuar chamadas de emergência durante a instalação. Não remova a bateria e o cartão SD nem desligue o tablet. \nAntes de iniciar a instalação, certifique-se de que o pacote foi transferido a partir do website oficial e que não está danificado.</string>
+    <string name="warning_install_sd" product="default">Não poderá utilizar o telefone nem efectuar chamadas de emergência durante a instalação. Não remova a bateria e o cartão SD nem desligue o telefone. \nAntes de iniciar a instalação, certifique-se de que o pacote foi transferido a partir do website oficial e que não está danificado.</string>
+    <string name="ask_for_download_ota">Deseja transferir a atualização de otimização do sistema?</string>
+    <string name="warning_download_ota">Recomenda-se a utilização de um ponto de acesso Wi-Fi gratuito ou um plano de dados ilimitado para aplicar esta actualização. Caso contrário, poderão ser aplicadas as taxas de dados normais. \nEfectue a cópia de segurança dos seus dados antes de actualizar.</string>
+        
+    <string name="notification_content_title">Actualização do sistema</string>
+    <string name="downloading_title">"A transferir..."</string>   
+    <string name="wifi_only_check">Apenas Wi-Fi</string>     
+    
+    
+    
+    
+    
+    <string name="btn_install">"Instalar"</string>
+    <string name="btn_cancel">rejeitar</string>
+    <string name="btn_download">Transferir e instalar</string>
+    <string name="btn_resume">"Transferir"</string>
+    
+    <string name="warn_data_cost_title">Transferir actualização</string>
+    <string name="warn_data_cost_content">A transferência através de redes móveis poderá originar custos adicionais. Deseja continuar?</string>
+    <string name="warn_data_cost_yes">Sim</string>
+    <string name="warn_data_cost_no">Não</string>
+
+    <string name="notification_download_complete_title">A atualização do sistema está preparada</string>
+    <string name="notification_download_complete_context">Toque para instalar a atualização do sistema</string>
+        
+    <string name="sdcard_crash_or_unmount">Erro de cartão SD. Verifique seu cartão SD e tente novamente.</string>
+    <string name="unmount_sdcard">Erro de montagem do cartão SD. Verifique o cartão.</string>
+    <string name="insufficient_space_content">Não há espaço suficiente de armazenamento! A instalação precisa de ao menos  <xliff:g id="deltasize" example="3.5M">%s</xliff:g>. Verifique seu gerenciador de apl para liberar espaço extra. </string>
+
+    
+    
+    
+    
+    <string name="install_sd_title">Instalar actualização</string>
+    <string name="install_sd_message">Transfira o pacote do website oficial e certifique-se de que o mesmo não está danificado. Caso contrário poderá causar problemas no sistema.</string>
+    <string name="install_reminder_now">Instalar agora</string>
+    <string name="install_reminder_not_now">"Agora não"</string>
+    
+    
+
+    <string name="notification_content_text_completed">Download feito com sucesso</string> 
+
+    <string name="unknown_per">"Desconhecido"</string>    
+    <string name="unknown_error">Erro desconhecido</string>
+    <string name="unknown_error_content">Ocorreu um erro desconhecido. Saia desta página e tente novamente.</string>
+    <string name="insufficient_space_title">Sem espaço suficiente</string>
+    <string name="error_sdcard">Informação de cartão SD</string>
+    <string name="insufficient_space">Sem espaço suficiente no cartão SD.</string>
+    <string name="package_deleted_error">A atualização do sistema parou porque a atualização é inválida.</string>
+    
+    <string name="cancel_download_title">Cancelar download</string>
+    <string name="cancel_download_content">Esta operação irá eliminar o ficheiro transferido.</string>
+
+    
+    <string name="change_network_title">"Transferir"</string>
+    <string name="change_network_content">O APN actual não suporta a transferência. Deseja mudar para outro APN ou activar a ligação Wi-Fi?</string>
+    <string name="change_network_wifi_btn">Utilizar Wi-Fi</string>
+    <string name="change_network_apn_btn">Mudar APN</string>
+    <string name="change_network_discard_btn">rejeitar</string>    
+    <string name="package_error_title">Instalação falhou</string>
+    <string name="package_error_message_invalid">Erro de pacote. Verifique atualização e baixe novamente.</string>
+    <string name="package_error_message_insuff" product="tablet">Não existe espaço suficiente no dispositivo.</string>
+    <string name="package_error_message_insuff" product="default">Sem espaço suficiente no telefone.</string>
+    <string name="package_error_message_crash">Impossível acessar a partição de dados.</string>
+    <string name="package_error_message_full">pacote completo necessário para caso de partição trocada.</string>    
+    <string name="updateSuccess" product="tablet">Parabéns! O seu dispositivo foi actualizado com êxito para a versão  <xliff:g id="version" example="gb.p37">%s</xliff:g>. </string> 
+    <string name="updateSuccess" product="default">Parabéns! O seu telefone foi actualizado com sucesso para a versão  <xliff:g id="version" example="gb.p37">%s</xliff:g>. </string> 
+    <string name="updateFailed">Falha ao actualizar para a versão  <xliff:g id="version" example="gb.p37">%s</xliff:g>. </string>
+    <string name="package_unzip">A descompactar o pacote\u2026</string>
+    <string name="package_unzip_error">Erro ao descompactar</string>
+    
+    <string name="installing_message">O telefone irá desligar-se\u2026</string>
+    <string name="install_sd_info">É necessário copiar o pacote para o armazenamento do telefone para continuar a atualização.\nNão existe espaço suficiente no telefone.</string>
+    <string name="sdcard_crash_or_unmount_when_install">A actualização do sistema parou porque o cartão SD foi desmontado.</string>
+    <string name="sdcard_inserted">Deseja pesquisar o cartão SD para encontrar mais pacotes de atualização?</string>
+    
+    <string name="new_version_detected">Atualização do sistema disponível</string>
+    <string name="sdcard_unmount">Cartão SD desmontado</string>
+    <string name="server_version_error">Erro do servidor: Atualize o código-fonte do servidor.</string>
+    <string name="cta_warning">O sistema suporta a atualização do firmware apenas a partir do website oficial. Se o utilizador utilizar uma imagem de ROM de terceiros e/ou qualquer outro método de root para atualizar o firmware, irá tornar o telefone instável. Tenha em atenção que o utilizador deverá assumir todas as responsabilidades por tais comportamentos.</string>
+</resources>

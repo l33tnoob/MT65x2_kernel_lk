@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">CellConnectionService</string>
+    <string name="button_ok">אישור</string>
+    <string name="button_cancel">ביטול</string>
+    <string name="confirm_radio_title">SIM כבוי</string>
+    <string name="confirm_radio_msg"> <xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		כבוי כעת. האם להפעיל כרטיס SIM זה? </string>
+    <string name="confirm_radio_msg_single">מצב טיסה הופעל, לכבות אותו?</string>
+    <string name="confirm_pin_title">SIM ננעל</string>
+    <string name="confirm_pin_msg">כרטיס ה-SIM הנבחר נעול כעת. תחילה עליך לשחרר אותו. 		</string>
+    <string name="confirm_simmelock_title">SIM ME ננעל</string>
+    <string name="confirm_simmelock_msg">חריץ ה-SIM הנבחר נעול כעת. תחילה עליך לשחרר אותו.</string>
+    <string name="confirm_fdn_title">FDN מאופשר</string>
+    <string name="confirm_fdn_msg">מספרי החיוג הקבועים מאופשרים.</string>
+    <string name="confirm_roaming_title">אזהרת נדידה</string>
+    <string name="confirm_roaming_msg">כרטיס ה-SIM בו אתה מתכוון להשתמש  		נמצא כעת במצב נדידה. אין כעת SIM מקומי זמין. האם להמשיך?</string>
+    <string name="confirm_roaming_withPrefer_msg">כרטיס ה-SIM בו אתה מתכוון להשתמש נמצא כעת במצב נדידה. האם להמשיך את השימוש באמצעות כרטיס ה-SIM המקומי?</string>
+    <string name="confirm_roaming_lbutton">המשך</string>
+    <string name="confirm_roaming_rbutton">ביטול</string>
+    <string name="confirm_roamingWithPrefer_lbutton">SIM מקומי</string>
+    <string name="confirm_roamingWithPrefer_rbutton">SIM בנדידה</string>
+    <string name="confirm_radio_lbutton">הפעל</string>
+    <string name="confirm_unlock_lbutton">שחרר</string>
+    <string name="confirm_unlock_fail">הפעולה בוטלה</string>
+    <string name="confirm_turnon_radio_fail">הפעולה בוטלה</string>
+    <string name="confirm_permit_roaming_fail">ביטלת את הפעולה בכרטיס ה-SIM שבנדידה</string>
+    <string name="confirm_sim_locked_message">כרטיס ה-SIM ננעל לצמיתות</string>
+    <string name="confirm_slot_locked_message">החריץ ננעל לצמיתות</string>
+<string name="confirm_radio_title_uim">UIM מכובה</string>
+    <string name="confirm_radio_title_card">הכרטיס מכובה</string>
+    <string name="confirm_radio_msg_uim"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> מכובה כעת. האם ברצונך להפעיל את כרטיס ה-UIM הזה?</string>
+    <string name="confirm_radio_msg_card"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> מכובה כעת. האם ברצונך להפעיל את הכרטיס הזה?</string>
+    <string name="confirm_radio_flight_mode_on_and_msg">מצב טיסה מופעל וכן</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> מכובה כעת. האם ברצונך לכבות את מצב הטיסה ולהפעיל כרטיס SIM זה?</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg_uim"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> מכובה כעת. האם ברצונך לכבות את מצב הטיסה ולהפעיל כרטיס UIM זה?</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg_card"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> מכובה כעת. האם ברצונך לכבות את מצב הטיסה ולהפעיל את הכרטיס הזה?</string>
+    <string name="confirm_radio_flight_mode_on_sim_on_msg">מצב טיסה מופעל. האם ברצונך לכבות את מצב הטיסה?</string>
+    <string name="confirm_pin_title_uim">UIM נעול</string>
+    <string name="confirm_pin_title_card">הכרטיס נעול</string>
+    <string name="confirm_pin_msg_uim">כרטיס ה-UIM שנבחר נעול כעת. בטל תחילה את הנעילה.</string>
+    <string name="confirm_pin_msg_card">הכרטיס שנבחר נעול כעת. בטל תחילה את הנעילה.</string>
+    <string name="confirm_simmelock_msg_uim">חריץ ה-UIM שנבחר נעול כעת. בטל תחילה את הנעילה.</string>
+    <string name="confirm_simmelock_msg_card">החריץ שנבחר נעול כעת. בטל תחילה את הנעילה.</string>
+    <string name="confirm_roaming_msg_uim">כרטיס ה-UIM שאתה עומד להשתמש בו נמצא בנדידה כעת.
+אין UIM מקומי זמין כעת. האם ברצונך להמשיך?</string>
+    <string name="confirm_roaming_msg_card">הכרטיס שאתה עומד להשתמש בו נמצא בנדידה כעת. אין כרטיס מקומי זמין כעת. האם ברצונך להמשיך?</string>
+    <string name="confirm_roaming_withPrefer_msg_uim">כרטיס ה-SIM שאתה עומד להשתמש בו נמצא בנדידה כעת. האם ברצונך להמשיך באמצעות UIM מקומי?</string>
+    <string name="confirm_roaming_withPrefer_msg_card">כרטיס ה-SIM שאתה עומד להשתמש בו נמצא בנדידה כעת. האם ברצונך להמשיך באמצעות כרטיס מקומי?</string>
+    <string name="confirm_roamingWithPrefer_lbutton_uim">UIM מקומי</string>
+    <string name="confirm_roamingWithPrefer_lbutton_card">כרטיס מקומי</string>
+    <string name="confirm_roamingWithPrefer_rbutton_uim">UIM בנדידה</string>
+    <string name="confirm_roamingWithPrefer_rbutton_card">כרטיס בנדידה</string>
+    <string name="confirm_roaming_for3Sims_msg">כרטיס ה-SIM שאתה עומד להשתמש בו נמצא בנדידה כעת. האם ברצונך להמשיך?</string>
+    <string name="confirm_roaming_for3Sims_msg_uim">כרטיס ה-UIM שאתה עומד להשתמש בו נמצא בנדידה כעת. האם ברצונך להמשיך?</string>
+    <string name="confirm_roaming_for3Sims_msg_card">הכרטיס שאתה עומד להשתמש בו נמצא בנדידה כעת. האם ברצונך להמשיך?</string>
+    <string name="confirm_permit_roaming_fail_uim">ביטלת את הפעולה הזו בכרטיס ה-UIM שנמצא בנדידה</string>
+    <string name="confirm_permit_roaming_fail_card">ביטלת את הפעולה הזו בכרטיס שנמצא בנדידה</string>
+    <string name="confirm_sim_locked_message_uim">כרטיס ה-UIM נעול תמידית</string>
+    <string name="confirm_sim_locked_message_card">הכרטיס נעול תמידית</string>
+    <string name="button_yes">"כן"</string>
+    <string name="button_no">לא</string>
+    </resources>

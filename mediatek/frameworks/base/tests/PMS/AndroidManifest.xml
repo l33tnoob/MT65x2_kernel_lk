@@ -1,0 +1,92 @@
+<!--
+ * Copyright (C) 2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.mediatek.cts.pms.stub">
+
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_USERS" />
+
+    <!-- Used for PackageManager test, don't delete this permission-tree -->
+    <permission-tree android:name="com.mediatek.cts.pms.stub.permission.TEST_DYNAMIC"
+                    android:label="Mediatek Test Tree"/>
+
+    <!-- Used for PackageManager test, don't delete this permission-group -->
+    <permission-group android:name="android.permission-group.COST_MONEY"/>
+
+    <!-- Used for PackageManager test, don't delete! -->
+    <uses-configuration/>
+
+    <application android:label="Mediatek PMS TestCase"
+                android:icon="@drawable/size_48x48" android:name="mediatek.app.cts.MockApplication">
+
+        <!--Test for PackageManager-->
+        <activity android:name="mediatek.app.cts.MockActivity" android:label="MockActivity">
+            <meta-data android:name="android.app.alias"
+                android:resource="@xml/alias" />
+            <meta-data android:name="android.app.intent.filter"
+                android:resource="@xml/intentfilter" />
+            <meta-data android:name="android.widget.layout"
+                android:resource="@xml/layout" />
+            <meta-data android:name="android.view.merge"
+                android:resource="@xml/merge" />
+        </activity>
+
+        <!--Test for PackageManager-->
+        <activity android:name="mediatek.content.pm.cts.TestPmActivity"
+                android:icon="@drawable/start">
+            <intent-filter>
+                <action android:name="mediatek.intent.action.PMTEST" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+            <meta-data android:name="mediatek.content.pm.cts.xmltest" android:resource="@xml/pm_test" />
+        </activity>
+        <activity android:name="mediatek.content.pm.cts.TestPmCompare">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.INFO" />
+            </intent-filter>
+        </activity>
+
+        <!--Test for PackageManager-->
+        <service android:name="mediatek.content.pm.cts.TestPmService">
+            <intent-filter>
+                <action android:name="mediatek.content.pm.cts.activity.PMTEST_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <!--Test for PackageManager-->
+        <receiver android:name="mediatek.content.pm.cts.PmTestReceiver">
+            <intent-filter>
+                <action android:name="mediatek.content.pm.cts.PackageManagerTest.PMTEST_RECEIVER" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Used for PackageManager test, don't delete this MockContentProvider provider -->
+        <provider android:name="mediatek.content.cts.MockContentProvider" android:authorities="mediatekpmsctstest"
+            android:multiprocess="false" />
+        <provider android:name="mediatek.content.cts.DummyProvider"
+            android:authorities="mediatek.pms.cts.dummyprovider"
+            android:multiprocess="true" />
+
+    </application>
+
+    <!--Test for PackageManager, please put this at the very beginning-->
+    <instrumentation android:name="mediatek.content.pm.cts.TestPmInstrumentation"
+        android:targetPackage="mediatek"
+        android:label="PackageManager Instrumentation Test" />
+</manifest>

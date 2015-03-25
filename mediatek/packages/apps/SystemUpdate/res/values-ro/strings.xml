@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"Actualizări de sistem"</string>
+
+
+    <string name="none_package">Nu există pachete valide de actualizare.</string>
+    <string name="new_version_query">Se caută actualizarea\u2026</string>
+    <string name="menu_stats_refresh">Reîmprospătare</string>
+    <string name="network_error">Conexiunea la reţea nu a reuşit</string>
+    <string name="no_new_version">Sistemul este actualizat.</string>
+    <string name="not_support_version">Ţinta nu acceptă legături radio</string>
+    <string name="query_sd_insufficient_space">Spaţiu insuficient pentru <xliff:g id="path">%s</xliff:g></string>
+    <string name="ota_category_title">OTA</string>
+    <string name="sd_category_title">ACTUALIZARE CARD SD</string>
+    <string name="ota_preference_summary">S-a găsit o actualizare de sistem pe server</string>
+
+
+    <string name="notes_summary">Actualizarea firmware poate îmbunătăţi stabilitatea maşinii şi corecta erorile. Actualizare la versiunea</string>
+    <string name="ask_for_install_ota">Doriţi să instalaţi actualizarea de sistem acum?</string>
+    <string name="warning_install_ota" product="tablet">Pe durata instalării nu veţi putea folosi tableta şi nu veţi putea efectua apeluri de urgenţă. Nu scoateţi bateria sau cardul SD şi nu opriţi funcţionarea tabletei.</string>
+    <string name="warning_install_ota" product="default">Pe durata instalării nu veţi putea folosi telefonul şi nu veţi putea efectua apeluri de urgenţă. Nu scoateţi bateria sau cardul SD şi nu opriţi funcţionarea telefonului.</string>
+    <string name="ask_for_install_sd">Pe cartela SD a fost găsit cel mai recent pachet de actualizări de sistem. Doriţi să îl instalaţi?</string>
+    <string name="warning_install_sd" product="tablet">Pe durata instalării nu veţi putea folosi tableta şi nu veţi putea efectua apeluri de urgenţă. Nu scoateţi bateria sau cardul SD şi nu opriţi funcţionarea tabletei. \nÎnainte de a începe instalarea, asiguraţi-vă că pachetul a fost descărcat de pe site-ul web şi că nu este corupt.</string>
+    <string name="warning_install_sd" product="default">Pe durata instalării nu veţi putea folosi telefonul şi nu veţi putea efectua apeluri de urgenţă. Nu scoateţi bateria sau cardul SD şi nu opriţi funcţionarea telefonului. \nÎnainte de a începe instalarea, asiguraţi-vă că pachetul a fost descărcat de pe site-ul web şi că nu este corupt.</string>
+    <string name="ask_for_download_ota">Doriţi să descărcaţi actualizarea de optimizare a sistemului?</string>
+    <string name="warning_download_ota">Vă recomandăm să utilizaţi un hotspot Wi-Fi gratuit sau un plan de date nelimitat pentru aplicarea acestei actualizări. În caz contrar, se pot aplica tarife de date standard. \nRealizaţi o copie de rezervă a datelor înainte de a începe actualizarea.</string>
+        
+    <string name="notification_content_title">Actualizare sistem</string>
+    <string name="downloading_title">"Se descarcă..."</string>   
+    <string name="wifi_only_check">Numai Wi-Fi</string>     
+    
+    
+    
+    
+    
+    <string name="btn_install">"Instalaţi"</string>
+    <string name="btn_cancel">renunţare</string>
+    <string name="btn_download">Descărcare şi instalare</string>
+    <string name="btn_resume">"Descărcaţi"</string>
+    
+    <string name="warn_data_cost_title">Descărcare actualizare</string>
+    <string name="warn_data_cost_content">Descărcarea prin reţele mobile poate cauza taxe suplimentare. Continuaţi?</string>
+    <string name="warn_data_cost_yes">"Da"</string>
+    <string name="warn_data_cost_no">"Nu"</string>
+
+    <string name="notification_download_complete_title">Actualizarea de sistem este pregătită</string>
+    <string name="notification_download_complete_context">Atingeţi pentru a instala actualizarea de sistem</string>
+        
+    <string name="sdcard_crash_or_unmount">Eroare cartelă SD. Verificaţi cartela SD şi încercaţi din nou.</string>
+    <string name="unmount_sdcard">Eroare de montare a cartelei SD. Verificaţi cartela SD.</string>
+    <string name="insufficient_space_content">Nu există suficient spaţiu de stocare! Pentru instalare este necesar cel puţin  <xliff:g id="deltasize" exemplu="3.5M">%s</xliff:g>. Verificaţi managerul de aplicaţii pentru a elibera spaţiu suplimentar. </string>
+
+    
+    
+    
+    
+    <string name="install_sd_title">Instalare actualizare</string>
+    <string name="install_sd_message">Asiguraţi-vă că pachetul este descărcat de pe site-ul web oficial şi că pachetul nu este alterat. În caz contrar, pot apărea probleme de sistem.</string>
+    <string name="install_reminder_now">Instalare acum</string>
+    <string name="install_reminder_not_now">"Nu acum"</string>
+    
+    
+
+    <string name="notification_content_text_completed">Descărcarea a reuşit</string> 
+
+    <string name="unknown_per">"Necunoscut"</string>    
+    <string name="unknown_error">Eroare necunoscută</string>
+    <string name="unknown_error_content">Eroare necunoscută. Părăsiţi această pagină şi încercaţi din nou.</string>
+    <string name="insufficient_space_title">Spaţiu insuficient</string>
+    <string name="error_sdcard">Informaţii despre cartela SD</string>
+    <string name="insufficient_space">Spaţiu insuficient pe cartela SD.</string>
+    <string name="package_deleted_error">Actualizările de sistem s-au oprit din cauza faptului că sunt nevalide.</string>
+    
+    <string name="cancel_download_title">Revocare descărcare</string>
+    <string name="cancel_download_content">Prin această operaţie veţi renunţa la fişierul descărcat.</string>
+
+    
+    <string name="change_network_title">"Descărcaţi"</string>
+    <string name="change_network_content">APN-ul actual nu acceptă descărcarea. Doriţi să alegeţi alt APN sau să activaţi Wi-Fi?</string>
+    <string name="change_network_wifi_btn">Utilizaţi Wi-Fi</string>
+    <string name="change_network_apn_btn">Modificaţi APN</string>
+    <string name="change_network_discard_btn">renunţare</string>    
+    <string name="package_error_title">Instalarea nu a reuşit</string>
+    <string name="package_error_message_invalid">Eroare de pachet. Verificaţi actualizarea şi descărcaţi din nou.</string>
+    <string name="package_error_message_insuff" product="tablet">Spaţiu insuficient pe dispozitiv.</string>
+    <string name="package_error_message_insuff" product="default">Spaţiu insuficient pe telefon.</string>
+    <string name="package_error_message_crash">Imposibil de accesat partiţia de date.</string>
+    <string name="package_error_message_full">Pentru modificarea după caz a partiţiei este necesar pachetul complet.</string>    
+    <string name="updateSuccess" product="tablet">Felicitări! Dispozitivul dvs. a fost actualizat cu succes la versiunea  <xliff:g id="version" example="gb.p37">%s</xliff:g>. </string> 
+    <string name="updateSuccess" product="default">Felicitări! Telefonul dvs. a fost actualizat la versiunea  <xliff:g id="version" example="gb.p37">%s</xliff:g>. </string> 
+    <string name="updateFailed">Imposibil de actualizat la versiunea  <xliff:g id="version" example="gb.p37">%s</xliff:g>. </string>
+    <string name="package_unzip">Pachetul este în curs de dezarhivare\u2026</string>
+    <string name="package_unzip_error">Eroare la dezarhivare</string>
+    
+    <string name="installing_message">Telefonul dvs. se va opri din funcţionare\u2026</string>
+    <string name="install_sd_info">Este necesară copierea pachetului în memoria telefonului pentru continuarea upgrade-ului.\nNu este spaţiu suficient în memoria telefonului.</string>
+    <string name="sdcard_crash_or_unmount_when_install">Actualizarea sistemului a fost întreruptă deoarece cardul SD nu este instalat.</string>
+    <string name="sdcard_inserted">Doriţi scanarea cartelei SD pentru găsirea mai multor pachete de actualizări?</string>
+    
+    <string name="new_version_detected">Este disponibilă o actualizare de sistem</string>
+    <string name="sdcard_unmount">Cartela SD este detaşată</string>
+    <string name="server_version_error">Eroare server: Actualizați codul sursă al serverului.</string>
+    <string name="cta_warning">Sistemul acceptă actualizarea componentei firmware numai de pe site-ul web sau serverul oficial. Dacă utilizatorul foloseşte o imagine ROM terţă şi/sau orice altă metodă de root pentru actualizarea componentei firmware, telefonul poate deveni instabil. Utilizatorii trebuie să reţină faptul că îşi asumă întreaga responsabilitate pentru astfel de acţiuni.</string>
+</resources>

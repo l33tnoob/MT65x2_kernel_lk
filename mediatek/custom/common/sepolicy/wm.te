@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binwm Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type wm_exec , exec_type, file_type;
+type wm ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive wm;
+init_daemon_domain(wm)
+
+
+# 20131122 Add Set Property Rule
+allow wm  property_type:property_service set;

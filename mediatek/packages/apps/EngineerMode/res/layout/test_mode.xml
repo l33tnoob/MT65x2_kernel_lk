@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TestModetxv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3pt"
+            android:layout_marginTop="20px"
+            android:layout_weight="1" >
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/TestModeCb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:layout_weight="1"
+            android:text="@string/emptyStr" >
+        </CheckBox>
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/BTTestMode_edit_Text"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/BTTestMode_edit_Text" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/BTTestMode_edit"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:maxLength="1"
+            android:numeric="integer"
+            android:singleLine="true"
+            android:text="@string/BTTestMode_edit" >
+        </EditText>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binasanwrapper Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type asanwrapper_exec , exec_type, file_type;
+type asanwrapper ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive asanwrapper;
+init_daemon_domain(asanwrapper)
+
+
+# 20131122 Add Set Property Rule
+allow asanwrapper  property_type:property_service set;

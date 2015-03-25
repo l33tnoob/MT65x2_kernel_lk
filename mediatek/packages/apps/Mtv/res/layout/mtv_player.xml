@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black">
+	<RelativeLayout android:id="@+id/surface"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_toLeftOf="@+id/options_menu">          
+	    <SurfaceView android:id="@+id/display_surface" 
+	            android:layout_width="0dip"
+	            android:layout_height="0dip"   
+	            android:visibility="visible"	            
+	            android:layout_centerInParent="true"/>		
+        <SurfaceView android:id="@+id/display_surface_black" 
+	            android:layout_width="0dip"
+	            android:layout_height="0dip"   
+	            android:background="@android:color/black"              
+	            android:layout_centerInParent="true"
+	            android:visibility="invisible"/>      
+	    <LinearLayout android:id="@+id/progress_indicator"
+	            android:orientation="vertical"
+	            android:gravity="center"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:background="@android:color/black">
+
+	        <ProgressBar android:id="@android:id/progress"
+	                style="?android:attr/progressBarStyleLarge"	                
+	                android:layout_gravity="center"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" />
+
+	        <TextView android:paddingTop="5dip"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:text="@string/turning_on_tv" android:textSize="14sp"
+	                android:textColor="#ffffffff" />
+	    </LinearLayout>	      
+	    <!--
+		<ImageView 
+	            android:id="@+id/signal_indicator"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"			
+				android:layout_alignRight="@+id/display_surface"  
+				android:layout_alignTop="@+id/display_surface"/>   
+				-->
+	<ViewStub android:id="@+id/stub_recording_time_text"
+			  android:layout="@layout/recording_time_text"
+              android:layout_width="100dp"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/display_surface"  
+			  android:layout_alignBottom="@+id/display_surface"/> 				  
+</RelativeLayout>	
+  
+     <ImageView 
+	           android:id="@+id/options_menu"
+		       android:layout_height="wrap_content"
+		       android:layout_width="wrap_content"			
+		       android:paddingRight="5dp"
+			   android:layout_alignParentBottom="true"
+			   android:layout_toLeftOf="@+id/control_bar"
+			   android:src="@drawable/ic_options_menu_holo_light"
+			   android:background="@android:color/black"
+			   android:visibility="gone"/>   
+			  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/control_bar"
+        android:layout_height="fill_parent"
+        android:layout_width="62dp"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_control_bar">
+    <ImageView 
+	        android:id="@+id/btn_mute"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+			android:clickable="true"
+			android:focusable="true"
+			android:paddingTop="5dp"			
+            android:layout_centerInParent="true"			
+            android:layout_alignParentTop="true"			
+	        android:src="@drawable/btn_ic_unmute"/> 		
+
+    <RelativeLayout android:id="@+id/navigation_bar"
+            android:orientation="vertical" 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/btn_mute"
+            android:layout_above="@+id/btn_capture"
+            android:layout_centerInParent="true">
+		<ImageView 
+	        android:id="@+id/btn_previous"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+			android:clickable="true"
+			android:focusable="true" 
+			android:paddingTop="15dp"
+			android:layout_centerHorizontal = "true"
+			android:layout_alignParentTop="true"
+            android:layout_above="@+id/channel_num"
+	        android:src="@drawable/btn_ic_previous"
+	        />  
+	        
+		<TextView  android:id="@+id/channel_num"
+			android:textSize = "25sp"
+			android:gravity = "center"	   
+			android:ellipsize = "end" 
+			android:maxLines = "1"               
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+			android:clickable="true"
+			android:focusable="true"
+	        android:textColor="#ffffffff"
+	        android:shadowColor="#BB000000"
+	        android:shadowRadius="2.75"	
+			android:layout_centerInParent="true" 	        
+			android:background="@drawable/btn_channel_num_bg">	    
+			<requestFocus />
+		</TextView>  
+	        
+		<ImageView 
+	        android:id="@+id/btn_next"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+			android:clickable="true"
+			android:focusable="true"	
+			android:paddingBottom="15dp"
+			android:layout_centerHorizontal = "true"
+			android:layout_alignParentBottom="true"         
+            android:layout_below="@+id/channel_num"
+	        android:src="@drawable/btn_ic_next"
+	        />              
+    </RelativeLayout>	  
+        <ImageView 
+	        android:id="@+id/btn_capture"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+			android:clickable="true"
+			android:focusable="true"  
+			android:paddingBottom="5dp"			
+	        android:src="@drawable/btn_ic_capture"
+			android:visibility="visible"    	        
+			android:layout_centerInParent="true"  
+	        android:layout_alignParentBottom="true"/>   	        
+	<ViewStub android:id="@+id/stub_stop_recording_icon"
+			  android:layout="@layout/stop_recording_icon"
+	          android:layout_height="wrap_content"
+	          android:layout_width="wrap_content"
+			  android:layout_centerInParent="true"
+			  android:layout_alignParentBottom="true"/> 	
+	</RelativeLayout>
+	
+	<ViewStub android:id="@+id/stub_video_setting"
+			  android:layout="@layout/video_setting"
+			  android:layout_width="200dp"
+			  android:layout_height="fill_parent"			  
+			  android:layout_alignParentRight="true"/> 
+			  
+	<ViewStub android:id="@+id/stub_single_list"
+			  android:layout="@layout/single_list"
+			  android:layout_width="200dp"
+			  android:layout_height="fill_parent"			  
+			  android:layout_alignParentRight="true"/> 	     			  	
+	
+	<ViewStub android:id="@+id/stub_rename_editor"
+			  android:layout="@layout/rename_editor"
+			  android:layout_height="wrap_content"
+			  android:layout_width="match_parent"
+			  android:layout_alignParentBottom="true"/> 	  			  	
+	
+</RelativeLayout>

@@ -1,0 +1,40 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type node, node_type;
+type netif, netif_type;
+type port, port_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# Network types
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# Network types
+
+# Use network sockets.
+allow netdomain self:{ tcp_socket udp_socket } *;
+# Connect to ports.
+allow netdomain port_type:tcp_socket name_connect;
+# Bind to ports.
+allow netdomain node_type:{ tcp_socket udp_socket } node_bind;
+allow netdomain port_type:udp_socket name_bind;
+allow netdomain port_type:tcp_socket name_bind;
+# Get route information.
+allow netdomain self:netlink_route_socket { create bind read nlmsg_read };
+
+# Talks to netd via dnsproxyd socket.
+unix_socket_connect(netdomain, dnsproxyd, netd)
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+

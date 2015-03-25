@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bingdbserver Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type gdbserver_exec , exec_type, file_type;
+type gdbserver ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive gdbserver;
+init_daemon_domain(gdbserver)
+
+
+# 20131122 Add Set Property Rule
+allow gdbserver  property_type:property_service set;

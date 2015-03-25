@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="?android:attr/borderlessButtonStyle"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:id="@+id/ll_call"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_lineOne"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#ff545454"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_lineTwo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="4dip"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#ff545454"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:background="#d0d0d0" />
+        <ImageView
+            android:id="@+id/iv_video_call"
+            android:layout_height="match_parent"
+            android:layout_width="40dp"
+            android:gravity="right"
+            android:layout_gravity="right|center_vertical"
+            style="?android:attr/borderlessButtonStyle"
+            android:src="@drawable/ic_video_call" />
+        
+        <View
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:background="#d0d0d0" />
+        <ImageView
+            android:id="@+id/iv_chat"
+            android:layout_height="match_parent"
+            android:layout_width="40dp"
+            android:gravity="right"
+            android:layout_gravity="right|center_vertical"
+            style="?android:attr/borderlessButtonStyle"
+            android:src="@drawable/ic_chat" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+// Description: ch7033-35 error code definition
+
+
+#ifndef _CH703x_ERR_DEF_H_
+#define _CH703x_ERR_DEF_H_
+
+// Error type define: easy for return error message to user:
+#define ERR_NO_ERROR						0
+#define ERR_OK								0
+
+#define ERR_MCU_RESPONCE					-50
+#define ERR_GETRQUEST_TIMEOUT				-51
+#define ERR_UPDATECH9904_TIMEOUT			-52
+#define ERR_CH9904CHIP						-53
+
+#define ERR_PARAMETER						-60
+#define ERR_OPEN_I2C_DEVICE					-61
+
+#define ERR_DEVICE_PREPARE					-100
+#define ERR_RESOLUTION_H_ODD				-101
+#define ERR_RESOLUTION_V_ODD				-102
+#define ERR_BANDWIDTH_OVERFLOW				-103
+#define ERR_RESOLUTION_OVERFLOW				-104
+#define ERR_DEVICE_NO_EXIST					-105
+#define ERR_NO_SUPPORT_TRUE24				-106
+#define ERR_NO_SUPPORT_TRUECOM				-107
+#define ERR_ROTATION_WITH_VAI				-108
+#define ERR_FLIP_WITH_VAI					-109
+#define ERR_OUT_CHANNEL_NO_SUPPORT			-110
+#define ERR_HDTV_FMT_INDEX_WRONG			-111
+#define ERR_JUDGE_INTERLACE					-112
+#define	ERR_NO_OUT_CHANNEL_SELECTED			-113
+#define ERR_ROTATION_WITH_FRAMERATE			-114
+#define ERR_FLIP_WITH_FRAMERATE				-115
+#define ERR_DOWNSCALE_WITH_ROTATE			-116
+#define ERR_INTERLACE_WITH_ROTATE			-117
+
+#define ERR_DEVICE_CONFIG					-200
+#define ERR_ASPECT_RATIO_NOMATCH			-201
+#define ERR_PLL1N1_WRONG					-202
+#define ERR_PLL1N2_WRONG					-203
+#define ERR_PLL1N3_WRONG					-204
+#define ERR_PLL2N5_WRONG					-205
+#define ERR_PLL2N9_WRONG					-206
+#define ERR_PLL2N10_WRONG					-207
+#define ERR_PLL2N11_WRONG					-208
+#define ERR_PLL3N6_WRONG					-209
+#define ERR_DMXTAL_WRONG					-210
+#define ERR_HDMI_CLOCK_NO_SUPPORT			-211
+#define ERR_UCLKOD_SEL_NO_SUPPORT			-212
+#define ERR_LVDS_CLOCK_NO_SUPPORT			-213
+#define ERR_UCLKSEC_JUDGE					-214
+
+#define ERR_DEVICE_RUNNING					-300
+#define ERR_CAL_INC_DIV_ZERO				-301
+#define	ERR_CAL_INC_NO_MATH					-302
+
+#define ERR_INPUT_INFO						-400
+#define ERR_INPUT_HTI						-401
+#define ERR_INPUT_HAI						-402
+#define ERR_INPUT_HOI						-403
+#define ERR_INPUT_HWI						-404
+#define ERR_INPUT_VTI						-405
+#define ERR_INPUT_VAI						-406
+#define ERR_INPUT_VOI						-407
+#define ERR_INPUT_VWI						-408
+#define ERR_INPUT_HT_HA_NOEQUAL				-409
+#define ERR_INPUT_VT_VA_NOEQUAL				-410
+#define ERR_INPUT_H_TIMING_NOMATCH			-411
+#define ERR_INPUT_V_TIMING_NOMATCH			-412
+
+#define ERR_OUTPUT_INFO						-500
+#define ERR_OUTPUT_HTO						-501
+#define ERR_OUTPUT_HAO						-502
+#define ERR_OUTPUT_HOO						-503
+#define ERR_OUTPUT_HWO						-504
+#define ERR_OUTPUT_VTO						-505
+#define ERR_OUTPUT_VAO						-506
+#define ERR_OUTPUT_VOO						-507
+#define ERR_OUTPUT_VWO						-508
+#define ERR_OUTPUT_CLOCK					-509
+#define ERR_OUTPUT_H_TIMING_NOMATCH			-510
+#define ERR_OUTPUT_V_TIMING_NOMATCH			-511
+#define	ERR_OUTPUT_BPMODE_NO_TESTMODE		-512
+#define ERR_H_DOWN_SCALE_TOO_MUCH			-513
+#define ERR_V_DOWN_SCALE_TOO_MUCH			-514
+#define ERR_HDTV_WITH_DS					-515
+#define ERR_INT_PRO_CONFLICK				-516
+#define ERR_BYPASS_WITH_DOWNSCALE			-517
+#define ERR_BYPASS_WITH_ROTATE				-518
+#define ERR_BYPASS_WITH_FLIP				-519
+#define ERR_LVDS_PWMFREQ_NO_SUPPORT			-520
+#define ERR_LVDS_PWMDUTY_OVERFLOW			-521
+#define ERR_LVDS_SPWG_PARAM_T1				-522
+#define ERR_LVDS_SPWG_PARAM_T2				-523
+#define ERR_LVDS_SPWG_PARAM_T3				-524
+#define ERR_LVDS_SPWG_PARAM_T4				-525
+#define ERR_LVDS_SPWG_PARAM_T5				-526
+
+#define ERR_PREFER_INFO						-600
+
+#define ERR_TOOLONG_FIRMWARE				-700
+#define ERR_FAILLOAD_FIRMWARE				-701
+#define ERR_FAILUPDATE_FIRMWARE				-702
+#define ERR_I2C_BLOCK_WRITE					-703
+#define ERR_FIRMWARE_NOT_RUNNING			-704
+
+#define ERR_INVALID_DTD						-800
+#define ERR_INVALID_EDID					-801
+#define ERR_UNKOWN_MODE						-802
+#define ERR_UNKOWN_EDID_MODE				-803
+
+#endif

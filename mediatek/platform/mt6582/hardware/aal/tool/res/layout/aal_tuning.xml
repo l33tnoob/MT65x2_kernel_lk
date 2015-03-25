@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/save"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textBrightness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/brightness"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textBrightnessLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textBrightness"
+        android:layout_alignRight="@+id/buttonSave"
+        android:layout_alignTop="@+id/textBrightness"
+        android:text="@string/power"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <SeekBar
+        android:id="@+id/seekBarBrightness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textBrightnessLevel"
+        android:max="@integer/MAX_BRIGHTNESS_LEVEL" />
+
+   <TextView
+        android:id="@+id/textDarkeningSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textBrightness"
+        android:layout_below="@+id/seekBarBrightness"
+        android:layout_marginTop="16dp"
+        android:text="@string/darkening_speed"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textDarkeningSpeedLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDarkeningSpeed"
+        android:layout_alignRight="@+id/textBrightnessLevel"
+        android:layout_alignTop="@+id/textDarkeningSpeed"
+        android:text="@string/power"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <SeekBar
+        android:id="@+id/seekBarDarkeningSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textDarkeningSpeedLevel"
+        android:max="@integer/MAX_DARKENING_SPEED_LEVEL" />
+        
+   <TextView
+        android:id="@+id/textBrighteningSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textDarkeningSpeed"
+        android:layout_below="@+id/seekBarDarkeningSpeed"
+        android:layout_marginTop="16dp"
+        android:text="@string/brightening_speed"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textBrighteningSpeedLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textBrighteningSpeed"
+        android:layout_alignRight="@+id/textBrightnessLevel"
+        android:layout_alignTop="@+id/textBrighteningSpeed"
+        android:text="@string/power"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <SeekBar
+        android:id="@+id/seekBarBrighteningSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textBrighteningSpeedLevel"
+        android:max="@integer/MAX_BRIGHTENING_SPEED_LEVEL" />
+        
+    <TextView
+        android:id="@+id/textSmartBacklight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textBrighteningSpeed"
+        android:layout_below="@+id/seekBarBrighteningSpeed"
+        android:layout_marginTop="16dp"
+        android:text="@string/smartbacklight"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <TextView
+        android:id="@+id/textSmartBacklightLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textSmartBacklight"
+        android:layout_alignRight="@+id/textBrightnessLevel"
+        android:layout_alignTop="@+id/textSmartBacklight"
+        android:text="@string/power"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <SeekBar
+        android:id="@+id/seekBarSmartBacklight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textSmartBacklightLevel"
+        android:max="@integer/MAX_SMARTBACKLIGHT_LEVEL" />
+
+    <TextView
+        android:id="@+id/textToleranceRatio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textSmartBacklight"
+        android:layout_below="@+id/seekBarSmartBacklight"
+        android:layout_marginTop="16dp"
+        android:text="@string/tolerance_ratio"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textToleranceRatioLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textToleranceRatio"
+        android:layout_alignRight="@+id/textBrightnessLevel"
+        android:layout_alignTop="@+id/textToleranceRatio"
+        android:text="@string/power"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <SeekBar
+        android:id="@+id/seekBarToleranceRatio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textToleranceRatio"
+        android:max="@integer/MAX_TOLERANCE_RATIO_LEVEL" />
+
+
+    <TextView
+        android:id="@+id/textReadability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textToleranceRatio"
+        android:layout_below="@+id/seekBarToleranceRatio"
+        android:layout_marginTop="16dp"
+        android:text="@string/readability"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textReadabilityLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textReadability"
+        android:layout_alignRight="@+id/textBrightnessLevel"
+        android:layout_alignTop="@+id/textReadability"
+        android:text="@string/power"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <SeekBar
+        android:id="@+id/seekBarReadability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textReadability"
+        android:max="@integer/MAX_READABILITY_LEVEL" />
+
+
+</RelativeLayout>

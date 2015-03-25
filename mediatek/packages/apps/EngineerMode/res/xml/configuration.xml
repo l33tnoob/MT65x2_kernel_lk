@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:entries="@array/working_mode_audio_channels"
+        android:entryValues="@array/working_mode_audio_channels_values"
+        android:key="audio_channel_adaptation"
+        android:persistent="false"
+        android:title="@string/audio_channel_adaptation" />
+    <ListPreference
+        android:entries="@array/working_mode_video_channels"
+        android:entryValues="@array/working_mode_video_channels_values"
+        android:key="video_channel_adaptation"
+        android:persistent="false"
+        android:title="@string/video_channel_adaptation" />
+    <ListPreference
+        android:entries="@array/working_mode_video_channels_reverse"
+        android:entryValues="@array/working_mode_video_channels_reverse_values"
+        android:key="video_channel_reverse_data_type"
+        android:persistent="false"
+        android:title="@string/video_channel_reverse_data_type" />
+    <ListPreference
+        android:entries="@array/working_mode_multiplex_level"
+        android:entryValues="@array/working_mode_multiplex_level_values"
+        android:key="multiplex_level"
+        android:persistent="false"
+        android:title="@string/multiplex_level" />
+    <ListPreference
+        android:entries="@array/working_mode_video_codec_preference"
+        android:entryValues="@array/working_mode_video_codec_preference_values"
+        android:key="video_codec_preference"
+        android:persistent="false"
+        android:title="@string/video_codec_preference" />
+    <ListPreference
+        android:entries="@array/working_mode_use_wnsrp"
+        android:entryValues="@array/working_mode_use_wnsrp_values"
+        android:key="use_wnsrp"
+        android:persistent="false"
+        android:title="@string/use_wnsrp" />
+    <ListPreference
+        android:entries="@array/working_mode_terminal_type"
+        android:entryValues="@array/working_mode_terminal_type_values"
+        android:key="terminal_type"
+        android:persistent="false"
+        android:title="@string/terminal_type" />
+
+</PreferenceScreen>

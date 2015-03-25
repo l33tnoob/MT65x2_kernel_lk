@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bintc Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type tc_exec , exec_type, file_type;
+type tc ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive tc;
+init_daemon_domain(tc)
+
+
+# 20131122 Add Set Property Rule
+allow tc  property_type:property_service set;

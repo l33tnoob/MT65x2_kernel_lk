@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:padding="4dip"
+              android:gravity="left"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+	
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:padding="4dip"
+              android:gravity="left"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+
+	<TableLayout android:id="@+id/TableLayout01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:gravity="left">
+		
+		<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<CheckBox android:text="@string/NFC_SoftwareStack_Scan_TagDect" android:id="@+id/NFC_SoftwareStack_Scan_TagDect"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></CheckBox>			
+		</TableRow>
+		
+		<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<CheckBox android:text="@string/NFC_SoftwareStack_Scan_NDEF" android:id="@+id/NFC_SoftwareStack_Scan_NDEF"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></CheckBox>			
+		</TableRow>
+		
+		<!-- TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<CheckBox android:text="@string/NFC_SoftwareStack_Scan_P2PTarget" android:id="@+id/NFC_SoftwareStack_Scan_P2PTarget"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></CheckBox>			
+		</TableRow>
+		
+		<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<CheckBox android:text="@string/NFC_SoftwareStack_Scan_P2PInit" android:id="@+id/NFC_SoftwareStack_Scan_P2PInit"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></CheckBox>			
+		</TableRow -->		
+		
+	</TableLayout>
+	
+	<TableLayout android:id="@+id/TableLayout01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:gravity="left">
+		
+		<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:gravity="left">
+			<TextView android:text="@string/NFC_SoftwareStack_Scan_CardType"				
+				android:layout_marginLeft = "3pt"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+			<TextView android:id="@+id/NFC_SoftwareStack_Scan_CardType"
+				android:layout_marginLeft = "3pt" android:textColor="#FF00FF00"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>		
+		</TableRow>
+		
+		<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:gravity="left">
+			<TextView android:text="@string/NFC_SoftwareStack_Scan_Uid"				
+				android:layout_marginLeft = "3pt"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			<TextView android:id="@+id/NFC_SoftwareStack_Scan_Uid"
+				android:layout_marginLeft = "3pt" android:textColor="#FF00FF00"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>		
+		</TableRow>
+		
+		<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:gravity="left">
+			<TextView android:text="@string/NFC_SoftwareStack_Scan_Sak"				
+				android:layout_marginLeft = "3pt"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			<TextView android:id="@+id/NFC_SoftwareStack_Scan_Sak"
+				android:layout_marginLeft = "3pt" android:textColor="#FF00FF00"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>		
+		</TableRow>
+		
+		<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:gravity="left">
+			<TextView android:text="@string/NFC_SoftwareStack_Scan_AtqA"				
+				android:layout_marginLeft = "3pt"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			<TextView android:id="@+id/NFC_SoftwareStack_Scan_AtqA"
+				android:layout_marginLeft = "3pt" android:textColor="#FF00FF00"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>		
+		</TableRow>
+		
+		<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:gravity="left">
+			<TextView android:text="@string/NFC_SoftwareStack_Scan_AppData"				
+				android:layout_marginLeft = "3pt"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			<TextView android:id="@+id/NFC_SoftwareStack_Scan_AppData"
+				android:layout_marginLeft = "3pt" android:textColor="#FF00FF00"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>		
+		</TableRow>
+		
+		<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:gravity="left">
+			<TextView android:text="@string/NFC_SoftwareStack_Scan_MaxDataRate"				
+				android:layout_marginLeft = "3pt"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+			<TextView android:id="@+id/NFC_SoftwareStack_Scan_MaxDataRate"
+				android:layout_marginLeft = "3pt" android:textColor="#FF00FF00"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>		
+		</TableRow>
+</TableLayout>
+
+<View android:layout_height="3dip" android:layout_width="fill_parent"
+			android:background="#FF009000">
+</View>	
+	
+	<Button android:id="@+id/NFC_SoftwareStack_Scan_BtnRead" android:text="@string/NFC_SoftwareStack_Scan_BtnRead"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginTop = "1pt"></Button>
+				
+	
+
+	<Button android:id="@+id/NFC_SoftwareStack_Scan_BtnWrite" android:text="@string/NFC_SoftwareStack_Scan_BtnWrite"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginTop = "1pt"></Button>
+				
+
+
+	<Button android:id="@+id/NFC_SoftwareStack_Scan_BtnDisconnected" android:text="@string/NFC_SoftwareStack_Scan_BtnDisconnected"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginTop = "1pt"></Button>
+				
+
+
+	<Button android:id="@+id/NFC_SoftwareStack_Scan_BtnRawCommand" android:text="@string/NFC_SoftwareStack_Scan_BtnRawCommand"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginTop = "1pt"></Button>
+				
+
+
+	<Button android:id="@+id/NFC_SoftwareStack_Scan_BtnFormat" android:text="@string/NFC_SoftwareStack_Scan_BtnFormat"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginTop = "1pt"></Button>
+				
+<View android:layout_height="3dip" android:layout_width="fill_parent"
+			android:layout_marginTop = "10pt"
+			android:background="#FF009000">
+</View>	
+
+	
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbindirectiotest Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type directiotest_exec , exec_type, file_type;
+type directiotest ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive directiotest;
+init_daemon_domain(directiotest)
+
+
+# 20131122 Add Set Property Rule
+allow directiotest  property_type:property_service set;

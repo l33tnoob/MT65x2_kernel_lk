@@ -1,0 +1,63 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type clatd, domain;
+type clatd_exec, exec_type, file_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# 464xlat daemon
+permissive clatd;
+
+init_daemon_domain(clatd)
+net_domain(clatd)
+# unconfined_domain(clatd)
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# 464xlat daemon
+permissive clatd;
+
+# init_daemon_domain(clatd)
+# net_domain(clatd)
+# unconfined_domain(clatd)
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive clatd;
+# 20131028 Sanity_05
+allow clatd netd:fd use;
+allow clatd netd:fifo_file { read write };
+allow clatd netd:netlink_kobject_uevent_socket { read write };
+allow clatd netd:netlink_nflog_socket { read write };
+allow clatd netd:netlink_route_socket { read write };
+allow clatd netd:udp_socket { read write };
+allow clatd netd:unix_stream_socket { read write };
+
+
+# 20131028 Sanity_07
+allow clatd device:chr_file { read ioctl open };
+allow clatd linker_exec:file read;
+allow clatd proc:file write;
+allow clatd self:capability { net_admin setgid dac_override };
+allow clatd tun_device:chr_file { read write open };
+
+
+# 20131028 Sanity_08
+allow clatd cgroup:dir { create add_name };
+allow clatd kernel:system module_request;
+allow clatd self:capability setuid;
+
+
+
+# 20131122 Add Set Property Rule
+allow clatd property_type:property_service set;

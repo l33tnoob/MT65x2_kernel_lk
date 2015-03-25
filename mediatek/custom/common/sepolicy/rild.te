@@ -1,0 +1,98 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type rild, domain;
+type rild_exec, exec_type, file_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# rild - radio interface layer daemon
+permissive rild;
+
+init_daemon_domain(rild)
+net_domain(rild)
+# unconfined_domain(rild)
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# rild - radio interface layer daemon
+permissive rild;
+
+# init_daemon_domain(rild)
+# net_domain(rild)
+# unconfined_domain(rild)
+
+# Access to wake locks
+allow rild sysfs_wake_lock:file rw_file_perms;
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive rild;
+# 20131024 Sanity_01
+allow rild device:chr_file { read write };
+allow rild kernel:system module_request;
+allow rild property_socket:sock_file write;
+allow rild self:capability net_admin;
+
+
+# 20131024 CTS_01
+allow rild sysfs:file write;
+
+
+# 20131024 Sanity_03
+allow rild ccci_device:chr_file { read write ioctl open };
+allow rild device:chr_file { ioctl open };
+allow rild linker_exec:file { read execute open };
+allow rild proc:file write;
+allow rild shell_exec:file { read execute open execute_no_trans };
+
+
+# 20131028 CTS_03
+allow rild devmap_device:chr_file { read open };
+allow rild self:capability dac_override;
+
+
+# 20131028 CTS_04
+allow rild devmap_device:chr_file ioctl;
+allow rild devpts:chr_file { read write ioctl open };
+allow rild self:capability setuid;
+
+
+# 20131028 CTS_05
+allow rild rild_prop:property_service set;
+
+
+# 20131028 CTS_12
+allow rild default_prop:property_service set;
+
+
+# 20131028 CTS_15
+allow rild radio_prop:property_service set;
+
+
+# 20131119 FeatureSQC
+allow rild radio_prop:property_service set;
+
+
+
+# 20131122 Add Set Property Rule
+allow rild property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow rild aee_aed:process sigchld;
+allow rild aee_aed:unix_stream_socket connectto;
+allow rild block_device:blk_file read;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow rild aee_aed:unix_stream_socket connectto;
+

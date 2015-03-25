@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mediatek.stereo3dwallpaper">
+    <uses-sdk android:minSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_COMPONENT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.email.permission.READ_ATTACHMENT" />
+
+    <application android:icon="@drawable/ic_launcher_wallpaper" android:label="@string/stereo3d_wallpapers" >
+        <activity
+            android:name=".Stereo3DWallpaperChooser"
+            android:icon="@drawable/ic_launcher_wallpaper"
+            android:finishOnCloseSystemDialogs="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SET_WALLPAPER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service android:label="@string/stereo3d_wallpapers"
+                 android:name=".Stereo3DWallpaperService"
+                 android:permission="android.permission.BIND_WALLPAPER"
+                 android:exported="false">
+            <intent-filter>
+                 <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper"
+                       android:resource="@xml/stereo3dwallpaper" />
+        </service>
+        <service android:label="@string/stereo3d_wallpapers"
+                 android:name=".Stereo3DPairWallpaperService"
+                 android:permission="android.permission.BIND_WALLPAPER"
+                 android:exported="false">
+            <intent-filter>
+                 <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper"
+                       android:resource="@xml/stereo3dwallpaper" />
+        </service>
+        <service android:name=".Stereo3DWallpaperManagerService"
+                 android:permission="android.permission.SET_WALLPAPER">
+            <intent-filter>
+                 <action android:name="com.mediatek.stereo3dwallpaper.SET_WALLPAPER"/>	
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

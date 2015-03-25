@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"Ažuriranja sustava"</string>
+
+
+    <string name="none_package">Nema valjanih paketa za ažuriranje.</string>
+    <string name="new_version_query">Traži se ažuriranje\u2026</string>
+    <string name="menu_stats_refresh">"Osvježi"</string>
+    <string name="network_error">Nije uspjela mrežna veza</string>
+    <string name="server_version_error">Greška poslužitelja: Ažurirajte izvorni kod poslužitelja.</string>    
+    <string name="no_new_version">Vaš sustav je trenutno ažuriran.</string>
+    <string name="not_support_version">Vaše odredište ne podržava značajku Preko etera.</string>
+    <string name="query_sd_insufficient_space">Nedovoljno mjesta za <xliff:g id="path">%s</xliff:g></string>
+    <string name="ota_category_title">OTA</string>
+    <string name="sd_category_title">AŽURIRANJE SD KARTICE</string>
+    <string name="ota_preference_summary">Na poslužitelju je pronađeno ažuriranje za sustav</string>
+
+
+    <string name="notes_summary">Ažuriranje firmvera može poboljšati stabilnost uređaja i zakrpati greške.</string>
+    <string name="ask_for_install_ota">Želite li sada instalirati ažuriranja za sustav?</string>
+    <string name="warning_install_ota" product="tablet">Tijekom instalacije nećete moći koristiti tablet i uspostavljati hitne pozive. Nemojte vaditi bateriju i SD karticu ili isključiti tablet.</string>
+    <string name="warning_install_ota" product="default">Tijekom instalacije nećete moći koristiti telefon i uspostavljati hitne pozive. Nemojte vaditi bateriju i SD karticu ili isključiti telefon.</string>
+    <string name="ask_for_install_sd">Na vašoj SD kartici nađen je paket s najnovijim ažuriranjima za sustav, želite li ga instalirati?</string>
+    <string name="warning_install_sd" product="tablet">Tijekom instalacije nećete moći koristiti tablet i uspostavljati hitne pozive. Nemojte vaditi bateriju i SD karticu ili isključiti tablet. \nPrije početka instalacije, pobrinite se da je paket preuzmete sa službene web stranice i da ne bude oštećen.</string>
+    <string name="warning_install_sd" product="default">Tijekom instalacije nećete moći koristiti telefon i uspostavljati hitne pozive. Nemojte vaditi bateriju i SD karticu ili isključiti telefon. \nPrije početka instalacije, pobrinite se da je paket preuzmete sa službene web stranice i da ne bude oštećen.</string>
+    <string name="ask_for_download_ota">Želite li preuzeti ažuriranja za optimizaciju sustava?</string>
+    <string name="warning_download_ota">Preporučamo da prilikom primjene ovog ažuriranja koristite pristupnu točku za besplatni Wi-Fi ili neograničeni podatkovni plan. Ako nemate standardnu podatkovnu vezu, može doći do naplate. \nSigurnosno kopirajte podatke prije nadogradnje.</string>
+        
+    <string name="notification_content_title">Ažuriranje sustava</string>
+    <string name="downloading_title">"Preuzimanje\u2026"</string>   
+    <string name="wifi_only_check">"Samo Wi-Fi"</string>     
+    
+    
+    
+    
+    
+    <string name="btn_install">"Instaliraj"</string>
+    <string name="btn_cancel">Odbaci</string>
+    <string name="btn_download">Preuzmi i instaliraj</string>
+    <string name="btn_resume">"Preuzimanja"</string>
+    
+    <string name="warn_data_cost_title">Preuzmi ažuriranje</string>
+    <string name="warn_data_cost_content">U slučaju preuzimanja putem mobilnih mreža, može doći do dodatne naplate. Želite li nastaviti?</string>
+    <string name="warn_data_cost_yes">"Da"</string>
+    <string name="warn_data_cost_no">"Ne"</string>
+
+    <string name="notification_download_complete_title">Ažuriranje za sustav je spremno</string>
+    <string name="notification_download_complete_context">Kucnite za instalaciju ažuriranja za sustav</string>
+        
+    <string name="sdcard_crash_or_unmount">Greška SD kartice. Provjerite SD karticu i pokušajte ponovno.</string>
+    <string name="unmount_sdcard">SD kartica je pogrešno uključena, provjerite je.</string>
+    <string name="insufficient_space_content">Za instalaciju je potrebno barem <xliff:g id="deltasize" example="3.5M">%s</xliff:g> bajtova prostora za pohranu. Oslobodite nešto mjesta za nastavak.</string>
+
+    
+    
+    
+    
+    <string name="install_sd_title">Instaliraj ažuriranje</string>
+    <string name="install_sd_message">Pobrinite se da je paket preuzmete sa službene web stranice i da ne bude oštećen. U protivnom on može uzrokovati probleme u sustavu.</string>
+    <string name="install_reminder_now">Instaliraj sada</string>
+    <string name="install_reminder_not_now">"Ne sada"</string>
+    
+    
+
+    <string name="notification_content_text_completed">Uspješno preuzimanje</string> 
+
+    <string name="unknown_per">"nepoznato"</string>    
+    <string name="unknown_error">Nepoznata greška</string>
+    <string name="unknown_error_content">Pojavila se nepoznata greška. Napustite ovu stranicu i pokušajte ponovno.</string>
+    <string name="insufficient_space_title">Nema dovoljno mjesta</string>
+    <string name="error_sdcard">Podaci o SD kartici</string>
+    <string name="insufficient_space">Nema dovoljno mjesta na SD kartici.</string>
+    <string name="package_deleted_error">Ažuriranja za sustav su prekinuta jer je nadogradnja neispravna.</string>
+    
+    <string name="cancel_download_title">Otkaži preuzimanje</string>
+    <string name="cancel_download_content">Ova radnja će odbaciti preuzetu datoteku.</string>
+
+    
+    <string name="change_network_title">"Preuzimanja"</string>
+    <string name="change_network_content">Trenutni APN ne podržava preuzimanje, želite li prijeći na drugi APN ili isključiti Wi-Fi?</string>
+    <string name="change_network_wifi_btn">Koristi Wi-Fi</string>
+    <string name="change_network_apn_btn">Promijeni APN</string>
+    <string name="change_network_discard_btn">Odbaci</string>    
+    <string name="package_error_title">Instalacija nije uspjela</string>
+    <string name="package_error_message_invalid">Greška paketa. Provjerite ažuriranje i ponovno ga preuzmite.</string>
+    <string name="package_error_message_insuff" product="tablet">Na uređaju nema dovoljno mjesta.</string>
+    <string name="package_error_message_insuff" product="default">Na telefonu nema dovoljno mjesta.</string>
+    <string name="package_error_message_crash">Nije moguć pristup particiji s podacima.</string>
+    <string name="package_error_message_full">Potreban je puni paket za promjenu stanja particije.</string>    
+    <string name="updateSuccess" product="tablet">Čestitamo! Vaš uređaj uspješno je ažuriran na verziju <xliff:g id="version" example="gb.p37">%s</xliff:g>.</string> 
+    <string name="updateSuccess" product="default">Čestitamo! Vaš telefon uspješno je ažuriran na verziju <xliff:g id="version" example="gb.p37">%s</xliff:g>.</string> 
+    <string name="updateFailed">Nije uspjelo ažuriranje na verziju <xliff:g id="version" example="gb.p37">%s</xliff:g>.</string>
+    <string name="package_unzip">Paket se raspakirava\u2026</string>
+    <string name="package_unzip_error">Greška u raspakiravanju</string>
+    
+    <string name="installing_message">Vaš telefon će se isključiti\u2026</string>
+    <string name="install_sd_info">Za nastavak nadogradnje potrebno je kopirati paket na prostor za pohranu.\nNema dovoljno mjesta na vašem telefonu.</string>
+    <string name="sdcard_crash_or_unmount_when_install">Ažuriranja sustava su zaustavljena jer je SD kartica isključena.</string>
+    <string name="sdcard_inserted">Želite li skenirati SD karticu u potrazi za dodatnim paketima za ažuriranje?</string>
+    
+    <string name="new_version_detected">Dostupno je ažuriranje za sustav</string>
+    <string name="sdcard_unmount">SD kartica je isključena</string>
+    <string name="cta_warning">Sustav podržava nadogradnju firmvera samo sa službene mrežne stranice ili poslužitelja. Ako korisnik koristi ROM sliku drugog proizvođača i/ili bilo koju drugu osnovnu metodo za nadogradnju firmvera, telefon će biti nestabilan. Napominjemo da za takvo ponašanje svu odgovornost snosi korisnik.</string>
+</resources>

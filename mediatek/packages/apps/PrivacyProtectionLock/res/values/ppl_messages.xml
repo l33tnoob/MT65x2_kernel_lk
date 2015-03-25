@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- sync this with com.mediatek.ppl.MessageManager.Type -->
+    <string-array name="ppl_sms_template_list">
+        <item name="sim_changed">我的手机可能被盗，请保留发送此短信的号码。</item>
+        <item name="lock_request">#suoding#</item>
+        <item name="lock_response">已接受到您的锁屏指令，锁屏成功。</item>
+        <item name="unlock_request">#jiesuo#</item>
+        <item name="unlock_response">已接受到您的解锁指令，解锁成功。</item>
+        <item name="reset_password_request">#mima#</item>
+        <item name="reset_password_response">您的手机防盗密码为%s。</item>
+        <item name="wipe_request">#xiaohui#</item>
+        <item name="wipe_started">远程删除数据已开始。</item>
+        <item name="wipe_completed">远程数据删除已完成，您的隐私得到保护，请放心。</item>
+        <item name="instruction_description">我开启了手机防盗功能，已将你的手机号码设置为紧急联系人号码，这样手机丢失也能够远程控制啦。\n以下是相关指令：\n远程锁定： #suoding#\n远程销毁数据： #xiaohui#\n找回密码： #mima#</item>
+        </string-array>
+    <!-- sync this with com.mediatek.ppl.MessageManager.Type -->
+    <string-array name="ppl_sms_pattern_list">
+        <item name="sim_changed">我的手机可能被盗，请保留发送此短信的号码。</item>
+        <item name="lock_request">#suoding#</item>
+        <item name="lock_response">已接受到您的锁屏指令，锁屏成功。</item>
+        <item name="unlock_request">#jiesuo#</item>
+        <item name="unlock_response">已接受到您的解锁指令，解锁成功。</item>
+        <item name="reset_password_request">#mima#</item>
+        <item name="reset_password_response">您的手机防盗密码为%s。</item>
+        <item name="wipe_request">#xiaohui#</item>
+        <item name="wipe_started">远程删除数据已开始。</item>
+        <item name="wipe_completed">远程数据删除已完成，您的隐私得到保护，请放心。</item>
+        <item name="instruction_description">我开启了手机防盗功能，已将你的手机号码设置为紧急联系人号码，这样手机丢失也能够远程控制啦。</item>
+    </string-array>
+
+</resources>

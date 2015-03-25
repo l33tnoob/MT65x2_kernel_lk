@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mediatek.videofavorites.VideoFavoritesRootView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/widget_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="40px"
+        android:layout_marginEnd="40px">
+    <GridView
+            android:id="@+id/collection"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:stretchMode="spacingWidthUniform"
+            android:numColumns="2"
+            android:verticalSpacing="0px"
+            android:fadingEdge="none"
+            android:columnWidth="212px"/>
+    <RelativeLayout android:id="@+id/bottom_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/collection"
+            android:layout_alignEnd="@id/collection"
+            android:layout_alignStart="@id/collection"
+            android:background="@drawable/background">
+        <!-- use padding not margin, to make button larger -->
+        <ImageView android:id="@+id/btn_edit"
+                android:src="@drawable/btn_edit"
+                android:contentDescription="@string/img_edit_desc"
+                android:clickable="true"
+                android:paddingEnd="24px"
+                android:paddingStart="72px"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" />
+        <ImageView android:id="@+id/btn_record"
+                android:src="@drawable/btn_record"
+                android:contentDescription="@string/img_rec_desc"
+                android:clickable="true"
+                android:paddingStart="24px"
+                android:paddingEnd="72px"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</com.mediatek.videofavorites.VideoFavoritesRootView>

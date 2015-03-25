@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mediatek.thermalmanager"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="15" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SHUTDOWN" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="com.android.alarm.permission.WRITE_SETTINGS" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".MTKThermalManagerActivity"
+            android:label="@string/app_name" 
+            android:exported="true" >
+        </activity>
+        <activity 
+            android:label="@string/thermal_sensors" 
+            android:name="ThermalSensorActivity">
+            
+        </activity>
+        <activity 
+            android:label="@string/coolers" 
+            android:name="CoolersActivity">
+            
+        </activity>
+        <activity 
+            android:label="@string/tz_device_info" 
+            android:name="TzDeviceActivity">
+            
+        </activity>
+        <receiver android:name="ServiceStarter">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="ShutDownAlertDialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <receiver android:name="ShutDownAlarm"></receiver>
+    </application>
+    
+</manifest>

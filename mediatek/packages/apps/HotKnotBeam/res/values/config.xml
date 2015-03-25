@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds. -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">       
+    
+    <!-- HotKnotBeam Configurion -->
+    <!-- The file location of saved beam file -->
+    <string name="hotknotbeam_saved_location" translatable="false">beam</string>
+    <!-- The listening port of beam server -->
+    <integer name="hotknotbeam_server_port">19191</integer>
+    <!-- The notificaiton update interval. unit is ms -->
+    <integer name="hotknotbeam_polling_interval">1000</integer>            
+
+</resources>    

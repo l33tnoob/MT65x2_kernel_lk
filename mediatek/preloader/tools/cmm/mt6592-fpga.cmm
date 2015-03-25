@@ -1,0 +1,66 @@
+SYSTEM.RESET
+SYSTEM.OPTION ENRESET ON
+SYSTEM.OPTION RESBREAK OFF
+SYSTEM.OPTION WAITRESET ON
+
+SYSTEM.JTAGCLOCK 10.MHz
+
+SYSTEM.CPU CortexA7MPCore
+
+;R-T Memory Access
+SYSTEM.MULTICORE MEMORYACCESSPORT 0
+SYSTEM.MULTICORE DEBUGACCESSPORT 1
+
+;Setting Core debug register access
+SYSTEM.MULTICORE COREBASE APB:0x80070000
+SYStem.Up
+wait 200.us
+
+; Init DDR
+do MT6592_FPGA_DDR.cmm
+
+   
+D.S SD:0x10200000 %LE %LONG 0x00000020  ;L2C share SRAM
+
+; MSDC FPGA DTB: Card power(GPIO3), MSDC Bus 3.3V(GPIO2), MSDC Bus 1.8V(GPIO1) control
+; Set GPIO direction
+;D.S SD:0x10001E88 %LE %LONG 0xFF00
+; Set GPIO output value
+;D.S SD:0x10001E84 %LE %LONG 0x5500
+
+; set_hw_breakpoint_by_def
+; setting attribute of breakpoints
+Break.Select Program OnChip
+Break.Select Hll OnChip
+Break.Select Spot OnChip
+Break.Select Read OnChip
+Break.Select Write OnChip
+
+D.S C15:0x1 0				; Turn off MMU
+
+; disable wdt (debug purpose)
+D.S SD:0x10007000 %LE %LONG 0x22000000
+
+; board init
+print "loading pre-loader image"
+d.load.elf ../../bin/preloader.elf
+
+Y.SPATH.RESET ; reset all source path
+Y.SPATH.SRD ../../../platform/mt6592/preloader/src/init
+Y.SPATH.SRD ../../../platform/mt6592/preloader/src/core
+Y.SPATH.SRD ../../../platform/mt6592/preloader/src/drivers
+Y.SPATH.SRD ../../../platform/mt6592/preloader/src/security
+Y.SPATH.SRD ../../../custom/mt6592_fpga/preloader
+Y.SPATH.SRD ../../../protect-private/security/ASF/preloader
+
+
+Break.Select Program OnChip
+Break.Select Hll OnChip
+Break.Select Spot OnChip
+Break.Select Read OnChip
+Break.Select Write OnChip
+
+R.S T 0
+;winclear
+d.l
+enddo

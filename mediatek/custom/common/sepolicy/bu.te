@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binbu Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type bu_exec , exec_type, file_type;
+type bu ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive bu;
+init_daemon_domain(bu)
+
+
+# 20131122 Add Set Property Rule
+allow bu  property_type:property_service set;

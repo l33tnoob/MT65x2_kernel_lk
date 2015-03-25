@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbinsqlite3 Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type sqlite3_exec , exec_type, file_type;
+type sqlite3 ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive sqlite3;
+init_daemon_domain(sqlite3)
+
+
+# 20131122 Add Set Property Rule
+allow sqlite3  property_type:property_service set;

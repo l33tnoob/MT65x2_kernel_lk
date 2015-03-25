@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binakmd8975 Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type akmd8975_exec , exec_type, file_type;
+type akmd8975 ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive akmd8975;
+init_daemon_domain(akmd8975)
+
+
+# 20131122 Add Set Property Rule
+allow akmd8975  property_type:property_service set;

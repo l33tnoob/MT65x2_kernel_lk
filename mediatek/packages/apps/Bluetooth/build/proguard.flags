@@ -1,0 +1,31 @@
+-keep class com.mediatek.bluetooth.pbap.BluetoothPbapServer {
+  *;
+}
+
+-keep class com.mediatek.bluetooth.ftp.BluetoothFtpService {
+  *;
+}
+
+-keep class com.mediatek.bluetooth.avrcp.BluetoothAvrcpService {
+  *;
+}
+
+-keep class com.mediatek.bluetooth.hid.BluetoothHidService {
+  *;
+}
+
+-keep class com.mediatek.bluetooth.opp.adp.OppServiceNative {
+  *;
+}
+
+-keep class com.mediatek.bluetooth.bpp.BluetoothBppServer {
+  *;
+}
+
+-keep class com.mediatek.bluetooth.bip.BluetoothBipServer {
+  *;
+}
+
+-keep class com.mediatek.bluetooth.dun.BluetoothDunService {
+  *;
+}

@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binbtlogmask Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type btlogmask_exec , exec_type, file_type;
+type btlogmask ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive btlogmask;
+init_daemon_domain(btlogmask)
+
+
+# 20131122 Add Set Property Rule
+allow btlogmask  property_type:property_service set;

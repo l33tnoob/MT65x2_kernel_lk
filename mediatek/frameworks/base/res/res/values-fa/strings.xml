@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="keyguard_pinword_enter_pinword_code">برای باز کردن قفل، PIN را وارد کنيد</string>
+    <string name="badPin2">PIN2 قديمی وارد شده نادرست است.</string>
+    <string name="badPuk2">PUK2 وارد شده نادرست است.</string>
+    <string name="checkPwdLen">بررسی کنيد که رمزعبور 4 تا 8 رقم باشد.</string>
+    <string name="pinNotEnabled">لطفاً قبل از تغيير دادن PIN آن را فعال کنيد.</string>
+    <string name="puk1Blocked">PIN مسدود است.</string>
+    <string name="puk2Blocked">PIN2 مسدود است.</string>
+    <string name="fdnFailMmi">بروز اشکال در بررسی FDN.</string>
+    <string name="callBarringFailMmi">بروز اشکال در محدوديت تماس.</string>
+    <string name="Pin2Mmi">تغيير PIN2</string>
+    <string name="PukMmi">رفع انسداد PIN</string>
+    <string name="Puk2Mmi">رفع انسداد PIN2</string>
+    <string name="serviceProvisioned">سرويس برقرار شد.</string>
+    <string name="serviceUnknown">اتصال مشکل دارد يا کد MMI نامعتبر است.</string>
+    <string name="cfServiceNotForwarded">منتقل نشد</string>
+    <string name="permlab_receiveCbSms">دريافت CB SMS</string>
+    <string name="permdesc_receiveCbSms">به برنامه اجازه می دهد تا پيامهای CB SMS را دريافت و پردازش کند. برنامه های مخرب می توانند از اين امکان برای پايش يا حذف پيامها بدون نشان دادن آنها به شما، استفاده کنند.</string>
+    <string name="keyguard_password_enter_puk_code">کد PUK را وارد کنيد</string>
+    <string name="keyguard_password_wrong_puk_code">کد PUK وارد شده اشتباه است!</string>
+    <string name="keyguard_password_enter_new_pin_code">PIN جديد را وارد کنيد</string>
+    <string name="keyguard_password_Confirm_pin_code">PIN جديد را تاييد کنيد</string>
+    <string name="invalidPuk">8 رقم وارد کنيد.</string>
+    <string name="sim_permanently_locked">اگر کد PUK را بيش از ده مرتبه به اشتباه وارد کنيد، سيم کارت برای هميشه قفل می شود.</string>
+    <string name="pin_length_indicate">(4-8 رقم)</string>
+    <string name="puk_length_indicate">(8 رقم)</string>
+    <string name="one_retry_left">1 تلاش مجدد باقی مانده است</string>
+    <string name="retries_left">باقيمانده: <xliff:g id="number">%d</xliff:g></string>
+    <string name="invalid_imei">IMEI نامعتبر</string>
+    <string name="same_imei">IMEI تکراری</string>
+    <string name="oper_long_46000">China Mobile</string>
+    <string name="oper_long_46001">China Unicom</string>
+    <string name="oper_long_46601">Far EasTone</string>
+    <string name="oper_long_46692">Chunghwa Telecom</string>
+    <string name="oper_long_46697">Taiwan Mobile</string>
+    <string name="oper_long_99998">Android1</string>
+    <string name="oper_long_99999">Android</string>
+    <string name="oper_short_46000">CMCC</string>
+    <string name="oper_short_46001">CU-GSM</string>
+    <string name="oper_short_46601">FET</string>
+    <string name="oper_short_46692">Chunghwa</string>
+    <string name="oper_short_46697">TWN</string>
+    <string name="oper_short_99997">AD1</string>
+    <string name="oper_short_99999">AD</string>
+    <string name="unable_launch_the_ap">اجرای برنامه ممکن نيست.</string>
+    <string name="keyguard_password_enter_sim1_pin_code">کد PIN سيم کارت 1 را وارد کنيد</string>
+    <string name="RestrictedChangedTitle_SIM1">دسترسی محدود سيم کارت 1 تغيير کرد</string>
+    <string name="RestrictedChangedTitle_SIM2">دسترسی محدود سيم کارت 2 تغيير کرد</string>
+    <string name="keyguard_password_enter_sim2_pin_code">کد PIN سيم کارت 2 را وارد کنيد</string>
+    <string name="keyguard_password_wrong_sim1_pin_code">کد PIN سيم کارت 1 اشتباه است!</string>
+    <string name="keyguard_password_wrong_sim2_pin_code">کد PIN سيم کارت 2 اشتباه است!</string>
+    <string name="keyguard_password_enter_sim1_puk_code">کد PUK سيم کارت 1 را وارد کنيد</string>
+    <string name="keyguard_password_enter_sim2_puk_code">کد PUK سيم کارت 2 را وارد کنيد</string>
+    <string name="lockscreen_sim1_puk_locked_message">سيم کارت 1 توسط کد PUK قفل شده است.</string>
+    <string name="lockscreen_sim2_puk_locked_message">سيم کارت 2 توسط کد PUK قفل شده است.</string>
+    <string name="choose_bootup_mode">لطفاً سيم کارت را انتخاب کنيد</string>
+    <string name="choose_gprs_mode">لطفاً اتصال داده را انتخاب کنيد</string>
+    <string name="sim_close">بستن سيم کارت</string>
+    <string name="lockscreen_sim_puk_locked_message_short">قفل توسط PUK</string>
+    <string name="lockscreen_sim_locked_message_short">سيم کارت قفل شد</string>
+    <string name="simlock_slot_locked_message">شکاف به طور دائم قفل شد</string>
+    <string name="simlock_entersimmelock">"قفل SIM ME را وارد کنيد"</string>
+    <string name="slot_id">اسلات <xliff:g id="number">%d</xliff:g>:</string>
+    <string name="new_simcard">سیم کارت جدید</string>
+    <string name="lockscreen_missing_sim_dialog_message">"سیم کارت وصل نیست. لطفا مطمئن شوید که سیم کارت به طور صحیح وصل شده است."</string>
+    <string name="permlab_receiveDmRegisterSms">دريافت DM Register SMS</string>
+    <string name="permdesc_receiveDmRegisterSms">به برنامه اجازه می دهد تا پيامهای DM Register SMS را دريافت و پردازش کند. هيچ برنامه ای به جز DM APP نبايد حق استفاده از اين قابليت را داشته باشد</string>
+    <string name="lockscreen_password_error">رمز عبور اشتباه است، لطفاً دوباره امتحان کنيد</string>
+    <string name="lockscreen_pinword_error">PIN اشتباه است، لطفاً دوباره امتحان کنيد</string>
+    <string name="music_no_artist">هنرمند ناشناس</string>
+    <string name="music_play">پخش</string>
+    <string name="music_pause">مکث</string>
+    <string name="music_library">کتابخانه</string>
+    <string name="music_no_songs">آهنگ وجود ندارد</string>
+    <string name="serviceClassVideo">فيلم</string>
+    <string name="aerr_application_lowmem">برنامه <xliff:g id="application">%1$s</xliff:g> (فرآيند <xliff:g id="process">%2$s</xliff:g>) به طور غير منتظره متوقف شد. دليل اين توقف ممکن است کم بودن فضای حافظه باشد. لطفاً فضای حافظه را آزاد کرده و دوباره امتحان کنيد. </string>
+    <string name="aerr_process_lowmem">فرآيند <xliff:g id="process">%1$s</xliff:g> به طور غير منتظره متوقف شد. دليل اين توقف ممکن است کم بودن فضای حافظه باشد. لطفاً فضای حافظه را آزاد کرده و دوباره امتحان کنيد. </string>
+    <string name="free_memory_btn">"حافظه آزاد"</string>
+    <string name="free_memory_text">"حافظه کافی نيست. لطفاً حافظه را آزاد کنيد."</string>
+    <string name="mem_low_title">لطفاً حافظه را آزاد کنيد</string>
+    <string name="unread_message">%d پيام خوانده نشده</string>
+    <string name="unread_messages">%d پيام خوانده نشده</string>
+    <string name="missed_call">%d تماس بی پاسخ</string>
+    <string name="missed_calls">%d تماس بی پاسخ</string>
+    <string name="no_favorite_contacts">مخاطب مورد علاقه وجود ندارد</string>
+    <string name="contact_widget_loading">بارگذاری\u2026</string>
+    <string name="volume_fm">صدای FM</string>
+    <string name="volume_matv">صدای تلويزيون همراه</string>
+    <string name="media_controller_buffering">"در حال بافر کردن %d%%..."</string>
+    <string name="media_controller_live">"زنده"</string>
+    <string name="media_controller_playing">"در حال پخش"</string>
+    <string name="media_controller_connecting">"در حال برقراری اتصال..."</string>
+    <string name="media_controller_weak_signal">"سيگنال ضعيف"</string>
+    <string name="VideoView_error_text_bad_file">"فايل خراب، اين فيلم قابل پخش نيست."</string>
+    <string name="VideoView_error_text_cannot_connect_to_server">"برقراری اتصال با سرور ممکن نيست."</string>
+    <string name="VideoView_error_text_type_not_supported">"نوع فايل رسانه قابل پشتيبانی نيست."</string>
+    <string name="VideoView_error_text_drm_not_supported">"حفاظت شده توسط DRM، اين فيلم قابل پخش نيست."</string>
+    <string name="VideoView_error_text_invalid_connection">"اتصال نامعتبر. (403 ممنوع)"</string>
+    <string name="redo">انجام دوباره</string>
+    <string name="undo">بازيابی</string>
+    <string name="undoAll">بازيابی همه</string>
+    <string name="new_sim">سيم کارت جديد</string>
+    <string name="edit">ويرايش</string>
+    <string name="delete">حذف</string>
+    <string name="sim_card_changed_dialog_title">سیم کارت تعویض شد</string>
+    <string name="change_setting_for_onenewsim">سيم کارت جديد يافت شد. عنوان آن:</string>
+    <string name="change_setting_for_twonewsim">سيم کارت جديد يافت شد. عنوان آنها:</string>
+    <string name="change_settings">تغيير</string>
+    <string name="sim_card_removed">سیم کارت برداشته شد.</string>
+    <string name="sim_card_swapped">سیم کارت تعویض شود.</string>
+    <string name="keyguard_voice_call">تماس صوتی:</string>    
+    <string name="keyguard_video_call">تماس تصویری:</string>      
+    <string name="keyguard_sms">پيام رسانی:</string>
+    <string name="keyguard_data">اتصال داده:</string>
+    <string name="keyguard_alwaysask">هميشه سوال کن</string>
+    <string name="keyguard_data_none">خاموش</string>
+    <string name="dismiss">لغو</string>
+    <string name="keyguard_wrong_code_input">کد اشتباه.</string>
+    <string name="keyguard_code_length_prompt">4-8 رقم وارد کنيد.</string>
+    <string name="keyguard_code_donnot_mismatch">فاقد تطابق.</string>
+    <string name="for_text">برای</string>
+    <string name="keyguard_internal_call">تماس داخلی</string>
+    <string name="keyguard_not_set">تنظيم نشده</string>
+    <string name="network_searching">جستجوی شبکه جديد</string>
+    <string name="searching_simcard">در حال شناسايی...</string>
+    <string name="keyguard_close">بستن</string>
+    <string name="for_first_simcard">برای سيم کارت اول</string>
+    <string name="for_second_simcard">برای سيم کارت دوم</string>
+    <string name="for_third_simcard">برای سیم کارت سوم</string>
+    <string name="for_fourth_simcard">برای سیم کارت چهارم</string>
+    <string name="default_sim_setting_prompt">تنظيمات پيش فرض فعلی سيم کارت:</string>
+    <string name="lockscreen_pin_too_many_failed_attempts_dialog_message">شما PIN خود را <xliff:g id="number">%d</xliff:g> مرتبه به اشتباه وارد کرده ايد.\n\nلطفاً ظرف مدت <xliff:g id="number">%d</xliff:g> ثانيه دوباره امتحان کنيد.</string>
+    <string name="lockscreen_password_too_many_failed_attempts_dialog_message">شما رمز عبور خود را <xliff:g id="number">%d</xliff:g> مرتبه به اشتباه وارد کرده ايد.\n\nلطفاً ظرف مدت <xliff:g id="number">%d</xliff:g> ثانيه دوباره امتحان کنيد.</string>
+     <string name="missed_call_display">تماس بی پاسخ:</string>
+   <string name="missed_message_display">پیام های بی پاسخ:</string>
+    <!-- add for drm start -->
+    <string name="drm_protection_status">وضعیت حفاظت:</string>
+    <string name="drm_can_forward">می تواند فوروارد شود.</string>
+    <string name="drm_can_not_forward">نمی تواند فوروارد شود.</string>
+    <string name="drm_no_limitation">بدون محدودیت.</string>
+    <string name="drm_no_license">عدم وجود مجوز DRM</string>
+    <string name="drm_begin">شروع:</string>
+    <string name="drm_end">پایان:</string>
+    <string name="drm_use_left">سمت چپ را حساب کن:</string>
+    <string name="drm_protectioninfo_renew">تجدید کردن</string>
+    <string name="drm_protectioninfo_title">اطلاعات حفاظت</string>
+    <string name="drm_licenseacquisition_title">کسب مجوز DRM</string>
+    <string name="drm_licenseacquisition_message">%1$s هیچ مجوز DRM قابل استفاده ای ندارد. می توانید با فشردن دکمه "تجدید"، مجوز DRM را کسب کنید.</string>
+    <string name="drm_toast_license_expired">مجوز DRM منقضی شده است.</string>
+    <string name="drm_forwardforbidden_title">فوروارد ممنوع است</string>
+    <string name="drm_forwardforbidden_message">بعضی از فایل های محافظت شده نمی توانند فوروارد شوند.</string>
+    <string name="drm_license_install_success">مجوز DRM نصب شد.</string>
+    <string name="drm_license_install_fail">مجوز DRM نصب نشد.</string>
+    <string name="drm_secure_timer_title">ساعت امن DRM معتبر نیست</string>
+    <string name="drm_secure_timer_message">نمی توانید از فایل های محافظت شده DRM استفاده کنید. لطفا از برقراری اتصال داده ها مطمئن شوید.</string>
+    <string name="drm_consume_title">استفاده از حقوق DRM</string>
+    <string name="drm_consume_message">کار شما باعث استفاده از حقوق DRM خواهد شد.</string>
+    <!-- add for drm end -->
+
+    <string name="recip_unsupport_operator">عملیات کاراکتر در نمای گیرندگان پشتیبانی نمی شود، لطفا برای اجرای گیرندگان از نوار ابزار استفاده کنید.</string>
+    <string name="recip_unsupport_selection">متاسفانه، هنگامی که گیرنده یا گیرنده هایی در نمای گیرندگان وجود دارد، نمی توانید نشانه را به سمت شروع حرکت دهید.</string>  
+
+    <!--     add for alarm boot           -->
+
+    <string name="sim_missing_slot1">اسلات 1: هیچ سیم کارتی یافت نشد</string>  
+    <string name="sim_missing_slot2">اسلات 2: هیچ سیم کارتی یافت نشد</string>  
+    <string name="sim_missing">هیچ سیم کارتی یافت نشد</string>  
+    <string name="sim_missing_detail">لطفا چک کنید که سیم کارت آماده باشد</string>
+
+    <string name="default_label" >"زنگ ساعت"</string>
+    <string name="power_on">انصراف و روشن کردن</string>
+    <string name="power_off">انصراف و خاموش کردن</string>
+    <string name="alarm_alert_snooze_text" >"تعویق"</string>
+    <string name="every_day" >"هر روز"</string>
+    <string name="never" >"هرگز"</string>
+    <string name="day_concat" >"، "</string>
+
+	<string name="usb_ums_notification_title">اتصال به عنوان حافظه USB</string>
+    <string name="usb_charging_notification_title">فقط شارژ USB</string>
+
+    <!-- add for webview find -->
+    <string name="find_previous">قبلی</string>
+    <string name="find_next">بعدی</string>
+
+    <string name="tethered_notification_message_for_hotspot">
+        <xliff:g id="connected">%1$d</xliff:g> ، وصل شد 
+        <xliff:g id="blocked">%2$d</xliff:g> مسدود شد
+    </string>
+    <string name="tethered_notification_message_bandwidth_set">پهنای باند تنظیم شد</string>
+    <string name="default_wallpaper_name">"پیش فرض"</string> 
+    <string name="invalid_sim_title">سیم کارت نامعتبر</string>
+    <string name="invalid_sim_message">UIM/SIM کارت شناخته نشد</string>
+    <!-- voice unlock start -->
+    <string name="voice_unlock_service_error">خطای سرویس باز کردن صوتی قفل.</string>
+    <string name="voice_unlock_password_wrong">متاسفانه، صدای شما شناسایی نشد.</string>
+    <string name="voice_unlock_noisy">سروصدا زیاد است و صدای شما واضح شنیده نمی شود.</string>
+    <string name="voice_unlock_weak">صدای شما شنیده نمی شود.</string>
+    <string name="voice_unlock_media_playing">باز کردن صوتی قفل در حین پخش رسانه، غیرفعال می شود.</string>
+    <string name="voiceunlock_multiple_failures">از حداکثر تلاش برای باز کردن صوتی تجاوز شد</string>    
+    <!-- voice unlock end -->
+
+    <string name="wifi_display_bt_hdmi_off_wfd_on">اگر نمایشگر بی سیم را روشن کنید بلوتوث و HDMI خاموش می شوند. ادامه می دهید؟</string> 
+    <string name="wifi_display_wfd_off_hdmi_on">اگر HDMI را روشن کنید نمایشگر بی سیم خاموش می شود. ادامه می دهید؟</string> 
+    <string name="wifi_display_wfd_off_bt_on">وقتی بلوتوث را روشن کنید، نمایشگر بی سيم خاموش خواهد شد. آیا مایلید ادامه دهید</string> 
+    <string name="wifi_display_wifi_p2p_disconnect_wfd_connect">وقتی دستگاه نمایشگر بی سیم را وصل کنید، اتصال Wi-Fi Direct فعلی قطع اتصال خواهد شد. آیا مایلید ادامه دهید؟</string> 
+    <string name="wifi_display_unstable_connection">اتصال ناپایدار</string>
+    <string name="wifi_display_connection_is_not_steady">نمایش بی سیم اتصال فعلی ناپایدار است.</string>
+    <string name="wifi_display_unstable_suggestion">نمایش بی سیم اتصال فعلی ناپایدار است، سعی کنید به دستگاه نمایشگر خود نزدیک شوید.</string>
+    <string name="wifi_display_reconnect">اتصال مجدد</string> 
+    <string name="wifi_display_disconnect_then_reconnect">نمایش بی سیم قطع شد. می خواهید مجددا وصل شوید؟</string> 
+    <string name="wifi_display_disconnected">نمایش بی سیم قطع شده است.</string>
+    <string name="wifi_wps_failed_overlap">"یک جلسه WPS دیگر شناسایی شد. لطفاً پس از چند دقیقه دوباره امتحان کنید."</string>
+    <string name="wifi_display_wfd_and_wifi_are_turned_on">نمایشگر بی‌سیم و Wi-Fi روشن شده اند.</string>
+    <string name="wifi_display_sound_path_reminder">پخش صدای چندرسانه‌ای از هدست شما امکان پذیر نیست.</string>  
+    <string name="wifi_display_change_resolution_reminder">تغییر وضوح باعث اتصال مجدد نمایشگر بی‌سیم به صورت خودکار می شود.</string>  
+    <string name="wifi_display_do_not_remind_again">دوباره يادآوري نشود.</string>
+    <string name="wifi_display_wifi_ap_affects_quality">Wi-Fi AP جاری ممکن است بر روی کیفیت نمایش بی‌سیم تاثیر بگذارد.</string>
+    
+    <!-- Add for AT&T to show toast when pass pin/puk lock -->
+    <string name="pin_pass">کد پذیرفته شد</string>
+    <string name="puk_pass">پین رفع انسداد شد</string>
+    <!-- MountService start -->
+    <string name="sdcard_ready_title">SD کارت آماده است</string>
+    <string name="sdcard_select_default_path">آیا می خواهید که دیسک نوشتن پیش فرض را تغییر دهید؟</string>
+    <string name="sdcard_default_path_change">پیش فرض نوشتن دیسک تغییر کرده است.</string>
+    <string name="usb_storage_ready_title">منبع ذخیره USB بیرونی آماده است</string>
+    <!-- MountService end -->
+
+
+    <string name="sd_accessing_swtich_user_title">جابجایی کاربر؟</string>
+    <string name="sd_accessing_swtich_user_message">همه داده های ذخیره نشده در حساب مالک از دست خواهد رفت یا آسیب خواهد دید.</string> 
+    
+    <string name="dm_prompt">ترمینال قبلا قفل شده است</string>
+    <string name="criticallowmessage">حافظه تلفن پر است، لطفا فایل های بلا استفاده را پاک کنید، در غیر این صورت ممکن است برنامه به صورت غیرمنتظره بسته شود</string>
+    <string name="nq_sms_filter_title">فیلتر SMS</string>
+    <string name="nq_sms_filter_message">این پیام ممکن است هزینه بر باشد.
+ادامه می دهید؟</string>
+    <string name="nq_sms_filter_yes">بله</string>
+    <string name="nq_sms_filter_no">خير</string>
+    <string name="drm_forward_forbidden">انتقال یک یا چند فایل محافظت امکان پذیر نیست.</string>
+    <string name="wap_push_setting_noti_text">لطفا برای انتخاب، لمس کنید</string>
+    <string name="url_dialog_choice_title">پیام ها</string>
+    <string name="url_dialog_choice_message">مرورگر اجرا خواهد شد،
+ ادامه می دهید؟</string>
+    <string name="deleteApp">پاک کردن برنامه ها</string>
+    <string name="deleteMail">بک آپ گرفتن از رایانامه ها و 
+آزادسازی حافظه</string>
+    <string name="storage_withsd">فضای کافی در حافظه تلفن وجود ندارد.
+لطفا فضای بیشتری ایجاد کرده و 
+یا مسیر پیش فرض را در تنظیمات تغییر دهید.</string>
+    <string name="storage_withoutsd">فضای کافی در حافظه تلفن وجود ندارد.
+لطفا فضای بیشتری ایجاد کرده و 
+یا یک کارت SD وارد نمایید.</string>
+    <string name="storage_sd">فضای کافی بر روی کارت SD
+وجود ندارد. لطفا فضای بیشتری ایجاد کرده و یا مسیر پیش فرض را در تنظیمات تغییر دهید.</string>
+    <string name="criticallowtitle">بدون فاصله</string>
+    <string name="calibration_data">هنوز کالیبراسیون انجام نشده است. لطفاً داده‌های کالیبراسیون را دانلود کنید! درغیراین‌صورت امکان دارد دستگاه در شبکه قرار نگیرد.[کاربر داخلی MTK]</string>
+    <string name="invalid_card">کارت نامعتبر</string>
+    <string name="usbint_notification_title">اینترنت USB فعال است</string>
+    
+    <string name="hdmi_notification_title">کابل HDMI متصل شد</string>  
+    <string name="hdmi_notification_content">برای پیکربندی HDMI کلیک کنید</string>
+    <string name="hdmi_hdvideo_toast">HDMI نمی تواند فیلم 4K را پخش کند، اتصال قطع می شود.</string>
+
+    <!-- VolumePanel -->
+    <string name="safe_media_volume_warning_title">هشدار</string> 
+    
+    <!-- Low Storage -->
+    <string name="aerr_application_lowstorage">حافظه داخلی در حال پر شدن است، برنامه متوقف شده است. لطفاً بخشی از حافظه را آزاد و دوباره امتحان کنید.</string>
+    <string name="aerr_process_lowstorage">حافظه داخلی در حال پر شدن است، فرآیند متوقف شده است. لطفاً بخشی از حافظه را آزاد و دوباره امتحان کنید.</string>
+    <string name="low_internal_storage_view_title">حافظه داخلی در حال پر شدن است</string>
+    <string name="deleteMails">حذف ایمیل‌ها</string>
+    <string name="low_storage_warning_message">لطفاً بخشی از حافظه را آزاد کنید. در غیر این صورت، برخی از برنامه‌ها و عملکردهای سیستمی ممکن است به درستی کار نکنند.</string>
+
+    <!-- KK translation task -->
+    <string name="virtual_sim_on_slot1">سیم کارت مجازی 1 روشن</string>
+    <string name="virtual_sim_on_slot2">سیم کارت مجازی 2 روشن</string>
+    <string name="virtual_sim_on_slot3">سیم کارت مجازی 3 روشن</string>
+    <string name="virtual_sim_on_slot4">سیم کارت مجازی 4 روشن</string>
+    <string name="virtual_sim_on">سیم کارت مجازی روشن</string>
+    <string name="RejectCauseTitle">دلیل رد کردن شبکه</string>
+    <string name="MMRejectCause2">سیم کارت، MM #2 را تدارک ندیده است</string>
+    <string name="MMRejectCause3">سیم کارت، MM #3 را مجاز نمی داند</string>
+    <string name="MMRejectCause5">تماس ناموفق بود MM #5</string>
+    <string name="MMRejectCause6">تلفن MM#6 را مجاز نمی داند</string>
+    <string name="MMRejectCause13">فقط تماس های اضطراری/SOS</string>
+    <string name="keyguard_accessibility_alarm_unlock">آلارم خاموش کردن</string>
+    <string name="dialog_color_picker">انتخابگر رنگ</string>
+    <string name="press_color_to_apply">برای اعمال، رنگ را فشار دهید</string>
+    <string name="oper_long_46003">China Telecom</string>
+    <string name="oper_short_46003">China Telecom</string>
+    <string name="keyguard_sim_auto">"خودکار"</string>
+    <string name="keyguard_domestic_zone_name">"پکن"</string>
+    <string name="ext_media_checking_notification_title_sd2">کارت SD را آماده کنید.</string>
+    <string name="ext_media_checking_notification_title_otg">آماده‎سازی حافظه USB</string>
+    <string name="ext_media_badremoval_notification_title_otg">"حافظهٔ USB به صورت غیرمنتظره جدا شد"</string>
+    <string name="ext_media_nomedia_notification_title_otg">"جدا کردن حافظهٔ USB"</string>
+    <string name="ext_media_badremoval_notification_message_otg">"اتصال حافظهٔ USB را قبل از بیرون آوردن قطع کنید تا سبب از بین رفتن داده‌ها نشود."</string>
+    <string name="ext_media_nomedia_notification_message_otg">"حافظهٔ USB جدا شد. یک رسانه جدید متصل کنید."</string>
+    <string name="ext_media_unmountable_notification_title_otg">"حافظهٔ USB خراب شده"</string>
+    <string name="ext_media_unmountable_notification_message_otg">"حافظه USB خراب است. لازم است که آن را دوباره فرمت کنید."</string>
+    <string name="ext_media_nofs_notification_title_otg">"حافظهٔ USB خالی"</string>
+    <string name="ext_media_nofs_notification_message_otg">"حافظه USB خالی است یا از سیستم فایل پشتیبانی نشده ای برخوردار است."</string>
+    <string name="ext_media_safe_unmount_notification_title_otg">"حافظهٔ USB را می‌توانید با ایمنی جدا کنید"</string>
+    <string name="ext_media_safe_unmount_notification_message_otg">"شما می‌توانید حافظهٔ USB را با اطمینان جدا کنید."</string>
+    <string name="sim_missing_slot3">اسلات 3: هیچ سیم کارتی یافت نشد</string>
+    <string name="sim_missing_slot4">اسلات 4: هیچ سیم کارتی یافت نشد</string>
+    <string name="sim_missing_slot1_card">شکاف 1: هیچ گونه کارتی شناسایی نشد</string>
+    <string name="sim_missing_slot2_card">شکاف 2: هیچ گونه کارتی شناسایی نشد</string>
+    <string name="sim_missing_card">هیچ گونه کارتی شناسایی نشد</string>
+    <string name="sim_missing_detail_card">لطفاً بررسی کنید که کارت آماده است</string>
+    <string name="wap_push_setting_noti_ticker">سرویس پوش خودکار پذیرفته شود یا خیر؟</string>
+    <string name="wap_push_setting_noti_title">سرویس پوش خودکار پذیرفته شود یا خیر؟</string>
+    <string name="gps_time_sync_fail_str">دریافت زمان ارائه شده توسط GPS ناموفق بود</string>
+    <string name="alarm_alert_dismiss_text">لغو</string>
+    <string name="description_direction_right">"برای رد کردن، انگشت خود را به سمت راست بکشید"</string>
+    <string name="description_direction_left">"برای تعویق انگشت خود را به سمت چپ بکشید"</string>
+    <string name="description_direction_up">"برای رد کردن، انگشت خود را به سمت بالا بکشید"</string>
+    <string name="description_direction_down">"برای تعویق انگشت خود را به سمت پایین بکشید"</string>
+    <string name="dismiss_power_on">لغو و روشن کردن</string>
+    <string name="dismiss_power_off">لغو و خاموش کردن</string>
+    <string name="voiceui_notify_string">می توانید صحبت کنید</string>
+    <string name="voiceui_control_poweroff_alarm">برای کنترل آلارم خاموش شدن.</string>
+    <string name="voiceui_or">یا</string>
+    <string name="headset_pin_recognition">حافظه ذخیره‌سازی دستگاه دارای فضای کافی نیست. لطفاً فضای بیشتری ایجاد کنید.</string>
+    <string name="msensor_toast_text">تداخل قطب‌نما. برای کالیبره کردن مجدد قطب‌نما، تلفن را با حالتی که در شکل 8 نشان داده شده است حرکت دهید.</string>
+    <string name="usb_autorun_cdrom_notification_title">به عنوان یک سی دی رام خود اجرا متصل شد</string>
+    <string name="ct_net_name">"CTNET"</string>
+    <string name="ct_wap_name">"CTWAP"</string>
+</resources>
+

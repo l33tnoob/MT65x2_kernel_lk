@@ -1,0 +1,72 @@
+# ==============================================
+# Policy File of /system/binaal Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type aal_exec , exec_type, file_type;
+type aal ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive aal;
+init_daemon_domain(aal)
+
+# 20131024 Sanity_01
+allow aal mtk_disp_device:chr_file ioctl;
+allow aal sysfs:file write;
+
+
+# 20131024 CTS_01
+allow aal device:chr_file { read ioctl open };
+allow aal surfaceflinger:binder { transfer call };
+
+
+# 20131024 CTS_02
+allow aal mtk_disp_device:chr_file { read open };
+allow aal servicemanager:binder { transfer call };
+
+
+# 20131028 CTS_03
+allow aal dumpstate:fd use;
+
+
+# 20131028 CTS_04
+allow aal app_data_file:file write;
+allow aal dumpstate:unix_stream_socket { read write };
+allow aal system_server:binder call;
+allow aal untrusted_app:fd use;
+
+
+# 20131028 CTS_09
+allow aal linker_exec:file read;
+
+
+# 20131119 FeatureSQC
+allow aal linker_exec:file read;
+
+
+# 20131121 Sanity_QA
+allow aal logwrapper:binder transfer;
+
+
+
+# 20131122 Add Set Property Rule
+allow aal  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow aal aee_aed:process sigchld;
+allow aal aee_aed:unix_stream_socket connectto;
+

@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--* Copyright Statement:
+ *
+ * This software/firmware and related documentation ("MediaTek Software") are
+ * protected under relevant copyright laws. The information contained herein
+ * is confidential and proprietary to MediaTek Inc. and/or its licensors.
+ * Without the prior written permission of MediaTek inc. and/or its licensors,
+ * any reproduction, modification, use or disclosure of MediaTek Software,
+ * and information contained herein, in whole or in part, shall be strictly prohibited.
+ *
+ * MediaTek Inc. (C) 2012. All rights reserved.
+ *
+ * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+ * THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+ * RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO RECEIVER ON
+ * AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+ * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+ * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+ * SUPPLIED WITH THE MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+ * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+ * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+ * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+ * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+ * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+ * CUMULATIVE LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+ * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+ * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+ * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+ *
+ * The following software/firmware and/or related documentation ("MediaTek Software")
+ * have been modified by MediaTek Inc. All revisions are subject to any receiver's
+ * applicable license agreements with MediaTek Inc.
+ */  -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="text_chat_hint_compose">Type message</string>
+    <string name="text_ipmsg_hint_compose">Type joyn message</string>
+    <string name="group_invitation_notify_title">Chat invitation from</string>
+    <string name="group_multi_invitation_title">chat invitations</string>
+    <string name="group_multi_invitation_content">Tap to check invitations</string>
+    <string name="notify_invitation_multi_participants"><xliff:g id="invitor">%s</xliff:g> invites you,<xliff:g id="first_participant">%s</xliff:g> and other <xliff:g id="remind_number">%d</xliff:g> people into a group chat.</string>
+    <string name="notify_invitation_two_participants"><xliff:g id="invitor">%s</xliff:g> invites you and <xliff:g id="remind_participant">%s</xliff:g> into a group chat.</string>
+    <string name="text_block">Block</string>
+    <string name="text_block_contact"><xliff:g id="number">%s</xliff:g> blocked contact</string>
+    <string name="label_contact_is_composing"><xliff:g id="name">%s</xliff:g> is typing...</string>
+    <string name="label_remote_is_offline"><xliff:g id="name">%s</xliff:g> is not available temporarily. Message will be delivered when <xliff:g id="name">%s</xliff:g> returns.</string>
+    <string name="label_contact_imore_composing">Two or more people are typing...</string>
+    <string name="label_all_participants_left">Group chat has ended due to all participants has left</string>
+    <string name="text_contacts">Contacts</string>
+    <string name ="dummy"> Dummy </string>
+    <string name ="start_chat"> Start Chat </string>
+    <string name="STR_NMS_SEND_MMS_FAIL">Unable to send the message. It will be sent automatically once network is available.</string>
+    <string name="STR_NMS_RECV_MMS_FAIL">Unable to download. Please try again later.</string>
+    <string name="STR_NMS_GROUP_CHAT_ME">me</string>
+    <string name="STR_NMS_GROUP_CHAT_I">I</string>
+    <string name="STR_NMS_GROUP_CHAT_YOU">You</string>
+    <string name="STR_NMS_GROUP_CREATE_MSG">%1$s invite %2$s to group chat.</string>
+    <string name="STR_NMS_GROUP_ADD_MSG">%1$s joined group chat.</string>
+    <string name="STR_NMS_GROUP_DELETE_MSG">%1$s delete %2$s from group chat.</string>
+    <string name="STR_NMS_GROUP_QUITE_MSG">%1$s quit from group chat.</string>
+    <string name="STR_NMS_GROUP_CHAT_PLACE_HOLDER_MSG_BODY">You joined this group</string>
+    <string name="STR_NMS_PICTURE">picture</string>
+    <string name="STR_NMS_TAPE">audio</string>
+    <string name="STR_NMS_VCARD">contact</string>
+    <string name="STR_NMS_LOCATION">location</string>
+    <string name="STR_NMS_SKETCH">sketch</string>
+    <string name="STR_NMS_VIDEO">video</string>
+    <string name="STR_NMS_CALENDAR">calendar</string>
+    <string name="STR_NMS_UNKNOWN">unknown</string>
+    <string name="STR_NMS_READ_MODE_PIC">an image</string>
+    <string name="STR_NMS_READ_MODE_TAPE">an audio note</string>
+    <string name="STR_NMS_READ_MODE_VCARD">contacts</string>
+    <string name="STR_NMS_READ_MODE_LOCATION">a location</string>
+    <string name="STR_NMS_READ_MODE_SKETCH">a sketch</string>
+    <string name="STR_NMS_READ_MODE_VIDEO">a video</string>
+    <string name="STR_NMS_READ_MODE_CALENDAR">a calendar</string>
+    <string name="STR_NMS_ISMS_ENABLE">(Joyn Enable)</string>
+    <string name="STR_NMS_READ_MODE_UNKNOWN">an unknown file</string>
+    <string name="STR_NMS_ALL_MSG">All Messages</string>
+    <string name="STR_NMS_SAVED">Saved</string>
+    <string name="STR_NMS_BLOCKMSG">Blocked</string>
+    <string name="STR_NMS_SMS_TYPE">SMS</string>
+    <string name="STR_NMS_VERSION_ID">v5.2.17.545</string>
+    <string name="STR_NMS_NO_SIM">SIM card is not detected</string>
+    <string name="STR_NMS_ILLEGAL_ADDRESS">Invalid number</string>
+    <string name="STR_NMS_REMIND_USER_SET_NAME">Please update your profile</string>
+    <string name="STR_NMS_OK">OK</string>
+    <string name="STR_NMS_BACK">Back</string>
+    <string name="STR_NMS_OPEN">Open</string>
+    <string name="STR_NMS_PLAY">Play</string>
+    
+    
+
+    <string name="STR_NMS_VCARD_NAME">%1$s contacts</string>
+    <string name="STR_NMS_SHARE_VCARD_FAILED">share contact failed</string>
+
+    <!-- upgrade info -->
+    <string name="STR_NMS_UPGRADE_URL">http://ismsi.hissage.com/webservice/hss/hssVersionUpdate.php</string>
+    <string name="STR_NMS_UPGRADE_TICKER">Version upgrade</string>
+    <string name="STR_NMS_UPGRADE_ERROR_TITLE">Upgrade error</string>
+    <string name="STR_NMS_UPGRADE_ERROR_CONTENT">Upgrade error, please upgrade in Joyn client</string>
+    <string name="STR_NMS_INSTALLED_TITLE">Upgrade success</string>
+    <string name="STR_NMS_INSTALLED_CONTENT">Upgrade successfully to the phone</string>
+    <string name="STR_NMS_PROMPT_DLG_TITLE">New version detected</string>
+    <string name="STR_NMS_PROMPT_DLG_DOWNLOAD">Download</string>
+    <string name="STR_NMS_PROMPT_DLG_LATER">Later</string>
+    <string name="STR_NMS_UPGRADING">Upgrading</string>
+    <string name="STR_NMS_UPGRADE_TIME">Last check: %s</string>
+    
+    <!-- ext protocol -->
+    <string name="STR_NMS_OFFLINE_URL">http://ismsi.hissage.com/webservice/nmsmail/notifyOffline.php</string>
+    
+    <!-- Activation start -->
+    <string name="STR_NMS_PRELOAD_IP_MSG_CONTENT">"Welcome to Joyn."</string>
+    <string name="STR_NMS_ACTIVAT_TITLE">Joyn will send a onetime SMS to verify your phone number. Carrier charge may apply.</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE">Verify your phone number</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE2">Verify your phone number</string>
+    <string name="STR_NMS_YOUR_COUNTRY_TITLE">YOUR COUNTRY</string>
+    <string name="STR_NMS_YOUR_PHONE_TITLE">YOUR PHONE NUMBER</string>
+    <string name="STR_NMS_VERIFY_FAIL_TITLE">Failed to complete SMS verification.</string>
+    <string name="STR_NMS_VERIFY_FAIL_CONTENT">Please make sure your phone number is entered correctly.</string>
+    <string name="STR_NMS_WORKING_SMS_TIP">Please make sure you have a working SMS plan.</string>
+    <string name="STR_NMS_VERIFYING">Waiting to automatically detect an SMS sent to</string>
+    <string name="STR_NMS_RETRY">Retry</string>
+    <string name="STR_NMS_EDIT_NUMBER">Edit number</string>
+    <string name="STR_NMS_UPDATE_PROFILE">Update profile</string>
+    <string name="STR_NMS_START_ISMS">Start Joyn</string>
+    <string name="STR_NMS_SEND">Send</string>
+    <string name="STR_NMS_CONGRATULATIONS_TITLE">Congratulations!</string>
+    <string name="STR_NMS_CONGRATULATIONS_CONTENT">Thank you for activating Joyn.\n You can now start to enjoy the service.\nHappy Joyn!</string>
+    <string name="STR_NMS_WELCOME_BACK">Welcome back.</string>
+    <string name="STR_NMS_SEND_SMS_FAIL">Verification failed, please check:\n  1. Phone number is correct;\n  2. Security software is turned off;\n  3. Other possible reasons to block sending SMS.\nMake sure and try again later.</string>
+    <string name="STR_NMS_ACTIVE">Activate Joyn</string>
+    <string name="STR_NMS_WELCOME_ACTIVE">Welcome to Joyn</string>
+    <string name="STR_NMS_CONNECTING">Connecting...</string>
+    <!-- Activation end -->
+
+
+    <!-- Notification start -->
+    <string name="STR_NMS_NEW_MSG_TITLE">New Joyn Message</string>
+    <string name="STR_NMS_NEW_SMG_CONTENT">%d unread message</string>
+    <!-- Notification End -->
+
+    <string name="STR_NMS_MSG_DUMPER_MSG_SMS">SMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_MMS">MMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_IP">IP Message</string>
+    <string name="STR_NMS_MSG_DUMPER_SEND_MSG">Sent %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_RECEIVE_MSG">Received %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TIME">Time: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TEXT">Text</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_PIC">Picture</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_SKETCH">Sketch</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VOICE">Voice</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VIDEO">Video</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CALENDAR">Calendar</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION_IMG">Location picture</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VCARD">Vcard</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION">Location</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CAPTION">Caption: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_URL">Url: </string>
+    <string name="STR_NMS_MSG_DUMPER_DURATION">Duration: </string>
+    <string name="STR_NMS_MSG_DUMPER_COORDINATE">Coordinate: </string>
+    <string name="STR_NMS_MSG_DUMPER_ADDRESS">Address: </string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_SENDER">Sender: </string>
+    <string name="STR_NMS_MSG_DUMPER_NORMAL_DETAIL">Session detail:</string>
+    <string name="STR_NMS_MSG_DUMPER_NAME">Name: </string>
+    <string name="STR_NMS_MSG_DUMPER_NUMBER">Number: </string>
+    <string name="STR_NMS_MSG_DUMPER_PORTRAIT">Portrait</string>
+    <string name="STR_NMS_MSG_DUMPER_MULTI_SEND_DETAIL">Broadcast:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_DETAIL">Group chat:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_CREATER">Creator: </string>
+    <string name="STR_NMS_MSG_DUMPER_MEMBERS">Members: </string>
+    <string name="STR_NMS_MSG_DUMPER_VCARD_NAME">Name: </string>
+    <string name="STR_NMS_MSG_DUMPER_CALENDAR_SUMMARY">Summary: </string>
+
+    <!-- Chat Settings -->
+    <string name="STR_NMS_CHAT_SETTING_TITLE">Chat Settings</string>
+    <string name="STR_NMS_DISPLAY">Display</string>
+    <string name="STR_NMS_CHAT_WALLPAPER">Chat wallpaper</string>
+    <string name="STR_NMS_SYS_WALLPAPER">Select wallpaper</string>
+    <string name="STR_NMS_CAMEARPHOTO">Take a photo</string>
+    <string name="STR_NMS_SYS_GALLERY">Select from Gallery</string>
+    <string name="STR_NMS_DEFAULT_WALLPAPER">Default</string>
+    <string name="STR_NMS_NOTIFICATION_CATEGORY">Notification</string>
+    <string name="STR_NMS_NOTIFICATION_TITLE">Joyn notification</string>
+    <string name="STR_NMS_NOTIFICATION_CONTENT">Show when notifications are received</string>
+    <string name="STR_NMS_MUTE">Mute</string>
+    <string name="STR_NMS_MUTE_OFF">Off</string>
+    <string name="STR_NMS_MUTE_1">Mute for 1 hour</string>
+    <string name="STR_NMS_MUTE_4">Mute for 4 hours</string>
+    <string name="STR_NMS_MUTE_8">Mute for 8 hours</string>
+    <string name="STR_NMS_RINGTONE_TITLE">Ringtone</string>
+    <string name="STR_NMS_RINGTONE_CONTENT">Set a ringtone for new notifications </string>
+    <string name="STR_NMS_VIBRATE_TITLE">Vibrate</string>
+    <string name="STR_NMS_VIBRATE_CONTENT">Vibrate when notifications are received</string>
+    <string name="STR_NMS_ACTIONS">Actions</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_TITLE">Download chat history</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_CONTENT">Save in SD card in zip format</string>
+    <string name="STR_NMS_EMAIL_HISTORY_TITLE">E-Mail chat history</string>
+    <string name="STR_NMS_EMAIL_HISTROY_CONTENT">E-Mail chat history in zip format</string>
+    <string name="STR_NMS_CLEAR_HISTROY">Clear chat history</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_DLG">Downloading...</string>
+    <string name="STR_NMS_DOWNLOAD_OK">Downloading chat history is done, save it as %s</string>
+    <string name="STR_NMS_DOWNLOAD_ERROR">Downloading chat history error.</string>
+    <string name="STR_NMS_DOWNLOAD_EMPTY">Nothing to download.</string>
+    <string name="STR_NMS_CLEARING">Clearing history, please wait...</string>
+    <string name="STR_NMS_WAIT_SAVE_WALLPAPER">Saving wallpaper, please wait...</string>
+    <string name="STR_NMS_SAVE_WALLPAPER_OK">Save wallpaper success.</string>
+    <string name="STR_NMS_CLEARDONE">Clearing history is done.</string>
+    <string name="STR_NMS_SVAE_TITLE">Save to SD card</string>
+    <string name="STR_NMS_SAVE_CONTENT">Save this chat thread to SD card as a zip file</string>
+    <string name="STR_NMS_EMAIL_TITLE">Share via E-Mail</string>
+    <string name="STR_NMS_EMAIL_CONTENT">Share this chat thread as attachment via E-Mail in zip format</string>
+
+    <!-- Chat Settings End -->
+
+
+    <!-- Profile Settings -->
+    <string name="STR_NMS_PROFILE_TITLE">Profile</string>
+    <string name="STR_NMS_TAP_AVATAR_TIP">Tap to edit profile image</string>
+    <string name="STR_NMS_DISPLAY_NAME_TIP">DISPLAY NAME</string>
+    <string name="STR_NMS_ACCOUNT_TIP">JOYN ACCOUNT</string>
+    <string name="STR_NMS_NO_APP">No applications can perform this action.</string>
+    <string name="STR_NMS_NO_NAME">Setup your name</string>
+    <string name="STR_NMS_SAVE_AVATAR_FAILD">Sorry, failed to save profile image.</string>
+    <string name="STR_NMS_INPUT_NAME">Name</string>
+    <string name="STR_NMS_TERM_WARN_ACTIVATE">This feature is only supported by Joyn service.\n\Joyn is a free instant messaging service which allows you to chat and share multimedia content with your friends at anytime and anyplace via internet data connection(Wi-Fi, 2G/3G, etc.).\nWhen activate for the first time, Joyn will send out an SMS automatically to complete the registration. SMS quota/fee may apply.\n\n User Agreement\n</string>
+    <string name="STR_NMS_TERM_WARN_WELCOME">Joyn is a free instant messaging service which allows you to chat and share multimedia content with your friends at anytime and anyplace via internet data connection(Wi-Fi, 2G/3G, etc.).\nWhen activate for the first time, Joyn will send out an SMS automatically to complete the registration. SMS quota/fee may apply.\n\n User Agreement\n</string>
+    <string name="STR_NMS_TERM_KEY">Terms and Condition</string>
+    <string name="STR_NMS_AGREE_AND_CONTINUE">Agree and Continue</string>
+    <string name="STR_NMS_ACTIVE_BNT">Activate</string>
+    <string name="STR_NMS_SET_PROFILE_OK">Profile is set successfully</string>
+    <string name="STR_NMS_SET_PROFILE_FAIL">Failed to set profile</string>
+    <string name="STR_NMS_ILLEGAL_PROFILE_NAME">Illegal name</string>
+    <string name="STR_NMS_NO_ACTIVITED">No SIM card is activated or enabled.</string>
+    <!-- Profile Settings End -->
+
+
+    <!-- Term Activity -->
+    <string name="STR_NMS_REJECT">Reject</string>
+    <string name="STR_NMS_AGREE">Agree</string>
+    <string name="STR_NMS_TERM_TITLE">Terms of Service</string>
+    <string name="STR_NMS_TERM_CONTENT">You understand that the Service and software embodied within the Service may include security components that permit digital materials to be protected, and that use of these materials is subject to usage rules set by AF PushMail and/or content providers who provide content to the Service. You may not attempt to override or circumvent any of the usage rules embedded into the Service. Any unauthorized reproduction, publication, further distribution or public exhibition of the materials provided on the Service, in whole or in part, is strictly prohibited.</string>
+    <!-- Term Activity End -->
+
+
+    <!-- System Settings -->
+    <string name="STR_NMS_SYS_SETTING_TITLE">Joyn Message</string>
+    <string name="STR_NMS_SETTING_COMMENT">Enable to chat with other Joyn users for free Learn More</string>    
+    <string name="STR_NMS_KNOW_MORE">Learn More</string>      
+    <string name="STR_NMS_SETTINGS_TITLE">PROFILE</string>
+    <string name="STR_NMS_PREFERENCE_CATE">PREFERENCES</string>
+    <string name="STR_NMS_SEND_SMS_TITLE">Send as SMS</string>
+    <string name="STR_NMS_SEND_SMS_CONTENT">Send as SMS when Joyn is unavailable. Carrier messaging rates may apply. This rule does not apply to group chat</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_TITLE">Auto Download</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_CONTENT">Automatically download multimedia objects</string>
+    <string name="STR_NMS_CAPTION_TITLE">Captions</string>
+    <string name="STR_NMS_CAPTION_CONTENT">Share file with captions</string>
+    <string name="STR_NMS_SYSTEM_CATE">SYSTEM</string>
+    <string name="STR_NMS_UPDATE_TITLE">Software update</string>
+    <string name="STR_NMS_UPDATE_CONTENT">Last check: Never</string>
+    <string name="STR_NMS_NETWORK_USAGE_TITLE">Network Usage</string>
+    <string name="STR_NMS_NETWORK_USAGE_CONTENT">View total sent/received data usage</string>
+    <string name="STR_NMS_NETWORK_DLG_CONTENT">Sent: %1$.3f K \nReceived: %2$.3f K\nLast reset: %3$s</string>
+    <string name="STR_NMS_VERSION_TITLE">Version</string>
+    <string name="STR_NMS_NEVER_CLEAR">Never</string>
+    <string name="STR_NMS_RESET">Reset</string>
+    <string name="STR_NMS_SWITCH_ON">ON</string>
+    <string name="STR_NMS_SWITCH_OFF">OFF</string>
+    <string name="STR_NMS_TEXT_ON">I</string>
+    <string name="STR_NMS_TEXT_OFF">O</string>
+    <string name="STR_NMS_SYSTEM_SETTING_TITLE">Settings</string>
+    <string name="STR_NMS_COPYRGIHT">Hesine Technologies, Inc.</string>
+    <string name="STR_NMS_ABOUT">About Joyn</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_TITLE">Show Read Status</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_CONTENT">Show read status in message list</string>
+    <string name="STR_NMS_SHOW_REMIND_TITLE">Show Reminders</string>
+    <string name="STR_NMS_SHOW_REMIND_CONTENT">Show Joyn Reminders in chat screen</string>
+    <string name="STR_NMS_MENU_RESET_SETTING">Restore default settings</string>
+    <string name="STR_NMS_MENU_FUNCTION_INTRODUCTION">Features</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT">User Agreement</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION">Copyright</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT_TITLE">HESINE Joyn USER LICENSE AGREEMENT</string>
+    <string name="STR_NMS_MENU_FUNCTION">Features List</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION_DETAIL">\nHesine Technologies Inc.\nCopyright© 2008-2013\nAll Rights Reserved.\n</string>
+    <!-- System Settings End -->
+
+
+    <!-- Caption Settings -->
+    <string name="STR_NMS_AUDIO_TITLE">Audio</string>
+    <string name="STR_NMS_VIDEO_TITLE">Videos</string>
+    <string name="STR_NMS_PHOTO_TITLE">Photos</string>
+    <!-- Caption Settings End -->
+
+
+    <!-- Map String start -->
+    <string name="STR_NMS_MAP_TITLE">Share Location</string>
+    <string name="STR_NMS_MAP_PROMPT">Map cannot be displayed because your location service is not turned on. The address below is estimated based on you cell information. \nTo have a more accurate location service, it is suggested to turn on location service.</string>
+    <string name="STR_NMS_MAP_NOTE_1">Please enable a My Location source in system settings</string>
+    <string name="STR_NMS_MAP_SHARE">Share</string>
+    <string name="STR_NMS_MAP_SETTINGS">Settings</string>
+    <string name="STR_NMS_MAP_OK">OK</string>
+    <string name="STR_NMS_MAP_CANCEL">Cancel</string>
+    <string name="STR_NMS_MAP_EDIT">Edit location</string>
+    <string name="STR_NMS_MAP_SEARCH_HINT">Search nearby places</string>
+    <string name="STR_NMS_MAP_WAIT">Please wait...</string>
+    <string name="STR_NMS_MAP_EDIT_LIMIT">Input character has reached the limit</string>
+    <string name="STR_NMS_MAP_ADDR_LEN">Address is too long</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR_LOCATING">Locating your current position...</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN_LOCATING">Locating your PIN position...</string>
+    <string name="STR_NMS_MAP_LINEONE_SEARCH_LOCATING">Locating your searched position...</string>
+    <string name="STR_NMS_MAP_LINETHREE_NEARBY_LOCATING">Searching nearby places...</string>
+    <string name="STR_NMS_MAP_LINEONE_FAILED">Your location is unavailable now</string>
+    <string name="STR_NMS_MAP_LINETWO_FAILED">Please make sure your Location service is turned on, and the network is available</string>
+    <string name="STR_NMS_MAP_LINETHREE_FAILED">No nearby places found</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR">Share current location</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN">Share PIN location</string>
+    <string name="STR_NMS_MAP_MY_LOCATION">My location</string>
+    <string name="STR_NMS_MAP_SEARCH">Search</string>
+    <string name="STR_NMS_MAP_ERROR_1">Unable to get latitude and longitude</string>
+    <string name="STR_NMS_MAP_ERROR_2">Google servers return an error</string>
+    <!-- Map String end -->
+
+
+    <!-- All Media String start -->
+    <string name="STR_NMS_ALL_MEDIA_TITLE">All Media</string>
+    <string name="STR_NMS_ALL_MEDIA_WAIT">Please wait...</string>
+    <string name="STR_NMS_ALL_MEDIA_ERROR">Failed to load, please try again later</string>
+    <string name="STR_NMS_ALL_MEDIA_EMPTY">Empty</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_WEEK">This week</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_MONTH">This month</string>
+    <string name="STR_NMS_ALL_MEDIA_JAN">January</string>
+    <string name="STR_NMS_ALL_MEDIA_FEB">February</string>
+    <string name="STR_NMS_ALL_MEDIA_MAR">March</string>
+    <string name="STR_NMS_ALL_MEDIA_APR">April</string>
+    <string name="STR_NMS_ALL_MEDIA_MAY">May</string>
+    <string name="STR_NMS_ALL_MEDIA_JUN">June</string>
+    <string name="STR_NMS_ALL_MEDIA_JUL">July</string>
+    <string name="STR_NMS_ALL_MEDIA_AUG">August</string>
+    <string name="STR_NMS_ALL_MEDIA_SEPT">September</string>
+    <string name="STR_NMS_ALL_MEDIA_OCT">October</string>
+    <string name="STR_NMS_ALL_MEDIA_NOV">November</string>
+    <string name="STR_NMS_ALL_MEDIA_DEC">December</string>
+    <string name="STR_NMS_ADDCONTACT">Add contact</string>
+    <string name="STR_NMS_ADD_PHONE_CONTACT">Add \"%1$s\" to contacts?</string>
+    <string name="STR_NMS_DELETE_MEDIA">The media will be deleted, continue?</string>
+    <string name="STR_NMS_MEDIA_SHARE_MESSAGE">%1$s shared at %2$s</string>
+
+    <!-- All Media String end -->
+
+
+    <!-- All Locations String start -->
+    <string name="STR_NMS_ALL_LOCATIONS_TITLE">All Locations</string>
+    <string name="STR_NMS_ALL_LOCATIONS_LOC">Location</string>
+    <string name="STR_NMS_ALL_LOCATIONS_WAIT">Please wait...</string>
+    <!-- All Locations String end -->
+
+
+    <!-- Sketch -->
+    <string name="STR_NMS_SKETCH_TITLE">Draw a Sketch</string>
+    <string name="STR_NMS_REDO">Redo</string>
+    <string name="STR_NMS_UNDO">Undo</string>
+    <string name="STR_NMS_SKETCH_CUSTOM">Custom</string>
+    <string name="STR_NMS_PEN_SIZE">Size</string>
+    <string name="STR_NMS_SKETCH_TOOLS_PEN">Pencil</string>
+    <string name="STR_NMS_SKETCH_TOOLS_ERASER">Eraser</string>
+    <string name="STR_NMS_SKETCH_CUSTOM_COLOR">Custom Color</string>
+    <string name="STR_NMS_CLEAR_SKETCH_TITLE">Clear Sketch</string>
+    <string name="STR_NMS_CLEAR_SKETCH_CONTENT">Do you want to clear this sketch?</string>
+    <string name="STR_NMS_SIZE_SKETCH_TITLE">Size</string>
+    <string name="STR_NMS_SIZE_SKETCH_MAX">72</string>
+    <string name="STR_NMS_SIZE_SKETCH_MIN">2</string>
+    <string name="STR_NMS_COLOR_SKETCH_TITLE">Color</string>
+    <string name="STR_NMS_SKETCH_ERROR">Failed to create a sketch.</string>
+    <string name="STR_NMS_BACK_TITLE">Confirmation</string>
+    <string name="STR_NMS_FINISH_SKETCH_CONTENT">Are you sure to leave sketching?</string>
+    <string name="STR_NMS_LEAVE_SKETCH_CONTENT">Are you sure to drop this sketch?</string>
+    <string name="STR_NMS_NOTREDO">Nothing to redo</string>
+    <string name="STR_NMS_NOTUNDO">Nothing to undo</string>
+    <string name="STR_NMS_SKETCH_DELETE">Clear</string>
+    <string name="STR_NMS_DISCARD">Discard</string>
+
+    <!-- Sketch end -->
+
+
+    <!-- Selection Contact -->
+    <string name="STR_NMS_DONE">OK</string>
+    <string name="STR_NMS_SELECTALL">Select all</string>
+    <string name="STR_NMS_DESELECTED">Unselect all</string>
+    <string name="STR_NMS_SELECTED">%1$s selected</string>
+    <string name="STR_NMS_CONTACT_SEARCH">Find contacts</string>
+    <string name="STR_NMS_SEARCH">Search</string>
+    <string name="STR_NMS_CONTACT_SELECT">Select contact</string>
+    <string name="STR_NMS_SELECT_MEMBER_FULL">Too many contacts are selected</string>
+    <string name="STR_NMS_SELECT_MEMBER_EMPTY">No contacts are selected</string>
+    <string name="STR_NMS_SELECT_CONTAT_WAIT">Please wait...</string>
+    <string name="STR_NMS_SELECT_CONTAT_EMPTY">No Joyn contacts</string>
+    <string name="STR_NMS_SELECT_NO_RESULT">None found</string>
+    <string name="STR_NMS_EMPTY">No contacts</string>
+    <!-- Selection Contact end -->
+
+    <!-- Group chat -->
+    <string name="STR_NMS_CREATE_GROUP_TITLE">Create Group</string>
+    <string name="STR_NMS_GROUP_INFO_TITLE">Group Info</string>
+    <string name="STR_NMS_EDIT_GROUP_TITLE">Edit Group</string>
+    <string name="STR_NMS_SELECT_ACTION_TITLE">Select action</string>
+    <string name="STR_NMS_ADD_TO_BOOKMARK">Add to bookmark</string>
+    <string name="STR_NMS_ADD_TO_CONTACTS">Add %1$s to Contacts</string>
+    <string name="STR_NMS_GROUP_NAME">GROUP NAME</string>
+    <string name="STR_NMS_GROUP_INFO">GROUP INFO</string>
+    <string name="STR_NMS_GROUP_MEMBERS">GROUP MEMBERS</string>
+    <string name="STR_NMS_GROUP_NAME_HIT">Group name</string>
+    <string name="STR_NMS_GROUP_NAME_EMPTY">Group name is empty</string>
+    <string name="STR_NMS_CONFIRM_LEAVE_TITLE">Leave this group</string>
+    <string name="STR_NMS_LEAVE_GROUP_CONTENT">Do you want to leave from this group?</string>
+    <string name="STR_NMS_LEAVE_GROUP_SUCCESS">Leave this group successfully</string>
+    <string name="STR_NMS_LEAVE_GROUP_FAILED">Failed to leave this group</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_SUCCESS">Update group name successfully</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_SUCCESS">New group members added</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_FAILED">Failed to add group member</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_FAILED">Failed to update group name</string>
+    <string name="STR_NMS_CREATE_GROUP_NAME_FAILED">Failed to create group chat</string>
+    <string name="STR_NMS_DELETE_GROUP_MEMBER_FAILED">Failed to remove group member</string>
+    <string name="STR_NMS_UPDATE_GROUP_SUCCESS">Update group information successfully</string>
+    <string name="STR_NMS_UPDATE_GROUP_FAILED">Failed to update group information</string>
+    <string name="STR_NMS_GROUP_CHAT_BACK">Do you want to discard this operation?</string>
+    <string name="STR_NMS_GROUP_MEMEBER_YOU">YOU</string>
+    <string name="STR_NMS_GROUP_INVITE_MORE">Invite more</string>
+    <string name="STR_NMS_LEAVE_GROUP">Leave this group</string>
+    <string name="STR_NMS_CHAT">Chat</string>
+    <string name="STR_NMS_CONFIRM_REMOVE_TITLE">Remove from group member list</string>
+    <string name="STR_NMS_REMOVE_OK">Remove</string>
+    <string name="STR_NMS_REMOVE_CANCEL">Cancel</string>
+    <string name="STR_NMS_REMOVE_CONTENT">Do you want to remove this from list?</string>
+    <string name="STR_NMS_VIEW_ALL_MEDIA">View all media</string>
+    <string name="STR_NMS_VIEW_ALL_LOCATIONS">View all locations</string>
+    <string name="STR_NMS_CHAT_SETTINGS">Chat settings</string>
+    <string name="STR_NMS_VIEW_GROUP_FAILED">You have left from this group chat.</string>
+    <string name="STR_NMS_VIEW_HISTORY">View group history</string>
+    <string name="STR_NMS_ISMS_ENABLE_TITLE">Enable Joyn</string>
+    <string name="STR_NMS_ISMS_ENABLE_CONTENT">This feature is only supported by Joyn service. Enable your Joyn account now?</string>
+    <string name="STR_NMS_ENABLE">Enable</string>
+    <string name="STR_NMS_LATER">Dismiss</string>
+    <string name="STR_NMS_SWITCH_TITLE">SIM Switch</string>
+    <string name="STR_NMS_SWITCH_MESSAGE">Group chat is only supported when Joyn service is activated, but the current SIM card is not activated. Switch to the SIM card activated?</string>
+    <string name="STR_NMS_SWITCH_EDIT_MESSAGE">Current SIM card is not associated with this group. Switch to the other SIM card?</string>
+    <string name="STR_NMS_LEAVE_GROUP_NOTICE">You have left this group and cannot join this group chat unless you are invited again</string>
+    <string name="STR_NMS_LOSE_SIM_NOTICE">The original chat SIM card has been removed, you can only chat in this group with your original SIM card</string>
+    <string name="STR_NMS_SWITCH">Switch</string>
+
+    <!-- Group chat end -->
+
+
+    <!-- chat details screen long press item start -->
+    <string name="STR_NMS_LONG_PRESS_TITLE">Message options</string>
+    <string name="STR_NMS_SEND_VIA_TEXT">Send via SMS</string>
+    <string name="STR_NMS_TRY_AGAIN">Try again</string>
+    <string name="STR_NMS_TRY_ALL_AGAIN">Try all again</string>
+    <string name="STR_NMS_CONTINUE_TRY">Continue trying</string>
+    <string name="STR_NMS_COPY">Copy</string>
+    
+    <string name="STR_NMS_FORWARD">Forward</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_TITLE">Download</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD">To forward the Joyn, you need to download the media content firstly.</string>
+    <string name="STR_NMS_FORWARD_CONTIUE">Continue</string>
+    <string name="STR_NMS_FORWARD_FAILED">Forward failed.</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_MULTI">To do the multi-forward, some Joyn needs to be downloaded firstly.</string>
+    <string name="STR_NMS_FORWARD_SOME_FAILED">Some Joyn forward failed.</string>
+    <string name="STR_NMS_FORWARD_ALL_FAILED">Download failed, multi-forward discarded</string>
+    
+    <string name="STR_NMS_SEND_VIA_MULTIMEDIA">Send via MMS</string>
+    <string name="STR_NMS_SHARE">Share</string>
+    <string name="STR_NMS_DELETE">Delete</string>
+    <string name="STR_NMS_FLAG_IMPORTANT">Flag as important</string>
+    <string name="STR_NMS_REMOVE_IMPORTANT">Remove important flag</string>
+    <string name="STR_NMS_SAVE_IN_SDCARD">Export to SD card</string>
+    <string name="STR_NMS_SAVE_FILE">File is saved to %1$s</string>
+    <string name="STR_NMS_SHARE_TITLE">The way to share</string>
+    <string name="STR_NMS_VIEW_DETAILS">View details</string>
+    <string name="STR_NMS_VIEW_DETAILS_TITLE">Message details</string>
+    <string name="STR_NMS_SEND_MSG_DETAILS">Type: IP Message\nSent: %1$s</string>
+    <string name="STR_NMS_RECEIVED_MSG_DETAILS">Type: IP Message\nFrom: %1$s\nSendTime: %2$s\nReceived: %3$s\nService Center: Hesine</string>
+    <!-- chat details screen long press item end -->
+
+
+    <!-- chat details screen delete item start -->
+    <string name="STR_NMS_DELETE_TITLE">Delete</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_TITLE">Delete important message</string>
+    <string name="STR_NMS_DELETE_WARNING">The message will be deleted.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_WARNING">Are you sure you want to delete this important message?</string>
+    <string name="STR_NMS_DELETE_MSG">The selected messages will be deleted.</string>
+    <string name="STR_NMS_DELETE_WAITTING">Deleting</string>
+    <string name="STR_NMS_CLEAR_HISTORY_CONTENT">All chat history will be cleared in this chat room</string>
+    <string name="STR_NMS_DELETE_IMPORTANT">Include messages flagged as important</string>
+    <!-- chat details screen delete item end -->
+
+
+    <!-- chat details actionBar option start -->
+    <string name="STR_NMS_MENU_CALL">Call</string>
+    <string name="STR_NMS_MENU_GROUPINFO">Group Info</string>
+    <string name="STR_NMS_MENU_INVITE_CHAT">Invite friends to chat</string>
+    <string name="STR_NMS_MENU_INVITE_ISMS">Invite friends to use Joyn</string>
+    <string name="STR_NMS_MENU_SELECT_MSG">Select message</string>
+    <string name="STR_NMS_MENU_MARK_SPAM">Move to Spam list</string>
+    <string name="STR_NMS_MENU_REMOVE_SPAM">Remove from Spam list</string>
+    <string name="STR_NMS_MENU_ADD_SHORTCUT">Add shortcut</string>
+    <string name="STR_NMS_MENU_VIEW_ALLMEDIA">View all media</string>
+    <string name="STR_NMS_MENU_VIEW_ALLLOCATION">View all locations</string>
+    <string name="STR_NMS_MENU_EDIT_GROUP">Edit group</string>
+    <string name="STR_NMS_MENU_CHAT_SETTING">Chat setting</string>
+    <string name="STR_NMS_MENU_INSERT_QUICK_TEXT">Insert quick text</string>
+    <string name="STR_NMS_MENU_CLEAR_HISTORY">Clear chat history</string>
+    <string name="STR_NMS_MENU_LEAVE_GROUP">Leave this group</string>
+    <string name="STR_NMS_MENU_DISCARD">Discard</string>
+    <string name="STR_NMS_MENU_DELETE">Delete</string>
+    <string name="STR_NMS_MENU_IMPORTANT">Flag as important</string>
+    <string name="STR_NMS_MENU_FORWARD">Forward</string>
+    <!-- chat details actionBar option end -->
+
+
+    <!-- chat details share item start -->
+    <string name="STR_NMS_TAKE_PHOTO">Take a Photo</string>
+    <string name="STR_NMS_RECORD_VIDEO">Record a Video</string>
+    <string name="STR_NMS_DRAW_SKETCH">Draw a Sketch</string>
+    <string name="STR_NMS_SHARE_CONTACT">Share Contact</string>
+    <string name="STR_NMS_CHOOSE_PHOTO">Choose a Photo</string>
+    <string name="STR_NMS_CHOOSE_VIDEO">Choose a Video</string>
+    <string name="STR_NMS_RECORD_AUDIO">Record an Audio</string>
+    <string name="STR_NMS_CHOOSE_FILE">My files</string>    
+    <string name="STR_NMS_SHARE_LOCATION">Share Location</string>
+    <string name="STR_NMS_CHOOSE_AUDIO">Choose an Audio</string>
+    <string name="STR_NMS_SHARE_CALENDAR">Share Calendar</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_TITLE">Add music</string>
+    <string name="STR_NMS_CHOOSE_RINGTONE_ITEM">Ringtone</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_ITEM">Audio</string>
+    <string name="STR_NMS_INSERT_SDCARD">Please insert SD card!</string>
+    <!-- chat details share item start -->
+
+
+    <!-- record audio start -->
+    <string name="STR_NMS_AUDIO_TIMER_FORMAT" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <string name="STR_NMS_AUDIO_LABLE">Audio Note Recorder</string>
+    <string name="STR_NMS_RECORD_AUDIO_CONT">Tap to record</string>
+    <string name="STR_NMS_PLAY_AUDIO_CONT">Tap to play</string>
+    <string name="STR_NMS_ACTION_SEND">Send</string>
+    <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
+    <string name="audio_db_artist_name">Your recordings</string>
+    <string name="audio_db_album_name">Audio recordings</string>
+    <!-- record audio end -->
+
+
+    <!-- chat & group details screen start -->
+
+    <string name="STR_NMS_UNREAD_FORMAT">%1$d unread messages</string>
+    <string name="STR_NMS_NOT_DELIVERED_TITLE">Not yet delivered</string>
+    <string name="STR_NMS_FAILED_TITLE">Sending Error</string>
+    <string name="STR_NMS_GROUP_SUBTITLE">%1$s, +%2$d</string>
+    <string name="STR_NMS_GROUP_DEAD_SUBTITLE">%1$s, %2$d</string>
+    <string name="STR_NMS_SAVE_AS_DRAFT">Message saved as draft</string>
+    <string name="STR_NMS_NO_SD_TITLE">SD card error</string>
+    <string name="STR_NMS_CANT_SHARE">The SD card cannot be accessed.All multimedia related features are temporarily unavailable to use.\n\nPlease check your SD card and try again later.</string>
+    <string name="STR_NMS_CANT_SAVE">SD card is not detected, can\'t save file</string>
+    <string name="STR_NMS_SDSPACE_NOT_ENOUGH">SD card available space is not enough, can\'t save file.</string>
+    <string name="STR_NMS_REAEND_ALL">Try all again...</string>
+    <string name="STR_NMS_FILE_LIMIT">Too large</string>
+    <string name="STR_NMS_LOAD_ALL_MESSAGE">Load All Message</string>
+    <string name="STR_NMS_DOWNLOAD_FAILED">Download failed</string>
+    <string name="STR_NMS_INPUT_HINT">Input content</string>
+    <string name="STR_NMS_INPUT_HINT_ISMS">Type joyn message</string>
+    <string name="STR_NMS_CAPTION_HINT">Type Captions</string>
+    <string name="STR_NMS_PROTOCOL_SMS">SMS</string>
+    <string name="STR_NMS_PROTOCOL_MMS">MMS</string>
+    <string name="STR_NMS_PROTOCOL_IP">Joyn</string>
+    <string name="STR_NMS_SWITCH_BOTTON">Switch SIM</string>
+    <string name="STR_NMS_TURN_ON_BOTTON">Turn on</string>
+    <string name="STR_NMS_SWITCH_TEXT_FORMAT">To continue group chatting, switch to %1$s SIM first.</string>
+    <string name="STR_NMS_ENABLE_TEXT_FORMAT">To continue group chatting, turn on Joyn service on %1$s SIM first.</string>
+    <string name="STR_NMS_REPLACE_ATTACH_TITLE">Replace attachment</string>
+    <string name="STR_NMS_REPLACE_ATTACH_MSG">There is an existing attachment, replace?</string>
+    <string name="STR_NMS_TRUNC_CAPTION">The caption has been truncated.</string>
+    <string name="STR_NMS_MAX_CHARACTERS_REACHED">Message size limit reached.</string>
+    <string name="STR_NMS_MAX_EMOTICON_REACHED">Meet emoticon limits</string>
+    <string name="STR_NMS_ENABLE_PROCESS">Processing...</string>
+    <string name="STR_NMS_ERR_FILE">Invalid file</string>
+    <string name="STR_NMS_SENDING_TEXT">Sending...</string>
+    <string name="MMS_COST_REMIND">SMS service will incur costs</string>
+    <string name="JOYN_COST_REMIND">Joyn data service will incur costs</string>
+    <!-- chat & group details screen end -->
+    <!-- Error code tips -->
+    <string name="STR_NMS_ERR_GENERAL">General error</string>
+    <string name="STR_NMS_ERR_INVALID_ARGUMENT">Invalid argument</string>
+    <string name="STR_NMS_ERR_NETWORK_BLOCK">Network is not OK</string>
+    <string name="STR_NMS_ERR_PHONE_NOT_ACTIVATED">Not activated</string>
+    <string name="STR_NMS_ERR_SIM_NOT_ACTIVATED">SIM card is not activated</string>
+    <string name="STR_NMS_ERR_INVALID_MSG_DB_ID">Invalid message DB Id</string>
+    <string name="STR_NMS_ERR_ADD_MSG_DB_FAILED">Failed to insert to DB</string>
+    <string name="STR_NMS_ERR_UPDATE_MSG_DB_FAILED">Failed to update DB</string>
+    <string name="STR_NMS_ERR_GET_MSG_DB_DATA_FAILED">Failed to fetch message</string>
+    <string name="STR_NMS_ERR_INVALID_CONTACT_DB_ID">Invalid contact DB Id</string>
+    <string name="STR_NMS_ERR_ADD_CONTACT_DB_FAILED">Failed to insert to contact</string>
+    <string name="STR_NMS_ERR_UPDATE_CONTACT_DB_FAILED">Failed to update contact DB</string>
+    <string name="STR_NMS_ERR_GET_CONTACT_DB_DATA_FAILED">Failed to fetch contact by Id</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_ERROR_FORMAT">Invalid IP Message format</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_INVALID_TO">Invalid recipient</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_WITH_UNKNOWN_USER">Invalid unknown recipient user</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_NO_MBMBER">There are no group chat members</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_GCHAT_DEAD">The group chat is not activated</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_INVALID_SIM_ID">The group chat SIM card is not the current SIM card</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_FOR_SYS_MSG">Send system message again</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_INVALID_STATUS">IP message is not ready</string>
+    <string name="STR_NMS_ERR_GCHAT_IS_DEAD">This group chat is not there anymore</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBERS">Invalid group members</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBER_WITH_SELF">Fail to create group. Members shall not contain yourself</string>
+    <string name="STR_NMS_ERR_GCHAT_EXCEED_MAX_MEMBER_COUNT">Number of group members reaches the limit</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_NAME">Invalid group chat name</string>
+    <string name="STR_NMS_ERR_GCHAT_SIM_IS_NOT_ACTIVATED">The group chat\'s SIM card is not activated</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_NOT_INBOX_MSG">Failed to get download URL</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_INVALID_URL">Invalid download URL</string>
+    <string name="STR_NMS_ERR_GET_ATTACH_NAME_INVALID_BODY_FORMAT">Failed to get download file name</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_INVALID_FILE_NAME">Invalid download file name</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_EXIST">The download file does not exist</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_INBOX_MSG">Failed to set download file</string>
+    <string name="STR_NMS_ERR_SIM_INFO_NOT_FOUND">SIM card information not found</string>
+    <string name="STR_NMS_ERR_SIM_IN_INVALID_STATUS">Invalid SIM card state</string>
+    <string name="STR_NMS_ERR_CMD_PROCESSING">The system is busy, and can\'t deal with system configuration command</string>
+    <string name="STR_NMS_ERR_CMD_GENERAL">General system configuration error</string>
+    <string name="STR_NMS_ERR_CODE_END">The unknown error code</string>
+    <!-- Error code tips -->
+    <string name="STR_NMS_SEND_MMS_QUERY_TITLE">Warning</string>
+    <string name="STR_NMS_SEND_MMS_QUERY">Recipient is not an Joyn user, send by MMS?</string>
+    <!-- Service center start -->
+    <string name="STR_NMS_SERVICE_TITLE">Joyn service center</string>
+    <string name="STR_NMS_INTRODUCTION">With Joyn, you can instantly deliver free messages, and keeps your chat history in one place, Press on one button, comes the new experience!</string>
+    <string name="STR_NMS_TERMS">Terms and Condition</string>
+    <string name="STR_NMS_ACTIVATION_BUTTON">Activation now</string>
+    <string name="STR_NMS_LOSE_SDCARD">SD card is not detected</string>
+    <!-- Service center end -->
+
+
+    <!-- conversation empty tips -->
+    <string name="STR_NMS_SPAM_EMPTY">You don\'t have any spam conversation. \nSPAM collects all conversations that are marked as spam. Notification will be turned off by default. This avoid you from unnecessary disturbance. \n\nYou can mark a sender as spam by holding a conversation and selecting Mark as Spam icon. When a conversation is marked as spam, a notification-off icon will be shown automatically and the conversation will be placed here.</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_FROM">+86123456789</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_SUBJECT">This is an example of spam message.</string>
+    <string name="STR_NMS_GROUPCHAT_EMPTY">You don\'t have any group chat message. \nGROUP CHATS collects all group chat messages that are created or joined by you. This allows you find and manage your group chats easily. \n\nTo create a group chat, you can tap on Create a group chat button at the bottom of this screen and invite your friends to join the group.</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_FROM">Group name</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_SUBJECT">Your friend:\nI like group chat feature!</string>
+    <string name="STR_NMS_IMPORTANT_EMPTY">You don\'t have any important message. \nIMPORTANT collects all the messages that are flagged as important. This allows you find important messages easily. \n\nYou can flag a message as important by holding a message and selecting Flag as important from Option menu. When a message is flagged as important, you will see a red flag icon as below.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TITLE">This is an example of a message flagged as important. A red flag will appear.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TIME">10:55 am</string>
+    <string name="STR_NMS_ALLCHAT_EMPTY">No conversations</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_CONTENT">To use this feature. you will have to activate Joyn service first. Don\'t worry - if you don\'t like the service, you can always turn off in Settings. Try it out now!</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_TITLE">Activate Joyn</string>
+    <!-- conversation empty tips -->
+    
+    <string name="STR_NMS_CLEAR_USER_DATA">Clear data successfully</string>
+    
+    <!-- get file err start -->
+    <string name="STR_NMS_NO_SUCH_FILE">No such file</string>
+    <string name="STR_NMS_OVER_FILE_LIMIT">The size of file exceeds the limit</string>
+    <string name="STR_NMS_INVALID_FILE_TYPE">Does not support this type</string>
+    <!-- get file err end -->
+
+    <string name="STR_NMS_DELIVERY_BODY">Message received by %s</string>
+    <string name="STR_NMS_SIM_SELECT_TITLE">Select SIM</string>
+    <string name="imsp_ip_message">Joyn Message</string>
+    <string name="imsp_invite_chat_frequently"><b>Chat frequently with %s ?</b>\nWhy not invite %s to use Joyn to save both of your money?</string>
+    <string name="imsp_enable_chat_frequently"><b>The Joyn service of %s is disabled!</b>\nWhy not enable your Joyn service and save both of your money?</string>
+    <string name="imsp_invite">Invite</string>
+    <string name="imsp_enable_notice">Are you sure to enble Joyn service?</string>
+    <string name="imsp_activate_chat_frequently"><b>Chat frequently with friends?</b>\nWhy not activate Joyn service to chat without SMS rate?</string>
+    <string name="imsp_activate_note">Are you sure to activate Joyn?</string>
+    <string name="imsp_dismiss_content">Are you sure to dismiss the note?</string>
+    <string name="imsp_divider_online">%s is Online</string>
+    <string name="imsp_divider_offline">Last online time at %s</string>
+    <string name="imsp_divider_never_online">Never online</string>
+    <string name="imsp_failed_title">Send Failed</string>
+    <string name="imsp_resend_via_sms">Send SMS instead</string>
+    <string name="imsp_resend_via_mms">Send MMS instead</string>
+    <string name="imsp_typing_text">Typing</string>
+    <string name="imsp_save_attachment">Save attachment</string>
+    <string name="imsp_view">View</string>
+    <string name="imsp_convert_to_mms">Convert to MMS.</string>
+    <string name="imsp_convert_to_sms">Convert to SMS.</string>
+    <string name="imsp_convert_to_isms">Convert to Joyn.</string>
+    <string name="imsp_convert_to_mms_for_service">Joyn service is not avaliable in this selected SIM card. This message can only be sent via MMS in this SIM card. Continue anyway?</string>
+    <string name="imsp_convert_to_sms_for_service">Joyn service is not avaliable in this selected SIM card. This message can only be sent via SMS in this SIM card. Continue anyway?</string>
+    <string name="imsp_convert_to_mms_for_recipients">The recipient(s) is(are) not Joyn user. This message can only be sent via MMS. Continue anyway?</string>
+    <string name="imsp_convert_to_sms_for_recipients">The recipient(s) is(are) not Joyn user. This message can only be sent via SMS. Continue anyway?</string>
+    <string name="imsp_sms_convert_to_isms">Joyn service is avaliable in this selected SIM card. To save SMS rate, it is suggested switch the message to Joyn. Switch now?</string>
+    <string name="imsp_mms_convert_to_isms">Joyn service is avaliable in this selected SIM card. To save MMS rate, it is suggested switch the message to Joyn. Switch now?</string>
+    <string name="imsp_keep_mms">Keep MMS</string>
+    <string name="imsp_keep_sms">Keep SMS</string>
+    <string name="imsp_resend_discard_message">To resend the message, your current composing message will be discarded.</string>
+    <string name="imsp_no_sim_card">No SIM card!</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">"No working internet connection is found! Please try again later."</string>
+    <string name="imsp_chat_setting_updating">updating...</string>
+    <string name="imsp_dialog_clear_title">Clear</string>
+    
+    <string name="imsp_dialog_clear_description">All chat history will be cleared in this chat room</string>
+    <string name="imsp_chat_setting_saving">saving...</string>
+    <string name="imsp_chat_setting_sending">sending...</string>
+    <string name="imsp_save_chat_history_failed">save failed</string>
+    <string name="imsp_send_chat_history_failed">E-mail failed</string>
+    <string name="imsp_conversation_list_all">Messages</string>
+    <string name="imsp_conversation_list_important">Important</string>
+    <string name="imsp_conversation_list_group_chats">Joyn Group</string>
+    <string name="imsp_conversation_list_spam">Spam</string>
+    <string name="imsp_conversation_list_joyn">Joyn Chat</string>
+    <string name="imsp_conversation_list_xms">Xms</string>
+    <string name="imsp_mark_as_spam_tips">Messages marked as Spam will move to Spam list and be turned off the notification automatically.</string>
+    <string name="imsp_typing">"Typing..."</string>
+    <string name="imsp_type_to_compose_text">"Type SMS/Joyn message"</string>
+    <string name="imsp_no_sdcard">No SDcard</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">To send an invitation, your composing messages will be discarded.</string>
+    <string name="imsp_current_sim_enabled">Current SIM is enabled.</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">Select SIM for activate Joyn</string>
+    <string name="imsp_activate_message">This feature is only supported by Joyn service. Activate your Joyn account now?</string>
+    <string name="imsp_enable_message">This feature is only supported by Joyn service. Enable your Joyn account now?</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">Select SIM for enable Joyn</string>
+    <string name="imsp_switch_sim_title">Switch SIM</string>
+    <string name="imsp_switch_sim_message">The current SIM does not support Joyn. Switch to other SIM?</string>
+    <string name="imsp_switch_sim_successfully">Switch SIM successfully!</string>
+    <string name="imsp_dailog_multi_forward">Forwarding Messages</string>
+    <string name="imsp_dialog_send_result">Send Result</string>
+    <string name="imsp_dlg_send_all">All: %s</string>
+    <string name="imsp_dlg_send_sucess">Sent: %s</string>
+    <string name="imsp_dlg_send_failed">Failed: %s</string>
+    <string name="imsp_multi_forward_sim_info">Getting SIM Info</string>
+    <string name="imsp_multi_forward_no_sim">No SIM Info</string>
+    <string name="imsp_get_sim_failed">Get SIM info failed</string>
+    <string name="imsp_sim_status_error">SIM status error</string>
+    <string name="imsp_forward_norecipients">There is no recipient(s) for forwarding message</string>
+    <string name="imsp_multiforward_no_message">There is no message(s) can be forwarded</string>
+    <string name="imsp_need_input_recipients">Please specify at least one recipient first</string>
+    <string name="imsp_spam_empty">You don\'t have any spam conversation. \nSPAM collects all conversations that are marked as spam. Notification will be turned off by default. This avoid you from unnecessary disturbance. \n\nYou can mark a sender as spam by holding a conversation and selecting Mark as Spam icon. When a conversation is marked as spam, a notification-off icon will be shown automatically and the conversation will be placed here.</string>
+    <string name="imsp_groupchat_empty">You don\'t have any group chat message. \nGROUP CHATS collects all group chat messages that are created or joined by you. This allows you find and manage your group chats easily. \n\nTo create a group chat, you can tap on Create a group chat button at the bottom of this screen and invite your friends to join the group.</string>
+    <string name="imsp_important_empty">You don\'t have any important message. \nIMPORTANT collects all the messages that are flagged as important. This allows you find important messages easily. \n\nYou can flag a message as important by holding a message and selecting Flag as important from Option menu. When a message is flagged as important, you will see a red flag icon as below.</string>
+    <string name="imsp_allchat_empty">No conversations</string>
+    <string name="imsp_attach_slideshow">Slideshow</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">Downloading...</string>
+    <string name="imsp_invite_friends_to_ipmsg">Invite friends to use Joyn</string>
+    <string name="imsp_multi_forward_tips_content">To do the multi-forward, some Joyn needs to be downloaded firstly.</string>
+    <string name="imsp_multi_forward_failed_part">Some Joyn forward failed.</string>
+    
+    <string name="STR_NMS_SHORTCUT_SUCCESS">Shortcut %1$s created.</string>
+    <string name="STR_NMS_SHORTCUT_REFRESHING">Refreshing</string>
+    
+    <string name="STR_NMS_DISABLE_FAILED">The operation failed, please try again</string>
+    <string name="STR_NMS_ENABLE_FAILED">The operation failed, please try again</string>
+    <string name="STR_NMS_ENABLE_SUCCESS">You have successfully activated Joyn service</string>
+    <string name="STR_NMS_DISABLE_SUCCESS">You have successfully inactivated Joyn service</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH">Joyn service is inactivated due to lack of storage space. Please clear some space and activate it manually.</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH_ADD">Joyn service is temporarily unavailable due to lack of storage space. Please clear some space and try again later.</string>
+
+	  <string name="STR_NMS_SD_CARD_FULL">SD card full</string>
+    <string name="STR_NMS_SEND_MSG_FAILED">Send message failed!</string>
+    <string name="STR_NMS_CANCEL">Cancel</string>
+    <string name="STR_NMS_NETWORK_UNAVL">Please make sure you have a working data connection, e.g., 3G, GPRS or Wi-Fi</string>
+    <string name="STR_NMS_TODAY">Today</string>
+    <string name="STR_NMS_YESTERDAY">Yesterday</string>
+    <string name="STR_NMS_NOW">Now</string>
+    <string name="STR_NMS_NO_SIM_CARD">SIM card is not detected, you must insert a SIM card.</string>
+    <string name="STR_NMS_NO_CONNECTION">Network is not available or flight mode is on, please check.</string>
+    <string name="STR_NMS_ATTACH_SHARE">%1$s shared %2$s</string>
+    <string name="STR_NMS_WAIT">Wait…</string>
+    <string name="STR_NMS_TIPTITLE">Tip</string>
+    <string name="STR_NMS_MAIN">Joyn</string>
+    <string name="STR_NMS_MAIN_ADD">joyn</string>
+    <string name="STR_NMS_HISSAGE">Joyn</string>
+    <string name="STR_NMS_INVITE_SMS_CONTENT">Hi, Joyn is a cool chatting tool. It is free and convenient. Please check http://isms.hissage.com to find more.</string>
+    <string name="STR_NMS_NO_SDCARD">SD card is not detected, some operations won\'t be allowed by Joyn</string>
+    <string name="STR_NMS_MOUNT_SDCARD">SD card is available for use</string>
+    <string name="text_blacklist">Block list</string>
+    <string name="text_chats">Chats</string>
+    <string name="text_settings">Settings</string>
+    <string name="text_chat_main">Chat</string>
+    <string name="notification_multiple"><xliff:g id="count">%s</xliff:g> new messages</string>
+    <string name="notification_multipleChats_title">Chat message from <xliff:g id="number">%s</xliff:g> chats</string>
+    <string name="text_add_contacts">Add contacts</string>
+    <string name="text_clear_history">Clear history</string>
+    <string name="text_close_chat">Close chat</string>
+    <string name="text_name">Display name</string>
+    <string name="group_chat_expand">Tap to expand group chat</string>
+    <string name="text_group_chat_quit">Quit</string>
+    <string name="group_invitations_title">GROUP CHAT INVITATION</string>
+    <string name="chats_list_title">CHAT</string>
+    <string name="clear_history_message">Chat history will be deleted, and can not be recovered.</string>
+    <string name="file_transfer_bytes">bytes</string>
+    <!-- kilobyte -->
+    <string name="file_transfer_k_bytes">K</string>
+    <!-- megabyte -->
+    <string name="file_transfer_m">M</string>
+    <string name="file_transfer_status_waiting">Waiting...</string>
+    <string name="over_max_file_size">The file you selected is too large</string>
+    <string name="file_size_warning_contents">To send or receive large file may cause significant data charges</string>
+    <string name="file_size_remind_contents">Don\'t remind me again</string>
+    <string name="file_size_warning">Large file</string>
+    <string name="file_size_notification">Reject a very large file from <xliff:g id="name">%s</xliff:g></string>
+    <string name="oneonechat_block_title">Block \"<xliff:g id="contact">%s</xliff:g>\"</string>
+    <string name="oneonechat_unblock_title">Unblock \"<xliff:g id="contact">%s</xliff:g>\"</string>
+    <string name="oneonechat_block_message">All messages from \"<xliff:g id="contact">%s</xliff:g>\" will be blocked. You can check block list in settings to unblock</string>
+    <string name="oneonechat_unblock_message">All messages from \"<xliff:g id="contact">%s</xliff:g>\" will be unblocked</string>
+    <string name="groupchat_delete_menu">Delete</string>
+    <string name="groupchat_delete_message">Delete group chat</string>
+    <string name="default_group_chat_subject">Group chat</string>
+    <string name="text_yesterday">Yesterday</string>
+    <string name="text_today">Today</string>
+    <string name="load_history">Load more chat history</string>
+    <string name="attach_picture">Picture</string>
+    <string name="attach_capture_picture">Capture picture</string>
+    <string name="group_chat_stranger">Stranger</string>
+    <string name="invitation_timeout_title">Invitation timed out</string>
+    <string name="invitation_timeout_message">Group chat invitation has already timed out.</string>
+    <string name="chat_invitation_title">Chat invitation</string>
+    <string name="file_transfer_title">File transfer</string>
+    <string name="leave_group_chat"><xliff:g id="name">%s</xliff:g> has left.</string>
+    <string name="join_group_chat"><xliff:g id="name">%s</xliff:g> joins in.</string>
+    <string name="stranger_remind">You are chatting with unchecked identity.</string>
+    <string name="network_error_remind">Network is not available.</string>
+    <string name="warning_no_service">The joyn service is disabled, please try it later!</string>
+    <string name="warning_no_im_capability">The contact that you chose don\'t have IM capability, please try it later!</string>
+    <string name="warning_no_file_transfer_capability">The contact that you chose don\'t have file transfer capability, please try it later!</string>
+    <string name="warning_not_support_file">The file that you chose was not supported for file transfer.</string>
+    <string name="warning_rcse_disabled">Joyn service has been disabled</string>
+    <!-- Do Not Translate -->
+    <string name="file_transfer_enhance_title">joyn</string>
+    <string name="rcs_dialog_positive_button">OK</string>
+    <string name="rcs_dialog_negative_button">Cancel</string>
+    <string name="select_contact_warning_dialog_title">Contacts warning</string>
+    <string name="select_contact_warning_dialog_message">No contacts are available!</string>
+    <!-- Do Not Translate -->
+    <string name="joyn_title">joyn</string>
+    <string name="rcse_disable_joyn_title">Disable Joyn Messaging</string>
+    <string name="rcse_disable_joyn_summary">Disable joyn and only use XMS</string>
+    <string name="rcse_message_settings">Message Settings</string>
+    <string name="rcse_debug_settings">Debug Options</string>
+    <!-- Do Not Translate -->
+    <string name="im_chat">IM</string>
+    <string name="no_contact">No Contact</string>
+    <string name="large_file_repick_title">Extra large file</string>
+    <string name="large_file_repick_message">File is too large. Please select another file.</string>
+    <string name="im_capabillity_failed"><xliff:g id="name">%s</xliff:g> not available.</string>
+    <string name="link_pick">Select Action</string>
+    <string name="message">Message</string>
+    <string name="browser_alert">It will open the browser, continue?</string>
+    <string name="no_chat">No chat.</string>
+    <string name="failed_joyn_messages">Failed Joyn Message</string>
+    <string name="message_status_displayed">Read</string>
+    <string name="not_rcse_remind"><xliff:g id="number">%s</xliff:g> is not a valid user.</string>
+    <string name="cannot_add_any_more_member">Can\'t add member any more</string>
+    <string name="cannot_add_members_over">Can\'t add members over <xliff:g id="max_num">%d</xliff:g></string>
+    <string name="text_close_all_chat">Close all chats</string>
+    <string name="text_close_all_chat_message">Do you want to close all chats?</string>
+    <string name="compress_image_title">Compress Image</string>
+    <string name="compress_image_content">Sending a compressed image will speed up the transfer. Would you like to compress it.</string>
+    <string name="pref_setting_isms">joyn Message</string>
+    <string name="group_active">active</string>
+    <string name="group_inactive">inactive</string>
+    <string name="group_not_registered">You haven\'t logged in yet</string>
+    <string name="group_rejoining">Group chat is rejoining, please wait</string>
+    <string name="group_restarting">Group chat is restarting, please wait</string>
+    <string name="group_terminated">Group chat terminated</string>
+
+    <string name="send_by_joyn">Send by joyn</string>
+    <string name="send_by_xms">Send by xms</string>
+    <string name="enter_joyn_chat">Enter Joyn chat</string>
+    <string name="enter_xms_chat">Enter Xms chat</string>
+    <string name="export_chat">Export chat</string>
+    <string name="send_by_sms_dialog">Can\'t send message by joyn, would you want to send by sms?</string>
+    <string name="sim_info">Joyn</string>
+</resources>

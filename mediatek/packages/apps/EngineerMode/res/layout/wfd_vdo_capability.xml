@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/Wfd_Vdo_Max_Resolution_tx"
+                android:layout_width="170dip"
+                android:layout_height="wrap_content"
+                android:text="@string/wfd_vdo_max_resolution" >
+            </TextView>
+
+            <RadioButton
+                android:id="@+id/Wfd_Vdo_720p_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wfd_vdo_720p_1" />
+            <RadioButton
+                android:id="@+id/Wfd_Vdo_720p_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wfd_vdo_720p_2" />
+            <LinearLayout
+                android:id="@+id/LinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:orientation="vertical" >
+                <CheckBox
+                    android:id="@+id/Wfd_Setting_Menu_720p"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/wfd_vdo_setting_menu" />
+                <RadioGroup
+                    android:id="@+id/Wfd_Vdo_Definition_720p"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dip"
+                    android:orientation="vertical" >
+                    <RadioButton
+                        android:id="@+id/Wfd_Vdo_720p_def_h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wfd_vdo_720p_2" />
+                    <RadioButton
+                        android:id="@+id/Wfd_Vdo_720p_def_l"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wfd_vdo_720p_1" />
+               </RadioGroup>
+            </LinearLayout>
+            <RadioButton
+                android:id="@+id/Wfd_Vdo_1080p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wfd_vdo_1080p" />
+        
+            <LinearLayout
+                android:id="@+id/LinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:orientation="vertical" >
+                <CheckBox
+                    android:id="@+id/Wfd_Setting_Menu_1080p"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/wfd_vdo_setting_menu" />
+                <RadioGroup
+                    android:id="@+id/Wfd_Vdo_Definition_1080p"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dip"
+                    android:orientation="vertical" >
+                    <RadioButton
+                        android:id="@+id/Wfd_Vdo_def_f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wfd_vdo_1080p" />
+                    <RadioButton
+                        android:id="@+id/Wfd_Vdo_def_h"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wfd_vdo_720p_2" />
+                    <RadioButton
+                        android:id="@+id/Wfd_Vdo_def_l"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wfd_vdo_720p_1" />
+               </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/Wfd_Done"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/wfd_Done" />
+    </LinearLayout>
+
+</ScrollView>

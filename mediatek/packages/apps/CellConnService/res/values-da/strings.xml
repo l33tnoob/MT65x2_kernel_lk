@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="app_name">CellConnectionService</string>
+	<string name="button_ok">OK</string>
+	<string name="button_cancel">"Annuller"</string>
+	<string name="confirm_radio_title">SIM deaktiveret</string>
+	<string name="confirm_radio_title_uim">UIM deaktiveret</string>
+	<string name="confirm_radio_title_card">Kort deaktiveret</string>
+
+	<string name="confirm_radio_msg"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		er nu slået fra. Vil du aktivere dette SIM-kort?</string>
+  <string name="confirm_radio_msg_uim"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		er nu slået fra. Vil du aktivere dette UIM-kort?</string>
+  <string name="confirm_radio_msg_card"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		er nu slået fra. Vil du aktivere dette kort?</string>
+
+	<string name="confirm_radio_flight_mode_on_and_msg">Flytilstand er slået til, og</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> 		er nu slået fra. Vil du slå flytilstand fra og aktivere dette SIM-kort?</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg_uim"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> 		er nu slået fra. Vil du slå flytilstand fra og aktivere dette UIM-kort?</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg_card"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> 		er nu slået fra. Vil du slå flytilstand fra og aktivere dette kort?</string>	
+	<string name="confirm_radio_flight_mode_on_sim_on_msg">Flytilstand er slået til. Vil du deaktivere flytilstand?</string>  
+	<string name="confirm_radio_msg_single">Flytilstand er nu aktiveret. Vil du deaktivere?</string>
+	<string name="confirm_pin_title">SIM låst</string>
+	<string name="confirm_pin_title_uim">UIM låst</string>
+	<string name="confirm_pin_title_card">Kort låst</string>
+	<string name="confirm_pin_msg">Det valgte SIM-kort er nu låst. Lås det 		først op.</string>
+	<string name="confirm_pin_msg_uim">Det valgte UIM-kort er nu låst. Lås det 		først op.</string>
+	<string name="confirm_pin_msg_card">Det valgte kort er nu låst. Lås det 		først op.</string>
+	<string name="confirm_simmelock_title">SIM ME-låst</string>
+	<string name="confirm_simmelock_msg">Det valgte SIM-stik er nu låst. Lås det 		først op.</string>
+	<string name="confirm_simmelock_msg_uim">Det valgte UIM-stik er nu låst. Lås det 		først op.</string>
+	<string name="confirm_simmelock_msg_card">Det valgte stik er nu låst. Lås det 		først op.</string>
+	<string name="confirm_fdn_title">FDN aktiveret</string>
+	<string name="confirm_fdn_msg">De faste opkaldsnumre er aktiveret.</string>
+	<string name="confirm_roaming_title">Advarsel om roaming</string>
+	<string name="confirm_roaming_msg">Det SIM-kort, du skal til at bruge, 		roamer nu. Der er ingen tilgængelige lokale SIM-kort. Vil du fortsætte?</string>
+	<string name="confirm_roaming_msg_uim">Det UIM-kort, du skal til at bruge, 		roamer nu. Der er ingen tilgængelige lokale UIM-kort. Vil du fortsætte?</string>
+	<string name="confirm_roaming_msg_card">Det kort, du skal til at bruge, 		roamer nu. Der er ingen tilgængelige lokale kort. Vil du fortsætte?</string>
+  <string name="confirm_roaming_withPrefer_msg">Det SIM-kort, du skal til at bruge, roamer nu. Vil du fortsætte med det lokale SIM-kort?</string>
+  <string name="confirm_roaming_withPrefer_msg_uim">Det SIM-kort, du skal til at bruge, roamer nu. Vil du fortsætte med det lokale UIM-kort?</string>
+  <string name="confirm_roaming_withPrefer_msg_card">Det SIM-kort, du skal til at bruge, roamer nu. Vil du fortsætte med det lokale kort?</string>
+  <string name="confirm_roaming_lbutton">"Fortsæt"</string>
+  <string name="confirm_roaming_rbutton">"Annuller"</string>
+  <string name="confirm_roamingWithPrefer_lbutton">Lokalt SIM-kort</string>
+  <string name="confirm_roamingWithPrefer_lbutton_uim">Lokalt UIM-kort</string>
+  <string name="confirm_roamingWithPrefer_lbutton_card">Lokalt kort</string>
+  <string name="confirm_roamingWithPrefer_rbutton">Roamer SIM-kort</string>
+  <string name="confirm_roamingWithPrefer_rbutton_uim">Roamer UIM-kort</string>
+  <string name="confirm_roamingWithPrefer_rbutton_card">Roamer kort</string>
+	<string name="confirm_roaming_for3Sims_msg">Det SIM-kort, du skal til at bruge, 		roamer nu. Vil du fortsætte?</string>
+  <string name="confirm_roaming_for3Sims_msg_uim">Det UIM-kort, du skal til at bruge, 		roamer nu. Vil du fortsætte?</string>
+  <string name="confirm_roaming_for3Sims_msg_card">Det kort, du skal til at bruge, 		roamer nu. Vil du fortsætte?</string>
+	<string name="confirm_radio_lbutton">Aktiver</string>
+	<string name="confirm_unlock_lbutton">Lås op</string>
+	<string name="confirm_unlock_fail">Handling annulleret</string>
+	<string name="confirm_turnon_radio_fail">Handling annulleret</string>
+	<string name="confirm_permit_roaming_fail">Du annullerer denne handling på det roamende SIM-kort</string>
+	<string name="confirm_permit_roaming_fail_uim">Du annullerer denne handling på det roamende UIM-kort</string>
+	<string name="confirm_permit_roaming_fail_card">Du annullerer denne handling på det roamende kort</string>
+	<string name="confirm_sim_locked_message">SIM-kort er permanent låst</string>
+	<string name="confirm_sim_locked_message_uim">UIM-kort er permanent låst</string>
+	<string name="confirm_sim_locked_message_card">Kort er permanent låst</string>	
+    <string name="confirm_slot_locked_message">Stikket er permanent låst</string>
+	<string name="button_yes">"Ja"</string>  
+	<string name="button_no">"Nej"</string>  
+</resources>

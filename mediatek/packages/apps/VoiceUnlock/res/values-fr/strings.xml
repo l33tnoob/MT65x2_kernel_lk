@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="unlock_set_unlock_mode_voice_weak">Déblocage Vocal.</string>
+    <string name="voice_unlock_setup_intro_header">Enregistrer commande vocale</string>
+    <string name="voice_command_select_title">Sélectionner commande</string>
+    <string name="voice_command_launch_app_title">Lancer appli</string>
+    <string name="reset_command_title">Réinitialiser commande</string>
+    <string name="reset_command_prompt">La commande en cours sera réinitialisée et ne pourra plus être récupérée.</string>
+    <string name="reset_command_prompt_last">"L'unique commande vocale sera réinitialisée. Le verrouillage de l'écran passera en Glisseur."</string>
+    <string name="voice_unlock_options_title">Options</string>
+    <string name="voice_unlock_ok_label">"OK"</string>
+    <string name="voice_unlock_cancel_label">"Annuler"</string>
+    <string name="voice_unlock_retry_label">Réessayer</string>
+    <string name="voice_unlock_record_label">"Enregistrer"</string>
+    <string name="voice_unlock_continue_label">"Continuer"</string>
+    <string name="voice_unlock_setup_intro">Enoncez une commande de 2 à 6 syllabes, puis répétez-la 3-6 fois.</string>
+    <string name="voice_unlock_command">Débloquer commande</string>
+    <string name="voice_command1">Réveiller commande 1</string>
+    <string name="voice_command2">Réveiller commande 2</string>
+    <string name="voice_command3">Réveiller commande 3</string>
+    <string name="command_summary">Débloquer et exécuter <xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_command_primary">Exécuter <xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_command_customize">"Personnaliser"</string>
+    <string name="voice_command_secondary">Exécuter <xliff:g id="app_name">%1$s</xliff:g> après déblocage</string>
+    <string name="voice_command_record_description_unlock_screen">Débloquer écran</string>
+    <string name="voice_command_record_description_command">Débloquer écran et exécuter <xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_service_error_title">Service déblocage vocal erroné.</string>
+    <string name="stop_playing_title">Arrêter la lecture multimédia</string>
+    <string name="stop_playing_message">"Veuillez arrêter la lecture multimédia avant d'enregistrer."</string>
+    <string name="voice_command_record_introdution">Touchez le bouton ENREGISTRER et ENONCEZ votre commande vocale.</string>
+    <string name="voice_command_record_prepare">Préparation, veuillez patienter…</string>
+    <string name="voice_command_record_first_recording">ENONCEZ votre commande.\n2 à 6 syllabes conseillées.</string>
+    <string name="voice_command_record_non_first_recording">REPETEZ votre commande.</string>
+    <string name="voice_command_record_one_round_ok">"C'EST BON."</string>
+    <string name="voice_command_record_one_round_noisy">Trop de bruit pour vous entendre. Veuillez réessayer.</string>
+    <string name="voice_command_record_one_round_weak">"Impossible d'entendre votre voix clairement. Veuillez réessayer."</string>
+    <string name="voice_command_record_one_round_diff">Cette commande est différente des précédentes.</string>
+    <string name="voice_command_record_one_round_exist">Quasi identique à une commande vocale existante. Veuillez réessayer en modifiant.</string>
+    <string name="voice_command_record_recording_ok">Commande vocale configurée avec succès.</string>
+    <string name="voice_unlock_setup_end_all_done">Tout est fait.</string>
+    <string name="voice_unlock_setup_end_prompt">Pour débloquer votre téléphone, énoncez votre commande vocale.</string>
+    <string name="pass_word_file_missing">Impossible de lire la commande vocale.</string>
+    <string name="time_out_title">"Dépassement du délai d'attente"</string>
+    <string name="time_out_message">Aucune commande vocale depuis 5 secondes. Veuillez réessayer.</string>
+    <string name="during_call_title">Enregistrement indisponible</string>
+    <string name="during_call_message">""Commande vocale d\'enregistrement" indisponible lors d\'un appel."</string>
+</resources>

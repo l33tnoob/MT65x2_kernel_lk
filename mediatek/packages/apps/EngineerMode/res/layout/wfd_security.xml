@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"  >
+        
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/Wfd_Sec_Content_tx"
+            android:layout_width="170dip"
+            android:layout_height="wrap_content"
+            android:text="@string/wfd_sec_content" >
+        </TextView>
+        <RadioGroup
+            android:id="@+id/Wfd_Sec_Tv_Shows"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+            <RadioButton
+                android:id="@+id/Wfd_Sec_Tv_Shows_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wfd_sec_tv_shows_0" />
+            <RadioButton
+                android:id="@+id/Wfd_Sec_Tv_Shows_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wfd_sec_tv_shows_1" />
+        </RadioGroup>
+    </LinearLayout>
+    
+
+    <Button
+        android:id="@+id/Wfd_Done"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/wfd_Done" />
+</LinearLayout>
+

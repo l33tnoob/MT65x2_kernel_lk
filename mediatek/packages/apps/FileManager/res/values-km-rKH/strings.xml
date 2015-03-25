@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="app_name">អ្នកគ្រប់គ្រងឯកសារ</string>
+    <string name="sort_by">រៀបចំតាម</string>
+    <string name="copy">"ចម្លង"</string>
+    <string name="create_folder">បង្កើតសឺមី</string>
+    <string name="cut">"កាត់"</string>
+    <string name="delete">លុបចោល</string>
+    <string name="details">ព័ត៌មានលំអិត</string>
+    <string name="paste">"បិទ​ភ្ជាប់"</string>
+    <string name="rename">ដាក់ឈ្មោះថ្មី</string>
+    <string name="new_folder">សឺមីថ្មី</string>
+    <string name="confirm_rename">បញ្ញាក់ការដាក់ឈ្មោះថ្មី</string>
+    <string name="pasting">កំពុងបិត</string>
+    <string name="loading">កំពុងឡូត\u2026</string>
+    <string name="deleting">កំពុងលុបចោល</string>
+    <string name="alert_delete_multiple">របស់ទាំងនេះនឹងត្រូវលុបចេញ</string>
+    <string name="alert_delete_single">របស់នេះនឹងត្រូវលុបចេញ</string>
+
+    <string-array name="sort_by">
+        <item>វាយ</item>
+        <item>ឈ្មោះ (A - Z)</item>
+        <item>ទំហំ (ធំ - តូច)</item>
+        <item>ម៉ោង (ថ្មី - ចាស់)</item>
+    </string-array>
+
+    <string name="name">ឈ្មោះ</string>
+    <string name="size">ទំហំ</string>
+    <string name="modified_time">បានកែសម្រួល</string>
+    <string name="readable">អាចអានបាន</string>
+    <string name="executable">អាចប្រតិបត្តិបាន</string>
+    <string name="writable">អាចសរសេរបាន</string>
+    <string name="msg_rename_ext">អ្នកកំពុងតែប្តូរកន្ទុយរបស់ឈ្មោះឯកសារ ដែលអាចធ្វើឲ្យឯកសារមិនត្រូវបានទទួលស្គាល់ ។ តើអ្នកពិតជាចង់ប្តូរវាមែនទេ?</string>
+    <string name="wait">សូមរង់ចាំ\u2026</string>
+    <string name="done">"រួចរាល់"</string>
+    <string name="cancel">លើកលែង</string>
+    <string name="no">"ទេ"</string>
+    <string name="ok">យល់ព្រម</string>
+    <string name="yes">បាទ</string>
+    <string name="deselect_all">មិនជ្រើសរើសទាំងអស់</string>
+    <string name="select_all">ជ្រើសរើសយកទាំងអស់</string>
+    <string name="share">"ចែក​រំលែក"</string>
+    <string name="sort">តម្រៀប</string>
+    <string name="more">ថែមទៀត</string>
+    <string name="search">រាករក</string>
+    <string name="show_file">បង្ហាញឯកសារដែលបានលាក់</string>
+    <string name="hide_file">លាក់ឯកសារដែលបានលាក់</string>
+    <string name="selected">បានជ្រើសរើស</string>
+    <string name="send_file">ផ្ញើឯកសារ</string>
+    <string name="empty_msg">(សឺមីទទេ)</string>
+    <string name="default_search_text">រាវរកឯកសារ</string>
+    <string name="free_space">ទំនេ</string>
+    <string name="total_space">សរុប</string>
+    <string name="search_files">រាវរកឯកសារ</string>
+    <string name="copy_deny">មិនមានការអនុញ្ញាតដើម្បីចម្លង</string>
+    <string name="cut_deny">មិនមានការអនុញ្ញាតដើម្បីកាត់</string>
+    <string name="delete_deny">មិនមានការអនុញ្ញាតដើម្បីលុបចោល</string>
+    <string name="insufficient_memory">កន្លែងផ្ទុកមិនគ្រប់គ្រាន់</string>
+    <string name="invalid_empty_name">ឈ្មោះឯកសារ​ ឬសឺមីមិនអាចទទេបានឡើយ</string>
+    <string name="paste_same_folder">មិនអាចបិតក្នុងសឺមីតែមួយបានទេ</string>
+    <string name="invalid_char_prompt">អ្នកបានបញ្ចូលតួអក្សរដែលមិនមានសុពលភាព</string>
+    <string name="msg_unable_open_file">ទ្រង់ទ្រាយរបស់ឯកសារមិនអាចប្រើបានទេ ។</string>
+    <string name="search_text_empty">មាតិការសម្រាប់រាវរកមិនត្រូវទទេឡើយ ។</string>
+    <string name="paste_sub_folder">មិនអាចបិតក្នុងសឺមីរងបានទេ ។</string>
+    <string name="operation_fail">ការប្រតិបត្តិការឯកសារខ្លះត្រូវបរាជ័យ</string>
+    <string name="search_result">%2$d លទ្ធផលសម្រាប់ \"%1$s\"</string>
+    <string name="already_exists">%1$s បានស្ថិតក្នុងការប្រើប្រាស់រួចហើយ</string>
+    <string name="path_not_exists">%1$sមិនមាន</string>
+    <string name="unmounted">%1$s ត្រូវបានបិទ</string>
+    <string name="create_hidden_file">"ឯកសារនឹងត្រូវបានលាក់ ប្រសិនបើឈ្មោះរបស់វាចាប់ផ្តើមជាមួយ '.'"</string>
+    <string name="modify_hidden_file">"ឯកសារនឹងមិនត្រូវបានលាក់ ប្រសិនបើឈ្មោះរបស់វាមិនចាប់ ផ្តើមជាមួយ '.' "</string>
+    <string name="file_name_too_long">ឈ្មោះដែលអ្នកវាយបញ្ចូលវាវែងពេក</string>
+    <string name="paste_fail">បរាជ័យក្នុងការបិត</string>
+    <string name="delete_fail">បរាជ័យក្នុងការលុបចោល</string>
+    <string name="some_paste_fail">ប្រតិបត្តិការបិទខ្លះត្រូវបរាជ័យ</string>
+    <string name="some_delete_fail">ប្រតិបត្តិការលុបចោលខ្លះត្រូវបរាជ័យ</string>
+    <string name="search_empty">មាតិការសម្រាប់រាវរកមិនត្រូវទទេឡើយ ។</string>
+    <string name="search_setting_description">ឯកសារ និងសឺមីក្នុងម៉ាស៊ីន</string>
+    <string name="change_mode">ជ្រើសរើសឯកសារ ឫសឺមី</string>
+    <string name="folder_beam_forbidden_title">មិ\នអាចចែករំលែកសឺមីតាមកាំរស្មីបានឡើយ</string>
+    <string name="folder_beam_forbidden_message">ការចែករំលែកសឺមីតាមកាំរស្មីមិនអាចប្រើបាន ។ សូមជ្រើសរើសឯកសារឲ្យច្រើនដើម្បីចែករំលែកតាមកាំរស្មី ។</string>
+    <string name="drm_beam_forbidden_title">ការចែករំលែកតាមកាំរស្មីត្រូវហាមឃាត់</string>
+    <string name="drm_beam_forbidden_message">ឯកសារការពារដោយ DRM (ការគ្រប់គ្រងសិទ្ធិឌីជិថល) មិនអាចចែករំលែកតាមកាំរស្មីបានឡើយ ។</string>
+
+</resources>

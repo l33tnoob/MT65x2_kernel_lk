@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bingeomagneticd Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type geomagneticd_exec , exec_type, file_type;
+type geomagneticd ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive geomagneticd;
+init_daemon_domain(geomagneticd)
+
+
+# 20131122 Add Set Property Rule
+allow geomagneticd  property_type:property_service set;

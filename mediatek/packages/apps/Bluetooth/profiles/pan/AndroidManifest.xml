@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	android:versionCode="1" android:versionName="1.0" package="com.mediatek.bluetooth"
+	android:sharedUserId="android.uid.mtkbt">
+
+	<application android:label="@string/app_label" 
+                android:persistent="true"
+		android:icon="@drawable/bluetooth" android:description="@string/app_description">
+
+		<!-- ********************************************************************************** -->
+		<!-- PAN -->
+
+		<service android:name=".pan.BluetoothPanService">
+			<intent-filter>
+            			<action android:name="android.bluetooth.IBluetoothPan" />
+        		</intent-filter>
+		</service>
+
+	<receiver android:name=".pan.BluetoothPanReceiver">
+		<intent-filter>
+			<action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+		</intent-filter>	
+	</receiver>		
+		
+		<activity android:name=".pan.BluetoothPanAlert"
+				  android:excludeFromRecents="true"
+				  android:configChanges="orientation"
+                  android:theme="@*android:style/Theme.Holo.Dialog.Alert">
+		</activity>
+        
+		<!-- PAN -->
+
+		<!-- ********************************************************************************** -->
+
+	</application>
+
+</manifest> 

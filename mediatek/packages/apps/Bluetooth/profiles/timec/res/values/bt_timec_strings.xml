@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Time Client Main -->
+	<string name="bt_timec_label">Bluetooth Time Sync</string>
+	<string name="bt_timec_main_title">Time client</string>
+	<string name="bt_timec_choose_server_title">Choose server device</string>
+	<string name="bt_timec_choose_server_summary">Choose a server device to sync date and time with</string>
+	<string name="bt_timec_sync_settings_title">Time synchronization settings</string>
+	<string name="bt_timec_service_disconnected">Connection to Time service has been lost.</string>
+
+	<!-- Time Client Sync Settings (user mode) -->
+	<string name="bt_timec_sync_title">Sync date and time</string>
+	<string name="bt_timec_sync_summary">Retreive and apply date and time information from time server</string>
+	<string name="bt_timec_auto_title">Auto-sync</string>
+	<string name="bt_timec_auto_summary">Automatically synchronize date and time with time server</string>
+	<string name="bt_timec_repeat_title">Repeat</string>
+
+	<string name="bt_timec_sync_confirm_title">Confirm to sync</string>
+	<string name="bt_timec_sync_confirm_msg">This will sync with the time server. Auto-sync with mobile network will be disabled, continue?</string>
+	<string name="bt_timec_synchronizing_title">Synchronizing</string>
+	<string name="bt_timec_synchronizing_msg">Synchronizing date and time with time server...</string>
+	<string name="bt_timec_sync_completed">Synchronization completed</string>
+	<string name="bt_timec_sync_failed">Failed to sync date and time with time server</string>
+	<string name="bt_timec_auto_disabled_ticker">Automatic time synchronization is disabled</string>
+	<string name="bt_timec_auto_disabled_title">Bluetooth auto-time-sync is disabled</string>
+	<string name="bt_timec_auto_disabled_msg">Auto-time-sync cannot work when Bluetooth is off.</string>
+
+	<!-- Time Client Sync Settings (engineer mode): Strings for "Sync" function is shared with user mode -->
+	<string name="bt_timec_eng_connect_title">Connect</string>
+	<string name="bt_timec_eng_connect_summary">Connect to server</string>
+	<string name="bt_timec_eng_disconnect_summary">Disconnect from server</string>
+	<string name="bt_timec_eng_settings_group_title">Settings</string>
+	<string name="bt_timec_eng_automatic_title">Automatic</string>
+	<string name="bt_timec_eng_automatic_summary">Automatically sync with time server</string>
+	<string name="bt_timec_eng_sync_title">Sync with time server</string>
+	<string name="bt_timec_eng_sync_summary">Retrieve and apply date and time from time server</string>
+	<string name="bt_timec_eng_update_server_title">Update server time</string>
+	<string name="bt_timec_eng_update_server_summary">Request time server to update date and time from its time source</string>
+	<string name="bt_timec_eng_dst_title">Next DST change</string>
+
+	<string name="bt_timec_eng_connecting_title">Connecting</string>
+	<string name="bt_timec_eng_connecting_msg">Connecting to time server...</string>
+	<string name="bt_timec_eng_connection_failed">Connection failed</string>
+	<string name="bt_timec_eng_connection_lost">Connection lost</string>
+	<string name="bt_timec_eng_disconnecting_title">Disconnecting</string>
+	<string name="bt_timec_eng_disconnecting_msg">Disconnecting from the server...</string>
+	<string name="bt_timec_eng_processing_title">Processing</string>
+	<string name="bt_timec_eng_processing_msg">Applying the setting to time server...</string>
+	<string name="bt_timec_eng_processing_failed">Failed to apply the setting to the server</string>
+	<string name="bt_timec_eng_server_updating_title">Server is updating</string>
+	<string name="bt_timec_eng_server_updating_msg">Press BACK key to cancel updating server time</string>
+	<string name="bt_timec_eng_server_update_completed">Server update complete</string>
+	<string name="bt_timec_eng_server_update_failed">Server failed to update</string>
+
+</resources>

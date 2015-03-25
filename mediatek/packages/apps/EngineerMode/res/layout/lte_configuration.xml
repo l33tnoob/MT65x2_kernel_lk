@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical" >
+
+        <!-- Threshold setting -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:text="@string/lte_threshold" />
+
+        <TableLayout
+            android:id="@+id/lte_threshold"
+	        android:stretchColumns="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/lte_set_threshold"
+            android:textSize="14sp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lte_set" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#FF909090" />
+
+        <!-- Timer setting -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/lte_timer" />
+
+        <TableLayout
+            android:id="@+id/lte_timer"
+	        android:stretchColumns="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/lte_set_timer"
+            android:textSize="14sp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lte_set" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#FF909090" />
+
+        <!-- Enable Background search triggered by PSDM -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/lte_enable_psdm" />
+
+        <CheckBox
+            android:id="@+id/lte_enable_psdm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/lte_enable" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#FF909090" />
+
+        <!-- Instantaneously LTE search -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/lte_instant_search" />
+
+        <Button
+            android:id="@+id/lte_instant_search"
+            android:textSize="14sp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/lte_search" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#FF909090" />
+
+        <!-- LTE thrsholds AND/OR operation -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/lte_threshold_operation" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lte_4g_rsrp" />
+
+                <Spinner
+                    android:id="@+id/lte_4g_rsrp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lte_4g_rsrq" />
+
+                <Spinner
+                    android:id="@+id/lte_4g_rsrq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lte_4g_relation" />
+
+                <Spinner
+                    android:id="@+id/lte_4g_relation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/lte_set_threshold_operation"
+            android:textSize="14sp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lte_set" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#FF909090" />
+
+        <!-- Background search parameters -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/lte_search_timer" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableLayout
+                android:id="@+id/lte_search_timer_1"
+    	        android:shrinkColumns="1"
+    	        android:stretchColumns="1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TableLayout
+                android:id="@+id/lte_search_timer_2"
+    	        android:shrinkColumns="1"
+    	        android:stretchColumns="1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/lte_set_search_timer"
+                android:textSize="14sp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/lte_set" />
+
+            <Button
+                android:id="@+id/lte_get_search_timer"
+                android:textSize="14sp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/lte_get" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

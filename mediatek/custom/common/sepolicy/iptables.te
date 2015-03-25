@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/biniptables Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type iptables_exec , exec_type, file_type;
+type iptables ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive iptables;
+init_daemon_domain(iptables)
+
+
+# 20131122 Add Set Property Rule
+allow iptables  property_type:property_service set;

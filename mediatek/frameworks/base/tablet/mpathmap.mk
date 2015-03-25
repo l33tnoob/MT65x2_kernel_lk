@@ -1,0 +1,2 @@
+MTK_FRAMEWORK = tablet
+

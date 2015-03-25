@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <!-- middle part starts -->
+
+    <RelativeLayout
+        android:id="@+id/rl_middlepart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottombar_parent">
+
+        <TextView
+            android:id="@+id/station_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/station_value"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="20dip"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_fm"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/station_name"
+            android:layout_toStartOf="@+id/station_value"
+            android:gravity="center_horizontal"
+            android:textSize="20dip"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/station_value"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:textSize="60dip"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_mhz"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/station_value"
+            android:layout_below="@+id/station_name"
+            android:layout_toEndOf="@+id/station_value"
+            android:gravity="center_horizontal"
+            android:textSize="20dip"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_rds"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/station_value"
+            android:ellipsize="marquee"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="#BBBBBB"
+            android:textSize="20dip"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/button_add_to_favorite"
+            android:layout_marginStart="15dip"
+            android:layout_width="50dip"
+            android:layout_height="42dip"
+            android:layout_alignTop="@+id/text_mhz"
+            android:layout_toEndOf="@+id/station_value"
+            android:adjustViewBounds="true"
+            style="?android:attr/buttonBarButtonStyle"
+            android:src="@drawable/btn_fm_favorite_off" 
+            android:enabled="false">
+        </ImageButton>
+    </RelativeLayout>
+
+    <!-- middle part ends -->
+
+    <LinearLayout
+        android:id="@+id/bottombar_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:id="@+id/bottom_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_bar"
+            android:gravity="center_vertical"
+            android:splitMotionEvents="false"
+            android:weightSum="4" >
+
+            <!-- Must set the background to "btn_pressed" which is the same with what is set in source code. -->
+            <!-- Because if not set it, the button size will change when clicked. -->
+
+            <ImageButton
+                android:id="@+id/button_prevstation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/btn_fm_previous" 
+                android:enabled="false"/>
+
+            <ImageButton
+                android:id="@+id/button_decrease"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                style="?android:attr/buttonBarButtonStyle"
+                android:src="@drawable/btn_fm_decrease_frequency"
+                android:enabled="false" />
+
+            <ImageButton
+                android:id="@+id/button_increase"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                style="?android:attr/buttonBarButtonStyle"
+                android:src="@drawable/btn_fm_increase_frequency"
+                android:enabled="false" />
+
+            <ImageButton
+                android:id="@+id/button_nextstation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                style="?android:attr/buttonBarButtonStyle"
+                android:src="@drawable/btn_fm_next" 
+                android:enabled="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_bar_recorder"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_bar"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:splitMotionEvents="false"
+            android:weightSum="3" >
+
+            <!-- Must set the background to "btn_pressed" which is the same with what is set in source code. -->
+            <!-- Because if not set it, the button size will change when clicked. -->
+
+            <ImageButton
+                android:id="@+id/btn_record"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:src="@drawable/btn_fm_record" 
+                android:enabled="false"/>
+
+            <ImageButton
+                android:id="@+id/btn_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:src="@drawable/btn_fm_rec_stop" 
+                android:enabled="false"/>
+
+            <ImageButton
+                android:id="@+id/btn_playback"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:src="@drawable/btn_fm_rec_play" 
+                android:enabled="false"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_recinfo"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_above="@id/bottombar_parent"
+        android:background="@drawable/bg_rec_infobar"
+        android:gravity="right"
+        android:paddingStart="5dip"
+        android:paddingEnd="5dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/txtRecInfoLeft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/txtRecInfoRight"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:textStyle="normal" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtRecInfoRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dip"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="normal">
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/anim_background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_recinfo" >
+
+        <ImageView
+            android:id="@+id/iv_anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fm_anim"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+# ==============================================
+# Policy File of /system/binmdnsd Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type mdnsd_exec , exec_type, file_type;
+type mdnsd ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive mdnsd;
+init_daemon_domain(mdnsd)
+
+
+# 20131122 Add Set Property Rule
+allow mdnsd  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow mdnsd linker_exec:file read;
+allow mdnsd node:udp_socket node_bind;
+allow mdnsd port:udp_socket name_bind;
+allow mdnsd self:netlink_route_socket read;
+allow mdnsd self:udp_socket { write ioctl setopt read bind create };
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow mdnsd self:netlink_route_socket { bind create };
+allow mdnsd self:udp_socket { getattr connect };
+

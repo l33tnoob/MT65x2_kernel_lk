@@ -1,0 +1,179 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type release_app, domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+###
+### Apps signed with the release key (testkey in AOSP).
+###
+
+permissive release_app;
+app_domain(release_app)
+platform_app_domain(release_app)
+# Access the network.
+net_domain(release_app)
+# Access bluetooth.
+bluetooth_domain(release_app)
+# unconfined_domain(release_app)
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+###
+### Apps signed with the release key (testkey in AOSP).
+###
+
+permissive release_app;
+# app_domain(release_app)
+# platform_app_domain(release_app)
+# Access the network.
+# net_domain(release_app)
+# Access bluetooth.
+# bluetooth_domain(release_app)
+# unconfined_domain(release_app)
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive release_app;
+# 20131024 Sanity_01
+allow release_app devmap_device:chr_file read;
+allow release_app mali_device:chr_file { read write ioctl };
+allow release_app platform_app_data_file:dir { read search open };
+allow release_app sdcard_external:dir search;
+allow release_app sdcard_external:file { read getattr open };
+
+
+# 20131024 Sanity_02
+allow release_app devmap_device:chr_file { ioctl open };
+allow release_app mali_device:chr_file open;
+allow release_app platform_app_data_file:dir { remove_name getattr };
+allow release_app platform_app_data_file:file { lock open setattr };
+
+
+# 20131024 CTS_01
+allow release_app device:chr_file { read ioctl open };
+allow release_app devmap_device:chr_file { ioctl open };
+allow release_app mali_device:chr_file open;
+allow release_app platform_app_data_file:dir { write remove_name getattr add_name };
+allow release_app platform_app_data_file:file { lock create unlink open setattr };
+allow release_app system_data_file:file append;
+
+
+# 20131024 Sanity_03
+allow release_app mali_device:chr_file getattr;
+allow release_app platform_app_data_file:dir { create setattr };
+allow release_app platform_app_data_file:file { rename ioctl };
+allow release_app radio_data_file:file { write read getattr };
+
+
+# 20131028 CTS_03
+allow release_app dumpstate:fd use;
+allow release_app dumpstate:unix_stream_socket { read write };
+
+
+# 20131028 CTS_04
+allow release_app sdcard_external:file write;
+
+
+# 20131028 Sanity_09
+allow release_app sdcard_external:dir { write create add_name };
+
+
+# 20131028 CTS_08
+allow release_app dm_agent_binder:binder call;
+
+
+# 20131028 CTS_11
+allow release_app adbd:unix_stream_socket setopt;
+
+
+# 20131119 FeatureSQC
+allow release_app adbd:unix_stream_socket setopt;
+allow release_app dm_agent_binder:binder call;
+allow release_app sdcard_external:file create;
+allow release_app system_data_file:file { write lock setattr };
+
+
+# 20131121 Sanity_QA
+allow release_app devpts:chr_file write;
+allow release_app init:unix_stream_socket { read write setopt };
+allow release_app logwrapper:binder call;
+allow release_app logwrapper:fd use;
+allow release_app logwrapper:process sigchld;
+allow release_app logwrapper:unix_stream_socket { read write };
+allow release_app logwrapper_tmpfs:file read;
+allow release_app self:netlink_socket { read bind create };
+
+
+
+# 20131122 Add Set Property Rule
+allow release_app property_type:property_service set;
+
+# 20131213 KKMR1_CTS_01
+allow release_app device:chr_file { write getattr };
+allow release_app platform_app_data_file:file append;
+
+
+# 20131213 KKMR1_CQ_01
+allow release_app M4U_device_device:chr_file { read ioctl open };
+allow release_app aee_aed:fd use;
+allow release_app aee_aed:process sigchld;
+allow release_app aee_aed:unix_stream_socket connectto;
+allow release_app asec_apk_file:file { read getattr open };
+allow release_app device:chr_file { write getattr };
+allow release_app devpts:chr_file write;
+allow release_app dfo_socket:sock_file write;
+allow release_app dumpstate:unix_stream_socket { getopt getattr };
+allow release_app featured:unix_stream_socket connectto;
+allow release_app init:binder { transfer call };
+allow release_app init:unix_stream_socket { read write setopt };
+allow release_app init_shell:binder call;
+allow release_app init_tmpfs:file read;
+allow release_app linker_exec:file { read execute open };
+allow release_app logwrapper:binder { transfer call };
+allow release_app logwrapper:fd use;
+allow release_app logwrapper:process sigchld;
+allow release_app logwrapper:unix_stream_socket { read write };
+allow release_app logwrapper_tmpfs:file read;
+allow release_app mediaserver:dir search;
+allow release_app mediaserver:file { read getattr open };
+allow release_app mtk_disp_device:chr_file { read ioctl open };
+allow release_app platform_app_data_file:dir rmdir;
+allow release_app platform_app_data_file:file append;
+allow release_app sdcard_internal:dir { rename search read create write rmdir remove_name open add_name };
+allow release_app sdcard_internal:file { read lock create write getattr unlink open append };
+allow release_app self:netlink_socket { write read };
+allow release_app shell_data_file:dir search;
+allow release_app toolbox_exec:file { read execute open execute_no_trans };
+allow release_app untrusted_app:fifo_file { write getattr };
+allow release_app wallpaper_file:file getattr;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow release_app aee_aed:process sigchld;
+allow release_app aee_aed:unix_stream_socket connectto;
+allow release_app device:chr_file { write getattr };
+allow release_app dfo_socket:sock_file write;
+allow release_app featured:unix_stream_socket connectto;
+allow release_app init:binder { transfer call };
+allow release_app init_tmpfs:file read;
+allow release_app linker_exec:file { read execute open };
+allow release_app mediaserver:dir search;
+allow release_app mediaserver:file { read getattr open };
+allow release_app mtk_disp_device:chr_file { read ioctl open };
+allow release_app platform_app_data_file:file append;
+allow release_app resmon:fd use;
+allow release_app sdcard_internal:dir { rename search read create write rmdir remove_name open add_name };
+allow release_app sdcard_internal:file { rename setattr read lock create write getattr unlink open };
+allow release_app toolbox_exec:file { read execute open execute_no_trans };
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">  
+    <string name="unlock_set_unlock_mode_voice_weak">Desbloquear voz</string>
+    <string name="voice_unlock_setup_intro_header">Grabar comando de voz</string>
+    <string name="voice_command_select_title">Seleccionar comando</string>
+    <string name="voice_command_launch_app_title">Lanzar aplicación</string>
+    <string name="reset_command_title">Restablecer comando</string>
+    <string name="reset_command_prompt">Se restablecerá el comando actual, y no se recuperará.</string>
+    <string name="reset_command_prompt_last">Se restablecerá el único comando de voz. El Bloqueo de pantalla cambiará a Diapositiva.</string>
+    <string name="voice_unlock_options_title">Opciones</string>
+    <string name="voice_unlock_ok_label">"Aceptar"</string>
+    <string name="voice_unlock_cancel_label">"Cancelar"</string>
+    <string name="voice_unlock_retry_label">"Intentar nuevamente"</string>
+    <string name="voice_unlock_record_label">Grabar</string>
+    <string name="voice_unlock_continue_label">Continuar</string>
+    <string name="voice_unlock_setup_intro">Diga un comando con 2-6 sílabas, luego repita 3-6 veces.</string>
+    <string name="voice_unlock_command">Desbloquear comando</string>
+    <string name="voice_command1">Comando despertar 1</string>
+    <string name="voice_command2">Comando despertar 2</string>
+    <string name="voice_command3">Comando despertar 3</string>
+    <string name="command_summary">Desbloquear y lanzar <xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_command_primary">Lanzar <xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_command_customize">Desbloquear pantalla y lanzar <xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_command_secondary">Lanzar <xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_command_record_description_unlock_screen">Desbloquear pantalla</string>
+    <string name="voice_command_record_description_command">Desbloquear pantalla y lanzar <xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_service_error_title">¡Error de servicio de voz!</string>
+    <string name="stop_playing_title">Detener reproducción de medios</string>
+    <string name="stop_playing_message">Detenga la reproducción de medios antes de grabar.</string>
+    <string name="voice_command_record_introdution">Toque con su dedo el botón GRABAR y DIGA su comando de voz.</string>
+    <string name="voice_command_record_prepare">Preparándose, espere...</string>
+    <string name="voice_command_record_first_recording">DIGA su comando.\nSe sugiere de 2-6 sílabas.</string>
+    <string name="voice_command_record_non_first_recording">REPITA su comando de voz.</string>
+    <string name="voice_command_record_one_round_ok">ENTENDIDO.</string>
+    <string name="voice_command_record_one_round_noisy">Demasiado ruido para captar su voz. Inténtelo de nuevo.</string>
+    <string name="voice_command_record_one_round_weak">No puedo escuchar su voz claramente. Inténtelo de nuevo.</string>
+    <string name="voice_command_record_one_round_diff">Su comando es distinto de los anteriores.</string>
+    <string name="voice_command_record_one_round_exist">Casi igual al comando de voz existente. Intente uno distinto.</string>
+    <string name="voice_command_record_recording_ok">Se ha configurado el comando de voz exitosamente.</string>
+    <string name="voice_unlock_setup_end_all_done">Todo hecho.</string>
+    <string name="voice_unlock_setup_end_prompt">Para desbloquear su teléfono, diga en voz alta su comando de voz.</string>
+    <string name="pass_word_file_missing">No puede reproducirse el comando de voz.</string>
+    <string name="time_out_title">Se agotó el tiempo</string>
+    <string name="time_out_message">No se recibieron comandos de voz durante 5 segundos. Inténtelo de nuevo.</string>
+    <string name="during_call_title">Grabación no disponible</string>
+    <string name="during_call_message">"Comando de grabar voz" no disponible durante una llamada.</string>
+</resources>

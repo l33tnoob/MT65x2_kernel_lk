@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/BLEInitiate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="@string/BLEInitiate" >
+        </TextView>
+
+        <!-- Initiate scan interval -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEScanInterval" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/BLEInitiateScanInterval"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content" >
+            </EditText>
+
+            <TextView
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLETimeUnit" >
+            </TextView>
+        </LinearLayout>
+
+        <!-- initiate scan window -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEScanWindow" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/BLEInitiateScanWindow"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content" >
+            </EditText>
+
+            <TextView
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLETimeUnit" >
+            </TextView>
+        </LinearLayout>
+
+        <!-- initiate filter policy select -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEInitiateFilter" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/BLEInitiateFilterSpinner"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content" >
+            </Spinner>
+        </LinearLayout>
+
+        <!-- peer address type select -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEPeerAddressType" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/BLEInitiatePeerAddressTypeSpinner"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content" >
+            </Spinner>
+        </LinearLayout>
+
+        <!-- own address type select -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEOwnAddressType" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/BLEInitiateOwnAddressTypeSpinner"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content" >
+            </Spinner>
+        </LinearLayout>
+
+        <!-- peer address -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEPeerAddress" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/BLEPeerAddress"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content" >
+            </EditText>
+        </LinearLayout>
+
+        <!-- Connection interval min -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEIntervalMin" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/BLEInitiateIntervalMin"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content" >
+            </EditText>
+
+            <TextView
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLETimeUnit" >
+            </TextView>
+        </LinearLayout>
+        <!-- Connection interval max -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEIntervalMax" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/BLEInitiateIntervalMax"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content" >
+            </EditText>
+
+            <TextView
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLETimeUnit" >
+            </TextView>
+        </LinearLayout>
+
+        <!-- BLELatency input -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLELatency" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/BLELatency"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content" >
+            </EditText>
+        </LinearLayout>
+
+        <!-- BLESupervisionTimeout -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLESupervisionTimeout" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/BLESupervisionTimeout"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content" >
+            </EditText>
+
+            <TextView
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLESupervisionTimeUnit" >
+            </TextView>
+        </LinearLayout>
+
+        <!-- BLEMinCELength -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEMinCELength" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/BLEMinCELength"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content" >
+            </EditText>
+
+            <TextView
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLETimeUnit" >
+            </TextView>
+        </LinearLayout>
+        <!-- BLEMaxCELength -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEMaxCELength" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/BLEMaxCELength"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content" >
+            </EditText>
+
+            <TextView
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLETimeUnit" >
+            </TextView>
+        </LinearLayout>
+
+        <!-- start/stop button -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal"
+            android:paddingTop="10dip" >
+
+            <Button
+                android:id="@+id/BLEInitiateStart"
+                android:layout_width="155dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEStart" >
+            </Button>
+
+            <Button
+                android:id="@+id/BLEInitiateStop"
+                android:layout_width="155dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEStop" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

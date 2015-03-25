@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="STR_NMS_MAIN">iSMS</string>
+    <string name="STR_NMS_HISSAGE">iSMS</string>
+    <string name="STR_NMS_INVITE_SMS_CONTENT">Hai, iSMS ialah alat bual yang hebat. It adalah percuma dan mudah. Sila semak http://isms.hissage.com untuk mencari lebih banyak.</string>
+    <string name="STR_NMS_NO_SDCARD">Kad SD tidak dikesan, sesetengah operasi tidak dibenarkan oleh iSMS</string>
+    <string name="STR_NMS_MOUNT_SDCARD">Kad SD Tersedia</string>
+    <string name="STR_NMS_SEND_MMS_FAIL">Gagal untuk menghantar mesej. Ia akan dihantar secara automatik apabila rangkaian tersedia.</string>
+    <string name="STR_NMS_RECV_MMS_FAIL">Gagal untuk memuat turun. Sila cuba sekali lagi.</string>
+    <string name="STR_NMS_GROUP_CHAT_ME">saya</string>
+    <string name="STR_NMS_GROUP_CHAT_I">I</string>
+    <string name="STR_NMS_GROUP_CHAT_YOU">Anda</string>
+    <string name="STR_NMS_GROUP_CREATE_MSG">%1$s jemput %2$s ke bual berkumpulan.</string>
+    <string name="STR_NMS_GROUP_ADD_MSG">%1$s menyertai bual berkumpulan.</string>
+    <string name="STR_NMS_GROUP_DELETE_MSG">%1$s memadam %2$s daripada bual berkumpulan.</string>
+    <string name="STR_NMS_GROUP_QUITE_MSG">%1$s berhenti daripada bual berkumpulan.</string>
+    <string name="STR_NMS_GROUP_CHAT_PLACE_HOLDER_MSG_BODY">Anda menyertai kumpulan ini</string>
+    <string name="STR_NMS_PICTURE">gambar</string>
+    <string name="STR_NMS_TAPE">audio</string>
+    <string name="STR_NMS_VCARD">kenalan</string>
+    <string name="STR_NMS_LOCATION">lokasi</string>
+    <string name="STR_NMS_SKETCH">lakaran</string>
+    <string name="STR_NMS_VIDEO">video</string>
+    <string name="STR_NMS_CALENDAR">kalendar</string>
+    <string name="STR_NMS_UNKNOWN">tidak diketahui</string>
+    <string name="STR_NMS_READ_MODE_PIC">imej</string>
+    <string name="STR_NMS_READ_MODE_TAPE">nota audio</string>
+    <string name="STR_NMS_READ_MODE_VCARD">kenalan</string>
+    <string name="STR_NMS_READ_MODE_LOCATION">lokasi</string>
+    <string name="STR_NMS_READ_MODE_SKETCH">lakaran</string>
+    <string name="STR_NMS_READ_MODE_VIDEO">video</string>
+    <string name="STR_NMS_READ_MODE_CALENDAR">kalendar</string>
+    <string name="STR_NMS_ISMS_ENABLE">(Didaya iSMS)</string>
+    <string name="STR_NMS_READ_MODE_UNKNOWN">fail tidak diketahui</string>
+    <string name="STR_NMS_ALL_MSG">Semua Mesej</string>
+    <string name="STR_NMS_SAVED">Disimpan</string>
+    <string name="STR_NMS_BLOCKMSG">Disekat</string>
+    <string name="STR_NMS_SMS_TYPE">SMS</string>
+    <string name="STR_NMS_NO_SIM">Kad SIM tidak dikesan</string>
+    <string name="STR_NMS_ILLEGAL_ADDRESS">Nombor tidak sah</string>
+    <string name="STR_NMS_REMIND_USER_SET_NAME">Sila kemas kini profil anda</string>
+    <string name="STR_NMS_OK">OK</string>
+    <string name="STR_NMS_BACK">Kembali</string>
+    <string name="STR_NMS_CANCEL">Batal</string>
+    <string name="STR_NMS_NETWORK_UNAVL">Sila pastikan anda mempunyai sambungan data yang berfungsi, cth., 3G, GPRS atau Wi-Fi</string>
+    <string name="STR_NMS_TODAY">Hari ini</string>
+    <string name="STR_NMS_YESTERDAY">Semalam</string>
+    <string name="STR_NMS_NOW">Sekarang</string>
+    <string name="STR_NMS_NO_SIM_CARD">Kad SIM tidak dikesan, anda mesti memasukkan kad SIM.</string>
+    <string name="STR_NMS_NO_CONNECTION">Rangkaian tidak tersedia atau mod penerbangan dihidupkan, sila periksa.</string>
+    <string name="STR_NMS_ATTACH_SHARE">%1$s berkongsi %2$s</string>
+    <string name="STR_NMS_WAIT">Tunggu...</string>
+    <string name="STR_NMS_TIPTITLE">Petua</string>
+
+    <string name="STR_NMS_OPEN">Buka</string>
+    <string name="STR_NMS_PLAY">Main</string>
+    
+    
+
+    <string name="STR_NMS_VCARD_NAME">%1$s kenalan</string>
+    <string name="STR_NMS_SHARE_VCARD_FAILED">gagal berkongsi kenalan</string>
+
+    <!-- upgrade info -->
+    <string name="STR_NMS_UPGRADE_TICKER">Versi tatar</string>
+    <string name="STR_NMS_UPGRADE_ERROR_TITLE">Ralat tatar</string>
+    <string name="STR_NMS_UPGRADE_ERROR_CONTENT">Ralat Tatar, sila tatarakan dalam klien iSMS</string>
+    <string name="STR_NMS_INSTALLED_TITLE">Penataran berjaya</string>
+    <string name="STR_NMS_INSTALLED_CONTENT">Penataran pada telefon berjaya </string>
+    <string name="STR_NMS_PROMPT_DLG_TITLE">Versi baharu dikesan</string>
+    <string name="STR_NMS_PROMPT_DLG_DOWNLOAD">Muat turun</string>
+    <string name="STR_NMS_PROMPT_DLG_LATER">Kemudian</string>
+    <string name="STR_NMS_UPGRADING">Menatarkan</string>
+    <string name="STR_NMS_UPGRADE_TIME">Pemeriksaan terakhir: %s</string>
+    
+    <!-- ext protocol -->
+    <string name="STR_NMS_OFFLINE_URL">http://ismsi.hissage.com/webservice/nmsmail/notifyOffline.php</string>
+    
+    <!-- Activation start -->
+    <string name="STR_NMS_PRELOAD_IP_MSG_CONTENT">&quot;Selamat datang ke iSMS.&quot;</string>
+    <string name="STR_NMS_ACTIVAT_TITLE">iSMS akan menghantar SMS satu kali untuk mengesahkan nombor telefon anda. Caj pembawa mungkin dikenakan.</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE">Sahkan nombor telefon</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE2">Sahkan nombor telefon</string>
+    <string name="STR_NMS_YOUR_COUNTRY_TITLE">NEGARA ANDA</string>
+    <string name="STR_NMS_YOUR_PHONE_TITLE">NOMBOR TELEFON ANDA</string>
+    <string name="STR_NMS_VERIFY_FAIL_TITLE">Gagal untuk melengkapkan pengesahan SMS.</string>
+    <string name="STR_NMS_VERIFY_FAIL_CONTENT">Sila pastikan nombor telefon anda dimasukkan dengan betul.</string>
+    <string name="STR_NMS_WORKING_SMS_TIP">Sila pastikan anda mempunyai pelan SMS yang berfungsi.</string>
+    <string name="STR_NMS_VERIFYING">Menunggu untuk mengesan secara automatik SMS dihantar ke</string>
+    <string name="STR_NMS_RETRY">Cuba semula</string>
+    <string name="STR_NMS_EDIT_NUMBER">Edit nombor</string>
+    <string name="STR_NMS_UPDATE_PROFILE">Kemas kini profil</string>
+    <string name="STR_NMS_START_ISMS">Mulakan iSMS</string>
+    <string name="STR_NMS_SEND">Hantar</string>
+    <string name="STR_NMS_CONGRATULATIONS_TITLE">Tahniah!</string>
+    <string name="STR_NMS_CONGRATULATIONS_CONTENT">Terima kasih kerana mengaktifkan iSMS.\n Anda kini boleh mula menikmati perkhidmatan.\nSelamat iSMS!</string>
+    <string name="STR_NMS_WELCOME_BACK">Selamat datang kembali.</string>
+    <string name="STR_NMS_SEND_SMS_FAIL">Pengesahan gagal, sila semak:\n  1. Nombor telefon betul;\n  2. Perisian keselamatan dimatikan;\n  3. Alasan lain yang mungkin untuk menyekat penghantaran SMS.\nPastikan dan cuba lagi kemudian.</string>
+    <string name="STR_NMS_ACTIVE">Aktifkan iSMS</string>
+    <string name="STR_NMS_WELCOME_ACTIVE">Selamat datang ke iSMS</string>
+    <string name="STR_NMS_CONNECTING">Bersambung...</string>
+    <!-- Activation end -->
+
+
+    <!-- Notification start -->
+    <string name="STR_NMS_NEW_MSG_TITLE">Mesej iSMS Baru</string>
+    <string name="STR_NMS_NEW_SMG_CONTENT">%d mesej belum dibaca</string>
+    <!-- Notification End -->
+
+    <string name="STR_NMS_MSG_DUMPER_MSG_SMS">SMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_MMS">MMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_IP">Mesej IP</string>
+    <string name="STR_NMS_MSG_DUMPER_SEND_MSG">%1$s %2$d Dihantar:</string>
+    <string name="STR_NMS_MSG_DUMPER_RECEIVE_MSG">%1$s %2$d Diterima:</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TIME">Masa: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TEXT">Teks</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_PIC">Gambar</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_SKETCH">Lakaran</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VOICE">Suara</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VIDEO">Video</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CALENDAR">Kalendar</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION_IMG">Gambar lokasi</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VCARD">Vcard</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION">Lokasi</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CAPTION">Kapsyen: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_URL">Url: </string>
+    <string name="STR_NMS_MSG_DUMPER_DURATION">Tempoh: </string>
+    <string name="STR_NMS_MSG_DUMPER_COORDINATE">Koordinat: </string>
+    <string name="STR_NMS_MSG_DUMPER_ADDRESS">Alamat: </string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_SENDER">Penghantar: </string>
+    <string name="STR_NMS_MSG_DUMPER_NORMAL_DETAIL">Butiran sesi:</string>
+    <string name="STR_NMS_MSG_DUMPER_NAME">Nama: </string>
+    <string name="STR_NMS_MSG_DUMPER_NUMBER">Nombor: </string>
+    <string name="STR_NMS_MSG_DUMPER_PORTRAIT">Portret</string>
+    <string name="STR_NMS_MSG_DUMPER_MULTI_SEND_DETAIL">Siaran:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_DETAIL">Bual berkumpulan:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_CREATER">Pencipta: </string>
+    <string name="STR_NMS_MSG_DUMPER_MEMBERS">Ahli: </string>
+    <string name="STR_NMS_MSG_DUMPER_VCARD_NAME">Nama: </string>
+    <string name="STR_NMS_MSG_DUMPER_CALENDAR_SUMMARY">Ringkasan: </string>
+
+    <!-- Chat Settings -->
+    <string name="STR_NMS_CHAT_SETTING_TITLE">Tetapan Bual</string>
+    <string name="STR_NMS_DISPLAY">Paparan</string>
+    <string name="STR_NMS_CHAT_WALLPAPER">Hias latar bual</string>
+    <string name="STR_NMS_SYS_WALLPAPER">Pilih hias latar</string>
+    <string name="STR_NMS_CAMEARPHOTO">Ambil foto</string>
+    <string name="STR_NMS_SYS_GALLERY">Pilih dari Galeri</string>
+    <string name="STR_NMS_DEFAULT_WALLPAPER">Lalai</string>
+    <string name="STR_NMS_NOTIFICATION_CATEGORY">Pemberitahuan</string>
+    <string name="STR_NMS_NOTIFICATION_TITLE">Pemberitahuan iSMS</string>
+    <string name="STR_NMS_NOTIFICATION_CONTENT">Paparkan apabila pemberitahuan diterima</string>
+    <string name="STR_NMS_MUTE">Senyap</string>
+    <string name="STR_NMS_MUTE_OFF">Mati</string>
+    <string name="STR_NMS_MUTE_1">Senyap selama 1 jam</string>
+    <string name="STR_NMS_MUTE_4">Senyap selama 4 jam</string>
+    <string name="STR_NMS_MUTE_8">Senyap selama 8 jam</string>
+    <string name="STR_NMS_RINGTONE_TITLE">Nada dering</string>
+    <string name="STR_NMS_RINGTONE_CONTENT">Tetapkan nada dering bagi pemberitahuan baru </string>
+    <string name="STR_NMS_VIBRATE_TITLE">Getar</string>
+    <string name="STR_NMS_VIBRATE_CONTENT">Getar apabila pemberitahuan diterima</string>
+    <string name="STR_NMS_ACTIONS">Tindakan</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_TITLE">Muat turun sejarah bual</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_CONTENT">Simpan dalam kad SD dalam format zip</string>
+    <string name="STR_NMS_EMAIL_HISTORY_TITLE">Sejarah bual E-Mel</string>
+    <string name="STR_NMS_EMAIL_HISTROY_CONTENT">Sejarah bual E-Mel dalam format zip</string>
+    <string name="STR_NMS_CLEAR_HISTROY">Kosongkan sejarah bual</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_DLG">Memuat turun...</string>
+    <string name="STR_NMS_DOWNLOAD_OK">Memuat turun sejarah bual telah selesai, simpannya sebagai %s</string>
+    <string name="STR_NMS_DOWNLOAD_ERROR">Memuat turun ralat sejarah bual.</string>
+    <string name="STR_NMS_DOWNLOAD_EMPTY">Tiada untuk dimuat turun.</string>
+    <string name="STR_NMS_CLEARING">Mengosongkan sejarah, sila tunggu...</string>
+    <string name="STR_NMS_WAIT_SAVE_WALLPAPER">Menyimpan hias latar, sila tunggu...</string>
+    <string name="STR_NMS_SAVE_WALLPAPER_OK">Berjaya menyimpan hias latar.</string>
+    <string name="STR_NMS_CLEARDONE">Selesai mengosongkan sejarah.</string>
+    <string name="STR_NMS_SVAE_TITLE">Simpan ke kad SD</string>
+    <string name="STR_NMS_SAVE_CONTENT">Simpan jaluran bual ini ke kad SD sebagai fail zip</string>
+    <string name="STR_NMS_EMAIL_TITLE">Kongsi melalui E-mel</string>
+    <string name="STR_NMS_EMAIL_CONTENT">Kongsi jaluran bual ini sebagai lampiran melalui E-Mel dalam format zip</string>
+
+    <!-- Chat Settings End -->
+
+
+    <!-- Profile Settings -->
+    <string name="STR_NMS_PROFILE_TITLE">Profil</string>
+    <string name="STR_NMS_TAP_AVATAR_TIP">Ketuk untuk mengedit imej profil</string>
+    <string name="STR_NMS_DISPLAY_NAME_TIP">NAMA PAPARAN</string>
+    <string name="STR_NMS_ACCOUNT_TIP">AKAUN ISMS</string>
+    <string name="STR_NMS_NO_APP">Tindakan dilarang</string>
+    <string name="STR_NMS_NO_NAME">Sediakan nama anda</string>
+    <string name="STR_NMS_SAVE_AVATAR_FAILD">Maaf, gagal menyimpan imej profil.</string>
+    <string name="STR_NMS_INPUT_NAME">Nama</string>
+    <string name="STR_NMS_TERM_WARN_ACTIVATE"> percuma	kostenlosCiri ini hanya disokong oleh perkhidmatan iSMS.\n\niSMS ialah perkhidmatan pemesejan percuma yang membolehkan anda untuk berbual dan berkongsi kandungan multimedia dengan rakan ada pada bila-bila masa dan di mana-mana jua melalui sambungan data internet (Wi-Fi, 2G/3G, dsb.).\nApabila diaktifkan buat kali pertama, iSMS akan menghantar SMS secara automatik untuk melengkapkan pendaftaran. Kuota/bayaran SMS mungkin dikenakan.\n\n Perjanjian Pengguna\n</string>
+    <string name="STR_NMS_TERM_WARN_WELCOME"> percuma	kostenlosCiri ini hanya disokong oleh perkhidmatan iSMS.\n\niSMS ialah perkhidmatan pemesejan percuma yang membolehkan anda untuk berbual dan berkongsi kandungan multimedia dengan rakan ada pada bila-bila masa dan di mana-mana jua melalui sambungan data internet (Wi-Fi, 2G/3G, dsb.).\nApabila diaktifkan buat kali pertama, iSMS akan menghantar SMS secara automatik untuk melengkapkan pendaftaran. Kuota/bayaran SMS mungkin dikenakan.\n\n Perjanjian Pengguna\n</string>
+    <string name="STR_NMS_TERM_KEY">Terma dan Syarat</string>
+    <string name="STR_NMS_AGREE_AND_CONTINUE">Setuju dan Teruskan</string>
+    <string name="STR_NMS_ACTIVE_BNT">Aktifkan</string>
+    <string name="STR_NMS_SET_PROFILE_OK">Profil berjaya ditetapkan</string>
+    <string name="STR_NMS_SET_PROFILE_FAIL">Persediaan gagal</string>
+    <string name="STR_NMS_ILLEGAL_PROFILE_NAME">Nama tidak sah</string>
+    <string name="STR_NMS_NO_ACTIVITED">Tiada kad SIm diaktifkan atau didayakan.</string>
+    <!-- Profile Settings End -->
+
+
+    <!-- Term Activity -->
+    <string name="STR_NMS_REJECT">Tolak</string>
+    <string name="STR_NMS_AGREE">Setuju</string>
+    <string name="STR_NMS_TERM_TITLE">Terma Perkhidmatan</string>
+    <string name="STR_NMS_TERM_CONTENT">Anda memahami bahawa Perkhidmatan dan perisian yang dirangkumkan dalam Perkhidmatan mungkin menyertakan komponen keselamatan yang membenarkan bahan digital untuk dilindungi dan bahawa penggunaan bahan ini adalah tertakluk kepada peraturan penggunaan yang ditetapkan oleh AF PushMail dan/atau penyedia kandungan yang menyediakan kandungan kepada Perkhidmatan. Anda tidak boleh mencuba untuk menggantikan atau mencari jalan lain untuk mengatasi peraturan yang dibenamkan ke dalam Perkhidmatan. Sebarang penghasilan semula, penerbitan, pengedaran lanjut atau paparan kepada orang awam yang tidak dibenarkan bagi bahan-bahan yang disediakan pada Perkhidmatan, secara keseluruhan atau sebahagian, adalah dilarang ketat.</string>
+    <!-- Term Activity End -->
+
+
+    <!-- System Settings -->
+    <string name="STR_NMS_SYS_SETTING_TITLE">Mesej iSMS</string>
+    <string name="STR_NMS_SETTINGS_TITLE">PROFIL</string>
+    <string name="STR_NMS_PREFERENCE_CATE">KEUTAMAAN</string>
+    <string name="STR_NMS_SEND_SMS_TITLE">Hantar sebagai SMS</string>
+    <string name="STR_NMS_SEND_SMS_CONTENT">Hantar sebagai SMS apabila iSMS tidak tersedia. Kadar pemesejan pembawa mungkin dikenakan. Peraturan ini tidak dikenakan kepada bual berkumpulan</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_TITLE">Muat Turun Auto</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_CONTENT">Muat turun automatik objek multimedia</string>
+    <string name="STR_NMS_CAPTION_TITLE">Kapsyen</string>
+    <string name="STR_NMS_CAPTION_CONTENT">Kongsi fail dengan kapsyen</string>
+    <string name="STR_NMS_SYSTEM_CATE">SISTEM</string>
+    <string name="STR_NMS_UPDATE_TITLE">Kemas kini perisian</string>
+    <string name="STR_NMS_UPDATE_CONTENT">Pemeriksaan terakhir: Tidak pernah</string>
+    <string name="STR_NMS_NETWORK_USAGE_TITLE">Penggunaan Rangkaian</string>
+    <string name="STR_NMS_NETWORK_USAGE_CONTENT">Lihat jumlah penggunaan data yang dihantar/diterima</string>
+    <string name="STR_NMS_NETWORK_DLG_CONTENT">Dihantar: %1$.3f K \nDiterima: %2$.3f K\nTetap semula terakhir: %3$s</string>
+    <string name="STR_NMS_VERSION_TITLE">Versi</string>
+    <string name="STR_NMS_NEVER_CLEAR">Tidak pernah</string>
+    <string name="STR_NMS_RESET">Tetap semula</string>
+    <string name="STR_NMS_SWITCH_ON">HIDUPKAN</string>
+    <string name="STR_NMS_SWITCH_OFF">MATIKAN</string>
+    <string name="STR_NMS_SYSTEM_SETTING_TITLE">Tetapan</string>
+    <string name="STR_NMS_COPYRGIHT">Hesine Technologies, Inc.</string>
+    <string name="STR_NMS_ABOUT">Mengenai iSMS</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_TITLE">Paparkan Status Baca</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_CONTENT">Paparkan status baca dalam senarai mesej</string>
+    <string name="STR_NMS_SHOW_REMIND_TITLE">Paparkan Peringatan</string>
+    <string name="STR_NMS_SHOW_REMIND_CONTENT">Paparkan Peringatan iSMS dalam skrin bual</string>
+    <string name="STR_NMS_MENU_RESET_SETTING">Pulihkan tetapan lalai</string>
+    <string name="STR_NMS_MENU_FUNCTION_INTRODUCTION">Ciri-ciri</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT">Perjanjian Pengguna</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION">Hak cipta</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT_TITLE">PERJANJIAN LESEN PENGGUNA HESINE iSMS</string>
+    <string name="STR_NMS_MENU_FUNCTION">Senarai Ciri</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION_DETAIL">\nHesine Technologies Inc.\nCopyright© 2008-2013\nHak Cipta Terpelihara.\n</string>
+    <!-- System Settings End -->
+
+
+    <!-- Caption Settings -->
+    <string name="STR_NMS_AUDIO_TITLE">Audio</string>
+    <string name="STR_NMS_VIDEO_TITLE">Video</string>
+    <string name="STR_NMS_PHOTO_TITLE">Foto</string>
+    <!-- Caption Settings End -->
+
+
+    <!-- Map String start -->
+    <string name="STR_NMS_MAP_TITLE">Kongsi Lokasi</string>
+    <string name="STR_NMS_MAP_PROMPT">Peta ditak dapat dipaparkan kerana perkhidmatan lokasi tidak dihidupkan. Alamat di bawah ialah lokasi anggaran.</string>
+    <string name="STR_NMS_MAP_NOTE_1">Sila dayakan sumber Lokasi Saya dalam tetapan sistem</string>
+    <string name="STR_NMS_MAP_SHARE">Kongsi</string>
+    <string name="STR_NMS_MAP_SETTINGS">Tetapan</string>
+    <string name="STR_NMS_MAP_OK">OK</string>
+    <string name="STR_NMS_MAP_CANCEL">Batal</string>
+    <string name="STR_NMS_MAP_EDIT">Edit lokasi</string>
+    <string name="STR_NMS_MAP_SEARCH_HINT">Cari berhampiran</string>
+    <string name="STR_NMS_MAP_WAIT">Sila tunggu...</string>
+    <string name="STR_NMS_MAP_EDIT_LIMIT">Input telah mencapai hadnya</string>
+    <string name="STR_NMS_MAP_ADDR_LEN">Almt terlalu pnjg</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR_LOCATING">Mencari kedudukan semasa anda...</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN_LOCATING">Mencari kedudukan PIN anda...</string>
+    <string name="STR_NMS_MAP_LINEONE_SEARCH_LOCATING">Mencari...</string>
+    <string name="STR_NMS_MAP_LINETHREE_NEARBY_LOCATING">Mencari tempat berhampiran...</string>
+    <string name="STR_NMS_MAP_LINEONE_FAILED">Lokasi anda tidak tersedia</string>
+    <string name="STR_NMS_MAP_LINETWO_FAILED">Sila pastikan perkhidmatan Lokasi anda dihidupkan, dan rangkaian tersedia</string>
+    <string name="STR_NMS_MAP_LINETHREE_FAILED">Tiada tempat berhampiran</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR">Kongsi lokasi semasa</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN">Kongsi lokasi PIN</string>
+    <string name="STR_NMS_MAP_MY_LOCATION">Lokasi saya</string>
+    <string name="STR_NMS_MAP_SEARCH">Cari</string>
+    <string name="STR_NMS_MAP_ERROR_1">Gagal mendapatkan koordinat</string>
+    <string name="STR_NMS_MAP_ERROR_2"> Google mengembalikan ralat</string>
+    <!-- Map String end -->
+
+
+    <!-- All Media String start -->
+    <string name="STR_NMS_ALL_MEDIA_TITLE">Semua Media</string>
+    <string name="STR_NMS_ALL_MEDIA_WAIT">Sila tunggu...</string>
+    <string name="STR_NMS_ALL_MEDIA_ERROR">Gagal memuatkan</string>
+    <string name="STR_NMS_ALL_MEDIA_EMPTY">Kosong</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_WEEK">Minggu ini</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_MONTH">Bulan ini</string>
+    <string name="STR_NMS_ALL_MEDIA_JAN">Januari</string>
+    <string name="STR_NMS_ALL_MEDIA_FEB">Februari</string>
+    <string name="STR_NMS_ALL_MEDIA_MAR">Mac</string>
+    <string name="STR_NMS_ALL_MEDIA_APR">April</string>
+    <string name="STR_NMS_ALL_MEDIA_MAY">Mei</string>
+    <string name="STR_NMS_ALL_MEDIA_JUN">Jun</string>
+    <string name="STR_NMS_ALL_MEDIA_JUL">Julai</string>
+    <string name="STR_NMS_ALL_MEDIA_AUG">Ogos</string>
+    <string name="STR_NMS_ALL_MEDIA_SEPT">September</string>
+    <string name="STR_NMS_ALL_MEDIA_OCT">Oktober</string>
+    <string name="STR_NMS_ALL_MEDIA_NOV">November</string>
+    <string name="STR_NMS_ALL_MEDIA_DEC">Disember</string>
+    <string name="STR_NMS_ADDCONTACT">Tambah kenalan</string>
+    <string name="STR_NMS_ADD_PHONE_CONTACT">Tambah \&quot;%1$s\&quot; pada kenalan?</string>
+    <string name="STR_NMS_DELETE_MEDIA">Media akan dipadam, teruskan?</string>
+    <string name="STR_NMS_MEDIA_SHARE_MESSAGE">%1$s dikongsi di %2$s</string>
+
+    <!-- All Media String end -->
+
+
+    <!-- All Locations String start -->
+    <string name="STR_NMS_ALL_LOCATIONS_TITLE">Semua Lokasi</string>
+    <string name="STR_NMS_ALL_LOCATIONS_LOC">Lokasi</string>
+    <string name="STR_NMS_ALL_LOCATIONS_WAIT">Sila tunggu...</string>
+    <!-- All Locations String end -->
+
+
+    <!-- Sketch -->
+    <string name="STR_NMS_SKETCH_TITLE">Lukis Lakaran</string>
+    <string name="STR_NMS_REDO">Buat semula</string>
+    <string name="STR_NMS_UNDO">Buat asal</string>
+    <string name="STR_NMS_SKETCH_CUSTOM">Tersuai</string>
+    <string name="STR_NMS_PEN_SIZE">Saiz</string>
+    <string name="STR_NMS_SKETCH_TOOLS_PEN">Pensel</string>
+    <string name="STR_NMS_SKETCH_TOOLS_ERASER">Pemadam</string>
+    <string name="STR_NMS_SKETCH_CUSTOM_COLOR">Warna Tersuai</string>
+    <string name="STR_NMS_CLEAR_SKETCH_TITLE">Kosongkan Lakaran</string>
+    <string name="STR_NMS_CLEAR_SKETCH_CONTENT">Adakah anda mahu mengosongkan lakaran ini?</string>
+    <string name="STR_NMS_SIZE_SKETCH_TITLE">Saiz</string>
+    <string name="STR_NMS_SIZE_SKETCH_MAX">72</string>
+    <string name="STR_NMS_SIZE_SKETCH_MIN">2</string>
+    <string name="STR_NMS_COLOR_SKETCH_TITLE">Warna</string>
+    <string name="STR_NMS_SKETCH_ERROR">Gagal untuk membuat lakaran.</string>
+    <string name="STR_NMS_BACK_TITLE">Pengesahan</string>
+    <string name="STR_NMS_FINISH_SKETCH_CONTENT">Adakah anda pasti mahu meninggalkan lakaran?</string>
+    <string name="STR_NMS_LEAVE_SKETCH_CONTENT">Adakah anda pasti mahu membuang lakaran ini?</string>
+    <string name="STR_NMS_NOTREDO">Tiada untuk buat semula</string>
+    <string name="STR_NMS_NOTUNDO">Tiada untuk buat asal</string>
+    <string name="STR_NMS_SKETCH_DELETE">Kosongkan</string>
+    <string name="STR_NMS_DISCARD">Buang</string>
+
+    <!-- Sketch end -->
+
+
+    <!-- Selection Contact -->
+    <string name="STR_NMS_DONE">OK</string>
+    <string name="STR_NMS_SELECTALL">Pilih semua</string>
+    <string name="STR_NMS_DESELECTED">Nyahpilih semua</string>
+    <string name="STR_NMS_SELECTED">%1$s dipilih</string>
+    <string name="STR_NMS_CONTACT_SEARCH">Cari kenalan</string>
+    <string name="STR_NMS_SEARCH">Cari</string>
+    <string name="STR_NMS_CONTACT_SELECT">Pilih kenalan</string>
+    <string name="STR_NMS_SELECT_MEMBER_FULL">Terlalu banyak kenalan dipilih</string>
+    <string name="STR_NMS_SELECT_MEMBER_EMPTY">Tiada kenalan dipilih</string>
+    <string name="STR_NMS_SELECT_CONTAT_WAIT">Sila tunggu...</string>
+    <string name="STR_NMS_SELECT_CONTAT_EMPTY">Tiada kenalan iSMS</string>
+    <string name="STR_NMS_SELECT_NO_RESULT">Tiada ditemui</string>
+    <string name="STR_NMS_EMPTY">Tiada kenalan</string>
+    <string name="STR_NMS_ALL_CONTACTS">SEMUA</string>
+    <string name="STR_NMS_GROUPS_MEM"> %1$s ahli</string>
+    <string name="STR_NMS_GROUPS_CONTACTS">SEMUA KUMPLN</string>
+    <!-- Selection Contact end -->
+
+    <!-- Group chat -->
+    <string name="STR_NMS_CREATE_GROUP_TITLE">Buat Kumpulan</string>
+    <string name="STR_NMS_GROUP_INFO_TITLE">Maklumat Kumpulan</string>
+    <string name="STR_NMS_EDIT_GROUP_TITLE">Edit Kumpulan</string>
+    <string name="STR_NMS_SELECT_ACTION_TITLE">Pilih tindakan</string>
+    <string name="STR_NMS_ADD_TO_BOOKMARK">Tambah pada penanda buku</string>
+    <string name="STR_NMS_ADD_TO_CONTACTS">Tambah %1$s pada Kenalan</string>
+    <string name="STR_NMS_GROUP_NAME">NAMA KUMPULAN</string>
+    <string name="STR_NMS_GROUP_INFO">MAKLUMAT KUMPULAN</string>
+    <string name="STR_NMS_GROUP_MEMBERS">AHLI KUMPULAN</string>
+    <string name="STR_NMS_GROUP_NAME_HIT">Nama kumpulan</string>
+    <string name="STR_NMS_GROUP_NAME_EMPTY">Nama kumpulan kosong</string>
+    <string name="STR_NMS_CONFIRM_LEAVE_TITLE">Tinggalkan kumpulan ini</string>
+    <string name="STR_NMS_LEAVE_GROUP_CONTENT">Adakah anda mahu meninggalkan kumpulan ini?</string>
+    <string name="STR_NMS_LEAVE_GROUP_SUCCESS">Berjaya tinggalkan kumpulan ini</string>
+    <string name="STR_NMS_LEAVE_GROUP_FAILED">Gagal meninggalkan</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_SUCCESS">Berjaya mengemas kini nama kumpulan</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_SUCCESS">Ahli baru kumpulan ditambah</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_FAILED">Gagal Menambah</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_FAILED">Kemas Kini Gagal</string>
+    <string name="STR_NMS_CREATE_GROUP_NAME_FAILED">Gagal membuat bual kumpulan</string>
+    <string name="STR_NMS_DELETE_GROUP_MEMBER_FAILED">Gagal mengeluarkan</string>
+    <string name="STR_NMS_UPDATE_GROUP_SUCCESS">Berjaya mengemas kini maklumat kumpulan</string>
+    <string name="STR_NMS_UPDATE_GROUP_FAILED">Gagal mengemas kini maklumat kumpulan</string>
+    <string name="STR_NMS_GROUP_CHAT_BACK">Adakah anda mahu membuang operasi ini?</string>
+    <string name="STR_NMS_GROUP_MEMEBER_YOU">ANDA</string>
+    <string name="STR_NMS_GROUP_INVITE_MORE">Jemput</string>
+    <string name="STR_NMS_LEAVE_GROUP">Tinggalkan</string>
+    <string name="STR_NMS_CHAT">Bual</string>
+    <string name="STR_NMS_CONFIRM_REMOVE_TITLE">Keluarkan dari senarai ahli kumpulan</string>
+    <string name="STR_NMS_REMOVE_OK">Keluarkan</string>
+    <string name="STR_NMS_REMOVE_CANCEL">Batal</string>
+    <string name="STR_NMS_REMOVE_CONTENT">Adakah anda mahu mengeluarkan ini daripada senarai?</string>
+    <string name="STR_NMS_VIEW_ALL_MEDIA">Lihat semua media</string>
+    <string name="STR_NMS_VIEW_ALL_LOCATIONS">Lihat semua lokasi</string>
+    <string name="STR_NMS_CHAT_SETTINGS">Tetapan bual</string>
+    <string name="STR_NMS_VIEW_GROUP_FAILED">Anda telah meninggalkan bual berkumpulan ini.</string>
+    <string name="STR_NMS_VIEW_HISTORY">Lihat sejarah kumpulan</string>
+    <string name="STR_NMS_ISMS_ENABLE_TITLE">Dayakan iSMS)</string>
+    <string name="STR_NMS_ISMS_ENABLE_CONTENT">Ciri ini hanya disokong oleh perkhidmatan iSMS. Dayakan akaun iSMS anda sekarang?</string>
+    <string name="STR_NMS_ENABLE">Dayakan</string>
+    <string name="STR_NMS_LATER">Tolak</string>
+    <string name="STR_NMS_SWITCH_TITLE">Tukar SIM</string>
+    <string name="STR_NMS_SWITCH_MESSAGE">Bual berkumpulan hanya disokong apabila perkhidmatan iSMS diaktifkan, tetapi kad SIM semasa tidak diaktifkan. Tukar kepada kad SIM yang diaktifkan?</string>
+    <string name="STR_NMS_SWITCH_EDIT_MESSAGE">Kad SIM semasa tidak dikaitkan dengan kumpulan ini. Tukar kepada kad SIM yang lain?</string>
+    <string name="STR_NMS_LEAVE_GROUP_NOTICE">Anda telah meninggalkan kumpulan ini dan tidak boleh menyertai bual kumpulan ini melainkan anda dijemput sekali lagi</string>
+    <string name="STR_NMS_LOSE_SIM_NOTICE">Kad SIM bual asal telah dikeluarkan, anda hanya boleh berbual dalam kumpulan ini dengan kad SIM asal anda</string>
+    <string name="STR_NMS_SWITCH">Tukar</string>
+
+    <!-- Group chat end -->
+
+
+    <!-- chat details screen long press item start -->
+    <string name="STR_NMS_LONG_PRESS_TITLE">Pilih mesej</string>
+    <string name="STR_NMS_SEND_VIA_TEXT">Hantar melalui SMS</string>
+    <string name="STR_NMS_TRY_AGAIN">Cuba sekali lagi</string>
+    <string name="STR_NMS_TRY_ALL_AGAIN">Cuba semua sekali lagi</string>
+    <string name="STR_NMS_CONTINUE_TRY">Teruskan mencuba</string>
+    <string name="STR_NMS_COPY">Salin</string>
+    
+    <string name="STR_NMS_FORWARD">Kemukakan</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_TITLE">Muat turun</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD">Untuk mengemukakan iSMS, anda perlu memuat turun kandungan media dahulu.</string>
+    <string name="STR_NMS_FORWARD_CONTIUE">Teruskan</string>
+    <string name="STR_NMS_FORWARD_FAILED">Gagal</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_MULTI">Mesej perlu dimuat turun dahulu.</string>
+    <string name="STR_NMS_FORWARD_SOME_FAILED">Bbrpa pgemukaan iSMS gagal. </string>
+    <string name="STR_NMS_FORWARD_ALL_FAILED">Gagal muat turun, buang berbilang pengemukaan dibuang</string>
+    
+    <string name="STR_NMS_SEND_VIA_MULTIMEDIA">Hantar melalui MMS</string>
+    <string name="STR_NMS_SHARE">Kongsi</string>
+    <string name="STR_NMS_DELETE">Padam</string>
+    <string name="STR_NMS_FLAG_IMPORTANT">Bendera sebagai penting</string>
+    <string name="STR_NMS_REMOVE_IMPORTANT">Keluarkan bendera penting</string>
+    <string name="STR_NMS_SAVE_IN_SDCARD">Eksport ke kad SD</string>
+    <string name="STR_NMS_SAVE_FILE">Fail disimpan ke %1$s</string>
+    <string name="STR_NMS_SHARE_TITLE">Cara untuk berkongsi</string>
+    <string name="STR_NMS_VIEW_DETAILS">Lihat paparan</string>
+    <string name="STR_NMS_VIEW_DETAILS_TITLE">Butiran mesej</string>
+    <string name="STR_NMS_SEND_MSG_DETAILS">Jenis: Mesej IP\nDihantar: %1$s</string>
+    <!-- chat details screen long press item end -->
+
+
+    <!-- chat details screen delete item start -->
+    <string name="STR_NMS_DELETE_TITLE">Padam</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_TITLE">Padam mesej penting</string>
+    <string name="STR_NMS_DELETE_WARNING">Mesej akan dipadam.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_WARNING">Adakah anda pasti anda mahu memadam mesej penting ini?</string>
+    <string name="STR_NMS_DELETE_MSG">Mesej yang dipilih akan dipadam.</string>
+    <string name="STR_NMS_DELETE_WAITTING">Memadam</string>
+    <string name="STR_NMS_CLEAR_HISTORY_CONTENT">Semua sejarah sembang akan dikosongkan dalam bilik bual ini</string>
+    <string name="STR_NMS_DELETE_IMPORTANT">Masukkan mesej yang dibenderakan sebagai penting</string>
+    <!-- chat details screen delete item end -->
+
+
+    <!-- chat details actionBar option start -->
+    <string name="STR_NMS_MENU_CALL">Panggil</string>
+    <string name="STR_NMS_MENU_GROUPINFO">Maklumat Kumpulan</string>
+    <string name="STR_NMS_MENU_INVITE_CHAT">Jemput rakan untuk bual</string>
+    <string name="STR_NMS_MENU_INVITE_ISMS">Jemput rakan untuk menggunakan iSMS</string>
+    <string name="STR_NMS_MENU_SELECT_MSG">Pilih mesej</string>
+    <string name="STR_NMS_MENU_MARK_SPAM">Pindah ke senarai Spam</string>
+    <string name="STR_NMS_MENU_REMOVE_SPAM">Keluarkan dari senarai Spam</string>
+    <string name="STR_NMS_MENU_ADD_SHORTCUT">Tambah pintasan</string>
+    <string name="STR_NMS_MENU_VIEW_ALLMEDIA">Lihat semua media</string>
+    <string name="STR_NMS_MENU_VIEW_ALLLOCATION">Lihat semua lokasi</string>
+    <string name="STR_NMS_MENU_EDIT_GROUP">Edit kumpulan</string>
+    <string name="STR_NMS_MENU_CHAT_SETTING">Tetapan bual</string>
+    <string name="STR_NMS_MENU_INSERT_QUICK_TEXT">Masukkan teks cepat</string>
+    <string name="STR_NMS_MENU_CLEAR_HISTORY">Kosongkan sejarah bual</string>
+    <string name="STR_NMS_MENU_LEAVE_GROUP">Tinggalkan kumpulan ini</string>
+    <string name="STR_NMS_MENU_DISCARD">Buang</string>
+    <string name="STR_NMS_MENU_DELETE">Padam</string>
+    <string name="STR_NMS_MENU_IMPORTANT">Bendera sebagai penting</string>
+    <string name="STR_NMS_MENU_FORWARD"> Kemukakan	vorwärtsKemukakan</string>
+    <!-- chat details actionBar option end -->
+
+
+    <!-- chat details share item start -->
+    <string name="STR_NMS_TAKE_PHOTO">Ambil Foto</string>
+    <string name="STR_NMS_RECORD_VIDEO">Rakam Video</string>
+    <string name="STR_NMS_DRAW_SKETCH">Lukis Lakaran</string>
+    <string name="STR_NMS_SHARE_CONTACT">Kongsi Kenalan</string>
+    <string name="STR_NMS_CHOOSE_PHOTO">Pilih Foto</string>
+    <string name="STR_NMS_CHOOSE_VIDEO">Pilih Video</string>
+    <string name="STR_NMS_RECORD_AUDIO">Rakam Audio</string>
+    <string name="STR_NMS_SHARE_LOCATION">Kongsi Lokasi</string>
+    <string name="STR_NMS_CHOOSE_AUDIO">Pilih Audio</string>
+    <string name="STR_NMS_SHARE_CALENDAR">Kongsi Kalendar</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_TITLE">Tambah muzik</string>
+    <string name="STR_NMS_CHOOSE_RINGTONE_ITEM">Nada dering</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_ITEM">Audio</string>
+    <string name="STR_NMS_INSERT_SDCARD">Sila masukkan kad SD!</string>
+    <!-- chat details share item start -->
+
+
+    <!-- record audio start -->
+    <string name="STR_NMS_AUDIO_TIMER_FORMAT" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <string name="STR_NMS_AUDIO_LABLE">Perakam Nota Audio</string>
+    <string name="STR_NMS_RECORD_AUDIO_CONT">Ketuk untuk rakam</string>
+    <string name="STR_NMS_PLAY_AUDIO_CONT">Ketuk untuk memainkan</string>
+    <string name="STR_NMS_ACTION_SEND">Hantar</string>
+    <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
+    <string name="audio_db_artist_name">Rakaman anda</string>
+    <string name="audio_db_album_name">Rakaman audio</string>
+    <string name="STR_NMS_SELECT_AUDIO">Pilih audio</string>
+    <!-- record audio end -->
+
+
+    <!-- chat & group details screen start -->
+
+    <string name="STR_NMS_UNREAD_FORMAT">%1$d mesej belum dibaca</string>
+    <string name="STR_NMS_NOT_DELIVERED_TITLE">Belum dihantar lagi</string>
+    <string name="STR_NMS_FAILED_TITLE">Ralat Penghantaran</string>
+    <string name="STR_NMS_GROUP_SUBTITLE">%1$s, +%2$d</string>
+    <string name="STR_NMS_GROUP_DEAD_SUBTITLE">%1$s, %2$d</string>
+    <string name="STR_NMS_SAVE_AS_DRAFT">Mesej yang disimpan sebagai draf</string>
+    <string name="STR_NMS_NO_SD_TITLE">Ralat kad SD</string>
+    <string name="STR_NMS_CANT_SHARE">Kad SD tidak boleh diakses. Semua ciri-ciri berkaitan multimedia tidak tersedia untuk digunakan.\n\nSila periksa kad SD anda dan cuba sekali lagi kemudian.</string>
+    <string name="STR_NMS_CANT_SAVE">Kad SD tidak dikesan, tidak dapat menyimpan fail</string>
+    <string name="STR_NMS_SDSPACE_NOT_ENOUGH">Ruang kad SD yang tersedia tidak mencukupi, tidak dapat menyimpan fail.</string>
+    <string name="STR_NMS_REAEND_ALL">Cuba semua sekali lagi...</string>
+    <string name="STR_NMS_FILE_LIMIT">Terlalu besar</string>
+    <string name="STR_NMS_LOAD_ALL_MESSAGE">Muatkan Semua</string>
+    <string name="STR_NMS_DOWNLOAD_FAILED">Muat turun gagal</string>
+    <string name="STR_NMS_INPUT_HINT">Input kandungan</string>
+    <string name="STR_NMS_INPUT_HINT_ISMS">Taipkan mesej iSMS</string>
+    <string name="STR_NMS_CAPTION_HINT">Taipkan Kapsyen</string>
+    <string name="STR_NMS_PROTOCOL_SMS">SMS</string>
+    <string name="STR_NMS_PROTOCOL_MMS">MMS</string>
+    <string name="STR_NMS_PROTOCOL_IP">iSMS</string>
+    <string name="STR_NMS_SWITCH_BOTTON">Tukar SIM</string>
+    <string name="STR_NMS_TURN_ON_BOTTON">Hidupan</string>
+    <string name="STR_NMS_SWITCH_TEXT_FORMAT">Untuk meneruskan perbualan kumpulan, tukar kepada SIM %1$s dahulu.</string>
+    <string name="STR_NMS_ENABLE_TEXT_FORMAT">Untuk meneruskan perbualan kumpulan, hidupkan perkhidmatan iSMS pada SIM %1$s dahulu.</string>
+    <string name="STR_NMS_REPLACE_ATTACH_TITLE">Ganti tambahan</string>
+    <string name="STR_NMS_REPLACE_ATTACH_MSG">Terdapat pemasangan yang sedia ada, ganti?</string>
+    <string name="STR_NMS_TRUNC_CAPTION">Kapsyen telah dipangkas.</string>
+    <string name="STR_NMS_MAX_CHARACTERS_REACHED">Had saiz mesej telah dicapai.</string>
+    <string name="STR_NMS_MAX_EMOTICON_REACHED">Penuhi had emotikon</string>
+    <string name="STR_NMS_ENABLE_PROCESS">Memproses...</string>
+    <string name="STR_NMS_ERR_FILE">Fail tidak sah</string>
+    <string name="STR_NMS_SENDING_TEXT">Menghantar...</string>
+    <!-- chat & group details screen end --> <!-- Error code tips -->
+    <string name="STR_NMS_ERR_GENERAL">Ralat umum</string>
+    <string name="STR_NMS_ERR_INVALID_ARGUMENT">Hujah tidak sah</string>
+    <string name="STR_NMS_ERR_NETWORK_BLOCK">Rangkaian tidak OK</string>
+    <string name="STR_NMS_ERR_PHONE_NOT_ACTIVATED">Tidak diaktifkan</string>
+    <string name="STR_NMS_ERR_SIM_NOT_ACTIVATED">Kad SIM tidak diaktifkan</string>
+    <string name="STR_NMS_ERR_INVALID_MSG_DB_ID">Id DB mesej tidak sah</string>
+    <string name="STR_NMS_ERR_ADD_MSG_DB_FAILED">Gagal memasukkan</string>
+    <string name="STR_NMS_ERR_UPDATE_MSG_DB_FAILED">Kemas Kini Gagal</string>
+    <string name="STR_NMS_ERR_GET_MSG_DB_DATA_FAILED">Gagal mengambil</string>
+    <string name="STR_NMS_ERR_INVALID_CONTACT_DB_ID">Kenalan tidak sah</string>
+    <string name="STR_NMS_ERR_ADD_CONTACT_DB_FAILED">Gagal memasukkan</string>
+    <string name="STR_NMS_ERR_UPDATE_CONTACT_DB_FAILED">Kemas Kini Gagal</string>
+    <string name="STR_NMS_ERR_GET_CONTACT_DB_DATA_FAILED">Gagal mengambil</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_ERROR_FORMAT">Format Mesej IP tidak sah</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_INVALID_TO">Penerima tidak sah</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_WITH_UNKNOWN_USER">Penerima tidak sah</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_NO_MBMBER">Tiada ahli bual kumpulan</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_GCHAT_DEAD">Bual kumpulan tidak diaktifkan</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_INVALID_SIM_ID">Kad SIM bual kumpulan bukan kad SIM semasa</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_FOR_SYS_MSG">Hantar SMS sekali lagi</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_INVALID_STATUS">Mesej IP belum sedia</string>
+    <string name="STR_NMS_ERR_GCHAT_IS_DEAD">Bual kumpulan ini tiada lagi</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBERS">Ahli tidak sah</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBER_WITH_SELF">Gagal membuat kumpulan. Ahli tidak akan mengandungi diri anda</string>
+    <string name="STR_NMS_ERR_GCHAT_EXCEED_MAX_MEMBER_COUNT">Bilangan ahli kumpulan mencapai hadnya</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_NAME">Nama kumpulan tidak sah</string>
+    <string name="STR_NMS_ERR_GCHAT_SIM_IS_NOT_ACTIVATED">Kad SIM bual kumpulan tidak diaktifkan</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_NOT_INBOX_MSG">Gagal memuat turun URL</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_INVALID_URL">Muat turun URL tidak sah</string>
+    <string name="STR_NMS_ERR_GET_ATTACH_NAME_INVALID_BODY_FORMAT">Gagal untuk mendapatkan nama fail muat turun</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_INVALID_FILE_NAME">Nama fail muat turun tidak sah</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_EXIST">Fail muat turun tidak wujud</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_INBOX_MSG">Gagal untuk menetapkan fail muat turun</string>
+    <string name="STR_NMS_ERR_SIM_INFO_NOT_FOUND">Maklumat kad SIM tidak ditemui</string>
+    <string name="STR_NMS_ERR_SIM_IN_INVALID_STATUS">Keadaan kad SIM tidak sah</string>
+    <string name="STR_NMS_ERR_CMD_PROCESSING">Sibuk</string>
+    <string name="STR_NMS_ERR_CMD_GENERAL">Ralat konfigurasi sistem umum</string>
+    <string name="STR_NMS_ERR_CODE_END">Ralat tidak diketahui</string>
+    <!-- Error code tips -->
+    <string name="STR_NMS_SEND_MMS_QUERY_TITLE">Amaran</string>
+    <string name="STR_NMS_SEND_MMS_QUERY">Penerima bukan pengguna iSMS, hantar melalui MMS?</string>
+    <!-- Service center start -->
+    <string name="STR_NMS_SERVICE_TITLE">Pusat perkhidmatan iSMS</string>
+    <string name="STR_NMS_INTRODUCTION">Dengan iSMS, anda boleh dengan seger mengahntar mesej percuma, dan menyimpan sejarah bual dalam satu tempat, Tekan pada satu butang, alami pengalaman baru!</string>
+    <string name="STR_NMS_TERMS">Terma dan Syarat</string>
+    <string name="STR_NMS_ACTIVATION_BUTTON">Aktifkan sekarang</string>
+    <string name="STR_NMS_LOSE_SDCARD">Kad SD tidak dikesan</string>
+    <!-- Service center end -->
+
+
+    <!-- conversation empty tips -->
+    <string name="STR_NMS_SPAM_EMPTY">Anda tidak mempunyai sebarang perbualan spam. \nSPAM mengumpulkan semua perbualan yang ditandakan sebagai spam. Pemberitahuan akan dimatikan secara lalai. Ini mengelakkan anda daripada gangguan yang tidak perlu. \n\nAnda boleh menandakan penghantar sebagai spam dengan mengadakan perbualan dan memilih ikon Tandakan Sebagai Spam. Apabila perbulana ditandakan sebagai spam, ikon pemberitahuan-matikan akan dipaparkan secara automatik dan perbualan akan diadakan di sini.</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_FROM">+86123456789</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_SUBJECT">Ini adalah contoh mesej spam.</string>
+    <string name="STR_NMS_GROUPCHAT_EMPTY">Anda tiada sebarang mesej bual kumpulan. \nBUAL KUMPULAN mengumpulkan semua mesej bual kumpulan yang anda buat atau sertai. Ini membolehkan anda untuk mencari dan menguruskan bual kumpulan dengan mudah. \n\nUntuk membuat bual kumpulan, anda boleh mengetuk pada butang Buat bual kumpulan di bawah skrin ini dan jemput rakan anda untuk menyertai kumpulan.</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_FROM">Nama kumpulan</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_SUBJECT">Rakan anda:\nSaya suka ciri bual kumpulan!</string>
+    <string name="STR_NMS_IMPORTANT_EMPTY">Anda tiada sebarang mesej penting. \nPENTING mengumpulkan semua mesej yang dibenderakan sebagai penting. Ini membolehkan anda untuk mencari mesej penting dengan mudah. \n\nAnda boleh membenderakan mesej sebagai penting dengan memegang mesej dan memilih Bendera sebagai penting daripada menu Pilihan. Apabila mesej dibenderakan sebagai penting, anda akan melihat ikon bendera merah seperti di bawah.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TITLE">Ini adalah contoh mesej yang dibenderakan sebagai penting. Bendera merah akan muncul.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TIME">10:55 pagi</string>
+    <string name="STR_NMS_ALLCHAT_EMPTY">Tiada perbualan</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_CONTENT">Untuk menggunakan ciri ini, anda perlu mengaktifkan perkhidmatan iSMS dahulu. Jangan bimbang - jika anda tidak sukakan perkhidmatan ini, anda boleh mematikannya dalam Tetapan. Cubalah sekarang!</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_TITLE">Aktifkan iSMS</string>
+    <!-- conversation empty tips -->
+    
+    <string name="STR_NMS_CLEAR_USER_DATA">Berjaya kosongkan data </string>
+    
+    <!-- get file err start -->
+    <string name="STR_NMS_NO_SUCH_FILE">Tiada fail sedemikian</string>
+    <string name="STR_NMS_OVER_FILE_LIMIT">Saiz fail melebihi hadnya</string>
+    <string name="STR_NMS_INVALID_FILE_TYPE">Tidak menyokong jenis ini</string>
+    <!-- get file err end -->
+
+    <string name="STR_NMS_DELIVERY_BODY">Mesej diterima oleh %s</string>
+    <string name="STR_NMS_SIM_SELECT_TITLE">Pilih SIM</string>
+    
+    <string name="STR_NMS_SHORTCUT_SUCCESS">Pintasan %1$s dibuat.</string>
+    <string name="STR_NMS_SHORTCUT_REFRESHING">Menyegar semula</string>
+    
+    <string name="STR_NMS_DISABLE_FAILED">Operasi gagal, sila cuba sekali lagi</string>
+    <string name="STR_NMS_ENABLE_FAILED">Operasi gagal, sila cuba sekali lagi</string>
+    <string name="STR_NMS_ENABLE_SUCCESS">Anda telah berjaya mengaktifkan perkhidmatan iSMS</string>
+    <string name="STR_NMS_DISABLE_SUCCESS">Anda telah berjaya menyahaktifkan perkhidmatan iSMS</string>
+    
+	<string name="STR_NMS_SD_CARD_FULL">Kad SD penuh</string>
+    <string name="STR_NMS_SEND_MSG_FAILED">Gagal menghantar mesej!</string>
+    
+    <string name="STR_NMS_SETTING_COMMENT">iSMS ialah alat bual yang hebat. It adalah percuma dan mudah. Ketahui lebih lanjut</string>
+    <string name="STR_NMS_KNOW_MORE">Ketahui lebih lanjut</string>
+    <string name="STR_NMS_RECEIVED_MSG_DETAILS">Jenis: Mesej IP\nDaripada: %1$s\nDihantar: %2$s\nDiterima: %3$s</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH_ADD">Perkhidmatan iSMS buat sementara waktu kerana kekurangan ruang simpanan.</string>
+    <string name="STR_NMS_SERVER_AUTO_ECHO_MSG">Mesej yang diterima. Terima kasih!</string>
+
+    <string name="imsp_ip_message">Mesej iSMS</string>
+    <string name="imsp_invite_chat_frequently"><b>Kerap berbual dengan %s ?</b>\nKenapa tidak menjemput %s menggunakan iSMS untuk menjimatkan wang anda berdua?</string>
+    <string name="imsp_enable_chat_frequently"><b>Perkhidmatan iSMS %s dinyahdaya!</b>\nMengapa tidak mendayakan perkhidmatan iSMS dan menjimatkan wang anda berdua?</string>
+    <string name="imsp_invite">Jemput</string>
+    <string name="imsp_enable_notice">Anda pasti untuk mendayakan perkhidmatan iSMS?</string>
+    <string name="imsp_activate_chat_frequently"><b>Kerap berbual dengan rakan?</b>\nKenapa tidak aktifkan perkhidmatan iSMS untuk berbual tanpa kadar SMS?</string>
+    <string name="imsp_activate_note">Anda pasti untuk mengaktifkan iSMS?</string>
+    <string name="imsp_dismiss_content">Anda pasti untuk membuang nota?</string>
+    <string name="imsp_divider_online">%s Dalam talian</string>
+    <string name="imsp_divider_offline">Masa akhir dalam talian pada %s</string>
+    <string name="imsp_divider_never_online">Tidak pernah dalam talian</string>
+    <string name="imsp_failed_title">Penghantaran Gagal</string>
+    <string name="imsp_resend_via_sms">Sebaliknya hantar SMS</string>
+    <string name="imsp_resend_via_mms">Sebaliknya hantar MMS</string>
+    <string name="imsp_typing_text">Menaip</string>
+    <string name="imsp_save_attachment">Simpan lampiran</string>
+    <string name="imsp_view">Lihat</string>
+    <string name="imsp_convert_to_mms">Tukar kepada MMS.</string>
+    <string name="imsp_convert_to_sms">Tukar kepada SMS.</string>
+    <string name="imsp_convert_to_isms">Tukar kepada iSMS.</string>
+    <string name="imsp_convert_to_mms_for_service">Perkhidmatan iSMS tidak tersedia dalam kad SIM terpilih ini. Mesej ini hanya boleh dihantar melalui MMS dalam kad SIM ini. Teruskan juga?</string>
+    <string name="imsp_convert_to_sms_for_service">Perkhidmatan iSMS tidak tersedia dalam kad SIM terpilih ini. Mesej ini hanya boleh dihantar melalui SMS dalam kad SIM ini. Teruskan juga?</string>
+    <string name="imsp_convert_to_mms_for_recipients">Penerima bukan pengguna iSMS. Mesej ini hanya boleh dihantar melalui MMS. Teruskan juga?</string>
+    <string name="imsp_convert_to_sms_for_recipients">Penerima bukan pengguna iSMS. Mesej ini hanya boleh dihantar melalui SMS. Teruskan juga?</string>
+    <string name="imsp_sms_convert_to_isms">Perkhidmatan iSMS tersedia dalam kad SIM terpilih ini. Untuk menjimatkan kadar SMS, disyorkan untuk menukar mesej ke iSMS. Tukar sekarang?</string>
+    <string name="imsp_mms_convert_to_isms">Perkhidmatan iSMS tersedia dalam kad SIM terpilih ini. Untuk menjimatkan kadar MMS, disyorkan untuk menukar mesej ke iSMS. Tukar sekarang?</string>
+    <string name="imsp_keep_mms">Simpan MMS</string>
+    <string name="imsp_keep_sms">Simpan SMS</string>
+    <string name="imsp_resend_discard_message">Untuk menghantar semula mesej, mesej sedang ditulis anda akan dibuang.</string>
+    <string name="imsp_no_sim_card">Tiada kad SIM!</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">&quot;Tiada sambungan internet berfungsi dijumpai! Sila cuba sekali lagi kemudian.&quot;</string>
+    <string name="imsp_chat_setting_updating">mengemas kini...</string>
+    <string name="imsp_dialog_clear_title">Bersih</string>
+    <string name="imsp_dialog_clear_description">Semua sejarah bual akan dibersihkan dalam bilik bual ini</string>
+    <string name="imsp_chat_setting_saving">menyimpan...</string>
+    <string name="imsp_chat_setting_sending">menghantar...</string>
+    <string name="imsp_save_chat_history_failed">simpan gagal</string>
+    <string name="imsp_send_chat_history_failed">E-mel gagal</string>
+    <string name="imsp_conversation_list_all">Mesej</string>
+    <string name="imsp_conversation_list_important">Penting</string>
+    <string name="imsp_conversation_list_group_chats">Bual kumpulan</string>
+    <string name="imsp_conversation_list_spam">Spam</string>
+    <string name="imsp_mark_as_spam_tips">Mesej ditanda sebagai Spam akan dialih ke senarai Spam dan pemberitahuan dimatikan secara automatik.</string>
+    <string name="imsp_typing">&quot;Menaip...&quot;</string>
+    <string name="imsp_type_to_compose_text">&quot;Taip mesej SMS/iSMS&quot;</string>
+    <string name="imsp_no_sdcard">Tiada kad SD</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">Untuk menghantar jemputan, mesej sedang ditulis akan dibuang.</string>
+    <string name="imsp_current_sim_enabled">SIM semasa didayakan.</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">Pilih SIM untuk mengaktifkan iSMS</string>
+    <string name="imsp_activate_message">Ciri ini hanya disokong oleh perkhidmatan iSMS. Aktifkan akaun iSMS anda sekarang?</string>
+    <string name="imsp_enable_message">Ciri ini hanya disokong oleh perkhidmatan iSMS. Dayakan akaun iSMS anda sekarang?</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">Pilih SIM untuk mendayakan iSMS</string>
+    <string name="imsp_switch_sim_title">Tukar SIM</string>
+    <string name="imsp_switch_sim_message">SIM semasa tidak menyokong iSMS. Tukar ke SIM lain?</string>
+    <string name="imsp_switch_sim_successfully">Tukar SIM berjaya!</string>
+    <string name="imsp_dailog_multi_forward">Memajukan Mesej</string>
+    <string name="imsp_dialog_send_result">Hantar Keputusan</string>
+    <string name="imsp_dlg_send_all">Semua: %s</string>
+    <string name="imsp_dlg_send_sucess">Dihantar: %s</string>
+    <string name="imsp_dlg_send_failed">Gagal: %s</string>
+    <string name="imsp_multi_forward_sim_info">Mendapatkan Maklumat SIM</string>
+    <string name="imsp_multi_forward_no_sim">Tiada Maklumat SIM</string>
+    <string name="imsp_get_sim_failed">Gagal mendapatkan maklumat SIM</string>
+    <string name="imsp_sim_status_error">Ralat status SIM</string>
+    <string name="imsp_forward_norecipients">Tiada penerima untuk pemajuan mesej</string>
+    <string name="imsp_multiforward_no_message">Tiada mesej boleh dimajukan</string>
+    <string name="imsp_need_input_recipients">Sila nyatakan sekurang-kurangnya seorang penerima dahulu</string>
+    <string name="imsp_spam_empty">Anda tidak mempunyai perbualan spam. \nSPAM mengumpul semua perbualan yang ditanda sebagai spam. Pemberitahuan akan dimatikan secara lalai. Ini mengelakkan anda daripada gangguan takperlu. \n\nAnda boleh menanda penghantar sebagai spam dengan menahan perbualan dan memilihan ikon Tanda sebagai Spam. Apabila perbualan ditanda sebagai spam, ikon pemberitahuan dimatikan akan ditunjukkan secara automatik dan perbualan akan diletakkan di sana.</string>
+    <string name="imsp_groupchat_empty">Anda tidak mempunyai mesej perbualan kumpulan. \nPERBUALAN KUMPULAN mengumpul semua mesej bual kumpulan yang dicipta atau disertai oleh anda. Ini membolehkan anda mencari dan menguruskan bual kumpulan anda dengan mudah. \n\nUntuk mencipta bual kumpulan, anda boleh ketik pada butang Cipta bual kumpulan di bawah skrin dan jemput rakan anda untuk menyertai kumpulan.</string>
+    <string name="imsp_important_empty">Anda tidak mempunyai mesej penting. \nPENTING mengumpul semua mesej yang ditanda sebagai penting. Ini membolehkan anda mencari mesej penting dengan mudah. \n\nAnda boleh menanda mesej sebagai penting dengan menahan mesej dan memilih Tanda sebagai penting daripada Menu pilihan. Apabila mesej ditanda sebagai penting, anda boleh melihat ikon bendera merah seperti berikut.</string>
+    <string name="imsp_allchat_empty">Tiada perbualan</string>
+    <string name="imsp_attach_slideshow">Tayangan slaid</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">Memuat turun...</string>
+    <string name="imsp_invite_friends_to_ipmsg">Jemput rakan untuk menggunakan iSMS</string>
+    <string name="imsp_multi_forward_tips_content">Untuk melakukan pemajuan berbilang, beberapa iSMS perlu dimuat turun dahulu.</string>
+    <string name="imsp_multi_forward_failed_part">Beberapa pemajuan iSMS gagal.</string>
+</resources>

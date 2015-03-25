@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">  
+    <string name="app_name">CellConnectionService</string>  
+    <string name="button_ok">OK</string>  
+    <string name="button_cancel">zrušit </string>  
+    <string name="confirm_radio_title">SIM vypnuta</string>  
+    <string name="confirm_radio_msg">  <xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> je nyní vypnuta. Chcete zapnout tuto kartu SIM? </string>  
+    <string name="confirm_radio_msg_single">Režim letadla je nyní zapnutý, chcete jej vypnout?</string>  
+    <string name="confirm_pin_title">SIM zamknutá</string>  
+    <string name="confirm_pin_msg">Vybraná karta SIM je nyní zamknutá. Nejdříve ji odemkněte.</string>  
+    <string name="confirm_simmelock_title">SIM ME zamknutá</string>  
+    <string name="confirm_simmelock_msg">Vybraný slot SIM je nyní zamknutý. Nejdříve jej odemkněte.</string>  
+    <string name="confirm_fdn_title">FDN aktivováno</string>  
+    <string name="confirm_fdn_msg">Pevné vytáčení čísel je aktivováno.</string>  
+    <string name="confirm_roaming_title">Varování na roaming</string>  
+    <string name="confirm_roaming_msg">Karta SIM, kterou chcete použít, nyní roaminguje. Nyní není k dispozici žádná místní karta SIM. Chcete pokračovat?</string>  
+    <string name="confirm_roaming_withPrefer_msg">Karta SIM, kterou chcete použít, nyní roaminguje. Chcete pokračovat prostřednictvím místní karty SIM?</string>  
+    <string name="confirm_roaming_lbutton">pokračovat </string>  
+    <string name="confirm_roaming_rbutton">zrušit </string>  
+    <string name="confirm_roamingWithPrefer_lbutton">Místní karta SIM</string>  
+    <string name="confirm_roamingWithPrefer_rbutton">Roamingující karta SIM</string>  
+    <string name="confirm_radio_lbutton">Otevřít</string>  
+    <string name="confirm_unlock_lbutton">Odemknout</string>  
+    <string name="confirm_disable_lbutton">zakázáno</string>  
+    <string name="confirm_unlock_fail">operace zrušena </string>  
+    <string name="confirm_turnon_radio_fail">operace zrušena </string>  
+    <string name="confirm_permit_roaming_fail">Tuto akci zrušíte na roamingující kartě SIM</string>  
+    <string name="confirm_sim_locked_message">Karta SIM byla trvale uzamčena</string>  
+    <string name="confirm_slot_locked_message">Slot byl trvale uzamčen</string> 
+<string name="confirm_radio_title_uim">UIM je vypnutá</string>
+    <string name="confirm_radio_title_card">Karta je vypnutá</string>
+    <string name="confirm_radio_msg_uim"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> je nyní vypnuta. Chcete zapnout tuto kartu UIM?</string>
+    <string name="confirm_radio_msg_card"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> je nyní vypnuta. Chcete zapnout tuto kartu?</string>
+    <string name="confirm_radio_flight_mode_on_and_msg">Režim Letadlo je zapnutý a</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> je nyní vypnuto. Chcete vypnout režim Letadlo a zapnout tuto kartu SIM?</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg_uim"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> je nyní vypnuto. Chcete vypnout režim Letadlo a zapnout tuto kartu UIM?</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg_card"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> je nyní vypnuto. Chcete vypnout režim Letadlo a zapnout tuto kartu?</string>
+    <string name="confirm_radio_flight_mode_on_sim_on_msg">Režim Letadlo je zapnutý. Chcete vypnout režim Letadlo?</string>
+    <string name="confirm_pin_title_uim">UIM je zamknutá</string>
+    <string name="confirm_pin_title_card">Karta je zamknutá</string>
+    <string name="confirm_pin_msg_uim">Vybraná karta UIM je nyní zamknutá. Nejdříve ji odemkněte.</string>
+    <string name="confirm_pin_msg_card">Vybraná karta je nyní zamknutá. Nejdříve ji odemkněte.</string>
+    <string name="confirm_simmelock_msg_uim">Vybraný slot UIM je nyní zamknutý. Nejdříve jej odemkněte.</string>
+    <string name="confirm_simmelock_msg_card">Vybraný slot je nyní zamknutý. Nejdříve jej odemkněte.</string>
+    <string name="confirm_roaming_msg_uim">Karta UIM, kterou chcete použít, nyní roaminguje. Nyní není k dispozici žádná místní karta UIM. Chcete pokračovat?</string>
+    <string name="confirm_roaming_msg_card">Karta, kterou chcete použít, nyní roaminguje. Nyní není k dispozici žádná místní karta. Chcete pokračovat?</string>
+    <string name="confirm_roaming_withPrefer_msg_uim">Karta SIM, kterou chcete použít, nyní roaminguje. Chcete pokračovat prostřednictvím místní karty UIM?</string>
+    <string name="confirm_roaming_withPrefer_msg_card">Karta SIM, kterou chcete použít, nyní roaminguje. Chcete pokračovat prostřednictvím místní karty?</string>
+    <string name="confirm_roamingWithPrefer_lbutton_uim">Místní UIM</string>
+    <string name="confirm_roamingWithPrefer_lbutton_card">Místní karta</string>
+    <string name="confirm_roamingWithPrefer_rbutton_uim">Roamingující UIM</string>
+    <string name="confirm_roamingWithPrefer_rbutton_card">Roamingující karta</string>
+    <string name="confirm_roaming_for3Sims_msg">Karta SIM, kterou chcete použít, nyní roaminguje. Chcete pokračovat?</string>
+    <string name="confirm_roaming_for3Sims_msg_uim">Karta UIM, kterou chcete použít, nyní roaminguje. Chcete pokračovat?</string>
+    <string name="confirm_roaming_for3Sims_msg_card">Karta, kterou chcete použít, nyní roaminguje. Chcete pokračovat?</string>
+    <string name="confirm_permit_roaming_fail_uim">Tuto akci zrušíte na roamingující kartě UIM</string>
+    <string name="confirm_permit_roaming_fail_card">Tuto akci zrušíte na roamingující kartě</string>
+    <string name="confirm_sim_locked_message_uim">Karta UIM byla trvale uzamčena</string>
+    <string name="confirm_sim_locked_message_card">Karta byla trvale uzamčena</string>
+    <string name="button_yes">"Ano"</string>
+    <string name="button_no">"Ne"</string>
+    </resources>

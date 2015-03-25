@@ -1,0 +1,240 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type kernel, domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# Life begins with the kernel.
+permissive kernel;
+# The kernel is unconfined.
+# unconfined_domain(kernel)
+relabelto_domain(kernel)
+
+allow kernel {fs_type dev_type file_type}:dir_file_class_set relabelto;
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# Life begins with the kernel.
+permissive kernel;
+# The kernel is unconfined.
+# unconfined_domain(kernel)
+relabelto_domain(kernel)
+
+allow kernel {fs_type dev_type file_type}:dir_file_class_set relabelto;
+allow kernel unlabeled:filesystem mount;
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive kernel;
+# 20131024 CTS_01
+allow kernel init:process dyntransition;
+allow kernel self:capability sys_resource;
+allow kernel sysfs:file write;
+allow kernel tmpfs:chr_file write;
+allow kernel tmpfs:dir relabelfrom;
+allow kernel tmpfs:file relabelfrom;
+
+
+# 20131024 Sanity_03
+allow kernel self:capability dac_override;
+allow kernel system_data_file:file open;
+
+
+# 20131028 CTS_04
+allow kernel app_data_file:file read;
+allow kernel vold:fd use;
+
+
+# 20131028 CTS_05
+allow kernel aee_aed:unix_stream_socket connectto;
+allow kernel aee_core_forwarder_exec:file { read execute open execute_no_trans };
+allow kernel dalvikvm_exec:file { read getattr open };
+allow kernel device:chr_file { read ioctl open };
+allow kernel linker_exec:file { read execute open getattr };
+allow kernel sdcard_external:dir { write search add_name };
+allow kernel sdcard_external:file { write create open setattr };
+allow kernel self:capability { fowner fsetid };
+allow kernel shell:dir search;
+allow kernel shell:file { read getattr open };
+allow kernel shell:process ptrace;
+allow kernel system_data_file:dir write;
+allow kernel system_data_file:file setattr;
+
+
+# 20131028 CTS_09
+allow kernel audio_device:chr_file { read write ioctl open };
+allow kernel ext4_resize_exec:file { read execute open execute_no_trans };
+allow kernel lost_found_data_file:dir { read open };
+allow kernel rootfs:chr_file getattr;
+allow kernel self:security compute_create;
+allow kernel selinuxfs:dir { read search open };
+allow kernel selinuxfs:file { read write getattr open };
+allow kernel shell_exec:file { read execute open execute_no_trans };
+allow kernel toolbox_exec:file getattr;
+
+
+# 20131028 CTS_12
+allow kernel sdcard_external:file getattr;
+
+
+# 20131119 FeatureSQC
+allow kernel aed_device:chr_file { read write ioctl open };
+allow kernel block_device:blk_file { read write };
+allow kernel devmap_device:chr_file { read ioctl open };
+allow kernel ipohctl_exec:file { read execute open execute_no_trans };
+allow kernel ipohctl_socket:sock_file write;
+allow kernel logwrapper:unix_stream_socket connectto;
+allow kernel media_app:fd use;
+allow kernel sdcard_external:file { read getattr };
+allow kernel sdcard_internal:file read;
+allow kernel self:security compute_create;
+allow kernel selinuxfs:dir { read search open };
+allow kernel selinuxfs:file { read write getattr open };
+allow kernel system_data_file:dir remove_name;
+allow kernel system_data_file:file { write unlink append };
+
+
+
+# 20131122 Add Set Property Rule
+allow kernel property_type:property_service set;
+
+# 20131213 KKMR1_CTS_01
+allow kernel init_shell:dir search;
+allow kernel init_shell:file { read open };
+allow kernel system_data_file:dir add_name;
+allow kernel system_data_file:file create;
+
+
+# 20131213 KKMR1_CQ_01
+allow kernel aal:dir search;
+allow kernel aal:file { read open };
+allow kernel aee_aed:dir search;
+allow kernel aee_aed:file { read open };
+allow kernel apk_private_data_file:dir getattr;
+allow kernel bluetooth:dir search;
+allow kernel bluetooth:file { read open };
+allow kernel cache_file:dir remove_name;
+allow kernel cache_file:file { write rename create append setattr };
+allow kernel camera_isp_device:chr_file { read open };
+allow kernel device:chr_file { write create unlink };
+allow kernel device:dir { write remove_name add_name };
+allow kernel graphics_device:chr_file write;
+allow kernel gsm0710muxd:dir search;
+allow kernel gsm0710muxd:file { read open };
+allow kernel init_shell:dir search;
+allow kernel init_shell:file { read open };
+allow kernel ipod:dir search;
+allow kernel ipod:file { read open };
+allow kernel ipod:unix_stream_socket connectto;
+allow kernel logwrapper:dir search;
+allow kernel logwrapper:file read;
+allow kernel loop_device:blk_file read;
+allow kernel make_ext4fs_exec:file { read execute open execute_no_trans };
+allow kernel mediaserver:dir search;
+allow kernel mediaserver:file { read open };
+allow kernel platform_app:dir search;
+allow kernel platform_app:file { read open };
+allow kernel property_socket:sock_file write;
+allow kernel rootfs:dir { write create add_name setattr };
+allow kernel rootfs:file { write execute create execute_no_trans };
+allow kernel rootfs:filesystem remount;
+allow kernel screencap_exec:file { read execute open execute_no_trans };
+allow kernel sdcard_internal:dir { write search add_name };
+allow kernel sdcard_internal:file { write create open getattr };
+allow kernel self:capability { sys_boot sys_ptrace mknod };
+allow kernel self:netlink_kobject_uevent_socket create;
+allow kernel self:netlink_selinux_socket create;
+allow kernel self:security { setenforce compute_av };
+allow kernel self:system syslog_mod;
+allow kernel sysfs:file relabelfrom;
+allow kernel system_app:dir search;
+allow kernel system_app:file { read open };
+allow kernel system_data_file:dir { create add_name };
+allow kernel system_data_file:file create;
+allow kernel system_data_file:lnk_file getattr;
+allow kernel system_data_file:sock_file unlink;
+allow kernel tmpfs:chr_file { getattr ioctl };
+allow kernel tmpfs:lnk_file read;
+allow kernel toolbox_exec:file { read execute open execute_no_trans };
+allow kernel ttyGS0_device:chr_file { read write ioctl open };
+allow kernel untrusted_app:dir search;
+allow kernel untrusted_app:file { read open };
+allow kernel zygote:dir search;
+allow kernel zygote:file { read open };
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow kernel FM50AF_device:chr_file { read write };
+allow kernel M4U_device_device:chr_file { read ioctl open };
+allow kernel adb_device:chr_file { read write open };
+allow kernel adb_keys_file:dir search;
+allow kernel adb_keys_file:file { read getattr open };
+allow kernel adbd:dir search;
+allow kernel adbd:file { read open };
+allow kernel adbd_socket:sock_file { create setattr };
+allow kernel aee_aed:process sigchld;
+allow kernel audio_device:dir { write create add_name };
+allow kernel cache_file:dir { write add_name };
+allow kernel camera_isp_device:chr_file { write ioctl };
+allow kernel devpts:chr_file { read write open };
+allow kernel ebc_device:chr_file { read write open };
+allow kernel fsck_msdos_exec:file { read execute open execute_no_trans };
+allow kernel full_device:chr_file { create setattr };
+allow kernel gsm0710muxd:dir search;
+allow kernel gsm0710muxd:file { read open };
+allow kernel init:dir search;
+allow kernel init:file { read open };
+allow kernel input_device:chr_file read;
+allow kernel input_device:dir { read write create open add_name };
+allow kernel kd_camera_flashlight_device:chr_file { read write ioctl open };
+allow kernel kd_camera_hw_device:chr_file { read write ioctl open };
+allow kernel kmem_device:chr_file { create setattr };
+allow kernel kmsg_device:chr_file { create setattr };
+allow kernel lcdc_screen_cap_exec:file { read execute open execute_no_trans };
+allow kernel logcat_exec:file { read getattr open execute execute_no_trans };
+allow kernel mtk_disp_device:chr_file { create setattr };
+allow kernel mtk_sched_device:chr_file { create setattr };
+allow kernel netd:dir search;
+allow kernel netd:file { read open };
+allow kernel node:tcp_socket node_bind;
+allow kernel port:tcp_socket name_bind;
+allow kernel proc:file write;
+allow kernel property_socket:sock_file write;
+allow kernel release_app:dir search;
+allow kernel release_app:file { read open };
+allow kernel rootfs:dir { write create add_name };
+allow kernel rootfs:lnk_file create;
+allow kernel sdcard_external:dir { read remove_name };
+allow kernel sdcard_external:file unlink;
+allow kernel sdcard_external:filesystem { mount unmount };
+allow kernel sdcard_internal:dir { write search add_name };
+allow kernel sdcard_internal:file { write create open getattr };
+allow kernel self:capability { chown sys_ptrace ipc_lock setgid net_admin sys_boot };
+allow kernel self:capability2 syslog;
+allow kernel self:netlink_selinux_socket create;
+allow kernel self:security { setenforce compute_av };
+allow kernel self:system module_request;
+allow kernel self:tcp_socket create;
+allow kernel sysfs:file relabelfrom;
+allow kernel system_data_file:dir { create add_name };
+allow kernel system_data_file:file create;
+allow kernel system_data_file:lnk_file { create unlink };
+allow kernel system_server:dir search;
+allow kernel system_server:file { read open };
+allow kernel tmpfs:chr_file { getattr ioctl };
+allow kernel tmpfs:dir mounton;
+allow kernel ttyGS0_device:chr_file { read write ioctl open };
+allow kernel unlabeled:filesystem mount;
+allow kernel untrusted_app:dir search;
+allow kernel untrusted_app:file { read open };
+

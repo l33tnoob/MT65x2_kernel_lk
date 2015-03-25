@@ -1,0 +1,94 @@
+package com.mediatek.build {
+
+  public final class SdkVersion {
+    method public static int getAppVersion();
+    method public static int getPlatformVersion();
+    method public static boolean isCompatible();
+  }
+
+}
+
+package com.mediatek.camcorder {
+
+  public class CamcorderProfileEx {
+    ctor public CamcorderProfileEx();
+    method public static android.media.CamcorderProfile getProfile(int);
+    method public static android.media.CamcorderProfile getProfile(int, int);
+  }
+
+}
+
+package com.mediatek.hardware {
+
+  public class CameraEx {
+    method public static void setMavCallback(com.mediatek.hardware.CameraEx.MavCallback, android.hardware.Camera);
+    method public static void startMav(int, android.hardware.Camera);
+    method public static void stopMav(int, android.hardware.Camera);
+  }
+
+  public static abstract interface CameraEx.MavCallback {
+    method public abstract void onFrame();
+  }
+
+}
+
+package com.mediatek.media {
+
+  public class MediaRecorderEx {
+    ctor public MediaRecorderEx();
+    method public static void pause(android.media.MediaRecorder) throws java.lang.IllegalStateException;
+    method public static void setAlbumTag(android.media.MediaRecorder, java.lang.String) throws java.lang.IllegalStateException;
+    method public static void setArtistTag(android.media.MediaRecorder, java.lang.String) throws java.lang.IllegalStateException;
+    method public static void setHDRecordMode(android.media.MediaRecorder, int, boolean) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException;
+  }
+
+  public final class MediaRecorderEx.HDRecordMode {
+    field public static final int INDOOR = 1; // 0x1
+    field public static final int NORMAL = 0; // 0x0
+    field public static final int OUTDOOR = 2; // 0x2
+  }
+
+}
+
+package com.mediatek.telephony {
+
+  public class SmsManagerEx {
+    method public java.util.ArrayList<java.lang.String> divideMessage(java.lang.String);
+    method public static com.mediatek.telephony.SmsManagerEx getDefault();
+    method public void sendDataMessage(java.lang.String, java.lang.String, short, byte[], android.app.PendingIntent, android.app.PendingIntent, int);
+    method public void sendDataMessage(java.lang.String, java.lang.String, short, short, byte[], android.app.PendingIntent, android.app.PendingIntent, int);
+    method public void sendMultipartTextMessage(java.lang.String, java.lang.String, java.util.ArrayList<java.lang.String>, java.util.ArrayList<android.app.PendingIntent>, java.util.ArrayList<android.app.PendingIntent>, int);
+    method public void sendMultipartTextMessageWithExtraParams(java.lang.String, java.lang.String, java.util.ArrayList<java.lang.String>, android.os.Bundle, java.util.ArrayList<android.app.PendingIntent>, java.util.ArrayList<android.app.PendingIntent>, int);
+    method public void sendTextMessage(java.lang.String, java.lang.String, java.lang.String, android.app.PendingIntent, android.app.PendingIntent, int);
+    method public void sendTextMessageWithExtraParams(java.lang.String, java.lang.String, java.lang.String, android.os.Bundle, android.app.PendingIntent, android.app.PendingIntent, int);
+  }
+
+  public class TelephonyManagerEx {
+    ctor public TelephonyManagerEx(android.content.Context);
+    method public int getCallState(int);
+    method public android.telephony.CellLocation getCellLocation(int);
+    method public int getDataActivity(int);
+    method public int getDataState(int);
+    method public java.lang.String getDeviceId(int);
+    method public java.lang.String getLine1Number(int);
+    method public java.util.List<android.telephony.NeighboringCellInfo> getNeighboringCellInfo(int);
+    method public java.lang.String getNetworkCountryIso(int);
+    method public java.lang.String getNetworkOperator(int);
+    method public java.lang.String getNetworkOperatorName(int);
+    method public int getNetworkType(int);
+    method public int getPhoneType(int);
+    method public java.lang.String getSimCountryIso(int);
+    method public java.lang.String getSimOperator(int);
+    method public java.lang.String getSimOperatorName(int);
+    method public java.lang.String getSimSerialNumber(int);
+    method public int getSimState(int);
+    method public java.lang.String getSubscriberId(int);
+    method public java.lang.String getVoiceMailAlphaTag(int);
+    method public java.lang.String getVoiceMailNumber(int);
+    method public boolean hasIccCard(int);
+    method public boolean isNetworkRoaming(int);
+    method public void listen(android.telephony.PhoneStateListener, int, int);
+  }
+
+}
+

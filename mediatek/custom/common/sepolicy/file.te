@@ -1,0 +1,176 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type labeledfs, fs_type;
+type pipefs, fs_type;
+type sockfs, fs_type;
+type rootfs, fs_type;
+type proc, fs_type;
+type qtaguid_proc, fs_type, mlstrustedobject;
+type proc_bluetooth_writable, fs_type;
+type selinuxfs, fs_type;
+type cgroup, fs_type, mlstrustedobject;
+type sysfs, fs_type, mlstrustedobject;
+type sysfs_writable, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_bluetooth_writable, fs_type, sysfs_type, mlstrustedobject;
+type sysfs_nfc_power_writable, fs_type, sysfs_type, mlstrustedobject;
+type inotify, fs_type, mlstrustedobject;
+type devpts, fs_type, mlstrustedobject;
+type tmpfs, fs_type;
+type shm, fs_type;
+type mqueue, fs_type;
+type sdcard_internal, sdcard_type, fs_type, mlstrustedobject;
+type sdcard_external, sdcard_type, fs_type, mlstrustedobject;
+type debugfs, fs_type, mlstrustedobject;
+type unlabeled, file_type;
+type system_file, file_type;
+type system_data_file, file_type, data_file_type;
+type drm_data_file, file_type, data_file_type;
+type anr_data_file, file_type, data_file_type, mlstrustedobject;
+type tombstone_data_file, file_type, data_file_type;
+type apk_data_file, file_type, data_file_type;
+type apk_tmp_file, file_type, data_file_type, mlstrustedobject;
+type apk_private_data_file, file_type, data_file_type;
+type apk_private_tmp_file, file_type, data_file_type, mlstrustedobject;
+type dalvikcache_data_file, file_type, data_file_type;
+type shell_data_file, file_type, data_file_type;
+type gps_data_file, file_type, data_file_type;
+type bluetoothd_data_file, file_type, data_file_type;
+type bluetooth_data_file, file_type, data_file_type;
+type keystore_data_file, file_type, data_file_type;
+type vpn_data_file, file_type, data_file_type;
+type systemkeys_data_file, file_type, data_file_type;
+type wifi_data_file, file_type, data_file_type;
+type radio_data_file, file_type, data_file_type;
+type nfc_data_file, file_type, data_file_type;
+type camera_calibration_file, file_type, data_file_type;
+type app_data_file, file_type, data_file_type;
+type platform_app_data_file, file_type, data_file_type, mlstrustedobject;
+type cache_file, file_type, mlstrustedobject;
+type cache_backup_file, file_type, mlstrustedobject;
+type efs_file, file_type;
+type wallpaper_file, file_type, mlstrustedobject;
+type asec_apk_file, file_type, data_file_type;
+type asec_image_file, file_type, data_file_type;
+type backup_data_file, file_type, data_file_type, mlstrustedobject;
+type security_file, file_type;
+type bluetooth_efs_file, file_type;
+type download_file, file_type;
+type sysfs_devices_system_cpu, file_type;
+type adbd_socket, file_type;
+type bluetooth_socket, file_type;
+type dbus_socket, file_type;
+type dnsproxyd_socket, file_type, mlstrustedobject;
+type gps_socket, file_type;
+type installd_socket, file_type;
+type keystore_socket, file_type;
+type netd_socket, file_type;
+type property_socket, file_type;
+type qemud_socket, file_type;
+type racoon_socket, file_type;
+type rild_socket, file_type;
+type rild_debug_socket, file_type;
+type system_wpa_socket, file_type;
+type vold_socket, file_type;
+type wpa_socket, file_type;
+type zygote_socket, file_type;
+type gps_control, file_type;
+type sysfs_wake_lock, fs_type, sysfs_type;
+type adb_keys_file, file_type, data_file_type;
+type mdns_socket, file_type;
+type system_ndebug_socket, file_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# Filesystem types
+
+# File types
+# /data/drm - DRM plugin data
+# /data/anr - ANR traces
+# /data/tombstones - core dumps
+# /data/app - user-installed apps
+# /data/app-private - forward-locked apps
+# /data/dalvik-cache
+# /data/local - writable by shell
+# /data/gps
+# /data/misc subdirectories
+# /data/data subdirectories - app sandboxes
+# Type for /cache/.*\.{data|restore} and default
+# Type for wallpaper file.
+# /mnt/asec
+# /data/app-asec
+# /data/backup and /data/secure/backup
+# For /data/security
+# All devices have bluetooth efs files. But they
+# device policy
+# Downloaded files
+# /sys/devices/system/cpu
+
+# Socket types
+
+# UART (for GPS) control proc file
+
+# Allow files to be created in their appropriate filesystems.
+allow fs_type self:filesystem associate;
+allow sysfs_type sysfs:filesystem associate;
+allow file_type labeledfs:filesystem associate;
+allow file_type tmpfs:filesystem associate;
+allow dev_type tmpfs:filesystem associate;
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# Filesystem types
+
+# File types
+# /data/drm - DRM plugin data
+# /data/anr - ANR traces
+# /data/tombstones - core dumps
+# /data/app - user-installed apps
+# /data/app-private - forward-locked apps
+# /data/dalvik-cache
+# /data/local - writable by shell
+# /data/gps
+# /data/misc subdirectories
+# /data/data subdirectories - app sandboxes
+# Type for /cache/.*\.{data|restore} and default
+# Type for wallpaper file.
+# /mnt/asec
+# /data/app-asec
+# /data/backup and /data/secure/backup
+# For /data/security
+# All devices have bluetooth efs files. But they
+# device policy
+# Downloaded files
+# /sys/devices/system/cpu
+
+# Socket types
+
+# UART (for GPS) control proc file
+
+# Allow files to be created in their appropriate filesystems.
+allow fs_type self:filesystem associate;
+allow sysfs_type sysfs:filesystem associate;
+allow file_type labeledfs:filesystem associate;
+allow file_type tmpfs:filesystem associate;
+allow file_type rootfs:filesystem associate;
+allow dev_type tmpfs:filesystem associate;
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow asec_apk_file rootfs:filesystem associate;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow cache_file rootfs:filesystem associate;
+

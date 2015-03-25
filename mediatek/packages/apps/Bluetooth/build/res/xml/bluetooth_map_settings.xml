@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	 
+    <PreferenceCategory
+            android:key="map_server_category"
+            android:title="@string/bluetooth_map_server_settings">
+
+        <CheckBoxPreference
+            android:key="map_server_enable"
+            android:persistent="false"
+            android:title="@string/bluetooth_map_server_enable_title"
+            android:summary="@string/bluetooth_map_server_enable_summary"/>
+
+        <com.mediatek.bluetooth.map.MultiSelectListPreference
+            android:key="map_server_sim_index"
+            android:title="@string/bluetooth_map_server_sim_index_title"
+	          android:dependency="map_server_enable"
+            android:persistent="false" />
+ 				<ListPreference
+            android:key="map_server_account_index"
+            android:title="@string/bluetooth_map_server_account_index_title"
+	          android:dependency="map_server_enable"
+            android:persistent="false"/>
+            
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

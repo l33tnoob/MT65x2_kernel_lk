@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binmemsicd Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type memsicd_exec , exec_type, file_type;
+type memsicd ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive memsicd;
+init_daemon_domain(memsicd)
+
+
+# 20131122 Add Set Property Rule
+allow memsicd  property_type:property_service set;

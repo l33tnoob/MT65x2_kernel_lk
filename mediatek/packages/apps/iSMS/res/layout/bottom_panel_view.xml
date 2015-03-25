@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hissage.ui.view.NmsBottomPanelView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="4dip" >
+
+        <ImageButton
+            android:id="@+id/ib_share"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="4dip"
+            android:adjustViewBounds="true"
+            android:paddingBottom="9dip"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip"
+            android:paddingTop="9dip"
+            android:src="@drawable/isms_emoticon" />
+
+        <ImageButton
+            android:id="@+id/ib_emoticon"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="4dip"
+            android:adjustViewBounds="true"
+            android:paddingBottom="9dip"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip"
+            android:paddingTop="9dip"
+            android:src="@drawable/isms_share" />
+
+        <com.hissage.ui.view.NmsCaptionEditor
+            android:id="@+id/caption_editor"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1.0" />
+
+        <LinearLayout
+            android:id="@+id/ll_button_with_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_text_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="2dip"
+                android:paddingTop="2dip"
+                android:textColor="#5c5c5c"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/ib_send_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_marginLeft="4dip"
+                android:layout_marginRight="4dip"
+                android:adjustViewBounds="true"
+                android:layout_weight="1.0"
+                android:layout_gravity="right"
+                android:contentDescription="@string/STR_NMS_ACTION_SEND"
+                android:nextFocusLeft="@+id/caption_editor"
+                android:paddingTop="8dip"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip" 
+                android:paddingBottom="8dip"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_message_bottom_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.hissage.ui.view.NmsSharePanel
+            android:id="@+id/share_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <com.hissage.ui.view.NmsEmoticonPanel
+            android:id="@+id/emoticon_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</com.hissage.ui.view.NmsBottomPanelView>

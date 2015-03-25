@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+		package="com.android.stk2"
+		android:sharedUserId="android.uid.phone">
+
+    <original-package android:name="com.android.stk2" />
+    <uses-sdk android:minSdkVersion="8"               
+                     android:targetSdkVersion="10"/>
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+	<application android:icon="@drawable/ic_launcher_sim2_toolkit"
+		android:label="@string/app_name"
+		android:clearTaskOnLaunch="true"
+		android:process="com.android.phone">
+
+		<activity android:name="StkLauncherActivity"
+		  android:excludeFromRecents="true"
+			android:label="@string/app_name"
+                        android:theme="@android:style/Theme.NoDisplay"
+			android:enabled="false"	>
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name="StkMenuActivity"
+                         android:theme="@android:style/Theme.Holo"
+		         android:excludeFromRecents="true"
+             android:launchMode="singleTop"
+             android:configChanges="orientation|locale|screenSize" >
+	         <intent-filter>
+	             <action android:name="android.intent.action.VIEW" />
+	             <action android:name="android.intent.action.PICK" />
+	             <category android:name="android.intent.category.DEFAULT" />
+	         </intent-filter>
+         </activity>
+
+         <activity-alias android:name="AliasStkMenuActivity"
+           android:theme="@android:style/Theme.Holo"
+             android:targetActivity="StkMenuActivity"
+		         android:excludeFromRecents="true"
+             android:launchMode="singleTop"
+             android:configChanges="orientation|locale|screenSize" >
+	         <intent-filter>
+	             <action android:name="android.intent.action.VIEW" />
+	             <action android:name="android.intent.action.PICK" />
+	             <category android:name="android.intent.category.DEFAULT" />
+	         </intent-filter>
+         </activity-alias>
+
+		<activity android:name="StkInputActivity"
+                    android:theme="@android:style/Theme.Holo"
+		    android:excludeFromRecents="true"
+		    android:configChanges="orientation|locale|screenSize" >
+			<intent-filter>
+		        <action android:name="android.intent.action.VIEW" />
+		        <action android:name="android.intent.action.EDIT" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		    </intent-filter>
+		</activity>
+
+        <activity android:name="StkDialogActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|locale|screenSize"
+            android:theme="@android:style/Theme.Holo.Dialog">
+        </activity>
+
+        <activity android:name="ToneDialog"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:configChanges="orientation|locale|screenSize" >
+        </activity>
+        <!--alert notification message activity-->
+        <activity android:name="NotificationAlertActivity"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Holo.Dialog">
+        </activity>
+		<!-- SIM Toolkit settings activity -->
+		<activity android:name="StkSettings"
+                  android:theme="@android:style/Theme.Holo"
+		  android:excludeFromRecents="true"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<action android:name="android.intent.action.MAIN" />
+				<category
+					android:name="android.intent.category.DEVELOPMENT_PREFERENCE" />
+			</intent-filter>
+		</activity>
+
+		<receiver android:name="com.android.stk2.StkCmdReceiver">
+            <intent-filter>
+                <action android:name= "android.intent.action.stk.command_2" />
+                <action android:name= "android.intent.action.stk.session_end_2" />
+            </intent-filter>
+        </receiver>
+
+		<receiver android:name="com.android.stk2.EventReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.stk.USER_ACTIVITY" />				 
+				<action android:name="android.intent.action.LOCALE_CHANGED" />
+				<action android:name="android.intent.action.stk.BROWSER_TERMINATION" />
+			</intent-filter>
+		</receiver>
+        <receiver android:name="com.android.stk2.BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SIM_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="StkAppService" />
+
+	</application>
+</manifest>

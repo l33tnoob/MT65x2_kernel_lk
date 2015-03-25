@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mediatek.mtkamsservicetest"
+    android:versionCode="1"
+    android:versionName="1.0" android:sharedUserId="com.mediatek.mtkamstest">
+
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="15" />
+
+    <application android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme">
+        <service android:name="MockService" android:process="com.mediatek.mtkamstest"></service>
+
+    </application>
+
+</manifest>

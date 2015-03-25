@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbinbtool Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type btool_exec , exec_type, file_type;
+type btool ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive btool;
+init_daemon_domain(btool)
+
+
+# 20131122 Add Set Property Rule
+allow btool  property_type:property_service set;

@@ -1,0 +1,56 @@
+# ==============================================
+# Policy File of /system/bintoolbox Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type toolbox_exec , exec_type, file_type;
+type toolbox ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive toolbox;
+init_daemon_domain(toolbox)
+
+# 20131028 CTS_13
+allow toolbox linker_exec:file read;
+
+
+# 20131028 CTS_14
+allow toolbox device:chr_file { read ioctl open };
+allow toolbox system_data_file:dir { write add_name };
+allow toolbox system_data_file:file { create open };
+
+
+# 20131028 CTS_15
+allow toolbox system_data_file:dir remove_name;
+allow toolbox system_data_file:file { write rename };
+
+
+# 20131028 CTS_17
+allow toolbox system_data_file:file setattr;
+
+
+# 20131028 CTS_19
+allow toolbox system_data_file:file unlink;
+
+
+
+# 20131122 Add Set Property Rule
+allow toolbox  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_CTS_02
+allow toolbox block_device:blk_file read;
+

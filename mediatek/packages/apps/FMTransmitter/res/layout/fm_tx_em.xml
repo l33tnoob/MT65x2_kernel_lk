@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://FMTransmitter.mediatek.com/custom"  
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout 
+    android:orientation="vertical"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="52dip">
+    <TextView  
+    android:id = "@+id/lableMaxChannels"
+    android:layout_marginTop = "6dip"
+	android:layout_marginLeft = "5dip"
+    android:layout_width="110dip" 
+    android:layout_height="48dip" 
+    android:text="@string/max_channels"
+    />
+    
+	<EditText 
+	 	android:id = "@+id/inputMaxChannels"
+	 	android:layout_marginTop = "6dip"
+	    android:layout_width="96dip" 
+	    android:layout_height="48dip" 
+	    android:text="@string/default_max_channels"
+	    android:numeric="integer"
+	    android:singleLine = "true"
+	    android:maxLength = "4"
+	    android:layout_centerHorizontal = "true"
+	    />
+	<Button  
+		android:id = "@+id/searchUnoccupiedChannels"
+		android:layout_marginTop = "6dip"
+	    android:layout_width="84dip" 
+	    android:layout_height="48dip" 
+	    android:text="@string/seatch_btn"
+	    />
+</LinearLayout>
+
+
+ <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop = "6dip">
+    
+    <TextView  
+    android:id = "@+id/lableAvaChannels"
+    
+	android:layout_marginLeft = "5dip"
+    android:layout_width="110dip" 
+    android:layout_height="wrap_content" 
+    android:layout_gravity = "center"
+    android:text="@string/available_channel_label"
+    /> 	
+  	<Spinner 
+  	
+  	android:id="@+id/channelsList"
+  	android:layout_height = "wrap_content"
+  	android:layout_gravity = "center"
+  	android:layout_width="180dip"
+  	android:gravity = "center">
+  	</Spinner>
+ </LinearLayout> 	
+  	 
+
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_marginTop = "6dip"
+    android:layout_height="48dip">
+    
+    <ImageButton  
+    android:id = "@+id/minusFrequency"
+	android:layout_marginLeft = "5dip"
+    android:layout_width="48dip" 
+    android:layout_height="48dip" 
+	android:src="@drawable/btn_fm_decrease"
+    />
+    
+	<EditText 
+	android:id = "@+id/inputFrequency"
+	    android:layout_width="112dip" 
+	    android:layout_height="48dip" 
+	    android:layout_centerHorizontal = "true"
+	    android:numeric="decimal"
+	    android:singleLine = "true"
+	    android:maxLength = "5"
+	    android:gravity = "center"
+	    android:text="@string/default_channel_fre"
+	    />
+	<ImageButton  
+	android:id = "@+id/plusFrequency"
+    android:layout_width="48dip" 
+    android:layout_height="48dip" 
+    android:src="@drawable/btn_fm_increase"
+    />
+	<!-- Button  
+		android:id = "@+id/checkFrequency"
+	    android:layout_width="70dip" 
+	    android:layout_height="48dip" 
+	    android:text="Check"
+	    /> -->
+	<Button 
+		android:id = "@+id/setFrequency" 
+	    android:layout_width="82dip" 
+	    android:layout_height="48dip" 
+	    android:text="@string/set_btn"
+	    />
+</LinearLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_marginTop = "6dip"
+    android:layout_height="48dip">
+    
+	<EditText 
+		android:layout_marginLeft = "5dip"
+		android:id = "@+id/inputMp3Path"
+	    android:layout_width="208dip" 
+	    android:layout_height="48dip" 
+	    android:text="@string/default_music_name"
+	    android:layout_centerHorizontal = "true"
+	    android:singleLine = "true"
+	    />
+	<Button  
+		android:id = "@+id/musicAction" 
+	    android:layout_width="82dip" 
+	    android:layout_height="48dip" 
+	    android:text="@string/play_btn"
+	    />
+</LinearLayout>
+
+<LinearLayout
+	android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_marginTop = "6dip"
+    android:layout_height="48dip">
+	<TextView  
+	    android:id = "@+id/lableRds"
+		android:layout_marginLeft = "5dip"
+	    android:layout_width="48dip" 
+	    android:layout_height="48dip" 
+	    android:text="@string/rds_label"
+    />
+	<EditText 
+	android:id = "@+id/inputRdsText"
+	    android:layout_width="194dip" 
+	    android:layout_height="48dip" 
+	    android:text="@string/default_rds_content"
+	    android:layout_centerHorizontal = "true"
+	    android:maxLength = "8"
+	    android:singleLine = "true"
+	    android:minHeight="48dip"
+	    android:gravity = "center"
+	    />
+	<CheckBox  
+		android:id = "@+id/switchRds" 
+	    android:layout_width="48dip" 
+	    android:layout_height="48dip" 
+	    android:text="@string/space"
+	    />   
+</LinearLayout> 
+
+
+ 	<com.mediatek.FMTransmitter.ImageTextButton  
+	android:id = "@+id/powerFMTx"
+	android:layout_marginTop = "6dip"
+	android:layout_marginLeft = "5dip"
+    android:layout_width="290dip" 
+    android:layout_height="60dip" 
+    android:text = "@string/default_power_btn_content"
+    />
+</LinearLayout>
+</ScrollView>

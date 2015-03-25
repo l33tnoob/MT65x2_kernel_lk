@@ -1,0 +1,15 @@
+ifeq ($(strip $(MTK_DRM_APP)),yes)
+
+LOCAL_PATH:=$(call my-dir)
+include $(CLEAR_VARS)
+
+LOCAL_MODULE:=drm_chmod
+LOCAL_MODULE_TAGS:=optional
+LOCAL_SRC_FILES:=$(LOCAL_MODULE).sh
+
+LOCAL_MODULE_CLASS:=EXECUTABLES
+LOCAL_MODULE_PATH:=$(TARGET_OUT)/etc
+
+include $(BUILD_PREBUILT)
+
+endif

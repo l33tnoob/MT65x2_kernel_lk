@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#e2e2e2">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+         	  <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginTop="4dip"
+                    android:layout_marginBottom="10dip"
+                    android:text="@string/STR_NMS_MENU_LICENSE_AGREEMENT_TITLE"
+                    android:background="#e2e2e2"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/detail_content"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:layout_marginTop="12dip"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginRight="12dip"
+                     android:lineSpacingExtra="5dip"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" 
+                    android:background="#e2e2e2"/>
+ 
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

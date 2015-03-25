@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binInputDispatcher_test Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type InputDispatcher_test_exec , exec_type, file_type;
+type InputDispatcher_test ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive InputDispatcher_test;
+init_daemon_domain(InputDispatcher_test)
+
+
+# 20131122 Add Set Property Rule
+allow InputDispatcher_test  property_type:property_service set;

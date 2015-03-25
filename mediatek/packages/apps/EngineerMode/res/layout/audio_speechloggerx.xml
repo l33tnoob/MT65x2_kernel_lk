@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:id="@+id/TableLayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt"
+                android:layout_marginTop="3pt"
+                android:text="@string/Audio_SpeechLogger_FileText" >
+            </TextView>
+
+            <TableRow
+                android:id="@+id/TableRow01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <CheckBox
+                    android:id="@+id/Audio_SpeechLogger_Enable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Audio_SpeechLogger_Enable" >
+                </CheckBox>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRow01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioGroup
+                    android:id="@+id/RadioGroup1"
+                    android:layout_marginLeft="60pt" >
+
+                    <RadioButton
+                        android:id="@+id/Audio_SpeechLogger_EPL"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Audio_Enable_EPL" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/Audio_SpeechLogger_Normalvm"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Audio_Enable_Normalvm" >
+                    </RadioButton>
+                </RadioGroup>
+            </TableRow>
+
+<!--            <View-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="1dip"-->
+<!--                android:background="#FF909090" >-->
+<!--            </View>-->
+<!---->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="3pt"-->
+<!--                android:text="@string/Audio_SpeechLogger_LocationText" >-->
+<!--            </TextView>-->
+<!---->
+<!--            <TableRow-->
+<!--                android:id="@+id/TableRow01"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content" >-->
+<!---->
+<!--                <CheckBox-->
+<!--                    android:id="@+id/Audio_SpeechLogger_Play"-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/Audio_SpeechLogger_Play" >-->
+<!--                </CheckBox>-->
+<!--            </TableRow>-->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="5pt"
+                android:background="#FF909090" >
+            </View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt"
+                android:layout_marginTop="3pt"
+                android:text="@string/Audio_EPLDebug_FileText" >
+            </TextView>
+
+            <TableRow
+                android:id="@+id/TableRow01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <CheckBox
+                    android:id="@+id/Audio_EPLDebug_Enable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Audio_EPLDebug_Enable" >
+                </CheckBox>
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="5pt"
+                android:background="#FF909090" >
+            </View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt"
+                android:layout_marginTop="3pt"
+                android:text="@string/Audio_VOIPLogger_Info" >
+            </TextView>
+
+            <TableRow
+                android:id="@+id/TableRow01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <CheckBox
+                    android:id="@+id/Audio_VOIPLogger_Enable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Audio_VOIPLogger_Enable" >
+                </CheckBox>
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="5pt"
+                android:background="#FF909090" >
+            </View>
+
+            <TextView
+                android:id="@+id/Audio_CTM4WAYLogger_EnableText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt"
+                android:layout_marginTop="3pt"
+                android:text="@string/Audio_CTM4WAYLogger_EnableText" >
+            </TextView>
+
+            <TableRow
+                android:id="@+id/TableRow01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <CheckBox
+                    android:id="@+id/Audio_CTM4WAYLogger_Enable"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Audio_CTM4WAYLogger_Enable" >
+                </CheckBox>
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:id="@+id/Audio_View1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="5pt"
+            android:background="#FF909090" >
+        </View>
+
+        <Button
+            android:id="@+id/Dump_Speech_DbgInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5pt"
+            android:text="@string/Audio_Dump_SpeechDbgInfo" >
+        </Button>
+    </LinearLayout>
+
+</ScrollView>

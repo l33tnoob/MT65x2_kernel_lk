@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bindjpeg Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type djpeg_exec , exec_type, file_type;
+type djpeg ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive djpeg;
+init_daemon_domain(djpeg)
+
+
+# 20131122 Add Set Property Rule
+allow djpeg  property_type:property_service set;

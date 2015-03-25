@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"Sistēmas atjauninājumi"</string>
+
+
+    <string name="none_package">Nav pieejamas derīgas atjauninājumu pakotnes.</string>
+    <string name="new_version_query">Notiek atjauninājumu pārbaude\u2026</string>
+    <string name="menu_stats_refresh">"Atsvaidzināt"</string>
+    <string name="network_error">Tīkla savienojuma izveide nesekmīga</string>
+    <string name="server_version_error">Servera kļūda: Atjauniniet servera avota kodu.</string>    
+    <string name="no_new_version">Jūsu sistēmai pašlaik ir jaunākā versija.</string>
+    <string name="not_support_version">Mērķis neatbalsta bezvadu.</string>
+    <string name="query_sd_insufficient_space"><xliff:g id="path">%s</xliff:g> nepietiek vietas</string>
+    <string name="ota_category_title">OTA</string>
+    <string name="sd_category_title">SD KARTES ATJAUNINĀŠANA</string>
+    <string name="ota_preference_summary">Serverī atrasts sistēmas atjauninājums</string>
+
+
+    <string name="notes_summary">Programmaparatūras atjauninājums var uzlabot mašīnas stabilitāti un izveidot kļūdu ielāpus.</string>
+    <string name="ask_for_install_ota">Vai vēlaties instalēt sistēmas atjauninājumu tūlīt?</string>
+    <string name="warning_install_ota" product="tablet">Instalēšanas laikā nav iespējams lietot planšetdatoru un veikt ārkārtas zvanus. Neizņemiet akumulatoru un SD karti un neizslēdziet planšetdatoru.</string>
+    <string name="warning_install_ota" product="default">Instalēšanas laikā nav iespējams lietot tālruni un veikt ārkārtas zvanus. Neizņemiet akumulatoru un SD karti un neizslēdziet tālruni.</string>
+    <string name="ask_for_install_sd">SD kartē atrasta jaunākā sistēmas atjauninājumu pakotne. Vai vēlaties to instalēt?</string>
+    <string name="warning_install_sd" product="tablet">Instalēšanas laikā nav iespējams lietot planšetdatoru un veikt ārkārtas zvanus. Neizņemiet akumulatoru un SD karti un neizslēdziet planšetdatoru. \nPirms uzsākt instalēšanu, pārliecinieties, vai pakotne ir lejupielādēta no oficiālās vietnes un tā nav bojāta.</string>
+    <string name="warning_install_sd" product="default">Instalēšanas laikā nav iespējams lietot tālruni un veikt ārkārtas zvanus. Neizņemiet akumulatoru un SD karti un neizslēdziet tālruni. \nPirms uzsākt instalēšanu, pārliecinieties, vai pakotne ir lejupielādēta no oficiālās vietnes un tā nav bojāta.</string>
+    <string name="ask_for_download_ota">Vai vēlaties lejupielādēt sistēmas optimizācijas atjauninājumu?</string>
+    <string name="warning_download_ota">Lai piemērotu šo atjauninājumu, ieteicams lietot Wi-Fi karstvietu vai bezierobežojumu datu plānu. Pretējā gadījumā var tikt piemērota standarta datu savienojuma maksa. \nPirms jaunināšanas dublējiet datus.</string>
+        
+    <string name="notification_content_title">Sistēmas atjaunināšana</string>
+    <string name="downloading_title">"Lejupielādē\u2026"</string>   
+    <string name="wifi_only_check">"Tikai Wi-Fi"</string>     
+    
+    
+    
+    
+    
+    <string name="btn_install">"Instalēt"</string>
+    <string name="btn_cancel">Atmest</string>
+    <string name="btn_download">Lejupielādēt un instalēt</string>
+    <string name="btn_resume">"Lejupielādētie"</string>
+    
+    <string name="warn_data_cost_title">Lejupielādēt atjauninājumu</string>
+    <string name="warn_data_cost_content">Lejupielādējot, izmantojot mobilo tīklu, var tikt piemērota papildu maksa. Vai vēlaties turpināt?</string>
+    <string name="warn_data_cost_yes">"Jā"</string>
+    <string name="warn_data_cost_no">"Nē"</string>
+
+    <string name="notification_download_complete_title">Sistēmas atjauninājums ir gatavs</string>
+    <string name="notification_download_complete_context">Pieskarieties, lai instalētu sistēmas atjauninājumu</string>
+        
+    <string name="sdcard_crash_or_unmount">SD kartes kļūda. Pārbaudiet SD karti un mēģiniet vēlreiz.</string>
+    <string name="unmount_sdcard">SD kartes uzstādīšanas kļūda. Pārbaudiet to.</string>
+    <string name="insufficient_space_content">Instalēšanai nepieciešams vismaz <xliff:g id="deltasize" example="3.5M">%s</xliff:g> baitu atmiņas. Lai turpinātu, atbrīvojiet vietu.</string>
+
+    
+    
+    
+    
+    <string name="install_sd_title">Instalēt atjauninājumu</string>
+    <string name="install_sd_message">Nodrošiniet, lai pakotne tiktu lejupielādēta no oficiālās vietnes un tā nav bojāta. Pretējā gadījumā var rasties sistēmas problēmas.</string>
+    <string name="install_reminder_now">Instalēt tūlīt</string>
+    <string name="install_reminder_not_now">"Ne tagad"</string>
+    
+    
+
+    <string name="notification_content_text_completed">Lejupielāde sekmīga</string> 
+
+    <string name="unknown_per">"nezināms"</string>    
+    <string name="unknown_error">Nezināma kļūda</string>
+    <string name="unknown_error_content">Radās nezināma kļūda. Pametiet šo lapu un mēģiniet vēlreiz.</string>
+    <string name="insufficient_space_title">Nepietiek vietas</string>
+    <string name="error_sdcard">SD kartes informācija</string>
+    <string name="insufficient_space">SD kartē nepietiek vietas.</string>
+    <string name="package_deleted_error">Sistēmas atjaunināšana apturēta, jo jauninājums nav derīgs.</string>
+    
+    <string name="cancel_download_title">Atcelt lejupielādi</string>
+    <string name="cancel_download_content">Veicot šo darbību, tiks atmests lejupielādētais fails.</string>
+
+    
+    <string name="change_network_title">"Lejupielādētie"</string>
+    <string name="change_network_content">Pašreizējais APN neatbalsta lejupielādi. Vai vēlaties mainīt uz citu APN vai ieslēgt Wi-Fi?</string>
+    <string name="change_network_wifi_btn">Izmantot Wi-Fi</string>
+    <string name="change_network_apn_btn">Mainīt APN</string>
+    <string name="change_network_discard_btn">Atmest</string>    
+    <string name="package_error_title">Instalēšana neizdevās</string>
+    <string name="package_error_message_invalid">Pakotnes kļūda. Pārbaudiet atjauninājumu un vēlreiz lejupielādējiet.</string>
+    <string name="package_error_message_insuff" product="tablet">Ierīcē nepietiek vietas.</string>
+    <string name="package_error_message_insuff" product="default">Tālrunī nepietiek vietas.</string>
+    <string name="package_error_message_crash">Nevar piekļūt datu nodalījumam.</string>
+    <string name="package_error_message_full">Ja tiek mainīts nodalījums, nepieciešama pilna pakotne.</string>    
+    <string name="updateSuccess" product="tablet">Apsveicam! Ierīce tika veiksmīgi atjaunināta uz versiju <xliff:g id="version" example="gb.p37">%s</xliff:g>.</string> 
+    <string name="updateSuccess" product="default">Apsveicam! Tālrunis tika veiksmīgi atjaunināts uz versiju <xliff:g id="version" example="gb.p37">%s</xliff:g>.</string> 
+    <string name="updateFailed">Neizdevās atjaunināt uz versiju <xliff:g id="version" example="gb.p37">%s</xliff:g>.</string>
+    <string name="package_unzip">Notiek pakotnes atspiešana\u2026</string>
+    <string name="package_unzip_error">Atspiešanas kļūda</string>
+    
+    <string name="installing_message">Tālrunis tiks izslēgts\u2026</string>
+    <string name="install_sd_info">Lai turpinātu jaunināšanu, pakotni nepieciešams kopēt tālruņa krātuvē.\nTālrunī nepietiek vietas.</string>
+    <string name="sdcard_crash_or_unmount_when_install">Sistēmas atjaunināšana apturēta, jo SD karte tika noņemta.</string>
+    <string name="sdcard_inserted">Vai vēlaties skenēt SD karti, lai atrastu vairāk atjauninājumu pakotņu?</string>
+    
+    <string name="new_version_detected">Ir pieejams sistēmas atjauninājums</string>
+    <string name="sdcard_unmount">SD karte ir izņemta</string>
+    <string name="cta_warning">Sistēma atbalsta tikai no oficiālās vietnes vai servera lejupielādētu programmaparatūras jauninājumu. Ja lietotājs izmanto trešo pušu ROM attēla failu un/vai citu programmaparatūras jaunināšanas metodi, tas var radīt nestabilu tālruņa darbību. Ņemiet vērā, ka lietotājam jāuzņemas atbildība par visām šīm darbībām.</string>
+</resources>

@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bininput Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type input_exec , exec_type, file_type;
+type input ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive input;
+init_daemon_domain(input)
+
+
+# 20131122 Add Set Property Rule
+allow input  property_type:property_service set;

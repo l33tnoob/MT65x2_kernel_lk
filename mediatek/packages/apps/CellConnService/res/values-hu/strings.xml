@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">  
+    <string name="app_name">CellConnectionService</string>  
+    <string name="button_ok">OK</string>  
+    <string name="button_cancel">megszakításához </string>  
+    <string name="confirm_radio_title">SIM kikapcsolva</string>  
+    <string name="confirm_radio_msg">  <xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> kikapcsolva. Szeretné most bekapcsolni ezt a SIM-kártyát? </string>  
+    <string name="confirm_radio_msg_single">A repülőgép mód be van kapcsolva. Szeretné most kikapcsolni?</string>  
+    <string name="confirm_pin_title">SIM lezárva</string>  
+    <string name="confirm_pin_msg">A kijelölt SIM-kártya most már zárolt. Előbb oldja ki.</string>  
+    <string name="confirm_simmelock_title">SIM ME lezárva</string>  
+    <string name="confirm_simmelock_msg">A kijelölt SIM-nyílás most már zárolt. Előbb oldja ki.</string>  
+    <string name="confirm_fdn_title">FDN engedélyezve</string>  
+    <string name="confirm_fdn_msg">A rögzített tárcsázású számok engedélyezve.</string>  
+    <string name="confirm_roaming_title">Barangolási figyelmeztetés</string>  
+    <string name="confirm_roaming_msg">A felhasználni kívánt SIM-kártya most barangol. Nincs elérhető helyi SIM. Folytatja?</string>  
+    <string name="confirm_roaming_withPrefer_msg">A felhasználni kívánt SIM-kártya most barangol. Folytatja a helyi SIM-mel?</string>  
+    <string name="confirm_roaming_lbutton">Helyi SIM</string>  
+    <string name="confirm_roaming_rbutton">Barangoló SIM</string>  
+    <string name="confirm_roamingWithPrefer_lbutton">Helyi SIM</string>  
+    <string name="confirm_roamingWithPrefer_rbutton">Barangoló SIM</string>  
+    <string name="confirm_radio_lbutton">Megnyitás</string>  
+    <string name="confirm_unlock_lbutton">Kiold</string>  
+    <string name="confirm_disable_lbutton">tiltott</string>  
+    <string name="confirm_unlock_fail">Operation törölt </string>  
+    <string name="confirm_turnon_radio_fail">Operation törölt </string>  
+    <string name="confirm_permit_roaming_fail">Megszakította a műveletet a barangoló SIM-en</string>  
+    <string name="confirm_sim_locked_message">Megtörtént a SIM-kártya végleges zárolása.</string>  
+    <string name="confirm_slot_locked_message">Megtörtént a nyílás végleges zárolása.</string> 
+<string name="confirm_radio_title_uim">UIM kikapcsolva</string>
+    <string name="confirm_radio_title_card">Kártya kikapcsolva</string>
+    <string name="confirm_radio_msg_uim"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> kikapcsolva. Szeretné most bekapcsolni ezt az UIM-kártyát?</string>
+    <string name="confirm_radio_msg_card"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> kikapcsolva. Szeretné most bekapcsolni ezt a kártyát?</string>
+    <string name="confirm_radio_flight_mode_on_and_msg">A repülés mód be van kapcsolva és</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> kikapcsolva. Szeretné kikapcsolni a repülés módot és bekapcsolni ezt a SIM-kártyát?</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg_uim"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> kikapcsolva. Szeretné kikapcsolni a repülés módot és bekapcsolni ezt az UIM-kártyát?</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg_card"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> kikapcsolva. Szeretné kikapcsolni a repülés módot és bekapcsolni ezt a kártyát?</string>
+    <string name="confirm_radio_flight_mode_on_sim_on_msg">A repülés mód be van kapcsolva. Szeretné kikapcsolni a repülés módot?</string>
+    <string name="confirm_pin_title_uim">UIM zárolva</string>
+    <string name="confirm_pin_title_card">Kártya zárolva</string>
+    <string name="confirm_pin_msg_uim">A kijelölt UIM-kártya most már zárolt. Előbb oldja ki.</string>
+    <string name="confirm_pin_msg_card">A kijelölt kártya most már zárolt. Előbb oldja ki.</string>
+    <string name="confirm_simmelock_msg_uim">A kijelölt UIM-kártyanyílás most már zárolt. Előbb oldja ki.</string>
+    <string name="confirm_simmelock_msg_card">A kijelölt kártyanyílás most már zárolt. Előbb oldja ki.</string>
+    <string name="confirm_roaming_msg_uim">A felhasználni kívánt UIM-kártya most barangol. Nincs elérhető helyi UIM. Folytatja?</string>
+    <string name="confirm_roaming_msg_card">A felhasználni kívánt kártya most barangol. Nincs elérhető helyi kártya. Folytatja?</string>
+    <string name="confirm_roaming_withPrefer_msg_uim">A felhasználni kívánt SIM-kártya most barangol. Folytatja a helyi UIM-mel?</string>
+    <string name="confirm_roaming_withPrefer_msg_card">A felhasználni kívánt SIM-kártya most barangol. Folytatja a helyi kártyával?</string>
+    <string name="confirm_roamingWithPrefer_lbutton_uim">Helyi UIM</string>
+    <string name="confirm_roamingWithPrefer_lbutton_card">Helyi kártya</string>
+    <string name="confirm_roamingWithPrefer_rbutton_uim">Barangoló UIM</string>
+    <string name="confirm_roamingWithPrefer_rbutton_card">Barangoló kártya</string>
+    <string name="confirm_roaming_for3Sims_msg">A felhasználni kívánt SIM-kártya most barangol. Folytatja?</string>
+    <string name="confirm_roaming_for3Sims_msg_uim">A felhasználni kívánt UIM-kártya most barangol. Folytatja?</string>
+    <string name="confirm_roaming_for3Sims_msg_card">A felhasználni kívánt kártya most barangol. Folytatja?</string>
+    <string name="confirm_permit_roaming_fail_uim">Megszakította a műveletet a barangoló UIM-en</string>
+    <string name="confirm_permit_roaming_fail_card">Megszakította a műveletet a barangoló kártyán</string>
+    <string name="confirm_sim_locked_message_uim">Megtörtént az UIM-kártya végleges zárolása.</string>
+    <string name="confirm_sim_locked_message_card">Megtörtént a kártya végleges zárolása.</string>
+    <string name="button_yes">"Igen"</string>
+    <string name="button_no">"Nem"</string>
+    </resources>

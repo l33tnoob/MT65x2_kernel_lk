@@ -1,0 +1,392 @@
+<!--
+ * Copyright (C) 2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mediatek.cts.activity.stub"
+    android:sharedUserId="android.uid.system">
+
+    <permission android:name="android.app.cts.permission.TEST_GRANTED"
+        android:protectionLevel="normal"
+            android:label="@string/permlab_testGranted"
+            android:description="@string/permdesc_testGranted">
+        <meta-data android:name="android.app.cts.string" android:value="foo" />
+        <meta-data android:name="android.app.cts.boolean" android:value="true" />
+        <meta-data android:name="android.app.cts.integer" android:value="100" />
+        <meta-data android:name="android.app.cts.color" android:value="#ff000000" />
+        <meta-data android:name="android.app.cts.float" android:value="100.1" />
+        <meta-data android:name="android.app.cts.reference" android:resource="@xml/metadata" />
+    </permission>
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.PERSISTENT_ACTIVITY" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ADD_SYSTEM_SERVICE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.app.cts.permission.TEST_GRANTED" />
+    <uses-permission android:name="android.permission.INJECT_EVENTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.DUMP" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <!-- Used for PackageManager test, don't delete this INTERNET permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SET_PREFERRED_APPLICATIONS" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!-- content sync tests -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    
+    <!-- Used for PackageManager test, don't delete this permission-tree -->
+    <permission-tree android:name="com.android.cts.stub.permission.TEST_DYNAMIC"
+                    android:label="Test Tree"/>
+
+    <!-- Used for PackageManager test, don't delete this permission-group -->
+    <permission-group android:name="android.permission-group.COST_MONEY"/>
+    <!-- Used for PackageManager test, don't delete! -->
+    <uses-configuration/>
+
+    <application android:label="Mediatek AMS TestCase"
+                android:icon="@drawable/size_48x48" android:name="mediatek.app.cts.MockApplication">
+
+        <activity android:name="mediatek.app.cts.MockActivity" android:label="MockActivity">
+            <meta-data android:name="android.app.alias"
+                android:resource="@xml/alias" />
+            <meta-data android:name="android.app.intent.filter"
+                android:resource="@xml/intentfilter" />
+            <meta-data android:name="android.widget.layout"
+                android:resource="@xml/layout" />
+            <meta-data android:name="android.view.merge"
+                android:resource="@xml/merge" />
+        </activity>
+                               
+        <receiver android:name="mediatek.content.cts.MockReceiver">
+            <intent-filter android:priority="1">
+                <action android:name="android.content.cts.BroadcastReceiverTest.BROADCAST_MOCKTEST" />
+                <action android:name="android.content.cts.BroadcastReceiverTest.BROADCAST_TESTABORT" />
+                <action android:name="android.content.cts.ContextWrapperTest.BROADCAST_TESTORDER" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="mediatek.app.cts.MockApplicationActivity"
+            android:label="MockApplicationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="mediatek.app.cts.InstrumentationTestActivity"
+            android:label="InstrumentationTestActivity">
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <data android:mimeType="vnd.android.cursor.dir/person" />
+        </activity>
+
+        <activity android:name="mediatek.app.cts.AliasActivityStub">
+            <meta-data android:name="android.app.alias"
+                android:resource="@xml/alias" />
+        </activity>
+
+
+        <activity android:name="mediatek.app.cts.ChildActivity"
+                        android:label="ChildActivity" />
+
+        <receiver android:name="mediatek.app.cts.MockReceiver">
+            <intent-filter>
+                <action android:name="android.app.cts.PendingIntentTest.TEST_RECEIVER" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="mediatek.app.cts.SearchManagerStubActivity"
+                android:label="SearchManagerStubActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+        </activity>
+
+        <service android:name="mediatek.app.cts.LocalService">
+            <intent-filter>
+                <action android:name="android.app.cts.activity.SERVICE_LOCAL" />
+            </intent-filter>
+            <meta-data android:name="android.app.cts.string" android:value="foo" />
+            <meta-data android:name="android.app.cts.boolean" android:value="true" />
+            <meta-data android:name="android.app.cts.integer" android:value="100" />
+            <meta-data android:name="android.app.cts.color" android:value="#ff000000" />
+            <meta-data android:name="android.app.cts.float" android:value="100.1" />
+            <meta-data android:name="android.app.cts.reference" android:resource="@xml/metadata" />
+        </service>
+
+        <service android:name="mediatek.app.cts.LocalGrantedService"
+             android:permission="android.app.cts.permission.TEST_GRANTED">
+            <intent-filter>
+                <action android:name="android.app.cts.activity.SERVICE_LOCAL_GRANTED" />
+            </intent-filter>
+        </service>
+
+        <service android:name="mediatek.app.cts.LocalDeniedService"
+               android:permission="android.app.cts.permission.TEST_DENIED">
+            <intent-filter>
+                <action android:name="android.app.cts.activity.SERVICE_LOCAL_DENIED" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="mediatek.app.cts.ClearTop" android:multiprocess="true"
+               android:launchMode="singleTop">
+        </activity>
+        
+        <activity android:name="mediatek.app.cts.LocalDialog" android:multiprocess="true"
+               android:theme="@android:style/Theme.Dialog">
+        </activity>
+        
+        <activity android:name="mediatek.app.cts.PendingIntentStubActivity"
+             android:label="PendingIntentStubActivity"/>
+
+        <activity android:name="mediatek.app.cts.LocalActivityManagerStubActivity"
+                        android:label="LocalActivityManagerStubActivity" />
+
+        <activity android:name="mediatek.app.cts.LocalActivityManagerTestHelper"
+            android:label="LocalActivityManagerTestHelper" />
+
+        <activity android:name="mediatek.app.cts.LaunchpadTabActivity" android:multiprocess="true">
+        </activity>
+
+        <activity android:name="mediatek.app.cts.LaunchpadActivity" 
+                  android:configChanges="keyboardHidden|orientation"
+                  android:multiprocess="true">
+        </activity>
+
+         <activity android:name="mediatek.app.cts.LocalActivityManagerTestHelper"
+            android:label="LocalActivityManagerTestHelper" />
+
+
+        <activity android:name="mediatek.app.cts.LocalActivity" android:multiprocess="true">
+            <meta-data android:name="android.app.cts.string" android:value="foo" />
+            <meta-data android:name="android.app.cts.boolean" android:value="true" />
+            <meta-data android:name="android.app.cts.integer" android:value="100" />
+            <meta-data android:name="android.app.cts.color" android:value="#ff000000" />
+            <meta-data android:name="android.app.cts.float" android:value="100.1" />
+            <meta-data android:name="android.app.cts.reference" android:resource="@xml/metadata" />
+        </activity>
+
+        <activity android:name="mediatek.app.cts.TestedActivity"
+                android:process=":remoteActivity">
+        </activity>
+
+        <activity android:name="mediatek.app.cts.ExpandableListTestActivity"
+            android:label="ExpandableListTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="mediatek.app.cts.ChildTabActivity" android:label="ChildTabActivity" />
+
+        <activity android:name="mediatek.app.cts.LauncherActivityStub"
+                  android:label="LauncherActivityStub" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="mediatek.app.cts.MockTabActivity" android:label="MockTabActivity" />
+
+        <activity android:name="mediatek.app.cts.AppStubActivity" android:label="AppStubActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="mediatek.app.cts.DialogStubActivity"
+            android:label="DialogStubActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="mediatek.app.cts.ActivityManagerStubFooActivity"
+            android:label="ActivityManagerStubFooActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="mediatek.app.cts.ActivityManagerRecentOneActivity"
+            android:label="ActivityManagerRecentOneActivity"
+            android:allowTaskReparenting="true"
+            android:taskAffinity="android.app.cts.recentOne">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="mediatek.app.cts.ActivityManagerRecentTwoActivity"
+            android:label="ActivityManagerRecentTwoActivity"
+            android:allowTaskReparenting="true"
+            android:taskAffinity="android.app.cts.recentTwo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="mediatek.app.cts.ActivityManagerStubCrashActivity"
+            android:label="ActivityManagerStubCrashActivity"
+            android:multiprocess="true"
+            android:process=":ActivityManagerStubCrashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>                       
+
+        <activity android:name="mediatek.app.cts.LaunchpadActivity" 
+                  android:configChanges="keyboardHidden|orientation"
+                  android:multiprocess="true">
+        </activity>
+
+        <activity android:name="mediatek.app.cts.LocalScreen" android:multiprocess="true">
+        </activity>
+        
+        <activity android:name="mediatek.app.cts.TestedScreen"
+                android:process=":remoteScreen">
+        </activity>
+
+        <service android:name="mediatek.app.cts.IntentServiceStub"/>
+
+        <service android:name="mediatek.app.cts.LocalService">
+            <intent-filter>
+                <action android:name="android.app.cts.activity.SERVICE_LOCAL" />
+            </intent-filter>
+            <meta-data android:name="android.app.cts.string" android:value="foo" />
+            <meta-data android:name="android.app.cts.boolean" android:value="true" />
+            <meta-data android:name="android.app.cts.integer" android:value="100" />
+            <meta-data android:name="android.app.cts.color" android:value="#ff000000" />
+            <meta-data android:name="android.app.cts.float" android:value="100.1" />
+            <meta-data android:name="android.app.cts.reference" android:resource="@xml/metadata" />
+        </service>
+
+        <service android:name="mediatek.app.cts.MockService" />
+        
+        <service android:name="mediatek.app.cts.IntentServiceStub"/>
+        
+        <service android:name="mediatek.app.cts.StubRemoteService"
+            android:process=":remote">
+            <intent-filter>
+                <action
+                    android:name="android.app.cts.ISecondary" />
+                <action
+                    android:name="android.app.REMOTESERVICE" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="mediatek.app.cts.ForceStopPackageTestActivity"
+            android:label="ForceStopPackageTestActivity">
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+
+        <activity android:name="mediatek.app.cts.ForceStopPackageTestActivity$ForceStopPackageTestSubActivity"
+                android:label="ForceStopPackageTestSubActivity"
+                android:clearTaskOnLaunch="true"
+                android:parentActivityName="ForceStopPackageTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="mediatek.app.cts.ForceStopPackageTestActivity.ForceStopPackageTestSubActivity" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="mediatek.app.cts.ResumeDelayedExceptionTestActivity"
+            android:label="ResumeDelayedExceptionTestActivity"
+            android:launchMode = "singleTask">
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </activity>
+        
+        <activity android:name="mediatek.app.cts.ResumeDelayedExceptionTestSubActivity"
+            android:label="ResumeDelayedExceptionTestSubActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="mediatek.app.cts.ResumeDelayedExceptionTestSubActivity" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="mediatek.app.cts.ActivityNoHistoryTestActivity"
+            android:label="ActivityNoHistoryTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="mediatek.app.cts.ActivityNoHistoryTestActivity" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
+

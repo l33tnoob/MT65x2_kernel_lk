@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binpermission_check Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type permission_check_exec , exec_type, file_type;
+type permission_check ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive permission_check;
+init_daemon_domain(permission_check)
+
+
+# 20131122 Add Set Property Rule
+allow permission_check  property_type:property_service set;

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/share_panel_main"
+    android:layout_width="fill_parent"
+    android:layout_height="200dip"
+    android:background="@drawable/share_above"
+    android:orientation="vertical" >
+
+    <com.hissage.ui.view.NmsLevelControlLayout
+        android:id="@+id/share_panel_zone"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0" />
+
+    <RadioGroup
+        android:id="@+id/rg_share_dot"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/isms_below_the_status_bar"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_dot_first"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_margin="6dip"
+            android:button="@drawable/radio_selector"
+            android:enabled="false" />
+
+        <RadioButton
+            android:id="@+id/rb_dot_sec"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_margin="6dip"
+            android:button="@drawable/radio_selector"
+            android:enabled="false" />
+    </RadioGroup>
+
+</LinearLayout>

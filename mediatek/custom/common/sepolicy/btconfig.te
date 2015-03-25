@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binbtconfig Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type btconfig_exec , exec_type, file_type;
+type btconfig ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive btconfig;
+init_daemon_domain(btconfig)
+
+
+# 20131122 Add Set Property Rule
+allow btconfig  property_type:property_service set;

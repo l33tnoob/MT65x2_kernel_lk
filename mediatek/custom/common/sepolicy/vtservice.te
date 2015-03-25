@@ -1,0 +1,83 @@
+# ==============================================
+# Policy File of /system/binvtservice Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type vtservice_exec , exec_type, file_type;
+type vtservice ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive vtservice;
+init_daemon_domain(vtservice)
+
+# 20131024 CTS_02
+allow vtservice dumpstate:fd use;
+allow vtservice dumpstate:unix_stream_socket { read write };
+allow vtservice linker_exec:file read;
+
+# 20131028 CTS_05
+allow vtservice app_data_file:file write;
+allow vtservice untrusted_app:fd use;
+
+
+# 20131119 FeatureSQC
+allow vtservice device:chr_file { read ioctl open };
+allow vtservice devmap_device:chr_file { read ioctl open };
+allow vtservice devpts:chr_file { read write open };
+allow vtservice mediaserver:binder { transfer call };
+allow vtservice mediaserver:fd use;
+allow vtservice radio:binder call;
+allow vtservice sdcard_external:dir { write add_name };
+allow vtservice sdcard_external:file { read write create open getattr };
+allow vtservice sdcard_internal:dir { write search add_name };
+allow vtservice sdcard_internal:file create;
+allow vtservice servicemanager:binder call;
+allow vtservice soc_vt_svc_socket:sock_file write;
+allow vtservice surfaceflinger:binder call;
+allow vtservice surfaceflinger:fd use;
+allow vtservice sysfs:file write;
+
+
+# 20131121 Sanity_QA
+allow vtservice logwrapper:binder { transfer call };
+allow vtservice logwrapper:fd use;
+allow vtservice self:capability setuid;
+allow vtservice servicemanager:binder transfer;
+allow vtservice soc_vt_tcv_socket:sock_file write;
+
+
+# 20131122 Add Set Property Rule
+allow vtservice  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow vtservice aee_aed:process sigchld;
+allow vtservice aee_aed:unix_stream_socket connectto;
+allow vtservice radio_data_file:file { read getattr open };
+allow vtservice sdcard_internal:dir remove_name;
+allow vtservice sdcard_internal:file { write read getattr unlink open };
+allow vtservice self:capability setuid;
+allow vtservice servicemanager:binder transfer;
+allow vtservice surfaceflinger:binder transfer;
+allow vtservice system_server:binder { transfer call };
+allow vtservice tmpfs:lnk_file read;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow vtservice cgroup:dir { create add_name };
+allow vtservice surfaceflinger:binder transfer;
+allow vtservice system_server:binder { transfer call };
+

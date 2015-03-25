@@ -1,0 +1,46 @@
+# ==============================================
+# Policy File of /system/binpoad Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type poad_exec , exec_type, file_type;
+type poad ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive poad;
+init_daemon_domain(poad)
+
+# 20131028 CTS_04
+allow poad system_prop:property_service set;
+
+
+# 20131028 CTS_13
+allow poad device:chr_file read;
+allow poad linker_exec:file read;
+
+
+# 20131028 CTS_16
+allow poad device:chr_file { ioctl open };
+
+
+# 20131028 CTS_17
+allow poad property_socket:sock_file write;
+
+
+
+# 20131122 Add Set Property Rule
+allow poad  property_type:property_service set;

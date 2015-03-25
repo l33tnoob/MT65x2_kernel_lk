@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="iSMS_caption_settings"
+    android:title="@string/STR_NMS_CAPTION_TITLE" >
+
+    <CheckBoxPreference
+        android:key="photo"
+        android:title="@string/STR_NMS_PHOTO_TITLE" >
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:key="video"
+        android:title="@string/STR_NMS_VIDEO_TITLE" >
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:key="audio"
+        android:title="@string/STR_NMS_AUDIO_TITLE" >
+    </CheckBoxPreference>
+
+</PreferenceScreen>

@@ -1,0 +1,41 @@
+# ==============================================
+# Policy File of /system/binterservice Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type terservice_exec , exec_type, file_type;
+type terservice ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive terservice;
+init_daemon_domain(terservice)
+
+# 20131024 CTS_02
+allow terservice linker_exec:file read;
+
+
+# 20131028 CTS_11
+allow terservice device:chr_file { read open };
+
+
+# 20131028 CTS_12
+allow terservice device:chr_file ioctl;
+
+
+
+# 20131122 Add Set Property Rule
+allow terservice  property_type:property_service set;

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mediatek.voicecommand"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <application
+        android:name=".service.VoiceCommandApp"
+        android:icon="@mipmap/ic_launcher_settings"
+        android:label="@string/app_name"
+        android:persistent="true" 
+        android:supportsRtl="true">
+        <activity
+            android:name=".voicesettings.VoiceUiSettings"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+            android:taskAffinity="com.android.settings"
+            android:label="@string/voice_ui_title" >
+            <intent-filter>
+                <action android:name="com.mediatek.voicecommand.VOICE_CONTROL_SETTINGS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".voicesettings.VoiceUiAvailableLanguageActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+            android:taskAffinity="com.android.settings"
+            android:parentActivityName=".voicesettings.VoiceUiSettings"
+            android:label="@string/voice_ui_language_title" >
+            <intent-filter>
+                <action android:name="com.mediatek.voicecommand.VOICE_CONTROL_LANGUAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".voicesettings.VoiceUiCommandPlay"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+            android:taskAffinity="com.android.settings"
+            android:parentActivityName=".voicesettings.VoiceUiSettings"
+            android:label="@string/voice_ui_language_title" >
+            <intent-filter>
+                <action android:name="com.mediatek.voicecommand.VOICE_UI_COMMAND_PLAY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".voiceunlock.PswPreview" 
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:taskAffinity=""
+            android:hardwareAccelerated="false"
+            android:excludeFromRecents="true" android:exported="false" 
+            android:configChanges="orientation|screenSize" >
+            <intent-filter>
+                <action android:name="com.mediatek.voicecommand.VOICE_UNLOCK_PSWPREVIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service android:name=".service.VoiceCommandManagerService" >
+            <intent-filter>
+                <action android:name="com.mediatek.voicecommand" />
+
+                <category android:name="com.mediatek.nativeservice" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+    </application>
+        <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+</manifest>

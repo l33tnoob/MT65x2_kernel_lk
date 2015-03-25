@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 Google Inc.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/record"
+          android:icon="@drawable/ic_menu_record"
+          android:title="@string/record"
+          android:showAsAction="never"/>
+    <item android:id="@+id/previous_channel" 
+          android:icon="@drawable/ic_menu_previous_channel" 
+          android:title="@string/previous_channel" 
+          android:showAsAction="never" />
+    <item android:id="@+id/video_setting"
+          android:icon="@drawable/ic_menu_video_setting"
+          android:showAsAction="never"
+          android:title="@string/video_setting" />
+    <item android:id="@+id/sound_setting"
+          android:icon="@drawable/ic_menu_sound_setting"
+          android:title="@string/sound_setting"
+          android:showAsAction="never" />
+    <item android:id="@+id/gallery"
+          android:icon="@android:drawable/ic_menu_gallery"
+          android:title="@string/gallery"
+          android:showAsAction="never"/>
+    <item android:id="@+id/rename"
+          android:icon="@android:drawable/ic_menu_edit"
+          android:showAsAction="never"
+          android:title="@string/rename" />
+        
+</menu>

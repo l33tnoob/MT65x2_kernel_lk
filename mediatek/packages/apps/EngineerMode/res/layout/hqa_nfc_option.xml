@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/hqa_option_force_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/hqa_nfc_option_force_download" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="3pt"
+        android:layout_marginRight="5pt"
+        android:background="#FF909090" >
+    </View>
+
+    <CheckBox
+        android:id="@+id/hqa_option_auto_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/hqa_nfc_option_auto_check" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="3pt"
+        android:layout_marginRight="5pt"
+        android:background="#FF909090" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/hqa_option_btn_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hqa_nfc_set"
+            android:width="100dp" />
+
+        <Button
+            android:id="@+id/hqa_option_btn_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hqa_nfc_return"
+            android:width="100dp" />
+    </LinearLayout>
+
+</LinearLayout>

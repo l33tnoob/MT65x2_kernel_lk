@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<com.mediatek.oobe.utils.RadioButtonPreference
+		android:key="wifi_and_gprs" 
+		android:title="@string/oobe_internet_gprs_or_wifi_title"
+		android:summary="@string/oobe_internet_gprs_or_wifi_summary" />
+	<com.mediatek.oobe.utils.RadioButtonPreference
+		android:key="wifi_only" android:title="@string/oobe_internet_wifi_only_title"
+		android:summary="@string/oobe_internet_wifi_only_summary" />
+</PreferenceScreen>

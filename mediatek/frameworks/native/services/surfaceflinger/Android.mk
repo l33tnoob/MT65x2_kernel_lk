@@ -1,0 +1,8 @@
+LOCAL_PATH := $(my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := drm_disable_icon.png
+LOCAL_MODULE_CLASS := MODULE
+LOCAL_MODULE_PATH := $(TARGET_OUT)/media/images
+LOCAL_SRC_FILES := $(LOCAL_MODULE)
+include $(BUILD_PREBUILT)

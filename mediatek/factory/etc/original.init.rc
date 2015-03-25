@@ -1,0 +1,204 @@
+
+on init
+
+sysclktz 0
+
+loglevel 3
+
+# setup the global environment
+    export PATH /sbin:/system/sbin:/system/bin:/system/xbin
+	export LD_LIBRARY_PATH /system/lib
+    export ANDROID_ROOT /system
+    export ANDROID_DATA /data
+    export EXTERNAL_STORAGE /sdcard
+
+    symlink /system/etc /etc
+
+    mkdir /sdcard 0000 system system
+    mkdir /system
+    mkdir /data 0771 system system
+    mkdir /nvram 0600 system system
+    mkdir /backup 0600 system system
+    mount /tmp /tmp tmpfs
+
+    mount rootfs rootfs / ro remount
+
+    write /proc/sys/kernel/panic_on_oops 1
+    write /proc/sys/kernel/hung_task_timeout_secs 0
+    write /proc/cpu/alignment 4
+    write /proc/sys/kernel/sched_latency_ns 10000000
+    write /proc/sys/kernel/sched_wakeup_granularity_ns 2000000
+    write /proc/sys/kernel/sched_compat_yield 1
+
+# mount mtd partitions
+    # Mount /system rw first to give the filesystem a chance to save a checkpoint
+    mount yaffs2 mtd@system /system nandboot
+
+    # RIL need to do this before the folder /system changed to read only
+    chown radio system /system/etc/ril
+    chmod 0770 /system/etc/ril
+    chmod 0444 /system/etc/ril/oper.lis
+
+    mount yaffs2 mtd@system /system ro remount nandboot
+
+    # We chown/chmod /data again so because mount is run as root + defaults
+    mount yaffs2 mtd@userdata /data nosuid nodev nandboot
+    chown system system /data
+    chmod 0771 /data
+
+    mount yaffs2 mtd@nvram /nvram nandboot
+
+# create basic filesystem structure
+    mkdir /data/misc 01771 system misc
+    #migrate from 2.1 example CH Yeh 01089
+    mkdir /data/misc/bluetoothd 0770 bluetooth bluetooth
+    #mkdir /data/misc/hcid 0770 bluetooth bluetooth
+    mkdir /data/misc/keystore 0700 keystore keystore
+    mkdir /data/misc/vpn 0770 system system
+    mkdir /data/misc/vpn/profiles 0770 system system
+    mkdir /data/local 0771 shell shell
+    mkdir /data/local/tmp 0771 shell shell
+    mkdir /data/data 0771 system system
+    mkdir /data/app-private 0771 system system
+    mkdir /data/app 0771 system system
+    mkdir /data/property 0700 root root
+
+    # create the lost+found directories, so as to enforce our permissions
+    mkdir /data/lost+found 0770
+
+    # double check the perms, in case lost+found already exists, and set owner
+    chown root root /data/lost+found
+    chmod 0770 /data/lost+found
+
+    # H264 Decoder
+    chmod 777 /dev/MT6516_H264_DEC
+
+    # Internal SRAM Driver
+    chmod 777 /dev/MT6516_Int_SRAM
+
+    # MM QUEUE Driver
+    chmod 777 /dev/MT6516_MM_QUEUE
+
+    # MPEG4 Decoder
+    chmod 777 /dev/MT6516_MP4_DEC
+
+    # MPEG4 Encoder
+    chmod 777 /dev/MT6516_MP4_ENC
+
+    # OpenCORE proxy config
+    chmod 0666 /data/http-proxy-cfg
+
+	# OpenCORE player config
+	chmod 0666 /etc/player.cfg
+
+    # load driver base driver
+    insmod /system/lib/modules/mtk_drvb.ko
+    mknod /dev/drvb c 176 0
+    chmod 0666 /dev/drvb
+
+    # WiFi
+    mkdir /data/misc/wifi 0770 wifi wifi
+    mkdir /data/misc/wifi/sockets 0770 wifi wifi
+    mkdir /data/misc/wpa_supplicant 0770 wifi wifi
+    mkdir /data/misc/dhcp 0770 dhcp dhcp
+    chown dhcp dhcp /data/misc/dhcp
+    chmod 0660 /sys/class/rfkill/rfkill1/state 
+    chown wifi system /sys/class/rfkill/rfkill1/state 
+    
+    #load wifi driver 
+    insmod /system/lib/modules/mt_sd_clnt.ko
+    insmod /system/lib/modules/wlan.ko
+
+    # BT
+    chmod 0660 /dev/ttyMT2
+    chown bluetooth bluetooth /dev/ttyMT2
+    chmod 0660 /sys/class/rfkill/rfkill0/state 
+    chown bluetooth bluetooth /sys/class/rfkill/rfkill0/state 
+    write sys/class/rfkill/rfkill0/state 0
+
+    # Touch Panel
+    chown root diag /sys/module/tpd_setting/parameters/tpd_calmat
+
+    chmod 0777 /dev/pmem_multimedia
+    chmod 0777 /dev/mt6516-isp
+    chmod 0777 /dev/mt6516-IDP
+    chmod 0777 /dev/mt9p012
+    chmod 0777 /dev/mt6516_jpeg
+    chmod 0777 /dev/FM50AF
+
+    # GPS
+    chmod 0666 /dev/gps
+
+    # RTC
+    mkdir /data/misc/rtc 0777 system system
+
+    # Modem related device nodes
+    mkdir /nvram/md 0700 root root
+
+    insmod /system/lib/modules/ccci.ko
+    insmod /system/lib/modules/ccci_md.ko
+    insmod /system/lib/modules/ccci_tty.ko
+    insmod /system/lib/modules/ccci_fs.ko
+    insmod /system/lib/modules/ccci_pmic.ko
+    insmod /system/lib/modules/ccmni.ko
+
+    mknod /dev/ccci c 180 0
+    mknod /dev/ccci_fs c 178 0
+    mknod /dev/ccci_sys_rx c 180 2
+    mknod /dev/ccci_sys_tx c 180 3
+    mknod /dev/ccci_pcm_rx c 180 4
+    mknod /dev/ccci_pcm_tx c 180 5
+    mknod /dev/ccci_uart1_rx c 180 6
+    mknod /dev/ccci_uart1_rx_ack c 180 7
+
+    chmod 0666 /dev/ccci
+    chmod 0660 /dev/ccci_fs
+    chmod 0666 /dev/ccci_pcm_rx
+    chmod 0666 /dev/ccci_pcm_tx
+    chmod 0600 /dev/ccci_sys_rx
+    chmod 0600 /dev/ccci_sys_tx
+    chmod 0600 /dev/ccci_uart1_rx
+    chmod 0600 /dev/ccci_uart1_rx_ack
+    chmod 0660 /dev/ttyC0
+
+    # FM Radio device, FIXME: this is not a proper way to set permissions
+    chmod 0666 /dev/fm
+	
+    # Sensor
+    chmod 0666 /dev/sensor
+
+    # GPIO
+    chmod 0666 /dev/mtgpio
+
+on boot
+# basic network init
+    ifup lo
+    hostname localhost
+    domainname localdomain
+
+    class_start default
+
+# Should be disabled in the future for security concern
+service console /system/bin/sh
+    console
+    
+service adbd /sbin/adbd
+    disabled
+
+service ccci_fsd /system/bin/ccci_fsd
+    user root
+    oneshot
+
+service ccci_mdinit /system/bin/ccci_mdinit
+    user root
+    oneshot
+
+service nvram_daemon /system/bin/nvram_daemon
+    user root
+    oneshot
+
+on property:persist.service.adb.enable=1
+    start adbd
+
+on property:persist.service.adb.enable=0
+    stop adbd

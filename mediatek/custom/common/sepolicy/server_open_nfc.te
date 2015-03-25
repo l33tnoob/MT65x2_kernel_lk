@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binserver_open_nfc Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type server_open_nfc_exec , exec_type, file_type;
+type server_open_nfc ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive server_open_nfc;
+init_daemon_domain(server_open_nfc)
+
+
+# 20131122 Add Set Property Rule
+allow server_open_nfc  property_type:property_service set;

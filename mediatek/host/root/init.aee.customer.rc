@@ -1,0 +1,10 @@
+on property:ro.build.type=eng
+    write /proc/sys/fs/suid_dumpable 2
+    write /proc/sys/kernel/core_pattern "|/system/bin/aee_core_forwarder /data/core/ %p %s UID=%u GID=%g"
+
+on property:persist.aee.core.dump=enable
+    write /proc/sys/fs/suid_dumpable 2
+    write /proc/sys/kernel/core_pattern "|/system/bin/aee_core_forwarder /data/core/ %p %s UID=%u GID=%g"
+
+on init
+    write /proc/self/coredump_filter 39

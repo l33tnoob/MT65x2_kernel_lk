@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:padding="4dip"
+              android:gravity="center_horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+	
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:padding="4dip"
+              android:gravity="center_horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+<TableLayout android:id="@+id/TableLayout01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:gravity="left">
+		
+		<TextView android:text="@string/NFC_SoftwareStack_Secure_Ele_Text"
+				android:layout_marginLeft = "3pt"				
+				android:textColor="#FFFFFF00"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+
+<View android:layout_height="3dip" android:layout_width="fill_parent"
+			android:background="#FF909000">
+</View>	
+		<CheckBox android:text="@string/NFC_SoftwareStack_Secure_Ele_Dect" android:id="@+id/NFC_SoftwareStack_Secure_Ele_Dect"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"></CheckBox>	
+		<TextView android:text="@string/NFC_SoftwareStack_Secure_Ele_Info"
+				android:id="@+id/NFC_SoftwareStack_Secure_Ele_Info"
+				android:layout_marginLeft = "3pt"				
+				android:textColor="#FF00FF00"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+					
+<View android:layout_height="3dip" android:layout_width="fill_parent"
+			android:background="#FF909000">
+</View>	
+
+		<TextView android:text="@string/NFC_SoftwareStack_Secure_Ele_SetMode_Text"
+				android:layout_marginLeft = "3pt"				
+				android:textColor="#FFFFFF00"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+
+<View android:layout_height="3dip" android:layout_width="fill_parent"
+			android:background="#FF909000">
+</View>	
+		<TextView android:text="@string/NFC_SoftwareStack_Secure_Ele_SetMode_Ele1_Text"
+				android:layout_marginLeft = "3pt"				
+				android:textColor="#FF009000"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+				
+		<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content"
+			android:layout_height="fill_parent"  android:gravity="center|center_horizontal">				
+			<RadioGroup android:layout_height="fill_parent" android:layout_width="wrap_content" android:orientation="horizontal" android:id="@+id/NFC_SoftwareStack_Secure_Ele_SetMode_Ele1">
+				<RadioButton android:layout_height="wrap_content" android:id="@+id/NFC_SoftwareStack_Secure_Ele_SetMode_Ele1_OFF" android:text="@string/NFC_SoftwareStack_Secure_Ele_SetMode_Ele_OFF" 
+									  android:layout_width="wrap_content"></RadioButton>
+				<RadioButton android:layout_height="wrap_content" android:id="@+id/NFC_SoftwareStack_Secure_Ele_SetMode_Ele1_Virtual" android:text="@string/NFC_SoftwareStack_Secure_Ele_SetMode_Ele_Virtual" 
+									  android:layout_width="wrap_content"></RadioButton>
+				<RadioButton android:layout_height="wrap_content" android:id="@+id/NFC_SoftwareStack_Secure_Ele_SetMode_Ele1_Wired" android:text="@string/NFC_SoftwareStack_Secure_Ele_SetMode_Ele_Wired" 
+									  android:layout_width="wrap_content"></RadioButton>
+			</RadioGroup>
+		</TableRow>		
+		
+		<TextView android:text="@string/NFC_SoftwareStack_Secure_Ele_SetMode_Ele2_Text"
+				android:layout_marginLeft = "3pt"				
+				android:textColor="#FF009000"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+				
+		<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content"
+			android:layout_height="fill_parent"  android:gravity="center|center_horizontal">				
+			<RadioGroup android:layout_height="fill_parent" android:layout_width="wrap_content" android:orientation="horizontal" android:id="@+id/NFC_SoftwareStack_Secure_Ele_SetMode_Ele2">
+				<RadioButton android:layout_height="wrap_content" android:id="@+id/NFC_SoftwareStack_Secure_Ele_SetMode_Ele2_OFF" android:text="@string/NFC_SoftwareStack_Secure_Ele_SetMode_Ele_OFF" 
+									  android:layout_width="wrap_content"></RadioButton>
+				<RadioButton android:layout_height="wrap_content" android:id="@+id/NFC_SoftwareStack_Secure_Ele_SetMode_Ele2_Virtual" android:text="@string/NFC_SoftwareStack_Secure_Ele_SetMode_Ele_Virtual" 
+									  android:layout_width="wrap_content"></RadioButton>
+				<RadioButton android:layout_height="wrap_content" android:id="@+id/NFC_SoftwareStack_Secure_Ele_SetMode_Ele2_Wired" android:text="@string/NFC_SoftwareStack_Secure_Ele_SetMode_Ele_Wired" 
+									  android:layout_width="wrap_content"></RadioButton>
+			</RadioGroup>
+		</TableRow>		
+						
+		<Button android:id="@+id/NFC_SoftwareStack_Secure_Ele_SetMode_Set" android:text="@string/NFC_SoftwareStack_Secure_Ele_SetMode_Set"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginTop = "1pt"></Button>		
+				
+<View android:layout_height="3dip" android:layout_width="fill_parent"
+			android:background="#FF909000">
+</View>		
+
+		<TextView android:text="@string/NFC_SoftwareStack_Secure_Ele_EventDect_Text"
+				android:layout_marginLeft = "3pt"				
+				android:textColor="#FFFFFF00"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+				
+		
+			<CheckBox android:text="@string/NFC_SoftwareStack_Secure_Ele_EventDect_StartTrans" 
+						android:id="@+id/NFC_SoftwareStack_Secure_Ele_EventDect_StartTrans"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+			</CheckBox>
+			<CheckBox android:text="@string/NFC_SoftwareStack_Secure_Ele_EventDect_RF_ON" 
+					android:id="@+id/NFC_SoftwareStack_Secure_Ele_EventDect_RF_ON"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			</CheckBox>
+		
+		
+		
+			<CheckBox android:text="@string/NFC_SoftwareStack_Secure_Ele_EventDect_EndTrans" 
+						android:id="@+id/NFC_SoftwareStack_Secure_Ele_EventDect_EndTrans"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+			</CheckBox>
+			<CheckBox android:text="@string/NFC_SoftwareStack_Secure_Ele_EventDect_RF_OFF" 
+					android:id="@+id/NFC_SoftwareStack_Secure_Ele_EventDect_RF_OFF"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			</CheckBox>
+		
+			<CheckBox android:text="@string/NFC_SoftwareStack_Secure_Ele_EventDect_Trans" 
+						android:id="@+id/NFC_SoftwareStack_Secure_Ele_EventDect_Trans"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+			</CheckBox>
+			<CheckBox android:text="@string/NFC_SoftwareStack_Secure_Ele_EventDect_Conn" 
+					android:id="@+id/NFC_SoftwareStack_Secure_Ele_EventDect_Conn"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			</CheckBox>
+					
+						
+						
+</TableLayout>	
+	
+</LinearLayout>
+
+</ScrollView>

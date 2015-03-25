@@ -1,0 +1,62 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type dnsmasq, domain;
+type dnsmasq_exec, exec_type, file_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+permissive dnsmasq;
+
+init_daemon_domain(dnsmasq)
+net_domain(dnsmasq)
+# unconfined_domain(dnsmasq)
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+permissive dnsmasq;
+
+# init_daemon_domain(dnsmasq)
+# net_domain(dnsmasq)
+# unconfined_domain(dnsmasq)
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive dnsmasq;
+# 20131119 FeatureSQC
+allow dnsmasq dhcp_data_file:file write;
+allow dnsmasq netd:fd use;
+allow dnsmasq netd:fifo_file read;
+allow dnsmasq self:capability { net_admin net_raw net_bind_service };
+allow dnsmasq self:netlink_route_socket write;
+allow dnsmasq self:rawip_socket { write read create setopt };
+
+
+
+# 20131122 Add Set Property Rule
+allow dnsmasq property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow dnsmasq cgroup:dir { create add_name };
+allow dnsmasq device:chr_file { read ioctl open };
+allow dnsmasq dhcp_data_file:dir write;
+allow dnsmasq dhcp_data_file:file { read getattr open create append };
+allow dnsmasq linker_exec:file read;
+allow dnsmasq netd:fifo_file write;
+allow dnsmasq netd:netlink_kobject_uevent_socket { read write };
+allow dnsmasq netd:netlink_nflog_socket { read write };
+allow dnsmasq netd:netlink_route_socket { read write };
+allow dnsmasq netd:udp_socket { read write };
+allow dnsmasq netd:unix_stream_socket { read write };
+allow dnsmasq self:capability { setuid setgid };
+allow dnsmasq self:netlink_route_socket getattr;
+

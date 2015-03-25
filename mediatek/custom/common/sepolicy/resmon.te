@@ -1,0 +1,337 @@
+# ==============================================
+# Policy File of /system/binresmon Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type resmon_exec , exec_type, file_type;
+type resmon ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive resmon;
+init_daemon_domain(resmon)
+
+# 20131024 Sanity_01
+allow resmon BGW:dir search;
+allow resmon BGW:file { read open };
+allow resmon GoogleOtaBinder:dir search;
+allow resmon GoogleOtaBinder:file { read open };
+allow resmon aal:dir search;
+allow resmon aal:file { read open };
+allow resmon adbd:dir search;
+allow resmon adbd:file { read open };
+allow resmon aee_aed:dir search;
+allow resmon aee_aed:file { read open };
+allow resmon atci_service:dir search;
+allow resmon atci_service:file { read open };
+allow resmon atcid:dir search;
+allow resmon atcid:file { read open };
+allow resmon batterywarning:dir { search getattr };
+allow resmon batterywarning:file { read open };
+allow resmon bluetooth:dir search;
+allow resmon bmm050d:dir search;
+allow resmon bmm050d:file { read open };
+allow resmon ccci_fsd:dir search;
+allow resmon ccci_fsd:file { read open };
+allow resmon ccci_mdinit:dir search;
+allow resmon ccci_mdinit:file { read open };
+allow resmon clatd:dir search;
+allow resmon clatd:file { read open };
+allow resmon dm_agent_binder:dir search;
+allow resmon dm_agent_binder:file { read open };
+allow resmon drmserver:dir search;
+allow resmon drmserver:file { read open };
+allow resmon dumpsys_exec:file { read getattr open execute execute_no_trans };
+allow resmon em_svr:dir search;
+allow resmon em_svr:file { read open };
+allow resmon featured:dir search;
+allow resmon featured:file { read open };
+allow resmon gsm0710muxd:dir search;
+allow resmon gsm0710muxd:file { read open };
+allow resmon hald:dir search;
+allow resmon hald:file { read open };
+allow resmon init:dir search;
+allow resmon init:file { read open };
+allow resmon init_shell:dir search;
+allow resmon init_shell:file { read open };
+allow resmon installd:dir search;
+allow resmon installd:file { read open };
+allow resmon kernel:dir search;
+allow resmon kernel:file { read open };
+allow resmon keystore:dir search;
+allow resmon keystore:file { read open };
+allow resmon linker_exec:file { read execute open };
+allow resmon logwrapper:dir search;
+allow resmon logwrapper:file { read open };
+allow resmon matv:dir search;
+allow resmon matv:file { read open };
+allow resmon mdlogger:dir search;
+allow resmon mdlogger:file { read open };
+allow resmon media_app:dir search;
+allow resmon media_app:file { read open };
+allow resmon mediaserver:dir search;
+allow resmon mediaserver:file { read open };
+allow resmon mnld:dir search;
+allow resmon mnld:file { read open };
+allow resmon mobile_log_d:dir search;
+allow resmon mobile_log_d:file { read open };
+allow resmon mtk_agpsd:dir search;
+allow resmon mtk_agpsd:file { read open };
+allow resmon mtkbt:dir search;
+allow resmon mtkbt:file { read open };
+allow resmon netd:dir search;
+allow resmon netd:file { read open };
+allow resmon netdiag:dir search;
+allow resmon netdiag:file { read open };
+allow resmon nfc:file { read open };
+allow resmon nvram_agent_binder:dir search;
+allow resmon nvram_agent_binder:file { read open };
+allow resmon platform_app:dir search;
+allow resmon radio:dir search;
+allow resmon radio:file { read open };
+allow resmon release_app:dir search;
+allow resmon release_app:file { read open };
+allow resmon rild:dir search;
+allow resmon rild:file { read open };
+allow resmon servicemanager:dir search;
+allow resmon servicemanager:file { read open };
+allow resmon shared_app:dir search;
+allow resmon shared_app:file { read open };
+allow resmon shell:dir search;
+allow resmon shell:file read;
+allow resmon shell_exec:file { read execute open execute_no_trans };
+allow resmon surfaceflinger:dir search;
+allow resmon surfaceflinger:file { read open };
+allow resmon system_app:dir search;
+allow resmon system_app:file { read open };
+allow resmon system_server:dir search;
+allow resmon system_server:file { read open };
+allow resmon thermal:dir search;
+allow resmon thermal:file { read open };
+allow resmon thermald:dir search;
+allow resmon thermald:file { read open };
+allow resmon untrusted_app:dir search;
+allow resmon untrusted_app:file { read open };
+allow resmon vold:dir search;
+allow resmon vold:file { read open };
+allow resmon vtservice:dir search;
+allow resmon vtservice:file { read open };
+allow resmon zygote:dir search;
+allow resmon zygote:file { read open };
+
+
+# 20131024 Sanity_02
+allow resmon bluetooth:file { read open };
+allow resmon ccci_fsd:dir getattr;
+allow resmon gsm0710muxd:dir getattr;
+allow resmon mdlogger:dir getattr;
+allow resmon mobile_log_d:dir getattr;
+allow resmon nfc:dir { search getattr };
+allow resmon platform_app:dir getattr;
+allow resmon platform_app:file { read open };
+allow resmon radio:dir getattr;
+allow resmon release_app:dir getattr;
+allow resmon rild:dir getattr;
+allow resmon servicemanager:binder call;
+allow resmon shared_app:dir getattr;
+allow resmon shell:dir getattr;
+allow resmon shell:file open;
+allow resmon system_app:dir getattr;
+allow resmon system_server:binder call;
+allow resmon untrusted_app:dir getattr;
+
+
+# 20131024 CTS_01
+allow resmon aee_aed:dir getattr;
+allow resmon atci_service:dir getattr;
+allow resmon atcid:dir getattr;
+allow resmon bluetooth:dir getattr;
+allow resmon bluetooth:file { read open };
+allow resmon bootanimation:dir search;
+allow resmon bootanimation:file { read open };
+allow resmon ccci_fsd:dir getattr;
+allow resmon device:chr_file { read ioctl open };
+allow resmon dumpstate:file { read open };
+allow resmon featured:dir getattr;
+allow resmon gsm0710muxd:dir getattr;
+allow resmon init:dir getattr;
+allow resmon installd:dir getattr;
+allow resmon logwrapper:dir getattr;
+allow resmon mdlogger:dir getattr;
+allow resmon media_app:dir getattr;
+allow resmon mobile_log_d:dir getattr;
+allow resmon nfc:dir { search getattr };
+allow resmon platform_app:dir getattr;
+allow resmon platform_app:file { read open };
+allow resmon radio:dir getattr;
+allow resmon release_app:dir getattr;
+allow resmon rild:dir getattr;
+allow resmon servicemanager:binder call;
+allow resmon servicemanager:dir getattr;
+allow resmon shared_app:dir getattr;
+allow resmon shell:dir getattr;
+allow resmon shell:file open;
+allow resmon sn:dir search;
+allow resmon sn:file { read open };
+allow resmon system_app:dir getattr;
+allow resmon system_data_file:file open;
+allow resmon system_server:binder call;
+allow resmon untrusted_app:dir getattr;
+allow resmon vold:dir getattr;
+
+
+# 20131024 Sanity_03
+allow resmon mnld:dir getattr;
+allow resmon netdiag:dir getattr;
+
+
+# 20131024 CTS_02
+allow resmon aal:dir getattr;
+allow resmon ccci_mdinit:dir getattr;
+allow resmon drmserver:dir getattr;
+allow resmon dumpstate:dir { search getattr };
+allow resmon hald:dir getattr;
+allow resmon matv:dir getattr;
+allow resmon mediaserver:dir getattr;
+allow resmon netd:dir getattr;
+allow resmon surfaceflinger:dir getattr;
+allow resmon vtservice:dir getattr;
+allow resmon zygote:dir getattr;
+
+
+# 20131028 CTS_03
+allow resmon GoogleOtaBinder:dir getattr;
+allow resmon adbd:dir getattr;
+allow resmon bmm050d:dir getattr;
+allow resmon dm_agent_binder:dir getattr;
+allow resmon keystore:dir getattr;
+allow resmon mtk_agpsd:dir getattr;
+allow resmon mtkbt:dir getattr;
+allow resmon nvram_agent_binder:dir getattr;
+allow resmon sn:dir getattr;
+allow resmon thermal:dir getattr;
+allow resmon thermald:dir getattr;
+
+
+# 20131028 CTS_04
+allow resmon BGW:dir getattr;
+allow resmon em_svr:dir getattr;
+allow resmon init_shell:dir getattr;
+allow resmon system_server:dir getattr;
+
+
+# 20131028 CTS_05
+allow resmon bootanimation:dir getattr;
+allow resmon kernel:dir getattr;
+
+
+# 20131119 FeatureSQC
+allow resmon dnsmasq:dir { search getattr };
+allow resmon dnsmasq:file { read open };
+allow resmon sdcardd:dir { search getattr };
+allow resmon sdcardd:file { read open };
+allow resmon wpa:dir { search getattr };
+allow resmon wpa:file { read open };
+
+
+# 20131121 Sanity_QA
+allow resmon emcsmdlogger:dir search;
+allow resmon emcsmdlogger:file { read open };
+allow resmon healthd:dir search;
+allow resmon healthd:file { read open };
+
+
+
+# 20131122 Add Set Property Rule
+allow resmon  property_type:property_service set;
+
+# 20131213 KKMR1_CTS_01
+allow resmon emcsmdlogger:dir getattr;
+allow resmon healthd:dir getattr;
+allow resmon memsicd3416x:dir { search getattr };
+allow resmon memsicd3416x:file { read open };
+
+
+# 20131213 KKMR1_CQ_01
+allow resmon aee_aed:unix_stream_socket connectto;
+allow resmon am_exec:file { read getattr open execute execute_no_trans };
+allow resmon dalvikcache_data_file:file write;
+allow resmon emcsmdlogger:dir { getattr search };
+allow resmon emcsmdlogger:file { read open };
+allow resmon healthd:dir { getattr search };
+allow resmon healthd:file { read open };
+allow resmon hostapd:dir { search getattr };
+allow resmon hostapd:file { read open };
+allow resmon ipod:dir { search getattr };
+allow resmon ipod:file { read open };
+allow resmon isolated_app:dir { search getattr };
+allow resmon isolated_app:file { read open };
+allow resmon lcdc_screen_cap:dir { search getattr };
+allow resmon lcdc_screen_cap:file { read open };
+allow resmon mdnsd:dir search;
+allow resmon mdnsd:file { read open };
+allow resmon mediaserver:file getattr;
+allow resmon memsicd3416x:dir { search getattr };
+allow resmon memsicd3416x:file { read open };
+allow resmon mtp:dir { search getattr };
+allow resmon mtp:file { read open };
+allow resmon ppp:dir { search getattr };
+allow resmon ppp:file { read open };
+allow resmon property_socket:sock_file write;
+allow resmon release_app:file getattr;
+allow resmon screencap:dir { search getattr };
+allow resmon screencap:file { read open };
+allow resmon sdcard_internal:dir { write remove_name search add_name };
+allow resmon sdcard_internal:file { write getattr read create unlink open };
+allow resmon self:capability { sys_ptrace dac_override };
+allow resmon showmap_exec:file { read getattr open execute execute_no_trans };
+allow resmon system_data_file:dir { write add_name };
+allow resmon system_data_file:file { write create };
+allow resmon xlog:dir { search getattr };
+allow resmon xlog:file { read open };
+allow resmon zygote_exec:file { read getattr open execute execute_no_trans };
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow resmon adbd:file getattr;
+allow resmon aee_aed:process sigchld;
+allow resmon akmd8963:dir search;
+allow resmon akmd8963:file { read open };
+allow resmon am_exec:file { read getattr open execute execute_no_trans };
+allow resmon ashmem_device:chr_file execute;
+allow resmon dalvikcache_data_file:file setattr;
+allow resmon healthd:dir getattr;
+allow resmon hostapd:dir search;
+allow resmon hostapd:file { read open };
+allow resmon init:unix_stream_socket { read write setopt shutdown };
+allow resmon ipod:dir { search getattr };
+allow resmon ipod:file { read open };
+allow resmon lcdc_screen_cap:dir { search getattr };
+allow resmon lcdc_screen_cap:file { read open };
+allow resmon memsicd3416x:dir search;
+allow resmon memsicd3416x:file { read open };
+allow resmon nfc:file getattr;
+allow resmon platform_app:file getattr;
+allow resmon property_socket:sock_file write;
+allow resmon radio:file getattr;
+allow resmon self:capability { fowner fsetid };
+allow resmon system_server:file getattr;
+allow resmon terservice:dir search;
+allow resmon terservice:file { read open };
+allow resmon ueventd:dir search;
+allow resmon ueventd:file { read open };
+allow resmon zygote_exec:file { read getattr open execute execute_no_trans };
+

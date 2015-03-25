@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binwpa_cli Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type wpa_cli_exec , exec_type, file_type;
+type wpa_cli ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive wpa_cli;
+init_daemon_domain(wpa_cli)
+
+
+# 20131122 Add Set Property Rule
+allow wpa_cli  property_type:property_service set;

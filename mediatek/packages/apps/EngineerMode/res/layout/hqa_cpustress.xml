@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listview_hqa_cpu_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+    <RadioGroup
+        android:id="@+id/hqa_cpu_main_radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/hqa_cpu_main_raidobutton_default"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/hqa_cpustress_radiobutton_default" />
+
+        <RadioButton
+            android:id="@+id/hqa_cpu_main_raidobutton_test"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hqa_cpustress_radiobutton_test" />
+
+        <RadioButton
+            android:id="@+id/hqa_cpu_main_raidobutton_single"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hqa_cpustress_radiobutton_single" />
+
+        <RadioButton
+            android:id="@+id/hqa_cpu_main_raidobutton_dual"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hqa_cpustress_radiobutton_dual" />
+
+        <RadioButton
+            android:id="@+id/hqa_cpu_main_raidobutton_triple"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hqa_cpustress_radiobutton_triple" />
+
+        <RadioButton
+            android:id="@+id/hqa_cpu_main_raidobutton_quad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hqa_cpustress_radiobutton_quad" />
+
+        <RadioButton
+            android:id="@+id/hqa_cpu_main_raidobutton_octa"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hqa_cpustress_radiobutton_octa" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/hqa_cpu_main_checkbox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:text="@string/hqa_cpustress_checkbox_thermal" />
+
+</LinearLayout>

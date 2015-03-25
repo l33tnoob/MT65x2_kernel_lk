@@ -1,0 +1,124 @@
+$(PATH_OBJ)\predictor_$(CONFIG).$(SUFFIX_OBJ): $(PATH_SRC)/predictor.c $(PATH_SRC)/predictor.h \
+		$(PATH_SRC)/demac_config.h \
+		$(PATH_SRC)/decoder.h
+	$(CRULE)
+
+$(PATH_OBJ)\filter_1280_15_$(CONFIG).$(SUFFIX_OBJ): $(PATH_SRC)/filter_1280_15.c $(PATH_SRC)/demac_config.h \
+		$(PATH_SRC)/filter.c \
+		$(PATH_SRC)/filter.h \
+		$(PATH_SRC)/decoder.h \
+		$(PATH_SRC)/vector_math_generic.h
+	$(CRULE)
+
+$(PATH_OBJ)\filter_256_13_$(CONFIG).$(SUFFIX_OBJ): $(PATH_SRC)/filter_256_13.c $(PATH_SRC)/demac_config.h \
+		$(PATH_SRC)/filter.c \
+		$(PATH_SRC)/filter.h \
+		$(PATH_SRC)/decoder.h \
+		$(PATH_SRC)/vector_math_generic.h
+	$(CRULE)
+
+$(PATH_OBJ)\filter_64_11_$(CONFIG).$(SUFFIX_OBJ): $(PATH_SRC)/filter_64_11.c $(PATH_SRC)/filter.c \
+		$(PATH_SRC)/filter.h \
+		$(PATH_SRC)/demac_config.h \
+		$(PATH_SRC)/decoder.h \
+		$(PATH_SRC)/vector_math_generic.h
+	$(CRULE)
+
+$(PATH_OBJ)\filter_32_10_$(CONFIG).$(SUFFIX_OBJ): $(PATH_SRC)/filter_32_10.c $(PATH_SRC)/filter.c \
+		$(PATH_SRC)/filter.h \
+		$(PATH_SRC)/demac_config.h \
+		$(PATH_SRC)/decoder.h \
+		$(PATH_SRC)/vector_math_generic.h
+	$(CRULE)
+
+$(PATH_OBJ)\filter_16_11_$(CONFIG).$(SUFFIX_OBJ): $(PATH_SRC)/filter_16_11.c $(PATH_SRC)/filter.c \
+		$(PATH_SRC)/filter.h \
+		$(PATH_SRC)/demac_config.h \
+		$(PATH_SRC)/decoder.h \
+		$(PATH_SRC)/vector_math_generic.h
+	$(CRULE)
+
+$(PATH_OBJ)\decoder_$(CONFIG).$(SUFFIX_OBJ): $(PATH_SRC)/decoder.c $(PATH_SRC)/decoder.h \
+		$(PATH_SRC)/demac_config.h \
+		$(PATH_SRC)/predictor.h \
+		$(PATH_SRC)/filter.h \
+		$(PATH_SRC)/entropy.h
+	$(CRULE)
+
+$(PATH_OBJ)\crc_$(CONFIG).$(SUFFIX_OBJ): $(PATH_SRC)/crc.c $(PATH_SRC)/crc.h \
+		$(PATH_SRC)/demac_config.h
+	$(CRULE)
+
+$(PATH_OBJ)\ape_decoder_swip_$(CONFIG).$(SUFFIX_OBJ): $(PATH_SRC)/ape_decoder_swip.c $(PATH_SRC)/decoder.h \
+		$(PATH_SRC)/demac_config.h \
+		$(PATH_SRC)/crc.h
+	$(CRULE)
+
+$(PATH_OBJ)\wavwrite_$(CONFIG).$(SUFFIX_OBJ): $(PATH_DEMO)/wavwrite.c $(PATH_DEMO)/parser.h
+	$(CRULE)
+
+$(PATH_OBJ)\parser_$(CONFIG).$(SUFFIX_OBJ): $(PATH_DEMO)/parser.c $(PATH_DEMO)/parser.h
+	$(CRULE)
+
+$(PATH_OBJ)\libprofiler_$(CONFIG).$(SUFFIX_OBJ): $(PATH_DEMO)/libprofiler.c $(PATH_DEMO)/libprofiler.h
+	$(CRULE)
+
+$(PATH_OBJ)\demac_$(CONFIG).$(SUFFIX_OBJ): $(PATH_DEMO)/demac.c $(PATH_DEMO)/wavwrite.h \
+		$(PATH_DEMO)/parser.h \
+		$(PATH_DEMO)/cue_parser.h \
+		$(PATH_DEMO)/libprofiler.h
+	$(CRULE)
+
+$(PATH_OBJ)\entropy_$(CONFIG).$(SUFFIX_OBJ): $(PATH_SRC)/entropy.c \
+		$(PATH_SRC)/entropy.h \
+		$(PATH_SRC)/demac_config.h \
+		$(PATH_SRC)/decoder.h \
+		$(PATH_SRC)/entropy_optz_macro.h
+	$(CRULE)
+
+$(PATH_OBJ)\cue_parser_$(CONFIG).$(SUFFIX_OBJ): $(PATH_DEMO)/cue_parser.c $(PATH_DEMO)/cue_parser.h
+	$(CRULE)
+
+$(PATH_OBJ)\unaligned_dot_and_add_64_$(CONFIG).$(SUFFIX_OBJ):\
+	$(PATH_SRC)/unaligned_dot_and_add_64.s
+	$(CRULE)
+	
+$(PATH_OBJ)\unaligned_dot_and_sub_64_$(CONFIG).$(SUFFIX_OBJ):\
+	$(PATH_SRC)/unaligned_dot_and_sub_64.s
+	$(CRULE)
+	
+$(PATH_OBJ)\aligned_dot_and_add_64_$(CONFIG).$(SUFFIX_OBJ):\
+	$(PATH_SRC)/aligned_dot_and_add_64.s
+	$(CRULE)
+	
+$(PATH_OBJ)\aligned_dot_and_sub_64_$(CONFIG).$(SUFFIX_OBJ):\
+	$(PATH_SRC)/aligned_dot_and_sub_64.s
+	$(CRULE)
+
+$(PATH_OBJ)\ARMv6_unaligned_dot_and_add_64_$(CONFIG).$(SUFFIX_OBJ):\
+	$(PATH_SRC)/ARMv6_unaligned_dot_and_add_64.s
+	$(CRULE)
+
+$(PATH_OBJ)\ARMv6_unaligned_dot_and_sub_64_$(CONFIG).$(SUFFIX_OBJ):\
+	$(PATH_SRC)/ARMv6_unaligned_dot_and_sub_64.s
+	$(CRULE)
+
+$(PATH_OBJ)\ARMv6_aligned_dot_and_add_64_$(CONFIG).$(SUFFIX_OBJ):\
+	$(PATH_SRC)/ARMv6_aligned_dot_and_add_64.s
+	$(CRULE)
+
+$(PATH_OBJ)\ARMv6_aligned_dot_and_sub_64_$(CONFIG).$(SUFFIX_OBJ):\
+	$(PATH_SRC)/ARMv6_aligned_dot_and_sub_64.s
+	$(CRULE)
+
+$(PATH_OBJ)\ARMv6_dot_product_$(CONFIG).$(SUFFIX_OBJ):\
+	$(PATH_SRC)/ARMv6_dot_product.s
+	$(CRULE)
+
+$(PATH_OBJ)\ARMv6_predictor_$(CONFIG).$(SUFFIX_OBJ):\
+	$(PATH_SRC)/ARMv6_predictor.s
+	$(CRULE)	
+	
+$(PATH_OBJ)\dot_product_arm9m_$(CONFIG).$(SUFFIX_OBJ):\
+	$(PATH_SRC)/dot_product_arm9m.s
+	$(CRULE)

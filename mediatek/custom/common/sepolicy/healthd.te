@@ -1,0 +1,85 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type healthd, domain;
+type healthd_exec, exec_type, file_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# healthd seclabel is specified in init.rc since
+# it lives in the rootfs and has no unique file type.
+permissive healthd;
+
+init_daemon_domain(healthd)
+# unconfined_domain(healthd)
+write_klog(healthd)
+
+
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# healthd seclabel is specified in init.rc since
+# it lives in the rootfs and has no unique file type.
+permissive healthd;
+
+# init_daemon_domain(healthd)
+# unconfined_domain(healthd)
+allow healthd rootfs:file entrypoint;
+# write_klog(healthd)
+
+
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive healthd;
+
+# 20131119 Sanity_QA
+#allow healthd self:capability2 0x10;
+allow healthd system_file:file entrypoint;
+
+
+# 20131121 Sanity_QA
+allow healthd self:capability mknod;
+allow healthd self:netlink_kobject_uevent_socket read;
+allow healthd system_server:binder call;
+
+
+
+# 20131122 Add Set Property Rule
+allow healthd property_type:property_service set;
+
+# 20131213 KKMR1_CTS_01
+allow healthd dumpstate:fd use;
+allow healthd dumpstate:unix_stream_socket { read write };
+
+
+# 20131213 KKMR1_CQ_01
+allow healthd aee_aed:process sigchld;
+allow healthd app_data_file:file write;
+allow healthd device:chr_file { read ioctl open };
+allow healthd dumpstate:fd use;
+allow healthd dumpstate:unix_stream_socket { read write };
+allow healthd self:capability mknod;
+allow healthd self:capability2 block_suspend;
+allow healthd self:netlink_kobject_uevent_socket { read create setopt };
+allow healthd servicemanager:binder { transfer call };
+allow healthd system_file:file entrypoint;
+allow healthd system_server:binder call;
+allow healthd untrusted_app:fd use;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow healthd init:binder { transfer call };
+allow healthd rootfs:file entrypoint;
+allow healthd self:capability2 block_suspend;
+allow healthd servicemanager:binder { transfer call };
+

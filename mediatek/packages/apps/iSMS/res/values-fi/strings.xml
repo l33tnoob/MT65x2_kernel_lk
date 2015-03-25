@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="STR_NMS_MAIN">iSMS</string>
+    <string name="STR_NMS_HISSAGE">iSMS</string>
+    <string name="STR_NMS_INVITE_SMS_CONTENT">Hei, iSMS on siisti keskusteluväline. Se on ilmainen ja käytännöllinen. Lisätietoja on osoitteessa http://isms.hissage.com.</string>
+    <string name="STR_NMS_NO_SDCARD">SD-korttia ei havaita, iSMS ei salli joitakin toimintoja</string>
+    <string name="STR_NMS_MOUNT_SDCARD">SD-kortti on käytettävissä</string>
+    <string name="STR_NMS_SEND_MMS_FAIL">Viestin lähettäminen ei onnistu. Se lähetetään automaattisesti, kun verkko on käytettävissä.</string>
+    <string name="STR_NMS_RECV_MMS_FAIL">Lataus ei onnistu. Yritä myöhemmin uudelleen.</string>
+    <string name="STR_NMS_GROUP_CHAT_ME">minä</string>
+    <string name="STR_NMS_GROUP_CHAT_I">minä</string>
+    <string name="STR_NMS_GROUP_CHAT_YOU">Sinä</string>
+    <string name="STR_NMS_GROUP_CREATE_MSG">%1$s kustu %2$s ryhmäkeskusteluun.</string>
+    <string name="STR_NMS_GROUP_ADD_MSG">%1$s liittyi ryhmäkeskusteluun.</string>
+    <string name="STR_NMS_GROUP_DELETE_MSG">%1$s poista %2$s ryhmäkeskustelusta.</string>
+    <string name="STR_NMS_GROUP_QUITE_MSG">%1$s lopetti ryhmäkeskustelun.</string>
+    <string name="STR_NMS_GROUP_CHAT_PLACE_HOLDER_MSG_BODY">Liityit tähän ryhmään</string>
+    <string name="STR_NMS_PICTURE">kuva</string>
+    <string name="STR_NMS_TAPE">ääni</string>
+    <string name="STR_NMS_VCARD">kontakti</string>
+    <string name="STR_NMS_LOCATION">sijainti</string>
+    <string name="STR_NMS_SKETCH">luonnos</string>
+    <string name="STR_NMS_VIDEO">video</string>
+    <string name="STR_NMS_CALENDAR">kalenteri</string>
+    <string name="STR_NMS_UNKNOWN">tuntematon</string>
+    <string name="STR_NMS_READ_MODE_PIC">kuva</string>
+    <string name="STR_NMS_READ_MODE_TAPE">äänimuistiinpano</string>
+    <string name="STR_NMS_READ_MODE_VCARD">kontaktit</string>
+    <string name="STR_NMS_READ_MODE_LOCATION">sijainti</string>
+    <string name="STR_NMS_READ_MODE_SKETCH">luonnos</string>
+    <string name="STR_NMS_READ_MODE_VIDEO">video</string>
+    <string name="STR_NMS_READ_MODE_CALENDAR">kalenteri</string>
+    <string name="STR_NMS_ISMS_ENABLE">(iSMS ota käyttöön)</string>
+    <string name="STR_NMS_READ_MODE_UNKNOWN">tuntematon tiedosto</string>
+    <string name="STR_NMS_ALL_MSG">Kaikki viestit</string>
+    <string name="STR_NMS_SAVED">Tallennettu</string>
+    <string name="STR_NMS_BLOCKMSG">Estetty</string>
+    <string name="STR_NMS_SMS_TYPE">Tekstiviesti</string>
+    <string name="STR_NMS_NO_SIM">SIM-korttia ei havaita</string>
+    <string name="STR_NMS_ILLEGAL_ADDRESS">Virheellinen numero</string>
+    <string name="STR_NMS_REMIND_USER_SET_NAME">Päivitä profiilisi</string>
+    <string name="STR_NMS_OK">OK</string>
+    <string name="STR_NMS_BACK">Takaisin</string>
+    <string name="STR_NMS_CANCEL">Peruuta</string>
+    <string name="STR_NMS_NETWORK_UNAVL">Varmista, että sinulla on toimiva datayhteys, esim, 3G, GPRS tai Wi-Fi</string>
+    <string name="STR_NMS_TODAY">Tänään</string>
+    <string name="STR_NMS_YESTERDAY">Eilen</string>
+    <string name="STR_NMS_NOW">Nyt</string>
+    <string name="STR_NMS_NO_SIM_CARD">SIM-korttia ei havaita, sinun täytyy panna SIM-kortti sisään.</string>
+    <string name="STR_NMS_NO_CONNECTION">Verkko ei ole käytettävissä tai lentotila on päällä, tarkasta.</string>
+    <string name="STR_NMS_ATTACH_SHARE">%1$s jakoi %2$s</string>
+    <string name="STR_NMS_WAIT">Odota…</string>
+    <string name="STR_NMS_TIPTITLE">Vihje</string>
+
+    <string name="STR_NMS_OPEN">Avaa</string>
+    <string name="STR_NMS_PLAY">Toista</string>
+    
+    
+
+    <string name="STR_NMS_VCARD_NAME">%1$s kontaktia</string>
+    <string name="STR_NMS_SHARE_VCARD_FAILED">kontaktin jakaminen epäonnistui</string>
+
+    <!-- upgrade info -->
+    <string name="STR_NMS_UPGRADE_TICKER">Versiopäivitys</string>
+    <string name="STR_NMS_UPGRADE_ERROR_TITLE">Päivitysvirhe</string>
+    <string name="STR_NMS_UPGRADE_ERROR_CONTENT">Päivitysvirhe, päivitä iSMS-ohjelmassa</string>
+    <string name="STR_NMS_INSTALLED_TITLE">Päivitys onnistui</string>
+    <string name="STR_NMS_INSTALLED_CONTENT">Päivitys onnistui puhelimeen</string>
+    <string name="STR_NMS_PROMPT_DLG_TITLE">Uusi versio havaittu</string>
+    <string name="STR_NMS_PROMPT_DLG_DOWNLOAD">Lataa</string>
+    <string name="STR_NMS_PROMPT_DLG_LATER">Myöhemmin</string>
+    <string name="STR_NMS_UPGRADING">Päivitetään</string>
+    <string name="STR_NMS_UPGRADE_TIME">Edellinen tarkistus: %s</string>
+    
+    <!-- ext protocol -->
+    <string name="STR_NMS_OFFLINE_URL">http://ismsi.hissage.com/webservice/nmsmail/notifyOffline.php</string>
+    
+    <!-- Activation start -->
+    <string name="STR_NMS_PRELOAD_IP_MSG_CONTENT">&quot;Tervetuloa iSMS-ohjelmaan.&quot;</string>
+    <string name="STR_NMS_ACTIVAT_TITLE">iSMS lähettää kertaluontoisen tekstiviestin vahvistaakseen puhelinnumerosi. Palveluntarjoaja saattaa periä maksun.</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE">Vahvista puhelinnumerosi</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE2">Vahvista puhelinnumerosi</string>
+    <string name="STR_NMS_YOUR_COUNTRY_TITLE">MAASI</string>
+    <string name="STR_NMS_YOUR_PHONE_TITLE">PUHELINNUMEROSI</string>
+    <string name="STR_NMS_VERIFY_FAIL_TITLE">Tekstiviestivahvistus epäonnistui.</string>
+    <string name="STR_NMS_VERIFY_FAIL_CONTENT">Varmista, että syötit puhelinnumerosi oikein.</string>
+    <string name="STR_NMS_WORKING_SMS_TIP">Varmista, että sinulla on toimiva tekstiviestiohjelma.</string>
+    <string name="STR_NMS_VERIFYING">Odotetaan, että havaitaan automaattisesti tekstiviesti, joka lähetettiin</string>
+    <string name="STR_NMS_RETRY">Yritä uudelleen</string>
+    <string name="STR_NMS_EDIT_NUMBER">Muokkaa numeroa</string>
+    <string name="STR_NMS_UPDATE_PROFILE">Päivitä profiili</string>
+    <string name="STR_NMS_START_ISMS">Aloita iSMS</string>
+    <string name="STR_NMS_SEND">Lähetä</string>
+    <string name="STR_NMS_CONGRATULATIONS_TITLE">Onnittelu!</string>
+    <string name="STR_NMS_CONGRATULATIONS_CONTENT">Kiitos iSMS:n aktivoinnista.\n Voit nyt alkaa nauttia palvelusta.\nOnnellinen iSMS!</string>
+    <string name="STR_NMS_WELCOME_BACK">Tervetuloa takaisin.</string>
+    <string name="STR_NMS_SEND_SMS_FAIL">Vahvistus ei onnistunut, tarkasta seuraavaa:\n  1. Puhelinnumero on oikein;\n  2. Tietoturvaohjelmisto on kytketty pois päältä;\n  3. Muut mahdolliset syyt, jotka voivat estää tekstiviestin lähettämisen.\nVarmista ja yritä myöhemmin uudelleen.</string>
+    <string name="STR_NMS_ACTIVE">Aktivoi iSMS</string>
+    <string name="STR_NMS_WELCOME_ACTIVE">Tervetuloa iSMS-ohjelmaan</string>
+    <string name="STR_NMS_CONNECTING">Yhdistetään...</string>
+    <!-- Activation end -->
+
+
+    <!-- Notification start -->
+    <string name="STR_NMS_NEW_MSG_TITLE">Uusi iSMS-viesti</string>
+    <string name="STR_NMS_NEW_SMG_CONTENT">%d lukematon viesti</string>
+    <!-- Notification End -->
+
+    <string name="STR_NMS_MSG_DUMPER_MSG_SMS">Tekstiviesti</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_MMS">Pikaviesti</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_IP">IP-viesti</string>
+    <string name="STR_NMS_MSG_DUMPER_SEND_MSG">Lähetti %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_RECEIVE_MSG">Vastaanotti %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TIME">Aika: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TEXT">Teksti</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_PIC">Kuva</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_SKETCH">Luonnos</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VOICE">Ääni</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VIDEO">Video</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CALENDAR">Kalenteri</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION_IMG">Sijainnin kuva</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VCARD">Vcard</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION">Sijainti</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CAPTION">Kuvateksti: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_URL">Url: </string>
+    <string name="STR_NMS_MSG_DUMPER_DURATION">Kesto: </string>
+    <string name="STR_NMS_MSG_DUMPER_COORDINATE">Koordinaatti: </string>
+    <string name="STR_NMS_MSG_DUMPER_ADDRESS">Osoite: </string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_SENDER">Lähettäjä: </string>
+    <string name="STR_NMS_MSG_DUMPER_NORMAL_DETAIL">Istunnon tiedot:</string>
+    <string name="STR_NMS_MSG_DUMPER_NAME">Nimi: </string>
+    <string name="STR_NMS_MSG_DUMPER_NUMBER">Numero: </string>
+    <string name="STR_NMS_MSG_DUMPER_PORTRAIT">Omakuva</string>
+    <string name="STR_NMS_MSG_DUMPER_MULTI_SEND_DETAIL">Lähetys:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_DETAIL">Ryhmäkeskustelu:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_CREATER">Luoja: </string>
+    <string name="STR_NMS_MSG_DUMPER_MEMBERS">Jäsenet: </string>
+    <string name="STR_NMS_MSG_DUMPER_VCARD_NAME">Nimi: </string>
+    <string name="STR_NMS_MSG_DUMPER_CALENDAR_SUMMARY">Yhteenveto: </string>
+
+    <!-- Chat Settings -->
+    <string name="STR_NMS_CHAT_SETTING_TITLE">Keskustelun asetukset</string>
+    <string name="STR_NMS_DISPLAY">Näyttö</string>
+    <string name="STR_NMS_CHAT_WALLPAPER">Keskustelun taustakuva</string>
+    <string name="STR_NMS_SYS_WALLPAPER">Valitse taustakuva</string>
+    <string name="STR_NMS_CAMEARPHOTO">Ota valokuva</string>
+    <string name="STR_NMS_SYS_GALLERY">Valitse Galleriasta</string>
+    <string name="STR_NMS_DEFAULT_WALLPAPER">Oletus</string>
+    <string name="STR_NMS_NOTIFICATION_CATEGORY">Ilmoitus</string>
+    <string name="STR_NMS_NOTIFICATION_TITLE">iSMS-ilmoitus</string>
+    <string name="STR_NMS_NOTIFICATION_CONTENT">Näytä, kun ilmoitukset vastaanotetaan</string>
+    <string name="STR_NMS_MUTE">Mykistä</string>
+    <string name="STR_NMS_MUTE_OFF">Pois päältä</string>
+    <string name="STR_NMS_MUTE_1">Mykistä 1 tunniksi</string>
+    <string name="STR_NMS_MUTE_4">Mykistä 4 tunniksi</string>
+    <string name="STR_NMS_MUTE_8">Mykistä 8 tunniksi</string>
+    <string name="STR_NMS_RINGTONE_TITLE">Soittoääni</string>
+    <string name="STR_NMS_RINGTONE_CONTENT">Määritä soittoääni uusille ilmoituksille </string>
+    <string name="STR_NMS_VIBRATE_TITLE">Väristä</string>
+    <string name="STR_NMS_VIBRATE_CONTENT">Värise, kun ilmoitukset vastaanotetaan</string>
+    <string name="STR_NMS_ACTIONS">Toiminnot</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_TITLE">Lataa keskusteluhistoria</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_CONTENT">Tallenna SD-kortille zip-muodossa</string>
+    <string name="STR_NMS_EMAIL_HISTORY_TITLE">Lähetä keskusteluhistoria sähköpostilla</string>
+    <string name="STR_NMS_EMAIL_HISTROY_CONTENT">Lähetä keskusteluhistoria zip-muodossa</string>
+    <string name="STR_NMS_CLEAR_HISTROY">Tyhjennä keskusteluhistoria</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_DLG">Ladataan...</string>
+    <string name="STR_NMS_DOWNLOAD_OK">Keskusteluhistorian lataus on valmis, tallenna %s</string>
+    <string name="STR_NMS_DOWNLOAD_ERROR">Virhe keskusteluhistorian latauksessa.</string>
+    <string name="STR_NMS_DOWNLOAD_EMPTY">Ei mitään ladattavaa.</string>
+    <string name="STR_NMS_CLEARING">Historiaa tyhjennetään, odota...</string>
+    <string name="STR_NMS_WAIT_SAVE_WALLPAPER">Taustakuvaa tallennetaan, odota...</string>
+    <string name="STR_NMS_SAVE_WALLPAPER_OK">Taustakuvan tallennus onnistui.</string>
+    <string name="STR_NMS_CLEARDONE">Historian tyhjennys valmis.</string>
+    <string name="STR_NMS_SVAE_TITLE">Tallenna SD-kortille</string>
+    <string name="STR_NMS_SAVE_CONTENT">Tallenna tämä keskusteluketju SD-kortille zip-tiedostona</string>
+    <string name="STR_NMS_EMAIL_TITLE">Jaa sähköpostin kautta</string>
+    <string name="STR_NMS_EMAIL_CONTENT">Jaa tämä keskusteluketju liitteenä sähköpostin kautta zip-muodossa.</string>
+
+    <!-- Chat Settings End -->
+
+
+    <!-- Profile Settings -->
+    <string name="STR_NMS_PROFILE_TITLE">Profiili</string>
+    <string name="STR_NMS_TAP_AVATAR_TIP">Muokkaa profiilikuvaa napsauttamalla</string>
+    <string name="STR_NMS_DISPLAY_NAME_TIP">NÄYTTÖNIMI</string>
+    <string name="STR_NMS_ACCOUNT_TIP">ISMS-TILI</string>
+    <string name="STR_NMS_NO_APP">Sovellukset eivät voi suorittaa tätä toimintoa.</string>
+    <string name="STR_NMS_NO_NAME">Määritä nimesi</string>
+    <string name="STR_NMS_SAVE_AVATAR_FAILD">Pahoittelut, profiilikuvasi tallennus epäonistui.</string>
+    <string name="STR_NMS_INPUT_NAME">Nimi</string>
+    <string name="STR_NMS_TERM_WARN_ACTIVATE">Tämä ominaisuutta tuetaan vain iSMS-palvelulla.\n\niSMS on ilmainen pikaviestityspalvelu, jonka avulla voit keskustella ja jakaa multimediasisältöä ystäviesi kanssa milloin ja missä tahansa Internet-yhteyden välityksellä (Wi-Fi, 2G/3G, jne.).\nKun iSMS aktivoidaan ensimmäisen kerran, se lähettää automaattisesti tekstiviestin, jonka avulla rekisteröinti voidaan suorittaa loppuun. Tekstiviestimaksu saatetaan periä.\n\n Käyttäjäsopimus\n</string>
+    <string name="STR_NMS_TERM_WARN_WELCOME">iSMS on ilmainen pikaviestityspalvelu, jonka avulla voit keskustella ja jakaa multimediasisältöä ystäviesi kanssa milloin ja missä tahansa Internet-yhteyden välityksellä (Wi-Fi, 2G/3G, jne.).\nKun iSMS aktivoidaan ensimmäisen kerran, se lähettää automaattisesti tekstiviestin, jonka avulla rekisteröinti voidaan suorittaa loppuun. Tekstiviestimaksu saatetaan periä.\n\n Käyttäjäsopimus\n</string>
+    <string name="STR_NMS_TERM_KEY">Käyttöehdot</string>
+    <string name="STR_NMS_AGREE_AND_CONTINUE">Hyväksy ja jatka</string>
+    <string name="STR_NMS_ACTIVE_BNT">Aktivoi</string>
+    <string name="STR_NMS_SET_PROFILE_OK">Proofili määräitetty onnistuneesti</string>
+    <string name="STR_NMS_SET_PROFILE_FAIL">Profiilin määrittäminen epäonnistui</string>
+    <string name="STR_NMS_ILLEGAL_PROFILE_NAME">Luvaton nimi</string>
+    <string name="STR_NMS_NO_ACTIVITED">SIM-korttia ei aktivoitu tai otettu käyttön.</string>
+    <!-- Profile Settings End -->
+
+
+    <!-- Term Activity -->
+    <string name="STR_NMS_REJECT">Hylkää</string>
+    <string name="STR_NMS_AGREE">Hyväksy</string>
+    <string name="STR_NMS_TERM_TITLE">Käyttöehdot</string>
+    <string name="STR_NMS_TERM_CONTENT">Ymmärrät, että palvelu ja palvelun sisältämä ohjelmisto saattavat sisältää tietoturvaosia, jotka sallivat digitaalisten materiaalien suojauksen, Näiden materiaalien käyttö on AF PushMail - ja/tai sellaisten sisällöntarjojien käyttöehtojen alainen, jotka tarjoavat sisältöä palveluun. Et saa yrittää korvata tai kiertää mitään palvelun sisältämiä käyttösääntöjä. Kaikki palvelun tarjoamien materiaalien, osittain tai kokonaan, kopiointi, julkaisu tai lisäjakelu tai julkinen esittäminen on ehdottomasti kielletty.</string>
+    <!-- Term Activity End -->
+
+
+    <!-- System Settings -->
+    <string name="STR_NMS_SYS_SETTING_TITLE">iSMS-viesti</string>
+    <string name="STR_NMS_SETTINGS_TITLE">PROFIILI</string>
+    <string name="STR_NMS_PREFERENCE_CATE">OMINAISUUDET</string>
+    <string name="STR_NMS_SEND_SMS_TITLE">Lähetä tekstiviestinä</string>
+    <string name="STR_NMS_SEND_SMS_CONTENT">Lähetä tekstiviestinä, kun iSMS ei ole käytössä. Palveluntarjoaja saattaa periä maksut viestityksestä. Tämä sääntö ei koske ryhmäkeskustelua</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_TITLE">Automaattimen lataus</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_CONTENT">Lataa automaattisesti multimediaobjekteja</string>
+    <string name="STR_NMS_CAPTION_TITLE">Kuvatekstit</string>
+    <string name="STR_NMS_CAPTION_CONTENT">Jaa tiedosto kuvatekstien kanssa</string>
+    <string name="STR_NMS_SYSTEM_CATE">JÄRJESTELMÄ</string>
+    <string name="STR_NMS_UPDATE_TITLE">Ohjelmistopäivitys</string>
+    <string name="STR_NMS_UPDATE_CONTENT">Edellinen tarkistus: Ei koskaan </string>
+    <string name="STR_NMS_NETWORK_USAGE_TITLE">Verkon käyttö</string>
+    <string name="STR_NMS_NETWORK_USAGE_CONTENT">Näytä lähetettyjen/vastaanotettujen datakäyttö yhteensä</string>
+    <string name="STR_NMS_NETWORK_DLG_CONTENT">Lähetetty: %1$.3f K \nVastaanotettu: %2$.3f K\nEdellinen palautus: %3$s</string>
+    <string name="STR_NMS_VERSION_TITLE">Versio</string>
+    <string name="STR_NMS_NEVER_CLEAR">Ei koskaan </string>
+    <string name="STR_NMS_RESET">Palauta</string>
+    <string name="STR_NMS_SWITCH_ON">PÄÄLLÄ</string>
+    <string name="STR_NMS_SWITCH_OFF">POIS PÄÄLTÄ</string>
+    <string name="STR_NMS_SYSTEM_SETTING_TITLE">Asetukset</string>
+    <string name="STR_NMS_COPYRGIHT">Hesine Technologies, Inc.</string>
+    <string name="STR_NMS_ABOUT">Tietoja iSMS-sovelluksesta</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_TITLE">Näytä Luettu-tila</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_CONTENT">Näytä luettu-tila viestiluettelossa</string>
+    <string name="STR_NMS_SHOW_REMIND_TITLE">Näytä muistutukset</string>
+    <string name="STR_NMS_SHOW_REMIND_CONTENT">Näytä iSMS-muistutukset keskustelunäytöllä</string>
+    <string name="STR_NMS_MENU_RESET_SETTING">Palauta oletusasetukset</string>
+    <string name="STR_NMS_MENU_FUNCTION_INTRODUCTION">Ominaisuudet</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT">Käyttäjäsopimus</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION">Copyright</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT_TITLE">HESINE iSMS-KÄYTTÄJÄN KÄYTTÖOIKEUSSOPIMUS</string>
+    <string name="STR_NMS_MENU_FUNCTION">Ominaisuusluettelo</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION_DETAIL">\nHesine Technologies Inc.\nCopyright© 2008-2013\nKaikki oikeudet pidätetään.\n</string>
+    <!-- System Settings End -->
+
+
+    <!-- Caption Settings -->
+    <string name="STR_NMS_AUDIO_TITLE">Ääni</string>
+    <string name="STR_NMS_VIDEO_TITLE">Videot</string>
+    <string name="STR_NMS_PHOTO_TITLE">VAlokuvat</string>
+    <!-- Caption Settings End -->
+
+
+    <!-- Map String start -->
+    <string name="STR_NMS_MAP_TITLE">Jaa sijainti</string>
+    <string name="STR_NMS_MAP_PROMPT">Karttaa ei voida näyttää, koska sijaintiasi ei ole kytketty päälle. Osoite alla on arviointi matkapuhelintietojesi perusteella. \nJos haluat tarkempia sijaintipalveluita, on suositeltavaa kytkeä päälle sijaintipalvelu.</string>
+    <string name="STR_NMS_MAP_NOTE_1">Ota Oman sijainnin lähde käyttöön järjestelmäasetuksissa</string>
+    <string name="STR_NMS_MAP_SHARE">Jaa</string>
+    <string name="STR_NMS_MAP_SETTINGS">Asetukset</string>
+    <string name="STR_NMS_MAP_OK">OK</string>
+    <string name="STR_NMS_MAP_CANCEL">Peruuta</string>
+    <string name="STR_NMS_MAP_EDIT">Muokkaa sijaintia</string>
+    <string name="STR_NMS_MAP_SEARCH_HINT">Hae lähistöllä olevia paikkoja</string>
+    <string name="STR_NMS_MAP_WAIT">Odota...</string>
+    <string name="STR_NMS_MAP_EDIT_LIMIT">Tullomerkit ovat saavuttaneet rajan</string>
+    <string name="STR_NMS_MAP_ADDR_LEN">Osoite on liian pitkä</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR_LOCATING">Etsitään nykyistä sijaintiasi...</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN_LOCATING">Etsitään PIN-paikkaasi...</string>
+    <string name="STR_NMS_MAP_LINEONE_SEARCH_LOCATING">Etsitään hakupaikkaasi...</string>
+    <string name="STR_NMS_MAP_LINETHREE_NEARBY_LOCATING">Hae lähistöllä olevia paikkoja...</string>
+    <string name="STR_NMS_MAP_LINEONE_FAILED">Sijaintisi ei ole nyt käytettävissä</string>
+    <string name="STR_NMS_MAP_LINETWO_FAILED">Varmista, että sijiantipalvelusi on kytketty päälle ja verkko on käytettävissä.</string>
+    <string name="STR_NMS_MAP_LINETHREE_FAILED">Lähistölllä oleiva paikkoja ei löydy</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR">Jaa nykyinen sijainti</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN">Jaa PIN-paikka</string>
+    <string name="STR_NMS_MAP_MY_LOCATION">Oma sijainti</string>
+    <string name="STR_NMS_MAP_SEARCH">Etsi</string>
+    <string name="STR_NMS_MAP_ERROR_1">Leveys- ja pituusasteiden saanti ei onnistu</string>
+    <string name="STR_NMS_MAP_ERROR_2">Google-palvelimet palauttavat virheen</string>
+    <!-- Map String end -->
+
+
+    <!-- All Media String start -->
+    <string name="STR_NMS_ALL_MEDIA_TITLE">Kaikki välineet</string>
+    <string name="STR_NMS_ALL_MEDIA_WAIT">Odota...</string>
+    <string name="STR_NMS_ALL_MEDIA_ERROR">Lataus epäonnistui, yritä myöhemmin uudelleen</string>
+    <string name="STR_NMS_ALL_MEDIA_EMPTY">Tyhjä</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_WEEK">Tämä viikko</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_MONTH">Tämä kuukausi</string>
+    <string name="STR_NMS_ALL_MEDIA_JAN">Tammikuu</string>
+    <string name="STR_NMS_ALL_MEDIA_FEB">Henlmikuu</string>
+    <string name="STR_NMS_ALL_MEDIA_MAR">Maaliskuu</string>
+    <string name="STR_NMS_ALL_MEDIA_APR">Huhtikuu</string>
+    <string name="STR_NMS_ALL_MEDIA_MAY">Toukokuu</string>
+    <string name="STR_NMS_ALL_MEDIA_JUN">Kesäkuu</string>
+    <string name="STR_NMS_ALL_MEDIA_JUL">Heinäkuu</string>
+    <string name="STR_NMS_ALL_MEDIA_AUG">Elokuu</string>
+    <string name="STR_NMS_ALL_MEDIA_SEPT">Syyskuu</string>
+    <string name="STR_NMS_ALL_MEDIA_OCT">Lokakuu</string>
+    <string name="STR_NMS_ALL_MEDIA_NOV">Marraskuu</string>
+    <string name="STR_NMS_ALL_MEDIA_DEC">Joulukuu</string>
+    <string name="STR_NMS_ADDCONTACT">Lisää kontakti</string>
+    <string name="STR_NMS_ADD_PHONE_CONTACT">Lisätäänkö \&quot;%1$s\&quot; kontakteihin?</string>
+    <string name="STR_NMS_DELETE_MEDIA">Tietovälinen poistetaan, jatketaanko?</string>
+    <string name="STR_NMS_MEDIA_SHARE_MESSAGE">%1$s jakoi kohteessa %2$s</string>
+
+    <!-- All Media String end -->
+
+
+    <!-- All Locations String start -->
+    <string name="STR_NMS_ALL_LOCATIONS_TITLE">Kaikki sijainnit</string>
+    <string name="STR_NMS_ALL_LOCATIONS_LOC">Sijainti</string>
+    <string name="STR_NMS_ALL_LOCATIONS_WAIT">Odota...</string>
+    <!-- All Locations String end -->
+
+
+    <!-- Sketch -->
+    <string name="STR_NMS_SKETCH_TITLE">Piirrä luonnos</string>
+    <string name="STR_NMS_REDO">Tee uudelleen</string>
+    <string name="STR_NMS_UNDO">Kumoa</string>
+    <string name="STR_NMS_SKETCH_CUSTOM">Mukauta</string>
+    <string name="STR_NMS_PEN_SIZE">Koko</string>
+    <string name="STR_NMS_SKETCH_TOOLS_PEN">Kynä</string>
+    <string name="STR_NMS_SKETCH_TOOLS_ERASER">Kumi</string>
+    <string name="STR_NMS_SKETCH_CUSTOM_COLOR">Mukauta väri</string>
+    <string name="STR_NMS_CLEAR_SKETCH_TITLE">Tyhjennä luonnos</string>
+    <string name="STR_NMS_CLEAR_SKETCH_CONTENT">Haluatko tyhjentää tämän luonnoksen?</string>
+    <string name="STR_NMS_SIZE_SKETCH_TITLE">Koko</string>
+    <string name="STR_NMS_SIZE_SKETCH_MAX">72</string>
+    <string name="STR_NMS_SIZE_SKETCH_MIN">2</string>
+    <string name="STR_NMS_COLOR_SKETCH_TITLE">Väri</string>
+    <string name="STR_NMS_SKETCH_ERROR">Luonnoksen luominen epäonnistui.</string>
+    <string name="STR_NMS_BACK_TITLE">Vahvistus</string>
+    <string name="STR_NMS_FINISH_SKETCH_CONTENT">Haluatko lähteä luonnosten tekemisestä?</string>
+    <string name="STR_NMS_LEAVE_SKETCH_CONTENT">Haluatko varmasti jättää tämän luonnoksen?</string>
+    <string name="STR_NMS_NOTREDO">Ei ole mitään tehtävänä uudelleen</string>
+    <string name="STR_NMS_NOTUNDO">EI ole mitään kumottavana</string>
+    <string name="STR_NMS_SKETCH_DELETE">Tyhjennä</string>
+    <string name="STR_NMS_DISCARD">Ohita</string>
+
+    <!-- Sketch end -->
+
+
+    <!-- Selection Contact -->
+    <string name="STR_NMS_DONE">OK</string>
+    <string name="STR_NMS_SELECTALL">Valitse kaikki</string>
+    <string name="STR_NMS_DESELECTED">Poista valinta kaikista</string>
+    <string name="STR_NMS_SELECTED">%1$s valittu</string>
+    <string name="STR_NMS_CONTACT_SEARCH">Etsi kontakteja</string>
+    <string name="STR_NMS_SEARCH">Etsi</string>
+    <string name="STR_NMS_CONTACT_SELECT">Valitse kontakti</string>
+    <string name="STR_NMS_SELECT_MEMBER_FULL">Liian monta kontaktia valittu</string>
+    <string name="STR_NMS_SELECT_MEMBER_EMPTY">EI kontakteja valittu</string>
+    <string name="STR_NMS_SELECT_CONTAT_WAIT">Odota...</string>
+    <string name="STR_NMS_SELECT_CONTAT_EMPTY">Ei iSMS-kontakteja</string>
+    <string name="STR_NMS_SELECT_NO_RESULT">Ei löytynyt mitään</string>
+    <string name="STR_NMS_EMPTY">EI kontakteja</string>
+    <string name="STR_NMS_ALL_CONTACTS">KAIKKI</string>
+    <string name="STR_NMS_GROUPS_MEM"> %1$s jäsentä</string>
+    <string name="STR_NMS_GROUPS_CONTACTS">KAIKKI RYHMÄT</string>
+    <!-- Selection Contact end -->
+
+    <!-- Group chat -->
+    <string name="STR_NMS_CREATE_GROUP_TITLE">Luo ryhmä</string>
+    <string name="STR_NMS_GROUP_INFO_TITLE">Ryhmätiedot</string>
+    <string name="STR_NMS_EDIT_GROUP_TITLE">Muokkaa ryhmää</string>
+    <string name="STR_NMS_SELECT_ACTION_TITLE">Valitse toiminto</string>
+    <string name="STR_NMS_ADD_TO_BOOKMARK">Lisää kirjanmerkkeihin</string>
+    <string name="STR_NMS_ADD_TO_CONTACTS">Lisää \&quot;%1$s\&quot; kontakteihin</string>
+    <string name="STR_NMS_GROUP_NAME">RYHMÄN NIMI</string>
+    <string name="STR_NMS_GROUP_INFO">RYHMÄN TIEDOT</string>
+    <string name="STR_NMS_GROUP_MEMBERS">RYHMÄN JÄSENET</string>
+    <string name="STR_NMS_GROUP_NAME_HIT">Ryhmän nimi</string>
+    <string name="STR_NMS_GROUP_NAME_EMPTY">Ryhmän nimi on tyhjä</string>
+    <string name="STR_NMS_CONFIRM_LEAVE_TITLE">Lähde tästä ryhmästä</string>
+    <string name="STR_NMS_LEAVE_GROUP_CONTENT">Haluatko lähteä tästä ryhmästä?</string>
+    <string name="STR_NMS_LEAVE_GROUP_SUCCESS">Lähtö tästä ryhmästä onnistui</string>
+    <string name="STR_NMS_LEAVE_GROUP_FAILED">Tästä ryhmästä lähteminen ei onnistunut</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_SUCCESS">Ryhmän nimen päivitys onnistui</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_SUCCESS">Uusi ryhmän jäsen lisätty</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_FAILED">Ryhmän jäsenen lisääminen epäonnistui</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_FAILED">Ryhmän nimen päivitys epäonnistui</string>
+    <string name="STR_NMS_CREATE_GROUP_NAME_FAILED">Ryhmäkeskustleun luonti epäonnistui</string>
+    <string name="STR_NMS_DELETE_GROUP_MEMBER_FAILED">Ryhmän jäsenen poisto epäonnistui</string>
+    <string name="STR_NMS_UPDATE_GROUP_SUCCESS">Ryhmän tietojen päivitys onnistui</string>
+    <string name="STR_NMS_UPDATE_GROUP_FAILED">Ryhmän tieotjen päivitys epäonnistui</string>
+    <string name="STR_NMS_GROUP_CHAT_BACK">Haluatko hylätä tämän toiminnon?</string>
+    <string name="STR_NMS_GROUP_MEMEBER_YOU">SINÄ</string>
+    <string name="STR_NMS_GROUP_INVITE_MORE">Kutsu lisää</string>
+    <string name="STR_NMS_LEAVE_GROUP">Lähde</string>
+    <string name="STR_NMS_CHAT">Keskutele</string>
+    <string name="STR_NMS_CONFIRM_REMOVE_TITLE">Poista ryhmän jäsenluettelosta</string>
+    <string name="STR_NMS_REMOVE_OK">Poista</string>
+    <string name="STR_NMS_REMOVE_CANCEL">Peruuta</string>
+    <string name="STR_NMS_REMOVE_CONTENT">Haluatko poistaa tästä luettelosta?</string>
+    <string name="STR_NMS_VIEW_ALL_MEDIA">Näytä kaikki tietovälineet</string>
+    <string name="STR_NMS_VIEW_ALL_LOCATIONS">Näytä kaikki sijainnit</string>
+    <string name="STR_NMS_CHAT_SETTINGS">Keskustelun asetukset</string>
+    <string name="STR_NMS_VIEW_GROUP_FAILED">Olet lähtenyt tästä ryhmäkeskustelusta</string>
+    <string name="STR_NMS_VIEW_HISTORY">Näytä ryhmän historia</string>
+    <string name="STR_NMS_ISMS_ENABLE_TITLE">iSMS ota käyttöön</string>
+    <string name="STR_NMS_ISMS_ENABLE_CONTENT">Tämä ominaisuutta tuetaan vain iSMS-palvelulla Otetaanko iSMS-tili nyt käyttöön?</string>
+    <string name="STR_NMS_ENABLE">Ota käyttöön</string>
+    <string name="STR_NMS_LATER">Ohita</string>
+    <string name="STR_NMS_SWITCH_TITLE">SIM-kortin vaihto</string>
+    <string name="STR_NMS_SWITCH_MESSAGE">Ryhmäkeskustelua tuetaan vain, kun iSM-palvelu aktivoidaan, mutta nykyistä SIM-korttia ei ole aktivoitu. Vaihdetaan aktivoituun SIM-korttiin?</string>
+    <string name="STR_NMS_SWITCH_EDIT_MESSAGE">Nykyistä SIM-korttia ei ole liitetty tähän ryhmään. Vaihdetaan toiseen SIM-korttiin?</string>
+    <string name="STR_NMS_LEAVE_GROUP_NOTICE">Olet lähtenyt tästä ryhmästä etkä voi liittyä ryhmäkeskusteluun ellei sinua kutsuta uudelleen.</string>
+    <string name="STR_NMS_LOSE_SIM_NOTICE">Alkuperäinen SIM-kortit on poistettu, voit keskustella tässä ryhmässä vain alkuperäisellä SIM-kortilla.</string>
+    <string name="STR_NMS_SWITCH">Vaihda</string>
+
+    <!-- Group chat end -->
+
+
+    <!-- chat details screen long press item start -->
+    <string name="STR_NMS_LONG_PRESS_TITLE">Viestin asetukset</string>
+    <string name="STR_NMS_SEND_VIA_TEXT">Lähetän tekstiviestin kautta</string>
+    <string name="STR_NMS_TRY_AGAIN">Yritä uudelleen</string>
+    <string name="STR_NMS_TRY_ALL_AGAIN">Yritä kaikkea uudelleen</string>
+    <string name="STR_NMS_CONTINUE_TRY">Jatka yrittämistä</string>
+    <string name="STR_NMS_COPY">Kopioi</string>
+    
+    <string name="STR_NMS_FORWARD">Välitä eteenpäin</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_TITLE">Lataa</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD">Jos haluat lähettä iSMS:n eteenpäin, sinun täytyy ensin ladata mediasisältö.</string>
+    <string name="STR_NMS_FORWARD_CONTIUE">Jatka</string>
+    <string name="STR_NMS_FORWARD_FAILED">Välittäminen eteenpäin epäonnistui.</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_MULTI">Jos haluat välittää eteenpäin useita, lataa ensin  iSMS.</string>
+    <string name="STR_NMS_FORWARD_SOME_FAILED">Osa iSMS välittämisestä eteenpäin epäonnistui.</string>
+    <string name="STR_NMS_FORWARD_ALL_FAILED">Lataus epäonnistui, usean välittäminen eteenpäin ohitettiin</string>
+    
+    <string name="STR_NMS_SEND_VIA_MULTIMEDIA">Lähetä MMS:n kautta</string>
+    <string name="STR_NMS_SHARE">Jaa</string>
+    <string name="STR_NMS_DELETE">Poista</string>
+    <string name="STR_NMS_FLAG_IMPORTANT">Merkitse tärkeäksi</string>
+    <string name="STR_NMS_REMOVE_IMPORTANT">Poista tärkeä merkki</string>
+    <string name="STR_NMS_SAVE_IN_SDCARD">Vie SD-kortille</string>
+    <string name="STR_NMS_SAVE_FILE">Tiedosto tallennetaan kohteeseen %1$s</string>
+    <string name="STR_NMS_SHARE_TITLE">Tapa jakaa</string>
+    <string name="STR_NMS_VIEW_DETAILS">Näytä tiedot</string>
+    <string name="STR_NMS_VIEW_DETAILS_TITLE">Viestin tiedot</string>
+    <string name="STR_NMS_SEND_MSG_DETAILS">Tyyppi: IP-viesti\nlähetetty: %1$s</string>
+    <!-- chat details screen long press item end -->
+
+
+    <!-- chat details screen delete item start -->
+    <string name="STR_NMS_DELETE_TITLE">Poista</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_TITLE">Poista tärkeä viesti</string>
+    <string name="STR_NMS_DELETE_WARNING">Viesti poistetaan.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_WARNING">Haluatko varmasti poistaa tämän tärkeän viestin?</string>
+    <string name="STR_NMS_DELETE_MSG">Valitut viestit poistetaan.</string>
+    <string name="STR_NMS_DELETE_WAITTING">Poistetaan</string>
+    <string name="STR_NMS_CLEAR_HISTORY_CONTENT">Kaikki keskusteluhistoria poistetaan tästä keskusteluhuoneesta</string>
+    <string name="STR_NMS_DELETE_IMPORTANT">Sisällytä tärkeiksi merkityt viestit</string>
+    <!-- chat details screen delete item end -->
+
+
+    <!-- chat details actionBar option start -->
+    <string name="STR_NMS_MENU_CALL">Soita</string>
+    <string name="STR_NMS_MENU_GROUPINFO">Ryhmätiedot</string>
+    <string name="STR_NMS_MENU_INVITE_CHAT">Kutsu ystäviä keskusteluun</string>
+    <string name="STR_NMS_MENU_INVITE_ISMS">Kutsu ystäviä käyttämään iSMS-sovellusta</string>
+    <string name="STR_NMS_MENU_SELECT_MSG">Valitse viesti</string>
+    <string name="STR_NMS_MENU_MARK_SPAM">Siirrä roskapostiluetteloon</string>
+    <string name="STR_NMS_MENU_REMOVE_SPAM">Poista roskapostiluettelosta</string>
+    <string name="STR_NMS_MENU_ADD_SHORTCUT">Lisää pikakuvake</string>
+    <string name="STR_NMS_MENU_VIEW_ALLMEDIA">Näytä kaikki tietovälineet</string>
+    <string name="STR_NMS_MENU_VIEW_ALLLOCATION">Näytä kaikki sijainnit</string>
+    <string name="STR_NMS_MENU_EDIT_GROUP">Muokkaa ryhmää</string>
+    <string name="STR_NMS_MENU_CHAT_SETTING">Keskustelun asetukset</string>
+    <string name="STR_NMS_MENU_INSERT_QUICK_TEXT">Lisää pikateksti</string>
+    <string name="STR_NMS_MENU_CLEAR_HISTORY">Tyhjennä keskusteluhistoria</string>
+    <string name="STR_NMS_MENU_LEAVE_GROUP">Lähde tästä ryhmästä</string>
+    <string name="STR_NMS_MENU_DISCARD">Ohita</string>
+    <string name="STR_NMS_MENU_DELETE">Poista</string>
+    <string name="STR_NMS_MENU_IMPORTANT">Merkitse tärkeäksi</string>
+    <string name="STR_NMS_MENU_FORWARD">Välitä eteenpäin</string>
+    <!-- chat details actionBar option end -->
+
+
+    <!-- chat details share item start -->
+    <string name="STR_NMS_TAKE_PHOTO">Ota valokuva</string>
+    <string name="STR_NMS_RECORD_VIDEO">Nauhoita video</string>
+    <string name="STR_NMS_DRAW_SKETCH">Piirrä luonnos</string>
+    <string name="STR_NMS_SHARE_CONTACT">Jaa kontakti</string>
+    <string name="STR_NMS_CHOOSE_PHOTO">Valitse valokuva</string>
+    <string name="STR_NMS_CHOOSE_VIDEO">Valitse video</string>
+    <string name="STR_NMS_RECORD_AUDIO">Nauhoita audio</string>
+    <string name="STR_NMS_SHARE_LOCATION">Jaa sijainti</string>
+    <string name="STR_NMS_CHOOSE_AUDIO">Valitse ääni</string>
+    <string name="STR_NMS_SHARE_CALENDAR">Jaa kalenteri</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_TITLE">Lisää musiikkia</string>
+    <string name="STR_NMS_CHOOSE_RINGTONE_ITEM">Soittoääni</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_ITEM">Ääni</string>
+    <string name="STR_NMS_INSERT_SDCARD">Lisää SD-kortti!</string>
+    <!-- chat details share item start -->
+
+
+    <!-- record audio start -->
+    <string name="STR_NMS_AUDIO_TIMER_FORMAT" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <string name="STR_NMS_AUDIO_LABLE">Lisää muistiinpanojen nauhoitin</string>
+    <string name="STR_NMS_RECORD_AUDIO_CONT">Nauhoita napauttamalla</string>
+    <string name="STR_NMS_PLAY_AUDIO_CONT">Toista napauttamalla</string>
+    <string name="STR_NMS_ACTION_SEND">Lähetä</string>
+    <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
+    <string name="audio_db_artist_name">Nauhoitukset</string>
+    <string name="audio_db_album_name">Ääninauhoitukset</string>
+    <!-- record audio end -->
+
+
+    <!-- chat & group details screen start -->
+
+    <string name="STR_NMS_UNREAD_FORMAT">%1$d lukemattomant viestit</string>
+    <string name="STR_NMS_NOT_DELIVERED_TITLE">Ei vielä toimitettu</string>
+    <string name="STR_NMS_FAILED_TITLE">Virhettä lähetetään</string>
+    <string name="STR_NMS_GROUP_SUBTITLE">%1$s, +%2$d</string>
+    <string name="STR_NMS_GROUP_DEAD_SUBTITLE">%1$s, +%2$d</string>
+    <string name="STR_NMS_SAVE_AS_DRAFT">Viesti tallennettu luonnoksena</string>
+    <string name="STR_NMS_NO_SD_TITLE">SD-kortin virhe</string>
+    <string name="STR_NMS_CANT_SHARE">SD-korttia ei voitu käyttää. Mitään multimediaan liittyviä viestejä ei voi tilapäisesti käyttää.\n\nTarkista SD-kortti ja yritä myöhemmin uudelleen.</string>
+    <string name="STR_NMS_CANT_SAVE">SD-korttia ei havaittu, tiedoston tallentaminen ei onnistunut</string>
+    <string name="STR_NMS_SDSPACE_NOT_ENOUGH">SD-korttille ei ole riittävästi tilaa, tiedoston tallentaminen ei onnistu</string>
+    <string name="STR_NMS_REAEND_ALL">Yritä kaikkea uudelleen</string>
+    <string name="STR_NMS_FILE_LIMIT">Liian suuri</string>
+    <string name="STR_NMS_LOAD_ALL_MESSAGE">Lataa kaikki viestit</string>
+    <string name="STR_NMS_DOWNLOAD_FAILED">Lataus epäonnistui</string>
+    <string name="STR_NMS_INPUT_HINT">Tulon sisältö</string>
+    <string name="STR_NMS_INPUT_HINT_ISMS">Kirjoita iSMS-viesti</string>
+    <string name="STR_NMS_CAPTION_HINT">Kirjoita kuvatekstit</string>
+    <string name="STR_NMS_PROTOCOL_SMS">Tekstiviesti</string>
+    <string name="STR_NMS_PROTOCOL_MMS">Pikaviesti</string>
+    <string name="STR_NMS_PROTOCOL_IP">iSMS</string>
+    <string name="STR_NMS_SWITCH_BOTTON">Vaihda SIM-kortti</string>
+    <string name="STR_NMS_TURN_ON_BOTTON">Kytke päälle</string>
+    <string name="STR_NMS_SWITCH_TEXT_FORMAT">Jos halaut jatkaa ryhmäkeskustelua, vaihda ensin kohteeseen %1$s..</string>
+    <string name="STR_NMS_ENABLE_TEXT_FORMAT">Jos haluat jatkaa ryhmäkeskustelua, kytke iSMS-palvelu ensin päälle %1$s SIM-kortilla.</string>
+    <string name="STR_NMS_REPLACE_ATTACH_TITLE">Vaihda liite</string>
+    <string name="STR_NMS_REPLACE_ATTACH_MSG">Liite on jo olemassa, korvataanko?</string>
+    <string name="STR_NMS_TRUNC_CAPTION">Kuvateksti on lyhennetty.</string>
+    <string name="STR_NMS_MAX_CHARACTERS_REACHED">Viestin koon rajoitus on saavutettu.</string>
+    <string name="STR_NMS_MAX_EMOTICON_REACHED">Hymiöiden määrän rajoitus saavutettu</string>
+    <string name="STR_NMS_ENABLE_PROCESS">Käsitellään...</string>
+    <string name="STR_NMS_ERR_FILE">Virheellinen tiedosto</string>
+    <string name="STR_NMS_SENDING_TEXT">Lähetetään...</string>
+    <!-- chat & group details screen end --> <!-- Error code tips -->
+    <string name="STR_NMS_ERR_GENERAL">Yleinen virhe</string>
+    <string name="STR_NMS_ERR_INVALID_ARGUMENT">Virheellinen argumentti</string>
+    <string name="STR_NMS_ERR_NETWORK_BLOCK">Verkko ei ole OK</string>
+    <string name="STR_NMS_ERR_PHONE_NOT_ACTIVATED">Ei aktivoitu</string>
+    <string name="STR_NMS_ERR_SIM_NOT_ACTIVATED">SIM-korttia ei olet aktivoitu</string>
+    <string name="STR_NMS_ERR_INVALID_MSG_DB_ID">Virheellinen viesti, tietokannan tunnus</string>
+    <string name="STR_NMS_ERR_ADD_MSG_DB_FAILED">Tietokantaan lisääminen epäonnistui</string>
+    <string name="STR_NMS_ERR_UPDATE_MSG_DB_FAILED">Tietokannan päivittäminen epäonnistui</string>
+    <string name="STR_NMS_ERR_GET_MSG_DB_DATA_FAILED">Viestin noutaminen epäonnistui</string>
+    <string name="STR_NMS_ERR_INVALID_CONTACT_DB_ID">Virheellinen kontakti, tietokannan tunnus</string>
+    <string name="STR_NMS_ERR_ADD_CONTACT_DB_FAILED">Kontaktiin lisääminen epäonnistui</string>
+    <string name="STR_NMS_ERR_UPDATE_CONTACT_DB_FAILED">Kontantkin lisääminen tietokantaan epäonnistui</string>
+    <string name="STR_NMS_ERR_GET_CONTACT_DB_DATA_FAILED">Kontaktin noutaminen tunnuksen avulla epäonnistui</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_ERROR_FORMAT">IP-viestin muoto on virheellinen</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_INVALID_TO">Virheellinen vastaanottaja</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_WITH_UNKNOWN_USER">Virheellinen tuntematon vastaanottajakäyttäjä</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_NO_MBMBER">Ryhmäkeskustelujäseniä ei ole</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_GCHAT_DEAD">Ryhmäkeskustelua ei aktivoida</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_INVALID_SIM_ID">Ryhmäkeskustelun SIM-kortti ei ole nykyinen SIM-kortti</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_FOR_SYS_MSG">Lähetä järjestelmäviesti uudelleen</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_INVALID_STATUS">IP-viesti ei ole valmis</string>
+    <string name="STR_NMS_ERR_GCHAT_IS_DEAD">Tämä ryhmäkeskustelu ei ole siellä enää</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBERS">Virheellisiä ryhmäjäseniä</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBER_WITH_SELF">Ryhmän luonti epäonnistui Jäsenet eivät sisällä sinua</string>
+    <string name="STR_NMS_ERR_GCHAT_EXCEED_MAX_MEMBER_COUNT">Number of group members reaches the limit</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_NAME">Virheellinen ryhmäkeskustelun nimi</string>
+    <string name="STR_NMS_ERR_GCHAT_SIM_IS_NOT_ACTIVATED">Ryhmäkeskustelun SIM-korttia ei ole aktivoitu</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_NOT_INBOX_MSG">Lataus-URL:n lataus epäonnistui</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_INVALID_URL">Virheellinen lataus-URL</string>
+    <string name="STR_NMS_ERR_GET_ATTACH_NAME_INVALID_BODY_FORMAT">Lataustiedoston nimen saanti epäonnistui</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_INVALID_FILE_NAME">Virheellinen tiedoston nimen lataus</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_EXIST">Lataustiedostoa ei ole olemassa</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_INBOX_MSG">Lataustiedoston määrittäminen epäonnistui</string>
+    <string name="STR_NMS_ERR_SIM_INFO_NOT_FOUND">SIM-kortin tiedoja ei löytynyt</string>
+    <string name="STR_NMS_ERR_SIM_IN_INVALID_STATUS">Virheellinen SIM-kortin tila</string>
+    <string name="STR_NMS_ERR_CMD_PROCESSING">Järjestelmä on varattu eikä se voi käsitellä järjestelmän konfigurointikomentoa</string>
+    <string name="STR_NMS_ERR_CMD_GENERAL">Yleinen järjestelmän konfigurointivirhe</string>
+    <string name="STR_NMS_ERR_CODE_END">Tuntemanton virhekoodi</string>
+    <!-- Error code tips -->
+    <string name="STR_NMS_SEND_MMS_QUERY_TITLE">Varoitus</string>
+    <string name="STR_NMS_SEND_MMS_QUERY">Vastaanottaja ei ole iSMS-käyttäjä, lähetetty MMS:llä?</string>
+    <!-- Service center start -->
+    <string name="STR_NMS_SERVICE_TITLE">iSMS-palvelukeskus</string>
+    <string name="STR_NMS_INTRODUCTION">iSMS-ohjelman avulla voit välittömästi ilmaisia viestejä ja ja pitää keskusyeluhistorian yhdessä paikassa. Paina yhtä painiketta, ja saat uuden kokemuksen!</string>
+    <string name="STR_NMS_TERMS">Käyttöehdot</string>
+    <string name="STR_NMS_ACTIVATION_BUTTON">Aktivointi nyt</string>
+    <string name="STR_NMS_LOSE_SDCARD">SIM-korttia ei havaita</string>
+    <!-- Service center end -->
+
+
+    <!-- conversation empty tips -->
+    <string name="STR_NMS_SPAM_EMPTY">Sinulla ei ole yhtään roskapostikeskustelua. \nSPAM kerää kaikki keskustelut, jotka on merkitty roskaposteiksi. Ilmoitukset kytketään oletuksena pois päältä. Tämä välttää sinulta tarpeettomat häiriöt. \n\nVoit merkitä lähettäjän roskapostin lähettäjäksi säilyttämällä keskustelun ja valitsemalla merkin roskapostikuvakkeeksi. Kun keskustelu merkitään roskapostiksi, ilmoitus pois päältä -kuvake näytetään automaattisesti ja keskustelu sijoitetaan sinne.</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_FROM">+86123456789</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_SUBJECT">Tämä on esimerkki roskapostiviestistäsi.</string>
+    <string name="STR_NMS_GROUPCHAT_EMPTY">Sinulla ei ole yhtään ryhmäkeskustelua. \nRYHMÄKESKUSTELUSSA kerätään kaikki ryhmäkeskusteluviestit, jotka olet luonut ja joihin olet liittynyt. Näin voit löytää ja hallita ryhmäkeskusteluja helposti. \n\nVoit luoda ryhmäkeskustelun napauttamalla Luo ryhmäkeskustelu -painiketta tämän näytön alaosassa ja kutsua ystäviäsi liittymään ryhmään.</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_FROM">Ryhmän nimi</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_SUBJECT">Ystäväsi:\nPidän ryhmäkeskusteluominaisuudesta!</string>
+    <string name="STR_NMS_IMPORTANT_EMPTY">Sinulla ei ole yhtään tärkeää keskustelua. \nIMPORTANT kerää kaikki viestit, jotka on merkitty tärkeiksi. Tämän avulla voi löytää helposti tärkeät viestit. \n\nVoit merkitä viestin tärkeäksi pitämällä viestiä ja valitsemalla &quot;Merkitse tärkeäksi&quot; Asetus-valikosta. Kun viesti merkitään tärkeäksi, näet alla olevan kaltaisen punaisen lippukuvakkeen.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TITLE">Tämä on esimerkki viestistä, joka on merkitty tärkeäksi. Punainen lippu tulee näkyviin.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TIME">10:55 am</string>
+    <string name="STR_NMS_ALLCHAT_EMPTY">Ei keskusteluja</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_CONTENT">Jos haluat käyttää tätä ominaisuuta, sinun täytyy ensin aktivoida iSMS-palvelu. Älä unohda - jos et pidä palvelusta, voit aina kytkeä sen pois päältä Asetuksista. Yritä sitä nyt!</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_TITLE">Aktivoi iSMS</string>
+    <!-- conversation empty tips -->
+    
+    <string name="STR_NMS_CLEAR_USER_DATA">Datan tyhjennys onnistui</string>
+    
+    <!-- get file err start -->
+    <string name="STR_NMS_NO_SUCH_FILE">Ei tällaista tiedostoa</string>
+    <string name="STR_NMS_OVER_FILE_LIMIT">Tiedoston koko ylittää rajan</string>
+    <string name="STR_NMS_INVALID_FILE_TYPE">Ei tue tätä tyyppiä</string>
+    <!-- get file err end -->
+
+    <string name="STR_NMS_DELIVERY_BODY">%s vastaanotti viestin</string>
+    <string name="STR_NMS_SIM_SELECT_TITLE">Valitse SIM</string>
+    
+    <string name="STR_NMS_SHORTCUT_SUCCESS">Pikakuvake %1$s luotiin.</string>
+    <string name="STR_NMS_SHORTCUT_REFRESHING">Päivitetään</string>
+    
+    <string name="STR_NMS_DISABLE_FAILED">Toiminto epäonnistui, yritä uudelleen</string>
+    <string name="STR_NMS_ENABLE_FAILED">Toiminto epäonnistui, yritä uudelleen</string>
+    <string name="STR_NMS_ENABLE_SUCCESS">Olet aktivoinut onnistuneesti iSMS-palvelun.</string>
+    <string name="STR_NMS_DISABLE_SUCCESS">Olet poistanut onnistuneesti iSMS-palvelun aktivoinnin.</string>
+    
+	<string name="STR_NMS_SD_CARD_FULL">SD-kortti täysi</string>
+    <string name="STR_NMS_SEND_MSG_FAILED">Viestin lähetys epäonnistui!</string>
+    <string name="STR_NMS_SELECT_AUDIO">Valitse audio</string>
+    
+    <string name="STR_NMS_SETTING_COMMENT">iSMS on siisti keskusteluväline. Se on ilmainen ja käytännöllinen.Lue lisää</string>
+    <string name="STR_NMS_KNOW_MORE">Lue lisää</string>
+    <string name="STR_NMS_RECEIVED_MSG_DETAILS">Tyyppi: IP-viesti\nkohteesta: %1$s\nLähetetty: %2$s\nVastaanotettu: %3$s</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH_ADD">iSMS-palvelu on tilapäisesti poissa käytöstä puutteen vuoksi säilytystilaa.</string>
+    <string name="STR_NMS_SERVER_AUTO_ECHO_MSG">Viesti vastaanotettu. Kiitos!</string>   
+       
+    <string name="imsp_ip_message">iSMS-viesti</string>
+    <string name="imsp_invite_chat_frequently"><b>Keskusteletko usein %s kanssa?</b>\nMiksi et kutsuisi %s käyttämään iSMS-pikaviestitysohjelmaa ja samalla säästämään rahaa?</string>
+    <string name="imsp_enable_chat_frequently"><b>%s iSMS-palvelu on pois käytöstä!</b>\nMiksi et ota iSMS-palvelua käyttöön ja säästä rahaa?</string>
+    <string name="imsp_invite">Kutsu</string>
+    <string name="imsp_enable_notice">Haluatko varmasti ottaa iSMS-palvelun käyttöön?</string>
+    <string name="imsp_activate_chat_frequently"><b>Keskusteletko usein ystävien kanssa?</b>\nMiksi et aktivoisi iSMS-palvelua ja keskustelisi ilman SMS-maksuja?</string>
+    <string name="imsp_activate_note">Haluatko varmasti aktivoida iSMS:n?</string>
+    <string name="imsp_dismiss_content">Haluatko varmasti hylätä huomautuksen?</string>
+    <string name="imsp_divider_online">%s on verkossa</string>
+    <string name="imsp_divider_offline">Edellinen kerta verkossa %s</string>
+    <string name="imsp_divider_never_online">Ei koskaan verkossa</string>
+    <string name="imsp_failed_title">Lähetys epäonnistui</string>
+    <string name="imsp_resend_via_sms">Lähetä SMS sen sijaan</string>
+    <string name="imsp_resend_via_mms">Lähetä MMS sen sijaan</string>
+    <string name="imsp_typing_text">Kirjoitetaan</string>
+    <string name="imsp_save_attachment">Tallenna liite</string>
+    <string name="imsp_view">Näytä</string>
+    <string name="imsp_convert_to_mms">Muunna MMS-viestiksi.</string>
+    <string name="imsp_convert_to_sms">Muunna SMS-viestiksi.</string>
+    <string name="imsp_convert_to_isms">Muunna iSMS-viestiksi.</string>
+    <string name="imsp_convert_to_mms_for_service">iSMS-palvelu ei ole saatavilla tälle valitulle SIM-kortille. Tämä viesti voidaan lähettää vain MMS-viestinä tältä SIM-kortilta. Jatketaanko joka tapauksessa?</string>
+    <string name="imsp_convert_to_sms_for_service">iSMS-palvelu ei ole saatavilla tälle valitulle SIM-kortille. Tämä viesti voidaan lähettää vain SMS-viestinä tältä SIM-kortilta. Jatketaanko joka tapauksessa?</string>
+    <string name="imsp_convert_to_mms_for_recipients">Vastaanottaja ei ole iSMS-käyttäjä. Tämä viesti voidaan lähettää vain MMS-viestinä. Jatketaanko joka tapauksessa?</string>
+    <string name="imsp_convert_to_sms_for_recipients">Vastaanottaja ei ole iSMS-käyttäjä. Tämä viesti voidaan lähettää vain SMS-viestinä. Jatketaanko joka tapauksessa?</string>
+    <string name="imsp_sms_convert_to_isms">iSMS-palvelu on saatavilla tälle valitulle SIM-kortille. Jos haluat säästää SMS-hinnoissa, suosittelemme viestin vaihtamista iSMS-viestiksi. Vaihdetaanko nyt?</string>
+    <string name="imsp_mms_convert_to_isms">iSMS-palvelu on saatavilla tälle valitulle SIM-kortille. Jos haluat säästää MMS-hinnoissa, suosittelemme viestin vaihtamista iSMS-viestiksi. Vaihdetaanko nyt?</string>
+    <string name="imsp_keep_mms">Pidä MMS</string>
+    <string name="imsp_keep_sms">Pidä SMS</string>
+    <string name="imsp_resend_discard_message">Jos haluat lähettää viestin uudelleen, parhaillaan kirjoittamasi viesti hylätään.</string>
+    <string name="imsp_no_sim_card">Ei SIM-korttia!</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">&quot;Toimivaa Internet-yhteyttä ei löydy! Yritä myöhemmin uudelleen.&quot;</string>
+    <string name="imsp_chat_setting_updating">päivitetään...</string>
+    <string name="imsp_dialog_clear_title">Tyhjennä</string>
+    <string name="imsp_dialog_clear_description">Kaikki keskusteluhistoria poistetaan tästä keskusteluhuoneesta</string>
+    <string name="imsp_chat_setting_saving">tallennetaan...</string>
+    <string name="imsp_chat_setting_sending">lähetetään...</string>
+    <string name="imsp_save_chat_history_failed">tallennus epäonnistui</string>
+    <string name="imsp_send_chat_history_failed">Sähköposti epäonnistui</string>
+    <string name="imsp_conversation_list_all">Viestit</string>
+    <string name="imsp_conversation_list_important">Tärkeää</string>
+    <string name="imsp_conversation_list_group_chats">Ryhmä</string>
+    <string name="imsp_conversation_list_spam">Roskaposti</string>
+    <string name="imsp_mark_as_spam_tips">Roskapostiksi merkityt viestit siirtyvät roskapostiluetteloon ilmoitus kytketään automaattisesti pois päältä.</string>
+    <string name="imsp_typing">&quot;Kirjoitetaan...&quot;</string>
+    <string name="imsp_type_to_compose_text">&quot;Kirjoita SMS/iSMS-viesti&quot;</string>
+    <string name="imsp_no_sdcard">Ei SD-korttia</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">Jos lähetät kutsun, parhaillaan kirjoittamasi viesti hylätään.</string>
+    <string name="imsp_current_sim_enabled">Nykyinen SIM on käytössä.</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">Valitse SIM aktivoidaksesi iSMS:n</string>
+    <string name="imsp_activate_message">Tämä ominaisuutta tuetaan vain iSMS-palvelulla Aktivoidaanko iSMS-tilisi nyt?</string>
+    <string name="imsp_enable_message">Tämä ominaisuutta tuetaan vain iSMS-palvelulla Otetaanko iSMS-tili nyt käyttöön?</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">Valitse SIM ottaaksesi iSMS:n käyttöön</string>
+    <string name="imsp_switch_sim_title">Vaihda SIM-kortti</string>
+    <string name="imsp_switch_sim_message">Nykyinen SIM ei tue iSMS:ää. Vaihdetaanko toiseen SIM-korttiin?</string>
+    <string name="imsp_switch_sim_successfully">Vaihda SIM onnistuneesti!</string>
+    <string name="imsp_dailog_multi_forward">Viestejä lähetetään eteenpäin</string>
+    <string name="imsp_dialog_send_result">Lähetystulos</string>
+    <string name="imsp_dlg_send_all">Kaikki: %s</string>
+    <string name="imsp_dlg_send_sucess">Lähetetty: %s</string>
+    <string name="imsp_dlg_send_failed">Epäonnistui: %s</string>
+    <string name="imsp_multi_forward_sim_info">SIM-tietoja haetaan</string>
+    <string name="imsp_multi_forward_no_sim">Ei SIM-tietoja</string>
+    <string name="imsp_get_sim_failed">SIM-tietojen haku epäonnistui</string>
+    <string name="imsp_sim_status_error">SIM-tilavirhe</string>
+    <string name="imsp_forward_norecipients">Eteenpäin välitettävällä viestillä ei ole vastaanottajaa</string>
+    <string name="imsp_multiforward_no_message">Ei ole eteenpäin välitettävää viestiä/viestejä</string>
+    <string name="imsp_need_input_recipients">Määritä ensin vähintään yksi vastaanottaja</string>
+    <string name="imsp_spam_empty">Sinulla ei ole yhtään roskapostikeskustelua. \nSPAM kerää kaikki keskustelut, jotka on merkitty roskaposteiksi. Ilmoitukset kytketään oletuksena pois päältä. Tämä välttää sinulta tarpeettomat häiriöt. \n\nVoit merkitä lähettäjän roskapostin lähettäjäksi säilyttämällä keskustelun ja valitsemalla merkin roskapostikuvakkeeksi. Kun keskustelu merkitään roskapostiksi, ilmoitus pois päältä -kuvake näytetään automaattisesti ja keskustelu sijoitetaan sinne.</string>
+    <string name="imsp_groupchat_empty">Sinulla ei ole yhtään ryhmäkeskustelua. \nRYHMÄKESKUSTELUSSA kerätään kaikki ryhmäkeskusteluviestit, jotka olet luonut ja joihin olet liittynyt. Näin voit löytää ja hallita ryhmäkeskusteluja helposti. \n\nVoit luoda ryhmäkeskustelun napauttamalla Luo ryhmäkeskustelu -painiketta tämän näytön alaosassa ja kutsua ystäviäsi liittymään ryhmään.</string>
+    <string name="imsp_important_empty">Sinulla ei ole yhtään tärkeää keskustelua. \nIMPORTANT kerää kaikki viestit, jotka on merkitty tärkeiksi. Tämän avulla voi löytää helposti tärkeät viestit. \n\nVoit merkitä viestin tärkeäksi pitämällä viestiä ja valitsemalla &quot;Merkitse tärkeäksi&quot; Asetus-valikosta. Kun viesti merkitään tärkeäksi, näet alla olevan kaltaisen punaisen lippukuvakkeen.</string>
+    <string name="imsp_allchat_empty">Ei keskusteluja</string>
+    <string name="imsp_attach_slideshow">Diaesitys</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">Ladataan...</string>
+    <string name="imsp_invite_friends_to_ipmsg">Kutsu ystäviä käyttämään iSMS-sovellusta</string>
+    <string name="imsp_multi_forward_tips_content">Jos haluat välittää eteenpäin useita, lataa ensin  iSMS.</string>
+    <string name="imsp_multi_forward_failed_part">Osa iSMS välittämisestä eteenpäin epäonnistui.</string>
+</resources>

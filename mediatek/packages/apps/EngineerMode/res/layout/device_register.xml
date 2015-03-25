@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/device_register_title">
+    <ListPreference
+        android:entries="@array/device_register_entries"
+        android:entryValues="@array/device_register_values"
+        android:key="ct_sms_register_switch"
+        android:persistent="true"
+        android:summary="Disabled"
+        android:title="@string/device_ct_sms_auto_reg" />
+  
+</PreferenceScreen>

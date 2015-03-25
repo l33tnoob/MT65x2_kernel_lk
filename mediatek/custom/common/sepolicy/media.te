@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binmedia Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type media_exec , exec_type, file_type;
+type media ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive media;
+init_daemon_domain(media)
+
+
+# 20131122 Add Set Property Rule
+allow media  property_type:property_service set;

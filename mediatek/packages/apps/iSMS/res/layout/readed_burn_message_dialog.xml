@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/ip_message_burn_thumbnail"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:padding="10dp"
+        android:scaleType="fitXY" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dialog_line_color" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/iv_burn_icon"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/ic_chronograph" />
+
+            <Gallery
+                android:id="@+id/gallery_burn"
+                android:layout_width="160dip"
+                android:layout_height="40dip"
+                android:layout_marginBottom="2dp"
+                android:layout_toRightOf="@id/iv_burn_icon"
+                android:background="@drawable/readed_burn_gl_bg"
+                android:padding="0.5dp"
+                android:spacing="2dp" />
+
+            <LinearLayout
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/gallery_burn"
+                android:layout_below="@id/gallery_burn"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_text_msg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="6dp"
+                    android:text="@string/STR_NMS_DESTROY_HINT"
+                    android:textColor="#666666"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:background="@color/dialog_line_color" />
+
+        <ImageButton
+            android:id="@+id/send_button_readedburn"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dip"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2.0"
+            android:adjustViewBounds="true"
+            android:paddingTop="8dip"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip" 
+            android:paddingBottom="8dip"
+            android:src="@drawable/isms_chat_button_sent_isms" />
+    </LinearLayout>
+
+</LinearLayout>

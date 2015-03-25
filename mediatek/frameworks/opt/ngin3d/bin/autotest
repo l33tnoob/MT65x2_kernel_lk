@@ -1,0 +1,48 @@
+#!/bin/sh
+
+local TOPFILE=build/core/envsetup.mk
+# We redirect cd to /dev/null in case it's aliased to
+# a command that prints something as a side-effect
+# (like pushd)
+local HERE=`/bin/pwd`
+T=
+while [ \( ! \( -f $TOPFILE \) \) -a \( $PWD != "/" \) ]; do
+	cd .. > /dev/null
+	T=`PWD= /bin/pwd`
+done
+if [ -f "$T/$TOPFILE" ]; then
+	SRC_ROOT=$T
+else
+	echo "Error: source tree was not found."
+	exit
+fi
+
+INTERMEDIATES=$SRC_ROOT/out/target/common/obj/APPS/Ngin3dTest_intermediates
+PRODUCT=`cat $SRC_ROOT/.product`
+PRODUCT_OUT=$SRC_ROOT/out/target/product/$PRODUCT
+TEST_RUNNER=com.zutubi.android.junitreport.JUnitReportTestRunner
+
+if adb remount 
+then
+  # Copy binary to device
+  adb shell "stop;sleep 5;start"
+  sleep 60
+
+  # Uninstall and install ngin3d test apk
+  PACKAGE=com.mediatek.ngin3d.tests
+  adb uninstall $PACKAGE
+  adb install -r $PRODUCT_OUT/data/app/Ngin3dTest.apk
+  sleep 10
+
+  # Run instrumentation test
+  adb shell am instrument -e coverage true -w $PACKAGE/$TEST_RUNNER
+  adb pull /data/data/$PACKAGE/files/junit-report.xml $SRC_ROOT/junit-report-ngin3d.xml
+
+  # Pull performance test data
+  adb pull /data/data/$PACKAGE/app_perf $SRC_ROOT/perf-$PACKAGE
+
+  # Generate emma code coverage report
+  cd $INTERMEDIATES
+  adb pull /data/data/$PACKAGE/files/coverage.ec
+  java -cp ~/local/emma/lib/emma.jar emma report -r xml -in coverage.ec -in coverage.em
+fi

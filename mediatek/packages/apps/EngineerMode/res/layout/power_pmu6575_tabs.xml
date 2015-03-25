@@ -1,0 +1,208 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/LinerLayout_pmu_info_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <ScrollView
+            android:id="@+id/ScrollView01"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/pmu_info_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="vertical" >
+            </TextView>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinerLayout_pmu_reg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/pmu_bank_spinner"
+                android:layout_width="290dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip" >
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/address6575_text"
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="1dip"
+                android:text="@string/address6575_text" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/value6575_text"
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="1dip"
+                android:text="@string/value6575_text" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/pmu_edit_addr"
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="1dip"
+                android:maxLength="2"
+                android:singleLine="true" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/pmu_edit_val"
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="1dip"
+                android:maxLength="3"
+                android:singleLine="true" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/pmu_btn_get"
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="1dip"
+                android:text="@string/pmu_btn_get" >
+            </Button>
+
+            <Button
+                android:id="@+id/pmu_btn_set"
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="1dip"
+                android:text="@string/pmu_btn_set" >
+            </Button>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/mt6333_layout_controler"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical">
+                <LinearLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="1dip"
+		            android:orientation="horizontal" >
+		
+		            <EditText
+		                android:id="@+id/pmu_edit_addr_mt6333"
+		                android:layout_width="140dip"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="10dip"
+		                android:layout_marginTop="1dip"
+		                android:maxLength="4"
+		                android:singleLine="true" >
+		            </EditText>
+		
+		            <EditText
+		                android:id="@+id/pmu_edit_val_mt6333"
+		                android:layout_width="140dip"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="10dip"
+		                android:layout_marginTop="1dip"
+		                android:maxLength="4"
+		                android:singleLine="true" >
+		            </EditText>
+		        </LinearLayout>
+		
+		        <LinearLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="5dip"
+		            android:orientation="horizontal" >
+		
+		            <Button
+		                android:id="@+id/pmu_btn_get_mt6333"
+		                android:layout_width="140dip"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="10dip"
+		                android:layout_marginTop="1dip"
+		                android:text="@string/pmu_btn_get" >
+		            </Button>
+		
+		            <Button
+		                android:id="@+id/pmu_btn_set_mt6333"
+		                android:layout_width="140dip"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="10dip"
+		                android:layout_marginTop="1dip"
+		                android:text="@string/pmu_btn_set" >
+		            </Button>
+		        </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/warning_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="1dip"
+                android:text="@string/warning_text" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

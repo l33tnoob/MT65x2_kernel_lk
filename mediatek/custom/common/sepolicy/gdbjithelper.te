@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bingdbjithelper Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type gdbjithelper_exec , exec_type, file_type;
+type gdbjithelper ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive gdbjithelper;
+init_daemon_domain(gdbjithelper)
+
+
+# 20131122 Add Set Property Rule
+allow gdbjithelper  property_type:property_service set;

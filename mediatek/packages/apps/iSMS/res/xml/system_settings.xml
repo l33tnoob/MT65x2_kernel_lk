@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="iSMS_system_settings"
+    android:title="@string/STR_NMS_SYS_SETTING_TITLE" >
+
+    <com.hissage.ui.view.NmsPreferenceSettingComent
+            android:key="comment"
+            android:layout="@layout/setting_comment" >
+    </com.hissage.ui.view.NmsPreferenceSettingComent>
+
+       <PreferenceCategory           
+        android:key="nms_sim_info"
+        android:title="@string/STR_NMS_ACCOUNT_TIP" >
+ 		<com.hissage.ui.view.NmsPreferenceForProfile_1
+            android:key="nms_sim1"
+            android:title="@string/STR_NMS_NO_NAME"
+            android:layout="@layout/profile_preference_1"
+             >            
+        </com.hissage.ui.view.NmsPreferenceForProfile_1>
+            
+         <com.hissage.ui.view.NmsPreferenceForProfile_2
+            android:key="nms_sim2"
+            android:title="@string/STR_NMS_NO_NAME"
+            android:layout="@layout/profile_preference_2"
+             >            
+        </com.hissage.ui.view.NmsPreferenceForProfile_2>
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="nms_preferences"
+        android:title="@string/STR_NMS_PREFERENCE_CATE" >
+        <CheckBoxPreference
+            android:key="nms_send_as_sms"
+            android:summary="@string/STR_NMS_SEND_SMS_CONTENT"
+            android:title="@string/STR_NMS_SEND_SMS_TITLE" >
+        </CheckBoxPreference>
+        
+        <CheckBoxPreference
+            android:key="nms_show_read_status"
+            android:summary="@string/STR_NMS_SHOW_READ_STATUS_CONTENT"
+            android:title="@string/STR_NMS_SHOW_READ_STATUS_TITLE" >
+        </CheckBoxPreference>
+        
+        <CheckBoxPreference
+            android:key="nms_show_reminders"
+            android:summary="@string/STR_NMS_SHOW_REMIND_CONTENT"
+            android:title="@string/STR_NMS_SHOW_REMIND_TITLE" >
+        </CheckBoxPreference>
+
+        <com.hissage.ui.view.NmsSwitchPreference
+            android:key="nms_caption"
+            android:widgetLayout="@layout/preference_switch_item"
+            android:summary="@string/STR_NMS_CAPTION_CONTENT"
+            android:switchTextOff="@string/STR_NMS_SWITCH_OFF"
+            android:switchTextOn="@string/STR_NMS_SWITCH_ON"
+            android:title="@string/STR_NMS_CAPTION_TITLE" >
+        </com.hissage.ui.view.NmsSwitchPreference>
+
+        <CheckBoxPreference
+            android:key="nms_auto_download"
+            android:summary="@string/STR_NMS_AUTO_DOWNLOAD_CONTENT"
+            android:title="@string/STR_NMS_AUTO_DOWNLOAD_TITLE" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="sytem"
+        android:title="@string/STR_NMS_SYSTEM_CATE" >
+        <Preference
+            android:key="nms_network_usage"
+            android:summary="@string/STR_NMS_NETWORK_USAGE_CONTENT"
+            android:title="@string/STR_NMS_NETWORK_USAGE_TITLE" >
+        </Preference>
+        <Preference
+            android:key="nms_about"
+            android:title="@string/STR_NMS_ABOUT" >
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

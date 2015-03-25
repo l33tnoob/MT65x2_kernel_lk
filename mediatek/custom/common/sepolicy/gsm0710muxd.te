@@ -1,0 +1,63 @@
+# ==============================================
+# Policy File of /system/bingsm0710muxd Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type gsm0710muxd_exec , exec_type, file_type;
+type gsm0710muxd ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive gsm0710muxd;
+init_daemon_domain(gsm0710muxd)
+
+# 20131024 CTS_01
+allow gsm0710muxd ctl_rildaemon_prop:property_service set;
+allow gsm0710muxd device:dir { write add_name };
+allow gsm0710muxd device:lnk_file create;
+allow gsm0710muxd devpts:chr_file setattr;
+allow gsm0710muxd property_socket:sock_file write;
+allow gsm0710muxd self:capability { setuid fowner chown };
+
+
+# 20131024 Sanity_03
+allow gsm0710muxd device:dir remove_name;
+
+
+# 20131028 Sanity_05
+allow gsm0710muxd device:lnk_file unlink;
+
+
+# 20131028 Sanity_07
+allow gsm0710muxd device:chr_file { read write ioctl open };
+allow gsm0710muxd linker_exec:file read;
+
+
+
+# 20131122 Add Set Property Rule
+allow gsm0710muxd  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow gsm0710muxd aee_aed:process sigchld;
+allow gsm0710muxd aee_aed:unix_stream_socket connectto;
+allow gsm0710muxd block_device:blk_file read;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow gsm0710muxd aee_aed:process sigchld;
+allow gsm0710muxd aee_aed:unix_stream_socket connectto;
+allow gsm0710muxd block_device:blk_file read;
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<string name="bt_timec_label">Синхронизация Bluetooth</string>
+	<string name="bt_timec_main_title">Таймер-клиент</string>
+	<string name="bt_timec_choose_server_title">Выберите сервер</string>
+	<string name="bt_timec_choose_server_summary">Выберите сервер для синхронизации данных и времени с</string>
+	<string name="bt_timec_sync_settings_title">Параметры временной синхронизации</string>
+	<string name="bt_timec_service_disconnected">Подключение к службе времени нарушено.</string>
+
+	
+	<string name="bt_timec_sync_title">Синхронизация даты и времени</string>
+	<string name="bt_timec_sync_summary">Получить и применить информацию о дате и времени с сервера времени</string>
+	<string name="bt_timec_auto_title">Автосинхронизация</string>
+	<string name="bt_timec_auto_summary">Автоматически синхронизировать дату и время с сервером времени</string>
+	<string name="bt_timec_repeat_title">"Повтор"</string>
+
+	<string name="bt_timec_sync_confirm_title">Подтвердить синхронизацию</string>
+	<string name="bt_timec_sync_confirm_msg">Будет выполнена синхронизация с сервером времени. Автосинхронизация с мобильной сетью будет нарушена, продолжить?</string>
+	<string name="bt_timec_synchronizing_title">Синхронизация</string>
+	<string name="bt_timec_synchronizing_msg">Синхронизация даты и времени с сервером времени...</string>
+	<string name="bt_timec_sync_completed">Синхронизация выполнена</string>
+	<string name="bt_timec_sync_failed">Не удалось синхронизировать дату и время с сервером времени</string>
+	<string name="bt_timec_auto_disabled_ticker">Автосинхронизация времени отключена</string>
+	<string name="bt_timec_auto_disabled_title">Автосинхронизация времени через Bluetooth отключена</string>
+	<string name="bt_timec_auto_disabled_msg">Автосинхронизация времени недоступна при отключении Bluetooth.</string>
+
+	
+	<string name="bt_timec_eng_connect_title">"Подключение"</string>
+	<string name="bt_timec_eng_connect_summary">Подключение к серверу</string>
+	<string name="bt_timec_eng_disconnect_summary">Отключение от сервера</string>
+	<string name="bt_timec_eng_settings_group_title">"Настройки"</string>
+	<string name="bt_timec_eng_automatic_title">Автоматически</string>
+	<string name="bt_timec_eng_automatic_summary">Автосинхронизация с сервером времени</string>
+	<string name="bt_timec_eng_sync_title">Синхронизация с сервером времени</string>
+	<string name="bt_timec_eng_sync_summary">Получить и применить информацию о дате и времени с сервера времени</string>
+	<string name="bt_timec_eng_update_server_title">Обновить сервер времени</string>
+	<string name="bt_timec_eng_update_server_summary">Запросить сервер времени для обновления информации о дате и времени от источника времени</string>
+	<string name="bt_timec_eng_dst_title">Изменение DST (летнее время)</string>
+
+	<string name="bt_timec_eng_connecting_title">"Подключение"</string>
+	<string name="bt_timec_eng_connecting_msg">Подключение к серверу времени...</string>
+	<string name="bt_timec_eng_connection_failed">"Соединение прервано"</string>
+	<string name="bt_timec_eng_connection_lost">Соединение нарушено</string>
+	<string name="bt_timec_eng_disconnecting_title">"Отключение…"</string>
+	<string name="bt_timec_eng_disconnecting_msg">Отключение от сервера...</string>
+	<string name="bt_timec_eng_processing_title">"Обработка"</string>
+	<string name="bt_timec_eng_processing_msg">Применение настройки к серверу времени...</string>
+	<string name="bt_timec_eng_processing_failed">Не удалось применить настройку к серверу</string>
+	<string name="bt_timec_eng_server_updating_title">Обновление сервера</string>
+	<string name="bt_timec_eng_server_updating_msg">Нажмите кнопку Назад для отмены обновления времени на сервере</string>
+	<string name="bt_timec_eng_server_update_completed">Обновление сервера выполнено</string>
+	<string name="bt_timec_eng_server_update_failed">Обновление сервера не удалось</string>
+
+</resources>

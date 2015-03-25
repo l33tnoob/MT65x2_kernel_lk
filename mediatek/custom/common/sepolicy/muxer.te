@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binmuxer Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type muxer_exec , exec_type, file_type;
+type muxer ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive muxer;
+init_daemon_domain(muxer)
+
+
+# 20131122 Add Set Property Rule
+allow muxer  property_type:property_service set;

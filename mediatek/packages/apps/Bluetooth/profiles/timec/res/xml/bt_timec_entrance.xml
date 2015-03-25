@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<Preference android:key="bt_timec_choose_server"
+			android:title="@string/bt_timec_choose_server_title"/>
+
+	<PreferenceCategory android:key="bt_timec_current_server_group"
+			android:title="@string/bt_timec_sync_settings_title"
+			android:orderingFromXml="false"	/>
+
+</PreferenceScreen>

@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bindecoder Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type decoder_exec , exec_type, file_type;
+type decoder ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive decoder;
+init_daemon_domain(decoder)
+
+
+# 20131122 Add Set Property Rule
+allow decoder  property_type:property_service set;

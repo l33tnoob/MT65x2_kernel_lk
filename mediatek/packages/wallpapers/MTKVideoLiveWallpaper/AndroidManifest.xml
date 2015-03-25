@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mediatek.vlw">
+
+    <original-package android:name="com.mediatek.vlw" />
+    <!-- sdcard access permission -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <!-- wallpaper permissions -->
+    <uses-permission android:name="android.permission.SET_WALLPAPER_COMPONENT" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.BIND_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.MANAGE_USERS" />
+
+    <uses-feature android:name="android.software.live_wallpaper" />
+
+    <application
+        android:label="@string/wallpapers"
+        android:icon="@drawable/ic_launcher_wallpaper"
+        android:supportsRtl="true">
+
+        <!-- Set video as live wallpaper -->
+        <service
+            android:label="@string/vlw"
+            android:name=".VideoLiveWallpaper"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/vlw" />
+        </service>
+
+        <!-- settings activity -->
+        <activity
+            android:name=".VideoEditor"
+            android:label="@string/vlw"
+            android:icon="@drawable/icon"
+            android:theme="@style/LivePickerTheme"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:configChanges="screenSize|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.SET_WALLPAPER" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VideoChooser"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VideoS3dDepthTuning"
+            android:label="@string/depth_tuning_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/VlwPreview" />
+            
+        <!-- for auto test -->
+        <activity
+            android:name=".PreviewStubActivity" />
+        <activity
+            android:name=".VideoSceneStubActivity" />
+    </application>
+
+</manifest>

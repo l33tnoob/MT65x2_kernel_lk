@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binqmc5983d Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type qmc5983d_exec , exec_type, file_type;
+type qmc5983d ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive qmc5983d;
+init_daemon_domain(qmc5983d)
+
+
+# 20131122 Add Set Property Rule
+allow qmc5983d  property_type:property_service set;

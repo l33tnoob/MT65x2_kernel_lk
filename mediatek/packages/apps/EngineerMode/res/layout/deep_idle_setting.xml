@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+        android:id="@+id/deep_idle_mode_contrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+	        <TextView
+	            android:layout_width="240dip"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dip"
+	            android:layout_marginLeft="10dip"
+	            android:text="@string/deep_idle_mode" >
+	        </TextView>
+	
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal">
+	            <RadioGroup
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+	                <RadioButton android:id="@+id/deep_idle_disable"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="10dip"
+	                    android:text="@string/deep_idle_disable_dpidle"/>
+                    <RadioButton android:id="@+id/deep_idle_legacy_sleep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/deep_idle_legacy_sleep"/>   
+                    <RadioButton android:id="@+id/deep_idle_dormant_mode"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="10dip"
+	                    android:text="@string/deep_idle_dormant_mode"/>       
+	            </RadioGroup>
+	        </LinearLayout>
+        </LinearLayout>
+        
+        <!-- power level -->
+        <LinearLayout
+        android:id="@+id/deep_idle_power_level_contrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dip"
+	            android:text="@string/deep_idle_power_level" >
+	        </TextView>
+	
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal">
+	            <RadioGroup
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+	                <RadioButton android:id="@+id/deep_idle_power_level0"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="10dip"
+	                    android:text="@string/deep_idle_power_level_0"/>
+                    <RadioButton android:id="@+id/deep_idle_power_level1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/deep_idle_power_level_1"/>        
+	            </RadioGroup>
+	        </LinearLayout>
+        </LinearLayout>
+        
+        <!-- wakeup timer -->
+        <LinearLayout
+        android:id="@+id/deep_idle_wake_timer_contrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dip"
+	            android:text="@string/deep_idle_set_wakeup_timer" >
+	        </TextView>
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical">
+	                <RadioButton android:id="@+id/deep_idle_timer_disable"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="10dip"
+	                    android:text="@string/deep_idle_disable_timer"/>
+	                <LinearLayout 
+	                    android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:orientation="horizontal">
+                    <RadioButton android:id="@+id/mcdi_timer_val_set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"/>
+                    <EditText
+		                android:id="@+id/deep_idle_timer_val"
+		                android:layout_width="100dip"
+		                android:layout_height="wrap_content"
+		                android:maxLength="7"
+		                android:numeric="integer" />
+      				<TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:text="@string/deep_idle_timer_val_tip" />
+                    </LinearLayout>
+
+	        </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal">
+	     <Button
+            android:id="@+id/deep_idle_start_timer"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip"
+            android:text="@string/deep_idle_start_timer" />
+         <Button
+            android:id="@+id/deep_idle_get_setting"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip"
+            android:text="@string/deep_idle_get_setting" >
+        </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

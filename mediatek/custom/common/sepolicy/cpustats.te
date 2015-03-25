@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbincpustats Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type cpustats_exec , exec_type, file_type;
+type cpustats ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive cpustats;
+init_daemon_domain(cpustats)
+
+
+# 20131122 Add Set Property Rule
+allow cpustats  property_type:property_service set;

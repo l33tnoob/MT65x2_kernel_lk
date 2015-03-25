@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">সিস্টেম আপডেট</string>
+
+
+    <string name="none_package">কোন কার্যকর আপডেট প্যাকেজ নেই।</string>
+    <string name="new_version_query">আপডেটের জন্য যাচাই চলছে\u2026</string>
+    <string name="menu_stats_refresh">রিফ্রেশ করুন</string>
+    <string name="network_error">নেটওয়ার্ক সংযোগ পেতে ব্যর্থ</string>
+    <string name="no_new_version">আপনার সিস্টেম বর্তমানে আপডেট করা আছে</string>
+    <string name="not_support_version">আপনার টার্গেট ওভার-দি-এয়ার সমর্থন করে না</string>
+    <string name="query_sd_insufficient_space">অপর্যাপ্ত জায়গা <xliff:g id="path">%s</xliff:g> এর জন্য</string>
+    <string name="ota_category_title">OTA</string>
+    <string name="sd_category_title">এসডি কার্ড আপডেট</string>
+    <string name="ota_preference_summary">সার্ভারে একটি সিস্টেম আপডেট পাওয়া গেছে</string>
+
+
+    <string name="notes_summary">ফার্মওয়্যার আপডেট করলে আপনার মেশিনের স্থায়িত্ব এবং প্যাচ বাগ বাড়বে । সংস্করণটি আপডেট করুন </string>
+    <string name="ask_for_install_ota">আপনি কি এখন সিস্টেমের আপডেট ইনস্টল করতে চান?</string>
+    <string name="warning_install_ota" product="tablet">ইনস্টলেশনের সময় আপনি আপনার ট্যাবলেট ব্যবহার করতে পারবেন না বা জরুরি কল করতে পারবেন না। ব্যাটারি  এবং এসডি কার্ড সরাবেন না বা ট্যাবলেট বন্ধ করবেন না।</string>
+    <string name="warning_install_ota" product="default">ইনস্টলেশনের সময় আপনি আপনার ফোন ব্যবহার করতে পারবেন না বা জরুরি কল করতে পারবেন না। ব্যাটারি  এবং এসডি কার্ড সরাবেন না বা ফোন বন্ধ করবেন না।</string>
+    <string name="ask_for_install_sd">আপনার এসডি কার্ডে সর্বশেষ আপডেট প্যাকেজটি পাওয়া গিয়েছে,আপনি তা ইনস্টল করতে চান?</string>
+    <string name="warning_install_sd" product="tablet">ইনস্টলেশনের সময় আপনি আপনার ট্যাবলেট ব্যবহার করতে পারবেন না বা জরুরি কল করতে পারবেন না। ব্যাটারি  এবং এসডি কার্ড সরাবেন না বা ট্যাবলেট বন্ধ করবেন না। \nইনস্টল করতে শুরু করার পূর্বে প্যাকেজটি অফিসিয়াল ওয়েবসাইট থেকে ডাউনলোড করা হয়েছে এবং নষ্ট নয় তা নিশ্চিত করুন।</string>
+    <string name="warning_install_sd" product="default">ইনস্টলেশনের সময় আপনি আপনার ফোন ব্যবহার করতে পারবেন না বা জরুরি কল করতে পারবেন না। ব্যাটারি  এবং এসডি কার্ড সরাবেন না বা ফোন বন্ধ করবেন না। \nইনস্টল করতে শুরু করার পূর্বে প্যাকেজটি অফিসিয়াল ওয়েবসাইট থেকে ডাউনলোড করা হয়েছে এবং নষ্ট নয় তা নিশ্চিত করুন।</string>
+    <string name="ask_for_download_ota">আপনি কি সিস্টেম অপটিমাইজেশন আপডেট ডাউনলোড করতে চান?</string>
+    <string name="warning_download_ota">এই আপডেট প্রয়োগ করতে আমরা পরামর্শ দেব ফ্রি ওয়াই-ফাই হটস্পট বা আনলিমিটেড ডাটা প্লান ব্যবহার করার জন্য। তা না হলে সাধারণ ডাটা সংযোগ ব্যয় প্রযোজ্য হবে। \nআপগ্রেড করার আগে প্রথমে আপনার ডাটার ব্যাক আপ নিন।</string>
+        
+    <string name="notification_content_title">সিস্টেম আপডেট করুন</string>
+    <string name="downloading_title">ডাউনলোড হচ্ছে\u2026</string>   
+    <string name="wifi_only_check">কেবল ওয়াই-ফাই</string>     
+    
+    
+    
+    
+    
+    <string name="btn_install">ইনস্টল করুন</string>
+    <string name="btn_cancel">বাতিল করুন</string>
+    <string name="btn_download">ডাউনলোড ও ইনস্টল করুন</string>
+    <string name="btn_resume">ডাউনলোড করুন</string>
+    
+    <string name="warn_data_cost_title">আপডেট ডাউনলোড করুন</string>
+    <string name="warn_data_cost_content">মোবাইল নেটওয়ার্কের মাধ্যমে ডাউনলোড করলে অতিরিক্ত চার্জ দিতে হতে পারে। আপনি কি অব্যাহত রাখতে চান?</string>
+    <string name="warn_data_cost_yes">হ্যা</string>
+    <string name="warn_data_cost_no">না</string>
+
+    <string name="notification_download_complete_title">সিস্টেম আপডেট প্রস্তুত</string>
+    <string name="notification_download_complete_context">সিস্টেম আপডেট ইনস্টল করার জন্য হালকা স্পর্শ করুন</string>
+        
+    <string name="sdcard_crash_or_unmount">এসডি কার্ডের ত্রুটি । আপনার এসডি কার্ড চেক করুন এবং আবার চেষ্টা করুন।</string>
+    <string name="unmount_sdcard">এসডি কার্ড মাউন্টের ক্ষেত্রে ত্রুটি, এটি যাচাই করে দেখুন।</string>
+    <string name="insufficient_space_content">সংরক্ষণ করার মত পর্যাপ্ত জায়গা নেই!ইনস্টল করার জন্য কমপক্ষে  <xliff:g id="deltasize" example="3.5M">%s</xliff:g> জায়গা প্রয়োজন । অতিরিক্ত জায়গা বের করার জন্য অ্যাপ্লিকেশন ম্যানেজারকে বলুন </string>
+
+    
+    
+    
+    
+    <string name="install_sd_title">আপডেট ইনস্টল করুন</string>
+    <string name="install_sd_message">প্যাকেটটি অফিসিয়াল ওয়েবসাইট থেকে ডাউনলোড করা হয়েছে এবং তা নষ্ট নয় এ ব্যাপারটি নিশ্চিত করুন। অন্যথায় এটি সিস্টেমে সমস্যা তৈরি করতে পারে।</string>
+    <string name="install_reminder_now">এখনই ইনস্টল করুন</string>
+    <string name="install_reminder_not_now">এখন নয়</string>
+    
+    
+
+    <string name="notification_content_text_completed">সফলতার সাথে ডাউনলোড করুন</string> 
+
+    <string name="unknown_per">অপরিচিত</string>    
+    <string name="unknown_error">অজানা ত্রুটি</string>
+    <string name="unknown_error_content">একটি অজানা ত্রুটি ঘটেছে। এই পৃষ্ঠা থেকে বের হোন এবং আবার চেষ্টা করুন।</string>
+    <string name="insufficient_space_title">পর্যাপ্ত জায়গা নেই</string>
+    <string name="error_sdcard">এসডি কার্ডের তথ্য </string>
+    <string name="insufficient_space">এসডি কার্ডে পর্যাপ্ত জায়গা নেই </string>
+    <string name="package_deleted_error">সিস্টেম আপডেট বন্ধ হয়ে গেছে, যেহেতু আপগ্রেটটি অবৈধ।</string>
+    
+    <string name="cancel_download_title">ডাউনলোড বাতিল করুন</string>
+    <string name="cancel_download_content">এই কার্যক্রম ডাউনলোডকৃত  ফাইল বাতিল করবে।</string>
+
+    
+    <string name="change_network_title">ডাউনলোড করুন</string>
+    <string name="change_network_content">বর্তমান এপিএন ডাউনলোড সমর্থন করে না, আপনি কি অন্য এপিএন-এ পরিবর্তন করতে চান বা ওয়াই-ফাই চালু করবেন?</string>
+    <string name="change_network_wifi_btn">ওয়াই-ফাই ব্যবহার করুন</string>
+    <string name="change_network_apn_btn">এপিএন পরিবর্তন করবেন</string>
+    <string name="change_network_discard_btn">বাতিল করুন</string>    
+    <string name="package_error_title">ইনস্টল করতে ব্যর্থ হয়েছে</string>
+    <string name="package_error_message_invalid">প্যাকেজে ভুল। আপডেট চেক করুন এবং আবার ডাউনলোড করুন </string>
+    <string name="package_error_message_insuff" product="tablet">ডিভাইসে যথেষ্ট জায়গা নেই।</string>
+    <string name="package_error_message_insuff" product="default">ফোনে পর্যাপ্ত জায়গা নেই </string>
+    <string name="package_error_message_crash">ডাটা পার্টিশনে প্রবেশ করা যাচ্ছে না </string>
+    <string name="package_error_message_full">পার্টিশন পরিবর্তিত কেসের জন্য পূর্ণাঙ্গ প্যাকেজ প্রয়োজন।</string>    
+    <string name="updateSuccess" product="tablet">অভিনন্দন! আপনার ডিভাইসটি সফলতার সাথে  <xliff:g id="version" example="gb.p37">%s</xliff:g> সংস্করণে হালনাগাদ করা হয়েছে। </string> 
+    <string name="updateSuccess" product="default">অভিনন্দন! আপনার ফোনটিকে সফলতার সাথে  <xliff:g id="version" example="gb.p37">%s</xliff:g> সংস্করণে আপডেট করা হয়েছে। </string> 
+    <string name="updateFailed">  <xliff:g id="version" example="gb.p37">%s</xliff:g>সংস্করণে আপডেট করতে ব্যর্থ হয়েছে </string>
+    <string name="package_unzip">প্যাকেজ আনজিপ হচ্ছে\u2026</string>
+    <string name="package_unzip_error">আনজিপে ভুল</string>
+    
+    <string name="installing_message">আপনার ফোন বন্ধ হয়ে যাবে\u2026</string>
+    <string name="install_sd_info">আপগ্রেড অব্যাহত রাখার জন্য ফোন স্টোরেজে প্যাকেজটি কপি করা আবশ্যক।\n আপনার ফোনে পর্যাপ্ত জায়গা নেই।</string>
+    <string name="sdcard_crash_or_unmount_when_install">এসডি কার্ড আনমাউন্ট করার কারণে সিস্টেমের আপডেট করা বন্ধ হয়ে গেছে।</string>
+    <string name="sdcard_inserted">আরো আপডেট প্যাকেজ খুঁজে বের করতে আপনি কি আপনার এসডি কার্ড স্ক্যান করতে চান?</string>
+    
+    <string name="new_version_detected">সিস্টেম আপডেট পাওয়া যাচ্ছে</string>
+    <string name="sdcard_unmount">এসডি কার্ড আনমাউন্ট করা </string>
+    <string name="server_version_error">সার্ভারে ভুল:সার্ভারের সোর্স কোড হালনাগাদ করুন।</string>
+    <string name="cta_warning">সিস্টেম শুধুমাত্র অফিসিয়াল ওয়েবসাইট বা সার্ভার থেকে ফার্মওয়্যার আপগ্রেড সমর্থন করে। ব্যবহারকারী যদি ফার্মওয়্যার আপগ্রেড করতে তৃতীয় পক্ষের রম ইমেজ এবং/বা অন্য কোনো রুট পদ্ধতি ব্যবহার করে, তাহলে এটা ফোন অস্থিতিশীল করতে পারে। মনে রাখবেন এসব ধরনের ব্যবহারের জন্য ব্যবহারকারীকে সব দায়দায়িত্ব দিতে হবে।</string>
+</resources>

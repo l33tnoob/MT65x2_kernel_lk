@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+
+
+	<TableLayout android:id="@+id/TableLayout01"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		
+
+		<TableRow android:id="@+id/TableRow01" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_marginTop = "5pt">
+				
+			<RadioGroup android:layout_height="fill_parent" android:layout_width="fill_parent" 
+			android:orientation="vertical" android:id="@+id/NFC_RawData_Group">
+				<RadioButton android:layout_height="wrap_content" android:id="@+id/NFC_RawData_Item1" android:text="@string/NFC_RawData_Item1" 
+									android:layout_weight="1" android:layout_width="fill_parent"></RadioButton>
+				<RadioButton android:layout_height="wrap_content" android:id="@+id/NFC_RawData_Item2" android:text="@string/NFC_RawData_Item2" 
+									android:layout_weight="1" android:layout_width="fill_parent"></RadioButton>
+				<RadioButton android:layout_height="wrap_content" android:id="@+id/NFC_RawData_Item3" android:text="@string/NFC_RawData_Item3" 
+									android:layout_weight="1" android:layout_width="fill_parent"></RadioButton>
+				<RadioButton android:layout_height="wrap_content" android:id="@+id/NFC_RawData_Item4" android:text="@string/NFC_RawData_Item4" 
+									android:layout_weight="1" android:layout_width="fill_parent"></RadioButton>
+				<RadioButton android:layout_height="wrap_content" android:id="@+id/NFC_RawData_Item5" android:text="@string/NFC_RawData_Item5" 
+									android:layout_weight="1" android:layout_width="fill_parent"></RadioButton>
+				<RadioButton android:layout_height="wrap_content" android:id="@+id/NFC_RawData_Item6" android:text="@string/NFC_RawData_Item6" 
+									android:layout_weight="1" android:layout_width="fill_parent"></RadioButton>
+				<RadioButton android:layout_height="wrap_content" android:id="@+id/NFC_RawData_Item7" android:text="@string/NFC_RawData_Item7" 
+									android:layout_weight="1" android:layout_width="fill_parent"></RadioButton>
+				<RadioButton android:layout_height="wrap_content" android:id="@+id/NFC_RawData_Item8" android:text="@string/NFC_RawData_Item8" 
+									android:layout_weight="1" android:layout_width="fill_parent"></RadioButton>
+			</RadioGroup>
+		</TableRow>	
+		
+	</TableLayout>	
+
+	
+		
+			
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"              
+              android:gravity="left"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+			android:id="@+id/View_Alwayse_on_appendix">
+			
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"              
+              android:gravity="left"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+<View android:layout_height="1dip" android:layout_width="fill_parent"
+			android:background="#FF909000">
+</View>
+		<TextView android:text="@string/NFC_RawData_Alwayson_appendix_module"
+				android:layout_marginLeft = "3pt"				
+				android:textColor="#FF009000"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		<Spinner android:layout_height="wrap_content" 
+		 android:layout_width="fill_parent" 
+		 android:layout_marginLeft="3dip" 
+		 android:id="@+id/NFC_RawData_Alwayson_appendix_module" 
+  		android:layout_marginTop="3dip"></Spinner>  
+			
+		<TextView android:text="@string/NFC_RawData_Alwayson_appendix_bitrate"
+				android:layout_marginLeft = "3pt"				
+				android:textColor="#FF009000"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		<Spinner android:layout_height="wrap_content" 
+		 android:layout_width="fill_parent" 
+		 android:layout_marginLeft="3dip" 
+		 android:id="@+id/NFC_RawData_Alwayson_appendix_bitrate" 
+  		android:layout_marginTop="3dip"></Spinner>  
+<View android:layout_height="1dip" android:layout_width="fill_parent"
+			android:background="#FF909000">
+</View>
+
+</LinearLayout>
+
+</ScrollView>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"              
+              android:gravity="left"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+			android:id="@+id/View_Card_emul_mode_appendix">
+			
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"              
+              android:gravity="left"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+<View android:layout_height="1dip" android:layout_width="fill_parent"
+			android:background="#FF909000">
+</View>
+		<TextView android:text="@string/NFC_RawData_cardEmulMode_appendix_type"
+				android:layout_marginLeft = "3pt"				
+				android:textColor="#FF009000"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		<Spinner android:layout_height="wrap_content" 
+		 android:layout_width="fill_parent" 
+		 android:layout_marginLeft="3dip" 
+		 android:id="@+id/NFC_RawData_cardEmulMode_appendix_type" 
+  		android:layout_marginTop="3dip"></Spinner>  
+			
+		<TextView android:text="@string/NFC_RawData_cardEmulMode_appendix_protocol"
+				android:layout_marginLeft = "3pt"				
+				android:textColor="#FF009000"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		<Spinner android:layout_height="wrap_content" 
+		 android:layout_width="fill_parent" 
+		 android:layout_marginLeft="3dip" 
+		 android:id="@+id/NFC_RawData_cardEmulMode_appendix_protocol" 
+  		android:layout_marginTop="3dip"></Spinner>  
+
+
+<View android:layout_height="1dip" android:layout_width="fill_parent"
+			android:background="#FF909000">
+</View>
+
+</LinearLayout>
+
+</ScrollView>
+
+
+
+		<Button android:id="@+id/NFC_RawData_Start" android:text="@string/NFC_RawData_Start"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginTop = "1pt"></Button>		
+	
+	
+		<Button android:id="@+id/NFC_RawData_Stop" android:text="@string/NFC_RawData_Stop"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginTop = "1pt"></Button>
+	
+	
+
+<View android:layout_height="3dip" android:layout_width="fill_parent"
+			android:background="#FF909000">
+</View>
+	<TextView 	android:text="@string/NFC_RawData_Result"
+				android:id="@+id/NFC_RawData_Result"
+				android:layout_marginLeft = "3pt" 
+				android:layout_marginTop = "5pt"
+				android:textColor="#FF00FF00"				
+				android:layout_width="fill_parent" android:layout_height="fill_parent"></TextView>
+	
+</LinearLayout>
+
+</ScrollView>

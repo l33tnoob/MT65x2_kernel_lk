@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ /* Copyright Statement:
+ *
+ * This software/firmware and related documentation ("MediaTek Software") are
+ * protected under relevant copyright laws. The information contained herein
+ * is confidential and proprietary to MediaTek Inc. and/or its licensors.
+ * Without the prior written permission of MediaTek inc. and/or its licensors,
+ * any reproduction, modification, use or disclosure of MediaTek Software,
+ * and information contained herein, in whole or in part, shall be strictly prohibited.
+ *
+ * MediaTek Inc. (C) 2012. All rights reserved.
+ *
+ * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+ * THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+ * RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO RECEIVER ON
+ * AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+ * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+ * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+ * SUPPLIED WITH THE MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+ * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+ * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+ * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+ * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+ * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+ * CUMULATIVE LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+ * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+ * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+ * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+ *
+ * The following software/firmware and/or related documentation ("MediaTek Software")
+ * have been modified by MediaTek Inc. All revisions are subject to any receiver's
+ * applicable license agreements with MediaTek Inc.
+ */
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
+
+    
+    <PreferenceCategory
+        android:key="rcse_message_settings"
+        android:title="@string/rcse_message_settings" >
+        
+       <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="rcse_disable_joyn"                     
+            android:summary="@string/rcse_disable_joyn_summary"
+            android:title="@string/rcse_disable_joyn_title" />  
+        
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:key="rcse_notify"
+        android:title="@string/rcse_notification_settings" >
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="rcse_notification"
+            android:summary="@string/rcse_notification_summary"
+            android:title="@string/rcse_notification_title" />
+
+        <com.mediatek.rcse.settings.ChatInvitationRingtone
+            android:defaultValue="content://settings/system/notification_sound"
+            android:dependency="rcse_notification"
+            android:key="chat_invitation_ringtone"
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:ringtoneType="notification"
+            android:summary="@string/rcse_ringtone_summary"
+            android:title="@string/rcse_ringtone_title" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="rcse_notification"
+            android:key="chat_invitation_vibration"
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:summary="@string/rcse_vibrate_summary"
+            android:title="@string/rcse_vibrate_title" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="rcse_large_file_reminder"
+            android:summary="@string/rcse_large_file_reminder_summary"
+            android:title="@string/rcse_large_file_reminder_title" />
+
+    </PreferenceCategory>
+
+     <PreferenceCategory
+         android:key="rcse_general"
+         android:title="@string/rcse_general_settings" >
+         <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="rcse_compress_image"
+            android:summary="@string/rcse_compress_image_summary"
+            android:title="@string/rcse_compress_image_title" />
+         
+         <PreferenceScreen
+            android:key="rcse_chat_wallpaper"
+            android:summary="@string/rcse_chat_wallpaper_summary"
+            android:title="@string/rcse_chat_wallpaper_title" >
+            <intent
+                android:action="com.mediatek.rcse.action.DIALOG_ACTIVITY"/>
+        </PreferenceScreen>
+          
+           <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="rcse_ftautoaccept_nonroaming"            
+            android:summary="@string/rcse_ftautoaccept_nonroaming_summary"
+            android:title="@string/rcse_ftautoaccept_nonroaming_title" />
+           
+            <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="rcse_ftautoaccept_roaming"            
+            android:summary="@string/rcse_ftautoaccept_roaming_summary"
+            android:title="@string/rcse_ftautoaccept_roaming_title" />
+
+     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="rcse_privacy"
+        android:title="@string/rcse_privacy_settings" >
+    
+		<CheckBoxPreference
+            android:defaultValue="true"
+            android:key="rcse_send_read_receipt"
+            android:summary="@string/rcse_send_read_receipt_summary"
+            android:title="@string/rcse_send_read_receipt_title" />
+
+        <PreferenceScreen
+            android:key="rcs_block_list"
+            android:title="@string/text_blacklist" >
+
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.mediatek.rcse.activities.BlackListActivity"
+                android:targetPackage="com.orangelabs.rcs" />
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:key="rcse_clear_history"
+            android:title="@string/rcse_clear_history_title" >
+        </PreferenceScreen>
+        
+        <PreferenceScreen
+            android:key="joyn_user_alias"             
+            android:title="@string/joyn_user_alias_title" >
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <!-- joyn only APN test tools -->
+    <PreferenceCategory
+        android:key="rcse_apn_test_tools"
+        android:title="@string/rcse_only_apn_test_settings" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="rcse_apn_enable"
+            android:summary="@string/rcse_only_apn_enable_summary"
+            android:title="@string/rcse_only_apn_enable_title" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="roaming_enable"
+            android:summary="@string/rcse_roaming_enable_summary"
+            android:title="@string/rcse_roaming_enable_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

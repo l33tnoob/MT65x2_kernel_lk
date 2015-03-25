@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--  This is our one standard application action (creating a new note). -->
+    <item android:id="@+id/menu_all_select"
+          android:icon="@drawable/ic_select_all"
+          android:title="@string/menu_select_all_button"
+          android:showAsAction="never" />
+    <item android:id="@+id/menu_no_select"
+          android:icon="@drawable/ic_clear_select"
+          android:title="@string/menu_deselect_all_button"
+          android:showAsAction="never" 
+          />
+</menu>

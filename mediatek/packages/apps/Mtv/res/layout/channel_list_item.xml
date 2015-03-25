@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"  
+  android:layout_width="match_parent"
+  android:descendantFocusability="blocksDescendants"
+  android:layout_height="64dp">            
+	<ImageView
+	android:id="@+id/watch_image"
+	android:layout_width="wrap_content"
+	android:layout_height="64dp"
+	android:paddingLeft="8dp"	
+	android:paddingRight="8dp"		
+	android:layout_centerVertical="true"
+	android:src="@drawable/ic_watch"
+	/>
+		<!--
+
+    <View android:id="@+id/divider"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+		  	android:layout_toRightOf="@+id/watch_image"
+        
+        android:background="@drawable/divider_vertical_dark"
+    />	
+	 -->	
+	<TextView
+			android:id="@+id/ch_name"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="bottom"
+            android:layout_alignParentTop="true"
+            android:paddingTop="8dp"
+			android:textSize = "20sp"
+		  	android:paddingLeft="5dp"
+		  	android:ellipsize ="marquee"	
+		  	android:textStyle="bold"
+        	android:singleLine="true" 
+		  	android:layout_toRightOf="@+id/watch_image"
+		  	android:layout_toLeftOf="@+id/check_box"/>
+		<TextView
+			android:id="@+id/ch_no"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		  	android:layout_marginLeft="5dp"	
+            android:paddingBottom="8dp"		
+			android:textStyle="bold"
+			android:gravity ="center"			
+	        android:textColor="#ff666666"		        
+		  	android:layout_toRightOf="@+id/watch_image"
+            android:layout_below="@+id/ch_name"/>			
+		<!--
+			
+		<ImageView 
+	            android:id="@+id/signal_indicator"
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"		
+		        android:paddingRight="10dp"
+		        android:gravity = "top"     
+		        android:layout_below="@+id/ch_name"
+		        android:layout_toLeftOf="@+id/watch_button"	          
+		        android:src="@drawable/ic_signal4"
+		        android:layout_alignBottom ="@+id/preview_box"/> 	
+	 -->	
+		<CheckBox
+		android:id="@+id/check_box"
+		android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"	
+		android:layout_centerVertical="true"	
+		android:visibility="gone"    		
+				android:clickable="false"
+				android:paddingRight="10dp"/>  		
+</RelativeLayout>

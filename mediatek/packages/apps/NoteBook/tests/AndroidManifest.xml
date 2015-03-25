@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mediatek.notebook.tests">
+
+    <application >
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+    <uses-permission android:name="android.permission.RUN_INSTRUMENTATION"/>
+
+    <!--
+    This declares that this application uses the instrumentation test runner targeting
+    the package of com.mediatek.notebook.  To run the tests use the command:
+    "adb shell am instrument -w com.mediatek.notebook.tests/android.test.InstrumentationTestRunner"
+    -->
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.mediatek.notebook"
+        android:label="Notebook app tests" />
+
+    <instrumentation
+        android:name="com.mediatek.notebook.tests.NotebookTestRunner"
+        android:targetPackage="com.mediatek.notebook"
+        android:label="NoteBook functional tests" />
+
+</manifest>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">YGPS</string>
+    <string name="copyright_info_text">Copyright © 2009 Ludwig M Brinckmann
+		ludwigbrinckmann@gmail.com
+
+		The source code for this application is
+		available from
+		http://www.yunnanexplorer.com/
+
+		This program is free
+		software: you can redistribute it and/or modify
+		it under the terms of
+		the GNU General Public License as published by
+		the Free Software
+		Foundation, either version 3 of the License, or
+		(at your option) any
+		later version.
+
+		This program is distributed in the hope that it will be
+		useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+		GNU
+		General Public License for more details.
+
+		You should have received a
+		copy of the GNU General Public License
+		along with this program. If not,
+		see http://www.gnu.org/licenses/.
+
+		This program incorporates code by J
+		Latimer released under the following
+		license:
+
+		Copyright © 2008 Jon
+		Larimer jlarimer@gmail.com
+
+		Licensed under the Apache License, Version
+		2.0 (the "License");
+		you may not use this file except in compliance
+		with the License.
+		You may obtain a copy of the License at
+
+		http://www.apache.org/licenses/LICENSE-2.0
+
+		Unless required by
+		applicable law or agreed to in writing, software
+		distributed under the
+		License is distributed on an "AS IS" BASIS,
+		WITHOUT WARRANTIES OR
+		CONDITIONS OF ANY KIND, either express or
+		implied.
+		See the License for
+		the specific language governing permissions and
+		limitations under the
+		License.</string>
+    <string name="empty"></string>
+    <string name="menu_copyright">Copyright</string>
+    <string name="menu_ublox">Initialize GPS Chip</string>
+    <string name="menu_settings">Ublox Settings</string>
+    <string name="menu_showloc">Show Location</string>
+    <string name="menu_hideloc">Hide Location</string>
+    <string name="menu_info">Info</string>
+    <string name="menu_satellite">Satellite</string>
+    <string name="title_time">Time:</string>
+    <string name="time"></string>
+    <string name="title_lat">Latitude:</string>
+    <string name="latitude"></string>
+    <string name="title_lon">Longitude:</string>
+    <string name="first_latitude_text">First Latitude:</string>
+    <string name="first_longtitude_text">First Longitude:</string>
+    <string name="longitude"></string>
+    <string name="title_alt">Altitude:</string>
+    <string name="altitude"></string>
+    <string name="title_acc">Accuracy:</string>
+    <string name="accuracy"></string>
+    <string name="title_bear">Bearing:</string>
+    <string name="bearing"></string>
+    <string name="title_speed">Speed:</string>
+    <string name="speed"></string>
+    <string name="nema"></string>
+    <string name="debug"></string>
+    <string name="title_ttff">TTFF:</string>
+    <string name="title_fix">Fix:</string>
+    <string name="ttff"></string>
+    <string name="fix"></string>
+    <string name="title_provider">Provider:</string>
+    <string name="title_status">Status:</string>
+    <string name="provider"></string>
+    <string name="status"></string>
+    <string name="title_distance">Distance:</string>
+    <string name="distance"></string>
+    <string name="title_date">Date:</string>
+    <string name="date"></string>
+    <string name="title_chip_version">Chip version:</string>
+    <string name="chipversion">UNKNOWN</string>
+    <string name="title_mnl_version">MNL version:</string>
+    <string name="mnlversion">UNKNOWN</string>
+    <string name="hot">hot</string>
+    <string name="warm">warm</string>
+    <string name="cold">cold</string>
+    <string name="full">full</string>
+    <string name="restart">AGPS restart</string>
+    <string name="satellites">Satellites</string>
+    <string name="information">Information</string>
+    <string name="gps_test">GPS Test</string>
+    <string name="nmea_log">NMEA Log</string>
+    <string name="nmea_start">start</string>
+    <string name="nmea_stop">stop</string>
+    <string name="nmea_clear">clear</string>
+    <string name="nmea_save">save</string>
+    <string name="nmea_hint">The NMEA log below is being saved:</string>
+    <string name="gps_test_start">Start</string>
+    <string name="gps_test_times">Times 0 – 999:</string>
+    <string name="gps_test_interval">Interval 0 – 999(s):</string>
+    <string name="no_sdcard">Please check the SD card.</string>
+    <string name="gps_test_current_times">Current Times:</string>
+    <string name="need_3d_fix">Need 3D Fix</string>
+    <string name="last_ttff">Last TTFF:</string>
+    <string name="reconnect_countdown">Reconnect count down:</string>
+    <string name="gps_test_stop">Stop</string>
+    <string name="gps_test_mean_ttff">Mean TTFF:</string>
+    <string name="nmea_dbg_dbg">Undried</string>
+    <string name="nmea_dbg_nmea">Undried</string>
+    <string name="nmea_dbg_dbg_file">Undried</string>
+    <string name="nmea_dbg_nmea_file">Undried</string>
+    <string name="hot_still">Undried</string>
+    <string name="gps_hw_test">Undried</string>
+    <string name="gps_jamming_scan">JAM scan</string>
+    <string name="jamming_scan_times">20</string>
+    <string name="ygps_copyright_infor">YGPS Copyright Information</string>
+    <string name="toast_input_times">Please input test times</string>
+    <string name="toast_input_range">Please input a number between 0 and 999</string>
+    <string name="toast_input_interval">Please input interval</string>
+    <string name="btn_name_dbg2socket_enable">Enable dbg2socket [Need Restart]</string>
+    <string name="btn_name_dbg2socket_disable">Disable dbg2socket [Need Restart]</string>
+    <string name="btn_name_nmea2socket_enable">Enable nmea2socket [Need Restart]</string>
+    <string name="btn_name_nmea2socket_disable">Disable nmea2socket [Need Restart]</string>
+    <string name="btn_name_dbg2file_enable">Enable dbg2file [Need Restart]</string>
+    <string name="btn_name_dbg2file_disable">Disable dbg2file [Need Restart]</string>
+    <string name="btn_name_dbg2ddms_disable">Disable dbg2ddms [Need Restart]</string>
+    <string name="btn_name_dbg2ddms_enable">Enable dbg2ddms [Need Restart]</string>
+    <string name="btn_name_hotstill_disable">Disable Hotstill [Need Restart]</string>
+    <string name="btn_name_hotstill_enable">Enable Hotstill [Need Restart]</string>
+    <string name="btn_name_dbg2gpsdoctor_enable">Enable dbg2GPSDoctor [Need Restart]</string>
+    <string name="btn_name_dbg2gpsdoctor_disable">Disable dbg2GPSDoctor [Need Restart]</string>
+    <string name="toast_save_log_succeed_to">Save NmeaLog to %1$s Succeed!</string>
+    <string name="toast_save_log_succeed">Save NmeaLog failed</string>
+    <string name="toast_save_log_failed">Save NmeaLog failed</string>
+    <string name="toast_create_file_failed">Create new file failed</string>
+    <string name="toast_nmealog_save_at">NMEA log saved at %1$s</string>
+    <string name="toast_no_log">There is no log to save!</string>
+    <string name="toast_exceed_time">Exceed %1$s seconds</string>
+    <string name="toast_test_interrupted">GPS auto test interrupted</string>
+    <string name="toast_jamming_succeed">Jamming scan setting success</string>
+    <string name="toast_jamming_failed">Jamming scan setting fail</string>
+    <string name="toast_first_fix">GPS Fix after %1$d %2$s</string>
+    <string name="menu_run_bg_disable">Disable Run in BG. [Need Restart.]</string>
+    <string name="menu_run_bg_enable">Enable Run in BG. [Need Restart.]</string>
+    <string name="provider_status_enabled">%1$s enabled</string>
+    <string name="provider_status_disabled">%1$s disabled</string>
+    <string name="gps_status_started">STARTED</string>
+    <string name="gps_status_stopped">STOPPED</string>
+    <string name="gps_status_first_fix">FIRST_FIX</string>
+    <string name="gps_status_unavailable">UNAVAILABLE</string>
+    <string name="gps_status_available">AVAILABLE</string>
+    <string name="gps_status_unknown">UNKNOWN</string>
+    <string name="time_unit_ms">&#160;ms</string>
+    <string name="dialog_title_stop">Stopping</string>
+    <string name="dialog_message_stop">Please wait …</string>
+    <string name="dialog_title_error">Error</string>
+    <string name="dialog_message_error">Error dialog ID</string>
+    <string name="command_error">Command error</string>
+    <string name="gps_test_running_warn">Please stop GPS test</string>
+    <string name="supl_log">unDired</string>
+    <string name="btn_name_supllog_disable">Disable GPS.LOG</string>
+    <string name="btn_name_supllog_enable">Enable GPS.LOG</string>
+    <string name="start_type_text">Test restart type:</string>
+    <string name="toast_autotestlog_save_at">AutoTest log saved at %1$s</string>
+    <string name="title_clock_type">Clock type</string>
+    <string name="title_clock_buffer">Clock buffer</string>
+</resources>

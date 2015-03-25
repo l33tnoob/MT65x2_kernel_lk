@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2007-2008 Esmertec AG.
+ * Copyright (C) 2007-2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+   <!-- MTK resource -->
+   <string name="alerts">警报</string>
+   <string name="select_all">全选</string>
+   <string name="unselect_all">删除全部</string>
+   <string name="delete">删除</string>
+   <string name="select_cellbroadcasts">选择紧急警报</string>
+
+   <plurals name="message_view_selected_message_count">
+        <item quantity="one" >"已选中 <xliff:g id="MESSAGE_COUNT">%d</xliff:g> 条"</item>
+        <item quantity="other" >"已选中 <xliff:g id="MESSAGE_COUNT">%d</xliff:g> 条"</item>
+   </plurals>
+
+   <plurals name="confirm_delete_broadcast">
+        <!-- Case of 1 result. -->
+        <item quantity="one">将会删除1条选中警报</item>
+        <!-- Case of 0 or 2 or more results. -->
+        <item quantity="other">将会删除<xliff:g id="number" example="15">%1$s</xliff:g> 条选中警报</item>
+   </plurals>
+
+   <string name="enable_cmas_presidential_threat_alerts_title">显示总统警报</string>
+   <string name="enable_cmas_presidential_threat_alerts_summary">显示总统级警报</string>
+
+   <string name="enable_cmas_imminent_threat_alerts_title">显示紧急威胁</string>
+   <string name="enable_cmas_imminent_threat_alerts_summary">针对生命和财产遭到紧急威胁的情况显示警报</string>
+
+   <string name="cmas_preview_alert_tone_title">警报声预览</string>
+   <string name="cmas_preview_alert_tone_summary">预览警报声</string>
+
+   <string name="cmas_change_settings">您确定要更改设置吗？</string>
+   <string name="cmas_disable_cmas">关闭小区广播将不会收到任何警报</string>
+   <string name="cmas_enable_cmas_failed">打开失败</string>
+   <string name="enable_repeat_alert_title">重复报警</string>
+   <string name="enable_repeat_alert_summary">报警未读时重复提醒用戶</string>
+   <string name="enable_all_alert_title">显示所有警报</string>
+   <string name="enable_all_imminent_alerts_title">显示全部紧急警报</string>
+   <string name="enable_cell_broadcast_title">紧急警报</string>
+
+</resources>
+

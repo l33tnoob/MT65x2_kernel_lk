@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2007-2008 Esmertec AG.
+ * Copyright (C) 2007-2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+   <!-- MTK resource -->
+   <string name="alerts">警報</string>
+   <string name="select_all">全選</string>
+   <string name="unselect_all">刪除全部</string>
+   <string name="delete">刪除</string>
+   <string name="select_cellbroadcasts">選擇緊急警報</string>
+
+   <plurals name="message_view_selected_message_count">
+        <item quantity="one" >"已選中 <xliff:g id="MESSAGE_COUNT">%d</xliff:g> 條"</item>
+        <item quantity="other" >"已選中 <xliff:g id="MESSAGE_COUNT">%d</xliff:g> 條"</item>
+   </plurals>
+
+   <plurals name="confirm_delete_broadcast">
+        <!-- Case of 1 result. -->
+        <item quantity="one">將會刪除1條選中警報</item>
+        <!-- Case of 0 or 2 or more results. -->
+        <item quantity="other">將會刪除<xliff:g id="number" example="15">%1$s</xliff:g> 條選中警報</item>
+   </plurals>
+
+   <string name="enable_cmas_presidential_threat_alerts_title">顯示總統警報</string>
+   <string name="enable_cmas_presidential_threat_alerts_summary">顯示總統級警報</string>
+
+   <string name="enable_cmas_imminent_threat_alerts_title">顯示緊急威脅</string>
+   <string name="enable_cmas_imminent_threat_alerts_summary">針對生命和財產遭到緊急威脅的情況顯示警報</string>
+
+   <string name="cmas_preview_alert_tone_title">警報聲預覽</string>
+   <string name="cmas_preview_alert_tone_summary">預覽警報聲</string>
+   <string name="enable_repeat_alert_title">重複提醒</string>
+   <string name="enable_repeat_alert_summary">報警未讀時重複提醒用戶</string>
+   <string name="enable_all_alert_title">顯示所有警報</string>
+   <string name="enable_all_imminent_alerts_title">顯示全部緊急警報</string>
+
+   <string name="cmas_change_settings">您確定要變更設定嗎？</string>
+   <string name="enable_cell_broadcast_title">緊急警報</string>
+</resources>
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="confirm_radio_title">SIM ปิด</string>
+	<string name="confirm_radio_msg"> 		<xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		ปิดอยู่ในขณะนี้ คุณต้องการเปิด SIM การ์ดนี้หรือไม่? 	</string>
+	<string name="confirm_radio_msg_single">"ขณะนี้โหมดเครื่องบินเปิดอยู่ คุณต้องการปิดหรือไม่?"</string>
+	<string name="confirm_pin_title">PIN ล็อค</string>
+	<string name="confirm_pin_msg">SIM การ์ดที่คุณกำลังจะใช้ล็อคอยู่ในขณะนี้ คุณต้องการปลดล็อคหรือไม่?</string>
+	<string name="confirm_simmelock_title">SIM ME ล็อค</string>
+	<string name="confirm_simmelock_msg">SIM สล็อตที่คุณกำลังจะใช้ล็อคอยู่ในขณะนี้ คุณต้องการปลดล็อคหรือไม่?</string>
+	<string name="confirm_fdn_title">FDN เปิดทำงานแล้ว</string>
+	<string name="confirm_fdn_msg">หมายเลขการโทรคงที่เปิดทำงานแล้ว</string>
+	<string name="confirm_roaming_title">คำเตือนโรมมิ่ง</string>
+	<string name="confirm_roaming_msg">ขณะนี้ SIM การ์ดที่คุณกำลังจะใช้กำลังโรมมิ่งอยู่ ไม่มี SIM ท้องถิ่นที่ใช้ได้ในตอนนี้ คุณต้องการทำต่อหรือไม่?</string>
+	<string name="confirm_roaming_withPrefer_msg">ขณะนี้ SIM การ์ดที่คุณกำลังจะใช้กำลังโรมมิ่งอยู่ คุณต้องการทำต่อผ่าน SIM ท้องถิ่นหรือไม่?</string>
+	<string name="confirm_roaming_lbutton">ทำต่อ</string>
+	<string name="confirm_roaming_rbutton">ยกเลิก</string>
+	<string name="confirm_roamingWithPrefer_lbutton">SIM ท้องถิ่น</string>
+	<string name="confirm_roamingWithPrefer_rbutton">SIM โรมมิ่ง</string>
+	<string name="confirm_radio_lbutton">เปิด</string>
+	<string name="confirm_unlock_lbutton">ปลดล็อค</string>
+	<string name="confirm_disable_lbutton">ปิดทำงาน</string>
+	<string name="confirm_unlock_fail">การทำงานยกเลิกแล้ว</string>
+	<string name="confirm_turnon_radio_fail">การทำงานยกเลิกแล้ว</string>
+	<string name="confirm_permit_roaming_fail">คุณยกเลิกการกระทำบน SIM ที่โรมมิ่ง</string>
+	<string name="confirm_sim_locked_message">SIM การ์ดถูกล็อคอย่างถาวร"</string>
+	<string name="confirm_slot_locked_message">"สล็อตถูกล็อคถาวร"</string>
+	<string name="app_name">CellConnectionService</string>  
+	<string name="button_ok">Ok</string>  
+<string name="button_cancel">"ยกเลิก"</string>
+    <string name="confirm_radio_title_uim">UIM ปิด</string>
+    <string name="confirm_radio_title_card">การ์ดปิด</string>
+    <string name="confirm_radio_msg_uim"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		ปิดอยู่ในขณะนี้ คุณต้องการเปิด UIM การ์ดนี้หรือไม่?</string>
+    <string name="confirm_radio_msg_card"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> ปิดอยู่ในขณะนี้ คุณต้องการเปิดการ์ดนี้หรือไม่?</string>
+    <string name="confirm_radio_flight_mode_on_and_msg">โหมดการบินเปิดอยู่และ</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> ปิดอยู่ในขณะนี้ คุณต้องการปิดโหมดการบิน และเปิด SIM การ์ดนี้หรือไม่?</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg_uim"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> 		ปิดอยู่ในขณะนี้ คุณต้องการปิดโหมดการบิน และเปิด UIM การ์ดนี้หรือไม่?</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg_card"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> ปิดอยู่ในขณะนี้ คุณต้องการปิดโหมดการบิน และเปิดการ์ดนี้หรือไม่?</string>
+    <string name="confirm_radio_flight_mode_on_sim_on_msg">โหมดการบินเปิดอยู่ คุณต้องการปิดโหมดการบินหรือไม่?</string>
+    <string name="confirm_pin_title_uim">UIM ล็อค</string>
+    <string name="confirm_pin_title_card">การ์ดล็อค</string>
+    <string name="confirm_pin_msg_uim">ขณะนี้ UIM การ์ดที่เลือกถูกล็อค แรกสุดโปรดปลดล็อคก่อน</string>
+    <string name="confirm_pin_msg_card">ขณะนี้การ์ดที่เลือกถูกล็อค แรกสุดโปรดปลดล็อคก่อน</string>
+    <string name="confirm_simmelock_msg_uim">ขณะนี้ UIM สล็อตที่เลือกถูกล็อค แรกสุดโปรดปลดล็อคก่อน</string>
+    <string name="confirm_simmelock_msg_card">ขณะนี้สล็อตที่เลือกถูกล็อค แรกสุดโปรดปลดล็อคก่อน</string>
+    <string name="confirm_roaming_msg_uim">ขณะนี้ UIM การ์ดที่คุณกำลังจะใช้โรมมิ่งอยู่ ไม่มี UIM ท้องถิ่นในขณะนี้ คุณต้องการทำต่อหรือไม่?</string>
+    <string name="confirm_roaming_msg_card">ขณะนี้การ์ดที่คุณกำลังจะใช้โรมมิ่งอยู่ ไม่มีการ์ดท้องถิ่นในขณะนี้ คุณต้องการทำต่อหรือไม่?</string>
+    <string name="confirm_roaming_withPrefer_msg_uim">ขณะนี้ SIM การ์ดที่คุณกำลังจะใช้โรมมิ่งอยู่ คุณต้องการทำต่อด้วย UIM ท้องถิ่นหรือไม่?</string>
+    <string name="confirm_roaming_withPrefer_msg_card">ขณะนี้ SIM การ์ดที่คุณกำลังจะใช้โรมมิ่งอยู่ คุณต้องการทำต่อด้วยการ์ดท้องถิ่นหรือไม่?</string>
+    <string name="confirm_roamingWithPrefer_lbutton_uim">UIM ท้องถิ่น</string>
+    <string name="confirm_roamingWithPrefer_lbutton_card">การ์ดท้องถิ่น</string>
+    <string name="confirm_roamingWithPrefer_rbutton_uim">UIM โรมมิ่ง</string>
+    <string name="confirm_roamingWithPrefer_rbutton_card">การ์ดโรมมิ่ง</string>
+    <string name="confirm_roaming_for3Sims_msg">ขณะนี้ SIM การ์ดที่คุณกำลังจะใช้โรมมิ่งอยู่ คุณต้องการทำต่อหรือไม่?</string>
+    <string name="confirm_roaming_for3Sims_msg_uim">ขณะนี้ UIM การ์ดที่คุณกำลังจะใช้โรมมิ่งอยู่ คุณต้องการทำต่อหรือไม่?</string>
+    <string name="confirm_roaming_for3Sims_msg_card">ขณะนี้การ์ดที่คุณกำลังจะใช้โรมมิ่งอยู่ คุณต้องการทำต่อหรือไม่?</string>
+    <string name="confirm_permit_roaming_fail_uim">คุณยกเลิกการกระทำนี้บน UIM ที่โรมมิ่ง</string>
+    <string name="confirm_permit_roaming_fail_card">คุณยกเลิกการกระทำนี้บนการ์ดที่โรมมิ่ง</string>
+    <string name="confirm_sim_locked_message_uim">UIM ถูกล็อคถาวร</string>
+    <string name="confirm_sim_locked_message_card">การ์ดถูกล็อคถาวร</string>
+    <string name="button_yes">"ใช่"</string>
+    <string name="button_no">"ไม่"</string>
+    </resources>

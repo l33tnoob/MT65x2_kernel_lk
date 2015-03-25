@@ -1,0 +1,33 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type bluetoothd, domain;
+type bluetoothd_exec, exec_type, file_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# bluetoothd - bluetooth daemon
+permissive bluetoothd;
+
+init_daemon_domain(bluetoothd)
+# unconfined_domain(bluetoothd)
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive bluetoothd;
+
+# 20131122 Add Set Property Rule
+allow bluetoothd property_type:property_service set;

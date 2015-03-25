@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--* Copyright Statement:
+ *
+ * This software/firmware and related documentation ("MediaTek Software") are
+ * protected under relevant copyright laws. The information contained herein
+ * is confidential and proprietary to MediaTek Inc. and/or its licensors.
+ * Without the prior written permission of MediaTek inc. and/or its licensors,
+ * any reproduction, modification, use or disclosure of MediaTek Software,
+ * and information contained herein, in whole or in part, shall be strictly prohibited.
+ *
+ * MediaTek Inc. (C) 2012. All rights reserved.
+ *
+ * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+ * THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+ * RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO RECEIVER ON
+ * AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+ * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+ * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+ * SUPPLIED WITH THE MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+ * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+ * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+ * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+ * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+ * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+ * CUMULATIVE LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+ * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+ * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+ * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+ *
+ * The following software/firmware and/or related documentation ("MediaTek Software")
+ * have been modified by MediaTek Inc. All revisions are subject to any receiver's
+ * applicable license agreements with MediaTek Inc.
+ */  -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">  
+    <string name="text_chat_hint_compose">Digita messaggio</string> 
+    <string name="text_ipmsg_hint_compose">Scrivi messaggio joyn</string> 
+    <string name="group_invitation_notify_title">Invito chat da</string>  
+    <string name="group_multi_invitation_title">Inviti chat</string>  
+    <string name="group_multi_invitation_content">Toccare per selezionare gli inviti</string>  
+    <string name="notify_invitation_multi_participants"> 
+        <xliff:g id="invitor">%s</xliff:g> invita te, 
+        <xliff:g id="first_participant">%s</xliff:g> ed altre 
+        <xliff:g id="remind_number">%d</xliff:g> persone ad una chat di gruppo.
+    </string>  
+    <string name="notify_invitation_two_participants"> 
+        <xliff:g id="invitor">%s</xliff:g> invita te e 
+        <xliff:g id="remind_participant">%s</xliff:g> ad una chat di gruppo.
+    </string>  
+    <string name="text_block">"Blocca"</string>  
+    <string name="text_block_contact"> 
+        <xliff:g id="number">%s</xliff:g> contatto bloccato
+    </string>  
+    <string name="label_contact_is_composing"> 
+        <xliff:g id="name">%s</xliff:g> sta scrivendo...
+    </string>  
+    <string name="label_remote_is_offline"> 
+        <xliff:g id="name">%s</xliff:g> non è disponibile temporaneamente. Il messaggio sarà inviato quando 
+        <xliff:g id="name">%s</xliff:g> torna.
+    </string>  
+    <string name="label_contact_imore_composing">Due o più persone stanno scrivendo...</string>  
+    <string name="text_contacts">Contatti</string>  
+    <string name="text_blacklist">Elenco contatti bloccati</string>  
+    <string name="text_chats">Chat</string>  
+    <string name="text_settings">"Impostazioni"</string>  
+    <string name="text_chat_main">Chat</string>  
+    <string name="notification_multiple"> 
+        <xliff:g id="count">%s</xliff:g> nuovi messaggi
+    </string>  
+    <string name="notification_multipleChats_title">Messaggio chat da 
+        <xliff:g id="number">%s</xliff:g> chat
+    </string>  
+    <string name="text_add_contacts">Aggiungi contatti</string>  
+    <string name="text_clear_history">"Cancella cronologia"</string>  
+    <string name="text_close_chat">Chiudi chat</string>  
+    <string name="text_name">"Nome visualizzato"</string>  
+    <string name="group_chat_expand">Toccare per espandere la chat di gruppo</string>  
+    <string name="text_group_chat_quit">Esci</string>  
+    <string name="group_invitations_title">INVITO CHAT DI GRUPPO</string>  
+    <string name="chats_list_title">Chat</string>  
+    <string name="clear_history_message">La cronologia della chat sarà eliminata e non potrà essere recuperata.</string>  
+    <string name="file_transfer_bytes">"byte"</string>  
+    <string name="file_transfer_k_bytes">K</string>  
+    <string name="file_transfer_m">M</string>  
+    <string name="file_transfer_status_waiting">In attesa...</string>  
+    <string name="over_max_file_size">Il file selezionato è troppo grande</string>  
+    <string name="file_size_warning_contents">L’invio o la ricezione di file di grandi dimensioni può causare addebiti considerevoli</string>  
+    <string name="file_size_remind_contents">Non ricordarmelo di nuovo</string>  
+    <string name="file_size_warning">File di grandi dimensioni</string>  
+    <string name="file_size_notification">Rifiuto di un file di grandi dimensioni da 
+        <xliff:g id="name">%s</xliff:g> 
+    </string>  
+    <string name="oneonechat_block_title">Blocca \" 
+        <xliff:g id="contact">%s</xliff:g>\"
+    </string>  
+    <string name="oneonechat_unblock_title">Sblocca \" 
+        <xliff:g id="contact">%s</xliff:g>\"
+    </string>  
+    <string name="oneonechat_block_message">Tutti i messaggi da \" 
+        <xliff:g id="contact">%s</xliff:g>\" saranno bloccati. Controllare l’Elenco mittenti bloccati nelle Impostazioni per sbloccare
+    </string>  
+    <string name="oneonechat_unblock_message">Tutti i messaggi da \" 
+        <xliff:g id="contact">%s</xliff:g>\" saranno sbloccati
+    </string>  
+    <string name="groupchat_delete_menu">"Canc"</string>  
+    <string name="groupchat_delete_message">Elimina chat di gruppo</string>  
+    <string name="default_group_chat_subject">Chat di gruppo</string>  
+    <string name="text_yesterday">"ieri"</string>  
+    <string name="text_today">Oggi</string>  
+    <string name="load_history">Carica altra cronologia chat</string>  
+    <string name="attach_picture">"Foto"</string>  
+    <string name="attach_capture_picture">"Scatta foto"</string>  
+    <string name="group_chat_stranger">Sconosciuto</string>  
+    <string name="invitation_timeout_title">Invito scaduto</string>  
+    <string name="invitation_timeout_message">L’invito alla chat di gruppo è già scaduto.</string>  
+    <string name="chat_invitation_title">Invito chat</string>  
+    <string name="file_transfer_title">Trasferimento file</string>  
+    <string name="quit_group_chat">Hai abbandonato la chat di gruppo alle 
+        <xliff:g id="time">%s</xliff:g>, invio di un nuovo messaggio per ricongiungersi alla chat di gruppo.
+    </string>  
+    <string name="rejoin_group_chat">Ti sei ricongiunto alla chat di gruppo alle 
+        <xliff:g id="time">%s</xliff:g> 
+    </string>  
+    <string name="leave_group_chat"> 
+        <xliff:g id="name">%s</xliff:g> se n’è andato.
+    </string>  
+    <string name="join_group_chat"> 
+        <xliff:g id="name">%s</xliff:g> si è unito.
+    </string>  
+    <string name="stranger_remind">"Si sono in chat con l'identità incontrollato."</string>  
+    <string name="network_error_remind">La rete non è disponibile.</string>  
+    <string name="warning_no_service">Il servizio joyn è disabilitato, riprovare in un secondo tempo!</string>  
+    <string name="warning_no_im_capability">Il contatto scelto non ha capacità IM, riprovare in un secondo tempo!</string>  
+    <string name="warning_no_file_transfer_capability">Il contatto scelto non ha capacità di trasferimento file, riprovare in un secondo tempo!</string>  
+    <string name="warning_not_support_file">Il file scelto non è supportato per il trasferimento di file.</string>  
+    <string name="file_transfer_enhance_title">joyn</string>  
+    <string name="rcs_dialog_positive_button">Ok</string>  
+    <string name="rcs_dialog_negative_button">"Annulla"</string>  
+    <string name="select_contact_warning_dialog_title">Avviso contatti</string>  
+    <string name="select_contact_warning_dialog_message">Nessun contatto disponibile!</string>  
+    <string name="joyn_title">joyn</string>  
+    <string name="im_chat">IM</string>  
+    <string name="no_contact">Nessun contatto</string>  
+    <string name="large_file_repick_title">File di grandissime dimensioni</string>  
+    <string name="large_file_repick_message">Il file è troppo grande. Selezionarne un altro.</string>  
+    <string name="im_capabillity_failed"> 
+        <xliff:g id="name">%s</xliff:g> non disponibile.
+    </string>  
+    <string name="invite_into_groupchat_title">Hai invitato 
+        <xliff:g id="name">%s</xliff:g> alla chat di gruppo.
+    </string>  
+    <string name="accept_groupchat_title"> 
+        <xliff:g id="name">%s</xliff:g> ha invitato te e 
+        <xliff:g id="name">%s</xliff:g> alla chat di gruppo.
+    </string>  
+    <string name="link_pick">"Seleziona azione"</string>  
+    <string name="message">"Messaggio"</string>  
+    <string name="browser_alert">Apre il browser. Continuare?</string>  
+    <string name="nobody_join">Nessun partecipante si è unito alla chat.</string>  
+    <string name="no_chat">Nessuna chat.</string>  
+    <string name="message_status_displayed">"Letto"</string>  
+    <string name="not_rcse_remind"> 
+        <xliff:g id="number">%s</xliff:g> non è un utente valido.
+    </string> 
+        <string name="cannot_add_any_more_member">Impossibile aggiungere altri membri</string>  
+    <string name="cannot_add_members_over">Impossibile aggiungere membri oltre a 
+        <xliff:g id="max_num">%d</xliff:g> 
+    </string>  
+    <string name="text_close_all_chat">Chiudi tutte le chat</string>  
+    <string name="text_close_all_chat_message">Chiudere tutte le chat?</string>  
+    <string name="compress_image_title">Comprimi immagine</string>  
+    <string name="compress_image_content">"L’invio di un'immagine compressa aumenterà la velocità di trasferimento. Sì, comprimi."</string> 
+    <string name="pref_setting_isms">Messaggio joyn</string> 
+</resources>

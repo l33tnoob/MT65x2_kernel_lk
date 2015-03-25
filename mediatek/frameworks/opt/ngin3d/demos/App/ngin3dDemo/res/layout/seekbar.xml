@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/control_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/view_container"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/control_container"
+            android:text="@string/X"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/control_container"
+            android:layout_toRightOf="@+id/editText1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/seekBar1"
+            android:layout_marginTop="21dp"
+            android:text="@string/Y"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/seekBar1"
+            android:layout_alignTop="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/seekBar2"
+            android:layout_marginTop="22dp"
+            android:text="@string/Z"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <SeekBar
+            android:id="@+id/seekBar3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/seekBar2"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView3" />
+
+
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView3"
+            android:editable="false"
+            android:ems="10"
+            android:singleLine="true"
+            android:text="@string/D10">
+
+        </EditText>
+
+
+
+        <EditText
+            android:id="@+id/EditText01"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_toRightOf="@+id/textView3"
+            android:editable="false"
+            android:ems="10"
+            android:singleLine="true"
+            android:text="@string/D360"/>
+
+
+
+        <EditText
+            android:id="@+id/EditText02"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:editable="false"
+            android:ems="10"
+            android:text="@string/D0"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/view_container"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:background="#000000"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>

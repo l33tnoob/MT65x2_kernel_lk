@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mediatek.datatransfer"
+    android:versionCode="1"
+    android:versionName="1.0" > 
+
+
+    <uses-sdk android:targetSdkVersion="17" android:minSdkVersion="10"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_MMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_MMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_NOTEBOOK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_NOTEBOOK" >
+    </uses-permission>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:icon="@drawable/ic_backuprestore_launcher"
+        android:label="@string/app_name"
+        android:uiOptions="splitActionBarWhenNarrow" 
+        android:supportsRtl="true">
+        <activity
+            android:name=".BootActivity"
+            android:launchMode="singleInstance"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:icon="@drawable/ic_backuprestore_launcher"
+            android:label="@string/app_name"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <intent-filter>
+                <action android:name="com.mediatek.backuprestore.intent.MainActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+        </activity>
+        <activity
+            android:name=".BackupMainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name=".RestoreMainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name=".PersonalDataBackupActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:label="@string/backup_personal_data"
+             >
+            <intent-filter>
+                <action android:name="com.mediatek.backuprestore.intent.PersonalDataBackupActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AppBackupActivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:icon="@drawable/ic_application"
+            android:label="@string/backup_app"
+             >
+            <intent-filter>
+                <action android:name="com.mediatek.backuprestore.intent.AppBackupActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PersonalDataRestoreActivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/backup_personal_data"
+             >
+            <intent-filter>
+                <action android:name="com.mediatek.backuprestore.intent.PersonalDataRestoreActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mediatek.datatransfer.AppRestoreActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:icon="@drawable/ic_application"
+            android:launchMode="singleTask"
+            android:label="@string/backup_app"
+            >
+            <intent-filter>
+                <action android:name="com.mediatek.backuprestore.intent.AppRestoreActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".BackupService" >
+        </service>
+        <service android:name="com.mediatek.datatransfer.RestoreService" >
+        </service>
+
+        <receiver android:name="com.mediatek.datatransfer.SDCardReceiver" >
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="com.mediatek.SD_SWAP" />
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMLETED" />
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="com.mediatek.autotest.mount" />
+                <action android:name="com.mediatek.autotest.unmount" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mediatek.datatransfer.newdata_transfer"></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".NotificationReceiver">
+            <intent-filter android:priority="50">
+                <action android:name="com.mediatek.datatransfer.newdata"></action>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

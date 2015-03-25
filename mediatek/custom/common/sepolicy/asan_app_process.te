@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binasan_app_process Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type asan_app_process_exec , exec_type, file_type;
+type asan_app_process ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive asan_app_process;
+init_daemon_domain(asan_app_process)
+
+
+# 20131122 Add Set Property Rule
+allow asan_app_process  property_type:property_service set;

@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binagpscacertinit Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type agpscacertinit_exec , exec_type, file_type;
+type agpscacertinit ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive agpscacertinit;
+init_daemon_domain(agpscacertinit)
+
+
+# 20131122 Add Set Property Rule
+allow agpscacertinit  property_type:property_service set;

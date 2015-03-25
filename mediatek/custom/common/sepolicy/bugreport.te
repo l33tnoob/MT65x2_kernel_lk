@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binbugreport Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type bugreport_exec , exec_type, file_type;
+type bugreport ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive bugreport;
+init_daemon_domain(bugreport)
+
+
+# 20131122 Add Set Property Rule
+allow bugreport  property_type:property_service set;

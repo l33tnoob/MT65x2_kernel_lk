@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="STR_NMS_MAIN">iSMS</string>
+    <string name="STR_NMS_HISSAGE">iSMS</string>
+    <string name="STR_NMS_INVITE_SMS_CONTENT">Merhaba, iSMS harika bir sohbet aracıdır. It ücretsiz ve kullanışlıdır. Daha fazla bilgi için lütfen http://isms.hissage.com adresine bakın.</string>
+    <string name="STR_NMS_NO_SDCARD">SD kart algılanamadı; iSMS tarafından bazı işlemlere izin verilmeyecek</string>
+    <string name="STR_NMS_MOUNT_SDCARD">SD kart kullanıma hazır</string>
+    <string name="STR_NMS_SEND_MMS_FAIL">Mesaj gönderilemiyor. Ağ kullanılabilir olduğunda otomatik olarak gönderilecek.</string>
+    <string name="STR_NMS_RECV_MMS_FAIL">İndirilemiyor. Lütfen daha sonra tekrar deneyin.</string>
+    <string name="STR_NMS_GROUP_CHAT_ME">ben</string>
+    <string name="STR_NMS_GROUP_CHAT_I">Ben</string>
+    <string name="STR_NMS_GROUP_CHAT_YOU">Sen</string>
+    <string name="STR_NMS_GROUP_CREATE_MSG">%1$s, %2$s kişisini grup sohbetine davet ediyor.</string>
+    <string name="STR_NMS_GROUP_ADD_MSG">%1$s grup sohbetine katıldı.</string>
+    <string name="STR_NMS_GROUP_DELETE_MSG">%1$s, %2$s kişisini grup sohbetinden sildi.</string>
+    <string name="STR_NMS_GROUP_QUITE_MSG">%1$s grup sohbetinden çıktı.</string>
+    <string name="STR_NMS_GROUP_CHAT_PLACE_HOLDER_MSG_BODY">Bu gruba katıldınız</string>
+    <string name="STR_NMS_PICTURE">resim</string>
+    <string name="STR_NMS_TAPE">ses</string>
+    <string name="STR_NMS_VCARD">kişi</string>
+    <string name="STR_NMS_LOCATION">konum</string>
+    <string name="STR_NMS_SKETCH">çizim</string>
+    <string name="STR_NMS_VIDEO">video</string>
+    <string name="STR_NMS_CALENDAR">takvim</string>
+    <string name="STR_NMS_UNKNOWN">bilinmiyor</string>
+    <string name="STR_NMS_READ_MODE_PIC">bir görüntü</string>
+    <string name="STR_NMS_READ_MODE_TAPE">bir sesli not</string>
+    <string name="STR_NMS_READ_MODE_VCARD">kişiler</string>
+    <string name="STR_NMS_READ_MODE_LOCATION">bir konum</string>
+    <string name="STR_NMS_READ_MODE_SKETCH">bir çizim</string>
+    <string name="STR_NMS_READ_MODE_VIDEO">bir video</string>
+    <string name="STR_NMS_READ_MODE_CALENDAR">bir takvim</string>
+    <string name="STR_NMS_ISMS_ENABLE">(iSMS Etkin)</string>
+    <string name="STR_NMS_READ_MODE_UNKNOWN">bilinmeyen dosya</string>
+    <string name="STR_NMS_ALL_MSG">Tüm Mesajlar</string>
+    <string name="STR_NMS_SAVED">Kaydedildi</string>
+    <string name="STR_NMS_BLOCKMSG">Engellendi</string>
+    <string name="STR_NMS_SMS_TYPE">SMS</string>
+    <string name="STR_NMS_NO_SIM">SIM kart algılanmadı</string>
+    <string name="STR_NMS_ILLEGAL_ADDRESS">Geçersiz numara</string>
+    <string name="STR_NMS_REMIND_USER_SET_NAME">Lütfen profilinizi güncelleyin</string>
+    <string name="STR_NMS_OK">Tamam</string>
+    <string name="STR_NMS_BACK">Geri</string>
+    <string name="STR_NMS_CANCEL">İptal</string>
+    <string name="STR_NMS_NETWORK_UNAVL">Lütfen çalışan bir veri bağlantınız (3G, GPRS ya da kablosuz gibi) olduğundan emin olun</string>
+    <string name="STR_NMS_TODAY">Bugün</string>
+    <string name="STR_NMS_YESTERDAY">Dün</string>
+    <string name="STR_NMS_NOW">Şimdi</string>
+    <string name="STR_NMS_NO_SIM_CARD">SIM kart algılanmadı; bir SIM kart takmalısınız.</string>
+    <string name="STR_NMS_NO_CONNECTION">Ağ kullanılamıyor ya da uçak modu açık; lütfen kontrol edin.</string>
+    <string name="STR_NMS_ATTACH_SHARE">%1$s, %2$s paylaştı</string>
+    <string name="STR_NMS_WAIT">Bekleyin…</string>
+    <string name="STR_NMS_TIPTITLE">İpucu</string>
+
+    <string name="STR_NMS_OPEN">Aç</string>
+    <string name="STR_NMS_PLAY">Yürüt</string>
+    
+    <string name="STR_NMS_SETTING_COMMENT">iSMS harika bir sohbet aracıdır. It ücretsiz ve kullanışlıdır. Daha Fazla Bilgi</string> 
+    <string name="STR_NMS_KNOW_MORE">Daha Fazla Bilgi</string>    
+    <string name="STR_NMS_RECEIVED_MSG_DETAILS">Tür: IP Mesajı\nGönderen: %1$s\nGönderilen: %2$s\nAlınan: %3$s</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH_ADD">iSMS hizmet nedeniyle depolama alanı eksikliği geçici olarak kullanılamıyor.</string>
+    <string name="STR_NMS_SERVER_AUTO_ECHO_MSG">Mesaj alındı​​. Teşekkürler!</string>
+
+    <string name="STR_NMS_VCARD_NAME">%1$s kişi</string>
+    <string name="STR_NMS_SHARE_VCARD_FAILED">kişi paylaşma başarısız</string>
+
+    <!-- upgrade info -->
+    <string name="STR_NMS_UPGRADE_TICKER">Sürüm yükseltme</string>
+    <string name="STR_NMS_UPGRADE_ERROR_TITLE">Yükseltme hatası</string>
+    <string name="STR_NMS_UPGRADE_ERROR_CONTENT">Yükseltme hatası. Lütfen iSMS istemcide yükseltin</string>
+    <string name="STR_NMS_INSTALLED_TITLE">Yükseltme başarılı</string>
+    <string name="STR_NMS_INSTALLED_CONTENT">Telefona başarıyla yükseltildi</string>
+    <string name="STR_NMS_PROMPT_DLG_TITLE">Yeni sürüm algılandı</string>
+    <string name="STR_NMS_PROMPT_DLG_DOWNLOAD">İndir</string>
+    <string name="STR_NMS_PROMPT_DLG_LATER">Daha sonra</string>
+    <string name="STR_NMS_UPGRADING">Yükseltiliyor</string>
+    <string name="STR_NMS_UPGRADE_TIME">Son kontrol: %s</string>
+    
+    <!-- ext protocol -->
+    <string name="STR_NMS_OFFLINE_URL">http://ismsi.hissage.com/webservice/nmsmail/notifyOffline.php</string>
+    
+    <!-- Activation start -->
+    <string name="STR_NMS_PRELOAD_IP_MSG_CONTENT">&quot;iSMS\'ye hoş geldiniz.&quot;</string>
+    <string name="STR_NMS_ACTIVAT_TITLE">iSMS, telefon numaranızı doğrulamak için bir kerelik SMS gönderecektir. Operatör ücreti uygulanabilir.</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE">Telefon numaranızı doğrulayın</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE2">Telefon numaranızı doğrulayın</string>
+    <string name="STR_NMS_YOUR_COUNTRY_TITLE">ÜLKENİZ</string>
+    <string name="STR_NMS_YOUR_PHONE_TITLE">TELEFON NUMARANIZ</string>
+    <string name="STR_NMS_VERIFY_FAIL_TITLE">SMS doğrulama tamamlanamadı</string>
+    <string name="STR_NMS_VERIFY_FAIL_CONTENT">Lütfen telefon numaranızın doğru girildiğinden emin olun.</string>
+    <string name="STR_NMS_WORKING_SMS_TIP">Lütfen çalışan bir SMS planınız olduğundan emin olun.</string>
+    <string name="STR_NMS_VERIFYING">Şuraya gönderilen SMS\'yi otomatik olarak algılamayı bekliyor:</string>
+    <string name="STR_NMS_RETRY">Yeniden dene</string>
+    <string name="STR_NMS_EDIT_NUMBER">Numarayı düzenle</string>
+    <string name="STR_NMS_UPDATE_PROFILE">Profili güncelle</string>
+    <string name="STR_NMS_START_ISMS">iSMS\'yi başlat</string>
+    <string name="STR_NMS_SEND">Gönder</string>
+    <string name="STR_NMS_CONGRATULATIONS_TITLE">Tebrikler!</string>
+    <string name="STR_NMS_CONGRATULATIONS_CONTENT">iSMS\'yi etkinleştirdiğiniz için teşekkür ederiz.\n Hizmetin keyfini çıkarmaya başlayabilirsiniz.\nYaşasın iSMS!</string>
+    <string name="STR_NMS_WELCOME_BACK">Tekrar hoş geldiniz.</string>
+    <string name="STR_NMS_SEND_SMS_FAIL">Doğrulama başarısız, lütfen şunları kontrol edin:\n  1. Telefon numarası doğru;\n  2. Güvenlik yazılımı kapalı;\n  3. SMS göndermeyi engelleyen diğer olası nedenler.\nEmin olup daha sonra tekrar deneyin.</string>
+    <string name="STR_NMS_ACTIVE">iSMS\'yi etkinleştir</string>
+    <string name="STR_NMS_WELCOME_ACTIVE">iSMS\'ye hoş geldiniz</string>
+    <string name="STR_NMS_CONNECTING">Bağlanıyor...</string>
+    <!-- Activation end -->
+
+
+    <!-- Notification start -->
+    <string name="STR_NMS_NEW_MSG_TITLE">Yeni iSMS Mesajı</string>
+    <string name="STR_NMS_NEW_SMG_CONTENT">%d okunmamış mesaj</string>
+    <!-- Notification End -->
+
+    <string name="STR_NMS_MSG_DUMPER_MSG_SMS">SMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_MMS">MMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_IP">IP Mesajı</string>
+    <string name="STR_NMS_MSG_DUMPER_SEND_MSG">Gönderildi %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_RECEIVE_MSG">Alındı %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TIME">Saat: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TEXT">Metin</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_PIC">Resim</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_SKETCH">Çizim</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VOICE">Ses</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VIDEO">Video</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CALENDAR">Takvim</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION_IMG">Konum resmi</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VCARD">Vcard</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION">Konum</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CAPTION">Başlık: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_URL">Url: </string>
+    <string name="STR_NMS_MSG_DUMPER_DURATION">Süre: </string>
+    <string name="STR_NMS_MSG_DUMPER_COORDINATE">Koordinat: </string>
+    <string name="STR_NMS_MSG_DUMPER_ADDRESS">Adres: </string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_SENDER">Gönderen: </string>
+    <string name="STR_NMS_MSG_DUMPER_NORMAL_DETAIL">Oturum ayrıntısı:</string>
+    <string name="STR_NMS_MSG_DUMPER_NAME">Ad: </string>
+    <string name="STR_NMS_MSG_DUMPER_NUMBER">Numara: </string>
+    <string name="STR_NMS_MSG_DUMPER_PORTRAIT">Portre</string>
+    <string name="STR_NMS_MSG_DUMPER_MULTI_SEND_DETAIL">Yayın:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_DETAIL">Grup sohbeti:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_CREATER">Oluşturan: </string>
+    <string name="STR_NMS_MSG_DUMPER_MEMBERS">Üyeler: </string>
+    <string name="STR_NMS_MSG_DUMPER_VCARD_NAME">Ad: </string>
+    <string name="STR_NMS_MSG_DUMPER_CALENDAR_SUMMARY">Özet: </string>
+
+    <!-- Chat Settings -->
+    <string name="STR_NMS_CHAT_SETTING_TITLE">Sohbet Ayarları</string>
+    <string name="STR_NMS_DISPLAY">Görüntüle</string>
+    <string name="STR_NMS_CHAT_WALLPAPER">Sohbet duvar kağıdı</string>
+    <string name="STR_NMS_SYS_WALLPAPER">Duvar kağıdı seç</string>
+    <string name="STR_NMS_CAMEARPHOTO">Fotoğraf çek</string>
+    <string name="STR_NMS_SYS_GALLERY">Galeriden seç</string>
+    <string name="STR_NMS_DEFAULT_WALLPAPER">Varsayılan</string>
+    <string name="STR_NMS_NOTIFICATION_CATEGORY">Bildirim</string>
+    <string name="STR_NMS_NOTIFICATION_TITLE">iSMS bildirimi</string>
+    <string name="STR_NMS_NOTIFICATION_CONTENT">Bildirimler alındığında göster</string>
+    <string name="STR_NMS_MUTE">Sessiz</string>
+    <string name="STR_NMS_MUTE_OFF">Kapalı</string>
+    <string name="STR_NMS_MUTE_1">1 saat boyunca sessiz</string>
+    <string name="STR_NMS_MUTE_4">4 saat boyunca sessiz</string>
+    <string name="STR_NMS_MUTE_8">8 saat boyunca sessiz</string>
+    <string name="STR_NMS_RINGTONE_TITLE">Zil sesi</string>
+    <string name="STR_NMS_RINGTONE_CONTENT">Yeni bildirimler için zil sesi ayarla </string>
+    <string name="STR_NMS_VIBRATE_TITLE">Titreş</string>
+    <string name="STR_NMS_VIBRATE_CONTENT">Bildirimler alındığında titreş</string>
+    <string name="STR_NMS_ACTIONS">Eylemler</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_TITLE">Sohbet geçmişini indir</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_CONTENT">SD karta sıkıştırılmış biçimde kaydet</string>
+    <string name="STR_NMS_EMAIL_HISTORY_TITLE">Sohbet geçmişini e-postayla gönder</string>
+    <string name="STR_NMS_EMAIL_HISTROY_CONTENT">Sohbet geçmişini sıkıştırılmış biçimde e-postayla gönder</string>
+    <string name="STR_NMS_CLEAR_HISTROY">Sohbet geçmişini temizle</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_DLG">İndiriliyor...</string>
+    <string name="STR_NMS_DOWNLOAD_OK">Sohbet geçmişi indirilip %s olarak kaydedildi</string>
+    <string name="STR_NMS_DOWNLOAD_ERROR">Sohbet geçmişini indirmede hata.</string>
+    <string name="STR_NMS_DOWNLOAD_EMPTY">İndirilecek bir şey yok.</string>
+    <string name="STR_NMS_CLEARING">Geçmiş temizleniyor, lütfen bekleyin...</string>
+    <string name="STR_NMS_WAIT_SAVE_WALLPAPER">Duvar kâğıdı kaydediliyor, lütfen bekleyin...</string>
+    <string name="STR_NMS_SAVE_WALLPAPER_OK">Duvar kâğıdı başarıyla kaydedildi.</string>
+    <string name="STR_NMS_CLEARDONE">Geçmiş temizlendi.</string>
+    <string name="STR_NMS_SVAE_TITLE">SD karta kaydet</string>
+    <string name="STR_NMS_SAVE_CONTENT">Bu sohbet dizisini SD karta sıkıştırılmış dosya olarak kaydet</string>
+    <string name="STR_NMS_EMAIL_TITLE">E-posta aracılığıyla paylaş</string>
+    <string name="STR_NMS_EMAIL_CONTENT">Bu sohbet dizisini, sıkıştırılmış biçimde e-posta aracılığıyla ek olarak paylaş</string>
+
+    <!-- Chat Settings End -->
+
+
+    <!-- Profile Settings -->
+    <string name="STR_NMS_PROFILE_TITLE">Profil</string>
+    <string name="STR_NMS_TAP_AVATAR_TIP">Profil resmini düzenlemek için dokun</string>
+    <string name="STR_NMS_DISPLAY_NAME_TIP">EKRAN ADI</string>
+    <string name="STR_NMS_ACCOUNT_TIP">ISMS HESABI</string>
+    <string name="STR_NMS_NO_APP">Bu eylemi hiçbir uygulama gerçekleştiremez.</string>
+    <string name="STR_NMS_NO_NAME">Adınızı ayarlayın</string>
+    <string name="STR_NMS_SAVE_AVATAR_FAILD">Üzgünüz, profil resmi kaydedilemedi.</string>
+    <string name="STR_NMS_INPUT_NAME">Ad</string>
+    <string name="STR_NMS_TERM_WARN_ACTIVATE">Bu özellik yalnızca iSMS hizmeti tarafından desteklenir.\n\niSMS, Internet veri bağlantısı (kablosuz, 2G/3G vb.) aracılığıyla herhangi bir anda ve yerde arkadaşlarınızla sohbet etmenize ve multimedya içerikleri paylaşmanıza olanak tanıyan ücretsiz bir anlık mesajlaşma hizmetidir.\nİlk kez etkinleştirildiğinde, iSMS, kaydı tamamlamak için otomatik olarak bir SMS gönderecek. SMS kotası/ücreti uygulanabilir.\n\n Kullanıcı Sözleşmesi\n</string>
+    <string name="STR_NMS_TERM_WARN_WELCOME">iSMS, Internet veri bağlantısı (kablosuz, 2G/3G vb.) aracılığıyla herhangi bir anda ve yerde arkadaşlarınızla sohbet etmenize ve multimedya içerikleri paylaşmanıza olanak tanıyan ücretsiz bir anlık mesajlaşma hizmetidir.\nİlk kez etkinleştirildiğinde, iSMS, kaydı tamamlamak için otomatik olarak bir SMS gönderecek. SMS kotası/ücreti uygulanabilir.\n\n Kullanıcı Sözleşmesi\n</string>
+    <string name="STR_NMS_TERM_KEY">Hüküm ve Koşullar</string>
+    <string name="STR_NMS_AGREE_AND_CONTINUE">Kabul ve Devam Et</string>
+    <string name="STR_NMS_ACTIVE_BNT">Etkinleştir</string>
+    <string name="STR_NMS_SET_PROFILE_OK">Profil başarıyla ayarlandı</string>
+    <string name="STR_NMS_SET_PROFILE_FAIL">Profil ayarlanamadı</string>
+    <string name="STR_NMS_ILLEGAL_PROFILE_NAME">Kural dışı ad</string>
+    <string name="STR_NMS_NO_ACTIVITED">Hiçbir SIM kartı etkinleştirilmedi.</string>
+    <!-- Profile Settings End -->
+
+
+    <!-- Term Activity -->
+    <string name="STR_NMS_REJECT">Reddet</string>
+    <string name="STR_NMS_AGREE">Kabul Et</string>
+    <string name="STR_NMS_TERM_TITLE">Hizmet Hükümleri</string>
+    <string name="STR_NMS_TERM_CONTENT">Hizmetin ve Hizmet içinde bulunan yazılımın, dijital malzemelerin korunmasına izin veren güvenlik bileşenleri içerebileceğini ve bu malzemelerin kullanımının AF PushMail ve/veya Hizmete içerek sağlayanlar tarafından belirlenen kullanım kurallarına tabi olduğunu kabul edersiniz. Hizmette bulunan kullanım kurallarının hiçbirini geçersiz kılmayı veya bozmayı deneyemezsiniz. Hizmette sağlanan malzemelerin, bütün olarak ya da kısmen her türlü yetkisiz yeniden üretimi, yayını, daha fazla dağıtımı veya kamuya ifşası kesinlikle yasaktır.</string>
+    <!-- Term Activity End -->
+
+
+    <!-- System Settings -->
+    <string name="STR_NMS_SYS_SETTING_TITLE">iSMS Mesajı</string>
+    <string name="STR_NMS_SETTINGS_TITLE">PROFİL</string>
+    <string name="STR_NMS_PREFERENCE_CATE">TERCİHLER</string>
+    <string name="STR_NMS_SEND_SMS_TITLE">SMS olarak gönder</string>
+    <string name="STR_NMS_SEND_SMS_CONTENT">iSMS kullanılamadığında SMS olarak gönder. Operatör mesajlaşma fiyatları uygulanabilir. Bu kural grup sohbetine uygulanmaz.</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_TITLE">Otomatik İndir</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_CONTENT">Multimedya nesneleri otomatik olarak indir</string>
+    <string name="STR_NMS_CAPTION_TITLE">Başlıklar</string>
+    <string name="STR_NMS_CAPTION_CONTENT">Dosyayı başlıklarla paylaş</string>
+    <string name="STR_NMS_SYSTEM_CATE">SİSTEM</string>
+    <string name="STR_NMS_UPDATE_TITLE">Yazılım güncelleme</string>
+    <string name="STR_NMS_UPDATE_CONTENT">Son kontrol: Hiç</string>
+    <string name="STR_NMS_NETWORK_USAGE_TITLE">Ağ Kullanımı</string>
+    <string name="STR_NMS_NETWORK_USAGE_CONTENT">Toplam gönderilen/alınan veri kullanımını görüntüle</string>
+    <string name="STR_NMS_NETWORK_DLG_CONTENT">Gönderilen: %1$.3f K \nAlınan: %2$.3f K\nSon sıfırlama: %3$s</string>
+    <string name="STR_NMS_VERSION_TITLE">Sürüm</string>
+    <string name="STR_NMS_NEVER_CLEAR">Hiç</string>
+    <string name="STR_NMS_RESET">Sıfırla</string>
+    <string name="STR_NMS_SWITCH_ON">AÇIK</string>
+    <string name="STR_NMS_SWITCH_OFF">KAPALI</string>
+    <string name="STR_NMS_SYSTEM_SETTING_TITLE">Ayarları</string>
+    <string name="STR_NMS_COPYRGIHT">Hesine Technologies, Inc.</string>
+    <string name="STR_NMS_ABOUT">iSMS Hakkında</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_TITLE">Okuma Durumunu Göster</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_CONTENT">Mesaj listesinde okuma durumunu göster</string>
+    <string name="STR_NMS_SHOW_REMIND_TITLE">Anımsatıcıları Göster</string>
+    <string name="STR_NMS_SHOW_REMIND_CONTENT">Sohbet ekranında iSMS Anımsatıcıları göster</string>
+    <string name="STR_NMS_MENU_RESET_SETTING">Varsayılan ayarları geri yükle</string>
+    <string name="STR_NMS_MENU_FUNCTION_INTRODUCTION">Özellikler</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT">Kullanıcı Sözleşmesi</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION">Telif Hakkı</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT_TITLE">HESINE iSMS KULLANICI LİSANSI SÖZLEŞMESİ</string>
+    <string name="STR_NMS_MENU_FUNCTION">Özellikler Listesi</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION_DETAIL">\nHesine Technologies Inc.\nCopyright© 2008-2013\nHer Hakkı Saklıdır.\n</string>
+    <!-- System Settings End -->
+
+
+    <!-- Caption Settings -->
+    <string name="STR_NMS_AUDIO_TITLE">Ses</string>
+    <string name="STR_NMS_VIDEO_TITLE">Videolar</string>
+    <string name="STR_NMS_PHOTO_TITLE">Fotoğraflar</string>
+    <!-- Caption Settings End -->
+
+
+    <!-- Map String start -->
+    <string name="STR_NMS_MAP_TITLE">Konumu Paylaş</string>
+    <string name="STR_NMS_MAP_PROMPT">Konum hizmetiniz açık olmadığından harita görüntülenemiyor. Aşağıdaki adres, cep bilgileriniz temel alınarak tahmin edildi. \nDaha doğru bir konum hizmeti almak için konum hizmetini açmanız önerilir.</string>
+    <string name="STR_NMS_MAP_NOTE_1">Lütfen sistem ayarlarında Konumum kaynağını etkinleştirin.</string>
+    <string name="STR_NMS_MAP_SHARE">Paylaş</string>
+    <string name="STR_NMS_MAP_SETTINGS">Ayarlar</string>
+    <string name="STR_NMS_MAP_OK">Tamam</string>
+    <string name="STR_NMS_MAP_CANCEL">İptal</string>
+    <string name="STR_NMS_MAP_EDIT">Konumu düzenle</string>
+    <string name="STR_NMS_MAP_SEARCH_HINT">Yakındaki yerleri ara</string>
+    <string name="STR_NMS_MAP_WAIT">Lütfen bekleyin...</string>
+    <string name="STR_NMS_MAP_EDIT_LIMIT"> karakter	ZeichenInput Giriş karakteri sınıra ulaştı</string>
+    <string name="STR_NMS_MAP_ADDR_LEN">Adres çok uzun</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR_LOCATING">Geçerli konumunuz belirleniyor...</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN_LOCATING">PIN konumunuz belirleniyor...</string>
+    <string name="STR_NMS_MAP_LINEONE_SEARCH_LOCATING">Aranan konumunuz belirleniyor...</string>
+    <string name="STR_NMS_MAP_LINETHREE_NEARBY_LOCATING">Yakındaki yerler aranıyor...</string>
+    <string name="STR_NMS_MAP_LINEONE_FAILED">Şu anda konumunuza ulaşılamıyor</string>
+    <string name="STR_NMS_MAP_LINETWO_FAILED">Lütfen Konum hizmetinizin açık ve ağın kullanılabilir olduğundan emin olun</string>
+    <string name="STR_NMS_MAP_LINETHREE_FAILED">Yakında hiçbir yer bulunamadı</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR">Geçerli konumu paylaş</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN">PIN konumunu paylaş</string>
+    <string name="STR_NMS_MAP_MY_LOCATION">Konumum</string>
+    <string name="STR_NMS_MAP_SEARCH">Ara</string>
+    <string name="STR_NMS_MAP_ERROR_1">Enlem ve boylam sunucuları</string>
+    <string name="STR_NMS_MAP_ERROR_2">Google sunucuları bir hata döndürdü</string>
+    <!-- Map String end -->
+
+
+    <!-- All Media String start -->
+    <string name="STR_NMS_ALL_MEDIA_TITLE">Tüm Medya</string>
+    <string name="STR_NMS_ALL_MEDIA_WAIT">Lütfen bekleyin...</string>
+    <string name="STR_NMS_ALL_MEDIA_ERROR">Yüklenemedi; lütfen daha sonra tekrar deneyin</string>
+    <string name="STR_NMS_ALL_MEDIA_EMPTY">Boş</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_WEEK">Bu hafta</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_MONTH">Bu ay</string>
+    <string name="STR_NMS_ALL_MEDIA_JAN">Ocak</string>
+    <string name="STR_NMS_ALL_MEDIA_FEB">Şubat</string>
+    <string name="STR_NMS_ALL_MEDIA_MAR">Mart</string>
+    <string name="STR_NMS_ALL_MEDIA_APR">Nisan</string>
+    <string name="STR_NMS_ALL_MEDIA_MAY">Mayıs</string>
+    <string name="STR_NMS_ALL_MEDIA_JUN">Haziran</string>
+    <string name="STR_NMS_ALL_MEDIA_JUL">Temmuz</string>
+    <string name="STR_NMS_ALL_MEDIA_AUG">Ağustos</string>
+    <string name="STR_NMS_ALL_MEDIA_SEPT">Eylül</string>
+    <string name="STR_NMS_ALL_MEDIA_OCT">Ekim</string>
+    <string name="STR_NMS_ALL_MEDIA_NOV">Kasım</string>
+    <string name="STR_NMS_ALL_MEDIA_DEC">Aralık</string>
+    <string name="STR_NMS_ADDCONTACT">Kişi ekle</string>
+    <string name="STR_NMS_ADD_PHONE_CONTACT">\&quot;%1$s\&quot; kişilere eklensin mi?</string>
+    <string name="STR_NMS_DELETE_MEDIA">Medya silinecek; devam edilsin mi?</string>
+    <string name="STR_NMS_MEDIA_SHARE_MESSAGE">%1$s, %2$s\'de paylaştı</string>
+
+    <!-- All Media String end -->
+
+
+    <!-- All Locations String start -->
+    <string name="STR_NMS_ALL_LOCATIONS_TITLE">Tüm Konumlar</string>
+    <string name="STR_NMS_ALL_LOCATIONS_LOC">Konum</string>
+    <string name="STR_NMS_ALL_LOCATIONS_WAIT">Lütfen bekleyin...</string>
+    <!-- All Locations String end -->
+
+
+    <!-- Sketch -->
+    <string name="STR_NMS_SKETCH_TITLE">Bir Çizim Yapın</string>
+    <string name="STR_NMS_REDO">Yinele</string>
+    <string name="STR_NMS_UNDO">Geri Al</string>
+    <string name="STR_NMS_SKETCH_CUSTOM">Özel</string>
+    <string name="STR_NMS_PEN_SIZE">Boyut</string>
+    <string name="STR_NMS_SKETCH_TOOLS_PEN">Kalem</string>
+    <string name="STR_NMS_SKETCH_TOOLS_ERASER">Silgi</string>
+    <string name="STR_NMS_SKETCH_CUSTOM_COLOR">Özel Renk</string>
+    <string name="STR_NMS_CLEAR_SKETCH_TITLE">Çizimi Sil</string>
+    <string name="STR_NMS_CLEAR_SKETCH_CONTENT">Bu çizimi temizlemek mi istiyorsunuz?</string>
+    <string name="STR_NMS_SIZE_SKETCH_TITLE">Boyut</string>
+    <string name="STR_NMS_SIZE_SKETCH_MAX">72</string>
+    <string name="STR_NMS_SIZE_SKETCH_MIN">2</string>
+    <string name="STR_NMS_COLOR_SKETCH_TITLE">Renk</string>
+    <string name="STR_NMS_SKETCH_ERROR">Bir çizim oluşturulamadı.</string>
+    <string name="STR_NMS_BACK_TITLE">Onay</string>
+    <string name="STR_NMS_FINISH_SKETCH_CONTENT">Çizimden ayrılmak istediğinize emin misiniz?</string>
+    <string name="STR_NMS_LEAVE_SKETCH_CONTENT">Bu çizimi atmak istediğinize emin misiniz?</string>
+    <string name="STR_NMS_NOTREDO">Yinelenecek bir şey yok</string>
+    <string name="STR_NMS_NOTUNDO">Geri alınacak bir şey yok</string>
+    <string name="STR_NMS_SKETCH_DELETE">Temizle</string>
+    <string name="STR_NMS_DISCARD">Vazgeç</string>
+
+    <!-- Sketch end -->
+
+
+    <!-- Selection Contact -->
+    <string name="STR_NMS_DONE">Tamam</string>
+    <string name="STR_NMS_SELECTALL">Tümünü seç</string>
+    <string name="STR_NMS_DESELECTED">Tümünün seçimini kaldır</string>
+    <string name="STR_NMS_SELECTED">%1$s seçildi</string>
+    <string name="STR_NMS_CONTACT_SEARCH">Kişileri bul</string>
+    <string name="STR_NMS_SEARCH">Ara</string>
+    <string name="STR_NMS_CONTACT_SELECT">Kişi seç</string>
+    <string name="STR_NMS_SELECT_MEMBER_FULL">Çok fazla kişi seçildi</string>
+    <string name="STR_NMS_SELECT_MEMBER_EMPTY">Hiçbir kişi seçilmedi</string>
+    <string name="STR_NMS_SELECT_CONTAT_WAIT">Lütfen bekleyin...</string>
+    <string name="STR_NMS_SELECT_CONTAT_EMPTY">Hiç iSMS kişisi yok</string>
+    <string name="STR_NMS_SELECT_NO_RESULT">Hiç bulunmadı</string>
+    <string name="STR_NMS_EMPTY">Hiç kişi yok</string>
+    <!-- Selection Contact end -->
+
+    <!-- Group chat -->
+    <string name="STR_NMS_CREATE_GROUP_TITLE">Grup Oluştur</string>
+    <string name="STR_NMS_GROUP_INFO_TITLE">Grup Bilgisi</string>
+    <string name="STR_NMS_EDIT_GROUP_TITLE">Grubu Düzenle</string>
+    <string name="STR_NMS_SELECT_ACTION_TITLE">Eylem seç</string>
+    <string name="STR_NMS_ADD_TO_BOOKMARK">Yer imine ekle</string>
+    <string name="STR_NMS_ADD_TO_CONTACTS">Kişilere %1$s ekle</string>
+    <string name="STR_NMS_GROUP_NAME">GRUP ADI</string>
+    <string name="STR_NMS_GROUP_INFO">GRUP BİLGİSİ</string>
+    <string name="STR_NMS_GROUP_MEMBERS">GRUP ÜYELERİ</string>
+    <string name="STR_NMS_GROUP_NAME_HIT">Grup adı</string>
+    <string name="STR_NMS_GROUP_NAME_EMPTY">Grup adı boş</string>
+    <string name="STR_NMS_CONFIRM_LEAVE_TITLE">Bu gruptan çık</string>
+    <string name="STR_NMS_LEAVE_GROUP_CONTENT">Bu gruptan çıkmak mı istiyorsunuz?</string>
+    <string name="STR_NMS_LEAVE_GROUP_SUCCESS">Bu gruptan başarıyla çıkıldı</string>
+    <string name="STR_NMS_LEAVE_GROUP_FAILED">Bu gruptan çıkılamadı</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_SUCCESS">Grup adı başarıyla güncellendi</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_SUCCESS">Yeni grup üyeleri eklendi</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_FAILED">Grup üyeleri eklenemedi</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_FAILED">Grup adı güncellenemedi</string>
+    <string name="STR_NMS_CREATE_GROUP_NAME_FAILED">Grup sohbeti oluşturulamadı</string>
+    <string name="STR_NMS_DELETE_GROUP_MEMBER_FAILED">Grup üyeleri kaldırılamadı</string>
+    <string name="STR_NMS_UPDATE_GROUP_SUCCESS">Grup bilgisi başarıyla güncellendi</string>
+    <string name="STR_NMS_UPDATE_GROUP_FAILED">Grup bilgisi güncellenemedi</string>
+    <string name="STR_NMS_GROUP_CHAT_BACK">Bu işlemden vazgeçmek mi istiyorsunuz?</string>
+    <string name="STR_NMS_GROUP_MEMEBER_YOU">SEN</string>
+    <string name="STR_NMS_GROUP_INVITE_MORE">Daha fazla davet et</string>
+    <string name="STR_NMS_LEAVE_GROUP">Bu gruptan çık</string>
+    <string name="STR_NMS_CHAT">Sohbet</string>
+    <string name="STR_NMS_CONFIRM_REMOVE_TITLE">Grup üyesi listesinden kaldır</string>
+    <string name="STR_NMS_REMOVE_OK">Kaldır</string>
+    <string name="STR_NMS_REMOVE_CANCEL">İptal</string>
+    <string name="STR_NMS_REMOVE_CONTENT">Bunu listeden kaldırmak mı istiyorsunuz?</string>
+    <string name="STR_NMS_VIEW_ALL_MEDIA">Tüm medyayı görüntüle</string>
+    <string name="STR_NMS_VIEW_ALL_LOCATIONS">Tüm konumları görüntüle</string>
+    <string name="STR_NMS_CHAT_SETTINGS">Sohbet ayarları</string>
+    <string name="STR_NMS_VIEW_GROUP_FAILED">Bu grup sohbetinden çıktınız.</string>
+    <string name="STR_NMS_VIEW_HISTORY">Grup geçmişini görüntüle</string>
+    <string name="STR_NMS_ISMS_ENABLE_TITLE">iSMS etkinleştir</string>
+    <string name="STR_NMS_ISMS_ENABLE_CONTENT">Bu özellik yalnızca iSMS hizmetince desteklenir. iSMS hesabınız şimdi etkinleştirilsin mi?</string>
+    <string name="STR_NMS_ENABLE">Etkinleştir</string>
+    <string name="STR_NMS_LATER">Bırak</string>
+    <string name="STR_NMS_SWITCH_TITLE">SIM Anahtarı</string>
+    <string name="STR_NMS_SWITCH_MESSAGE">Grup sohbeti yalnızca iSMS hizmeti etkinleştirildiğinde desteklenir ama geçerli SIM kartı etkin değil. Etkinleştirilmiş SIM kartına geçilsin mi?</string>
+    <string name="STR_NMS_SWITCH_EDIT_MESSAGE">Geçerli SIM kartı bu grupla ilişkili değil. Diğer SIM kartına geçilsin mi?</string>
+    <string name="STR_NMS_LEAVE_GROUP_NOTICE">Bu gruptan çıktınız ve tekrar davet edilmediğiniz sürece bu grup sohbetine katılamazsınız</string>
+    <string name="STR_NMS_LOSE_SIM_NOTICE">Orijinal sohbet SIM kartı çıkarıldı; bu grupta yalnızca orijinal SIM kartınızla sohbet edebilirsiniz</string>
+    <string name="STR_NMS_SWITCH">Geçiş Yap</string>
+
+    <!-- Group chat end -->
+
+
+    <!-- chat details screen long press item start -->
+    <string name="STR_NMS_LONG_PRESS_TITLE">Mesaj seçenekleri</string>
+    <string name="STR_NMS_SEND_VIA_TEXT">SMS aracılığıyla gönder</string>
+    <string name="STR_NMS_TRY_AGAIN">Tekrar dene</string>
+    <string name="STR_NMS_TRY_ALL_AGAIN">Tümünü tekrar dene</string>
+    <string name="STR_NMS_CONTINUE_TRY">Denemeye devam et</string>
+    <string name="STR_NMS_COPY">Kopyala</string>
+    
+    <string name="STR_NMS_FORWARD">İlet</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_TITLE">İndir</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD">iSMS\'i iletmek için önce medya içeriğini indirmeniz gerekir.</string>
+    <string name="STR_NMS_FORWARD_CONTIUE">Devam</string>
+    <string name="STR_NMS_FORWARD_FAILED">İletme başarısız.</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_MULTI">Çoklu iletme için, önce bazı iSMS\'nin indirilmesi gereklidir.</string>
+    <string name="STR_NMS_FORWARD_SOME_FAILED">Bazı iSMS iletilemedi.</string>
+    <string name="STR_NMS_FORWARD_ALL_FAILED">İndirme başarısız, çoklu iletimden vazgeçildi</string>
+    
+    <string name="STR_NMS_SEND_VIA_MULTIMEDIA">MMS aracılığıyla gönder</string>
+    <string name="STR_NMS_SHARE">Paylaş</string>
+    <string name="STR_NMS_DELETE">Sil</string>
+    <string name="STR_NMS_FLAG_IMPORTANT">Önemli olarak işaretle</string>
+    <string name="STR_NMS_REMOVE_IMPORTANT">Önemli işaretini kaldır</string>
+    <string name="STR_NMS_SAVE_IN_SDCARD">SD karta dışa aktar</string>
+    <string name="STR_NMS_SAVE_FILE">Dosyanın kaydedildiği yer: %1$s</string>
+    <string name="STR_NMS_SHARE_TITLE">Paylaşma yolu</string>
+    <string name="STR_NMS_VIEW_DETAILS">Ayrıntıları görüntüle</string>
+    <string name="STR_NMS_VIEW_DETAILS_TITLE">Mesaj ayrıntıları</string>
+    <string name="STR_NMS_SEND_MSG_DETAILS">Tür: IP Mesajı\nGönderilen: %1$s</string>
+    <!-- chat details screen long press item end -->
+
+
+    <!-- chat details screen delete item start -->
+    <string name="STR_NMS_DELETE_TITLE">Sil</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_TITLE">Önemli mesajı sil</string>
+    <string name="STR_NMS_DELETE_WARNING">Mesaj silinecek.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_WARNING">Bu önemli mesajı silmek istediğinizden emin misiniz?</string>
+    <string name="STR_NMS_DELETE_MSG">Seçilen mesajlar silinecek.</string>
+    <string name="STR_NMS_DELETE_WAITTING">Siliniyor</string>
+    <string name="STR_NMS_CLEAR_HISTORY_CONTENT">Bu sohbet odasındaki tüm sohbet geçmişi temizlenecek</string>
+    <string name="STR_NMS_DELETE_IMPORTANT">Önemli olarak işaretlenen mesajları dahil et</string>
+    <!-- chat details screen delete item end -->
+
+
+    <!-- chat details actionBar option start -->
+    <string name="STR_NMS_MENU_CALL">Ara</string>
+    <string name="STR_NMS_MENU_GROUPINFO">Grup Bilgisi</string>
+    <string name="STR_NMS_MENU_INVITE_CHAT">Arkadaşları sohbete davet et</string>
+    <string name="STR_NMS_MENU_INVITE_ISMS">Arkadaşları iSMS kullanmaya davet et</string>
+    <string name="STR_NMS_MENU_SELECT_MSG">Mesajı seç</string>
+    <string name="STR_NMS_MENU_MARK_SPAM">Önemsiz listesine taşı</string>
+    <string name="STR_NMS_MENU_REMOVE_SPAM">Önemsiz listesinden kaldır</string>
+    <string name="STR_NMS_MENU_ADD_SHORTCUT">Kısayol ekle</string>
+    <string name="STR_NMS_MENU_VIEW_ALLMEDIA">Tüm medyayı görüntüle</string>
+    <string name="STR_NMS_MENU_VIEW_ALLLOCATION">Tüm konumları görüntüle</string>
+    <string name="STR_NMS_MENU_EDIT_GROUP">Grubu düzenle</string>
+    <string name="STR_NMS_MENU_CHAT_SETTING">Sohbet ayarı</string>
+    <string name="STR_NMS_MENU_INSERT_QUICK_TEXT">Hızlı metin gir</string>
+    <string name="STR_NMS_MENU_CLEAR_HISTORY">Sohbet geçmişini temizle</string>
+    <string name="STR_NMS_MENU_LEAVE_GROUP">Bu gruptan çık</string>
+    <string name="STR_NMS_MENU_DISCARD">Vazgeç</string>
+    <string name="STR_NMS_MENU_DELETE">Sil</string>
+    <string name="STR_NMS_MENU_IMPORTANT">Önemli olarak işaretle</string>
+    <string name="STR_NMS_MENU_FORWARD">İlet</string>
+    <!-- chat details actionBar option end -->
+
+
+    <!-- chat details share item start -->
+    <string name="STR_NMS_TAKE_PHOTO">Fotoğraf Çek</string>
+    <string name="STR_NMS_RECORD_VIDEO">Bir Video Kaydedin</string>
+    <string name="STR_NMS_DRAW_SKETCH">Bir Çizim Yapın</string>
+    <string name="STR_NMS_SHARE_CONTACT">Kişiyi Paylaş</string>
+    <string name="STR_NMS_CHOOSE_PHOTO">Bir Fotoğraf Seç</string>
+    <string name="STR_NMS_CHOOSE_VIDEO">Bir Video Seç</string>
+    <string name="STR_NMS_RECORD_AUDIO">Bir Ses Kaydedin</string>
+    <string name="STR_NMS_SHARE_LOCATION">Konumu Paylaş</string>
+    <string name="STR_NMS_CHOOSE_AUDIO">Bir Ses Seçin</string>
+    <string name="STR_NMS_SHARE_CALENDAR">Takvimi Paylaş</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_TITLE">Müzik ekle</string>
+    <string name="STR_NMS_CHOOSE_RINGTONE_ITEM">Zil sesi</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_ITEM">Ses</string>
+    <string name="STR_NMS_INSERT_SDCARD">Lütfen SD kartı takın!</string>
+    <!-- chat details share item start -->
+
+
+    <!-- record audio start -->
+    <string name="STR_NMS_AUDIO_TIMER_FORMAT" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <string name="STR_NMS_AUDIO_LABLE">Sesli Not Kaydedici</string>
+    <string name="STR_NMS_RECORD_AUDIO_CONT">Kaydetmek için dokunun</string>
+    <string name="STR_NMS_PLAY_AUDIO_CONT">Yürütmek için dokunun</string>
+    <string name="STR_NMS_ACTION_SEND">Gönder</string>
+    <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
+    <string name="audio_db_artist_name">Kayıtlarınız</string>
+    <string name="audio_db_album_name">Ses kayıtları</string>
+    <string name="STR_NMS_SELECT_AUDIO">Sesi seç</string>
+    <!-- record audio end -->
+
+
+    <!-- chat & group details screen start -->
+
+    <string name="STR_NMS_UNREAD_FORMAT">%1$d okunmamış mesaj</string>
+    <string name="STR_NMS_NOT_DELIVERED_TITLE">Henüz iletilmedi</string>
+    <string name="STR_NMS_FAILED_TITLE">Gönderme Hatası</string>
+    <string name="STR_NMS_GROUP_SUBTITLE">%1$s, +%2$d</string>
+    <string name="STR_NMS_GROUP_DEAD_SUBTITLE">%1$s, %2$d</string>
+    <string name="STR_NMS_SAVE_AS_DRAFT">Mesaj taslak olarak kaydedildi</string>
+    <string name="STR_NMS_NO_SD_TITLE">SD kart hatası</string>
+    <string name="STR_NMS_CANT_SHARE">SD karta erişilemiyor. Multimedyayla ilgili tüm özellikler geçici olarak kullanılamıyor.\n\nLütfen SD kartınızı kontrol edip daha sonra tekrar deneyin.</string>
+    <string name="STR_NMS_CANT_SAVE">SD kartı algılanamadı, dosya kaydedilemiyor</string>
+    <string name="STR_NMS_SDSPACE_NOT_ENOUGH">SD kartında kullanılabilir alan yetersiz, dosya kaydedilemiyor.</string>
+    <string name="STR_NMS_REAEND_ALL">Tümünü tekrar dene...</string>
+    <string name="STR_NMS_FILE_LIMIT">Çok büyük</string>
+    <string name="STR_NMS_LOAD_ALL_MESSAGE">Tüm Mesajları Yükle</string>
+    <string name="STR_NMS_DOWNLOAD_FAILED">İndirme başarısız</string>
+    <string name="STR_NMS_INPUT_HINT">İçeriği gir</string>
+    <string name="STR_NMS_INPUT_HINT_ISMS">iSMS mesajını yaz</string>
+    <string name="STR_NMS_CAPTION_HINT">Başlıkları Yaz</string>
+    <string name="STR_NMS_PROTOCOL_SMS">SMS</string>
+    <string name="STR_NMS_PROTOCOL_MMS">MMS</string>
+    <string name="STR_NMS_PROTOCOL_IP">iSMS</string>
+    <string name="STR_NMS_SWITCH_BOTTON">SIM değiştir</string>
+    <string name="STR_NMS_TURN_ON_BOTTON">Aç</string>
+    <string name="STR_NMS_SWITCH_TEXT_FORMAT">Grup sohbetine devam etmek için önce %1$s SIM\'e geçin.</string>
+    <string name="STR_NMS_ENABLE_TEXT_FORMAT">Grup sohbetine devam etmek için önce %1$s üzerinde iSMS hizmetini açın.</string>
+    <string name="STR_NMS_REPLACE_ATTACH_TITLE">Eki değiştir</string>
+    <string name="STR_NMS_REPLACE_ATTACH_MSG">Bir ek var; değiştirilsin mi?</string>
+    <string name="STR_NMS_TRUNC_CAPTION">Başlık kırpıldı.</string>
+    <string name="STR_NMS_MAX_CHARACTERS_REACHED">Mesaj boyutu sınırına ulaşıldı.</string>
+    <string name="STR_NMS_MAX_EMOTICON_REACHED">İfade sınırlarına uy</string>
+    <string name="STR_NMS_ENABLE_PROCESS">İşleniyor...</string>
+    <string name="STR_NMS_ERR_FILE">Geçersiz dosya</string>
+    <string name="STR_NMS_SENDING_TEXT">Gönderiliyor...</string>
+    <!-- chat & group details screen end --> <!-- Error code tips -->
+    <string name="STR_NMS_ERR_GENERAL">Genel hata</string>
+    <string name="STR_NMS_ERR_INVALID_ARGUMENT">Geçersiz bağımsız değişken</string>
+    <string name="STR_NMS_ERR_NETWORK_BLOCK">Ağ uygun değil</string>
+    <string name="STR_NMS_ERR_PHONE_NOT_ACTIVATED">Etkinleştirilmedi</string>
+    <string name="STR_NMS_ERR_SIM_NOT_ACTIVATED">SIM kart etkinleştirilmedi</string>
+    <string name="STR_NMS_ERR_INVALID_MSG_DB_ID">Geçersiz mesaj veritabanı kimliği</string>
+    <string name="STR_NMS_ERR_ADD_MSG_DB_FAILED">Veritabanına girilemedi</string>
+    <string name="STR_NMS_ERR_UPDATE_MSG_DB_FAILED">Veritabanı güncellenemedi</string>
+    <string name="STR_NMS_ERR_GET_MSG_DB_DATA_FAILED">Mesajı alınamadı</string>
+    <string name="STR_NMS_ERR_INVALID_CONTACT_DB_ID">Geçersiz kişi veritabanı kimliği</string>
+    <string name="STR_NMS_ERR_ADD_CONTACT_DB_FAILED">Kişiye girilemedi</string>
+    <string name="STR_NMS_ERR_UPDATE_CONTACT_DB_FAILED">Kişi veritabanı güncellenemedi</string>
+    <string name="STR_NMS_ERR_GET_CONTACT_DB_DATA_FAILED">Kimliğe göre Kişi alınamadı</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_ERROR_FORMAT">Geçersiz IP Mesajı biçimi</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_INVALID_TO">Geçersiz alıcı</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_WITH_UNKNOWN_USER">Geçersiz bilinmeyen alıcı kullanıcısı</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_NO_MBMBER">Hiç grup sohbeti üyesi yok</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_GCHAT_DEAD">Grup sohbeti etkinleştirilmedi</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_INVALID_SIM_ID">Grup sohbeti SIM kartı geçerli SIM kartı değil</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_FOR_SYS_MSG">Sistem mesajını tekrar gönder</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_INVALID_STATUS">IP mesajı hazır değil</string>
+    <string name="STR_NMS_ERR_GCHAT_IS_DEAD">Bu grup sohbeti artık yok</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBERS">Geçersiz grup üyeleri</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBER_WITH_SELF">Grup oluşturulamadı. Üyeler için kendiniz olamazsınız</string>
+    <string name="STR_NMS_ERR_GCHAT_EXCEED_MAX_MEMBER_COUNT">Grup üyesi sayısı sınıra ulaştı</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_NAME">Geçersiz grup sohbeti adı</string>
+    <string name="STR_NMS_ERR_GCHAT_SIM_IS_NOT_ACTIVATED">Grup sohbetinin SIM kartı etkin değil</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_NOT_INBOX_MSG">İndirme URL\'si alınamadı</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_INVALID_URL">Geçersiz indirme URL\'si</string>
+    <string name="STR_NMS_ERR_GET_ATTACH_NAME_INVALID_BODY_FORMAT">İndirme dosyası adı alınamadı</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_INVALID_FILE_NAME">Geçersiz indirme dosyası adı</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_EXIST">İndirme dosyası mevcut değil</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_INBOX_MSG">İndirme dosyası ayarlanamadı</string>
+    <string name="STR_NMS_ERR_SIM_INFO_NOT_FOUND">SIM kart bilgileri bulunamadı</string>
+    <string name="STR_NMS_ERR_SIM_IN_INVALID_STATUS">Geçersiz SIM kart durumu</string>
+    <string name="STR_NMS_ERR_CMD_PROCESSING">Sistem meşgul ve sistem yapılandırma komutu işlenemiyor</string>
+    <string name="STR_NMS_ERR_CMD_GENERAL">Genel sistem yapılandırma hatası</string>
+    <string name="STR_NMS_ERR_CODE_END">Bilinmeyen hata kodu</string>
+    <!-- Error code tips -->
+    <string name="STR_NMS_SEND_MMS_QUERY_TITLE">Uyarı</string>
+    <string name="STR_NMS_SEND_MMS_QUERY">Alıcı iSMS kullanıcısı değil; MMS ile gönderilsin mi?</string>
+    <!-- Service center start -->
+    <string name="STR_NMS_SERVICE_TITLE">iSMS hizmet merkezi</string>
+    <string name="STR_NMS_INTRODUCTION">iSMS ile, anında ücretsiz mesajlar gönderebilirsiniz ve sohbet geçmişinizi tek bir yerde tutar. Bir düğmesine basarak yeni deneyimi yaşayın!</string>
+    <string name="STR_NMS_TERMS">Hüküm ve Koşullar</string>
+    <string name="STR_NMS_ACTIVATION_BUTTON">Şimdi etkinleştir</string>
+    <string name="STR_NMS_LOSE_SDCARD">SD kart algılanmadı</string>
+    <!-- Service center end -->
+
+
+    <!-- conversation empty tips -->
+    <string name="STR_NMS_SPAM_EMPTY">Herhangi bir önemsiz görüşmeniz yok. \nÖNEMSİZ kısmı, önemsiz olarak işaretlenmiş tüm görüşmeleri toplar. Bildirim varsayılan olarak kapatılacaktır. Bu sizi gereksiz rahatsızlıktan kurtarır. \n\nBir görüşmeyi basılı tutup Önemsiz Olarak İşaretle simgesini seçerek bir göndericiyi önemsiz olarak işaretleyebilirsiniz. Bir görüşme önemsiz olarak işaretlendiğinde, otomatik olarak bir bildirim kapalı simgesi gösterilecek ve görüşme buraya yerleştirilecektir.</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_FROM">+86123456789</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_SUBJECT">Bu bir önemsiz mesaj örneğidir.</string>
+    <string name="STR_NMS_GROUPCHAT_EMPTY">Herhangi bir grup sohbeti mesajınız yok. \nGRUP SOHBETLERİ kısmı, tarafınızdan oluşturulan ya da katıldığınız tüm grup sohbeti mesajlarını toplar. Bu, grup sohbetlerinizi kolayca bulmanızı ve yönetmenizi sağlar. \n\nBir grup sohbeti oluşturmak için, bu ekranın altındaki Grup sohbeti oluştur düğmesine dokunup, arkadaşlarınızı gruba katılmaya davet edebilirsiniz.</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_FROM">Grup adı</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_SUBJECT">Arkadaşınız:\nI grup sohbeti özelliğini beğendi!</string>
+    <string name="STR_NMS_IMPORTANT_EMPTY">Herhangi bir önemli mesajınız yok. \nÖNEMLİ kısmı, önemli olarak işaretlenmiş tüm mesajları toplar. Bu, önemli mesajları kolayca bulmanızı sağlar. \n\nBir mesajı basılı tutup, Seçenek menüsünden Önemli olarak işaretle öğesini seçerek bir mesajı önemli olarak işaretleyebilirsiniz. Bir mesaj önemli olarak işaretlendiğinde, aşağıdaki gibi bir kırmızı bayrak simgesi göreceksiniz.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TITLE">Bu, önemli olarak işaretlenmiş bir mesaj örneğidir. Kırmızı bayrak görülecektir.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TIME">10:55</string>
+    <string name="STR_NMS_ALLCHAT_EMPTY">Görüşme yok</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_CONTENT">Bu özelliği kullanmak için önce iSMS hizmetini etkinleştirmeniz gerekecek. Endişe etmeyin, hizmeti beğenmezseniz Ayarlar kısmından her zaman kapatabilirsiniz. Şimdi deneyin!</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_TITLE">iSMS\'yi etkinleştir</string>
+    <!-- conversation empty tips -->
+    
+    <string name="STR_NMS_CLEAR_USER_DATA">Veriler başarıyla temizlendi</string>
+    
+    <!-- get file err start -->
+    <string name="STR_NMS_NO_SUCH_FILE">Böyle bir dosya yok</string>
+    <string name="STR_NMS_OVER_FILE_LIMIT">Dosya boyutu sınırı aşıyor</string>
+    <string name="STR_NMS_INVALID_FILE_TYPE">Bu tür desteklenmiyor</string>
+    <!-- get file err end -->
+
+    <string name="STR_NMS_DELIVERY_BODY">Mesaj %s tarafından alındı</string>
+    <string name="STR_NMS_SIM_SELECT_TITLE">SIM seç</string>
+    
+    <string name="STR_NMS_SHORTCUT_SUCCESS">%1$s kısayolu oluşturuldu.</string>
+    <string name="STR_NMS_SHORTCUT_REFRESHING">Yenileniyor</string>
+    
+    <string name="STR_NMS_DISABLE_FAILED">İşlem başarısız, lütfen tekrar deneyin</string>
+    <string name="STR_NMS_ENABLE_FAILED">İşlem başarısız, lütfen tekrar deneyin</string>
+    <string name="STR_NMS_ENABLE_SUCCESS">iSMS hizmetini başarıyla etkinleştirdiniz</string>
+    <string name="STR_NMS_DISABLE_SUCCESS">iSMS hizmetini başarıyla devre dışı bıraktınız</string>
+    
+	<string name="STR_NMS_SD_CARD_FULL">SD kartı dolu</string>
+    <string name="STR_NMS_SEND_MSG_FAILED">Mesaj gönderme başarısız!</string>
+    
+    <string name="STR_NMS_GROUPS_MEM"> %1$s üye</string>
+    <string name="STR_NMS_ALL_CONTACTS">TÜMÜ</string>
+    <string name="STR_NMS_GROUPS_CONTACTS">TÜM GRUPLAR</string>
+    
+    <string name="imsp_ip_message">iSMS Mesajı</string>
+    <string name="imsp_invite_chat_frequently"><b>%s ile sık mı sohbet ediyorsunuz?</b>\nParadan tasarruf etmek için neden %s\'i iSMS kullanmaya davet etmiyorsunuz?</string>
+    <string name="imsp_enable_chat_frequently"><b>%s\'nin iSMS hizmeti devre dışı bırakıldı!</b>\nNeden iSMS hizmetini etkinleştirmiyor ve paradan tasarruf etmiyorsunuz?</string>
+    <string name="imsp_invite">Davet et</string>
+    <string name="imsp_enable_notice">iSMS\'i etkinleştirmek istediğinizden emin misiniz?</string>
+    <string name="imsp_activate_chat_frequently"><b>Arkadaşlarınızla sık mı sohbet ediyorsunuz?</b>\nSMS ücreti olmadan sohbet etmek için neden iSMS\'i etkinleştirmiyorsunuz?</string>
+    <string name="imsp_activate_note">iSMS\'i etkinleştirmek istediğinizden emin misiniz?</string>
+    <string name="imsp_dismiss_content">Notu atmak istediğinizden emin misiniz?</string>
+    <string name="imsp_divider_online">%s Çevrimiçi</string>
+    <string name="imsp_divider_offline">Son çevrimiçi zamanı %s</string>
+    <string name="imsp_divider_never_online">Hiç çevrimiçi olma</string>
+    <string name="imsp_failed_title">Gönderme Başarısız</string>
+    <string name="imsp_resend_via_sms">Bunun yerine SMS gönder</string>
+    <string name="imsp_resend_via_mms">Bunun yerine MMS gönder</string>
+    <string name="imsp_typing_text">Yazıyor</string>
+    <string name="imsp_save_attachment">Eki kaydet</string>
+    <string name="imsp_view">Görüntüle</string>
+    <string name="imsp_convert_to_mms">MMS\'e çevir.</string>
+    <string name="imsp_convert_to_sms">SMS\'e çevir.</string>
+    <string name="imsp_convert_to_isms">iSMS\'e çevir.</string>
+    <string name="imsp_convert_to_mms_for_service">iSMS hizmeti, seçilen bu SIM kartta mevcut değildir. Bu mesaj sadece, bu SIM kartta MMS ile gönderilebilir. Yine de devam edilsin mi?</string>
+    <string name="imsp_convert_to_sms_for_service">iSMS hizmeti, seçilen bu SIM kartta mevcut değildir. Bu mesaj sadece, bu SIM kartta SMS ile gönderilebilir. Yine de devam edilsin mi?</string>
+    <string name="imsp_convert_to_mms_for_recipients">Alıcı(lar) iSMS kullanıcısı değildir. Bu mesaj sadece, MMS ile gönderilebilir. Yine de devam edilsin mi?</string>
+    <string name="imsp_convert_to_sms_for_recipients">Alıcı(lar) iSMS kullanıcısı değildir. Bu mesaj sadece, SMS ile gönderilebilir. Yine de devam edilsin mi?</string>
+    <string name="imsp_sms_convert_to_isms">iSMS hizmeti, seçilen bu SIM kartta mevcuttur. SMS ücretini kaydetmek için, mesajın iSMS\'e değiştirilmesi önerilir. Şimdi değiştirilsin mi?</string>
+    <string name="imsp_mms_convert_to_isms">iSMS hizmeti, seçilen bu SIM kartta mevcuttur. MMS ücretini kaydetmek için, mesajın iSMS\'e değiştirilmesi önerilmektedir. Şimdi değiştirilsin mi?</string>
+    <string name="imsp_keep_mms">MMS\'i sakla</string>
+    <string name="imsp_keep_sms">SMS\'i sakla</string>
+    <string name="imsp_resend_discard_message">Mesajı yeniden göndermek için, şu anda oluşturduğunuz mesaj atılacaktır.</string>
+    <string name="imsp_no_sim_card">SIM kart yok!</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">&quot;Çalışan hiçbir internet bağlantısı bulunamadı! Lütfen daha sonra tekrar deneyin.&quot;</string>
+    <string name="imsp_chat_setting_updating">güncelleniyor...</string>
+    <string name="imsp_dialog_clear_title">Temizle</string>
+    <string name="imsp_dialog_clear_description">Tüm sohbet geçmişi, bu sohbet odasından temizlenecektir</string>
+    <string name="imsp_chat_setting_saving">kaydediliyor...</string>
+    <string name="imsp_chat_setting_sending">gönderiliyor...</string>
+    <string name="imsp_save_chat_history_failed">kaydetme başarısız</string>
+    <string name="imsp_send_chat_history_failed">E-posta başarısız</string>
+    <string name="imsp_conversation_list_all">Mesajlar</string>
+    <string name="imsp_conversation_list_important">Önemli</string>
+    <string name="imsp_conversation_list_group_chats">Grup sohbetleri</string>
+    <string name="imsp_conversation_list_spam">İstenmeyen</string>
+    <string name="imsp_mark_as_spam_tips">İstenmeyen olarak işaretlenen mesajlar İstenmeyen listesine taşınacaktır ve bildirimi otomatik olarak kapatılacaktır.</string>
+    <string name="imsp_typing">&quot;Yazıyor...&quot;</string>
+    <string name="imsp_type_to_compose_text">&quot;SMS/iSMS mesajı yaz&quot;</string>
+    <string name="imsp_no_sdcard">SD kart yok</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">Daveti yeniden göndermek için, oluşturduğunuz mesajlar atılacaktır.</string>
+    <string name="imsp_current_sim_enabled">Mevcut SIM etkinleştirildi.</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">iSMS\'i aktifleştirmek için SIM\'i seç</string>
+    <string name="imsp_activate_message">Bu özellik sadece, iSMS hizmeti tarafından desteklenir. iSMS hesabınız şimdi aktifleştirilsin mi?</string>
+    <string name="imsp_enable_message">Bu özellik sadece, iSMS hizmeti tarafından desteklenir. iSMS hesabınız şimdi etkinleştirilsin mi?</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">iSMS\'i etkinleştirmek için SIM\'i seç</string>
+    <string name="imsp_switch_sim_title">SIM\'i değiştir</string>
+    <string name="imsp_switch_sim_message">Mevcut SIM, iSMS\'i desteklemiyor. Diğer SIM\'e değiştirilsin mi?</string>
+    <string name="imsp_switch_sim_successfully">SIM\'in değiştirilmesi başarılı!</string>
+    <string name="imsp_dailog_multi_forward">Mesajların İletilmesi</string>
+    <string name="imsp_dialog_send_result">Sonucu Gönder</string>
+    <string name="imsp_dlg_send_all">Tümü: %s</string>
+    <string name="imsp_dlg_send_sucess">Gönderilen: %s</string>
+    <string name="imsp_dlg_send_failed">Başarısız: %s</string>
+    <string name="imsp_multi_forward_sim_info">SIM bilgisi alınıyor</string>
+    <string name="imsp_multi_forward_no_sim">SIM Bilgisi yok</string>
+    <string name="imsp_get_sim_failed">SIM bilgisi alma başarısız</string>
+    <string name="imsp_sim_status_error">SIM durum hatası</string>
+    <string name="imsp_forward_norecipients">Mesajı iletmek için hiçbir alıcı yok.</string>
+    <string name="imsp_multiforward_no_message">İletilebilecek hiçbir mesaj yok</string>
+    <string name="imsp_need_input_recipients">Lütfen önce en az bir alıcı belirleyin</string>
+    <string name="imsp_spam_empty">Hiç istenmeyen sohbetiniz yok. \nİSTENMEYEN, istenmeyen mesaj olarak işaretlenmiş tüm sohbetleri biriktirir. Bildirim, varsayılan olarak kapatılacaktır. Bu, gereksiz rahatsızlıktan uzak durmanızı sağlar. \n\nBir sohbeti tutarak ve İstenmeyen olarak İşaretle simgesini seçerek, bir göndericiyi istenmeyen olarak işaretleyebilirsiniz. Bir sohbet istenmeyen olarak işaretlendiğinde, bildirim kapalı simgesi otomatik olarak gösterilecektir ve sohbet buraya yerleştirilecektir.</string>
+    <string name="imsp_groupchat_empty">Hiç grup sohbet mesajınız yok. \nGRUP SOHBETLERİ, sizin oluşturduğunuz veya katıldığınız tüm grup sohbet mesajlarını biriktirir. Bu, grup sohbetlerinizi kolayca bulmanızı ve yönetmenizi sağlar. \n\nBir grup sohbeti oluşturmak için, bu ekranın alt kısmında bulunan Grup sohbeti oluştur düğmesine dokunabilir ve gruba katılması için arkadaşlarınızı davet edebilirsiniz.</string>
+    <string name="imsp_important_empty">Hiç önemli mesajınız yok. \nÖNEMLİ, önemli olarak işaretlenmiş olan tüm mesajları biriktirir. Bu, önemli mesajlarınızı kolayca bulmanızı sağlar. \n\nBir mesajı tutarak ve Seçenek menüsünden Önemli olarak işaretle öğesini seçerek, bir mesajı önemli olarak işaretleyebilirsiniz. Bir mesaj önemli olarak işaretlendiğinde, aşağıdaki gibi kırmızı bir bayrak göreceksiniz.</string>
+    <string name="imsp_allchat_empty">Hiç sohbet yok</string>
+    <string name="imsp_attach_slideshow">Slayt gösterisi</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">İndiriliyor...</string>
+    <string name="imsp_invite_friends_to_ipmsg">Arkadaşlarınızı iSMS kullanmaları için davet edin</string>
+    <string name="imsp_multi_forward_tips_content">Çoklu iletim gerçekleştirmek için, bazı iSMS\'lerin önce indirilmesi gerekir.</string>
+    <string name="imsp_multi_forward_failed_part">Bazı iSMS\'lerin iletimi başarısız.</string>
+
+</resources>

@@ -1,0 +1,37 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type runas, domain;
+type runas_exec, file_type, exec_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+permissive runas;
+# unconfined_domain(runas)
+
+# ndk-gdb invokes adb shell run-as.
+domain_auto_trans(shell, runas_exec, runas)
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+permissive runas;
+# unconfined_domain(runas)
+
+# ndk-gdb invokes adb shell run-as.
+# domain_auto_trans(shell, runas_exec, runas)
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive runas;
+
+# 20131122 Add Set Property Rule
+allow runas property_type:property_service set;

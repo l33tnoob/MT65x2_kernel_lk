@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbinrawbu Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type rawbu_exec , exec_type, file_type;
+type rawbu ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive rawbu;
+init_daemon_domain(rawbu)
+
+
+# 20131122 Add Set Property Rule
+allow rawbu  property_type:property_service set;

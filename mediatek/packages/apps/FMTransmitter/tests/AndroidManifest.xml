@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.mediatek.FMTransmitter.tests"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application>
+    	<uses-library android:name="android.test.runner" />
+    </application>
+ 
+    <instrumentation android:name=".FMTransmitterFunctionRunner"
+    	android:targetPackage="com.mediatek.FMTransmitter"
+    	android:label="FM Transmitter functional auto-tests" />
+     <instrumentation android:name=".FMTransmitterPerformanceRunner"
+    	android:targetPackage="com.mediatek.FMTransmitter"
+    	android:label="FM Transmitter performance auto-tests" />
+     <instrumentation
+        android:name=".FMTransmitterLaunchPerformance"
+        android:label="FMTransmitter Launch Performance"
+        android:targetPackage="com.mediatek.FMTransmitter" />
+</manifest> 

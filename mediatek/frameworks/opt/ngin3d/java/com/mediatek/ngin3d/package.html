@@ -1,0 +1,47 @@
+<html>
+<body>
+Main MAGE API containing most frequently used graphics classes.
+
+<h3>Stage</h3>
+<p>
+The Stage is the environment in which the 3D graphics is created.
+The key classes here are <b>Stage</b> and <b>Actor</b>.
+Every object within a scene is an Actor.
+<b>Container</b> is a special type of Actor that contains only
+other Actors. The camera configuration is part of the Stage, but lights
+are distinct objects of class <b>Light</b>.
+<p>
+The scene can be made up of multiple <b>Layers</b>.  This enables the creation
+of User Interfaces where, for example, a 2D UI overlays a 3D scene with
+a 2D background image.
+
+<h3>Actors</h3>
+The manipulation of Actors is via their <b>Property</b> values, including
+position, rotation, scale etc.
+Synchronising such changes can be done with <b>Transactions</b>.
+<p>
+Access to internal components of Actors created by Artists is provided by
+<b>ActorNode</b>.
+
+<h3>3D Maths</h3>
+<p>
+The core 3-dimensional maths types are <b>Point</b> (a scalar position in 3D)
+and <b>Vec3</b>, a 3D vector with length and direction.
+<p>
+Transformation classes are <b>Scale</b> and <b>Rotation</b>.
+<b>Quaternion</b> is provided for rotations.
+<b>EulerOrder</b> is available when the sequence of Euler
+rotations needs to be controlled.
+
+<h3>Geometry</h3>
+Simple 2D and 3D models are provided in <b>Plane, Image</b>
+(Plane with texture), <b>Cube</b> and <b>Sphere</b>.
+<p>
+<b>Warning: </b>
+these are designed only for use in UI_PERSPECTIVE mode where the Y
+direction is down.  It is not expected that they are used in end-user
+applications.  Artist 3D models will normally expect the conventional
+Y-up PERSPECTIVE mode.
+
+</body>
+</html>

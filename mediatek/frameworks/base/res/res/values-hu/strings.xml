@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="keyguard_pinword_enter_pinword_code">PIN megadása a kioldáshoz</string>
+    <string name="badPin2">A megadott régi PIN2 hibás.</string>
+    <string name="badPuk2">A megadott PUK2 hibás.</string>
+    <string name="checkPwdLen">A jelszónak 4-8 számjegyből kell állnia.</string>
+    <string name="pinNotEnabled">Kérjük, engedélyezze a PIN-t, mielőtt módosítaná.</string>
+    <string name="puk1Blocked">PIN blokkolva.</string>
+    <string name="puk2Blocked">PIN2 blokkolva.</string>
+    <string name="fdnFailMmi">Sikertelen FDN-ellenőrzés.</string>
+    <string name="callBarringFailMmi">Sikertelen hívástiltás.</string>
+    <string name="Pin2Mmi">PIN2 módosítás</string>
+    <string name="PukMmi">PIN feloldása</string>
+    <string name="Puk2Mmi">PIN2 feloldása</string>
+    <string name="serviceProvisioned">Szolgáltatás biztosítva.</string>
+    <string name="serviceUnknown">Kapcsolódási probléma vagy érvénytelen MMI kód.</string>
+    <string name="cfServiceNotForwarded">Nem továbbított</string>
+    <string name="permlab_receiveCbSms">CB SMS fogadása</string>
+    <string name="permdesc_receiveCbSms">Engedélyezi az alkalmazásnak, hogy CB SMS-üzeneteket fogadjon és feldolgozhassa őket. A rosszindulatú alkalmazások elolvashatják az üzeneteit és törölhetik őket anélkül, hogy elolvashatná őket.</string>
+    <string name="keyguard_password_enter_puk_code">PUK-kód megadása</string>
+    <string name="keyguard_password_wrong_puk_code">Hibás PUK-kód!</string>
+    <string name="keyguard_password_enter_new_pin_code">Új PIN megadása</string>
+    <string name="keyguard_password_Confirm_pin_code">Új PIN megerősítése</string>
+    <string name="invalidPuk">8 számjegyet adjon meg.</string>
+    <string name="sim_permanently_locked">Több mint 10-szer adta meg hibásan a PUK-kódot. Ezzel a SIM-kártya véglegesen blokkolásra kerül.</string>
+    <string name="pin_length_indicate">(4-8 számjegy)</string>
+    <string name="puk_length_indicate">(8 számjegy)</string>
+    <string name="one_retry_left">1 kísérlet maradt</string>
+    <string name="retries_left">Maradt:<xliff:g id="szám">%d</xliff:g></string>
+    <string name="invalid_imei">Érvénytelen IMEI</string>
+    <string name="same_imei">Egyező IMEI</string>
+    <string name="oper_long_46000">China Mobile</string>
+    <string name="oper_long_46001">China Unicom</string>
+    <string name="oper_long_46601">Far EasTone</string>
+    <string name="oper_long_46692">Chunghwa Telecom</string>
+    <string name="oper_long_46697">Taiwan Mobile</string>
+    <string name="oper_long_99998">Android1</string>
+    <string name="oper_long_99999">Android</string>
+    <string name="oper_short_46000">CMCC</string>
+    <string name="oper_short_46001">CU-GSM</string>
+    <string name="oper_short_46601">FET</string>
+    <string name="oper_short_46692">Chunghwa</string>
+    <string name="oper_short_46697">TWN</string>
+    <string name="oper_short_99997">AD1</string>
+    <string name="oper_short_99999">AD</string>
+    <string name="unable_launch_the_ap">Az alkalmazás indítása nem lehetséges.</string>
+    <string name="keyguard_password_enter_sim1_pin_code">SIM 1 PIN-kód megadása</string>
+    <string name="RestrictedChangedTitle_SIM1">SIM1 korlátozott elérés módosítva</string>
+    <string name="RestrictedChangedTitle_SIM2">SIM2 korlátozott elérés módosítva</string>
+    <string name="keyguard_password_enter_sim2_pin_code">SIM 2 PIN-kód megadása</string>
+    <string name="keyguard_password_wrong_sim1_pin_code">Hibás SIM 1 PIN-kód!</string>
+    <string name="keyguard_password_wrong_sim2_pin_code">Hibás SIM 2 PIN-kód!</string>
+    <string name="keyguard_password_enter_sim1_puk_code">SIM 1 PUK-kód megadása</string>
+    <string name="keyguard_password_enter_sim2_puk_code">SIM 2 PUK-kód megadása</string>
+    <string name="lockscreen_sim1_puk_locked_message">Az 1-es SIM-kártya PUK-zárolt.</string>
+    <string name="lockscreen_sim2_puk_locked_message">A 2-es SIM-kártya PUK-zárolt.</string>
+    <string name="choose_bootup_mode">Válasszon SIM-et</string>
+    <string name="choose_gprs_mode">Válasszon adatkapcsolatot</string>
+    <string name="sim_close">SIM-kártya lezárás</string>
+    <string name="lockscreen_sim_puk_locked_message_short">PUK-zárolt</string>
+    <string name="lockscreen_sim_locked_message_short">Zárolt SIM-kártya</string>
+    <string name="simlock_slot_locked_message">Megtörtént a nyílás végleges zárolása.</string> 
+    <string name="simlock_entersimmelock">"SIM ME zár megadása"</string>
+    <string name="slot_id"><xliff:g id="number">%d</xliff:g> nyílás:</string>
+    <string name="new_simcard">Új SIM-kártya</string>
+    <string name="lockscreen_missing_sim_dialog_message">"A SIM-kártya nem illeszkedik megfelelően. Ellenőrizze, hogy a SIM-kártya megfelelően van behelyezve."</string>
+    <string name="permlab_receiveDmRegisterSms">DM regisztrációs SMS fogadása</string>
+    <string name="permdesc_receiveDmRegisterSms">Engedélyezi az alkalmazásnak, hogy DM regisztrációs SMS-üzeneteket fogadjon és feldolgozhassa őket. A DM APP kivételével egyik alkalmazásnak sem szabad ezt használnia</string>
+    <string name="lockscreen_password_error">Hibás jelszó, próbálja újra</string>
+    <string name="lockscreen_pinword_error">PIN hiba, próbálja újra</string>
+    <string name="music_no_artist">Ismeretlen előadó</string>
+    <string name="music_play">Lejátszás</string>
+    <string name="music_pause">Szünet</string>
+    <string name="music_library">Könyvtár</string>
+    <string name="music_no_songs">Nincs dal</string>
+    <string name="serviceClassVideo">Videó</string>
+    <string name="aerr_application_lowmem">Az alkalmazás <xliff:g id="alkalmazás">%1$s</xliff:g> (folyamat <xliff:g id="folyamat">%2$s</xliff:g>) váratlanul leállt. Ez a kevés memória okozhatja. Szabadítson fel helyet és próbálja újra.</string>
+    <string name="aerr_process_lowmem">A folyamat <xliff:g id="folyamat">%1$s</xliff:g> váratlanul leállt. Ez a kevés memória okozhatja. Szabadítson fel helyet és próbálja újra.</string>
+    <string name="free_memory_btn">"Szabad memória"</string>
+    <string name="free_memory_text">"Kevés a memória. Szabadítson fel memóriát."</string>
+    <string name="mem_low_title">Szabadítson fel memóriát</string>
+    <string name="unread_message">%d nem olvasott üzenet</string>
+    <string name="unread_messages">%d nem olvasott üzenet</string>
+    <string name="missed_call">%d nem fogadott hívás</string>
+    <string name="missed_calls">%d nem fogadott hívás</string>
+    <string name="no_favorite_contacts">Nincs kedvenc partner</string>
+    <string name="contact_widget_loading">Betöltés\u2026</string>
+    <string name="volume_fm">FM hangerő</string>
+    <string name="volume_matv">Mobil TV hangerő</string>
+    <string name="media_controller_buffering">"Pufferelés: %d%%..."</string>
+    <string name="media_controller_live">"Élő"</string>
+    <string name="media_controller_playing">"Lejátszás"</string>
+    <string name="media_controller_connecting">"Csatlakozás…"</string>
+    <string name="media_controller_weak_signal">"gyenge jel"</string>
+    <string name="VideoView_error_text_bad_file">"Hibás fájl. Ezt a videót nem lehet lejátszani."</string>
+    <string name="VideoView_error_text_cannot_connect_to_server">"Nem lehet kapcsolódni a kiszolgálóhoz."</string>
+    <string name="VideoView_error_text_type_not_supported">"Nem támogatott médiafájl típus."</string>
+    <string name="VideoView_error_text_drm_not_supported">"DRM-védett. Ezt a videót nem lehet lejátszani."</string>
+    <string name="VideoView_error_text_invalid_connection">"Érvénytelen kapcsolat. (403 Tiltott)"</string>
+    <string name="redo">Újra</string>
+    <string name="undo">Visszavonás</string>
+    <string name="undoAll">Mindegyik visszavonása</string>
+    <string name="new_sim">Új SIM</string>
+    <string name="edit">Szerkesztés</string>
+    <string name="delete">Törlés</string>
+    <string name="sim_card_changed_dialog_title">SIM-kártya kicserélve</string>
+    <string name="change_setting_for_onenewsim">Új SIM-kártya észlelve. Címkéje</string>
+    <string name="change_setting_for_twonewsim">Új SIM-kártyák észlelve. Címkéjük</string>
+    <string name="change_settings">Módosít</string>
+    <string name="sim_card_removed">SIM-kártya eltávolítva.</string>
+    <string name="sim_card_swapped">SIM-kártya cserélték.</string>
+    <string name="keyguard_voice_call">Beszédhívás:</string>
+    <string name="keyguard_sms">Üzenetkezelés:</string>
+    <string name="keyguard_data">Adatkapcsolat:</string>
+    <string name="keyguard_alwaysask">Rákérdezés mindig</string>
+    <string name="keyguard_data_none">Ki</string>
+    <string name="dismiss">Elvet</string>
+    <string name="keyguard_wrong_code_input">Hibás kód.</string>
+    <string name="keyguard_code_length_prompt">4-8 számjegyet adjon meg.</string>
+    <string name="keyguard_code_donnot_mismatch">Nem egyeznek.</string>
+    <string name="for_text">ehhez:</string>
+    <string name="keyguard_internal_call">Internethívás</string>
+    <string name="keyguard_not_set">Nincs beállítva</string>
+    <string name="network_searching">Új hálózat keresése</string>
+    <string name="searching_simcard">Észlelés…</string>
+    <string name="keyguard_close">Bezárás</string>
+    <string name="for_first_simcard">Az első SIM esetében</string>
+    <string name="for_second_simcard">A második SIM esetében</string>
+    <string name="for_third_simcard">A harmadik SIM esetében</string>
+    <string name="for_fourth_simcard">A negyedik SIM esetében</string>
+    <string name="default_sim_setting_prompt">Az alap SIM beállítások most a következők:</string>
+    <string name="keyguard_video_call">Videohívás:</string>
+    <string name="lockscreen_pin_too_many_failed_attempts_dialog_message"> Hibásan adta meg PIN-kódját <xliff:g id="szám">%d</xliff:g> alkalommal. \n\nPróbálja meg újra <xliff:g id="szám">%d</xliff:g> másodpercen belül.</string>
+    <string name="lockscreen_password_too_many_failed_attempts_dialog_message"> Hibásan adta meg jelszavát <xliff:g id="szám">%d</xliff:g> alkalommal. \n\nPróbálja meg újra <xliff:g id="szám">%d</xliff:g> másodpercen belül.</string>
+    <string name="criticallowtitle">Nincs üres hely</string>
+    <string name="criticallowmessage">A telefon memóriája megtelt. Törölje a fölösleges fájlokat, mer ellenkező esetben az alkalmazás váratlanul kiléphet.</string>
+    <string name="nq_sms_filter_title">SMS-szűrő</string>
+    <string name="nq_sms_filter_message">Erre az üzenetre díjat számolhatnak fel. Folytatja?</string>
+    <string name="nq_sms_filter_yes">Igen</string>
+    <string name="nq_sms_filter_no">Nem</string>
+    <string name="ext_media_checking_notification_title_sd2">2. SD-kártya előkészítése</string>
+    <string name="drm_protection_status">Védelem állapota:</string>
+    <string name="drm_can_forward">Továbbítható.</string>
+    <string name="drm_can_not_forward">Nem továbbítható.</string>
+    <string name="drm_no_limitation">Nincs korlátozás.</string>
+    <string name="drm_no_license">Nincs elérhető DRM-licenc.</string>
+    <string name="drm_begin">Kezdés:</string>
+    <string name="drm_end">Befejezés:</string>
+    <string name="drm_use_left">Maradt:</string>
+    <string name="drm_protectioninfo_renew">Megújítás</string>
+    <string name="drm_protectioninfo_title">Védelem info. </string>
+    <string name="drm_licenseacquisition_title">DRM-licenc beszerzése</string>
+    <string name="drm_licenseacquisition_message">%1$s nem rendelkezik elérhető DRM-licenccel. A ?enew??gomb megnyomásával igényelhet DRM-licencet.</string>
+    <string name="drm_toast_license_expired">A DRM-licenc lejárt.</string>
+    <string name="drm_forwardforbidden_title">Továbbítás megtiltva</string>
+    <string name="drm_forwardforbidden_message">Egyes védett fájlokat nem lehet továbbítani.</string>
+    <string name="drm_license_install_success">DRM-licenc sikeresen telepítve.</string>
+    <string name="drm_license_install_fail">A DRM-licenc telepítése sikertelen.</string>
+    <string name="drm_secure_timer_title">Érvénytelen DRM-biztonsági óra</string>
+    <string name="drm_secure_timer_message">Nem használhat DRM-védelemmel ellátott fájlokat. Győződjön meg arról, hogy az adatkapcsolat elérhető.</string>
+    <string name="drm_consume_title">DRM-jogok felhasználása</string>
+    <string name="drm_consume_message">A művelettel DRM-jogokat fog felhasználni.</string>
+
+ <!--     add for alarm boot           -->
+    <!-- Default label to display for an alarm -->
+    <string name="default_label" >"Ébresztő"</string>
+    <string name="dismiss_power_on">Elvetés és bekapcsolás</string>
+    <string name="dismiss_power_off">Elvetés és kikapcsolás</string>
+    <string name="alarm_alert_snooze_text" >"Szundi"</string>
+    <string name="every_day" >"Minden nap"</string>
+    <string name="never" >"Soha"</string>
+    <string name="day_concat" >", "</string>
+    
+    <string name="gps_time_sync_fail_str">A GPS időadatok lekérése sikertelen</string>
+
+    <string name="usb_ums_notification_title">USB-háttértárként csatlakoztatva</string>
+    <string name="usb_charging_notification_title">Csak USB-töltés</string>
+
+    <string name="sim_missing_slot1">1. nyílás: Nem észlelhető SIM-kártya</string>  
+    <string name="sim_missing_slot2">2. nyílás: Nem észlelhető SIM-kártya</string>  
+    <string name="sim_missing">Nem észlelhető SIM-kártya</string>  
+    <string name="sim_missing_detail">Kérjük, ellenőrizze, üzemkész-e a SIM-kártya</string>
+
+    <!-- add for webview find -->
+    <string name="find_previous">előző</string>
+    <string name="find_next">következő</string>
+
+    <string name="tethered_notification_message_for_hotspot">
+        <xliff:g id="connected">%1$d</xliff:g> csatlakoztatva, 
+        <xliff:g id="blocked">%2$d</xliff:g> blokkolva
+    </string>
+    <string name="tethered_notification_message_bandwidth_set">A sávszélesség be van állítva.</string>
+    <string name="default_wallpaper_name">"Alapértelmezett"</string> 
+    <string name="invalid_sim_title">Érvénytelen SIM-kártya</string>
+    <string name="invalid_sim_message">Az UIM/SIM-kártya nem ismerhető fel</string>
+    <!-- voice unlock start -->
+    <string name="voice_unlock_service_error">Hangkioldás szolgáltatási hiba.</string>
+    <string name="voice_unlock_password_wrong">Sajnálom, nem ismerhető fel a hangja.</string>
+    <string name="voice_unlock_noisy">Túl zajos, ezért nem hallható tisztán az Ön hangja.</string>
+    <string name="voice_unlock_weak">Nem hallható a hangja.</string>
+    <string name="voice_unlock_media_playing">A hangkioldás médialejátszás közben le van tiltva.</string>
+    <string name="voiceunlock_multiple_failures">A hangfeloldásra tett kísérletek maximális száma túl lett lépve</string>    
+    <!-- voice unlock end -->
+
+    <string name="wifi_display_bt_hdmi_off_wfd_on">A Bluetooth és HDMI kikapcsolódik a vezeték nélküli megjelenítés bekapcsolásakor. Folytatja?</string> 
+    <string name="wifi_display_wfd_off_hdmi_on">A vezeték nélküli megjelenítés kikapcsolódik a HDMI bekapcsolásakor. Folytatja?</string> 
+    <string name="wifi_display_wfd_off_bt_on">A vezeték nélküli megjelenítés kikapcsolódik a Bluetooth bekapcsolásakor. Folytatja?</string> 
+    <string name="wifi_display_wifi_p2p_disconnect_wfd_connect">Megtörténik az aktuális Wi-Fi Direct kapcsolat bontása, ha vezeték nélküli megjelenítőt csatlakoztat. Folytatja?</string> 
+    <string name="wifi_display_unstable_connection">A kapcsolat instabil</string>
+    <string name="wifi_display_connection_is_not_steady">A vezeték nélküli kijelző jelenlegi kapcsolata instabil.</string>
+    <string name="wifi_display_unstable_suggestion">A vezeték nélküli kijelző jelenlegi kapcsolata instabil. Kérjük, menjen közelebb a kijelzőhöz.</string>
+    <string name="wifi_display_reconnect">Újracsatlakozás</string> 
+    <string name="wifi_display_disconnect_then_reconnect">A vezeték nélküli kijelző csatlakoztatása megszakadt. Újra szeretné csatlakoztatni?</string> 
+    <string name="wifi_display_disconnected">A vezeték nélküli kijelző csatlakoztatása megszakadt.</string>
+    <string name="wifi_wps_failed_overlap">"Egy másik WPS-munkamenetet észleltünk. Kérjük, próbálkozzon újra néhány perc múlva."</string>
+    <string name="wifi_display_wfd_and_wifi_are_turned_on">A vezeték nélküli kijelző és a Wi-Fi be van kapcsolva.</string>
+    <string name="wifi_display_sound_path_reminder">A multimédiás hangot nem lehet lejátszani a fejhallgatón keresztül.</string>  
+    <string name="wifi_display_change_resolution_reminder">A felbontás módosításakor a vezeték nélküli kijelző ismét automatikusan csatlakoztatva lesz.</string>  
+    <string name="wifi_display_do_not_remind_again">Nem kérek több emlékeztetést.</string>
+    <string name="wifi_display_wifi_ap_affects_quality">A jelenlegi Wi-Fi AP hatással lehet a vezeték nélküli kijelző minőségére.</string>
+    
+    <!-- Add for AT&T to show toast when pass pin/puk lock -->
+    <string name="pin_pass">Kód elfogadva</string>
+    <string name="puk_pass">PIN kioldva</string>
+    <!-- MountService start -->
+    <string name="sdcard_ready_title">SD-kártya kész</string>
+    <string name="sdcard_select_default_path">Módosítja az alapértelmezett írási lemezt?</string>
+    <string name="sdcard_default_path_change">Az alapértelmezett írási lemez módosítva lett.</string>
+    <string name="usb_storage_ready_title">A külső USB-tároló kész.</string>
+    <!-- MountService end -->
+
+
+    <string name="sd_accessing_swtich_user_title">Felhasználót szeretne váltani?</string>
+    <string name="sd_accessing_swtich_user_message">A tulajdonos fiókjában lévő el nem mentett adatok elvesznek vagy sérülni fognak.</string> 
+    
+    <string name="dm_prompt">A terminált már zárolták</string>
+    <string name="drm_forward_forbidden">Egy vagy több védett fájlt nem lehet továbbítani.</string>
+    <string name="wap_push_setting_noti_text">Kérjük, érintse meg a kijelöléshez</string>
+    <string name="url_dialog_choice_title">Üzenetek</string>
+    <string name="url_dialog_choice_message">Ezzel megnyitja a böngészőt, folytatja?</string>
+    <string name="deleteApp">Alkalmazások eltávolítása</string>
+    <string name="deleteMail">E-mailek biztonsági mentése és tároló leválasztása</string>
+    <string name="storage_withsd">Nincs elég szabad hely a telefon tárolójában. Kérjük, tegyen szabaddá némi tárhelyet, vagy módosítsa az alapértelmezett írási lemezt a beállításokban.</string>
+    <string name="storage_withoutsd">Nincs elég szabad hely a telefon tárolójában. Kérjük, tegyen szabaddá némi tárhelyet, vagy helyezzen be egy SD-kártyát.</string>
+    <string name="storage_sd">Nincs elég szabad hely az SD-kártyán. Kérjük, tegyen szabaddá némi tárhelyet, vagy módosítsa az alapértelmezett írási lemezt a beállításokban.</string>
+    <string name="calibration_data">Még nem történt kalibrálás. Kérjük, töltse le a kalibrálási adatokat. Ha ezt elmulasztja, elképzelhető, hogy a készülék nem tud csatlakozni a hálózathoz. [MTK belső felhasználó]</string>
+    <string name="invalid_card">Érvénytelen kártya</string>
+    <string name="usbint_notification_title">Az USB Internet aktív</string>
+    
+    <string name="hdmi_notification_title">HDMI-kábel csatlakoztatva</string>  
+    <string name="hdmi_notification_content">Kattintson rá a HDMI konfigurálásához</string>
+    <string name="hdmi_hdvideo_toast">A HDMI nem játssza le a 4K videót. A kapcsolat megszakad.</string>
+
+    <!-- VolumePanel -->
+    <string name="safe_media_volume_warning_title">Figyelmeztetés</string> 
+    
+    <!-- Low Storage -->
+    <string name="aerr_application_lowstorage">A belső tárolóhely hamarosan megtelik, ezért az alkalmazás leállt. Szabadítson fel tárhelyet, majd próbálkozzon újra.</string>
+    <string name="aerr_process_lowstorage">A belső tárolóhely hamarosan megtelik, ezért a folyamat leállt. Szabadítson fel tárhelyet, majd próbálkozzon újra.</string>
+    <string name="low_internal_storage_view_title">A belső tárolóhely hamarosan megtelik</string>
+    <string name="deleteMails">Levelek törlése</string>
+    <string name="low_storage_warning_message">Kérjük, szabadítson fel tárhelyet. Ellenkező esetben előfordulhat, hogy néhány alkalmazás vagy rendszerfunkció nem megfelelően fog működni.</string>
+
+    <!-- KK translation task -->
+    <string name="virtual_sim_on_slot1">Virtuális SIM 1 BE</string>
+    <string name="virtual_sim_on_slot2">Virtuális SIM 2 BE</string>
+    <string name="virtual_sim_on_slot3">Virtuális SIM 3 BE</string>
+    <string name="virtual_sim_on_slot4">Virtuális SIM 4 BE</string>
+    <string name="virtual_sim_on">Virtuális SIM BE</string>
+    <string name="RejectCauseTitle">Hálózat általi elutasítás oka</string>
+    <string name="MMRejectCause2">A SIM nincs biztosítva MM #2</string>
+    <string name="MMRejectCause3">A SIM nem engedélyezett MM #3</string>
+    <string name="MMRejectCause5">Sikertelen hívás MM #5</string>
+    <string name="MMRejectCause6">Nem engedélyezett telefon MM #6</string>
+    <string name="MMRejectCause13">Csak SOS/segélyhívások</string>
+    <string name="keyguard_accessibility_alarm_unlock">Kikapcsolási riasztás</string>
+    <string name="dialog_color_picker">Színválasztó</string>
+    <string name="press_color_to_apply">Nyomja meg a kívánt színt az alkalmazásához</string>
+    <string name="oper_long_46003">China Telecom</string>
+    <string name="oper_short_46003">China Telecom</string>
+    <string name="keyguard_sim_auto">"automatikus"</string>
+    <string name="keyguard_domestic_zone_name">"Peking"</string>
+    <string name="ext_media_checking_notification_title_otg">USB-tároló előkészítése</string>
+    <string name="ext_media_badremoval_notification_title_otg">"USB-tár váratlanul eltávolítva"</string>
+    <string name="ext_media_nomedia_notification_title_otg">"Hiányzó USB-tár"</string>
+    <string name="ext_media_badremoval_notification_message_otg">"Az adatvesztés elkerülése érdekében válassza le az USB-tárat, mielőtt kihúzná azt."</string>
+    <string name="ext_media_nomedia_notification_message_otg">"Az USB-tár eltávolítva. Helyezzen be új hordozóeszközt."</string>
+    <string name="ext_media_unmountable_notification_title_otg">"Sérült USB-tár"</string>
+    <string name="ext_media_unmountable_notification_message_otg">"Az USB-tár károsodott. Lehet, hogy újra kell formáznia."</string>
+    <string name="ext_media_nofs_notification_title_otg">"Üres USB-tár"</string>
+    <string name="ext_media_nofs_notification_message_otg">"Az USB-tár üres, vagy a fájlrendszere nem támogatott."</string>
+    <string name="ext_media_safe_unmount_notification_title_otg">"Az USB-tár biztonságosan eltávolítható"</string>
+    <string name="ext_media_safe_unmount_notification_message_otg">"Biztonságosan eltávolíthatja az USB-tárat."</string>
+    <string name="recip_unsupport_operator">A címzettek nézete nem támogatja a karakterműveleteket. Kérjük, használja az eszközsort a címzettek kezeléséhez.</string>
+    <string name="recip_unsupport_selection">Elnézést, a csúcsos ékezetet nem helyezheti az elejére, ahol vannak címzettek a címzettek nézetében.</string>
+    <string name="sim_missing_slot3">3. nyílás: Nem észlelhető SIM-kártya</string>
+    <string name="sim_missing_slot4">4. nyílás: Nem észlelhető SIM-kártya</string>
+    <string name="sim_missing_slot1_card">1. nyílás: Nem észlelhető kártya</string>
+    <string name="sim_missing_slot2_card">2. nyílás: Nem észlelhető kártya</string>
+    <string name="sim_missing_card">Nem észlelhető kártya</string>
+    <string name="sim_missing_detail_card">Kérjük, ellenőrizze, üzemkész-e a kártya</string>
+    <string name="wap_push_setting_noti_ticker">Elfogadja az automata push-szolgáltatást vagy sem?</string>
+    <string name="wap_push_setting_noti_title">Elfogadja az automata push-szolgáltatást vagy sem?</string>
+    <string name="alarm_alert_dismiss_text">Elvet</string>
+    <string name="description_direction_right">"Csúsztassa jobbra az elvetéshez"</string>
+    <string name="description_direction_left">"Csúsztassa balra a szundihoz"</string>
+    <string name="description_direction_up">"Csúsztassa fel az elvetéshez"</string>
+    <string name="description_direction_down">"Csúsztassa le a szundihoz"</string>
+    <string name="voiceui_notify_string">A következőt mondhatja ki </string>
+    <string name="voiceui_control_poweroff_alarm">a kikapcsolási riasztás vezérléséhez.</string>
+    <string name="voiceui_or">vagy</string>
+    <string name="headset_pin_recognition">A fülhallgató nem kompatibilis a telefonnal. Próbálkozzon másikkal.</string>
+    <string name="msensor_toast_text">Iránytű-interferencia. Lengesse 8-as alakzatban a telefont az iránytű kalibrálásához.</string>
+    <string name="usb_autorun_cdrom_notification_title">Csatlakoztatva mint automata indítású DC-ROM</string>
+    <string name="ct_net_name">"CTNET"</string>
+    <string name="ct_wap_name">"CTWAP"</string>
+</resources>
+

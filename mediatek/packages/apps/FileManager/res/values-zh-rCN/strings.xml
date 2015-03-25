@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="alert_delete_multiple">将会删除这些文件</string>
+    <string name="alert_delete_single">将会删除该文件</string>
+    <string name="delete_deny">没有权限删除。</string>
+    <string name="app_name">文件管理</string>
+    <string name="cancel">取消</string>
+    <string name="copy">"复制"</string>
+    <string name="copy_deny">没有权限复制。</string>
+    <string name="create_folder">新建文件夹</string>
+    <string name="cut">"剪切"</string>
+    <string name="cut_deny">没有权限剪切。</string>
+    <string name="delete">删除</string>
+    <string name="delete_fail">删除失败。</string>
+    <string name="deleting">正在删除</string>
+    <string name="deselect_all">取消全选</string>
+    <string name="select_all">全选</string>
+    <string name="details">详情</string>
+    <string name="done">"完成"</string>
+    <string name="executable">可执行</string>
+    <string name="insufficient_memory">空间不足。</string>
+    <string name="loading">正在载入\u2026</string>
+    <string name="modified_time">修改日期</string>
+    <string name="name">名称</string>
+    <string name="new_folder">新文件夹</string>
+    <string name="no">"否"</string>
+    <string name="ok">确定</string>
+    <string name="paste">"粘贴"</string>
+    <string name="pasting">正在复制</string>
+    <string name="paste_fail">粘贴失败。</string>
+    <string name="paste_same_folder">目标文件夹与原文件夹相同，不可以粘贴。</string>
+    <string name="readable">可读</string>
+    <string name="rename">重命名</string>
+    <string name="selected">选中</string>
+    <string name="send_file">发送文件</string>
+    <string name="share">"分享"</string>
+    <string name="size">大小</string>
+    <string name="sort_by">排序方式</string>
+    <string name="wait">"请稍候..."</string>
+    <string name="writable">可写</string>
+    <string name="yes">是</string>
+    <string name="confirm_rename">确认重命名</string>
+    <string name="invalid_char_prompt">您输入了无效字符。</string>
+    <string name="msg_rename_ext">您正在尝试修改文件扩展名，可能导致系统无法识别文件，确定要修改？</string>
+    <string name="msg_unable_open_file">文件格式不支持。</string>
+
+    <string-array name="sort_by">
+        <item>类型</item>
+        <item>名称 (A - Z)</item>
+        <item>大小 (大 - 小)</item>
+        <item>日期 (新 - 旧)</item>
+    </string-array>
+
+    <string name="more">更多</string>
+    <string name="search">搜索</string>
+    <string name="sort">排序</string>
+    <string name="show_file">显示隐藏文件</string>
+    <string name="hide_file">不显示隐藏文件</string>
+    <string name="default_search_text">搜索文件</string>
+    <string name="search_text_empty">搜索内容不能为空.</string>
+    <string name="free_space">可用空间</string>
+    <string name="total_space">总容量</string>
+    <string name="paste_sub_folder">不能粘贴文件到子文件夹。</string>
+    <string name="operation_fail">一些操作失败。</string>
+    <string name="search_files">搜索文件</string>
+    <string name="search_result">%2$d 个结果搜索自 \"%1$s\"</string>
+    <!-- modified -->
+    <string name="empty_msg">(文件夹是空的)</string>
+    <string name="unmounted">%1$s 被卸载。</string>
+    <string name="already_exists">%1$s 已存在。</string>
+    <string name="path_not_exists">%1$s 不存在。</string>
+    <string name="create_hidden_file">以\".\"开头的文件将被隐藏。</string>
+    <string name="modify_hidden_file">不以\'.\'开头的文件将不被隐藏。</string>
+    <string name="file_name_too_long">输入的文件名称过长。</string>
+    <string name="invalid_empty_name">文件名不能为空。</string>
+    <string name="some_paste_fail">一些粘贴操作失败。</string>
+    <string name="some_delete_fail">一些删除操作失败。</string>
+    <string name="search_empty">搜索的内容不能为空。</string>
+    <string name="search_setting_description">本地文件和文件夹</string>
+    <string name="change_mode">选择文件或文件夹</string>
+    <string name="folder_beam_forbidden_title">不能发送文件夾</string>
+    <string name="folder_beam_forbidden_message">不支持发送文件夾。可以选择多个文件进行发送。</string>
+    <string name="drm_beam_forbidden_title">发送被禁止</string>
+    <string name="drm_beam_forbidden_message">受DRM(数字版权管理)保护的文件不能发送。</string>
+
+</resources>

@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binrecordvideo Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type recordvideo_exec , exec_type, file_type;
+type recordvideo ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive recordvideo;
+init_daemon_domain(recordvideo)
+
+
+# 20131122 Add Set Property Rule
+allow recordvideo  property_type:property_service set;

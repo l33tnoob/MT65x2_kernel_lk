@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- xmlns:settings="http://schemas.android.com/apk/res/com.mediatek.android.oobe" -->
+    <SwitchPreference
+        android:key="sync_pref"
+        android:summaryOn="@string/sync_account_summary_on"
+        android:summaryOff="@string/sync_account_summary_off"
+        android:title="@string/sync_account_title" />
+
+</PreferenceScreen>

@@ -1,0 +1,55 @@
+# ==============================================
+# Policy File of /system/binmmp Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type mmp_exec , exec_type, file_type;
+type mmp ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive mmp;
+init_daemon_domain(mmp)
+
+# 20131028 CTS_16
+allow mmp linker_exec:file read;
+
+
+# 20131028 CTS_18
+allow mmp device:chr_file { read ioctl open };
+
+
+# 20131028 CTS_19
+allow mmp mmp_device:chr_file { read write ioctl open };
+
+
+# 20131119 FeatureSQC
+allow mmp mmp_device:chr_file { read write open };
+
+
+
+# 20131122 Add Set Property Rule
+allow mmp  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow mmp debugfs:file { read ioctl };
+allow mmp self:capability dac_override;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow mmp debugfs:file { read ioctl };
+allow mmp self:capability dac_override;
+

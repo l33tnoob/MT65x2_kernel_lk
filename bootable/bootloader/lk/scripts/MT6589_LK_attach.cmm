@@ -1,0 +1,34 @@
+; disable DABORT and PABORT breakpoint
+;tronchip.set dabort off
+;tronchip.set pabort off
+;tronchip.set undef off
+;tronchip.set irq off
+;
+; board init
+;
+;d.s c:0x10000000 %le %long 0x22000024
+;do MT6583_EVB_DDR_DUAL.cmm
+
+;D.S C15:0x1 0				; Turn off MMU
+
+print "loading lk image"
+d.load.elf ../build-mt6589_evb1/lk /gnu /nocode
+
+Y.SPATH.RESET ; reset all source path
+Y.SPATH.SRD ../app
+Y.SPATH.SRD ../app/mt_boot
+Y.SPATH.SRD ../arch/arm
+Y.SPATH.SRD ../dev
+Y.SPATH.SRD ../include
+Y.SPATH.SRD ../kernel
+Y.SPATH.SRD ../lib
+Y.SPATH.SRD ../../../../mediatek/platform/mt6589/lk
+
+;d.s c:0x10208000 %le %long 0xe
+;d.s c:0x10208100 %le %long 0x1
+;d.s c:0x10208200 %le %long 0x1
+
+d.l
+
+enddo
+

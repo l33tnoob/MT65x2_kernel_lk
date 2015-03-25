@@ -1,0 +1,960 @@
+package android.app {
+
+  public class AlarmManager {
+    method public void cancelPoweroffAlarm(java.lang.String);
+  }
+
+  public static class DownloadManager.Request {
+    method public android.app.DownloadManager.Request setUserAgent(java.lang.String);
+  }
+
+  public class StatusBarManager {
+    method public void hideSimIndicator(android.content.ComponentName);
+    method public void showApplicationGuide(java.lang.String);
+    method public void showSimIndicator(android.content.ComponentName, java.lang.String);
+  }
+
+}
+
+package android.content.pm {
+
+  public class PackageInfo implements android.os.Parcelable {
+    field public int isThemePackage;
+    field public int themeNameId;
+  }
+
+}
+
+package android.content.res {
+
+  public final class Configuration implements java.lang.Comparable android.os.Parcelable {
+    field public java.lang.String skin;
+  }
+
+  public class Resources {
+    method public int getThemeColor(java.lang.String);
+    method public int getThemeHighlightColor();
+    method public int getThemeMainColor();
+    method public android.graphics.Bitmap getThemePreview(java.lang.String);
+  }
+
+}
+
+package android.database {
+
+  public class DatabaseUtils {
+    method public static java.util.Locale getCollatorLocale();
+    method public static void setCollatorLocale(java.util.Locale);
+  }
+
+}
+
+package android.hardware {
+
+  public class Camera {
+    method public void cancelContinuousShot();
+    method public void cancelSDPreview();
+    method public final void setASDCallback(android.hardware.Camera.ASDCallback);
+    method public final void setAUTORAMACallback(android.hardware.Camera.AUTORAMACallback);
+    method public final void setAUTORAMAMVCallback(android.hardware.Camera.AUTORAMAMVCallback);
+    method public void setCSDoneCallback(android.hardware.Camera.ContinuousShotDone);
+    method public void setContinuousShotSpeed(int);
+    method public final void setFBOriginalCallback(android.hardware.Camera.FBOriginalCallback);
+    method public final void setHDROriginalCallback(android.hardware.Camera.HDROriginalCallback);
+    method public final void setMAVCallback(android.hardware.Camera.MAVCallback);
+    method public final void setMotionTrackCallback(android.hardware.Camera.MotionTrackCallback);
+    method public final void setObjectTrackingListener(android.hardware.Camera.ObjectTrackingListener);
+    method public void setPreviewDoneCallback(android.hardware.Camera.ZSDPreviewDone);
+    method public static void setProperty(java.lang.String, java.lang.String);
+    method public final void setSmileCallback(android.hardware.Camera.SmileCallback);
+    method public final void startAUTORAMA(int);
+    method public final void startMAV(int);
+    method public final void startOT(int, int);
+    method public void startSDPreview();
+    method public void stopAUTORAMA(int);
+    method public void stopMAV(int);
+    method public void stopOT();
+  }
+
+  public class Camera.Parameters {
+    method public android.hardware.Camera.Parameters copy();
+    method public int getBestFocusStep();
+    method public java.lang.String getBrightnessMode();
+    method public java.lang.String getContrastMode();
+    method public java.lang.String getEdgeMode();
+    method public java.lang.String getHueMode();
+    method public java.lang.String getISOSpeed();
+    method public int getMaxFocusStep();
+    method public int getMaxNumDetectedObjects();
+    method public int getMinFocusStep();
+    method public java.lang.String getSaturationMode();
+    method public java.util.List<java.lang.String> getSupportedCaptureMode();
+    method public java.util.List<java.lang.String> getSupportedContrastMode();
+    method public java.util.List<java.lang.String> getSupportedEdgeMode();
+    method public java.util.List<java.lang.String> getSupportedHueMode();
+    method public java.util.List<java.lang.String> getSupportedISOSpeed();
+    method public java.util.List<java.lang.String> getSupportedSaturationMode();
+    method public java.util.List<java.lang.String> getSupportedZSDMode();
+    method public java.lang.String getZSDMode();
+    method public void setBrightnessMode(java.lang.String);
+    method public void setBurstShotNum(int);
+    method public void setCameraMode(int);
+    method public void setCaptureMode(java.lang.String);
+    method public void setCapturePath(java.lang.String);
+    method public void setContrastMode(java.lang.String);
+    method public void setEdgeMode(java.lang.String);
+    method public void setHueMode(java.lang.String);
+    method public void setISOSpeed(java.lang.String);
+    method public void setSaturationMode(java.lang.String);
+    method public void setZSDMode(java.lang.String);
+  }
+
+}
+
+package android.media {
+
+  public class AudioManager {
+    method public boolean enableHdmiAudio(boolean);
+    method public void setAudioProfileStreamVolume(int, int, int);
+  }
+
+  public class AudioSystem {
+    method public static int getAudioCommand(int);
+    method public static int getAudioData(int, int, byte[]);
+    method public static int getEmParameter(byte[], int);
+    method public static int setAudioCommand(int, int);
+    method public static int setAudioData(int, int, byte[]);
+    method public static int setEmParameter(byte[], int);
+  }
+
+  public class MediaPlayer implements android.media.SubtitleController.Listener {
+    method public void setOnDurationUpdateListener(android.media.MediaPlayer.OnDurationUpdateListener);
+  }
+
+  public class MediaRecorder {
+    method public void setOnCameraReleasedListener(android.media.MediaRecorder.OnInfoListener);
+  }
+
+  public class RingtoneManager {
+    method public static android.net.Uri getDefaultRingtoneUri(android.content.Context, int);
+    method public android.database.Cursor getNewCursor();
+    method public static boolean isRingtoneExist(android.content.Context, android.net.Uri);
+  }
+
+}
+
+package android.media.videoeditor {
+
+  public class VideoEditorImpl implements android.media.videoeditor.VideoEditor {
+    method public void cancelGenerating();
+  }
+
+}
+
+package android.mtp {
+
+  public class MtpServer implements java.lang.Runnable {
+    method public void endSession();
+    method public boolean getStatus();
+    method public void sendObjectInfoChanged(int);
+    method public void sendStorageInfoChanged(android.mtp.MtpStorage);
+    method public void updateStorage(android.mtp.MtpStorage);
+  }
+
+}
+
+package android.net {
+
+  public class ConnectivityManager {
+    method public boolean getTetheringIpv6Enable();
+    method public boolean isTetheringChangeDone();
+    method public void setTetheringIpv6Enable(boolean);
+    method public boolean setUsbInternet(boolean);
+    method public boolean setUsbInternet(boolean, int);
+  }
+
+  public class NetworkInfo implements android.os.Parcelable {
+    method public int getSimId();
+  }
+
+  public class NetworkPolicy implements java.lang.Comparable android.os.Parcelable {
+    field public boolean active;
+  }
+
+  public class NetworkUtils {
+    method public static boolean setMtuByInterface(java.lang.String, int);
+  }
+
+}
+
+package android.net.http {
+
+  public final class AndroidHttpClient implements org.apache.http.client.HttpClient {
+    method public void setHttpRequestRetryHandler(org.apache.http.impl.client.DefaultHttpRequestRetryHandler);
+  }
+
+}
+
+package android.net.wifi {
+
+  public class HotspotClient implements android.os.Parcelable {
+    field public java.lang.String deviceAddress;
+    field public boolean isBlocked;
+  }
+
+  public class WifiConfiguration implements android.os.Parcelable {
+    field public int channel;
+    field public int channelWidth;
+    field public java.lang.String imsi;
+    field public java.lang.String pcsc;
+    field public java.lang.String simSlot;
+  }
+
+  public static class WifiConfiguration.GroupCipher {
+    field public static final int SMS4 = 4; // 0x4
+  }
+
+  public static class WifiConfiguration.KeyMgmt {
+    field public static final int WAPI_CERT = 6; // 0x6
+    field public static final int WAPI_PSK = 5; // 0x5
+  }
+
+  public static class WifiConfiguration.PairwiseCipher {
+    field public static final int SMS4 = 3; // 0x3
+  }
+
+  public static class WifiConfiguration.Protocol {
+    field public static final int WAPI = 2; // 0x2
+  }
+
+  public class WifiManager {
+    method public boolean blockClient(android.net.wifi.HotspotClient);
+    method public boolean doCtiaTestOff();
+    method public boolean doCtiaTestOn();
+    method public boolean doCtiaTestRate(int);
+    method public java.lang.String[] getAccessPointPreferredChannels();
+    method public java.lang.String getClientIp(java.lang.String);
+    method public java.util.List<android.net.wifi.HotspotClient> getHotspotClients();
+    method public boolean setApProbeRequestEnabled(boolean);
+    method public boolean setTxPower(int);
+    method public boolean setTxPowerEnabled(boolean);
+    method public boolean startApWps(android.net.wifi.WpsInfo);
+    method public boolean suspendNotification(int);
+    method public boolean unblockClient(android.net.wifi.HotspotClient);
+    field public static final java.lang.String EXTRA_TRIGGERED_BY_NOTIFICATION = "notification";
+    field public static final java.lang.String NEW_PAC_UPDATED_ACTION = "android.net.wifi.NEW_PAC_UPDATED";
+    field public static final java.lang.String NO_CERTIFICATION_ACTION = "android.net.wifi.NO_CERTIFICATION";
+    field public static final java.lang.String WIFI_CLEAR_NOTIFICATION_SHOW_FLAG_ACTION = "android.net.wifi.WIFI_CLEAR_NOTIFICATION_SHOW_FLAG_ACTION";
+    field public static final java.lang.String WIFI_HOTSPOT_CLIENTS_CHANGED_ACTION = "android.net.wifi.WIFI_HOTSPOT_CLIENTS_CHANGED";
+    field public static final java.lang.String WIFI_HOTSPOT_OVERLAP_ACTION = "android.net.wifi.WIFI_HOTSPOT_OVERLAP";
+    field public static final java.lang.String WIFI_WPS_CHECK_PIN_FAIL_ACTION = "android.net.wifi.WIFI_WPS_CHECK_PIN_FAIL";
+  }
+
+}
+
+package android.nfc {
+
+  public final class NfcAdapter {
+    method public int getModeFlag(int);
+    method public void setModeFlag(int, int);
+    method public void setMtkBeamPlusPushUris(android.net.Uri[], android.app.Activity);
+    method public void setMtkBeamPushUrisCallback(android.nfc.NfcAdapter.CreateBeamUrisCallback, android.app.Activity);
+    field public static final int FLAG_OFF = 0; // 0x0
+    field public static final int FLAG_ON = 1; // 0x1
+    field public static final int MODE_CARD = 4; // 0x4
+    field public static final int MODE_P2P = 2; // 0x2
+    field public static final int MODE_READER = 1; // 0x1
+  }
+
+}
+
+package android.provider {
+
+  public static class CallLog.Calls implements android.provider.BaseColumns {
+    method public static android.net.Uri addCall(com.android.internal.telephony.CallerInfo, android.content.Context, java.lang.String, int, int, long, int, int, int);
+    field public static final java.lang.String SIM_ID = "simid";
+    field public static final java.lang.String VTCALL = "vtcall";
+  }
+
+  public final class MediaStore {
+    method public static android.net.Uri getMtpTransferFileUri();
+  }
+
+  public static final class Settings.System {
+    field public static final android.net.Uri DEFAULT_VIDEO_CALL_URI;
+  }
+
+  public static final class Telephony.Carriers implements android.provider.BaseColumns {
+    field public static final android.net.Uri CONTENT_URI_2;
+    field public static final android.net.Uri CONTENT_URI_DM;
+  }
+
+  public static final class Telephony.Carriers.SIM1Carriers {
+    field public static final android.net.Uri CONTENT_URI;
+  }
+
+  public static final class Telephony.Carriers.SIM2Carriers {
+    field public static final android.net.Uri CONTENT_URI;
+  }
+
+  public static final class Telephony.Carriers.SIM3Carriers {
+    field public static final android.net.Uri CONTENT_URI;
+  }
+
+  public static final class Telephony.Carriers.SIM4Carriers {
+    field public static final android.net.Uri CONTENT_URI;
+  }
+
+  public static final class Telephony.GprsInfo implements android.provider.BaseColumns {
+    field public static final android.net.Uri CONTENT_URI;
+  }
+
+  public static final class Telephony.MmsSms implements android.provider.BaseColumns {
+    field public static final android.net.Uri CONTENT_URI_QUICKTEXT;
+  }
+
+  public static class Telephony.SIMInfo {
+    method public static int getAllSIMCount(android.content.Context);
+    method public static java.util.List<android.provider.Telephony.SIMInfo> getAllSIMList(android.content.Context);
+    method public static int getInsertedSIMCount(android.content.Context);
+    method public static java.util.List<android.provider.Telephony.SIMInfo> getInsertedSIMList(android.content.Context);
+    method public static android.provider.Telephony.SIMInfo getSIMInfoByICCId(android.content.Context, java.lang.String);
+    method public static android.provider.Telephony.SIMInfo getSIMInfoById(android.content.Context, long);
+    method public static android.provider.Telephony.SIMInfo getSIMInfoByName(android.content.Context, java.lang.String);
+    method public static android.provider.Telephony.SIMInfo getSIMInfoBySlot(android.content.Context, int);
+    method public static android.provider.Telephony.SIMInfo getSIMInfoInstance();
+    method public static android.net.Uri insertICCId(android.content.Context, java.lang.String, int);
+    method public static int setColor(android.content.Context, int, long);
+    method public static int setDataRoaming(android.content.Context, int, long);
+    method public static int setDefaultName(android.content.Context, long, java.lang.String);
+    method public static int setDefaultNameEx(android.content.Context, long, java.lang.String, long);
+    method public static int setDispalyNumberFormat(android.content.Context, int, long);
+    method public static int setDisplayName(android.content.Context, java.lang.String, long);
+    method public static int setDisplayNameEx(android.content.Context, java.lang.String, long, long);
+    method public static int setNumber(android.content.Context, java.lang.String, long);
+    field public int mColor;
+    field public int mDataRoaming;
+    field public java.lang.String mDefaultName;
+    field public int mDispalyNumberFormat;
+    field public java.lang.String mDisplayName;
+    field public java.lang.String mICCId;
+    field public int mNameSource;
+    field public java.lang.String mNumber;
+    field public java.lang.String mOperator;
+    field public long mSimId;
+    field public int mSlot;
+  }
+
+  public static final class Telephony.SimInfo implements android.provider.BaseColumns {
+    field public static final java.lang.String COLOR = "color";
+    field public static final int COLOR_1 = 0; // 0x0
+    field public static final int COLOR_2 = 1; // 0x1
+    field public static final int COLOR_3 = 2; // 0x2
+    field public static final int COLOR_4 = 3; // 0x3
+    field public static final int COLOR_DEFAULT = 0; // 0x0
+    field public static final android.net.Uri CONTENT_URI;
+    field public static final java.lang.String DATA_ROAMING = "data_roaming";
+    field public static final int DATA_ROAMING_DEFAULT = 0; // 0x0
+    field public static final int DATA_ROAMING_DISABLE = 0; // 0x0
+    field public static final int DATA_ROAMING_ENABLE = 1; // 0x1
+    field public static final int DEFAULT_NAME_MAX_INDEX = 99; // 0x63
+    field public static final int DEFAULT_NAME_MIN_INDEX = 1; // 0x1
+    field public static final int DEFAULT_NAME_RES = 33882260; // 0x2050094
+    field public static final java.lang.String DEFAULT_SORT_ORDER = "name ASC";
+    field public static final int DEFAULT_SOURCE = 0; // 0x0
+    field public static final int DISLPAY_NUMBER_DEFAULT = 1; // 0x1
+    field public static final int DISPALY_NUMBER_NONE = 0; // 0x0
+    field public static final java.lang.String DISPLAY_NAME = "display_name";
+    field public static final int DISPLAY_NUMBER_FIRST = 1; // 0x1
+    field public static final java.lang.String DISPLAY_NUMBER_FORMAT = "display_number_format";
+    field public static final int DISPLAY_NUMBER_LAST = 2; // 0x2
+    field public static final java.lang.String ICC_ID = "icc_id";
+    field public static final java.lang.String NAME_SOURCE = "name_source";
+    field public static final java.lang.String NUMBER = "number";
+    field public static final java.lang.String OPERATOR = "operator";
+    field public static final java.lang.String OPERATOR_OP01 = "OP01";
+    field public static final java.lang.String OPERATOR_OP02 = "OP02";
+    field public static final java.lang.String OPERATOR_OP09 = "OP09";
+    field public static final java.lang.String OPERATOR_OTHERS = "others";
+    field public static final int SIM_SOURCE = 1; // 0x1
+    field public static final java.lang.String SLOT = "slot";
+    field public static final int SLOT_NONE = -1; // 0xffffffff
+    field public static final int USER_INPUT = 2; // 0x2
+  }
+
+  public static final class Telephony.Sms implements android.provider.BaseColumns android.provider.Telephony.TextBasedSmsColumns {
+    method public static android.net.Uri addMessageToUri(android.content.ContentResolver, android.net.Uri, java.lang.String, java.lang.String, java.lang.String, java.lang.Long, boolean, boolean, long, int);
+    method public static android.net.Uri addMessageToUri(android.content.ContentResolver, android.net.Uri, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Long, boolean, boolean, long, int);
+  }
+
+  public static final class Telephony.Sms.Draft implements android.provider.BaseColumns android.provider.Telephony.TextBasedSmsColumns {
+    method public static android.net.Uri addMessage(android.content.ContentResolver, java.lang.String, java.lang.String, java.lang.String, java.lang.Long, int);
+  }
+
+  public static final class Telephony.Sms.Inbox implements android.provider.BaseColumns android.provider.Telephony.TextBasedSmsColumns {
+    method public static android.net.Uri addMessage(android.content.ContentResolver, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Long, boolean);
+    method public static android.net.Uri addMessage(android.content.ContentResolver, java.lang.String, java.lang.String, java.lang.String, java.lang.Long, boolean, int);
+    method public static android.net.Uri addMessage(android.content.ContentResolver, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Long, boolean, int);
+  }
+
+  public static final class Telephony.Sms.Outbox implements android.provider.BaseColumns android.provider.Telephony.TextBasedSmsColumns {
+    method public static android.net.Uri addMessage(android.content.ContentResolver, java.lang.String, java.lang.String, java.lang.String, java.lang.Long, boolean, long, int);
+  }
+
+  public static final class Telephony.Sms.Sent implements android.provider.BaseColumns android.provider.Telephony.TextBasedSmsColumns {
+    method public static android.net.Uri addMessage(android.content.ContentResolver, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Long);
+    method public static android.net.Uri addMessage(android.content.ContentResolver, java.lang.String, java.lang.String, java.lang.String, java.lang.Long, int);
+    method public static android.net.Uri addMessage(android.content.ContentResolver, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Long, int);
+  }
+
+}
+
+package android.telephony {
+
+  public class BtSimapOperResponse implements android.os.Parcelable {
+    method public java.lang.String getApduString();
+    method public java.lang.String getAtrString();
+    method public int getCurType();
+    method public int getSupportType();
+    method public void setApduString(java.lang.String);
+    method public void setAtrString(java.lang.String);
+    method public void setCurType(int);
+    method public void setSupportType(int);
+  }
+
+  public class PhoneNumberUtils {
+    method public static boolean isEmergencyNumberExt(java.lang.String, int);
+    method public static boolean isSpecialEmergencyNumber(java.lang.String);
+  }
+
+  public class ServiceState implements android.os.Parcelable {
+    method public int getMySimId();
+    method public void setRegState(int);
+  }
+
+  public class SignalStrength implements android.os.Parcelable {
+    method public int getGsmSignalStrengthDbm();
+    method public int getMySimId();
+  }
+
+  public class SmsMessage {
+    method public static int[] calculateLength(java.lang.CharSequence, boolean, int);
+    method public java.lang.String getDestinationAddress();
+    method public int getMessageSimId();
+    method public byte[] getSmsc();
+    method public byte[] getTpdu();
+    method public com.android.internal.telephony.SmsHeader getUserDataHeader();
+  }
+
+}
+
+package android.webkit {
+
+  public static class WebView.HitTestResult {
+    method public java.lang.String getImageAnchorUrlExtra();
+  }
+
+}
+
+package android.widget {
+
+  public class BounceCoverFlow extends android.widget.BounceGallery {
+    method public void setMaxZoomOut(float);
+  }
+
+  public class BounceGallery extends android.view.View {
+    method public void setCallbackDuringFling(boolean);
+    method public void setGravity(int);
+    method public void setSpacing(int);
+  }
+
+  public class ListView extends android.widget.AdapterView {
+    method public void clearScrapViewsIfNeeded();
+  }
+
+  public class Spinner extends android.view.View implements android.content.DialogInterface.OnClickListener {
+    method public void dismissPopup();
+    method public boolean isPopupShowing();
+  }
+
+}
+
+package com.android.i18n.phonenumbers {
+
+  public static class Phonenumber.PhoneNumber implements java.io.Serializable {
+    method public java.lang.String getPossibleNationalPrefix();
+  }
+
+}
+
+package com.android.internal.telephony {
+
+  public abstract class Call {
+    method public void hangup(com.android.internal.telephony.Connection.DisconnectCause) throws com.android.internal.telephony.CallStateException;
+  }
+
+  public final class CallManager {
+    method public void acceptVtCallWithVoiceOnly(com.android.internal.telephony.Call) throws com.android.internal.telephony.CallStateException;
+    method public boolean hangupAllEx() throws com.android.internal.telephony.CallStateException;
+    method public void registerForCallWaiting2(android.os.Handler, int, java.lang.Object);
+    method public void registerForCallWaitingEx(android.os.Handler, int, java.lang.Object, int);
+    method public void registerForCdmaOtaStatusChange2(android.os.Handler, int, java.lang.Object);
+    method public void registerForCdmaOtaStatusChangeEx(android.os.Handler, int, java.lang.Object, int);
+    method public void registerForCipherIndication(android.os.Handler, int, java.lang.Object);
+    method public void registerForCrssSuppServiceNotification(android.os.Handler, int, java.lang.Object);
+    method public void registerForDisplayInfoEx(android.os.Handler, int, java.lang.Object, int);
+    method public void registerForEcmTimerResetEx(android.os.Handler, int, java.lang.Object, int);
+    method public void registerForInCallVoicePrivacyOffEx(android.os.Handler, int, java.lang.Object, int);
+    method public void registerForInCallVoicePrivacyOnEx(android.os.Handler, int, java.lang.Object, int);
+    method public void registerForSignalInfoEx(android.os.Handler, int, java.lang.Object, int);
+    method public void registerForSpeechInfo(android.os.Handler, int, java.lang.Object);
+    method public void registerForSuppServiceNotification(android.os.Handler, int, java.lang.Object);
+    method public void registerForVtReplaceDisconnect(android.os.Handler, int, java.lang.Object);
+    method public void registerForVtRingInfo(android.os.Handler, int, java.lang.Object);
+    method public void registerForVtStatusInfo(android.os.Handler, int, java.lang.Object);
+    method public void unregisterForCallWaiting2(android.os.Handler);
+    method public void unregisterForCallWaitingEx(android.os.Handler, int);
+    method public void unregisterForCdmaOtaStatusChange2(android.os.Handler);
+    method public void unregisterForCdmaOtaStatusChangeEx(android.os.Handler, int);
+    method public void unregisterForCipherIndication(android.os.Handler);
+    method public void unregisterForCipherIndication2(android.os.Handler);
+    method public void unregisterForCipherIndicationEx(android.os.Handler, int);
+    method public void unregisterForCrssSuppServiceNotification(android.os.Handler);
+    method public void unregisterForCrssSuppServiceNotification2(android.os.Handler);
+    method public void unregisterForCrssSuppServiceNotificationEx(android.os.Handler, int);
+    method public void unregisterForDisconnect2(android.os.Handler);
+    method public void unregisterForDisconnectEx(android.os.Handler, int);
+    method public void unregisterForDisplayInfo2(android.os.Handler);
+    method public void unregisterForDisplayInfoEx(android.os.Handler, int);
+    method public void unregisterForEcmTimerReset2(android.os.Handler);
+    method public void unregisterForInCallVoicePrivacyOff2(android.os.Handler);
+    method public void unregisterForInCallVoicePrivacyOffEx(android.os.Handler, int);
+    method public void unregisterForInCallVoicePrivacyOn2(android.os.Handler);
+    method public void unregisterForInCallVoicePrivacyOnEx(android.os.Handler, int);
+    method public void unregisterForIncomingRing2(android.os.Handler);
+    method public void unregisterForIncomingRingEx(android.os.Handler, int);
+    method public void unregisterForMmiComplete2(android.os.Handler);
+    method public void unregisterForMmiCompleteEx(android.os.Handler, int);
+    method public void unregisterForMmiInitiate2(android.os.Handler);
+    method public void unregisterForMmiInitiateEx(android.os.Handler, int);
+    method public void unregisterForNewRingingConnection2(android.os.Handler);
+    method public void unregisterForNewRingingConnectionEx(android.os.Handler, int);
+    method public void unregisterForPostDialCharacter2(android.os.Handler);
+    method public void unregisterForPostDialCharacterEx(android.os.Handler, int);
+    method public void unregisterForPreciseCallStateChanged2(android.os.Handler);
+    method public void unregisterForPreciseCallStateChangedEx(android.os.Handler, int);
+    method public void unregisterForResendIncallMute2(android.os.Handler);
+    method public void unregisterForResendIncallMuteEx(android.os.Handler, int);
+    method public void unregisterForRingbackTone2(android.os.Handler);
+    method public void unregisterForRingbackToneEx(android.os.Handler, int);
+    method public void unregisterForServiceStateChanged2(android.os.Handler);
+    method public void unregisterForServiceStateChangedEx(android.os.Handler, int);
+    method public void unregisterForSignalInfo2(android.os.Handler);
+    method public void unregisterForSignalInfoEx(android.os.Handler, int);
+    method public void unregisterForSpeechInfo(android.os.Handler);
+    method public void unregisterForSpeechInfo2(android.os.Handler);
+    method public void unregisterForSpeechInfoEx(android.os.Handler, int);
+    method public void unregisterForSubscriptionInfoReady2(android.os.Handler);
+    method public void unregisterForSubscriptionInfoReadyEx(android.os.Handler, int);
+    method public void unregisterForSuppServiceFailed2(android.os.Handler);
+    method public void unregisterForSuppServiceFailedEx(android.os.Handler, int);
+    method public void unregisterForSuppServiceNotification(android.os.Handler);
+    method public void unregisterForSuppServiceNotification2(android.os.Handler);
+    method public void unregisterForSuppServiceNotificationEx(android.os.Handler, int);
+    method public void unregisterForUnknownConnection2(android.os.Handler);
+    method public void unregisterForUnknownConnectionEx(android.os.Handler, int);
+    method public void unregisterForVtReplaceDisconnect(android.os.Handler);
+    method public void unregisterForVtReplaceDisconnect2(android.os.Handler);
+    method public void unregisterForVtReplaceDisconnectEx(android.os.Handler, int);
+    method public void unregisterForVtRingInfo(android.os.Handler);
+    method public void unregisterForVtRingInfo2(android.os.Handler);
+    method public void unregisterForVtRingInfoEx(android.os.Handler, int);
+    method public void unregisterForVtStatusInfo(android.os.Handler);
+    method public void unregisterForVtStatusInfo2(android.os.Handler);
+    method public void unregisterForVtStatusInfoEx(android.os.Handler, int);
+    method public com.android.internal.telephony.Connection vtDial(com.android.internal.telephony.Phone, java.lang.String) throws com.android.internal.telephony.CallStateException;
+  }
+
+  public class CallerInfo {
+    method public static com.android.internal.telephony.CallerInfo getCallerInfoEx(android.content.Context, java.lang.String, int);
+  }
+
+  public abstract class Connection {
+    method public boolean isVideo();
+  }
+
+  public abstract interface IccCard {
+    method public abstract void QueryIccNetworkLock(int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, android.os.Message);
+    method public abstract void closeLogicalChannel(int, android.os.Message);
+    method public abstract void exchangeApdu(int, int, int, int, int, int, java.lang.String, android.os.Message);
+    method public abstract void exchangeSimIo(int, int, int, int, int, java.lang.String, java.lang.String, java.lang.String, android.os.Message);
+    method public abstract java.lang.String getIccCardType();
+    method public abstract int getNetworkPersoType();
+    method public abstract void iccGetAtr(android.os.Message);
+    method public abstract boolean isFdnExist();
+    method public abstract void openLogicalChannel(java.lang.String, android.os.Message);
+    method public abstract void openLogicalChannelWithSw(java.lang.String, android.os.Message);
+    method public abstract void setIccNetworkLockEnabled(int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, android.os.Message);
+  }
+
+  public abstract interface Phone {
+    method public abstract void acceptVtCallWithVoiceOnly() throws com.android.internal.telephony.CallStateException;
+    method public abstract void doSimAuthentication(java.lang.String, android.os.Message);
+    method public abstract void doUSimAuthentication(java.lang.String, java.lang.String, android.os.Message);
+    method public abstract java.lang.String[] getFDTimerValue();
+    method public abstract void getFacilityLock(java.lang.String, java.lang.String, android.os.Message);
+    method public abstract int getMySimId();
+    method public abstract void getPolCapability(android.os.Message);
+    method public abstract void getPreferedOperatorList(android.os.Message);
+    method public abstract void getVtCallForwardingOption(int, android.os.Message);
+    method public abstract void getVtCallWaiting(android.os.Message);
+    method public abstract void getVtFacilityLock(java.lang.String, java.lang.String, android.os.Message);
+    method public abstract void hangupActiveCall() throws com.android.internal.telephony.CallStateException;
+    method public abstract void hangupAll() throws com.android.internal.telephony.CallStateException;
+    method public abstract void hangupAllEx() throws com.android.internal.telephony.CallStateException;
+    method public abstract void queryCellBroadcastSmsActivation(android.os.Message);
+    method public abstract void refreshSpnDisplay();
+    method public abstract void sendBtSimProfile(int, int, java.lang.String, android.os.Message);
+    method public abstract void setCellBroadcastSmsConfig(com.android.internal.telephony.gsm.SmsBroadcastConfigInfo[], com.android.internal.telephony.gsm.SmsBroadcastConfigInfo[], android.os.Message);
+    method public abstract int setFDTimerValue(java.lang.String[], android.os.Message);
+    method public abstract void setFacilityLock(java.lang.String, boolean, java.lang.String, android.os.Message);
+    method public abstract void setGprsTransferType(int, android.os.Message);
+    method public abstract void setPolEntry(com.android.internal.telephony.gsm.NetworkInfoWithAcT, android.os.Message);
+    method public abstract void setVtCallForwardingOption(int, int, java.lang.String, int, android.os.Message);
+    method public abstract void setVtCallWaiting(boolean, android.os.Message);
+    method public abstract void setVtFacilityLock(java.lang.String, boolean, java.lang.String, android.os.Message);
+  }
+
+  public class PhoneConstants {
+    field public static final int GEMINI_SIM_NUM;
+  }
+
+  public class PhoneProxy implements com.android.internal.telephony.Phone {
+    method public java.lang.String[] getFDTimerValue();
+    method public int setFDTimerValue(java.lang.String[], android.os.Message);
+  }
+
+  public class TelephonyIntents {
+    field public static java.lang.String EVENT_3G_SWITCH_DONE;
+    field public static java.lang.String EVENT_3G_SWITCH_LOCK_CHANGED;
+    field public static java.lang.String EVENT_3G_SWITCH_START_MD_RESET;
+    field public static java.lang.String EVENT_PRE_3G_SWITCH;
+    field public static java.lang.String EXTRA_3G_SIM;
+    field public static java.lang.String EXTRA_3G_SWITCH_LOCKED;
+  }
+
+}
+
+package com.android.internal.telephony.cat {
+
+  public abstract interface AppInterface {
+    method public abstract void onDBHandler(int);
+    method public abstract void onEventDownload(com.android.internal.telephony.cat.CatResponseMessage);
+  }
+
+  public class CatCmdMessage implements android.os.Parcelable {
+    method public com.android.internal.telephony.cat.bip.BearerDesc getBearerDesc();
+    method public int getCmdQualifier();
+  }
+
+  public class CatResponseMessage {
+    method public void setAdditionalInfo(byte[]);
+    method public void setDestinationId(int);
+    method public void setOneShot(boolean);
+    method public void setSourceId(int);
+  }
+
+  public class CatService implements com.android.internal.telephony.cat.AppInterface {
+    method public static boolean getSaveNewSetUpMenuFlag(int);
+  }
+
+  public class Input implements android.os.Parcelable {
+    field public boolean iconSelfExplanatory;
+  }
+
+  public class Menu implements android.os.Parcelable {
+    method public int getSetUpMenuFlag();
+    field public byte[] nextActionIndicator;
+  }
+
+}
+
+package com.android.internal.telephony.cat.bip {
+
+  public class BearerDesc implements android.os.Parcelable {
+    field public int bearerType;
+  }
+
+}
+
+package com.android.internal.telephony.gemini {
+
+  public class GeminiPhone implements com.android.internal.telephony.Phone {
+    method public int disableApnTypeGemini(java.lang.String, int);
+    method public int enableApnTypeGemini(java.lang.String, int);
+    method public void getAvailableNetworksGemini(android.os.Message, int);
+    method public int getBtConnectedSimId();
+    method public java.lang.String[] getFDTimerValue();
+    method public com.android.internal.telephony.Phone getPhonebyId(int);
+    method public int getSmsDefaultSim();
+    method public void refreshSpnDisplay();
+    method public void registerForSimModeChange(android.os.Handler, int, java.lang.Object);
+    method public void setDefaultPhone(com.android.internal.telephony.Phone);
+    method public void setDefaultPhone(int);
+    method public int setFDTimerValue(java.lang.String[], android.os.Message);
+    method public void setPreferredNetworkTypeGemini(int, android.os.Message, int);
+    method public void unregisterForSimModeChange(android.os.Handler);
+  }
+
+  public class MTKCallManager {
+    method public static com.android.internal.telephony.gemini.MTKCallManager getInstance();
+  }
+
+}
+
+package com.android.internal.telephony.gsm {
+
+  public class NetworkInfoWithAcT implements android.os.Parcelable {
+    method public int getAccessTechnology();
+    method public java.lang.String getOperatorAlphaName();
+    method public java.lang.String getOperatorNumeric();
+    method public int getPriority();
+    method public void setAccessTechnology(int);
+    method public void setOperatorAlphaName(java.lang.String);
+    method public void setOperatorNumeric(java.lang.String);
+    method public void setPriority(int);
+  }
+
+}
+
+package com.android.internal.widget {
+
+  public class LockPatternUtils {
+    method public boolean getVoiceUnlockFallbackSet();
+    method public void saveLockPassword(java.lang.String, int, boolean, java.lang.String);
+    method public void saveLockPattern(java.util.List<com.android.internal.widget.LockPatternView.Cell>, boolean, java.lang.String);
+    method public boolean usingVoiceWeak();
+  }
+
+}
+
+package com.android.server {
+
+  public class NetworkManagementService extends android.os.Binder implements com.android.server.Watchdog.Monitor {
+    method public void cfgUsbInternetAddress(java.lang.String) throws java.lang.IllegalStateException;
+    method public void clearRouteIpv6(java.lang.String, java.lang.String) throws java.lang.IllegalStateException;
+    method public void clearSourceRouteIpv6(java.lang.String, java.lang.String) throws java.lang.IllegalStateException;
+    method public void disableMultiRouter(java.lang.String, java.lang.String) throws java.lang.IllegalStateException;
+    method public void disableNatIpv6(java.lang.String, java.lang.String) throws java.lang.IllegalStateException;
+    method public void enableMultiRouter(java.lang.String, java.lang.String) throws java.lang.IllegalStateException;
+    method public void enableNatIpv6(java.lang.String, java.lang.String) throws java.lang.IllegalStateException;
+    method public void enableUdpForwarding(boolean, java.lang.String, java.lang.String, java.lang.String) throws java.lang.IllegalStateException;
+    method public boolean getIpv6ForwardingEnabled() throws java.lang.IllegalStateException;
+    method public java.lang.String[] getSoftApPreferredChannel() throws java.lang.IllegalStateException;
+    method public void setDhcpv6Enabled(boolean, java.lang.String) throws java.lang.IllegalStateException;
+    method public void setFirewallEgressProtoRule(java.lang.String, boolean);
+    method public void setIpv6ForwardingEnabled(boolean) throws java.lang.IllegalStateException;
+    method public void setRouteIpv6(java.lang.String, java.lang.String) throws java.lang.IllegalStateException;
+    method public void setSourceRouteIpv6(java.lang.String, java.lang.String) throws java.lang.IllegalStateException;
+  }
+
+}
+
+package com.mediatek.bluetooth {
+
+  public class BluetoothUuidEx {
+    field public static final android.os.ParcelUuid BipResponder;
+    field public static final android.os.ParcelUuid BppReceiver;
+    field public static final android.os.ParcelUuid ObexFileTransfer;
+    field public static final android.os.ParcelUuid Proximity;
+  }
+
+}
+
+package com.mediatek.common.audioprofile {
+
+  public class AudioProfileListener {
+    method public void onAudioProfileChanged(java.lang.String);
+  }
+
+}
+
+package com.mediatek.common.search {
+
+  public abstract interface ISearchEngineManager {
+    method public abstract java.util.List<com.mediatek.common.search.SearchEngineInfo> getAvailableSearchEngines();
+    method public abstract com.mediatek.common.search.SearchEngineInfo getBestMatchSearchEngine(java.lang.String, java.lang.String);
+    method public abstract com.mediatek.common.search.SearchEngineInfo getDefaultSearchEngine();
+    method public abstract com.mediatek.common.search.SearchEngineInfo getSearchEngine(int, java.lang.String);
+    method public abstract com.mediatek.common.search.SearchEngineInfo getSearchEngineByFavicon(java.lang.String);
+    method public abstract com.mediatek.common.search.SearchEngineInfo getSearchEngineByName(java.lang.String);
+    method public abstract boolean setDefaultSearchEngine(com.mediatek.common.search.SearchEngineInfo);
+    field public static final java.lang.String ACTION_SEARCH_ENGINE_CHANGED = "com.mediatek.search.SEARCH_ENGINE_CHANGED";
+  }
+
+  public final class SearchEngineInfo implements android.os.Parcelable {
+    method public java.lang.String getFaviconUri();
+    method public java.lang.String getKeyWord();
+    method public java.lang.String getLabel();
+    method public java.lang.String getName();
+    method public java.lang.String getSearchUriForQuery(java.lang.String);
+    method public java.lang.String getSuggestUriForQuery(java.lang.String);
+    method public boolean supportsSuggestions();
+  }
+
+}
+
+package com.mediatek.common.telephony {
+
+  public abstract interface ITelephonyExt {
+    method public abstract boolean isRatMenuControlledBySIM();
+  }
+
+  public abstract interface ITelephonyProviderExt {
+    method public abstract int onLoadApns(android.content.ContentValues);
+  }
+
+}
+
+package com.mediatek.storage {
+
+  public class StorageManagerEx {
+    method public static java.lang.String getDefaultPath();
+    method public static java.io.File getExternalCacheDir(java.lang.String);
+    method public static java.lang.String getExternalStoragePath();
+    method public static java.lang.String getInternalStoragePath();
+    method public static java.lang.String getInternalStoragePathForLogger();
+    method public static boolean getSdSwapState();
+    method public static void setDefaultPath(java.lang.String);
+  }
+
+}
+
+package com.mediatek.telephony {
+
+  public class PhoneNumberUtilsEx {
+    method public static java.lang.String extractCLIRPortion(java.lang.String);
+    method public static java.util.Map<java.lang.Integer, java.util.List<java.lang.String>> getCountryCodeToRegionCodeMap();
+    method public static java.lang.String getInternationalPrefix(java.lang.String);
+    method public static boolean isAreaCodeNeeded(java.lang.String, java.lang.String);
+    method public static boolean isIdleSsString(java.lang.String);
+    method public static boolean isIncallSsString(java.lang.String);
+    method public static int isValidNumber(java.lang.String, java.lang.String);
+    method public static boolean isVoiceMailNumber(java.lang.String, int);
+  }
+
+  public final class SimInfoManager implements android.provider.BaseColumns {
+    method public static android.net.Uri addSimInfoRecord(android.content.Context, java.lang.String, int);
+    method public static int getAllSimCount(android.content.Context);
+    method public static java.util.List<com.mediatek.telephony.SimInfoManager.SimInfoRecord> getAllSimInfoList(android.content.Context);
+    method public static int getInsertedSimCount(android.content.Context);
+    method public static java.util.List<com.mediatek.telephony.SimInfoManager.SimInfoRecord> getInsertedSimInfoList(android.content.Context);
+    method public static com.mediatek.telephony.SimInfoManager.SimInfoRecord getSimInfoByIccId(android.content.Context, java.lang.String);
+    method public static com.mediatek.telephony.SimInfoManager.SimInfoRecord getSimInfoById(android.content.Context, long);
+    method public static com.mediatek.telephony.SimInfoManager.SimInfoRecord getSimInfoByName(android.content.Context, java.lang.String);
+    method public static com.mediatek.telephony.SimInfoManager.SimInfoRecord getSimInfoBySlot(android.content.Context, int);
+    method public static int setColor(android.content.Context, int, long);
+    method public static int setDataRoaming(android.content.Context, int, long);
+    method public static int setDefaultName(android.content.Context, long, java.lang.String);
+    method public static int setDefaultNameEx(android.content.Context, long, java.lang.String, long);
+    method public static int setDispalyNumberFormat(android.content.Context, int, long);
+    method public static int setDisplayName(android.content.Context, java.lang.String, long);
+    method public static int setDisplayNameEx(android.content.Context, java.lang.String, long, long);
+    method public static int setNumber(android.content.Context, java.lang.String, long);
+    method public static int setOperatorById(android.content.Context, java.lang.String, long);
+    field public static final java.lang.String COLOR = "color";
+    field public static final int COLOR_1 = 0; // 0x0
+    field public static final int COLOR_2 = 1; // 0x1
+    field public static final int COLOR_3 = 2; // 0x2
+    field public static final int COLOR_4 = 3; // 0x3
+    field public static final int COLOR_DEFAULT = 0; // 0x0
+    field public static final android.net.Uri CONTENT_URI;
+    field public static final java.lang.String DATA_ROAMING = "data_roaming";
+    field public static final int DATA_ROAMING_DEFAULT = 0; // 0x0
+    field public static final int DATA_ROAMING_DISABLE = 0; // 0x0
+    field public static final int DATA_ROAMING_ENABLE = 1; // 0x1
+    field public static final int DEFAULT_NAME_MAX_INDEX = 99; // 0x63
+    field public static final int DEFAULT_NAME_MIN_INDEX = 1; // 0x1
+    field public static final int DEFAULT_NAME_RES = 33882260; // 0x2050094
+    field public static final java.lang.String DEFAULT_SORT_ORDER = "name ASC";
+    field public static final int DEFAULT_SOURCE = 0; // 0x0
+    field public static final int DISLPAY_NUMBER_DEFAULT = 1; // 0x1
+    field public static final int DISPALY_NUMBER_NONE = 0; // 0x0
+    field public static final java.lang.String DISPLAY_NAME = "display_name";
+    field public static final int DISPLAY_NUMBER_FIRST = 1; // 0x1
+    field public static final java.lang.String DISPLAY_NUMBER_FORMAT = "display_number_format";
+    field public static final int DISPLAY_NUMBER_LAST = 2; // 0x2
+    field public static final java.lang.String ICC_ID = "icc_id";
+    field public static final java.lang.String NAME_SOURCE = "name_source";
+    field public static final java.lang.String NUMBER = "number";
+    field public static final java.lang.String OPERATOR = "operator";
+    field public static final int SIM_SOURCE = 1; // 0x1
+    field public static final java.lang.String SLOT = "slot";
+    field public static final int SLOT_NONE = -1; // 0xffffffff
+    field public static final int[] SimBackgroundDarkRes;
+    field public static final int[] SimBackgroundDarkSmallRes;
+    field public static final int[] SimBackgroundLightRes;
+    field public static final int[] SimBackgroundLightSmallRes;
+    field public static final int[] SimBackgroundRes;
+    field public static final int USER_INPUT = 2; // 0x2
+  }
+
+  public static class SimInfoManager.SimInfoRecord {
+    field public int mColor;
+    field public int mDataRoaming;
+    field public int mDispalyNumberFormat;
+    field public java.lang.String mDisplayName;
+    field public java.lang.String mIccId;
+    field public int mNameSource;
+    field public java.lang.String mNumber;
+    field public java.lang.String mOperator;
+    field public int mSimBackgroundDarkRes;
+    field public int mSimBackgroundDarkSmallRes;
+    field public int mSimBackgroundLightRes;
+    field public int mSimBackgroundLightSmallRes;
+    field public int mSimBackgroundRes;
+    field public long mSimInfoId;
+    field public int mSimSlotId;
+  }
+
+  public class TelephonyManagerEx {
+    method public int getCallState(int);
+    method public int getDataActivity(int);
+    method public int getDataState(int);
+    method public int getDataStateGemini(int);
+    method public java.lang.String getDeviceId(int);
+    method public java.lang.String getDeviceSoftwareVersion(int);
+    method public java.lang.String getIccCardType(int);
+    method public java.lang.String getLine1AlphaTag(int);
+    method public boolean isTestIccCard(int);
+    method public void setDataRoamingEnabled(boolean, int) throws android.os.RemoteException;
+    method public void setDataRoamingEnabledGemini(boolean, int) throws android.os.RemoteException;
+  }
+
+}
+
+package com.mediatek.text.style {
+
+  public class BackgroundImageSpan implements android.text.ParcelableSpan {
+    ctor public BackgroundImageSpan(int, android.graphics.drawable.Drawable);
+    ctor public BackgroundImageSpan(android.os.Parcel);
+    method public static void convert(java.lang.CharSequence, android.content.Context);
+    method public void convertToDrawable(android.content.Context);
+    method public int describeContents();
+    method public void draw(android.graphics.Canvas, int, float, int, int, int, android.graphics.Paint);
+    method public void draw(android.graphics.Canvas, java.lang.CharSequence, int, int, float, int, int, int, android.graphics.Paint);
+    method public int getSize(android.graphics.Paint, java.lang.CharSequence, int, int, android.graphics.Paint.FontMetricsInt);
+    method public int getSpanTypeId();
+    method public void writeToParcel(android.os.Parcel, int);
+  }
+
+}
+
+package org.apache.http.params {
+
+  public final class HttpConnectionParams implements org.apache.http.params.CoreConnectionPNames {
+    method public static void setSoSndTimeout(org.apache.http.params.HttpParams, int);
+  }
+
+}
+

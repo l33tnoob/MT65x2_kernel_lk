@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2007-2008 Esmertec AG.
+ * Copyright (C) 2007-2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="imsp_ip_message">iSMS Message</string>
+    <string name="imsp_invite_chat_frequently"><b>Chat frequently with %s ?</b>\nWhy not invite %s to use iSMS to save both of your money?</string>
+    <string name="imsp_enable_chat_frequently"><b>The iSMS service of %s is disabled!</b>\nWhy not enable your iSMS service and save both of your money?</string>
+    <string name="imsp_invite">Invite</string>
+    <string name="imsp_enable_notice">Are you sure to enble iSMS service?</string>
+    <string name="imsp_activate_chat_frequently"><b>Chat frequently with friends?</b>\nWhy not activate iSMS service to chat without SMS rate?</string>
+    <string name="imsp_activate_note">Are you sure to activate iSMS?</string>
+    <string name="imsp_dismiss_content">Are you sure to dismiss the note?</string>
+    <string name="imsp_divider_online">%s is Online</string>
+    <string name="imsp_divider_offline">Last online time at %s</string>
+    <string name="imsp_divider_never_online">Never online</string>
+    <string name="imsp_failed_title">Send Failed</string>
+    <string name="imsp_resend_via_sms">Send SMS instead</string>
+    <string name="imsp_resend_via_mms">Send MMS instead</string>
+    <string name="imsp_typing_text">Typing</string>
+    <string name="imsp_save_attachment">Save attachment</string>
+    <string name="imsp_view">View</string>
+    <string name="imsp_convert_to_mms">Convert to MMS.</string>
+    <string name="imsp_convert_to_sms">Convert to SMS.</string>
+    <string name="imsp_convert_to_isms">Convert to iSMS.</string>
+    <string name="imsp_convert_to_mms_for_service">iSMS service is not avaliable in this selected SIM card. This message can only be sent via MMS in this SIM card. Continue anyway?</string>
+    <string name="imsp_convert_to_sms_for_service">iSMS service is not avaliable in this selected SIM card. This message can only be sent via SMS in this SIM card. Continue anyway?</string>
+    <string name="imsp_convert_to_mms_for_recipients">The recipient(s) is(are) not iSMS user. This message can only be sent via MMS. Continue anyway?</string>
+    <string name="imsp_convert_to_sms_for_recipients">The recipient(s) is(are) not iSMS user. This message can only be sent via SMS. Continue anyway?</string>
+    <string name="imsp_sms_convert_to_isms">iSMS service is avaliable in this selected SIM card. To save SMS rate, it is suggested switch the message to iSMS. Switch now?</string>
+    <string name="imsp_mms_convert_to_isms">iSMS service is avaliable in this selected SIM card. To save MMS rate, it is suggested switch the message to iSMS. Switch now?</string>
+    <string name="imsp_keep_mms">Keep MMS</string>
+    <string name="imsp_keep_sms">Keep SMS</string>
+    <string name="imsp_resend_discard_message">To resend the message, your current composing message will be discarded.</string>
+    <string name="imsp_no_sim_card">No SIM card!</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">"No working internet connection is found! Please try again later."</string>
+    <string name="imsp_chat_setting_updating">updating...</string>
+    <string name="imsp_dialog_clear_title">Clear</string>
+    <string name="imsp_dialog_clear_description">All chat history will be cleared in this chat room</string>
+    <string name="imsp_chat_setting_saving">saving...</string>
+    <string name="imsp_chat_setting_sending">sending...</string>
+    <string name="imsp_save_chat_history_failed">save failed</string>
+    <string name="imsp_send_chat_history_failed">E-mail failed</string>
+    <string name="imsp_conversation_list_all">Messages</string>
+    <string name="imsp_conversation_list_important">Important</string>
+    <string name="imsp_conversation_list_group_chats">Group chats</string>
+    <string name="imsp_conversation_list_spam">Spam</string>
+    <string name="imsp_mark_as_spam_tips">Messages marked as Spam will move to Spam list and be turned off the notification automatically.</string>
+    <string name="imsp_typing">"Typing..."</string>
+    <string name="imsp_type_to_compose_text">"Type SMS/iSMS message"</string>
+    <string name="imsp_no_sdcard">No SDcard</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">To send an invitation, your composing messages will be discarded.</string>
+    <string name="imsp_current_sim_enabled">Current SIM is enabled.</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">Select SIM for activate iSMS</string>
+    <string name="imsp_activate_message">This feature is only supported by iSMS service. Activate your iSMS account now?</string>
+    <string name="imsp_enable_message">This feature is only supported by iSMS service. Enable your iSMS account now?</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">Select SIM for enable iSMS</string>
+    <string name="imsp_switch_sim_title">Switch SIM</string>
+    <string name="imsp_switch_sim_message">The current SIM does not support iSMS. Switch to other SIM?</string>
+    <string name="imsp_switch_sim_successfully">Switch SIM successfully!</string>
+    <string name="imsp_dailog_multi_forward">Forwarding Messages</string>
+    <string name="imsp_dialog_send_result">Send Result</string>
+    <string name="imsp_dlg_send_all">All: %s</string>
+    <string name="imsp_dlg_send_sucess">Sent: %s</string>
+    <string name="imsp_dlg_send_failed">Failed: %s</string>
+    <string name="imsp_multi_forward_sim_info">Getting SIM Info</string>
+    <string name="imsp_multi_forward_no_sim">No SIM Info</string>
+    <string name="imsp_get_sim_failed">Get SIM info failed</string>
+    <string name="imsp_sim_status_error">SIM status error</string>
+    <string name="imsp_forward_norecipients">There is no recipient(s) for forwarding message</string>
+    <string name="imsp_multiforward_no_message">There is no message(s) can be forwarded</string>
+    <string name="imsp_need_input_recipients">Please specify at least one recipient first</string>
+    <string name="imsp_spam_empty">You don\'t have any spam conversation. \nSPAM collects all conversations that are marked as spam. Notification will be turned off by default. This avoid you from unnecessary disturbance. \n\nYou can mark a sender as spam by holding a conversation and selecting Mark as Spam icon. When a conversation is marked as spam, a notification-off icon will be shown automatically and the conversation will be placed here.</string>
+    <string name="imsp_groupchat_empty">You don\'t have any group chat message. \nGROUP CHATS collects all group chat messages that are created or joined by you. This allows you find and manage your group chats easily. \n\nTo create a group chat, you can tap on Create a group chat button at the bottom of this screen and invite your friends to join the group.</string>
+    <string name="imsp_important_empty">You don\'t have any important message. \nIMPORTANT collects all the messages that are flagged as important. This allows you find important messages easily. \n\nYou can flag a message as important by holding a message and selecting Flag as important from Option menu. When a message is flagged as important, you will see a red flag icon as below.</string>
+    <string name="imsp_allchat_empty">No conversations</string>
+    <string name="imsp_attach_slideshow">Slideshow</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">Downloading...</string>
+    <string name="imsp_invite_friends_to_ipmsg">Invite friends to use iSMS</string>
+    <string name="imsp_multi_forward_tips_content">To do the multi-forward, some iSMS needs to be downloaded firstly.</string>
+    <string name="imsp_multi_forward_failed_part">Some iSMS forward failed.</string>
+</resources>
+

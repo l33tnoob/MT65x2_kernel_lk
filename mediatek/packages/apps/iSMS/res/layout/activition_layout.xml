@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+            android:focusable="true"  
+        android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/main_title"
+                android:layout_width="wrap_content"
+                android:layout_height="48dip"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:text="@string/STR_NMS_ACTIVAT_MAIN_TITLE"
+                android:textColor="#33b5e5"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:text="@string/STR_NMS_ACTIVAT_TITLE" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#33b5e5" />
+
+            <TextView
+                android:id="@+id/country_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="5dip"
+                android:text="@string/STR_NMS_YOUR_COUNTRY_TITLE" />
+
+            <Spinner
+                android:id="@+id/country_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:entries="@array/contry_name_list"
+                android:keepScreenOn="true" />
+
+            <ProgressBar
+                android:id="@+id/progress_wait"
+                style="@style/ProgressBarHolo.Horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:indeterminate="true"
+                android:progress="25" />
+
+            <TextView
+                android:id="@+id/wait_for_verify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:text="@string/STR_NMS_VERIFYING" />
+
+            <TextView
+                android:id="@+id/verify_fail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:text="@string/STR_NMS_VERIFY_FAIL_TITLE"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/verify_fail_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:text="@string/STR_NMS_VERIFY_FAIL_CONTENT" />
+
+            <TextView
+                android:id="@+id/phone_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:text="@string/STR_NMS_YOUR_PHONE_TITLE" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:maxLength="15"
+                android:inputType="phone" >
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/working_sms_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginBottom="10dip"
+                android:text="@string/STR_NMS_WORKING_SMS_TIP" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/transparent_background" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="@string/STR_NMS_CANCEL" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent"
+            android:background="@color/transparent_background" />
+
+        <Button
+            android:id="@+id/send_or_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="@string/STR_NMS_SEND" />
+    </LinearLayout>
+
+</LinearLayout>

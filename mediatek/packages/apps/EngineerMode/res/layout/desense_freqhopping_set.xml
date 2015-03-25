@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dip"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/desense_freqhopping_sp_plls"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/desense_freqhopping_plls" >
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:gravity="right"
+            android:text="@string/desense_freqhopping_0x" />
+
+        <EditText
+            android:id="@+id/desense_freqhopping_et_dds"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/desense_freqhopping_hint_dds"
+            android:maxLength="8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/desense_freqhopping_0x" />
+
+        <EditText
+            android:id="@+id/desense_freqhopping_et_deltafreq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/desense_freqhopping_hint_freq"
+            android:maxLength="8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:gravity="right"
+            android:text="@string/desense_freqhopping_0x" />
+
+        <EditText
+            android:id="@+id/desense_freqhopping_et_deltatime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/desense_freqhopping_hint_time"
+            android:maxLength="8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/desense_freqhopping_0x" />
+
+        <EditText
+            android:id="@+id/desense_freqhopping_et_upperlimit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/desense_freqhopping_hint_upper"
+            android:maxLength="8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:gravity="right"
+            android:text="@string/desense_freqhopping_0x" />
+
+        <EditText
+            android:id="@+id/desense_freqhopping_et_downlimit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/desense_freqhopping_hint_down"
+            android:maxLength="8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/desense_freqhopping_btn_enable"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/desense_freqhopping_enable" />
+
+        <Button
+            android:id="@+id/desense_freqhopping_btn_disable"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/desense_freqhopping_disable" />
+
+        <Button
+            android:id="@+id/desense_freqhopping_btn_readall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/desense_freqhopping_readall" />
+    </LinearLayout>
+
+</LinearLayout>

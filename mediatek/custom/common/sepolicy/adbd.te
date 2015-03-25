@@ -1,0 +1,203 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type adbd, domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# adbd seclabel is specified in init.rc since
+# it lives in the rootfs and has no unique file type.
+permissive adbd;
+# unconfined_domain(adbd)
+domain_auto_trans(adbd, shell_exec, shell)
+# this is an entrypoint
+allow adbd rootfs:file entrypoint;
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# adbd seclabel is specified in init.rc since
+# it lives in the rootfs and has no unique file type.
+permissive adbd;
+# unconfined_domain(adbd)
+# domain_auto_trans(adbd, shell_exec, shell)
+# this is an entrypoint
+allow adbd rootfs:file entrypoint;
+
+# Read /data/misc/adb/adb_keys.
+allow adbd adb_keys_file:dir search;
+allow adbd adb_keys_file:file r_file_perms;
+
+# Allow access in case /data/misc/adb still has the old type.
+allow adbd system_data_file:dir search;
+allow adbd system_data_file:file r_file_perms;
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive adbd;
+# 20131024 Sanity_01
+allow adbd devpts:chr_file { read write open };
+allow adbd linker_exec:file { read execute open };
+allow adbd self:capability dac_override;
+allow adbd shell_data_file:dir { write search add_name };
+allow adbd shell_data_file:file { write create open setattr };
+
+
+# 20131024 Sanity_02
+allow adbd sdcard_external:file setattr;
+allow adbd self:capability fowner;
+
+
+# 20131024 CTS_01
+allow adbd device:chr_file { read ioctl open };
+allow adbd graphics_device:chr_file read;
+allow adbd lcdc_screen_cap_exec:file { read execute open execute_no_trans };
+allow adbd sdcard_external:dir { write search read create open add_name };
+allow adbd sdcard_external:file { write getattr setattr read create open };
+allow adbd self:capability fowner;
+allow adbd vdc_exec:file { read execute open execute_no_trans };
+
+
+# 20131024 Sanity_03
+allow adbd sdcard_external:dir remove_name;
+allow adbd sdcard_external:file unlink;
+
+
+# 20131024 CTS_02
+allow adbd graphics_device:chr_file { ioctl open };
+
+
+# 20131028 CTS_03
+allow adbd vold:unix_stream_socket connectto;
+allow adbd vold_socket:sock_file write;
+
+
+# 20131028 Sanity_05
+allow adbd adb_device:chr_file { read write open };
+
+
+# 20131028 Sanity_06
+allow adbd shell_data_file:dir remove_name;
+allow adbd shell_data_file:file unlink;
+
+
+# 20131028 Sanity_08
+allow adbd system_data_file:dir { read open };
+
+
+# 20131028 CTS_05
+allow adbd shell_data_file:dir create;
+
+
+# 20131028 CTS_11
+allow adbd self:capability2 syslog;
+
+
+# 20131028 CTS_14
+allow adbd self:tcp_socket create;
+
+
+# 20131028 CTS_15
+allow adbd node:tcp_socket node_bind;
+allow adbd port:tcp_socket name_bind;
+allow adbd self:capability net_raw;
+allow adbd self:tcp_socket { bind setopt listen };
+
+
+# 20131119 FeatureSQC
+allow adbd asec_apk_file:file { read getattr open };
+allow adbd port:tcp_socket name_connect;
+allow adbd sdcard_internal:dir { read search open };
+allow adbd sdcard_internal:file { read getattr open };
+allow adbd self:capability net_raw;
+allow adbd self:capability2 syslog;
+allow adbd self:tcp_socket { write read create connect setopt };
+allow adbd system_data_file:dir { write add_name };
+allow adbd system_data_file:file { write create setattr };
+
+
+
+# 20131122 Add Set Property Rule
+allow adbd property_type:property_service set;
+
+# 20131213 KKMR1_CQ_CTS_02
+allow adbd aee_aed:process sigchld;
+allow adbd aee_aed:unix_stream_socket connectto;
+allow adbd aee_exec:file { read getattr open execute execute_no_trans };
+allow adbd alarm_device:chr_file write;
+allow adbd am_exec:file { read getattr open execute execute_no_trans };
+allow adbd apk_private_data_file:dir getattr;
+allow adbd app_data_file:dir getattr;
+allow adbd asec_image_file:dir getattr;
+allow adbd ashmem_device:chr_file execute;
+allow adbd backup_data_file:dir getattr;
+allow adbd batterywarning:dir { getattr search };
+allow adbd block_device:dir search;
+allow adbd bluetooth_data_file:dir getattr;
+allow adbd bugreport_exec:file { read getattr open execute execute_no_trans };
+allow adbd ccci_device:chr_file getattr;
+allow adbd content_exec:file { read getattr open execute execute_no_trans };
+allow adbd dalvikcache_data_file:file { write setattr };
+allow adbd dalvikvm_exec:file { read getattr open execute execute_no_trans };
+allow adbd device:chr_file getattr;
+allow adbd device:dir { read open };
+allow adbd device:file getattr;
+allow adbd devpts:chr_file { getattr ioctl };
+allow adbd dexopt_exec:file { read execute open };
+allow adbd dnsproxyd_socket:sock_file write;
+allow adbd dontpanic_data_file:dir getattr;
+allow adbd drm_data_file:dir getattr;
+allow adbd dumpstate:unix_stream_socket connectto;
+allow adbd dumpsys_exec:file { read getattr open execute execute_no_trans };
+allow adbd init:dir { getattr search };
+allow adbd init:file { read open };
+allow adbd input_device:chr_file { write getattr open };
+allow adbd input_exec:file { read getattr open execute execute_no_trans };
+allow adbd installd:file { read open };
+allow adbd kernel:dir { getattr search };
+allow adbd kernel:file { read open };
+allow adbd kernel:system syslog_mod;
+allow adbd keystore:dir { getattr search };
+allow adbd keystore:file { read open };
+allow adbd logcat_exec:file { read getattr open execute execute_no_trans };
+allow adbd lost_found_data_file:dir getattr;
+allow adbd mediaserver:binder { transfer call };
+allow adbd monkey_exec:file { read getattr open execute execute_no_trans };
+allow adbd mtk_agpsd:dir { getattr search };
+allow adbd netd:unix_stream_socket connectto;
+allow adbd platform_app_data_file:dir { read getattr open };
+allow adbd platform_app_data_file:file { read getattr open };
+allow adbd pm_exec:file { read getattr open execute execute_no_trans };
+allow adbd property_socket:sock_file write;
+allow adbd radio_data_file:dir { read getattr open };
+allow adbd radio_data_file:file { read getattr open };
+allow adbd resource_cache_data_file:dir getattr;
+allow adbd rtt_exec:file { read getattr open execute execute_no_trans };
+allow adbd sdcard_internal:dir { write remove_name create add_name rmdir };
+allow adbd sdcard_internal:file { rename write create unlink setattr };
+allow adbd self:capability fsetid;
+allow adbd servicemanager:binder call;
+allow adbd shell_data_file:dir { read getattr open rmdir };
+allow adbd shell_data_file:file { read lock getattr execute execute_no_trans };
+allow adbd shell_exec:file execute_no_trans;
+allow adbd stpbt_device:chr_file getattr;
+allow adbd stpgps_device:chr_file getattr;
+allow adbd stpwmt_device:chr_file getattr;
+allow adbd system_data_file:dir remove_name;
+allow adbd system_data_file:file unlink;
+allow adbd system_data_file:lnk_file getattr;
+allow adbd system_data_file:sock_file getattr;
+allow adbd system_server:binder { transfer call };
+allow adbd tmpfs:file execute;
+allow adbd toolbox_exec:file { read getattr open execute execute_no_trans };
+allow adbd ttyMT1_device:chr_file getattr;
+allow adbd zygote_exec:file { read getattr open execute execute_no_trans };
+

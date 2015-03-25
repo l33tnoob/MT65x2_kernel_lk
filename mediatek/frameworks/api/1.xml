@@ -1,0 +1,771 @@
+<api>
+<package name="com.mediatek.telephony"
+>
+<class name="PhoneNumberFormattingTextWatcherEx"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="PhoneNumberFormattingTextWatcherEx"
+ type="com.mediatek.telephony.PhoneNumberFormattingTextWatcherEx"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="afterTextChanged"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="text" type="android.text.Editable">
+</parameter>
+</method>
+<method name="beforeTextChanged"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="s" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="count" type="int">
+</parameter>
+<parameter name="after" type="int">
+</parameter>
+</method>
+<method name="onTextChanged"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="s" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="before" type="int">
+</parameter>
+<parameter name="count" type="int">
+</parameter>
+</method>
+</class>
+<class name="TelephonyManagerEx"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="TelephonyManagerEx"
+ type="com.mediatek.telephony.TelephonyManagerEx"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+<method name="getCallState"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="getCellLocation"
+ return="android.telephony.CellLocation"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="getDataActivity"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="getDataState"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="getDefault"
+ return="com.mediatek.telephony.TelephonyManagerEx"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDeviceId"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="getLine1Number"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="getNeighboringCellInfo"
+ return="java.util.List&lt;android.telephony.NeighboringCellInfo&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="getNetworkCountryIso"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="getNetworkOperator"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="getNetworkOperatorName"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="getNetworkType"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="getPhoneType"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="getSN"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getScAddress"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="slotId" type="int">
+</parameter>
+</method>
+<method name="getServiceState"
+ return="android.os.Bundle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getServiceState"
+ return="android.os.Bundle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="getSimCountryIso"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="getSimIndicatorState"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSimIndicatorStateGemini"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="getSimOperator"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="getSimOperatorName"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="getSimSerialNumber"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="getSimState"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="getSubscriberId"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="getSubscriberInfo"
+ return="com.android.internal.telephony.IPhoneSubInfo"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="getVoiceMailAlphaTag"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="getVoiceMailNumber"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="hasIccCard"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="isNetworkRoaming"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="listen"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="listener" type="android.telephony.PhoneStateListener">
+</parameter>
+<parameter name="events" type="int">
+</parameter>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="setScAddress"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="address" type="java.lang.String">
+</parameter>
+<parameter name="slotId" type="int">
+</parameter>
+</method>
+</class>
+</package>
+<package name="com.mediatek.telephony.gemini"
+>
+<class name="SmsManager"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="copyMessageToIcc"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="smsc" type="byte[]">
+</parameter>
+<parameter name="pdu" type="byte[]">
+</parameter>
+<parameter name="status" type="int">
+</parameter>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="deleteMessageFromIcc"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="messageIndex" type="int">
+</parameter>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="divideMessage"
+ return="java.util.ArrayList&lt;java.lang.String&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="text" type="java.lang.String">
+</parameter>
+</method>
+<method name="getAllMessagesFromIcc"
+ return="java.util.ArrayList&lt;android.telephony.SmsMessage&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="isSmsReady"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="sendDataMessage"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="destinationAddress" type="java.lang.String">
+</parameter>
+<parameter name="scAddress" type="java.lang.String">
+</parameter>
+<parameter name="destinationPort" type="short">
+</parameter>
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="simId" type="int">
+</parameter>
+<parameter name="sentIntent" type="android.app.PendingIntent">
+</parameter>
+<parameter name="deliveryIntent" type="android.app.PendingIntent">
+</parameter>
+</method>
+<method name="sendMultipartDataMessage"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="destinationAddress" type="java.lang.String">
+</parameter>
+<parameter name="scAddress" type="java.lang.String">
+</parameter>
+<parameter name="destinationPort" type="short">
+</parameter>
+<parameter name="data" type="byte[][]">
+</parameter>
+<parameter name="simId" type="int">
+</parameter>
+<parameter name="sentIntents" type="java.util.ArrayList&lt;android.app.PendingIntent&gt;">
+</parameter>
+<parameter name="deliveryIntents" type="java.util.ArrayList&lt;android.app.PendingIntent&gt;">
+</parameter>
+</method>
+<method name="sendMultipartTextMessage"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="destinationAddress" type="java.lang.String">
+</parameter>
+<parameter name="scAddress" type="java.lang.String">
+</parameter>
+<parameter name="parts" type="java.util.ArrayList&lt;java.lang.String&gt;">
+</parameter>
+<parameter name="simId" type="int">
+</parameter>
+<parameter name="sentIntents" type="java.util.ArrayList&lt;android.app.PendingIntent&gt;">
+</parameter>
+<parameter name="deliveryIntents" type="java.util.ArrayList&lt;android.app.PendingIntent&gt;">
+</parameter>
+</method>
+<method name="sendMultipartTextMessage"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="destinationAddress" type="java.lang.String">
+</parameter>
+<parameter name="scAddress" type="java.lang.String">
+</parameter>
+<parameter name="parts" type="java.util.ArrayList&lt;java.lang.String&gt;">
+</parameter>
+<parameter name="destinationPort" type="short">
+</parameter>
+<parameter name="simId" type="int">
+</parameter>
+<parameter name="sentIntents" type="java.util.ArrayList&lt;android.app.PendingIntent&gt;">
+</parameter>
+<parameter name="deliveryIntents" type="java.util.ArrayList&lt;android.app.PendingIntent&gt;">
+</parameter>
+</method>
+<method name="sendTextMessage"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="destinationAddress" type="java.lang.String">
+</parameter>
+<parameter name="scAddress" type="java.lang.String">
+</parameter>
+<parameter name="text" type="java.lang.String">
+</parameter>
+<parameter name="simId" type="int">
+</parameter>
+<parameter name="sentIntent" type="android.app.PendingIntent">
+</parameter>
+<parameter name="deliveryIntent" type="android.app.PendingIntent">
+</parameter>
+</method>
+<method name="sendTextMessage"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="destinationAddress" type="java.lang.String">
+</parameter>
+<parameter name="scAddress" type="java.lang.String">
+</parameter>
+<parameter name="text" type="java.lang.String">
+</parameter>
+<parameter name="destinationPort" type="short">
+</parameter>
+<parameter name="simId" type="int">
+</parameter>
+<parameter name="sentIntent" type="android.app.PendingIntent">
+</parameter>
+<parameter name="deliveryIntent" type="android.app.PendingIntent">
+</parameter>
+</method>
+<method name="setSmsMemoryStatus"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="status" type="boolean">
+</parameter>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+<method name="updateMessageOnIcc"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="messageIndex" type="int">
+</parameter>
+<parameter name="newStatus" type="int">
+</parameter>
+<parameter name="pdu" type="byte[]">
+</parameter>
+<parameter name="simId" type="int">
+</parameter>
+</method>
+</class>
+</package>
+</api>

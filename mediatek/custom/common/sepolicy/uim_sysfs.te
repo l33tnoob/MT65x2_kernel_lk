@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binuim_sysfs Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type uim_sysfs_exec , exec_type, file_type;
+type uim_sysfs ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive uim_sysfs;
+init_daemon_domain(uim_sysfs)
+
+
+# 20131122 Add Set Property Rule
+allow uim_sysfs  property_type:property_service set;

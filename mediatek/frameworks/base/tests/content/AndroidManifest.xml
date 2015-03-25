@@ -1,0 +1,64 @@
+<!--
+ * Copyright (C) 2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.cts.stub">
+
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+	<!-- content sync tests -->
+	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+	<uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="android.permission.USE_CREDENTIALS" />
+	<uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+	<uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+	<uses-permission android:name="android.permission.READ_SYNC_STATS" />
+
+	<application>
+		<uses-library android:name="android.test.runner" />
+
+		<provider android:name="android.content.cts.MockContentProvider" android:authorities="ctstest"
+			android:multiprocess="false" />
+		<provider android:name="android.content.cts.DummyProvider"
+			android:authorities="android.content.cts.dummyprovider"
+			android:multiprocess="true" />
+		<provider android:name="android.content.cts.MockRemoteContentProvider"
+			android:authorities="remotectstest"
+			android:process=":remoteprovider" android:multiprocess="false" />
+
+		<service android:name="android.content.cts.MockSyncAdapterService" android:exported="true">
+		  <intent-filter>
+		      <action android:name="android.content.SyncAdapter" />
+		  </intent-filter>
+
+		  <meta-data android:name="android.content.SyncAdapter"
+		             android:resource="@xml/syncadapter" />
+		</service>
+
+		<service android:name="android.content.cts.MockAccountService" android:exported="true"
+		       >
+		  <intent-filter>
+		      <action android:name="android.accounts.AccountAuthenticator" />
+		  </intent-filter>
+
+		  <meta-data android:name="android.accounts.AccountAuthenticator"
+		             android:resource="@xml/authenticator" />
+		</service>
+	</application>
+
+</manifest>
+

@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binpppd_dt Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type pppd_dt_exec , exec_type, file_type;
+type pppd_dt ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive pppd_dt;
+init_daemon_domain(pppd_dt)
+
+
+# 20131122 Add Set Property Rule
+allow pppd_dt  property_type:property_service set;

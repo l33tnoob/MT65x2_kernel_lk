@@ -1,0 +1,36 @@
+# ==============================================
+# Policy File of /system/binmemsicd3416x Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type memsicd3416x_exec , exec_type, file_type;
+type memsicd3416x ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive memsicd3416x;
+init_daemon_domain(memsicd3416x)
+
+
+# 20131122 Add Set Property Rule
+allow memsicd3416x  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow memsicd3416x device:chr_file { read ioctl open };
+allow memsicd3416x gsensor_device:chr_file { read write open };
+allow memsicd3416x linker_exec:file read;
+allow memsicd3416x msensor_device:chr_file { read write ioctl open };
+

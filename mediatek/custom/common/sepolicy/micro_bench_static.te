@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbinmicro_bench_static Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type micro_bench_static_exec , exec_type, file_type;
+type micro_bench_static ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive micro_bench_static;
+init_daemon_domain(micro_bench_static)
+
+
+# 20131122 Add Set Property Rule
+allow micro_bench_static  property_type:property_service set;

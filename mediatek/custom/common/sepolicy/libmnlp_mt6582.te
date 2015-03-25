@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbinlibmnlp_mt6582 Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type libmnlp_mt6582_exec , exec_type, file_type;
+type libmnlp_mt6582 ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive libmnlp_mt6582;
+init_daemon_domain(libmnlp_mt6582)
+
+
+# 20131122 Add Set Property Rule
+allow libmnlp_mt6582  property_type:property_service set;

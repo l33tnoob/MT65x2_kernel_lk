@@ -1,0 +1,183 @@
+;;================================================
+;; CHIP:        MT6572
+;; PURPOSE:     AP PLL Init Sequence
+;; CREATE_DATE: 2013/01/25
+;; TESTED:      YES (FPGA)
+;;================================================
+
+;;================================================
+;; Options
+;;================================================
+LOCAL &DEFAULT_EMI_CLK
+
+;;-> @ Default EMI Clock Setting
+;; 200 => LPDDR-400
+;; 266 => LPDDR2-533
+;; 333 => PCDDR3-667
+;; NOTE: This setting could be overriden by cmm input
+&DEFAULT_EMI_CLK=200
+
+;;================================================
+;; Variables
+;;================================================
+;; Register Base
+LOCAL &APMIXED_BASE
+LOCAL &TOP_CLKCTRL_BASE
+LOCAL &APMCUSYS_CONFIG_BASE
+LOCAL &CONFIG_BASE
+LOCAL &AP_PLL_CON1
+LOCAL &AP_PLL_CON3
+LOCAL &ARMPLL_CON1
+LOCAL &CLK_SEL_0
+LOCAL &MAINPLL_CON0
+LOCAL &ACLKEN_DIV
+LOCAL &PCLKEN_DIV
+LOCAL &CLK_SWCG_3
+LOCAL &INFRA_TOPCKGEN_CKMUXSEL
+
+;;-> @ Register Base  Setting
+&APMIXED_BASE=          0x10205000
+&TOP_CLKCTRL_BASE=      0x10000000
+&APMCUSYS_CONFIG_BASE=  0x10200000
+&CONFIG_BASE=           0x10001000
+&AP_PLL_CON1=           (&APMIXED_BASE+0x00000004)
+&AP_PLL_CON3=           (&APMIXED_BASE+0x0000000C)
+&ARMPLL_CON1=           (&APMIXED_BASE+0x00000104)
+&CLK_SEL_0=             (&TOP_CLKCTRL_BASE+0x00000000)
+&MAINPLL_CON0=          (&APMIXED_BASE+0x00000120)
+&MAINPLL_CON1=          (&APMIXED_BASE+0x00000124)
+&ACLKEN_DIV=            (&APMCUSYS_CONFIG_BASE+0x00000060)
+&PCLKEN_DIV=            (&APMCUSYS_CONFIG_BASE+0x00000064)
+&CLK_SWCG_3=            (&TOP_CLKCTRL_BASE+0x0000002C)
+&INFRA_TOPCKGEN_CKMUXSEL=(&CONFIG_BASE+0x00000000)
+
+;; Temp Variable
+LOCAL &REG_TEMP
+
+;;================================================
+;; Control Code (With C Code)
+;;================================================
+;;-> @ entry process
+ENTRY &EMI_CLK
+IF "&EMI_CLK"==""
+(
+    &EMI_CLK=&DEFAULT_EMI_CLK
+)
+IF ((&EMI_CLK!=200)&&(&EMI_CLK!=266)&&(&EMI_CLK!=333))
+(
+    print "[FATAL][PLL] Illegal EMI Clock Setting (&EMI_CLK)"
+    END
+)
+
+;;-> @ << PLL Init Flow Start >>
+;;    /* Diable bypass delay */
+;;    reg_val = DRV_Reg32(AP_PLL_CON3);
+;;    reg_val &= 0xFFFFFC00;
+;;    DRV_WriteReg32(AP_PLL_CON3, reg_val);
+&REG_TEMP=data.long(asd:&AP_PLL_CON3)
+&REG_TEMP=&REG_TEMP&0xFFFFFC00
+d.s asd:&AP_PLL_CON3 %le %long &REG_TEMP
+
+;;    reg_val = DRV_Reg32(AP_PLL_CON3);
+;;    reg_val |= 0x80;
+;;    DRV_WriteReg32(AP_PLL_CON3, reg_val);
+&REG_TEMP=data.long(asd:&AP_PLL_CON3)
+&REG_TEMP=&REG_TEMP|0x00000080
+d.s asd:&AP_PLL_CON3 %le %long &REG_TEMP
+
+;;    /* check if SRAM safe mode is enabled */
+;;    if (0) // (EFUSE_PLL_Safe_IsEnabled()) // TODO: add EFUSE check API for preloader
+;;    {
+;;        DRV_WriteReg32(ARMPLL_CON1, 0x0109A000);
+;;   }
+;;    else
+;;    {
+;;        DRV_WriteReg32(ARMPLL_CON1, 0x01114000);
+;;    }
+;;-> @ CPU Frequency Setting
+;; d.s asd:&ARMPLL_CON1 %le %long 0x01114000 ;;<<= CPU 900MHz
+;; d.s asd:&ARMPLL_CON1 %le %long 0x0109A000 ;;<<= CPU 500Mhz
+d.s asd:&ARMPLL_CON1 %le %long 0x0009A000 ;;<<= CPU 1GHz
+
+;;    #if defined(__EMI_CLK_333MHZ__)
+;;    /* adjust main pll frequency for EMI 667Mhz */
+;;
+;;    DRV_WriteReg32(CLK_SEL_0, 0x08603022); // rg_axibus_gfmux_sel: xtal
+;;
+;;    reg_val = 0x000CC000 | ((DRV_Reg32(MAINPLL_CON0) & 1) << 31);
+;;
+;;    DRV_WriteReg32(MAINPLL_CON1, reg_val);
+;;    #endif /* __EMI_CLK_333MHZ__ */
+IF (&EMI_CLK==333)
+(
+    d.s asd:&CLK_SEL_0 %le %long 0x08603022
+    
+    &REG_TEMP=data.long(asd:&MAINPLL_CON0)
+    &REG_TEMP=&REG_TEMP&0x00000001
+    &REG_TEMP=&REG_TEMP<<31
+    &REG_TEMP=&REG_TEMP|0x000CC000
+    
+    d.s asd:&MAINPLL_CON1 %le %long %REG_TEMP
+)
+
+;;    /* switch to HW mode */
+;;    reg_val = DRV_Reg32(AP_PLL_CON1);
+;;    reg_val &= 0xF8F8CF8C;
+;;    DRV_WriteReg32(AP_PLL_CON1, reg_val);
+&REG_TEMP=data.long(asd:&AP_PLL_CON1)
+&REG_TEMP=&REG_TEMP&0xF8F8CF8C
+d.s asd:&AP_PLL_CON1 %le %long &REG_TEMP
+
+;;    /* wait for 1ms */
+;;    gpt_busy_wait_us(1000);
+WAIT 1.s
+
+
+;;    /* CPU clock */
+;;    DRV_WriteReg32(ACLKEN_DIV, 0x12); // CPU bus clock is MCU clock /2
+;;    DRV_WriteReg32(PCLKEN_DIV, 0x15); // CPU debug APB bus clock is MCU clokc /5
+d.s asd:&ACLKEN_DIV %le %long 0x00000012
+d.s asd:&PCLKEN_DIV %le %long 0x00000015
+
+;;    /* EMI and bus clock */
+;;    #if defined(__EMI_CLK_266MHZ__)
+;;    DRV_WriteReg32(CLK_SWCG_3, 0x80000000);
+;;    DRV_WriteReg32(CLK_SEL_0, 0x10000492); // rg_axibus_gfmux_sel: main pll/12
+;;                                           // rg_emi2x_gfmux_sel : main pll/3
+IF (&EMI_CLK==266)
+(
+    d.s asd:&CLK_SWCG_3 %le %long 0x80000000
+    d.s asd:&CLK_SEL_0 %le %long 0x10000492
+)
+                                           
+;;    #elif defined(__EMI_CLK_200MHZ__)
+;;    DRV_WriteReg32(CLK_SWCG_3, 0x80000000);
+;;    DRV_WriteReg32(CLK_SEL_0, 0x10000494); // rg_axibus_gfmux_sel: main pll/12
+;;                                           // rg_emi2x_gfmux_sel : main pll/4
+IF (&EMI_CLK==200)                          
+(                                           
+    d.s asd:&CLK_SWCG_3 %le %long 0x80000000
+    d.s asd:&CLK_SEL_0 %le %long 0x10000494 
+)                                           
+
+;;    #elif defined(__EMI_CLK_333MHZ__)
+;;    DRV_WriteReg32(CLK_SWCG_3, 0x80000000);
+;;    DRV_WriteReg32(CLK_SEL_0, 0x10000458); // rg_axibus_gfmux_sel: main pll/10
+;;                                           // rg_emi2x_gfmux_sel : main pll/2
+;;    #endif
+IF (&EMI_CLK==333)                          
+(                                           
+    d.s asd:&CLK_SWCG_3 %le %long 0x80000000
+    d.s asd:&CLK_SEL_0 %le %long 0x10000458 
+)                                           
+
+;;    /* clock switch - switch AP MCU clock */
+;;    reg_val = DRV_Reg32(INFRA_TOPCKGEN_CKMUXSEL);
+;;    reg_val |= 0x4;
+;;    DRV_WriteReg32(INFRA_TOPCKGEN_CKMUXSEL, reg_val);
+&REG_TEMP=data.long(asd:&INFRA_TOPCKGEN_CKMUXSEL)
+&REG_TEMP=&REG_TEMP|0x00000004
+d.s asd:&INFRA_TOPCKGEN_CKMUXSEL %le %long &REG_TEMP
+
+print "[INFO][PLL] PLL Init Done EMI=&EMI_CLK"
+;; << PLL Init Flow End >>

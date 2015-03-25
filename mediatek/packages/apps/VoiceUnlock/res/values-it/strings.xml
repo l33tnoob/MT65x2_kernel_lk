@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="unlock_set_unlock_mode_voice_weak">Blocco vocale</string>
+    <string name="voice_unlock_setup_intro_header">Registra comando vocale</string>
+    <string name="voice_command_select_title">Seleziona comando</string>
+    <string name="voice_command_launch_app_title">Avvia applicazione</string>
+    <string name="reset_command_title">Ripristina comando</string>
+    <string name="reset_command_prompt">Il comando corrente sarà ripristinato e non sarà possibile recuperarlo.</string>
+    <string name="reset_command_prompt_last">Il solo comando vocale sarà ripristinato. Il blocco schermo sarà cambiato in diapositiva.</string>
+    <string name="voice_unlock_options_title">Opzioni</string>
+    <string name="voice_unlock_ok_label">"OK"</string>
+    <string name="voice_unlock_cancel_label">"Annulla"</string>
+    <string name="voice_unlock_retry_label">Riprova</string>
+    <string name="voice_unlock_record_label">"Registra"</string>
+    <string name="voice_unlock_continue_label">"Continua"</string>
+    <string name="voice_unlock_setup_intro">Dire un comando con 2-6 sillabe, quindi ripetere 3-6 volte.</string>
+    <string name="voice_unlock_command">Comando di blocco</string>
+    <string name="voice_command1">Comando sveglia 1</string>
+    <string name="voice_command2">Comando sveglia 2</string>
+    <string name="voice_command3">Comando sveglia 3</string>
+    <string name="command_summary">Sblocca e avvia <xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_command_primary">Avvia <xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_command_customize">"Personalizza"</string>
+    <string name="voice_command_secondary">Avvia <xliff:g id="app_name">%1$s</xliff:g> dopo avere sbloccato</string>
+    <string name="voice_command_record_description_unlock_screen">Sblocca schermo</string>
+    <string name="voice_command_record_description_command">Sblocca schermo e avvia <xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_service_error_title">Errore del servizio di sblocco vocale.</string>
+    <string name="stop_playing_title">Arresta riproduzione multimediale</string>
+    <string name="stop_playing_message">Arrestare la riproduzione multimediale prima della registrazione.</string>
+    <string name="voice_command_record_introdution">Toccare il tasto RECORD e DIRE il comando vocale.</string>
+    <string name="voice_command_record_prepare">Preparazione in corso, attendere…</string>
+    <string name="voice_command_record_first_recording">DIRE il comando.\nSi suggeriscono 2-6 sillabe.</string>
+    <string name="voice_command_record_non_first_recording">RIPETERE il comando vocale.</string>
+    <string name="voice_command_record_one_round_ok">RICEVUTO.</string>
+    <string name="voice_command_record_one_round_noisy">Troppo rumore per rilevare la tua voce. Riprovare.</string>
+    <string name="voice_command_record_one_round_weak">Impossibile sentire la tua voce in modo chiaro. Riprovare.</string>
+    <string name="voice_command_record_one_round_diff">Hai dato un comando diverso da quelli precedenti.</string>
+    <string name="voice_command_record_one_round_exist">Quasi uguale al comando vocale esistente. Provare con un altro.</string>
+    <string name="voice_command_record_recording_ok">Il comando vocale è stato impostato correttamente.</string>
+    <string name="voice_unlock_setup_end_all_done">Tutto fatto.</string>
+    <string name="voice_unlock_setup_end_prompt">Per sbloccare il telefono, basta dire il comando vocale.</string>
+    <string name="pass_word_file_missing">Impossibile riprodurre il comando vocale.</string>
+    <string name="time_out_title">Timeout</string>
+    <string name="time_out_message">Nessun input vocale ricevuto per 5 secondi. Riprovare.</string>
+    <string name="during_call_title">Registrazione non disponibile</string>
+    <string name="during_call_message">La funzione "Registra comando vocale" non è disponibile durante una chiamata.</string>
+</resources>

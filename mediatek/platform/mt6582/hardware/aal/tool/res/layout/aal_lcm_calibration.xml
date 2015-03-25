@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/textLuminance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:minWidth="@dimen/padding_small"
+        android:text="@string/luminance"
+        android:textSize="@dimen/padding_large"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <EditText
+        android:id="@+id/editTextLuminance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textLuminance"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minWidth="@dimen/padding_small" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/recordData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextLuminance"
+        android:text="testing/save"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextLuminance"
+        android:layout_alignBottom="@+id/editTextLuminance"
+        android:layout_alignParentRight="true"
+        android:minHeight="@dimen/padding_small"
+        android:minWidth="@dimen/padding_small"
+        android:text="@string/save"
+        android:textSize="@dimen/padding_large" />
+
+    <TextView
+        android:id="@+id/greycode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pattern"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/buttonDec"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pattern"
+        android:layout_toRightOf="@+id/pattern"
+        android:layout_marginLeft="20dp"
+        android:minHeight="@dimen/padding_medium"
+        android:minWidth="@dimen/padding_medium"
+        android:text="-"
+        android:textSize="@dimen/padding_large" />
+
+    <Button
+        android:id="@+id/buttonInc"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pattern"
+        android:layout_toRightOf="@+id/pattern"
+        android:minHeight="@dimen/padding_medium"
+        android:minWidth="@dimen/padding_medium"
+        android:layout_marginLeft="100dp"
+        android:text="+"
+        android:textSize="@dimen/padding_large" />
+
+    <TextView
+        android:id="@+id/pattern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/brightness"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_alignParentLeft="true" />
+    
+
+    <TextView
+        android:id="@+id/brightness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBarBrightness"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+	android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

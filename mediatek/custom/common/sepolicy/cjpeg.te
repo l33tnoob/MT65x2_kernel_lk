@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bincjpeg Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type cjpeg_exec , exec_type, file_type;
+type cjpeg ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive cjpeg;
+init_daemon_domain(cjpeg)
+
+
+# 20131122 Add Set Property Rule
+allow cjpeg  property_type:property_service set;

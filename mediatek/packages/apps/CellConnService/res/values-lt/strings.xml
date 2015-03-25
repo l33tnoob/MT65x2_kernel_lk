@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="app_name">CellConnectionService</string>
+	<string name="button_ok">Gerai</string>
+	<string name="button_cancel">"Atšaukti"</string>
+	<string name="confirm_radio_title">SIM išjungtas</string>
+	<string name="confirm_radio_title_uim">UIM išjungta</string>
+	<string name="confirm_radio_title_card">Kortelė išjungta</string>
+
+	<string name="confirm_radio_msg">Dabar <xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		išjungta. Norite įjungti šioje SIM kortelėje?</string>
+  <string name="confirm_radio_msg_uim">Dabar <xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		išjungta. Norite įjungti šioje UIM kortelėje?</string>
+  <string name="confirm_radio_msg_card">Dabar <xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		išjungta. Norite įjungti šią kortelę?</string>
+
+	<string name="confirm_radio_flight_mode_on_and_msg">Įjungtas skrydžio režimas ir</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg">Dabar <xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> 		išjungta. Norite išjungti skrydžio režimą ir įjungti šią SIM kortelę?</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg_uim">Dabar <xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> 		išjungta. Norite išjungti skrydžio režimą ir įjungti šią UIM kortelę?</string>
+	<string name="confirm_radio_flight_mode_on_sim_off_msg_card">Dabar <xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> 		išjungta. Norite išjungti skrydžio režimą ir įjungti šią kortelę?</string>	
+	<string name="confirm_radio_flight_mode_on_sim_on_msg">Įjungtas skrydžio režimas. Norite išjungti skrydžio režimą?</string>  
+	<string name="confirm_radio_msg_single">Dabar veikia skrydžio režimas; norite jį išjungti?</string>
+	<string name="confirm_pin_title">SIM užblokuota</string>
+	<string name="confirm_pin_title_uim">UIM užblokuota</string>
+	<string name="confirm_pin_title_card">Kortelė užblokuota</string>
+	<string name="confirm_pin_msg">Pasirinkta SIM kortelė dabar užblokuota. Pirmiausiai ją 		atblokuokite.</string>
+	<string name="confirm_pin_msg_uim">Pasirinkta UIM kortelė dabar užblokuota. Pirmiausiai ją 		atblokuokite.</string>
+	<string name="confirm_pin_msg_card">Pasirinkta kortelė dabar užblokuota. Pirmiausiai ją 		atblokuokite.</string>
+	<string name="confirm_simmelock_title">SIM ME užblokuota</string>
+	<string name="confirm_simmelock_msg">Pasirinktos SIM kortelės lizdas dabar užrakintas. Pirmiausiai jį 		atrakinkite.</string>
+	<string name="confirm_simmelock_msg_uim">Pasirinktos UIM kortelės lizdas dabar užrakintas. Pirmiausiai jį 		atrakinkite.</string>
+	<string name="confirm_simmelock_msg_card">Pasirinktos kortelės lizdas dabar užrakintas. Pirmiausiai jį 		atrakinkite.</string>
+	<string name="confirm_fdn_title">FDN veikia</string>
+	<string name="confirm_fdn_msg">Įjungti fiksuoto rinkimo numeriai.</string>
+	<string name="confirm_roaming_title">Įspėjimas apie tarptinklinį ryšį</string>
+	<string name="confirm_roaming_msg">SIM kortelė, kurią ketinate naudoti, dabar 		naudoja tarptinklinį ryšį. Dabar negalima naudoti vietinės SIM kortelės. Norite tęsti?</string>
+	<string name="confirm_roaming_msg_uim">UIM kortelė, kurią ketinate naudoti, dabar 		naudoja tarptinklinį ryšį. Dabar negalima naudoti vietinės UIM kortelės. Norite tęsti?</string>
+	<string name="confirm_roaming_msg_card">Kortelė, kurią ketinate naudoti, dabar 		naudoja tarptinklinį ryšį. Dabar negalima naudoti vietinės kortelės. Norite tęsti?</string>
+  <string name="confirm_roaming_withPrefer_msg">SIM kortelė, kurią ketinate naudoti, dabar naudoja tarptinklinį ryšį. Norite tęsti naudodami vietinę SIM?</string>
+  <string name="confirm_roaming_withPrefer_msg_uim">SIM kortelė, kurią ketinate naudoti, dabar naudoja tarptinklinį ryšį. Norite tęsti naudodami vietinę UIM?</string>
+  <string name="confirm_roaming_withPrefer_msg_card">SIM kortelė, kurią ketinate naudoti, dabar naudoja tarptinklinį ryšį. Norite tęsti naudodami vietinę kortelę?</string>
+  <string name="confirm_roaming_lbutton">"Tęsti"</string>
+  <string name="confirm_roaming_rbutton">"Nega"</string>
+  <string name="confirm_roamingWithPrefer_lbutton">Vietinė SIM</string>
+  <string name="confirm_roamingWithPrefer_lbutton_uim">Vietinė UIM</string>
+  <string name="confirm_roamingWithPrefer_lbutton_card">Vietinė kortelė</string>
+  <string name="confirm_roamingWithPrefer_rbutton">SIM, kuri naudoja tarptinklinį ryšį</string>
+  <string name="confirm_roamingWithPrefer_rbutton_uim">UIM, kuri naudoja tarptinklinį ryšį</string>
+  <string name="confirm_roamingWithPrefer_rbutton_card">Kortelė, kuri naudoja tarptinklinį ryšį</string>
+	<string name="confirm_roaming_for3Sims_msg">SIM kortelė, kurią ketinate naudoti, dabar 		naudoja tarptinklinį ryšį. Norite tęsti?</string>
+  <string name="confirm_roaming_for3Sims_msg_uim">UIM kortelė, kurią ketinate naudoti, dabar 		naudoja tarptinklinį ryšį. Norite tęsti?</string>
+  <string name="confirm_roaming_for3Sims_msg_card">Kortelė, kurią ketinate naudoti, dabar 		naudoja tarptinklinį ryšį. Norite tęsti?</string>
+	<string name="confirm_radio_lbutton">Įjungti</string>
+	<string name="confirm_unlock_lbutton">Atrakinti</string>
+	<string name="confirm_unlock_fail">Veiksmas atšauktas</string>
+	<string name="confirm_turnon_radio_fail">Veiksmas atšauktas</string>
+	<string name="confirm_permit_roaming_fail">Jūs atšaukėte šį veiksmą SIM, kuri naudoja tarptinklinį ryšį.</string>
+	<string name="confirm_permit_roaming_fail_uim">Jūs atšaukėte šį veiksmą UIM, kuri naudoja tarptinklinį ryšį.</string>
+	<string name="confirm_permit_roaming_fail_card">Jūs atšaukėte šį veiksmą kortelėje, kuri naudoja tarptinklinį ryšį.</string>
+	<string name="confirm_sim_locked_message">SIM kortelė visam laikui užblokuota</string>
+	<string name="confirm_sim_locked_message_uim">UIM kortelė visam laikui užblokuota</string>
+	<string name="confirm_sim_locked_message_card">Kortelė visam laikui užblokuota</string>	
+    <string name="confirm_slot_locked_message">Lizas visam laikui užblokuotas</string>
+	<string name="button_yes">"Taip"</string>  
+	<string name="button_no">"Ne"</string>  
+</resources>

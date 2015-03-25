@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binmtop Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type mtop_exec , exec_type, file_type;
+type mtop ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive mtop;
+init_daemon_domain(mtop)
+
+
+# 20131122 Add Set Property Rule
+allow mtop  property_type:property_service set;

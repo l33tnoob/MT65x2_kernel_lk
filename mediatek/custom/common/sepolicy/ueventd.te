@@ -1,0 +1,59 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type ueventd, domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ueventd seclabel is specified in init.rc since
+# it lives in the rootfs and has no unique file type.
+permissive ueventd;
+tmpfs_domain(ueventd)
+# unconfined_domain(ueventd)
+allow ueventd rootfs:file entrypoint;
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ueventd seclabel is specified in init.rc since
+# it lives in the rootfs and has no unique file type.
+permissive ueventd;
+# tmpfs_domain(ueventd)
+write_klog(ueventd)
+security_access_policy(ueventd)
+relabelto_domain(ueventd)
+allow ueventd rootfs:file entrypoint;
+allow ueventd init:process sigchld;
+allow ueventd self:capability { chown mknod net_admin setgid fsetid sys_rawio dac_override fowner };
+allow ueventd device:file create_file_perms;
+allow ueventd device:chr_file rw_file_perms;
+allow ueventd sysfs:file rw_file_perms;
+allow ueventd sysfs:file setattr;
+allow ueventd sysfs_type:file { relabelfrom relabelto };
+allow ueventd tmpfs:chr_file rw_file_perms;
+allow ueventd dev_type:dir create_dir_perms;
+allow ueventd dev_type:lnk_file { create unlink };
+allow ueventd dev_type:chr_file { create setattr unlink };
+allow ueventd dev_type:blk_file { create setattr unlink };
+allow ueventd self:netlink_kobject_uevent_socket *;
+allow ueventd efs_file:dir search;
+allow ueventd efs_file:file r_file_perms;
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive ueventd;
+
+# 20131122 Add Set Property Rule
+allow ueventd property_type:property_service set;
+
+# 20131213 KKMR1_CQ_CTS_02
+allow ueventd aed_device:chr_file { create setattr };
+

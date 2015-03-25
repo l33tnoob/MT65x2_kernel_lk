@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binrildmd2 Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type rildmd2_exec , exec_type, file_type;
+type rildmd2 ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive rildmd2;
+init_daemon_domain(rildmd2)
+
+
+# 20131122 Add Set Property Rule
+allow rildmd2  property_type:property_service set;

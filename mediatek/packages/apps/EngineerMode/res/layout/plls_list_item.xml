@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:paddingRight="10dip" >
+
+    <TextView
+        android:id="@+id/plls_list_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dip"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/plls_list_item_edit"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:singleLine="true" >
+    </EditText>
+
+    <Button
+        android:id="@+id/plls_list_item_btn"
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:text="@string/desense_text_set"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+    </Button>
+
+</LinearLayout>

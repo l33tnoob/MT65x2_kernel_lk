@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_group"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#33b5e5" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#33b5e5" />
+
+    <RelativeLayout
+        android:id="@+id/rl_group_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/ib_chat"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/ib_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@drawable/btn_color_selector"  
+            android:text="@string/STR_NMS_CHAT"
+            android:background="@drawable/btn_default_normal_holo" />
+    </RelativeLayout>
+    
+    <EditText
+        android:id="@+id/et_groupName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:textCursorDrawable= "@null"
+        android:maxLength="24"
+        android:hint="@string/STR_NMS_GROUP_NAME_HIT"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_members"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#33b5e5" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#33b5e5" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#33b5e5" />
+
+    <GridView
+        android:id="@+id/gv_members"
+        android:stretchMode="columnWidth"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:columnWidth="120dp"
+        android:gravity="center"
+        android:listSelector="@null"
+        android:horizontalSpacing="16dp"
+        android:numColumns="auto_fit"
+        android:scrollbarStyle="outsideOverlay"
+        android:paddingRight="10dp"
+        android:verticalSpacing="10dp" />
+
+</LinearLayout>

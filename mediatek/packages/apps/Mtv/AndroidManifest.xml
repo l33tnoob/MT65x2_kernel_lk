@@ -1,0 +1,38 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.mediatek.app.mtv">
+        <!--android:sharedUserId="android.media">-->
+        
+    <!--TODO: are below permissions needed?-->    
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />    
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+	<!-- read MCC,stop recording immediately when interrupted by incoming call -->    
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />    
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+<uses-sdk android:minSdkVersion="4" />
+    <application android:icon="@drawable/ic_launcher_atv"
+            android:theme="@android:style/Theme.Holo"
+            android:label="@string/analog_tv"
+            android:taskAffinity="">		       
+        <activity android:name=".MtvPlayer"
+                android:configChanges="orientation|screenSize|keyboardHidden|mcc|mnc"
+                android:theme="@style/CustomTheme"
+                android:screenOrientation="landscape"
+                android:windowSoftInputMode="stateAlwaysHidden">
+        </activity> 
+        <activity android:name=".ChannelListActivity"
+                android:configChanges="orientation|screenSize|keyboardHidden|mcc|mnc"        
+                android:clearTaskOnLaunch="true"
+                android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>    
+    </application>
+</manifest>
+

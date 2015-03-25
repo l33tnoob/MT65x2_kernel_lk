@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+        android:id="@+id/mcdi_mode_contrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+	        <TextView
+	            android:layout_width="240dip"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dip"
+	            android:layout_marginLeft="10dip"
+	            android:text="@string/mcdi_mode" >
+	        </TextView>
+	
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal">
+	            <RadioGroup
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="vertical">
+	                <RadioButton android:id="@+id/mcdi_disable"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="10dip"
+	                    android:text="@string/mcdi_disable"/>
+                    <RadioButton android:id="@+id/mcdi_only"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:text="@string/mcdi_only"/>   
+                    <RadioButton android:id="@+id/mcdi_sodi"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="10dip"
+	                    android:text="@string/mcdi_sodi"/>       
+	            </RadioGroup>
+	        </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout
+        android:id="@+id/mcdi_wake_timer_contrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+	        <TextView
+	            android:layout_width="240dip"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dip"
+	            android:text="@string/mcdi_set_wake_timer" >
+	        </TextView>
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical">
+	                <RadioButton android:id="@+id/mcdi_timer_disable"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="10dip"
+	                    android:text="@string/mcdi_timer_disable"/>
+	                <LinearLayout 
+	                    android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:orientation="horizontal">
+                    <RadioButton android:id="@+id/mcdi_timer_val_set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"/>
+                    <EditText
+		                android:id="@+id/mcdi_timer_val"
+		                android:layout_width="100dip"
+		                android:layout_height="wrap_content"
+		                android:maxLength="7"
+		                android:numeric="integer" />
+      				<TextView
+			            android:layout_width="240dip"
+			            android:layout_height="wrap_content"
+			            android:text="@string/mcdi_wake_timer_tip" />
+                    </LinearLayout>
+
+	        </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal">
+	     <Button
+            android:id="@+id/mcdi_start_timer"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip"
+            android:text="@string/mcdi_start_timer" />
+         <Button
+            android:id="@+id/get_mcdi_setting"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip"
+            android:text="@string/get_mcdi_setting" >
+        </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

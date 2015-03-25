@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.mediatek.apst.target"
+      android:versionCode="2"
+      android:versionName="1.1">
+    <application android:icon="@drawable/stat_pcsync_tool" android:label="@string/app_name">
+
+        <service android:name=".service.MainService">
+        </service>
+        <service android:name=".ftp.FtpService"></service>
+        <service android:name=".service.NotifyService"></service>
+        
+        <receiver android:name=".receiver.DaemonReceiver">
+        	<intent-filter>
+                <action android:name="com.mediatek.apst.target.action.START_MAIN_SERVICE"/>
+            	<!-- <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/> -->
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        
+    </application>
+    <uses-sdk android:minSdkVersion="8" />
+    
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_CONTACTS"></uses-permission>
+	<uses-permission android:name="android.permission.BATTERY_STATS"></uses-permission>
+	<uses-permission android:name="android.permission.READ_SMS"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_SMS"></uses-permission>
+	<uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+	<uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+	<uses-permission android:name="android.permission.RECEIVE_MMS"></uses-permission>
+	<uses-permission android:name="android.permission.READ_MMS"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_MMS"></uses-permission>
+	<uses-permission android:name="android.permission.SEND_MMS"></uses-permission>
+	<uses-permission android:name="android.permission.READ_CALENDAR"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_CALENDAR"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_APN_SETTINGS"></uses-permission>
+	<uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"> </uses-permission>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"> </uses-permission>
+    <!-- Add for kk -->
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"></uses-permission>
+</manifest> 

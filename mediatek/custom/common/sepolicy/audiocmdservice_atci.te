@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binaudiocmdservice_atci Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type audiocmdservice_atci_exec , exec_type, file_type;
+type audiocmdservice_atci ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive audiocmdservice_atci;
+init_daemon_domain(audiocmdservice_atci)
+
+
+# 20131122 Add Set Property Rule
+allow audiocmdservice_atci  property_type:property_service set;

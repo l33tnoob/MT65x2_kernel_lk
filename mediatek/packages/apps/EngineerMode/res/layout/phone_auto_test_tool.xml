@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_auto_test_01" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/EditText01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_auto_test_02" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/EditText02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_auto_test_03" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/EditText03"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_auto_test_04" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/EditText04"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_auto_test_05" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/EditText05"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_auto_test_08" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/EditText06"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </EditText>
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_auto_test_06" >
+        </Button>
+
+        <Button
+            android:id="@+id/Button02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_auto_test_07" >
+        </Button>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	android:versionCode="1" android:versionName="1.0" package="com.mediatek.bluetooth"
+	android:sharedUserId="android.uid.mtkbt">
+
+	<application android:label="@string/app_label" 
+                android:persistent="true"
+		android:icon="@drawable/bluetooth" android:description="@string/app_description">
+	
+<!-- BLUEANGEL::IF MTK_BT_PROFILE_DUN -->
+
+<!-- DUN start -->
+	<service android:name=".dun.BluetoothDunService"
+		android:exported="true" >
+    <intent-filter>
+        <action android:name="android.bluetooth.IBluetoothDun" />
+    </intent-filter>		
+	</service>
+
+	<receiver android:name=".dun.BluetoothDunReceiver">
+		<intent-filter>
+			<action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+		</intent-filter>	
+	</receiver>
+
+	<activity android:name=".dun.BluetoothDunActivity"
+		      android:theme="@*android:style/Theme.Holo.Dialog.Alert"
+		      android:excludeFromRecents="true" 
+		      android:configChanges="orientation">
+	</activity>
+<!-- DUN end -->
+
+<!-- ********************************************************************************** -->
+
+<!-- BLUEANGEL::FI MTK_BT_PROFILE_DUN -->
+
+	</application>
+
+</manifest> 

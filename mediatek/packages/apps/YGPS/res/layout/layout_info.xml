@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_info"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+
+        <TableRow>
+
+            <TextView
+                style="@style/style_table_left"
+                android:text="@string/title_provider" />
+
+            <TextView
+                android:id="@+id/tv_provider"
+                style="@style/style_table_right"
+                android:text="@string/provider" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="@color/light_gray" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/style_table_left"
+                android:text="@string/title_status" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                style="@style/style_table_right"
+                android:text="@string/status" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="@color/light_gray" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/style_table_left"
+                android:text="@string/title_ttff" />
+
+            <TextView
+                android:id="@+id/tv_ttff"
+                style="@style/style_table_right"
+                android:text="@string/ttff" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="@color/light_gray" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/style_table_left"
+                android:text="@string/title_date" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                style="@style/style_table_right"
+                android:text="@string/date" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="@color/light_gray" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/style_table_left"
+                android:text="@string/title_time" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/style_table_right"
+                android:text="@string/time" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="@color/light_gray" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/style_table_left"
+                android:text="@string/first_latitude_text" />
+
+            <TextView
+                android:id="@+id/first_latitude_text"
+                style="@style/style_table_right" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="@color/light_gray" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/style_table_left"
+                android:text="@string/first_longtitude_text" />
+
+            <TextView
+                android:id="@+id/first_longtitude_text"
+                style="@style/style_table_right" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="@color/gray" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/style_table_left"
+                android:text="@string/title_lat" />
+
+            <TextView
+                android:id="@+id/tv_latitude"
+                style="@style/style_table_right"
+                android:text="@string/latitude" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="@color/light_gray" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/style_table_left"
+                android:text="@string/title_lon" />
+
+            <TextView
+                android:id="@+id/tv_longitude"
+                style="@style/style_table_right"
+                android:text="@string/longitude" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="@color/light_gray" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/style_table_left"
+                android:text="@string/title_alt" />
+
+            <TextView
+                android:id="@+id/tv_altitude"
+                style="@style/style_table_right"
+                android:text="@string/altitude" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="@color/light_gray" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/style_table_left"
+                android:text="@string/title_acc" />
+
+            <TextView
+                android:id="@+id/tv_accuracy"
+                style="@style/style_table_right"
+                android:text="@string/accuracy" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="@color/light_gray" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/style_table_left"
+                android:text="@string/title_bear" />
+
+            <TextView
+                android:id="@+id/tv_bearing"
+                style="@style/style_table_right"
+                android:text="@string/bearing" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="@color/light_gray" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/style_table_left"
+                android:text="@string/title_speed" />
+
+            <TextView
+                android:id="@+id/tv_speed"
+                style="@style/style_table_right"
+                android:text="@string/speed" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="@color/light_gray" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/style_table_left"
+                android:text="@string/title_distance" />
+
+            <TextView
+                android:id="@+id/tv_distance"
+                style="@style/style_table_right"
+                android:text="@string/distance" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="@color/gray" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/style_table_left"
+                android:text="@string/title_chip_version" />
+
+            <TextView
+                android:id="@+id/tv_chip_version"
+                style="@style/style_table_right"
+                android:text="@string/chipversion" />
+        </TableRow>
+
+        <View
+            android:layout_height="1dip"
+            android:background="@color/light_gray" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/style_table_left"
+                android:text="@string/title_mnl_version" />
+
+            <TextView
+                android:id="@+id/tv_mnl_version"
+                style="@style/style_table_right"
+                android:textSize="12sp"
+                android:text="@string/mnlversion" />
+        </TableRow>
+        <View
+            android:layout_height="1dip"
+            android:background="@color/light_gray" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/style_table_left"
+                android:text="@string/title_clock_type" />
+
+            <TextView
+                android:id="@+id/tv_clock_type"
+                style="@style/style_table_right"
+                android:text="@string/gps_status_unknown" />
+        </TableRow>
+        
+        <View
+            android:layout_height="1dip"
+            android:background="@color/light_gray" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/style_table_left"
+                android:text="@string/title_clock_buffer" />
+
+            <TextView
+                android:id="@+id/tv_clock_buffer"
+                style="@style/style_table_right"
+                android:text="@string/gps_status_unknown" />
+        </TableRow>
+        <View
+            android:layout_height="1dip"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_hot"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/hot" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn_warm"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/warm" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_cold"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/cold" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn_full"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/full" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_hotstill"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/hot_still" >
+            </Button>
+
+            <Button
+                android:id="@+id/btn_restart"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/restart" >
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_supllog"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/supl_log" >
+            </Button>
+        </LinearLayout>
+    </TableLayout>
+
+</ScrollView>

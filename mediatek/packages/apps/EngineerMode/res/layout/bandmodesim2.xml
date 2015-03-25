@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TableLayout
+        android:id="@+id/TableLayout02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3pt"
+            android:text="@string/bandmodesim2_GSM" >
+        </TextView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#FF909090" >
+        </View>
+
+        <TableRow
+            android:id="@+id/TableRow02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/bandmodesim2_GSM_EGSM900"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bandmodesim2_GSM_EGSM900" >
+            </CheckBox>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/bandmodesim2_GSM_DCS1800"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bandmodesim2_GSM_DCS1800" >
+            </CheckBox>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/bandmodesim2_GSM_PCS1900"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bandmodesim2_GSM_PCS1900" >
+            </CheckBox>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/bandmodesim2_GSM_GSM850"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bandmodesim2_GSM_GSM850" >
+            </CheckBox>
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#FF909090" >
+        </View>
+
+        <Button
+            android:id="@+id/bandmodesim2_Btn_Set"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bandmodesim2_SET" >
+        </Button>
+    </TableLayout>
+
+</LinearLayout>

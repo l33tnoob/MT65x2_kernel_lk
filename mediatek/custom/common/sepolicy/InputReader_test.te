@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binInputReader_test Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type InputReader_test_exec , exec_type, file_type;
+type InputReader_test ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive InputReader_test;
+init_daemon_domain(InputReader_test)
+
+
+# 20131122 Add Set Property Rule
+allow InputReader_test  property_type:property_service set;

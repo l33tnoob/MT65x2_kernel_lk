@@ -1,0 +1,76 @@
+# ==============================================
+# Policy File of /system/binemcsmdlogger Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type emcsmdlogger_exec , exec_type, file_type;
+type emcsmdlogger ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive emcsmdlogger;
+init_daemon_domain(emcsmdlogger)
+
+# 20131121 Sanity_QA
+allow emcsmdlogger device:chr_file { read ioctl open };
+allow emcsmdlogger property_socket:sock_file write;
+allow emcsmdlogger sdcard_internal:dir { read open };
+allow emcsmdlogger sdcard_internal:file getattr;
+allow emcsmdlogger shell_exec:file { read execute open execute_no_trans };
+allow emcsmdlogger system_data_file:dir { write rmdir read remove_name create open add_name };
+allow emcsmdlogger system_data_file:fifo_file { read open };
+allow emcsmdlogger system_data_file:file { write create open };
+
+
+
+# 20131122 Add Set Property Rule
+allow emcsmdlogger  property_type:property_service set;
+
+# 20131213 KKMR1_CTS_01
+allow emcsmdlogger linker_exec:file read;
+allow emcsmdlogger sdcard_internal:file setattr;
+
+
+# 20131213 KKMR1_CQ_01
+allow emcsmdlogger am_exec:file { read getattr open execute execute_no_trans };
+allow emcsmdlogger device:chr_file { write read ioctl open };
+allow emcsmdlogger linker_exec:file { read execute open };
+allow emcsmdlogger property_socket:sock_file write;
+allow emcsmdlogger sdcard_internal:dir { write search read remove_name create open add_name };
+allow emcsmdlogger sdcard_internal:file { rename setattr read create write getattr open append };
+allow emcsmdlogger servicemanager:binder call;
+allow emcsmdlogger shell_exec:file { read execute open execute_no_trans };
+allow emcsmdlogger system_data_file:dir { write rmdir read remove_name create open add_name };
+allow emcsmdlogger system_data_file:fifo_file { read open };
+allow emcsmdlogger system_data_file:file { rename write create unlink open };
+allow emcsmdlogger system_server:binder { transfer call };
+allow emcsmdlogger toolbox_exec:file { read getattr open execute };
+allow emcsmdlogger zygote_exec:file getattr;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow emcsmdlogger ashmem_device:chr_file execute;
+allow emcsmdlogger device:chr_file write;
+allow emcsmdlogger init:unix_stream_socket { write read setopt };
+allow emcsmdlogger linker_exec:file read;
+allow emcsmdlogger sdcard_internal:dir { write remove_name create search add_name };
+allow emcsmdlogger sdcard_internal:file { rename write setattr read create open append };
+allow emcsmdlogger servicemanager:binder call;
+allow emcsmdlogger system_data_file:fifo_file { create setattr };
+allow emcsmdlogger system_data_file:file { rename unlink setattr };
+allow emcsmdlogger system_server:binder { transfer call };
+allow emcsmdlogger zygote_exec:file { read execute open execute_no_trans };
+

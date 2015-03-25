@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="STR_NMS_MAIN">iSMS</string>
+    <string name="STR_NMS_HISSAGE">iSMS</string>
+    <string name="STR_NMS_INVITE_SMS_CONTENT">iSMS はクールなチャット ツールです。 無料で便利です。 詳細は、http://isms.hissage.com にアクセスしてください。</string>
+    <string name="STR_NMS_NO_SDCARD">SD カードが検出されず、一部の操作は iSMS で許可されません</string>
+    <string name="STR_NMS_MOUNT_SDCARD">SD カードを使用できます</string>
+    <string name="STR_NMS_SEND_MMS_FAIL">メッセージを送信できません。 ネットワークが使用できるようになると自動的に送信されます。</string>
+    <string name="STR_NMS_RECV_MMS_FAIL">ダウンロードできません。 後でやり直してください。</string>
+    <string name="STR_NMS_GROUP_CHAT_ME">me</string>
+    <string name="STR_NMS_GROUP_CHAT_I">I</string>
+    <string name="STR_NMS_GROUP_CHAT_YOU">You</string>
+    <string name="STR_NMS_GROUP_CREATE_MSG">%1$s が %2$s をグループ チャットに招待します。</string>
+    <string name="STR_NMS_GROUP_ADD_MSG">%1$s がグループ チャットに参加しました。</string>
+    <string name="STR_NMS_GROUP_DELETE_MSG">%1$s が %2$s をグループ チャットから削除します。</string>
+    <string name="STR_NMS_GROUP_QUITE_MSG">%1$s がグループ チャットを終了します。</string>
+    <string name="STR_NMS_GROUP_CHAT_PLACE_HOLDER_MSG_BODY">このグループに参加しました</string>
+    <string name="STR_NMS_PICTURE">写真</string>
+    <string name="STR_NMS_TAPE">オーディオ</string>
+    <string name="STR_NMS_VCARD">連絡先</string>
+    <string name="STR_NMS_LOCATION">ロケーション</string>
+    <string name="STR_NMS_SKETCH">スケッチ</string>
+    <string name="STR_NMS_VIDEO">ビデオ</string>
+    <string name="STR_NMS_CALENDAR">カレンダ</string>
+    <string name="STR_NMS_UNKNOWN">不明</string>
+    <string name="STR_NMS_READ_MODE_PIC">画像</string>
+    <string name="STR_NMS_READ_MODE_TAPE">オーディオ メモ</string>
+    <string name="STR_NMS_READ_MODE_VCARD">連絡先</string>
+    <string name="STR_NMS_READ_MODE_LOCATION">ロケーション</string>
+    <string name="STR_NMS_READ_MODE_SKETCH">スケッチ</string>
+    <string name="STR_NMS_READ_MODE_VIDEO">ビデオ</string>
+    <string name="STR_NMS_READ_MODE_CALENDAR">カレンダ</string>
+    <string name="STR_NMS_ISMS_ENABLE">(iSMS 有効)</string>
+    <string name="STR_NMS_READ_MODE_UNKNOWN">不明なファイル</string>
+    <string name="STR_NMS_ALL_MSG">すべてのメッセージ</string>
+    <string name="STR_NMS_SAVED">保存</string>
+    <string name="STR_NMS_BLOCKMSG">ブロック</string>
+    <string name="STR_NMS_SMS_TYPE">SMS</string>
+    <string name="STR_NMS_VERSION_ID">v5.2.16.696</string>
+    <string name="STR_NMS_NO_SIM">SIM カードが検出されません</string>
+    <string name="STR_NMS_ILLEGAL_ADDRESS">無効な番号</string>
+    <string name="STR_NMS_REMIND_USER_SET_NAME">プロファイルを更新してください</string>
+		<string name="STR_NMS_OK">OK</string>
+		<string name="STR_NMS_BACK">戻る</string>
+		<string name="STR_NMS_CANCEL">キャンセル</string>
+    <string name="STR_NMS_NETWORK_UNAVL">3G、GPRS、または Wi-Fi などで作業データに接続していることを確認してください。</string>
+		<string name="STR_NMS_TODAY">今日</string>
+		<string name="STR_NMS_YESTERDAY">昨日</string>
+    <string name="STR_NMS_NOW">今</string>
+    <string name="STR_NMS_NO_SIM_CARD">SIM カードが検出されません。SIM カードを挿入する必要があります。</string>
+    <string name="STR_NMS_NO_CONNECTION">ネットワークが使用できないかフライト モードがオンです。確認してください。</string>
+    <string name="STR_NMS_ATTACH_SHARE">%1$s は %2$s を共有しました</string>
+    <string name="STR_NMS_WAIT">待機中...</string>
+		<string name="STR_NMS_TIPTITLE">ヒント</string>
+
+		<string name="STR_NMS_OPEN">開く</string>
+    <string name="STR_NMS_PLAY">再生</string>
+    
+    
+
+    <string name="STR_NMS_VCARD_NAME">%1$s 件の連絡先</string>
+    <string name="STR_NMS_SHARE_VCARD_FAILED">連絡先の共有に失敗しました</string>
+
+    <!-- upgrade info -->
+    <string name="STR_NMS_UPGRADE_URL">http://ismsi.hissage.com/webservice/hss/hssVersionUpdate.php</string>
+    <string name="STR_NMS_UPGRADE_TICKER">バージョン アップグレード</string>
+    <string name="STR_NMS_UPGRADE_ERROR_TITLE">アップグレード エラー</string>
+    <string name="STR_NMS_UPGRADE_ERROR_CONTENT">アップグレード エラーです。iSMS クライアントでアップグレードしてください</string>
+    <string name="STR_NMS_INSTALLED_TITLE">アップグレードが成功しました</string>
+    <string name="STR_NMS_INSTALLED_CONTENT">電話へのアップグレードが成功しました</string>
+    <string name="STR_NMS_PROMPT_DLG_TITLE">新しいバージョンが検出されました</string>
+		<string name="STR_NMS_PROMPT_DLG_DOWNLOAD">ダウンロード</string>
+    <string name="STR_NMS_PROMPT_DLG_LATER">後で</string>
+    <string name="STR_NMS_UPGRADING">アップグレード中</string>
+    <string name="STR_NMS_UPGRADE_TIME">前回のチェック:%s</string>
+    
+    <!-- ext protocol -->
+    <string name="STR_NMS_OFFLINE_URL">http://ismsi.hissage.com/webservice/nmsmail/notifyOffline.php</string>
+    
+    <!-- Activation start -->
+    <string name="STR_NMS_PRELOAD_IP_MSG_CONTENT">「iSMS にようこそ。」</string>
+    <string name="STR_NMS_ACTIVAT_TITLE">iSMS はワンタイム SMS を送信して電話番号を確認します。 電話料金が発生する場合があります。</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE">電話番号を確認</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE2">電話番号を確認</string>
+    <string name="STR_NMS_YOUR_COUNTRY_TITLE">国名</string>
+    <string name="STR_NMS_YOUR_PHONE_TITLE">電話番号</string>
+    <string name="STR_NMS_VERIFY_FAIL_TITLE">SMS 確認を完了できませんでした。</string>
+    <string name="STR_NMS_VERIFY_FAIL_CONTENT">電話番号を正しく入力したことを確認してください。</string>
+    <string name="STR_NMS_WORKING_SMS_TIP">SMS プランが機能していることを確認してください。</string>
+    <string name="STR_NMS_VERIFYING">SMS 送信を自動的に検出するために待機中</string>
+		<string name="STR_NMS_RETRY">再試行</string>
+    <string name="STR_NMS_EDIT_NUMBER">番号の編集</string>
+    <string name="STR_NMS_UPDATE_PROFILE">プロファイルの更新</string>
+    <string name="STR_NMS_START_ISMS">iSMS を起動</string>
+		<string name="STR_NMS_SEND">送信</string>
+    <string name="STR_NMS_CONGRATULATIONS_TITLE">おめでとうございます！</string>
+    <string name="STR_NMS_CONGRATULATIONS_CONTENT">iSMS を有効にしていただきありがとうございます。\n 今すぐサービスを開始していただけます。\n iSMS をお楽しみください！</string>
+    <string name="STR_NMS_WELCOME_BACK">お帰りなさい。</string>
+    <string name="STR_NMS_SEND_SMS_FAIL">確認が失敗しました。以下をチェックしてください:\n  1. 電話番号が正しい;\n  2. セキュリティ ソフトがオフ;\n  3. SMS の送信をブロックする他の可能性のある理由。\n確認して後で再試行してください。</string>
+    <string name="STR_NMS_ACTIVE">iSMS を有効化</string>
+    <string name="STR_NMS_WELCOME_ACTIVE">iSMS にようこそ</string>
+		<string name="STR_NMS_CONNECTING">接続中...</string>
+    <!-- Activation end -->
+
+
+    <!-- Notification start -->
+    <string name="STR_NMS_NEW_MSG_TITLE">新しい iSMS メッセージ</string>
+    <string name="STR_NMS_NEW_SMG_CONTENT">%d の未読メッセージ</string>
+    <!-- Notification End -->
+
+    <string name="STR_NMS_MSG_DUMPER_MSG_SMS">SMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_MMS">MMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_IP">IP メッセージ</string>
+    <string name="STR_NMS_MSG_DUMPER_SEND_MSG">%1$s %2$d 送信:</string>
+    <string name="STR_NMS_MSG_DUMPER_RECEIVE_MSG">%1$s %2$d 受信:</string>
+		<string name="STR_NMS_MSG_DUMPER_MSG_TIME">時間: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TEXT">テキスト</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_PIC">写真</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_SKETCH">スケッチ</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VOICE">音声</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VIDEO">ビデオ</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CALENDAR">カレンダ</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION_IMG">ロケーションの写真</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VCARD">Vcard</string>
+		<string name="STR_NMS_MSG_DUMPER_MSG_LOCATION">ロケーション</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CAPTION">キャプション: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_URL">Url: </string>
+    <string name="STR_NMS_MSG_DUMPER_DURATION">期間: </string>
+    <string name="STR_NMS_MSG_DUMPER_COORDINATE">座標: </string>
+    <string name="STR_NMS_MSG_DUMPER_ADDRESS">アドレス: </string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_SENDER">送信者: </string>
+    <string name="STR_NMS_MSG_DUMPER_NORMAL_DETAIL">セッションの詳細:</string>
+    <string name="STR_NMS_MSG_DUMPER_NAME">名前: </string>
+    <string name="STR_NMS_MSG_DUMPER_NUMBER">番号: </string>
+    <string name="STR_NMS_MSG_DUMPER_PORTRAIT">ポートレート</string>
+    <string name="STR_NMS_MSG_DUMPER_MULTI_SEND_DETAIL">ブロードキャスト:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_DETAIL">グループ チャット:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_CREATER">作成者: </string>
+    <string name="STR_NMS_MSG_DUMPER_MEMBERS">メンバー: </string>
+    <string name="STR_NMS_MSG_DUMPER_VCARD_NAME">名前: </string>
+    <string name="STR_NMS_MSG_DUMPER_CALENDAR_SUMMARY">要約: </string>
+
+    <!-- Chat Settings -->
+    <string name="STR_NMS_CHAT_SETTING_TITLE">チャット設定</string>
+    <string name="STR_NMS_DISPLAY">表示</string>
+    <string name="STR_NMS_CHAT_WALLPAPER">チャット壁紙</string>
+    <string name="STR_NMS_SYS_WALLPAPER">壁紙を選択</string>
+    <string name="STR_NMS_CAMEARPHOTO">写真撮影</string>
+    <string name="STR_NMS_SYS_GALLERY">ギャラリーから選択</string>
+		<string name="STR_NMS_DEFAULT_WALLPAPER">デフォルト</string>
+    <string name="STR_NMS_NOTIFICATION_CATEGORY">通知</string>
+    <string name="STR_NMS_NOTIFICATION_TITLE">iSMS 通知</string>
+    <string name="STR_NMS_NOTIFICATION_CONTENT">通知を受け取る時に表示</string>
+    <string name="STR_NMS_MUTE">ミュート</string>
+		<string name="STR_NMS_MUTE_OFF">オフ</string>
+    <string name="STR_NMS_MUTE_1">1 時間ミュート</string>
+    <string name="STR_NMS_MUTE_4">4 時間ミュート</string>
+    <string name="STR_NMS_MUTE_8">8 時間ミュート</string>
+    <string name="STR_NMS_RINGTONE_TITLE">着信音</string>
+    <string name="STR_NMS_RINGTONE_CONTENT">新しい通知の着信音を設定 </string>
+    <string name="STR_NMS_VIBRATE_TITLE">バイブ</string>
+    <string name="STR_NMS_VIBRATE_CONTENT">通知を受け取る時にバイブ</string>
+    <string name="STR_NMS_ACTIONS">アクション</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_TITLE">チャット履歴をダウンロード</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_CONTENT">zip 形式で SD カードに保存</string>
+    <string name="STR_NMS_EMAIL_HISTORY_TITLE">チャット履歴を電子メール</string>
+    <string name="STR_NMS_EMAIL_HISTROY_CONTENT">zip 形式でチャット履歴を電子メール</string>
+    <string name="STR_NMS_CLEAR_HISTROY">チャット履歴をクリア</string>
+		<string name="STR_NMS_DOWNLOAD_HISTORY_DLG">ダウンロード中...</string>
+    <string name="STR_NMS_DOWNLOAD_OK">チャット履歴のダウンロードが完了し、%s として保存</string>
+    <string name="STR_NMS_DOWNLOAD_ERROR">チャット履歴のダウンロードが失敗しました。</string>
+    <string name="STR_NMS_DOWNLOAD_EMPTY">何もダウンロードされていません。</string>
+    <string name="STR_NMS_CLEARING">履歴をクリア中。しばらくお待ちください...</string>
+    <string name="STR_NMS_WAIT_SAVE_WALLPAPER">壁紙を保存中。しばらくお待ちください...</string>
+    <string name="STR_NMS_SAVE_WALLPAPER_OK">壁紙の保存に成功しました。</string>
+    <string name="STR_NMS_CLEARDONE">履歴のクリアが完了しました。</string>
+    <string name="STR_NMS_SVAE_TITLE">SD カードに保存</string>
+    <string name="STR_NMS_SAVE_CONTENT">このチャット スレッドを zip ファイルで SD カードに保存</string>
+    <string name="STR_NMS_EMAIL_TITLE">電子メールで共有</string>
+    <string name="STR_NMS_EMAIL_CONTENT">zip 形式で電子メールから添付物としてこのチャット スレッドを共有</string>
+
+    <!-- Chat Settings End -->
+
+
+    <!-- Profile Settings -->
+    <string name="STR_NMS_PROFILE_TITLE">プロファイル</string>
+    <string name="STR_NMS_TAP_AVATAR_TIP">タップしてプロファイル画像を編集</string>
+    <string name="STR_NMS_DISPLAY_NAME_TIP">表示名</string>
+    <string name="STR_NMS_ACCOUNT_TIP">ISMS アカウント</string>
+    <string name="STR_NMS_NO_APP">このアクションを実行できるアプリケーションがありません。</string>
+    <string name="STR_NMS_NO_NAME">名前を設定</string>
+    <string name="STR_NMS_SAVE_AVATAR_FAILD">すみません。プロファイル画像の保存に失敗しました。</string>
+		<string name="STR_NMS_INPUT_NAME">名前</string>
+    <string name="STR_NMS_TERM_WARN_ACTIVATE">この機能は iSMS サービスでのみサポートされます。\n\niSMS は無料のメッセージ サービスで、インターネット データ接続（Wi-Fi、2G/3G など） から時間や場所を問わずに友人とチャットしたりマルチメディア コンテンツを共有できます。\n初めて有効化すると、登録を完了するために iSMS は SMS を自動的に送信します。 SMS 割当て/料金が適用される場合があります。\n\n ユーザー契約\n</string>
+    <string name="STR_NMS_TERM_WARN_WELCOME">iSMS は無料のインスタント メッセージ サービスで、インターネット データ接続（Wi-Fi、2G/3G など） から時間や場所を問わずに友人とチャットしたりマルチメディア コンテンツを共有できます。\n初めて有効化すると、登録を完了するために iSMS は SMS を自動的に送信します。 SMS 割当て/料金が適用される場合があります。\n\n ユーザー契約\n</string>
+    <string name="STR_NMS_TERM_KEY">契約条件</string>
+    <string name="STR_NMS_AGREE_AND_CONTINUE">同意して続行</string>
+		<string name="STR_NMS_ACTIVE_BNT">有効化</string>
+    <string name="STR_NMS_SET_PROFILE_OK">プロファイルが正しく設定されました</string>
+    <string name="STR_NMS_SET_PROFILE_FAIL">プロファイルの設定に失敗しました</string>
+    <string name="STR_NMS_ILLEGAL_PROFILE_NAME">不正な名前</string>
+    <string name="STR_NMS_NO_ACTIVITED">SIM カードが機能していないか有効化されていません。</string>
+    <!-- Profile Settings End -->
+
+
+    <!-- Term Activity -->
+    <string name="STR_NMS_REJECT">拒否する</string>
+		<string name="STR_NMS_AGREE">同意する</string>
+    <string name="STR_NMS_TERM_TITLE">サービス条件</string>
+    <string name="STR_NMS_TERM_CONTENT">このサービスに統合されたサービスおよびソフトウェアには、保護されるデジタル素材を許可するセキュリティ コンポーネントが含まれ、これらの素材の使用は、サービスにコンテンツを提供する AF PushMail および/またはコンテンツ プロバイダによって定められた使用規則の対象となることを理解します。 サービスに統合された使用規則を無効にしたり回避しないでください。 サービスで提供される素材の非承認の複製、出版、配布または公開は、全体または一部を問わず厳しく禁止されています。</string>
+    <!-- Term Activity End -->
+
+
+    <!-- System Settings -->
+    <string name="STR_NMS_SYS_SETTING_TITLE">iSMS メッセージ</string>
+    <string name="STR_NMS_SETTINGS_TITLE">プロファイル</string>
+    <string name="STR_NMS_PREFERENCE_CATE">プレファレンス</string>
+    <string name="STR_NMS_SEND_SMS_TITLE">SMS で送信</string>
+    <string name="STR_NMS_SEND_SMS_CONTENT">iSMS が使用できない場合 SMS で送信します。 電話会社のメッセージ料金が適用される場合があります。 この規則はグループ チャットには適用されません</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_TITLE">自動ダウンロード</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_CONTENT">マルチメディア オブジェクトを自動的にダウンロードします</string>
+    <string name="STR_NMS_CAPTION_TITLE">キャプション</string>
+    <string name="STR_NMS_CAPTION_CONTENT">キャプションでファイルを共有</string>
+    <string name="STR_NMS_SYSTEM_CATE">システム</string>
+    <string name="STR_NMS_UPDATE_TITLE">ソフトウェア アップデート</string>
+    <string name="STR_NMS_UPDATE_CONTENT">前回のチェック:しない</string>
+    <string name="STR_NMS_NETWORK_USAGE_TITLE">ネットワーク使用</string>
+    <string name="STR_NMS_NETWORK_USAGE_CONTENT">送信/受信データ使用の合計を表示</string>
+    <string name="STR_NMS_NETWORK_DLG_CONTENT">送信: %1$.3f K \n受信: %2$.3f K\n前回のリセット: %3$s</string>
+		<string name="STR_NMS_VERSION_TITLE">バージョン</string>
+		<string name="STR_NMS_NEVER_CLEAR">しない</string>
+    <string name="STR_NMS_RESET">リセット</string>
+		<string name="STR_NMS_SWITCH_ON">オン</string>
+    <string name="STR_NMS_SWITCH_OFF">オフ</string>
+		<string name="STR_NMS_SYSTEM_SETTING_TITLE">設定</string>
+    <string name="STR_NMS_COPYRGIHT">Hesine Technologies, Inc.</string>
+    <string name="STR_NMS_ABOUT">iSMS について</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_TITLE">読み取り状態を表示</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_CONTENT">メッセージ リストに読み取り状態を表示</string>
+    <string name="STR_NMS_SHOW_REMIND_TITLE">リマインダを表示</string>
+    <string name="STR_NMS_SHOW_REMIND_CONTENT">チャット画面に iSMS リマインダを表示</string>
+		<string name="STR_NMS_MENU_RESET_SETTING">デフォルト設定の復元</string>
+    <string name="STR_NMS_MENU_FUNCTION_INTRODUCTION">機能</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT">ユーザー契約</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION">著作権</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT_TITLE">HESINE iSMS ユーザー ライセンス契約</string>
+    <string name="STR_NMS_MENU_FUNCTION">機能リスト</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION_DETAIL">\nHesine Technologies Inc.\nCopyright© 2008-2013\nAll Rights Reserved.\n</string>
+    <!-- System Settings End -->
+
+
+    <!-- Caption Settings -->
+    <string name="STR_NMS_AUDIO_TITLE">オーディオ</string>
+		<string name="STR_NMS_VIDEO_TITLE">ビデオ</string>
+		<string name="STR_NMS_PHOTO_TITLE">写真</string>
+    <!-- Caption Settings End -->
+
+
+    <!-- Map String start -->
+    <string name="STR_NMS_MAP_TITLE">ロケーションの共有</string>
+    <string name="STR_NMS_MAP_PROMPT">ロケーション サービスがオンでないので、地図は表示できません。 以下の住所は、セル情報に基づいて推測されます。 \nより正確なロケーション サービスを使用するには、ロケーション サービスをオンにしてください。</string>
+    <string name="STR_NMS_MAP_NOTE_1">システム設定で [マイ ロケーション] ソースを有効にします</string>
+		<string name="STR_NMS_MAP_SHARE">共有</string>
+		<string name="STR_NMS_MAP_SETTINGS">設定</string>
+		<string name="STR_NMS_MAP_OK">OK</string>
+		<string name="STR_NMS_MAP_CANCEL">キャンセル</string>
+    <string name="STR_NMS_MAP_EDIT">ロケーションを編集</string>
+    <string name="STR_NMS_MAP_SEARCH_HINT">近くの場所を検索</string>
+    <string name="STR_NMS_MAP_WAIT">お待ちください...</string>
+    <string name="STR_NMS_MAP_EDIT_LIMIT">入力文字が限度に達しました</string>
+    <string name="STR_NMS_MAP_ADDR_LEN">住所が長すぎます</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR_LOCATING">現在の位置を指定中...</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN_LOCATING">PIN の位置を指定中...</string>
+    <string name="STR_NMS_MAP_LINEONE_SEARCH_LOCATING">検索した位置を指定中...</string>
+    <string name="STR_NMS_MAP_LINETHREE_NEARBY_LOCATING">近くの場所を検索中...</string>
+    <string name="STR_NMS_MAP_LINEONE_FAILED">ユーザーのロケーションは現在使用できません</string>
+    <string name="STR_NMS_MAP_LINETWO_FAILED">ローケーション サービスがオンになっていて、ネットワークが使用できることを確認してください</string>
+    <string name="STR_NMS_MAP_LINETHREE_FAILED">近くの場所が見つかりませんでした</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR">現在のロケーションを共有</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN">PIN のロケーションを共有</string>
+    <string name="STR_NMS_MAP_MY_LOCATION">マイ ロケーション</string>
+    <string name="STR_NMS_MAP_SEARCH">検索</string>
+    <string name="STR_NMS_MAP_ERROR_1">経度と緯度を取得できません</string>
+    <string name="STR_NMS_MAP_ERROR_2">Google サーバーからエラーが返されます</string>
+    <!-- Map String end -->
+
+
+    <!-- All Media String start -->
+    <string name="STR_NMS_ALL_MEDIA_TITLE">すべてメディア</string>
+    <string name="STR_NMS_ALL_MEDIA_WAIT">お待ちください...</string>
+    <string name="STR_NMS_ALL_MEDIA_ERROR">ロード失敗、後でやり直してください</string>
+		<string name="STR_NMS_ALL_MEDIA_EMPTY">空</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_WEEK">今週</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_MONTH">今月</string>
+    <string name="STR_NMS_ALL_MEDIA_JAN">1 月</string>
+    <string name="STR_NMS_ALL_MEDIA_FEB">2 月</string>
+    <string name="STR_NMS_ALL_MEDIA_MAR">3 月</string>
+    <string name="STR_NMS_ALL_MEDIA_APR">4 月</string>
+    <string name="STR_NMS_ALL_MEDIA_MAY">5 月</string>
+    <string name="STR_NMS_ALL_MEDIA_JUN">6 月</string>
+    <string name="STR_NMS_ALL_MEDIA_JUL">7 月</string>
+    <string name="STR_NMS_ALL_MEDIA_AUG">8 月</string>
+    <string name="STR_NMS_ALL_MEDIA_SEPT">9 月</string>
+    <string name="STR_NMS_ALL_MEDIA_OCT">10 月</string>
+    <string name="STR_NMS_ALL_MEDIA_NOV">11 月</string>
+    <string name="STR_NMS_ALL_MEDIA_DEC">12 月</string>
+    <string name="STR_NMS_ADDCONTACT">連絡先を追加</string>
+    <string name="STR_NMS_ADD_PHONE_CONTACT">\&quot;%1$s\&quot; を連絡先へ追加しますか？</string>
+    <string name="STR_NMS_DELETE_MEDIA">メディアは削除されます。続行しますか？</string>
+    <string name="STR_NMS_MEDIA_SHARE_MESSAGE">%1$s は %2$s で共有されました</string>
+
+    <!-- All Media String end -->
+
+
+    <!-- All Locations String start -->
+    <string name="STR_NMS_ALL_LOCATIONS_TITLE">ロケーション</string>
+		<string name="STR_NMS_ALL_LOCATIONS_LOC">ロケーション</string>
+    <string name="STR_NMS_ALL_LOCATIONS_WAIT">お待ちください...</string>
+    <!-- All Locations String end -->
+
+
+    <!-- Sketch -->
+    <string name="STR_NMS_SKETCH_TITLE">スケッチを描く</string>
+    <string name="STR_NMS_REDO">やり直し</string>
+    <string name="STR_NMS_UNDO">元に戻す</string>
+    <string name="STR_NMS_SKETCH_CUSTOM">カスタム</string>
+		<string name="STR_NMS_PEN_SIZE">サイズ</string>
+    <string name="STR_NMS_SKETCH_TOOLS_PEN">鉛筆</string>
+    <string name="STR_NMS_SKETCH_TOOLS_ERASER">消しゴム</string>
+    <string name="STR_NMS_SKETCH_CUSTOM_COLOR">カスタム カラー</string>
+    <string name="STR_NMS_CLEAR_SKETCH_TITLE">スケッチをクリア</string>
+    <string name="STR_NMS_CLEAR_SKETCH_CONTENT">このスケッチをクリアしますか？</string>
+		<string name="STR_NMS_SIZE_SKETCH_TITLE">サイズ</string>
+    <string name="STR_NMS_SIZE_SKETCH_MAX">72</string>
+    <string name="STR_NMS_SIZE_SKETCH_MIN">2</string>
+    <string name="STR_NMS_COLOR_SKETCH_TITLE">カラー</string>
+    <string name="STR_NMS_SKETCH_ERROR">スケッチの作成に失敗しました。</string>
+    <string name="STR_NMS_BACK_TITLE">確認</string>
+    <string name="STR_NMS_FINISH_SKETCH_CONTENT">スケッチ作業を終了しますか</string>
+    <string name="STR_NMS_LEAVE_SKETCH_CONTENT">このスケッチをドロップしますか？</string>
+    <string name="STR_NMS_NOTREDO">やり直すものはない</string>
+    <string name="STR_NMS_NOTUNDO">元に戻すものはない</string>
+		<string name="STR_NMS_SKETCH_DELETE">クリア</string>
+    <string name="STR_NMS_DISCARD">破棄</string>
+
+    <!-- Sketch end -->
+
+
+    <!-- Selection Contact -->
+		<string name="STR_NMS_DONE">OK</string>
+		<string name="STR_NMS_SELECTALL">すべて選択</string>
+    <string name="STR_NMS_DESELECTED">すべての選択解除</string>
+    <string name="STR_NMS_SELECTED">%1$s が選択</string>
+    <string name="STR_NMS_CONTACT_SEARCH">連絡先を検索</string>
+    <string name="STR_NMS_SEARCH">検索</string>
+    <string name="STR_NMS_CONTACT_SELECT">連絡先を選択</string>
+    <string name="STR_NMS_SELECT_MEMBER_FULL">選択する連絡先が多すぎます</string>
+    <string name="STR_NMS_SELECT_MEMBER_EMPTY">連絡先が選択されません</string>
+    <string name="STR_NMS_SELECT_CONTAT_WAIT">お待ちください...</string>
+    <string name="STR_NMS_SELECT_CONTAT_EMPTY">iSMS 連絡先がありません</string>
+    <string name="STR_NMS_SELECT_NO_RESULT">何も見つかりませんでした</string>
+		<string name="STR_NMS_EMPTY">連絡先なし</string>
+    <string name="STR_NMS_ALL_CONTACTS">すべて</string>
+    <string name="STR_NMS_GROUPS_MEM"> %1$s メンバー</string>
+    <string name="STR_NMS_GROUPS_CONTACTS">すべてのグループ</string>
+    <!-- Selection Contact end -->
+
+    <!-- Group chat -->
+    <string name="STR_NMS_CREATE_GROUP_TITLE">グループを作成</string>
+    <string name="STR_NMS_GROUP_INFO_TITLE">グループ情報</string>
+    <string name="STR_NMS_EDIT_GROUP_TITLE">グループを編集</string>
+    <string name="STR_NMS_SELECT_ACTION_TITLE">アクションを選択</string>
+    <string name="STR_NMS_ADD_TO_BOOKMARK">ブックマークに追加</string>
+    <string name="STR_NMS_ADD_TO_CONTACTS">%1$s を連絡先へ追加</string>
+    <string name="STR_NMS_GROUP_NAME">グループ名</string>
+    <string name="STR_NMS_GROUP_INFO">グループ情報</string>
+    <string name="STR_NMS_GROUP_MEMBERS">グループ メンバー</string>
+    <string name="STR_NMS_GROUP_NAME_HIT">グループ名</string>
+    <string name="STR_NMS_GROUP_NAME_EMPTY">グループ名が空です</string>
+    <string name="STR_NMS_CONFIRM_LEAVE_TITLE">このグループから離れる</string>
+    <string name="STR_NMS_LEAVE_GROUP_CONTENT">このグループから離れますか？</string>
+    <string name="STR_NMS_LEAVE_GROUP_SUCCESS">問題なくこのグループから離れます</string>
+    <string name="STR_NMS_LEAVE_GROUP_FAILED">このグループから離れられませんでした</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_SUCCESS">グループ名の更新が成功しました</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_SUCCESS">新しいグループ メンバーが追加されました</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_FAILED">グループ メンバーの追加に失敗しました</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_FAILED">グループ名の更新に失敗しました</string>
+    <string name="STR_NMS_CREATE_GROUP_NAME_FAILED">グループ チャットの作成に失敗しました</string>
+    <string name="STR_NMS_DELETE_GROUP_MEMBER_FAILED">グループ メンバーの削除に失敗しました</string>
+    <string name="STR_NMS_UPDATE_GROUP_SUCCESS">グループ情報の更新が成功しました</string>
+    <string name="STR_NMS_UPDATE_GROUP_FAILED">グループ情報の更新に失敗しました</string>
+    <string name="STR_NMS_GROUP_CHAT_BACK">この操作を破棄しますか？</string>
+    <string name="STR_NMS_GROUP_MEMEBER_YOU">ユーザー</string>
+    <string name="STR_NMS_GROUP_INVITE_MORE">さらに招待</string>
+    <string name="STR_NMS_LEAVE_GROUP">このから離れる</string>
+    <string name="STR_NMS_CHAT">チャット</string>
+    <string name="STR_NMS_CONFIRM_REMOVE_TITLE">グループ メンバー リストから削除</string>
+		<string name="STR_NMS_REMOVE_OK">削除</string>
+		<string name="STR_NMS_REMOVE_CANCEL">キャンセル</string>
+    <string name="STR_NMS_REMOVE_CONTENT">これをリストから削除しますか？</string>
+    <string name="STR_NMS_VIEW_ALL_MEDIA">すべてのメディアを表示</string>
+    <string name="STR_NMS_VIEW_ALL_LOCATIONS">すべてのロケーションを表示</string>
+    <string name="STR_NMS_CHAT_SETTINGS">チャット設定</string>
+    <string name="STR_NMS_VIEW_GROUP_FAILED">このグループ チャットから離れました。</string>
+    <string name="STR_NMS_VIEW_HISTORY">グループ履歴を表示</string>
+    <string name="STR_NMS_ISMS_ENABLE_TITLE">iSMS 有効</string>
+    <string name="STR_NMS_ISMS_ENABLE_CONTENT">この機能は iSMS サービスでのみサポートされます。 iSMS アカウントを今すぐ有効にしますか。</string>
+		<string name="STR_NMS_ENABLE">有効化</string>
+    <string name="STR_NMS_LATER">無効化</string>
+    <string name="STR_NMS_SWITCH_TITLE">SIM を交換</string>
+    <string name="STR_NMS_SWITCH_MESSAGE">iSMS サービスが有効にされたときに限ってグループ チャットがサポートされますが、現在の SIM カードは有効ではありません。 有効な SIM カードに交換しますか？</string>
+    <string name="STR_NMS_SWITCH_EDIT_MESSAGE">現在の SIM カードはこのグループに関連付けられていません。 他の SIM カードに交換しますか？</string>
+    <string name="STR_NMS_LEAVE_GROUP_NOTICE">このグループを離れたので、再び招待されなければこのグループ チャットに参加できません。</string>
+    <string name="STR_NMS_LOSE_SIM_NOTICE">オリジナルのチャット SIM カードが取り外されました。オリジナルの SIM カードに限ってこのグループでチャットできます。</string>
+    <string name="STR_NMS_SWITCH">交換</string>
+
+    <!-- Group chat end -->
+
+
+    <!-- chat details screen long press item start -->
+    <string name="STR_NMS_LONG_PRESS_TITLE">メッセージ オプション</string>
+    <string name="STR_NMS_SEND_VIA_TEXT">SMS 経由で送信</string>
+		<string name="STR_NMS_TRY_AGAIN">やり直す</string>
+    <string name="STR_NMS_TRY_ALL_AGAIN">すべてをやり直す</string>
+    <string name="STR_NMS_CONTINUE_TRY">やり直しを続行</string>
+		<string name="STR_NMS_COPY">コピー</string>
+    
+		<string name="STR_NMS_FORWARD">転送</string>
+		<string name="STR_NMS_FORWARD_DOWNLOAD_TITLE">ダウンロード</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD">iSMS を転送するには、最初にメディア コンテンツをダウンロードする必要があります。</string>
+		<string name="STR_NMS_FORWARD_CONTIUE">続行</string>
+    <string name="STR_NMS_FORWARD_FAILED">転送が失敗しました。</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_MULTI">マルチ転送を行うには、最初に一部の iSMS をダウンロードする必要があります。</string>
+    <string name="STR_NMS_FORWARD_SOME_FAILED">一部の iSMS 転送が失敗しました。</string>
+    <string name="STR_NMS_FORWARD_ALL_FAILED">ダウンロードが失敗し、マルチ転送が破棄されました</string>
+    
+    <string name="STR_NMS_SEND_VIA_MULTIMEDIA">MMS を経由して送信</string>
+		<string name="STR_NMS_SHARE">共有</string>
+		<string name="STR_NMS_DELETE">削除</string>
+    <string name="STR_NMS_FLAG_IMPORTANT">重要にフラグ</string>
+    <string name="STR_NMS_REMOVE_IMPORTANT">重要フラグを削除</string>
+    <string name="STR_NMS_SAVE_IN_SDCARD">SD カードにエクスポート</string>
+    <string name="STR_NMS_SAVE_FILE">ファイルが %1$s に保存されます</string>
+    <string name="STR_NMS_SHARE_TITLE">共有方法</string>
+		<string name="STR_NMS_VIEW_DETAILS">詳細の表示</string>
+    <string name="STR_NMS_VIEW_DETAILS_TITLE">メッセージ詳細</string>
+    <string name="STR_NMS_SEND_MSG_DETAILS">タイプ: IP メッセージ\n送信: %1$s</string>
+    <!-- chat details screen long press item end -->
+
+
+    <!-- chat details screen delete item start -->
+		<string name="STR_NMS_DELETE_TITLE">削除</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_TITLE">重要メッセージを削除</string>
+    <string name="STR_NMS_DELETE_WARNING">メッセージが削除されます。</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_WARNING">この重要メッセージを削除してもよろしいですか？</string>
+    <string name="STR_NMS_DELETE_MSG">選択したメッセージが削除されます。</string>
+		<string name="STR_NMS_DELETE_WAITTING">削除中</string>
+    <string name="STR_NMS_CLEAR_HISTORY_CONTENT">すべてのチャット履歴がこのチャット ルームでクリアされます</string>
+    <string name="STR_NMS_DELETE_IMPORTANT">重要にフラグされたメッセージを含む</string>
+    <!-- chat details screen delete item end -->
+
+
+    <!-- chat details actionBar option start -->
+		<string name="STR_NMS_MENU_CALL">通話</string>
+    <string name="STR_NMS_MENU_GROUPINFO">グループ情報</string>
+    <string name="STR_NMS_MENU_INVITE_CHAT">友人をチャットに招待</string>
+    <string name="STR_NMS_MENU_INVITE_ISMS">iSMS を使用して友人を招待</string>
+    <string name="STR_NMS_MENU_SELECT_MSG">メッセージを選択</string>
+    <string name="STR_NMS_MENU_MARK_SPAM">スパム リストに移動</string>
+    <string name="STR_NMS_MENU_REMOVE_SPAM">スパム リストから削除</string>
+    <string name="STR_NMS_MENU_ADD_SHORTCUT">ショートカットの追加</string>
+    <string name="STR_NMS_MENU_VIEW_ALLMEDIA">すべてのメディアを表示</string>
+    <string name="STR_NMS_MENU_VIEW_ALLLOCATION">すべてのロケーションを表示</string>
+    <string name="STR_NMS_MENU_EDIT_GROUP">グループを編集</string>
+    <string name="STR_NMS_MENU_CHAT_SETTING">チャット設定</string>
+    <string name="STR_NMS_MENU_INSERT_QUICK_TEXT">クイック テキストを挿入</string>
+    <string name="STR_NMS_MENU_CLEAR_HISTORY">チャット履歴をクリア</string>
+    <string name="STR_NMS_MENU_LEAVE_GROUP">このグループから離れる</string>
+    <string name="STR_NMS_MENU_DISCARD">破棄</string>
+		<string name="STR_NMS_MENU_DELETE">削除</string>
+    <string name="STR_NMS_MENU_IMPORTANT">重要にフラグ</string>
+		<string name="STR_NMS_MENU_FORWARD">転送</string>
+    <!-- chat details actionBar option end -->
+
+
+    <!-- chat details share item start -->
+    <string name="STR_NMS_TAKE_PHOTO">写真撮影</string>
+    <string name="STR_NMS_RECORD_VIDEO">ビデオ録画</string>
+    <string name="STR_NMS_DRAW_SKETCH">スケッチを描く</string>
+    <string name="STR_NMS_SHARE_CONTACT">連絡先を共有</string>
+    <string name="STR_NMS_CHOOSE_PHOTO">写真を選択</string>
+    <string name="STR_NMS_CHOOSE_VIDEO">ビデオを選択</string>
+    <string name="STR_NMS_RECORD_AUDIO">オーディオを録音</string>
+    <string name="STR_NMS_SHARE_LOCATION">ロケーションの共有</string>
+    <string name="STR_NMS_CHOOSE_AUDIO">オーディオを選択</string>
+    <string name="STR_NMS_SHARE_CALENDAR">カレンダを共有</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_TITLE">音楽を追加</string>
+    <string name="STR_NMS_CHOOSE_RINGTONE_ITEM">着信音</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_ITEM">オーディオ</string>
+    <string name="STR_NMS_INSERT_SDCARD">SD カードを挿入してください！</string>
+    <!-- chat details share item start -->
+
+
+    <!-- record audio start -->
+    <string name="STR_NMS_AUDIO_TIMER_FORMAT" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <string name="STR_NMS_AUDIO_LABLE">オーディオ メモ レコーダ</string>
+    <string name="STR_NMS_RECORD_AUDIO_CONT">タップして録音</string>
+    <string name="STR_NMS_PLAY_AUDIO_CONT">タップして再生</string>
+		<string name="STR_NMS_ACTION_SEND">送信</string>
+    <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
+    <string name="audio_db_artist_name">ユーザーのレコーディング</string>
+    <string name="audio_db_album_name">オーディオ レコーディング</string>
+    <string name="STR_NMS_SELECT_AUDIO">オーディオを選択</string>
+    <!-- record audio end -->
+
+
+    <!-- chat & group details screen start -->
+
+    <string name="STR_NMS_UNREAD_FORMAT">%1$d 未読メッセージ</string>
+    <string name="STR_NMS_NOT_DELIVERED_TITLE">未配信</string>
+    <string name="STR_NMS_FAILED_TITLE">エラー送信</string>
+    <string name="STR_NMS_GROUP_SUBTITLE">%1$s, +%2$d</string>
+    <string name="STR_NMS_GROUP_DEAD_SUBTITLE">%1$s, %2$d</string>
+    <string name="STR_NMS_SAVE_AS_DRAFT">ドラフトとして保存されたメッセージ</string>
+    <string name="STR_NMS_NO_SD_TITLE">SD カード エラー</string>
+    <string name="STR_NMS_CANT_SHARE">SD カードにアクセスできません。すべてのマルチメディア関連機能は一時的に使用できません。\n\nSD カードをチェックして後で再試行してください。</string>
+    <string name="STR_NMS_CANT_SAVE">SD カードが検出されず、ファイルを保存できません</string>
+    <string name="STR_NMS_SDSPACE_NOT_ENOUGH">SD カードに使用できる領域が不足し、ファイルを保存できません。</string>
+    <string name="STR_NMS_REAEND_ALL">すべてをやり直します...</string>
+    <string name="STR_NMS_FILE_LIMIT">大きすぎます</string>
+    <string name="STR_NMS_LOAD_ALL_MESSAGE">すべてのメッセージ</string>
+		<string name="STR_NMS_DOWNLOAD_FAILED">ダウンロード失敗</string>
+    <string name="STR_NMS_INPUT_HINT">コンテンツを入力</string>
+    <string name="STR_NMS_INPUT_HINT_ISMS">iSMS メッセージを入力</string>
+    <string name="STR_NMS_CAPTION_HINT">キャプションを入力</string>
+    <string name="STR_NMS_PROTOCOL_SMS">SMS</string>
+    <string name="STR_NMS_PROTOCOL_MMS">MMS</string>
+    <string name="STR_NMS_PROTOCOL_IP">iSMS</string>
+    <string name="STR_NMS_SWITCH_BOTTON">SIM を交換</string>
+		<string name="STR_NMS_TURN_ON_BOTTON">オンにする</string>
+    <string name="STR_NMS_SWITCH_TEXT_FORMAT">グループ チャットを続行するには、最初に %1$s SIM に交換します。</string>
+    <string name="STR_NMS_ENABLE_TEXT_FORMAT">グループ チャットを続行するには、最初に %1$s SIM で iSMS サービスをオンにします。</string>
+    <string name="STR_NMS_REPLACE_ATTACH_TITLE">交換アタッチメント</string>
+    <string name="STR_NMS_REPLACE_ATTACH_MSG">既存のアタッチメントがありますが交換しますか？</string>
+    <string name="STR_NMS_TRUNC_CAPTION">キャプションが切り取られました。</string>
+    <string name="STR_NMS_MAX_CHARACTERS_REACHED">メッセージ サイズ制限に到達しました。</string>
+    <string name="STR_NMS_MAX_EMOTICON_REACHED">顔文字制限を満たす</string>
+		<string name="STR_NMS_ENABLE_PROCESS">処理中...</string>
+    <string name="STR_NMS_ERR_FILE">無効なファイル</string>
+		<string name="STR_NMS_SENDING_TEXT">送信中...</string>
+    <!-- chat & group details screen end --> <!-- Error code tips -->
+    <string name="STR_NMS_ERR_GENERAL">一般的なエラー</string>
+    <string name="STR_NMS_ERR_INVALID_ARGUMENT">無効な引数</string>
+    <string name="STR_NMS_ERR_NETWORK_BLOCK">ネットワークに問題があります</string>
+    <string name="STR_NMS_ERR_PHONE_NOT_ACTIVATED">有効化されていません</string>
+    <string name="STR_NMS_ERR_SIM_NOT_ACTIVATED">SIM カードが有効化されていません</string>
+    <string name="STR_NMS_ERR_INVALID_MSG_DB_ID">無効なメッセージ DB の ID</string>
+    <string name="STR_NMS_ERR_ADD_MSG_DB_FAILED">DB への挿入に失敗しました</string>
+    <string name="STR_NMS_ERR_UPDATE_MSG_DB_FAILED">DB の更新に失敗しました</string>
+    <string name="STR_NMS_ERR_GET_MSG_DB_DATA_FAILED">メッセージのフェッチに失敗しました</string>
+    <string name="STR_NMS_ERR_INVALID_CONTACT_DB_ID">無効な連絡先 DB の ID</string>
+    <string name="STR_NMS_ERR_ADD_CONTACT_DB_FAILED">連絡先への挿入し失敗しました</string>
+    <string name="STR_NMS_ERR_UPDATE_CONTACT_DB_FAILED">連絡先 DB の更新に失敗しました</string>
+    <string name="STR_NMS_ERR_GET_CONTACT_DB_DATA_FAILED">ID で連絡先のフェッチに失敗しました</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_ERROR_FORMAT">無効な IP メッセージ形式</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_INVALID_TO">無効な受信者</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_WITH_UNKNOWN_USER">無効で不明な受信者ユーザー</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_NO_MBMBER">グループ チャット メンバーがありません</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_GCHAT_DEAD">グループ チャットが有効化されていません</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_INVALID_SIM_ID">グループ チャット SIM カードが現在の SIM カードではありません</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_FOR_SYS_MSG">システム メッセージを再送信</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_INVALID_STATUS">IP メッセージが準備されていません</string>
+    <string name="STR_NMS_ERR_GCHAT_IS_DEAD">このグループ チャットはもう終了しています</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBERS">無効なグループ メンバー</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBER_WITH_SELF">グループの作成に失敗しました。 メンバーに自分を含めることができません</string>
+    <string name="STR_NMS_ERR_GCHAT_EXCEED_MAX_MEMBER_COUNT">グループ メンバー数が限度に達しました</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_NAME">無効なグループ チャット名</string>
+    <string name="STR_NMS_ERR_GCHAT_SIM_IS_NOT_ACTIVATED">グループ チャットの SIM カードが有効化されていません</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_NOT_INBOX_MSG">ダウンロード URL の取得に失敗しました</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_INVALID_URL">無効なダウンロード URL</string>
+    <string name="STR_NMS_ERR_GET_ATTACH_NAME_INVALID_BODY_FORMAT">ダウンロード ファイル名の取得に失敗しました</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_INVALID_FILE_NAME">無効なダウンロード ファイル名</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_EXIST">ダウンロード ファイルは存在しません</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_INBOX_MSG">ダウンロード ファイルの設定に失敗しました</string>
+    <string name="STR_NMS_ERR_SIM_INFO_NOT_FOUND">SIM カード情報が見つかりませんでした</string>
+    <string name="STR_NMS_ERR_SIM_IN_INVALID_STATUS">無効な SIM カード状態</string>
+    <string name="STR_NMS_ERR_CMD_PROCESSING">システムがビジーで、システム構成コマンドを処理できません</string>
+    <string name="STR_NMS_ERR_CMD_GENERAL">全般的なシステム構成エラー</string>
+    <string name="STR_NMS_ERR_CODE_END">不明なエラー コード</string>
+    <!-- Error code tips -->
+    <string name="STR_NMS_SEND_MMS_QUERY_TITLE">警告</string>
+    <string name="STR_NMS_SEND_MMS_QUERY">受信者が iSMS ユーザーではありません。MMS で送信しますか？</string>
+    <!-- Service center start -->
+    <string name="STR_NMS_SERVICE_TITLE">iSMS サービス センター</string>
+    <string name="STR_NMS_INTRODUCTION">iSMS を使用すれば、即座に無料メッセージを送信でき、一ヵ所にチャット履歴を保存し、1 つのボタンを押して新しいエクスペリエンスを体感できます！</string>
+    <string name="STR_NMS_TERMS">契約条件</string>
+    <string name="STR_NMS_ACTIVATION_BUTTON">今すぐ有効化</string>
+    <string name="STR_NMS_LOSE_SDCARD">SD カードが検出されません</string>
+    <!-- Service center end -->
+
+
+    <!-- conversation empty tips -->
+    <string name="STR_NMS_SPAM_EMPTY">スパム会話がありません。 \nSPAM は、スパムにマークされるすべての会話を収集します。 通知はデフォルトではオフになります。 これによって不要な混乱が回避されます。 \n\n会話をホールドして [スパムにマーク] アイコンを選択して送信者をスパムにマークできます。 会話がスパムにマークされると、[通知オフ] アイコンが自動的に表示され、会話がここに置かれます。</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_FROM">+86123456789</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_SUBJECT">これはスパム メッセージの例です。</string>
+    <string name="STR_NMS_GROUPCHAT_EMPTY">グループ チャット メッセージがありません。 \nグループ チャットは、ユーザーが作成または参加したすべてのグループ チャット メッセージを収集します。 これによって、グループ チャットを簡単に検索および管理できます。 \n\nグループ チャットを作成するには、この画面下の [グループ チャットを作成] ボタンをタップし、グループに参加する友人を招待します。</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_FROM">グループ名</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_SUBJECT">友人:\nグループ チャット機能を楽しむ！</string>
+    <string name="STR_NMS_IMPORTANT_EMPTY">重要なメッセージがありません。 \n[重要] は、重要にフラグ付けられたすべてのメッセージを収集します。 これによって、重要なメッセージを簡単に検索できます。 \n\nメッセージをホールドして [オプション] メニューから [重要にフラグ] を選択して、重要なメッセージとしてフラグ付けることができます。 メッセージが重要なフラグとなると、赤いフラグ アイコンが下に表示されます。</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TITLE">これは、メッセージが重要にフラグされた例です。 赤いフラグが表示されます。</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TIME">10:55 am</string>
+    <string name="STR_NMS_ALLCHAT_EMPTY">会話なし</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_CONTENT">この機能を使用するには、最初に iSMS サービスを起動する必要があります。 心配不要です - サービスが気に入らなければ設定で常にオフにできます。 今すぐ試してみる！</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_TITLE">iSMS を有効化</string>
+    <!-- conversation empty tips -->
+    
+    <string name="STR_NMS_CLEAR_USER_DATA">データのクリアに成功</string>
+    
+    <!-- get file err start -->
+    <string name="STR_NMS_NO_SUCH_FILE">該当ファイルなし</string>
+    <string name="STR_NMS_OVER_FILE_LIMIT">ファイルのサイズが限度を超えました</string>
+    <string name="STR_NMS_INVALID_FILE_TYPE">このタイプはサポートされません</string>
+    <!-- get file err end -->
+
+    <string name="STR_NMS_DELIVERY_BODY">%s で受信したメッセージ</string>
+    <string name="STR_NMS_SIM_SELECT_TITLE">SIM を選択</string>
+    
+    <string name="STR_NMS_SHORTCUT_SUCCESS">作成されたショートカット %1$s。</string>
+    <string name="STR_NMS_SHORTCUT_REFRESHING">更新中</string>
+    
+    <string name="STR_NMS_DISABLE_FAILED">操作が失敗しました。再試行してください</string>
+    <string name="STR_NMS_ENABLE_FAILED">操作が失敗しました。再試行してください</string>
+    <string name="STR_NMS_ENABLE_SUCCESS">iSMS サービスの有効化に成功しました</string>
+    <string name="STR_NMS_DISABLE_SUCCESS">iSMS サービスの無効化に成功しました</string>
+    
+		<string name="STR_NMS_SD_CARD_FULL">SD カードが一杯</string>
+    <string name="STR_NMS_SEND_MSG_FAILED">メッセージ送信失敗！</string>
+    <string name="STR_NMS_SETTING_COMMENT">iSMS はクールなチャット ツールです。 無料で便利です。詳しくはこちら</string>
+    <string name="STR_NMS_KNOW_MORE">詳しくはこちら</string>   
+    <string name="STR_NMS_RECEIVED_MSG_DETAILS">タイプ: IP メッセージ\n送信元: %1$s\n時間を送る: %2$s\n受信: %3$s</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH_ADD">iSMSサービスが原因でストレージ·スペースの不足に一時的に使用できません。</string>
+    <string name="STR_NMS_SERVER_AUTO_ECHO_MSG">メッセージを受信しました。ありがとう！</string>    
+
+    <string name="imsp_ip_message">iSMS メッセージ</string>
+    <string name="imsp_invite_chat_frequently"><b>%s の頻度でチャットしますか？</b>\n双方のお金を節約するために iSMS を使用して %s を招待しませんか？</string>
+    <string name="imsp_enable_chat_frequently"><b>%s の iSMS サービスが無効です！</b>\niSMS サービスを有効にして双方のお金を節約しませんか？</string>
+    <string name="imsp_invite">招待</string>
+    <string name="imsp_enable_notice">iSMS サービスを有効にしますか？</string>
+    <string name="imsp_activate_chat_frequently"><b>友人と頻繁にチャットしますか？</b>\nSMS レートなしでチャットするために iSMS サービスを起動しませんか？</string>
+    <string name="imsp_activate_note">iSMS を有効にしますか？</string>
+    <string name="imsp_dismiss_content">メモを消去しますか？</string>
+    <string name="imsp_divider_online">%s がオンライン</string>
+    <string name="imsp_divider_offline">%s の前回のオンライン時間</string>
+    <string name="imsp_divider_never_online">オンラインなし</string>
+    <string name="imsp_failed_title">送信失敗</string>
+    <string name="imsp_resend_via_sms">SMS を代わりに送信</string>
+    <string name="imsp_resend_via_mms">MMS を代わりに送信</string>
+    <string name="imsp_typing_text">入力中</string>
+    <string name="imsp_save_attachment">アタッチメントを保存</string>
+    <string name="imsp_view">表示</string>
+    <string name="imsp_convert_to_mms">MMS に変換します。</string>
+    <string name="imsp_convert_to_sms">SMS に変換します。</string>
+    <string name="imsp_convert_to_isms">iSMS に変換します。</string>
+    <string name="imsp_convert_to_mms_for_service">iSMS サービスは、この選択した SIM カードでは使用できません。 このメッセージは、この SIM カードの MMS を経由した場合に限って送信できます。 続行しますか？</string>
+    <string name="imsp_convert_to_sms_for_service">iSMS サービスは、この選択した SIM カードでは使用できません。 このメッセージは、この SIM カードの SMS を経由した場合に限って送信できます。 続行しますか？</string>
+    <string name="imsp_convert_to_mms_for_recipients">受信者は iSMS ユーザーではありません。 このメッセージは MMS 経由でのみ送信されます。 続行しますか？</string>
+    <string name="imsp_convert_to_sms_for_recipients">受信者は iSMS ユーザーではありません。 このメッセージは SMS 経由でのみ送信されます。 続行しますか？</string>
+    <string name="imsp_sms_convert_to_isms">iSMS サービスは、この選択した SIM カードで使用できます。 SMS レートを保存するには、メッセージを iSMS に切り替えることを推奨します。 今すぐ切り替えますか？</string>
+    <string name="imsp_mms_convert_to_isms">iSMS サービスは、この選択した SIM カードで使用できます。 MMS レートを保存するには、メッセージを iSMS に切り替えることを推奨します。 今すぐ切り替えますか？</string>
+    <string name="imsp_keep_mms">MMS を保持</string>
+    <string name="imsp_keep_sms">SMS を保持</string>
+    <string name="imsp_resend_discard_message">メッセージを再送信するには、現在作成しているメッセージを破棄します。</string>
+    <string name="imsp_no_sim_card">SIM カードがありません！</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">"機能しているインターネット接続が見つかりません！ 後でやり直してください。"</string>
+    <string name="imsp_chat_setting_updating">更新中...</string>
+    <string name="imsp_dialog_clear_title">クリア</string>
+    <string name="imsp_dialog_clear_description">すべてのチャット履歴がこのチャット ルームでクリアされます</string>
+    <string name="imsp_chat_setting_saving">保存中...</string>
+    <string name="imsp_chat_setting_sending">送信中...</string>
+    <string name="imsp_save_chat_history_failed">保存に失敗しました</string>
+    <string name="imsp_send_chat_history_failed">電子メールに失敗しました</string>
+    <string name="imsp_conversation_list_all">メッセージ</string>
+    <string name="imsp_conversation_list_important">重要</string>
+    <string name="imsp_conversation_list_group_chats">グループ</string>
+    <string name="imsp_conversation_list_spam">スパム</string>
+    <string name="imsp_mark_as_spam_tips">スパムにマークされたメッセージはスパム リストに移動され、通知は自動的にオフになります。</string>
+    <string name="imsp_typing">"入力中..."</string>
+    <string name="imsp_type_to_compose_text">"SMS/iSMS メッセージを入力"</string>
+    <string name="imsp_no_sdcard">SD カードなし</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">招待を送信するには、作成中のメッセージが破棄されます。</string>
+    <string name="imsp_current_sim_enabled">現在の SIM は有効です。</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">iSMS を起動するために SIM を選択</string>
+    <string name="imsp_activate_message">この機能は iSMS サービスでのみサポートされます。 iSMS アカウントを今すぐ有効にしますか？</string>
+    <string name="imsp_enable_message">この機能は iSMS サービスでのみサポートされます。 iSMS アカウントを今すぐ有効にしますか？</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">iSMS を有効にするために SIM を選択</string>
+    <string name="imsp_switch_sim_title">SIM を交換</string>
+    <string name="imsp_switch_sim_message">現在の SIM は iSMS をサポートしません。 他の SIM に交換しますか？</string>
+    <string name="imsp_switch_sim_successfully">SIM の交換に成功しました！</string>
+    <string name="imsp_dailog_multi_forward">メッセージを転送</string>
+    <string name="imsp_dialog_send_result">結果を送信</string>
+    <string name="imsp_dlg_send_all">すべて:%s</string>
+    <string name="imsp_dlg_send_sucess">送信:%s</string>
+    <string name="imsp_dlg_send_failed">失敗:%s</string>
+    <string name="imsp_multi_forward_sim_info">SIM 情報を取得</string>
+    <string name="imsp_multi_forward_no_sim">SIM 情報なし</string>
+    <string name="imsp_get_sim_failed">SIM 情報の取得失敗</string>
+    <string name="imsp_sim_status_error">SIM ステータス エラー</string>
+    <string name="imsp_forward_norecipients">メッセージ転送の受信者がいません</string>
+    <string name="imsp_multiforward_no_message">転送できるメッセージがありません</string>
+    <string name="imsp_need_input_recipients">少なくとも 1 人の受信者を最初に指定してください</string>
+    <string name="imsp_spam_empty">スパム会話がありません。 \nSPAM は、スパムにマークされるすべての会話を収集します。 通知はデフォルトではオフになります。 これによって不要な混乱が回避されます。 \n\n会話をホールドして [スパムにマーク] アイコンを選択して送信者をスパムにマークできます。 会話がスパムにマークされると、[通知オフ] アイコンが自動的に表示され、会話がここに置かれます。</string>
+    <string name="imsp_groupchat_empty">グループ チャット メッセージがありません。 \nグループ チャットは、ユーザーが作成または参加したすべてのグループ チャット メッセージを収集します。 これによって、グループ チャットを簡単に検索および管理できます。 \n\nグループ チャットを作成するには、この画面下の [グループ チャットを作成] ボタンをタップし、グループに参加する友人を招待します。</string>
+    <string name="imsp_important_empty">重要なメッセージがありません。 \n[重要] は、重要にフラグ付けられたすべてのメッセージを収集します。 これによって、重要なメッセージを簡単に検索できます。 \n\nメッセージをホールドして [オプション] メニューから [重要にフラグ] を選択して、重要なメッセージとしてフラグ付けることができます。 メッセージが重要なフラグとなると、赤いフラグ アイコンが下に表示されます。</string>
+    <string name="imsp_allchat_empty">会話なし</string>
+    <string name="imsp_attach_slideshow">スライドショー</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">ダウンロード中...</string>
+    <string name="imsp_invite_friends_to_ipmsg">iSMS を使用して友人を招待</string>
+    <string name="imsp_multi_forward_tips_content">マルチ転送を行うには、最初に一部の iSMS をダウンロードする必要があります。</string>
+    <string name="imsp_multi_forward_failed_part">一部の iSMS 転送が失敗しました。</string>
+</resources>

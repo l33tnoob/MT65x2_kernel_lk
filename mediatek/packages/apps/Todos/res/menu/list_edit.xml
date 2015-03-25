@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/btn_change_state"
+        android:showAsAction="always"/>
+    <item
+        android:id="@+id/btn_delete"
+        android:title="@string/delete"
+        android:icon="@drawable/todo_delete"
+        android:showAsAction="always"/>
+
+</menu>

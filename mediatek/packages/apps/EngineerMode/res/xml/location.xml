@@ -1,0 +1,24 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+	<Preference android:key="location_basedservice" android:title="@string/location_basedservice"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.lbs.em"
+			android:targetClass="com.mediatek.lbs.em.MyTabActivity" />
+	</Preference>
+	
+	<Preference android:key="ygps" android:title="@string/YGPS"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.ygps"
+			android:targetClass="com.mediatek.ygps.YgpsActivity" />
+	</Preference>
+	
+	<Preference android:key="cw_test" android:title="@string/cw_test"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.cwtest.CWTest" />
+	</Preference>
+</PreferenceScreen>

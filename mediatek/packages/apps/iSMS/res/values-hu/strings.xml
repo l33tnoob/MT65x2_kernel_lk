@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="STR_NMS_MAIN">iSMS</string>
+    <string name="STR_NMS_HISSAGE">iSMS</string>
+    <string name="STR_NMS_INVITE_SMS_CONTENT">Helló! Az iSMS egy remek csevegőeszköz. Ingyenes és kényelmes. További információ: http://isms.hissage.com.</string>
+    <string name="STR_NMS_NO_SDCARD">SD-kártya nem észlelhető, ezért az iSMS egyes műveleteket nem engedélyez</string>
+    <string name="STR_NMS_MOUNT_SDCARD">Az SD-kártya használatra rendelkezésre áll</string>
+    <string name="STR_NMS_SEND_MMS_FAIL">Az üzenet küldése nem sikerült, Automatikusan sor kerül a küldésre, amint a hálózat elérhetővé válik.</string>
+    <string name="STR_NMS_RECV_MMS_FAIL">Letöltés nem sikerült. Próbálja meg később.</string>
+    <string name="STR_NMS_GROUP_CHAT_ME">én</string>
+    <string name="STR_NMS_GROUP_CHAT_I">Én</string>
+    <string name="STR_NMS_GROUP_CHAT_YOU">Te</string>
+    <string name="STR_NMS_GROUP_CREATE_MSG">%1$s csoportos csevegésre hívja meg a következőt: %2$s.</string>
+    <string name="STR_NMS_GROUP_ADD_MSG">%1$s csatlakozott a csoportos csevegéshez.</string>
+    <string name="STR_NMS_GROUP_DELETE_MSG">%1$s törli csoportos csevegésből a következőt: %2$s.</string>
+    <string name="STR_NMS_GROUP_QUITE_MSG">%1$s kilépett a csoportos csevegésből.</string>
+    <string name="STR_NMS_GROUP_CHAT_PLACE_HOLDER_MSG_BODY">Ön csatlakozott ehhez a csoporthoz</string>
+    <string name="STR_NMS_PICTURE">kép</string>
+    <string name="STR_NMS_TAPE">hang</string>
+    <string name="STR_NMS_VCARD">ismerős</string>
+    <string name="STR_NMS_LOCATION">hely</string>
+    <string name="STR_NMS_SKETCH">vázlat</string>
+    <string name="STR_NMS_VIDEO">videó</string>
+    <string name="STR_NMS_CALENDAR">naptár</string>
+    <string name="STR_NMS_UNKNOWN">ismeretlen</string>
+    <string name="STR_NMS_READ_MODE_PIC">egy kép</string>
+    <string name="STR_NMS_READ_MODE_TAPE">egy hangmegjegyzés</string>
+    <string name="STR_NMS_READ_MODE_VCARD">ismerősök</string>
+    <string name="STR_NMS_READ_MODE_LOCATION">egy hely</string>
+    <string name="STR_NMS_READ_MODE_SKETCH">egy vázlat</string>
+    <string name="STR_NMS_READ_MODE_VIDEO">egy videó</string>
+    <string name="STR_NMS_READ_MODE_CALENDAR">egy naptár</string>
+    <string name="STR_NMS_ISMS_ENABLE">(iSMS engedélyezése)</string>
+    <string name="STR_NMS_READ_MODE_UNKNOWN">egy ismeretlen fájl</string>
+    <string name="STR_NMS_ALL_MSG">Összes üzenet</string>
+    <string name="STR_NMS_SAVED">Mentve</string>
+    <string name="STR_NMS_BLOCKMSG">Letiltva</string>
+    <string name="STR_NMS_SMS_TYPE">SMS</string>
+    <string name="STR_NMS_NO_SIM">SIM-kártya nem észlelhető</string>
+    <string name="STR_NMS_ILLEGAL_ADDRESS">Érvénytelen szám</string>
+    <string name="STR_NMS_REMIND_USER_SET_NAME">Frissítse profilját</string>
+    <string name="STR_NMS_OK">OK</string>
+    <string name="STR_NMS_BACK">Vissza</string>
+    <string name="STR_NMS_CANCEL">Mégse</string>
+    <string name="STR_NMS_NETWORK_UNAVL">Ellenőrizze, hogy adatkapcsolata – pl. 3G, GPRS vagy Wi-Fi – működik-e</string>
+    <string name="STR_NMS_TODAY">Ma</string>
+    <string name="STR_NMS_YESTERDAY">Tegnap</string>
+    <string name="STR_NMS_NOW">Most</string>
+    <string name="STR_NMS_NO_SIM_CARD">SIM-kártya nem észlelhető. Helyezzen be SIM-kártyát.</string>
+    <string name="STR_NMS_NO_CONNECTION">A hálózat nem érhető el vagy a repülés mód be van kapcsolva – ellenőrizze.</string>
+    <string name="STR_NMS_ATTACH_SHARE">%1$s megosztotta a következőt: %2$s</string>
+    <string name="STR_NMS_WAIT">Várjon...</string>
+    <string name="STR_NMS_TIPTITLE">Tipp</string>
+
+    <string name="STR_NMS_OPEN">Megnyitás</string>
+    <string name="STR_NMS_PLAY">Lejátszás</string>
+    
+    
+
+    <string name="STR_NMS_VCARD_NAME">%1$s ismerős</string>
+    <string name="STR_NMS_SHARE_VCARD_FAILED">ismerős megosztása nem sikerült</string>
+
+    <!-- upgrade info -->
+    <string name="STR_NMS_UPGRADE_TICKER">Verziófrissítés</string>
+    <string name="STR_NMS_UPGRADE_ERROR_TITLE">Frissítési hiba</string>
+    <string name="STR_NMS_UPGRADE_ERROR_CONTENT">Frissítési hiba. Frissítsen az iSMS ügyfélben</string>
+    <string name="STR_NMS_INSTALLED_TITLE">A frissítés sikerült</string>
+    <string name="STR_NMS_INSTALLED_CONTENT">Frissítés sikerült a telefonon</string>
+    <string name="STR_NMS_PROMPT_DLG_TITLE">Új verzió észlelése</string>
+    <string name="STR_NMS_PROMPT_DLG_DOWNLOAD">Letöltés</string>
+    <string name="STR_NMS_PROMPT_DLG_LATER">Később</string>
+    <string name="STR_NMS_UPGRADING">Frissítés</string>
+    <string name="STR_NMS_UPGRADE_TIME">Legutóbbi ellenőrzés: %s</string>
+    
+    <!-- ext protocol -->
+    <string name="STR_NMS_OFFLINE_URL">http://ismsi.hissage.com/webservice/nmsmail/notifyOffline.php</string>
+    
+    <!-- Activation start -->
+    <string name="STR_NMS_PRELOAD_IP_MSG_CONTENT">„Üdvözli az iSMS.”</string>
+    <string name="STR_NMS_ACTIVAT_TITLE">Az iSMS a telefonszám ellenőrzése érdekében egy SMS-t küld. Ez a szolgáltató felé díjköteles lehet.</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE">Telefonszám ellenőrzése</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE2">Telefonszám ellenőrzése</string>
+    <string name="STR_NMS_YOUR_COUNTRY_TITLE">ORSZÁG</string>
+    <string name="STR_NMS_YOUR_PHONE_TITLE">TELEFONSZÁM</string>
+    <string name="STR_NMS_VERIFY_FAIL_TITLE">Az SMS-sel való ellenőrzés nem fejeződött be.</string>
+    <string name="STR_NMS_VERIFY_FAIL_CONTENT">Ellenőrizze, hogy a telefonszámot helyesen adta-e meg.</string>
+    <string name="STR_NMS_WORKING_SMS_TIP">Ellenőrizze, hogy van-e működő SMS-előfizetése.</string>
+    <string name="STR_NMS_VERIFYING">Várakozás a következőre küldött SMS automatikus észlelésére:</string>
+    <string name="STR_NMS_RETRY">Újra</string>
+    <string name="STR_NMS_EDIT_NUMBER">Szám szerkesztése</string>
+    <string name="STR_NMS_UPDATE_PROFILE">Profil frissítése</string>
+    <string name="STR_NMS_START_ISMS">iSMS indítása</string>
+    <string name="STR_NMS_SEND">Küldés</string>
+    <string name="STR_NMS_CONGRATULATIONS_TITLE">Gratulálunk!</string>
+    <string name="STR_NMS_CONGRATULATIONS_CONTENT">Köszönjük, hogy aktiválta az iSMS szolgáltatást.\n Ezzel megkezdheti a szolgáltatás használatát.\nKellemes időtöltést az iSMS-sel!</string>
+    <string name="STR_NMS_WELCOME_BACK">Üdvözöljük!</string>
+    <string name="STR_NMS_SEND_SMS_FAIL">Az ellenőrzés nem sikerült, ellenőrizze a következőt:\n  1. A telefonszám helyes;\n  2. A biztonsági szoftver ki van kapcsolva;\n  3. Az SMS küldését akadályozó egyéb lehetséges okok.\nEllenőrizze, majd próbálja újra később.</string>
+    <string name="STR_NMS_ACTIVE">iSMS aktiválása</string>
+    <string name="STR_NMS_WELCOME_ACTIVE">Üdvözli az iSMS</string>
+    <string name="STR_NMS_CONNECTING">Csatlakozás...</string>
+    <!-- Activation end -->
+
+
+    <!-- Notification start -->
+    <string name="STR_NMS_NEW_MSG_TITLE">Új iSMS üzenet</string>
+    <string name="STR_NMS_NEW_SMG_CONTENT">%d olvasatlan üzenet</string>
+    <!-- Notification End -->
+
+    <string name="STR_NMS_MSG_DUMPER_MSG_SMS">SMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_MMS">MMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_IP">IP üzenet</string>
+    <string name="STR_NMS_MSG_DUMPER_SEND_MSG">Elküldött %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_RECEIVE_MSG">Fogadott %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TIME">Idő: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TEXT">Szöveg</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_PIC">Kép</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_SKETCH">Vázlat</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VOICE">Hang</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VIDEO">Videó</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CALENDAR">Naptár</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION_IMG">Hely képe</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VCARD">vCard</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION">Hely</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CAPTION">Képfelirat: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_URL">URL: </string>
+    <string name="STR_NMS_MSG_DUMPER_DURATION">Időtartam: </string>
+    <string name="STR_NMS_MSG_DUMPER_COORDINATE">Koordináta: </string>
+    <string name="STR_NMS_MSG_DUMPER_ADDRESS">Cím: </string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_SENDER">Feladó: </string>
+    <string name="STR_NMS_MSG_DUMPER_NORMAL_DETAIL">Munkamenet adatai:</string>
+    <string name="STR_NMS_MSG_DUMPER_NAME">Név: </string>
+    <string name="STR_NMS_MSG_DUMPER_NUMBER">Szám: </string>
+    <string name="STR_NMS_MSG_DUMPER_PORTRAIT">Arckép</string>
+    <string name="STR_NMS_MSG_DUMPER_MULTI_SEND_DETAIL">Műsorszórás:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_DETAIL">Csoportos csevegés:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_CREATER">Készítő: </string>
+    <string name="STR_NMS_MSG_DUMPER_MEMBERS">Tagok: </string>
+    <string name="STR_NMS_MSG_DUMPER_VCARD_NAME">Név: </string>
+    <string name="STR_NMS_MSG_DUMPER_CALENDAR_SUMMARY">Összegzés: </string>
+
+    <!-- Chat Settings -->
+    <string name="STR_NMS_CHAT_SETTING_TITLE">Csevegési beállítások</string>
+    <string name="STR_NMS_DISPLAY">Megjelenítés</string>
+    <string name="STR_NMS_CHAT_WALLPAPER">Csevegés háttere</string>
+    <string name="STR_NMS_SYS_WALLPAPER">Háttér kiválasztása</string>
+    <string name="STR_NMS_CAMEARPHOTO">Fénykép készítése</string>
+    <string name="STR_NMS_SYS_GALLERY">Választás galériából</string>
+    <string name="STR_NMS_DEFAULT_WALLPAPER">Alapértelmezett</string>
+    <string name="STR_NMS_NOTIFICATION_CATEGORY">Értesítés</string>
+    <string name="STR_NMS_NOTIFICATION_TITLE">iSMS értesítés</string>
+    <string name="STR_NMS_NOTIFICATION_CONTENT">Értesítések fogadásának megjelenítése</string>
+    <string name="STR_NMS_MUTE">Némítás</string>
+    <string name="STR_NMS_MUTE_OFF">Ki</string>
+    <string name="STR_NMS_MUTE_1">Némítás 1 órára</string>
+    <string name="STR_NMS_MUTE_4">Némítás 4 órára</string>
+    <string name="STR_NMS_MUTE_8">Némítás 8 órára</string>
+    <string name="STR_NMS_RINGTONE_TITLE">Csengőhang</string>
+    <string name="STR_NMS_RINGTONE_CONTENT">Csengőhang beállítása új értesítésekhez </string>
+    <string name="STR_NMS_VIBRATE_TITLE">Rezgés</string>
+    <string name="STR_NMS_VIBRATE_CONTENT">Rezgés értesítések fogadásakor</string>
+    <string name="STR_NMS_ACTIONS">Műveletek</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_TITLE">Csevegési előzmények letöltése</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_CONTENT">Mentés SD-kártyára ZIP formátumban</string>
+    <string name="STR_NMS_EMAIL_HISTORY_TITLE">E-mailes csevegési előzmények</string>
+    <string name="STR_NMS_EMAIL_HISTROY_CONTENT">E-mailes csevegési előzmények ZIP formátumban</string>
+    <string name="STR_NMS_CLEAR_HISTROY">Csevegési előzmények törlése</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_DLG">Letöltés...</string>
+    <string name="STR_NMS_DOWNLOAD_OK">Csevegési előzmények letöltése kész, mentés a következő néven: %s</string>
+    <string name="STR_NMS_DOWNLOAD_ERROR">Hiba a csevegési előzmények letöltése közben.</string>
+    <string name="STR_NMS_DOWNLOAD_EMPTY">Nincs mit letölteni.</string>
+    <string name="STR_NMS_CLEARING">Előzmények törlése, várjon...</string>
+    <string name="STR_NMS_WAIT_SAVE_WALLPAPER">Háttér mentése, várjon...</string>
+    <string name="STR_NMS_SAVE_WALLPAPER_OK">Háttér mentése sikerült.</string>
+    <string name="STR_NMS_CLEARDONE">Előzmények törlése sikerült.</string>
+    <string name="STR_NMS_SVAE_TITLE">Mentés SD-kártyára</string>
+    <string name="STR_NMS_SAVE_CONTENT">Csevegési szál mentése SD-kártyára ZIP fájlként</string>
+    <string name="STR_NMS_EMAIL_TITLE">Megosztás e-mailben</string>
+    <string name="STR_NMS_EMAIL_CONTENT">E csevegési szál megosztása e-mail mellékletként ZIP formátumban</string>
+
+    <!-- Chat Settings End -->
+
+
+    <!-- Profile Settings -->
+    <string name="STR_NMS_PROFILE_TITLE">Profil</string>
+    <string name="STR_NMS_TAP_AVATAR_TIP">Koppintson ide a profilkép szerkesztéséhez</string>
+    <string name="STR_NMS_DISPLAY_NAME_TIP">MEGJELENÍTETT NÉV</string>
+    <string name="STR_NMS_ACCOUNT_TIP">ISMS-FIÓK</string>
+    <string name="STR_NMS_NO_APP">Ezt a műveletet egy alkalmazás sem végezheti el.</string>
+    <string name="STR_NMS_NO_NAME">Név beállítása</string>
+    <string name="STR_NMS_SAVE_AVATAR_FAILD">Sajnos nem sikerült a profilkép mentése.</string>
+    <string name="STR_NMS_INPUT_NAME">Név</string>
+    <string name="STR_NMS_TERM_WARN_ACTIVATE">Ezt a funkciót csak az iSMS szolgáltatás támogatja.\n\nAz iSMS egy ingyenes azonnali üzenetküldő szolgáltatás, mely lehetővé teszi a csevegést és multimédiás tartalmak megosztását ismerőseivel bármikor és bárhol, internetes adatkapcsolat (Wi-Fi, 2G/3G stb.) segítségével.\nAz első aktiváláskor az iSMS automatikusan SMS-t küld, mely a regisztráció elvégzéséhez szükséges. SMS kvóta/díj lehet érvényben.\n\n Felhasználói megállapodás\n</string>
+    <string name="STR_NMS_TERM_WARN_WELCOME">Az iSMS egy ingyenes azonnali üzenetküldő szolgáltatás, mely lehetővé teszi a csevegést és multimédiás tartalmak megosztását ismerőseivel bármikor és bárhol, internetes adatkapcsolat (Wi-Fi, 2G/3G stb.) segítségével.\nAz első aktiváláskor az iSMS automatikusan SMS-t küld, mely a regisztráció elvégzéséhez szükséges. SMS kvóta/díj lehet érvényben.\n\n Felhasználói megállapodás\n</string>
+    <string name="STR_NMS_TERM_KEY">Feltételek</string>
+    <string name="STR_NMS_AGREE_AND_CONTINUE">Elfogadom és továbblépek</string>
+    <string name="STR_NMS_ACTIVE_BNT">Aktiválás</string>
+    <string name="STR_NMS_SET_PROFILE_OK">A profil beállítása sikerült</string>
+    <string name="STR_NMS_SET_PROFILE_FAIL">A profil beállítása nem sikerült</string>
+    <string name="STR_NMS_ILLEGAL_PROFILE_NAME">Érvénytelen név</string>
+    <string name="STR_NMS_NO_ACTIVITED">Nincs SIM-kártya aktiválva vagy engedélyezve.</string>
+    <!-- Profile Settings End -->
+
+
+    <!-- Term Activity -->
+    <string name="STR_NMS_REJECT">Nem fogadom el</string>
+    <string name="STR_NMS_AGREE">Elfogadom</string>
+    <string name="STR_NMS_TERM_TITLE">Szolgáltatási feltételek</string>
+    <string name="STR_NMS_TERM_CONTENT">Ön tudomásul veszi, hogy a szolgáltatás és a szolgáltatásban megtestesülő szoftver olyan biztonsági összetevőket is tartalmazhat, amelyek lehetővé teszik digitális anyagok védelmét, és hogy az ilyen anyagok használatára az AF PushMail és/vagy a szolgáltatás számára tartalmat biztosító szolgáltatók által felállított szabályok vonatkoznak. Az Ön számára tilos minden, a szolgáltatásba beágyazott használati szabályok bármelyikének felülbírálására, illetve megkerülésére tett kísérlet. A szolgáltatáson belül biztosított anyagok mindenfajta, akár részben, akár egészben történő, engedély nélküli sokszorosítása, közzététele, továbbterjesztése és nyilvános bemutatása szigorúan tilos.</string>
+    <!-- Term Activity End -->
+
+
+    <!-- System Settings -->
+    <string name="STR_NMS_SYS_SETTING_TITLE">iSMS üzenet</string>
+    <string name="STR_NMS_SETTINGS_TITLE">PROFIL</string>
+    <string name="STR_NMS_PREFERENCE_CATE">BEÁLLÍTÁSOK</string>
+    <string name="STR_NMS_SEND_SMS_TITLE">SMS küldése</string>
+    <string name="STR_NMS_SEND_SMS_CONTENT">SMS küldése, ha az iSMS nem érhető el. A szolgáltató üzenetküldési díjai lehetnek érvényesek. Ez a szabály nem vonatkozik csoportos csevegésre</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_TITLE">Automatikus letöltés</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_CONTENT">Multimédiás objektumok automatikus letöltése</string>
+    <string name="STR_NMS_CAPTION_TITLE">Képfeliratok</string>
+    <string name="STR_NMS_CAPTION_CONTENT">Fájl megosztása képfeliratokkal</string>
+    <string name="STR_NMS_SYSTEM_CATE">RENDSZER</string>
+    <string name="STR_NMS_UPDATE_TITLE">Szoftverfrissítés</string>
+    <string name="STR_NMS_UPDATE_CONTENT">Legutóbbi ellenőrzés: Soha</string>
+    <string name="STR_NMS_NETWORK_USAGE_TITLE">Hálózat felhasználása</string>
+    <string name="STR_NMS_NETWORK_USAGE_CONTENT">Összes elküldött/fogadott adatmennyiség megtekintése</string>
+    <string name="STR_NMS_NETWORK_DLG_CONTENT">Elküldött: %1$.3f K \nFogadott: %2$.3f K\nLegutóbbi nullázás: %3$s</string>
+    <string name="STR_NMS_VERSION_TITLE">Verzió</string>
+    <string name="STR_NMS_NEVER_CLEAR">Soha</string>
+    <string name="STR_NMS_RESET">Alaphelyzet</string>
+    <string name="STR_NMS_SWITCH_ON">BE</string>
+    <string name="STR_NMS_SWITCH_OFF">KI</string>
+    <string name="STR_NMS_SYSTEM_SETTING_TITLE">Beállítások</string>
+    <string name="STR_NMS_COPYRGIHT">Hesine Technologies, Inc.</string>
+    <string name="STR_NMS_ABOUT">Az iSMS névjegye</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_TITLE">Olvasási állapot</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_CONTENT">Olvasási állapot megjelenítése az üzenetlistán</string>
+    <string name="STR_NMS_SHOW_REMIND_TITLE">Emlékeztetők</string>
+    <string name="STR_NMS_SHOW_REMIND_CONTENT">iSMS emlékeztetők megjelenítése a csevegő képernyőn</string>
+    <string name="STR_NMS_MENU_RESET_SETTING">Alapértelmezett beállítások visszaállítása</string>
+    <string name="STR_NMS_MENU_FUNCTION_INTRODUCTION">Funkciók</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT">Felhasználói megállapodás</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION">Copyright</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT_TITLE">HESINE iSMS FELHASZNÁLÓI LICENCMEGÁLLAPODÁS</string>
+    <string name="STR_NMS_MENU_FUNCTION">Funkciók listája</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION_DETAIL">\nHesine Technologies Inc.\nCopyright© 2008-2013\nMinden jog fenntartva.\n</string>
+    <!-- System Settings End -->
+
+
+    <!-- Caption Settings -->
+    <string name="STR_NMS_AUDIO_TITLE">Hang</string>
+    <string name="STR_NMS_VIDEO_TITLE">Videók</string>
+    <string name="STR_NMS_PHOTO_TITLE">Fényképek</string>
+    <!-- Caption Settings End -->
+
+
+    <!-- Map String start -->
+    <string name="STR_NMS_MAP_TITLE">Hely megosztása</string>
+    <string name="STR_NMS_MAP_PROMPT">A térképet nem lehet megjeleníteni, mivel a helyszolgáltatás nincs bekapcsolva. A lenti cím a cellaadatokon alapuló becslés. \nPontosabb helyszolgáltatás érdekében célszerű bekapcsolni a helyszolgáltatást.</string>
+    <string name="STR_NMS_MAP_NOTE_1">Engedélyezze a Saját hely egyik forrását a rendszerbeállításoknál</string>
+    <string name="STR_NMS_MAP_SHARE">Megosztás</string>
+    <string name="STR_NMS_MAP_SETTINGS">Beállítások</string>
+    <string name="STR_NMS_MAP_OK">OK</string>
+    <string name="STR_NMS_MAP_CANCEL">Mégse</string>
+    <string name="STR_NMS_MAP_EDIT">Hely szerkesztése</string>
+    <string name="STR_NMS_MAP_SEARCH_HINT">Közeli helyek keresése</string>
+    <string name="STR_NMS_MAP_WAIT">Várjon...</string>
+    <string name="STR_NMS_MAP_EDIT_LIMIT">A beírt karakterek száma elérte a határértéket</string>
+    <string name="STR_NMS_MAP_ADDR_LEN">A cím túl hosszú</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR_LOCATING">Jelenlegi tartózkodási hely keresése...</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN_LOCATING">PIN helyének keresése...</string>
+    <string name="STR_NMS_MAP_LINEONE_SEARCH_LOCATING">Keresett hely keresése...</string>
+    <string name="STR_NMS_MAP_LINETHREE_NEARBY_LOCATING">Közeli helyek keresése...</string>
+    <string name="STR_NMS_MAP_LINEONE_FAILED">Tartózkodási helye jelenleg nem érhető el</string>
+    <string name="STR_NMS_MAP_LINETWO_FAILED">Ellenőrizze, hogy a helyszolgáltatás be van-e kapcsolva és a hálózat elérhető-e</string>
+    <string name="STR_NMS_MAP_LINETHREE_FAILED">Nem találhatók közeli helyek</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR">Jelenlegi tartózkodási hely megosztása</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN">PIN hely megosztása</string>
+    <string name="STR_NMS_MAP_MY_LOCATION">Saját hely</string>
+    <string name="STR_NMS_MAP_SEARCH">Keresés</string>
+    <string name="STR_NMS_MAP_ERROR_1">Nem sikerült a szélesség és a hosszúság lekérdezése</string>
+    <string name="STR_NMS_MAP_ERROR_2">A Google kiszolgálói hibajelzést adtak</string>
+    <!-- Map String end -->
+
+
+    <!-- All Media String start -->
+    <string name="STR_NMS_ALL_MEDIA_TITLE">Összes média</string>
+    <string name="STR_NMS_ALL_MEDIA_WAIT">Várjon...</string>
+    <string name="STR_NMS_ALL_MEDIA_ERROR">Nem sikerült betölteni, próbálja újra később</string>
+    <string name="STR_NMS_ALL_MEDIA_EMPTY">Üres</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_WEEK">E hét</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_MONTH">E hónap</string>
+    <string name="STR_NMS_ALL_MEDIA_JAN">január</string>
+    <string name="STR_NMS_ALL_MEDIA_FEB">február</string>
+    <string name="STR_NMS_ALL_MEDIA_MAR">március</string>
+    <string name="STR_NMS_ALL_MEDIA_APR">április</string>
+    <string name="STR_NMS_ALL_MEDIA_MAY">május</string>
+    <string name="STR_NMS_ALL_MEDIA_JUN">június</string>
+    <string name="STR_NMS_ALL_MEDIA_JUL">július</string>
+    <string name="STR_NMS_ALL_MEDIA_AUG">augusztus</string>
+    <string name="STR_NMS_ALL_MEDIA_SEPT">szeptember</string>
+    <string name="STR_NMS_ALL_MEDIA_OCT">október</string>
+    <string name="STR_NMS_ALL_MEDIA_NOV">november</string>
+    <string name="STR_NMS_ALL_MEDIA_DEC">december</string>
+    <string name="STR_NMS_ADDCONTACT">Ismerős hozzáadása</string>
+    <string name="STR_NMS_ADD_PHONE_CONTACT">Hozzáadja az ismerősökhöz a következőt: \"%1$s\"?</string>
+    <string name="STR_NMS_DELETE_MEDIA">Az adathordozó törlésre kerül. Folytatja?</string>
+    <string name="STR_NMS_MEDIA_SHARE_MESSAGE">%1$s megosztotta a következőnél: %2$s</string>
+
+    <!-- All Media String end -->
+
+
+    <!-- All Locations String start -->
+    <string name="STR_NMS_ALL_LOCATIONS_TITLE">Összes hely</string>
+    <string name="STR_NMS_ALL_LOCATIONS_LOC">Hely</string>
+    <string name="STR_NMS_ALL_LOCATIONS_WAIT">Várjon...</string>
+    <!-- All Locations String end -->
+
+
+    <!-- Sketch -->
+    <string name="STR_NMS_SKETCH_TITLE">Vázlat rajzolása</string>
+    <string name="STR_NMS_REDO">Ismétlés</string>
+    <string name="STR_NMS_UNDO">Visszavonás</string>
+    <string name="STR_NMS_SKETCH_CUSTOM">Egyéni</string>
+    <string name="STR_NMS_PEN_SIZE">Méret</string>
+    <string name="STR_NMS_SKETCH_TOOLS_PEN">Ceruza</string>
+    <string name="STR_NMS_SKETCH_TOOLS_ERASER">Radír</string>
+    <string name="STR_NMS_SKETCH_CUSTOM_COLOR">Egyéni szín</string>
+    <string name="STR_NMS_CLEAR_SKETCH_TITLE">Vázlat törlése</string>
+    <string name="STR_NMS_CLEAR_SKETCH_CONTENT">Törli a vázlatot?</string>
+    <string name="STR_NMS_SIZE_SKETCH_TITLE">Méret</string>
+    <string name="STR_NMS_SIZE_SKETCH_MAX">72</string>
+    <string name="STR_NMS_SIZE_SKETCH_MIN">2</string>
+    <string name="STR_NMS_COLOR_SKETCH_TITLE">Szín</string>
+    <string name="STR_NMS_SKETCH_ERROR">Nem sikerült vázlatot készíteni.</string>
+    <string name="STR_NMS_BACK_TITLE">Megerősítés</string>
+    <string name="STR_NMS_FINISH_SKETCH_CONTENT">Biztosan kilép a vázlatból?</string>
+    <string name="STR_NMS_LEAVE_SKETCH_CONTENT">Biztosan elveti ezt a vázlatot?</string>
+    <string name="STR_NMS_NOTREDO">Nincs mit ismételni</string>
+    <string name="STR_NMS_NOTUNDO">Nincs mit visszavonni</string>
+    <string name="STR_NMS_SKETCH_DELETE">Törlés</string>
+    <string name="STR_NMS_DISCARD">Elvetés</string>
+
+    <!-- Sketch end -->
+
+
+    <!-- Selection Contact -->
+    <string name="STR_NMS_DONE">OK</string>
+    <string name="STR_NMS_SELECTALL">Mindent kijelöl</string>
+    <string name="STR_NMS_DESELECTED">Mindent kijelölést töröl</string>
+    <string name="STR_NMS_SELECTED">%1$s kijelölve</string>
+    <string name="STR_NMS_CONTACT_SEARCH">Ismerősök keresése</string>
+    <string name="STR_NMS_SEARCH">Keresés</string>
+    <string name="STR_NMS_CONTACT_SELECT">Ismerős kijelölése</string>
+    <string name="STR_NMS_SELECT_MEMBER_FULL">Túl sok ismerős van kijelölve</string>
+    <string name="STR_NMS_SELECT_MEMBER_EMPTY">Egy ismerős sincs kijelölve</string>
+    <string name="STR_NMS_SELECT_CONTAT_WAIT">Várjon...</string>
+    <string name="STR_NMS_SELECT_CONTAT_EMPTY">Nincsenek iSMS ismerősök</string>
+    <string name="STR_NMS_SELECT_NO_RESULT">Egy sem található</string>
+    <string name="STR_NMS_EMPTY">Nincsenek ismerősök</string>
+    <string name="STR_NMS_ALL_CONTACTS">ÖSSZES</string>
+    <string name="STR_NMS_GROUPS_MEM"> %1$s tag</string>
+    <string name="STR_NMS_GROUPS_CONTACTS">ÖSSZES CSOPORT</string>
+    <!-- Selection Contact end -->
+
+    <!-- Group chat -->
+    <string name="STR_NMS_CREATE_GROUP_TITLE">Csoport létrehozása</string>
+    <string name="STR_NMS_GROUP_INFO_TITLE">Csoport adatai</string>
+    <string name="STR_NMS_EDIT_GROUP_TITLE">Csoport szerkesztése</string>
+    <string name="STR_NMS_SELECT_ACTION_TITLE">Művelet kijelölése</string>
+    <string name="STR_NMS_ADD_TO_BOOKMARK">Hozzáadás a könyvjelzőkhöz</string>
+    <string name="STR_NMS_ADD_TO_CONTACTS">%1$s hozzáadása az ismerősökhöz</string>
+    <string name="STR_NMS_GROUP_NAME">CSOPORT NEVE</string>
+    <string name="STR_NMS_GROUP_INFO">CSOPORT ADATAI</string>
+    <string name="STR_NMS_GROUP_MEMBERS">CSOPORT TAGJAI</string>
+    <string name="STR_NMS_GROUP_NAME_HIT">Csoport neve</string>
+    <string name="STR_NMS_GROUP_NAME_EMPTY">A csoport neve üres</string>
+    <string name="STR_NMS_CONFIRM_LEAVE_TITLE">Kilépés a csoportból</string>
+    <string name="STR_NMS_LEAVE_GROUP_CONTENT">Kilép a csoportból?</string>
+    <string name="STR_NMS_LEAVE_GROUP_SUCCESS">Kilépés a csoportból sikerült</string>
+    <string name="STR_NMS_LEAVE_GROUP_FAILED">Kilépés a csoportból nem sikerült</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_SUCCESS">Csoportnév frissítése sikerült</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_SUCCESS">Új csoporttagok hozzáadva</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_FAILED">Csoporttag hozzáadása nem sikerült</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_FAILED">Csoportnév frissítése nem sikerült</string>
+    <string name="STR_NMS_CREATE_GROUP_NAME_FAILED">Csoportos csevegés létrehozása nem sikerült</string>
+    <string name="STR_NMS_DELETE_GROUP_MEMBER_FAILED">Csoporttag eltávolítása nem sikerült</string>
+    <string name="STR_NMS_UPDATE_GROUP_SUCCESS">Csoportadatok frissítése sikerült</string>
+    <string name="STR_NMS_UPDATE_GROUP_FAILED">Csoportadatok frissítése nem sikerült</string>
+    <string name="STR_NMS_GROUP_CHAT_BACK">Elveti ezt a műveletet?</string>
+    <string name="STR_NMS_GROUP_MEMEBER_YOU">ÖN</string>
+    <string name="STR_NMS_GROUP_INVITE_MORE">Meghívás</string>
+    <string name="STR_NMS_LEAVE_GROUP">Ki a csoportból</string>
+    <string name="STR_NMS_CHAT">Csevegés</string>
+    <string name="STR_NMS_CONFIRM_REMOVE_TITLE">Eltávolítás a csoport taglistájáról</string>
+    <string name="STR_NMS_REMOVE_OK">Eltávolítás</string>
+    <string name="STR_NMS_REMOVE_CANCEL">Mégse</string>
+    <string name="STR_NMS_REMOVE_CONTENT">Eltávolítja ezt a listáról?</string>
+    <string name="STR_NMS_VIEW_ALL_MEDIA">Összes adathordozó</string>
+    <string name="STR_NMS_VIEW_ALL_LOCATIONS">Összes hely megtekintése</string>
+    <string name="STR_NMS_CHAT_SETTINGS">Csevegési beállítások</string>
+    <string name="STR_NMS_VIEW_GROUP_FAILED">Ön kilépett ebből a csoportos csevegésből.</string>
+    <string name="STR_NMS_VIEW_HISTORY">Csoport előzményeinek megtekintése</string>
+    <string name="STR_NMS_ISMS_ENABLE_TITLE">iSMS engedélyezése</string>
+    <string name="STR_NMS_ISMS_ENABLE_CONTENT">Ezt a funkciót csak az iSMS szolgáltatás támogatja. Engedélyezi most az iSMS fiókot?</string>
+    <string name="STR_NMS_ENABLE">Engedélyezés</string>
+    <string name="STR_NMS_LATER">Bezárás</string>
+    <string name="STR_NMS_SWITCH_TITLE">SIM átkapcsolás</string>
+    <string name="STR_NMS_SWITCH_MESSAGE">A csoportos csevegés csak az iSMS szolgáltatás aktivált állapotában támogatott, a jelenlegi SIM-kártya azonban nincs aktiválva. Átkapcsolja a SIM-kártyát aktivált állapotúra?</string>
+    <string name="STR_NMS_SWITCH_EDIT_MESSAGE">A jelenlegi SIM-kártya nincs ehhez a csoporthoz társítva. Átkapcsol a másik SIM-kártyára?</string>
+    <string name="STR_NMS_LEAVE_GROUP_NOTICE">Ön kilépett ebből a csoportból, és nem csatlakozhat ahhoz, csak ha ismét meghívják</string>
+    <string name="STR_NMS_LOSE_SIM_NOTICE">Az eredeti csevegés SIM-kártyája eltávolításra került. Ebben a csoportban csak az eredeti SIM-kártyával cseveghet</string>
+    <string name="STR_NMS_SWITCH">Átkapcsolás</string>
+
+    <!-- Group chat end -->
+
+
+    <!-- chat details screen long press item start -->
+    <string name="STR_NMS_LONG_PRESS_TITLE">Üzenet beállításai</string>
+    <string name="STR_NMS_SEND_VIA_TEXT">Küldés SMS-ben</string>
+    <string name="STR_NMS_TRY_AGAIN">Ismételt próbálkozás</string>
+    <string name="STR_NMS_TRY_ALL_AGAIN">Ismételt próbálkozás mindennel</string>
+    <string name="STR_NMS_CONTINUE_TRY">További próbálkozás</string>
+    <string name="STR_NMS_COPY">Másolás</string>
+    
+    <string name="STR_NMS_FORWARD">Továbbítás</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_TITLE">Letöltés</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD">Az iSMS továbbításához előbb le kell tölteni a médiatartalmat.</string>
+    <string name="STR_NMS_FORWARD_CONTIUE">Tovább</string>
+    <string name="STR_NMS_FORWARD_FAILED">A továbbítás nem sikerült.</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_MULTI">Többszörös továbbításhoz előbb le kell tölteni néhány iSMS-t.</string>
+    <string name="STR_NMS_FORWARD_SOME_FAILED">Egyes iSMS-ek továbbítása nem sikerült.</string>
+    <string name="STR_NMS_FORWARD_ALL_FAILED">A letöltés nem sikerült, a többszörös továbbítás elvetve</string>
+    
+    <string name="STR_NMS_SEND_VIA_MULTIMEDIA">Küldés MMS-ben</string>
+    <string name="STR_NMS_SHARE">Megosztás</string>
+    <string name="STR_NMS_DELETE">Törlés</string>
+    <string name="STR_NMS_FLAG_IMPORTANT">Megjelölés fontosként</string>
+    <string name="STR_NMS_REMOVE_IMPORTANT">Fontos jelzés eltávolítása</string>
+    <string name="STR_NMS_SAVE_IN_SDCARD">Exportálás SD-kártyára</string>
+    <string name="STR_NMS_SAVE_FILE">Fájl mentve ide: %1$s</string>
+    <string name="STR_NMS_SHARE_TITLE">A megosztás menete</string>
+    <string name="STR_NMS_VIEW_DETAILS">Részletek megtekintése</string>
+    <string name="STR_NMS_VIEW_DETAILS_TITLE">Üzenet részletei</string>
+    <string name="STR_NMS_SEND_MSG_DETAILS">Típus: IP üzenet\nElküldve: %1$s</string>
+    <!-- chat details screen long press item end -->
+
+
+    <!-- chat details screen delete item start -->
+    <string name="STR_NMS_DELETE_TITLE">Törlés</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_TITLE">Fontos üzenet törlése</string>
+    <string name="STR_NMS_DELETE_WARNING">Az üzenet törlésre kerül.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_WARNING">Biztosan törli ezt a fontos üzenetet?</string>
+    <string name="STR_NMS_DELETE_MSG">A kijelölt üzenetek törlésre kerülnek.</string>
+    <string name="STR_NMS_DELETE_WAITTING">Törlés</string>
+    <string name="STR_NMS_CLEAR_HISTORY_CONTENT">Ebben a csevegőben minden csevegési előzmény törlésre kerül.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT">Fontosként jelölt üzenetek hozzávétele</string>
+    <!-- chat details screen delete item end -->
+
+
+    <!-- chat details actionBar option start -->
+    <string name="STR_NMS_MENU_CALL">Hívás</string>
+    <string name="STR_NMS_MENU_GROUPINFO">Csoport adatai</string>
+    <string name="STR_NMS_MENU_INVITE_CHAT">Csevegés ismerősökkel</string>
+    <string name="STR_NMS_MENU_INVITE_ISMS">Ismerősök meghívása az iSMS használatára</string>
+    <string name="STR_NMS_MENU_SELECT_MSG">Üzenet kijelölése</string>
+    <string name="STR_NMS_MENU_MARK_SPAM">Áthelyezés a spam listára</string>
+    <string name="STR_NMS_MENU_REMOVE_SPAM">Eltávolítás a spam listáról</string>
+    <string name="STR_NMS_MENU_ADD_SHORTCUT">Hivatkozás hozzáadása</string>
+    <string name="STR_NMS_MENU_VIEW_ALLMEDIA">Összes adathordozó</string>
+    <string name="STR_NMS_MENU_VIEW_ALLLOCATION">Összes hely megtekintése</string>
+    <string name="STR_NMS_MENU_EDIT_GROUP">Csoport szerkesztése</string>
+    <string name="STR_NMS_MENU_CHAT_SETTING">Csevegési beállítás</string>
+    <string name="STR_NMS_MENU_INSERT_QUICK_TEXT">Gyorsszöveg beszúrása</string>
+    <string name="STR_NMS_MENU_CLEAR_HISTORY">Előzmények törlése</string>
+    <string name="STR_NMS_MENU_LEAVE_GROUP">Kilépés a csoportból</string>
+    <string name="STR_NMS_MENU_DISCARD">Elvetés</string>
+    <string name="STR_NMS_MENU_DELETE">Törlés</string>
+    <string name="STR_NMS_MENU_IMPORTANT">Megjelölés fontosként</string>
+    <string name="STR_NMS_MENU_FORWARD">Továbbítás</string>
+    <!-- chat details actionBar option end -->
+
+
+    <!-- chat details share item start -->
+    <string name="STR_NMS_TAKE_PHOTO">Fénykép készítése</string>
+    <string name="STR_NMS_RECORD_VIDEO">Videó rögzítése</string>
+    <string name="STR_NMS_DRAW_SKETCH">Vázlat rajzolása</string>
+    <string name="STR_NMS_SHARE_CONTACT">Névjegy megosztása</string>
+    <string name="STR_NMS_CHOOSE_PHOTO">Fénykép választása</string>
+    <string name="STR_NMS_CHOOSE_VIDEO">Videó választása</string>
+    <string name="STR_NMS_RECORD_AUDIO">Hang rögzítése</string>
+    <string name="STR_NMS_SHARE_LOCATION">Hely megosztása</string>
+    <string name="STR_NMS_CHOOSE_AUDIO">Hang választása</string>
+    <string name="STR_NMS_SHARE_CALENDAR">Naptár megosztása</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_TITLE">Zene hozzáadása</string>
+    <string name="STR_NMS_CHOOSE_RINGTONE_ITEM">Csengőhang</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_ITEM">Hang</string>
+    <string name="STR_NMS_INSERT_SDCARD">Helyezzen be SD-kártyát.</string>
+    <!-- chat details share item start -->
+
+
+    <!-- record audio start -->
+    <string name="STR_NMS_AUDIO_TIMER_FORMAT" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <string name="STR_NMS_AUDIO_LABLE">Hangmegjegyzés-rögzítő</string>
+    <string name="STR_NMS_RECORD_AUDIO_CONT">Koppintson ide a rögzítéshez</string>
+    <string name="STR_NMS_PLAY_AUDIO_CONT">Koppintson ide a lejátszáshoz</string>
+    <string name="STR_NMS_ACTION_SEND">Küldés</string>
+    <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
+    <string name="audio_db_artist_name">Saját felvételek</string>
+    <string name="audio_db_album_name">Hangfelvételek</string>
+    <!-- record audio end -->
+
+
+    <!-- chat & group details screen start -->
+
+    <string name="STR_NMS_UNREAD_FORMAT">%1$d olvasatlan üzenet</string>
+    <string name="STR_NMS_NOT_DELIVERED_TITLE">Még kézbesítetlen</string>
+    <string name="STR_NMS_FAILED_TITLE">Küldési hiba</string>
+    <string name="STR_NMS_GROUP_SUBTITLE">%1$s, +%2$d</string>
+    <string name="STR_NMS_GROUP_DEAD_SUBTITLE">%1$s, %2$d</string>
+    <string name="STR_NMS_SAVE_AS_DRAFT">Üzenet piszkozatként mentve</string>
+    <string name="STR_NMS_NO_SD_TITLE">SD-kártya hibája</string>
+    <string name="STR_NMS_CANT_SHARE">Az SD-kártyához nem lehet hozzáférni. A multimédiás jellegű funkciók használata jelenleg nem érhető el.\n\nEllenőrizze az SD-kártyát, és próbálja meg később újra.</string>
+    <string name="STR_NMS_CANT_SAVE">Az SD-kártya nem észlelhető, a fájl mentése nem sikerült</string>
+    <string name="STR_NMS_SDSPACE_NOT_ENOUGH">Az SD-kártyán rendelkezésre álló szabad terület nem elegendő, a fájl mentése nem sikerült.</string>
+    <string name="STR_NMS_REAEND_ALL">Ismételt próbálkozás mindennel...</string>
+    <string name="STR_NMS_FILE_LIMIT">Túl nagy</string>
+    <string name="STR_NMS_LOAD_ALL_MESSAGE">Összes üzenet betöltése</string>
+    <string name="STR_NMS_DOWNLOAD_FAILED">Letöltés nem sikerült</string>
+    <string name="STR_NMS_INPUT_HINT">Tartalom bevitele</string>
+    <string name="STR_NMS_INPUT_HINT_ISMS">iSMS üzenet beírása</string>
+    <string name="STR_NMS_CAPTION_HINT">Képfeliratok beírása</string>
+    <string name="STR_NMS_PROTOCOL_SMS">SMS</string>
+    <string name="STR_NMS_PROTOCOL_MMS">MMS</string>
+    <string name="STR_NMS_PROTOCOL_IP">iSMS</string>
+    <string name="STR_NMS_SWITCH_BOTTON">SIM átkapcsolása</string>
+    <string name="STR_NMS_TURN_ON_BOTTON">Bekapcsolás</string>
+    <string name="STR_NMS_SWITCH_TEXT_FORMAT">A csoportos csevegés folytatásához előbb kapcsoljon át a(z) %1$s SIM-kártyára.</string>
+    <string name="STR_NMS_ENABLE_TEXT_FORMAT">A csoportos csevegés folytatásához előbb kapcsolja be az iSMS szolgáltatást a(z) %1$s SIM-kártyán.</string>
+    <string name="STR_NMS_REPLACE_ATTACH_TITLE">Melléklet cseréje</string>
+    <string name="STR_NMS_REPLACE_ATTACH_MSG">Már van egy melléklet. Lecseréli?</string>
+    <string name="STR_NMS_TRUNC_CAPTION">A képfeliratot a rendszer csonkította.</string>
+    <string name="STR_NMS_MAX_CHARACTERS_REACHED">Az üzenet elérte a méret határértékét.</string>
+    <string name="STR_NMS_MAX_EMOTICON_REACHED">Hangulatjelek határértéke elérve</string>
+    <string name="STR_NMS_ENABLE_PROCESS">Feldolgozás...</string>
+    <string name="STR_NMS_ERR_FILE">Érvénytelen fájl</string>
+    <string name="STR_NMS_SENDING_TEXT">Küldés...</string>
+    <!-- chat & group details screen end --> <!-- Error code tips -->
+    <string name="STR_NMS_ERR_GENERAL">Általános hiba</string>
+    <string name="STR_NMS_ERR_INVALID_ARGUMENT">Érvénytelen argumentum</string>
+    <string name="STR_NMS_ERR_NETWORK_BLOCK">A hálózattal valami nincs rendben</string>
+    <string name="STR_NMS_ERR_PHONE_NOT_ACTIVATED">Nincs aktiválva</string>
+    <string name="STR_NMS_ERR_SIM_NOT_ACTIVATED">A SIM-kártya nincs aktiválva</string>
+    <string name="STR_NMS_ERR_INVALID_MSG_DB_ID">Érvénytelen üzenet adatbázis-azonosító</string>
+    <string name="STR_NMS_ERR_ADD_MSG_DB_FAILED">Nem sikerült az adatbázisba beszúrni</string>
+    <string name="STR_NMS_ERR_UPDATE_MSG_DB_FAILED">Nem sikerült az adatbázist frissíteni</string>
+    <string name="STR_NMS_ERR_GET_MSG_DB_DATA_FAILED">Nem sikerült az üzenetet lekérdezni</string>
+    <string name="STR_NMS_ERR_INVALID_CONTACT_DB_ID">Érvénytelen névjegy adatbázis-azonosító</string>
+    <string name="STR_NMS_ERR_ADD_CONTACT_DB_FAILED">Nem sikerült a névjegyek közé beszúrni</string>
+    <string name="STR_NMS_ERR_UPDATE_CONTACT_DB_FAILED">Nem sikerült a névjegyek adatbázisát frissíteni</string>
+    <string name="STR_NMS_ERR_GET_CONTACT_DB_DATA_FAILED">Nem sikerült lekérdezni a névjegyet azonosító alapján</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_ERROR_FORMAT">Érvénytelen IP üzenetformátum</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_INVALID_TO">Érvénytelen címzett</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_WITH_UNKNOWN_USER">Érvénytelen ismeretlen címzett felhasználó</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_NO_MBMBER">A csoportos csevegésnek nincsenek tagjai</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_GCHAT_DEAD">A csoportos csevegés nincs aktiválva</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_INVALID_SIM_ID">A csoportos csevegés SIM-kártyája nem azonos a jelenlegi SIM-kártyával</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_FOR_SYS_MSG">Rendszerüzenet elküldése ismét</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_INVALID_STATUS">Az IP üzenet nincs készen</string>
+    <string name="STR_NMS_ERR_GCHAT_IS_DEAD">Ez a csoportos csevegés már nem létezik</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBERS">Érvénytelen csoporttagok</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBER_WITH_SELF">Csoport létrehozása nem sikerült A tagok közt Ön nem szerepel</string>
+    <string name="STR_NMS_ERR_GCHAT_EXCEED_MAX_MEMBER_COUNT">A csoporttagok száma eléri a határértéket</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_NAME">Érvénytelen csoportos csevegési név</string>
+    <string name="STR_NMS_ERR_GCHAT_SIM_IS_NOT_ACTIVATED">A csoportos csevegés SIM-kártyája nincs aktiválva</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_NOT_INBOX_MSG">Nem sikerült lekérdezni a letöltési URL-t</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_INVALID_URL">Érvénytelen letöltési URL</string>
+    <string name="STR_NMS_ERR_GET_ATTACH_NAME_INVALID_BODY_FORMAT">Nem sikerült lekérdezni a letöltési fájlnevet</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_INVALID_FILE_NAME">Érvénytelen letöltési fájlnév</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_EXIST">A letöltési fájl nem létezik</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_INBOX_MSG">Nem sikerült beállítani a letöltési fájlt</string>
+    <string name="STR_NMS_ERR_SIM_INFO_NOT_FOUND">A SIM-kártya adatai nem találhatók</string>
+    <string name="STR_NMS_ERR_SIM_IN_INVALID_STATUS">SIM-kártya érvénytelen állapota</string>
+    <string name="STR_NMS_ERR_CMD_PROCESSING">A rendszer foglalt, és nem tudja kezelni a rendszerkonfigurációs parancsot</string>
+    <string name="STR_NMS_ERR_CMD_GENERAL">Általános rendszerkonfigurációs hiba</string>
+    <string name="STR_NMS_ERR_CODE_END">Ismeretlen hibakód</string>
+    <!-- Error code tips -->
+    <string name="STR_NMS_SEND_MMS_QUERY_TITLE">Figyelmeztetés</string>
+    <string name="STR_NMS_SEND_MMS_QUERY">A címzett nem iSMS-felhasználó. Elküldi MMS-ben?</string>
+    <!-- Service center start -->
+    <string name="STR_NMS_SERVICE_TITLE">iSMS szolgáltatási központ</string>
+    <string name="STR_NMS_INTRODUCTION">Az iSMS segítségével azonnal kézbesítheti az ingyenes üzeneteket, és csevegési előzményeit egyetlen helyen tárolhatja. Nyomjon meg egy gombot – új élmény vár Önre!</string>
+    <string name="STR_NMS_TERMS">Feltételek</string>
+    <string name="STR_NMS_ACTIVATION_BUTTON">Aktiválás most</string>
+    <string name="STR_NMS_LOSE_SDCARD">SD-kártya nem észlelhető</string>
+    <!-- Service center end -->
+
+
+    <!-- conversation empty tips -->
+    <string name="STR_NMS_SPAM_EMPTY">Nincs spam beszélgetés. \nA SPAM gyűjti az összes, spamként megjelölt beszélgetést. Az értesítés alapértelmezés szerint ki van kapcsolva. Ily módon feleslegesen nem zavarja Önt. \n\nEgy-egy feladót úgy jelölhet meg spamküldőként, ha beszélgetés közben kiválasztja a Megjelölés spamként ikont. Ha egy beszélgetést spamként jelöl meg, automatikusan értesítő ikon jelenik meg, és a beszélgetés idekerül.</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_FROM">+86123456789</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_SUBJECT">Ez példa a spam üzenetre.</string>
+    <string name="STR_NMS_GROUPCHAT_EMPTY">Nincs csoportos csevegési üzenete. \nA CSOPORTOS CSEVEGÉSEK összegyűjti az összes, olyan csoportos csevegést, amelyet Ön hozott létre vagy amelyhez csatlakozott. Ily módon könnyen megtalálhatja és kezelheti a csoportos csevegéseket. \n\nCsoportos csevegés létrehozásához koppintson a Csoportos csevegés létrehozása gombra a képernyő alján, majd hívja meg ismerőseit, hogy csatlakozzanak a csoporthoz.</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_FROM">Csoport neve</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_SUBJECT">Az Ön ismerőse:\nTetszik nekem a csoportos csevegés funkció!</string>
+    <string name="STR_NMS_IMPORTANT_EMPTY">Nincs fontos üzenete. \nA FONTOS összegyűjti a fontosként megjelölt üzeneteket. Ily módon könnyen megtalálhatja a fontos üzeneteket. \n\nÚgy jelölhet meg üzenetet fontosként, hogy az üzenetben az Opciók menüben kiválasztja a Megjelölés fontosként elemet. Ha egy üzenet fontosként van megjelölve, a lent látható piros zászló ikon jelenik meg.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TITLE">Ez példa a fontosként megjelölt üzenetre. Piros zászló jelenik meg.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TIME">de. 10:55</string>
+    <string name="STR_NMS_ALLCHAT_EMPTY">Nincsenek beszélgetések</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_CONTENT">A funkció használatához előbb aktiválnia kell az iSMS szolgáltatást. Ne aggódjon: ha nem tetszik a szolgáltatás, a Beállításokban mindig kikapcsolhatja. Próbálja ki most!</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_TITLE">iSMS aktiválása</string>
+    <!-- conversation empty tips -->
+    
+    <string name="STR_NMS_CLEAR_USER_DATA">Adatok törlése sikerült</string>
+    
+    <!-- get file err start -->
+    <string name="STR_NMS_NO_SUCH_FILE">Nincs ilyen fájl</string>
+    <string name="STR_NMS_OVER_FILE_LIMIT">A fájl mérete meghaladja a határértéket</string>
+    <string name="STR_NMS_INVALID_FILE_TYPE">Nem támogatja ezt a típust</string>
+    <!-- get file err end -->
+
+    <string name="STR_NMS_DELIVERY_BODY">Üzenetet fogadta: %s</string>
+    <string name="STR_NMS_SIM_SELECT_TITLE">SIM választása</string>
+    
+    <string name="STR_NMS_SHORTCUT_SUCCESS">%1$s hivatkozás létrehozva.</string>
+    <string name="STR_NMS_SHORTCUT_REFRESHING">Frissítés</string>
+    
+    <string name="STR_NMS_DISABLE_FAILED">A művelet nem sikerült. Próbálja újra</string>
+    <string name="STR_NMS_ENABLE_FAILED">A művelet nem sikerült. Próbálja újra</string>
+    <string name="STR_NMS_ENABLE_SUCCESS">Az iSMS szolgáltatás aktiválása sikerült</string>
+    <string name="STR_NMS_DISABLE_SUCCESS">Az iSMS szolgáltatás inaktiválása sikerült</string>
+    
+	<string name="STR_NMS_SD_CARD_FULL">SD-kártya megtelt</string>
+    <string name="STR_NMS_SEND_MSG_FAILED">Az üzenetküldés nem sikerült!</string>
+    <string name="STR_NMS_SELECT_AUDIO">Válasszon hangot</string>
+    
+    <string name="STR_NMS_SETTING_COMMENT"> Az iSMS egy remek csevegőeszköz. Ingyenes és kényelmes. Tudjon meg többet</string>
+    <string name="STR_NMS_KNOW_MORE">Tudjon meg többet</string>
+    <string name="STR_NMS_RECEIVED_MSG_DETAILS">Típus: IP üzenet\nInnen: %1$s\nElküldve: %2$s\nFogadva: %3$s</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH_ADD">iSMS szolgáltatás átmenetileg nem érhető hiánya miatt tárhely.</string>
+    <string name="STR_NMS_SERVER_AUTO_ECHO_MSG">Üzenet érkezett. Köszönjük!</string>
+    
+    <string name="imsp_ip_message">iSMS üzenet</string>
+    <string name="imsp_invite_chat_frequently"><b>Gyakran szokott a következő személlyel csevegni: %s?</b>\nKérje meg, hogy használja az iSMS-t, és így mindketten pénzt takaríthassanak meg.</string>
+    <string name="imsp_enable_chat_frequently"><b>%s iSMS szolgáltatása le van tiltva!</b>\nEngedélyezze az iSMS szolgáltatást, így mindketten pénzt takaríthatnak meg.</string>
+    <string name="imsp_invite">Meghívás</string>
+    <string name="imsp_enable_notice">Biztosan engedélyezi az iSMS szolgáltatást?</string>
+    <string name="imsp_activate_chat_frequently"><b>Gyakran szokott barátaival csevegni?</b>\nTelepítse az iSMS szolgáltatást, hogy SMS-díj nélkül cseveghessen.</string>
+    <string name="imsp_activate_note">Biztosan bekapcsolja az iSMS szolgáltatást?</string>
+    <string name="imsp_dismiss_content">Biztosan bezárja a megjegyzést?</string>
+    <string name="imsp_divider_online">%s online</string>
+    <string name="imsp_divider_offline">Legutóbbi online időpont: %s</string>
+    <string name="imsp_divider_never_online">Soha nem volt online</string>
+    <string name="imsp_failed_title">Küldés nem sikerült</string>
+    <string name="imsp_resend_via_sms">Küldjön helyette SMS-t</string>
+    <string name="imsp_resend_via_mms">Küldjön helyette MMS-t</string>
+    <string name="imsp_typing_text">Gépelés</string>
+    <string name="imsp_save_attachment">Melléklet mentése</string>
+    <string name="imsp_view">Megtekintés</string>
+    <string name="imsp_convert_to_mms">Átalakítás MMS-sé.</string>
+    <string name="imsp_convert_to_sms">Átalakítás SMS-sé.</string>
+    <string name="imsp_convert_to_isms">Átalakítás iSMS-sé.</string>
+    <string name="imsp_convert_to_mms_for_service">Az iSMS szolgáltatás ezen a kiválasztott SIM-kártyán nem érhető el. Ezt az üzenetet MMS-ben csak ezen a SIM-kártyán lehet elküldeni. Így is folytatja?</string>
+    <string name="imsp_convert_to_sms_for_service">Az iSMS szolgáltatás ezen a kiválasztott SIM-kártyán nem érhető el. Ezt az üzenetet SMS-ben csak ezen a SIM-kártyán lehet elküldeni. Így is folytatja?</string>
+    <string name="imsp_convert_to_mms_for_recipients">A címzett(ek) nem iSMS felhasználó(k) Ezt az üzenetet csak MMS-ben lehet elküldeni. Így is folytatja?</string>
+    <string name="imsp_convert_to_sms_for_recipients">A címzett(ek) nem iSMS felhasználó(k) Ezt az üzenetet csak SMS-ben lehet elküldeni. Így is folytatja?</string>
+    <string name="imsp_sms_convert_to_isms">Az iSMS szolgáltatás ezen a kiválasztott SIM-kártyán elérhető. Az SMS díjának megtakarítása érdekében célszerű az üzenetet iSMS-re váltani. Átvált most?</string>
+    <string name="imsp_mms_convert_to_isms">Az iSMS szolgáltatás ezen a kiválasztott SIM-kártyán elérhető. Az MMS díjának megtakarítása érdekében célszerű az üzenetet iSMS-re váltani. Átvált most?</string>
+    <string name="imsp_keep_mms">MMS megtartása</string>
+    <string name="imsp_keep_sms">SMS megtartása</string>
+    <string name="imsp_resend_discard_message">Az üzenet ismételt elküldéséhez a jelenleg írt üzenetet a rendszer törli.</string>
+    <string name="imsp_no_sim_card">Nincs SIM-kártya!</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">"Nem található működő internetkapcsolat. Próbálja meg később."</string>
+    <string name="imsp_chat_setting_updating">frissítés...</string>
+    <string name="imsp_dialog_clear_title">Törlés</string>
+    <string name="imsp_dialog_clear_description">Ebben a csevegőben minden csevegési előzmény törlésre kerül.</string>
+    <string name="imsp_chat_setting_saving">mentés...</string>
+    <string name="imsp_chat_setting_sending">küldés...</string>
+    <string name="imsp_save_chat_history_failed">mentés nem sikerült</string>
+    <string name="imsp_send_chat_history_failed">E-mail nem sikerült</string>
+    <string name="imsp_conversation_list_all">Üzenetek</string>
+    <string name="imsp_conversation_list_important">Fontos</string>
+    <string name="imsp_conversation_list_group_chats">Csoport</string>
+    <string name="imsp_conversation_list_spam">Spam</string>
+    <string name="imsp_mark_as_spam_tips">A Spamként jelölt üzenetek a Spam listára kerülnek, és automatikusan kikapcsolják az értesítést.</string>
+    <string name="imsp_typing">"Gépelés..."</string>
+    <string name="imsp_type_to_compose_text">"SMS/iSMS üzenet beírása"</string>
+    <string name="imsp_no_sdcard">Nincs SD-kártya</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">A meghívó elküldéséhez a jelenleg írt üzenetet a rendszer törli.</string>
+    <string name="imsp_current_sim_enabled">A jelenlegi SIM kártya engedélyezve van.</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">SIM kártya kiválasztása az iSMS bekapcsolásához</string>
+    <string name="imsp_activate_message">Ezt a funkciót csak az iSMS szolgáltatás támogatja. Bekapcsolja most az iSMS fiókot?</string>
+    <string name="imsp_enable_message">Ezt a funkciót csak az iSMS szolgáltatás támogatja. Engedélyezi most az iSMS fiókot?</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">SIM kártya kiválasztása az iSMS engedélyezéséhez</string>
+    <string name="imsp_switch_sim_title">SIM átkapcsolása</string>
+    <string name="imsp_switch_sim_message">A jelenlegi SIM kártya nem támogatja az iSMS-t. Átkapcsol másik SIM-kártyára?</string>
+    <string name="imsp_switch_sim_successfully">SIM kártya átváltása sikerült.</string>
+    <string name="imsp_dailog_multi_forward">Üzenetek továbbítása</string>
+    <string name="imsp_dialog_send_result">Küldés eredménye</string>
+    <string name="imsp_dlg_send_all">Összes: %s</string>
+    <string name="imsp_dlg_send_sucess">Elküldött: %s</string>
+    <string name="imsp_dlg_send_failed">Nem sikerült: %s</string>
+    <string name="imsp_multi_forward_sim_info">SIM kártya adatainak lekérdezése</string>
+    <string name="imsp_multi_forward_no_sim">A SIM kártyának nincsenek adatai</string>
+    <string name="imsp_get_sim_failed">SIM kártya adatainak lekérdezése nem sikerült</string>
+    <string name="imsp_sim_status_error">SIM kártya állapothibája</string>
+    <string name="imsp_forward_norecipients">Az üzenettovábbításhoz nincs(enek) címzett(ek)</string>
+    <string name="imsp_multiforward_no_message">Nincs(enek) továbbítható üzenet(ek)</string>
+    <string name="imsp_need_input_recipients">Előbb adjon meg legalább egy címzettet</string>
+    <string name="imsp_spam_empty">Nincs spam beszélgetés. \nA SPAM gyűjti az összes, spamként megjelölt beszélgetést. Az értesítés alapértelmezés szerint ki van kapcsolva. Ily módon feleslegesen nem zavarja Önt. \n\nEgy-egy feladót úgy jelölhet meg spamküldőként, ha beszélgetés közben kiválasztja a Megjelölés spamként ikont. Ha egy beszélgetést spamként jelöl meg, automatikusan értesítő ikon jelenik meg, és a beszélgetés idekerül.</string>
+    <string name="imsp_groupchat_empty">Nincs csoportos csevegési üzenete. \nA CSOPORTOS CSEVEGÉSEK összegyűjti az összes, olyan csoportos csevegést, amelyet Ön hozott létre vagy amelyhez csatlakozott. Ily módon könnyen megtalálhatja és kezelheti a csoportos csevegéseket. \n\nCsoportos csevegés létrehozásához koppintson a Csoportos csevegés létrehozása gombra a képernyő alján, majd hívja meg ismerőseit, hogy csatlakozzanak a csoporthoz.</string>
+    <string name="imsp_important_empty">Nincs fontos üzenete. \nA FONTOS összegyűjti a fontosként megjelölt üzeneteket. Ily módon könnyen megtalálhatja a fontos üzeneteket. \n\nÚgy jelölhet meg üzenetet fontosként, hogy az üzenetben az Opciók menüben kiválasztja a Megjelölés fontosként elemet. Ha egy üzenet fontosként van megjelölve, a lent látható piros zászló ikon jelenik meg.</string>
+    <string name="imsp_allchat_empty">Nincsenek beszélgetések</string>
+    <string name="imsp_attach_slideshow">Diavetítés</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">Letöltés...</string>
+    <string name="imsp_invite_friends_to_ipmsg">Ismerősök meghívása az iSMS használatára</string>
+    <string name="imsp_multi_forward_tips_content">Többszörös továbbításhoz előbb le kell tölteni néhány iSMS-t.</string>
+    <string name="imsp_multi_forward_failed_part">Egyes iSMS-ek továbbítása nem sikerült.</string>
+</resources>

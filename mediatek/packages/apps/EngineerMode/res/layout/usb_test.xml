@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/TableLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3pt"
+            android:text="@string/USB_IF_Elec_Test_Text" >
+        </TextView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#FF909090" >
+        </View>
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt"
+                android:text="@string/USB_IF_Elec_EnVBUS_Text" >
+            </TextView>
+
+            <Button
+                android:id="@+id/USB_IF_Elec_EnVBUS_Start_ID"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:text="@string/USB_IF_START_Text" >
+            </Button>
+
+            <Button
+                android:id="@+id/USB_IF_Elec_EnVBUS_Stop_ID"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:text="@string/USB_IF_STOP_Text" >
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt"
+                android:text="@string/USB_IF_Elec_DeVBUS_Text" >
+            </TextView>
+
+            <Button
+                android:id="@+id/USB_IF_Elec_DeVBUS_Start_ID"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:text="@string/USB_IF_START_Text" >
+            </Button>
+
+            <Button
+                android:id="@+id/USB_IF_Elec_DeVBUS_Stop_ID"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:text="@string/USB_IF_STOP_Text" >
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt"
+                android:text="@string/USB_IF_Elec_EnSRP_Text" >
+            </TextView>
+
+            <Button
+                android:id="@+id/USB_IF_Elec_EnSRP_Start_ID"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:text="@string/USB_IF_START_Text" >
+            </Button>
+
+            <Button
+                android:id="@+id/USB_IF_Elec_EnSRP_Stop_ID"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:text="@string/USB_IF_STOP_Text" >
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt"
+                android:text="@string/USB_IF_Elec_DeSRP_Text" >
+            </TextView>
+
+            <Button
+                android:id="@+id/USB_IF_Elec_DeSRP_Start_ID"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:text="@string/USB_IF_START_Text" >
+            </Button>
+
+            <Button
+                android:id="@+id/USB_IF_Elec_DeSRP_Stop_ID"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:text="@string/USB_IF_STOP_Text" >
+            </Button>
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dip"
+            android:background="#FF00FF00" >
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3pt"
+            android:text="@string/USB_IF_Proto_Test_Text" >
+        </TextView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#FF909090" >
+        </View>
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt"
+                android:text="@string/USB_IF_Proto_AUUT_Text" >
+            </TextView>
+
+            <Button
+                android:id="@+id/USB_IF_Proto_AUUT_Start_ID"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:text="@string/USB_IF_START_Text" >
+            </Button>
+
+            <Button
+                android:id="@+id/USB_IF_Proto_AUUT_Stop_ID"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:text="@string/USB_IF_STOP_Text" >
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3pt"
+                android:text="@string/USB_IF_Proto_BUUT_Text" >
+            </TextView>
+
+            <Button
+                android:id="@+id/USB_IF_Proto_BUUT_Start_ID"
+                android:layout_width="65dip"
+                android:layout_height="wrap_content"
+                android:text="@string/USB_IF_START_Text" >
+            </Button>
+
+            <Button
+                android:id="@+id/USB_IF_Proto_BUUT_Stop_ID"
+                android:layout_width="65dip"
+                android:layout_height="wrap_content"
+                android:text="@string/USB_IF_STOP_Text" >
+            </Button>
+
+            <Button
+                android:id="@+id/USB_IF_Proto_BUUT_TD5_9_ID"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:text="@string/USB_IF_TD5_9_Text" >
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

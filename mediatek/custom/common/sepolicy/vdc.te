@@ -1,0 +1,37 @@
+# ==============================================
+# Policy File of /system/binvdc Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type vdc_exec , exec_type, file_type;
+type vdc ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive vdc;
+init_daemon_domain(vdc)
+
+
+# 20131122 Add Set Property Rule
+allow vdc  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow vdc device:chr_file { read ioctl open };
+allow vdc init:unix_stream_socket { read write };
+allow vdc linker_exec:file read;
+allow vdc vold:unix_stream_socket connectto;
+allow vdc vold_socket:sock_file write;
+

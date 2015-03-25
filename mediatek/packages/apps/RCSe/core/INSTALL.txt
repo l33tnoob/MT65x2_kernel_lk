@@ -1,0 +1,31 @@
+INSTALLATION PROCEDURE via USB - RCS Android Terminal by OrangeLabs
+-------------------------------------------------------------------
+
+0. Enter your phone into "USB debugging mode"
+	
+Go to the "Settings" application, menu "Applications", "Development".
+
+
+1. Install RCS applications:
+	
+	adb -d install "RCS_yyyyy-xxx.apk"
+
+2. Starts applications:
+
+Boot your device or start the service from the RCS settings application:
+  - Open the application "RCS settings" from the notification bar.
+  - If DIGEST authentication: Items "Settings/User profile", Menu "Generate values", Choose the desired IMS network, Enter your phone number.
+  - Unselect/Select the "RCS service activation" flag from the main settings screen to force a restart of the service or boot the device.
+
+
+3. Uninstall procedure:
+
+Go to the "Settings" application, menu "Applications".
+
+
+Contact:
+--------
+
+OrangeLabs, ASC Devices
+jeanmarc.auffret@orange-ftgroup.com
+

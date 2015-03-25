@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * Copyright (C) 2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ --><resources> 
+    <string name="default_location" translatable="false">-1</string>  
+    <string-array name="supported_locations"> 
+        <item>자동 선택</item>  
+        <item>중국</item>  
+        <item>대만</item>  
+        <item>중국 선전</item>  
+        <item>중국 홍콩</item>  
+        <item>아프가니스탄</item>  
+        <item>아르헨티나</item>  
+        <item>오스트레일리아</item>  
+        <item>브라질</item>  
+        <item>미얀마</item>  
+        <item>캄보디아</item>  
+        <item>캐나다</item>  
+        <item>칠레</item>  
+        <item>동유럽</item>  
+        <item>서유럽</item>  
+        <item>프랑스</item>  
+        <item>프랑스령 국가</item>  
+        <item>인도</item>  
+        <item>인도네시아</item>  
+        <item>이란</item>  
+        <item>이탈리아</item>  
+        <item>일본</item>  
+        <item>한국</item>  
+        <item>라오스</item>  
+        <item>말레이시아</item>  
+        <item>멕시코</item>  
+        <item>뉴질랜드</item>  
+        <item>파키스탄</item>  
+        <item>파라과이</item>  
+        <item>필리핀</item>  
+        <item>포르투갈</item>  
+        <item>러시아</item>  
+        <item>싱가포르</item>  
+        <item>남아프리카</item>  
+        <item>스페인</item>  
+        <item>태국</item>  
+        <item>터키</item>  
+        <item>아랍에미레이트연방</item>  
+        <item>영국</item>  
+        <item>미국</item>  
+        <item>우루과이</item>  
+        <item>베네수엘라</item>  
+        <item>베트남</item>  
+        <item>아일랜드</item>  
+        <item>모로코</item> 
+    </string-array>  
+    <string-array translatable="false" name="supported_location_codes"> 
+        <item>-1</item>  
+        <item>8</item>  
+        <item>33</item>  
+        <item>10</item>  
+        <item>9</item>  
+        <item>0</item>  
+        <item>1</item>  
+        <item>2</item>  
+        <item>3</item>  
+        <item>4</item>  
+        <item>5</item>  
+        <item>6</item>  
+        <item>7</item>  
+        <item>11</item>  
+        <item>12</item>  
+        <item>13</item>  
+        <item>14</item>  
+        <item>15</item>  
+        <item>16</item>  
+        <item>17</item>  
+        <item>18</item>  
+        <item>19</item>  
+        <item>20</item>  
+        <item>21</item>  
+        <item>22</item>  
+        <item>23</item>  
+        <item>24</item>  
+        <item>25</item>  
+        <item>26</item>  
+        <item>27</item>  
+        <item>28</item>  
+        <item>29</item>  
+        <item>30</item>  
+        <item>31</item>  
+        <item>32</item>  
+        <item>34</item>  
+        <item>35</item>  
+        <item>36</item>  
+        <item>37</item>  
+        <item>38</item>  
+        <item>39</item>  
+        <item>40</item>  
+        <item>41</item>  
+        <item>42</item>  
+        <item>43</item> 
+    </string-array>  
+    <string-array translatable="false" name="supported_location_mccs"> 
+        <item>0</item>  
+        <item>460</item>  
+        <item>466</item>  
+        <item>0</item>  
+        <item>454</item>  
+        <item>412</item>  
+        <item>722</item>  
+        <item>0</item>  
+        <item>724</item>  
+        <item>0</item>  
+        <item>456</item>  
+        <item>302</item>  
+        <item>730</item>  
+        <item>216</item>  
+        <item>202</item>  
+        <item>208</item>  
+        <item>0</item>  
+        <item>404</item>  
+        <item>510</item>  
+        <item>432</item>  
+        <item>222</item>  
+        <item>440</item>  
+        <item>450</item>  
+        <item>457</item>  
+        <item>502</item>  
+        <item>334</item>  
+        <item>530</item>  
+        <item>410</item>  
+        <item>744</item>  
+        <item>515</item>  
+        <item>268</item>  
+        <item>250</item>  
+        <item>525</item>  
+        <item>655</item>  
+        <item>214</item>  
+        <item>520</item>  
+        <item>286</item>  
+        <item>420</item>  
+        <item>234</item>  
+        <item>310</item>  
+        <item>748</item>  
+        <item>734</item>  
+        <item>452</item>  
+        <item>0</item>  
+        <item>0</item> 
+    </string-array>  
+    <string-array name="AudioFormats"> 
+        <item>모노</item>  
+        <item>스테레오</item>  
+        <item>SAP</item>  
+        <item>서브</item>  
+        <item>메인 서브</item>  
+        <item>메인</item>  
+        <item>듀얼 1</item>  
+        <item>듀얼 2</item>  
+        <item>NICAM 모노</item>  
+        <item>NICAM 스테레오</item>  
+        <item>NICAM 듀얼 1</item>  
+        <item>NICAM 듀얼 2</item> 
+    </string-array> 
+</resources>

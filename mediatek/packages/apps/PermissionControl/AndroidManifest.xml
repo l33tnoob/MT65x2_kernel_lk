@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mediatek.security"
+    android:sharedUserId="android.uid.system">
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <application
+        android:taskAffinity=""
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher_settings"
+        android:theme="@android:style/Theme.Holo"
+        android:supportsRtl="true"
+        android:allowClearUserData="false" >
+        <receiver android:name=".service.PermControlReceiver">
+            <intent-filter >
+                <action android:name="mom.action.USER_CHANGE"/>
+                <action android:name="mom.action.PERM_MGR_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        
+        <service android:name=".service.PermControlService"/>
+        
+        <!-- Plug in service -->
+        <service
+            android:name=".plugin.PermControlPluginService" 
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.mediatek.settings.ext.IPermissionControlExt" />
+            </intent-filter>
+            <meta-data 
+                android:name="class" 
+                android:value="com.mediatek.security.plugin.PermissionControlPlugIn" />
+            <meta-data android:name="version" android:value="1.0.0"/> 
+        </service>
+         
+         <!--   get each ap's permission control ui-->     
+        <activity android:name=".ui.AppToPermissionActivity"
+                android:parentActivityName=".ui.PermissionControlPageActivity"
+                android:label="@string/manage_permission_app_label"
+                android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.mediatek.security.EACH_PERMISSION_CONTROL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        
+         <!--   get each permission's apps ui-->     
+        <activity android:name=".ui.PermissionToAppActivity"
+                android:parentActivityName=".ui.PermissionControlPageActivity"
+                android:label="@string/manage_permission_app_label"
+                android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.mediatek.security.EACH_APP_CONTROL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        
+        <!-- enter : permission control ui -->
+        <activity android:name=".ui.PermissionControlPageActivity"
+                android:label="@string/manage_permission_app_label"
+                android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc"
+                android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.mediatek.security.PERMISSION_CONTROL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <!--  alert activity when switch off-->     
+        <activity android:name=".ui.SwitchOffAlertActivity"
+                android:excludeFromRecents="true"
+                android:label="@string/manage_permission_app_label"
+                android:configChanges="orientation|keyboardHidden|screenSize|mcc|mnc"
+                android:theme="@*android:style/Theme.Holo.Dialog.Alert">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.mediatek.security.SWITCH_OFF_CONTROL_FROM_SECURITY" />
+                <action android:name="com.mediatek.security.SWITCH_OFF_CONTROL_FROM_APP_PERM" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        
+                <!-- enter : auto boot ui -->
+        <activity android:name=".ui.AutoBootAppManageActivity"
+                android:label="@string/auto_boot_pref_title"
+                android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.mediatek.security.AUTO_BOOT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

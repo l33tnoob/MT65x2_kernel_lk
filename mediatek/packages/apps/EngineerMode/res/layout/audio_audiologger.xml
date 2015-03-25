@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3pt"
+            android:layout_marginTop="3pt"
+            android:text="@string/Audio_AudioLogger_Text"
+            android:textSize="16sp" >
+        </TextView>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:layout_marginTop="3pt"
+            android:background="#FF909090" >
+        </View>
+
+        <CheckBox
+            android:id="@+id/Audio_StrmOtpt_Dump"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3pt"
+            android:layout_marginTop="5pt"
+            android:text="@string/Audio_StreamOutput_Dump" >
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/Audio_MixerBuf_Dump"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3pt"
+            android:layout_marginTop="5pt"
+            android:text="@string/Audio_MixerBuffer_Dump" >
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/Audio_TrackBuf_Dump"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3pt"
+            android:layout_marginTop="5pt"
+            android:text="@string/Audio_TrackBuffer_Dump" >
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/Audio_A2DPOtpt_Dump"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3pt"
+            android:layout_marginTop="5pt"
+            android:text="@string/A2DP_StreamOutput_Dump" >
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/Audio_StrmInpt_Dump"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3pt"
+            android:layout_marginTop="5pt"
+            android:text="@string/Audio_StreamInput_Dump" >
+        </CheckBox>
+
+<!--			<TextView-->
+<!--			    android:layout_width="wrap_content"-->
+<!--			    android:layout_height="wrap_content"-->
+<!--			    android:layout_marginLeft="3pt"-->
+<!--			    android:layout_marginTop="3pt"-->
+<!--			    android:text="@string/Audio_AudioLogger_Text1"-->
+<!--			    android:textSize="16sp" >-->
+<!--			</TextView>-->
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dip"
+            android:layout_marginTop="3pt"
+            android:background="#FF909090" >
+        </View>
+
+<!--			<CheckBox-->
+<!--			    android:id="@+id/Audio_IDModeVM_Dump"-->
+<!--			    android:layout_width="fill_parent"-->
+<!--			    android:layout_height="wrap_content"-->
+<!--			    android:layout_marginLeft="3pt"-->
+<!--			    android:layout_marginTop="5pt"-->
+<!--			    android:text="@string/Audio_IdleModeRecdVM_Dump" >-->
+<!--			</CheckBox>-->
+
+        <Button
+            android:id="@+id/Dump_Audio_DebgInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:layout_marginTop="3pt"
+            android:text="@string/Dump_Audio_DebgInfo" >
+        </Button>
+    </LinearLayout>
+
+</ScrollView>

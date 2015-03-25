@@ -1,0 +1,236 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type platform_app, domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+###
+### Apps signed with the platform key.
+###
+
+permissive platform_app;
+app_domain(platform_app)
+platform_app_domain(platform_app)
+# Access the network.
+net_domain(platform_app)
+# Access bluetooth.
+bluetooth_domain(platform_app)
+# unconfined_domain(platform_app)
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+###
+### Apps signed with the platform key.
+###
+
+permissive platform_app;
+# app_domain(platform_app)
+# platform_app_domain(platform_app)
+# Access the network.
+# net_domain(platform_app)
+# Access bluetooth.
+# bluetooth_domain(platform_app)
+# unconfined_domain(platform_app)
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive platform_app;
+# 20131024 Sanity_01
+allow platform_app mali_device:chr_file { read write ioctl open getattr };
+allow platform_app platform_app_data_file:dir { write remove_name search create };
+allow platform_app platform_app_data_file:file { rename create open };
+allow platform_app sdcard_external:dir { read open };
+allow platform_app sdcard_external:file getattr;
+allow platform_app shell_data_file:file getattr;
+
+
+# 20131024 Sanity_02
+allow platform_app apk_tmp_file:file { read write };
+allow platform_app devmap_device:chr_file { read ioctl open };
+allow platform_app mmp_device:chr_file { read ioctl open };
+allow platform_app platform_app_data_file:dir { add_name setattr };
+allow platform_app platform_app_data_file:file { lock ioctl unlink setattr };
+allow platform_app sdcard_external:dir { write remove_name add_name };
+allow platform_app sdcard_external:file rename;
+allow platform_app shell_data_file:file { read open };
+
+
+# 20131024 CTS_01
+allow platform_app apk_tmp_file:file { read write };
+allow platform_app device:chr_file { read ioctl open };
+allow platform_app devmap_device:chr_file { read ioctl open };
+allow platform_app mmp_device:chr_file { read ioctl open };
+allow platform_app mobile_log_d:unix_stream_socket connectto;
+allow platform_app netdiag:unix_stream_socket connectto;
+allow platform_app netdiag_socket:sock_file write;
+allow platform_app platform_app_data_file:dir { read getattr open add_name setattr };
+allow platform_app platform_app_data_file:file { lock ioctl unlink setattr };
+allow platform_app sdcard_external:dir { write remove_name add_name };
+allow platform_app sdcard_external:file rename;
+allow platform_app shell_data_file:file { read open };
+allow platform_app system_data_file:file append;
+
+
+# 20131024 Sanity_03
+allow platform_app device:chr_file write;
+allow platform_app mtk_disp_device:chr_file { read ioctl open };
+allow platform_app sdcard_external:dir create;
+allow platform_app sdcard_external:file { read write create unlink open };
+
+
+# 20131024 Sanity_04
+allow platform_app sdcard_external:file lock;
+
+
+# 20131024 CTS_02
+allow platform_app dumpstate:fd use;
+allow platform_app dumpstate:unix_stream_socket { read write };
+allow platform_app mdlogger:unix_stream_socket connectto;
+allow platform_app sdcard_external:dir rmdir;
+
+
+# 20131028 Sanity_05
+allow platform_app shell_data_file:dir search;
+
+
+# 20131028 Sanity_06
+allow platform_app sdcard_external:dir search;
+
+
+# 20131028 CTS_11
+allow platform_app adbd:unix_stream_socket setopt;
+
+
+# 20131028 CTS_13
+allow platform_app dexopt_exec:file { read execute open execute_no_trans };
+allow platform_app linker_exec:file { read execute open };
+
+
+# 20131119 FeatureSQC
+allow platform_app adbd:unix_stream_socket setopt;
+allow platform_app aee_aed:process sigchld;
+allow platform_app aee_aed:unix_stream_socket connectto;
+allow platform_app aee_exec:file { read execute open execute_no_trans };
+allow platform_app apk_data_file:file write;
+allow platform_app asec_apk_file:dir { remove_name create getattr };
+allow platform_app asec_apk_file:file { read rename getattr open setattr };
+allow platform_app block_device:blk_file getattr;
+allow platform_app block_device:dir search;
+allow platform_app dexopt_exec:file { read execute open execute_no_trans };
+allow platform_app linker_exec:file { read execute open };
+allow platform_app platform_app_data_file:dir { rename rmdir };
+allow platform_app sdcard_external:dir ioctl;
+allow platform_app sdcard_external:file ioctl;
+allow platform_app sdcard_internal:dir { rename search read create reparent write rmdir remove_name open add_name };
+allow platform_app sdcard_internal:file { rename write getattr read create unlink open };
+allow platform_app system_data_file:dir { write remove_name add_name };
+allow platform_app system_data_file:file { write lock create unlink setattr };
+
+
+# 20131121 Sanity_QA
+allow platform_app M4U_device_device:chr_file { read ioctl open };
+allow platform_app devpts:chr_file write;
+allow platform_app init:unix_stream_socket { read write };
+allow platform_app logwrapper:binder { transfer call };
+allow platform_app logwrapper:fd use;
+allow platform_app logwrapper:process sigchld;
+allow platform_app logwrapper:unix_stream_socket { read write };
+allow platform_app logwrapper_tmpfs:file read;
+allow platform_app self:netlink_socket { read bind create };
+
+
+
+# 20131122 Add Set Property Rule
+allow platform_app property_type:property_service set;
+
+# 20131213 KKMR1_CTS_01
+allow platform_app apk_tmp_file:file getattr;
+allow platform_app device:chr_file getattr;
+allow platform_app dm_agent_binder:binder call;
+allow platform_app property_socket:sock_file write;
+allow platform_app wallpaper_file:file getattr;
+
+
+# 20131213 KKMR1_CQ_01
+allow platform_app GoogleOtaBinder:binder call;
+allow platform_app M4U_device_device:chr_file { read ioctl open };
+allow platform_app aee_aed:fd use;
+allow platform_app apk_tmp_file:file getattr;
+allow platform_app asec_apk_file:dir { write add_name };
+allow platform_app asec_apk_file:file { write create unlink ioctl };
+allow platform_app debugfs:file { read ioctl };
+allow platform_app device:chr_file getattr;
+allow platform_app devpts:chr_file write;
+allow platform_app dfo_socket:sock_file write;
+allow platform_app dm_agent_binder:binder call;
+allow platform_app dumpstate:unix_stream_socket { getopt getattr };
+allow platform_app emcsmdlogger:unix_stream_socket connectto;
+allow platform_app featured:unix_stream_socket connectto;
+allow platform_app init:binder { transfer call };
+allow platform_app init:unix_stream_socket { read write setopt };
+allow platform_app init_shell:binder call;
+allow platform_app init_tmpfs:file read;
+allow platform_app logwrapper:binder { transfer call };
+allow platform_app logwrapper:fd use;
+allow platform_app logwrapper:process sigchld;
+allow platform_app logwrapper:unix_stream_socket { read write };
+allow platform_app logwrapper_tmpfs:file read;
+allow platform_app matv:binder { transfer call };
+allow platform_app mediaserver:dir search;
+allow platform_app mediaserver:file { read getattr open };
+allow platform_app platform_app_data_file:file append;
+allow platform_app platform_app_data_file:lnk_file { read create };
+allow platform_app radio_data_file:file { read getattr };
+allow platform_app release_app:fifo_file { write getattr };
+allow platform_app sdcard_internal:dir ioctl;
+allow platform_app sdcard_internal:file { lock ioctl execute setattr };
+allow platform_app self:netlink_socket { write bind create read };
+allow platform_app surfaceflinger:dir search;
+allow platform_app surfaceflinger:file { read getattr open };
+allow platform_app toolbox_exec:file { read execute open execute_no_trans };
+allow platform_app wallpaper_file:file getattr;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow platform_app GoogleOtaBinder:binder call;
+allow platform_app apk_tmp_file:file getattr;
+allow platform_app atci_service:dir search;
+allow platform_app atci_service:file getattr;
+allow platform_app bluetooth:unix_stream_socket { read write getattr getopt };
+allow platform_app bt_int_adp_socket:sock_file write;
+allow platform_app debugfs:file { read ioctl };
+allow platform_app device:chr_file getattr;
+allow platform_app dm_agent_binder:binder call;
+allow platform_app emcsmdlogger:unix_stream_socket connectto;
+allow platform_app init:binder { transfer call };
+allow platform_app init:dir search;
+allow platform_app init:file { read getattr open };
+allow platform_app init:unix_stream_socket setopt;
+allow platform_app init_shell:binder call;
+allow platform_app init_tmpfs:file read;
+allow platform_app kernel:dir search;
+allow platform_app kernel:file { read getattr open };
+allow platform_app mediaserver:dir search;
+allow platform_app mediaserver:file { read getattr open };
+allow platform_app mtkbt:unix_dgram_socket sendto;
+allow platform_app platform_app_data_file:lnk_file { read create };
+allow platform_app property_socket:sock_file write;
+allow platform_app release_app:fifo_file { write getattr };
+allow platform_app resmon:fd use;
+allow platform_app sdcard_internal:file { ioctl append };
+allow platform_app surfaceflinger:dir search;
+allow platform_app surfaceflinger:file { read getattr open };
+allow platform_app tmpfs:file open;
+allow platform_app toolbox_exec:file { read execute open execute_no_trans };
+allow platform_app wallpaper_file:file getattr;
+

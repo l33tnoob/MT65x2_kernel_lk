@@ -1,0 +1,73 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type sdcardd, domain;
+type sdcardd_exec, exec_type, file_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+permissive sdcardd;
+
+init_daemon_domain(sdcardd)
+# unconfined_domain(sdcardd)
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+permissive sdcardd;
+
+# init_daemon_domain(sdcardd)
+# unconfined_domain(sdcardd)
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive sdcardd;
+# 20131119 FeatureSQC
+allow sdcardd block_device:blk_file { read open };
+allow sdcardd device:chr_file { read ioctl open };
+allow sdcardd fuse_device:chr_file { read write open };
+allow sdcardd linker_exec:file read;
+allow sdcardd rootfs:dir mounton;
+allow sdcardd sdcard_internal:filesystem mount;
+allow sdcardd self:capability { sys_resource dac_override };
+allow sdcardd sysfs:file write;
+allow sdcardd system_data_file:dir { rename read create reparent write rmdir remove_name open add_name };
+allow sdcardd system_data_file:file { rename write create unlink open append };
+
+
+# 20131121 Sanity_QA
+allow sdcardd sdcard_external:dir { write read remove_name create open add_name };
+allow sdcardd sdcard_external:file { rename read create write getattr unlink open append };
+
+
+
+# 20131122 Add Set Property Rule
+allow sdcardd property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow sdcardd aee_aed:process sigchld;
+allow sdcardd cgroup:dir { create add_name };
+allow sdcardd sdcard_external:dir { rename search read create write rmdir remove_name open add_name };
+allow sdcardd sdcard_external:file { rename setattr read create write getattr unlink open append };
+allow sdcardd self:capability { setuid sys_admin setgid };
+allow sdcardd system_data_file:dir setattr;
+allow sdcardd system_data_file:file setattr;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow sdcardd aee_aed:process sigchld;
+allow sdcardd cgroup:dir { create add_name };
+allow sdcardd proc:file write;
+allow sdcardd sdcard_external:dir { rename rmdir };
+allow sdcardd sdcard_external:file setattr;
+allow sdcardd self:capability { setuid setgid };
+allow sdcardd system_data_file:dir setattr;
+

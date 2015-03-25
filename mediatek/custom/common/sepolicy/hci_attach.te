@@ -1,0 +1,35 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type hci_attach, domain;
+type hci_attach_exec, exec_type, file_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+permissive hci_attach;
+
+init_daemon_domain(hci_attach)
+# unconfined_domain(hci_attach)
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+permissive hci_attach;
+
+# init_daemon_domain(hci_attach)
+# unconfined_domain(hci_attach)
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive hci_attach;
+
+# 20131122 Add Set Property Rule
+allow hci_attach property_type:property_service set;

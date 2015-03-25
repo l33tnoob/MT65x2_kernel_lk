@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+import re
+import sys
+import fileinput
+from subprocess import *
+
+for line in fileinput.input():
+	m = re.match(r'.*#\d+\s+pc\s+(\w+)\s+(\S+)', line)
+	if m != None:
+		addr, sym = m.group(1), m.group(2)
+		cmd = 'arm-eabi-addr2line -f -C -e %s %s' % ("." + sym, addr)
+		lines = Popen(cmd.split(), stdout=PIPE).communicate()[0].decode('utf-8').split("\n")
+		print('\033[01;34m' + lines[0]);
+		print("\033[0m" + lines[1]);

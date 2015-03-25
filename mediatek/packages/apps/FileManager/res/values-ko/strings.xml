@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="app_name">파일 관리자</string>
+    <string name="sort_by">정렬 기준</string>
+    <string name="copy">"복사"</string>
+    <string name="create_folder">폴더 생성</string>
+    <string name="cut">"잘라내기"</string>
+    <string name="delete">삭제</string>
+    <string name="details">세부사항</string>
+    <string name="paste">"붙여넣기"</string>
+    <string name="rename">이름 변경</string>
+    <string name="new_folder">새 폴더</string>
+    <string name="confirm_rename">이름바꾸기 확인</string>
+    <string name="pasting">붙여넣는 중</string>
+    <string name="loading">로드하는 중\u2026</string>
+    <string name="deleting">삭제 중</string>
+    <string name="alert_delete_multiple">이 항목들이 삭제됩니다</string>
+    <string name="alert_delete_single">이 항목이 삭제됩니다</string>
+
+    <string-array name="sort_by">
+        <item>유형</item>
+        <item>이름(A - Z)</item>
+        <item>크기(대 - 소)</item>
+        <item>시간(신규 - 이전)</item>
+    </string-array>
+
+    <string name="name">이름</string>
+    <string name="size">크기</string>
+    <string name="modified_time">수정됨</string>
+    <string name="readable">읽기 가능</string>
+    <string name="executable">실행 가능</string>
+    <string name="writable">쓰기 가능</string>
+    <string name="msg_rename_ext">파일 확장명을 변경하려고 합니다. 변경할 경우 파일을 인식하지 못할 수 있습니다. 변경하시겠습니까?</string>
+    <string name="wait">기다리십시오\u2026</string>
+    <string name="done">"완료"</string>
+    <string name="cancel">취소</string>
+    <string name="no">"아니요"</string>
+    <string name="ok">확인</string>
+    <string name="yes">예</string>
+    <string name="deselect_all">모두 선택 해제</string>
+    <string name="select_all">모두 선택</string>
+    <string name="share">"공유"</string>
+    <string name="sort">정렬</string>
+    <string name="more">자세한 내용</string>
+    <string name="search">검색</string>
+    <string name="show_file">숨겨진 파일 표시</string>
+    <string name="hide_file">숨겨진 파일 숨기기</string>
+    <string name="selected">선택됨</string>
+    <string name="send_file">파일 보내기</string>
+    <string name="empty_msg">(빈 폴더)</string>
+    <string name="default_search_text">파일 검색</string>
+    <string name="free_space">무료</string>
+    <string name="total_space">합계</string>
+    <string name="search_files">파일 검색</string>
+    <string name="copy_deny">복사할 권한이 없음</string>
+    <string name="cut_deny">잘라낼 권한이 없음</string>
+    <string name="delete_deny">삭제할 권한이 없음</string>
+    <string name="insufficient_memory">공간 부족</string>
+    <string name="invalid_empty_name">파일 또는 폴더 이름은 비울 수 없습니다.</string>
+    <string name="paste_same_folder">동일한 디렉토리에 붙여넣을 수 없습니다.</string>
+    <string name="invalid_char_prompt">잘못된 문자를 입력했습니다.</string>
+    <string name="msg_unable_open_file">파일 형식이 지원되지 않습니다.</string>
+    <string name="search_text_empty">콘텐츠 검색은 비울 수 없습니다.</string>
+    <string name="paste_sub_folder">하위 폴더에 붙여넣을 수 없습니다.</string>
+    <string name="operation_fail">일부 파일 작업이 실패했습니다.</string>
+    <string name="search_result">\"%1$s\"에 대한 %2$d개의 결과</string>
+    <string name="already_exists">%1$s이(가) 이미 사용 중입니다.</string>
+    <string name="path_not_exists">%1$s이(가) 존재하지 않음</string>
+    <string name="unmounted">%1$s이(가) 마운트 해제됨</string>
+    <string name="create_hidden_file">"이름이 '.'로 시작하면 파일이 숨겨짐"</string>
+    <string name="modify_hidden_file">"이름이 '.'로 시작하지 않으면 파일이 숨겨지지 않음"</string>
+    <string name="file_name_too_long">입력한 이름이 너무 깁니다.</string>
+    <string name="paste_fail">붙여넣기 실패</string>
+    <string name="delete_fail">삭제 실패</string>
+    <string name="some_paste_fail">일부 붙여넣기 작업 실패</string>
+    <string name="some_delete_fail">일부 삭제 작업 실패</string>
+    <string name="search_empty">콘텐츠 검색은 비울 수 없습니다.</string>
+    <string name="search_setting_description">로컬 파일 및 폴더</string>
+    <string name="change_mode">파일 또는 폴더 선택</string>
+    <string name="folder_beam_forbidden_title">폴더를 비밍할 수 없습니다.</string>
+    <string name="folder_beam_forbidden_message">폴더 빔이 지원되지 않습니다. 비밍할 파일을 여러 개 선택하십시오. </string>
+    <string name="drm_beam_forbidden_title">빔이 금지됨</string>
+    <string name="drm_beam_forbidden_message">DRM(Digital Right Management) 방지 파일은 비밍할 수 없습니다.</string>
+
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	android:versionCode="1" android:versionName="1.0" package="com.mediatek.bluetooth"
+	android:sharedUserId="android.uid.mtkbt">
+
+	<application android:label="@string/app_label" 
+                android:persistent="true"
+		android:icon="@drawable/bluetooth" android:description="@string/app_description">
+
+<!-- BLUEANGEL::IF MTK_BT_PROFILE_BPP  -->
+<!-- BPP -->
+        <activity android:name=".bpp.BluetoothBppEntryActivity"
+			android:theme="@*android:style/Theme.Holo.Dialog.NoFrame"
+			android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="mediatek.intent.action.PRINT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.ALTERNATIVE"/>
+                <category android:name="android.intent.category.SELECTED_ALTERNATIVE"/>
+                <data android:mimeType="image/*" />
+                <data android:mimeType="text/x-vcard" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".bpp.BluetoothBppAuthenticating"
+                  android:theme="@*android:style/Theme.Holo.Dialog.Alert"
+                  android:configChanges="orientation"
+                  android:excludeFromRecents="true">
+        </activity>
+
+        <activity android:name=".bpp.BluetoothBppPrintJobSettings"
+                  android:label="@string/printer_settings"
+                  android:configChanges="orientation"
+                  android:excludeFromRecents="true">
+        </activity>
+
+        <activity android:name=".bpp.BluetoothBppPrinting"
+                  android:theme="@*android:style/Theme.Holo.Dialog.Alert"
+                  android:configChanges="orientation"
+                  android:excludeFromRecents="true">
+        </activity>
+
+        <permission android:name="android.permission.BLUETOOTH_PRINT"
+             android:label="@string/permission_label_bluetoothPrint"
+             android:description="@string/permission_desp_bluetoothPrint"
+             android:protectionLevel="signature" />
+        <service android:name=".bpp.BluetoothBppManager"/>
+
+        <receiver android:name=".bpp.BluetoothBppReceiver">
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="com.mediatek.bluetooth.bppReceiver.action.PASS_OBJECT" />
+            </intent-filter>
+        </receiver>
+<!-- BPP end -->
+<!-- BLUEANGEL::FI MTK_BT_PROFILE_BPP -->
+
+</manifest> 

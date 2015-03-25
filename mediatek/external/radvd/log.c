@@ -1,0 +1,231 @@
+/* Copyright Statement:
+ *
+ * This software/firmware and related documentation ("MediaTek Software") are
+ * protected under relevant copyright laws. The information contained herein is
+ * confidential and proprietary to MediaTek Inc. and/or its licensors. Without
+ * the prior written permission of MediaTek inc. and/or its licensors, any
+ * reproduction, modification, use or disclosure of MediaTek Software, and
+ * information contained herein, in whole or in part, shall be strictly
+ * prohibited.
+ * 
+ * MediaTek Inc. (C) 2010. All rights reserved.
+ * 
+ * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+ * THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+ * RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO RECEIVER
+ * ON AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL
+ * WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR
+ * NONINFRINGEMENT. NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH
+ * RESPECT TO THE SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY,
+ * INCORPORATED IN, OR SUPPLIED WITH THE MEDIATEK SOFTWARE, AND RECEIVER AGREES
+ * TO LOOK ONLY TO SUCH THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO.
+ * RECEIVER EXPRESSLY ACKNOWLEDGES THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO
+ * OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES CONTAINED IN MEDIATEK
+ * SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK SOFTWARE
+ * RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+ * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S
+ * ENTIRE AND CUMULATIVE LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE
+ * RELEASED HEREUNDER WILL BE, AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE
+ * MEDIATEK SOFTWARE AT ISSUE, OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE
+ * CHARGE PAID BY RECEIVER TO MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+ *
+ * The following software/firmware and/or related documentation ("MediaTek
+ * Software") have been modified by MediaTek Inc. All revisions are subject to
+ * any receiver's applicable license agreements with MediaTek Inc.
+ */
+
+/*
+ *
+ *	Authors:
+ *	 Lars Fenneberg		<lf@elemental.net>
+ *
+ *	This software is Copyright 1996,1997 by the above mentioned author(s),
+ *	All Rights Reserved.
+ *
+ *	The license which is distributed with this software in the file
+ *	COPYRIGHT applies to this software. If your distribution is missing
+ *	this file, you may request it from <pekkas@netcore.fi>.
+ *
+ */
+
+#include "config.h"
+#include "includes.h"
+#include "radvd.h"
+
+#ifdef ANDROID_CHANGES
+#include <android/log.h>
+#endif
+
+static int	log_method = L_NONE;
+static char *log_ident;
+static char *log_file;
+static FILE *log_file_fd;
+static int log_facility;
+static int debug_level = 0;
+
+int
+log_open(int method, char *ident, char *log, int facility)
+{
+	log_method = method;
+	log_ident = ident;
+
+	switch (log_method) {
+		case L_NONE:
+		case L_STDERR:
+			break;
+		case L_STDERR_SYSLOG:
+			/* fallthrough */
+		case L_SYSLOG:
+			if (facility == -1)
+				log_facility = LOG_DAEMON;
+			else
+				log_facility = facility;
+
+			openlog(log_ident, LOG_PID, log_facility);
+			break;
+		case L_LOGFILE:
+			if (!log)
+			{
+				fprintf(stderr, "%s: no logfile specified\n", log_ident);
+				return (-1);
+			}
+			log_file = log;
+			if ((log_file_fd = fopen(log_file, "a")) == NULL)
+			{
+				fprintf(stderr, "%s: can't open %s: %s\n", log_ident, log_file, strerror(errno));
+				return (-1);
+			}
+			break;
+		default:
+			fprintf(stderr, "%s: unknown logging method: %d\n", log_ident, log_method);
+			log_method = L_NONE;
+			return (-1);
+	}
+	return 0;
+}
+
+/* note: [dfv]log() is also called from root context */
+static int
+vlog(int prio, char *format, va_list ap)
+{
+	char tstamp[64], buff[1024];
+	struct tm *tm;
+	time_t current;
+
+	vsnprintf(buff, sizeof(buff), format, ap);
+
+	switch (log_method) {
+		case L_NONE:
+			break;
+		case L_SYSLOG:
+			syslog(prio, "%s", buff);
+			break;
+		case L_STDERR_SYSLOG:
+			syslog(prio, "%s", buff);
+			if (prio > LOG_ERR) /* fall through for messages with high priority */
+				break;
+		case L_STDERR:
+			current = time(NULL);
+			tm = localtime(&current);
+			(void) strftime(tstamp, sizeof(tstamp), LOG_TIME_FORMAT, tm);
+
+			fprintf(stderr, "[%s] %s: %s\n", tstamp, log_ident, buff);
+    			fflush(stderr);
+			break;
+		case L_LOGFILE:
+			current = time(NULL);
+			tm = localtime(&current);
+			(void) strftime(tstamp, sizeof(tstamp), LOG_TIME_FORMAT, tm);
+
+			fprintf(log_file_fd, "[%s] %s: %s\n", tstamp, log_ident, buff);
+    			fflush(log_file_fd);
+			break;
+		default:
+			fprintf(stderr, "%s: unknown logging method: %d\n", log_ident, log_method);
+			log_method = L_NONE;
+			return (-1);
+	}
+	return 0;
+}
+
+void
+dlog(int prio, int level, char *format, ...)
+{
+	va_list ap;
+
+	if (debug_level < level)
+		return;
+
+#ifdef ANDROID_CHANGES
+	if (prio == LOG_DEBUG){
+		va_start(ap, format);
+		__android_log_vprint(ANDROID_LOG_DEBUG, "radvd", format, ap);
+		va_end(ap);
+	}else{
+		va_start(ap, format);
+		__android_log_vprint(ANDROID_LOG_INFO, "radvd", format, ap);
+		va_end(ap);
+	}
+#else
+	va_start(ap, format);
+	vlog(prio, format, ap);
+	va_end(ap);
+#endif
+}
+
+void
+flog(int prio, char *format, ...)
+{
+	va_list ap;
+
+#ifdef ANDROID_CHANGES
+	if (prio == LOG_ERR){
+		va_start(ap, format);
+		__android_log_vprint(ANDROID_LOG_ERROR, "radvd", format, ap);
+		va_end(ap);
+	}else{
+		va_start(ap, format);
+		__android_log_vprint(ANDROID_LOG_INFO, "radvd", format, ap);
+		va_end(ap);
+	}
+#else
+	va_start(ap, format);
+	vlog(prio, format, ap);
+	va_end(ap);
+#endif
+}
+
+int
+log_close(void)
+{
+	switch (log_method) {
+		case L_NONE:
+		case L_STDERR:
+			break;
+		case L_STDERR_SYSLOG:
+		case L_SYSLOG:
+			closelog();
+			break;
+		case L_LOGFILE:
+			fclose(log_file_fd);
+			break;
+		default:
+			fprintf(stderr, "%s: unknown logging method: %d\n", log_ident, log_method);
+			log_method = L_NONE;
+			return (-1);
+	}
+	return 0;
+}
+
+void
+set_debuglevel(int level)
+{
+	debug_level = level;
+}
+
+int
+get_debuglevel(void)
+{
+	return debug_level;
+}

@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binaudioregsetting Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type audioregsetting_exec , exec_type, file_type;
+type audioregsetting ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive audioregsetting;
+init_daemon_domain(audioregsetting)
+
+
+# 20131122 Add Set Property Rule
+allow audioregsetting  property_type:property_service set;

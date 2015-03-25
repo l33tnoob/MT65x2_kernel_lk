@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/list1"
+        android:layout_width="wrap_content"
+        android:layout_height="381dp"
+        android:layout_weight="1.36"
+        android:background="#ffffff"
+        android:drawSelectorOnTop="true" >
+    </ListView>
+    
+    <LinearLayout  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+     <Button
+        android:id="@+id/button1"
+        style="@layout/participantslistactivity_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cc272727"
+        android:textColor="#ffffff"
+        android:text="@string/returntogroupchat" />
+
+  </LinearLayout>
+
+   
+
+</LinearLayout>

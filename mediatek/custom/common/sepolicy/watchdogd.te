@@ -1,0 +1,34 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type watchdogd, domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# watchdogd seclabel is specified in init.<board>.rc
+permissive watchdogd;
+# unconfined_domain(watchdogd)
+allow watchdogd rootfs:file entrypoint;
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# watchdogd seclabel is specified in init.<board>.rc
+permissive watchdogd;
+# unconfined_domain(watchdogd)
+allow watchdogd rootfs:file entrypoint;
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive watchdogd;
+
+# 20131122 Add Set Property Rule
+allow watchdogd property_type:property_service set;

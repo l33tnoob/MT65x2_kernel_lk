@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/hqa_nfc_title_type" />
+
+        <RadioGroup
+            android:id="@+id/hqa_write_rg_tag_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/hqa_write_rb_type_uri"
+                android:text="@string/hqa_nfc_type_uri" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/hqa_write_rb_type_text"
+                android:text="@string/hqa_nfc_type_text" >
+            </RadioButton>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_nfc_type_lang" />
+
+            <Spinner
+                android:id="@+id/hqa_write_sp_lang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/nfc_lang" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#FF909090"
+            android:layout_marginTop="5dp" >
+        </View>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:scrollbars="vertical" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hqa_nfc_company"
+                    android:id="@+id/hqa_write_tv_company" />
+
+                <EditText
+                    android:id="@+id/hqa_write_et_company"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hqa_nfc_url_pre"
+                    android:id="@+id/hqa_write_tv_url" />
+
+                <EditText
+                    android:id="@+id/hqa_write_et_url"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hqa_nfc_type_text" 
+                    android:id="@+id/hqa_write_tv_text"/>
+
+                <EditText
+                    android:id="@+id/hqa_write_et_text"
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#FF909090" 
+            android:layout_marginTop="5dp">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/hqa_write_btn_write"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/hqa_nfc_rw_write" />
+
+            <Button
+                android:id="@+id/hqa_write_btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/hqa_nfc_rw_cancel" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

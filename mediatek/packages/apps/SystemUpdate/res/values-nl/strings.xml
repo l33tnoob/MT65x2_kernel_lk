@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"Systeemupdates"</string>
+
+
+    <string name="none_package">Er zijn geen geldige update-pakketten.</string>
+    <string name="new_version_query">Controleren op updates\u2026</string>
+    <string name="menu_stats_refresh">Vernieuwen</string>
+    <string name="network_error">Netwerkverbinding mislukt</string>
+    <string name="no_new_version">Uw systeem is momenteel up-to-date.</string>
+    <string name="not_support_version">Uw doel biedt geen draadloze ondersteuning</string>
+    <string name="query_sd_insufficient_space">Onvoldoende ruimte voor <xliff:g id="path">%s</xliff:g></string>
+    <string name="ota_category_title">OTA</string>
+    <string name="sd_category_title">UPDATE SD-KAART</string>
+    <string name="ota_preference_summary">Systeemupdate op server gevonden</string>
+
+
+    <string name="notes_summary">De firmware-update kan de machinestabiliteit verbeteren en fouten oplossen. Voer een update uit naar versie</string>
+    <string name="ask_for_install_ota">Wilt u de systeemupdate nu installeren?</string>
+    <string name="warning_install_ota" product="tablet">U kunt uw tablet tijdens de installatie niet gebruiken en geen alarmnummers bellen. Verwijder de batterij en de SD-kaart niet en schakel het tablet niet uit.</string>
+    <string name="warning_install_ota" product="default">U kunt uw telefoon tijdens de installatie niet gebruiken en geen alarmnummers bellen. Verwijder de batterij en de SD-kaart niet en schakel de telefoon niet uit.</string>
+    <string name="ask_for_install_sd">Op uw SD-kaart is het meest recente update-pakket gevonden, wilt u dat installeren?</string>
+    <string name="warning_install_sd" product="tablet">U kunt uw tablet tijdens de installatie niet gebruiken en geen alarmnummers bellen.  Verwijder de batterij en de SD-kaart niet en schakel het tablet niet uit. \nVoordat u de installatie start, moet u controleren of het pakket is gedownload van de officiële website en niet beschadigd is.</string>
+    <string name="warning_install_sd" product="default">U kunt uw telefoon tijdens de installatie niet gebruiken en geen alarmnummers bellen.  Verwijder de batterij en de SD-kaart niet en schakel de telefoon niet uit. \nVoordat u de installatie start, moet u controleren of het pakket is gedownload van de officiële website en niet beschadigd is.</string>
+    <string name="ask_for_download_ota">Wilt u de systeemoptimalisatie-update downloaden?</string>
+    <string name="warning_download_ota">Wij raden aan om een gratis WiFi-hotspot of een onbeperkt gegevensplan te gebruiken voor het toepassen van deze update. Anders kunnen standaardkosten voor gegevensverbinding van toepassing zijn. \nMaak eerst een back-up van uw gegevens voordat u de upgrade uitvoert.</string>
+        
+    <string name="notification_content_title">Systeemupdate</string>
+    <string name="downloading_title">"Downloaden..."</string>   
+    <string name="wifi_only_check">Alleen Wi-Fi</string>     
+    
+    
+    
+    
+    
+    <string name="btn_install">"Installeren"</string>
+    <string name="btn_cancel">verwijderen</string>
+    <string name="btn_download">Downloaden en installeren</string>
+    <string name="btn_resume">"Downloaden"</string>
+    
+    <string name="warn_data_cost_title">Update downloaden</string>
+    <string name="warn_data_cost_content">Downloaden over mobiele netwerken kan extra kosten opleveren. Wil je doorgaan?</string>
+    <string name="warn_data_cost_yes">Ja</string>
+    <string name="warn_data_cost_no">Nee</string>
+
+    <string name="notification_download_complete_title">Systeemupdate gereed</string>
+    <string name="notification_download_complete_context">Tik om de systeemupdate te installeren</string>
+        
+    <string name="sdcard_crash_or_unmount">SD-kaartfout. Controleer uw SD-kaart en probeer het opnieuw.</string>
+    <string name="unmount_sdcard">Fout bij plaatsen SD-kaart, controleer deze.</string>
+    <string name="insufficient_space_content">Er is onvoldoende opslagruimte. Deze installatie heeft minstens  <xliff:g id="deltasize" example="3.5M">%s</xliff:g> nodig. Controleer uw toepassingsbeheer om extra ruimte vrij te maken. </string>
+
+    
+    
+    
+    
+    <string name="install_sd_title">Update installeren</string>
+    <string name="install_sd_message">Controleer of het pakket is gedownload van de officiële website en dat het niet beschadigd is. Anders kan dit problemen voor het systeem opleveren.</string>
+    <string name="install_reminder_now">Nu installeren</string>
+    <string name="install_reminder_not_now">"Niet nu"</string>
+    
+    
+
+    <string name="notification_content_text_completed">Download gelukt</string> 
+
+    <string name="unknown_per">"Onbekend"</string>    
+    <string name="unknown_error">Onbekende fout</string>
+    <string name="unknown_error_content">Er is een onbekende fout opgetreden. Sluit deze pagina en probeer het nogmaals.</string>
+    <string name="insufficient_space_title">Onvoldoende ruimte</string>
+    <string name="error_sdcard">SD-kaartinfo</string>
+    <string name="insufficient_space">Onvoldoende ruimte op de SD-kaart.</string>
+    <string name="package_deleted_error">Systeemupdates gestopt omdat de upgrade ongeldig is.</string>
+    
+    <string name="cancel_download_title">Downloaden annuleren</string>
+    <string name="cancel_download_content">Deze handeling verwijdert het gedownloade bestand.</string>
+
+    
+    <string name="change_network_title">"Downloaden"</string>
+    <string name="change_network_content">Het huidige toegangspunt ondersteunt het downloaden niet, wilt u naar een ander toegangspunt overschakelen of Wi-Fi inschakelen?</string>
+    <string name="change_network_wifi_btn">Wi-Fi gebruiken</string>
+    <string name="change_network_apn_btn">Toegangspunt wijzigen</string>
+    <string name="change_network_discard_btn">verwijderen</string>    
+    <string name="package_error_title">Installatie mislukt</string>
+    <string name="package_error_message_invalid">Pakketfout. Controleer de update en download opnieuw.</string>
+    <string name="package_error_message_insuff" product="tablet">Onvoldoende ruimte op het toestel.</string>
+    <string name="package_error_message_insuff" product="default">Onvoldoende ruimte op de telefoon.</string>
+    <string name="package_error_message_crash">Kan geen toegang krijgen tot de gegevenspartitie.</string>
+    <string name="package_error_message_full">Volledig pakket nodig voor geval met wijziging partitie.</string>    
+    <string name="updateSuccess" product="tablet">Gefeliciteerd! Uw toestel is bijgewerkt tot versie  <xliff:g id="version" example="gb.p37">%s</xliff:g>. </string> 
+    <string name="updateSuccess" product="default">Gefeliciteerd! Uw telefoon is bijgewerkt tot versie  <xliff:g id="version" example="gb.p37">%s</xliff:g>. </string> 
+    <string name="updateFailed">Bijwerken tot versie  <xliff:g id="version" example="gb.p37">%s</xliff:g> is mislukt. </string>
+    <string name="package_unzip">Pakket uitpakken\u2026</string>
+    <string name="package_unzip_error">Fout bij uitpakken</string>
+    
+    <string name="installing_message">Uw telefoon wordt uitgeschakeld\u2026</string>
+    <string name="install_sd_info">U moet het pakket naar de telefoonopslag kopiëren om door te gaan met de upgrade.\nOnvoldoende ruimte op de telefoon.</string>
+    <string name="sdcard_crash_or_unmount_when_install">Systeemupdate gestopt omdat de SD-kaart verwijderd is.</string>
+    <string name="sdcard_inserted">Wilt u op uw SD-kaart zoeken naar meer update-pakketten?</string>
+    
+    <string name="new_version_detected">Systeemupdate beschikbaar</string>
+    <string name="sdcard_unmount">SD-kaart niet gekoppeld</string>
+    <string name="server_version_error">Serverfout: werk de broncode van de server bij.</string>
+    <string name="cta_warning">Het systeem ondersteunt alleen firmware-upgrades van de officiële website of server. Als de gebruiker een ROM-image van derden en/of andere root-methoden gebruikt voor het upgraden van firmware, maakt dit de telefoon instabiel. De gebruiker is verantwoordelijk voor deze effecten.</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/ListView_WiFi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+    <CheckBox
+        android:id="@+id/wifi_wfa_switcher"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wifi_wfa_enabler" >
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/wifi_ctia_switcher"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wifi_ctia_enabler" >
+    </CheckBox>
+    
+    <CheckBox
+        android:id="@+id/wifi_ap_wps2_support"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wifi_ap_wps2_support_enabler" >
+    </CheckBox>
+    
+    <CheckBox
+        android:id="@+id/wifi_wps_test_mode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wifi_wps_test_mode" >
+    </CheckBox>
+    
+    <TextView
+        android:id="@+id/wifi_version"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:paddingTop="10dip" >
+    </TextView>
+
+</LinearLayout>

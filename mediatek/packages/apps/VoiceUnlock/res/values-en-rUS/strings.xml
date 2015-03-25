@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">  
+    <string name="unlock_set_unlock_mode_voice_weak">Voice Unlock</string>
+    <string name="voice_unlock_setup_intro_header">Record voice command</string>
+    <string name="voice_command_select_title">Select command</string>
+    <string name="voice_command_launch_app_title">Launch app</string>
+    <string name="reset_command_title">Reset command</string>
+    <string name="reset_command_prompt">Current command will be reset, and will not be recovered.</string>
+    <string name="reset_command_prompt_last">The only voice command will be reset. Screen lock will be changed into Slide.</string>
+    <string name="voice_unlock_options_title">Options</string>
+    <string name="voice_unlock_ok_label">OK</string>
+    <string name="voice_unlock_cancel_label">Cancel</string>
+    <string name="voice_unlock_retry_label">Retry</string>
+    <string name="voice_unlock_record_label">Record</string>
+    <string name="voice_unlock_continue_label">Continue</string>
+    <string name="voice_unlock_setup_intro">Speak a command with 2-6 syllables, then repeat 3-6 times.</string>
+    <string name="voice_unlock_command">Unlock command</string>
+    <string name="voice_command1">Wake up command 1</string>
+    <string name="voice_command2">Wake up command 2</string>
+    <string name="voice_command3">Wake up command 3</string>
+    <string name="command_summary">Unlock and launch <xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_command_primary">Launch <xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_command_customize">Customize</string>
+    <string name="voice_command_secondary">Launch <xliff:g id="app_name">%1$s</xliff:g> after unlock</string>
+    <string name="voice_command_record_description_unlock_screen">Unlock screen</string>
+    <string name="voice_command_record_description_command">Unlock screen and launch <xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_service_error_title">Voice service is error!</string>
+    <string name="stop_playing_title">Stop playing media</string>
+    <string name="stop_playing_message">Please stop playing media before recording.</string>
+    <string name="voice_command_record_introdution">Tap RECORD button and SPEAK out your voice command.</string>
+    <string name="voice_command_record_prepare">Preparing, please wait...</string>
+    <string name="voice_command_record_first_recording">SPEAK your command please.\n2-6 syllables is suggested.</string>
+    <string name="voice_command_record_non_first_recording">REPEAT your voice command.</string>
+    <string name="voice_command_record_one_round_ok">GOT IT.</string>
+    <string name="voice_command_record_one_round_noisy">Too noisy to catch your voice. Please try again.</string>
+    <string name="voice_command_record_one_round_weak">Can\'t hear your voice clearly. Please try again.</string>
+    <string name="voice_command_record_one_round_diff">You give a different command from the earlier ones.</string>
+    <string name="voice_command_record_one_round_exist">Almost same with the exsiting voice command. Please try a different one.</string>
+    <string name="voice_command_record_recording_ok">Voice command has been setup successfully.</string>
+    <string name="voice_unlock_setup_end_all_done">It\'s all done.</string>
+    <string name="voice_unlock_setup_end_prompt">To unlock your phone, just speak out your voice command.</string>
+    <string name="pass_word_file_missing">Can\'t play voice command.</string>
+    <string name="time_out_title">Time out</string>
+    <string name="time_out_message">No voice input received for 5 seconds. Please try again.</string>
+    <string name="during_call_title">Recording unavailable</string>
+    <string name="during_call_message">"Record voice command" is not available during a call.</string>
+</resources>

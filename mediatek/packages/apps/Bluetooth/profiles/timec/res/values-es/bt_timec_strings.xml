@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<string name="bt_timec_label">Sincronización de hora Bluetooth</string>
+	<string name="bt_timec_main_title">Cliente de hora</string>
+	<string name="bt_timec_choose_server_title">Elegir dispositivo servidor</string>
+	<string name="bt_timec_choose_server_summary">Elegir un dispositivo servidor con el que sincronizar la fecha y la hora</string>
+	<string name="bt_timec_sync_settings_title">Configuración de sincronización de hora</string>
+	<string name="bt_timec_service_disconnected">La conexión con el servicio de hora se ha perdido.</string>
+
+	
+	<string name="bt_timec_sync_title">Sincronizar fecha y hora</string>
+	<string name="bt_timec_sync_summary">Recuperar y aplicar la información de fecha y hora del servidor de hora</string>
+	<string name="bt_timec_auto_title">Sincronización automática</string>
+	<string name="bt_timec_auto_summary">Sincronizar automáticamente la fecha y la hora con el servidor de hora</string>
+	<string name="bt_timec_repeat_title">"Repetir"</string>
+
+	<string name="bt_timec_sync_confirm_title">Confirmar para sincronizar</string>
+	<string name="bt_timec_sync_confirm_msg">Esto sincronizará con el servidor de hora. La sincronización automática con la red móvil se deshabilitará. ¿Desea continuar?</string>
+	<string name="bt_timec_synchronizing_title">Sincronizando</string>
+	<string name="bt_timec_synchronizing_msg">Sincronizando la fecha y la hora con el servidor de hora...</string>
+	<string name="bt_timec_sync_completed">Sincronización completada</string>
+	<string name="bt_timec_sync_failed">No se pudo sincronizar la fecha y la hora con el servidor de hora</string>
+	<string name="bt_timec_auto_disabled_ticker">La sincronización de hora automática está deshabilitada</string>
+	<string name="bt_timec_auto_disabled_title">La sincronización de hora automática Bluetooth está deshabilitada</string>
+	<string name="bt_timec_auto_disabled_msg">La función de sincronización de hora automática no puede llevarse a cabo cuando la función Bluetooth está desactivada.</string>
+
+	
+	<string name="bt_timec_eng_connect_title">"Conectar"</string>
+	<string name="bt_timec_eng_connect_summary">Conectar con el servidor</string>
+	<string name="bt_timec_eng_disconnect_summary">Desconectar del servidor</string>
+	<string name="bt_timec_eng_settings_group_title">"Ajustes"</string>
+	<string name="bt_timec_eng_automatic_title">Automático</string>
+	<string name="bt_timec_eng_automatic_summary">Sincronizar automáticamente con el servidor de hora</string>
+	<string name="bt_timec_eng_sync_title">Sincronizar con el servidor de hora</string>
+	<string name="bt_timec_eng_sync_summary">Recuperar y aplicar la fecha y hora del servidor de hora</string>
+	<string name="bt_timec_eng_update_server_title">Actualizar hora del servidor</string>
+	<string name="bt_timec_eng_update_server_summary">Solicitar servidor de hora para actualizar la fecha y hora desde su fuente horaria</string>
+	<string name="bt_timec_eng_dst_title">Siguiente cambio de horario de verano</string>
+
+	<string name="bt_timec_eng_connecting_title">"Estableciendo conexión..."</string>
+	<string name="bt_timec_eng_connecting_msg">Conectando con el servidor de hora...</string>
+	<string name="bt_timec_eng_connection_failed">"Error de conexión"</string>
+	<string name="bt_timec_eng_connection_lost">Conexión perdida</string>
+	<string name="bt_timec_eng_disconnecting_title">"Desconectando..."</string>
+	<string name="bt_timec_eng_disconnecting_msg">Desconectado del servidor...</string>
+	<string name="bt_timec_eng_processing_title">"Procesando"</string>
+	<string name="bt_timec_eng_processing_msg">Aplicando la configuración al servidor de hora...</string>
+	<string name="bt_timec_eng_processing_failed">No se pudo aplicar la configuración al servidor</string>
+	<string name="bt_timec_eng_server_updating_title">El servidor se está actualizando</string>
+	<string name="bt_timec_eng_server_updating_msg">Presione el botón ATRÁS para cancelar la actualización de la hora del servidor</string>
+	<string name="bt_timec_eng_server_update_completed">Actualización del servidor completada</string>
+	<string name="bt_timec_eng_server_update_failed">Error al actualizar el servidor</string>
+
+</resources>

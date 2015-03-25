@@ -1,0 +1,106 @@
+;*****************************************************************************
+;  Copyright Statement:
+;  --------------------
+;  This software is protected by Copyright and the information contained
+;  herein is confidential. The software may not be copied and the information
+;  contained herein may not be used or disclosed except with the written
+;  permission of MediaTek Inc. (C) 2011
+;
+;*****************************************************************************
+
+
+;=================================================
+;=================================================
+&WDT_TEST=0
+if &WDT_TEST==0
+(
+	RESET
+	SYSTE
+; Initialize CPU M.OPTION ENRESET ON
+)
+SYSTEM.OPTION RESBREAK OFF
+SYSTEM.OPTION WaitReset OFF
+SYSTEM.JtagClock 10.MHz
+
+; CPU type
+SYSTEM.CPU CortexA7MPCore
+
+;R-T Memory Access
+SYSTEM.MULTICORE MEMORYACCESSPORT 0
+SYSTEM.MULTICORE DEBUGACCESSPORT 1
+
+;Setting Core debug register access
+SYSTEM.MULTICORE COREBASE APB:0x80070000
+
+
+;=================================================
+; Attach and Stop CPU
+;=================================================
+SYSTem.Up
+
+wait 200.us
+
+; set_hw_breakpoint_by_def
+; setting attribute of breakpoints
+Break.Select Program OnChip
+Break.Select Hll OnChip
+;Break.Select Spot OnChip
+Break.Select Read OnChip
+Break.Select Write OnChip
+
+; Debugsys
+ETM.PORTSIZE 16
+ETM.READWRITEBREAK OFF
+ETM.DataTrace OFF
+ETM.CONTEXTID 32
+TRACE.MODE.FIFO
+CTS.MODE MEMORY
+ETM.BBC ON
+PERF.METHOD TRACE
+PERF.SORT RATIO
+PERF.MODE FUNCTION
+
+; disable DABORT and PABORT breakpoint
+tronchip.set dabort off
+tronchip.set pabort off
+tronchip.set undef off
+; disable RESET breakpoint since cores all start from 0x0
+tronchip.set reset off
+
+;D.S SD:0x10200000 %LE %LONG 0x00000020  ;L2C share SRAM
+
+; enable msdc0 pin func(GPIO130-140)
+D.S SD:0x100057A0 %LE %LONG 0x00000249
+D.S SD:0x100057B0 %LE %LONG 0x00001249
+D.S SD:0x100057C0 %LE %LONG 0x00001249
+
+D.S SD:0x10007000 %LE %LONG 0x22000000
+
+D.LOAD.ELF      ../../../../mediatek/preloader/bin/preloader.elf 
+
+Y.SPATH.RESET ; reset all source path
+Y.SPATH.SRD ../../../../mediatek/platform/mt6582/preloader/src/init
+Y.SPATH.SRD ../../../../mediatek/platform/mt6582/preloader/src/core
+Y.SPATH.SRD ../../../../mediatek/platform/mt6582/preloader/src/drivers
+Y.SPATH.SRD ../../../../mediatek/platform/mt6582/preloader/src/security
+Y.SPATH.SRD ../../../../mediatek/custom/mt6582_fpga_emmc/preloader
+Y.SPATH.SRD ../../../../mediatek/protect-private/security/ASF/preloader
+
+Break.Select Program OnChip
+Break.Select Hll OnChip
+Break.Select Spot OnChip
+Break.Select Read OnChip
+Break.Select Write OnChip
+
+R.S T 0
+;winclear
+d.l
+enddo
+
+
+
+
+
+
+
+

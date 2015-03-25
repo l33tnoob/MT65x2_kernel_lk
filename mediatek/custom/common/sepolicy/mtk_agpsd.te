@@ -1,0 +1,76 @@
+# ==============================================
+# Policy File of /system/binmtk_agpsd Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type mtk_agpsd_exec , exec_type, file_type;
+type mtk_agpsd ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive mtk_agpsd;
+init_daemon_domain(mtk_agpsd)
+
+# 20131024 Sanity_04
+allow mtk_agpsd self:tcp_socket { create shutdown };
+
+
+# 20131028 CTS_03
+allow mtk_agpsd linker_exec:file read;
+
+
+# 20131028 Sanity_05
+allow mtk_agpsd port:tcp_socket name_connect;
+allow mtk_agpsd self:tcp_socket { write read };
+
+
+# 20131028 Sanity_06
+allow mtk_agpsd system_data_file:sock_file write;
+
+
+# 20131028 Sanity_11
+allow mtk_agpsd device:chr_file { read open };
+allow mtk_agpsd self:tcp_socket connect;
+allow mtk_agpsd system_data_file:dir { write rmdir read remove_name create open add_name };
+
+# 20131028 CTS_13
+allow mtk_agpsd device:chr_file ioctl;
+allow mtk_agpsd system_data_file:dir setattr;
+allow mtk_agpsd system_data_file:sock_file create;
+
+
+# 20131028 CTS_16
+allow mtk_agpsd device:chr_file write;
+allow mtk_agpsd system_data_file:sock_file unlink;
+
+
+# 20131028 CTS_20
+allow mtk_agpsd ccci_device:chr_file { read write open };
+allow mtk_agpsd self:udp_socket create;
+allow mtk_agpsd system_data_file:sock_file setattr;
+
+
+
+# 20131122 Add Set Property Rule
+allow mtk_agpsd  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow mtk_agpsd ccci_device:chr_file ioctl;
+allow mtk_agpsd mnld:unix_dgram_socket sendto;
+allow mtk_agpsd node:udp_socket node_bind;
+allow mtk_agpsd port:udp_socket name_bind;
+allow mtk_agpsd self:udp_socket bind;
+

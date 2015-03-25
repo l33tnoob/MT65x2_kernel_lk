@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bintertestclient Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type tertestclient_exec , exec_type, file_type;
+type tertestclient ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive tertestclient;
+init_daemon_domain(tertestclient)
+
+
+# 20131122 Add Set Property Rule
+allow tertestclient  property_type:property_service set;

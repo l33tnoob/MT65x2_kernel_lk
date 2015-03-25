@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- Formatting note: terminate all comments with a period, to avoid breaking 
+     the documentation output. To suppress comment lines from the documentation 
+     output, insert an eat-comment element after the comment lines.
+-->
+
+<resources>
+    <!-- Used for BladeView, add by wt. -->
+    <declare-styleable name="BladeView">
+		<attr name="promptAnimationDuration" format="integer"></attr>
+		<attr name="bladeIndicatorWidth" format="dimension"></attr>
+		<attr name="bladeIndicatorHeight" format="dimension"></attr>
+		<attr name="promptHorzOffset" format="dimension"></attr>
+		<attr name="promptVertOffset" format="dimension"></attr>
+		<attr name="sectionFontSize" format="dimension"></attr>
+		<attr name="fullSectionsId" format="reference"></attr>
+		<attr name="replacedSectionsId" format="reference"></attr>
+		<attr name="sectionBaselinesId" format="reference"></attr>
+		<attr name="bladeIndicator" format="reference"></attr>
+		<attr name="indicatorTopsId" format="reference"></attr>
+        <attr name="enableSectionColor" format="color"></attr>
+		<attr name="disableSectionColor" format="color"></attr>
+		<attr name="enablePromptColor" format="color"></attr>
+		<attr name="disablePromptColor" format="color"></attr>
+	</declare-styleable>
+    <declare-styleable name="MTKAppWidgetProviderInfo">
+        <attr name="hasUsedCustomerView" format="boolean"></attr>
+    </declare-styleable>
+
+    <!-- Used for Bookmark, add by wt. -->
+    <declare-styleable name="BookmarkView">
+		<attr name="imageDispWidth" format="dimension"></attr>
+		<attr name="imageDispHeight" format="dimension"></attr>
+		<attr name="spaceBetweenItems" format="dimension"></attr>
+		<attr name="dotGap" format="dimension"></attr>
+		<attr name="imageReflection" format="float"></attr>
+		<attr name="maxZoomOut" format="float"></attr>
+        <attr name="titleColor" format="color"></attr>
+		<attr name="infoColor" format="color"></attr>
+	</declare-styleable>
+
+    <!-- View Animation start -->
+    <declare-styleable name="DecelerateInterpolatorEx">
+        <attr name="factor" format="float" />
+        <attr name="scale" format="float" />
+    </declare-styleable>
+    <!-- View Animation end -->
+
+<declare-styleable name="TextView">
+        <!-- Specifies whether the SmartFit is enabled or not -->
+        <attr name="smartFit" format="boolean" />        
+    </declare-styleable>
+
+    <declare-styleable name="ImageSwitch">
+        <attr name="android:textOn"/>
+        <attr name="android:textOff"/>
+        <attr name="android:switchMinWidth"/>
+        <attr name="android:thumbTextPadding"/>
+        <attr name="android:thumb"/>
+    </declare-styleable>
+
+</resources>

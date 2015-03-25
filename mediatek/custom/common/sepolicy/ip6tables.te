@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binip6tables Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type ip6tables_exec , exec_type, file_type;
+type ip6tables ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive ip6tables;
+init_daemon_domain(ip6tables)
+
+
+# 20131122 Add Set Property Rule
+allow ip6tables  property_type:property_service set;

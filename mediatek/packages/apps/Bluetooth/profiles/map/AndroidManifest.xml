@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	android:versionCode="1" android:versionName="1.0" package="com.mediatek.bluetooth"
+	android:sharedUserId="com.android.mediatek.pushmail">
+
+  <uses-permission android:name="com.android.email.permission.ACCESS_PROVIDER"/>
+  <uses-permission android:name="android.email.permission.ACCESS_PROVIDER"/>
+	<application android:label="@string/app_label" 
+                android:persistent="true"
+		android:icon="@drawable/bluetooth" android:description="@string/app_description">
+	
+<!-- MAPS Start -->
+
+		<!-- ********************************************************************************** -->
+		<service android:name=".map.BluetoothMapServerService">
+			<intent-filter>
+          <action android:name="android.bluetooth.IBluetoothMap" />
+          <action android:name="com.mediatek.bluetooth.map.IBluetoothMapSetting" />
+      </intent-filter>
+		</service>
+		<activity android:name=".map.BluetoothMapActivity"
+				  android:excludeFromRecents="true"
+          android:theme="@*android:style/Theme.Holo.Dialog.Alert">
+		</activity>
+		
+		<!-- ********************************************************************************** -->
+
+<!-- MAPS End -->
+
+	</application>
+
+</manifest> 

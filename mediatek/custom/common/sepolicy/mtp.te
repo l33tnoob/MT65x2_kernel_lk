@@ -1,0 +1,48 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type mtp, domain;
+type mtp_exec, exec_type, file_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# vpn tunneling protocol manager
+permissive mtp;
+
+init_daemon_domain(mtp)
+net_domain(mtp)
+# unconfined_domain(mtp)
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# vpn tunneling protocol manager
+permissive mtp;
+
+# init_daemon_domain(mtp)
+# net_domain(mtp)
+# unconfined_domain(mtp)
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive mtp;
+
+# 20131122 Add Set Property Rule
+allow mtp property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow mtp device:chr_file { read ioctl open };
+allow mtp linker_exec:file { read execute open };
+allow mtp ppp:process signal;
+allow mtp self:capability net_raw;
+allow mtp self:rawip_socket create;
+allow mtp self:socket { create connect };
+

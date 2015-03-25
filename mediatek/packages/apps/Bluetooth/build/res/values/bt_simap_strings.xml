@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="simap_remote_request">"Remote SIM request"</string>
+	<string name="simap_acceptance_dialog_title">"%1$s would like to access your SIM. Give access to %2$s?"</string>
+	<string name="simap_acceptance_timeout_message">"Time out to accept connection with %1$s"</string>
+	<string name="simap_disconnected_message">"Disconnected with %1$s."</string>
+	<string name="simap_defaultname">"Carkit"</string>
+	<string name="simap_request_notif_message">"Allow remote SIM request from %1$s"</string>
+	<string name="simap_incoming_conn_confirm_cancel">"Decline"</string>
+	<string name="simap_incoming_conn_confirm_ok">"Accept"</string>
+	<string name="simap_connected_notify_ticker">"Remote SIM is connected"</string>
+	<string name="simap_connected_notify_title">"%1$s is connected to your SIM"</string>
+	<string name="simap_connected_notify_message">"Select to disconnect"</string>
+	<string name="simap_disconnect_title">"Disconnect remote SIM"</string>
+	<string name="simap_disconnect_message">"Disconnect with %1$s ?"</string>
+	<string name="simap_disconnect_yes">"Yes"</string>
+	<string name="simap_disconnect_no">"No"</string>
+	
+	    <!-- Bluetooth Simap relative settings -->
+    <!-- Bluetooth advanced settings screen, section header for settings related to simap server -->
+    <string name="bluetooth_simap_server_settings">Remote SIM settings</string>
+    <!-- Bluetooth advanced settings screen, SIMAP server check box label -->
+    <string name="bluetooth_simap_server_enable_title">Remote SIM mode</string>
+    <!-- Bluetooth advanced settings screen, SIMAP server option summary text when check box is selected -->
+    <string name="bluetooth_simap_server_enable_summary">Turn on</string>
+    <string name="bluetooth_simap_server_sim_index_title">Select SIM</string>
+    <string name="bluetooth_simap_server_sim_index_summary_sim1">SIM1</string>
+    <string name="bluetooth_simap_server_sim_index_summary_sim2">SIM2</string>
+    <string name="bluetooth_simap_server_sim_index_summary_sim3">SIM3</string>
+    <string name="bluetooth_simap_server_sim_index_summary_sim4">SIM4</string>
+
+
+    <!-- Bluetooth SIMAP server SIM indexs -->
+    <string-array name="bluetooth_simap_server_sim_index_entries">
+        <item>SIM1</item>
+        <item>SIM2</item>
+        <item>SIM3</item>
+        <item>SIM4</item>
+    </string-array>
+
+    <string-array name="bluetooth_simap_server_sim_index_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    
+</resources>

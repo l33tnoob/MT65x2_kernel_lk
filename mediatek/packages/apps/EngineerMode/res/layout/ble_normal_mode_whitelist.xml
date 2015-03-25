@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/BLEWhiteList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="@string/BLEWhiteList" >
+        </TextView>
+
+        <!-- input MAC address -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEMACAddress" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/BLEMACAddress"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content" >
+            </EditText>
+        </LinearLayout>
+
+        <!-- address type select -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/BLEAddressType"
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dip"
+                android:text="@string/BLEAddressType" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/BLEAddressTypeSpinner"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content" >
+            </Spinner>
+        </LinearLayout>
+
+        <!-- add to white list buttont -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal"
+            android:paddingTop="10dip" >
+
+            <Button
+                android:id="@+id/BLEAddToWhiteList"
+                android:layout_width="310dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEAddToWhiteList" >
+            </Button>
+        </LinearLayout>
+
+        <!-- add to white list buttont -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal"
+            android:paddingTop="10dip" >
+
+            <Button
+                android:id="@+id/BLERemoveWhiteList"
+                android:layout_width="310dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLERemoveWhiteList" >
+            </Button>
+        </LinearLayout>
+
+        <!-- clear white list buttont  & HCI reset -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal"
+            android:paddingTop="10dip" >
+
+            <Button
+                android:id="@+id/BLEClearWhiteList"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEClearWhiteList" >
+            </Button>
+
+            <Button
+                android:id="@+id/BLEHCIReset"
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/BLEHCIReset" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

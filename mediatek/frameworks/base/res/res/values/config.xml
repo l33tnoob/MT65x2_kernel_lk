@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2009, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License"); 
+** you may not use this file except in compliance with the License. 
+** You may obtain a copy of the License at 
+**
+**     http://www.apache.org/licenses/LICENSE-2.0 
+**
+** Unless required by applicable law or agreed to in writing, software 
+** distributed under the License is distributed on an "AS IS" BASIS, 
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+** See the License for the specific language governing permissions and 
+** limitations under the License.
+*/
+-->
+
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds. -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+      
+    <!-- The limit browser search:for cmcc case, user input string limit -->
+    <integer name="max_input_browser_search_limit">2000</integer>
+ 
+     <!-- MTU size of MMS in 2G-->
+    <integer name="config_mms_mtu_2g_size">1300</integer>
+    <!-- MTU size of MMS in 3G-->
+    <integer name="config_mms_mtu_3g_size">1400</integer>
+
+    <!-- MTU size of ccmni in 2G-->
+    <integer name="config_mobile_mtu_less_size">1340</integer>
+    <!-- MTU size of ccmni in 3G-->
+    <integer name="config_mobile_mtu_default_size">1410</integer>
+
+    <!-- CMCC MM package name-->
+    <string name="config_mm_package_name">com.aspire.mm</string>
+ 
+    <!-- default year for first power on-->
+    <integer name="default_restore_year">2013</integer>
+    
+    <!-- Flag indicating whether ntp sync over mobile data connection -->
+    <bool name="config_ntp_by_mobile">false</bool>
+    
+    <!-- Flag indicating wheteher captitial portal check is enabled for mobile data connection -->
+    <bool name="is_captive_over_mobile">false</bool>
+
+    <!-- Flag indicating wheteher wifi framework stop scan after screen off -->
+    <bool name="config_wifi_framework_stop_scan_after_screen_off_support">true</bool>
+
+    <!-- Integer indicating the delay in milliseconds for wifi framework stop scan after screen off, set to zero means no support-->
+    <integer name="config_wifi_framework_stop_scan_after_screen_off_delay">720000</integer>
+
+    <!-- Display toast time when Wifi Display quality is bad -->
+    <integer name="wfd_display_toast_time">20</integer>
+    
+    <!-- Display notification time when Wifi Display quality is bad -->
+    <integer name="wfd_display_notification_time">60</integer>
+    
+    <!--   Wifi display: default resolution -->
+    <!--     0: 720p,30fps  (off) -->
+    <!--     1: 720p,60fps  (off) -->
+    <!--     2: 1080p,30fps (off) -->
+    <!--     3: 720p,60fps (on) -->
+    <!--     4: 720p,30fps (on) -->
+    <!--     5: 1080p,30fps (on) -->
+    <!--     6: 720p,60fps (on) -->
+    <!--     7: 720p,30fps (on) -->
+    <integer name="wfd_display_default_resolution">-1</integer>
+    
+    <!-- Wifi display: gallery power saving option   -->
+    <!--   0: off --> 
+    <!--   1: dim --> 
+    <!--   2: no power saving -->
+    <integer name="wfd_display_power_saving_option">1</integer>
+    
+    <!-- Wifi display: gallery power saving delay. The unit is second -->
+    <integer name="wfd_display_power_saving_delay">10</integer>
+    
+    <!-- Wifi display: secure option -->
+    <!-- 0: TV shows black. -->
+    <!-- 1: TV shows prohibitted image -->
+    <integer name="wfd_display_secure_option">1</integer>
+ 
+    <!-- Flag indicating wheteher always enable mobile hotspot when it is plugged in to a wall socket, or to a computer, for charging -->
+    <bool name="is_mobile_hotspot_always_on_while_plugged">false</bool>
+
+    <!-- Flag indicating wheteher  -->
+    <bool name="is_mobile_provision_enabled">false</bool>
+    <!-- Safe headphone fm volume index. -->
+    <integer name="config_safe_fm_volume_index">12</integer>
+</resources>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project Licensed under the 
+	Apache License, Version 2.0 (the "License"); you may not use this file except 
+	in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 
+	Unless required by applicable law or agreed to in writing, software distributed 
+	under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES 
+	OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
+	the specific language governing permissions and limitations under the License. -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent" 
+	android:background="@drawable/background" >
+	<LinearLayout android:id="@+id/main_panel"
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:orientation="vertical" 
+		android:layout_alignParentTop="true"  
+		android:background="#ff000000" >
+
+		<TextView android:id="@+id/title" 
+			android:text="@string/title"
+			android:layout_width="match_parent" 
+			android:layout_height="32dip"
+			android:gravity="center_horizontal"
+			android:textSize="16sp"
+			android:maxLines="1" 
+			android:textColor="#ffffffff"
+			android:background="@drawable/title_bg" >
+		</TextView>
+
+		<RelativeLayout 
+		    android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:background="#00000000" >
+			<LinearLayout android:id="@+id/player_panel"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:background="#ff000000" >
+				<com.mediatek.vlw.VLWVideoView android:id="@+id/player"
+					android:layout_width="640dip" 
+					android:layout_height="480dip" 
+					android:layout_gravity="center"
+					android:visibility="gone"
+					android:focusable="false" 
+					android:focusableInTouchMode="false" />
+			</LinearLayout>
+			<TextView android:id="@+id/video_title"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:focusable="false"
+			    android:focusableInTouchMode="false"
+			    android:layout_alignTop="@id/player_panel"
+			    android:background="@drawable/video_title_bg">
+			</TextView>
+			<ImageButton android:id="@+id/play_pause"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:layout_marginStart="16dip"
+				android:layout_marginBottom="16dip" 
+				android:focusable="true"
+				android:drawingCacheQuality="high" 
+				android:layout_alignBottom="@id/player_panel"
+				android:layout_alignStart="@id/player_panel" 
+				android:background="#00000000" 
+				android:onClick="updatePausePlay" />
+		</RelativeLayout>	
+	</LinearLayout>
+	<FrameLayout android:id="@+id/info_panel"
+	   android:layout_width="match_parent"
+	   android:layout_height="160dip"
+	   android:layout_below="@id/main_panel">
+	   <com.mediatek.vlw.VLWMediaController
+           android:id="@+id/media_controller" 
+           android:layout_height="wrap_content"
+           android:layout_width="match_parent" 
+           android:visibility="gone" 
+           android:gravity="center"
+       />
+       <TextView android:id="@+id/folder_info"
+           android:layout_height="match_parent"
+           android:layout_width="match_parent"
+           android:gravity="center"
+           android:textSize="18sp"
+           android:text="@string/vlw"
+           android:visibility="gone" 
+       />
+	</FrameLayout>
+	
+	<LinearLayout android:id="@+id/btn_panel"
+	    android:layout_width="match_parent"
+		android:layout_height="100dip" 
+		android:orientation="horizontal"
+		android:layout_below="@id/info_panel" 		 
+		android:background="#00000000" 
+		android:gravity="center_vertical"
+		android:layout_marginTop="0dip">
+		
+		<Button android:id="@+id/select_default"
+		    android:text="@string/select_default"
+		    android:layout_width="0dip"
+			android:layout_height="match_parent" 
+			android:layout_weight="1"
+			android:textColor="#ffffffff"
+			android:gravity="center"
+			android:focusable="true"
+			android:clickable="true"
+			android:onClick="selectDefaultVideo"
+			android:drawableTop="@drawable/default_video"
+			android:drawablePadding="0dip"
+			android:background="@drawable/button">
+		</Button>
+		<ImageView 
+		    android:layout_width="1dip"
+		    android:layout_height="match_parent"
+		    android:src="@drawable/separator_bg">
+		</ImageView>
+		<Button android:id="@+id/select_video" 
+			android:text="@string/select_video"
+			android:layout_width="0dip"
+			android:layout_height="match_parent" 
+			android:layout_weight="1" 
+			android:textColor="#ffffffff"
+			android:gravity="center"
+			android:focusable="true"
+            android:clickable="true"
+			android:onClick="selectVideo" 
+			android:drawableTop="@drawable/sdcard_video"
+            android:drawablePadding="0dip"
+            android:background="@drawable/button">
+		</Button>
+		<ImageView 
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:src="@drawable/separator_bg">
+        </ImageView>
+        <Button android:id="@+id/capture_video" 
+            android:text="@string/capture_video"
+            android:layout_width="0dip"
+            android:layout_height="match_parent" 
+            android:layout_weight="1" 
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:focusable="true"
+            android:clickable="true"
+            android:onClick="captureVideo" 
+            android:drawableTop="@drawable/camera_video"
+            android:drawablePadding="0dip"
+            android:background="@drawable/button">
+        </Button>   		
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/btn_panel"          
+        android:background="@drawable/button" 
+        android:layout_marginTop="0dip"
+        android:gravity="center">
+        <Button android:id="@+id/set_wallpaper"
+            android:text="@string/set_wallpaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="50dip"
+            android:paddingEnd="50dip"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:onClick="setLiveWallpaper">
+        </Button>        
+	</LinearLayout>
+</RelativeLayout>
+

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout style="@style/info_layout" >
+
+        <TextView
+            android:id="@+id/modem_switch_current_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/modem_switch_current_value" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#FF909090" >
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:text="@string/modem_switch_hint" />
+
+        <RadioGroup
+            android:id="@+id/modem_switch_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/modem_switch_fdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/modem_switch_fdd" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/modem_switch_tdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/modem_switch_tdd" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/modem_switch_auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/modem_switch_auto" >
+            </RadioButton>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/modem_switch_set"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/modem_switch_set" >
+        </Button>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#FF909090" >
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:text="@string/modem_switch_timer_hint" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/modem_switch_timer"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:inputType="number" >
+            </EditText>
+
+            <Button
+                android:id="@+id/modem_switch_set_timer"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/modem_switch_set" >
+            </Button>
+        </LinearLayout>
+<!--
+        <Spinner
+            android:id="@+id/Spinner_ModemSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+-->
+    </LinearLayout>
+
+</ScrollView>

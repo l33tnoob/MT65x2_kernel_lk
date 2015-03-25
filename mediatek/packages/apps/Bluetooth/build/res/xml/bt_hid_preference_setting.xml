@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<PreferenceScreen
+ 		xmlns:android="http://schemas.android.com/apk/res/android">
+
+		<Preference 
+			android:title="@string/bluetooth_hid_addnewdevice" 
+			android:key="add_new_device">
+		</Preference>
+		
+		<PreferenceCategory 
+			android:key="hid_device_list" 
+			android:title="@string/bluetooth_hid_paireddevices">
+		</PreferenceCategory>
+	</PreferenceScreen>

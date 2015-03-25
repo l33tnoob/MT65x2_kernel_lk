@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="STR_NMS_MAIN">iSMS</string>
+    <string name="STR_NMS_HISSAGE">iSMS</string>
+    <string name="STR_NMS_INVITE_SMS_CONTENT">Hi, iSMS是一款很不错的免费交流工具，支持发送语音短信、视频、图片和文字,还可以群聊。请访问http://isms.hissage.com了解更多</string>
+    <string name="STR_NMS_NO_SDCARD">没有检测到SD卡，iSMS的一些操作可能无法使用</string>
+    <string name="STR_NMS_MOUNT_SDCARD">SD卡已经就绪</string>
+    <string name="STR_NMS_SEND_MMS_FAIL">由于网络异常，无法发出消息。等数据网络恢复正常后，将自动发出</string>
+    <string name="STR_NMS_RECV_MMS_FAIL">无法下载，请稍后再试</string>
+    <string name="STR_NMS_GROUP_CHAT_ME">我</string>
+    <string name="STR_NMS_GROUP_CHAT_I">我</string>
+    <string name="STR_NMS_GROUP_CHAT_YOU">你</string>
+    <string name="STR_NMS_GROUP_CREATE_MSG">%1$s邀请%2$s加入群聊</string>
+    <string name="STR_NMS_GROUP_ADD_MSG">%1$s加入群聊</string>
+    <string name="STR_NMS_GROUP_DELETE_MSG">%1$s将%2$s从群聊中剔除</string>
+    <string name="STR_NMS_GROUP_QUITE_MSG">%1$s退出群聊</string>
+    <string name="STR_NMS_GROUP_CHAT_PLACE_HOLDER_MSG_BODY">你加入了该群组</string>
+    <string name="STR_NMS_PICTURE">图片</string>
+    <string name="STR_NMS_TAPE">音频</string>
+    <string name="STR_NMS_VCARD">联系人</string>
+    <string name="STR_NMS_LOCATION">位置</string>
+    <string name="STR_NMS_SKETCH">涂鸦</string>
+    <string name="STR_NMS_VIDEO">视频</string>
+    <string name="STR_NMS_CALENDAR">日历</string>
+    <string name="STR_NMS_UNKNOWN">未知</string>
+    <string name="STR_NMS_READ_MODE_PIC">一张图片</string>
+    <string name="STR_NMS_READ_MODE_TAPE">一个音频</string>
+    <string name="STR_NMS_READ_MODE_VCARD">联系人</string>
+    <string name="STR_NMS_READ_MODE_LOCATION">一个位置</string>
+    <string name="STR_NMS_READ_MODE_SKETCH">一张涂鸦</string>
+    <string name="STR_NMS_READ_MODE_VIDEO">一个视频</string>
+    <string name="STR_NMS_READ_MODE_CALENDAR">一个日历</string>
+    <string name="STR_NMS_ISMS_ENABLE">(iSMS 打开)</string>
+    <string name="STR_NMS_READ_MODE_UNKNOWN">一个未知文件</string>
+    <string name="STR_NMS_ALL_MSG">所有消息</string>
+    <string name="STR_NMS_SAVED">重要消息</string>
+    <string name="STR_NMS_BLOCKMSG">垃圾消息</string>
+    <string name="STR_NMS_SMS_TYPE">SMS</string>
+    <string name="STR_NMS_NO_SIM">没有检测到SIM卡</string>
+    <string name="STR_NMS_ILLEGAL_ADDRESS">无效手机号码</string>
+    <string name="STR_NMS_REMIND_USER_SET_NAME">请更新个人信息</string>
+    <string name="STR_NMS_OK">确定</string>
+    <string name="STR_NMS_BACK">返回</string>
+    <string name="STR_NMS_CANCEL">取消</string>
+    <string name="STR_NMS_NETWORK_UNAVL">请确认手机能够上网，比如通过3G或者WiFi</string>
+    <string name="STR_NMS_TODAY">今天</string>
+    <string name="STR_NMS_YESTERDAY">昨天</string>
+    <string name="STR_NMS_NOW">现在</string>
+    <string name="STR_NMS_NO_SIM_CARD">没有检测到SIM卡，你必须插入SIM卡才能使用</string>
+    <string name="STR_NMS_NO_CONNECTION">没有网络，或者手机在飞行模式，请检查</string>
+    <string name="STR_NMS_ATTACH_SHARE">%1$s分享了%2$s</string>
+    <string name="STR_NMS_WAIT">请等待...</string>
+    <string name="STR_NMS_TIPTITLE">提示</string>
+
+    <string name="STR_NMS_OPEN">打开</string>
+    <string name="STR_NMS_PLAY">播放</string>
+
+    <string name="STR_NMS_VCARD_NAME">%1$s个联系人</string>
+    <string name="STR_NMS_SHARE_VCARD_FAILED">分享联系人失败</string>
+
+    
+    <!-- upgrade info -->
+    <string name="STR_NMS_UPGRADE_TICKER">版本更新</string>
+    <string name="STR_NMS_UPGRADE_ERROR_TITLE">更新失败</string>
+    <string name="STR_NMS_UPGRADE_ERROR_CONTENT">手机“信息”功能更新失败，请在“信息”客户端内手动更新</string>
+    <string name="STR_NMS_INSTALLED_TITLE">更新成功</string>
+    <string name="STR_NMS_INSTALLED_CONTENT">手机“信息”功能已经更新到最新版本</string>
+    <string name="STR_NMS_PROMPT_DLG_TITLE">应用程序有新版本更新</string>
+    <string name="STR_NMS_PROMPT_DLG_DOWNLOAD">立即更新</string>
+    <string name="STR_NMS_PROMPT_DLG_LATER">以后再说</string>
+    <string name="STR_NMS_UPGRADING">更新中,请稍后</string>
+    <string name="STR_NMS_UPGRADE_TIME">最后一次检查: %s</string>
+    
+	<!-- ext protocol -->
+    <string name="STR_NMS_OFFLINE_URL">http://ismsi.hissage.com/webservice/nmsmail/notifyOffline.php</string>
+    
+    <!-- Activation start -->
+    <string name="STR_NMS_PRELOAD_IP_MSG_CONTENT">"欢迎使用iSMS"</string>
+    <string name="STR_NMS_ACTIVAT_TITLE">iSMS将发送一条短信来验证你的手机号码，运营商将收取一条标准短信费用</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE">验证手机号码</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE2">验证手机号码</string>
+    <string name="STR_NMS_YOUR_COUNTRY_TITLE">国家</string>
+    <string name="STR_NMS_YOUR_PHONE_TITLE">你的手机号</string>
+    <string name="STR_NMS_VERIFY_FAIL_TITLE">短信验证失败</string>
+    <string name="STR_NMS_VERIFY_FAIL_CONTENT">请确认输入了正确的手机号码</string>
+    <string name="STR_NMS_WORKING_SMS_TIP">请确认手机能够正常收发短信</string>
+    <string name="STR_NMS_VERIFYING">正在验证短信，请等待</string>
+    <string name="STR_NMS_RETRY">再试</string>
+    <string name="STR_NMS_EDIT_NUMBER">编辑</string>
+    <string name="STR_NMS_UPDATE_PROFILE">更新个人信息</string>
+    <string name="STR_NMS_START_ISMS">开始iSMS</string>
+    <string name="STR_NMS_SEND">发送</string>
+    <string name="STR_NMS_CONGRATULATIONS_TITLE">恭喜!</string>
+    <string name="STR_NMS_CONGRATULATIONS_CONTENT">谢谢你激活iSMS服务，现在可以开始使用了。\nHappy iSMS!</string>
+    <string name="STR_NMS_WELCOME_BACK">欢迎回来</string>
+    <string name="STR_NMS_SEND_SMS_FAIL">认证失败，请确认：\n1. 手机号码是否正确；\n2. 手机安全软件是否关闭状态；\n3. 是否其他原因让短信无法发送出去。\n检查后请重试</string>
+    <string name="STR_NMS_ACTIVE">激活iSMS</string>
+    <string name="STR_NMS_WELCOME_ACTIVE">欢迎激活iSMS</string>
+    <string name="STR_NMS_CONNECTING">网络连接中</string>
+    <!-- Activation end -->
+
+
+    <!-- Notification start -->
+    <string name="STR_NMS_NEW_MSG_TITLE">新iSMS消息</string>
+    <string name="STR_NMS_NEW_SMG_CONTENT">%d条未读消息</string>
+    <!-- Notification End -->
+
+    <string name="STR_NMS_MSG_DUMPER_MSG_SMS">SMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_MMS">MMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_IP">IP消息</string>
+    <string name="STR_NMS_MSG_DUMPER_SEND_MSG">发送 %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_RECEIVE_MSG">接收 %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TIME">时间: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TEXT">文本</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_PIC">图片</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_SKETCH">涂鸦</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VOICE">声音</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VIDEO">视频</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CALENDAR">日历</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION_IMG">位置图片</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VCARD">联系人</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION">位置</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CAPTION">标题: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_URL">URL: </string>
+    <string name="STR_NMS_MSG_DUMPER_DURATION">时长: </string>
+    <string name="STR_NMS_MSG_DUMPER_COORDINATE">坐标: </string>
+    <string name="STR_NMS_MSG_DUMPER_ADDRESS">地址: </string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_SENDER">发件人: </string>
+    <string name="STR_NMS_MSG_DUMPER_NORMAL_DETAIL">细节:</string>
+    <string name="STR_NMS_MSG_DUMPER_NAME">姓名: </string>
+    <string name="STR_NMS_MSG_DUMPER_NUMBER">号码: </string>
+    <string name="STR_NMS_MSG_DUMPER_PORTRAIT">头像</string>
+    <string name="STR_NMS_MSG_DUMPER_MULTI_SEND_DETAIL">广播:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_DETAIL">群聊:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_CREATER">创建者: </string>
+    <string name="STR_NMS_MSG_DUMPER_MEMBERS">成员: </string>
+    <string name="STR_NMS_MSG_DUMPER_VCARD_NAME">姓名: </string>
+    <string name="STR_NMS_MSG_DUMPER_CALENDAR_SUMMARY">标题: </string>
+    
+    <!-- Chat Settings -->
+    <string name="STR_NMS_CHAT_SETTING_TITLE">聊天设置</string>
+    <string name="STR_NMS_DISPLAY">显示</string>
+    <string name="STR_NMS_CHAT_WALLPAPER">聊天背景墙纸</string>
+    <string name="STR_NMS_SYS_WALLPAPER">选择墙纸</string>
+    <string name="STR_NMS_CAMEARPHOTO">拍摄照片</string>
+    <string name="STR_NMS_SYS_GALLERY">从图片库中挑选</string>
+    <string name="STR_NMS_DEFAULT_WALLPAPER">默认</string>
+    <string name="STR_NMS_NOTIFICATION_CATEGORY">通知</string>
+    <string name="STR_NMS_NOTIFICATION_TITLE">iSMS通知</string>
+    <string name="STR_NMS_NOTIFICATION_CONTENT">当收到通知时显示出来</string>
+    <string name="STR_NMS_MUTE">静音</string>
+    <string name="STR_NMS_MUTE_OFF">关闭</string>
+    <string name="STR_NMS_MUTE_1">静音一个小时</string>
+    <string name="STR_NMS_MUTE_4">静音四个小时</string>
+    <string name="STR_NMS_MUTE_8">静音八个小时</string>
+    <string name="STR_NMS_RINGTONE_TITLE">铃声</string>
+    <string name="STR_NMS_RINGTONE_CONTENT">设置新消息通知的铃声</string>
+    <string name="STR_NMS_VIBRATE_TITLE">振动</string>
+    <string name="STR_NMS_VIBRATE_CONTENT">当收到通知时振动</string>
+    <string name="STR_NMS_ACTIONS">动作</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_TITLE">下载聊天记录</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_CONTENT">用压缩格式保存在SD卡</string>
+    <string name="STR_NMS_EMAIL_HISTORY_TITLE">E-Mail聊天记录</string>
+    <string name="STR_NMS_EMAIL_HISTROY_CONTENT">E-Mail压缩格式的聊天记录 </string>
+    <string name="STR_NMS_CLEAR_HISTROY">清空聊天记录</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_DLG">下载....</string>
+    <string name="STR_NMS_DOWNLOAD_OK">下载聊天记录，将其保存为%s</string>
+    <string name="STR_NMS_DOWNLOAD_ERROR">下载聊天记录出错</string>
+    <string name="STR_NMS_DOWNLOAD_EMPTY">没有可下载的内容</string>
+    <string name="STR_NMS_CLEARING">正在清空聊天记录，请等待...</string>
+    <string name="STR_NMS_WAIT_SAVE_WALLPAPER">保存墙纸，请等待...</string>
+    <string name="STR_NMS_SAVE_WALLPAPER_OK">保存墙纸成功</string>
+    <string name="STR_NMS_CLEARDONE">成功清空聊天记录</string>
+    <string name="STR_NMS_SVAE_TITLE">导出到SD卡</string>
+    <string name="STR_NMS_SAVE_CONTENT">当前聊天记录用压缩格式保存在SD卡</string>
+    <string name="STR_NMS_EMAIL_TITLE">通过E-Mail分享</string>
+    <string name="STR_NMS_EMAIL_CONTENT">用E-Mail分享压缩格式的聊天记录</string>
+
+    <!-- Chat Settings End -->
+
+
+    <!-- Profile Settings -->
+    <string name="STR_NMS_PROFILE_TITLE">个人信息</string>
+    <string name="STR_NMS_TAP_AVATAR_TIP">点击编辑头像</string>
+    <string name="STR_NMS_DISPLAY_NAME_TIP">显示名称</string>
+    <string name="STR_NMS_ACCOUNT_TIP">iSMS账号</string>
+    <string name="STR_NMS_NO_APP">没有任何应用可以完成这个动作</string>
+    <string name="STR_NMS_NO_NAME">设置你的姓名</string>
+    <string name="STR_NMS_SAVE_AVATAR_FAILD">抱歉，无法保存头像</string>
+    <string name="STR_NMS_INPUT_NAME">姓名</string>
+    <string name="STR_NMS_TERM_WARN_ACTIVATE">这个功能需要开启iSMS服务才能使用。\n\niSMS服务可以通过WIFI或其他数据网络让你与朋友进行聊天，并可以分享视频、照片等多媒体内容。该服务是免费的。\n首次激活时，客户端会发出一条短信以完成注册，将会产生由运营商收取的基本短信费用。\n\n许可协议\n</string>
+    <string name="STR_NMS_TERM_WARN_WELCOME">iSMS服务可以通过Wi-Fi或其他数据网络让你与朋友进行聊天，并可以分享视频、照片等多媒体内容。该服务是免费的。\n首次激活时，客户端会发出一条短信以完成注册，将会产生由运营商收取的基本短信费用。\n\n许可协议\n</string>
+    <string name="STR_NMS_TERM_KEY">服务条款</string>
+    <string name="STR_NMS_AGREE_AND_CONTINUE">同意</string>
+    <string name="STR_NMS_ACTIVE_BNT">激活</string>
+    <string name="STR_NMS_SET_PROFILE_OK">个人信息设置成功</string>
+    <string name="STR_NMS_SET_PROFILE_FAIL">个人信息设置失败</string>
+    <string name="STR_NMS_ILLEGAL_PROFILE_NAME">非法的名字</string>
+    <string name="STR_NMS_NO_ACTIVITED">没有激活的SIM卡或SIM卡未打开</string>
+    <!-- Profile Settings End -->
+
+
+    <!-- Term Activity -->
+    <string name="STR_NMS_REJECT">拒绝</string>
+    <string name="STR_NMS_AGREE">同意</string>
+    <string name="STR_NMS_TERM_TITLE">服务条款</string>
+    <string name="STR_NMS_TERM_CONTENT">You understand that the Service and software embodied within the Service may include security components that permit digital materials to be protected, and that use of these materials is subject to usage rules set by AF PushMail and/or content providers who provide content to the Service. You may not attempt to override or circumvent any of the usage rules embedded into the Service. Any unauthorized reproduction, publication, further distribution or public exhibition of the materials provided on the Service, in whole or in part, is strictly prohibited.</string>
+    <!-- Term Activity End -->
+
+
+    <!-- System Settings -->
+    <string name="STR_NMS_SYS_SETTING_TITLE">iSMS 设置</string>
+    <string name="STR_NMS_SETTING_COMMENT">iSMS是一款很不错的免费交流工具。了解更多</string>    
+    <string name="STR_NMS_KNOW_MORE">了解更多</string>    
+    <string name="STR_NMS_SETTINGS_TITLE">个人信息</string>
+    <string name="STR_NMS_PREFERENCE_CATE">偏爱</string>
+    <string name="STR_NMS_SEND_SMS_TITLE">用短信发送</string>
+    <string name="STR_NMS_SEND_SMS_CONTENT">iSMS不可用时自动用短信发送，运营商将收取标准短信费用，本规则不适用于群聊</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_TITLE">自动下载</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_CONTENT">自动下载各类多媒体文件</string>
+    <string name="STR_NMS_CAPTION_TITLE">标题</string>
+    <string name="STR_NMS_CAPTION_CONTENT">带标题分享</string>
+    <string name="STR_NMS_SYSTEM_CATE">系统</string>
+    <string name="STR_NMS_UPDATE_TITLE">软件更新</string>
+    <string name="STR_NMS_UPDATE_CONTENT">最后一次检查: 从没检查过</string>
+    <string name="STR_NMS_NETWORK_USAGE_TITLE">网络使用流量</string>
+    <string name="STR_NMS_NETWORK_USAGE_CONTENT">查看总的发送/接收数据流量</string>
+    <string name="STR_NMS_NETWORK_DLG_CONTENT">发送: %1$.3f K \n接收: %2$.3f K\n最后一次清空: %3$s</string>
+    <string name="STR_NMS_SINGLE_NETWORK_DLG_CONTENT">发送\nWIFI:  %1$.3f K\t\tGPRS: %2$.3f K\n\n接收 \nWIFI: %3$.3f K\t\tGPRS: %4$.3f K\n\n最后一次清空: %5$s</string>
+    <string name="STR_NMS_DOUBLE_NETWORK_DLG_CONTENT">发送\nWIFI:  %1$.3f K\nGPRS SIM1: %2$.3f K\nGPRS SIM2: %3$.3f K\n\n接收\nWIFI: %4$.3f K\nGPRS SIM1: %5$.3f K\nGPRS SIM2: %6$.3f K\n\n最后一次清空: %7$s</string>
+    <string name="STR_NMS_VERSION_TITLE">版本</string>
+    <string name="STR_NMS_NEVER_CLEAR">无</string>
+    <string name="STR_NMS_RESET">清空</string>
+    <string name="STR_NMS_SWITCH_ON">打开</string>
+    <string name="STR_NMS_SWITCH_OFF">关闭</string>
+    <string name="STR_NMS_TEXT_ON">I</string>
+    <string name="STR_NMS_TEXT_OFF">O</string>
+    <string name="STR_NMS_SYSTEM_SETTING_TITLE">设置</string>
+    <string name="STR_NMS_COPYRGIHT">北京和信锐智科技有限公司</string>
+    <string name="STR_NMS_ABOUT">关于iSMS</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_TITLE">显示阅读状态</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_CONTENT">在会话列表中显示阅读状态</string>
+    <string name="STR_NMS_SHOW_REMIND_TITLE">显示提醒</string>
+    <string name="STR_NMS_SHOW_REMIND_CONTENT">显示iSms服务的提醒</string>
+    <string name="STR_NMS_MENU_RESET_SETTING">还原默认设置</string>
+    <string name="STR_NMS_MENU_FUNCTION_INTRODUCTION">功能介绍</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT">许可协议</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION">版权信息</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT_TITLE">和信iSMS用户服务协议</string>
+    <string name="STR_NMS_MENU_FUNCTION">功能</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION_DETAIL">\n北京和信锐智科技有限公司\n版权所有© 2008-2013\nAll Rights Reserved.\n</string>
+    <!-- System Settings End -->
+
+
+    <!-- Caption Settings -->
+    <string name="STR_NMS_AUDIO_TITLE">音频</string>
+    <string name="STR_NMS_VIDEO_TITLE">视频</string>
+    <string name="STR_NMS_PHOTO_TITLE">图片</string>
+    <!-- Caption Settings End -->
+
+
+    <!-- Map String start -->
+    <string name="STR_NMS_MAP_TITLE">分享位置</string>
+    <string name="STR_NMS_MAP_PROMPT">因为手机的位置服务没有打开，地图无法显示。以下的地址来源于是基站信息。为了提供更准确的位置，建议打开手机的位置信息服务。</string>
+    <string name="STR_NMS_MAP_NOTE_1">请在手机系统设置中打开位置服务</string>
+    <string name="STR_NMS_MAP_SHARE">分享</string>
+    <string name="STR_NMS_MAP_SETTINGS">设置</string>
+    <string name="STR_NMS_MAP_OK">确定</string>
+    <string name="STR_NMS_MAP_CANCEL">取消</string>
+    <string name="STR_NMS_MAP_EDIT">编辑位置</string>
+    <string name="STR_NMS_MAP_SEARCH_HINT">搜索附近的地点</string>
+    <string name="STR_NMS_MAP_WAIT">请等待...</string>
+    <string name="STR_NMS_MAP_EDIT_LIMIT">能输入的字数已达到上限</string>
+    <string name="STR_NMS_MAP_ADDR_LEN">地址太长</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR_LOCATING">正在获取你的当前位置...</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN_LOCATING">正在获取标注的位置...</string>
+    <string name="STR_NMS_MAP_LINEONE_SEARCH_LOCATING">正在获取搜索的位置...</string>
+    <string name="STR_NMS_MAP_LINETHREE_NEARBY_LOCATING">正在搜索附近的地点...</string>
+    <string name="STR_NMS_MAP_LINEONE_FAILED">无法获取你的位置</string>
+    <string name="STR_NMS_MAP_LINETWO_FAILED">请确认你的位置服务是打开的，并连上数据网络</string>
+    <string name="STR_NMS_MAP_LINETHREE_FAILED">没有发现附近的地点</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR">分享当前位置</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN">分享标注的位置</string>
+    <string name="STR_NMS_MAP_MY_LOCATION">我的位置</string>
+    <string name="STR_NMS_MAP_SEARCH">搜索</string>
+    <string name="STR_NMS_MAP_ERROR_1">获取经纬度失败</string>
+    <string name="STR_NMS_MAP_ERROR_2">Google服务器返回错误</string>
+    <!-- Map String end -->
+
+
+    <!-- All Media String start -->
+    <string name="STR_NMS_ALL_MEDIA_TITLE">所有多媒体</string>
+    <string name="STR_NMS_ALL_MEDIA_WAIT">请等待...</string>
+    <string name="STR_NMS_ALL_MEDIA_ERROR">无法装载，请稍后再试</string>
+    <string name="STR_NMS_ALL_MEDIA_EMPTY">空</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_WEEK">本周</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_MONTH">本月</string>
+    <string name="STR_NMS_ALL_MEDIA_JAN">一月</string>
+    <string name="STR_NMS_ALL_MEDIA_FEB">二月</string>
+    <string name="STR_NMS_ALL_MEDIA_MAR">三月</string>
+    <string name="STR_NMS_ALL_MEDIA_APR">四月</string>
+    <string name="STR_NMS_ALL_MEDIA_MAY">五月</string>
+    <string name="STR_NMS_ALL_MEDIA_JUN">六月</string>
+    <string name="STR_NMS_ALL_MEDIA_JUL">七月</string>
+    <string name="STR_NMS_ALL_MEDIA_AUG">八月</string>
+    <string name="STR_NMS_ALL_MEDIA_SEPT">九月</string>
+    <string name="STR_NMS_ALL_MEDIA_OCT">十月</string>
+    <string name="STR_NMS_ALL_MEDIA_NOV">十一月</string>
+    <string name="STR_NMS_ALL_MEDIA_DEC">十二月</string>
+    <!-- All Media String end -->
+
+
+    <!-- All Locations String start -->
+    <string name="STR_NMS_ALL_LOCATIONS_TITLE">所有位置</string>
+    <string name="STR_NMS_ALL_LOCATIONS_LOC">位置</string>
+    <string name="STR_NMS_ALL_LOCATIONS_WAIT">请等待...</string>
+    <!-- All Locations String end -->
+
+
+    <!-- Sketch -->
+    <string name="STR_NMS_SKETCH_TITLE">涂鸦</string>
+    <string name="STR_NMS_REDO">重做</string>
+    <string name="STR_NMS_UNDO">撤回</string>
+    <string name="STR_NMS_SKETCH_CUSTOM">个性</string>
+    <string name="STR_NMS_PEN_SIZE">大小</string>
+    <string name="STR_NMS_SKETCH_TOOLS_PEN">笔</string>
+    <string name="STR_NMS_SKETCH_TOOLS_ERASER">橡皮擦</string>
+    <string name="STR_NMS_SKETCH_CUSTOM_COLOR">个性颜色</string>
+    <string name="STR_NMS_CLEAR_SKETCH_TITLE">清空涂鸦</string>
+    <string name="STR_NMS_CLEAR_SKETCH_CONTENT">确定清空吗?</string>
+    <string name="STR_NMS_SIZE_SKETCH_TITLE">大小</string>
+    <string name="STR_NMS_SIZE_SKETCH_MAX">72</string>
+    <string name="STR_NMS_SIZE_SKETCH_MIN">2</string>
+    <string name="STR_NMS_COLOR_SKETCH_TITLE">颜色</string>
+    <string name="STR_NMS_SKETCH_ERROR">创建涂鸦失败</string>
+    <string name="STR_NMS_BACK_TITLE">确认</string>
+    <string name="STR_NMS_FINISH_SKETCH_CONTENT">你确认离开涂鸦?</string>
+    <string name="STR_NMS_LEAVE_SKETCH_CONTENT">你确认放弃涂鸦?</string>
+    <string name="STR_NMS_NOTREDO">没有可重做的</string>
+    <string name="STR_NMS_NOTUNDO">没有可撤回的</string>
+    <string name="STR_NMS_SKETCH_DELETE">清空</string>
+    <string name="STR_NMS_DISCARD">放弃</string>
+    <!-- Sketch end -->
+
+
+    <!-- Selection Contact -->
+    <string name="STR_NMS_DONE">确定</string>
+    <string name="STR_NMS_SELECTALL">全选</string>
+    <string name="STR_NMS_DESELECTED">取消全选</string>
+    <string name="STR_NMS_SELECTED">已选定 %1$s 个</string>
+    <string name="STR_NMS_CONTACT_SEARCH">搜索联系人</string>
+    <string name="STR_NMS_SEARCH">搜索</string>
+    <string name="STR_NMS_CONTACT_SELECT">选择联系人</string>
+    <string name="STR_NMS_SELECT_MEMBER_FULL">选择了过多的联系人</string>
+    <string name="STR_NMS_SELECT_MEMBER_EMPTY">没有选中任何联系人</string>
+    <string name="STR_NMS_SELECT_CONTAT_WAIT">请等待...</string>
+    <string name="STR_NMS_SELECT_CONTAT_EMPTY">无iSMS联系人</string>
+    <string name="STR_NMS_SELECT_NO_RESULT">无结果</string>
+    <string name="STR_NMS_EMPTY">无联系人</string>
+    <!-- Selection Contact end -->
+
+
+    <!-- Group chat -->
+    <string name="STR_NMS_CREATE_GROUP_TITLE">创建群组</string>
+    <string name="STR_NMS_GROUP_INFO_TITLE">群组信息</string>
+    <string name="STR_NMS_EDIT_GROUP_TITLE">编辑群组</string>
+    <string name="STR_NMS_SELECT_ACTION_TITLE">选择操作</string>
+    <string name="STR_NMS_ADD_TO_BOOKMARK">添加至书签</string>
+    <string name="STR_NMS_ADD_TO_CONTACTS">将 %1$s 添加到通讯录</string>    
+    <string name="STR_NMS_GROUP_NAME">群组名</string>
+    <string name="STR_NMS_GROUP_INFO">群组信息</string>
+    <string name="STR_NMS_GROUP_MEMBERS">群组成员</string>
+    <string name="STR_NMS_GROUP_NAME_HIT">群组名</string>
+    <string name="STR_NMS_GROUP_NAME_EMPTY">群组名为空</string>
+    <string name="STR_NMS_CONFIRM_LEAVE_TITLE">退出群组</string>
+    <string name="STR_NMS_LEAVE_GROUP_CONTENT">退出这个群组吗?</string>
+    <string name="STR_NMS_LEAVE_GROUP_SUCCESS">成功退出群组</string>
+    <string name="STR_NMS_LEAVE_GROUP_FAILED">退出群组失败</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_SUCCESS">群组名更新成功</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_FAILED">群组名更新失败</string>
+    <string name="STR_NMS_UPDATE_GROUP_SUCCESS">群组更新成功</string>
+    <string name="STR_NMS_UPDATE_GROUP_FAILED">群组更新失败</string>
+    <string name="STR_NMS_CREATE_GROUP_NAME_FAILED">创建群组失败</string>
+    <string name="STR_NMS_DELETE_GROUP_MEMBER_FAILED">删除群成员失败</string>
+    <string name="STR_NMS_GROUP_CHAT_BACK">放弃这个操作吗?</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_SUCCESS">新群成员被添加</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_FAILED">添加群成员失败</string>
+    <string name="STR_NMS_GROUP_MEMEBER_YOU">你</string>
+    <string name="STR_NMS_GROUP_INVITE_MORE">邀请更多</string>
+    <string name="STR_NMS_LEAVE_GROUP">退出群组</string>
+    <string name="STR_NMS_CHAT">聊天</string>
+    <string name="STR_NMS_CONFIRM_REMOVE_TITLE">从群组中删除</string>
+    <string name="STR_NMS_REMOVE_OK">删除</string>
+    <string name="STR_NMS_REMOVE_CANCEL">取消</string>
+    <string name="STR_NMS_REMOVE_CONTENT">从群组成员中删除?</string>
+    <string name="STR_NMS_VIEW_ALL_MEDIA">查看全部多媒体</string>
+    <string name="STR_NMS_VIEW_ALL_LOCATIONS">查看全部位置</string>
+    <string name="STR_NMS_CHAT_SETTINGS">聊天设置</string>
+    <string name="STR_NMS_VIEW_GROUP_FAILED">你已经退出了该群组</string>
+    <string name="STR_NMS_VIEW_HISTORY">查看群聊历史</string>
+    <string name="STR_NMS_ISMS_ENABLE_TITLE">开启SIM卡</string>
+    <string name="STR_NMS_ISMS_ENABLE_CONTENT">当前SIM卡的iSMS服务还未启动，无法创建群组。是否启动iSMS服务？</string>
+    <string name="STR_NMS_ENABLE">开启</string>
+    <string name="STR_NMS_LATER">稍后</string>
+    <string name="STR_NMS_SWITCH_TITLE">切换SIM卡</string>
+    <string name="STR_NMS_SWITCH_MESSAGE">当前SIM卡的iSMS服务还未激活，无法创建群组。是否切换到已激活的SIM卡？</string>
+    <string name="STR_NMS_SWITCH_EDIT_MESSAGE">本群组不是在当前SIM卡创建的，是否切换SIM卡？</string>
+    <string name="STR_NMS_LEAVE_GROUP_NOTICE">您已经离开该群聊，只有再被邀请才可以回到此群聊</string>
+    <string name="STR_NMS_LOSE_SIM_NOTICE">创建此群聊的SIM卡已被移除，只有使用创建群聊的卡才可以管理此群聊</string>
+    <string name="STR_NMS_SWITCH">切换</string>
+
+    <!-- Group chat end -->
+
+
+    <!-- chat details screen long press item start -->
+    <string name="STR_NMS_LONG_PRESS_TITLE">信息选项</string>
+    <string name="STR_NMS_SEND_VIA_TEXT">通过短信发送</string>
+    <string name="STR_NMS_TRY_AGAIN">再试</string>
+    <string name="STR_NMS_TRY_ALL_AGAIN">再试所有失败的</string>
+    <string name="STR_NMS_CONTINUE_TRY">继续尝试</string>
+    <string name="STR_NMS_COPY">复制</string>
+    
+    <string name="STR_NMS_FORWARD">转发</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_TITLE">下载</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD">该消息需要先下载再转发，是否继续？</string>
+    <string name="STR_NMS_FORWARD_CONTIUE">继续</string>
+    <string name="STR_NMS_FORWARD_FAILED">转发失败</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_MULTI">部分消息需先下载多媒体内容，才能完成多条转发。</string>
+    <string name="STR_NMS_FORWARD_SOME_FAILED">部分消息转发失败</string>
+    <string name="STR_NMS_FORWARD_ALL_FAILED">下载失败，请重新转发。</string>
+    
+    <string name="STR_NMS_SEND_VIA_MULTIMEDIA">通过彩信发送</string>
+    <string name="STR_NMS_SHARE">分享</string>
+    <string name="STR_NMS_DELETE">删除</string>
+    <string name="STR_NMS_FLAG_IMPORTANT">标为重要</string>
+    <string name="STR_NMS_REMOVE_IMPORTANT">去除重要标志</string>
+    <string name="STR_NMS_SAVE_IN_SDCARD">导出到SD卡</string>
+    <string name="STR_NMS_SAVE_FILE">文件被保存到%1$s</string>
+    <string name="STR_NMS_SHARE_TITLE">分享的方式</string>
+    <string name="STR_NMS_VIEW_DETAILS">查看详情</string>
+    <string name="STR_NMS_VIEW_DETAILS_TITLE">消息详情</string>
+    <string name="STR_NMS_SEND_MSG_DETAILS">类型: IP 信息\n发送时间: %1$s</string>
+    <string name="STR_NMS_RECEIVED_MSG_DETAILS">类型: IP 信息\n发送者: %1$s\n发送时间: %2$s\n接收时间: %3$s</string>
+    <!-- chat details screen long press item end -->
+
+
+    <!-- chat details screen delete item start -->
+    <string name="STR_NMS_DELETE_TITLE">刪除</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_TITLE">是否删除重要信息</string>
+    <string name="STR_NMS_DELETE_WARNING">将会删除此信息。</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_WARNING">确定要删除此标记为重要的消息吗?</string>
+    <string name="STR_NMS_DELETE_MSG">将会删除选中的信息</string>
+    <string name="STR_NMS_DELETE_WAITTING">正在删除</string>
+    <string name="STR_NMS_CLEAR_HISTORY_CONTENT">清空历史记录?</string>
+    <string name="STR_NMS_DELETE_IMPORTANT">包含标记为重要的信息</string>
+    <!-- chat details screen delete item end -->
+
+
+    <!-- chat details actionBar option start -->
+    <string name="STR_NMS_MENU_CALL">呼叫</string>
+    <string name="STR_NMS_MENU_GROUPINFO">群组信息</string>
+    <string name="STR_NMS_MENU_INVITE_CHAT">邀请好友加入聊天</string>
+    <string name="STR_NMS_MENU_INVITE_ISMS">邀请好友使用iSMS</string>
+    <string name="STR_NMS_MENU_SELECT_MSG">选择消息</string>
+    <string name="STR_NMS_MENU_MARK_SPAM">标记为黑名单</string>
+    <string name="STR_NMS_MENU_REMOVE_SPAM">移出黑名单</string>
+    <string name="STR_NMS_MENU_ADD_SHORTCUT">添加快捷链接</string>
+    <string name="STR_NMS_MENU_VIEW_ALLMEDIA">查看所有多媒体</string>
+    <string name="STR_NMS_MENU_VIEW_ALLLOCATION">查看所有位置</string>
+    <string name="STR_NMS_MENU_EDIT_GROUP">编辑群组</string>
+    <string name="STR_NMS_MENU_CHAT_SETTING">聊天设置</string>
+    <string name="STR_NMS_MENU_INSERT_QUICK_TEXT">插入常用短语</string>
+    <string name="STR_NMS_MENU_CLEAR_HISTORY">清空聊天记录</string>
+    <string name="STR_NMS_MENU_LEAVE_GROUP">退出群组</string>
+    <string name="STR_NMS_MENU_DISCARD">放弃</string>
+    <string name="STR_NMS_MENU_DELETE">删除</string>
+    <string name="STR_NMS_MENU_IMPORTANT">标为重要</string>
+    <string name="STR_NMS_MENU_FORWARD">转发</string>
+    <!-- chat details actionBar option end -->
+
+    <!-- chat details share item start -->
+    <string name="STR_NMS_TAKE_PHOTO">拍摄照片</string>
+    <string name="STR_NMS_RECORD_VIDEO">录像</string>
+    <string name="STR_NMS_DRAW_SKETCH">涂鸦</string>
+    <string name="STR_NMS_SHARE_CONTACT">分享联系人</string>
+    <string name="STR_NMS_CHOOSE_PHOTO">挑选一张照片</string>
+    <string name="STR_NMS_CHOOSE_VIDEO">挑选一段视频</string>
+    <string name="STR_NMS_RECORD_AUDIO">录一段音频</string>
+    <string name="STR_NMS_SHARE_LOCATION">分享位置</string>
+    <string name="STR_NMS_CHOOSE_AUDIO">挑选一段音频</string>
+    <string name="STR_NMS_SHARE_CALENDAR">分享日历</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_TITLE">添加音乐</string>
+    <string name="STR_NMS_CHOOSE_RINGTONE_ITEM">铃声</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_ITEM">音频</string>
+    <string name="STR_NMS_INSERT_SDCARD">请插入SD卡</string>
+    <!-- chat details share item start -->
+
+
+    <!-- record audio start -->
+    <string name="STR_NMS_AUDIO_LABLE">录音机</string>
+    <string name="STR_NMS_RECORD_AUDIO_CONT">点击开始录音</string>
+    <string name="STR_NMS_PLAY_AUDIO_CONT">点击开始播放</string>
+    <string name="STR_NMS_ACTION_SEND">发送</string>
+    <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
+    <string name="audio_db_artist_name">你的录音</string>
+    <string name="audio_db_album_name">录音</string>
+    <string name="STR_NMS_SELECT_AUDIO">选择音频</string>
+    <!-- record audio end -->
+
+    <string name="STR_NMS_ADDCONTACT">添加联系人</string>
+    <string name="STR_NMS_ADD_PHONE_CONTACT">将\"%1$s\"添加到联系人？</string>
+    <string name="STR_NMS_DELETE_MEDIA">多媒体将被删除，是否继续？</string>
+    <string name="STR_NMS_MEDIA_SHARE_MESSAGE">%1$s于%2$s分享</string>
+    <!-- chat & group details screen start -->
+
+    <string name="STR_NMS_UNREAD_FORMAT">%1$d条未读消息</string>
+    <string name="STR_NMS_NOT_DELIVERED_TITLE">还未送达</string>
+    <string name="STR_NMS_FAILED_TITLE">发送错误</string>
+    <string name="STR_NMS_GROUP_SUBTITLE">%1$s，+%2$d</string>
+    <string name="STR_NMS_GROUP_DEAD_SUBTITLE">%1$s，%2$d</string>
+    <string name="STR_NMS_SAVE_AS_DRAFT">消息被保留为草稿</string>
+    <string name="STR_NMS_NO_SD_TITLE">SD卡出错</string>    
+    <string name="STR_NMS_CANT_SHARE">无法访问SD卡。所有多媒体相关的功能暂时都无法使用。\n\n请检查SD卡后再试。</string>
+    <string name="STR_NMS_CANT_SAVE">未检测到SD卡，无法保存文件</string>
+    <string name="STR_NMS_SDSPACE_NOT_ENOUGH">SD卡空间不足，无法保存文件，请删除一些文件后再重试。</string>
+    <string name="STR_NMS_REAEND_ALL">重新发送所有失败的...</string>
+    <string name="STR_NMS_FILE_LIMIT">太大</string>
+    <string name="STR_NMS_LOAD_ALL_MESSAGE">装载所有消息</string>
+    <string name="STR_NMS_DOWNLOAD_FAILED">下载失败</string>
+    <string name="STR_NMS_INPUT_HINT">输入内容</string>
+    <string name="STR_NMS_INPUT_HINT_ISMS">输入iSMS内容</string>
+    <string name="STR_NMS_CAPTION_HINT">输入标题</string>
+    <string name="STR_NMS_PROTOCOL_SMS">SMS</string>
+    <string name="STR_NMS_PROTOCOL_MMS">MMS</string>
+    <string name="STR_NMS_PROTOCOL_IP">iSMS</string>
+    <string name="STR_NMS_SWITCH_BOTTON">切换SIM卡</string>
+    <string name="STR_NMS_TURN_ON_BOTTON">开启服务</string>
+    <string name="STR_NMS_SWITCH_TEXT_FORMAT">继续群聊的话，请首先切换到%1$s SIM卡</string>
+    <string name="STR_NMS_ENABLE_TEXT_FORMAT">继续群聊的话，请首先打开%1$s SIM卡的iSMS服务</string>
+    <string name="STR_NMS_REPLACE_ATTACH_TITLE">替换附件</string>
+    <string name="STR_NMS_REPLACE_ATTACH_MSG">已经存在一个附件，是否替换?</string>
+    <string name="STR_NMS_TRUNC_CAPTION">标题已经被截断.</string>
+    <string name="STR_NMS_MAX_CHARACTERS_REACHED">已到达信息大小上限。</string>
+    <string name="STR_NMS_MAX_EMOTICON_REACHED">达到表情输入上限</string>
+    <string name="STR_NMS_ENABLE_PROCESS">正在处理...</string>
+    <string name="STR_NMS_ERR_FILE">无效的文件</string>
+    <string name="STR_NMS_SENDING_TEXT">正在发送...</string>
+    <!-- chat & group details screen start -->
+
+    <!-- Error code tips -->
+    <string name="STR_NMS_ERR_GENERAL">一般错误</string>
+    <string name="STR_NMS_ERR_INVALID_ARGUMENT">无效参数</string>
+    <string name="STR_NMS_ERR_NETWORK_BLOCK">网络故障</string>
+    <string name="STR_NMS_ERR_PHONE_NOT_ACTIVATED">没有激活</string>
+    <string name="STR_NMS_ERR_SIM_NOT_ACTIVATED">SIM卡还未激活</string>
+    <string name="STR_NMS_ERR_INVALID_MSG_DB_ID">无效的消息DB ID</string>
+    <string name="STR_NMS_ERR_ADD_MSG_DB_FAILED">插入DB失败</string>
+    <string name="STR_NMS_ERR_UPDATE_MSG_DB_FAILED">更新DB失败</string>
+    <string name="STR_NMS_ERR_GET_MSG_DB_DATA_FAILED">获取消息失败</string>
+    <string name="STR_NMS_ERR_INVALID_CONTACT_DB_ID">无效的联系人ID</string>
+    <string name="STR_NMS_ERR_ADD_CONTACT_DB_FAILED">插入通讯录失败</string>
+    <string name="STR_NMS_ERR_UPDATE_CONTACT_DB_FAILED">更新联系人DB失败</string>
+    <string name="STR_NMS_ERR_GET_CONTACT_DB_DATA_FAILED">通过ID获取联系人失败</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_ERROR_FORMAT">无效的IP消息格式</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_INVALID_TO">无效的收件人</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_WITH_UNKNOWN_USER">无效的未知的收件人</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_NO_MBMBER">没有群组成员</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_GCHAT_DEAD">群组还未创建</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_INVALID_SIM_ID">参与群聊的SIM卡不是当前SIM卡</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_FOR_SYS_MSG">再次发送系统控制消息</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_INVALID_STATUS">IP消息模块还未准备好</string>
+    <string name="STR_NMS_ERR_GCHAT_IS_DEAD">这个群组已经不存在</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBERS">无效的群组成员</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBER_WITH_SELF">创建群组失败，因为成员包含了自己</string>
+    <string name="STR_NMS_ERR_GCHAT_EXCEED_MAX_MEMBER_COUNT">群组成员数超过系统最大值</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_NAME">无效群组名</string>
+    <string name="STR_NMS_ERR_GCHAT_SIM_IS_NOT_ACTIVATED">创建群聊的SIM卡还未激活</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_NOT_INBOX_MSG">获取下载URL失败</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_INVALID_URL">无效的下载URL</string>
+    <string name="STR_NMS_ERR_GET_ATTACH_NAME_INVALID_BODY_FORMAT">获取下载文件名失败</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_INVALID_FILE_NAME">无效的下载文件名</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_EXIST">下载文件不存在</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_INBOX_MSG">设置下载文件失败</string>
+    <string name="STR_NMS_ERR_SIM_INFO_NOT_FOUND">无法找到SIM卡信息</string>
+    <string name="STR_NMS_ERR_SIM_IN_INVALID_STATUS">无效SIM卡状态</string>
+    <string name="STR_NMS_ERR_CMD_PROCESSING">系统正忙，无法处理系统控制命令</string>
+    <string name="STR_NMS_ERR_CMD_GENERAL">一般的系统配置错误</string>
+    <string name="STR_NMS_ERR_CODE_END">未知的错误代码</string>
+    <!-- Error code tips -->
+    <string name="STR_NMS_SEND_MMS_QUERY_TITLE">警告</string>
+    <string name="STR_NMS_SEND_MMS_QUERY">收件人不是iSMS用户，是否使用短信发送？</string>
+    <!-- Service center start -->
+    <string name="STR_NMS_SERVICE_TITLE">iSMS服务中心</string>
+    <string name="STR_NMS_INTRODUCTION">无论是群聊，群发还是单聊，iSMS让您亲历一张列表快捷查找的便利，让您体验免费消息即时送达的畅快。一切只需轻轻点击，即可开启您的专属体验。</string>
+    <string name="STR_NMS_TERMS">服务条款</string>
+    <string name="STR_NMS_ACTIVATION_BUTTON">马上激活</string>
+    <string name="STR_NMS_LOSE_SDCARD">未检测到SD卡</string>
+    <!-- Service center end -->
+
+    <!-- conversation empty tips -->
+    <string name="STR_NMS_SPAM_EMPTY">You don\'t have any spam conversation. \nSPAM collects all conversations that are marked as spam. Notification will be turned off by default. This avoid you from unnecessary disturbance. \n\nYou can mark a sender as spam by holding a conversation and selecting Mark as Spam icon. When a conversation is marked as spam, a notification-off icon will be shown automatically and the conversation will be placed here.</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_FROM">+86123456789</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_SUBJECT">This is an example of spam message.</string>
+    <string name="STR_NMS_GROUPCHAT_EMPTY">You don\'t have any group chat message. \nGROUP CHATS collects all group chat messages that are created or joined by you. This allows you find and manage your group chats easily. \n\nTo create a group chat, you can tap on Create a group chat button at the bottom of this screen and invite your friends to join the group.</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_FROM">Group name</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_SUBJECT">Your friend:\nI like group chat feature!</string>
+    <string name="STR_NMS_IMPORTANT_EMPTY">You don\'t have any important message. \nIMPORTANT collects all the messages that are flagged as important. This allows you find important messages easily. \n\nYou can flag a message as important by holding a message and selecting Flag as important from Option menu. When a message is flagged as important, you will see a red flag icon as below.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TITLE">This is an example of a message flagged as important. A red flag will appear.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TIME">10:55 am</string>
+    <string name="STR_NMS_ALLCHAT_EMPTY">No conversations</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_CONTENT">To use this feature. you will have to activate iSMS service first. Don\'t worry - if you don\'t like the service, you can always turn off in Settings. Try it out now!</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_TITLE">Activate iSMS</string>
+    <!-- conversation empty tips -->
+    
+    <string name="STR_NMS_CLEAR_USER_DATA">清除数据成功</string>
+    
+    <!-- get file err start -->
+    <string name="STR_NMS_NO_SUCH_FILE">该文件不存在</string>
+    <string name="STR_NMS_OVER_FILE_LIMIT">文件大小已超过最大限制</string>
+    <string name="STR_NMS_INVALID_FILE_TYPE">暂不支持此类型</string>
+    <!-- get file err end -->
+    <string name="STR_NMS_DELIVERY_BODY">%s 已接收消息</string>
+    <string name="STR_NMS_SIM_SELECT_TITLE">选择SIM卡</string>
+	
+     <string name="STR_NMS_SHORTCUT_SUCCESS">已创建%1$s快捷方式。</string>
+    <string name="STR_NMS_SHORTCUT_REFRESHING">刷新中</string>
+     
+    <string name="STR_NMS_DISABLE_FAILED">操作失败，请稍后再试</string>
+    <string name="STR_NMS_ENABLE_FAILED">操作失败，请稍后再试</string>
+    <string name="STR_NMS_ENABLE_SUCCESS">你已成功开启iSMS服务</string>
+    <string name="STR_NMS_DISABLE_SUCCESS">你已成功关闭iSMS服务</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH_ADD">空间不足，iSMS暂停服务。</string>
+	
+    <string name="STR_NMS_SD_CARD_FULL">存储卡已满</string>
+    <string name="STR_NMS_SEND_MSG_FAILED">发送消息失败</string>
+    <string name="STR_NMS_NOT_ENOUGH_STORAGE">剩余存储空间不足，不能发送多媒体消息。</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_TITLE1">下载中</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_INFO1">%1$d/%2$d</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_RESULT">下载结果</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_INFO2">下载成功：%1$d条\n下载失败：%2$d条\n是否继续转发下载成功的信息？</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_FAILED">下载失败，是否重新下载？</string>
+    <string name="STR_NMS_STORE_STATUS_FULL">手机剩余存储空间不足，iSMS暂时停止。待存储空间恢复后可重新开启iSMS</string>	
+    <string name="STR_NMS_SERVER_AUTO_ECHO_MSG">谢谢，已收到。</string>
+    
+    <!-- and for Burn After Reading start-->
+    <string name="STR_NMS_READED_BURN">阅后即焚</string>
+    <string name="STR_NMS_SECOND">秒</string>
+    <string name="STR_NMS_READ_MODE_READEDBURN_PIC">一张阅后即焚图片</string>
+    <string name="STR_NMS_READED_BURN_PIC">阅后即焚图片</string>
+    <string name="STR_NMS_READED_BURN_CHECK">长按查看</string>
+    <string name="STR_NMS_READED_BURN_PIC_DESTROY">已销毁</string>
+    <string name="STR_NMS_DESTROY_HINT">%d秒后信息自动焚毁</string>
+    <string name="STR_NMS_READED_BURN_NOT_RECEIVED">由于对方的版本不支持，无法查看该阅后即焚信息。</string>
+    <string name="STR_NMS_READED_BURN_DOWNLOAD">点击下载</string>
+    <string name="STR_NMS_SWITCH_SIM">当前SIM卡的iSMS服务还未激活，继续的话，请首先切换SIM卡。</string>
+	<!-- and for Burn After Reading end-->
+
+    <string name="imsp_ip_message">iSMS 设置</string>
+    <string name="imsp_invite_chat_frequently"><b>经常和  %s 聊天？</b>\n使用iSMS聊天，免费发信息。邀请  %s 使用iSMS？</string>
+    <string name="imsp_enable_chat_frequently"><b>%s 的iSMS服务没有开启！</b>\n使用iSMS聊天，免费发信息。是否开启你的iSMS？</string>
+    <string name="imsp_invite">邀请</string>
+    <string name="imsp_enable_notice">是否开启iSMS服务？</string>
+    <string name="imsp_activate_chat_frequently"><b>经常和朋友聊天?</b>\n使用iSMS聊天，免费发信息。是否激活你的iSMS？</string>
+    <string name="imsp_activate_note">是否激活 iSMS？</string>
+    <string name="imsp_dismiss_content">是否忽略该提醒？</string>
+    <string name="imsp_divider_online">%s在线</string>
+    <string name="imsp_divider_offline">最后一次上线时间在 %s</string>
+    <string name="imsp_divider_never_online">从未上线</string>
+    <string name="imsp_failed_title">发送失败</string>
+    <string name="imsp_resend_via_sms">转为短信发送</string>
+    <string name="imsp_resend_via_mms">转为彩信发送</string>
+    <string name="imsp_typing_text">正在输入</string>
+    <string name="imsp_save_attachment">保存附件</string>
+    <string name="imsp_view">查看</string>
+    <string name="imsp_convert_to_mms">转为彩信</string>
+    <string name="imsp_convert_to_sms">转为短信</string>
+    <string name="imsp_convert_to_isms">转为iSMS</string>
+    <string name="imsp_convert_to_mms_for_service">当前SIM开未开通iSMS服务，只能通过这张SIM卡发送彩信。是否继续？</string>
+    <string name="imsp_convert_to_sms_for_service">当前SIM开未开通iSMS服务，只能通过这张SIM卡发送短信。是否继续？</string>
+    <string name="imsp_convert_to_mms_for_recipients">接收者不是iSMS用户，这条信息只能通过彩信发送。是否继续？</string>
+    <string name="imsp_convert_to_sms_for_recipients">接收者不是iSMS用户，这条信息只能通过短信发送。是否继续？</string>
+    <string name="imsp_sms_convert_to_isms">您选择的SIM卡已经开启iSMS服务，为了节省您的短信费用，建议您使用iSMS信息发送。是否现在切换？</string>
+    <string name="imsp_mms_convert_to_isms">您选择的SIM卡已经开启iSMS服务，为了节省您的彩信费用，建议您使用iSMS信息发送。是否现在切换？</string>
+    <string name="imsp_keep_mms">保持彩信</string>
+    <string name="imsp_keep_sms">保持短信</string>
+    <string name="imsp_resend_discard_message">重新发送信息，当前正在编辑的信息将被舍弃。</string>
+    <string name="imsp_no_sim_card">当前没有SIM卡！</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">"没有可用的网络连接！请稍后再试。"</string>
+    <string name="imsp_chat_setting_updating">更新中...</string>
+    <string name="imsp_dialog_clear_title">清空聊天记录</string>
+    <string name="imsp_dialog_clear_description">当前聊天会话中所有的聊天记录将被清空</string>
+    <string name="imsp_chat_setting_saving">保存中...</string>
+    <string name="imsp_chat_setting_sending">发送中...</string>
+    <string name="imsp_save_chat_history_failed">保存失败</string>
+    <string name="imsp_send_chat_history_failed">发送邮件失败</string>
+    <string name="imsp_conversation_list_all">全部信息</string>
+    <string name="imsp_conversation_list_important">重要信息</string>
+    <string name="imsp_conversation_list_group_chats">群组信息</string>
+    <string name="imsp_conversation_list_spam">黑名单</string>
+    <string name="imsp_mark_as_spam_tips">标为黑名单的会话将被移到黑名单列表，并且通知被禁用。</string>
+    <string name="imsp_typing">"正在输入..."</string>
+    <string name="imsp_type_to_compose_text">"请输入 SMS/iSMS 内容"</string>
+    <string name="imsp_no_sdcard">"无存储卡"</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">发送好友邀请，你编辑的信息将被舍弃。</string>
+    <string name="imsp_current_sim_enabled">当前SIM卡已开启服务。</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">请选择激活iSMS的SIM卡</string>
+    <string name="imsp_activate_message">该功能只有开启iSMS服务之后才可以使用。是否立即激活你的iSMS帐号？</string>
+    <string name="imsp_enable_message">该功能只有开启iSMS服务之后才可以使用。是否立即开启你的iSMS帐号？</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">请选择开启iSMS服务的SIM卡</string>
+    <string name="imsp_switch_sim_title">切换SIM卡</string>
+    <string name="imsp_switch_sim_message">当前SIM卡未开启iSMS服务。是否切换到另一张SIM卡？</string>
+    <string name="imsp_switch_sim_successfully">成功切换SIM卡！</string>
+    <string name="imsp_dailog_multi_forward">转发中 </string>
+    <string name="imsp_dialog_send_result">发送结果</string>
+    <string name="imsp_dlg_send_all">全部：  %s</string>
+    <string name="imsp_dlg_send_sucess">成功： %s</string>
+    <string name="imsp_dlg_send_failed">失败：  %s</string>
+    <string name="imsp_multi_forward_sim_info">获取SIM卡信息中</string>
+    <string name="imsp_multi_forward_no_sim">检测不到SIM卡信息</string>
+    <string name="imsp_get_sim_failed">获取SIM卡信息失败</string>
+    <string name="imsp_sim_status_error">SIM 卡状态错误</string>
+    <string name="imsp_forward_norecipients">未选择收件人，请重新选择</string>
+    <string name="imsp_multiforward_no_message">未选择信息，请重新选择</string>
+    <string name="imsp_need_input_recipients">请至少指定一个收件人</string>
+    <string name="imsp_spam_empty">您当前黑名单聊天列表没有内容。 \n这里显示所有被标记为“黑名单”的聊天会话。被标记为黑名单的会话聊天的消息提示默认会被关掉，它能阻止一些不必要的骚扰 。 \n\n您可以长按一个聊天会话，并通过点击黑名单菜单标记它为黑名单。 当一个聊天会话被标记为黑名单时，聊天会话上会显示一个无信息提示图标，该聊天会话同时会被放到当前黑名单列表。 </string>
+    <string name="imsp_groupchat_empty">您当前群组聊天列表没有内容。\n这里显示所有的您所创建或参与的群组聊天会话。在这里您可以很容易找到并管理您的群组聊天。\n\n点击屏幕下方的“创建群组”按钮，您可以创建一个群组，并邀请您的好友加入群组。</string>
+    <string name="imsp_important_empty">您当前重要聊天列表没有内容。\n这里显示所有您标记为“重要”的信息所在的聊天会话，在这里您可以很容易的看到被标记为“重要”的信息。\n\n您可以长按一条信息，在菜单中选择“标为重要”，把这条信息标记为“重要”。当这条信息被标记为重要，在这条信息的下方，您会看到一个小红旗。</string>
+    <string name="imsp_allchat_empty">没有聊天会话</string>
+    <string name="imsp_attach_slideshow">"幻灯片"</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">下载....</string>
+    <string name="imsp_invite_friends_to_ipmsg">邀请朋友使用iSMS</string>
+    <string name="imsp_multi_forward_tips_content">部分消息需先下载多媒体内容，才能完成多条转发。</string>
+    <string name="imsp_multi_forward_failed_part">部分消息转发失败。</string>
+    
+    
+    <string name="STR_NMS_ACTIVATE_BUTTON">激活</string>
+    <string name="STR_NMS_ACTIVATE_BUTTON_OK">已激活</string>
+    <string name="STR_NMS_SERVICE_CENTER_BODY">iSMS是一款免费发送信息软件。只要您和好友均为iSMS用户，可免费发短信和图片视频等多媒体信息。</string>
+    <string name="STR_NMS_SERVICE_CENTER_OK">谢谢你激活iSMS服务，现在可以开始使用了</string>
+    
+    
+    <string name="imsp_no_ismsuser_message">对方不是iSMS用户，此功能只能是双方均为iSMS用户时才能使用。</string> 
+    <string name="imsp_delivered_when_get_online">当对方上线时会收到此信息。</string>
+    <string name="imsp_conversation_list_private_msg">私密信息</string>
+    <string name="imsp_conversation_list_private_contact">私密联系人</string>
+    <string name="imsp_private_msg_setting_pwd">请先设置密码:</string>
+    <string name="imsp_private_msg_setting_pwd_tips">注：请务必记住您所设置的密码，忘记后无法打开私密信息。</string>
+    <string name="imsp_private_msg_confirm_pwd">请再次输入密码</string>
+    <string name="imsp_private_msg_enter_pwd">请输入密码:</string>
+    <string name="imsp_move_to">移至</string>
+    <string name="imsp_move_from">移出</string>
+    <string name="imsp_private_msg_list">私密信箱</string>
+    <string name="imsp_private_msg_pwd_cannot_null">不能为空</string>
+    <string name="imsp_private_msg_pwd_six_digit">密码必须为6位数字</string>
+    <string name="imsp_private_msg_pwd_error">密码错误</string>
+    <string name="imsp_sure">确定</string>
+    <string name="imsp_private_from_contact">从通讯录导入</string>
+    <string name="imsp_private_from_diy">手动输入</string>
+    <string name="imsp_private_no_message">暂无私密信息</string>
+    <string name="imsp_private_no_contact">暂无私密联系人</string>
+    <string name="imsp_private_add_contact">添加私密联系人</string>
+    <string name="imsp_private_enter_phonenumber">请输入手机号码</string>
+    <string name="imsp_private_setting">私密信息设置</string>
+    <string name="imsp_private_setting_modify_pwd">修改密码</string>
+    <string name="imsp_private_setting_enterance">入口设置</string>
+    <string name="imsp_private_modify_enterance">修改入口的名称</string>
+    <string name="imsp_private_setting_tips">通知设置</string>
+    <string name="imsp_private_notification">启动通知</string>
+    <string name="imsp_private_notification_title">通知标题</string>
+    <string name="imsp_private_notification_content">通知内容</string>
+    <string name="imsp_private_notification_title_summary">自定义私密信息的通知标题</string>
+    <string name="imsp_private_notification_content_summary">自定义私密信息的通知内容</string>
+    <string name="imsp_private_notification_setting_content">通知内容设置</string>
+    <string name="imsp_private_notification_setting_title">通知标题设置</string>
+    <string name="imsp_private_new_message">收到新信息</string>
+    <string name="imsp_private_contact_del">确定删除该联系人？</string>
+    <string name="imsp_private_msg_add_contact_tips">添加私密联系人，保护你与Ta的信息隐私。</string>
+    <string name="imsp_private_enter_six_digit">请输入6位数字</string>
+    <string name="imsp_private_contact_invalid_number">不能为空。</string>
+    <string name="imsp_ip_msg_not_sendable_to_sms">接收者目前ISMS不可用，这条信息只能通过短信发送。是否继续？</string>
+    <string name="imsp_ip_msg_not_sendable_to_mms">接收者目前ISMS不可用，这条信息只能通过彩信发送。是否继续？</string>
+    
+    <!-- android 4.4 new string -->
+    <string name="STR_UNABLE_EDIT_FOR_NOT_DEFAULT_SMS_APP">无法修改，因为此程序不是默认的短信应用。</string>
+    <string name="STR_OPER_FAILED_FOR_NOT_DEFAULT_SMS_APP">iSMS的一些操作可能无法使用</string>
+    <string name="imsg_nms_mms_not_default">无法创建群聊信息,因为此应用不是默认的短信应用。</string>
+    <string name="STR_NMS_INPUT_HINT_FORBIT">发送功能已停用</string>
+
+
+</resources>

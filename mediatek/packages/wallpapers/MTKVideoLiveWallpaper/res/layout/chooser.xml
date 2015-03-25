@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/topView"
+	android:orientation="vertical" 
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent">
+	<TextView android:id="@+id/title" 
+	    android:text="@string/default_title"
+	    android:layout_height="wrap_content"
+		android:textSize="24sp"
+        android:singleLine="true"
+        android:requiresFadingEdge="horizontal"
+        android:ellipsize="none"
+		android:layout_width="match_parent" 
+		android:gravity="center">
+	</TextView>
+	<com.mediatek.widget.BookmarkView
+		android:id="@+id/bookmark" 
+		android:layout_height="match_parent"
+		android:layout_weight="1" 
+		android:layout_width="match_parent">
+	</com.mediatek.widget.BookmarkView>
+	<Button android:id="@+id/select_video" 
+	    android:layout_width="match_parent" 
+	    android:layout_height="wrap_content" 
+		android:text="@string/select" 
+		android:onClick="selectVideo" >
+	</Button>
+    
+</LinearLayout>

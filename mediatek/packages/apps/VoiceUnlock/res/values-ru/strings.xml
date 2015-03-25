@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="unlock_set_unlock_mode_voice_weak">Голос включен</string>
+    <string name="voice_unlock_setup_intro_header">Команда записи голоса</string>
+    <string name="voice_command_select_title">Выбрать команду</string>
+    <string name="voice_command_launch_app_title">Запустить приложение</string>
+    <string name="reset_command_title">Сбросить команду</string>
+    <string name="reset_command_prompt">Текущая команда сбрасывается и не может быть восстановлена.</string>
+    <string name="reset_command_prompt_last">Сбрасывается только голосовая команда. Режим блокировки экрана изменяется на Слайд.</string>
+    <string name="voice_unlock_options_title">Параметры</string>
+    <string name="voice_unlock_ok_label">"ОК"</string>
+    <string name="voice_unlock_cancel_label">"Отмена"</string>
+    <string name="voice_unlock_retry_label">Повтор</string>
+    <string name="voice_unlock_record_label">"Запись"</string>
+    <string name="voice_unlock_continue_label">"Продолжить"</string>
+    <string name="voice_unlock_setup_intro">Произнесите команду из 2-6 слогов и повторите ее 3-6 раз.</string>
+    <string name="voice_unlock_command">Команда разблокирования</string>
+    <string name="voice_command1">Команда включения 1</string>
+    <string name="voice_command2">Команда включения 2</string>
+    <string name="voice_command3">Команда включения 3</string>
+    <string name="command_summary">Разблокировать и запустить <xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_command_primary">Запустить <xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_command_customize">"Настроить"</string>
+    <string name="voice_command_secondary">Запустить <xliff:g id="app_name">%1$s</xliff:g> после разблокирования</string>
+    <string name="voice_command_record_description_unlock_screen">Разблокировать экран</string>
+    <string name="voice_command_record_description_command">Разблокировать экран и запустить <xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_service_error_title">Ошибка функции включения голоса.</string>
+    <string name="stop_playing_title">Остановить воспроизведение медиафайла</string>
+    <string name="stop_playing_message">Перед записью остановите воспроизведение медиафайла.</string>
+    <string name="voice_command_record_introdution">Нажмите кнопку RECORD и ПРОИЗНЕСИТЕ вашу голосовую команду.</string>
+    <string name="voice_command_record_prepare">Подготовка, ждите...</string>
+    <string name="voice_command_record_first_recording">ПРОИЗНЕСИТЕ вашу команду.\nОт 2 до 6 слогов.</string>
+    <string name="voice_command_record_non_first_recording">ПОВТОРИТЕ вашу голосовую команду.</string>
+    <string name="voice_command_record_one_round_ok">ПОЛУЧИТЕ.</string>
+    <string name="voice_command_record_one_round_noisy">Слишком шумно для определения вашего голоса. Повторите попытку.</string>
+    <string name="voice_command_record_one_round_weak">Невозможно разобрать ваш голос. Повторите попытку.</string>
+    <string name="voice_command_record_one_round_diff">Данная команда отличается от заданных ранее.</string>
+    <string name="voice_command_record_one_round_exist">Почти совпадает с существующей голосовой командой. Попробуйте использовать другую.</string>
+    <string name="voice_command_record_recording_ok">Голосовая команда настроена.</string>
+    <string name="voice_unlock_setup_end_all_done">Все готово.</string>
+    <string name="voice_unlock_setup_end_prompt">Для разблокирования вашего телефона просто произнесите вашу голосовую команду.</string>
+    <string name="pass_word_file_missing">Невозможно воспроизвести голосовую команду.</string>
+    <string name="time_out_title">Истекло время ожидания</string>
+    <string name="time_out_message">В течение 5 секунд голосовой ввод не выполнен. Попробуйте снова.</string>
+    <string name="during_call_title">Запись недоступна</string>
+    <string name="during_call_message">"Команда записи голоса" недоступна во время вызова.</string>
+</resources>

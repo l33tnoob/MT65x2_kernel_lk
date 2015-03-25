@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binndc Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type ndc_exec , exec_type, file_type;
+type ndc ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive ndc;
+init_daemon_domain(ndc)
+
+
+# 20131122 Add Set Property Rule
+allow ndc  property_type:property_service set;

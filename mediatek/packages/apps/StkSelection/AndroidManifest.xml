@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.mediatek.StkSelection"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/ic_launcher_sim_toolkit" android:label="@string/simlock_toolkit"
+    	android:process="com.android.phone" android:sharedUserId="android.uid.phone"
+    	>
+        <activity android:name=".StkSelection"
+                  android:configChanges="orientation"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                  android:label="@string/simlock_toolkit">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+
+</manifest> 

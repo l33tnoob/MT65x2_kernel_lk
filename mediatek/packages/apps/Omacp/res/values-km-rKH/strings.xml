@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!--
+        /* * Copyright (C) 2007-2008 Esmertec AG. * Copyright (C)
+        2007-2008 The Android Open Source Project * * Licensed under the
+        Apache License, Version 2.0 (the "License"); * you may not use
+        this file except in compliance with the License. * You may
+        obtain a copy of the License at * *
+        http://www.apache.org/licenses/LICENSE-2.0 * * Unless required
+        by applicable law or agreed to in writing, software *
+        distributed under the License is distributed on an "AS IS"
+        BASIS, * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+        express or implied. * See the License for the specific language
+        governing permissions and * limitations under the License. */
+    -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Used as the title and message type information. -->
+    <string name="configuration_message">ការរៀបចំសារ</string>
+    <!-- %d unread messages -->
+    <string name="notification_multiple">
+        <xliff:g id="count">%s</xliff:g>
+        សារមិនទាន់បានអាន ។
+    </string>
+    <!-- Used as part of notification description string. -->
+    <string name="notification_multiple_title">សារថ្មី</string>
+    <!-- Menu text. Clicking the menu leads to a new UI. -->
+    <string name="view">បើកមើល</string>
+    <!-- Button text. Clicking the button will delete messages. -->
+    <string name="delete">លុបចោល</string>
+    <!--
+        Menu text. Clicking the menu leads to a alert dialog showing the
+        detail information to user.
+    -->
+    <string name="view_message_detail">បើកមើលសេចក្តីលម្អិតរបស់សារ</string>
+    <!-- Menu text. Clicking the menu will delete all the messages. -->
+    <string name="delete_all">លុបចោលទាំងអស់</string>
+    <!-- Title of a context menu. -->
+    <string name="message_options">ជម្រើសសារ</string>
+    <!-- Title of the main UI when the UI is loading. -->
+    <string name="refreshing">កំពុងធ្វើឱ្យថ្មីឡើងវិញ\u2026</string>
+    <!-- Button text. Clicking the button will just closing the dialog. -->
+    <string name="no">បោះបង់ចោល</string>
+    <!-- Title of a alert dialog. -->
+    <string name="message_details_title">សេចក្តីលម្អិតសារ</string>
+    <!-- An short identifier string, should be as short as possible. -->
+    <string name="installed_indicator">បានដំឡើង</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="message_type_label">ប្រភេទៈ\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="from_label">មកពីៈ\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="received_label">បានទទួលៈ\u0020</string>
+    <!-- Dialog message to alert user. -->
+    <string name="confirm_delete_all_messages">សារទាំងអស់នឹងត្រូវបានលុបចោល ។</string>
+    <!-- Dialog message to alert user. -->
+    <string name="confirm_delete_message">សារនេះនឹងត្រូវបានលុបចោល ។</string>
+    <!-- Button text. Clicking the button will perform installation. -->
+    <string name="full_install_text">ដំឡើងពេញលេញ</string>
+    <!--
+        Button text. Clicking the button will lead to an selection
+        dialog.
+    -->
+    <string name="custom_install_text">ដំឡើងតាមតម្រូវការ</string>
+    <!-- Button text. Clicking the button will perform installation. -->
+    <string name="install_text">ដំឡើង</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="application_label">កម្មវិធីៈ\u0020</string>
+    <!-- Result of installation, should be as short as possible. -->
+    <string name="result_success">ជោគជ័យ</string>
+    <!-- Result of installation, should be as short as possible. -->
+    <string name="result_failed">បានបរាជ័យ</string>
+    <!-- Result of installation, should be as short as possible. -->
+    <string name="unknown">មិនស្គាល់</string>
+    <!-- Application name -->
+    <string name="mms_app_name">MMS</string>
+    <!-- Application name -->
+    <string name="browser_app_name">កម្មវិធីបើកអ៊ីនធើណេត</string>
+    <!-- Application name -->
+    <string name="apn_app_name">ឈ្មោះចំនុចចូលប្រើ</string>
+    <!-- Application name -->
+    <string name="email_app_name">អ៊ីមែល</string>
+    <!-- Application name -->
+    <string name="email_smtp_app_name">អ៊ីមែល SMTP</string>
+    <!-- Application name -->
+    <string name="email_pop3_app_name">អ៊ីមែល POP3</string>
+    <!-- Application name -->
+    <string name="email_imap4_app_name">អ៊ីមែល IMAP4</string>
+    <!-- Application name -->
+    <string name="dm_app_name">ការគ្រប់គ្រងឧបករណ៍</string>
+    <!-- Application name -->
+    <string name="agps_app_name">A-GPS</string>
+    <!-- Application name -->
+    <string name="rtsp_app_name">ប្រូតូកូលស្តាប់នៅម៉ោងពិតប្រាកដ</string>
+    <!-- Application name -->
+    <string name="ds_app_name">ការធ្វើឱ្យទិន្នន័យស្គាល់គ្នា</string>
+    <!-- Application name -->
+    <string name="imps_app_name">សេវាវត្តមាន និងការផ្ញើសារភ្លាមៗ</string>
+    <!-- Title of an alert dialog. -->
+    <string name="installation_report">របាយការណ៍ការដំឡើង</string>
+    <!-- Button text. Clicking the button will close the dialog. -->
+    <string name="yes">យល់ព្រម</string>
+    <!-- Progress dialog message to tell user it is now installing. -->
+    <string name="installing_progress_message">កំពុងដំឡើង...</string>
+    <!-- Error text. -->
+    <string name="install_timeout_error_msg">ការដំឡើងមានបញ្ហា ។</string>
+    <!-- Dialog message to alert user. -->
+    <string name="re_install_notify_message">ការកំណត់បច្ចុប្បន្ននៃកម្មវិធីនឹងត្រូវធ្វើជាន់គ្នានៅតែបន្ត
+        ?</string>
+    <!-- Title of an alert dialog. -->
+    <string name="re_install_notify_title">ការបញ្ជាក់</string>
+    <!-- Dialog message to indicate user. -->
+    <string name="unlock_pin_dialog_title">សូមដាក់លេខភីងរបស់អ្នក</string>
+    <!-- Title of a UI. -->
+    <string name="detail_activity_label">សេចក្តីលម្អិតការកំណត់</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="bookmark_label">អាសយដ្ឋានគេហទំព័រៈ \u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="homepage_label">ទំព័រដើមៈ\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mmsc_label">MMSC:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="server_address_label">អាសយដ្ឋានម៉ាស៊ីន បម្រើៈ\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="port_number_label">ច្រកៈ\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_outbound_label">នៅក្រៅៈ\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_inbound_label">នៅក្នុងៈ\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_account_label">គណនីៈ\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_need_sign_label">តម្រូវឱ្យចុះឈ្មោះចូលៈ \u0020</string>
+    <string name="email_need_sign_yes">បាទ / ចាស៎</string>
+    <string name="email_need_sign_no">ទេ</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="rtsp_netinfo_label">ព័ត៌មានអ៊ីធើណេតៈ \u0020</string>
+    <!--
+        Label, should be as short as possible. UDP is the short form of
+        "User Datagram Protocol"
+    -->
+    <string name="rtsp_max_udp_port_label">ច្រក UDP អតិបរមា:</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="rtsp_min_udp_port_label">ច្រក UDP អប្បបរមាៈ</string>
+    <!--
+        Label, should be as short as possible. Short form of "Access
+        Point Name"
+    -->
+    <string name="apn_apn_label">APN: \u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="apn_mms_proxy_label">ប្រូកស៊ី MMS: \u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="apn_mms_port_label">ច្រក MMS: \u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="apn_auth_type_label">ការបញ្ជាក់ថាពិត ប្រភេទៈ \u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="apn_type_label">ប្រភេទ APN: \u0020</string>
+    <string name="info_unsupport">មិនត្រូវបានគាំទ្រ</string>
+    <string name="info_unavaliable">មិនអាចរកបាន</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="bookmark_folder_label">ចំណាំប្រអប់ទុកៈ\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="proxy_label">ប្រូកស៊ីៈ \u0020</string>
+    <!--
+        Label, should be as short as possible. Short form of "Network
+        Access Point"
+    -->
+    <string name="nap_label">NAP:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="bookmark_name_label">ចំណាំឈ្មោះទុកៈ \u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="user_name_label">ឈ្មោអ្នកប្រើៈ \u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="password_label">ពាក្យសម្ងាត់ៈ\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mmsc_name_label">ឈ្មោះ MMSC:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mms_cm_label">បែបបង្កើតៈ\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mms_rm_label">បែបដាក់បញ្ជូនឡើងវិញ:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mms_ms_label">ទំហំ MM ដែលមាន សិទិ្ធជាអតិបរមា :\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mms_pc_addr_label">អាសយដ្ឋានសេវាកាតផូស្តាល:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mms_ma_label">គាំទ្រMMS អន្តរមុខ: \u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="server_id_label">អត្តលេខម៉ាស៊ីនបម្រើ :\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="server_name_label">ឈ្មោះម៉ាស៊ីនបម្រើ :\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="server_addr_type_label">ប្រភេទអាសយដ្ឋានម៉ាស៊ីនបម្រើ :\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="auth_level_label">កម្រិតសុវត្ថិភាព:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="auth_type_label">ប្រភេទសុវត្ថិភាព :\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="auth_data_label">ទិន្នន័យសុវត្ថិភាព :\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="dm_init_label">តម្រូវការដំបូង :\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_setting_name_label">ការកំណត់ឈ្មោះ :\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_secure_label">សុវត្ថិភាព :\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_from_label">មកពីៈ\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_rt_address_label">ឆ្លើយតបទៅកាន់អាសយដ្ឋាន :\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="rtsp_max_bandwidth_label">ទទឹងសម្ព័ន្ធអតិបរមា :\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="ds_database_name_label">ឈ្មោះបណ្តុំទិន្នន័យ :\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="ds_database_url_label">URI បណ្តុំទិន្នន័យ :\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="content_type_label">ប្រភេទមាតិការ :\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="ds_cliuri_label">URI បណ្តុំទិន្នន័យអតិថិជន :\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="ds_sync_type_label">ប្រភេទស្គាល់គ្នាៈ :\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="imps_services_label">សេវា :\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="imps_cid_prefix_label">អត្តលេខខាងមុនរបស់អតិថិជន :\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="name_label">ឈ្មោះ :\u0020</string>
+    <!-- Dialog message to alert user. -->
+    <string name="detail_invalid_setting_error_msg">ការកំណត់មិនត្រឹមត្រូវ ។</string>
+    <!-- Title of dialog. -->
+    <string name="error">មានបញ្ហា</string>
+    <string name="app_label">Omacp</string>
+</resources>

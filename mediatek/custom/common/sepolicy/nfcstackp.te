@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbinnfcstackp Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type nfcstackp_exec , exec_type, file_type;
+type nfcstackp ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive nfcstackp;
+init_daemon_domain(nfcstackp)
+
+
+# 20131122 Add Set Property Rule
+allow nfcstackp  property_type:property_service set;

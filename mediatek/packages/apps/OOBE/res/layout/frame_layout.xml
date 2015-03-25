@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mediatek.oobe.utils.ProportionalOuterFrame xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_root"
+    android:orientation="vertical" >
+
+    <include 
+        android:id="@+id/title_area"
+        layout="@layout/title_panel"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_area"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1" />
+
+        <include layout="@layout/progressbar" />
+
+        <include layout="@layout/button_panel" />
+
+    </LinearLayout>
+</com.mediatek.oobe.utils.ProportionalOuterFrame>

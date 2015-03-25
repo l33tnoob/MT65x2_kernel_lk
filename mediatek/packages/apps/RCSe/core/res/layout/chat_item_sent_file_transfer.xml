@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--* Copyright Statement:
+ *
+ * This software/firmware and related documentation ("MediaTek Software") are
+ * protected under relevant copyright laws. The information contained herein
+ * is confidential and proprietary to MediaTek Inc. and/or its licensors.
+ * Without the prior written permission of MediaTek inc. and/or its licensors,
+ * any reproduction, modification, use or disclosure of MediaTek Software,
+ * and information contained herein, in whole or in part, shall be strictly prohibited.
+ *
+ * MediaTek Inc. (C) 2012. All rights reserved.
+ *
+ * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+ * THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+ * RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO RECEIVER ON
+ * AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+ * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+ * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+ * SUPPLIED WITH THE MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+ * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+ * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+ * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+ * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+ * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+ * CUMULATIVE LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+ * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+ * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+ * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+ *
+ * The following software/firmware and/or related documentation ("MediaTek Software")
+ * have been modified by MediaTek Inc. All revisions are subject to any receiver's
+ * applicable license agreements with MediaTek Inc.
+ */  -->
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@android:color/transparent"
+     android:paddingBottom="8dp"
+     android:paddingLeft="12dp"
+     android:paddingRight="12dp"
+     android:paddingTop="8dp" >
+     
+     <com.mediatek.rcse.activities.widgets.DateView
+         android:id="@+id/chat_item_date"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginBottom="6dp"
+         android:layout_marginRight="8dp"
+         android:ellipsize="end"
+         android:singleLine="true"
+         android:textColor="#515151"
+         android:textSize="12sp" />
+     
+     <com.mediatek.rcse.activities.widgets.FileTransferView
+        android:id="@+id/file_transfer_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/chat_item_date"
+        android:background="@drawable/back_ground_sent_message"
+        android:minHeight="70dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp" >
+
+        <ImageView
+            android:id="@+id/file_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/rcs_ic_ft_default_preview" />
+
+        <TextView
+            android:id="@+id/file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/file_icon"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:maxWidth="108dp"
+            android:textColor="#191919"
+            android:textSize="14sp" />
+
+        <com.mediatek.rcse.activities.widgets.AsyncGalleryView
+            android:id="@+id/file_transfer_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:maxHeight="90dp"
+            android:maxWidth="90dp"
+            android:scaleType="centerInside" />
+    </com.mediatek.rcse.activities.widgets.FileTransferView>
+
+    <RelativeLayout
+        android:id="@+id/file_transfer_layout_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/file_transfer_view"
+        android:layout_alignTop="@id/file_transfer_view"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/file_transfer_view"
+        android:gravity="center_vertical" >
+
+        <ProgressBar
+            android:id="@+id/file_transfer_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:minWidth="120dp" />
+
+        <TextView
+            android:id="@+id/file_transfer_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/file_transfer_progress_bar"
+            android:singleLine="true"
+            android:paddingTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:textColor="#7e7e7e"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/file_transfer_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/file_transfer_progress_bar"
+            android:singleLine="true"
+            android:paddingTop="10dp"
+            android:textColor="#7e7e7e"
+
+            android:textSize="13sp" />
+        <ImageView
+            android:id="@+id/file_transfer_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/file_transfer_progress_bar"
+            android:background="@*android:drawable/ic_clear_holo_light"
+            android:paddingTop="10dp"
+            android:layout_alignParentRight="true"
+            />
+        <ImageView
+            android:id="@+id/file_transfer_btn_play_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/file_transfer_progress_bar"
+            android:layout_alignParentRight="true"
+            android:background="@android:drawable/ic_media_pause"
+            android:paddingTop="5dp"
+            />
+        
+        <ImageView
+            android:id="@+id/file_transfer_btn_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/file_transfer_progress_bar"
+            android:layout_toLeftOf="@id/file_transfer_btn_cancel"
+            android:background="@*android:drawable/ic_clear_holo_light"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+ </RelativeLayout>

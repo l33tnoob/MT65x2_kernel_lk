@@ -1,0 +1,146 @@
+package com.mtk.sanitytest.launchstktest;
+
+import android.app.Activity;
+import android.test.InstrumentationTestCase;
+
+import junit.framework.TestCase;
+import android.test.suitebuilder.annotation.LargeTest;
+import android.app.Instrumentation;
+
+import android.view.KeyEvent;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Button;
+import android.test.TouchUtils;
+
+import android.os.SystemClock;
+import android.view.MotionEvent;
+import android.util.Log;
+
+import java.lang.CharSequence;
+import android.preference.Preference;
+
+import android.preference.PreferenceActivity;
+import android.net.Uri;
+import android.content.Intent;
+
+import android.os.Bundle;
+import android.content.Context;
+import android.view.MotionEvent;
+import android.util.DisplayMetrics;
+import android.test.ActivityInstrumentationTestCase2;
+//import com.mtk.autotest.utils.AutoTestLog;
+
+public class launchSTKTest extends
+		ActivityInstrumentationTestCase2<com.mtk.sanitytest.launchSTK> {
+
+	private Instrumentation mInst = null;
+	private Context mContext = null;
+	private Activity mActivity = null;
+
+	private static final String TAG = "launchSTKTest_GEMINI";
+	//private AutoTestLog log = new AutoTestLog();
+
+	private float mXRatio = 0.0f;
+	private float mYRatio = 0.0f;
+	int nXDelta = 20;
+	int nYDelta = 20;
+	int nXDirect = 1;
+	int nYDirect = 1;
+
+	public launchSTKTest() {
+		super("com.android.launchSTKTest",
+				com.android.launchSTKTest.launchSTK.class);
+	}
+
+	@Override
+	protected void setUp() throws Exception {
+		super.setUp();
+		mInst = getInstrumentation();
+		mContext = mInst.getContext();
+		mActivity = getActivity();
+	}
+
+	@Override
+	protected void tearDown() throws Exception {
+		super.tearDown();
+
+	}
+
+	// @LargeTest
+	public void testLaunchSTK() {
+
+		SystemClock.sleep(10000);
+		Log.i(TAG, "test STK1");
+		clickMenu();
+		clickMenu();
+
+		SystemClock.sleep(8000);
+		Log.i(TAG, "test STK2");
+
+		mInst.sendKeyDownUpSync(KeyEvent.KEYCODE_BACK);
+		SystemClock.sleep(5000);
+
+		mInst.sendKeyDownUpSync(KeyEvent.KEYCODE_BACK);
+		SystemClock.sleep(5000);
+
+		mInst.sendKeyDownUpSync(KeyEvent.KEYCODE_BACK);
+		SystemClock.sleep(5000);
+		clickMenu();
+		clickMenu();
+		SystemClock.sleep(8000);
+
+		mInst.sendKeyDownUpSync(KeyEvent.KEYCODE_BACK);
+		SystemClock.sleep(1000);
+		mInst.sendKeyDownUpSync(KeyEvent.KEYCODE_BACK);
+		SystemClock.sleep(1000);
+
+		mInst.sendKeyDownUpSync(KeyEvent.KEYCODE_BACK);
+		SystemClock.sleep(1000);
+
+	}
+
+	// //helper functions///
+	private void clickMenu() {
+
+		getDisplayMetrics();
+		int x = (int) (mXRatio * 83 + nXDirect * nXDelta);
+		int y = (int) (mYRatio * 67 + nYDirect * nYDelta);
+
+		Log.i(TAG, "x =" + Integer.toString(x));
+		Log.i(TAG, "y =" + Integer.toString(y));
+
+		mInst.sendPointerSync(MotionEvent.obtain(SystemClock.uptimeMillis(),
+				SystemClock.uptimeMillis(), MotionEvent.ACTION_DOWN, (float) x,
+				(float) y, 0));
+		SystemClock.sleep(50);
+		mInst.sendPointerSync(MotionEvent.obtain(SystemClock.uptimeMillis(),
+				SystemClock.uptimeMillis(), MotionEvent.ACTION_UP, (float) x,
+				(float) y, 0));
+
+		int DUR_WAIT_CHECK = 15000; // 15 seconds
+		SystemClock.sleep(DUR_WAIT_CHECK);
+
+	}
+
+	public void getDisplayMetrics() {
+		DisplayMetrics dm = new DisplayMetrics();
+		mActivity.getWindowManager().getDefaultDisplay().getMetrics(dm);
+		int screenWidth = dm.widthPixels;
+		int screenHeight = dm.heightPixels;
+		if (screenWidth < screenHeight) {
+			mXRatio = (float) (screenWidth / 240.00);
+			mYRatio = (float) (screenHeight / 400.00);
+		} else {
+			mXRatio = (float) (screenWidth / 400.00);
+			mYRatio = (float) (screenHeight / 240.00);
+		}
+
+		if (mXRatio < 1) {
+			nXDirect = -1;
+		}
+		if (mYRatio < 1) {
+			nYDirect = -1;
+		}
+	}
+}

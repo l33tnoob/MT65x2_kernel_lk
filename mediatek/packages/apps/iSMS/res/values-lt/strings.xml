@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="STR_NMS_MAIN">iSMS</string>
+    <string name="STR_NMS_HISSAGE">iSMS</string>
+    <string name="STR_NMS_INVITE_SMS_CONTENT">Sveiki, „iSMS“ tai šaunus pokalbių įrankis. Jis nemokamas ir patogus. Daugiau sužinosite apsilankę http://isms.hissage.com.</string>
+    <string name="STR_NMS_NO_SDCARD">Aptikta SD kortelė, dalies veiksmų „iSMS“ neleis</string>
+    <string name="STR_NMS_MOUNT_SDCARD">Galima naudotis SD kortele</string>
+    <string name="STR_NMS_SEND_MMS_FAIL">Nepavyksta išsiųsti žinutės. Kai tinklas bus galimas, ji bus išsiųsta automatiškai.</string>
+    <string name="STR_NMS_RECV_MMS_FAIL">Nepavyksta atsisiųsti. Pabadykite dar kartą vėliau.</string>
+    <string name="STR_NMS_GROUP_CHAT_ME">aš</string>
+    <string name="STR_NMS_GROUP_CHAT_I">aš</string>
+    <string name="STR_NMS_GROUP_CHAT_YOU">Tu</string>
+    <string name="STR_NMS_GROUP_CREATE_MSG">%1$s pakvietė %2$s į grupės pklb.</string>
+    <string name="STR_NMS_GROUP_ADD_MSG">%1$s prisijungė prie grup. pklb.</string>
+    <string name="STR_NMS_GROUP_DELETE_MSG">%1$s ištrynė %2$s iš grupės pklb.</string>
+    <string name="STR_NMS_GROUP_QUITE_MSG">%1$s išėjo iš grupės pklb.</string>
+    <string name="STR_NMS_GROUP_CHAT_PLACE_HOLDER_MSG_BODY">Prisijungėte prie grupės</string>
+    <string name="STR_NMS_PICTURE">vaizdas</string>
+    <string name="STR_NMS_TAPE">garso įr.</string>
+    <string name="STR_NMS_VCARD">adresatas</string>
+    <string name="STR_NMS_LOCATION">vieta</string>
+    <string name="STR_NMS_SKETCH">eskizas</string>
+    <string name="STR_NMS_VIDEO">vaizdo įr.</string>
+    <string name="STR_NMS_CALENDAR">kalendorius</string>
+    <string name="STR_NMS_UNKNOWN">nežinoma</string>
+    <string name="STR_NMS_READ_MODE_PIC">vaizdas</string>
+    <string name="STR_NMS_READ_MODE_TAPE">garsinė pastaba</string>
+    <string name="STR_NMS_READ_MODE_VCARD">adresatai</string>
+    <string name="STR_NMS_READ_MODE_LOCATION">vieta</string>
+    <string name="STR_NMS_READ_MODE_SKETCH">eskizas</string>
+    <string name="STR_NMS_READ_MODE_VIDEO">vaizdo įr.</string>
+    <string name="STR_NMS_READ_MODE_CALENDAR">kalendorius</string>
+    <string name="STR_NMS_ISMS_ENABLE">(„iSMS“ įgalinta)</string>
+    <string name="STR_NMS_READ_MODE_UNKNOWN">nežinomas failas</string>
+    <string name="STR_NMS_ALL_MSG">Visos žinutės</string>
+    <string name="STR_NMS_SAVED">Išsaugota</string>
+    <string name="STR_NMS_BLOCKMSG">Užblokuota</string>
+    <string name="STR_NMS_SMS_TYPE">SMS</string>
+    <string name="STR_NMS_VERSION_ID">v5.2.16.696</string>
+    <string name="STR_NMS_NO_SIM">SIM kortelė neaptikta</string>
+    <string name="STR_NMS_ILLEGAL_ADDRESS">Neteisingas nr.</string>
+    <string name="STR_NMS_REMIND_USER_SET_NAME">Atnaujinkite profilį</string>
+    <string name="STR_NMS_OK">Gerai</string>
+    <string name="STR_NMS_BACK">Atgal</string>
+    <string name="STR_NMS_CANCEL">Atšaukti</string>
+    <string name="STR_NMS_NETWORK_UNAVL">Įsitikinkite, kad veikia duomenų ryšys, pvz., 3G, GPRS ar Wi-Fi</string>
+    <string name="STR_NMS_TODAY">Šiandien</string>
+    <string name="STR_NMS_YESTERDAY">Vakar</string>
+    <string name="STR_NMS_NOW">Dabar</string>
+    <string name="STR_NMS_NO_SIM_CARD">SIM kortelė neaptikta, turite įdėti SIM kortelę.</string>
+    <string name="STR_NMS_NO_CONNECTION">Tinklas negalimas arba įjungtas skrydžio režimas. Patikrinkite.</string>
+    <string name="STR_NMS_ATTACH_SHARE">%1$s pasidalijo %2$s</string>
+    <string name="STR_NMS_WAIT">Palaukite…</string>
+    <string name="STR_NMS_TIPTITLE">Patarimas</string>
+
+    <string name="STR_NMS_OPEN">Atidaryti</string>
+    <string name="STR_NMS_PLAY">Paleisti</string>
+    
+	
+    <string name="STR_NMS_VCARD_NAME">%1$s adresatai</string>
+    <string name="STR_NMS_SHARE_VCARD_FAILED">nepavyko pasid. adres</string>
+
+    <!-- upgrade info -->
+    <string name="STR_NMS_UPGRADE_URL">http://ismsi.hissage.com/webservice/hss/hssVersionUpdate.php</string>
+    <string name="STR_NMS_UPGRADE_TICKER">Versijos naujovin</string>
+    <string name="STR_NMS_UPGRADE_ERROR_TITLE">Naujovin. klaida</string>
+    <string name="STR_NMS_UPGRADE_ERROR_CONTENT">Naujovin. įvyko kld., naujivin. naudodami „iSMS“</string>
+    <string name="STR_NMS_INSTALLED_TITLE">Naujovin. pavyko</string>
+    <string name="STR_NMS_INSTALLED_CONTENT">Naujovinta sėkmingai telefone</string>
+    <string name="STR_NMS_PROMPT_DLG_TITLE">Aptikta nauja versija</string>
+    <string name="STR_NMS_PROMPT_DLG_DOWNLOAD">Atsisiųsti</string>
+    <string name="STR_NMS_PROMPT_DLG_LATER">Vėliau</string>
+    <string name="STR_NMS_UPGRADING">Naujovinama</string>
+    <string name="STR_NMS_UPGRADE_TIME">Pask. karta tkr.: %s</string>
+    
+    <!-- ext protocol -->
+    <string name="STR_NMS_OFFLINE_URL">http://ismsi.hissage.com/webservice/nmsmail/notifyOffline.php</string>
+    
+    <!-- Activation start -->
+    <string name="STR_NMS_PRELOAD_IP_MSG_CONTENT">&quot;Sveiki, tai „iSMS“.&quot;</string>
+    <string name="STR_NMS_ACTIVAT_TITLE">„iSMS“ vieną kartą išsiųs SMS žinutę, kad patvirtintų tel. numerį. Gali būti taikomi tiekėjo mok.</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE">Patvirtinkite tel. numerį</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE2">Patvirtinkite tel. numerį</string>
+    <string name="STR_NMS_YOUR_COUNTRY_TITLE">VALSTYBĖ</string>
+    <string name="STR_NMS_YOUR_PHONE_TITLE">TEL. NUMERIS</string>
+    <string name="STR_NMS_VERIFY_FAIL_TITLE">Nepavyko baigti SMS patvirtinimo.</string>
+    <string name="STR_NMS_VERIFY_FAIL_CONTENT">Patikrinkite, ar teisingai įvestas telefono numeris.</string>
+    <string name="STR_NMS_WORKING_SMS_TIP">Patikrinkite, ar jūsų SMS planas veikia tinkamai.</string>
+    <string name="STR_NMS_VERIFYING">Laukiama, kol bus autom. aptikta SMS, nusiųsta į</string>
+    <string name="STR_NMS_RETRY">Band. dar</string>
+    <string name="STR_NMS_EDIT_NUMBER">Red. numerį</string>
+    <string name="STR_NMS_UPDATE_PROFILE">Naujinti prof.</string>
+    <string name="STR_NMS_START_ISMS">Paleisti „iSMS“</string>
+    <string name="STR_NMS_SEND">Siųsti</string>
+    <string name="STR_NMS_CONGRATULATIONS_TITLE">Sveikiname!</string>
+    <string name="STR_NMS_CONGRATULATIONS_CONTENT">Dėkojame, kad aktyvinote „iSMS“.\nDabar galite pradėti naudotis paslauga.\nSmagaus susirašinėjimo naudojant „iSMS“!</string>
+    <string name="STR_NMS_WELCOME_BACK">Sveiki sugrįžę.</string>
+    <string name="STR_NMS_SEND_SMS_FAIL">Patvirtinti nepavyko, patikrinkite:\n 1. Ar teisingas tel. nr.\n 2. Ar išjungta saugos programinė įranga.\n 3. Kitos priežastys, kurios gali blokuoti SMS siuntimą.\nPatikrinkite ir pabandykite vėl.</string>
+    <string name="STR_NMS_ACTIVE">Aktyvinti „iSMS“</string>
+    <string name="STR_NMS_WELCOME_ACTIVE">Sveiki, tai „iSMS“</string>
+    <string name="STR_NMS_CONNECTING">Jungiamasi...</string>
+    <!-- Activation end -->
+
+
+    <!-- Notification start -->
+    <string name="STR_NMS_NEW_MSG_TITLE">Nauja „iSMS“ žinutė</string>
+    <string name="STR_NMS_NEW_SMG_CONTENT">Neskaitytų žinučių: %d</string>
+    <!-- Notification End -->
+
+    <string name="STR_NMS_MSG_DUMPER_MSG_SMS">SMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_MMS">MMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_IP">IP žinutė</string>
+    <string name="STR_NMS_MSG_DUMPER_SEND_MSG">Nusiuntė %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_RECEIVE_MSG">Gavo %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TIME">Laikas: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TEXT">Tekstas</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_PIC">Vaizdas</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_SKETCH">Eskizas</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VOICE">Balsas</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VIDEO">Vaizdo įr.</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CALENDAR">Kalendorius</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION_IMG">Vietos nuotrauka</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VCARD">V kortelė</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION">Vieta</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CAPTION">Poraštė: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_URL">URL: </string>
+    <string name="STR_NMS_MSG_DUMPER_DURATION">Trukmė: </string>
+    <string name="STR_NMS_MSG_DUMPER_COORDINATE">Koordinatės: </string>
+    <string name="STR_NMS_MSG_DUMPER_ADDRESS">Adresas: </string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_SENDER">Siuntėjas: </string>
+    <string name="STR_NMS_MSG_DUMPER_NORMAL_DETAIL">Seanso inform.:</string>
+    <string name="STR_NMS_MSG_DUMPER_NAME">Vardas: </string>
+    <string name="STR_NMS_MSG_DUMPER_NUMBER">Numeris: </string>
+    <string name="STR_NMS_MSG_DUMPER_PORTRAIT">Portretas</string>
+    <string name="STR_NMS_MSG_DUMPER_MULTI_SEND_DETAIL">Transliacija:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_DETAIL">Grupės pokalb.:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_CREATER">Kūrėjas: </string>
+    <string name="STR_NMS_MSG_DUMPER_MEMBERS">Narys: </string>
+    <string name="STR_NMS_MSG_DUMPER_VCARD_NAME">Vardas: </string>
+    <string name="STR_NMS_MSG_DUMPER_CALENDAR_SUMMARY">Santrauka: </string>
+
+    <!-- Chat Settings -->
+    <string name="STR_NMS_CHAT_SETTING_TITLE">Pokalbio nust.</string>
+    <string name="STR_NMS_DISPLAY">Ekranas</string>
+    <string name="STR_NMS_CHAT_WALLPAPER">Pokalb. fonas</string>
+    <string name="STR_NMS_SYS_WALLPAPER">Pasirinkti foną</string>
+    <string name="STR_NMS_CAMEARPHOTO">Fotografuoti</string>
+    <string name="STR_NMS_SYS_GALLERY">Pasirinkti iš galerijos</string>
+    <string name="STR_NMS_DEFAULT_WALLPAPER">Numat.</string>
+    <string name="STR_NMS_NOTIFICATION_CATEGORY">Pranešimas</string>
+    <string name="STR_NMS_NOTIFICATION_TITLE">„iSMS“ pranešimas</string>
+    <string name="STR_NMS_NOTIFICATION_CONTENT">Rodyti, kai gaunami pranešimai</string>
+    <string name="STR_NMS_MUTE">Nutild.</string>
+    <string name="STR_NMS_MUTE_OFF">Išj.</string>
+    <string name="STR_NMS_MUTE_1">Nutildyti 1 val.</string>
+    <string name="STR_NMS_MUTE_4">Nutildyti 4 val.</string>
+    <string name="STR_NMS_MUTE_8">Nutildyti 8 val.</string>
+    <string name="STR_NMS_RINGTONE_TITLE">Skamb. tonas</string>
+    <string name="STR_NMS_RINGTONE_CONTENT">Nustatyti naujų praneš. skamb. toną </string>
+    <string name="STR_NMS_VIBRATE_TITLE">Vibruoti</string>
+    <string name="STR_NMS_VIBRATE_CONTENT">Vibruoti gavus pranešimus</string>
+    <string name="STR_NMS_ACTIONS">Veiksmai</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_TITLE">Atsisiųsti pokalb. istoriją</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_CONTENT">Išsaugoti SD kort. zip formatu</string>
+    <string name="STR_NMS_EMAIL_HISTORY_TITLE">El. pšt. pok. istorija</string>
+    <string name="STR_NMS_EMAIL_HISTROY_CONTENT">El. pšt. pok. istorija zip formatu</string>
+    <string name="STR_NMS_CLEAR_HISTROY">Valyti pokalb. istor.</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_DLG">Atsisiunčiama...</string>
+    <string name="STR_NMS_DOWNLOAD_OK">Pokalbio istorija atsiųsta, išsaugoti ją kaip %s</string>
+    <string name="STR_NMS_DOWNLOAD_ERROR">Klaida atsiunčiant pokalbio istoriją.</string>
+    <string name="STR_NMS_DOWNLOAD_EMPTY">Nėra ką atsiųsti.</string>
+    <string name="STR_NMS_CLEARING">Valoma istorija, palaukite...</string>
+    <string name="STR_NMS_WAIT_SAVE_WALLPAPER">Išsaugomas fonas, palaukite...</string>
+    <string name="STR_NMS_SAVE_WALLPAPER_OK">Fonas išsaug. sėkmingai.</string>
+    <string name="STR_NMS_CLEARDONE">Istorija išvalyta.</string>
+    <string name="STR_NMS_SVAE_TITLE">Išsaugoti SD kort.</string>
+    <string name="STR_NMS_SAVE_CONTENT">Išsaugoti šią pokalbio giją SD kort. kaip zip failą</string>
+    <string name="STR_NMS_EMAIL_TITLE">Dalytis per el. pšt.</string>
+    <string name="STR_NMS_EMAIL_CONTENT">Dalytis šia pokalbio gija kaip priedu el. paštu zip formatu</string>
+
+    <!-- Chat Settings End -->
+
+
+    <!-- Profile Settings -->
+    <string name="STR_NMS_PROFILE_TITLE">Profilis</string>
+    <string name="STR_NMS_TAP_AVATAR_TIP">Palies., kad red. prof. vaizdą</string>
+    <string name="STR_NMS_DISPLAY_NAME_TIP">ROD. VARDAS</string>
+    <string name="STR_NMS_ACCOUNT_TIP">ISMS PASKYR.</string>
+    <string name="STR_NMS_NO_APP">Jokia progr. negali atlikti tokio veiksmo.</string>
+    <string name="STR_NMS_NO_NAME">Nustat. vardą</string>
+    <string name="STR_NMS_SAVE_AVATAR_FAILD">Deja nepavyko išsaug. profil. vaizd.</string>
+    <string name="STR_NMS_INPUT_NAME">Vardas</string>
+    <string name="STR_NMS_TERM_WARN_ACTIVATE">Šią funkciją palaiko tik „iSMS“ paslauga.\n\n„iSMS“ tai nemokama momentinio susirašinėjimo paslauga, kuria galite kalbėti ir dalytis multimedijos turiniu su draugais bet kada ir bet kur naudodamiesi interneto ryšiu (Wi-Fi, 2G / 3G ir pan.).\nPirmą kartą įjungus „iSMS“, bus automatiškai išsiųsta SMS žinutė, kad būtų baigta registracija. Gali būti taik. SMS dydžio aprib. ar siunt. mok.\n\n Pagal sutartį su naud.\n</string>
+    <string name="STR_NMS_TERM_WARN_WELCOME">„iSMS“ tai nemokama momentinio susirašinėjimo paslauga, kuria galite kalbėti ir dalytis multimedijos turiniu su draugais bet kada ir bet kur naudodamiesi interneto ryšiu (Wi-Fi, 2G / 3G ir pan.).\nPirmą kartą įjungus „iSMS“, bus automatiškai išsiųsta SMS žinutė, kad būtų baigta registracija. Gali būti taik. SMS dydžio aprib. ar siunt. mok.\n\n Pagal sutartį su naud.\n</string>
+    <string name="STR_NMS_TERM_KEY">Taisyklės ir sąlygos</string>
+    <string name="STR_NMS_AGREE_AND_CONTINUE">Sutinku, tęsti</string>
+    <string name="STR_NMS_ACTIVE_BNT">Aktyvinti</string>
+    <string name="STR_NMS_SET_PROFILE_OK">Profilis sėkmingai nustat.</string>
+    <string name="STR_NMS_SET_PROFILE_FAIL">Nepav. nustat. prof.</string>
+    <string name="STR_NMS_ILLEGAL_PROFILE_NAME">Neleist. vardas</string>
+    <string name="STR_NMS_NO_ACTIVITED">Nėra aktyvios ar galimos SIM kortelės.</string>
+    <!-- Profile Settings End -->
+
+
+    <!-- Term Activity -->
+    <string name="STR_NMS_REJECT">Atmesti</string>
+    <string name="STR_NMS_AGREE">Sutinku</string>
+    <string name="STR_NMS_TERM_TITLE">Paslaugų teikimo sąlygos</string>
+    <string name="STR_NMS_TERM_CONTENT">Esate supažindinti, kad Paslauga ir programinė įranga, kaip šios Paslaugos dalis, gali turėti saugumo elementų, kurie leidžia apsaugoti skaitmeninus elementus, todėl tokius elementus reikia naudoti pagal „AF PushMail“ naudojimo taisykles ir (arba) šios Paslaugos turinio tiekėjų. Nebandysite pasinaudoti Paslaugoje įrašytomis naudojimo taisyklėmis arba jų apeiti. Bet koks bandymas perdaryti, publikuoti, platinti ar viešai paskelbti Paslaugoje gautą medžiagą, visą ar dalimis, yra griežtai draudžiama negavus išankstinio leidimo.</string>
+    <!-- Term Activity End -->
+
+
+    <!-- System Settings -->
+    <string name="STR_NMS_SYS_SETTING_TITLE">„iSMS“ žinutė</string>
+    <string name="STR_NMS_SETTINGS_TITLE">PROFILIS</string>
+    <string name="STR_NMS_PREFERENCE_CATE">NUSTATYMAI</string>
+    <string name="STR_NMS_SEND_SMS_TITLE">Siųsti kaip SMS</string>
+    <string name="STR_NMS_SEND_SMS_CONTENT">Siųsti kaip SMS kai „iSMS“ negalima. Gali būti taikomi praneš. siunt. įkain. Ši taisyklė negalioja grupiniams pokalb.</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_TITLE">Atsisiųsti autom.</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_CONTENT">Multimedijos objektus atsisiųsi autom.</string>
+    <string name="STR_NMS_CAPTION_TITLE">Poraštės</string>
+    <string name="STR_NMS_CAPTION_CONTENT">Dalytis failu su porašt.</string>
+    <string name="STR_NMS_SYSTEM_CATE">SISTEMA</string>
+    <string name="STR_NMS_UPDATE_TITLE">Progr. įrang. naujin.</string>
+    <string name="STR_NMS_UPDATE_CONTENT">Pask. karta tkr.: Niekada</string>
+    <string name="STR_NMS_NETWORK_USAGE_TITLE">Tinklo naudojimas</string>
+    <string name="STR_NMS_NETWORK_USAGE_CONTENT">Perž. bendrą išs. / gautų duom. naudoj.</string>
+    <string name="STR_NMS_NETWORK_DLG_CONTENT">Išs.: %1$.3f K \nGauta: %2$.3f K\nPsk. kart. nust. iš nauj.: %3$s</string>
+    <string name="STR_NMS_VERSION_TITLE">Versija</string>
+    <string name="STR_NMS_NEVER_CLEAR">Niekada</string>
+    <string name="STR_NMS_RESET">Nust. iš nauj.</string>
+    <string name="STR_NMS_SWITCH_ON">Įjng.</string>
+    <string name="STR_NMS_SWITCH_OFF">Išj.</string>
+    <string name="STR_NMS_SYSTEM_SETTING_TITLE">Nustat.</string>
+    <string name="STR_NMS_COPYRGIHT">„Hesine Technologies, Inc.“</string>
+    <string name="STR_NMS_ABOUT">Apie „iSMS“</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_TITLE">Rodyti skait. būsen.</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_CONTENT">Rodyti skait. būsen. pranešimų sąraše</string>
+    <string name="STR_NMS_SHOW_REMIND_TITLE">Rodyti primin.</string>
+    <string name="STR_NMS_SHOW_REMIND_CONTENT">Rodyti „iSMS“ priminimus pokalbių ekrane</string>
+    <string name="STR_NMS_MENU_RESET_SETTING">Atkurti numat. nustat.</string>
+    <string name="STR_NMS_MENU_FUNCTION_INTRODUCTION">Funkcijos</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT">Pagal sutartį su naud</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION">Autoriaus teisės</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT_TITLE">„HESINE iSMS“ NAUDOTOJŲ LICENCINĖ SUTARTIS</string>
+    <string name="STR_NMS_MENU_FUNCTION">Funkcijų sąrašas</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION_DETAIL">\n„Hesine Technologies Inc.“\nCopyright© 2008–2013\nVisos teisės saugomos.\n</string>
+    <!-- System Settings End -->
+
+
+    <!-- Caption Settings -->
+    <string name="STR_NMS_AUDIO_TITLE">Garso įr.</string>
+    <string name="STR_NMS_VIDEO_TITLE">Vaizdo įr.</string>
+    <string name="STR_NMS_PHOTO_TITLE">Nuotraukos</string>
+    <!-- Caption Settings End -->
+
+
+    <!-- Map String start -->
+    <string name="STR_NMS_MAP_TITLE">Dalytis vieta</string>
+    <string name="STR_NMS_MAP_PROMPT">Žemėlapio negalima rodyti, nes neįjungta vistos paslauga. Toliau pateikiamas adresas apsk. pagal korinio ryšio informaciją. \nJei norite tikslesnės vietos paslaugos, rekomenduojame įjungti vietos paslaugą.</string>
+    <string name="STR_NMS_MAP_NOTE_1">Sistemos nustatymuose įgalinkite Mano vietos šaltinį</string>
+    <string name="STR_NMS_MAP_SHARE">Dalytis</string>
+    <string name="STR_NMS_MAP_SETTINGS">Nustat.</string>
+    <string name="STR_NMS_MAP_OK">Gerai</string>
+    <string name="STR_NMS_MAP_CANCEL">Atšaukti</string>
+    <string name="STR_NMS_MAP_EDIT">Redaguoti vietą</string>
+    <string name="STR_NMS_MAP_SEARCH_HINT">Ieškoti vietose netoliese</string>
+    <string name="STR_NMS_MAP_WAIT">Palaukite...</string>
+    <string name="STR_NMS_MAP_EDIT_LIMIT">Pasiektas įvesties simbolių limitas</string>
+    <string name="STR_NMS_MAP_ADDR_LEN">Adresas per ilgas</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR_LOCATING">Randama jūsų buvimo vieta...</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN_LOCATING">Randama jūsų PIN vieta...</string>
+    <string name="STR_NMS_MAP_LINEONE_SEARCH_LOCATING">Randama jūsų ieškota padėtis...</string>
+    <string name="STR_NMS_MAP_LINETHREE_NEARBY_LOCATING">Ieškomos vietose netoliese...</string>
+    <string name="STR_NMS_MAP_LINEONE_FAILED">Jūsų vieta šiuo metu negalima</string>
+    <string name="STR_NMS_MAP_LINETWO_FAILED">Patikrinkite, ar įjungta Vietos paslauga ir ar galimas tinklas</string>
+    <string name="STR_NMS_MAP_LINETHREE_FAILED">Nerasta vietų netoliese</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR">Dalytis šia vieta</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN">Dalytis PIN vieta</string>
+    <string name="STR_NMS_MAP_MY_LOCATION">Mano vieta</string>
+    <string name="STR_NMS_MAP_SEARCH">Ieškoti</string>
+    <string name="STR_NMS_MAP_ERROR_1">Nepavyksta gauti ilgumą ir platumą</string>
+    <string name="STR_NMS_MAP_ERROR_2">„Google“ serveriai pateikė klaidą</string>
+    <!-- Map String end -->
+
+
+    <!-- All Media String start -->
+    <string name="STR_NMS_ALL_MEDIA_TITLE">Visa medija</string>
+    <string name="STR_NMS_ALL_MEDIA_WAIT">Palaukite...</string>
+    <string name="STR_NMS_ALL_MEDIA_ERROR">Nepavyko įkelti, vėliau pabandykite vėl</string>
+    <string name="STR_NMS_ALL_MEDIA_EMPTY">Tuščia</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_WEEK">Šią savaitę</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_MONTH">Šį mėnesį</string>
+    <string name="STR_NMS_ALL_MEDIA_JAN">Sausis</string>
+    <string name="STR_NMS_ALL_MEDIA_FEB">Vasaris</string>
+    <string name="STR_NMS_ALL_MEDIA_MAR">Kovas</string>
+    <string name="STR_NMS_ALL_MEDIA_APR">Balandis</string>
+    <string name="STR_NMS_ALL_MEDIA_MAY">Gegužė</string>
+    <string name="STR_NMS_ALL_MEDIA_JUN">Birželis</string>
+    <string name="STR_NMS_ALL_MEDIA_JUL">Liepa</string>
+    <string name="STR_NMS_ALL_MEDIA_AUG">Rugpjūtis</string>
+    <string name="STR_NMS_ALL_MEDIA_SEPT">Rugsėjis</string>
+    <string name="STR_NMS_ALL_MEDIA_OCT">Spalis</string>
+    <string name="STR_NMS_ALL_MEDIA_NOV">Lapkritis</string>
+    <string name="STR_NMS_ALL_MEDIA_DEC">Gruodis</string>
+    <string name="STR_NMS_ADDCONTACT">Pridėti adres.</string>
+    <string name="STR_NMS_ADD_PHONE_CONTACT">Pridėti \„%1$s\“ prie adres.?</string>
+    <string name="STR_NMS_DELETE_MEDIA">Medija bus ištrinta, tęsti?</string>
+    <string name="STR_NMS_MEDIA_SHARE_MESSAGE">%1$s pasidalijo %2$s</string>
+
+    <!-- All Media String end -->
+
+
+    <!-- All Locations String start -->
+    <string name="STR_NMS_ALL_LOCATIONS_TITLE">Visos vietos</string>
+    <string name="STR_NMS_ALL_LOCATIONS_LOC">Vieta</string>
+    <string name="STR_NMS_ALL_LOCATIONS_WAIT">Palaukite...</string>
+    <!-- All Locations String end -->
+
+
+    <!-- Sketch -->
+    <string name="STR_NMS_SKETCH_TITLE">Piešti eskizą</string>
+    <string name="STR_NMS_REDO">Pakartoti veiksmą</string>
+    <string name="STR_NMS_UNDO">Atšaukti veiksmą</string>
+    <string name="STR_NMS_SKETCH_CUSTOM">Tinkintas</string>
+    <string name="STR_NMS_PEN_SIZE">Dydis</string>
+    <string name="STR_NMS_SKETCH_TOOLS_PEN">Pieštukas</string>
+    <string name="STR_NMS_SKETCH_TOOLS_ERASER">Trintukas</string>
+    <string name="STR_NMS_SKETCH_CUSTOM_COLOR">Tinkinta spalva</string>
+    <string name="STR_NMS_CLEAR_SKETCH_TITLE">Valyti eskizą</string>
+    <string name="STR_NMS_CLEAR_SKETCH_CONTENT">Ar tikrai norite valyti eskizą?</string>
+    <string name="STR_NMS_SIZE_SKETCH_TITLE">Dydis</string>
+    <string name="STR_NMS_SIZE_SKETCH_MAX">72</string>
+    <string name="STR_NMS_SIZE_SKETCH_MIN">2</string>
+    <string name="STR_NMS_COLOR_SKETCH_TITLE">Spalva</string>
+    <string name="STR_NMS_SKETCH_ERROR">Nepavyko sukurti eskizo.</string>
+    <string name="STR_NMS_BACK_TITLE">Patvirtinimas</string>
+    <string name="STR_NMS_FINISH_SKETCH_CONTENT">Ar tikrai norite baigti piešti?</string>
+    <string name="STR_NMS_LEAVE_SKETCH_CONTENT">Ar tikrai norite nebepiešti?</string>
+    <string name="STR_NMS_NOTREDO">Nėra ką pakartoti</string>
+    <string name="STR_NMS_NOTUNDO">Nėra ką atšaukti</string>
+    <string name="STR_NMS_SKETCH_DELETE">Valyti</string>
+    <string name="STR_NMS_DISCARD">Atmesti</string>
+
+    <!-- Sketch end -->
+
+
+    <!-- Selection Contact -->
+    <string name="STR_NMS_DONE">Gerai</string>
+    <string name="STR_NMS_SELECTALL">Pasirinkti viską</string>
+    <string name="STR_NMS_DESELECTED">Nesirinkti nieko</string>
+    <string name="STR_NMS_SELECTED">Pasirinkta: %1$s</string>
+    <string name="STR_NMS_CONTACT_SEARCH">Ieškoti adres.</string>
+    <string name="STR_NMS_SEARCH">Ieškoti</string>
+    <string name="STR_NMS_CONTACT_SELECT">Pasirinkti adres.</string>
+    <string name="STR_NMS_SELECT_MEMBER_FULL">Pasirinkta per daug adresatų</string>
+    <string name="STR_NMS_SELECT_MEMBER_EMPTY">Nepasirinktas joks adres.</string>
+    <string name="STR_NMS_SELECT_CONTAT_WAIT">Palaukite...</string>
+    <string name="STR_NMS_SELECT_CONTAT_EMPTY">Ne „iSMS“ adres.</string>
+    <string name="STR_NMS_SELECT_NO_RESULT">Nerasta</string>
+    <string name="STR_NMS_EMPTY">Ne adresatai</string>
+    <string name="STR_NMS_ALL_CONTACTS">Visi</string>
+    <string name="STR_NMS_GROUPS_MEM"> %1$s nariai</string>
+    <string name="STR_NMS_GROUPS_CONTACTS">VISOS GRUPĖS</string>
+    <!-- Selection Contact end -->
+
+    <!-- Group chat -->
+    <string name="STR_NMS_CREATE_GROUP_TITLE">Kurti grupę</string>
+    <string name="STR_NMS_GROUP_INFO_TITLE">Grupės inform.</string>
+    <string name="STR_NMS_EDIT_GROUP_TITLE">Red. grupę</string>
+    <string name="STR_NMS_SELECT_ACTION_TITLE">Pasir. veiksmą</string>
+    <string name="STR_NMS_ADD_TO_BOOKMARK">Pridėti prie žymų</string>
+    <string name="STR_NMS_ADD_TO_CONTACTS">Pridėti %1$s prie adres.</string>
+    <string name="STR_NMS_GROUP_NAME">GRUPĖS PAVAD.</string>
+    <string name="STR_NMS_GROUP_INFO">GRUPĖS INFORM.</string>
+    <string name="STR_NMS_GROUP_MEMBERS">GRUPĖS NARIAI</string>
+    <string name="STR_NMS_GROUP_NAME_HIT">Grupės pavad.</string>
+    <string name="STR_NMS_GROUP_NAME_EMPTY">Grupės pavad. nėra</string>
+    <string name="STR_NMS_CONFIRM_LEAVE_TITLE">Palikti grupę</string>
+    <string name="STR_NMS_LEAVE_GROUP_CONTENT">Ar norite išeiti iš šios grupės?</string>
+    <string name="STR_NMS_LEAVE_GROUP_SUCCESS">Sėkmingai palikote grupę</string>
+    <string name="STR_NMS_LEAVE_GROUP_FAILED">Nepavyko palikti grupės</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_SUCCESS">Grupės pavad. sėkmingai atnaujintas</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_SUCCESS">Pridėta naujų grupės narių</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_FAILED">Nepavyko pridėti grupės nar.</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_FAILED">Nepavyko atnaujinti grupės pav.</string>
+    <string name="STR_NMS_CREATE_GROUP_NAME_FAILED">Nepav. sukurti grup. pokalbio</string>
+    <string name="STR_NMS_DELETE_GROUP_MEMBER_FAILED">Nepavyko pašalinti grupės nario</string>
+    <string name="STR_NMS_UPDATE_GROUP_SUCCESS">Grupės informacija sėkmingai atnaujinta</string>
+    <string name="STR_NMS_UPDATE_GROUP_FAILED">Nepavyko atnaujinti grupės inform.</string>
+    <string name="STR_NMS_GROUP_CHAT_BACK">Ar norite atšaukti šį veiksmą?</string>
+    <string name="STR_NMS_GROUP_MEMEBER_YOU">JŪS</string>
+    <string name="STR_NMS_GROUP_INVITE_MORE">Pakviest</string>
+    <string name="STR_NMS_LEAVE_GROUP">Palikti grupę</string>
+    <string name="STR_NMS_CHAT">Pokalbis</string>
+    <string name="STR_NMS_CONFIRM_REMOVE_TITLE">Pašalinti iš grupės narių sąrašo</string>
+    <string name="STR_NMS_REMOVE_OK">Pašalinti</string>
+    <string name="STR_NMS_REMOVE_CANCEL">Atšaukti</string>
+    <string name="STR_NMS_REMOVE_CONTENT">Ar norite pašalinti iš šios grupės?</string>
+    <string name="STR_NMS_VIEW_ALL_MEDIA">Perž. visus medijos failus</string>
+    <string name="STR_NMS_VIEW_ALL_LOCATIONS">Perž. visas vietas</string>
+    <string name="STR_NMS_CHAT_SETTINGS">Pokalbio nust.</string>
+    <string name="STR_NMS_VIEW_GROUP_FAILED">Atsijungėte nuo pokalbio grupės.</string>
+    <string name="STR_NMS_VIEW_HISTORY">Perž. grupės istoriją</string>
+    <string name="STR_NMS_ISMS_ENABLE_TITLE">Įgalinti „iSMS“</string>
+    <string name="STR_NMS_ISMS_ENABLE_CONTENT">Šią funkciją palaiko tik „iSMS“ paslauga. Įgalinti „iSMS“ paskyrą dabar?</string>
+    <string name="STR_NMS_ENABLE">Įgalinti</string>
+    <string name="STR_NMS_LATER">Atšaukti</string>
+    <string name="STR_NMS_SWITCH_TITLE">SIM perjungimas</string>
+    <string name="STR_NMS_SWITCH_MESSAGE">Grupės pokalbis palaikomas tik kol įjungta „iSMS“ paslauga, tačiau neįjungta SIM kortelė. Ar įjungtas perjung. į SIM kortelę?</string>
+    <string name="STR_NMS_SWITCH_EDIT_MESSAGE">Ši SIM kortelė nesusieta su šia grupe. Perjungti į kitą SIM kortelę?</string>
+    <string name="STR_NMS_LEAVE_GROUP_NOTICE">Išėjote iš grupės ir negalėsite prie jos prisijungti, nebent būsite pakviesti</string>
+    <string name="STR_NMS_LOSE_SIM_NOTICE">SIM kort., kuri pirmą kartą buvo naud. pokalb. metu, buvo pak. Šiame pokal. galite dalyv. tik su pradine SIM kortele</string>
+    <string name="STR_NMS_SWITCH">Perjungti</string>
+
+    <!-- Group chat end -->
+
+
+    <!-- chat details screen long press item start -->
+    <string name="STR_NMS_LONG_PRESS_TITLE">Pranešimo parinktys</string>
+    <string name="STR_NMS_SEND_VIA_TEXT">Siųsti naud. SMS</string>
+    <string name="STR_NMS_TRY_AGAIN">Bandyti vėl</string>
+    <string name="STR_NMS_TRY_ALL_AGAIN">Bandyti vėl viską</string>
+    <string name="STR_NMS_CONTINUE_TRY">Tęsti bandymus</string>
+    <string name="STR_NMS_COPY">Kopijuoti</string>
+    
+    <string name="STR_NMS_FORWARD">Persiųsti</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_TITLE">Atsisiųsti</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD">Jei norite persiųsti „iSMS“, visų pirma turite atsisiųsti medijos turinį.</string>
+    <string name="STR_NMS_FORWARD_CONTIUE">Tęsti</string>
+    <string name="STR_NMS_FORWARD_FAILED">Persiųsti nepavyko.</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_MULTI">Jei norite persiųsti keliems, kai kurias „iSMS“ reikia atsisiųsti iš anksto.</string>
+    <string name="STR_NMS_FORWARD_SOME_FAILED">Kai kurių „iSMS“ persiun. nepav.</string>
+    <string name="STR_NMS_FORWARD_ALL_FAILED">Atsisiųsti nepavyko, persiunt. keliems atmestas</string>
+    
+    <string name="STR_NMS_SEND_VIA_MULTIMEDIA">Siųsti per MMS</string>
+    <string name="STR_NMS_SHARE">Dalytis</string>
+    <string name="STR_NMS_DELETE">Trinti</string>
+    <string name="STR_NMS_FLAG_IMPORTANT">Pažym. kaip svarbų</string>
+    <string name="STR_NMS_REMOVE_IMPORTANT">Pašal. žym. kaip svarbų</string>
+    <string name="STR_NMS_SAVE_IN_SDCARD">Eksportuoti į SD kort.</string>
+    <string name="STR_NMS_SAVE_FILE">Failas išsaugotas į %1$s</string>
+    <string name="STR_NMS_SHARE_TITLE">Būdas dalytis</string>
+    <string name="STR_NMS_VIEW_DETAILS">Peržiūrėt inform.</string>
+    <string name="STR_NMS_VIEW_DETAILS_TITLE">Praneš. inform.</string>
+    <string name="STR_NMS_SEND_MSG_DETAILS">Tipas: IP praneš.\nIšsiųsta: %1$s</string>
+    <!-- chat details screen long press item end -->
+
+
+    <!-- chat details screen delete item start -->
+    <string name="STR_NMS_DELETE_TITLE">Trinti</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_TITLE">Trinti svarbių pranešimą</string>
+    <string name="STR_NMS_DELETE_WARNING">Pranešimas bus ištrintas.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_WARNING">Ar tikrai norite ištrinti šį svarbų pranešimą?</string>
+    <string name="STR_NMS_DELETE_MSG">Pasirinkti pranešimai bus ištrinti.</string>
+    <string name="STR_NMS_DELETE_WAITTING">Trinama</string>
+    <string name="STR_NMS_CLEAR_HISTORY_CONTENT">Bus išvalyta visa šio pokalbių kambario istorija</string>
+    <string name="STR_NMS_DELETE_IMPORTANT">Įskaitant praneš. pažymėtus kaip svarbius</string>
+    <!-- chat details screen delete item end -->
+
+
+    <!-- chat details actionBar option start -->
+    <string name="STR_NMS_MENU_CALL">Skamb.</string>
+    <string name="STR_NMS_MENU_GROUPINFO">Grupės inform.</string>
+    <string name="STR_NMS_MENU_INVITE_CHAT">Pakviesti draugų į pokalb.</string>
+    <string name="STR_NMS_MENU_INVITE_ISMS">Pakviesti draugų naud. „iSMS“</string>
+    <string name="STR_NMS_MENU_SELECT_MSG">Pasirinkti praneš.</string>
+    <string name="STR_NMS_MENU_MARK_SPAM">Perk. į Šlamšt. sąraš.</string>
+    <string name="STR_NMS_MENU_REMOVE_SPAM">Pašalinti iš Šlamšt. sąraš.</string>
+    <string name="STR_NMS_MENU_ADD_SHORTCUT">Pridėti šaukinį</string>
+    <string name="STR_NMS_MENU_VIEW_ALLMEDIA">Perž. visus medijos failus</string>
+    <string name="STR_NMS_MENU_VIEW_ALLLOCATION">Perž. visas vietas</string>
+    <string name="STR_NMS_MENU_EDIT_GROUP">Red. grupę</string>
+    <string name="STR_NMS_MENU_CHAT_SETTING">Pokalb. istorija</string>
+    <string name="STR_NMS_MENU_INSERT_QUICK_TEXT">Įterpti spart. tekstą</string>
+    <string name="STR_NMS_MENU_CLEAR_HISTORY">Valyti pokalb. istor.</string>
+    <string name="STR_NMS_MENU_LEAVE_GROUP">Palikti grupę</string>
+    <string name="STR_NMS_MENU_DISCARD">Atmesti</string>
+    <string name="STR_NMS_MENU_DELETE">Trinti</string>
+    <string name="STR_NMS_MENU_IMPORTANT">Pažym. kaip svarbų</string>
+    <string name="STR_NMS_MENU_FORWARD">Persiųsti</string>
+    <!-- chat details actionBar option end -->
+
+
+    <!-- chat details share item start -->
+    <string name="STR_NMS_TAKE_PHOTO">Fotografuoti</string>
+    <string name="STR_NMS_RECORD_VIDEO">Įrašyti vaizd. įraš.</string>
+    <string name="STR_NMS_DRAW_SKETCH">Piešti eskizą</string>
+    <string name="STR_NMS_SHARE_CONTACT">Dalytis adresatu</string>
+    <string name="STR_NMS_CHOOSE_PHOTO">Pasirinkti nuotr.</string>
+    <string name="STR_NMS_CHOOSE_VIDEO">Pasirinkti vaizd. įr.</string>
+    <string name="STR_NMS_RECORD_AUDIO">Įrašyti garso įraš.</string>
+    <string name="STR_NMS_SHARE_LOCATION">Dalytis vieta</string>
+    <string name="STR_NMS_CHOOSE_AUDIO">Pasirinkti garso įr.</string>
+    <string name="STR_NMS_SHARE_CALENDAR">Dalytis kalendor.</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_TITLE">Pridėti muzikos</string>
+    <string name="STR_NMS_CHOOSE_RINGTONE_ITEM">Skamb. tonas</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_ITEM">Garso įr.</string>
+    <string name="STR_NMS_INSERT_SDCARD">Įdėkite SD kortelę.</string>
+    <!-- chat details share item start -->
+
+
+    <!-- record audio start -->
+    <string name="STR_NMS_AUDIO_TIMER_FORMAT" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <string name="STR_NMS_AUDIO_LABLE">Garso pastabų įrašiklis</string>
+    <string name="STR_NMS_RECORD_AUDIO_CONT">Palieskite, kad įrašyt.</string>
+    <string name="STR_NMS_PLAY_AUDIO_CONT">Palieskite, kad paleist.</string>
+    <string name="STR_NMS_ACTION_SEND">Siųsti</string>
+    <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
+    <string name="audio_db_artist_name">Jūsų įrašas</string>
+    <string name="audio_db_album_name">Garso įrašai</string>
+    <string name="STR_NMS_SELECT_AUDIO">Pasir. garso įraš.</string>
+    <!-- record audio end -->
+
+
+    <!-- chat & group details screen start -->
+
+    <string name="STR_NMS_UNREAD_FORMAT">Neskaitytų praneš.: %1$d</string>
+    <string name="STR_NMS_NOT_DELIVERED_TITLE">Dar nepristatyta</string>
+    <string name="STR_NMS_FAILED_TITLE">Siuntimo klaida</string>
+    <string name="STR_NMS_GROUP_SUBTITLE">%1$s, +%2$d</string>
+    <string name="STR_NMS_GROUP_DEAD_SUBTITLE">%1$s, %2$d</string>
+    <string name="STR_NMS_SAVE_AS_DRAFT">Praneš. išsaug. kaip juodraš.</string>
+    <string name="STR_NMS_NO_SD_TITLE">SD kortelės klaida</string>
+    <string name="STR_NMS_CANT_SHARE">Nepavyksta pasiekti SD kortelės. Visos multimedijos funkcijos laikinai negalimos.\n\nPatikrinkite SD kortelę ir pabandykite vėl.</string>
+    <string name="STR_NMS_CANT_SAVE">SD kortelė neaptikta, nepavyksta išsaugoti</string>
+    <string name="STR_NMS_SDSPACE_NOT_ENOUGH">SD kortelėje vietos nepakanka, nepavyksta išsaugoti failo.</string>
+    <string name="STR_NMS_REAEND_ALL">Bandoma visus vėl...</string>
+    <string name="STR_NMS_FILE_LIMIT">Per didelis</string>
+    <string name="STR_NMS_LOAD_ALL_MESSAGE">Įkelti visus pranešimus</string>
+    <string name="STR_NMS_DOWNLOAD_FAILED">Atsisiųsti nepavyko</string>
+    <string name="STR_NMS_INPUT_HINT">Įvesties turinys</string>
+    <string name="STR_NMS_INPUT_HINT_ISMS">Įveskite „iSMS“ pranešimą</string>
+    <string name="STR_NMS_CAPTION_HINT">Įveskite porašt.</string>
+    <string name="STR_NMS_PROTOCOL_SMS">SMS</string>
+    <string name="STR_NMS_PROTOCOL_MMS">MMS</string>
+    <string name="STR_NMS_PROTOCOL_IP">iSMS</string>
+    <string name="STR_NMS_SWITCH_BOTTON">Perjungti SIM</string>
+    <string name="STR_NMS_TURN_ON_BOTTON">Įjungti</string>
+    <string name="STR_NMS_SWITCH_TEXT_FORMAT">Kad tęstumėte grupės pokalbį visų pirma perj. į %1$s SIM.</string>
+    <string name="STR_NMS_ENABLE_TEXT_FORMAT">Kad tęstumėte grupės pokalbį visų pirmą įjunkite „iSMS“ %1$s SIM.</string>
+    <string name="STR_NMS_REPLACE_ATTACH_TITLE">Pakeisti priedą</string>
+    <string name="STR_NMS_REPLACE_ATTACH_MSG">Priedas yra, pakeisti?</string>
+    <string name="STR_NMS_TRUNC_CAPTION">Poraštė sutrumpinta.</string>
+    <string name="STR_NMS_MAX_CHARACTERS_REACHED">Pasiektas praneš. dydžio limitas.</string>
+    <string name="STR_NMS_MAX_EMOTICON_REACHED">Pasiektas jaust. limitas</string>
+    <string name="STR_NMS_ENABLE_PROCESS">Apdorojama...</string>
+    <string name="STR_NMS_ERR_FILE">Neteink. failas</string>
+    <string name="STR_NMS_SENDING_TEXT">Siunčiama...</string>
+    <!-- chat & group details screen end --> <!-- Error code tips -->
+    <string name="STR_NMS_ERR_GENERAL">Bendra kalba</string>
+    <string name="STR_NMS_ERR_INVALID_ARGUMENT">Neteisingas duomuo</string>
+    <string name="STR_NMS_ERR_NETWORK_BLOCK">Tinklo nustat. nėra tinkami</string>
+    <string name="STR_NMS_ERR_PHONE_NOT_ACTIVATED">Neaktyvuota</string>
+    <string name="STR_NMS_ERR_SIM_NOT_ACTIVATED">SIM kortelė neaktyvinta</string>
+    <string name="STR_NMS_ERR_INVALID_MSG_DB_ID">Neteisingo pranešimo DB ID</string>
+    <string name="STR_NMS_ERR_ADD_MSG_DB_FAILED">Nepavyko įterpti DB</string>
+    <string name="STR_NMS_ERR_UPDATE_MSG_DB_FAILED">Nepavyko atnaujinti DB</string>
+    <string name="STR_NMS_ERR_GET_MSG_DB_DATA_FAILED">Nepavyko gauti pranešimo</string>
+    <string name="STR_NMS_ERR_INVALID_CONTACT_DB_ID">Neteisingas adresato DB ID</string>
+    <string name="STR_NMS_ERR_ADD_CONTACT_DB_FAILED">Nepavyko įterpti adresatui</string>
+    <string name="STR_NMS_ERR_UPDATE_CONTACT_DB_FAILED">Nepavyko atnaujinti adresato DB</string>
+    <string name="STR_NMS_ERR_GET_CONTACT_DB_DATA_FAILED">Nepavyko gauti adres. pagal ID</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_ERROR_FORMAT">Neteis. IP pranešimo formatas</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_INVALID_TO">Netinkamas gavėjas</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_WITH_UNKNOWN_USER">Netink. nežin. gavėjas naudotojas</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_NO_MBMBER">Nėra grupės pokalbio narių</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_GCHAT_DEAD">Grupės pokalbis neaktyvuotas</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_INVALID_SIM_ID">Grupės pokalbio SIM kort. nėra dabar naud. SIM kort.</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_FOR_SYS_MSG">Vėl siųsti sistemos praneš.</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_INVALID_STATUS">IP praneš. neparuoštas</string>
+    <string name="STR_NMS_ERR_GCHAT_IS_DEAD">Šis grupės pokalbis nebėra pasiekiamas</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBERS">Netinkami grupės nariai</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBER_WITH_SELF">Nepavyko sukurti grupės. Jūsų negali būti nariuose</string>
+    <string name="STR_NMS_ERR_GCHAT_EXCEED_MAX_MEMBER_COUNT">Pasiektas grupės narių limitas</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_NAME">Netink. grupės pok. pavad.</string>
+    <string name="STR_NMS_ERR_GCHAT_SIM_IS_NOT_ACTIVATED">Neaktyvinta grupės pokalbių SIM kortelė</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_NOT_INBOX_MSG">Nepavyko gauti atsisiuntimo URL</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_INVALID_URL">Neteisingas atsisiuntimo URL</string>
+    <string name="STR_NMS_ERR_GET_ATTACH_NAME_INVALID_BODY_FORMAT">Nepavyko gauti atsisiunt. failo pavad.</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_INVALID_FILE_NAME">Netinkamas atsisiunt. failo pavad.</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_EXIST">Atsisiunčiamo failo nėra</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_INBOX_MSG">Nepavyko nustat. atsisiun. failo</string>
+    <string name="STR_NMS_ERR_SIM_INFO_NOT_FOUND">SIM kortelės informacija nerasta</string>
+    <string name="STR_NMS_ERR_SIM_IN_INVALID_STATUS">Neteis. SIM kort. būsena</string>
+    <string name="STR_NMS_ERR_CMD_PROCESSING">Sistema veikia ir negali vykdyti sistemos konfigūravimo komandos</string>
+    <string name="STR_NMS_ERR_CMD_GENERAL">Bendra sistemos konfigūravimo klaida</string>
+    <string name="STR_NMS_ERR_CODE_END">Nežinomas klaidos kodas</string>
+    <!-- Error code tips -->
+    <string name="STR_NMS_SEND_MMS_QUERY_TITLE">Įspėjimas</string>
+    <string name="STR_NMS_SEND_MMS_QUERY">Gavėjas nenaudoja „iSMS“, siųsti kaip MMS?</string>
+    <!-- Service center start -->
+    <string name="STR_NMS_SERVICE_TITLE">„iSMS“ pasl. centras</string>
+    <string name="STR_NMS_INTRODUCTION">Naudodamiesi „iSMS“ galite iš karto nusiųsti nemokamas žinutes ir visą pokalbių istoriją turėti vienoje vietoje. Paspaudus vos vieną mygtuką išbandysite naujas funkcijas.</string>
+    <string name="STR_NMS_TERMS">Taisyklės ir sąlygos</string>
+    <string name="STR_NMS_ACTIVATION_BUTTON">Aktyvinti dabar</string>
+    <string name="STR_NMS_LOSE_SDCARD">SD kortelė neaptikta</string>
+    <!-- Service center end -->
+
+
+    <!-- conversation empty tips -->
+    <string name="STR_NMS_SPAM_EMPTY">Neturite šlamšto pokalbių. \nŠlamšte renkami visi pokalbiai, kurie pažymėti kaip šlamštas. Pranešimai pagal numatytuosius nustatymus išjungiami. Taip išvengsite nenorimo trukdymo. \n\nGalite pažymėti siuntėją kaip šlamštą palaik. palietę pokalbį ir pasirink. piktogr. Pažymėti kaip šlamštą. Kai pokalbis pažymimas kaip šlamštas, iš karto bus parodyta pokalbio išjungimo piktograma ir pokalbis bus patalpinamas čia.</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_FROM">+86123456789</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_SUBJECT">Tai šlamšto pranešimo pavyzdys.</string>
+    <string name="STR_NMS_GROUPCHAT_EMPTY">Neturite grupės pokalbio pranešimo. \nGRUPĖS POKALBIUOSE renkami visi grupės pokalbio pranešimai, kuriuos sukūrėte ar sujungėte jūs. Taip galite lengvai rasti ir tvarkyti grupės pokalbius. \n\nNorėdami sukurti grupės pokalbį galite ekrano apačioje paliesti mygtuką Sukurti grupės pokalbį ir pakviesti draugus prisijungti prie grupės.</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_FROM">Grupės pavad.</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_SUBJECT">Draugas:\nman patinka grupės pokalbio funkcija!</string>
+    <string name="STR_NMS_IMPORTANT_EMPTY">Neturite svarbių pranešimų. \nSVARBIUOSE renkami visi pranešimai, kurie pažymėti kaip svarbūs. Taip galite nesudėtingai rasti svarbius pranešimus. \n\nGalite pažymėti pranešimą kaip svarbų palaikydami palietę pranešimą ir Parinkčių meniu pasirinkdami Žymėti kaip svarbų. Kai pranešimas pažymėtas kaip svarbus, pamatysite raudoną vėliavėlę, kaip pavaizduota žemiau.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TITLE">Tai žinutės, pažymėtos kaip svarbi, pavyzdys. Pasirodys raudona vėliavėlė.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TIME">10:55 am</string>
+    <string name="STR_NMS_ALLCHAT_EMPTY">Jokių pokalbių</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_CONTENT">Kad naudot. šia paslauga visų pirma turite aktyvinti „iSMS“ paslaugą. Nesijaudinkite, jei paslauga nepatiks, visada galėsite ją išjungti Nustatymuose. Pabandykite!</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_TITLE">Aktyvinti „iSMS“</string>
+    <!-- conversation empty tips -->
+    
+    <string name="STR_NMS_CLEAR_USER_DATA">Duomenys išvalyti sėkmingai</string>
+    
+    <!-- get file err start -->
+    <string name="STR_NMS_NO_SUCH_FILE">Nėra tokio failo</string>
+    <string name="STR_NMS_OVER_FILE_LIMIT">Filas per didelis</string>
+    <string name="STR_NMS_INVALID_FILE_TYPE">Nepalaikomas tipas</string>
+    <!-- get file err end -->
+
+    <string name="STR_NMS_DELIVERY_BODY">Pranešimą gavo %s</string>
+    <string name="STR_NMS_SIM_SELECT_TITLE">Pasirinkti SIM</string>
+    
+    <string name="STR_NMS_SHORTCUT_SUCCESS">Sukurtas šaukinys %1$s.</string>
+    <string name="STR_NMS_SHORTCUT_REFRESHING">Naujinama</string>
+    
+    <string name="STR_NMS_DISABLE_FAILED">Veiksmas nepavyko, bandykite vėl</string>
+    <string name="STR_NMS_ENABLE_FAILED">Veiksmas nepavyko, bandykite vėl</string>
+    <string name="STR_NMS_ENABLE_SUCCESS">Sėkmingai aktyvinote „iSMS“ paslaugą</string>
+    <string name="STR_NMS_DISABLE_SUCCESS">Sėkmingai išjungėte „iSMS“ paslaugą</string>
+    
+	<string name="STR_NMS_SD_CARD_FULL">SD kortelė pilna</string>
+    <string name="STR_NMS_SEND_MSG_FAILED">Siųsti pranešimo nepavyko.</string>
+    <string name="STR_NMS_SETTING_COMMENT">„iSMS“ tai šaunus pokalbių įrankis. Jis nemokamas ir patogus.Sužinokite daugiau</string>
+    <string name="STR_NMS_KNOW_MORE">Sužinokite daugiau</string>
+    <string name="STR_NMS_RECEIVED_MSG_DETAILS">Tipas: IP praneš.\nNuo: %1$s\nSiųsti Laikas: %2$s\nGauta: %3$s</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH_ADD">iSMS paslauga laikinai neprieinama, nes trūksta vietos.</string>
+    <string name="STR_NMS_SERVER_AUTO_ECHO_MSG">Gautas pranešimas. Ačiū!</string>
+    
+     <string name="imsp_ip_message">„iSMS“ žinutė</string>
+    <string name="imsp_invite_chat_frequently"><b>Dažnai kalbate su %s ?</b>\nKodėl nepakvietus %s naudoti „iSMS“, kad abu sutaupytumėte pinigų?</string>
+    <string name="imsp_enable_chat_frequently"><b>%s „iSMS“ paslauga išjungta.</b>\nKodėl neįgalinus „iSMS“ paslaugos ir abiem nesutaupius pinigų?</string>
+    <string name="imsp_invite">Pakviesti</string>
+    <string name="imsp_enable_notice">Ar tikrai norite įgalinti „iSMS“ paslaug.?</string>
+    <string name="imsp_activate_chat_frequently"><b>Dažnai kalbate su draugais?</b>\nKodėl neaktyvinus „iSMS“ pasl. ir kalbėti be SMS įkainių?</string>
+    <string name="imsp_activate_note">Ar tikrai norite aktyvinti „iSMS“?</string>
+    <string name="imsp_dismiss_content">Ar tikrai norite atmesti pastabą?</string>
+    <string name="imsp_divider_online">Prisijungė %s</string>
+    <string name="imsp_divider_offline">Paskutinį kartą prisijungta %s</string>
+    <string name="imsp_divider_never_online">Niekada neprisij.</string>
+    <string name="imsp_failed_title">Siųsti nepavyko</string>
+    <string name="imsp_resend_via_sms">Vietoj to siųsti SMS</string>
+    <string name="imsp_resend_via_mms">Vietoj to siųsti MMS</string>
+    <string name="imsp_typing_text">Spausdinimas</string>
+    <string name="imsp_save_attachment">Išsaugoti priedą</string>
+    <string name="imsp_view">Perž.</string>
+    <string name="imsp_convert_to_mms">Konvertuoti į MMS.</string>
+    <string name="imsp_convert_to_sms">Konvertuoti į SMS.</string>
+    <string name="imsp_convert_to_isms">Konvertuoti į „iSMS“.</string>
+    <string name="imsp_convert_to_mms_for_service">„iSMS“ paslauga negalima pasirinktoje SIM kortelėje. Šią žinutę naudojant šią SIM kortelę galima siųsti tik kaip MMS. Vis tiek tęsti?</string>
+    <string name="imsp_convert_to_sms_for_service">„iSMS“ paslauga negalima pasirinktoje SIM kortelėje. Šią žinutę naudojant šią SIM kortelę galima siųsti tik kaip SMS. Vis tiek tęsti?</string>
+    <string name="imsp_convert_to_mms_for_recipients">Gavėjas (-ai) nenaudoja „iSMS“. Pranešimą galima siųsti tik kaip MMS. Vis tiek tęsti?</string>
+    <string name="imsp_convert_to_sms_for_recipients">Gavėjas (-ai) nenaudoja „iSMS“. Pranešimą galima siųsti tik kaip SMS. Vis tiek tęsti?</string>
+    <string name="imsp_sms_convert_to_isms">„iSMS“ paslauga galima pasirinktoje SIM kortelėje. Norėdami išvengti SMS mokesčių siūloma perjungti į „iSMS“. Perjungti dabar?</string>
+    <string name="imsp_mms_convert_to_isms">„iSMS“ paslauga galima pasirinktoje SIM kortelėje. Norėdami išvengti MMS mokesčių siūloma perjungti į „iSMS“. Perjungti dabar?</string>
+    <string name="imsp_keep_mms">Saugoti kaip MMS</string>
+    <string name="imsp_keep_sms">Saugoti kaip SMS</string>
+    <string name="imsp_resend_discard_message">Kad būtų išsiųstas pranešimas, kuriamas pranešimas atmestas.</string>
+    <string name="imsp_no_sim_card">Nėra SIM kortelės!</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">"Nerastas interneto ryšys! Pabandykite vėliau."</string>
+    <string name="imsp_chat_setting_updating">naujinama...</string>
+    <string name="imsp_dialog_clear_title">Valyti</string>
+    <string name="imsp_dialog_clear_description">Bus išvalyta visa šio pokalbių kambario istorija</string>
+    <string name="imsp_chat_setting_saving">saugoma...</string>
+    <string name="imsp_chat_setting_sending">siunčiama...</string>
+    <string name="imsp_save_chat_history_failed">išsaug. nepav.</string>
+    <string name="imsp_send_chat_history_failed">El. paštu siųsti nepav.</string>
+    <string name="imsp_conversation_list_all">Pranešimai</string>
+    <string name="imsp_conversation_list_important">Svarbu</string>
+    <string name="imsp_conversation_list_group_chats">Grupė</string>
+    <string name="imsp_conversation_list_spam">Šlamštas</string>
+    <string name="imsp_mark_as_spam_tips">Pranešimai, pažymėti kaip Šlamštas, bus perkelti į Šlamšto sąrašą ir pranešimai bus automatiškai išjungti.</string>
+    <string name="imsp_typing">"Įvedama..."</string>
+    <string name="imsp_type_to_compose_text">"Įvesti SMS / „iSMS“ pranešimą"</string>
+    <string name="imsp_no_sdcard">Nėra SD kort.</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">Kad galėtumėte siųsti pakvietimą, bus atmesti kuriami pranešimai.</string>
+    <string name="imsp_current_sim_enabled">Dabartinė SIM įgalinta.</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">Pasir. SIM, kad aktyvint. „iSMS“</string>
+    <string name="imsp_activate_message">Šią funkciją palaiko tik „iSMS“ paslauga. Aktyvinti „iSMS“ paskyrą dabar?</string>
+    <string name="imsp_enable_message">Šią funkciją palaiko tik „iSMS“ paslauga. Įgalinti „iSMS“ paskyrą dabar?</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">Pasir. SIM, kad įgal. „iSMS“</string>
+    <string name="imsp_switch_sim_title">Perjungti SIM</string>
+    <string name="imsp_switch_sim_message">Dabartinė SIM nepalaiko „iSMS“. Perjungti į kitą SIM?</string>
+    <string name="imsp_switch_sim_successfully">SIM perjungta sėkmingai!</string>
+    <string name="imsp_dailog_multi_forward">Pranešimų persiuntimas</string>
+    <string name="imsp_dialog_send_result">Siųsti rezultatus</string>
+    <string name="imsp_dlg_send_all">Visi: %s</string>
+    <string name="imsp_dlg_send_sucess">Išs.: %s</string>
+    <string name="imsp_dlg_send_failed">Nepavyko: %s</string>
+    <string name="imsp_multi_forward_sim_info">Gaunama SIM inform.</string>
+    <string name="imsp_multi_forward_no_sim">Nėra SIM inform.</string>
+    <string name="imsp_get_sim_failed">Nepav. gauti SIM inform.</string>
+    <string name="imsp_sim_status_error">SIM būsen. klaid.</string>
+    <string name="imsp_forward_norecipients">Nėra persiunčiamo pranešimo gavėjo(-ų)</string>
+    <string name="imsp_multiforward_no_message">Nėra galimų persiųsti pranešimų</string>
+    <string name="imsp_need_input_recipients">Nurodykite bent vieną gavėją</string>
+    <string name="imsp_spam_empty">Neturite šlamšto pokalbių. \nŠlamšte renkami visi pokalbiai, kurie pažymėti kaip šlamštas. Pranešimai pagal numatytuosius nustatymus išjungiami. Taip išvengsite nenorimo trukdymo. \n\nGalite pažymėti siuntėją kaip šlamštą palaik. palietę pokalbį ir pasirink. piktogr. Pažymėti kaip šlamštą. Kai pokalbis pažymimas kaip šlamštas, iš karto bus parodyta pokalbio išjungimo piktograma ir pokalbis bus patalpinamas čia.</string>
+    <string name="imsp_groupchat_empty">Neturite grupės pokalbio pranešimo. \nGRUPĖS POKALBIUOSE renkami visi grupės pokalbio pranešimai, kuriuos sukūrėte ar sujungėte jūs. Taip galite lengvai rasti ir tvarkyti grupės pokalbius. \n\nNorėdami sukurti grupės pokalbį galite ekrano apačioje paliesti mygtuką Sukurti grupės pokalbį ir pakviesti draugus prisijungti prie grupės.</string>
+    <string name="imsp_important_empty">Neturite svarbių pranešimų. \nSVARBIUOSE renkami visi pranešimai, kurie pažymėti kaip svarbūs. Taip galite nesudėtingai rasti svarbius pranešimus. \n\nGalite pažymėti pranešimą kaip svarbų palaikydami palietę pranešimą ir Parinkčių meniu pasirinkdami Žymėti kaip svarbų. Kai pranešimas pažymėtas kaip svarbus, pamatysite raudoną vėliavėlę, kaip pavaizduota žemiau.</string>
+    <string name="imsp_allchat_empty">Jokių pokalbių</string>
+    <string name="imsp_attach_slideshow">Skaidr. demonstr.</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">Atsisiunčiama...</string>
+    <string name="imsp_invite_friends_to_ipmsg">Pakviesti draugų naud. „iSMS“</string>
+    <string name="imsp_multi_forward_tips_content">Jei norite persiųsti keliems, kai kurias „iSMS“ reikia atsisiųsti iš anksto.</string>
+    <string name="imsp_multi_forward_failed_part">Kai kurių „iSMS“ persiun. nepav.</string>
+</resources>

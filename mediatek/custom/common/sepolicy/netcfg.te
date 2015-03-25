@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binnetcfg Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type netcfg_exec , exec_type, file_type;
+type netcfg ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive netcfg;
+init_daemon_domain(netcfg)
+
+
+# 20131122 Add Set Property Rule
+allow netcfg  property_type:property_service set;

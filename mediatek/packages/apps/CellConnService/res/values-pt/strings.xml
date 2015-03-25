@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="confirm_radio_title">SIM desligado</string>
+	<string name="confirm_radio_msg"> 		<xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		está agora ligado. Você gostaria de ligar este cartão SIM? 	</string>
+	<string name="confirm_radio_msg_single">"O mode avião está agora ligado, você deseja desligar?"</string>
+	<string name="confirm_pin_title">Bloqueio de PIN</string>
+	<string name="confirm_pin_msg">O cartão SIM que você está paa usar está agora travando.Deseja Destravar?</string>
+	<string name="confirm_simmelock_title">Trava SIM ME</string>
+	<string name="confirm_simmelock_msg">O slot SIM que você está paa usar está agora travando.Deseja Destravar?</string>
+	<string name="confirm_fdn_title">FDN Habilitado</string>
+	<string name="confirm_fdn_msg">Os números de discagem fixos estão habilitados..</string>
+	<string name="confirm_roaming_title">Alerta de deslocamento</string>
+	<string name="confirm_roaming_msg">"O cartão SIM que você está prestes a usar está agora em deslocamento. Nenhum SIM local está agora disponível. Você deseja continuar?"</string>
+	<string name="confirm_roaming_withPrefer_msg">"O cartão SIM que você está prestes a usar está agora em deslocamento. Nenhum SIM local está agora disponível. Você deseja continuar pelo SIM loca? "</string>
+	<string name="confirm_roaming_lbutton">Continuar</string>
+	<string name="confirm_roaming_rbutton">Cancelar</string>
+	<string name="confirm_roamingWithPrefer_lbutton">SIM local</string>
+	<string name="confirm_roamingWithPrefer_rbutton">SIM em deslocamento</string>
+	<string name="confirm_radio_lbutton">Ligar</string>
+	<string name="confirm_unlock_lbutton">Destravar</string>
+	<string name="confirm_unlock_fail">Operação cancelada</string>
+	<string name="confirm_turnon_radio_fail">Operação cancelada</string>
+	<string name="confirm_permit_roaming_fail">Você cancelou esta ação no SIM em deslocamento</string>
+	<string name="confirm_sim_locked_message">"Bloqueia o cartão SIM permanentemente"</string>
+	<string name="confirm_slot_locked_message">"O slot foi permanentemente travado."</string>
+	<string name="app_name">CellConnectionService</string>  
+	<string name="button_ok">Ok</string> 
+<string name="button_cancel">"Cancelar"</string>
+    <string name="confirm_radio_title_uim">UIM desligado</string>
+    <string name="confirm_radio_title_card">Cartão desligado</string>
+    <string name="confirm_radio_msg_uim"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		está agora desligado. Deseja ligar este cartão UIM?</string>
+    <string name="confirm_radio_msg_card"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		está agora desligado. Deseja ligar este cartão?</string>
+    <string name="confirm_radio_flight_mode_on_and_msg">Modo de voo está ligado e</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> 		está agora ligado. Deseja desligar o modo de voo e ligar este cartão SIM?</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg_uim"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> 		está agora ligado. Deseja desligar o modo de voo e ligar este cartão UIM?</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg_card"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> 		está agora ligado. Deseja desligar o modo de voo e ligar este cartão?</string>
+    <string name="confirm_radio_flight_mode_on_sim_on_msg">Modo de voo está ligado. Deseja desligar o modo de voo?</string>
+    <string name="confirm_pin_title_uim">UIM bloqueado</string>
+    <string name="confirm_pin_title_card">Cartão bloqueado</string>
+    <string name="confirm_pin_msg_uim">O cartão UIM selecionado está agora bloqueado. Por favor o desbloqueie primeiro.</string>
+    <string name="confirm_pin_msg_card">O cartão selecionado está agora bloqueado. Por favor o desbloqueie primeiro.</string>
+    <string name="confirm_simmelock_msg_uim">O slot UIM selecionado está agora bloqueado. Por favor o desbloqueie primeiro.</string>
+    <string name="confirm_simmelock_msg_card">O slot selecionado está agora bloqueado. Por favor o desbloqueie primeiro.</string>
+    <string name="confirm_roaming_msg_uim">O cartão UIM que você está prestes a usar agora está em roaming. Nenhum UIM local está disponível agora. Deseja continuar?</string>
+    <string name="confirm_roaming_msg_card">O cartão que você está prestes a usar agora está em roaming. Nenhum Cartão local está disponível agora. Deseja continuar?</string>
+    <string name="confirm_roaming_withPrefer_msg_uim">O cartão SIM que você está prestes a usar agora está em roaming. Deseja continuar através do UIM local?</string>
+    <string name="confirm_roaming_withPrefer_msg_card">O cartão SIM que você está prestes a usar agora está em roaming. Deseja continuar através do Cartão local?</string>
+    <string name="confirm_roamingWithPrefer_lbutton_uim">UIM Local</string>
+    <string name="confirm_roamingWithPrefer_lbutton_card">Cartão Local</string>
+    <string name="confirm_roamingWithPrefer_rbutton_uim">UIM em roaming</string>
+    <string name="confirm_roamingWithPrefer_rbutton_card">Cartão em roaming</string>
+    <string name="confirm_roaming_for3Sims_msg">O cartão SIM que você está prestes a usar agora está em roaming. Deseja continuar?</string>
+    <string name="confirm_roaming_for3Sims_msg_uim">O cartão UIM que você está prestes a usar agora está em roaming. Deseja continuar?</string>
+    <string name="confirm_roaming_for3Sims_msg_card">O cartão que você está prestes a usar agora está em roaming. Deseja continuar?</string>
+    <string name="confirm_permit_roaming_fail_uim">Você cancela esta ação com o UIM em roaming</string>
+    <string name="confirm_permit_roaming_fail_card">Você cancela esta ação com o Cartão em roaming</string>
+    <string name="confirm_sim_locked_message_uim">O cartão UIM foi permanentemente bloqueado</string>
+    <string name="confirm_sim_locked_message_card">O cartão foi permanentemente bloqueado</string>
+    <string name="button_yes">"Sim"</string>
+    <string name="button_no">"Não"</string>
+    </resources>

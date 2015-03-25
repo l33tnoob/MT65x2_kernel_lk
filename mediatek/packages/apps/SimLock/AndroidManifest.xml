@@ -1,0 +1,168 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.android.simmelock"
+        android:sharedUserId="android.uid.system">
+
+    <original-package android:name="com.android.simmelock" />
+
+    <uses-permission android:name="com.google.android.gm.permission.WRITE_GMAIL" />
+    <uses-permission android:name="com.google.android.gm.permission.READ_GMAIL" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.HARDWARE_TEST" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES"/>
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY"/>
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY"/>
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>    
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOVE_PACKAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <application android:label="@string/settings_label"            
+            android:taskAffinity="">
+
+        <!-- Settings -->
+
+       <activity android:name=".LockList"
+                  android:label="@string/simmelock_name"
+                  android:process="com.android.phone" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            
+            <intent-filter>
+                <action android:name="android.intent.action.LockList" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TabLockList"
+                  android:label="@string/simmelock_name"
+                  android:process="com.android.phone" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TabLockList" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActionList"
+                  android:label="@string/simmelock_name"
+                  android:process="com.android.phone" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.ActionList" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>       
+        <activity android:name=".LockSetting"
+                  android:label="@string/simmelock_name"
+                  android:process="com.android.phone"
+                  android:configChanges = "orientation" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.LockSetting" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".UnlockSetting"
+                  android:label="@string/simmelock_name"
+                  android:configChanges = "orientation|mcc|mnc"
+                  android:process="com.android.phone" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.UnlockSetting" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NPAddLockSetting"
+                  android:label="@string/simmelock_name"
+                  android:configChanges = "orientation"
+                  android:process="com.android.phone" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.NPAddLockSetting" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NSPAddLockSetting"
+                  android:label="@string/simmelock_name"
+                  android:configChanges = "orientation"
+                  android:process="com.android.phone" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.NSPAddLockSetting" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SPAddLockSetting"
+                  android:label="@string/simmelock_name"
+                  android:configChanges = "orientation"
+                  android:process="com.android.phone" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SPAddLockSetting" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CPAddLockSetting"
+                  android:label="@string/simmelock_name"
+                  android:configChanges = "orientation"
+                  android:process="com.android.phone" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.CPAddLockSetting" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SIMPAddLockSetting"
+                  android:label="@string/simmelock_name"
+                  android:configChanges = "orientation"
+                  android:process="com.android.phone" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SIMPAddLockSetting" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       <activity android:name=".RemoveSetting"
+                  android:label="@string/simmelock_name"
+                  android:configChanges = "orientation"
+                  android:process="com.android.phone" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.RemoveSetting" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PermanUnlockSetting"
+                  android:label="@string/simmelock_name"
+                  android:configChanges = "orientation"
+                  android:process="com.android.phone" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.PermanUnlockSetting" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+    </application>
+</manifest>

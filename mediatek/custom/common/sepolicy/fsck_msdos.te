@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binfsck_msdos Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type fsck_msdos_exec , exec_type, file_type;
+type fsck_msdos ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive fsck_msdos;
+init_daemon_domain(fsck_msdos)
+
+
+# 20131122 Add Set Property Rule
+allow fsck_msdos  property_type:property_service set;

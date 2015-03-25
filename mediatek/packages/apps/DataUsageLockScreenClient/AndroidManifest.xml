@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mediatek.DataUsageLockScreenClient"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application android:label="DataUsageLockScreenClient" android:hardwareAccelerated="true">
+        <service android:name=".DataUsageLauncher" android:exported="true">
+            <intent-filter>
+                <action android:name="com.mediatek.keyguard.ext.IKeyguardLayer" />
+            </intent-filter>
+            <meta-data android:name="class" android:value="com.mediatek.DataUsageLockScreenClient.DataUsageLauncher"/>
+        </service>
+    </application>
+
+    <uses-permission android:name="android.Manifest.permission.MANAGE_NETWORK_POLICY"/>
+    <uses-permission android:name="android.Manifest.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.Manifest.permission.READ_NETWORK_USAGE_HISTORY"/>
+</manifest>

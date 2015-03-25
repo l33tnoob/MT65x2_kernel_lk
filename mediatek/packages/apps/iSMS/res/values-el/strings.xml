@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="STR_NMS_MAIN">iSMS</string>
+    <string name="STR_NMS_HISSAGE">iSMS</string>
+    <string name="STR_NMS_INVITE_SMS_CONTENT">Γεια, το iSMS είναι ένα φοβερό εργαλείο συνομιλίας. Είναι δωρεάν και βολικό. Επισκεφτείτε το http://isms.hissage.com για περισσότερες πληροφορίες.</string>
+    <string name="STR_NMS_NO_SDCARD">Δεν ανιχνεύτηκε κάρτα SD, το iSMS δεν\θα επιτρέψει ορισμένες λειτουργίες</string>
+    <string name="STR_NMS_MOUNT_SDCARD">Κάρτα SD διαθέσιμη για χρήση</string>
+    <string name="STR_NMS_SEND_MMS_FAIL">Αδύνατη η αποστολή του μηνύματος. Θα σταλεί αυτόματα όταν υπάρχει διαθέσιμο δίκτυο.</string>
+    <string name="STR_NMS_RECV_MMS_FAIL">Δεν είναι δυνατή η λήψη. Προσπαθήστε ξανά αργότερα.</string>
+    <string name="STR_NMS_GROUP_CHAT_ME">με</string>
+    <string name="STR_NMS_GROUP_CHAT_I">Εγώ</string>
+    <string name="STR_NMS_GROUP_CHAT_YOU">Εσύ</string>
+    <string name="STR_NMS_GROUP_CREATE_MSG">%1$s προσκαλείς τον/την %2$s σε ομαδική συνομιλία.</string>
+    <string name="STR_NMS_GROUP_ADD_MSG">Ο/Η %1$s μπήκε στην ομαδική συνομιλία.</string>
+    <string name="STR_NMS_GROUP_DELETE_MSG">Ο/Η %1$s διαγράφει τον/την %2$s από την ομαδική συνομιλία.</string>
+    <string name="STR_NMS_GROUP_QUITE_MSG">Ο/Η %1$s εγκατέλειψε την ομαδική συνομιλία.</string>
+    <string name="STR_NMS_GROUP_CHAT_PLACE_HOLDER_MSG_BODY">Εντάχθηκες σε αυτή την ομάδα</string>
+    <string name="STR_NMS_PICTURE">εικόνα</string>
+    <string name="STR_NMS_TAPE">ήχος</string>
+    <string name="STR_NMS_VCARD">επαφή</string>
+    <string name="STR_NMS_LOCATION">θέση</string>
+    <string name="STR_NMS_SKETCH">σκίτσο</string>
+    <string name="STR_NMS_VIDEO">βίντεο</string>
+    <string name="STR_NMS_CALENDAR">ημερολόγιο</string>
+    <string name="STR_NMS_UNKNOWN">άγνωστο</string>
+    <string name="STR_NMS_READ_MODE_PIC">μια εικόνα</string>
+    <string name="STR_NMS_READ_MODE_TAPE">μια ηχητική σημείωση</string>
+    <string name="STR_NMS_READ_MODE_VCARD">επαφές</string>
+    <string name="STR_NMS_READ_MODE_LOCATION">μια θέση</string>
+    <string name="STR_NMS_READ_MODE_SKETCH">ένα σκίτσο</string>
+    <string name="STR_NMS_READ_MODE_VIDEO">ένα βίντεο</string>
+    <string name="STR_NMS_READ_MODE_CALENDAR">ένα ημερολόγιο</string>
+    <string name="STR_NMS_ISMS_ENABLE">(Ενεργοποίηση iSMS)</string>
+    <string name="STR_NMS_READ_MODE_UNKNOWN">ένα άγνωστο αρχείο</string>
+    <string name="STR_NMS_ALL_MSG">Όλα τα μηνύματα</string>
+    <string name="STR_NMS_SAVED">Αποθηκευμένα</string>
+    <string name="STR_NMS_BLOCKMSG">Μπλοκαρισμένα</string>
+    <string name="STR_NMS_SMS_TYPE">SMS</string>
+    <string name="STR_NMS_NO_SIM">Δεν ανιχνεύθηκε κάρτα SIM</string>
+    <string name="STR_NMS_ILLEGAL_ADDRESS">Μη έγκυρος αριθμός</string>
+    <string name="STR_NMS_REMIND_USER_SET_NAME">Παρακαλούμε ενημερώστε το προφίλ σας</string>
+    <string name="STR_NMS_OK">OK</string>
+    <string name="STR_NMS_BACK">Πίσω</string>
+    <string name="STR_NMS_CANCEL">Ακύρωση</string>
+    <string name="STR_NMS_NETWORK_UNAVL">Παρακαλούμε βεβαιωθείτε ότι είναι διαθέσιμη κάποια ενεργή σύνδεση δεδομένων, π.χ. 3G, GPRS ή Wi-Fi</string>
+    <string name="STR_NMS_TODAY">Σήμερα</string>
+    <string name="STR_NMS_YESTERDAY">Χθες</string>
+    <string name="STR_NMS_NOW">Τώρα</string>
+    <string name="STR_NMS_NO_SIM_CARD">Δεν ανιχνεύθηκε κάρτα SIM, πρέπει να εισάγετε μια κάρτα SIM.</string>
+    <string name="STR_NMS_NO_CONNECTION">Μη διαθέσιμο δίκτυο ή ενεργοποιημένη λειτουργία πτήσης, παρακαλούμε ελέγξτε.</string>
+    <string name="STR_NMS_ATTACH_SHARE">Ο/Η %1$s κοινοποίησε %2$s</string>
+    <string name="STR_NMS_WAIT">Περιμένετε...</string>
+    <string name="STR_NMS_TIPTITLE">Συμβουλή</string>
+
+    <string name="STR_NMS_OPEN">Άνοιγμα</string>
+    <string name="STR_NMS_PLAY">Αναπαραγωγή</string>
+    
+    
+
+    <string name="STR_NMS_VCARD_NAME">%1$s επαφές</string>
+    <string name="STR_NMS_SHARE_VCARD_FAILED">Απέτυχε η κοινή χρήση επαφής</string>
+
+    <!-- upgrade info -->
+    <string name="STR_NMS_UPGRADE_TICKER">Αναβάθμιση έκδοσης</string>
+    <string name="STR_NMS_UPGRADE_ERROR_TITLE">Σφάλμα αναβάθμισης</string>
+    <string name="STR_NMS_UPGRADE_ERROR_CONTENT">Σφάλμα αναβάθμισης, παρακαλώ αναβαθμίστε σε iSMS client</string>
+    <string name="STR_NMS_INSTALLED_TITLE">Επιτυχής αναβάθμιση</string>
+    <string name="STR_NMS_INSTALLED_CONTENT">Επιτυχής αναβάθμιση στο τηλέφωνο</string>
+    <string name="STR_NMS_PROMPT_DLG_TITLE">Ανιχνεύθηκε νέα έκδοση</string>
+    <string name="STR_NMS_PROMPT_DLG_DOWNLOAD">Λήψη</string>
+    <string name="STR_NMS_PROMPT_DLG_LATER">Αργότερα</string>
+    <string name="STR_NMS_UPGRADING">Γίνεται αναβάθμιση</string>
+    <string name="STR_NMS_UPGRADE_TIME">Τελευταίος έλεγχος: %s</string>
+    
+    <!-- ext protocol -->
+    <string name="STR_NMS_OFFLINE_URL">http://ismsi.hissage.com/webservice/nmsmail/notifyOffline.php</string>
+    
+    <!-- Activation start -->
+    <string name="STR_NMS_PRELOAD_IP_MSG_CONTENT">&quot;Καλωσορίσατε στο iSMS.&quot;</string>
+    <string name="STR_NMS_ACTIVAT_TITLE">Το iSMS θα στείλει ένα μοναδικό SMS για να επαληθεύσει τον αριθμό τηλεφώνου σας. Ενδέχεται να επιβληθούν χρεώσεις από τον πάροχο.</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE">Επαληθεύστε τον αριθμό τηλεφώνου σας</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE2">Επαληθεύστε τον αριθμό τηλεφώνου σας</string>
+    <string name="STR_NMS_YOUR_COUNTRY_TITLE">Η ΧΩΡΑ ΣΑΣ</string>
+    <string name="STR_NMS_YOUR_PHONE_TITLE">Ο ΑΡΙΘΜΟΣ ΤΗΛΕΦΩΝΟΥ ΣΑΣ</string>
+    <string name="STR_NMS_VERIFY_FAIL_TITLE">Αποτυχία επαλήθευσης SMS.</string>
+    <string name="STR_NMS_VERIFY_FAIL_CONTENT">Βεβαιωθείτε ότι έχετε εισάγει σωστά τον αριθμό τηλεφώνου.</string>
+    <string name="STR_NMS_WORKING_SMS_TIP">Βεβαιωθείτε ότι υπάρχει σε λειτουργία ένα σχέδιο SMS.</string>
+    <string name="STR_NMS_VERIFYING">Αναμονή για αυτόματη ανίχνευση SMS που στάλθηκε σε</string>
+    <string name="STR_NMS_RETRY">Επανάληψη</string>
+    <string name="STR_NMS_EDIT_NUMBER">Επεξεργασία αριθμού</string>
+    <string name="STR_NMS_UPDATE_PROFILE">Ενημέρωση προφίλ</string>
+    <string name="STR_NMS_START_ISMS">Εκκίνηση iSMS</string>
+    <string name="STR_NMS_SEND">Αποστολή</string>
+    <string name="STR_NMS_CONGRATULATIONS_TITLE">Συγχαρητήρια!</string>
+    <string name="STR_NMS_CONGRATULATIONS_CONTENT">Ευχαριστούμε που ενεργοποιήσατε το iSMS.\n Τώρα μπορείτε να απολαύσετε την υπηρεσία.\nΧαρούμενο iSMS!</string>
+    <string name="STR_NMS_WELCOME_BACK">Καλώς ορίσατε ξανά.</string>
+    <string name="STR_NMS_SEND_SMS_FAIL">Αποτυχία επαλήθευσης, παρακαλούμε ελέγξτε:\n 1. Ο αριθμός τηλεφώνου είναι σωστός·\n 2. Απενεργοποιημένο λογισμικό ασφαλείας·\n 3. Άλλες πιθανές αιτίες για να να αποκλείσετε την αποστολή SMS.\nΒεβαιωθείτε και δοκιμάστε ξανά αργότερα.</string>
+    <string name="STR_NMS_ACTIVE">Ενεργοποιήστε το iSMS</string>
+    <string name="STR_NMS_WELCOME_ACTIVE">Καλώς ήρθατε στο iSMS</string>
+    <string name="STR_NMS_CONNECTING">Γίνεται σύνδεση...</string>
+    <!-- Activation end -->
+
+
+    <!-- Notification start -->
+    <string name="STR_NMS_NEW_MSG_TITLE">Νέο μήνυμα iSMS</string>
+    <string name="STR_NMS_NEW_SMG_CONTENT">%D μη αναγνωσμένο μήνυμα</string>
+    <!-- Notification End -->
+
+    <string name="STR_NMS_MSG_DUMPER_MSG_SMS">SMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_MMS">MMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_IP">Μήνυμα IP</string>
+    <string name="STR_NMS_MSG_DUMPER_SEND_MSG">Εστάλησαν %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_RECEIVE_MSG">Ελήφθησαν %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TIME">Χρόνος: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TEXT">Κείμενο</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_PIC">Εικόνα</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_SKETCH">Σκίτσο</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VOICE">Φωνή</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VIDEO">Βίντεο</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CALENDAR">Ημερολόγιο</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION_IMG">Θέση εικόνας</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VCARD">Vcard</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION">Θέση</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CAPTION">Λεζάντα: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_URL">Διεύθυνση Url: </string>
+    <string name="STR_NMS_MSG_DUMPER_DURATION">Διάρκεια: </string>
+    <string name="STR_NMS_MSG_DUMPER_COORDINATE">Συντεταγμένη: </string>
+    <string name="STR_NMS_MSG_DUMPER_ADDRESS">Διεύθυνση: </string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_SENDER">Αποστολέας: </string>
+    <string name="STR_NMS_MSG_DUMPER_NORMAL_DETAIL">Λεπτομέρεια συνεδρίας:</string>
+    <string name="STR_NMS_MSG_DUMPER_NAME">Όνομα: </string>
+    <string name="STR_NMS_MSG_DUMPER_NUMBER">Αριθμός: </string>
+    <string name="STR_NMS_MSG_DUMPER_PORTRAIT">Πορτραίτο</string>
+    <string name="STR_NMS_MSG_DUMPER_MULTI_SEND_DETAIL">Μετάδοση:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_DETAIL">Ομαδική συνομιλία:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_CREATER">Δημιουργός: </string>
+    <string name="STR_NMS_MSG_DUMPER_MEMBERS">Μέλη: </string>
+    <string name="STR_NMS_MSG_DUMPER_VCARD_NAME">Όνομα: </string>
+    <string name="STR_NMS_MSG_DUMPER_CALENDAR_SUMMARY">Περίληψη: </string>
+
+    <!-- Chat Settings -->
+    <string name="STR_NMS_CHAT_SETTING_TITLE">Ρυθμίσεις συνομιλίας</string>
+    <string name="STR_NMS_DISPLAY">Προβολή</string>
+    <string name="STR_NMS_CHAT_WALLPAPER">Ταπετσαρία συνομιλίας</string>
+    <string name="STR_NMS_SYS_WALLPAPER">Επιλογή ταπετσαρίας</string>
+    <string name="STR_NMS_CAMEARPHOTO">Λήψη φωτογραφίας</string>
+    <string name="STR_NMS_SYS_GALLERY">Επιλέξτε από Γκαλερί</string>
+    <string name="STR_NMS_DEFAULT_WALLPAPER">Προεπιλογή</string>
+    <string name="STR_NMS_NOTIFICATION_CATEGORY">Ειδοποίηση</string>
+    <string name="STR_NMS_NOTIFICATION_TITLE">Ειδοποίηση iSMS </string>
+    <string name="STR_NMS_NOTIFICATION_CONTENT">Εμφάνιση χρόνου λήψης ειδοποιήσεων</string>
+    <string name="STR_NMS_MUTE">Σίγαση</string>
+    <string name="STR_NMS_MUTE_OFF">Απενεργοποίηση</string>
+    <string name="STR_NMS_MUTE_1">Σίγαση για 1 ώρα</string>
+    <string name="STR_NMS_MUTE_4">Σίγαση για 4 ώρες</string>
+    <string name="STR_NMS_MUTE_8">Σίγαση για 8 ώρες</string>
+    <string name="STR_NMS_RINGTONE_TITLE">Ήχος κλήσης</string>
+    <string name="STR_NMS_RINGTONE_CONTENT">Ορισμός ήχου κλήσης για νέες ειδοποιήσεις </string>
+    <string name="STR_NMS_VIBRATE_TITLE">Δόνηση</string>
+    <string name="STR_NMS_VIBRATE_CONTENT">Δόνηση όταν λαμβάνονται ειδοποιήσεις</string>
+    <string name="STR_NMS_ACTIONS">Ενέργειες</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_TITLE">Λήψη ιστορικού συνομιλίας</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_CONTENT">Αποθήκευση σε κάρτα SD σε μορφή zip</string>
+    <string name="STR_NMS_EMAIL_HISTORY_TITLE">Αποστολή ιστορικού συνομιλίας με e-mail</string>
+    <string name="STR_NMS_EMAIL_HISTROY_CONTENT">Αποστολή με e-mail ιστορικού συνομιλίας σε μορφή zip </string>
+    <string name="STR_NMS_CLEAR_HISTROY">Διαγραφή ιστορικού συνομιλίας</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_DLG">Γίνεται λήψη...</string>
+    <string name="STR_NMS_DOWNLOAD_OK">Ιστορικό συνομιλίας ελήφθη, να αποθηκευτεί ως %s</string>
+    <string name="STR_NMS_DOWNLOAD_ERROR">Σφάλμα λήψης ιστορικού συνομιλίας.</string>
+    <string name="STR_NMS_DOWNLOAD_EMPTY">Δεν υπάρχει τίποτε προς λήψη.</string>
+    <string name="STR_NMS_CLEARING">Διαγραφή ιστορικού, παρακαλώ περιμένετε...</string>
+    <string name="STR_NMS_WAIT_SAVE_WALLPAPER">Αποθήκευση ταπετσαρίας, παρακαλώ περιμένετε...</string>
+    <string name="STR_NMS_SAVE_WALLPAPER_OK">Επιτυχής αποθήκευση ταπετσαρίας.</string>
+    <string name="STR_NMS_CLEARDONE">Ολοκληρώθηκε η διαγραφή ιστορικού.</string>
+    <string name="STR_NMS_SVAE_TITLE">Αποθήκευση σε κάρτα SD</string>
+    <string name="STR_NMS_SAVE_CONTENT">Αποθήκευση της συνομιλίας στην κάρτα SD ως αρχείο zip</string>
+    <string name="STR_NMS_EMAIL_TITLE">Μοιραστείτε μέσω e-mail</string>
+    <string name="STR_NMS_EMAIL_CONTENT">Μοιραστείτε αυτή την συνομιλία μέσω e-mail ως συνημμένο σε μορφή zip</string>
+
+    <!-- Chat Settings End -->
+
+
+    <!-- Profile Settings -->
+    <string name="STR_NMS_PROFILE_TITLE">Προφίλ</string>
+    <string name="STR_NMS_TAP_AVATAR_TIP">Πατήστε για επεξεργασία εικόνας</string>
+    <string name="STR_NMS_DISPLAY_NAME_TIP">ΕΜΦΑΝΙΣΗ ΟΝΟΜΑΤΟΣ</string>
+    <string name="STR_NMS_ACCOUNT_TIP">ΛΟΓΑΡΙΑΣΜΟΣ ISMS</string>
+    <string name="STR_NMS_NO_APP">Καμία εφαρμογή δεν μπορεί να εκτελέσει αυτή την ενέργεια.</string>
+    <string name="STR_NMS_NO_NAME">Ρυθμίστε το όνομά σας</string>
+    <string name="STR_NMS_SAVE_AVATAR_FAILD">Λυπούμαστε, η εικόνα προφίλ δεν αποθηκεύτηκε.</string>
+    <string name="STR_NMS_INPUT_NAME">Όνομα</string>
+    <string name="STR_NMS_TERM_WARN_ACTIVATE">Αυτή η λειτουργία υποστηρίζεται μόνο από την υπηρεσία iSMS.\n\nΤο iSMS είναι μια δωρεάν υπηρεσία άμεσης ανταλλαγής μηνυμάτων που σας επιτρέπει να συνομιλείτε και να μοιράζεστε περιεχόμενο πολυμέσων με φίλους σας πάντα και παντού, μέσω σύνδεσης δεδομένων διαδικτύου (Wi-Fi, 2G/3G, κ.λπ.).\nΜόλις ενεργοποιηθεί για πρώτη φορά, το iSMS θα στείλει αυτόματα ένα SMS για να ολοκληρωθεί η εγγραφή. Ενδέχεται να ισχύει χρέωση/ποσόστωση SMS.\n\n Συμφωνία Τελικού Χρήστη\n</string>
+    <string name="STR_NMS_TERM_WARN_WELCOME">Το iSMS είναι μια δωρεάν υπηρεσία άμεσης ανταλλαγής μηνυμάτων που σας επιτρέπει να συνομιλείτε και να μοιράζεστε περιεχόμενο πολυμέσων με φίλους σας πάντα και παντού, μέσω σύνδεσης δεδομένων διαδικτύου (Wi-Fi, 2G/3G, κ.λπ.).\nΜόλις ενεργοποιηθεί για πρώτη φορά, το iSMS θα στείλει αυτόματα ένα SMS για να ολοκληρωθεί η εγγραφή. Ενδέχεται να ισχύει χρέωση/ποσόστωση SMS.\n\n Συμφωνία Τελικού Χρήστη\n</string>
+    <string name="STR_NMS_TERM_KEY">Όροι και προϋποθέσεις</string>
+    <string name="STR_NMS_AGREE_AND_CONTINUE">Συμφωνώ και συνεχίζω</string>
+    <string name="STR_NMS_ACTIVE_BNT">Ενεργοποίηση</string>
+    <string name="STR_NMS_SET_PROFILE_OK">Το προφίλ έχει ρυθμιστεί επιτυχώς</string>
+    <string name="STR_NMS_SET_PROFILE_FAIL">Απέτυχε η ρύθμιση προφίλ</string>
+    <string name="STR_NMS_ILLEGAL_PROFILE_NAME">Μη νόμιμο όνομα</string>
+    <string name="STR_NMS_NO_ACTIVITED">Δεν υπάρχει ενεργοποιημένη κάρτα SIM.</string>
+    <!-- Profile Settings End -->
+
+
+    <!-- Term Activity -->
+    <string name="STR_NMS_REJECT">Απόρριψη</string>
+    <string name="STR_NMS_AGREE">Συμφωνώ</string>
+    <string name="STR_NMS_TERM_TITLE">Όροι χρήσης</string>
+    <string name="STR_NMS_TERM_CONTENT">Αντιλαμβάνεστε ότι η Υπηρεσία και το ενσωματωμένο λογισμικό της μπορεί να περιλαμβάνει εξαρτήματα ασφαλείας που επιτρέπουν την προστασία των ψηφιακών υλικών, όπως επίσης ότι η χρήση των υλικών αυτών υπόκειται σε κανόνες χρήσης από την AF PushMail ή/και από παρόχους περιεχομένου που διαθέτουν περιεχόμενο στην Υπηρεσία. Δεν έχετε το δικαίωμα να προσπαθήσετε να παρακάμψετε ή να καταστρατηγήσετε τυχόν κανόνες χρήσης που εμπεριέχονται στην Υπηρεσία. Απαγορεύεται αυστηρά η μη εξουσιοδοτημένη αναπαραγωγή, δημοσίευση, περαιτέρω διανομή ή δημόσια έκθεση υλικών που προβλέπονται από την Υπηρεσία, στο σύνολό τους ή εν μέρει.</string>
+    <!-- Term Activity End -->
+
+
+    <!-- System Settings -->
+    <string name="STR_NMS_SYS_SETTING_TITLE">Μήνυμα iSMS</string>
+    <string name="STR_NMS_SETTINGS_TITLE">ΠΡΟΦΙΛ</string>
+    <string name="STR_NMS_PREFERENCE_CATE">ΠΡΟΤΙΜΗΣΕΙΣ</string>
+    <string name="STR_NMS_SEND_SMS_TITLE">Στείλτε με SMS</string>
+    <string name="STR_NMS_SEND_SMS_CONTENT">Στείλτε με SMS εάν δεν είναι διαθέσιμο το iSMS. Ενδέχεται να ισχύσουν χρεώσεις μηνυμάτων από τον πάροχο. Αυτός ο κανόνας δεν ισχύει για ομαδική συνομιλία</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_TITLE">Αυτόματη λήψη</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_CONTENT">Αυτόματη λήψη αντικειμένων πολυμέσων</string>
+    <string name="STR_NMS_CAPTION_TITLE">Λεζάντες</string>
+    <string name="STR_NMS_CAPTION_CONTENT">Κοινή χρήση αρχείου με λεζάντες</string>
+    <string name="STR_NMS_SYSTEM_CATE">ΣΥΣΤΗΜΑ</string>
+    <string name="STR_NMS_UPDATE_TITLE">Ενημέρωση λογισμικού</string>
+    <string name="STR_NMS_UPDATE_CONTENT">Τελευταίος έλεγχος: Ποτέ</string>
+    <string name="STR_NMS_NETWORK_USAGE_TITLE">Χρήση δικτύου</string>
+    <string name="STR_NMS_NETWORK_USAGE_CONTENT">Προβολή συνολικής χρήσης δεδομένων αποστολής/λήψης </string>
+    <string name="STR_NMS_NETWORK_DLG_CONTENT">Απεσταλμένα: %1$.3f K \nΛηφθέντα: %2$.3f K\nΤελευταίος μηδενισμός: %3$s</string>
+    <string name="STR_NMS_VERSION_TITLE">Έκδοση</string>
+    <string name="STR_NMS_NEVER_CLEAR">Ποτέ</string>
+    <string name="STR_NMS_RESET">Μηδενισμός</string>
+    <string name="STR_NMS_SWITCH_ON">ΕΝΕΡΓΟΠΟΙΗΣΗ</string>
+    <string name="STR_NMS_SWITCH_OFF">ΑΠΕΝΕΡΓΟΠΟΙΗΣΗ </string>
+    <string name="STR_NMS_SYSTEM_SETTING_TITLE">Ρυθμίσεις</string>
+    <string name="STR_NMS_COPYRGIHT">Hesine Technologies, Inc.</string>
+    <string name="STR_NMS_ABOUT">Σχετικά με το iSMS</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_TITLE">Εμφάνιση κατάστασης</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_CONTENT">Να εμφανίζεται η κατάσταση ανάγνωσης στη λίστα μηνυμάτων</string>
+    <string name="STR_NMS_SHOW_REMIND_TITLE">Εμφάνιση υπενθυμίσεων</string>
+    <string name="STR_NMS_SHOW_REMIND_CONTENT">Εμφάνιση υπενθυμίσεων iSMS στην οθόνη συνομιλίας</string>
+    <string name="STR_NMS_MENU_RESET_SETTING">Επαναφορά προεπιλεγμένων ρυθμίσεων</string>
+    <string name="STR_NMS_MENU_FUNCTION_INTRODUCTION">Χαρακτηριστικά</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT">Συμφωνία Τελικού Χρήστη</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION">Δικαιώματα πνευματικής ιδιοκτησίας</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT_TITLE">ΆΔΕΙΑ ΧΡΗΣΗΣ ΤΕΛΙΚΟΥ ΧΡΗΣΤΗ HESINE iSMS </string>
+    <string name="STR_NMS_MENU_FUNCTION">Λίστα χαρακτηριστικών</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION_DETAIL">\nHesine Technologies Inc.\nCopyright© 2008-2013\nΜε την επιφύλαξη παντός δικαιώματος.\n</string>
+    <!-- System Settings End -->
+
+
+    <!-- Caption Settings -->
+    <string name="STR_NMS_AUDIO_TITLE">Ήχος</string>
+    <string name="STR_NMS_VIDEO_TITLE">Βίντεο</string>
+    <string name="STR_NMS_PHOTO_TITLE">Φωτογραφίες</string>
+    <!-- Caption Settings End -->
+
+
+    <!-- Map String start -->
+    <string name="STR_NMS_MAP_TITLE">Κοινή χρήση θέσης</string>
+    <string name="STR_NMS_MAP_PROMPT">Ο χάρτης δεν μπορεί να εμφανιστεί διότι δεν είναι ενεργοποιημένη η υπηρεσία εντοπισμού θέσης σας. Η παρακάτω διεύθυνση υπολογίζεται με βάση τις πληροφορίες του κινητού σας. \nΓια μεγαύτερη ακρίβεια στην υπηρεσία εντοπισμού θέσης, σας συνιστούμε να ενεργοποιήσετε την υπηρεσία εντοπισμού θέσης.</string>
+    <string name="STR_NMS_MAP_NOTE_1">Παρακαλούμε ενεργοποιήστε την επιλογή «Η Θέση μου» στις ρυθμίσεις συστήματος</string>
+    <string name="STR_NMS_MAP_SHARE">Μοιραστείτε</string>
+    <string name="STR_NMS_MAP_SETTINGS">Ρυθμίσεις</string>
+    <string name="STR_NMS_MAP_OK">OK</string>
+    <string name="STR_NMS_MAP_CANCEL">Ακύρωση</string>
+    <string name="STR_NMS_MAP_EDIT">Επεξεργασία θέσης</string>
+    <string name="STR_NMS_MAP_SEARCH_HINT">Αναζήτηση σε κοντινά μέρη</string>
+    <string name="STR_NMS_MAP_WAIT">Παρακαλώ περιμένετε...</string>
+    <string name="STR_NMS_MAP_EDIT_LIMIT">Η εισαγωγή χαρακτήρων έχει φτάσει στο όριο</string>
+    <string name="STR_NMS_MAP_ADDR_LEN">Πολύ μεγάλη διεύθυνση</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR_LOCATING">Εντοπισμός...</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN_LOCATING">Εντοπισμός της θέσης ΡΙΝ...</string>
+    <string name="STR_NMS_MAP_LINEONE_SEARCH_LOCATING">Εντοπισμός της θέσης αναζήτησής σας...</string>
+    <string name="STR_NMS_MAP_LINETHREE_NEARBY_LOCATING">Αναζήτηση σε κοντινά μέρη...</string>
+    <string name="STR_NMS_MAP_LINEONE_FAILED">Μη διαθέσιμη θέση</string>
+    <string name="STR_NMS_MAP_LINETWO_FAILED">Βεβαιωθείτε ότι η Υπηρεσία εντοπισμού θέσης είναι ενεργοποιημένη και υπάρχει διαθέσιμο δίκτυο</string>
+    <string name="STR_NMS_MAP_LINETHREE_FAILED">Δεν βρέθηκαν κοντινά μέρη</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR">Κοινή χρήση τρέχουσας θέσης</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN">Κοινή χρήση θέσης ΡΙΝ</string>
+    <string name="STR_NMS_MAP_MY_LOCATION">Η θέση μου</string>
+    <string name="STR_NMS_MAP_SEARCH">Αναζήτηση</string>
+    <string name="STR_NMS_MAP_ERROR_1">Αδύνατη η λήψη γεωγραφικού πλάτους και μήκους</string>
+    <string name="STR_NMS_MAP_ERROR_2">Οι διακομιστές της Google επιστρέφουν ένα σφάλμα</string>
+    <!-- Map String end -->
+
+
+    <!-- All Media String start -->
+    <string name="STR_NMS_ALL_MEDIA_TITLE">Όλα τα μέσα</string>
+    <string name="STR_NMS_ALL_MEDIA_WAIT">Παρακαλώ περιμένετε...</string>
+    <string name="STR_NMS_ALL_MEDIA_ERROR">Η φόρτωση απέτυχε, παρακαλούμε δοκιμάστε ξανά αργότερα</string>
+    <string name="STR_NMS_ALL_MEDIA_EMPTY">Κενό</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_WEEK">Αυτή την εβδομάδα</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_MONTH">Αυτό το μήνα</string>
+    <string name="STR_NMS_ALL_MEDIA_JAN">Ιανουάριος</string>
+    <string name="STR_NMS_ALL_MEDIA_FEB">Φεβρουάριος</string>
+    <string name="STR_NMS_ALL_MEDIA_MAR">Μάρτιος</string>
+    <string name="STR_NMS_ALL_MEDIA_APR">Απρίλιος</string>
+    <string name="STR_NMS_ALL_MEDIA_MAY">Μάϊος</string>
+    <string name="STR_NMS_ALL_MEDIA_JUN">Ioύνιος</string>
+    <string name="STR_NMS_ALL_MEDIA_JUL">Ιούλιος</string>
+    <string name="STR_NMS_ALL_MEDIA_AUG">Αύγουστος</string>
+    <string name="STR_NMS_ALL_MEDIA_SEPT">Σεπτέμβριος</string>
+    <string name="STR_NMS_ALL_MEDIA_OCT">Οκτώβριος</string>
+    <string name="STR_NMS_ALL_MEDIA_NOV">Νοέμβριος</string>
+    <string name="STR_NMS_ALL_MEDIA_DEC">Δεκέμβριος</string>
+    <string name="STR_NMS_ADDCONTACT">Προσθήκη επαφής</string>
+    <string name="STR_NMS_ADD_PHONE_CONTACT">Προσθήκη \&quot;%1$s\&quot; στις επαφές;</string>
+    <string name="STR_NMS_DELETE_MEDIA">Τα πολυμέσα θα διαγραφούν, θέλετε να συνεχίσετε;</string>
+    <string name="STR_NMS_MEDIA_SHARE_MESSAGE">Ο/Η %1$s κοινοποίησε στις %2$s</string>
+
+    <!-- All Media String end -->
+
+
+    <!-- All Locations String start -->
+    <string name="STR_NMS_ALL_LOCATIONS_TITLE">Όλες οι θέσεις</string>
+    <string name="STR_NMS_ALL_LOCATIONS_LOC">Θέση</string>
+    <string name="STR_NMS_ALL_LOCATIONS_WAIT">Παρακαλώ περιμένετε...</string>
+    <!-- All Locations String end -->
+
+
+    <!-- Sketch -->
+    <string name="STR_NMS_SKETCH_TITLE">Σχεδιάστε ένα σκίτσο</string>
+    <string name="STR_NMS_REDO">Επανάληψη</string>
+    <string name="STR_NMS_UNDO">Αναίρεση</string>
+    <string name="STR_NMS_SKETCH_CUSTOM">Προσαρμοσμένο</string>
+    <string name="STR_NMS_PEN_SIZE">Μέγεθος</string>
+    <string name="STR_NMS_SKETCH_TOOLS_PEN">Μολύβι</string>
+    <string name="STR_NMS_SKETCH_TOOLS_ERASER">Εργαλείο διαγραφής</string>
+    <string name="STR_NMS_SKETCH_CUSTOM_COLOR">Προσαρμοσμένο χρώμα</string>
+    <string name="STR_NMS_CLEAR_SKETCH_TITLE">Διαγραφή σκίτσου</string>
+    <string name="STR_NMS_CLEAR_SKETCH_CONTENT">Θέλετε να διαγράψετε αυτό το σκίτσο;</string>
+    <string name="STR_NMS_SIZE_SKETCH_TITLE">Μέγεθος</string>
+    <string name="STR_NMS_SIZE_SKETCH_MAX">72</string>
+    <string name="STR_NMS_SIZE_SKETCH_MIN">2</string>
+    <string name="STR_NMS_COLOR_SKETCH_TITLE">Έγχρωμο</string>
+    <string name="STR_NMS_SKETCH_ERROR">Αδύνατη η δημιουργία σκίτσου.</string>
+    <string name="STR_NMS_BACK_TITLE">Επιβεβαίωση</string>
+    <string name="STR_NMS_FINISH_SKETCH_CONTENT">Είστε βέβαιοι ότι θέλετε να αποχωρήσετε από το σκίτσο;</string>
+    <string name="STR_NMS_LEAVE_SKETCH_CONTENT">Είστε βέβαιοι ότι θέλετε να κλείσετε το σκίτσο;</string>
+    <string name="STR_NMS_NOTREDO">Τίποτε για ακύρωση αναίρεσης</string>
+    <string name="STR_NMS_NOTUNDO">Τίποτε για αναίρεση</string>
+    <string name="STR_NMS_SKETCH_DELETE">Διαγραφή</string>
+    <string name="STR_NMS_DISCARD">Απόρριψη</string>
+
+    <!-- Sketch end -->
+
+
+    <!-- Selection Contact -->
+    <string name="STR_NMS_DONE">OK</string>
+    <string name="STR_NMS_SELECTALL">Επιλογή όλων</string>
+    <string name="STR_NMS_DESELECTED">Αναίρεση επιλογής όλων</string>
+    <string name="STR_NMS_SELECTED">%1$s έχουν επιλεγεί</string>
+    <string name="STR_NMS_CONTACT_SEARCH">Εύρεση επαφών</string>
+    <string name="STR_NMS_SEARCH">Αναζήτηση</string>
+    <string name="STR_NMS_CONTACT_SELECT">Επιλογή επαφής</string>
+    <string name="STR_NMS_SELECT_MEMBER_FULL">Έχουν επιλεγεί πάρα πολλές επαφές</string>
+    <string name="STR_NMS_SELECT_MEMBER_EMPTY">Δεν έχουν επιλεγεί επαφές</string>
+    <string name="STR_NMS_SELECT_CONTAT_WAIT">Παρακαλώ περιμένετε...</string>
+    <string name="STR_NMS_SELECT_CONTAT_EMPTY">Δεν υπάρχουν επαφές iSMS</string>
+    <string name="STR_NMS_SELECT_NO_RESULT">Δεν βρέθηκε καμία</string>
+    <string name="STR_NMS_EMPTY">Δεν υπάρχουν επαφές</string>
+    <string name="STR_NMS_ALL_CONTACTS">ΌΛΕΣ</string>
+    <string name="STR_NMS_GROUPS_MEM"> %1$s μέλη</string>
+    <string name="STR_NMS_GROUPS_CONTACTS">ΌΛΕΣ ΟΙ ΟΜΑΔΕΣ</string>
+    <!-- Selection Contact end -->
+
+    <!-- Group chat -->
+    <string name="STR_NMS_CREATE_GROUP_TITLE">Δημιουργία Ομάδας</string>
+    <string name="STR_NMS_GROUP_INFO_TITLE">Πληροφορίες Ομάδας</string>
+    <string name="STR_NMS_EDIT_GROUP_TITLE">Επεξεργασία Ομάδας</string>
+    <string name="STR_NMS_SELECT_ACTION_TITLE">Επιλέξτε ενέργεια</string>
+    <string name="STR_NMS_ADD_TO_BOOKMARK">Προσθήκη σε σελιδοδείκτη</string>
+    <string name="STR_NMS_ADD_TO_CONTACTS">Προσθήκη %1$s στις Επαφές</string>
+    <string name="STR_NMS_GROUP_NAME">ΌΝΟΜΑ ΟΜΑΔΑΣ</string>
+    <string name="STR_NMS_GROUP_INFO">ΠΛΗΡΟΦΟΡΙΕΣ ΟΜΑΔΑΣ</string>
+    <string name="STR_NMS_GROUP_MEMBERS">ΜΕΛΗ ΟΜΑΔΑΣ</string>
+    <string name="STR_NMS_GROUP_NAME_HIT">Όνομα Ομάδας</string>
+    <string name="STR_NMS_GROUP_NAME_EMPTY">Το Όνομα Ομάδας είναι κενό</string>
+    <string name="STR_NMS_CONFIRM_LEAVE_TITLE">Αποχώρηση από αυτή την ομάδα</string>
+    <string name="STR_NMS_LEAVE_GROUP_CONTENT">Θέλετε να αποχωρήσετε από αυτήν την ομάδα;</string>
+    <string name="STR_NMS_LEAVE_GROUP_SUCCESS">Επιτυχής αποχώρηση από αυτήν την ομάδα</string>
+    <string name="STR_NMS_LEAVE_GROUP_FAILED">Αποτυχία αποχώρησης από αυτήν την ομάδα</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_SUCCESS">Επιτυχής ενημέρωση ονόματος ομάδας</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_SUCCESS">Προστέθηκαν νέα μέλη ομάδας</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_FAILED">Αποτυχία προσθήκης νέων μελών ομάδας</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_FAILED">Αποτυχία ενημέρωσης ονόματος ομάδας</string>
+    <string name="STR_NMS_CREATE_GROUP_NAME_FAILED">Αποτυχία δημιουργίας ομαδικής συνομιλίας</string>
+    <string name="STR_NMS_DELETE_GROUP_MEMBER_FAILED">Αποτυχία διαγραφής μέλους ομάδας</string>
+    <string name="STR_NMS_UPDATE_GROUP_SUCCESS">Επιτυχής ενημέρωση πληροφοριών ομάδας</string>
+    <string name="STR_NMS_UPDATE_GROUP_FAILED">Αποτυχία ενημέρωσης πληροφοριών ομάδας</string>
+    <string name="STR_NMS_GROUP_CHAT_BACK">Θέλετε να διαγράψετε αυτή τη λειτουργία;</string>
+    <string name="STR_NMS_GROUP_MEMEBER_YOU">ΕΣΥ</string>
+    <string name="STR_NMS_GROUP_INVITE_MORE">Περισσότεροι</string>
+    <string name="STR_NMS_LEAVE_GROUP">Αποχώρηση</string>
+    <string name="STR_NMS_CHAT">Συνομιλία</string>
+    <string name="STR_NMS_CONFIRM_REMOVE_TITLE">Διαγραφή από τη λίστα μελών ομάδας</string>
+    <string name="STR_NMS_REMOVE_OK">Διαγραφή</string>
+    <string name="STR_NMS_REMOVE_CANCEL">Ακύρωση</string>
+    <string name="STR_NMS_REMOVE_CONTENT">Θέλετε να το διαγράψετε από τη λίστα;</string>
+    <string name="STR_NMS_VIEW_ALL_MEDIA">Προβολή όλων των μέσων</string>
+    <string name="STR_NMS_VIEW_ALL_LOCATIONS">Προβολή όλων των θέσεων</string>
+    <string name="STR_NMS_CHAT_SETTINGS">Ρυθμίσεις συνομιλίας</string>
+    <string name="STR_NMS_VIEW_GROUP_FAILED">Έχετε φύγει από αυτή την ομάδα συνομιλίας.</string>
+    <string name="STR_NMS_VIEW_HISTORY">Προβολή ιστορικού ομάδας</string>
+    <string name="STR_NMS_ISMS_ENABLE_TITLE">Ενεργοποίηση iSMS</string>
+    <string name="STR_NMS_ISMS_ENABLE_CONTENT">Αυτή η λειτουργία υποστηρίζεται μόνο από την υπηρεσία iSMS. Να γίνει τώρα ενεργοποίηση του λογαριασμού σας iSMS;</string>
+    <string name="STR_NMS_ENABLE">Ενεργοποίηση</string>
+    <string name="STR_NMS_LATER">Ματαίωση</string>
+    <string name="STR_NMS_SWITCH_TITLE">Αλλαγή SIM</string>
+    <string name="STR_NMS_SWITCH_MESSAGE">Η συνομιλία ομάδας υποστηρίζεται μόνο όταν είναι ενεργοποιημένη η υπηρεσία iSMS, αλλά η τρέχουσα κάρτα SIM δεν είναι ενεργοποιημένη. Να γίνει αλλαγή στην ενεργοποιημένη κάρτα SIM;</string>
+    <string name="STR_NMS_SWITCH_EDIT_MESSAGE">Η τρέχουσα κάρτα SIM δεν σχετίζεται με αυτή την ομάδα. Να γίνει αλλαγή στην άλλη κάρτα SIM;</string>
+    <string name="STR_NMS_LEAVE_GROUP_NOTICE">Έχετε φύγει από αυτή ομάδα και δεν μπορείτε να συμμετάσχετε σε αυτή την ομαδική συνομιλία, εκτός εάν προσκληθείτε ξανά</string>
+    <string name="STR_NMS_LOSE_SIM_NOTICE">Η αρχική κάρτα συνομιλίας SIM έχει αφαιρεθεί, μπορείτε να συνομιλήσετε σε αυτή την ομάδα μόνο με την αρχική σας κάρτα SIM</string>
+    <string name="STR_NMS_SWITCH">Αλλαγή</string>
+
+    <!-- Group chat end -->
+
+
+    <!-- chat details screen long press item start -->
+    <string name="STR_NMS_LONG_PRESS_TITLE">Επιλογές μηνυμάτων</string>
+    <string name="STR_NMS_SEND_VIA_TEXT">Αποστολή με SMS</string>
+    <string name="STR_NMS_TRY_AGAIN">Δοκιμή ξανά</string>
+    <string name="STR_NMS_TRY_ALL_AGAIN">Δοκιμή όλων ξανά</string>
+    <string name="STR_NMS_CONTINUE_TRY">Συνέχιση προσπάθειας</string>
+    <string name="STR_NMS_COPY">Αντιγραφή</string>
+    
+    <string name="STR_NMS_FORWARD">Προώθηση</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_TITLE">Λήψη</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD">Για να προωθήσετε το iSMS, πρέπει πρώτα να κάνετε λήψη του περιεχομένου πολυμέσων.</string>
+    <string name="STR_NMS_FORWARD_CONTIUE">Συνέχεια</string>
+    <string name="STR_NMS_FORWARD_FAILED">Η προώθηση απέτυχε.</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_MULTI">Για να κάνετε πολλαπλή προώθηση, πρέπει πρώτα να κάνετε λήψη ορισμένων iSMS.</string>
+    <string name="STR_NMS_FORWARD_SOME_FAILED">Απέτυχε η προώθηση ορισμένων iSMS.</string>
+    <string name="STR_NMS_FORWARD_ALL_FAILED">Η λήψη απέτυχε, η πολλαπλή προώθηση απορρίφθηκε</string>
+    
+    <string name="STR_NMS_SEND_VIA_MULTIMEDIA">Αποστολή με SMS</string>
+    <string name="STR_NMS_SHARE">Μοιραστείτε</string>
+    <string name="STR_NMS_DELETE">Διαγραφή</string>
+    <string name="STR_NMS_FLAG_IMPORTANT">Σήμανση ως σημαντικό</string>
+    <string name="STR_NMS_REMOVE_IMPORTANT">Αφαίρεση σήμανσης</string>
+    <string name="STR_NMS_SAVE_IN_SDCARD">Εξαγωγή σε κάρτα SD</string>
+    <string name="STR_NMS_SAVE_FILE">Το αρχείο αποθηκεύεται στο %1$s</string>
+    <string name="STR_NMS_SHARE_TITLE">Ο τρόπος για να μοιράζεστε</string>
+    <string name="STR_NMS_VIEW_DETAILS">Προβολή λεπτομερειών</string>
+    <string name="STR_NMS_VIEW_DETAILS_TITLE">Λεπτομέρειες μηνύματος</string>
+    <string name="STR_NMS_SEND_MSG_DETAILS">Είδος: Μήνυμα IP\nΑπεσταλμένο: %1$s</string>
+    <!-- chat details screen long press item end -->
+
+
+    <!-- chat details screen delete item start -->
+    <string name="STR_NMS_DELETE_TITLE">Διαγραφή</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_TITLE">Διαγραφή σημαντικού μηνύματος</string>
+    <string name="STR_NMS_DELETE_WARNING">Το μήνυμα θα διαγραφεί.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_WARNING">Είστε βέβαιοι ότι θέλετε να διαγράψετε αυτό το σημαντικό μήνυμα;</string>
+    <string name="STR_NMS_DELETE_MSG">Τα επιλεγμένα μηνύματα θα διαγραφούν.</string>
+    <string name="STR_NMS_DELETE_WAITTING">Γίνεται διαγραφή</string>
+    <string name="STR_NMS_CLEAR_HISTORY_CONTENT">Όλο το ιστορικό συνομιλίας θα διαγραφεί από την αίθουσα συνομιλίας</string>
+    <string name="STR_NMS_DELETE_IMPORTANT">Να περιληφθούν μηνύματα επισημασμένα ως σημαντικά</string>
+    <!-- chat details screen delete item end -->
+
+
+    <!-- chat details actionBar option start -->
+    <string name="STR_NMS_MENU_CALL">Κλήση</string>
+    <string name="STR_NMS_MENU_GROUPINFO">Πληροφορίες Ομάδας</string>
+    <string name="STR_NMS_MENU_INVITE_CHAT">Πρόσκληση φίλων</string>
+    <string name="STR_NMS_MENU_INVITE_ISMS">Προσκαλέστε φίλους να χρησιμοποιήσουν το iSMS</string>
+    <string name="STR_NMS_MENU_SELECT_MSG">Επιλέξτε μήνυμα</string>
+    <string name="STR_NMS_MENU_MARK_SPAM">Μεταφορά σε ανεπιθύμητα</string>
+    <string name="STR_NMS_MENU_REMOVE_SPAM">Αφαίρεση από ανεπιθύμητα</string>
+    <string name="STR_NMS_MENU_ADD_SHORTCUT">Προσθήκη συντόμευσης</string>
+    <string name="STR_NMS_MENU_VIEW_ALLMEDIA">Προβολή όλων των μέσων</string>
+    <string name="STR_NMS_MENU_VIEW_ALLLOCATION">Προβολή όλων των θέσεων</string>
+    <string name="STR_NMS_MENU_EDIT_GROUP">Επεξεργασία ομάδας</string>
+    <string name="STR_NMS_MENU_CHAT_SETTING">Ρυθμίσεις συνομιλίας</string>
+    <string name="STR_NMS_MENU_INSERT_QUICK_TEXT">Γρήγορη εισαγωγή κειμένου</string>
+    <string name="STR_NMS_MENU_CLEAR_HISTORY">Διαγραφή ιστορικού</string>
+    <string name="STR_NMS_MENU_LEAVE_GROUP">Αποχώρηση</string>
+    <string name="STR_NMS_MENU_DISCARD">Απόρριψη</string>
+    <string name="STR_NMS_MENU_DELETE">Διαγραφή</string>
+    <string name="STR_NMS_MENU_IMPORTANT">Σήμανση ως σημαντικό</string>
+    <string name="STR_NMS_MENU_FORWARD">Προώθηση</string>
+    <!-- chat details actionBar option end -->
+
+
+    <!-- chat details share item start -->
+    <string name="STR_NMS_TAKE_PHOTO">Λήψη φωτογραφίας</string>
+    <string name="STR_NMS_RECORD_VIDEO">Εγγραφή βίντεο</string>
+    <string name="STR_NMS_DRAW_SKETCH">Σχεδιάστε ένα σκίτσο</string>
+    <string name="STR_NMS_SHARE_CONTACT">Κοινή χρήση επαφής</string>
+    <string name="STR_NMS_CHOOSE_PHOTO">Επιλέξτε φωτογραφία</string>
+    <string name="STR_NMS_CHOOSE_VIDEO">Επιλέξτε βίντεο</string>
+    <string name="STR_NMS_RECORD_AUDIO">Εγγραφή ήχου</string>
+    <string name="STR_NMS_SHARE_LOCATION">Κοινή χρήση θέσης</string>
+    <string name="STR_NMS_CHOOSE_AUDIO">Επιλέξτε ήχο</string>
+    <string name="STR_NMS_SHARE_CALENDAR">Κοινή χρήση ημερολογίου</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_TITLE">Προσθήκη μουσικής</string>
+    <string name="STR_NMS_CHOOSE_RINGTONE_ITEM">Ήχος κλήσης</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_ITEM">Ήχος</string>
+    <string name="STR_NMS_INSERT_SDCARD">Εισάγετε κάρτα SD!</string>
+    <!-- chat details share item start -->
+
+
+    <!-- record audio start -->
+    <string name="STR_NMS_AUDIO_TIMER_FORMAT" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <string name="STR_NMS_AUDIO_LABLE">Εγγραφή ηχητικών σημειώσεων</string>
+    <string name="STR_NMS_RECORD_AUDIO_CONT">Πατήστε για εγγραφή</string>
+    <string name="STR_NMS_PLAY_AUDIO_CONT">Πατήστε για αναπαραγωγή</string>
+    <string name="STR_NMS_ACTION_SEND">Αποστολή</string>
+    <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
+    <string name="audio_db_artist_name">Οι εγγραφές σας</string>
+    <string name="audio_db_album_name">Εγγραφές ήχου</string>
+    <!-- record audio end -->
+
+
+    <!-- chat & group details screen start -->
+
+    <string name="STR_NMS_UNREAD_FORMAT">%1$d μη αναγνωσμένα μηνύματα</string>
+    <string name="STR_NMS_NOT_DELIVERED_TITLE">Δεν παραδόθηκε ακόμα</string>
+    <string name="STR_NMS_FAILED_TITLE">Σφάλμα αποστολής</string>
+    <string name="STR_NMS_GROUP_SUBTITLE">%1$s, +%2$d</string>
+    <string name="STR_NMS_GROUP_DEAD_SUBTITLE">%1$s, %2$d</string>
+    <string name="STR_NMS_SAVE_AS_DRAFT">Το μήνυμα αποθηκεύτηκε ως πρόχειρο</string>
+    <string name="STR_NMS_NO_SD_TITLE">Σφάλμα κάρτας SD</string>
+    <string name="STR_NMS_CANT_SHARE">Δεν είναι δυνατή η πρόσβαση στην κάρτα SD. Όλα τα πολυμέσα που αφορούν σχετικά χαρακτηριστικά δεν διατίθενται προσωρινά για χρήση.\n\nεΕλέγξτε την κάρτα SD και δοκιμάστε ξανά αργότερα.</string>
+    <string name="STR_NMS_CANT_SAVE">Δεν ανιχνεύτηκε κάρτα SD, το αρχείο δεν\μπορεί να αποθηκευτεί</string>
+    <string name="STR_NMS_SDSPACE_NOT_ENOUGH">Δεν υπάρχει αρκετός χώρος στην κάρτα SD, το αρχείο δεν\μπορεί να αποθηκευτεί</string>
+    <string name="STR_NMS_REAEND_ALL">Δοκιμή όλων ξανά...</string>
+    <string name="STR_NMS_FILE_LIMIT">Πολύ μεγάλο</string>
+    <string name="STR_NMS_LOAD_ALL_MESSAGE">Φόρτωση όλων των μηνυμάτων</string>
+    <string name="STR_NMS_DOWNLOAD_FAILED">Η λήψη απέτυχε</string>
+    <string name="STR_NMS_INPUT_HINT">Περιεχόμενο εισόδου</string>
+    <string name="STR_NMS_INPUT_HINT_ISMS">Πληκτρολογήστε μήνυμα iSMS</string>
+    <string name="STR_NMS_CAPTION_HINT">Πληκτρολογήστε λεζάντες</string>
+    <string name="STR_NMS_PROTOCOL_SMS">SMS</string>
+    <string name="STR_NMS_PROTOCOL_MMS">MMS</string>
+    <string name="STR_NMS_PROTOCOL_IP">iSMS</string>
+    <string name="STR_NMS_SWITCH_BOTTON">Αλλαγή SIM</string>
+    <string name="STR_NMS_TURN_ON_BOTTON">Ενεργοποίηση</string>
+    <string name="STR_NMS_SWITCH_TEXT_FORMAT">Για να συνεχίσετε την ομαδική συνομιλία, κάντε πρώτα αλλαγή στην SIM %1$s.</string>
+    <string name="STR_NMS_ENABLE_TEXT_FORMAT">Για να συνεχίσετε την ομαδική συνομιλία, ενεργοποιήστε πρώτα την υπηρεσία iSMS στην SIM %1$s.</string>
+    <string name="STR_NMS_REPLACE_ATTACH_TITLE">Αντικατάσταση συνημμένου</string>
+    <string name="STR_NMS_REPLACE_ATTACH_MSG">Υπάρχει ήδη ένα συνημμένο, να αντικατασταθεί;</string>
+    <string name="STR_NMS_TRUNC_CAPTION">Η λεζάντα έχει περικοπεί.</string>
+    <string name="STR_NMS_MAX_CHARACTERS_REACHED">Το μήνυμα έφτασε στα όριά του.</string>
+    <string name="STR_NMS_MAX_EMOTICON_REACHED">Διατήρηση ορίων emoticon</string>
+    <string name="STR_NMS_ENABLE_PROCESS">Επεξεργασία...</string>
+    <string name="STR_NMS_ERR_FILE">Μη έγκυρο αρχείο</string>
+    <string name="STR_NMS_SENDING_TEXT">Αποστολή...</string>
+    <!-- chat & group details screen end --> <!-- Error code tips -->
+    <string name="STR_NMS_ERR_GENERAL">Γενικό σφάλμα</string>
+    <string name="STR_NMS_ERR_INVALID_ARGUMENT">Μη έγκυρο επιχείρημα</string>
+    <string name="STR_NMS_ERR_NETWORK_BLOCK">Το δίκτυο δεν είναι OK</string>
+    <string name="STR_NMS_ERR_PHONE_NOT_ACTIVATED">Δεν έχει ενεργοποιηθεί</string>
+    <string name="STR_NMS_ERR_SIM_NOT_ACTIVATED">Δεν έχει ενεργοποιηθεί η κάρτα SIM</string>
+    <string name="STR_NMS_ERR_INVALID_MSG_DB_ID">Μη έγκυρο αναγνωριστικό μηνύματος ΒΔ</string>
+    <string name="STR_NMS_ERR_ADD_MSG_DB_FAILED">Απέτυχε η εισαγωγή στην ΒΔ</string>
+    <string name="STR_NMS_ERR_UPDATE_MSG_DB_FAILED">Απέτυχε η ενημέρωση της ΒΔ</string>
+    <string name="STR_NMS_ERR_GET_MSG_DB_DATA_FAILED">Απέτυχε η λήψη μηνύματος</string>
+    <string name="STR_NMS_ERR_INVALID_CONTACT_DB_ID">Μη έγκυρο αναγνωριστικό επαφής ΒΔ</string>
+    <string name="STR_NMS_ERR_ADD_CONTACT_DB_FAILED">Απέτυχε η εισαγωγή επαφής</string>
+    <string name="STR_NMS_ERR_UPDATE_CONTACT_DB_FAILED">Απέτυχε η ενημέρωση της ΒΔ επαφών</string>
+    <string name="STR_NMS_ERR_GET_CONTACT_DB_DATA_FAILED">Απέτυχε η λήψη επαφής μέσω αναγνωριστικού</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_ERROR_FORMAT">Μη έγκυρη μορφή μηνύματος IP</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_INVALID_TO">Μη έγκυρος παραλήπτης</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_WITH_UNKNOWN_USER">Μη έγκυρος άγνωστος χρήστης παραλήπτη</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_NO_MBMBER">Δεν υπάρχουν μέλη σε ομαδική συνομιλία</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_GCHAT_DEAD">Η ομαδική συνομιλία δεν είναι ενεργοποιημένη</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_INVALID_SIM_ID">Η κάρτα SIM ομαδικής συνομιλίας δεν είναι η τρέχουσα κάρτα SIM</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_FOR_SYS_MSG">Στείλτε ξανά το μήνυμα συστήματος</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_INVALID_STATUS">Το μήνυμα IP δεν είναι έτοιμο</string>
+    <string name="STR_NMS_ERR_GCHAT_IS_DEAD">Αυτή η ομαδική συνομιλία δεν υπάρχει πια</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBERS">Μη έγκυρα μέλη ομάδας</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBER_WITH_SELF">Αποτυχία δημιουργίας ομάδας. Ο εαυτός σας δεν μπορεί να περιλαμβάνεται στα μέλη</string>
+    <string name="STR_NMS_ERR_GCHAT_EXCEED_MAX_MEMBER_COUNT">Ο αριθμός μελών της ομάδας φθάνει στο όριο</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_NAME">Μη έγκυρο όνομα ομαδικής συνομιλίας</string>
+    <string name="STR_NMS_ERR_GCHAT_SIM_IS_NOT_ACTIVATED">Η κάρτα SIM ομαδικής συνομιλίας δεν\είναι ενεργοποιημένη</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_NOT_INBOX_MSG">Απέτυχε η λήψη διεύθυνσης URL</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_INVALID_URL">Μη έγκυρη λήψη διεύθυνσης URL</string>
+    <string name="STR_NMS_ERR_GET_ATTACH_NAME_INVALID_BODY_FORMAT">Απέτυχε η λήψη ονόματος αρχείου</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_INVALID_FILE_NAME">Μη έγκυρη λήψη ονόματος αρχείου</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_EXIST">Δεν υπάρχει η λήψη του αρχείου</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_INBOX_MSG">Απέτυχε ο ορισμός του αρχείου λήψης</string>
+    <string name="STR_NMS_ERR_SIM_INFO_NOT_FOUND">Δεν βρέθηκαν οι πληροφορίες της κάρτα SIM</string>
+    <string name="STR_NMS_ERR_SIM_IN_INVALID_STATUS">Μη έγκυρη κατάσταση της κάρτας SIM</string>
+    <string name="STR_NMS_ERR_CMD_PROCESSING">Το σύστημα είναι απασχολημένο και δεν\μπορεί να ασχοληθεί με την εντολή διαμόρφωσης συστήματος</string>
+    <string name="STR_NMS_ERR_CMD_GENERAL">Γενικό σφάλμα διαμόρφωσης συστήματος</string>
+    <string name="STR_NMS_ERR_CODE_END">Ο άγνωστος κωδικός σφάλματος</string>
+    <!-- Error code tips -->
+    <string name="STR_NMS_SEND_MMS_QUERY_TITLE">Προσοχή</string>
+    <string name="STR_NMS_SEND_MMS_QUERY">Ο αποδέκτης δεν είναι χρήστης iSMS, να γίνει αποστολή μέσω MMS;</string>
+    <!-- Service center start -->
+    <string name="STR_NMS_SERVICE_TITLE">κέντρο εξυπηρέτησης iSMS </string>
+    <string name="STR_NMS_INTRODUCTION">Με το iSMS, μπορείτε να παραδίδετε στη στιγμή δωρεάν μηνύματα, ενώ το ιστορικό συνομιλίας παραμένει σε ένα μέρος. Πατήστε ένα κουμπί, έρχεται η νέα εμπειρία!</string>
+    <string name="STR_NMS_TERMS">Όροι και προϋποθέσεις</string>
+    <string name="STR_NMS_ACTIVATION_BUTTON">Ενεργοποίηση τώρα</string>
+    <string name="STR_NMS_LOSE_SDCARD">Δεν ανιχνεύθηκε κάρτα SIM</string>
+    <!-- Service center end -->
+
+
+    <!-- conversation empty tips -->
+    <string name="STR_NMS_SPAM_EMPTY">Δεν\έχετε καμία ανεπιθύμητη συνομιλία. Το \nSPAM συλλέγει όλες τις συζητήσεις που είναι επισημασμένες ως ανεπιθύμητες. Η κοινοποίηση θα πρέπει να απενεργοποιηθεί από προεπιλογή. Έτσι μπορείτε να αποφύγετε περιττές ενοχλήσεις. \N\nΜπορείτε να σηματοδοτήσει ένα αποστολέα ως ανεπιθύμητο, πατώντας σε μία συζήτηση και επιλέγοντας το εικονίδιο «Επισήμανση ως Ανεπιθύμητο». Αν μια συνομιλία επισημανθεί ως ανεπιθύμητη, θα εμφανιστεί αυτόματα ένα εικονίδιο απενεργοποιημένης συνομιλίας και η συζήτηση θα τοποθετηθεί εδώ.</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_FROM">+86123456789</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_SUBJECT">Αυτό είναι ένα παράδειγμα ανεπιθύμητων μηνυμάτων.</string>
+    <string name="STR_NMS_GROUPCHAT_EMPTY">Δεν\έχετε κανένα μήνυμα ομαδικής συνομιλίας. \nOι «ΟΜΑΔΙΚΕΣ ΣΥΝΟΜΙΛΙΕΣ» συγκεντρώνουν όλα τα μηνύματα ομαδικής συνομιλίας ομάδας που συμμετείχατε ή που δημιουργήσατε εσείς. Έτσι μπορείτε να βρίσκετε και να διαχειρίζεστε εύκολα ομαδικές συνομιλίες. \n\nΓια να δημιουργήσετε μια ομαδική συνομιλία, πατήστε στο κουμπί «Δημιουργία ομαδικής συνομιλίας» στο κάτω μέρος αυτής της οθόνης και προσκαλέστε φίλους σας στην ομάδα.</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_FROM">Όνομα Ομάδας</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_SUBJECT">Το χαρακτηριστικό ομαδικής συνομιλίας αρέσει στο φίλο σας:\nI</string>
+    <string name="STR_NMS_IMPORTANT_EMPTY">Δεν\έχετε κανένα σημαντικό μήνυμα. \nΤο «ΣΗΜΑΝΤΙΚΟ» συλλέγει όλα τα μηνύματα που είναι επισημασμένα ως σημαντικά. Αυτό σας επιτρέπει να βρίσκετε εύκολα σημαντικά μηνύματα. \n\nΜπορείτε να σημάνετε ένα μήνυμα ως σημαντικό πατώντας στο μήνυμα και επιλέγοντας «Σήμανση ως σημαντικό» από το μενού «Επιλογή». Όταν ένα μήνυμα είναι επισημασμένο ως σημαντικό, θα βλέπετε μια κόκκινη σημαία, όπως η παρακάτω.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TITLE">Αυτό είναι ένα παράδειγμα μηνύματος επισημασμένου ως σημαντικό. Μια κόκκινη σημαία θα εμφανιστεί.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TIME">10:55 π.μ.</string>
+    <string name="STR_NMS_ALLCHAT_EMPTY">Καμία συζήτηση</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_CONTENT">Για να χρησιμοποιήσετε το χαρακτηριστικό αυτό, θα πρέπει πρώτα να ενεργοποιήσετε την υπηρεσία iSMS. Μην\ανησυχείτε - εάν δεν\σας αρέσει η υπηρεσία, μπορείτε να την απενεργοποιήσετε από τις «Ρυθμίσεις». Δοκιμάστε το τώρα!</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_TITLE">Ενεργοποιήστε το iSMS</string>
+    <!-- conversation empty tips -->
+    
+    <string name="STR_NMS_CLEAR_USER_DATA">Επιτυχής διαγραφή δεδομένων</string>
+    
+    <!-- get file err start -->
+    <string name="STR_NMS_NO_SUCH_FILE">Δεν υπάρχει τέτοιου είδους αρχείο</string>
+    <string name="STR_NMS_OVER_FILE_LIMIT">Το μέγεθος του αρχείου ξεπερνά το όριο</string>
+    <string name="STR_NMS_INVALID_FILE_TYPE">Δεν υποστηρίζεται αυτό το είδος</string>
+    <!-- get file err end -->
+
+    <string name="STR_NMS_DELIVERY_BODY">Λήψη μηνύματος από %s</string>
+    <string name="STR_NMS_SIM_SELECT_TITLE">Επιλέξτε κάρτα SIM</string>
+    
+    <string name="STR_NMS_SHORTCUT_SUCCESS">Δημιουργήθηκε συντόμευση %1$s.</string>
+    <string name="STR_NMS_SHORTCUT_REFRESHING">Ανανέωση</string>
+    
+    <string name="STR_NMS_DISABLE_FAILED">Η λειτουργία απέτυχε, δοκιμάστε ξανά</string>
+    <string name="STR_NMS_ENABLE_FAILED">Η λειτουργία απέτυχε, δοκιμάστε ξανά</string>
+    <string name="STR_NMS_ENABLE_SUCCESS">Έχετε ενεργοποιήσει με επιτυχία την υπηρεσία iSMS </string>
+    <string name="STR_NMS_DISABLE_SUCCESS">Έχετε απενεργοποιήσει με επιτυχία την υπηρεσία iSMS</string>
+    
+	<string name="STR_NMS_SD_CARD_FULL">Κάρτα SD πλήρης</string>
+    <string name="STR_NMS_SEND_MSG_FAILED">Απέτυχε η αποστολή μηνύματος!</string>
+    
+    <string name="STR_NMS_SELECT_AUDIO">Επιλογή ήχου</string>
+    
+    <string name="STR_NMS_SETTING_COMMENT">iSMS είναι ένα φοβερό εργαλείο συνομιλίας. Είναι δωρεάν και βολικό.Μάθετε περισσότερα</string>
+    <string name="STR_NMS_KNOW_MORE">Μάθετε περισσότερα</string>
+    <string name="STR_NMS_RECEIVED_MSG_DETAILS">Είδος: Μήνυμα IP\nΑπό: %1$s\nΑποστολή Ώρα: %2$s\nΛηφθέν: %3$s</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH_ADD">iSMS υπηρεσία είναι προσωρινά μη διαθέσιμο λόγω έλλειψης αποθηκευτικού χώρου.</string>
+    <string name="STR_NMS_SERVER_AUTO_ECHO_MSG">Μήνυμα ελήφθη. Ευχαριστώ!</string>
+    
+    <string name="imsp_ip_message">Μήνυμα iSMS</string>
+    <string name="imsp_invite_chat_frequently"><b>Συζητάτε συχνά με τον %s;</b>\n\Γιατί δεν καλείτε τον %s στο iSMS ώστε να εξοικονομήσετε κι οι δυο χρήματα;</string>
+    <string name="imsp_enable_chat_frequently"><b>Η υπηρεσία iSMS του %s είναι απενεργοποιημένη!</b>\n\Γιατί δεν ενεργοποιείτε την υπηρεσία iSMS ώστε να εξοικονομήσετε κι οι δυο χρήματα;</string>
+    <string name="imsp_invite">Πρόσκληση</string>
+    <string name="imsp_enable_notice">Θέλετε σίγουρα να ενεργοποιήσετε την υπηρεσία iSMS;</string>
+    <string name="imsp_activate_chat_frequently"><b>Συζητάτε συχνά με φίλους;</b>\n\Γιατί δεν ενεργοποιείτε την υπηρεσία iSMS για συνομιλία χωρίς επιβάρυνση SMS;</string>
+    <string name="imsp_activate_note">Θέλετε σίγουρα να ενεργοποιήσετε το iSMS;</string>
+    <string name="imsp_dismiss_content">Είστε βέβαιοι ότι θέλετε να διαγράψετε σημείωση;</string>
+    <string name="imsp_divider_online">Ο %S είναι online</string>
+    <string name="imsp_divider_offline">Τελευταία φορά online στις %s</string>
+    <string name="imsp_divider_never_online">Ποτέ online</string>
+    <string name="imsp_failed_title">Η αποστολή απέτυχε</string>
+    <string name="imsp_resend_via_sms">Αποστολή SMS αντί αυτού</string>
+    <string name="imsp_resend_via_mms">Αποστολή MMS αντί αυτού</string>
+    <string name="imsp_typing_text">Πληκτρολόγηση</string>
+    <string name="imsp_save_attachment">Αποθήκευση συνημμένου</string>
+    <string name="imsp_view">Προβολή</string>
+    <string name="imsp_convert_to_mms">Μετατροπή σε MMS.</string>
+    <string name="imsp_convert_to_sms">Μετατροπή σε SMS.</string>
+    <string name="imsp_convert_to_isms">Μετατροπή σε iSMS.</string>
+    <string name="imsp_convert_to_mms_for_service">Μη διαθέσιμη υπηρεσία iSMS στην επιλεγμένη κάρτα SIM. To μήνυμα μπορεί να σταλεί από αυτή την κάρτα SIM μόνο μέσω MMS. Θέλετε να συνεχίσετε;</string>
+    <string name="imsp_convert_to_sms_for_service">Μη διαθέσιμη υπηρεσία iSMS στην επιλεγμένη κάρτα SIM. Το μήνυμα μπορεί να σταλεί από αυτή την κάρτα SIM μόνο μέσω SMS. Θέλετε να συνεχίσετε;</string>
+    <string name="imsp_convert_to_mms_for_recipients">Ο/Οι παραλήπτης(ες) δεν είναι χρήστης(ες) iSMS. Το μήνυμα μπορεί μόνο να σταλεί μόνο μέσω MMS. Θέλετε να συνεχίσετε;</string>
+    <string name="imsp_convert_to_sms_for_recipients">Ο/Οι παραλήπτης(ες) δεν είναι χρήστης(ες) iSMS. Το μήνυμα μπορεί μόνο να σταλεί μόνο μέσω SMS. Θέλετε να συνεχίσετε;</string>
+    <string name="imsp_sms_convert_to_isms">Μη διαθέσιμη υπηρεσία iSMS στην επιλεγμένη κάρτα SIM. Για εξοικονόμηση SMS, συνιστάται η αλλαγή του μηνύματος σε iSMS. Αλλαγή τώρα;</string>
+    <string name="imsp_mms_convert_to_isms">Μη διαθέσιμη υπηρεσία iSMS στην επιλεγμένη κάρτα SIM. Για εξοικονόμηση ΜMS, συνιστάται η αλλαγή του μηνύματος σε iSMS. Αλλαγή τώρα;</string>
+    <string name="imsp_keep_mms">Διατήρηση MMS</string>
+    <string name="imsp_keep_sms">Διατήρηση SMS</string>
+    <string name="imsp_resend_discard_message">Για να ξαναστείλετε το μήνυμα, το παρόν μήνυμα που γράφετε θα διαγραφεί.</string>
+    <string name="imsp_no_sim_card">Δεν υπάρχει κάρτα SIM!</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">&quot;Δεν βρέθηκε σύνδεση Ίντερνετ! Δοκιμάστε ξανά αργότερα.&quot;</string>
+    <string name="imsp_chat_setting_updating">ενημέρωση...</string>
+    <string name="imsp_dialog_clear_title">Διαγραφή</string>
+    <string name="imsp_dialog_clear_description">Όλο το ιστορικό συνομιλίας θα διαγραφεί από την αίθουσα συνομιλίας</string>
+    <string name="imsp_chat_setting_saving">αποθήκευση...</string>
+    <string name="imsp_chat_setting_sending">αποστολή...</string>
+    <string name="imsp_save_chat_history_failed">Αποτυχία αποθήκευσης</string>
+    <string name="imsp_send_chat_history_failed">Αποτυχία e-mail</string>
+    <string name="imsp_conversation_list_all">Μηνύματα</string>
+    <string name="imsp_conversation_list_important">Σημαντικά</string>
+    <string name="imsp_conversation_list_group_chats">Ομαδ. Συνομ.</string>
+    <string name="imsp_conversation_list_spam">Ανεπιθύμητα</string>
+    <string name="imsp_mark_as_spam_tips">Τα μηνύματα που χαρακτηρίζονται ως ανεπιθύμητα μεταφέρονται στη Λίστα Ανεπιθύμητων και η ειδοποίηση απενεργοποιείται αυτόματα.</string>
+    <string name="imsp_typing">&quot;Πληκτρολόγηση...&quot;</string>
+    <string name="imsp_type_to_compose_text">&quot;Πληκτρολογήστε μήνυμα SMS/iSMS&quot;</string>
+    <string name="imsp_no_sdcard">Δεν υπάρχει κάρτα SD</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">Για να στείλετε μια πρόσκληση, τα μηνύματα που γράφετε θα διαγραφούν.</string>
+    <string name="imsp_current_sim_enabled">Ενεργοποιήθηκε η τρέχουσα κάρτα SIM.</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">Επιλέξτε SIM για ενεργοποίηση iSMS</string>
+    <string name="imsp_activate_message">Αυτή η λειτουργία υποστηρίζεται μόνο από την υπηρεσία iSMS. Να γίνει ενεργοποίση του λογαριασμού iSMS;</string>
+    <string name="imsp_enable_message">Αυτή η λειτουργία υποστηρίζεται μόνο από την υπηρεσία iSMS. Να γίνει ενεργοποίηση του λογαριασμού iSMS;</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">Επιλέξτε SIM για ενεργοποίηση iSMS</string>
+    <string name="imsp_switch_sim_title">Αλλαγή SIM</string>
+    <string name="imsp_switch_sim_message">Η παρούσα κάρτα SIM δεν υποστηρίζει iSMS. Αλλαγή σε άλλη κάρτα SIM;</string>
+    <string name="imsp_switch_sim_successfully">Επιτυχής αλλαγή κάρτας SIM!</string>
+    <string name="imsp_dailog_multi_forward">Προώθηση μηνυμάτων</string>
+    <string name="imsp_dialog_send_result">Αποτέλεσμα αποστολής</string>
+    <string name="imsp_dlg_send_all">Όλα: %s</string>
+    <string name="imsp_dlg_send_sucess">Απεσταλμένα: %s</string>
+    <string name="imsp_dlg_send_failed">Απέτυχαν: %s</string>
+    <string name="imsp_multi_forward_sim_info">Λήψη πληροφοριών από SIM</string>
+    <string name="imsp_multi_forward_no_sim">Καμία πληροφορία στη SIM</string>
+    <string name="imsp_get_sim_failed">Αποτυχία λήψης πληροφοριών από SIM</string>
+    <string name="imsp_sim_status_error">Σφάλμα κατάστασης SIM </string>
+    <string name="imsp_forward_norecipients">Δεν υπάρχει(ουν) παραλήπτης(ες) για προώθηση μηνύματος</string>
+    <string name="imsp_multiforward_no_message">Δεν υπάρχει(ουν) μήνυμα(τα) για προώθηση</string>
+    <string name="imsp_need_input_recipients">Ορίστε πρώτα έναν τουλάχιστον παραλήπτη.</string>
+    <string name="imsp_spam_empty">Δεν\έχετε καμία ανεπιθύμητη συνομιλία. Το \nSPAM συλλέγει όλες τις συζητήσεις που είναι επισημασμένες ως ανεπιθύμητες. Η κοινοποίηση θα πρέπει να απενεργοποιηθεί από προεπιλογή. Έτσι μπορείτε να αποφύγετε περιττές ενοχλήσεις. \N\nΜπορείτε να σηματοδοτήσει ένα αποστολέα ως ανεπιθύμητο, πατώντας σε μία συζήτηση και επιλέγοντας το εικονίδιο «Επισήμανση ως Ανεπιθύμητο». Αν μια συνομιλία επισημανθεί ως ανεπιθύμητη, θα εμφανιστεί αυτόματα ένα εικονίδιο απενεργοποιημένης συνομιλίας και η συζήτηση θα τοποθετηθεί εδώ.</string>
+    <string name="imsp_groupchat_empty">Δεν\έχετε κανένα μήνυμα ομαδικής συνομιλίας. \nOι «ΟΜΑΔΙΚΕΣ ΣΥΝΟΜΙΛΙΕΣ» συγκεντρώνουν όλα τα μηνύματα ομαδικής συνομιλίας ομάδας που συμμετείχατε ή που δημιουργήσατε. Έτσι μπορείτε να βρίσκετε και να διαχειρίζεστε εύκολα ομαδικές συνομιλίες. \n\nΓια να δημιουργήσετε μια ομαδική συνομιλία, πατήστε στο κουμπί «Δημιουργία ομαδικής συνομιλίας» στο κάτω μέρος αυτής της οθόνης και προσκαλέστε φίλους σας στην ομάδα.</string>
+    <string name="imsp_important_empty">Δεν\έχετε κανένα σημαντικό μήνυμα. \nΤο «ΣΗΜΑΝΤΙΚΟ» συλλέγει όλα τα μηνύματα που είναι επισημασμένα ως σημαντικά. Αυτό σας επιτρέπει να βρίσκετε εύκολα σημαντικά μηνύματα. \n\nΜπορείτε να σημάνετε ένα μήνυμα ως σημαντικό πατώντας στο μήνυμα και επιλέγοντας «Σήμανση ως σημαντικό» από το μενού «Επιλογή». Όταν ένα μήνυμα είναι επισημασμένο ως σημαντικό, θα βλέπετε μια κόκκινη σημαία, όπως η παρακάτω.</string>
+    <string name="imsp_allchat_empty">Καμία συζήτηση</string>
+    <string name="imsp_attach_slideshow">Προβολή εικόνων</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">Γίνεται λήψη...</string>
+    <string name="imsp_invite_friends_to_ipmsg">Προσκαλέστε φίλους να χρησιμοποιήσουν το iSMS</string>
+    <string name="imsp_multi_forward_tips_content">Για να κάνετε πολλαπλή προώθηση, πρέπει πρώτα να κάνετε λήψη ορισμένων iSMS.</string>
+    <string name="imsp_multi_forward_failed_part">Απέτυχε η προώθηση ορισμένων iSMS.</string>
+</resources>

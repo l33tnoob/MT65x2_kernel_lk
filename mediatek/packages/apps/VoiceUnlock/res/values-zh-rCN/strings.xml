@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="unlock_set_unlock_mode_voice_weak">语音解锁</string>
+    <string name="voice_unlock_setup_intro_header">录制语音命令</string>
+    <string name="voice_command_select_title">选择命令</string>
+    <string name="voice_command_launch_app_title">启动应用</string>
+    <string name="reset_command_title">重置命令</string>
+    <string name="reset_command_prompt">当前命令将被重置，并且无法恢复。</string>
+    <string name="reset_command_prompt_last">唯一的语音命令将被重置，屏幕锁定将被设置为滑动。</string>
+    <string name="voice_unlock_options_title">选项</string>
+    <string name="voice_unlock_ok_label">确定</string>
+    <string name="voice_unlock_cancel_label">取消</string>
+    <string name="voice_unlock_retry_label">重试</string>
+    <string name="voice_unlock_record_label">录制</string>
+    <string name="voice_unlock_continue_label">继续</string>
+    <string name="voice_unlock_setup_intro">说出含有2-6个字的命令，然后重复3-6次。</string>
+    <string name="voice_unlock_command">解锁命令</string>
+    <string name="voice_command1">唤醒命令 1</string>
+    <string name="voice_command2">唤醒命令 2</string>
+    <string name="voice_command3">唤醒命令 3</string>
+    <string name="command_summary">解锁并启动<xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_command_primary">启动<xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_command_customize">定制</string>
+    <string name="voice_command_secondary">解锁后启动<xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_command_record_description_unlock_screen">解锁</string>
+    <string name="voice_command_record_description_command">解锁并启动<xliff:g id="app_name">%1$s</xliff:g></string>
+    <string name="voice_service_error_title">语音解锁服务错误</string>
+    <string name="stop_playing_title">停止多媒体播放</string>
+    <string name="stop_playing_message">请在录制前停止多媒体播放。</string>
+    <string name="voice_command_record_introdution">点击录制按钮并说出您的命令。</string>
+    <string name="voice_command_record_prepare">准备中，请稍候...</string>
+    <string name="voice_command_record_first_recording">请说出您的命令。\n建议2-6个字。</string>
+    <string name="voice_command_record_non_first_recording">重复您的命令。</string>
+    <string name="voice_command_record_one_round_ok">已收录。</string>
+    <string name="voice_command_record_one_round_noisy">周围太吵，无法听清您的声音。请再试一次。</string>
+    <string name="voice_command_record_one_round_weak">没有听清您的声音。请再试一次。</string>
+    <string name="voice_command_record_one_round_diff">您的命令与之前的命令不同。</string>
+    <string name="voice_command_record_one_round_exist">您的命令与已有命令相同，请尝试其他命令。</string>
+    <string name="voice_command_record_recording_ok">语音命令录制成功。</string>
+    <string name="voice_unlock_setup_end_all_done">设置完成。</string>
+    <string name="voice_unlock_setup_end_prompt">解锁时，只需说出您的命令。</string>
+    <string name="pass_word_file_missing">无法播放语音命令。</string>
+    <string name="time_out_title">超时</string>
+    <string name="time_out_message">已连续5秒未收到声音输入。请重试。</string>
+    <string name="during_call_title">无法录制</string>
+    <string name="during_call_message">通话过程中“录制语音命令”不可用。</string>
+</resources>

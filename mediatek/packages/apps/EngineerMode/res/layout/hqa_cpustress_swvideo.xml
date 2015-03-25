@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/hqa_cpustress_swvideo_loopcount"
+                android:textSize="18sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/swvideo_loopcount"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:maxLength="8"
+                android:minWidth="150dip"
+                android:text="@string/hqa_cpustress_swvideo_loopcount_value" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/hqa_cpustress_swvideo_iteration"
+                android:textSize="18sp"
+                android:visibility="gone" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/swvideo_iteration"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:maxLength="8"
+                android:text="@string/hqa_cpustress_swvideo_iteration_value"
+                android:visibility="gone" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/swvideo_iteration_result"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="1"
+                android:text="@string/hqa_cpustress_result" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/swvideo_iteration_result_1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="1"
+                android:text="@string/hqa_cpustress_result" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/swvideo_iteration_result_2"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="1"
+                android:text="@string/hqa_cpustress_result" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/swvideo_iteration_result_3"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="1"
+                android:text="@string/hqa_cpustress_result" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/swvideo_iteration_result_4"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="1"
+                android:text="@string/hqa_cpustress_result" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/swvideo_iteration_result_5"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="1"
+                android:text="@string/hqa_cpustress_result" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/swvideo_iteration_result_6"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="1"
+                android:text="@string/hqa_cpustress_result" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/swvideo_iteration_result_7"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="1"
+                android:text="@string/hqa_cpustress_result" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/swvideo_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="140dip"
+                android:text="@string/hqa_cpustress_swvideo_start" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/swvideo_result"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

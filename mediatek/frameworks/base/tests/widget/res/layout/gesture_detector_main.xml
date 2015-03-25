@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent" android:layout_height="fill_parent"  
+    android:id="@+id/container">  
+  
+    <RelativeLayout android:layout_width="fill_parent"  
+        android:id="@+id/container1" android:layout_height="fill_parent"  
+        android:visibility="visible">  
+        <ImageView android:layout_width="fill_parent"  
+            android:layout_height="fill_parent" android:background="@drawable/one" />  
+    </RelativeLayout>  
+  
+    <RelativeLayout android:layout_width="fill_parent"  
+        android:background="@drawable/gray" android:id="@+id/container2"  
+        android:visibility="gone" android:layout_height="fill_parent">  
+        <ImageView android:layout_width="fill_parent"  
+            android:layout_height="fill_parent" android:background="@drawable/three" />  
+    </RelativeLayout>  
+  
+</RelativeLayout>  

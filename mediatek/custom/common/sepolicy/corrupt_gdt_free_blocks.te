@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bincorrupt_gdt_free_blocks Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type corrupt_gdt_free_blocks_exec , exec_type, file_type;
+type corrupt_gdt_free_blocks ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive corrupt_gdt_free_blocks;
+init_daemon_domain(corrupt_gdt_free_blocks)
+
+
+# 20131122 Add Set Property Rule
+allow corrupt_gdt_free_blocks  property_type:property_service set;

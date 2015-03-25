@@ -1,0 +1,68 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type wpa, domain;
+type wpa_exec, exec_type, file_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# wpa - wpa supplicant or equivalent
+permissive wpa;
+
+init_daemon_domain(wpa)
+# unconfined_domain(wpa)
+type_transition wpa wifi_data_file:sock_file wpa_socket;
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# wpa - wpa supplicant or equivalent
+permissive wpa;
+
+# init_daemon_domain(wpa)
+# unconfined_domain(wpa)
+type_transition wpa wifi_data_file:sock_file wpa_socket;
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive wpa;
+# 20131119 FeatureSQC
+allow wpa cgroup:dir { create add_name };
+allow wpa device:chr_file { read ioctl open };
+allow wpa linker_exec:file read;
+allow wpa netd:unix_dgram_socket sendto;
+allow wpa self:capability { net_admin setuid setgid };
+allow wpa self:netlink_route_socket { read bind create };
+allow wpa self:netlink_socket { read write };
+allow wpa self:packet_socket { write read create };
+allow wpa self:udp_socket { create ioctl };
+allow wpa system_data_file:dir { write remove_name };
+allow wpa system_data_file:sock_file unlink;
+allow wpa system_server:unix_dgram_socket sendto;
+allow wpa system_wpa_socket:sock_file write;
+allow wpa wifi_data_file:file { write read getattr open };
+allow wpa wifi_data_file:sock_file write;
+
+
+
+# 20131122 Add Set Property Rule
+allow wpa property_type:property_service set;
+
+# 20131213 KKMR1_CQ_CTS_02
+allow wpa block_device:blk_file read;
+allow wpa kernel:system module_request;
+allow wpa self:capability net_raw;
+allow wpa self:netlink_route_socket { write nlmsg_write };
+allow wpa self:netlink_socket { bind create setopt getattr };
+allow wpa self:packet_socket { bind ioctl };
+allow wpa wifi_data_file:dir { write remove_name rmdir setattr add_name };
+allow wpa wpa_socket:sock_file { create unlink setattr };
+

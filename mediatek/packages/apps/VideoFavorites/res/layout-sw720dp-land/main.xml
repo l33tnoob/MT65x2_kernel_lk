@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mediatek.videofavorites.VideoFavoritesRootView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/widget_root"
+        android:layout_width="400dp"
+        android:layout_height="356dp"
+        android:layout_marginTop="0px"
+        android:layout_marginBottom="10dp">
+        <!-- 170dp * 2 + 60dp (control bar ) = 400dp -->
+    <RelativeLayout android:id="@+id/bottom_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/background">
+        <!-- use padding not margin, to make button larger -->
+        <ImageView android:id="@+id/btn_edit"
+                android:src="@drawable/btn_edit"
+                android:contentDescription="@string/img_edit_desc"
+                android:clickable="true"
+                android:paddingTop="8dp"
+                android:paddingBottom="72dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentTop="true" />
+        <ImageView android:id="@+id/btn_record"
+                android:src="@drawable/btn_record"
+                android:contentDescription="@string/img_rec_desc"
+                android:clickable="true"
+                android:paddingBottom="8dp"
+                android:paddingTop="72dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <GridView
+            android:id="@+id/collection"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:verticalSpacing="0px"
+            android:horizontalSpacing="0px"
+            android:stretchMode="none"
+            android:fadingEdge="none"
+            android:columnWidth="170dp"
+            android:layout_toLeftOf="@id/bottom_bar"
+            android:layout_alignParentBottom="true"/>
+</com.mediatek.videofavorites.VideoFavoritesRootView>

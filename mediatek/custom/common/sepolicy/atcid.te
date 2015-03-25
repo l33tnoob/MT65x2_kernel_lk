@@ -1,0 +1,61 @@
+# ==============================================
+# Policy File of /system/binatcid Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type atcid_exec , exec_type, file_type;
+type atcid ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive atcid;
+init_daemon_domain(atcid)
+
+# 20131024 CTS_01
+allow atcid linker_exec:file read;
+allow atcid self:capability dac_override;
+allow atcid ttyGS0_device:chr_file { read write ioctl open };
+allow atcid ttyGS1_device:chr_file { read write ioctl open };
+
+
+# 20131028 CTS_04
+allow atcid device:chr_file read;
+
+
+# 20131028 CTS_05
+allow atcid device:chr_file { ioctl open };
+allow atcid property_socket:sock_file write;
+
+
+
+# 20131122 Add Set Property Rule
+allow atcid  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow atcid atci_audio_socket:sock_file write;
+allow atcid audiocmdservice_atci:unix_stream_socket connectto;
+allow atcid node:tcp_socket node_bind;
+allow atcid port:tcp_socket name_bind;
+allow atcid rild:unix_stream_socket connectto;
+allow atcid rild_atci_socket:sock_file write;
+allow atcid self:capability net_raw;
+allow atcid self:tcp_socket { bind create listen };
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow atcid atci_service:unix_stream_socket connectto;
+allow atcid atci_service_socket:sock_file write;
+

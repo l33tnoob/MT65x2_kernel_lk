@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="bluetooth_pan_GN_authorize_confirm_title">"接受蓝牙局域网服务连接请求"</string>
+	<string name="bluetooth_pan_NAP_authorize_confirm_title">"接受蓝牙网络热点服务连接请求"</string>
+	<string name="bluetooth_pan_GN_authorize_confirm">"您是否要接受 %1$s对蓝牙局域网服务的连接请求？"</string>
+	<string name="bluetooth_pan_NAP_authorize_confirm">"您是否要接受 %1$s对蓝牙网络热点服务的连接请求？"</string>
+	
+	<string name="bluetooth_pan_GN_connected_confirm_title">"断开蓝牙局域网服务"</string>
+	<string name="bluetooth_pan_NAP_connected_confirm_title">"断开蓝牙网络热点服务"</string>
+	<string name="bluetooth_pan_GN_connected_confirm">"您是否要断开 %1$s与蓝牙局域网服务的连接？"</string>
+	<string name="bluetooth_pan_NAP_connected_confirm">"您是否要断开 %1$s与 蓝牙网络热点服务的连接？"</string>
+	
+	<string name="bluetooth_pan_yes">"同意"</string>
+	<string name="bluetooth_pan_no">"拒绝"</string>
+	
+	<string name="bluetooth_pan_GN_authorize_notify_ticker">"蓝牙局域网连接请求"</string>
+	<string name="bluetooth_pan_GN_authorize_notify_title">"蓝牙局域网连接请求"</string>
+	<string name="bluetooth_pan_GN_authorize_notify_message">"选择接受或拒绝 %1$s对蓝牙局域网服务的连接请求"</string>
+	
+	<string name="bluetooth_pan_NAP_authorize_notify_ticker">"蓝牙网络热点连接请求"</string>
+	<string name="bluetooth_pan_NAP_authorize_notify_title">"蓝牙网络热点连接请求"</string>
+	<string name="bluetooth_pan_NAP_authorize_notify_message">"选择接受或拒绝 %1$s对蓝牙网络热点服务的连接请求"</string>
+	
+	<string name="bluetooth_pan_GN_connected_notify_ticker">"蓝牙局域网已连接"</string>
+	<string name="bluetooth_pan_GN_connected_notify_title">"蓝牙局域网已连接"</string>
+	<string name="bluetooth_pan_GN_connected_notify_message">"选择以断开%1$s与蓝牙局域网服务的连接"</string>
+	
+	<string name="bluetooth_pan_NAP_connected_notify_ticker">"蓝牙网络热点已连接"</string>
+	<string name="bluetooth_pan_NAP_connected_notify_title">"蓝牙网络热点已连接"</string>
+	<string name="bluetooth_pan_NAP_connected_notify_message">"选择以断开%1$s与蓝牙网络热点服务的连接"</string>
+	
+	<string name="bluetooth_pan_GN_connect_ok">%1$s连接蓝牙局域网服务成功！</string>
+    <string name="bluetooth_pan_GN_connect_fail">%1$s连接蓝牙局域网服务失败！</string>
+    
+    <string name="bluetooth_pan_NAP_connect_ok">%1$s连接蓝牙网络热点服务成功！</string>
+    <string name="bluetooth_pan_NAP_connect_fail">%1$s连接蓝牙网络热点服务失败！</string>
+    <string name="bluetooth_pan_NAP_unavailable">%1$s的蓝牙网络热点服务不可用</string>
+    
+    <string name="bluetooth_pan_GN_disconnect_ok">%1$s断开蓝牙局域网服务成功！</string>
+    <string name="bluetooth_pan_GN_disconnect_fail">%1$s断开蓝牙局域网服务失败</string>
+    <string name="bluetooth_pan_NAP_disconnect_ok">%1$s断开蓝牙网络热点服务成功！</string>
+    <string name="bluetooth_pan_NAP_disconnect_fail">%1$s断开蓝牙网络热点服务失败！</string>
+    
+    <string name="bluetooth_pan_GN_disconnect_ind">%1$s与蓝牙局域网服务的连接已断开</string>
+    <string name="bluetooth_pan_NAP_disconnect_ind">%1$s与蓝牙网络热点服务的连接已断开</string>
+
+  <!-- Bluetooth PAN relative settings -->
+  <!-- Bluetooth advanced settings screen, section header for settings related to simap server -->
+  <string name="bluetooth_pan_server_settings">蓝牙PAN服务选择</string>
+  <!-- Bluetooth advanced settings screen, pan NAP server check box label -->
+  <string name="bluetooth_pan_nap_enable_title">蓝牙网络热点</string>
+  <!-- Bluetooth advanced settings screen, NAP server option summary text when check box is selected -->
+  <string name="bluetooth_pan_nap_enable_summary">选择打开或关闭蓝牙网络热点服务</string>
+  <!-- Bluetooth advanced settings screen, pan GN server check box label -->
+  <string name="bluetooth_pan_gn_enable_title">蓝牙局域网</string>
+  <!-- Bluetooth advanced settings screen, GN server option summary text when check box is selected -->
+  <string name="bluetooth_pan_gn_enable_summary">选择打开或关闭蓝牙局域网服务</string>
+</resources>

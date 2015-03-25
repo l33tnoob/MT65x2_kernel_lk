@@ -1,0 +1,5 @@
+
+service fotabinder /system/bin/fotabinder
+    class main
+    socket fota stream 600 system system
+

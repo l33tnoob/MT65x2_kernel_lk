@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="STR_NMS_MAIN">iSMS</string>
+    <string name="STR_NMS_HISSAGE">iSMS</string>
+    <string name="STR_NMS_INVITE_SMS_CONTENT">Iepa, iSMS txateatzeko tresna ederra da. Doakoa eta erabilerraza da. Informazio gehiago eskuratzeko, begiratu http://isms.hissage.com helbidean.</string>
+    <string name="STR_NMS_NO_SDCARD">Ez da SD txartelik detektatu; iSMSk ez ditu eragiketa batzuk onartuko</string>
+    <string name="STR_NMS_MOUNT_SDCARD">SD txartela erabiltzeko prest dago</string>
+    <string name="STR_NMS_SEND_MMS_FAIL">Ezin izan da mezua bidali. Sarea erabilgarri dagoenean, automatikoki bidaliko da.</string>
+    <string name="STR_NMS_RECV_MMS_FAIL">Ezin izan da deskargatu. Saiatu berriro geroago.</string>
+    <string name="STR_NMS_GROUP_CHAT_ME">ni</string>
+    <string name="STR_NMS_GROUP_CHAT_I">Ni</string>
+    <string name="STR_NMS_GROUP_CHAT_YOU">Zu</string>
+    <string name="STR_NMS_GROUP_CREATE_MSG">%1$s(e)k %2$s talde-txatera gonbidatu du.</string>
+    <string name="STR_NMS_GROUP_ADD_MSG">%1$s(e)k talde-txatarekin bat egin du.</string>
+    <string name="STR_NMS_GROUP_DELETE_MSG">%1$s(e)k %2$s talde-txatetik ezabatu du.</string>
+    <string name="STR_NMS_GROUP_QUITE_MSG">%1$s(e)k talde-txata utzi du.</string>
+    <string name="STR_NMS_GROUP_CHAT_PLACE_HOLDER_MSG_BODY">Talde honekin bat egin duzu.</string>
+    <string name="STR_NMS_PICTURE">argazkia</string>
+    <string name="STR_NMS_TAPE">audioa</string>
+    <string name="STR_NMS_VCARD">kontaktua</string>
+    <string name="STR_NMS_LOCATION">kokapena</string>
+    <string name="STR_NMS_SKETCH">marrazkia</string>
+    <string name="STR_NMS_VIDEO">bideoa</string>
+    <string name="STR_NMS_CALENDAR">egutegia</string>
+    <string name="STR_NMS_UNKNOWN">ezezaguna</string>
+    <string name="STR_NMS_READ_MODE_PIC">irudi bat</string>
+    <string name="STR_NMS_READ_MODE_TAPE">audio-ohar bat</string>
+    <string name="STR_NMS_READ_MODE_VCARD">kontaktuak</string>
+    <string name="STR_NMS_READ_MODE_LOCATION">kokapen bat</string>
+    <string name="STR_NMS_READ_MODE_SKETCH">marrazki bat</string>
+    <string name="STR_NMS_READ_MODE_VIDEO">bideo bat</string>
+    <string name="STR_NMS_READ_MODE_CALENDAR">egutegi bat</string>
+    <string name="STR_NMS_ISMS_ENABLE">(gaitu iSMS)</string>
+    <string name="STR_NMS_READ_MODE_UNKNOWN">fitxategi-ezezagun bat</string>
+    <string name="STR_NMS_ALL_MSG">Mezu guztiak</string>
+    <string name="STR_NMS_SAVED">Gordeta</string>
+    <string name="STR_NMS_BLOCKMSG">Blokeatuta</string>
+    <string name="STR_NMS_SMS_TYPE">SMSa</string>
+    <string name="STR_NMS_NO_SIM">Ez da SIM txartelik detektatu</string>
+    <string name="STR_NMS_ILLEGAL_ADDRESS">Zenbaki baliogabea</string>
+    <string name="STR_NMS_REMIND_USER_SET_NAME">Eguneratu zure profila</string>
+    <string name="STR_NMS_OK">Ados</string>
+    <string name="STR_NMS_BACK">Atzera</string>
+    <string name="STR_NMS_CANCEL">Utzi</string>
+    <string name="STR_NMS_NETWORK_UNAVL">Ziurtatu funtzionatzen duen datu-konexio bat duzula, adibidez, 3G, GPRS edo Wi-Fi</string>
+    <string name="STR_NMS_TODAY">Gaur</string>
+    <string name="STR_NMS_YESTERDAY">Atzo</string>
+    <string name="STR_NMS_NOW">Orain</string>
+    <string name="STR_NMS_NO_SIM_CARD">Ez da SIM txartelik detektatu. SIM txartel bat sartu behar duzu.</string>
+    <string name="STR_NMS_NO_CONNECTION">Sarea ez dago erabilgarri edo hegaldi-modua aktibatuta dago. Egiaztatu.</string>
+    <string name="STR_NMS_ATTACH_SHARE">%1$s(e)k %2$s partekatu du</string>
+    <string name="STR_NMS_WAIT">Itxaron...</string>
+    <string name="STR_NMS_TIPTITLE">Aholkua</string>
+
+    <string name="STR_NMS_OPEN">Ireki</string>
+    <string name="STR_NMS_PLAY">Erreproduzitu</string>
+    
+    
+
+    <string name="STR_NMS_VCARD_NAME">%1$s kontaktu</string>
+    <string name="STR_NMS_SHARE_VCARD_FAILED">ezin izan da kontaktua partekatu</string>
+
+    <!-- upgrade info -->
+    <string name="STR_NMS_UPGRADE_TICKER">Bertsioaren berritzea</string>
+    <string name="STR_NMS_UPGRADE_ERROR_TITLE">Bertsio-berritzearen errorea</string>
+    <string name="STR_NMS_UPGRADE_ERROR_CONTENT">Bertsio-berritzearen errorea. Bertsio-berritu iSMS bezeroan</string>
+    <string name="STR_NMS_INSTALLED_TITLE">Behar bezala bertsio-berritu da</string>
+    <string name="STR_NMS_INSTALLED_CONTENT">Behar bezala bertsio berritu da telefonoan</string>
+    <string name="STR_NMS_PROMPT_DLG_TITLE">Bertsio berria detektatu da</string>
+    <string name="STR_NMS_PROMPT_DLG_DOWNLOAD">Deskargatu</string>
+    <string name="STR_NMS_PROMPT_DLG_LATER">Geroago</string>
+    <string name="STR_NMS_UPGRADING">Bertsio-berritzen</string>
+    <string name="STR_NMS_UPGRADE_TIME">Azken egiaztatzea: %s</string>
+    
+    <!-- ext protocol -->
+    <string name="STR_NMS_OFFLINE_URL">http://ismsi.hissage.com/webservice/nmsmail/notifyOffline.php</string>
+    
+    <!-- Activation start -->
+    <string name="STR_NMS_PRELOAD_IP_MSG_CONTENT">"Ongi etorri iSMSera."</string>
+    <string name="STR_NMS_ACTIVAT_TITLE">iSMSk telefono-zenbakia egiaztatzeko SMS bat bidaliko du. Operadoreak kobra diezazuke.</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE">Egiaztatu telefonoa</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE2">Egiaztatu telefonoa</string>
+    <string name="STR_NMS_YOUR_COUNTRY_TITLE">ZURE HERRIALDEA</string>
+    <string name="STR_NMS_YOUR_PHONE_TITLE">TELEFONO-ZENBAKIA</string>
+    <string name="STR_NMS_VERIFY_FAIL_TITLE">Ezin izan da SMSa egiaztatzen amaitu.</string>
+    <string name="STR_NMS_VERIFY_FAIL_CONTENT">Egiaztatu telefono-zenbakia zuzen markatu dela.</string>
+    <string name="STR_NMS_WORKING_SMS_TIP">Ziurtatu funtzionatzen duen datu-konexio bat duzula.</string>
+    <string name="STR_NMS_VERIFYING">Hona bidalitako SMS bat automatikoki detektatzeko zain</string>
+    <string name="STR_NMS_RETRY">Saiatu berriro</string>
+    <string name="STR_NMS_EDIT_NUMBER">Editatu zenbakia</string>
+    <string name="STR_NMS_UPDATE_PROFILE">Eguneratu profila</string>
+    <string name="STR_NMS_START_ISMS">Abiarazi iSMS</string>
+    <string name="STR_NMS_SEND">Bidali</string>
+    <string name="STR_NMS_CONGRATULATIONS_TITLE">Zorionak!</string>
+    <string name="STR_NMS_CONGRATULATIONS_CONTENT">Eskerrik asko iSMS aktibatzeagatik.\n Zerbitzuaz gozatzen has zaitezke orain.\niSMS on!</string>
+    <string name="STR_NMS_WELCOME_BACK">Ongi etorri berriro.</string>
+    <string name="STR_NMS_SEND_SMS_FAIL">Ezin izan da egiaztatu. Egiaztatu:\n 1. Telefono-zenbakia zuzena dela;|n 2. Segurtasun-softwarea desaktibatuta dagoela;\n 3. SMSa bidaltzea blokea dezakeen beste edozein arrazoi.\nZiurtatu eta saiatu berriro geroago.</string>
+    <string name="STR_NMS_ACTIVE">Aktibatu iSMS</string>
+    <string name="STR_NMS_WELCOME_ACTIVE">Ongi etorri iSMSera</string>
+    <string name="STR_NMS_CONNECTING">Konektatzen...</string>
+    <!-- Activation end -->
+
+
+    <!-- Notification start -->
+    <string name="STR_NMS_NEW_MSG_TITLE">iSMS mezu berria</string>
+    <string name="STR_NMS_NEW_SMG_CONTENT">%d mezu irakurrigabe</string>
+    <!-- Notification End -->
+
+    <string name="STR_NMS_MSG_DUMPER_MSG_SMS">SMSa</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_MMS">MMSa</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_IP">IP mezua</string>
+    <string name="STR_NMS_MSG_DUMPER_SEND_MSG">Bidalitako %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_RECEIVE_MSG">Jasotako %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TIME">Ordua: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TEXT">Testua</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_PIC">Argazkia</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_SKETCH">Marrazkia</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VOICE">Ahotsa</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VIDEO">Bideoa</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CALENDAR">Egutegia</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION_IMG">Kokapen-argazkia</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VCARD">Bisita-txartela</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION">Kokapena</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CAPTION">Epigrafea: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_URL">URLa: </string>
+    <string name="STR_NMS_MSG_DUMPER_DURATION">Iraupena: </string>
+    <string name="STR_NMS_MSG_DUMPER_COORDINATE">Koordenatua: </string>
+    <string name="STR_NMS_MSG_DUMPER_ADDRESS">Helbidea: </string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_SENDER">Bidaltzailea: </string>
+    <string name="STR_NMS_MSG_DUMPER_NORMAL_DETAIL">Saioaren xehetasuna:</string>
+    <string name="STR_NMS_MSG_DUMPER_NAME">Izena: </string>
+    <string name="STR_NMS_MSG_DUMPER_NUMBER">Zenbakia: </string>
+    <string name="STR_NMS_MSG_DUMPER_PORTRAIT">Erretratua</string>
+    <string name="STR_NMS_MSG_DUMPER_MULTI_SEND_DETAIL">Difusioa:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_DETAIL">Talde-txata:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_CREATER">Sortzailea: </string>
+    <string name="STR_NMS_MSG_DUMPER_MEMBERS">Kideak: </string>
+    <string name="STR_NMS_MSG_DUMPER_VCARD_NAME">Izena: </string>
+    <string name="STR_NMS_MSG_DUMPER_CALENDAR_SUMMARY">Laburpena: </string>
+
+    <!-- Chat Settings -->
+    <string name="STR_NMS_CHAT_SETTING_TITLE">Txataren ezarpenak</string>
+    <string name="STR_NMS_DISPLAY">Pantaila</string>
+    <string name="STR_NMS_CHAT_WALLPAPER">Txataren horma-papera</string>
+    <string name="STR_NMS_SYS_WALLPAPER">Hautatu horma-papera</string>
+    <string name="STR_NMS_CAMEARPHOTO">Atera argazki bat</string>
+    <string name="STR_NMS_SYS_GALLERY">Hautatu galeriatik</string>
+    <string name="STR_NMS_DEFAULT_WALLPAPER">Lehenetsia</string>
+    <string name="STR_NMS_NOTIFICATION_CATEGORY">Jakinarazpena</string>
+    <string name="STR_NMS_NOTIFICATION_TITLE">iSMS jakinarazpena</string>
+    <string name="STR_NMS_NOTIFICATION_CONTENT">Jakinarazpenak jasotakoan, erakutsi</string>
+    <string name="STR_NMS_MUTE">Isildu</string>
+    <string name="STR_NMS_MUTE_OFF">Desaktibatuta</string>
+    <string name="STR_NMS_MUTE_1">Isildu ordubetez</string>
+    <string name="STR_NMS_MUTE_4">Isildu 4 orduz</string>
+    <string name="STR_NMS_MUTE_8">Isildu 8 orduz</string>
+    <string name="STR_NMS_RINGTONE_TITLE">Dei-tonua</string>
+    <string name="STR_NMS_RINGTONE_CONTENT">Ezarri jakinarazpenen dei-tonua </string>
+    <string name="STR_NMS_VIBRATE_TITLE">Bibratu</string>
+    <string name="STR_NMS_VIBRATE_CONTENT">Jakinarazpenak jasotakoan, bibratu</string>
+    <string name="STR_NMS_ACTIONS">Ekintzak</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_TITLE">Deskargatu txat-historia</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_CONTENT">Gorde SD txartela zip formatuan</string>
+    <string name="STR_NMS_EMAIL_HISTORY_TITLE">Bidali postaz txat-historia</string>
+    <string name="STR_NMS_EMAIL_HISTROY_CONTENT">Bidali postaz txat-historia zip formatuan</string>
+    <string name="STR_NMS_CLEAR_HISTROY">Garbitu txat-historia</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_DLG">Deskargatzen...</string>
+    <string name="STR_NMS_DOWNLOAD_OK">Txat-historia deskargatu da. %s gisa gorde da</string>
+    <string name="STR_NMS_DOWNLOAD_ERROR">Txat-historia deskargatzeko errorea.</string>
+    <string name="STR_NMS_DOWNLOAD_EMPTY">Ez dago deskargatzeko ezer.</string>
+    <string name="STR_NMS_CLEARING">Historia garbitzen. Itxaron...</string>
+    <string name="STR_NMS_WAIT_SAVE_WALLPAPER">Horma-papera gordetzen. Itxaron...</string>
+    <string name="STR_NMS_SAVE_WALLPAPER_OK">Horma-papera behar bezala gorde da.</string>
+    <string name="STR_NMS_CLEARDONE">Historia garbitu da.</string>
+    <string name="STR_NMS_SVAE_TITLE">Gorde SD txartelean</string>
+    <string name="STR_NMS_SAVE_CONTENT">Gorde txat-hari hau SD txartelean zip fitxategi gisa</string>
+    <string name="STR_NMS_EMAIL_TITLE">Partekatu posta bidez</string>
+    <string name="STR_NMS_EMAIL_CONTENT">Partekatu txat-hari hau eranskin gisa posta bidez eta zip formatuan</string>
+
+    <!-- Chat Settings End -->
+
+
+    <!-- Profile Settings -->
+    <string name="STR_NMS_PROFILE_TITLE">Profila</string>
+    <string name="STR_NMS_TAP_AVATAR_TIP">Ukitu profileko irudia editatzeko</string>
+    <string name="STR_NMS_DISPLAY_NAME_TIP">PANTAILAKO IZENA</string>
+    <string name="STR_NMS_ACCOUNT_TIP">ISMS KONTUA</string>
+    <string name="STR_NMS_NO_APP">Ez dago ekintza hau gauzatzeko aplikaziorik.</string>
+    <string name="STR_NMS_NO_NAME">Konfiguratu zure izena</string>
+    <string name="STR_NMS_SAVE_AVATAR_FAILD">Ezin izan da profileko irudia gorde.</string>
+    <string name="STR_NMS_INPUT_NAME">Izena</string>
+    <string name="STR_NMS_TERM_WARN_ACTIVATE">Eginbide hau iSMS zerbitzuak soilik onartzen du.\n\niSMS doako istanteko mezularitza-zerbitzua da. Zerbitzu honen bidez, zure lagunekin txateatu eta multimedia-edukia parteka ditzakezu, edonoiz eta edonon, Interneteko datu-konexioaren bidez (Wi-Fi, 2G/3G...).\nLehen aldiz aktibatzen duzunean, erregistratzen amaitzeko SMS bat bidaliko da automatikoki. Baliteke SMS kobratzea.\n\n Erabiltzailearen kontratua\n</string>
+    <string name="STR_NMS_TERM_WARN_WELCOME">iSMS doako istanteko mezularitza-zerbitzua da. Zerbitzu honen bidez, zure lagunekin txateatu eta multimedia-edukia parteka ditzakezu, edonoiz eta edonon, Interneteko datu-konexioaren bidez (Wi-Fi, 2G/3G...).\nLehen aldiz aktibatzen duzunean, erregistratzen amaitzeko SMS bat bidaliko da automatikoki. Baliteke SMS kobratzea.\n\n Erabiltzailearen kontratua\n</string>
+    <string name="STR_NMS_TERM_KEY">Zehaztapenak eta baldintzak</string>
+    <string name="STR_NMS_AGREE_AND_CONTINUE">Onartu eta jarraitu</string>
+    <string name="STR_NMS_ACTIVE_BNT">Aktibatu</string>
+    <string name="STR_NMS_SET_PROFILE_OK">Profila behar bezala ezarri da</string>
+    <string name="STR_NMS_SET_PROFILE_FAIL">Ezin izan da profila ezarri</string>
+    <string name="STR_NMS_ILLEGAL_PROFILE_NAME">Izen ilegala</string>
+    <string name="STR_NMS_NO_ACTIVITED">Ez da SIM txartelik aktibatu edo gaitu.</string>
+    <!-- Profile Settings End -->
+
+
+    <!-- Term Activity -->
+    <string name="STR_NMS_REJECT">Baztertu</string>
+    <string name="STR_NMS_AGREE">Onartu</string>
+    <string name="STR_NMS_TERM_TITLE">Zerbitzuaren baldintzak</string>
+    <string name="STR_NMS_TERM_CONTENT">Ulertzen eta onartzen duzu Zerbitzuak eta Zerbitzua gorpuzteko softwareak material digitalak babesteko segurtasun-osagaiak izan ditzakeela, eta material horien erabilera AF PushMail edota Zerbitzuari edukia ematen dioten eduki-hornitzaileek zehaztutako erabilera-arauen menpekoa izan daitekeela. Ez saiatu Zerbitzuaren erabilera-arauak baliogabetzen edo saihesten. Erabat debekatuta dago Zerbitzuan emandako materialak onartu gabe erreproduzitzea, argitaratzea, banatzea edo publikoki erakustea, osorik zein zati batean.</string>
+    <!-- Term Activity End -->
+
+
+    <!-- System Settings -->
+    <string name="STR_NMS_SYS_SETTING_TITLE">iSMS mezua</string>
+    <string name="STR_NMS_SETTINGS_TITLE">PROFILA</string>
+    <string name="STR_NMS_PREFERENCE_CATE">HOBESPENAK</string>
+    <string name="STR_NMS_SEND_SMS_TITLE">Bidali SMS gisa</string>
+    <string name="STR_NMS_SEND_SMS_CONTENT">Bidali SMS gisa iSMS erabilgarri ez dagoenean. Operadorearen mezularitza-tasak aplika daitezke. Arau hau ez zaio talde-txatari aplikatzen.</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_TITLE">Deskargatu automatikoki</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_CONTENT">Deskargatu automatikoki multimedia-objektuak</string>
+    <string name="STR_NMS_CAPTION_TITLE">Epigrafeak</string>
+    <string name="STR_NMS_CAPTION_CONTENT">Partekatu fitxategia epigrafeekin</string>
+    <string name="STR_NMS_SYSTEM_CATE">SISTEMA</string>
+    <string name="STR_NMS_UPDATE_TITLE">Software-eguneratzea</string>
+    <string name="STR_NMS_UPDATE_CONTENT">Azken egiaztatzea: Inoiz ez</string>
+    <string name="STR_NMS_NETWORK_USAGE_TITLE">Sarearen erabilera</string>
+    <string name="STR_NMS_NETWORK_USAGE_CONTENT">Ikusi bidalitako/jasotako datu-erabilera, guztira</string>
+    <string name="STR_NMS_NETWORK_DLG_CONTENT">Bidalitakoa: %1$.3f K \nJasotakoa: %2$.3f K\nAzken berrezartzea: %3$s</string>
+    <string name="STR_NMS_VERSION_TITLE">Bertsioa</string>
+    <string name="STR_NMS_NEVER_CLEAR">Inoiz ez</string>
+    <string name="STR_NMS_RESET">Berrezarri</string>
+    <string name="STR_NMS_SWITCH_ON">Aktibatu</string>
+    <string name="STR_NMS_SWITCH_OFF">Desaktibatu</string>
+    <string name="STR_NMS_SYSTEM_SETTING_TITLE">Ezarpenak</string>
+    <string name="STR_NMS_COPYRGIHT">Hesine Technologies, Inc.</string>
+    <string name="STR_NMS_ABOUT">iSMSri buruz</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_TITLE">Erakutsi irakurtze-egoera</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_CONTENT">Erakutsi irakurtze-egoera mezu-zerrendan</string>
+    <string name="STR_NMS_SHOW_REMIND_TITLE">Erakutsi abisuak</string>
+    <string name="STR_NMS_SHOW_REMIND_CONTENT">Erakutsi iSMS abisuak txat-pantailan</string>
+    <string name="STR_NMS_MENU_RESET_SETTING">Leheneratu jatorrizko ezarpenak</string>
+    <string name="STR_NMS_MENU_FUNCTION_INTRODUCTION">Eginbideak</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT">Erabiltzailearen kontratua</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION">Copyrighta</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT_TITLE">HESINE iSMS ERABILTZAILEAREN LIZENTZIA-KONTRATUA</string>
+    <string name="STR_NMS_MENU_FUNCTION">Eginbideen zerrenda</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION_DETAIL">\nHesine Technologies Inc.\nCopyright© 2008-2013\nEskubide guztiak erreserbatuta.\n</string>
+    <!-- System Settings End -->
+
+
+    <!-- Caption Settings -->
+    <string name="STR_NMS_AUDIO_TITLE">Audioa</string>
+    <string name="STR_NMS_VIDEO_TITLE">Bideoa</string>
+    <string name="STR_NMS_PHOTO_TITLE">Argazkiak</string>
+    <!-- Caption Settings End -->
+
+
+    <!-- Map String start -->
+    <string name="STR_NMS_MAP_TITLE">Partekatu kokapena</string>
+    <string name="STR_NMS_MAP_PROMPT">Ezin da mapa bistaratu, kokapen-zerbitzua aktibatu gabe baitago. Beheko helbidea gutxi gorabeherakoa da, telefonoaren informazioan oinarritutakoa. \nKokapen-zerbitzu zehatzagoa izateko, kokapen-zerbitzua aktibatzea iradokitzen da.</string>
+    <string name="STR_NMS_MAP_NOTE_1">Gaitu Nire kokapena iturria sistemaren ezarpenetan</string>
+    <string name="STR_NMS_MAP_SHARE">Partekatu</string>
+    <string name="STR_NMS_MAP_SETTINGS">Ezarpenak</string>
+    <string name="STR_NMS_MAP_OK">Ados</string>
+    <string name="STR_NMS_MAP_CANCEL">Utzi</string>
+    <string name="STR_NMS_MAP_EDIT">Editatu kokapena</string>
+    <string name="STR_NMS_MAP_SEARCH_HINT">Bilatu inguruko tokiak</string>
+    <string name="STR_NMS_MAP_WAIT">Itxaron...</string>
+    <string name="STR_NMS_MAP_EDIT_LIMIT">Karaktere-muga erdietsi da</string>
+    <string name="STR_NMS_MAP_ADDR_LEN">Helbidea luzeegia da</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR_LOCATING">Uneko kokapena bilatzen...</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN_LOCATING">PINaren kokapena bilatzen...</string>
+    <string name="STR_NMS_MAP_LINEONE_SEARCH_LOCATING">Bilaketa-kokapena bilatzen...</string>
+    <string name="STR_NMS_MAP_LINETHREE_NEARBY_LOCATING">Inguruko tokiak bilatzen...</string>
+    <string name="STR_NMS_MAP_LINEONE_FAILED">Une honetan, kokapena ez dago erabilgarri</string>
+    <string name="STR_NMS_MAP_LINETWO_FAILED">Ziurtatu kokapen-zerbitzua aktibatuta eta sarea erabilgarri dagoela</string>
+    <string name="STR_NMS_MAP_LINETHREE_FAILED">Ez da inguruko tokirik aurkitu</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR">Partekatu uneko kokapena</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN">Partekatu PINaren kokapena</string>
+    <string name="STR_NMS_MAP_MY_LOCATION">Nire kokapena</string>
+    <string name="STR_NMS_MAP_SEARCH">Bilatu</string>
+    <string name="STR_NMS_MAP_ERROR_1">Ezin izan dira latitudea eta longitudea eskuratu</string>
+    <string name="STR_NMS_MAP_ERROR_2">Google zerbitzariak errore bat itzuli du</string>
+    <!-- Map String end -->
+
+
+    <!-- All Media String start -->
+    <string name="STR_NMS_ALL_MEDIA_TITLE">Multim. guzt.</string>
+    <string name="STR_NMS_ALL_MEDIA_WAIT">Itxaron...</string>
+    <string name="STR_NMS_ALL_MEDIA_ERROR">Ezin izan da kargatu. Saiatu berriro geroago</string>
+    <string name="STR_NMS_ALL_MEDIA_EMPTY">Hutsik</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_WEEK">Aste hau</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_MONTH">Hilabete hau</string>
+    <string name="STR_NMS_ALL_MEDIA_JAN">Urtarrila</string>
+    <string name="STR_NMS_ALL_MEDIA_FEB">Otsaila</string>
+    <string name="STR_NMS_ALL_MEDIA_MAR">Martxoa</string>
+    <string name="STR_NMS_ALL_MEDIA_APR">Apirila</string>
+    <string name="STR_NMS_ALL_MEDIA_MAY">Maiatza</string>
+    <string name="STR_NMS_ALL_MEDIA_JUN">Ekaina</string>
+    <string name="STR_NMS_ALL_MEDIA_JUL">Uztaila</string>
+    <string name="STR_NMS_ALL_MEDIA_AUG">Abuztua</string>
+    <string name="STR_NMS_ALL_MEDIA_SEPT">Iraila</string>
+    <string name="STR_NMS_ALL_MEDIA_OCT">Urria</string>
+    <string name="STR_NMS_ALL_MEDIA_NOV">Azaroa</string>
+    <string name="STR_NMS_ALL_MEDIA_DEC">Abendua</string>
+    <string name="STR_NMS_ADDCONTACT">Gehitu kontaktua</string>
+    <string name="STR_NMS_ADD_PHONE_CONTACT">Gehitu \"%1$s\" kontaktuetan?</string>
+    <string name="STR_NMS_DELETE_MEDIA">Multimedia ezabatu egingo da, jarraitu?</string>
+    <string name="STR_NMS_MEDIA_SHARE_MESSAGE">%1$s hemen partekatu da: %2$s</string>
+
+    <!-- All Media String end -->
+
+
+    <!-- All Locations String start -->
+    <string name="STR_NMS_ALL_LOCATIONS_TITLE">Kokapen guztiak</string>
+    <string name="STR_NMS_ALL_LOCATIONS_LOC">Kokapena</string>
+    <string name="STR_NMS_ALL_LOCATIONS_WAIT">Itxaron...</string>
+    <!-- All Locations String end -->
+
+
+    <!-- Sketch -->
+    <string name="STR_NMS_SKETCH_TITLE">Marraztu marrazki bat</string>
+    <string name="STR_NMS_REDO">Berregin</string>
+    <string name="STR_NMS_UNDO">Desegin</string>
+    <string name="STR_NMS_SKETCH_CUSTOM">Pertsonalizatu</string>
+    <string name="STR_NMS_PEN_SIZE">Tamaina</string>
+    <string name="STR_NMS_SKETCH_TOOLS_PEN">Arkatza</string>
+    <string name="STR_NMS_SKETCH_TOOLS_ERASER">Borragoma</string>
+    <string name="STR_NMS_SKETCH_CUSTOM_COLOR">Pertsonalizatu kolorea</string>
+    <string name="STR_NMS_CLEAR_SKETCH_TITLE">Garbitu marrazkia</string>
+    <string name="STR_NMS_CLEAR_SKETCH_CONTENT">Marrazki hau ezabatu nahi duzu?</string>
+    <string name="STR_NMS_SIZE_SKETCH_TITLE">Tamaina</string>
+    <string name="STR_NMS_SIZE_SKETCH_MAX">72</string>
+    <string name="STR_NMS_SIZE_SKETCH_MIN">2</string>
+    <string name="STR_NMS_COLOR_SKETCH_TITLE">Kolorea</string>
+    <string name="STR_NMS_SKETCH_ERROR">Ezin izan da marrazkia sortu.</string>
+    <string name="STR_NMS_BACK_TITLE">Berrespena</string>
+    <string name="STR_NMS_FINISH_SKETCH_CONTENT">Ziur marrazteari utzi nahi diozula?</string>
+    <string name="STR_NMS_LEAVE_SKETCH_CONTENT">Ziur marrazki hau utzi nahi duzula?</string>
+    <string name="STR_NMS_NOTREDO">Ez dago berregiteko ezer</string>
+    <string name="STR_NMS_NOTUNDO">Ez dago desegiteko ezer</string>
+    <string name="STR_NMS_SKETCH_DELETE">Garbitu</string>
+    <string name="STR_NMS_DISCARD">Baztertu</string>
+
+    <!-- Sketch end -->
+
+
+    <!-- Selection Contact -->
+    <string name="STR_NMS_DONE">Ados</string>
+    <string name="STR_NMS_SELECTALL">Hautatu guztiak</string>
+    <string name="STR_NMS_DESELECTED">Desautatu guztiak</string>
+    <string name="STR_NMS_SELECTED">%1$s hautatuta</string>
+    <string name="STR_NMS_CONTACT_SEARCH">Bilatu kontaktuak</string>
+    <string name="STR_NMS_SEARCH">Bilatu</string>
+    <string name="STR_NMS_CONTACT_SELECT">Bilatu kontaktua</string>
+    <string name="STR_NMS_SELECT_MEMBER_FULL">Kontaktu gehiegi hautatu dira</string>
+    <string name="STR_NMS_SELECT_MEMBER_EMPTY">Ez da kontakturik hautatu</string>
+    <string name="STR_NMS_SELECT_CONTAT_WAIT">Itxaron...</string>
+    <string name="STR_NMS_SELECT_CONTAT_EMPTY">Ez dago iSMS kontakturik</string>
+    <string name="STR_NMS_SELECT_NO_RESULT">Ez da bat ere aurkitu</string>
+    <string name="STR_NMS_EMPTY">Ez dago kontakturik</string>
+    <string name="STR_NMS_ALL_CONTACTS">GUZTIAK</string>
+    <string name="STR_NMS_GROUPS_MEM"> %1$s kide</string>
+    <string name="STR_NMS_GROUPS_CONTACTS">TALDE GUZTIAK</string>
+    <!-- Selection Contact end -->
+
+    <!-- Group chat -->
+    <string name="STR_NMS_CREATE_GROUP_TITLE">Sortu taldea</string>
+    <string name="STR_NMS_GROUP_INFO_TITLE">Taldearen informazioa</string>
+    <string name="STR_NMS_EDIT_GROUP_TITLE">Editatu taldea</string>
+    <string name="STR_NMS_SELECT_ACTION_TITLE">Hautatu ekintza</string>
+    <string name="STR_NMS_ADD_TO_BOOKMARK">Gehitu laster-markan</string>
+    <string name="STR_NMS_ADD_TO_CONTACTS">Gehitu %1$s kontaktuetan</string>
+    <string name="STR_NMS_GROUP_NAME">TALDEAREN IZENA</string>
+    <string name="STR_NMS_GROUP_INFO">TALDEAREN INFORMAZIOA</string>
+    <string name="STR_NMS_GROUP_MEMBERS">TALDEKIDEAK</string>
+    <string name="STR_NMS_GROUP_NAME_HIT">Taldearen izena</string>
+    <string name="STR_NMS_GROUP_NAME_EMPTY">Taldearen izena hutsik dago</string>
+    <string name="STR_NMS_CONFIRM_LEAVE_TITLE">Utzi taldea</string>
+    <string name="STR_NMS_LEAVE_GROUP_CONTENT">Talde hau utzi nahi duzu?</string>
+    <string name="STR_NMS_LEAVE_GROUP_SUCCESS">Taldea behar bezala utzi da</string>
+    <string name="STR_NMS_LEAVE_GROUP_FAILED">Ezin izan da taldea utzi</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_SUCCESS">Taldearen izena behar bezala eguneratu da</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_SUCCESS">Taldekide berriak gehitu dira</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_FAILED">Ezin izan da taldekiderik gehitu</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_FAILED">Ezin izan da taldearen izena eguneratu</string>
+    <string name="STR_NMS_CREATE_GROUP_NAME_FAILED">Ezin izan da talde-txata sortu</string>
+    <string name="STR_NMS_DELETE_GROUP_MEMBER_FAILED">Ezin izan da taldekiderik kendu</string>
+    <string name="STR_NMS_UPDATE_GROUP_SUCCESS">Taldearen informazioa behar bezala eguneratu da</string>
+    <string name="STR_NMS_UPDATE_GROUP_FAILED">Ezin izan da taldearen informazioa eguneratu</string>
+    <string name="STR_NMS_GROUP_CHAT_BACK">Eragiketa hau baztertu nahi duzu?</string>
+    <string name="STR_NMS_GROUP_MEMEBER_YOU">ZU</string>
+    <string name="STR_NMS_GROUP_INVITE_MORE">Gonbidatu</string>
+    <string name="STR_NMS_LEAVE_GROUP">Utzi taldea</string>
+    <string name="STR_NMS_CHAT">Txata</string>
+    <string name="STR_NMS_CONFIRM_REMOVE_TITLE">Kendu taldekideen zerrendatik</string>
+    <string name="STR_NMS_REMOVE_OK">Kendu</string>
+    <string name="STR_NMS_REMOVE_CANCEL">Utzi</string>
+    <string name="STR_NMS_REMOVE_CONTENT">Zerrendatik kendu nahi duzu?</string>
+    <string name="STR_NMS_VIEW_ALL_MEDIA">Ikusi multimedia guztia</string>
+    <string name="STR_NMS_VIEW_ALL_LOCATIONS">Ikusi kokapen guztiak</string>
+    <string name="STR_NMS_CHAT_SETTINGS">Txataren ezarpenak</string>
+    <string name="STR_NMS_VIEW_GROUP_FAILED">Txat-talde hau utzi duzu.</string>
+    <string name="STR_NMS_VIEW_HISTORY">Ikusi taldearen historia</string>
+    <string name="STR_NMS_ISMS_ENABLE_TITLE">Gaitu iSMS</string>
+    <string name="STR_NMS_ISMS_ENABLE_CONTENT">iSMS zerbitzuak soilik onartzen du eginbidea. iSMS kontua orain gaitu?</string>
+    <string name="STR_NMS_ENABLE">Gaitu</string>
+    <string name="STR_NMS_LATER">Itxi</string>
+    <string name="STR_NMS_SWITCH_TITLE">Aldatu SIMa</string>
+    <string name="STR_NMS_SWITCH_MESSAGE">iSMS zerbitzua aktibatuta dagoenean soilik onartzen da talde-berriketa, baina uneko SIM txartela aktibatu gabe dago. Aktibatutako SIM txartelera aldatu?</string>
+    <string name="STR_NMS_SWITCH_EDIT_MESSAGE">Uneko SIM txartela taldearekin erlazionatu gabe dago. Beste SIM txartelera aldatu?</string>
+    <string name="STR_NMS_LEAVE_GROUP_NOTICE">Taldea utzi duzu eta ezin duzu talde-txatarekin bat egin, berriro gonbidatzen zaituzten arte</string>
+    <string name="STR_NMS_LOSE_SIM_NOTICE">Jatorrizko txaterako SIM txartela kendu da. Jatorrizko SIM txartelarekin soilik txatea dezakezu talde honetan</string>
+    <string name="STR_NMS_SWITCH">Aldatu</string>
+
+    <!-- Group chat end -->
+
+
+    <!-- chat details screen long press item start -->
+    <string name="STR_NMS_LONG_PRESS_TITLE">Mezuaren aukerak</string>
+    <string name="STR_NMS_SEND_VIA_TEXT">Bidali SMS bidez</string>
+    <string name="STR_NMS_TRY_AGAIN">Saiatu berriro</string>
+    <string name="STR_NMS_TRY_ALL_AGAIN">Saiatu guztia berriro</string>
+    <string name="STR_NMS_CONTINUE_TRY">Jarraitu saiatzen</string>
+    <string name="STR_NMS_COPY">Kopiatu</string>
+    
+    <string name="STR_NMS_FORWARD">Birbidali</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_TITLE">Deskargatu</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD">iSMS birbidaltzeko, multimedia-edukia deskargatu behar duzu lehenik.</string>
+    <string name="STR_NMS_FORWARD_CONTIUE">Jarraitu</string>
+    <string name="STR_NMS_FORWARD_FAILED">Ezin izan da birbidali.</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_MULTI">Birbidaltze anitza gauzatzeko, iSMS batzuk deskargatu behar dira lehenik.</string>
+    <string name="STR_NMS_FORWARD_SOME_FAILED">Ezin izan da zenbait iSMS birbidali.</string>
+    <string name="STR_NMS_FORWARD_ALL_FAILED">Ezin izan da deskargatu. Birbidaltze anitza baztertu egin da</string>
+    
+    <string name="STR_NMS_SEND_VIA_MULTIMEDIA">Bidali MMS bidez</string>
+    <string name="STR_NMS_SHARE">Partekatu</string>
+    <string name="STR_NMS_DELETE">Ezabatu</string>
+    <string name="STR_NMS_FLAG_IMPORTANT">Markatu garrantzitsu gisa</string>
+    <string name="STR_NMS_REMOVE_IMPORTANT">Kendu garrantzitsuaren marka</string>
+    <string name="STR_NMS_SAVE_IN_SDCARD">Esportatu SD txartelera</string>
+    <string name="STR_NMS_SAVE_FILE">Fitxategia %1$s(e)n gorde da</string>
+    <string name="STR_NMS_SHARE_TITLE">Partekatzeko modua</string>
+    <string name="STR_NMS_VIEW_DETAILS">Ikusi xehetasunak</string>
+    <string name="STR_NMS_VIEW_DETAILS_TITLE">Mezuaren xehetasunak</string>
+    <string name="STR_NMS_SEND_MSG_DETAILS">Mota: IP mezua\nBidalitakoa: %1$s</string>
+    <!-- chat details screen long press item end -->
+
+
+    <!-- chat details screen delete item start -->
+    <string name="STR_NMS_DELETE_TITLE">Ezabatu</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_TITLE">Ezabatu mezu garrantzitsua</string>
+    <string name="STR_NMS_DELETE_WARNING">Mezua ezabatu egingo da.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_WARNING">Ziur mezu garrantzitsu hau ezabatu nahi duzula?</string>
+    <string name="STR_NMS_DELETE_MSG">Hautatutako mezuak ezabatu egingo dira.</string>
+    <string name="STR_NMS_DELETE_WAITTING">Ezabatzen</string>
+    <string name="STR_NMS_CLEAR_HISTORY_CONTENT">Txat-gela honetako txat-historia guztia garbituko da</string>
+    <string name="STR_NMS_DELETE_IMPORTANT">Gehitu garrantzitsu gisa markatutako mezuak</string>
+    <!-- chat details screen delete item end -->
+
+
+    <!-- chat details actionBar option start -->
+    <string name="STR_NMS_MENU_CALL">Deitu</string>
+    <string name="STR_NMS_MENU_GROUPINFO">Taldearen informazioa</string>
+    <string name="STR_NMS_MENU_INVITE_CHAT">Gonbidatu lagunak txatera</string>
+    <string name="STR_NMS_MENU_INVITE_ISMS">Gonbidatu lagunak iSMS erabiltzera</string>
+    <string name="STR_NMS_MENU_SELECT_MSG">Hautatu mezua</string>
+    <string name="STR_NMS_MENU_MARK_SPAM">Eraman spam-zerrendara</string>
+    <string name="STR_NMS_MENU_REMOVE_SPAM">Kendu spam-zerrendatik</string>
+    <string name="STR_NMS_MENU_ADD_SHORTCUT">Gehitu lasterbidea</string>
+    <string name="STR_NMS_MENU_VIEW_ALLMEDIA">Ikusi multimedia guztia</string>
+    <string name="STR_NMS_MENU_VIEW_ALLLOCATION">Ikusi kokapen guztiak</string>
+    <string name="STR_NMS_MENU_EDIT_GROUP">Editatu taldea</string>
+    <string name="STR_NMS_MENU_CHAT_SETTING">Txataren ezarpena</string>
+    <string name="STR_NMS_MENU_INSERT_QUICK_TEXT">Idatzi testu azkarra</string>
+    <string name="STR_NMS_MENU_CLEAR_HISTORY">Garbitu txat-historia</string>
+    <string name="STR_NMS_MENU_LEAVE_GROUP">Utzi taldea</string>
+    <string name="STR_NMS_MENU_DISCARD">Baztertu</string>
+    <string name="STR_NMS_MENU_DELETE">Ezabatu</string>
+    <string name="STR_NMS_MENU_IMPORTANT">Markatu garrantzitsu gisa</string>
+    <string name="STR_NMS_MENU_FORWARD">Birbidali</string>
+    <!-- chat details actionBar option end -->
+
+
+    <!-- chat details share item start -->
+    <string name="STR_NMS_TAKE_PHOTO">Atera argazki bat</string>
+    <string name="STR_NMS_RECORD_VIDEO">Grabatu bideo bat</string>
+    <string name="STR_NMS_DRAW_SKETCH">Marraztu marrazki bat</string>
+    <string name="STR_NMS_SHARE_CONTACT">Partekatu kontaktua</string>
+    <string name="STR_NMS_CHOOSE_PHOTO">Aukeratu argazki bat</string>
+    <string name="STR_NMS_CHOOSE_VIDEO">Aukeratu bideo bat</string>
+    <string name="STR_NMS_RECORD_AUDIO">Grabatu audioa</string>
+    <string name="STR_NMS_SHARE_LOCATION">Partekatu kokapena</string>
+    <string name="STR_NMS_CHOOSE_AUDIO">Aukeratu audioa</string>
+    <string name="STR_NMS_SHARE_CALENDAR">Partekatu egutegia</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_TITLE">Gehitu musika</string>
+    <string name="STR_NMS_CHOOSE_RINGTONE_ITEM">Dei-tonua</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_ITEM">Audioa</string>
+    <string name="STR_NMS_INSERT_SDCARD">Sartu SD txartela!</string>
+    <!-- chat details share item start -->
+
+
+    <!-- record audio start -->
+    <string name="STR_NMS_AUDIO_TIMER_FORMAT" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <string name="STR_NMS_AUDIO_LABLE">Audio-oharren grabagailua</string>
+    <string name="STR_NMS_RECORD_AUDIO_CONT">Ukitu grabatzeko</string>
+    <string name="STR_NMS_PLAY_AUDIO_CONT">Ukitu erreproduzitzeko</string>
+    <string name="STR_NMS_ACTION_SEND">Bidali</string>
+    <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
+    <string name="audio_db_artist_name">Zure grabaketak</string>
+    <string name="audio_db_album_name">Audio-grabaketak</string>
+    <!-- record audio end -->
+
+
+    <!-- chat & group details screen start -->
+
+    <string name="STR_NMS_UNREAD_FORMAT">%1$d mezu irakurrigabe</string>
+    <string name="STR_NMS_NOT_DELIVERED_TITLE">Oraindik bidali gabe</string>
+    <string name="STR_NMS_FAILED_TITLE">Bidaltze-errorea</string>
+    <string name="STR_NMS_GROUP_SUBTITLE">%1$s, +%2$d</string>
+    <string name="STR_NMS_GROUP_DEAD_SUBTITLE">%1$s, %2$d</string>
+    <string name="STR_NMS_SAVE_AS_DRAFT">Mezua zirriborro gisa gordea da</string>
+    <string name="STR_NMS_NO_SD_TITLE">SD txartelaren errorea</string>
+    <string name="STR_NMS_CANT_SHARE">Ezin da SD txartela atzitu. Multimediarekin erlazionatutako eginbide guztiak ezin dira aldi batean erabili.\n\nEgiaztatu SD txartela eta saiatu berriro geroago.</string>
+    <string name="STR_NMS_CANT_SAVE">Ez da SD txartelik detektatu. Ezin da fitxategia gorde</string>
+    <string name="STR_NMS_SDSPACE_NOT_ENOUGH">SD txartelean dagoen tokia ez da nahikoa. Ezin da fitxategia gorde.</string>
+    <string name="STR_NMS_REAEND_ALL">Saiatu guztia berriro...</string>
+    <string name="STR_NMS_FILE_LIMIT">Handiegia</string>
+    <string name="STR_NMS_LOAD_ALL_MESSAGE">Kargatu mezu guztia</string>
+    <string name="STR_NMS_DOWNLOAD_FAILED">Ezin izan da deskargatu</string>
+    <string name="STR_NMS_INPUT_HINT">Sartu edukia</string>
+    <string name="STR_NMS_INPUT_HINT_ISMS">Idatzi iSMS mezua</string>
+    <string name="STR_NMS_CAPTION_HINT">Idatzi epigrafeak</string>
+    <string name="STR_NMS_PROTOCOL_SMS">SMSa</string>
+    <string name="STR_NMS_PROTOCOL_MMS">MMSa</string>
+    <string name="STR_NMS_PROTOCOL_IP">iSMS</string>
+    <string name="STR_NMS_SWITCH_BOTTON">Aldatu SIMa</string>
+    <string name="STR_NMS_TURN_ON_BOTTON">Aktibatu</string>
+    <string name="STR_NMS_SWITCH_TEXT_FORMAT">Talde-txatarekin jarraitzeko, aldatu %1$s SIMera lehenik.</string>
+    <string name="STR_NMS_ENABLE_TEXT_FORMAT">Talde-txatarekin jarraitzeko, aktibatu iSMS zerbitzua %1$s SIMen lehenik.</string>
+    <string name="STR_NMS_REPLACE_ATTACH_TITLE">Ordeztu eranskina</string>
+    <string name="STR_NMS_REPLACE_ATTACH_MSG">Lehendik bada eranskina, ordeztu?</string>
+    <string name="STR_NMS_TRUNC_CAPTION">Epigrafea moztu egin da.</string>
+    <string name="STR_NMS_MAX_CHARACTERS_REACHED">Mezuaren tamaina-muga erdietsi da.</string>
+    <string name="STR_NMS_MAX_EMOTICON_REACHED">Aurpegieren mugetara heldu da</string>
+    <string name="STR_NMS_ENABLE_PROCESS">Prozesatzen...</string>
+    <string name="STR_NMS_ERR_FILE">Fitxategi baliogabea</string>
+    <string name="STR_NMS_SENDING_TEXT">Bidaltzen</string>
+    <!-- chat & group details screen end -->
+    <!-- Error code tips -->
+    <string name="STR_NMS_ERR_GENERAL">Errore orokorra</string>
+    <string name="STR_NMS_ERR_INVALID_ARGUMENT">Argumentu baliogabea</string>
+    <string name="STR_NMS_ERR_NETWORK_BLOCK">Sarea ez dago ondo</string>
+    <string name="STR_NMS_ERR_PHONE_NOT_ACTIVATED">Aktibatu gabe</string>
+    <string name="STR_NMS_ERR_SIM_NOT_ACTIVATED">SIM txartela aktibatu gabe dago</string>
+    <string name="STR_NMS_ERR_INVALID_MSG_DB_ID">Mezuaren datu-basearen ID baliogabea</string>
+    <string name="STR_NMS_ERR_ADD_MSG_DB_FAILED">Ezin izan da datu-basea gehitu</string>
+    <string name="STR_NMS_ERR_UPDATE_MSG_DB_FAILED">Ezin izan da datu-basea eguneratu</string>
+    <string name="STR_NMS_ERR_GET_MSG_DB_DATA_FAILED">Ezin izan da mezua eskuratu</string>
+    <string name="STR_NMS_ERR_INVALID_CONTACT_DB_ID">Kontaktuaren datu-basearen ID baliogabea</string>
+    <string name="STR_NMS_ERR_ADD_CONTACT_DB_FAILED">Ezin izan da kontaktua gehitu</string>
+    <string name="STR_NMS_ERR_UPDATE_CONTACT_DB_FAILED">Ezin izan da kontaktuaren datu-basea eguneratu</string>
+    <string name="STR_NMS_ERR_GET_CONTACT_DB_DATA_FAILED">Ezin izan da kontaktua IDaren arabera eskuratu</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_ERROR_FORMAT">IP mezuaren formatu baliogabea</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_INVALID_TO">Hartzaile baliogabea</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_WITH_UNKNOWN_USER">Hartzaile-erabiltzaile ezezagun baliogabea</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_NO_MBMBER">Ez dago talde-txateko kiderik</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_GCHAT_DEAD">Talde-txata aktibatu gabe dago</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_INVALID_SIM_ID">Talde-txataren SIM txartela ez da uneko SIM txartela</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_FOR_SYS_MSG">Bidali sistemaren mezua berriro</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_INVALID_STATUS">IP mezua ez dago prest</string>
+    <string name="STR_NMS_ERR_GCHAT_IS_DEAD">Talde-txata dagoeneko ez dago</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBERS">Taldekide baliogabeak</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBER_WITH_SELF">Ezin izan da taldea sortu. Ezin zara kideetan egon</string>
+    <string name="STR_NMS_ERR_GCHAT_EXCEED_MAX_MEMBER_COUNT">Taldekideen kopuruak muga erdietsi du</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_NAME">Talde-txataren izen baliogabea</string>
+    <string name="STR_NMS_ERR_GCHAT_SIM_IS_NOT_ACTIVATED">Talde-txataren SIM txartela aktibatu gabe dago</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_NOT_INBOX_MSG">Ezin izan da deskargatzeko URLa eskuratu</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_INVALID_URL">Deskargatzeko URL baliogabea</string>
+    <string name="STR_NMS_ERR_GET_ATTACH_NAME_INVALID_BODY_FORMAT">Ezin izan da deskargatzeko fitxategiaren izena eskuratu</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_INVALID_FILE_NAME">Deskargatzeko fitxategiaren izena</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_EXIST">Ez dago deskargatzeko fitxategirik</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_INBOX_MSG">Ezin izan deskargatzeko fitxategia ezarri</string>
+    <string name="STR_NMS_ERR_SIM_INFO_NOT_FOUND">Ez da SIM txartelaren informazioarik aurkitu</string>
+    <string name="STR_NMS_ERR_SIM_IN_INVALID_STATUS">SIM txartelaren egoera baliogabea</string>
+    <string name="STR_NMS_ERR_CMD_PROCESSING">Sistema lanpetuta dago eta ezin du sistema konfiguratzeko komandoa gauzatu</string>
+    <string name="STR_NMS_ERR_CMD_GENERAL">Sistema orokorraren konfigurazio-errorea</string>
+    <string name="STR_NMS_ERR_CODE_END">Errore-kode ezezaguna</string>
+    <!-- Error code tips -->
+    <string name="STR_NMS_SEND_MMS_QUERY_TITLE">Abisua</string>
+    <string name="STR_NMS_SEND_MMS_QUERY">Hartzailea ez da iSMS erabiltzaile bat. MMS bidez bidali?</string>
+    <!-- Service center start -->
+    <string name="STR_NMS_SERVICE_TITLE">iSMS zerbitzu-zentroa</string>
+    <string name="STR_NMS_INTRODUCTION">iSMSrekin istantean bana ditzakezu doako mezuak eta txat-historia toki batean gordetzen du. Sakatu bat botoia eta has dadila esperientzia!</string>
+    <string name="STR_NMS_TERMS">Zehaztapenak eta baldintzak</string>
+    <string name="STR_NMS_ACTIVATION_BUTTON">Akibatu orain</string>
+    <string name="STR_NMS_LOSE_SDCARD">Ez da SIM txartelik detektatu</string>
+    <!-- Service center end -->
+
+
+    <!-- conversation empty tips -->
+    <string name="STR_NMS_SPAM_EMPTY">Ez duzu spam-elkarrizketarik. \nSPAM aukeran biltzen dira spam gisa markatutako elkarrizketa guztiak Lehenespenez, jakinarazpenak desaktibatu egingo dira. Alferrik molestatzea saihestuko dizu. \n\nBidaltzailea spam gisa marka dezakezu. Horretarako mantendu elkarrizketa bat hautatuta eta aukeratu Markatu spam gisa ikonoa. Elkarrizketa spam gisa markatzen denean, jakinarazpena desaktibatuta dagoela adierazten duen ikonoa erakutsiko da automatikoki eta elkarrizketak hemen jarriko dira.</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_FROM">+86123456789</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_SUBJECT">Spam mezu baten adibidea.</string>
+    <string name="STR_NMS_GROUPCHAT_EMPTY">Ez duzu talde-txateko mezurik. \nTALDE-TXATAK aukeran biltzen dira sortutako edo bat egindako talde guztietako txat-mezuak. Honela, talde-txatak azkar bilatu eta kudea ditzakezu. \n\nTalde-txata sortzeko, pantailaren behealdeko Sortu talde-txata botoia uki dezakezu, eta lagunak taldearekin bat egitera gonbida ditzakezu.</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_FROM">Taldearen izena</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_SUBJECT">Zure laguna:\ntalde-txata eginbidea gustatzen zait!</string>
+    <string name="STR_NMS_IMPORTANT_EMPTY">Ez duzu mezu garrantzitsurik. \nGARRANTZITSUA aukerak biltzen dira garrantzitsu gisa markatutako mezuak. Honela, mezu garrantzitsuak errazago aurki ditzakezu. \n\nMezu bat garrantzitsu gisa markatzeko, mantendu mezu bat hautatuta eta aukeratu Aukera menuko Markatu garrantzitsu gisa aukera. Mezua garrantzitsu gisa markatzen denean, behekoa bezalako bandera gorri bat ikusiko duzu.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TITLE">Garrantzitsu gisa markatutako mezu baten adibidea. Bandera gorri bat agertuko da.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TIME">10:55 am</string>
+    <string name="STR_NMS_ALLCHAT_EMPTY">Ez dago elkarrizketarik</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_CONTENT">Eginbide hau erabiltzeko, iSMS zerbitzua aktibatu behar duzu lehenik Lasai. Zerbitzua gustatzen ez bazaizu, edonoiz desaktiba dezakezu ezarpenetan. Probatu orain</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_TITLE">Aktibatu iSMS</string>
+    <!-- conversation empty tips -->
+    
+    <string name="STR_NMS_CLEAR_USER_DATA">Datuak behar bezala garbitu dira</string>
+    
+    <!-- get file err start -->
+    <string name="STR_NMS_NO_SUCH_FILE">Ez dago halako fitxategirik</string>
+    <string name="STR_NMS_OVER_FILE_LIMIT">Fitxategiaren tamainak muga gainditzen du</string>
+    <string name="STR_NMS_INVALID_FILE_TYPE">Ez du mota hau onartzen</string>
+    <!-- get file err end -->
+
+    <string name="STR_NMS_DELIVERY_BODY">Jasotako %s(r)en mezua</string>
+    <string name="STR_NMS_SIM_SELECT_TITLE">Hautatu SIMa</string>
+    
+    <string name="STR_NMS_SHORTCUT_SUCCESS">%1$s lasterbidea sortu da.</string>
+    <string name="STR_NMS_SHORTCUT_REFRESHING">Freskatzen</string>
+    
+    <string name="STR_NMS_DISABLE_FAILED">Eragiketak huts egin du. Saiatu berriro geroago.</string>
+    <string name="STR_NMS_ENABLE_FAILED">Eragiketak huts egin du. Saiatu berriro geroago.</string>
+    <string name="STR_NMS_ENABLE_SUCCESS">iSMS zerbitzua behar bezala aktibatu duzu</string>
+    <string name="STR_NMS_DISABLE_SUCCESS">iSMS zerbitzua behar bezala inaktibatu duzu</string>
+    
+	<string name="STR_NMS_SD_CARD_FULL">SD txartela beteta dago</string>
+    <string name="STR_NMS_SEND_MSG_FAILED">Ezin izan da mezua bidali!</string>
+    <string name="STR_NMS_SELECT_AUDIO">Hautatu audioa</string>
+    
+    <string name="STR_NMS_SETTING_COMMENT">iSMS txateatzeko tresna ederra da. Doakoa eta erabilerraza da.Argibide gehiago</string>
+    <string name="STR_NMS_KNOW_MORE">Argibide gehiago</string>
+    <string name="STR_NMS_RECEIVED_MSG_DETAILS">Mota: IP mezua\nNork: %1$s\nBidali Denbora: %2$s\nJasotze-data: %3$s</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH_ADD">iSMS zerbitzua da aldi baterako direla eta memoria eza ez dago erabilgarri.</string>
+    <string name="STR_NMS_SERVER_AUTO_ECHO_MSG">Mezua jaso. Eskerrik asko!</string>
+    
+    <string name="imsp_ip_message">iSMS mezua</string>
+    <string name="imsp_invite_chat_frequently"><b>%s(r)ekin maiz txateatzen duzu?</b>\nZergatik ez duzu %s iSMS erabiltzera gonbidatzen, biok diru apur bat aurrezteko?</string>
+    <string name="imsp_enable_chat_frequently"><b>%s(r)en iSMS zerbitzua desgaituta dago!</b>\nZergatik ez duzue iSMS zerbitzua gaitzen eta biok diru apur bat aurrezten?</string>
+    <string name="imsp_invite">Gonbidatu</string>
+    <string name="imsp_enable_notice">Ziur iSMS zerbitzua gaitu nahi duzula?</string>
+    <string name="imsp_activate_chat_frequently"><b>Lagunekin maiz txateatzen duzu?</b>\nZergatik ez duzu iSMS zerbitzua aktibatzen, SMS kosturik gabe txateatzeko?</string>
+    <string name="imsp_activate_note">Ziur iSMS aktibatu nahi duzula?</string>
+    <string name="imsp_dismiss_content">Ziur oharra baztertu nahi duzula?</string>
+    <string name="imsp_divider_online">%s linean dago</string>
+    <string name="imsp_divider_offline">Azken aldiz linean: %s</string>
+    <string name="imsp_divider_never_online">Inoiz ez linean</string>
+    <string name="imsp_failed_title">Ez da bidali</string>
+    <string name="imsp_resend_via_sms">SMS gisa bidali da, azkenean</string>
+    <string name="imsp_resend_via_mms">MMS gisa bidali da, azkenean</string>
+    <string name="imsp_typing_text">Idazten</string>
+    <string name="imsp_save_attachment">Gorde eranskina</string>
+    <string name="imsp_view">Ikusi</string>
+    <string name="imsp_convert_to_mms">Bihurtu MMS.</string>
+    <string name="imsp_convert_to_sms">Bihurtu SMS.</string>
+    <string name="imsp_convert_to_isms">Bihurtu iSMS.</string>
+    <string name="imsp_convert_to_mms_for_service">iSMS zerbitzua ez dago erabilgarri hautatutako SIM txartelean. Mezua ezin da MMS gisa bidali SIM txartel honekin. Halere, jarraitu?</string>
+    <string name="imsp_convert_to_sms_for_service">iSMS zerbitzua ez dago erabilgarri hautatutako SIM txartelean. Mezua ezin da SMS gisa bidali SIM txartel honekin. Halere, jarraitu?</string>
+    <string name="imsp_convert_to_mms_for_recipients">Ez dago iSMS erabiltzailea den hartzailerik. Mezua MMS gisa soilik bidal daiteke. Halere, jarraitu?</string>
+    <string name="imsp_convert_to_sms_for_recipients">Ez dago iSMS erabiltzailea den hartzailerik. Mezua SMS gisa soilik bidal daiteke. Halere, jarraitu?</string>
+    <string name="imsp_sms_convert_to_isms">iSMS zerbitzua erabilgarri dago hautatutako SIM txartelean. SMS kostua aurrezteko, mezuak iSMS bihurtzea iradokitzen da. Bihurtu orain?</string>
+    <string name="imsp_mms_convert_to_isms">iSMS zerbitzua erabilgarri dago hautatutako SIM txartelean. MMS kostua aurrezteko, mezuak iSMS bihurtzea iradokitzen da. Bihurtu orain?</string>
+    <string name="imsp_keep_mms">Mantendu MMS gisa</string>
+    <string name="imsp_keep_sms">Mantendu SMS gisa</string>
+    <string name="imsp_resend_discard_message">Mezua berriro bidaltzeko, idazten ari zaren uneko mezua baztertu egingo da.</string>
+    <string name="imsp_no_sim_card">Ez dago SIM txartelik!</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">&quot;Ez da Interneteko konexiorik aurkitu! Saiatu berriro geroago.&quot;</string>
+    <string name="imsp_chat_setting_updating">eguneratzen...</string>
+    <string name="imsp_dialog_clear_title">Garbitu</string>
+    <string name="imsp_dialog_clear_description">Txat-gela honetako txat-historia guztia garbituko da</string>
+    <string name="imsp_chat_setting_saving">gordetzen...</string>
+    <string name="imsp_chat_setting_sending">bidaltzen...</string>
+    <string name="imsp_save_chat_history_failed">ezin izan da gorde</string>
+    <string name="imsp_send_chat_history_failed">mezu elektronikoak huts egin du</string>
+    <string name="imsp_conversation_list_all">Mezuak</string>
+    <string name="imsp_conversation_list_important">Garrantzitsua</string>
+    <string name="imsp_conversation_list_group_chats">Talde-txatak</string>
+    <string name="imsp_conversation_list_spam">Spama</string>
+    <string name="imsp_mark_as_spam_tips">Spam gisa markatutako mezuak Spama zerrendara mugituko dira eta jakinarazpena automatikoki desaktibatuko zaie.</string>
+    <string name="imsp_typing">&quot;Idazten...&quot;</string>
+    <string name="imsp_type_to_compose_text">&quot;Idatzi SMS/iSMS mezua&quot;</string>
+    <string name="imsp_no_sdcard">Ez dago SD txartelik</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">Gonbidapena bidaltzeko, idazten ari zaren mezuak baztertuko dira.</string>
+    <string name="imsp_current_sim_enabled">Uneko SIMa gaituta dago.</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">Hautatu iSMS aktibatzeko SIMa</string>
+    <string name="imsp_activate_message">iSMS zerbitzuak soilik onartzen du eginbidea. iSMS kontua orain aktibatu?</string>
+    <string name="imsp_enable_message">iSMS zerbitzuak soilik onartzen du eginbidea. iSMS kontua orain gaitu?</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">Hautatu iSMS gaitzeko SIMa</string>
+    <string name="imsp_switch_sim_title">Aldatu SIMa</string>
+    <string name="imsp_switch_sim_message">Uneko SIMak ez du iSMS onartzen. Beste SIMera aldatu?</string>
+    <string name="imsp_switch_sim_successfully">SIMa ondo aldatu da!</string>
+    <string name="imsp_dailog_multi_forward">Mezuak birbidaltzen</string>
+    <string name="imsp_dialog_send_result">Bidali emaitza</string>
+    <string name="imsp_dlg_send_all">Dena: %s</string>
+    <string name="imsp_dlg_send_sucess">Bidalita: %s</string>
+    <string name="imsp_dlg_send_failed">Huts eginda: %s</string>
+    <string name="imsp_multi_forward_sim_info">SIM informazioa eskuratzen</string>
+    <string name="imsp_multi_forward_no_sim">Ez dago SIM informaziorik</string>
+    <string name="imsp_get_sim_failed">Ezin izan da SIM informaziorik eskuratu</string>
+    <string name="imsp_sim_status_error">SIM egoeraren errorea</string>
+    <string name="imsp_forward_norecipients">Ez dago mezua birbidaltzeko hartzailerik</string>
+    <string name="imsp_multiforward_no_message">Ez dago birbidaltzeko mezurik</string>
+    <string name="imsp_need_input_recipients">Zehaztu, gutxienez, hartzaile bat</string>
+    <string name="imsp_spam_empty">Ez duzu spam-elkarrizketarik. \nSPAMA aukerak spam gisa markatutako elkarrizketa guztiak biltzen ditu. Lehenespenez, jakinarazpenak desaktibatu egingo dira. Horrela, ez zaizu molestatuko. \n\nBidaltzailea spam gisa markatzeko, mantendu elkarrizketa eta hautatu Markatu spam gisa ikonoa. Elkarrizketa spam gisa markatzen denean, jakinarazpena desaktibatuta dagoela adierazten duen ikonoa erakutsiko da automatikoki eta elkarrizketak hemen jarriko dira.</string>
+    <string name="imsp_groupchat_empty">Ez duzu talde-txateko mezurik. \nTALDE-TXATAK aukerak zuk sortu edo zuk bat egindako talde-txatetako mezu guztiak biltzen ditu. Horrela, talde-txatak erraz aurkitu eta kudea ditzakezu. \n\nTalde-txatea sortzeko, ukitu pantailaren behealdean dagoen Sortu talde-txata botoia eta gonbidatu lagunak taldean bat egitera.</string>
+    <string name="imsp_important_empty">Ez duzu mezu garrantzitsurik. \nGARRANTZITSUA aukerak garrantzitsu gisa markatutako mezu guztiak biltzen ditu. Horrela, mezu garrantzitsuak erraz aurki ditzakezu. \n\nMezuak garrantzitsu gisa markatzeko, mantendu mezua eta hautatu Markatu garrantzitsu gisa, Aukerak menuan. Mezua garrantzitsu gisa markatzen denean, behekoa bezalako bandera gorri bat ikusiko duzu.</string>
+    <string name="imsp_allchat_empty">Ez dago elkarrizketarik</string>
+    <string name="imsp_attach_slideshow">Aurkezpena</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">Deskargatzen...</string>
+    <string name="imsp_invite_friends_to_ipmsg">Gonbidatu lagunak iSMS erabiltzera</string>
+    <string name="imsp_multi_forward_tips_content">Birbidaltze anitza gauzatzeko, iSMS batzuk deskargatu behar dira lehenik.</string>
+    <string name="imsp_multi_forward_failed_part">Ezin izan da zenbait iSMS birbidali.</string>
+</resources>

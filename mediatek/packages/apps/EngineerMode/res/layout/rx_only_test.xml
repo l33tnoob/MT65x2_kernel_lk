@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/BTRxTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="@string/BTRxTitle" >
+        </TextView>
+
+        <!-- Rx Pattern type select -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:id="@+id/RxPattern"
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/RxPattern" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/RxPatternSpinner"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content" >
+            </Spinner>
+        </LinearLayout>
+
+        <!-- Rx Channel type select -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:id="@+id/RxChannel"
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/RxChannel" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/RxChannelSpinner"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content" >
+            </Spinner>
+        </LinearLayout>
+
+        <!-- Frequency -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/RxFrequency" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/RxFrequency"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content" >
+            </EditText>
+        </LinearLayout>
+
+        <!-- Rx Packet type select -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:id="@+id/RxPacketType"
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/RxPacketType" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/RxPacketTypeSpinner"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content" >
+            </Spinner>
+        </LinearLayout>
+
+        <!-- polling period value -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/RxPollPeriod" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/RxPollPeriod"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content" >
+            </EditText>
+        </LinearLayout>
+        <!-- Access Code value -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/RxAccessCode" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/RxAccessCode"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content" >
+            </EditText>
+        </LinearLayout>
+
+        <!-- data length value -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/RxDataLength" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/RxDataLength"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content" >
+            </EditText>
+        </LinearLayout>
+
+        <!-- Rx power control select -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal"
+            android:paddingTop="10dip" >
+
+            <CheckBox
+                android:id="@+id/RxPowerControl"
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:text="@string/RxPowerControl" >
+            </CheckBox>
+
+            <Spinner
+                android:id="@+id/RxPowerControlSpinner"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content" >
+            </Spinner>
+
+            <Button
+                android:id="@+id/RxSetPwr"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:text="@string/RxSetPwr" >
+            </Button>
+        </LinearLayout>
+
+        <!-- Rx Written function -->
+
+        <CheckBox
+            android:id="@+id/RxWritten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:checked="false"
+            android:text="@string/RxWritten" >
+        </CheckBox>
+
+        <!-- start/stop button -->
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="horizontal"
+            android:paddingTop="10dip" >
+
+            <Button
+                android:id="@+id/RxStart"
+                android:layout_width="155dip"
+                android:layout_height="wrap_content"
+                android:text="@string/RxStart" >
+            </Button>
+
+            <Button
+                android:id="@+id/RxStop"
+                android:layout_width="155dip"
+                android:layout_height="wrap_content"
+                android:text="@string/RxStop" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

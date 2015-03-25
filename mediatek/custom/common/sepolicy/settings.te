@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binsettings Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type settings_exec , exec_type, file_type;
+type settings ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive settings;
+init_daemon_domain(settings)
+
+
+# 20131122 Add Set Property Rule
+allow settings  property_type:property_service set;

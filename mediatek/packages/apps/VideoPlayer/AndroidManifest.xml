@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="com.mediatek.videoplayer"
+     android:versionCode="1" android:versionName="1.1">
+    <!-- MTK permission start -->
+    <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- Read/Write internal phone storage -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Read/Write external sdcard storage -->
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- MTK permission end -->
+
+    <application android:icon="@drawable/ic_video_app" android:label="@string/video_app_name"
+        android:supportsRtl="true">
+        <activity
+	        android:name=".MovieListActivity"
+	        android:configChanges="keyboardHidden|orientation|screenSize"
+	        android:theme="@android:style/Theme.Holo">
+	        <intent-filter>
+	            <action android:name="android.intent.action.MAIN" />
+	            <category android:name="android.intent.category.DEFAULT" />
+	            <category android:name="android.intent.category.LAUNCHER" />
+	        </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

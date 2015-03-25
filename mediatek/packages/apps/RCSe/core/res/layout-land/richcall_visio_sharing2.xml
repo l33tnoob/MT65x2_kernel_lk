@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff000000"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/visio_with_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.orangelabs.rcs.service.api.client.media.video.VideoSurfaceView
+            android:id="@+id/incoming_video_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1" />
+
+        <TableLayout
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dip"
+            android:background="#ff888888"
+            android:gravity="top|right" >
+
+            <com.orangelabs.rcs.service.api.client.media.video.VideoSurfaceView
+                android:id="@+id/outgoing_video_preview"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp" />
+
+            <Button
+                android:id="@+id/switch_cam_btn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="@string/label_switch_camera"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/outgoing_btn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="@string/label_start_outgoing_btn"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/incoming_btn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="@string/label_stop_incoming_btn"
+                android:textSize="10sp" />
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

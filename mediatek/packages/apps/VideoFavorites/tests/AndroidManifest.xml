@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.mediatek.videofavorites.tests"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="14" />
+
+    <!-- disable keyguard for instrument test-->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+            <uses-library android:name="android.test.runner" />
+            <activity android:name=".DismissKeyguardActivity"/>
+    </application>
+    
+    <!--
+    This declares that this application uses the instrumentation test runner targeting
+    the package of com.mediatek.videofavorites.  To run the tests use the command:
+    "adb shell am instrument -w com.mediatek.videofavorites.tests/android.test.InstrumentationTestRunner"
+    -->
+    <instrumentation android:name="android.test.InstrumentationTestRunner"
+                     android:targetPackage="com.mediatek.videofavorites"
+                     android:label="Tests for com.mediatek.videofavorites"/>
+
+    <!--
+    For JUnit report in Hudson CI.
+    -->
+    <instrumentation android:name="com.zutubi.android.junitreport.JUnitReportTestRunner"
+                     android:targetPackage="com.mediatek.videofavorites"
+                     android:label="Tests for com.mediatek.videofavorites"/>
+                                           
+    <!--
+    For video convert performance test.
+    -->                     
+    <instrumentation android:name="com.mediatek.videofavorites.tests.VideoConvertPerformanceTestRunner"
+        android:targetPackage="com.mediatek.videofavorites"
+        android:label="Video Favorites Convert Performance Test">
+    </instrumentation>                 
+                                           
+</manifest>

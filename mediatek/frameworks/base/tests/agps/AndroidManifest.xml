@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mediatek.agps.test"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="14" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <application>
+        <uses-library android:name="android.test.runner" />
+    </application>
+    
+    <instrumentation android:name="com.mediatek.agps.test.AgpsTCRunner"
+                        android:targetPackage="com.mediatek.agps.test"
+            android:label="AGPS Tests" />
+
+</manifest>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="48dp"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:gravity="center_vertical"
+    android:orientation = "horizontal">
+
+
+    <LinearLayout android:id="@+id/item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground">
+
+        <CheckBox android:id="@+id/item_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:checked="true"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:orientation="vertical" />
+    
+	    <RelativeLayout android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="12dip"
+	        android:layout_weight="1">
+	
+	        <ImageView android:id = "@+id/item_image"
+	            android:layout_height = "wrap_content"
+	            android:layout_width = "wrap_content"
+	            android:gravity="center_vertical" />
+	
+	        <!-- line 1 -->
+	        <TextView android:id="@+id/item_text"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft = "12dip"
+	            android:layout_toRightOf = "@id/item_image"
+	            android:gravity="center_vertical"
+	            android:singleLine="true"
+	            android:ellipsize="marquee"
+	            android:textSize="18sp"/>          
+	    </RelativeLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/item_config"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground">    
+
+	    <View
+	        android:layout_width="2dip"
+	        android:layout_height="match_parent"
+	        android:layout_marginTop="5dip"
+	        android:layout_marginBottom="5dip"
+	        android:background="@android:drawable/divider_horizontal_dark" />
+	    <ImageView
+	        android:id="@+id/setting"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:paddingLeft="15dip"
+	        android:paddingRight="20dip"
+	        android:src="@drawable/ic_setting"
+	        android:layout_gravity="center"
+	        android:background="?android:attr/selectableItemBackground" />
+	    
+	       <!-- android:paddingRight="?android:attr/scrollbarSize" -->
+    </LinearLayout>
+</LinearLayout>

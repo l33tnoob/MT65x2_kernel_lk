@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bincamshottest Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type camshottest_exec , exec_type, file_type;
+type camshottest ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive camshottest;
+init_daemon_domain(camshottest)
+
+
+# 20131122 Add Set Property Rule
+allow camshottest  property_type:property_service set;

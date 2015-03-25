@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binstressTestBench Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type stressTestBench_exec , exec_type, file_type;
+type stressTestBench ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive stressTestBench;
+init_daemon_domain(stressTestBench)
+
+
+# 20131122 Add Set Property Rule
+allow stressTestBench  property_type:property_service set;

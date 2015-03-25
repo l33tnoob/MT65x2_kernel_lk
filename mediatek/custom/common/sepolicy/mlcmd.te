@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binmlcmd Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type mlcmd_exec , exec_type, file_type;
+type mlcmd ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive mlcmd;
+init_daemon_domain(mlcmd)
+
+
+# 20131122 Add Set Property Rule
+allow mlcmd  property_type:property_service set;

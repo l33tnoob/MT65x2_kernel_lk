@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:gravity="center"
+            android:text="@string/cfu_textView"
+            android:textAppearance="?android:attr/textAppearanceLarge" >
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/cfu_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/cfu_default_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cfu_default" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/cfu_on_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cfu_turn_on" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/cfu_off_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cfu_turn_off" >
+            </RadioButton>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/cfu_set_button"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dip"
+            android:gravity="center"
+            android:text="@string/cfu_ok" >
+
+            <!-- android:gravity="right" -->
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,448 @@
+# ==============================================
+# Policy File of /system/bindumpstate Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type dumpstate_exec , exec_type, file_type;
+type dumpstate ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive dumpstate;
+init_daemon_domain(dumpstate)
+
+# 20131024 CTS_01
+allow dumpstate aee_aed:lnk_file read;
+allow dumpstate atci_service:dir { read open };
+allow dumpstate atci_service:file { read open };
+allow dumpstate atcid:dir { read search open };
+allow dumpstate bluetooth:dir getattr;
+allow dumpstate ccci_mdinit:dir { read getattr open search };
+allow dumpstate ccci_mdinit:lnk_file read;
+allow dumpstate device:chr_file { read ioctl open };
+allow dumpstate drmserver:binder call;
+allow dumpstate init:dir { read search open };
+allow dumpstate init:file { read getattr open };
+allow dumpstate init_shell:dir read;
+allow dumpstate linker_exec:file { read execute open };
+allow dumpstate media_app:dir getattr;
+allow dumpstate mobile_log_d:lnk_file read;
+allow dumpstate netd:lnk_file read;
+allow dumpstate netdiag:lnk_file read;
+allow dumpstate nfc:dir getattr;
+allow dumpstate ping_exec:file { read execute open execute_no_trans };
+allow dumpstate radio:binder call;
+allow dumpstate self:capability sys_ptrace;
+allow dumpstate self:udp_socket { create connect };
+allow dumpstate servicemanager:binder call;
+allow dumpstate servicemanager:dir { read search open };
+allow dumpstate servicemanager:file { read getattr open };
+allow dumpstate surfaceflinger:lnk_file read;
+allow dumpstate thermald:dir { read open };
+allow dumpstate toolbox_exec:file { read execute open execute_no_trans };
+allow dumpstate vold:dir { read search };
+allow dumpstate wifi_data_file:dir remove_name;
+allow dumpstate wifi_data_file:sock_file unlink;
+
+
+# 20131024 CTS_02
+allow dumpstate aee_aed:dir { read open };
+allow dumpstate atci_service:dir search;
+allow dumpstate atci_service:file getattr;
+allow dumpstate atci_service:lnk_file read;
+allow dumpstate atcid:file { read getattr open };
+allow dumpstate atcid:lnk_file read;
+allow dumpstate featured:dir { read search open };
+allow dumpstate featured:file { read getattr open };
+allow dumpstate init:lnk_file read;
+allow dumpstate kernel:dir { read open };
+allow dumpstate kernel:file { read getattr open };
+allow dumpstate kernel:lnk_file read;
+allow dumpstate logwrapper:dir { read search open };
+allow dumpstate mediaserver:binder call;
+allow dumpstate mobile_log_d:dir { read open };
+allow dumpstate netd:dir read;
+allow dumpstate nfc:binder call;
+allow dumpstate rild:file getattr;
+allow dumpstate self:capability { setuid sys_resource setgid dac_override };
+allow dumpstate self:udp_socket getattr;
+allow dumpstate servicemanager:lnk_file read;
+allow dumpstate shell:file { read getattr open };
+allow dumpstate su_exec:file { read execute open execute_no_trans };
+allow dumpstate system_app:dir search;
+allow dumpstate system_app:file read;
+allow dumpstate system_data_file:dir { write remove_name add_name };
+allow dumpstate system_data_file:file rename;
+allow dumpstate system_server:binder call;
+allow dumpstate system_server:dir search;
+allow dumpstate system_server:file { read getattr open };
+allow dumpstate unlabeled:filesystem getattr;
+allow dumpstate vdc_exec:file { read execute open execute_no_trans };
+allow dumpstate vold:dir open;
+allow dumpstate vold:unix_stream_socket connectto;
+allow dumpstate vold_socket:sock_file write;
+allow dumpstate vtservice:binder call;
+
+
+# 20131028 CTS_03
+allow dumpstate aal:binder call;
+allow dumpstate adbd:dir { read search open };
+allow dumpstate aee_aed:dir search;
+allow dumpstate aee_aed:file { read getattr open };
+allow dumpstate atci_service:dir getattr;
+allow dumpstate bmm050d:dir search;
+allow dumpstate ccci_fsd:dir { read search open };
+allow dumpstate ccci_fsd:file { read open };
+allow dumpstate ccci_mdinit:file { read open };
+allow dumpstate debugfs:file read;
+allow dumpstate dumpsys_exec:file { read execute open execute_no_trans };
+allow dumpstate featured:lnk_file read;
+allow dumpstate kernel:dir { search getattr };
+allow dumpstate kernel:system syslog_read;
+allow dumpstate logwrapper:file read;
+allow dumpstate logwrapper:lnk_file read;
+allow dumpstate netd:dir open;
+allow dumpstate procrank_exec:file { read execute open execute_no_trans };
+allow dumpstate radio:dir search;
+allow dumpstate radio:file { read getattr open };
+allow dumpstate resmon:file { read getattr open };
+allow dumpstate self:capability2 syslog;
+allow dumpstate servicemanager:dir getattr;
+allow dumpstate shared_app:dir search;
+allow dumpstate shared_app:file { read getattr open };
+allow dumpstate shell:dir search;
+allow dumpstate showmap_exec:file { read execute open execute_no_trans };
+allow dumpstate system_app:file { getattr open };
+allow dumpstate system_data_file:file { write create open setattr };
+allow dumpstate vold:dir getattr;
+allow dumpstate vold:file { read open };
+allow dumpstate vold:lnk_file read;
+
+
+# 20131028 CTS_04
+allow dumpstate GoogleOtaBinder:binder call;
+allow dumpstate aal:dir { read search open };
+allow dumpstate aal:file { read getattr open };
+allow dumpstate aee_aed:unix_stream_socket connectto;
+allow dumpstate bluetooth:dir { read search open };
+allow dumpstate bluetooth:file { read getattr open };
+allow dumpstate bluetooth:lnk_file read;
+allow dumpstate ccci_fsd:file getattr;
+allow dumpstate ccci_fsd:lnk_file read;
+allow dumpstate ccci_mdinit:file getattr;
+allow dumpstate dm_agent_binder:binder call;
+allow dumpstate init_shell:dir open;
+allow dumpstate installd:dir read;
+allow dumpstate logwrapper:file { getattr open };
+allow dumpstate matv:dir { read search open };
+allow dumpstate mdlogger:dir { read open };
+allow dumpstate mediaserver:dir { read search open };
+allow dumpstate mobile_log_d:dir search;
+allow dumpstate mobile_log_d:file { read getattr open };
+allow dumpstate netd:dir search;
+allow dumpstate netd:file read;
+allow dumpstate netdiag:dir search;
+allow dumpstate netdiag:file read;
+allow dumpstate nfc:dir search;
+allow dumpstate nfc:file read;
+allow dumpstate nvram_agent_binder:binder call;
+allow dumpstate release_app:file getattr;
+allow dumpstate shell:dir { read open };
+allow dumpstate surfaceflinger:dir { read search open };
+allow dumpstate surfaceflinger:file { read getattr open };
+allow dumpstate system_server:dir { read getattr open };
+allow dumpstate vold:file getattr;
+
+
+# 20131028 CTS_05
+allow dumpstate GoogleOtaBinder:dir { read open };
+allow dumpstate aal:dir getattr;
+allow dumpstate aal:lnk_file read;
+allow dumpstate batterywarning:dir { read search open };
+allow dumpstate batterywarning:file { read getattr open };
+allow dumpstate bmm050d:file { read getattr open };
+allow dumpstate dm_agent_binder:dir { read search open };
+allow dumpstate dm_agent_binder:file { read open };
+allow dumpstate em_svr:dir { read open };
+allow dumpstate gsm0710muxd:dir { read open };
+allow dumpstate gsm0710muxd:file { read getattr open };
+allow dumpstate keystore:binder call;
+allow dumpstate librank_exec:file { read execute open execute_no_trans };
+allow dumpstate mtkbt:dir { read open };
+allow dumpstate netd:dir getattr;
+allow dumpstate netd:file { getattr open };
+allow dumpstate netdiag:dir { read getattr open };
+allow dumpstate netdiag:file { getattr open };
+allow dumpstate nvram_agent_binder:dir { read open };
+allow dumpstate surfaceflinger:binder call;
+allow dumpstate surfaceflinger:dir getattr;
+allow dumpstate zygote:dir search;
+allow dumpstate zygote:file { read getattr open };
+allow dumpstate zygote:lnk_file read;
+
+
+# 20131028 CTS_06
+allow dumpstate GoogleOtaBinder:file { read getattr open };
+allow dumpstate adbd:file { read open };
+allow dumpstate aee_aed:dir getattr;
+allow dumpstate atcid:dir getattr;
+allow dumpstate bmm050d:dir { read open };
+allow dumpstate ccci_fsd:dir getattr;
+allow dumpstate debugfs:file getattr;
+allow dumpstate dm_agent_binder:file getattr;
+allow dumpstate drmserver:dir search;
+allow dumpstate drmserver:file read;
+allow dumpstate drmserver:lnk_file read;
+allow dumpstate featured:dir getattr;
+allow dumpstate hald:dir { read search getattr };
+allow dumpstate hald:file { read open };
+allow dumpstate hald:lnk_file read;
+allow dumpstate init:dir getattr;
+allow dumpstate logcat_exec:file { read execute open };
+allow dumpstate logwrapper:dir getattr;
+allow dumpstate mobile_log_d:dir getattr;
+allow dumpstate mtkbt:dir search;
+allow dumpstate mtkbt:file { read getattr open };
+allow dumpstate nvram_agent_binder:dir search;
+allow dumpstate nvram_agent_binder:file read;
+allow dumpstate resmon:dir { read open };
+allow dumpstate rild:dir search;
+allow dumpstate rild:file { read open };
+allow dumpstate thermal:dir { read open };
+allow dumpstate zygote:dir { read getattr open };
+
+
+# 20131028 CTS_07
+allow dumpstate GoogleOtaBinder:dir search;
+allow dumpstate batterywarning:lnk_file read;
+allow dumpstate bmm050d:lnk_file read;
+allow dumpstate dm_agent_binder:lnk_file read;
+allow dumpstate drmserver:dir { read open };
+allow dumpstate drmserver:file { getattr open };
+allow dumpstate hald:file getattr;
+allow dumpstate installd:dir search;
+allow dumpstate installd:file { read open };
+allow dumpstate installd:lnk_file read;
+allow dumpstate keystore:dir search;
+allow dumpstate keystore:file read;
+allow dumpstate keystore:lnk_file read;
+allow dumpstate matv:file { read getattr open };
+allow dumpstate matv:lnk_file read;
+allow dumpstate mediaserver:file read;
+allow dumpstate mediaserver:lnk_file read;
+allow dumpstate mtk_agpsd:lnk_file read;
+allow dumpstate mtkbt:binder call;
+allow dumpstate mtkbt:lnk_file read;
+allow dumpstate netcfg_exec:file { read execute open execute_no_trans };
+allow dumpstate nfc:file { getattr open };
+allow dumpstate nvram_agent_binder:file { getattr open };
+allow dumpstate qtaguid_proc:file { read open };
+allow dumpstate self:capability chown;
+allow dumpstate sqlite3_exec:file { read execute open execute_no_trans };
+allow dumpstate system_data_file:file lock;
+allow dumpstate thermal:file { read getattr open };
+allow dumpstate thermald:dir search;
+allow dumpstate thermald:file { read getattr open };
+allow dumpstate vtservice:dir { read search open };
+allow dumpstate vtservice:file { read open };
+allow dumpstate vtservice:lnk_file read;
+
+
+# 20131028 CTS_08
+allow dumpstate GoogleOtaBinder:lnk_file read;
+allow dumpstate batterywarning:dir getattr;
+allow dumpstate bmm050d:dir getattr;
+allow dumpstate dm_agent_binder:dir getattr;
+allow dumpstate drmserver:dir getattr;
+allow dumpstate hald:dir open;
+allow dumpstate init_shell:dir { getattr search };
+allow dumpstate installd:dir { getattr open };
+allow dumpstate keystore:dir { read getattr open };
+allow dumpstate keystore:file open;
+allow dumpstate matv:dir getattr;
+allow dumpstate media_app:dir search;
+allow dumpstate media_app:file { read getattr open };
+allow dumpstate mediaserver:dir getattr;
+allow dumpstate mediaserver:file { getattr open };
+allow dumpstate mtk_agpsd:dir { read search open getattr };
+allow dumpstate mtk_agpsd:file { read open };
+allow dumpstate nvram_agent_binder:lnk_file read;
+allow dumpstate platform_app:dir search;
+allow dumpstate resmon:dir search;
+allow dumpstate resmon:lnk_file read;
+allow dumpstate thermal:dir { search getattr };
+allow dumpstate thermal:lnk_file read;
+allow dumpstate thermald:dir getattr;
+allow dumpstate thermald:lnk_file read;
+allow dumpstate untrusted_app:dir search;
+allow dumpstate untrusted_app:file { read open };
+allow dumpstate vtservice:dir getattr;
+
+
+# 20131028 CTS_09
+allow dumpstate BGW:dir { read search open };
+allow dumpstate BGW:file { read open };
+allow dumpstate BGW:lnk_file read;
+allow dumpstate GoogleOtaBinder:dir getattr;
+allow dumpstate adbd:file getattr;
+allow dumpstate adbd:lnk_file read;
+allow dumpstate em_svr:dir search;
+allow dumpstate em_svr:file { read getattr open };
+allow dumpstate em_svr:lnk_file read;
+allow dumpstate gsm0710muxd:dir { search getattr };
+allow dumpstate gsm0710muxd:lnk_file read;
+allow dumpstate init_shell:file { read getattr open };
+allow dumpstate init_shell:lnk_file read;
+allow dumpstate keystore:file getattr;
+allow dumpstate mdlogger:dir { search getattr };
+allow dumpstate mdlogger:lnk_file read;
+allow dumpstate mtk_agpsd:file getattr;
+allow dumpstate mtkbt:dir getattr;
+allow dumpstate nvram_agent_binder:dir getattr;
+allow dumpstate platform_app:dir read;
+allow dumpstate platform_app:file { read getattr open };
+allow dumpstate release_app:dir search;
+allow dumpstate release_app:file { read open };
+allow dumpstate rild:dir { read open };
+allow dumpstate rild:lnk_file read;
+allow dumpstate shell:dir getattr;
+allow dumpstate system_app:dir { read open };
+allow dumpstate untrusted_app:file getattr;
+
+
+# 20131028 CTS_10
+allow dumpstate BGW:dir getattr;
+allow dumpstate adbd:dir getattr;
+allow dumpstate em_svr:dir getattr;
+allow dumpstate installd:file getattr;
+allow dumpstate ip_exec:file { read execute open execute_no_trans };
+allow dumpstate logcat_exec:file execute_no_trans;
+allow dumpstate mdlogger:file { read getattr open };
+allow dumpstate media_app:lnk_file read;
+allow dumpstate mnld:file { read getattr open };
+allow dumpstate platform_app:dir { getattr open };
+allow dumpstate platform_app:lnk_file read;
+allow dumpstate platform_app:process signal;
+allow dumpstate radio:dir getattr;
+allow dumpstate resmon:dir getattr;
+allow dumpstate rild:dir getattr;
+allow dumpstate self:capability kill;
+allow dumpstate self:netlink_route_socket { write getattr setopt bind create nlmsg_read };
+allow dumpstate self:udp_socket ioctl;
+allow dumpstate shared_app:dir getattr;
+allow dumpstate shell:lnk_file read;
+allow dumpstate system_app:dir getattr;
+allow dumpstate system_app:lnk_file read;
+allow dumpstate system_app:process signal;
+allow dumpstate system_server:lnk_file read;
+allow dumpstate system_server:process signal;
+allow dumpstate untrusted_app:dir { read getattr open };
+
+
+# 20131028 CTS_11
+allow dumpstate BGW:file getattr;
+allow dumpstate bluetooth:process signal;
+allow dumpstate media_app:dir { read open };
+allow dumpstate nfc:dir { read open };
+allow dumpstate nfc:lnk_file read;
+allow dumpstate radio:dir { read open };
+allow dumpstate radio:lnk_file read;
+allow dumpstate radio:process signal;
+allow dumpstate release_app:dir { read getattr open };
+allow dumpstate release_app:lnk_file read;
+allow dumpstate release_app:process signal;
+allow dumpstate self:rawip_socket create;
+allow dumpstate shared_app:dir { read open };
+allow dumpstate shared_app:lnk_file read;
+allow dumpstate shared_app:process signal;
+allow dumpstate untrusted_app:lnk_file read;
+allow dumpstate untrusted_app:process signal;
+allow dumpstate vtservice:file getattr;
+
+
+# 20131028 CTS_12
+allow dumpstate ip6tables_exec:file { read execute open execute_no_trans };
+allow dumpstate iptables_exec:file { read execute open execute_no_trans };
+allow dumpstate media_app:process signal;
+allow dumpstate nfc:process signal;
+allow dumpstate self:capability { net_admin net_raw };
+allow dumpstate self:netlink_route_socket read;
+allow dumpstate self:rawip_socket getopt;
+allow dumpstate sysfs:file write;
+
+
+# 20131028 CTS_13
+allow dumpstate logwrapper:unix_dgram_socket sendto;
+allow dumpstate wifi_data_file:dir { write add_name };
+allow dumpstate wifi_data_file:sock_file { create setattr };
+allow dumpstate wpa_cli_exec:file { read execute open execute_no_trans };
+allow dumpstate wpa_wlan0_socket:sock_file write;
+
+
+
+# 20131122 Add Set Property Rule
+allow dumpstate  property_type:property_service set;
+
+# 20131213 KKMR1_CTS_01
+allow dumpstate atci_service:process getattr;
+allow dumpstate atcid:process getattr;
+allow dumpstate emcsmdlogger:dir getattr;
+allow dumpstate emcsmdlogger:lnk_file read;
+allow dumpstate healthd:binder call;
+allow dumpstate healthd:dir { read search open getattr };
+allow dumpstate healthd:file { read getattr open };
+allow dumpstate healthd:lnk_file read;
+allow dumpstate healthd:process getattr;
+allow dumpstate init:process getattr;
+allow dumpstate kernel:process getattr;
+allow dumpstate memsicd3416x:dir { read search open getattr };
+allow dumpstate memsicd3416x:file { read getattr open };
+allow dumpstate memsicd3416x:lnk_file read;
+allow dumpstate sdcardd:dir { read getattr open search };
+allow dumpstate sdcardd:file { read getattr open };
+allow dumpstate sdcardd:lnk_file read;
+allow dumpstate servicemanager:process getattr;
+
+
+# 20131213 KKMR1_CQ_01
+allow dumpstate atci_service:process getattr;
+allow dumpstate atcid:process getattr;
+allow dumpstate ccci_fsd:process getattr;
+allow dumpstate cgroup:dir { create add_name };
+allow dumpstate featured:process getattr;
+allow dumpstate healthd:binder call;
+allow dumpstate healthd:dir { read search open getattr };
+allow dumpstate healthd:file { read getattr open };
+allow dumpstate healthd:lnk_file read;
+allow dumpstate healthd:process getattr;
+allow dumpstate init:binder call;
+allow dumpstate init:process getattr;
+allow dumpstate kernel:process getattr;
+allow dumpstate logwrapper:process getattr;
+allow dumpstate mnld:dir getattr;
+allow dumpstate sdcardd:dir { read getattr open search };
+allow dumpstate sdcardd:file { read getattr open };
+allow dumpstate sdcardd:lnk_file read;
+allow dumpstate self:rawip_socket { write read setopt };
+allow dumpstate servicemanager:process getattr;
+allow dumpstate vold:process getattr;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow dumpstate wpa:dir { read search open };
+allow dumpstate wpa:file { read getattr open };
+allow dumpstate wpa:lnk_file read;
+

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mediatek.bluetooth"
+    android:sharedUserId="android.uid.mtkbt"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <application
+        android:description="@string/app_description"
+        android:icon="@drawable/bluetooth"
+        android:label="@string/app_label"
+        android:persistent="true" >
+
+        <!-- ********************************************************************************** -->
+        <!-- OPP BEG -->
+        
+        <!-- Allows temporarily whitelisting Bluetooth addresses for sharing -->
+		    <permission
+		        android:description="@string/permdesc_bluetoothWhitelist"
+		        android:label="@string/permlab_bluetoothWhitelist"
+		        android:name="com.android.permission.WHITELIST_BLUETOOTH_DEVICE"
+		        android:protectionLevel="signature" />
+		
+		    <!-- Allows receiving handover status broadcasts from Bluetooth -->
+		    <permission
+		        android:description="@string/permdesc_handoverStatus"
+		        android:label="@string/permlab_handoverStatus"
+		        android:name="com.android.permission.HANDOVER_STATUS"
+		        android:protectionLevel="signature" />
+        
+        <activity
+            android:excludeFromRecents="true"
+            android:label="@string/bt_oppc_push_action_label"
+            android:name=".opp.mmi.OppClientActivity"
+            android:theme="@*android:style/Theme.Holo.Dialog.Alert" />
+        <activity
+            android:configChanges="orientation"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:name=".opp.mmi.OppServerActivity"
+            android:theme="@*android:style/Theme.Holo.Dialog.Alert" >
+            <intent-filter >
+                <action android:name="com.mediatek.bluetooth.opp.action.PUSH_REQUEST" />
+                <action android:name="com.mediatek.bluetooth.opp.action.PULL_REQUEST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:excludeFromRecents="true"
+            android:name=".opp.mmi.OppCancelActivity"
+            android:theme="@*android:style/Theme.Holo.Dialog.Alert" />
+
+        <service android:name=".opp.adp.OppService" />
+        <service
+            android:exported="true"
+            android:name=".opp.adp.BluetoothOppService" >
+            <intent-filter >
+                <action android:name="android.bluetooth.BluetoothOpp.Client" />
+                <action android:name="android.bluetooth.BluetoothOpp.Server" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".opp.adp.OppReceiver" >
+            <intent-filter >
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".opp.adp.OppHandoverReceiver" >
+            <intent-filter >
+                <action android:name="android.btopp.intent.action.WHITELIST_DEVICE" />
+                <action android:name="android.btopp.intent.action.STOP_HANDOVER_TRANSFER" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="android.btopp.intent.action.HANDOVER_SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="android.btopp.intent.action.HANDOVER_SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </receiver>
+        <!-- OPP END -->
+        <!-- ********************************************************************************** -->
+
+    </application>
+
+</manifest>

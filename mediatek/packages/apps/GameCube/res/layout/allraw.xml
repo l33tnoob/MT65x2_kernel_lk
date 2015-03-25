@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@+id/TableLayout01"
+			 android:layout_width="fill_parent" 
+			 android:layout_height="fill_parent" 
+			 xmlns:android="http://schemas.android.com/apk/res/android">
+		 
+    <TableRow>
+		<Button android:text="@string/txtFast" android:id="@+id/btn_fast" 
+				android:textSize="10sp" 
+				android:layout_weight="1">
+				</Button>
+		<Button android:text="@string/txtGame" android:id="@+id/btn_game"
+				android:textSize="10sp" 
+				android:layout_weight="1">
+				</Button>
+		<Button android:text="@string/txtUI" android:id="@+id/btn_ui"
+				android:textSize="10sp"		 
+				android:layout_weight="1">		
+				</Button>
+		<Button android:text="@string/txtNorm" android:id="@+id/btn_norm"
+				android:textSize="10sp"		
+		 		android:layout_weight="1">
+				</Button>		    
+    </TableRow>			 			 			 
+    <View
+    android:layout_height="2dip"
+    android:background="#FF909090" android:id="@+id/acc_sep"/>
+
+    <TableRow>            
+        <TextView android:layout_weight="1" android:text="@string/txtAcc" android:padding="3dip" android:textStyle="bold"/>
+        <TextView android:layout_weight="1" android:id="@+id/acc_x" android:padding="3dip" />        
+    </TableRow>	
+    <TableRow>            
+        <TextView android:layout_weight="1" android:id="@+id/acc_accuracy" android:padding="3dip" />
+        <TextView android:layout_weight="1" android:id="@+id/acc_y" android:padding="3dip" />        
+    </TableRow>	
+    <TableRow>            
+        <TextView android:layout_weight="1" android:id="@+id/acc_delay" android:padding="1dip" />
+        <TextView android:layout_weight="1" android:id="@+id/acc_z" android:padding="1dip" />        
+    </TableRow>	
+    <View
+    android:layout_height="2dip"
+    android:background="#FF909090" android:id="@+id/mag_sep"/>   
+    <TableRow>            
+        <TextView android:layout_weight="1" android:text="@string/txtMag" android:padding="1dip" android:textStyle="bold"/>
+        <TextView android:layout_weight="1" android:id="@+id/mag_x" android:padding="1dip" />        
+    </TableRow>	
+    <TableRow>            
+        <TextView android:layout_weight="1" android:id="@+id/mag_accuracy" android:padding="1dip" />
+        <TextView android:layout_weight="1" android:id="@+id/mag_y" android:padding="1dip" />        
+    </TableRow>	
+    <TableRow>            
+        <TextView android:layout_weight="1" android:id="@+id/mag_delay" android:padding="1dip" />
+        <TextView android:layout_weight="1" android:id="@+id/mag_z" android:padding="1dip" />        
+    </TableRow>	
+    <View
+    android:layout_height="2dip"
+    android:background="#FF909090" android:id="@+id/ori_sep" />   
+    <TableRow>            
+        <TextView android:layout_weight="1" android:text="@string/txtOri" android:padding="1dip"  android:textStyle="bold"/>
+        <TextView android:layout_weight="1" android:id="@+id/ori_azimuth" android:padding="1dip" />        
+    </TableRow>	
+    <TableRow>            
+        <TextView android:layout_weight="1" android:id="@+id/ori_accuracy" android:padding="1dip" />
+        <TextView android:layout_weight="1" android:id="@+id/ori_pitch" android:padding="1dip" />        
+    </TableRow>	
+    <TableRow>            
+        <TextView android:layout_weight="1" android:id="@+id/ori_delay" android:padding="1dip" />
+        <TextView android:layout_weight="1" android:id="@+id/ori_roll" android:padding="1dip" />        
+    </TableRow>	    
+    <View
+    android:layout_height="2dip"
+    android:background="#FF909090" android:id="@+id/als_sep"/>   
+    <TableRow>            
+        <TextView android:layout_weight="1" android:text="@string/txtALS" android:padding="1dip"  android:textStyle="bold"/>
+        <TextView android:layout_weight="1" android:id="@+id/als_lux" android:padding="1dip" />        
+    </TableRow>	
+    <TableRow>            
+        <TextView android:layout_weight="1" android:id="@+id/als_accuracy" android:padding="1dip" />
+        <TextView android:layout_weight="1" android:text="@string/empty" android:padding="1dip" />        
+    </TableRow>	
+    <TableRow>            
+        <TextView android:layout_weight="1" android:id="@+id/als_delay" android:padding="1dip" />
+        <TextView android:layout_weight="1" android:text="@string/empty" android:padding="1dip" />        
+    </TableRow>	    
+    <View
+    android:layout_height="2dip"
+    android:background="#FF909090" android:id="@+id/ps_sep"/>   
+    <TableRow>            
+        <TextView android:layout_weight="1" android:text="@string/txtPS" android:padding="1dip"  android:textStyle="bold"/>
+        <TextView android:layout_weight="1" android:id="@+id/ps_dis" android:padding="1dip" />        
+    </TableRow>	
+    <TableRow>            
+        <TextView android:layout_weight="1" android:id="@+id/ps_accuracy" android:padding="1dip" />
+        <TextView android:layout_weight="1" android:text="@string/empty" android:padding="1dip" />        
+    </TableRow>	
+    <TableRow>            
+        <TextView android:layout_weight="1" android:id="@+id/ps_delay" android:padding="1dip" />
+        <TextView android:layout_weight="1" android:text="@string/empty" android:padding="1dip" />        
+    </TableRow>	
+</TableLayout>
+

@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binrtt Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type rtt_exec , exec_type, file_type;
+type rtt ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive rtt;
+init_daemon_domain(rtt)
+
+
+# 20131122 Add Set Property Rule
+allow rtt  property_type:property_service set;

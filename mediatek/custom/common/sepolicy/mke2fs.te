@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binmke2fs Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type mke2fs_exec , exec_type, file_type;
+type mke2fs ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive mke2fs;
+init_daemon_domain(mke2fs)
+
+
+# 20131122 Add Set Property Rule
+allow mke2fs  property_type:property_service set;

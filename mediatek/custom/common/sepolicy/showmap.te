@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbinshowmap Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type showmap_exec , exec_type, file_type;
+type showmap ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive showmap;
+init_daemon_domain(showmap)
+
+
+# 20131122 Add Set Property Rule
+allow showmap  property_type:property_service set;

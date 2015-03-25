@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:gravity="center"
+        android:text="@string/dfo_resolution_hint" />
+
+    <RadioGroup
+        android:id="@+id/dfo_resolution_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:gravity="left"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/dfo_resolution_fhd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dfo_resolution_fhd" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/dfo_resolution_hd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dfo_resolution_hd" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/dfo_resolution_qhd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dfo_resolution_qhd" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/dfo_resolution_fwvga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dfo_resolution_fwvga" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/dfo_resolution_wvga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dfo_resolution_wvga" >
+        </RadioButton>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/dfo_resolution_set"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:gravity="center"
+        android:text="@string/dfo_resolution_set" />
+
+</LinearLayout>

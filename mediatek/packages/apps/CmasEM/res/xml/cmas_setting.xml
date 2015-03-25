@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<CheckBoxPreference
+     	     android:key="enable_cmas_rmt_support"
+	         android:title="@string/cmas_rmt_title"
+	         android:summary="@string/cmas_rmt_summary"
+	         android:persistent="false">
+	</CheckBoxPreference>
+	<CheckBoxPreference
+     	     android:key="enable_cmas_exercise_support"
+	         android:title="@string/cmas_exercise_title" 
+	         android:summary="@string/cmas_exercise_summary"
+	         android:persistent="false">
+	</CheckBoxPreference>
+	
+</PreferenceScreen>

@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binmfv_ut Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type mfv_ut_exec , exec_type, file_type;
+type mfv_ut ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive mfv_ut;
+init_daemon_domain(mfv_ut)
+
+
+# 20131122 Add Set Property Rule
+allow mfv_ut  property_type:property_service set;

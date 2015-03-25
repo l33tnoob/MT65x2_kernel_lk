@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="confirm_radio_title">SIM désactivé</string>
+	<string name="confirm_radio_msg"> 		<xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> 		 "Le mode aéronautique est activé, souhaitez-vous le désactiver?" 	</string>
+	<string name="confirm_radio_msg_single">SIM est maintenant désactivée. Souhaitez-vous activer cette carte SIM?</string>
+	<string name="confirm_pin_title">Verrouillage PIN</string>
+	<string name="confirm_pin_msg">"La carte SIM que vous êtes sur le point d'utiliser est verrouillée. Souhaitez-vous la déverrouiller?"</string>
+	<string name="confirm_simmelock_title">Verrouillage SIM ME</string>
+	<string name="confirm_simmelock_msg">"La fente SIM que vous êtes sur le point d'utiliser est verrouillée. Souhaitez-vous la déverrouiller?"</string>
+	<string name="confirm_fdn_title">FDN activée</string>
+	<string name="confirm_fdn_msg">La liste des numéros fixes est activée.</string>
+	<string name="confirm_roaming_title">Avertissement itinérance</string>
+	<string name="confirm_roaming_msg">"La carte SIM que vous vous apprêtez à utiliser est actuellement en itinérance. Aucune SIM locale n'est disponible. Continuer?"</string>
+	<string name="confirm_roaming_withPrefer_msg">"La carte SIM que vous vous apprêtez à utiliser est actuellement en itinérance. Souhaitez-vous continuer via la SIM locale?"</string>
+	<string name="confirm_roaming_lbutton">Continuer</string>
+	<string name="confirm_roaming_rbutton">Annuler</string>
+	<string name="confirm_roamingWithPrefer_lbutton">SIM locale</string>
+	<string name="confirm_roamingWithPrefer_rbutton">SIM itinérance</string>
+	<string name="confirm_radio_lbutton">Activer</string>
+	<string name="confirm_unlock_lbutton">Déverrouiller</string>
+	<string name="confirm_unlock_fail">Opération annulée</string>
+	<string name="confirm_turnon_radio_fail">Opération annulée</string>
+	<string name="confirm_permit_roaming_fail">"Vous avez annulé cette action d'itinérance SIM"</string>
+	<string name="confirm_sim_locked_message">"La scheda SIM è stata bloccata permanentemente"</string>
+	<string name="confirm_slot_locked_message">"La fente a été définitivement verrouillée."</string>
+	<string name="app_name">ServiceConnexionCellulaire</string>  
+	<string name="button_ok">Ok</string>  
+<string name="button_cancel">"Annuler"</string>
+    <string name="confirm_radio_title_uim">UIM désactivée</string>
+    <string name="confirm_radio_title_card">Carte désactivée</string>
+    <string name="confirm_radio_msg_uim"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> est maintenant désactivé. Souhaitez-vous activer cette carte UIM?</string>
+    <string name="confirm_radio_msg_card"><xliff:g id="operator_name" example="CMCC">%1$s</xliff:g> est maintenant désactivé. Souhaitez-vous activer cette carte?</string>
+    <string name="confirm_radio_flight_mode_on_and_msg">Le mode aéronautique est activé et</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> est maintenant désactivé. Souhaitez-vous désactiver le mode aéronautique et activer cette carte SIM?</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg_uim"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> est maintenant désactivé. Souhaitez-vous désactiver le mode aéronautique et activer cette carte UIM?</string>
+    <string name="confirm_radio_flight_mode_on_sim_off_msg_card"><xliff:g id="operator_name" example="CMCC"> %1$s</xliff:g> est maintenant désactivé. Souhaitez-vous désactiver le mode aéronautique et activer cette carte?</string>
+    <string name="confirm_radio_flight_mode_on_sim_on_msg">Le mode aéronautique est activé. Souhaitez-vous le désactiver?</string>
+    <string name="confirm_pin_title_uim">UIM verrouillée</string>
+    <string name="confirm_pin_title_card">Carte verrouillée</string>
+    <string name="confirm_pin_msg_uim">"La carte UIM sélectionnée est maintenant verrouillée. Veuillez d'abord la déverrouiller."</string>
+    <string name="confirm_pin_msg_card">"La carte sélectionnée est maintenant verrouillée. Veuillez d'abord la déverrouiller."</string>
+    <string name="confirm_simmelock_msg_uim">"La fente UIM sélectionnée est maintenant verrouillée. Veuillez d'abord la déverrouiller."</string>
+    <string name="confirm_simmelock_msg_card">"La fente sélectionnée est maintenant verrouillée. Veuillez d'abord la déverrouiller."</string>
+    <string name="confirm_roaming_msg_uim">La carte UIM que vous allez utiliser est en itinérance. Aucune UIM locale disponible actuellement. Continuer?</string>
+    <string name="confirm_roaming_msg_card">La carte que vous allez utiliser est en itinérance. Aucune carte locale disponible actuellement. Continuer?</string>
+    <string name="confirm_roaming_withPrefer_msg_uim">"La carte SIM que vous allez utiliser est en itinérance. Souhaitez-vous continuer via l'UIM locale?"</string>
+    <string name="confirm_roaming_withPrefer_msg_card">La carte SIM que vous allez utiliser est en itinérance. Souhaitez-vous continuer via la carte locale?</string>
+    <string name="confirm_roamingWithPrefer_lbutton_uim">UIM locale</string>
+    <string name="confirm_roamingWithPrefer_lbutton_card">Carte locale</string>
+    <string name="confirm_roamingWithPrefer_rbutton_uim">UIM en itinérance</string>
+    <string name="confirm_roamingWithPrefer_rbutton_card">Carte en itinérance</string>
+    <string name="confirm_roaming_for3Sims_msg">La carte SIM que vous allez utiliser est en itinérance. Continuer?</string>
+    <string name="confirm_roaming_for3Sims_msg_uim">La carte UIM que vous allez utiliser est en itinérance. Continuer?</string>
+    <string name="confirm_roaming_for3Sims_msg_card">La carte que vous allez utiliser est en itinérance. Continuer?</string>
+    <string name="confirm_permit_roaming_fail_uim">"Vous annulez cette action sur l'UIM en itinérance"</string>
+    <string name="confirm_permit_roaming_fail_card">Vous annulez cette action sur la carte en itinérance</string>
+    <string name="confirm_sim_locked_message_uim">La carte UIM a été définitivement verrouillée</string>
+    <string name="confirm_sim_locked_message_card">La carte a été définitivement verrouillée</string>
+    <string name="button_yes">"Oui"</string>
+    <string name="button_no">"Non"</string>
+    </resources>

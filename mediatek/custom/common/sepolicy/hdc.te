@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binhdc Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type hdc_exec , exec_type, file_type;
+type hdc ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive hdc;
+init_daemon_domain(hdc)
+
+
+# 20131122 Add Set Property Rule
+allow hdc  property_type:property_service set;

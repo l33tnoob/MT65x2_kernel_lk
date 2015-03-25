@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbinnetperf Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type netperf_exec , exec_type, file_type;
+type netperf ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive netperf;
+init_daemon_domain(netperf)
+
+
+# 20131122 Add Set Property Rule
+allow netperf  property_type:property_service set;

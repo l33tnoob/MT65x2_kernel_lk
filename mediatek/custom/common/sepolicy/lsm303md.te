@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binlsm303md Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type lsm303md_exec , exec_type, file_type;
+type lsm303md ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive lsm303md;
+init_daemon_domain(lsm303md)
+
+
+# 20131122 Add Set Property Rule
+allow lsm303md  property_type:property_service set;

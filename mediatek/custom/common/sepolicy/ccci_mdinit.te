@@ -1,0 +1,73 @@
+# ==============================================
+# Policy File of /system/binccci_mdinit Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type ccci_mdinit_exec , exec_type, file_type;
+type ccci_mdinit ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive ccci_mdinit;
+init_daemon_domain(ccci_mdinit)
+
+# 20131024 Sanity_03
+allow ccci_mdinit property_socket:sock_file write;
+
+
+# 20131028 CTS_03
+allow ccci_mdinit linker_exec:file read;
+
+
+# 20131028 Sanity_06
+allow ccci_mdinit ccci_device:chr_file ioctl;
+allow ccci_mdinit system_data_file:file open;
+
+
+# 20131028 CTS_09
+allow ccci_mdinit device:chr_file { read ioctl open };
+
+
+# 20131028 CTS_20
+allow ccci_mdinit ccci_device:chr_file { read write open };
+allow ccci_mdinit device:chr_file write;
+
+
+# 20131119 FeatureSQC
+allow ccci_mdinit device:chr_file { read ioctl open };
+
+
+
+# 20131122 Add Set Property Rule
+allow ccci_mdinit  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow ccci_mdinit aee_aed:unix_stream_socket connectto;
+allow ccci_mdinit devmap_device:chr_file { read ioctl open };
+allow ccci_mdinit sysfs:file write;
+allow ccci_mdinit system_data_file:dir { write add_name };
+allow ccci_mdinit system_data_file:file { write create setattr };
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow ccci_mdinit aee_aed:process sigchld;
+allow ccci_mdinit block_device:blk_file { read open };
+allow ccci_mdinit devmap_device:chr_file { read ioctl open };
+allow ccci_mdinit mdlogger_tmpfs:file { read open };
+allow ccci_mdinit misc_sd_device:chr_file { read open };
+allow ccci_mdinit sysfs:file write;
+allow ccci_mdinit system_data_file:file write;
+

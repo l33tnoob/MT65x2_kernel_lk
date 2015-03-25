@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/quickstartguide_title"
+        style="@style/textShadowTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="81dp"
+        android:ellipsize="marquee"
+        android:text="@string/qsg_app_name" />
+
+    <TextView
+        android:id="@+id/quickstartguide_summary"
+        style="@style/textShadowSummary"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/qsg_summary_begin" />
+
+    <include layout="@layout/progressbar" />
+
+    <LinearLayout
+        android:id="@+id/group_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/left_btn"
+            style="@style/bottom_button"
+            android:layout_gravity="bottom|left"
+            android:text="@string/oobe_btn_text_skip" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:id="@+id/right_btn"
+            style="@style/bottom_button"
+            android:layout_gravity="bottom|right"
+            android:text="@string/ok_button" />
+    </LinearLayout>
+
+</LinearLayout>

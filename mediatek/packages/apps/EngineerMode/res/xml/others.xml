@@ -1,0 +1,85 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<Preference android:key="settings_font" android:title="@string/settings_font"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.settingsfontsize.SettingsFontSize" />
+	</Preference>
+	
+	<Preference android:key="swla" android:title="@string/swla"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.swla.SwlaActivity" />
+	</Preference>
+
+
+	<Preference android:key="thermal" android:title="@string/thermal"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.thermalmanager"
+			android:targetClass="com.mediatek.thermalmanager.MTKThermalManagerActivity" />
+	</Preference>
+	
+<!-- 	<Preference android:key="ConfigureCheck" android:title="@string/configure_check" -->
+<!-- 		android:persistent="false"> -->
+<!-- 		<intent android:action="android.intent.action.MAIN" -->
+<!-- 		        android:targetPackage="com.mediatek.configurecheck" -->
+<!-- 		        android:targetClass="com.mediatek.configurecheck.MainActivity" /> -->
+<!-- 	</Preference> -->
+	<Preference android:key="thermal_Stress_Test" android:title="@string/thermal_stress_test"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.mtkthermalstress"
+			android:targetClass="com.mediatek.mtkthermalstress.MainActivity" />
+	</Preference>
+	<Preference android:key="ConfigureCheck2_Send_Test" android:title="@string/configure_check2_send_test"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+		        android:targetPackage="com.mediatek.configurecheck2"
+		        android:targetClass="com.mediatek.configurecheck2.CMCCSendTestActivity" />
+	</Preference>
+
+	<Preference android:key="ConfigureCheck2_Self_Test" android:title="@string/configure_check2_self_test"
+		android:persistent="false">
+		<intent 
+		        android:targetPackage="com.mediatek.configurecheck2"
+		        android:targetClass="com.mediatek.configurecheck2.ManSelfTestActivity" />
+	</Preference>	
+
+	<Preference android:key="system_update" android:title="@string/system_update"
+	    android:persistent="false">
+	    <intent android:action="com.mediatek.systemupdate.UPDATE_TYPE_OPTION"
+			android:targetPackage="com.mediatek.systemupdate"
+			android:targetClass="com.mediatek.systemupdate.UpdateOption" />
+	</Preference>
+
+	<Preference android:key="usbacm" android:title="@string/usbacm"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.usbacm.UsbAcm" />
+	</Preference>
+
+	<Preference android:key="dfo" android:title="@string/dfo"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.dfo.Dfo" />
+	</Preference>
+
+	<Preference android:key="saber" android:title="@string/saber"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.viatelecom.saber"
+			android:targetClass="com.viatelecom.saber.VIASaberActivity" />
+	</Preference>
+
+    <Preference android:key="cip" android:title="@string/cip_title"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.cip.CipPropContentActivity" />
+	</Preference>
+</PreferenceScreen>

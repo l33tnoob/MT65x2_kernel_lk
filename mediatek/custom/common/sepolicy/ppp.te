@@ -1,0 +1,61 @@
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type ppp, domain;
+type ppp_device, dev_type;
+type ppp_exec, exec_type, file_type;
+type ppp_system_file, file_type;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# Point to Point Protocol daemon
+permissive ppp;
+# unconfined_domain(ppp)
+domain_auto_trans(mtp, ppp_exec, ppp)
+
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# Point to Point Protocol daemon
+permissive ppp;
+# unconfined_domain(ppp)
+# domain_auto_trans(mtp, ppp_exec, ppp)
+
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive ppp;
+
+# 20131122 Add Set Property Rule
+allow ppp property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow ppp device:chr_file { read ioctl open };
+allow ppp dnsproxyd_socket:sock_file write;
+allow ppp linker_exec:file { read execute open };
+allow ppp mtp:fd use;
+allow ppp mtp:socket { read write };
+allow ppp ppp_device:chr_file { read write ioctl open };
+allow ppp ppp_system_file:dir search;
+allow ppp ppp_system_file:file { read getattr open execute execute_no_trans };
+allow ppp self:capability net_admin;
+allow ppp self:udp_socket ioctl;
+allow ppp vpn_data_file:dir { write add_name };
+allow ppp vpn_data_file:file create;
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow ppp mtp:socket ioctl;
+allow ppp netd:unix_stream_socket connectto;
+allow ppp property_socket:sock_file write;
+allow ppp self:udp_socket create;
+allow ppp vpn_data_file:dir remove_name;
+allow ppp vpn_data_file:file { write rename getattr open setattr };
+

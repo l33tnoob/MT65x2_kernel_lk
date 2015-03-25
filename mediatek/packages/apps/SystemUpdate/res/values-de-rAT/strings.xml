@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Systemaktualisierung</string>
+
+
+    <string name="none_package">Keine Aktualisierungen verfügbar.</string>
+    <string name="new_version_query">Auf Aktualisierung prüfen\u2026</string>
+    <string name="menu_stats_refresh">Auffrischen</string>
+    <string name="network_error">Netzwerkverbindung fehlgeschlagen</string>
+    <string name="server_version_error">Server-Fehler: Quellcode für den Server aktualisieren.</string>    
+    <string name="no_new_version">Ihr System ist momentan auf dem neuesten Stand.</string>
+    <string name="not_support_version">Ihre Quelle unterstützt keine Drahtlosübertragung.</string>
+    <string name="query_sd_insufficient_space">Platz für <xliff:g id="path">%s</xliff:g> reicht nicht aus.</string>
+    <string name="ota_category_title">OTA</string>
+    <string name="sd_category_title">SD-KARTEN-UPDATE</string>
+    <string name="ota_preference_summary">Auf dem Server ist eine Systemaktualisierung vorhanden.</string>
+
+
+    <string name="notes_summary">Durch eine Firmware-Aktualisierung können die Gerätestabilität verbessert und Fehler behoben werden.</string>
+    <string name="ask_for_install_ota">Wollen Sie das System jetzt aktualisieren?</string>
+    <string name="warning_install_ota" product="tablet">Während der Installation können Sie weder Notrufe tätigen noch das Tablet benutzen. Entfernen Sie nicht die Batterien oder die SD-Karte und schalten Sie das Tablet nicht aus.</string>
+    <string name="warning_install_ota" product="default">Während der Installation können Sie weder Notrufe tätigen noch das Telefon benutzen. Entfernen Sie nicht die Batterien oder die SD-Karte und schalten Sie das Telefon nicht aus.</string>
+    <string name="ask_for_install_sd">Auf Ihrer SD-Karte wurde das neueste Aktualisierungspaket gefunden. Wollen Sie es installieren?</string>
+    <string name="warning_install_sd" product="tablet">Während der Installation können Sie weder Notrufe tätigen noch das Tablet benutzen. Entfernen Sie nicht die Batterien oder die SD-Karte und schalten Sie das Tablet nicht aus. \nVergewissern Sie sich, bevor Sie die Installation beginnen, dass das Paket von der offiziellen Website geladen wurde und nicht beschädigt ist.</string>
+    <string name="warning_install_sd" product="default">Während der Installation können Sie weder Notrufe tätigen noch das Telefon benutzen. Entfernen Sie nicht die Batterien oder die SD-Karte und schalten Sie das Telefon nicht aus. \nVergewissern Sie sich, bevor Sie die Installation beginnen, dass das Paket von der offiziellen Website geladen wurde und nicht beschädigt ist.</string>
+    <string name="ask_for_download_ota">Wollen Sie die Aktualisierung für die Systemoptimierung herunterladen?</string>
+    <string name="warning_download_ota">Wir empfehlen für diese Aktualisierung einen kostenlosen Wi-Fi-Hotspot oder einen Tarif mit unbegrenztem Datenvolumen zu verwenden. Anderenfalls können Kosten entstehen. \nSichern Sie Ihre Daten, bevor Sie mit der Aktualisierung beginnen.</string>
+        
+    <string name="notification_content_title">Systemaktualisierung</string>
+    <string name="downloading_title">"Wird heruntergeladen\u2026"</string>   
+    <string name="wifi_only_check">"Nur Wi-Fi"</string>     
+    
+    
+    
+    
+    
+    <string name="btn_install">Installieren</string>
+    <string name="btn_cancel">Verwerfen</string>
+    <string name="btn_download">Herunterladen und installieren</string>
+    <string name="btn_resume">Herunterladen</string>
+    
+    <string name="warn_data_cost_title">Aktualisierung herunterladen</string>
+    <string name="warn_data_cost_content">Herunterladen über ein mobiles Netzwerk kann zusätzliche Kosten verursachen. Wollen Sie fortfahren?</string>
+    <string name="warn_data_cost_yes">Ja</string>
+    <string name="warn_data_cost_no">Nein</string>
+
+    <string name="notification_download_complete_title">Systemaktualisierung ist bereit.</string>
+    <string name="notification_download_complete_context">Antippen, um die Aktualisierung zu installieren.</string>
+        
+    <string name="sdcard_crash_or_unmount">SD-Kartenfehler. Prüfen Sie Ihre SD-Karte und versuchen es erneut.</string>
+    <string name="unmount_sdcard">SD-Karten-Installationsfehler, bitte prüfen.</string>
+    <string name="insufficient_space_content">Die Installation benötigt mindestens <xliff:g id="deltasize" example="3.5M">%s</xliff:g> Byte Speicherplatz. Eben Sie Platz frei und fahren Sie fort.</string>
+
+    
+    
+    
+    
+    <string name="install_sd_title">Aktualisierung installieren</string>
+    <string name="install_sd_message">Vergewissern Sie sich, dass das Paket von der offiziellen Website geladen wurde und nicht beschädigt ist. Anderenfalls kann es zu Problemen kommen.</string>
+    <string name="install_reminder_now">Jetzt installieren</string>
+    <string name="install_reminder_not_now">Jetzt nicht</string>
+    
+    
+
+    <string name="notification_content_text_completed">Herunterladen erfolgreich</string> 
+
+    <string name="unknown_per">Unbekannt</string>    
+    <string name="unknown_error">Unbekannter Fehler</string>
+    <string name="unknown_error_content">Unbekannter Fehler aufgetreten. Bitte verlassen Sie diese Seite und versuchen es erneut.</string>
+    <string name="insufficient_space_title">Platz reicht nicht</string>
+    <string name="error_sdcard">SD-Karten-Info</string>
+    <string name="insufficient_space">Nicht genügenden Platz auf der SD-Karte</string>
+    <string name="package_deleted_error">Aktualisierung ist ungültig, System-Update gestoppt.</string>
+    
+    <string name="cancel_download_title">Herunterladen abbrechen</string>
+    <string name="cancel_download_content">Hierdurch wird die heruntergeladene Datei verworfen.</string>
+
+    
+    <string name="change_network_title">Herunterladen</string>
+    <string name="change_network_content">Die aktuelle APN unterstützt kein Herunterladen. Wollen Sie zu einem anderen APN wechseln oder Wi-Fi verwenden?</string>
+    <string name="change_network_wifi_btn">Wi-Fi verwenden</string>
+    <string name="change_network_apn_btn">APN wechseln</string>
+    <string name="change_network_discard_btn">Verwerfen</string>    
+    <string name="package_error_title">Installation fehlgeschlagen</string>
+    <string name="package_error_message_invalid">Paket-Fehler. Prüfen Sie das Update und laden Sie es erneut herunter.</string>
+    <string name="package_error_message_insuff" product="tablet">Platz auf dem Gerät reicht nicht aus</string>
+    <string name="package_error_message_insuff" product="default">Platz auf dem Telefon reicht nicht aus</string>
+    <string name="package_error_message_crash">Kann auf Datenpartition nicht zugreifen.</string>
+    <string name="package_error_message_full">Bei einer Änderung der Partition wird das Gesamtpaket benötigt.</string>    
+    <string name="updateSuccess" product="tablet">Herzlichen Glückwunsch! Ihr Gerät wurde erfolgreich auf die Version <xliff:g id="version" example="gb.p37">%s</xliff:g> aktualisiert.</string> 
+    <string name="updateSuccess" product="default">Herzlichen Glückwunsch! Ihr Telefon wurde erfolgreich auf die Version <xliff:g id="version" example="gb.p37">%s</xliff:g> aktualisiert.</string> 
+    <string name="updateFailed">Konnte nicht auf die Version <xliff:g id="version" example="gb.p37">%s</xliff:g> aktualisieren.</string>
+    <string name="package_unzip">Paket wird dekomprimiert\u2026</string>
+    <string name="package_unzip_error">Fehler beim Dekomprimieren</string>
+    
+    <string name="installing_message">Ihr Telefon wird heruntergefahren\u2026</string>
+    <string name="install_sd_info">Das Paket muss in den Telefonspeicher kopiert werden, um mit der Aktualisierung fortzufahren.\nZu wenig Speicherplatz auf dem Telefon.</string>
+    <string name="sdcard_crash_or_unmount_when_install">System-Update gestoppt, da SD-Karte nicht installiert ist.</string>
+    <string name="sdcard_inserted">Wollen Sie Ihre SD-Karte durchsuchen, um weitere Update-Pakete zu finden?</string>
+    
+    <string name="new_version_detected">Systemaktualisierung verfügbar</string>
+    <string name="sdcard_unmount">SD-Karte nicht installiert</string>
+    <string name="cta_warning">Das System unterstützt Firmware-Upgrades nur von offiziellen Websites und Servern. Werden ROM-Images von Drittanbietern und/oder andere Methoden zum Firmware-Upgrade verwendet, kann der Betrieb des Telefon dadurch instabil werden. In solchen Fällen ist ausschließlich der Anwender für dieses Verhalten haftbar.</string>
+</resources>

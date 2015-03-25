@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright Statement:
+ *
+ * This software/firmware and related documentation ("MediaTek Software") are
+ * protected under relevant copyright laws. The information contained herein
+ * is confidential and proprietary to MediaTek Inc. and/or its licensors.
+ * Without the prior written permission of MediaTek inc. and/or its licensors,
+ * any reproduction, modification, use or disclosure of MediaTek Software,
+ * and information contained herein, in whole or in part, shall be strictly prohibited.
+ *
+ * MediaTek Inc. (C) 2012. All rights reserved.
+ *
+ * BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+ * THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+ * RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO RECEIVER ON
+ * AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+ * NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+ * SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+ * SUPPLIED WITH THE MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+ * THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+ * THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+ * CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+ * SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+ * STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+ * CUMULATIVE LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+ * AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+ * OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+ * MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+ *
+ * The following software/firmware and/or related documentation ("MediaTek Software")
+ * have been modified by MediaTek Inc. All revisions are subject to any receiver's
+ * applicable license agreements with MediaTek Inc.
+ */
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="64dp"
+	    android:background="@android:color/transparent"
+	    android:paddingLeft="12dp"
+	    android:paddingRight="12dp"
+	    android:paddingTop="8dp"
+	    android:paddingBottom="8dp">
+	    <RelativeLayout
+	        android:id="@+id/chat_left_part"
+	        android:layout_alignParentLeft="true"
+	        android:layout_width="48dp"
+	        android:layout_height="match_parent"
+	        android:gravity="top"
+	        android:clickable="true">
+	        <com.mediatek.rcse.activities.widgets.AsyncAvatarView
+	            android:id="@+id/chat_contact_quick"
+	            android:layout_width="48dp"
+	            android:layout_height="48dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/default_header" />
+	        <TextView
+	            android:id="@+id/unread_message_num"
+	            android:layout_width="wrap_content"
+	            android:layout_height="16dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginRight="0dp"
+	            android:layout_marginTop="0dp"
+	            android:background="#e24242"
+	            android:gravity="center"
+	            android:textSize="10sp"
+	            android:textStyle="normal"
+	            android:textColor="#ffffff"/>
+	    </RelativeLayout>
+	    <LinearLayout 
+	        android:id="@+id/chat_content"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent" 
+	        android:orientation="vertical" 
+	        android:layout_toRightOf="@+id/chat_left_part"
+	        android:paddingLeft="8dp"
+	        android:paddingRight="8dp">
+	        <TextView
+	            android:id="@+id/chat_remote_name"
+	            android:gravity="center"
+	            android:layout_width="wrap_content"
+	            android:layout_height="0dip"
+	            android:layout_weight="18"
+	            android:singleLine="true"
+	            android:textColor="#191919" 
+	            android:textSize="18sp"
+	            android:maxWidth="130dp"
+	            />
+	        <TextView
+	            android:id="@+id/chat_last_message"
+	            android:gravity="center"
+	            android:layout_width="wrap_content"
+	            android:layout_height="0dip"
+	            android:layout_weight="14"
+	            android:singleLine="true"
+	            android:maxWidth="130dp"
+	            android:ellipsize="end"
+	            android:textColor="#515151" 
+	            android:textSize="14sp"/>
+	    </LinearLayout>
+	    <TextView 
+	            android:layout_toLeftOf="@+id/chat_right_part"
+	            android:layout_toRightOf="@+id/chat_content"
+	            android:id="@+id/chat_remote_num"
+	            android:gravity="top|left"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent" 
+	            android:maxLines="1"
+	            android:ellipsize="end"
+	            android:textColor="#191919" 
+	            android:textSize="18sp"
+	            android:visibility="gone"/>
+	    <LinearLayout android:id="@+id/chat_right_part"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent" 
+	        android:orientation="vertical" 
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true">
+	        <com.mediatek.rcse.activities.widgets.DateView
+	            android:gravity="top|right"
+	            android:id="@+id/chat_date"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="#2B2B2B" 
+	            android:singleLine ="true"
+	            android:textSize="12sp"
+	            android:maxWidth="75dp"/>
+	        <ImageView
+	            android:gravity="bottom"
+	            android:id="@+id/chat_file_transfer"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/icon_file_transfer"
+	            android:visibility="gone"/>
+	    </LinearLayout>
+	</RelativeLayout>
+	
+	<ImageView
+		android:id="@+id/under_line"
+		android:layout_width="match_parent"
+		android:layout_marginLeft="12dp"
+	    android:layout_marginRight="12dp"
+		android:layout_height="1dp"
+		android:layout_alignParentBottom="true"
+		android:background="@*android:drawable/list_divider_holo_light" />
+</RelativeLayout>

@@ -1,0 +1,194 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+	<Preference android:key="audio" android:title="@string/audio"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.audio.Audio" />
+	</Preference>
+
+	<Preference android:key="camera" android:title="@string/camera"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.camera.Camera" />
+	</Preference>
+
+	<Preference android:key="camera89" android:title="@string/camera"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.cameranew.AutoCalibration" />
+	</Preference>
+        <Preference android:key="camera_desence" android:title="@string/desense_camera_name"
+               android:persistent="false">
+               <intent android:action="android.intent.action.MAIN"
+                       android:targetPackage="com.mediatek.engineermode"
+                       android:targetClass="com.mediatek.engineermode.drivingcurrent.CameraMclk" />
+        </Preference>	
+	<!--
+	<Preference android:key="cpu_freq_test" android:title="@string/cpu_freq_test"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.cpufreq.Cpufreq" />
+	</Preference>	
+	-->
+	
+	<Preference android:key="cpu_stress_test" android:title="@string/cpu_stress_test"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.cpustress.CpuStressTest" />
+	</Preference>
+		
+	<Preference android:key="dcm" android:title="@string/dcm_label"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.dcm.DcmList" />
+	</Preference>
+
+	<Preference android:key="deep_idle" android:title="@string/deep_idle_label"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.deepidle.DeepIdleSettingActivity" />
+	</Preference>
+	
+	<Preference android:key="cpu_dvfs" android:title="@string/dvfs_entry_title"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.dvfs.CpuDvfs" />
+	</Preference>
+	
+	<Preference android:key="mcdi_setting" android:title="@string/mcdi_entry_title"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.mcdi.McdiSetting" />
+	</Preference>
+
+	<Preference android:key="pll_cg" android:title="@string/pllcg_title"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.pllcg.PllCgActivity" />
+	</Preference>
+	
+	<Preference android:key="sleep_mode" android:title="@string/sleep_mode_6572"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.sleepmode.SleepModeActivity" />
+	</Preference>
+	
+	<Preference android:key="device_manager" android:title="@string/device_manager"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.devicemgr.DeviceMgr" />
+	</Preference>
+
+	<Preference android:key="device_register" android:title="@string/device_register"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.DeviceRegister" />
+	</Preference>
+
+	<Preference android:key="de_sense" android:title="@string/de_sense"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.desense.DesenseActivity" />
+	</Preference>
+	
+	<Preference android:key="display" android:title="@string/display"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.display.Display" />
+	</Preference>
+	
+	<Preference android:key="lcm" android:title="@string/hqa_lcm_name"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.lcm.LCM" />
+	</Preference>
+	
+    <Preference android:key="non_sleep_mode" android:title="@string/non_sleep_mode"
+        android:persistent="false">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.mediatek.engineermode"
+            android:targetClass="com.mediatek.engineermode.nonsleep.NonSleepMode" />
+    </Preference>
+	<Preference android:key="io" android:title="@string/io"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.io.IoList" />
+	</Preference>
+	
+	<Preference android:key="matv" android:title="@string/matv"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.matv"
+			android:targetClass="com.mediatek.matv.Matv" />
+	</Preference>	
+
+	<Preference android:key="memory" android:title="@string/memory"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.memory.Memory" />
+	</Preference>
+	
+	<Preference android:key="power" android:title="@string/power"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.power.Power" />
+	</Preference>
+
+	<Preference android:key="sd_card_test" android:title="@string/sd_card_test"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.sdtest.SDLogActivity" />
+	</Preference>
+
+
+	<Preference android:key="touchscreen" android:title="@string/touchscreen"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.touchscreen.TouchScreenList" />
+	</Preference>
+	
+	
+	<Preference android:key="usb" android:title="@string/usb"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.usb.UsbList" />
+	</Preference>
+
+	<Preference android:key="usbmode_switch" android:title="@string/uart_usb_switch"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.UartUsbSwitch" />
+	</Preference>
+
+	<Preference android:key="sensor" android:title="@string/sensor"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.sensor.Sensor" />
+	</Preference>
+
+</PreferenceScreen>

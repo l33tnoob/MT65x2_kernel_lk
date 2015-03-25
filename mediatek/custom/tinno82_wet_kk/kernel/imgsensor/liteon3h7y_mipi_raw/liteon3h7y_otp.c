@@ -1,0 +1,600 @@
+  /*************************************************************************************************
+3h7_otp.c
+---------------------------------------------------------
+OTP Application file From Truly for S5K3H7
+2013.01.14
+---------------------------------------------------------
+NOTE:
+The modification is appended to initialization of image sensor. 
+After sensor initialization, use the function , and get the id value.
+bool otp_wb_update(BYTE zone)
+and
+bool otp_lenc_update(BYTE zone), 
+then the calibration of AWB and LSC will be applied. 
+After finishing the OTP written, we will provide you the golden_rg and golden_bg settings.
+**************************************************************************************************/
+
+#include <linux/videodev2.h>
+#include <linux/i2c.h>
+#include <linux/platform_device.h>
+#include <linux/delay.h>
+#include <linux/cdev.h>
+#include <linux/uaccess.h>
+#include <linux/fs.h>
+#include <asm/atomic.h>
+#include <linux/slab.h>
+
+#include "kd_camera_hw.h"
+#include "kd_imgsensor.h"
+#include "kd_imgsensor_define.h"
+#include "kd_imgsensor_errcode.h"
+
+#include "liteon3h7ymipiraw_Sensor.h"
+#include "liteon3h7ymipiraw_Camera_Sensor_para.h"
+#include "liteon3h7ymipiraw_CameraCustomized.h"
+
+#include <linux/xlog.h>
+
+#define USHORT                 unsigned short
+#define BYTE                   unsigned char
+#define Sleep(ms)             mdelay(ms)
+
+#define Liteon_ID            0x03 //0x01
+#define Lens_ID                0x01
+#define Driver_ID            0x18
+
+#define GAIN_DEFAULT        0x0100
+#define GAIN_Gr_ADDR        0x020E
+#define GAIN_BLUE_ADDR         0x0212
+#define GAIN_RED_ADDR          0x0210
+#define GAIN_Gb_ADDR           0x0214
+
+#define GOLDEN_RGr_RATIO      0x0285
+#define GOLDEN_BGr_RATIO      0x0239
+#define GOLDEN_GbGr_RATIO     0x0400
+
+#define SENSORDB_S5K3H7_OTP(fmt,arg...) xlog_printk(ANDROID_LOG_DEBUG , "[S5K3H7_OTP]", fmt, ##arg)  //printk(LOG_TAG "%s: " fmt "\n", __FUNCTION__ ,##arg)
+
+extern int iWriteRegI2C(u8 *a_pSendData , u16 a_sizeSendData, u16 i2cId);
+extern int iReadRegI2C(u8 *a_pSendData , u16 a_sizeSendData, u8 * a_pRecvData, u16 a_sizeRecvData, u16 i2cId);
+//extern  BYTE liteon3h7y_byteread_cmos_sensor(kal_uint32 addr);
+extern  void LITEON3H7Y_wordwrite_cmos_sensor(u16 addr, u32 para);
+extern  void LITEON3H7Y_bytewrite_cmos_sensor(u16 addr, u32 para);
+
+static USHORT current_RG_ratio;
+static USHORT current_BG_ratio;
+static USHORT current_GbGr_ratio;
+
+static u32  s_g_R_Gain = 0;
+static u32  s_g_G_Gain = 0; 
+static u32  s_g_B_Gain = 0;
+
+
+BYTE liteon3h7y_byteread_cmos_sensor(kal_uint32 addr)
+{
+    BYTE get_byte=0;
+    char puSendCmd[2] = {(char)(addr >> 8) , (char)(addr & 0xFF) };
+    iReadRegI2C(puSendCmd, 2, (u8*)&get_byte, 1, LITEON3H7YMIPI_WRITE_ID2);
+    return get_byte;
+}
+
+
+/*************************************************************************************************
+* Function    :  liteon3h7y_start_read_otp
+* Description :  before read otp , set the reading block setting  
+* Parameters  :  [BYTE] zone : OTP PAGE index , 0x00~0x0f
+* Return      :  0, reading block setting err
+                 1, reading block setting ok 
+**************************************************************************************************/
+bool liteon3h7y_start_read_otp(BYTE zone)
+{
+    BYTE val = 0;
+    int  i;
+    
+    // printk("[Liteon S5K3H7_xuezhen] enter start read otp! \n");
+    LITEON3H7Y_wordwrite_cmos_sensor(0x6028, 0xD000);
+    LITEON3H7Y_bytewrite_cmos_sensor(0x0A02, zone);  // Select the page to write by writing to 0xD0000A02 0x01~0x0C
+    LITEON3H7Y_bytewrite_cmos_sensor(0x0A00, 0x01);  // <input type="text"  />  //Enter read mode by writing 01h to 0xD0000A00, 0x01 --> 0x0101 by Qtech FAE 2013-07-24
+
+    for(i=0; i<100; i++)
+    { 
+        val = liteon3h7y_byteread_cmos_sensor(0x0A01);
+        // printk("Liteon 3h7 otp [S5K3H7] 0x0a01=%x \n",val);
+        if(val == 0x01)
+        {
+            break;
+        }
+        
+        Sleep(10);
+    }
+    
+    if(i == 100)
+    {
+        printk("liteon3h7 liteon3h7y_start_read_otp Read Page %d Err! \n", zone); // print log
+        LITEON3H7Y_bytewrite_cmos_sensor(0x0A00, 0x00);   //Reset the NVM interface by writing 00h to 0xD0000A00
+        return 0;
+    }
+    
+    return 1;
+}
+
+
+/*************************************************************************************************
+* Function    :  liteon3h7y_stop_read_otp
+* Description :  after read otp , stop and reset otp block setting  
+**************************************************************************************************/
+void liteon3h7y_stop_read_otp()
+{
+    LITEON3H7Y_bytewrite_cmos_sensor(0x0A00, 0x00);   //Reset the NVM interface by writing 00h to 0xD0000A00
+}
+
+
+/*************************************************************************************************
+* Function    :  liteon3h7y_get_otp_flag
+* Description :  get otp WRITTEN_FLAG  
+* Parameters  :  [BYTE] zone : OTP PAGE index , 0x00~0x0f
+* Return      :  [BYTE], if flag2!=0x00,return 2, flag1!=0 return 1,esle return 0
+**************************************************************************************************/
+static BYTE liteon3h7y_get_otp_flag(BYTE zone)
+{
+    BYTE flag1 = 0x00;
+    BYTE flag2 = 0x00;
+    
+    if(!liteon3h7y_start_read_otp(zone))
+    {
+        printk("Liteon3h7otp [liteon3h7y_otp] Func liteon3h7y_get_otp_flag, start read Page %d Fail! \n", zone);
+        return 0;
+    }
+
+#ifdef DEBUG_FOR_NEW_LSC
+	//for new check sum address @hcy
+	flag1 = liteon3h7y_byteread_cmos_sensor(0x0A16);
+	flag2 = liteon3h7y_byteread_cmos_sensor(0x0A17);
+#else
+	flag1 = liteon3h7y_byteread_cmos_sensor(0x0A0D);
+	flag2 = liteon3h7y_byteread_cmos_sensor(0x0A0E);
+#endif
+
+    printk("Liteon3h7otp [S5K3H7 flag1=%x\n] \n",flag1);
+    printk("Liteon3h7otp [S5K3H7 flag2=%x\n] \n",flag2);
+    liteon3h7y_stop_read_otp();
+
+    if (flag2 == 0x00) 
+    {
+        if(flag1 == 0x00)
+        {
+            printk("Liteon3h7otp [liteon3h7y_otp] Func liteon3h7y_get_otp_flag, No valid data in OTP \n" );
+            return 0;
+        }
+        else
+        {
+            return 1;
+        }
+    }
+    else
+    {
+        return 2;
+    }
+}
+
+
+/*************************************************************************************************
+* Function    :  liteon3h7y_get_otp_module_id
+* Description :  get otp MID value 
+* Parameters  :  [BYTE] zone : OTP PAGE index , 0x00~0x0f
+* Return      :  [BYTE] 0 : OTP data fail 
+                 other value : module ID data , TRULY ID is 0x0001            
+**************************************************************************************************/
+BYTE liteon3h7y_get_otp_module_id(BYTE zone)
+{
+    BYTE module_id = 0;
+
+    if(!liteon3h7y_start_read_otp(zone))
+    {
+        printk("Liteon3h7otp Start read Page %d Fail! \n", zone);
+        return 0;
+    }
+
+    module_id = liteon3h7y_byteread_cmos_sensor(0x0A08);    
+    liteon3h7y_stop_read_otp();
+    printk("Liteon3h7otp Module ID: 0x%02x. \n",module_id);
+
+    return module_id;
+}
+
+
+/*************************************************************************************************
+* Function    :  liteon3h7y_get_otp_lens_id
+* Description :  get otp LENS_ID value 
+* Parameters  :  [BYTE] zone : OTP PAGE index , 0x00~0x0f
+* Return      :  [BYTE] 0 : OTP data fail 
+                 other value : LENS ID data             
+**************************************************************************************************/
+BYTE liteon3h7y_get_otp_lens_id(BYTE zone)
+{
+    BYTE lens_id = 0;
+
+    if(!liteon3h7y_start_read_otp(zone))
+    {
+        printk("Liteon3h7otp Start read Page %d Fail! \n", zone);
+        return 0;
+    }
+    
+    lens_id = liteon3h7y_byteread_cmos_sensor(0x0A09);
+    liteon3h7y_stop_read_otp();
+    printk("Liteon3h7otp Lens ID: 0x%02x. \n",lens_id);
+
+    return lens_id;
+}
+
+
+/*************************************************************************************************
+* Function    :  liteon3h7y_get_otp_driver_id
+* Description :  get otp LENS_ID value 
+* Parameters  :  [BYTE] zone : OTP PAGE index , 0x00~0x0f
+* Return      :  [BYTE] 0 : OTP data fail 
+                 other value : LENS ID data             
+**************************************************************************************************/
+BYTE liteon3h7y_get_otp_driver_id(BYTE zone)
+{
+    BYTE driver_id = 0;
+
+    if(!liteon3h7y_start_read_otp(zone))
+    {
+        printk("Liteon3h7otp Start read Page %d Fail! \n", zone);
+        return 0;
+    }
+    driver_id = liteon3h7y_byteread_cmos_sensor(0x0A07);
+    liteon3h7y_stop_read_otp();
+    printk("Liteon3h7otp Lens ID: 0x%02x. \n",driver_id);
+
+    return driver_id;
+}
+
+
+/*************************************************************************************************
+* Function    :  liteon3h7y_get_otp_date
+* Description :  get otp date value    
+* Parameters  :  [BYTE] zone : OTP PAGE index , 0x00~0x0f    
+**************************************************************************************************/
+static bool liteon3h7y_get_otp_date(BYTE zone) 
+{
+    BYTE year  = 0;
+    BYTE month = 0;
+    BYTE day   = 0;
+
+    if(!liteon3h7y_start_read_otp(zone))
+    {
+        printk("Liteon3h7otp [liteon3h7y_otp] Func liteon3h7y_get_otp_date, start read Page %d Fail! \n", zone);
+        return 0;
+    }
+
+    year  = liteon3h7y_byteread_cmos_sensor(0x0A04);
+    month = liteon3h7y_byteread_cmos_sensor(0x0A05);
+    day   = liteon3h7y_byteread_cmos_sensor(0x0A06);
+
+    liteon3h7y_stop_read_otp();
+
+    printk("Liteon3h7otp [liteon3h7y_otp] Func liteon3h7y_get_otp_date, OTP date=%02d.%02d.%02d \n", year,month,day);
+
+    return 1;
+}
+
+
+/*************************************************************************************************
+* Function    :  liteon3h7y_get_otp_AF
+* Description :  get otp AF value    
+* Parameters  :  [BYTE] zone : OTP PAGE index , 0x00~0x0f    
+**************************************************************************************************/
+static bool liteon3h7y_get_otp_AF(BYTE zone) 
+{
+    BYTE Infinity_H  = 0;
+    BYTE Infinity_L  = 0;
+    BYTE Marco_H  = 0;
+    BYTE Marco_L  = 0;
+    BYTE Start_Current_H = 0;
+    BYTE Start_Current_L = 0;
+    BYTE Infinity = 0;
+    BYTE Marco = 0;
+    BYTE Start_Current = 0;
+
+    if(!liteon3h7y_start_read_otp(zone))
+    {
+        printk("Liteon3h7otp [liteon3h7y_otp] Func liteon3h7y_get_otp_AF, start read Page %d Fail! \n", zone);
+        return 0;
+    }
+  
+    Marco_H         = liteon3h7y_byteread_cmos_sensor(0x0A10);
+    Marco_L         = liteon3h7y_byteread_cmos_sensor(0x0A11);
+    Infinity_H      = liteon3h7y_byteread_cmos_sensor(0x0A12);
+    Infinity_L      = liteon3h7y_byteread_cmos_sensor(0x0A13);
+    Start_Current_H = liteon3h7y_byteread_cmos_sensor(0x0A14);
+    Start_Current_L = liteon3h7y_byteread_cmos_sensor(0x0A15);
+
+    Marco         = Marco_L + (Marco_H << 8);
+    Infinity      = Infinity_L + (Infinity_H << 8);
+    Start_Current = Start_Current_L + (Start_Current_H << 8);
+    liteon3h7y_stop_read_otp();
+
+    printk("Liteon3h7otp [liteon3h7y_otp] Func liteon3h7y_get_otp_AF, Marco=0x%x \n", Marco);
+    printk("Liteon3h7otp [liteon3h7y_otp] Func liteon3h7y_get_otp_AF, Marco=0x%x \n", Infinity);
+    printk("Liteon3h7otp [liteon3h7y_otp] Func liteon3h7y_get_otp_AF, Marco=0x%x \n", Start_Current);
+    
+    return 1;
+}
+
+
+/*************************************************************************************************
+* Function    :  get_otp_wb
+* Description :  Get WB data    
+* Parameters  :  [BYTE] zone : OTP PAGE index , 0x00~0x0f      
+**************************************************************************************************/
+bool liteon3h7y_get_otp_awb(BYTE zone)
+{
+    BYTE temph = 0;
+    BYTE templ = 0;    
+
+    if(!liteon3h7y_start_read_otp(zone))
+    {
+        printk("Liteon3h7otp Start read Page %d Fail! \n", zone);
+        return 0;
+    }
+    
+    temph = liteon3h7y_byteread_cmos_sensor(0x0A0A);  
+    templ = liteon3h7y_byteread_cmos_sensor(0x0A0B);   
+    current_RG_ratio  = (USHORT)templ + ((USHORT)temph << 8);
+
+    temph = liteon3h7y_byteread_cmos_sensor(0x0A0C);   
+    templ = liteon3h7y_byteread_cmos_sensor(0x0A0D);
+    current_BG_ratio  = (USHORT)templ + ((USHORT)temph << 8);
+
+    temph = liteon3h7y_byteread_cmos_sensor(0x0A0E);   
+    templ = liteon3h7y_byteread_cmos_sensor(0x0A0F);
+    current_GbGr_ratio = (USHORT)templ + ((USHORT)temph << 8);    
+
+    printk("Liteon3h7otp [S5K3H7_liteon3h7y_get_otp_awb] current_RG_ratio=0x%x \n", current_RG_ratio);
+    printk("Liteon3h7otp [S5K3H7_liteon3h7y_get_otp_awb] current_BG_ratio=0x%x \n", current_BG_ratio);
+    printk("Liteon3h7otp [S5K3H7_liteon3h7y_get_otp_awb] current_GbGr_ratior=0x%x \n", current_GbGr_ratio);
+
+    liteon3h7y_stop_read_otp();
+    
+    return 1;
+}
+
+
+u16 liteon3h7y_awb_gain_set(u16 rGain, u16 bGain, u16 gGain)
+{
+    printk("HJDDbg3h7AWB, Liteon3h7otp, LiteON AWB is set, rGain:0x%x, bGain:0x%x, gGain:0x%x \n ", rGain, bGain, gGain);    
+    LITEON3H7Y_wordwrite_cmos_sensor(GAIN_Gr_ADDR, gGain); //Green 1 default gain 1x
+    LITEON3H7Y_wordwrite_cmos_sensor(GAIN_Gb_ADDR, gGain); //Green 2 default gain 1x
+    LITEON3H7Y_wordwrite_cmos_sensor(GAIN_RED_ADDR, rGain);    
+    LITEON3H7Y_wordwrite_cmos_sensor(GAIN_BLUE_ADDR, bGain);    
+
+    return 1;
+}
+
+
+/*************************************************************************************************
+* Function    :  otp_wb_update
+* Description :  Update WB correction 
+* Return      :  [bool] 0 : OTP data fail 
+                        1 : otp_WB update success            
+**************************************************************************************************/
+bool liteon3h7y_otp_awb_update(BYTE zone)
+{
+    u32 Gr_Gain, Gb_Gain;
+    u32 rg = 0;
+    u32 bg = 0;
+    u32 GbGr = 0;
+    
+    if(!liteon3h7y_get_otp_awb(zone))  // get wb data from otp
+    {
+        return 0;
+    }
+
+    rg = current_RG_ratio;
+    bg = current_BG_ratio;
+    GbGr = current_GbGr_ratio;
+    
+    printk("Liteon3h7otp [S5K3H7_read_otp_wb] rg=0x%x \n", rg);
+    printk("Liteon3h7otp [S5K3H7_read_otp_wb] bg=0x%x \n", bg);
+    printk("Liteon3h7otp [S5K3H7_read_otp_wb] GbGr=0x%x \n", GbGr);
+    
+    
+    if(bg < GOLDEN_BGr_RATIO )
+    {
+        if (rg < GOLDEN_RGr_RATIO)
+        {
+            s_g_G_Gain = 0x100;
+            if (0 != bg)
+            {
+                s_g_B_Gain = 0x100 * GOLDEN_BGr_RATIO / bg;
+            }
+            
+            if (0 != rg)
+            {
+                s_g_R_Gain = 0x100 * GOLDEN_RGr_RATIO / rg;
+            }
+        }
+        else
+        {
+            s_g_R_Gain = 0x100;
+            if (0 != rg)
+            {
+                s_g_G_Gain = 0x100 * GOLDEN_RGr_RATIO / rg;
+            }
+            
+            if (0 != bg)
+            {
+                s_g_B_Gain = 0x100 * GOLDEN_BGr_RATIO / bg;
+            }
+        }
+    }
+    else
+    {
+        if ( rg < GOLDEN_RGr_RATIO)
+        {
+             s_g_B_Gain = 0x100;
+             s_g_G_Gain = 0x100 * bg / GOLDEN_BGr_RATIO;
+             s_g_R_Gain = 0x100 * rg / GOLDEN_RGr_RATIO;
+        }
+        else
+        {
+            Gb_Gain = 0x100 * bg / GOLDEN_BGr_RATIO;
+            Gr_Gain = 0x100 * rg / GOLDEN_RGr_RATIO;
+
+            if( Gb_Gain > Gr_Gain)
+            {
+                s_g_B_Gain = 0x100;
+                s_g_G_Gain = Gb_Gain;
+                s_g_R_Gain = s_g_G_Gain * rg / GOLDEN_RGr_RATIO;
+            }
+            else
+            {
+                s_g_R_Gain = 0x100;
+                s_g_G_Gain = Gr_Gain;
+                s_g_B_Gain = s_g_G_Gain * bg / GOLDEN_BGr_RATIO;
+            }                 
+        }
+    }
+    
+    printk("Liteon3h7otp [S5K3H7_liteon3h7y_otp_awb_update] current_RG_ratio=0x%x \n", current_RG_ratio);
+    printk("Liteon3h7otp [S5K3H7_liteon3h7y_otp_awb_update] current_BG_ratio=0x%x \n", current_BG_ratio);
+    printk("Liteon3h7otp [S5K3H7_liteon3h7y_otp_awb_update] current_BG_ratior=0x%x \n", current_GbGr_ratio);
+
+    printk("Liteon3h7otp [S5K3H7_liteon3h7y_otp_awb_update] GOLDEN_RGr_RATIO=0x%x \n", GOLDEN_RGr_RATIO);
+    printk("Liteon3h7otp [S5K3H7_liteon3h7y_otp_awb_update] GOLDEN_BGr_RATIO=0x%x \n", GOLDEN_BGr_RATIO);
+   
+    printk("HJDDbg3h7AWB, Liteon3h7otp, read OTP AWB, R=0x%x, G=0x%x, B=0x%x \n", s_g_R_Gain, s_g_G_Gain, s_g_B_Gain);
+  
+    liteon3h7y_awb_gain_set(s_g_R_Gain, s_g_B_Gain, s_g_G_Gain);
+
+    printk("Liteon3h7otp WB update finished! \n");
+
+    return 1;
+}
+
+
+/*************************************************************************************************
+* Function    :  otp_update()
+* Description :  update otp data from otp , it otp data is valid, 
+                 it include get ID and WB update function  
+* Return      :  [bool] 0 : update fail
+                        1 : update success
+**************************************************************************************************/
+bool liteon3h7y_otp_update()
+{
+    BYTE zone = 0x0C;
+    BYTE FLG = 0x00;
+
+    BYTE MID = 0x00,LENS_ID= 0x00,VCM_ID= 0x00;
+    int i;
+
+    FLG = liteon3h7y_get_otp_flag(zone);
+
+    if (FLG == 1) 
+    {
+        zone = 1;
+    }
+    else if (FLG == 2)
+    {
+        zone = 2;
+    }
+    else
+    {
+        printk("Liteon3h7otp [liteon3h7y_otp] Func otp_update, no OTP Data or OTP data is invalid!! \n");
+        return 0;                 
+    }
+
+    MID = liteon3h7y_get_otp_module_id(zone);
+    LENS_ID = liteon3h7y_get_otp_lens_id(zone);
+    VCM_ID = liteon3h7y_get_otp_driver_id(zone);
+    liteon3h7y_get_otp_date(zone);
+
+    printk("HJDDbg3h7ID, Liteon3h7otp MID=0x%x, LENS_ID=0x%x, VCM_ID=0x%x \n", MID, LENS_ID, VCM_ID);
+    if(MID != Liteon_ID) //&&(LENS_ID != LARGAN_LENS)&&(VCM_ID != TDK_VCM))
+    {
+        printk("HJDDbg3h7ID, Liteon3h7otp [liteon3h7y_otp] Func otp_update, no Liteon Module !!!! \n");
+        return 0;
+    }
+    liteon3h7y_otp_awb_update(zone); 
+
+    return 1;
+    
+}
+
+
+/*************************************************************************************************
+* Function    :  is_liteon3h7()
+* Description :  check if it is LiteON 3h7 module  
+* Return      :  [bool] 0 : No
+                        1 : Yes, it is LiteON
+**************************************************************************************************/
+bool is_liteon3h7()
+{
+    BYTE zone = 0x0C;
+    BYTE FLG = 0x00;
+
+    BYTE MID = 0x00;
+    int  i;
+    bool bRet = 0;
+    bool bErr = 0;
+
+    printk("HJDDbg3h7ID, OTP, in is_liteon3h7");
+    LITEON3H7Y_bytewrite_cmos_sensor(0x0100, 0x01); // smiaRegs_rw_general_setup_mode_select
+    FLG = liteon3h7y_get_otp_flag(zone);
+
+    if (FLG == 1) 
+    {
+        zone = 1;
+    }
+    else if (FLG == 2)
+    {
+        zone = 2;
+    }
+    else
+    {
+        printk("HJDDbg3h7ID, [liteon3h7y_otp] Func otp_update, no OTP Data or OTP data is invalid!! \n");
+        bErr = 1;
+    }
+
+    if (0 == bErr)
+    {
+        MID = liteon3h7y_get_otp_module_id(zone);
+
+        printk("HJDDbg3h7ID, Liteon3h7otp MID=0x%x \n", MID);
+        if(Liteon_ID == MID) //&&(LENS_ID != LARGAN_LENS)&&(VCM_ID != TDK_VCM))
+        {
+            printk("HJDDbg3h7ID, OTP, is_liteon3h7, it is LiteON3h7! \n");
+            bRet = 1;
+        }
+    }
+
+    LITEON3H7Y_bytewrite_cmos_sensor(0x0100, 0x00); // smiaRegs_rw_general_setup_mode_select
+    printk("HJDDbg3h7ID, OTP, out is_liteon3h7, bRet=%d \n", bRet);
+    return bRet;
+}
+
+
+/*************************************************************************************************
+* Function    :  liteon3h7y_otp_set_AWB_gain()
+* Description :  update AWB gain from static global variables, if not ready, read OTP again  
+* Return      :  [bool] 0 : update fail
+                        1 : update success
+**************************************************************************************************/
+bool liteon3h7y_otp_set_AWB_gain()
+{
+    if (0 != s_g_R_Gain
+        && 0 != s_g_G_Gain
+        && 0 != s_g_B_Gain)
+    {
+        printk("HJDDbg3h7AWB, Liteon3h7otp, set_AWB_gain(OK), R=0x%x, G=0x%x, B=0x%x \n", s_g_R_Gain, s_g_G_Gain, s_g_B_Gain);
+        return liteon3h7y_awb_gain_set(s_g_R_Gain, s_g_B_Gain, s_g_G_Gain);
+    }
+    else
+    {
+        printk("HJDDbg3h7AWB, Liteon3h7otp, set_AWB_gain(NOK), R=0x%x, G=0x%x, B=0x%x, now read OTP \n", s_g_R_Gain, s_g_G_Gain, s_g_B_Gain);
+        return liteon3h7y_otp_update();
+    }
+}
+

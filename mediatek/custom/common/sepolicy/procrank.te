@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbinprocrank Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type procrank_exec , exec_type, file_type;
+type procrank ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive procrank;
+init_daemon_domain(procrank)
+
+
+# 20131122 Add Set Property Rule
+allow procrank  property_type:property_service set;

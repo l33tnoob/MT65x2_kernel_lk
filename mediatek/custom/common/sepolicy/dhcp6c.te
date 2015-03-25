@@ -1,0 +1,38 @@
+# ==============================================
+# Policy File of /system/bindhcp6c Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type dhcp6c_exec , exec_type, file_type;
+type dhcp6c ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive dhcp6c;
+init_daemon_domain(dhcp6c)
+
+
+# 20131122 Add Set Property Rule
+allow dhcp6c  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow dhcp6c dhcp_data_file:file { read getattr open };
+allow dhcp6c linker_exec:file read;
+allow dhcp6c port:udp_socket name_bind;
+allow dhcp6c self:capability { setuid setgid };
+allow dhcp6c self:netlink_route_socket read;
+allow dhcp6c self:udp_socket { write bind create ioctl setopt };
+

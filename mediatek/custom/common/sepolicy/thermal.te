@@ -1,0 +1,38 @@
+# ==============================================
+# Policy File of /system/binthermal Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type thermal_exec , exec_type, file_type;
+type thermal ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive thermal;
+init_daemon_domain(thermal)
+
+# 20131028 CTS_16
+allow thermal linker_exec:file read;
+
+
+# 20131028 CTS_17
+allow thermal device:chr_file { read ioctl open };
+allow thermal proc:file write;
+
+
+
+# 20131122 Add Set Property Rule
+allow thermal  property_type:property_service set;

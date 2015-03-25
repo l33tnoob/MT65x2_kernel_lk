@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- # Copyright Statement:
+#
+# This software/firmware and related documentation ("MediaTek Software") are
+# protected under relevant copyright laws. The information contained herein
+# is confidential and proprietary to MediaTek Inc. and/or its licensors.
+# Without the prior written permission of MediaTek inc. and/or its licensors,
+# any reproduction, modification, use or disclosure of MediaTek Software,
+# and information contained herein, in whole or in part, shall be strictly prohibited.
+
+# MediaTek Inc. (C) 2010. All rights reserved.
+#
+# BY OPENING THIS FILE, RECEIVER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+# THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+# RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO RECEIVER ON
+# AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+# NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+# SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+# SUPPLIED WITH THE MEDIATEK SOFTWARE, AND RECEIVER AGREES TO LOOK ONLY TO SUCH
+# THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. RECEIVER EXPRESSLY ACKNOWLEDGES
+# THAT IT IS RECEIVER'S SOLE RESPONSIBILITY TO OBTAIN FROM ANY THIRD PARTY ALL PROPER LICENSES
+# CONTAINED IN MEDIATEK SOFTWARE. MEDIATEK SHALL ALSO NOT BE RESPONSIBLE FOR ANY MEDIATEK
+# SOFTWARE RELEASES MADE TO RECEIVER'S SPECIFICATION OR TO CONFORM TO A PARTICULAR
+# STANDARD OR OPEN FORUM. RECEIVER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND
+# CUMULATIVE LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+# AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+# OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY RECEIVER TO
+# MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+#
+# The following software/firmware and/or related documentation ("MediaTek Software")
+# have been modified by MediaTek Inc. All revisions are subject to any receiver's
+# applicable license agreements with MediaTek Inc. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+ android:versionCode="1"
+ android:versionName="2.5.13"
+ package="com.orangelabs.rcs">
+      
+	<uses-sdk android:minSdkVersion="5"
+		android:targetSdkVersion="19"/>
+
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.CALL_PHONE"/>
+	<uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>  
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+	<uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+	<uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+     	<uses-permission android:name="android.permission.RECEIVE_SMS"/>	 
+    <uses-permission android:name="android.permission.SET_ORIENTATION" />
+	<uses-permission android:name="com.orangelabs.rcs.permission.RCS"/>
+	<uses-permission android:name="com.orangelabs.rcs.permission.RCS_EXTENSION"/>
+	 
+	<permission android:name="com.orangelabs.rcs.permission.RCS"
+        android:label="@string/rcs_core_permission"
+        android:description="@string/rcs_core_account_username"
+        android:protectionLevel="normal" />	 
+ 
+	<permission android:name="com.orangelabs.rcs.permission.RCS_EXTENSION"
+        android:label="@string/rcs_core_capability_common_extension"
+        android:description="@string/rcs_core_permission_ext_desc"
+        android:protectionLevel="normal" />	 
+	<uses-permission android:name="android.permission.BROADCAST_STICKY"></uses-permission>	 
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/> 
+    <application
+        android:icon="@drawable/rcs_icon"
+        android:label="@string/rcs_core_application_title"
+        android:name="com.mediatek.rcse.service.CoreApplication"
+        android:theme="@style/RcsTheme" > 
+
+        <!--the following meta-data is used to identify the application as a joyn client-->
+         <meta-data android:name="gsma.joyn.client" android:value="true" />
+        
+         <!--the following meta-data is used to provide the value of the intent action that can be 
+         used by other applications to start the joyn client settings screen -->
+         <meta-data android:name="gsma.joyn.settings.activity" android:value="com.mediatek.rcse.RCSE_SETTINGS"/>
+        
+		<!-- the following meta-data is used to separate the various joyn client implementations -->
+		<meta-data android:name="gsma.joyn.preferences"
+			android:value="com.orangelabs.rcs.gsma.joyn.preferences" />
+        
+		<!-- RCS service -->	
+
+		<service android:name="com.orangelabs.rcs.service.RcsCoreService"
+		    android:process=":core">
+	        <intent-filter>
+	            <action android:name="com.orangelabs.rcs.SERVICE"/>
+	            <action android:name="com.orangelabs.rcs.service.api.client.IImsApi"/>
+	            <action android:name="com.orangelabs.rcs.service.api.client.terms.ITermsApi"/>
+	            <action android:name="com.orangelabs.rcs.service.api.client.capability.ICapabilityApi"/>
+	            <action android:name="com.orangelabs.rcs.service.api.client.presence.IPresenceApi"/>
+	            <action android:name="com.orangelabs.rcs.service.api.client.messaging.IMessagingApi"/>
+	            <action android:name="com.orangelabs.rcs.service.api.client.richcall.IRichCallApi"/>
+	            <action android:name="com.orangelabs.rcs.service.api.client.sip.ISipApi"/>	
+                <action android:name="com.mediatek.rcse.service.IFlightMode" />
+                <action android:name="com.mediatek.IPreShutdown" />
+                <action android:name="com.orangelabs.rcs.core.ims.network.INetworkConnectivityApi"/>
+	        </intent-filter>
+	    </service>
+
+	<!-- Add a new service to get GPS location info. @{T-Mobile -->	
+	    <service
+	        android:name=".core.ims.service.presence.pidf.geoloc.GPSLocationService" >
+	        <intent-filter>
+                <action android:name="com.orangelabs.rcs.GPS" />
+	        </intent-filter>
+	    </service>
+	<!-- T-Mobile@} -->
+	
+	<!-- RCS data providers -->	
+
+		<provider android:authorities="com.orangelabs.rcs.settings"
+		    android:process=":core"
+		    android:exported="true"
+			android:name="com.orangelabs.rcs.provider.settings.RcsSettingsProvider"/>
+
+		<provider android:authorities="com.orangelabs.rcs.eab"
+		    android:process=":core"
+		    android:exported="true"
+			android:name="com.orangelabs.rcs.provider.eab.RichAddressBookProvider"/>
+
+		<provider android:authorities="com.orangelabs.rcs.messaging"
+		    android:process=":core"
+		    android:exported="true"
+			android:name="com.orangelabs.rcs.provider.messaging.RichMessagingProvider"/>
+			
+		<provider android:authorities="com.orangelabs.rcs.messaging.integrated"
+		    android:process=":core"
+		    android:exported="true"
+			android:name="com.orangelabs.rcs.provider.messaging.IntegratedMessageMappingProvider"/>
+			
+		<provider android:authorities="com.orangelabs.rcs.csh"
+		    android:process=":core"
+			android:exported="true"
+			android:name="com.orangelabs.rcs.provider.sharing.RichCallProvider"/>
+			
+		<provider android:authorities="com.orangelabs.rcs.eventlogs"
+		    android:process=":core"
+		    android:exported="true"
+			android:name="com.orangelabs.rcs.provider.eventlogs.EventLogProvider"/>
+	
+		<provider android:authorities="com.mediatek.rcse.unreg_messages" 
+		    android:exported="true"
+			android:name="com.mediatek.rcse.provider.UnregMessageProvider"/>
+	
+		<!-- Device events receiver -->	
+
+		<receiver android:name="com.orangelabs.rcs.service.DeviceBoot"
+		    android:process=":core">
+	        <intent-filter>
+	     		<action android:name="android.intent.action.BOOT_COMPLETED"/>
+	        </intent-filter>
+	    </receiver>
+
+		<receiver android:name="com.orangelabs.rcs.service.DeviceShutdown"
+		    android:process=":core">
+	        <intent-filter>
+	     		<action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+	        </intent-filter>
+	    </receiver>
+
+		<!-- Changing locale -->	
+	    
+		<!-- Changing locale -->	
+		<receiver android:name="com.orangelabs.rcs.addressbook.LocaleChangedReceiver"
+		    android:process=":core">  
+   			<intent-filter>
+   				<action android:name="android.intent.action.LOCALE_CHANGED"/>  
+   			</intent-filter>  
+		</receiver> 
+		
+		<service android:name="com.orangelabs.rcs.addressbook.LocaleChangedReceiver$LocaleChangedService" android:process=":core" />
+		
+		<!-- External capability monitoring -->	
+		<receiver android:name="com.orangelabs.rcs.core.ims.service.capability.ExternalCapabilityMonitoring"
+		    android:process=":core">  
+ 			<intent-filter>
+ 				<action android:name="android.intent.action.PACKAGE_ADDED"/>  
+ 				<action android:name="android.intent.action.PACKAGE_REMOVED"/>  
+				<data android:scheme="package"/> 
+ 			</intent-filter>  
+		</receiver>
+		
+	<!-- SMS for Provisioning -->	
+       <!-- M :edited for removing the SMS receiver -->
+        <receiver android:name="com.orangelabs.rcs.provisioning.https.HttpsProvisioningSMS">
+        </receiver>
+		
+
+		<!-- HTTPS provisioning config -->
+		<service android:name="com.orangelabs.rcs.provisioning.https.HttpsProvisioningService"
+		    android:process=":core">  
+	        <intent-filter>
+	            <action android:name="com.orangelabs.rcs.provisioning.HTTPS"/>
+	        </intent-filter>
+	    </service>
+
+        <!-- Provisioning - Terms and conditions activity -->
+        <activity android:name="com.orangelabs.rcs.provisioning.TermsAndConditionsRequest">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+	    <activity android:name="com.mediatek.rcse.activities.ConfigMessageActicity" 
+	    	android:process=":core"
+	    	android:theme="@style/Theme.Transparent"
+			android:excludeFromRecents="true">
+			<intent-filter>
+				<action android:name="com.mediatek.rcse.activities.CONFIG_MESSAGE" />
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		
+        <!-- RCS Start service -->
+        <service android:name="com.orangelabs.rcs.service.StartService">  
+            <intent-filter>
+                <action android:name="com.orangelabs.rcs.service.START"/>
+            </intent-filter>
+        </service>
+
+		<activity android:name="com.mediatek.rcse.activities.RoamingActivity" 
+	    	android:process=":core"
+	    	android:theme="@style/Theme.Transparent"
+			android:excludeFromRecents="true">
+			<intent-filter>
+				<action android:name="com.mediatek.rcse.activities.ROAMING_STATE" />
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+
+        <!-- API encapsulation -->
+        <service android:name="com.mediatek.rcse.service.ApiService" android:exported="true">
+            <intent-filter>
+                <action android:name="com.mediatek.rcse.service.IRegistrationStatus" />
+                <action android:name="com.mediatek.rcse.service.ICapabilities" />
+                <action android:name="com.mediatek.rcse.service.binder.IRemoteWindowBinder" />
+            </intent-filter>
+        </service>
+
+        <!-- Chat application -->
+        <activity 
+            android:icon="@drawable/rcs_icon"
+            android:label="@string/text_chat_main"
+            android:launchMode="singleTop"
+            android:name="com.mediatek.rcse.activities.ChatMainActivity"
+            android:uiOptions="splitActionBarWhenNarrow" 
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:taskAffinity="com.mediatek.rcse.activities.ChatMainActivity"
+            android:alwaysRetainTaskState="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mediatek.rcse.action.CHAT_MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity 
+            android:icon="@drawable/rcs_icon"
+            android:label="@string/text_chats"
+            android:launchMode="singleTop"
+            android:name="com.mediatek.rcse.activities.ChatScreenActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:allowTaskReparenting="true"
+            android:taskAffinity="com.mediatek.rcse.activities.ChatMainActivity"
+            android:alwaysRetainTaskState="true">
+            <intent-filter>
+                <action android:name="com.mediatek.rcse.action.CHAT_SCREEN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mediatek.rcse.action.CHAT_INSTANCE_MESSAGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mediatek.rcse.action.CHAT_FILE_TRANSFER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mediatek.rcse.action.CHAT_SEND_MESSAGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.item/com.orangelabs.rcs.rcs-contact"/>
+            </intent-filter>
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+        </activity>
+        
+
+		<activity android:name="com.orangelabs.rcs.provisioning.https.HttpsProvisioningAlertDialog"
+		     android:process=":core"
+		   android:theme="@style/Theme.Transparent"
+		  >
+          </activity>
+
+   
+        <activity
+            android:allowTaskReparenting="true"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/text_chats"
+            android:launchMode="singleTop"
+            android:name="com.mediatek.rcse.plugin.message.PluginGroupChatActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:alwaysRetainTaskState="true"
+            >
+            <intent-filter >
+                <action android:name="com.mediatek.rcse.action.PLUGIN_GROUP_CHAT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:icon="@drawable/rcs_icon"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:name="com.mediatek.rcse.settings.ProvisionProfileSettings"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter >
+                <action android:name="com.mediatek.rcse.action.PROVISION_PROFILE_SETTING" />
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:icon="@drawable/rcs_icon"
+            android:name="com.mediatek.rcse.settings.PhoneNumberToAccountSettings"
+            android:process=":core"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mediatek.rcse.activities.InvitationDialog"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.mediatek.rcse.action.INVITE_DIALOG"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mediatek.rcse.activities.SelectContactsActivity"
+            android:theme="@android:style/Theme.Holo"
+            android:uiOptions="splitActionBarWhenNarrow" 
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.mediatek.rcse.action.SELECT_CONTACT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mediatek.rcse.action.SELECT_CONTACT_BY_MULTIMEDIA"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mediatek.rcse.activities.ParticipantsListActivity"
+            android:theme="@android:style/Theme.Holo"
+            android:uiOptions="splitActionBarWhenNarrow" 
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.mediatek.rcse.action.SHOW_PARTICIPANTS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>           
+        </activity>
+        <activity android:clearTaskOnLaunch="true"
+            android:icon="@drawable/rcs_icon"
+            android:label="@string/text_blacklist"
+            android:launchMode="singleInstance"
+            android:name="com.mediatek.rcse.activities.BlackListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <activity
+            android:name="com.mediatek.rcse.activities.RcseSystemSettingsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/rcse_settings_title"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Holo">
+            <intent-filter>
+                <action android:name="com.mediatek.rcse.RCSE_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.rcse.activities.PluginProxyActivity" 
+            android:theme="@style/Theme.Transparent"
+            android:configChanges="keyboardHidden|orientation|screenSize|fontScale|locale"
+			android:excludeFromRecents="true">
+			<intent-filter>
+				<action android:name="com.mediatek.rcse.action.PROXY" />
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+			<intent-filter android:icon="@drawable/rcs_file_share"
+				android:label="@string/file_transfer_enhance_title">
+				<action android:name="android.intent.action.SEND" />
+				<data android:mimeType="*/*" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+			<intent-filter>
+                <action android:name="com.mediatek.rcse.action.PluginSelectContact" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+			<intent-filter android:icon="@drawable/rcs_file_share"
+				android:label="@string/file_transfer_enhance_title">
+                                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                                <data android:mimeType="*/*" />
+                                <category android:name="android.intent.category.DEFAULT" />
+                        </intent-filter>
+		</activity>
+		<activity
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/text_settings"
+            android:name="com.mediatek.rcse.activities.SettingsActivity" >
+			<intent-filter>
+                <action android:name="com.mediatek.rcse.action.SETTINGS_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+       <!-- RCSe Wizard Service -->
+        <service android:name="com.orangelabs.rcs.wizard.RcsWizardManagerService">
+        </service>
+
+	<!--RCSe contacts plug-in-->
+	<service android:exported="true"
+            android:name="ContactExtention" >
+            <intent-filter >
+                <action android:name="com.mediatek.contacts.ext.IContactPlugin" />
+            </intent-filter>
+
+            <meta-data
+                android:name="class"
+                android:value="com.mediatek.rcse.plugin.contacts.ContactPlugin" />
+
+	</service>
+    <!-- RCSe phone plug-in -->
+    <service
+        android:exported="true"
+        android:name=".InCallUIPlugin" >
+        <intent-filter >
+            <action android:name="com.mediatek.incallui.ext.IInCallUIPlugin" />
+        </intent-filter>
+        <meta-data
+            android:name="class"
+            android:value="com.mediatek.rcse.plugin.phone.RCSePhonePlugin" />
+	<meta-data android:name="version" android:value="1.0.0" />
+    </service>
+    <!-- RCSe only APN plug-in -->
+	<service android:name="RcseOnlyApnExtention"
+		android:exported="true">
+		<intent-filter>
+			<action android:name="com.mediatek.settings.ext.IRcseOnlyApnExtension" />
+		</intent-filter>
+		<meta-data android:name="class"
+			android:value="com.mediatek.rcse.plugin.apn.RcseOnlyApnExtension" />
+		<meta-data android:name="version" android:value="1.0.0" />
+	</service>
+	
+	<service android:name="com.mediatek.rcse.plugin.apn.RcseOnlyApnStatusService"
+		android:exported="true">
+		<intent-filter>
+			<action android:name="com.mediatek.apn.plugin.RCSE_ONLY_APN_SERVICE" />
+		</intent-filter>
+	</service>
+	
+	<!-- RCSe Message plug-in -->
+	<service android:name=".IpMessagePlugin" 
+	    android:exported="true">
+        <intent-filter>
+            <action android:name="com.mediatek.mms.ipmessage.IIpMessagePlugin" />
+        </intent-filter>
+        <meta-data 
+            android:name="class" 
+            android:value="com.mediatek.rcse.plugin.message.IpMessagePluginExt"/>
+        <meta-data android:name="version" android:value="2.0.0" />
+    </service>
+
+    <service android:name=".com.mediatek.rcse.plugin.message.PluginOne2OneChatWindow" android:exported="true"/>
+
+	<activity android:name="com.mediatek.rcse.plugin.phone.RichcallProxyActivity" android:theme="@style/Theme.Transparent"
+		android:excludeFromRecents="true">
+		<intent-filter>
+			<action android:name="com.mediatek.rcse.plugin.phone.IMAGE_SHARING_SELECTION" />
+			<category android:name="android.intent.category.DEFAULT" />
+		</intent-filter>
+	</activity>	
+    <activity
+        android:name="com.mediatek.rcse.activities.ChatWallPaperSettingsActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:icon="@drawable/ic_launcher_wallpaper"
+        android:label="@string/text_wallpaper">
+        <intent-filter>
+            <category android:name="android.intent.category.DEFAULT" />
+            <action android:name="com.mediatek.rcse.action.CHAT_WALLPAPER_SETTING" />
+            <action android:name="android.intent.action.GET_CONTENT" />
+        </intent-filter>
+    </activity>
+    
+    <activity
+        android:name="com.mediatek.rcse.activities.ChatGalleryWallPaperSettingsActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:icon="@drawable/ic_launcher_gallery"
+        android:label="@string/text_gallery">
+        <intent-filter>
+            <category android:name="android.intent.category.DEFAULT" />
+            <action android:name="com.mediatek.rcse.action.CHAT_WALLPAPER_SETTING" />
+            <action android:name="android.intent.action.GET_CONTENT" />
+        </intent-filter>
+    </activity>
+    
+    <activity
+        android:name="com.mediatek.rcse.activities.ChatCameraWallPaperSettingsActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:icon="@drawable/ic_launcher_camera"
+        android:label="@string/text_camera">
+        <intent-filter>
+            <category android:name="android.intent.category.DEFAULT" />
+            <action android:name="com.mediatek.rcse.action.CHAT_WALLPAPER_SETTING" />
+            <action android:name="android.intent.action.GET_CONTENT" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name="com.mediatek.rcse.activities.DialogActivity"
+        android:theme="@style/Theme.Transparent"
+        android:icon="@drawable/ic_launcher_wallpaper"
+        android:label="@string/text_choose_wallpaper_title">
+        <intent-filter>
+            <category android:name="android.intent.category.DEFAULT" />
+            <action android:name="com.mediatek.rcse.action.DIALOG_ACTIVITY" />
+        </intent-filter>
+    </activity>
+
+    <!-- Add a new broadcast to listener application version changes. @{T-Mobile-->	
+    <!-- //comment it now. add it when you need implement T-Mobile requirements.
+    <receiver android:name="com.mediatek.rcse.receiver.PackageReceiver">  
+        <intent-filter>
+            <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+            <data android:scheme="package"/>
+        </intent-filter>  
+    </receiver> -->
+    <!-- T-Mobile@} -->
+ <!-- Local provisioning (only for debug) -->
+   		
+   		<activity android:name="com.orangelabs.rcs.provisioning.local.Provisioning"
+   		    android:icon="@drawable/rcs_icon" android:label="@string/provisioning_app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>                
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".provisioning.local.ProfileProvisioning"/>
+        <activity android:name=".provisioning.local.StackProvisioning"/>
+        <activity android:name=".provisioning.local.ServiceProvisioning"/>
+		<activity android:name=".provisioning.local.LoggerProvisioning"/>
+        <activity
+            android:name="com.orangelabs.rcs.wizard.RcsWizardActivity"
+            android:label="@string/title_activity_rcs_wizard" 
+            >
+        
+             <intent-filter android:priority="4">
+            <action android:name="android.intent.action.MAIN" />
+              <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+    
+        </activity>
+        <activity
+            android:name="com.orangelabs.rcs.wizard.WizardMainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation= "portrait" 
+            android:theme = "@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            >
+            <intent-filter>
+                <action android:name="rcs.intent.action.WizardMainActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.orangelabs.rcs.wizard.JoynIntroduction"
+            android:label="@string/title_activity_joyn_introduction" 
+            android:screenOrientation= "portrait" 
+             android:theme = "@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        
+        <activity
+            android:name="com.orangelabs.rcs.wizard.JoynIntroductionVideo"
+            android:label="@string/title_activity_joyn_introduction_video" 
+            android:screenOrientation="landscape"
+            >
+        </activity>
+</application> 
+
+</manifest>

@@ -1,0 +1,1 @@
+The folder is for MTK extension framework files (mediatek-frameworks) based on 4.2 MR1 architecture

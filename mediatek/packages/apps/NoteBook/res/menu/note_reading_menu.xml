@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--  This is our one standard application action (creating a new note). -->
+    <item android:id="@+id/menu_edit_current"
+          android:icon="@drawable/ic_menu_edit_current"
+          android:title="@string/menu_edit_button"
+          android:showAsAction="always" />
+    <item android:id="@+id/menu_delete_current"
+          android:icon="@drawable/ic_menu_delete_selected"
+          android:title="@string/menu_delete_button"
+          android:showAsAction="always" />
+</menu>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"Kemas kini sistem"</string>
+
+
+    <string name="none_package">Tiada pakej kemas kini yang sah.</string>
+    <string name="new_version_query">Menyemak kemas kini\u2026</string>
+    <string name="menu_stats_refresh">"Segar Semula"</string>
+    <string name="network_error">Gagal menyambungkan rangkaian</string>
+    <string name="no_new_version">Sistem anda kini sudah dikemas kini.</string>
+    <string name="not_support_version">Sasaran anda tidak menyokong Melalui Udara</string>
+    <string name="query_sd_insufficient_space">Ruang tidak mencukupi untuk <xliff:g id="path">%s</xliff:g></string>
+    <string name="ota_category_title">OTA</string>
+    <string name="sd_category_title">KEMAS KINI KAD SD</string>
+    <string name="ota_preference_summary">Kemas kini sistem ditemui pada pelayan</string>
+
+
+    <string name="notes_summary">Kemas kini perisian tegar boleh mempertingkatkan kestabilan mesin dan tampalan pepijat. Kemas kini ke versi</string>
+    <string name="ask_for_install_ota">Adakah anda ingin memasang kemas kini sistem sekarang?</string>
+    <string name="warning_install_ota" product="tablet">Anda tidak dapat menggunakan tablet anda atau membuat panggilan kecemasan semasa pemasangan. Jangan tanggalkan bateri dan kad SD anda atau mematikan tablet.</string>
+    <string name="warning_install_ota" product="default">Anda tidak dapat menggunakan telefon anda atau membuat panggilan kecemasan semasa pemasangan. Jangan tanggalkan bateri dan kad SD anda atau mematikan telefon.</string>
+    <string name="ask_for_install_sd">Pakej kemas kini sistem terkini ditemui dalam kad SD anda, adakah anda ingin memasangnya?</string>
+    <string name="warning_install_sd" product="tablet">Anda tidak dapat menggunakan tablet anda atau membuat panggilan kecemasan semasa pemasangan. Jangan tanggalkan bateri dan kad SD anda atau mematikan tablet. \nSebelum memulakan pemasangan, sila pastikan pakej telah dimuat turun daripada laman web rasmi dan pakej itu tidak rosak.</string>
+    <string name="warning_install_sd" product="default">Anda tidak dapat menggunakan telefon anda atau membuat panggilan kecemasan semasa pemasangan. Jangan tanggalkan bateri dan kad SD anda atau mematikan telefon. \nSebelum memulakan pemasangan, sila pastikan pakej telah dimuat turun daripada laman web rasmi dan pakej itu tidak rosak.</string>
+    <string name="ask_for_download_ota">Adakah anda ingin memuat turun kemas kini pengoptimuman sistem?</string>
+    <string name="warning_download_ota">Kami mengesyorkan menggunakan titik panas Wi-Fi percuma atau pelan data tanpa had untuk menggunakan kemas kini ini. Jika tidak, caj sambungan data standard boleh dikenakan. \nSila buat sandaran data anda terlebih dahulu sebelum menaik taraf.</string>
+        
+    <string name="notification_content_title">Kemas kini sistem</string>
+    <string name="downloading_title">Memuat turun...</string>   
+    <string name="wifi_only_check">Wi-Fi sahaja</string>     
+    
+    
+    
+    
+    
+    <string name="btn_install">"Pasang"</string>
+    <string name="btn_cancel">buang</string>
+    <string name="btn_download">Muat Turun dan Pasang</string>
+    <string name="btn_resume">"Muat turun"</string>
+    
+    <string name="warn_data_cost_title">Muat turun kemas kini</string>
+    <string name="warn_data_cost_content">Memuat turun melalui rangkaian mudah alih boleh dikenakan bayaran tambahan. Adakah anda ingin meneruskan?</string>
+    <string name="warn_data_cost_yes">Ya</string>
+    <string name="warn_data_cost_no">Tidak</string>
+
+    <string name="notification_download_complete_title">Kemas kini sistem sudah bersedia</string>
+    <string name="notification_download_complete_context">Ketik untuk memasang kemas kini sistem</string>
+        
+    <string name="sdcard_crash_or_unmount">Ralat kad SD. Sila semak kad SD anda dan cuba semula.</string>
+    <string name="unmount_sdcard">Ralat melekap kad SD, sila semak.</string>
+    <string name="insufficient_space_content">There is no enough storage space! This installation need at least  <xliff:g id="deltasize" example="3.5M">%s</xliff:g>. Check your app manager to release extra space please. </string>
+
+    
+    
+    
+    
+    <string name="install_sd_title">Pasang kemas kini</string>
+    <string name="install_sd_message">Sila pastikan pakej telah dimuat turun daripada laman web rasmi dan pakej itu tidak rosak. Jika tidak, ia boleh menyebabkan masalah sistem.</string>
+    <string name="install_reminder_now">Pasang sekarang</string>
+    <string name="install_reminder_not_now">"Bukan sekarang"</string>
+    
+    
+
+    <string name="notification_content_text_completed">Berjaya muat turun</string> 
+
+    <string name="unknown_per">"Tidak diketahui"</string>    
+    <string name="unknown_error">Unknown error</string>
+    <string name="unknown_error_content">Ralat tidak diketahui telah berlaku. Sila keluar dari halaman ini dan cuba lagi.</string>
+    <string name="insufficient_space_title">Ruang tidak mencukupi</string>
+    <string name="error_sdcard">Maklumat kad SD</string>
+    <string name="insufficient_space">Ruang tidak mencukupi pada kad SD.</string>
+    <string name="package_deleted_error">Kemas kini sistem dihentikan disebabkan oleh naik taraf yang tidak sah.</string>
+    
+    <string name="cancel_download_title">Batalkan muat turun</string>
+    <string name="cancel_download_content">Operasi ini akan membuang fail yang dimuat turun.</string>
+
+    
+    <string name="change_network_title">"Muat turun"</string>
+    <string name="change_network_content">APN semasa tidak menyokong muat turun, adakah anda ingin bertukar kepada APN lain atau menghidupkan Wi-Fi?</string>
+    <string name="change_network_wifi_btn">Gunakan Wi-Fi</string>
+    <string name="change_network_apn_btn">Tukar APN</string>
+    <string name="change_network_discard_btn">buang</string>    
+    <string name="package_error_title">Gagal dipasang</string>
+    <string name="package_error_message_invalid">Ralat pakej. Sila semak kemas kini dan muat turun semula.</string>
+    <string name="package_error_message_insuff" product="tablet">Ruang pada peranti tidak mencukupi.</string>
+    <string name="package_error_message_insuff" product="default">Ruang pada telefon tidak mencukupi</string>
+    <string name="package_error_message_crash">Tidak dapat mengakses data pengguna</string>
+    <string name="package_error_message_full">Memerlukan pakej lengkap untuk bekas penukaran pembahagi.</string>    
+    <string name="updateSuccess" product="tablet">Tahniah! Peranti anda telah berjaya dikemas kini kepada versi  <xliff:g id="version" example="gb.p37">%s</xliff:g>. </string> 
+    <string name="updateSuccess" product="default">Tahniah! Telefon anda telah berjaya dikemas kini kepada versi  <xliff:g id="version" example="gb.p37">%s</xliff:g>. </string> 
+    <string name="updateFailed">Gagal mengemas kini kepada versi  <xliff:g id="version" example="gb.p37">%s</xliff:g>. </string>
+    <string name="package_unzip">Menyahzip pakej\u2026</string>
+    <string name="package_unzip_error">Unzip error</string>
+    
+    <string name="installing_message">Telefon anda akan melakukan penutupan\u2026</string>
+    <string name="install_sd_info">Pakej perlu disalin pada storan telefon untuk meneruskan naik taraf.\nRuang pada telefon anda tidak mencukupi.</string>
+    <string name="sdcard_crash_or_unmount_when_install">Kemas kini sistem dihentikan disebabkan kad SD dinyahlekap.</string>
+    <string name="sdcard_inserted">Adakah anda ingin mengimbas kad SD anda untuk mencari lagi pakej kemas kini?</string>
+    
+    <string name="new_version_detected">Kemas kini sistem tersedia</string>
+    <string name="sdcard_unmount">Kad SD tidak terpasang</string>
+    <string name="server_version_error">Ralat pelayan: Sila kemas kini kod sumber pelayan.</string>
+    <string name="cta_warning">Sistem menyokong kemas kini perisian tegar hanya daripada pelayan atau laman web rasmi. Jika pengguna menggunakan imej ROM pihak ke-3 dan/atau kaedah akar lain untuk menaik taraf perisian tegar, ia akan menyebabkan telefon tidak stabil. Sila ambil perhatian bahawa pengguna hendaklah mengambil segala tanggungjawab untuk semua kelakuan ini.</string>
+</resources>

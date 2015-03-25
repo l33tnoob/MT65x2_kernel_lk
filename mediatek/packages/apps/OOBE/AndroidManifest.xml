@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mediatek.oobe"
+    android:sharedUserId="android.uid.system" >
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.SET_ORIENTATION" />
+
+    <application
+        android:icon="@drawable/ic_launcher_oobe"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Holo.NoTitleBar" 
+        android:supportsRtl="true">
+
+        <activity android:name=".WizardActivity" >
+            <intent-filter android:priority="9" >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main -->
+        <activity
+            android:name=".basic.MainActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|keyboardHidden|orientation|screenSize|mcc|mnc"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.mediatek.oobe" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Language settings -->
+        <activity
+            android:name=".basic.LanguageSettingsWizard"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="locale|keyboardHidden|orientation|screenSize|mcc|mnc"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.mediatek.oobe.basic.OOBE_LANGUAGE_SETTING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Import contacts -->
+        <activity android:name=".basic.ImportContactsActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.mediatek.oobe.basic.OOBE_IMPORT_CONTACTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Internet Connection -->
+        <activity android:name=".basic.InternetConnectionActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.mediatek.oobe.basic.OOBE_INTERNET_CONNECTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".advanced.AdvanceSettingsEntrance"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.mediatek.oobe.advanced.AdvanceSettings" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Sync settings -->
+        <activity
+            android:name=".advanced.SyncSettings"
+            android:label="@string/oobe_sync_settings_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.mediatek.oobe.advanced.SyncSettings" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Account settings -->
+        <activity
+            android:name=".advanced.AccountSettings"
+            android:label="@string/oobe_account_settings_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.mediatek.oobe.advanced.AccountSettings" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Advance settings end -->
+        <activity
+            android:name=".advanced.AdvanceSettingsEnd"
+            android:label="@string/oobe_advance_settings_end_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.mediatek.oobe.advanced.AdvanceSettingsEnd" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- for quick start guide -->
+        <activity
+            android:name=".qsg.QuickStartGuideMain"
+            android:icon="@drawable/ic_launcher_qsg"
+            android:label="@string/qsg_app_name"
+            android:configChanges="orientation|keyboardHidden|screenSize" 
+            android:taskAffinity="com.mediatek.quick_start_guide" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.mediatek.oobe.QUICK_START_GUIDE" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+         <service android:name=".basic.ImportContactsService">
+    		<intent-filter>
+    			<action android:name="com.mediatek.oobe.basic.ImportContactsService" />
+    			<category android:name="android.intent.category.DEFAULT"/>
+    		</intent-filter>
+    	</service>
+
+    </application>
+
+</manifest>

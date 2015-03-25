@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binselinux_network Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type selinux_network_exec , exec_type, file_type;
+type selinux_network ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive selinux_network;
+init_daemon_domain(selinux_network)
+
+
+# 20131122 Add Set Property Rule
+allow selinux_network  property_type:property_service set;

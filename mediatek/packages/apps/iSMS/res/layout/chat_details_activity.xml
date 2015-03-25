@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+<ImageView 
+    android:id="@+id/iv_chat_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop" />
+    
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_chat_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lv_chat_list"
+        style="?android:attr/listViewWhiteStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginBottom="1dip"
+        android:layout_weight="1.0"
+        android:divider="@null"
+        android:dividerHeight="@dimen/list_divider_height"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbarStyle="insideOverlay"
+        android:smoothScrollbar="false"
+        android:stackFromBottom="true"
+        android:transcriptMode="normal" >
+    </ListView>
+    <View android:background="?android:attr/dividerHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height=".9dp" />
+
+    <include
+        android:id="@+id/bottom_panel"
+        layout="@layout/bottom_panel_view" />
+
+    <include
+        android:id="@+id/bottom_switch_panel"
+        layout="@layout/switch_sim_layout" />
+
+</LinearLayout>
+
+</RelativeLayout>

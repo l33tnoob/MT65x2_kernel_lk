@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/clockswitch_debug_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/hqa_cpustress_clockswitch_enabledebug"
+                android:textSize="18sp" >
+            </TextView>
+
+            <CheckBox
+                android:id="@+id/clockswitch_debug_enable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip" >
+            </CheckBox>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:text="@string/hqa_cpustress_clockswitch_settimeout"
+                android:textSize="18sp" >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/clockswitch_timeout_s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:minWidth="70dip"
+                    android:text="@string/hqa_cpustress_clockswitch_s_value" >
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hqa_cpustress_clockswitch_s"
+                    android:textSize="14sp" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/clockswitch_timeout_ns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:maxWidth="70dip"
+                    android:minWidth="70dip"
+                    android:text="@string/hqa_cpustress_clockswitch_ns_value" >
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hqa_cpustress_clockswitch_ns"
+                    android:textSize="14sp" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/clockswitch_btn_start"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="140dip"
+                android:text="@string/hqa_cpustress_clockswitch_start" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/clockswitch_btn_switch26"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:text="@string/hqa_cpustress_clockswitch_switch26" >
+            </Button>
+
+            <Button
+                android:id="@+id/clockswitch_btn_switch1g"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="@string/hqa_cpustress_clockswitch_switch1g" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/clockswitch_tv_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hqa_cpustress_clockswitch_cpuspeed"
+                android:textSize="18sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/clockswitch_edt_speed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="16" >
+            </EditText>
+
+            <Button
+                android:id="@+id/clockswitch_btn_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/hqa_cpustress_clockswitch_set" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

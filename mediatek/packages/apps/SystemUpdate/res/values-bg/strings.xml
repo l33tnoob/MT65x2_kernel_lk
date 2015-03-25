@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"Актуализации на системата"</string>
+
+
+    <string name="none_package">Няма валидни пакети за актуализация.</string>
+    <string name="new_version_query">Проверка за актуализация\u2026</string>
+    <string name="menu_stats_refresh">"Опресняване"</string>
+    <string name="network_error">Разпадане на мрежовата връзка</string>
+    <string name="server_version_error">Грешка на сървъра: актуализирайте изходния код на сървъра.</string>    
+    <string name="no_new_version">Системата ви е актуализирана.</string>
+    <string name="not_support_version">Целта не поддържа Over-the-Air.</string>
+    <string name="query_sd_insufficient_space">Няма достатъчно място за <xliff:g id="path">%s</xliff:g></string>
+    <string name="ota_category_title">ОТА</string>
+    <string name="sd_category_title">АКТУАЛИЗИРАНЕ НА SD КАРТА</string>
+    <string name="ota_preference_summary">На сървъра има системна актуализация</string>
+
+
+    <string name="notes_summary">Актуализирането на фърмуера повишава стабилността на машината и отстранява грешките</string>
+    <string name="ask_for_install_ota">Искате ли да инсталирате сега системната актуализация?</string>
+    <string name="warning_install_ota" product="tablet">По време на инсталирането не е възможна работа с таблета или спешни повиквания. Не сваляйте батерията, не вадете SD картата, не изключвайте таблета.</string>
+    <string name="warning_install_ota" product="default">По време на инсталирането не е възможна работа с телефона или спешни повиквания. Не сваляйте батерията, не вадете SD картата, не изключвайте телефона.</string>
+    <string name="ask_for_install_sd">На SD картата има най-нов пакет за актуализиране, да го инсталираме ли?</string>
+    <string name="warning_install_sd" product="tablet">По време на инсталирането не е възможна работа с таблета или спешни повиквания. Не сваляйте батерията, не вадете SD картата, не изключвайте таблета. \nПреди началото проверете дали пакетът е свален от официалния сайт и не е повреден.</string>
+    <string name="warning_install_sd" product="default">По време на инсталирането не е възможна работа с телефона или спешни повиквания. Не сваляйте батерията, не вадете SD картата, не изключвайте телефона. \nПреди началото проверете дали пакетът е свален от официалния сайт и не е повреден.</string>
+    <string name="ask_for_download_ota">Искате ли да свалите новото оптимизиране на системата?</string>
+    <string name="warning_download_ota">Ние препоръчваме да ползвате свободна зона на Wi-Fi или неограничена връзка за данни за прилагане на актуализацията. Иначе можете да платите нестардартни такси за данни. \nПреди ъпгрейда архивирайте данните си.</string>
+        
+    <string name="notification_content_title">Системна актуализация</string>
+    <string name="downloading_title">"Сваляте\u2026"</string>   
+    <string name="wifi_only_check">"Само Wi-Fi"</string>     
+    
+    
+    
+    
+    
+    <string name="btn_install">"Инсталиране"</string>
+    <string name="btn_cancel">Отхвърляне</string>
+    <string name="btn_download">Сваляне и инсталиране</string>
+    <string name="btn_resume">"Изтегляне"</string>
+    
+    <string name="warn_data_cost_title">Сваляне на актуализация</string>
+    <string name="warn_data_cost_content">Свалянето през мобилни мрежи може да струва допълнителни такси. Да продължаваме ли?</string>
+    <string name="warn_data_cost_yes">"Да"</string>
+    <string name="warn_data_cost_no">"Не"</string>
+
+    <string name="notification_download_complete_title">Системната актуализация е готова</string>
+    <string name="notification_download_complete_context">Чукнете за инсталиране на актуализацията</string>
+        
+    <string name="sdcard_crash_or_unmount">Грешка в SD картата. Проверете SD картата и опитайте пак.</string>
+    <string name="unmount_sdcard">Грешка в поставянето на SD картата, проверете.</string>
+    <string name="insufficient_space_content">За инсталиране са нужни най-малко <xliff:g id="deltasize" example="3.5M">%s</xliff:g> байта памет. Освободете памет, за да продължим.</string>
+
+    
+    
+    
+    
+    <string name="install_sd_title">Инсталиране на актуализацията</string>
+    <string name="install_sd_message">Проверете дали пакетът е свален от официалния сайт и не е повреден. Иначе той може да причини системни проблеми.</string>
+    <string name="install_reminder_now">Инсталиране сега</string>
+    <string name="install_reminder_not_now">"Не сега"</string>
+    
+    
+
+    <string name="notification_content_text_completed">Успешно сваляне</string> 
+
+    <string name="unknown_per">"неизвестно"</string>    
+    <string name="unknown_error">Неизвестна грешка</string>
+    <string name="unknown_error_content">Възникна неизвестна грешка. Излезте от страницата и опитайте пак.</string>
+    <string name="insufficient_space_title">Няма достатъчно памет</string>
+    <string name="error_sdcard">Информация за SD картата</string>
+    <string name="insufficient_space">Няма достатъчно памет на SD картата.</string>
+    <string name="package_deleted_error">Системните актуализации спрени - ъпгрейдът е невалиден.</string>
+    
+    <string name="cancel_download_title">Отказ от свалянето</string>
+    <string name="cancel_download_content">Тази операция ще отхвърли сваления файл.</string>
+
+    
+    <string name="change_network_title">"Изтегляне"</string>
+    <string name="change_network_content">Текущата APN не поддържа свалянето, да преминем ли на друга APN или към Wi-Fi?</string>
+    <string name="change_network_wifi_btn">Използвай Wi-Fi</string>
+    <string name="change_network_apn_btn">Смени APN</string>
+    <string name="change_network_discard_btn">Отхвърляне</string>    
+    <string name="package_error_title">Неуспешно инсталиране</string>
+    <string name="package_error_message_invalid">Грешка в пакета. Проверете актуализацията и опитайте пак.</string>
+    <string name="package_error_message_insuff" product="tablet">Няма достатъчно памет на у-вото.</string>
+    <string name="package_error_message_insuff" product="default">Няма достатъчно памет на телефона.</string>
+    <string name="package_error_message_crash">Няма достъп до раздела с данни.</string>
+    <string name="package_error_message_full">Необходим е целият пакет, разделът е със сменен регистър.</string>    
+    <string name="updateSuccess" product="tablet">Поздравления! У-вото успешно актуализирано до версия <xliff:g id="version" example="gb.p37">%s</xliff:g>.</string> 
+    <string name="updateSuccess" product="default">Поздравления! Телефонът успешна актуализиран до версия <xliff:g id="version" example="gb.p37">%s</xliff:g>.</string> 
+    <string name="updateFailed">Неуспешно актуализиране до версия <xliff:g id="version" example="gb.p37">%s</xliff:g>.</string>
+    <string name="package_unzip">Разопаковане на пакета\u2026</string>
+    <string name="package_unzip_error">Грешка на Unzip</string>
+    
+    <string name="installing_message">Телефонът ще се изключи\u2026</string>
+    <string name="install_sd_info">За ъпгрейда пакетът трябва да се копира в паметта на телефона.\nНяма достатъчно памет.</string>
+    <string name="sdcard_crash_or_unmount_when_install">Системните актуализации спрени - SD картата е извадена.</string>
+    <string name="sdcard_inserted">Искате ли да сканирате SD картата за други пакети за актуализиране?</string>
+    
+    <string name="new_version_detected">Има системна актуализация</string>
+    <string name="sdcard_unmount">SD картата е извадена</string>
+    <string name="cta_warning">Системата поддържа ъпгрейд на фърмуера само от официалния сайт или сървър. Ако клиентът ползва ROM образ от другаде и/или други основни методи за ъпгрейд на фърмуера, телефонът ще работи нестабилно. Потребителят носи цялата отговорност за подобно поведение.</string>
+</resources>

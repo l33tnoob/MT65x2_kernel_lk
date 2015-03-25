@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binperf Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type perf_exec , exec_type, file_type;
+type perf ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive perf;
+init_daemon_domain(perf)
+
+
+# 20131122 Add Set Property Rule
+allow perf  property_type:property_service set;

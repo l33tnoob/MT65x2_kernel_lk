@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+<TextView  
+        android:id="@+id/appLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test_dscription"
+/>
+
+
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="2dp"
+    android:background="@android:color/darker_gray"/>
+    
+<TextView  
+        android:id="@+id/appActionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+/>
+
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="2dp"
+    android:background="@android:color/darker_gray"/>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/testGroup"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <RadioButton android:id="@+id/testA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test_a"
+        android:checked="true"
+        />
+
+    <RadioButton android:id="@+id/testB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_b"
+            />
+
+    <RadioButton android:id="@+id/testC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_c"
+            />
+
+    <RadioButton android:id="@+id/testD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/test_d"
+            />
+</RadioGroup>
+</LinearLayout>
+
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="2dp"
+    android:background="@android:color/darker_gray"/>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+    
+<Button
+        android:id="@+id/sendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_btn" />
+
+<Button
+        android:id="@+id/sendCbBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_cb_btn" />
+        
+<Button
+        android:id="@+id/resetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_btn" />
+        
+</LinearLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+<EditText
+        android:id="@+id/inputNum"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>    
+<Button
+        android:id="@+id/fillBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_fill" />
+
+</LinearLayout>        
+
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="2dp"
+    android:background="@android:color/darker_gray"/>
+
+<EditText
+        android:id="@+id/inputText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions|textMultiLine"/>
+
+</LinearLayout> 
+</ScrollView>

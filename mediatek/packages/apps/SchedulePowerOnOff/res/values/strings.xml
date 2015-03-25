@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">    
+    <!-- Schedule power on/off settings -->
+    <!-- Main Settings screen setting option name to go into the power on/off settings-->
+    <string name="schedule_power_on_off_settings_title">Schedule power on &amp; off</string>
+    <!-- Main Settings screen setting option summary text for the item to go into the date and time settings. -->
+    <string name="schedule_power_on_off_time">Time</string>
+    <!-- Date & time setting screen setting check box title if the date and time should be determined automatically -->
+    <string name="schedule_power_on_off_repeat">Repeat</string>
+    <!-- Date & time setting screen setting option summary text when Automatic check box is selected (that is, when date and time should be determined automatically) -->
+    <string name="schedule_power_on_off_set">Set schedule power on &amp; off</string>
+    <string name="schedule_power_on_set">Set schedule power on</string>
+    <string name="schedule_power_off_set">Set schedule power off</string>
+    <!-- Context Menu Item on Alarm Settings screen: Enable alarm -->
+    <string name="enable_schpwr">Enable</string>
+    <!-- Context Menu Item on Alarm Settings screen: Disable alarm -->
+    <string name="disable_schpwr">Disable</string>
+    <!-- Alarm confirmation toast: Describes how long from now until
+         alarm fires -->
+    <string-array name="alarm_set">
+        <item>This power on is set for less than 1 minute from now.</item>
+        <item>This power on is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> from now.</item>
+        <item>This power on is set for <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> from now.</item>
+        <item>This power on is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> and <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> from now.</item>
+        <item>This power on is set for <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+        <item>This power on is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+        <item>This power on is set for <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+        <item>This power on is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g>, <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g>, and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+        <item>This power off is set for less than 1 minute from now.</item>
+        <item>This power off is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> from now.</item>
+        <item>This power off is set for <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> from now.</item>
+        <item>This power off is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> and <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> from now.</item>
+        <item>This power off is set for <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+        <item>This power off is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g> and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+        <item>This power off is set for <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g> and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+        <item>This power off is set for <xliff:g id="DAYS" example="2 days">%1$s</xliff:g>, <xliff:g id="HOURS" example="2 hours">%2$s</xliff:g>, and <xliff:g id="MINUTES" example="2 minutes">%3$s</xliff:g> from now.</item>
+    </string-array>
+
+    <!-- Alarm confirmation toast: singular day -->
+    <string name="day">"1 day"</string>
+
+    <!-- Alarm confirmation toast: plural days -->
+    <string name="days">"<xliff:g id="days">%s</xliff:g> days"</string>
+    <!-- Alarm confirmation toast: singular hour -->
+    <string name="hour">1 hour</string>
+
+    <!-- Alarm confirmation toast: plural hours -->
+    <string name="hours"><xliff:g id="hours">%s</xliff:g> hours</string>
+
+    <!-- Alarm confirmation toast: singular minute  -->
+    <string name="minute">"1 minute"</string>
+    <!-- Alarm confirmation toast: plural minutes  -->
+    <string name="minutes">"<xliff:g id="minutes">%s</xliff:g> minutes"</string>
+
+    <!-- Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: special case for when
+         the alarm is set to repeat every day -->
+    <string name="every_day">Every day</string>
+
+    <!-- Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: special case for when
+         the alarm is set to never repeat -->
+    <string name="never">Never</string>
+
+    <!-- Repeat options that appear under an alarm on main Alarm Clock
+         screen to identify repetition schedule: concatenate days with
+         this character, i.e. "Mon, Tue, Wed" -->
+    <string name="day_concat" translatable="false">", "</string>
+
+    <!-- Done button when editing an alarm. -->
+    <string name="done">Done</string>
+
+    <!-- Revert button when editing an alarm. -->
+    <string name="revert">Revert</string>
+    <string name="schpwr_shutdown_message">"Your device will shut down in <xliff:g id="seconds">%s</xliff:g> seconds"</string>
+    <string name="schpwr_shutdown_message_second">"Your device will shut down in <xliff:g id="second">%s</xliff:g> second"</string>
+</resources>

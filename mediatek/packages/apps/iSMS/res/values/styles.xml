@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+		Copyright (C) 2007 The Android Open Source Project Licensed under the
+		Apache License, Version 2.0 (the "License"); you may not use this file
+		except in compliance with the License. You may obtain a copy of the
+		License at http://www.apache.org/licenses/LICENSE-2.0 Unless required
+		by applicable law or agreed to in writing, software distributed under
+		the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+		CONDITIONS OF ANY KIND, either express or implied. See the License for
+		the specific language governing permissions and limitations under the
+		License.
+
+
+
+
+
+
+
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme is the default theme. -->
+    <style name="Theme" parent="android:Theme"></style>
+
+    <!-- Variation on our application theme that forces a plain text style. -->
+    <!--
+		A theme that has a translucent background. Here we explicitly specify
+		that this theme is to inherit from the system's translucent theme,
+		which sets up various attributes correctly.
+
+
+
+
+
+
+
+    -->
+
+
+    <!--
+		Variation on our application theme that has a transparent background;
+		this example completely removes the background, allowing the activity
+		to decide how to composite. Also here we force the translucency
+		ourself rather than making use of the built-in translucent theme.
+
+
+
+
+
+
+
+    -->
+    
+    <style name="NMS_PROFILE_STYLE" parent="@android:style/Theme.Holo.Light.DarkActionBar">        
+        <item name="android:actionModeCutDrawable">@drawable/ic_menu_cut_holo_light</item>
+        <item name="android:actionModeCopyDrawable">@drawable/ic_menu_copy_holo_light</item>
+        <item name="android:actionModePasteDrawable">@drawable/ic_menu_paste_holo_light</item>
+        <item name="android:actionModeSelectAllDrawable">@drawable/ic_menu_selectall_holo_light</item>
+    </style>
+
+    <style name="NMS_CONTACT_STYLE" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:textColorPrimary">@android:color/black</item>         
+        <item name="android:actionBarStyle">@style/ContactActionBarStyle</item>
+        <item name="android:actionBarWidgetTheme">@style/ContactActionBarTheme</item>
+        <item name="android:actionBarItemBackground">@drawable/item_actionbar_selector</item>
+    </style>
+
+    <style name="ContactActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/ab_solid_custom_blue_inverse_holo</item>
+        <item name="android:backgroundStacked">@drawable/ab_solid_custom_blue_inverse_holo</item>
+    </style>
+
+    <style name="ContactActionBarTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:popupMenuStyle">@style/SearchViewResult</item>
+    </style>
+    
+    <style name="SearchViewResult" parent="@android:style/Widget.Holo.Light.PopupMenu">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textColorSecondary">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+
+    <style name="Theme.NoTitleAndOverlay" parent="@android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Msg_ListView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:cacheColorHint">@null</item>
+        <item name="android:divider">@color/list_line_color</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:fadingEdge">none</item>
+    </style>
+
+    <style name="Navigation_Point">
+        <item name="android:layout_width">8dp</item>
+        <item name="android:layout_height">8dp</item>
+        <item name="android:button">@drawable/radio_selector</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+    <style name="Navigation_Title">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:background">@color/navigation_title_color</item>
+    </style>
+
+    <style name="Contact_Letter_bgColor">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/contact_letter_color</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#5e5e5e</item>
+    </style>
+
+    <style name="Msg_LineOne">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="Msg_LineTwo">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="Msg_Time">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="Msg_UserImage">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_margin">6dp</item>
+    </style>
+
+    <style name="Msg_StatusImage">
+        <item name="android:layout_width">12dp</item>
+        <item name="android:layout_height">12dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+    </style>
+
+    <style name="chat_from_time_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/chat_time_color</item>
+    </style>
+
+    <style name="chat_to_time_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/chat_time_color</item>
+    </style>
+
+    <style name="chat_from_type_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/chat_time_color</item>
+    </style>
+
+    <style name="chat_to_type_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/chat_time_color</item>
+    </style>
+
+    <style name="chat_from_status_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="chat_from_status">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8dp</item>
+    </style>
+
+    <style name="chat_to_status_type">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="chat_to_status">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+
+    <style name="out_going_time_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">4dip</item>
+        <item name="android:textColor">#555555</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="out_going_type_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:layout_marginRight">4dip</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:ellipsize">middle</item>
+        <item name="android:maxWidth">100dip</item>
+    </style>
+
+    <style name="separator_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">@drawable/isms_chat_split_line</item>
+    </style>
+
+    <style name="bubble_name_separator_style" parent="@style/separator_style">
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="caption_separator_style" parent="@style/bubble_name_separator_style">
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="group_member_name_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#5a5a5a</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="ProgressBarHolo.Horizontal" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_holo_dark</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_indeterminate_horizontal_holo
+</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+
+    <style name="Theme.UIAlertDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/floated</item>
+    </style>
+
+    <style name="audio_info_style">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#555555</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    
+    <style name="Theme.ChatDetailHoloLight" parent="android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarWidgetTheme">@style/HoloLightSelectMode</item>
+    </style>
+    
+    <style name="HoloLightSelectMode" parent="android:style/Widget.Holo.ListPopupWindow">
+        <item name="android:popupBackground">@null</item>
+    </style>
+
+</resources>

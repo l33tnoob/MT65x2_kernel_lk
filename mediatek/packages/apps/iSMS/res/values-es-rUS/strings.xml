@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="STR_NMS_MAIN">iSMS</string>
+    <string name="STR_NMS_HISSAGE">iSMS</string>
+    <string name="STR_NMS_INVITE_SMS_CONTENT">Hola!iSMS es una herr. de conversación fantástica.Es gratuita y práctica. Vea http://isms.hissage.com para más información.</string>
+    <string name="STR_NMS_NO_SDCARD">Tarjeta SD no detectada. Algunas ops. no serán permitidas por iSMS</string>
+    <string name="STR_NMS_MOUNT_SDCARD">La tarjeta SD puede ser usada</string>
+    <string name="STR_NMS_SEND_MMS_FAIL">Imposible enviar el mensaje. El mensaje se enviará automáticamente cuando la red esté disp.</string>
+    <string name="STR_NMS_RECV_MMS_FAIL">Imposible descargar. Por favor, inténtelo de nuevo más tarde.</string>
+    <string name="STR_NMS_GROUP_CHAT_ME">yo</string>
+    <string name="STR_NMS_GROUP_CHAT_I">yo</string>
+    <string name="STR_NMS_GROUP_CHAT_YOU">Usted</string>
+    <string name="STR_NMS_GROUP_CREATE_MSG">%1$s invitar %2$s a grupo de conv.</string>
+    <string name="STR_NMS_GROUP_ADD_MSG">%1$s se unió a grupo de conv.</string>
+    <string name="STR_NMS_GROUP_DELETE_MSG">%1$s eliminar %2$s del grupo de conv.</string>
+    <string name="STR_NMS_GROUP_QUITE_MSG">%1$s salió del grupo de conv.</string>
+    <string name="STR_NMS_GROUP_CHAT_PLACE_HOLDER_MSG_BODY">Se unió a este grupo</string>
+    <string name="STR_NMS_PICTURE">foto</string>
+    <string name="STR_NMS_TAPE">audio</string>
+    <string name="STR_NMS_VCARD">contacto</string>
+    <string name="STR_NMS_LOCATION">ubicación</string>
+    <string name="STR_NMS_SKETCH">dibujo</string>
+    <string name="STR_NMS_VIDEO">video</string>
+    <string name="STR_NMS_CALENDAR">calendario</string>
+    <string name="STR_NMS_UNKNOWN">desconocido</string>
+    <string name="STR_NMS_READ_MODE_PIC">una imagen</string>
+    <string name="STR_NMS_READ_MODE_TAPE">una nota de audio</string>
+    <string name="STR_NMS_READ_MODE_VCARD">contactos</string>
+    <string name="STR_NMS_READ_MODE_LOCATION">una ubicación</string>
+    <string name="STR_NMS_READ_MODE_SKETCH">un dibujo</string>
+    <string name="STR_NMS_READ_MODE_VIDEO">un video</string>
+    <string name="STR_NMS_READ_MODE_CALENDAR">un calendario</string>
+    <string name="STR_NMS_ISMS_ENABLE">(iSMS Habilitada)</string>
+    <string name="STR_NMS_READ_MODE_UNKNOWN">un archivo desconocido</string>
+    <string name="STR_NMS_ALL_MSG">Todos los Mens.</string>
+    <string name="STR_NMS_SAVED">Guardado</string>
+    <string name="STR_NMS_BLOCKMSG">Bloqueado</string>
+    <string name="STR_NMS_SMS_TYPE">SMS</string>
+    <string name="STR_NMS_NO_SIM">Tarjeta SIM no detectada</string>
+    <string name="STR_NMS_ILLEGAL_ADDRESS">Número no válido</string>
+    <string name="STR_NMS_REMIND_USER_SET_NAME">Actualice su perfil</string>
+    <string name="STR_NMS_OK">OK</string>
+    <string name="STR_NMS_BACK">Regresar</string>
+    <string name="STR_NMS_CANCEL">Cancelar</string>
+    <string name="STR_NMS_NETWORK_UNAVL">Por favor, asegúrese de tener una conexión de datos funcional, ej., 3G, GPRS o Wi-Fi</string>
+    <string name="STR_NMS_TODAY">Hoy</string>
+    <string name="STR_NMS_YESTERDAY">Ayer</string>
+    <string name="STR_NMS_NOW">Ahora</string>
+    <string name="STR_NMS_NO_SIM_CARD">Tarjeta SIM no detectada. Inserte una tarjeta SIM.</string>
+    <string name="STR_NMS_NO_CONNECTION">Red no disponible o modo de vuelo activado. Verifique.</string>
+    <string name="STR_NMS_ATTACH_SHARE">%1$s compartido %2$s</string>
+    <string name="STR_NMS_WAIT">Espere...</string>
+    <string name="STR_NMS_TIPTITLE">Consejo</string>
+
+    <string name="STR_NMS_OPEN">Abrir</string>
+    <string name="STR_NMS_PLAY">Reproducir</string>
+    
+    <string name="STR_NMS_SETTING_COMMENT">Hola!iSMS es una herr. de conversación fantástica.Es gratuita y práctica.Más información</string> 
+    <string name="STR_NMS_KNOW_MORE">Más información</string>
+    <string name="STR_NMS_RECEIVED_MSG_DETAILS">Tipo: Mens. de IP\nDe: %1$s\nEnviado: %2$s\nRecibido: %3$s</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH_ADD">Servicio iSMS no está disponible temporalmente debido a la falta de espacio de almacenamiento.</string>
+    <string name="STR_NMS_SERVER_AUTO_ECHO_MSG">Mensaje recibido. Gracias!</string>    
+    
+
+    <string name="STR_NMS_VCARD_NAME">%1$s contactos</string>
+    <string name="STR_NMS_SHARE_VCARD_FAILED">compartir cont. falló</string>
+
+    <!-- upgrade info -->
+    <string name="STR_NMS_UPGRADE_TICKER">Act. de versión</string>
+    <string name="STR_NMS_UPGRADE_ERROR_TITLE">Error de act.</string>
+    <string name="STR_NMS_UPGRADE_ERROR_CONTENT">Upgrade. Actualice en el cliente iSMS</string>
+    <string name="STR_NMS_INSTALLED_TITLE">Act. exitosa</string>
+    <string name="STR_NMS_INSTALLED_CONTENT">Actualización exitosa para el teléfono</string>
+    <string name="STR_NMS_PROMPT_DLG_TITLE">Nueva versión detect.</string>
+    <string name="STR_NMS_PROMPT_DLG_DOWNLOAD">Descargar</string>
+    <string name="STR_NMS_PROMPT_DLG_LATER">Después</string>
+    <string name="STR_NMS_UPGRADING">Actualizando</string>
+    <string name="STR_NMS_UPGRADE_TIME">Últ. Verif.: %s</string>
+    
+    <!-- ext protocol -->
+    <string name="STR_NMS_OFFLINE_URL">http://ismsi.hissage.com/webservice/nmsmail/notifyOffline.php</string>
+    
+    <!-- Activation start -->
+    <string name="STR_NMS_PRELOAD_IP_MSG_CONTENT">&quot;Bienvenido a iSMS&quot;.</string>
+    <string name="STR_NMS_ACTIVAT_TITLE">iSMS enviará un SMS para verificar su número telefónico. Puede aplicar cargos.</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE">Verifique su núm. telefónico</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE2">Verifique su núm. telefónico</string>
+    <string name="STR_NMS_YOUR_COUNTRY_TITLE">SU PAÍS</string>
+    <string name="STR_NMS_YOUR_PHONE_TITLE">SU NÚM. TELEFÓNICO</string>
+    <string name="STR_NMS_VERIFY_FAIL_TITLE">Imposible completar la verificación SMS.</string>
+    <string name="STR_NMS_VERIFY_FAIL_CONTENT">Asegúrese de que su número fue ingresado correctamente.</string>
+    <string name="STR_NMS_WORKING_SMS_TIP">Asegúrese de tener plan SMS activo.</string>
+    <string name="STR_NMS_VERIFYING">Esperando para detectar aut. un SMS enviado a</string>
+    <string name="STR_NMS_RETRY">Reintentar</string>
+    <string name="STR_NMS_EDIT_NUMBER">Editar núm.</string>
+    <string name="STR_NMS_UPDATE_PROFILE">Act. perfil</string>
+    <string name="STR_NMS_START_ISMS">Iniciar iSMS</string>
+    <string name="STR_NMS_SEND">Enviar</string>
+    <string name="STR_NMS_CONGRATULATIONS_TITLE">¡Enhorabuena!</string>
+    <string name="STR_NMS_CONGRATULATIONS_CONTENT">Gracias por activar iSMS.\n Ahora puede empezar a disfrutar del servicio.\n¡Feliz iSMS!</string>
+    <string name="STR_NMS_WELCOME_BACK">Bienvenido.</string>
+    <string name="STR_NMS_SEND_SMS_FAIL">Falló la verificación. Compruebe:\n 1. Que el núm. telefónico sea correcto;\n 2. Que el Software de seguridad esté desact.;\n 3. Que otras razones no bloqueen el envío de SMS.\nVerifíquelo e Inténtelo de nuevo más tarde.</string>
+    <string name="STR_NMS_ACTIVE">Activar iSMS</string>
+    <string name="STR_NMS_WELCOME_ACTIVE">Bienvenido a iSMS</string>
+    <string name="STR_NMS_CONNECTING">Conectando...</string>
+    <!-- Activation end -->
+
+
+    <!-- Notification start -->
+    <string name="STR_NMS_NEW_MSG_TITLE">Nuevo mens. iSMS</string>
+    <string name="STR_NMS_NEW_SMG_CONTENT">%d mensaje sin leer</string>
+    <!-- Notification End -->
+
+    <string name="STR_NMS_MSG_DUMPER_MSG_SMS">SMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_MMS">MMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_IP">Mensaje IP</string>
+    <string name="STR_NMS_MSG_DUMPER_SEND_MSG">Enviado %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_RECEIVE_MSG">Recibido %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TIME">Hora: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TEXT">Texto</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_PIC">Imagen</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_SKETCH">Dibujo</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VOICE">Voz</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VIDEO">Video</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CALENDAR">Calendario</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION_IMG">ubicación de la imagen.</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VCARD">tarjeta V</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION">Ubicación</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CAPTION">Leyenda: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_URL">Url: </string>
+    <string name="STR_NMS_MSG_DUMPER_DURATION">Duración: </string>
+    <string name="STR_NMS_MSG_DUMPER_COORDINATE">Coordenada: </string>
+    <string name="STR_NMS_MSG_DUMPER_ADDRESS">Dirección: </string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_SENDER">Remitente: </string>
+    <string name="STR_NMS_MSG_DUMPER_NORMAL_DETAIL">Detalle de sesión:</string>
+    <string name="STR_NMS_MSG_DUMPER_NAME">Nombre: </string>
+    <string name="STR_NMS_MSG_DUMPER_NUMBER">Número: </string>
+    <string name="STR_NMS_MSG_DUMPER_PORTRAIT">Retrato</string>
+    <string name="STR_NMS_MSG_DUMPER_MULTI_SEND_DETAIL">Emisión:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_DETAIL">Grupo de conversación:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_CREATER">Creador: </string>
+    <string name="STR_NMS_MSG_DUMPER_MEMBERS">Miembros: </string>
+    <string name="STR_NMS_MSG_DUMPER_VCARD_NAME">Nombre: </string>
+    <string name="STR_NMS_MSG_DUMPER_CALENDAR_SUMMARY">Resumen: </string>
+
+    <!-- Chat Settings -->
+    <string name="STR_NMS_CHAT_SETTING_TITLE">Conf. de Conv.</string>
+    <string name="STR_NMS_DISPLAY">Ver</string>
+    <string name="STR_NMS_CHAT_WALLPAPER">F. de pant. de conv.</string>
+    <string name="STR_NMS_SYS_WALLPAPER">Selecc. f. de pant.</string>
+    <string name="STR_NMS_CAMEARPHOTO">Tomar foto</string>
+    <string name="STR_NMS_SYS_GALLERY">Selecc. de la Galería</string>
+    <string name="STR_NMS_DEFAULT_WALLPAPER">Predeterm.</string>
+    <string name="STR_NMS_NOTIFICATION_CATEGORY">Notificación</string>
+    <string name="STR_NMS_NOTIFICATION_TITLE">Notificación iSMS</string>
+    <string name="STR_NMS_NOTIFICATION_CONTENT">Mostrar al recibir notificaciones</string>
+    <string name="STR_NMS_MUTE">Silenc.</string>
+    <string name="STR_NMS_MUTE_OFF">Apag.</string>
+    <string name="STR_NMS_MUTE_1">Silenc. durante 1 hora</string>
+    <string name="STR_NMS_MUTE_4">Silenc. durante 4 hora</string>
+    <string name="STR_NMS_MUTE_8">Silenc. durante 8 hora</string>
+    <string name="STR_NMS_RINGTONE_TITLE">Tono</string>
+    <string name="STR_NMS_RINGTONE_CONTENT">Establecer un tono para notificaciones</string>
+    <string name="STR_NMS_VIBRATE_TITLE">Vibrar</string>
+    <string name="STR_NMS_VIBRATE_CONTENT">Vibrar al recibir notificaciones</string>
+    <string name="STR_NMS_ACTIONS">Acciones</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_TITLE">Descargar hist. de conv.</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_CONTENT">Guardar en tarjeta SD como zip</string>
+    <string name="STR_NMS_EMAIL_HISTORY_TITLE">Hist. de conv. por email</string>
+    <string name="STR_NMS_EMAIL_HISTROY_CONTENT">Historial de conv. por email como zip</string>
+    <string name="STR_NMS_CLEAR_HISTROY">Limpiar hist. de conv.</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_DLG">Descargando...</string>
+    <string name="STR_NMS_DOWNLOAD_OK">Desc. de hist. de conv. terminada. Guardar como %s</string>
+    <string name="STR_NMS_DOWNLOAD_ERROR">Fallo al desc. el hist. de conv.</string>
+    <string name="STR_NMS_DOWNLOAD_EMPTY">Nada qué descargar.</string>
+    <string name="STR_NMS_CLEARING">Limpiando historial. Espere...</string>
+    <string name="STR_NMS_WAIT_SAVE_WALLPAPER">Guardando fondo de pant. Espere...</string>
+    <string name="STR_NMS_SAVE_WALLPAPER_OK">Fondo de pant. guardado.</string>
+    <string name="STR_NMS_CLEARDONE">Historial limpiado.</string>
+    <string name="STR_NMS_SVAE_TITLE">Guardar en tarj. SD</string>
+    <string name="STR_NMS_SAVE_CONTENT">Guardar conversación en tarj. SD como zip</string>
+    <string name="STR_NMS_EMAIL_TITLE">Compartir por email</string>
+    <string name="STR_NMS_EMAIL_CONTENT">Compartir esta conv. como archivo adjunto por email en formato zip</string>
+
+    <!-- Chat Settings End -->
+
+
+    <!-- Profile Settings -->
+    <string name="STR_NMS_PROFILE_TITLE">Perfil</string>
+    <string name="STR_NMS_TAP_AVATAR_TIP">Toque para ed. img. del perf.</string>
+    <string name="STR_NMS_DISPLAY_NAME_TIP">MOST. NOMBRE</string>
+    <string name="STR_NMS_ACCOUNT_TIP">CUENTA DE ISMS</string>
+    <string name="STR_NMS_NO_APP">Ninguna aplic. puede realizar esta acción.</string>
+    <string name="STR_NMS_NO_NAME">Config. su nombre</string>
+    <string name="STR_NMS_SAVE_AVATAR_FAILD">Error al guardar la imagen del perfil.</string>
+    <string name="STR_NMS_INPUT_NAME">Nombre</string>
+    <string name="STR_NMS_TERM_WARN_ACTIVATE">Esta función sólo es compatible con el servicio iSMS.\n\niSMS es un servicio gratuito de mensajería instantánea que le permite conversar y compartir contenidos multimedia con sus amigos en cualquier momento y en cualquier lugar a trevés de la conexión de datos de internet (Wi-Fi, 2G/3G, etc.).\nAl activarse por primera vez, iSMS enviará un SMS automático para completar el registro. Pueden aplicarse cuotas/tarifas de SMS.\n\n Acuerdo de Usuario\n</string>
+    <string name="STR_NMS_TERM_WARN_WELCOME">iSMS es un servicio de mensajería instantánea que le permite conversar y compartir multimedia con sus amigos donde y cuando sea mediante conexión de datos de internet (Wi-Fi, 2G/3G, etc.).\nCuando se activa por primera vez, iSMS enviará un SMS para completar el registro. Pueden aplicar cargos de SMS.\n\n Acuerdo de Usuario\n</string>
+    <string name="STR_NMS_TERM_KEY">Términos y Condiciones</string>
+    <string name="STR_NMS_AGREE_AND_CONTINUE">Aceptar y Continuar</string>
+    <string name="STR_NMS_ACTIVE_BNT">Activar</string>
+    <string name="STR_NMS_SET_PROFILE_OK">Perfil configurado con éxito</string>
+    <string name="STR_NMS_SET_PROFILE_FAIL">Error al config. el perfil</string>
+    <string name="STR_NMS_ILLEGAL_PROFILE_NAME">Nombre no válido</string>
+    <string name="STR_NMS_NO_ACTIVITED">Sin tarj. SIM activada o habilitada.</string>
+    <!-- Profile Settings End -->
+
+
+    <!-- Term Activity -->
+    <string name="STR_NMS_REJECT">Rechazar</string>
+    <string name="STR_NMS_AGREE">Aceptar</string>
+    <string name="STR_NMS_TERM_TITLE">Términos de Servicio</string>
+    <string name="STR_NMS_TERM_CONTENT">Reconoce que el Servicio y software incluidos en el Servicio pueden incluir componentes de seguridad que permiten la protección de materiales digitales y que el uso de estos materiales se sujeta a normas establecidas por AF PushMail y/o proveedores de servicio de contenido para el Servicio. No debe intentar anular o eludir ninguna de las normas de uso establecidas en el Servicio. Cualquier reproducción, publicación, distribución o exhibición pública no autorizada de los materiales proporcionados en el Servicio, total o parcial, está prohibida.</string>
+    <!-- Term Activity End -->
+
+
+    <!-- System Settings -->
+    <string name="STR_NMS_SYS_SETTING_TITLE">Mens. iSMS</string>
+    <string name="STR_NMS_SETTINGS_TITLE">PERFIL</string>
+    <string name="STR_NMS_PREFERENCE_CATE">PREFERENCIAS</string>
+    <string name="STR_NMS_SEND_SMS_TITLE">Enviar como SMS</string>
+    <string name="STR_NMS_SEND_SMS_CONTENT">Enviar como SMS cuando iSMS no funcione. Pueden aplicar cargos de mensajería. Esta norma no aplica a conv. de grupo</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_TITLE">Descarga automática</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_CONTENT">Descargar automáticamente objs. multimedia</string>
+    <string name="STR_NMS_CAPTION_TITLE">Leyendas</string>
+    <string name="STR_NMS_CAPTION_CONTENT">Compartir arch. con ley.</string>
+    <string name="STR_NMS_SYSTEM_CATE">SISTEMA</string>
+    <string name="STR_NMS_UPDATE_TITLE">Act. de software</string>
+    <string name="STR_NMS_UPDATE_CONTENT">Últ. Verif.: Nunca</string>
+    <string name="STR_NMS_NETWORK_USAGE_TITLE">Uso de Red</string>
+    <string name="STR_NMS_NETWORK_USAGE_CONTENT">Ver el uso total de datos env./recib.</string>
+    <string name="STR_NMS_NETWORK_DLG_CONTENT">Enviados: %1$.3f K \nRecibidos: %2$.3f K\nÚlt. reinicio: %3$s</string>
+    <string name="STR_NMS_VERSION_TITLE">Versión</string>
+    <string name="STR_NMS_NEVER_CLEAR">Nunca</string>
+    <string name="STR_NMS_RESET">Reiniciar</string>
+    <string name="STR_NMS_SWITCH_ON">ENC.</string>
+    <string name="STR_NMS_SWITCH_OFF">APAG.</string>
+    <string name="STR_NMS_SYSTEM_SETTING_TITLE">Configuración</string>
+    <string name="STR_NMS_COPYRGIHT">Hesine Technologies, Inc.</string>
+    <string name="STR_NMS_ABOUT">Sobre iSMS</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_TITLE">Mostrar Est. de Lect.</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_CONTENT">Mostrar est. de lect. en lista de mens.</string>
+    <string name="STR_NMS_SHOW_REMIND_TITLE">Mostrar Recordatorios</string>
+    <string name="STR_NMS_SHOW_REMIND_CONTENT">Mostrar Recordatorios iSMS en pant. de conv.</string>
+    <string name="STR_NMS_MENU_RESET_SETTING">Restaurar configuración predet.</string>
+    <string name="STR_NMS_MENU_FUNCTION_INTRODUCTION">Características</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT">Acuerdo de Usuario</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION">Copyright</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT_TITLE">ACUERDO DE LICENCIA DE USUARIO DE iSMS HESINE</string>
+    <string name="STR_NMS_MENU_FUNCTION">Lista de Carac.</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION_DETAIL">\nHesine Technologies Inc.\nCopyright© 2008-2013\nTodos los Derechos Reservados.\n</string>
+    <!-- System Settings End -->
+
+
+    <!-- Caption Settings -->
+    <string name="STR_NMS_AUDIO_TITLE">Audio</string>
+    <string name="STR_NMS_VIDEO_TITLE">Videos</string>
+    <string name="STR_NMS_PHOTO_TITLE">Fotos</string>
+    <!-- Caption Settings End -->
+
+
+    <!-- Map String start -->
+    <string name="STR_NMS_MAP_TITLE">Comp. Ubicación</string>
+    <string name="STR_NMS_MAP_PROMPT">No se puede mostrar el mapa porque su serv. de ubic. no está activado. La dirección se calcula en base a la información de su celular. \nPara un servicio de ubicación más preciso, se sugiere activar el servicio de ubicación.</string>
+    <string name="STR_NMS_MAP_NOTE_1">Habilite una fuente de Mi Ubicación en la config. del sistema</string>
+    <string name="STR_NMS_MAP_SHARE">Compartir</string>
+    <string name="STR_NMS_MAP_SETTINGS">Configuración</string>
+    <string name="STR_NMS_MAP_OK">OK</string>
+    <string name="STR_NMS_MAP_CANCEL">Cancelar</string>
+    <string name="STR_NMS_MAP_EDIT">Editar ubicación</string>
+    <string name="STR_NMS_MAP_SEARCH_HINT">Buscar lugares cercanos</string>
+    <string name="STR_NMS_MAP_WAIT">Espere...</string>
+    <string name="STR_NMS_MAP_EDIT_LIMIT">Los carácteres introducidos alcanzaron el límite</string>
+    <string name="STR_NMS_MAP_ADDR_LEN">Dirección es muy larga</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR_LOCATING">Ubicando su posición actual...</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN_LOCATING">Ubicación de su posición PIN...</string>
+    <string name="STR_NMS_MAP_LINEONE_SEARCH_LOCATING">Buscando la ubicación deseada...</string>
+    <string name="STR_NMS_MAP_LINETHREE_NEARBY_LOCATING">Buscando lugares cercanos...</string>
+    <string name="STR_NMS_MAP_LINEONE_FAILED">Su ubicación no se encuentra disponible en estos momentos</string>
+    <string name="STR_NMS_MAP_LINETWO_FAILED">Asegúrese de que su servicio de Ubicación esté activado y la red esté disponible</string>
+    <string name="STR_NMS_MAP_LINETHREE_FAILED">No se encontraron lug. cerc.</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR">Compartir ubic. actual</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN">Compartir ubic. de PIN</string>
+    <string name="STR_NMS_MAP_MY_LOCATION">Mi ubicación</string>
+    <string name="STR_NMS_MAP_SEARCH">Buscar</string>
+    <string name="STR_NMS_MAP_ERROR_1">Imposible obtener latitud y longitud</string>
+    <string name="STR_NMS_MAP_ERROR_2">Los servidores Google dan error</string>
+    <!-- Map String end -->
+
+
+    <!-- All Media String start -->
+    <string name="STR_NMS_ALL_MEDIA_TITLE">Todos los Medios</string>
+    <string name="STR_NMS_ALL_MEDIA_WAIT">Espere...</string>
+    <string name="STR_NMS_ALL_MEDIA_ERROR">Fallo al cargar. Intentelo más tarde</string>
+    <string name="STR_NMS_ALL_MEDIA_EMPTY">Vacío</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_WEEK">Esta semana</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_MONTH">Este mes</string>
+    <string name="STR_NMS_ALL_MEDIA_JAN">Enero</string>
+    <string name="STR_NMS_ALL_MEDIA_FEB">Febrero</string>
+    <string name="STR_NMS_ALL_MEDIA_MAR">Marzo</string>
+    <string name="STR_NMS_ALL_MEDIA_APR">Abril</string>
+    <string name="STR_NMS_ALL_MEDIA_MAY">Mayo</string>
+    <string name="STR_NMS_ALL_MEDIA_JUN">Junio</string>
+    <string name="STR_NMS_ALL_MEDIA_JUL">Julio</string>
+    <string name="STR_NMS_ALL_MEDIA_AUG">Agosto</string>
+    <string name="STR_NMS_ALL_MEDIA_SEPT">Septiembre</string>
+    <string name="STR_NMS_ALL_MEDIA_OCT">Octubre</string>
+    <string name="STR_NMS_ALL_MEDIA_NOV">Noviembre</string>
+    <string name="STR_NMS_ALL_MEDIA_DEC">Diciembre</string>
+    <string name="STR_NMS_ADDCONTACT">Agregar cont.</string>
+    <string name="STR_NMS_ADD_PHONE_CONTACT">¿Añadir \"%1$s\" a contactos?</string>
+    <string name="STR_NMS_DELETE_MEDIA">El medio será eliminado. ¿Continuar?</string>
+    <string name="STR_NMS_MEDIA_SHARE_MESSAGE">%1$s compartido en %2$s</string>
+
+    <!-- All Media String end -->
+
+
+    <!-- All Locations String start -->
+    <string name="STR_NMS_ALL_LOCATIONS_TITLE">Todas las Ubic.</string>
+    <string name="STR_NMS_ALL_LOCATIONS_LOC">Ubicación</string>
+    <string name="STR_NMS_ALL_LOCATIONS_WAIT">Espere...</string>
+    <!-- All Locations String end -->
+
+
+    <!-- Sketch -->
+    <string name="STR_NMS_SKETCH_TITLE">Hacer un Dibujo</string>
+    <string name="STR_NMS_REDO">Rehacer</string>
+    <string name="STR_NMS_UNDO">Deshacer</string>
+    <string name="STR_NMS_SKETCH_CUSTOM">Personalizado</string>
+    <string name="STR_NMS_PEN_SIZE">Tamaño</string>
+    <string name="STR_NMS_SKETCH_TOOLS_PEN">Lápiz</string>
+    <string name="STR_NMS_SKETCH_TOOLS_ERASER">Borrador</string>
+    <string name="STR_NMS_SKETCH_CUSTOM_COLOR">Color Pers.</string>
+    <string name="STR_NMS_CLEAR_SKETCH_TITLE">Borrar Dibujo</string>
+    <string name="STR_NMS_CLEAR_SKETCH_CONTENT">¿Desea borrar este dibujo?</string>
+    <string name="STR_NMS_SIZE_SKETCH_TITLE">Tamaño</string>
+    <string name="STR_NMS_SIZE_SKETCH_MAX">72</string>
+    <string name="STR_NMS_SIZE_SKETCH_MIN">2</string>
+    <string name="STR_NMS_COLOR_SKETCH_TITLE">Color</string>
+    <string name="STR_NMS_SKETCH_ERROR">Error al hacer un dibujo.</string>
+    <string name="STR_NMS_BACK_TITLE">Confirmación</string>
+    <string name="STR_NMS_FINISH_SKETCH_CONTENT">¿Está seguro de querer dejar de dibujar?</string>
+    <string name="STR_NMS_LEAVE_SKETCH_CONTENT">¿Está seguro de desechar este dibujo?</string>
+    <string name="STR_NMS_NOTREDO">Nada que hacer de nuevo</string>
+    <string name="STR_NMS_NOTUNDO">Nada que deshacer</string>
+    <string name="STR_NMS_SKETCH_DELETE">Limpiar</string>
+    <string name="STR_NMS_DISCARD">Descartar</string>
+
+    <!-- Sketch end -->
+
+
+    <!-- Selection Contact -->
+    <string name="STR_NMS_DONE">OK</string>
+    <string name="STR_NMS_SELECTALL">Selec. todo</string>
+    <string name="STR_NMS_DESELECTED">Deselec. todo</string>
+    <string name="STR_NMS_SELECTED">%1$s seleccionado</string>
+    <string name="STR_NMS_CONTACT_SEARCH">Encontrar cont.</string>
+    <string name="STR_NMS_SEARCH">Buscar</string>
+    <string name="STR_NMS_CONTACT_SELECT">Selec. contacto</string>
+    <string name="STR_NMS_SELECT_MEMBER_FULL">Demasiados contactos seleccionados</string>
+    <string name="STR_NMS_SELECT_MEMBER_EMPTY">Ningún cont. seleccionado</string>
+    <string name="STR_NMS_SELECT_CONTAT_WAIT">Espere...</string>
+    <string name="STR_NMS_SELECT_CONTAT_EMPTY">Sin contactos iSMS</string>
+    <string name="STR_NMS_SELECT_NO_RESULT">Ninguno encontrado</string>
+    <string name="STR_NMS_EMPTY">No hay cont.</string>
+    <!-- Selection Contact end -->
+
+    <!-- Group chat -->
+    <string name="STR_NMS_CREATE_GROUP_TITLE">Crear Grupo</string>
+    <string name="STR_NMS_GROUP_INFO_TITLE">Inf. de Grupo</string>
+    <string name="STR_NMS_EDIT_GROUP_TITLE">Editar Grupo</string>
+    <string name="STR_NMS_SELECT_ACTION_TITLE">Selec. acción</string>
+    <string name="STR_NMS_ADD_TO_BOOKMARK">Añadir a favoritos</string>
+    <string name="STR_NMS_ADD_TO_CONTACTS">Añadir %1$s a Cont.</string>
+    <string name="STR_NMS_GROUP_NAME">NOMBRE DE GRUPO</string>
+    <string name="STR_NMS_GROUP_INFO">INF. DE GRUPO</string>
+    <string name="STR_NMS_GROUP_MEMBERS">MIEMBROS DEL GRUPO</string>
+    <string name="STR_NMS_GROUP_NAME_HIT">Nombre del grupo</string>
+    <string name="STR_NMS_GROUP_NAME_EMPTY">Nombre del grupo vacío</string>
+    <string name="STR_NMS_CONFIRM_LEAVE_TITLE">Abandonar este grupo</string>
+    <string name="STR_NMS_LEAVE_GROUP_CONTENT">¿Desea abandonar este grupo?</string>
+    <string name="STR_NMS_LEAVE_GROUP_SUCCESS">Abandonar este grupo con éxito</string>
+    <string name="STR_NMS_LEAVE_GROUP_FAILED">Error al abandonar grupo</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_SUCCESS">Actualice el Nombre del grupo con éxito</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_SUCCESS">Nuevos miembros agregados al grupo</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_FAILED">Fallo al añadir miembros al grupo</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_FAILED">Fallo al actualizar el nombre del grupo</string>
+    <string name="STR_NMS_CREATE_GROUP_NAME_FAILED">Fallo al crear grupo de conversación</string>
+    <string name="STR_NMS_DELETE_GROUP_MEMBER_FAILED">Fallo al eliminar miembros del grupo</string>
+    <string name="STR_NMS_UPDATE_GROUP_SUCCESS">Información de grupo actualizada</string>
+    <string name="STR_NMS_UPDATE_GROUP_FAILED">Fallo al actualizar inf. de grupo</string>
+    <string name="STR_NMS_GROUP_CHAT_BACK">¿Desea descartar esta operación?</string>
+    <string name="STR_NMS_GROUP_MEMEBER_YOU">USTED</string>
+    <string name="STR_NMS_GROUP_INVITE_MORE">Invitar más</string>
+    <string name="STR_NMS_LEAVE_GROUP">Abandonar este grupo</string>
+    <string name="STR_NMS_CHAT">Conv.</string>
+    <string name="STR_NMS_CONFIRM_REMOVE_TITLE">Eliminar de la lista de m. del grupo</string>
+    <string name="STR_NMS_REMOVE_OK">Eliminar</string>
+    <string name="STR_NMS_REMOVE_CANCEL">Cancelar</string>
+    <string name="STR_NMS_REMOVE_CONTENT">¿Desea eliminar esto de la lista?</string>
+    <string name="STR_NMS_VIEW_ALL_MEDIA">Ver todos los medios</string>
+    <string name="STR_NMS_VIEW_ALL_LOCATIONS">Ver todas las ubic.</string>
+    <string name="STR_NMS_CHAT_SETTINGS">Conf. de Conv.</string>
+    <string name="STR_NMS_VIEW_GROUP_FAILED">Ha abandonado este grupo de conv.</string>
+    <string name="STR_NMS_VIEW_HISTORY">Ver hist. de grupo</string>
+    <string name="STR_NMS_ISMS_ENABLE_TITLE">Habilitar iSMS</string>
+    <string name="STR_NMS_ISMS_ENABLE_CONTENT">Esta carac. sólo está soportada por el serv. iSMS. ¿Desea habilitar su cuenta iSMS ahora?</string>
+    <string name="STR_NMS_ENABLE">Habilitar</string>
+    <string name="STR_NMS_LATER">Descartar</string>
+    <string name="STR_NMS_SWITCH_TITLE">Cambio de SIM</string>
+    <string name="STR_NMS_SWITCH_MESSAGE">Las conversaciones de grupo sólo pueden efectuarse cuando el serv. iSMS esté activado, pero la tarjeta SIM actual no está activada. ¿Desea cambiar a la tarj. SIM activa?</string>
+    <string name="STR_NMS_SWITCH_EDIT_MESSAGE">La tarj. SIM actual no está asociada con este grupo. ¿Desea cambiar a la otra tarj. SIM?</string>
+    <string name="STR_NMS_LEAVE_GROUP_NOTICE">Abandonó el grupo y no puede unirse a la conv. a menos que sea invitado de nuevo.</string>
+    <string name="STR_NMS_LOSE_SIM_NOTICE">La tarj. SIM original de la conversación ha sido extraida. Sólo puede conversar en el grupo con su tarj. SIM original</string>
+    <string name="STR_NMS_SWITCH">Cambiar</string>
+
+    <!-- Group chat end -->
+
+
+    <!-- chat details screen long press item start -->
+    <string name="STR_NMS_LONG_PRESS_TITLE">Opc. de mensaje</string>
+    <string name="STR_NMS_SEND_VIA_TEXT">Enviar vía SMS</string>
+    <string name="STR_NMS_TRY_AGAIN">Int. de nuevo</string>
+    <string name="STR_NMS_TRY_ALL_AGAIN">Int. todo de nuevo</string>
+    <string name="STR_NMS_CONTINUE_TRY">Continuar intentando</string>
+    <string name="STR_NMS_COPY">Copiar</string>
+    
+    <string name="STR_NMS_FORWARD">Reenviar</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_TITLE">Descargar</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD">Para reenviar el iSMS necesita antes descargar el contenido de medios.</string>
+    <string name="STR_NMS_FORWARD_CONTIUE">Continuar</string>
+    <string name="STR_NMS_FORWARD_FAILED">Falló el reenvío.</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_MULTI">Para hacer reenvío múltiple, algunos iSMS necesitan descargarse.</string>
+    <string name="STR_NMS_FORWARD_SOME_FAILED">Error de reenvío de algunos iSMS.</string>
+    <string name="STR_NMS_FORWARD_ALL_FAILED">Error en descarga. Reenvío múlt. descartado</string>
+    
+    <string name="STR_NMS_SEND_VIA_MULTIMEDIA">Enviar vía MMS</string>
+    <string name="STR_NMS_SHARE">Compartir</string>
+    <string name="STR_NMS_DELETE">Borrar</string>
+    <string name="STR_NMS_FLAG_IMPORTANT">Marcar como imp.</string>
+    <string name="STR_NMS_REMOVE_IMPORTANT">Eliminar marcador de imp.</string>
+    <string name="STR_NMS_SAVE_IN_SDCARD">Exportar a tarj. SD</string>
+    <string name="STR_NMS_SAVE_FILE">Archivo guard. en %1$s</string>
+    <string name="STR_NMS_SHARE_TITLE">La forma de compartir</string>
+    <string name="STR_NMS_VIEW_DETAILS">Ver detalles</string>
+    <string name="STR_NMS_VIEW_DETAILS_TITLE">Detalles del mensaje</string>
+    <string name="STR_NMS_SEND_MSG_DETAILS">Tipo: Mens. de IP\nEnviado: %1$s</string>
+    <!-- chat details screen long press item end -->
+
+
+    <!-- chat details screen delete item start -->
+    <string name="STR_NMS_DELETE_TITLE">Borrar</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_TITLE">Borrar mensaje importante</string>
+    <string name="STR_NMS_DELETE_WARNING">El mensaje será borrado.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_WARNING">¿Seguro que desea borrar este mensaje importante?</string>
+    <string name="STR_NMS_DELETE_MSG">Los mens. seleccionados serán borrados.</string>
+    <string name="STR_NMS_DELETE_WAITTING">Borrando</string>
+    <string name="STR_NMS_CLEAR_HISTORY_CONTENT">Todo el hist. de conv. se limpiará en esta conv.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT">Incluye mensajes marcados importantes.</string>
+    <!-- chat details screen delete item end -->
+
+
+    <!-- chat details actionBar option start -->
+    <string name="STR_NMS_MENU_CALL">Llamar</string>
+    <string name="STR_NMS_MENU_GROUPINFO">Inf. de Grupo</string>
+    <string name="STR_NMS_MENU_INVITE_CHAT">Invitar amigos a conv.</string>
+    <string name="STR_NMS_MENU_INVITE_ISMS">Invitar amigos a usar iSMS</string>
+    <string name="STR_NMS_MENU_SELECT_MSG">Selec. mensaje</string>
+    <string name="STR_NMS_MENU_MARK_SPAM">Moverse a la lista de Spam</string>
+    <string name="STR_NMS_MENU_REMOVE_SPAM">Elim. de lista de Spam</string>
+    <string name="STR_NMS_MENU_ADD_SHORTCUT">Añadir acceso rápido</string>
+    <string name="STR_NMS_MENU_VIEW_ALLMEDIA">Ver todos los medios</string>
+    <string name="STR_NMS_MENU_VIEW_ALLLOCATION">Ver todas las ubic.</string>
+    <string name="STR_NMS_MENU_EDIT_GROUP">Editar grupo</string>
+    <string name="STR_NMS_MENU_CHAT_SETTING">Conf. de conv.</string>
+    <string name="STR_NMS_MENU_INSERT_QUICK_TEXT">Ins. texto rápido</string>
+    <string name="STR_NMS_MENU_CLEAR_HISTORY">Limpiar hist. de conv.</string>
+    <string name="STR_NMS_MENU_LEAVE_GROUP">Abandonar este grupo</string>
+    <string name="STR_NMS_MENU_DISCARD">Descartar</string>
+    <string name="STR_NMS_MENU_DELETE">Borrar</string>
+    <string name="STR_NMS_MENU_IMPORTANT">Marcar como imp.</string>
+    <string name="STR_NMS_MENU_FORWARD">Reenviar</string>
+    <!-- chat details actionBar option end -->
+
+
+    <!-- chat details share item start -->
+    <string name="STR_NMS_TAKE_PHOTO">Tomar una Foto</string>
+    <string name="STR_NMS_RECORD_VIDEO">Grabar un Vídeo</string>
+    <string name="STR_NMS_DRAW_SKETCH">Hacer un Dibujo</string>
+    <string name="STR_NMS_SHARE_CONTACT">Compartir Cont.</string>
+    <string name="STR_NMS_CHOOSE_PHOTO">Elegir una Foto</string>
+    <string name="STR_NMS_CHOOSE_VIDEO">Elegir un Vídeo</string>
+    <string name="STR_NMS_RECORD_AUDIO">Grabar un Audio</string>
+    <string name="STR_NMS_SHARE_LOCATION">Comp. Ubicación</string>
+    <string name="STR_NMS_CHOOSE_AUDIO">Elegir un Audio</string>
+    <string name="STR_NMS_SHARE_CALENDAR">Comp. Calendario</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_TITLE">Agr. música</string>
+    <string name="STR_NMS_CHOOSE_RINGTONE_ITEM">Tono</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_ITEM">Audio</string>
+    <string name="STR_NMS_INSERT_SDCARD">¡Inserte tarjeta SD!</string>
+    <!-- chat details share item start -->
+
+
+    <!-- record audio start -->
+    <string name="STR_NMS_AUDIO_TIMER_FORMAT" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <string name="STR_NMS_AUDIO_LABLE">Grabadora de Notas de Audio</string>
+    <string name="STR_NMS_RECORD_AUDIO_CONT">Toque para grabar</string>
+    <string name="STR_NMS_PLAY_AUDIO_CONT">Tocar para rep.</string>
+    <string name="STR_NMS_ACTION_SEND">Enviar</string>
+    <string name="audio_db_artist_name">Sus grabaciones</string>
+    <string name="audio_db_album_name">Grabac. de audio</string>
+    <!-- record audio end -->
+
+
+    <!-- chat & group details screen start -->
+
+    <string name="STR_NMS_UNREAD_FORMAT">%1$d mens. no leídos</string>
+    <string name="STR_NMS_NOT_DELIVERED_TITLE">No entregados </string>
+    <string name="STR_NMS_FAILED_TITLE">Error de Envío</string>
+    <string name="STR_NMS_GROUP_SUBTITLE">%1$s, +%2$d</string>
+    <string name="STR_NMS_GROUP_DEAD_SUBTITLE">%1$s, %2$d</string>
+    <string name="STR_NMS_SAVE_AS_DRAFT">Mens. guard. como borrador</string>
+    <string name="STR_NMS_NO_SD_TITLE">Error de tarj. SD</string>
+    <string name="STR_NMS_CANT_SHARE">Imposible acceder a tarj. SD. Las características relacionadas con multimedia no están disponibles para su uso.\n\nVerifique su tarjeta SD e inténtelo más tarde.</string>
+    <string name="STR_NMS_CANT_SAVE">Tarj. SD no detectada Imposible guard. arch.</string>
+    <string name="STR_NMS_SDSPACE_NOT_ENOUGH">Espacio de tarj. SD insuficiente. Imposible guardar arch.</string>
+    <string name="STR_NMS_REAEND_ALL">Int. todo de nuevo...</string>
+    <string name="STR_NMS_FILE_LIMIT">Demasiado grande</string>
+    <string name="STR_NMS_LOAD_ALL_MESSAGE">Cargar Todos los Mens.</string>
+    <string name="STR_NMS_DOWNLOAD_FAILED">Error de descarga</string>
+    <string name="STR_NMS_INPUT_HINT">Contenido de ent.</string>
+    <string name="STR_NMS_INPUT_HINT_ISMS">Escribir mens. iSMS</string>
+    <string name="STR_NMS_CAPTION_HINT">Escribir Leyendas</string>
+    <string name="STR_NMS_PROTOCOL_SMS">SMS</string>
+    <string name="STR_NMS_PROTOCOL_MMS">MMS</string>
+    <string name="STR_NMS_PROTOCOL_IP">iSMS</string>
+    <string name="STR_NMS_SWITCH_BOTTON">Cambiar SIM</string>
+    <string name="STR_NMS_TURN_ON_BOTTON">Encender</string>
+    <string name="STR_NMS_SWITCH_TEXT_FORMAT">Para continuar con la conv. de grupo, cambie primero a SIM %1$s.</string>
+    <string name="STR_NMS_ENABLE_TEXT_FORMAT">Para continuar con la conv. de grupo, active primero el serv. iSMS en la SIM %1$s.</string>
+    <string name="STR_NMS_REPLACE_ATTACH_TITLE">Reemplazar arch. adj.</string>
+    <string name="STR_NMS_REPLACE_ATTACH_MSG">Ya existe un arch. adjunto. ¿Reemplazar?</string>
+    <string name="STR_NMS_TRUNC_CAPTION">La leyenda ha sido truncada.</string>
+    <string name="STR_NMS_MAX_CHARACTERS_REACHED">Límite de mensaje alcanzado.</string>
+    <string name="STR_NMS_MAX_EMOTICON_REACHED">Conoce el lím. de emoticones</string>
+    <string name="STR_NMS_ENABLE_PROCESS">Procesando...</string>
+    <string name="STR_NMS_ERR_FILE">Arch. inválido</string>
+    <string name="STR_NMS_SENDING_TEXT">Enviando...</string>
+    <!-- chat & group details screen end --> <!-- Error code tips -->
+    <string name="STR_NMS_ERR_GENERAL">Error general</string>
+    <string name="STR_NMS_ERR_INVALID_ARGUMENT">Argumento inválido</string>
+    <string name="STR_NMS_ERR_NETWORK_BLOCK">La red no está bien</string>
+    <string name="STR_NMS_ERR_PHONE_NOT_ACTIVATED">No activado</string>
+    <string name="STR_NMS_ERR_SIM_NOT_ACTIVATED">Tarjeta SIM no activada</string>
+    <string name="STR_NMS_ERR_INVALID_MSG_DB_ID">Id mens. BD inv.</string>
+    <string name="STR_NMS_ERR_ADD_MSG_DB_FAILED">Error al insertar en BD</string>
+    <string name="STR_NMS_ERR_UPDATE_MSG_DB_FAILED">Error al actualizar BD</string>
+    <string name="STR_NMS_ERR_GET_MSG_DB_DATA_FAILED">Error al buscar el mensaje</string>
+    <string name="STR_NMS_ERR_INVALID_CONTACT_DB_ID">Id de cont. DB inv.</string>
+    <string name="STR_NMS_ERR_ADD_CONTACT_DB_FAILED">Error al insertar en contacto</string>
+    <string name="STR_NMS_ERR_UPDATE_CONTACT_DB_FAILED">Error al actualizar BD de cont.</string>
+    <string name="STR_NMS_ERR_GET_CONTACT_DB_DATA_FAILED">Error al buscar cont. por Id</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_ERROR_FORMAT">Form. de Mens. IP inválido</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_INVALID_TO">Destinatario no válido</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_WITH_UNKNOWN_USER">Usuario no válido, destinatario desconocido</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_NO_MBMBER">No hay grupos de conv.</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_GCHAT_DEAD">El grupo de conv. no está activado</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_INVALID_SIM_ID">La tarj. SIM del grupo de conv. no es la tarj. SIM actual</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_FOR_SYS_MSG">Enviar mens. de sist. de nuevo</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_INVALID_STATUS">Mensaje IP no está listo</string>
+    <string name="STR_NMS_ERR_GCHAT_IS_DEAD">Este grupo de conv. ya no existe</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBERS">Miembros de grupo inv.</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBER_WITH_SELF">Error al crear grupo. Ud. no debe estar en los miembros</string>
+    <string name="STR_NMS_ERR_GCHAT_EXCEED_MAX_MEMBER_COUNT">Núm. de miembros de grupo alcanzó el límite</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_NAME">Nom. de grupo de conv. inv.</string>
+    <string name="STR_NMS_ERR_GCHAT_SIM_IS_NOT_ACTIVATED">La trarj. SIM del grupo de conv. no está act.</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_NOT_INBOX_MSG">Error al obtener la URL de desc.</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_INVALID_URL">URL de desc. inválida</string>
+    <string name="STR_NMS_ERR_GET_ATTACH_NAME_INVALID_BODY_FORMAT">Error al obt. nombre de arch. de desc.</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_INVALID_FILE_NAME">Nombre de arch. de desc. inv.</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_EXIST">El arch. de descarga no existe.</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_INBOX_MSG">Error al establecer arch. de desc.</string>
+    <string name="STR_NMS_ERR_SIM_INFO_NOT_FOUND">Inf. de tarj. SIM no encontrada</string>
+    <string name="STR_NMS_ERR_SIM_IN_INVALID_STATUS">Estado de tarj. SIM inv.</string>
+    <string name="STR_NMS_ERR_CMD_PROCESSING">El sist. está ocupado y no puede manejar el comando de conf. del sist.</string>
+    <string name="STR_NMS_ERR_CMD_GENERAL">Error general de conf. del sistema</string>
+    <string name="STR_NMS_ERR_CODE_END">El código de error desc.</string>
+    <!-- Error code tips -->
+    <string name="STR_NMS_SEND_MMS_QUERY_TITLE">Advertencia</string>
+    <string name="STR_NMS_SEND_MMS_QUERY">El destinatario no es un usuario iSMS. ¿Enviar como MMS?</string>
+    <!-- Service center start -->
+    <string name="STR_NMS_SERVICE_TITLE">Centro de serv. iSMS</string>
+    <string name="STR_NMS_INTRODUCTION">Con iSMS puede enviar mensajes gratuitos y mantiene su historial de conversación en un solo lugar. Presione un botón. ¡Viene la nueva experiencia!</string>
+    <string name="STR_NMS_TERMS">Términos y Condiciones</string>
+    <string name="STR_NMS_ACTIVATION_BUTTON">Activar ahora</string>
+    <string name="STR_NMS_LOSE_SDCARD">Tarjeta SIM no detectada</string>
+    <!-- Service center end -->
+
+
+    <!-- conversation empty tips -->
+    <string name="STR_NMS_SPAM_EMPTY">No tiene ningún correo no deseado. \nCORREO NO DESEADO contiene todas las conversaciones marcadas como correo no deseado. La notificación será desactivada de forma predeterminada. Esto le evitará molestias innecesarias. \n\nPuede marcar un remitente como no deseado al seleccionar una conversación y el icono Marcar como No deseado. Cuando una conversación se marca como no desada, se muestra el icono de notificación desactivado y la conversación pasará aquí.</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_FROM">+86123456789</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_SUBJECT">Este es un ejemplo de correo no deseado.</string>
+    <string name="STR_NMS_GROUPCHAT_EMPTY">No tiene mensajes de conversación de grupo. \nGRUPOS DE CONVERSACIÓN contiene mensajes de los grupos creados por usted o a los que se unió. Esto le permite encontrar y gestionar sus conversaciones de grupo con facilidad. \n\nPara crear un grupo de conversación, toque el botón Crear un grupo de conversación, ubicado en la parte inferior de la pantalla e invite a sus amigos a unirse al grupo.</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_FROM">Nombre de grupo</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_SUBJECT">Su amigo:\n¡Me gusta la conversación de grupo!</string>
+    <string name="STR_NMS_IMPORTANT_EMPTY">No tiene ningún mensaje importante. \nIMPORTANTE contiene los mensajes marcados como importantes. Esto le permite encontrar los mensajes importantes con facilidad. \n\nPuede marcar un mensaje como importante al seleccionarlo y utilizar Marcar como importante desde el menú de Opciones. Cuando marque un mensaje como importante, verá un distintivo rojo como se muestra a continuación.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TITLE">Este es un ejemplo de un mensaje marcado como importante. Aparecerá un distintivo rojo.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TIME">10:55 am</string>
+    <string name="STR_NMS_ALLCHAT_EMPTY">No hay conversaciones</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_CONTENT">Para usar esta característica, tendrá que activar el servicio iSMS. No se preocupe, si no le gusta el servicio, puede desactivarlo en Configuración. ¡Pruébelo ahora!</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_TITLE">Activar iSMS</string>
+    <!-- conversation empty tips -->
+    
+    <string name="STR_NMS_CLEAR_USER_DATA">Se borraron los datos</string>
+    
+    <!-- get file err start -->
+    <string name="STR_NMS_NO_SUCH_FILE">No existe el archivo</string>
+    <string name="STR_NMS_OVER_FILE_LIMIT">El tam. del archivo excede el lím.</string>
+    <string name="STR_NMS_INVALID_FILE_TYPE">Incompatible con este tipo</string>
+    <!-- get file err end -->
+
+    <string name="STR_NMS_DELIVERY_BODY">Mensaje recibido por %s</string>
+    <string name="STR_NMS_SIM_SELECT_TITLE">Selec. SIM</string>
+    
+    <string name="STR_NMS_SHORTCUT_SUCCESS">Acceso directo %1$s creado.</string>
+    <string name="STR_NMS_SHORTCUT_REFRESHING">Estimulante</string>
+    
+    <string name="STR_NMS_DISABLE_FAILED">La operación falló. Inténtelo de nuevo</string>
+    <string name="STR_NMS_ENABLE_FAILED">La operación falló. Inténtelo de nuevo</string>
+    <string name="STR_NMS_ENABLE_SUCCESS">Ha activado el servicio iSMS con éxito</string>
+    <string name="STR_NMS_DISABLE_SUCCESS">Ha desactivado el servicio iSMS con éxito</string>
+    
+	<string name="STR_NMS_SD_CARD_FULL">Tarj. SD llena</string>
+    <string name="STR_NMS_SEND_MSG_FAILED">¡Falló el envío de mensaje!</string>
+    
+    <string name="STR_NMS_GROUPS_MEM"> %1$s miembros</string>
+    <string name="STR_NMS_ALL_CONTACTS">TODO</string>
+    <string name="STR_NMS_GROUPS_CONTACTS">TOD. LOS GPOS.</string>
+    <string name="STR_NMS_SELECT_AUDIO">Selec. audio</string>
+    
+    <string name="imsp_ip_message">Mensaje iSMS</string>
+    <string name="imsp_invite_chat_frequently"><b>¿Habla mucho con  %s ?</b>\n¿Qué tal invitar a %s a usar iSMS y ahorrar tiempo y dinero?</string>
+    <string name="imsp_enable_chat_frequently"><b>¡El iSMS de %s no está habilitado!</b>\n¿Qué tal habilitar su servicio iSMS y ahorrar tiempo y dinero?</string>
+    <string name="imsp_invite">Invitar</string>
+    <string name="imsp_enable_notice">¿Está seguro de habilitar el servicio iSMS?</string>
+    <string name="imsp_activate_chat_frequently"><b>¿Habla mucho con amigos?</b>\n¿Qué tal activar iSMS para conversar sin pagar SMS?</string>
+    <string name="imsp_activate_note">¿Seguro que desea activar iSMS?</string>
+    <string name="imsp_dismiss_content">¿Seguro que desea ignorar la nota?</string>
+    <string name="imsp_divider_online">%s está Conec.</string>
+    <string name="imsp_divider_offline">Última conec. a las %s</string>
+    <string name="imsp_divider_never_online">Nunca conec.</string>
+    <string name="imsp_failed_title">Envío Falló</string>
+    <string name="imsp_resend_via_sms">Enviar como SMS en su lugar</string>
+    <string name="imsp_resend_via_mms">Enviar como MMS en su lugar</string>
+    <string name="imsp_typing_text">Escrib.</string>
+    <string name="imsp_save_attachment">Guardar dato adjuntos</string>
+    <string name="imsp_view">Ver</string>
+    <string name="imsp_convert_to_mms">Convertir a MMS.</string>
+    <string name="imsp_convert_to_sms">Convertir a SMS.</string>
+    <string name="imsp_convert_to_isms">Convertir a iSMS.</string>
+    <string name="imsp_convert_to_mms_for_service">Servicio iSMS no disponible en la tarjeta SIM seleccionada. El mensaje sólo puede enviarse por MMS desde esta tarjeta SIM. ¿Continuar de todos modos?</string>
+    <string name="imsp_convert_to_sms_for_service">El servicio iSMS no está disponible en la tarjeta SIM seleccionada. El mensaje sólo puede enviarse por SMS en esta tarjeta SIM. ¿Continuar de todos modos?</string>
+    <string name="imsp_convert_to_mms_for_recipients">El/los destinatarios no son usuarios iSMS. El mensaje sólo puede ser enviado por MMS. ¿Desea continuar?</string>
+    <string name="imsp_convert_to_sms_for_recipients">El/los destinatarios no son usuarios iSMS. El mensaje sólo puede ser enviado por SMS. ¿Desea continuar?</string>
+    <string name="imsp_sms_convert_to_isms">El servicio iSMS está disponible en esta tarjeta SIM. Para ahorrar SMSs, se sugiere cambiar el mensaje a iSMS. ¿Cambiar?</string>
+    <string name="imsp_mms_convert_to_isms">El servicio iSMS está disponible en esta tarjeta SIM. Para ahorrar MMSs, se sugiere cambiar el mensaje a iSMS. ¿Cambiar?</string>
+    <string name="imsp_keep_mms">Dejar MMS</string>
+    <string name="imsp_keep_sms">Dejar SMS</string>
+    <string name="imsp_resend_discard_message">Para reenviar el mensaje, su mensaje actual será descartado.</string>
+    <string name="imsp_no_sim_card">¡No hay SIM!</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">"¡No se detectó ninguna conexión activa a Internet! Vuelva a intentarlo más tarde."</string>
+    <string name="imsp_chat_setting_updating">actualiz...</string>
+    <string name="imsp_dialog_clear_title">Borrar</string>
+    <string name="imsp_dialog_clear_description">Todo el historial de conversación se borrará de esta conversación</string>
+    <string name="imsp_chat_setting_saving">guard...</string>
+    <string name="imsp_chat_setting_sending">enviando...</string>
+    <string name="imsp_save_chat_history_failed">guard. falló</string>
+    <string name="imsp_send_chat_history_failed">Email falló</string>
+    <string name="imsp_conversation_list_all">Mensajes</string>
+    <string name="imsp_conversation_list_important">Importante</string>
+    <string name="imsp_conversation_list_group_chats">Grupos de conv.</string>
+    <string name="imsp_conversation_list_spam">Spam</string>
+    <string name="imsp_mark_as_spam_tips">Mensajes marcados como no deseados se moverán a la lista Spam y la notificación se desactivará automáticamente.</string>
+    <string name="imsp_typing">&quot;Escrib...&quot;</string>
+    <string name="imsp_type_to_compose_text">&quot;Escrib. mensaje SMS/iSMS&quot;</string>
+    <string name="imsp_no_sdcard">Sin Tarjeta SD</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">Para enviar una invitación, sus mensajes actuales serán descartados.</string>
+    <string name="imsp_current_sim_enabled">SIM actual habilitada.</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">Selec. SIM para activar iSMS</string>
+    <string name="imsp_activate_message">Esta función sólo es compatible con el servicio iSMS. ¿Activar su cuenta iSMS ahora?</string>
+    <string name="imsp_enable_message">Esta función sólo es compatible con el servicio iSMS. ¿Habilitar su cuenta iSMS ahora?</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">Selec. SIM para habilitar iSMS</string>
+    <string name="imsp_switch_sim_title">Cambiar SIM</string>
+    <string name="imsp_switch_sim_message">La SIM actual no es compatible con iSMS. ¿Cambiar a otra SIM?</string>
+    <string name="imsp_switch_sim_successfully">¡Cambio de SIM exitoso!</string>
+    <string name="imsp_dailog_multi_forward">Reenviando Mensajes</string>
+    <string name="imsp_dialog_send_result">Env. Resultado</string>
+    <string name="imsp_dlg_send_all">Todo: %s</string>
+    <string name="imsp_dlg_send_sucess">Env.: %s</string>
+    <string name="imsp_dlg_send_failed">Falló: %s</string>
+    <string name="imsp_multi_forward_sim_info">Obt. inf. de SIM</string>
+    <string name="imsp_multi_forward_no_sim">Sin inf. de SIM</string>
+    <string name="imsp_get_sim_failed">Obt. inf. de SIM falló</string>
+    <string name="imsp_sim_status_error">Error en el estado SIM</string>
+    <string name="imsp_forward_norecipients">Ningún destinatario a quien reenviar el mensaje</string>
+    <string name="imsp_multiforward_no_message">Ningún mensajes puede ser reenviado</string>
+    <string name="imsp_need_input_recipients">Especifique primero al menos un destinatario</string>
+    <string name="imsp_spam_empty">No tiene conversaciones no deseadas. \nSPAM recoge todas las conversaciones marcadas como no deseadas. Las notificaciones son desactivadas de forma predeterminada. Esto le evita molestias innecesarias. \n\nPuede marcar un remitente como spam al mantener una conv. usando el icono Marcar como no deseado. Cuando una conversación se marca como spam, un icono aparece de forma automática y la conversación se pone aquí.</string>
+    <string name="imsp_groupchat_empty">No tiene mensajes de grupos de conversación \nGRUPOS DE CONVERSACIÓN recoge todos los mensajes de conversación de grupos creados por usted o a los que pertenece. Esto le permite encontrar y gestionar sus mensajes de grupo con falicidad. \n\nPara crear un grupo de conversación, pulse el botón Crear un grupo de conversación, en la parte inferior de esta página, e invite a sus amigos a que se unan al grupo.</string>
+    <string name="imsp_important_empty">No tiene mensajes importantes. \nIMPORTANTE recoge todos los mensajes marcados como importantes. Esto le permite encontrar mensajes importantes con facilidad. \n\nPuede marcar un mensaje como importante al seleccionarlo y Marcar como importante desde el menú de opciones. Cuando marque un mensaje como importante, verá un distintivo rojo como este.</string>
+    <string name="imsp_allchat_empty">Sin conversaciones</string>
+    <string name="imsp_attach_slideshow">Presentación</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">Descargando...</string>
+    <string name="imsp_invite_friends_to_ipmsg">Invitar a amigos a usar iSMS</string>
+    <string name="imsp_multi_forward_tips_content">Para hacer multienvío, algunos iSMSs necesitan descargarse antes.</string>
+    <string name="imsp_multi_forward_failed_part">Reenvío de algunos iSMSs falló.</string>
+</resources>

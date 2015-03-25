@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hissage.ui.view.NmsMessageItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dip"
+    android:paddingTop="15dip"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/bt_load_all_message"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#222222"
+        android:textSize="18sp"
+        android:text="@string/STR_NMS_LOAD_ALL_MESSAGE" />
+
+</com.hissage.ui.view.NmsMessageItemView>

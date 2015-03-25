@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+	<ImageView android:id="@+id/transfer_icon"
+			android:layout_width="@android:dimen/app_icon_size"
+			android:layout_height="@android:dimen/app_icon_size"
+			android:scaleType="fitCenter"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentLeft="true"/>
+
+	<TextView android:id="@+id/transfer_file"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:ellipsize="marquee"
+			android:layout_alignParentTop="true"
+			android:layout_toRightOf="@id/transfer_icon"
+			android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+	<TextView android:id="@+id/peer_device"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:maxLines="1"
+			android:layout_toRightOf="@id/transfer_icon"
+			android:layout_below="@id/transfer_file"
+			android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+	<TextView android:id="@+id/modified_date"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:maxLines="1"
+			android:layout_below="@id/peer_device"
+			android:layout_alignParentRight="true"
+			android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+	<TextView android:id="@+id/transfer_info"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/peer_device"
+			android:layout_toRightOf="@id/transfer_icon"
+			android:layout_toLeftOf="@id/modified_date"
+			android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+</RelativeLayout>

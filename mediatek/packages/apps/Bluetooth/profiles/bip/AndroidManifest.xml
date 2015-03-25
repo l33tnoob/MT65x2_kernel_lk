@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	android:versionCode="1" android:versionName="1.0" package="com.mediatek.bluetooth"
+	android:sharedUserId="android.uid.mtkbt">
+
+	<application android:label="@string/app_label" 
+                android:persistent="true"
+		android:icon="@drawable/bluetooth" android:description="@string/app_description">
+
+<!-- BLUEANGEL::IF MTK_BT_PROFILE_BIP  -->
+<!-- BIP -->
+        <activity android:name=".bip.BipTransmitting"
+                  android:theme="@*android:style/Theme.Holo.Dialog.Alert"
+                  android:configChanges="orientation"
+                  android:excludeFromRecents="true">
+        </activity>
+
+        <activity android:name=".bip.BipInitPushConfirmation"
+                  android:theme="@*android:style/Theme.Holo.Dialog.Alert"
+                  android:configChanges="orientation"
+                  android:excludeFromRecents="true">
+        </activity>
+
+        <activity android:name=".bip.BipRespPushConfirmation"
+                  android:theme="@*android:style/Theme.Holo.Dialog.Alert"
+                  android:launchMode="singleInstance"
+                  android:configChanges="orientation"
+                  android:excludeFromRecents="true">
+        </activity>
+
+        <activity android:name=".bip.BipAuthentication"
+                  android:theme="@*android:style/Theme.Holo.Dialog.Alert"
+                  android:configChanges="orientation"
+                  android:excludeFromRecents="true">
+        </activity>
+
+        <service android:name=".bip.BipService" android:exported="true">
+            <intent-filter>
+                <action android:name="android.bluetooth.IBluetoothBipi" />
+                <action android:name="android.bluetooth.IBluetoothBipr" />
+            </intent-filter>
+        </service>
+
+
+        <provider android:name=".bip.BipProvider"
+                  android:authorities="com.mediatek.provider.bluetooth.bip"/>
+
+<!--
+        <activity android:label="@string/app_label" android:name=".bip.BiprTest">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+-->
+<!-- BIP end -->
+<!-- BLUEANGEL::FI MTK_BT_PROFILE_BIP -->
+	</application>
+</manifest> 

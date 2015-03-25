@@ -1,0 +1,279 @@
+# ==============================================
+# Policy File of /system/binlogwrapper Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type logwrapper_exec , exec_type, file_type;
+type logwrapper ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive logwrapper;
+init_daemon_domain(logwrapper)
+
+# 20131024 Sanity_02
+allow logwrapper self:netlink_route_socket read;
+
+
+# 20131024 CTS_01
+allow logwrapper alarm_device:chr_file write;
+allow logwrapper device:chr_file { read ioctl open };
+allow logwrapper graphics_device:chr_file { read write ioctl open };
+allow logwrapper input_device:dir { read open };
+allow logwrapper self:capability net_admin;
+allow logwrapper self:netlink_kobject_uevent_socket { bind create setopt };
+allow logwrapper self:netlink_route_socket { write read nlmsg_write };
+allow logwrapper self:netlink_socket { write getattr setopt read bind create };
+allow logwrapper self:packet_socket { read write };
+allow logwrapper self:rawip_socket write;
+allow logwrapper self:udp_socket { create ioctl };
+allow logwrapper system_server:unix_dgram_socket sendto;
+allow logwrapper system_wpa_socket:sock_file write;
+allow logwrapper wifi_data_file:file { write getattr open };
+
+
+# 20131024 Sanity_03
+allow logwrapper system_data_file:dir remove_name;
+allow logwrapper system_data_file:sock_file unlink;
+
+
+# 20131024 Sanity_04
+allow logwrapper cgroup:dir add_name;
+allow logwrapper devpts:chr_file { read write open };
+allow logwrapper linker_exec:file { read execute open };
+allow logwrapper self:capability setgid;
+allow logwrapper wpa_exec:file { read execute open execute_no_trans };
+
+
+# 20131024 CTS_02
+allow logwrapper cgroup:dir create;
+allow logwrapper dhcp_data_file:file write;
+allow logwrapper dhcp_exec:file { read execute open execute_no_trans };
+allow logwrapper dhcp_system_file:dir search;
+allow logwrapper self:capability { setuid net_raw };
+allow logwrapper self:packet_socket { bind create setopt };
+
+
+# 20131028 CTS_03
+allow logwrapper dhcp_data_file:file { lock open };
+allow logwrapper dhcp_system_file:file { read execute open execute_no_trans };
+allow logwrapper proc:file write;
+allow logwrapper property_socket:sock_file write;
+allow logwrapper self:netlink_route_socket { bind create };
+allow logwrapper self:packet_socket ioctl;
+allow logwrapper self:rawip_socket { create setopt };
+allow logwrapper shell_exec:file execute;
+allow logwrapper system_data_file:dir { write add_name setattr };
+allow logwrapper system_data_file:sock_file { write create setattr };
+allow logwrapper wifi_data_file:file read;
+
+
+# 20131028 CTS_04
+allow logwrapper devpts:chr_file ioctl;
+allow logwrapper dhcp_data_file:dir { write remove_name add_name };
+allow logwrapper dhcp_data_file:file { read getattr unlink create };
+allow logwrapper dhcp_system_file:dir { read open };
+allow logwrapper dhcp_system_file:file getattr;
+allow logwrapper shell_exec:file { read open };
+allow logwrapper system_prop:property_service set;
+allow logwrapper toolbox_exec:file { read getattr open execute execute_no_trans };
+
+
+# 20131028 CTS_05
+allow logwrapper kernel:system module_request;
+
+
+# 20131028 CTS_07
+allow logwrapper wifi_data_file:dir search;
+
+
+# 20131028 CTS_09
+allow logwrapper mtk_6620_launcher_exec:file { read execute open };
+
+
+# 20131028 CTS_10
+allow logwrapper device:chr_file write;
+allow logwrapper mtk_6620_launcher_exec:file execute_no_trans;
+allow logwrapper node:udp_socket node_bind;
+allow logwrapper port:udp_socket name_bind;
+allow logwrapper self:capability net_bind_service;
+allow logwrapper self:udp_socket { write bind setopt };
+
+
+# 20131028 CTS_11
+allow logwrapper devpts:chr_file getattr;
+
+
+# 20131028 CTS_12
+allow logwrapper wmt_loader_exec:file { read execute open execute_no_trans };
+
+
+# 20131028 CTS_13
+allow logwrapper self:capability { sys_module dac_override };
+allow logwrapper wmtdetect_device:chr_file { read write ioctl open };
+
+
+# 20131028 CTS_21
+allow logwrapper proc:file setattr;
+allow logwrapper self:capability chown;
+
+
+# 20131119 FeatureSQC
+allow logwrapper aee_aed:unix_stream_socket connectto;
+allow logwrapper aee_exec:file { read getattr open execute execute_no_trans };
+allow logwrapper am_exec:file { read getattr open execute execute_no_trans };
+allow logwrapper ashmem_device:chr_file execute;
+allow logwrapper block_device:blk_file { read open };
+allow logwrapper dalvikcache_data_file:file { write setattr };
+allow logwrapper devmap_device:chr_file { read ioctl open };
+allow logwrapper devpts:chr_file getattr;
+allow logwrapper dhcp_data_file:dir search;
+allow logwrapper ipod_exec:file { read execute open execute_no_trans };
+allow logwrapper ipohctl_exec:file { read getattr open execute };
+allow logwrapper mtk_6620_launcher_exec:file { read execute open execute_no_trans };
+allow logwrapper self:capability { sys_resource fsetid fowner sys_rawio chown dac_override };
+allow logwrapper self:netlink_kobject_uevent_socket read;
+allow logwrapper self:rawip_socket read;
+allow logwrapper servicemanager:binder call;
+allow logwrapper shell_exec:file execute_no_trans;
+allow logwrapper shutdown_exec:file { read execute open execute_no_trans };
+allow logwrapper surfaceflinger:binder { transfer call };
+allow logwrapper surfaceflinger:fd use;
+allow logwrapper sysfs:file write;
+allow logwrapper system_data_file:file { write create open ioctl setattr };
+allow logwrapper system_server:binder { transfer call };
+allow logwrapper zygote_exec:file { read getattr open execute execute_no_trans };
+
+
+# 20131121 Sanity_QA
+allow logwrapper M4U_device_device:chr_file { read ioctl open };
+allow logwrapper MTK_SMI_device:chr_file { read ioctl open };
+allow logwrapper aal:binder transfer;
+allow logwrapper aee_aed:process sigchld;
+allow logwrapper audio_device:chr_file { read write ioctl open };
+allow logwrapper bootanimation:binder { transfer call };
+allow logwrapper bootanimation:fd use;
+allow logwrapper camera_isp_device:chr_file { read write ioctl open };
+allow logwrapper camera_pipemgr_device:chr_file { read ioctl open };
+allow logwrapper camera_sysram_device:chr_file ioctl;
+allow logwrapper ccci_device:chr_file { read write ioctl open };
+allow logwrapper drmserver:binder call;
+allow logwrapper ebc_device:chr_file { read write };
+allow logwrapper kd_camera_flashlight_device:chr_file { read write ioctl open };
+allow logwrapper kd_camera_hw_device:chr_file { read write ioctl open };
+allow logwrapper kernel:security check_context;
+allow logwrapper mali_device:chr_file { read write ioctl };
+allow logwrapper media_app:fd use;
+allow logwrapper mediaserver_exec:file { read execute open execute_no_trans };
+allow logwrapper mmp_device:chr_file ioctl;
+allow logwrapper mtk_disp_device:chr_file ioctl;
+allow logwrapper mtkfb_vsync_device:chr_file ioctl;
+allow logwrapper node:tcp_socket node_bind;
+allow logwrapper platform_app:binder { transfer call };
+allow logwrapper platform_app:fd use;
+allow logwrapper platform_app:process dyntransition;
+allow logwrapper port:tcp_socket name_bind;
+allow logwrapper radio:binder { transfer call };
+allow logwrapper radio:fd use;
+allow logwrapper radio:process { dyntransition setpgid };
+allow logwrapper release_app:binder { transfer call };
+allow logwrapper release_app:process dyntransition;
+allow logwrapper rtt_exec:file { read getattr open execute execute_no_trans };
+allow logwrapper sdcard_internal:file { read getattr open };
+allow logwrapper self:binder { transfer call };
+allow logwrapper self:capability { ipc_lock setpcap };
+allow logwrapper self:tcp_socket { setopt read bind create getattr accept write ioctl listen };
+allow logwrapper selinuxfs:dir search;
+allow logwrapper selinuxfs:file { read write open };
+allow logwrapper servicemanager:binder transfer;
+allow logwrapper shared_app:binder { transfer call };
+allow logwrapper shared_app:fd use;
+allow logwrapper shared_app:process dyntransition;
+allow logwrapper sw_sync_device:chr_file ioctl;
+allow logwrapper sysfs_wake_lock:file { read write open };
+allow logwrapper system_app:fd use;
+allow logwrapper system_server:process getpgid;
+allow logwrapper vtservice:binder { transfer call };
+allow logwrapper wifi_data_file:dir { write remove_name add_name setattr };
+allow logwrapper wifi_data_file:sock_file create;
+
+
+
+# 20131122 Add Set Property Rule
+allow logwrapper  property_type:property_service set;
+
+# 20131213 KKMR1_CTS_01
+allow logwrapper wifi_data_file:sock_file { write setattr };
+
+
+# 20131213 KKMR1_CQ_01
+allow logwrapper M4U_device_device:chr_file { read ioctl open };
+allow logwrapper MTK_SMI_device:chr_file { read ioctl open };
+allow logwrapper aee_aed:binder transfer;
+allow logwrapper aee_aed:process sigchld;
+allow logwrapper audio_device:chr_file { read write ioctl open };
+allow logwrapper bluetooth:process dyntransition;
+allow logwrapper bootanimation:binder { transfer call };
+allow logwrapper bootanimation:fd use;
+allow logwrapper ccci_device:chr_file { read write ioctl open };
+allow logwrapper drmserver:binder call;
+allow logwrapper dumpstate:unix_dgram_socket sendto;
+allow logwrapper ebc_device:chr_file { read write open };
+allow logwrapper kernel:security check_context;
+allow logwrapper keystore:binder call;
+allow logwrapper labeledfs:filesystem unmount;
+allow logwrapper mali_device:chr_file { read write ioctl };
+allow logwrapper media_app:binder transfer;
+allow logwrapper media_app:fd use;
+allow logwrapper media_app:process dyntransition;
+allow logwrapper mediaserver_exec:file { read execute open execute_no_trans };
+allow logwrapper mtk_sched_device:chr_file { read write ioctl open };
+allow logwrapper mtkfb_vsync_device:chr_file ioctl;
+allow logwrapper platform_app:binder { transfer call };
+allow logwrapper platform_app:fd use;
+allow logwrapper platform_app:process { dyntransition setpgid };
+allow logwrapper radio:binder { transfer call };
+allow logwrapper release_app:binder { transfer call };
+allow logwrapper release_app:fd use;
+allow logwrapper release_app:process dyntransition;
+allow logwrapper rild:unix_stream_socket connectto;
+allow logwrapper rild_oem_socket:sock_file write;
+allow logwrapper screencap:binder transfer;
+allow logwrapper sdcard_internal:file { read getattr open };
+allow logwrapper self:binder { transfer call };
+allow logwrapper self:capability { sys_boot ipc_lock setpcap };
+allow logwrapper self:netlink_selinux_socket { bind create };
+allow logwrapper selinuxfs:dir { read search open };
+allow logwrapper selinuxfs:file { read write getattr open };
+allow logwrapper servicemanager:binder transfer;
+allow logwrapper shared_app:binder { transfer call };
+allow logwrapper shared_app:fd use;
+allow logwrapper shared_app:process dyntransition;
+allow logwrapper sysfs_wake_lock:file { read write open };
+allow logwrapper system_app:binder transfer;
+allow logwrapper system_app:fd use;
+allow logwrapper system_app:process dyntransition;
+allow logwrapper system_server:process { dyntransition getpgid };
+allow logwrapper wifi_data_file:dir { write remove_name rmdir };
+allow logwrapper wifi_data_file:sock_file { write unlink setattr };
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow logwrapper keystore:binder call;
+allow logwrapper stpwmt_device:chr_file { read write ioctl open };
+allow logwrapper wifi_data_file:dir rmdir;
+allow logwrapper wifi_data_file:sock_file { unlink setattr };
+

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"Mises à jour du système"</string>
+
+
+    <string name="none_package">Aucun pack de mise à jour valide disponible.</string>
+    <string name="new_version_query">"Recherche d'une mise à jour\u2026"</string>
+    <string name="menu_stats_refresh">"Actualiser"</string>
+    <string name="network_error">Echec de connexion au réseau.</string>
+    <string name="no_new_version">Votre système est à jour.</string>
+    <string name="not_support_version">Votre cible ne prend pas en charge la fonction over-the-air</string>
+    <string name="query_sd_insufficient_space">Espace insuffisant pour <xliff:g id="path">%s</xliff:g></string>
+    <string name="ota_category_title">OTA</string>
+    <string name="sd_category_title">MISE A JOUR CARTE SD</string>
+    <string name="ota_preference_summary">Mise à jour système trouvée sur le serveur</string>
+
+
+    <string name="notes_summary">"La mise à jour du microprogramme peut améliorer la stabilité de l'appareil et réparer les bogues. Mettez à jour vers la version"</string>
+    <string name="ask_for_install_ota">Souhaitez-vous installer la mise à jour système maintenant?</string>
+    <string name="warning_install_ota" product="tablet">"Vous ne pourrez pas utiliser votre tablette ni passer d'appels d'urgence durant l'installation. Veuillez ne pas retirer la pile ou la carte SD, ni éteindre votre tablette."</string>
+    <string name="warning_install_ota" product="default">"Vous ne pourrez pas utiliser votre téléphone ni passer d'appels d'urgence durant l'installation. Veuillez ne pas retirer la pile ou la carte SD, ni éteindre votre téléphone."</string>
+    <string name="ask_for_install_sd">"Un pack de mise à jour système récent a été détecté sur votre carte SD; souhaitez-vous l'installer?"</string>
+    <string name="warning_install_sd" product="tablet">"Vous ne pourrez pas utiliser votre tablette ni passer d'appels d'urgence durant l'installation. Veuillez ne pas retirer la pile ou la carte SD, ni éteindre votre tablette. \nAvant de procéder à l'installation, veuillez vous assurer que le contenu a bien été téléchargé depuis le site web officiel et qu'il n'est pas corrompu."</string>
+    <string name="warning_install_sd" product="default">"Vous ne pourrez pas utiliser votre téléphone ni passer d'appels d'urgence durant l'installation. Veuillez ne pas retirer la pile ou la carte SD, ni éteindre votre téléphone. \nAvant de procéder à l'installation, veuillez vous assurer que le contenu a bien été téléchargé depuis le site web officiel et qu'il n'est pas corrompu."</string>
+    <string name="ask_for_download_ota">"Souhaitez-vous télécharger la mise à jour d'optimisation du système?"</string>
+    <string name="warning_download_ota">"Nous conseillons l'utilisation d'un hotspot Wi-Fi gratuit ou d'un plan de données illimité pour effectuer cette mise à jour. Dans le cas contraire, des frais de connexion de données peuvent s'appliquer. \nVeuillez sauvegarder vos données avant la mise à niveau."</string>
+        
+    <string name="notification_content_title">Mise à jour du système</string>
+    <string name="downloading_title">"Téléchargement..."</string>   
+    <string name="wifi_only_check">Wi-Fi uniquement</string>     
+    
+    
+    
+    
+    
+    <string name="btn_install">"Installer"</string>
+    <string name="btn_cancel">ignorer</string>
+    <string name="btn_download">Télécharger et installer</string>
+    <string name="btn_resume">"Télécharger"</string>
+    
+    <string name="warn_data_cost_title">Télécharger la mise à jour</string>
+    <string name="warn_data_cost_content">Le téléchargement via un réseau mobile peut entraîner des coûts supplémentaires. Continuer?</string>
+    <string name="warn_data_cost_yes">Oui</string>
+    <string name="warn_data_cost_no">Non</string>
+
+    <string name="notification_download_complete_title">Mise à jour système prête</string>
+    <string name="notification_download_complete_context">Touchez pour installer la mise à jour système</string>
+        
+    <string name="sdcard_crash_or_unmount">Erreur de carte SD. Veuillez vérifier votre carte SD et réessayer.</string>
+    <string name="unmount_sdcard">Erreur de montage de la carte SD, veuillez vérifier.</string>
+    <string name="insufficient_space_content">There is no enough storage space! This installation need at least  <xliff:g id="deltasize" example="3.5M">%s</xliff:g>. Check your app manager to release extra space please. </string>
+
+    
+    
+    
+    
+    <string name="install_sd_title">Installer la mise à jour</string>
+    <string name="install_sd_message">"Assurez-vous que le pack a bien été téléchargé depuis le site web officiel et qu'il n'est pas corrompu. Des problèmes système pourraient autrement survenir."</string>
+    <string name="install_reminder_now">Installer maintenant</string>
+    <string name="install_reminder_not_now">"Pas maintenant"</string>
+    
+    
+
+    <string name="notification_content_text_completed">Téléchargement réussi</string> 
+
+    <string name="unknown_per">"Inconnu"</string>    
+    <string name="unknown_error">Unknown error</string>
+    <string name="unknown_error_content">"Un erreur inconnue s'est produite. Veuillez quitter cette page et réessayer."</string>
+    <string name="insufficient_space_title">Espace insuffisant</string>
+    <string name="error_sdcard">Infos carte SD</string>
+    <string name="insufficient_space">Espace insuffisant sur la carte SD.</string>
+    <string name="package_deleted_error">"Mises à jour système interrompues en raison d'une mise à niveau invalide."</string>
+    
+    <string name="cancel_download_title">Annuler le téléchargement</string>
+    <string name="cancel_download_content">Cette opération va supprimer le fichier téléchargé.</string>
+
+    
+    <string name="change_network_title">"Télécharger"</string>
+    <string name="change_network_content">"L'APN en cours ne prend pas en charge le téléchargement; souhaitez-vous changer d'APN ou activer le Wi-Fi?"</string>
+    <string name="change_network_wifi_btn">Utiliser Wi-Fi</string>
+    <string name="change_network_apn_btn">Changer APN</string>
+    <string name="change_network_discard_btn">ignorer</string>    
+    <string name="package_error_title">"Echec de l'installation"</string>
+    <string name="package_error_message_invalid">Erreur de paquetage. Veuillez vérifier la mise à jour et réessayer.</string>
+    <string name="package_error_message_insuff" product="tablet">"Espace insuffisant sur l'appareil."</string>
+    <string name="package_error_message_insuff" product="default">Espace insuffisant sur le téléphone</string>
+    <string name="package_error_message_crash">"Impossible d'accéder aux données utilisateur"</string>
+    <string name="package_error_message_full">Un paquetage intégral est requis pour modifier la partition.</string>    
+    <string name="updateSuccess" product="tablet">Félicitations! Votre appareil a bien été mis à jour vers la version  <xliff:g id="version" example="gb.p37">%s</xliff:g>. </string> 
+    <string name="updateSuccess" product="default">Félicitations! Votre téléphone a bien été mis à niveau sur la version  <xliff:g id="version" example="gb.p37">%s</xliff:g>. </string> 
+    <string name="updateFailed">Echec de la mise à niveau sur la version  <xliff:g id="version" example="gb.p37">%s</xliff:g>. </string>
+    <string name="package_unzip">Décompression du pack\u2026</string>
+    <string name="package_unzip_error">Unzip error</string>
+    
+    <string name="installing_message">"Votre téléphone va s'éteindre\u2026"</string>
+    <string name="install_sd_info">La copie du pack vers le stockage du téléphone est requise pour continuer.\nEspace mémoire insuffisant sur votre téléphone.</string>
+    <string name="sdcard_crash_or_unmount_when_install">Mise à jour du système interrompue car carte SD non montée.</string>
+    <string name="sdcard_inserted">"Souhaitez-vous analyser votre carte SD pour trouver d'autres packs de mise à jour?"</string>
+    
+    <string name="new_version_detected">Mise à jour système disponible</string>
+    <string name="sdcard_unmount">"Carte SD non installée"</string>
+    <string name="server_version_error">Erreur serveur: veuillez mettre à jour le code source du serveur.</string>
+    <string name="cta_warning">"Le système prend uniquement en charge la mise à niveau du microprogramme via le site web ou le serveur officiel. Si l'utilisateur utilise une image ROM tierce et/ou tout autre méthode de mise à niveau du microprogramme, cela entraînera une instabilité du téléphone. Veuillez noter que l'utilisateur assume l'entière responsabilité de telles actions et conséquences."</string>
+</resources>

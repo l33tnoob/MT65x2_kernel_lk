@@ -1,0 +1,90 @@
+# ==============================================
+# Policy File of /system/binbmm050d Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type bmm050d_exec , exec_type, file_type;
+type bmm050d ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive bmm050d;
+init_daemon_domain(bmm050d)
+
+# 20131024 CTS_01
+allow bmm050d msensor_device:chr_file ioctl;
+
+
+# 20131028 CTS_04
+allow bmm050d sysfs:file write;
+
+
+# 20131028 CTS_14
+allow bmm050d device:chr_file { read ioctl open };
+allow bmm050d linker_exec:file read;
+allow bmm050d logwrapper:dir search;
+allow bmm050d logwrapper:file { read open };
+allow bmm050d logwrapper:lnk_file read;
+allow bmm050d system_data_file:dir setattr;
+allow bmm050d system_data_file:file open;
+
+
+# 20131028 CTS_15
+allow bmm050d init:dir search;
+allow bmm050d init:file read;
+
+
+# 20131028 CTS_16
+allow bmm050d system_data_file:file write;
+
+
+# 20131028 CTS_19
+allow bmm050d wlan_loader:dir search;
+allow bmm050d wlan_loader:file read;
+
+
+# 20131028 CTS_20
+allow bmm050d msensor_device:chr_file { read write open };
+allow bmm050d system_data_file:file setattr;
+
+
+# 20131028 CTS_21
+allow bmm050d init_shell:dir search;
+allow bmm050d init_shell:file { read open };
+allow bmm050d init_shell:lnk_file read;
+allow bmm050d mtk_agpsd:dir search;
+allow bmm050d mtk_agpsd:file { read open };
+allow bmm050d mtk_agpsd:lnk_file read;
+
+
+# 20131028 CTS_22
+allow bmm050d batterywarning:dir search;
+allow bmm050d batterywarning:file { read open };
+allow bmm050d batterywarning:lnk_file read;
+allow bmm050d init:file open;
+
+
+
+# 20131122 Add Set Property Rule
+allow bmm050d  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow bmm050d kernel:dir search;
+allow bmm050d kernel:file { read open };
+allow bmm050d kernel:lnk_file read;
+allow bmm050d system_data_file:dir { write add_name };
+allow bmm050d system_data_file:file create;
+

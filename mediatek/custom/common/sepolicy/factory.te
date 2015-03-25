@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binfactory Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type factory_exec , exec_type, file_type;
+type factory ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive factory;
+init_daemon_domain(factory)
+
+
+# 20131122 Add Set Property Rule
+allow factory  property_type:property_service set;

@@ -1,0 +1,53 @@
+# ==============================================
+# Policy File of /system/binthermal_manager Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type thermal_manager_exec , exec_type, file_type;
+type thermal_manager ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive thermal_manager;
+init_daemon_domain(thermal_manager)
+
+# 20131028 CTS_09
+allow thermal_manager self:capability { fowner chown fsetid };
+allow thermal_manager system_data_file:file setattr;
+
+
+# 20131028 CTS_17
+allow thermal_manager device:chr_file { read ioctl open };
+allow thermal_manager linker_exec:file read;
+
+
+# 20131028 CTS_18
+allow thermal_manager proc:file write;
+
+
+# 20131028 CTS_19
+allow thermal_manager self:capability dac_override;
+allow thermal_manager system_data_file:file { write open };
+
+
+
+# 20131122 Add Set Property Rule
+allow thermal_manager  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow thermal_manager system_data_file:dir { write add_name };
+allow thermal_manager system_data_file:file create;
+

@@ -1,0 +1,62 @@
+&NR_CPUS=2
+
+system.reset
+SYSTEM.OPTION ENRESET ON
+SYStem.Option ResBreak OFF
+SYStem.Option WaitReset ON
+SYStem.JtagClock 10.MHz
+if &NR_CPUS==1
+(
+SYSTEM.CPU CortexA7MPCore
+)
+else
+(
+    SYStem.CPU CortexA7MPCore
+)
+
+if &NR_CPUS==1
+(
+
+    ;Setting Core debug register access
+    SYStem.CONFIG CORENUMBER 1;
+    SYSTEM.MULTICORE COREBASE 0x80070000
+)
+else
+(
+;Setting Core debug register access
+	SYSTEM.CONFIG CORENUMBER 2;
+	core.assign 1 2 
+  SYSTEM.MULTICORE COREBASE 0x80070000 0x80072000;
+)
+
+SYStem.Up
+
+
+; disable DABORT and PABORT breakpoint
+tronchip.set dabort off
+tronchip.set pabort off
+tronchip.set undef off
+tronchip.set irq off
+
+d.s c:0x10007000 %le %long 0x22000064
+d.s c:0x1020011C %le %long 0x01 //CA7 can receive the snoop 
+
+; Init DDR
+do MT6595_FPGA_DDR.cmm
+
+
+print "loading lk image"
+d.load.elf ../../../../out/target/product/mt6595_fpga_emmc/obj/BOOTLOADER_OBJ/build-mt6595_fpga_emmc/lk /gnu
+
+Y.SPATH.RESET ; reset all source path
+Y.SPATH.SRD ../app
+Y.SPATH.SRD ../app/mt_boot
+Y.SPATH.SRD ../arch/arm
+Y.SPATH.SRD ../dev
+Y.SPATH.SRD ../include
+Y.SPATH.SRD ../kernel
+Y.SPATH.SRD ../lib
+Y.SPATH.SRD ../../../../mediatek/platform/mt6595/lk
+
+d.l
+enddo

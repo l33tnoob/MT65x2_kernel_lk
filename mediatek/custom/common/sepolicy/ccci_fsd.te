@@ -1,0 +1,67 @@
+# ==============================================
+# Policy File of /system/binccci_fsd Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type ccci_fsd_exec , exec_type, file_type;
+type ccci_fsd ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive ccci_fsd;
+init_daemon_domain(ccci_fsd)
+
+# 20131024 Sanity_01
+allow ccci_fsd system_data_file:file { write open };
+
+
+# 20131024 CTS_01
+allow ccci_fsd ccci_device:chr_file ioctl;
+allow ccci_fsd device:chr_file ioctl;
+
+
+# 20131028 Sanity_06
+allow ccci_fsd ccci_device:chr_file { read write open };
+allow ccci_fsd device:chr_file { read open };
+allow ccci_fsd linker_exec:file read;
+allow ccci_fsd sysfs:file write;
+allow ccci_fsd system_data_file:dir read;
+
+
+# 20131028 Sanity_07
+allow ccci_fsd system_data_file:dir open;
+
+
+# 20131119 FeatureSQC
+allow ccci_fsd system_data_file:dir { write remove_name create add_name };
+allow ccci_fsd system_data_file:file { create unlink };
+
+
+
+# 20131122 Add Set Property Rule
+allow ccci_fsd  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow ccci_fsd block_device:blk_file read;
+allow ccci_fsd sysfs_wake_lock:file { read write open };
+
+
+# 20131213 KKMR1_CQ_CTS_02
+allow ccci_fsd ccci_fsd_tmpfs:file { write create open };
+allow ccci_fsd sysfs_wake_lock:file { read write open };
+allow ccci_fsd tmpfs:dir { write create add_name };
+allow ccci_fsd tmpfs:file open;
+

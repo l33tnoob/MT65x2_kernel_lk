@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/clock_select_btn"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:text="@string/clock_select_turn_on"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+    </Button>
+    <TextView
+        android:id="@+id/ClockSelectionDesTxv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3pt"
+        android:layout_marginTop="20px"
+        android:layout_weight="1" >
+    </TextView>
+
+</LinearLayout>

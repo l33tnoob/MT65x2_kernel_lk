@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="STR_NMS_MAIN">iSMS</string>
+    <string name="STR_NMS_HISSAGE">iSMS</string>
+    <string name="STR_NMS_INVITE_SMS_CONTENT">مرحباً، iSMS أداة دردشة رائعة ومجانيةإنه مجاني ومريح الرجاء فحص http://isms.hissage.com لاكتشاف المزيد</string>
+    <string name="STR_NMS_NO_SDCARD">لم يتم الكشف عن بطاقة SD، ولن يُسمح بأداء بعض العمليات من قبل iSMS</string>
+    <string name="STR_NMS_MOUNT_SDCARD">بطاقة SD متاحة للاستخدام</string>
+    <string name="STR_NMS_SEND_MMS_FAIL">تعذر إرسال الرسالة سيتم إرسالها تلقائياً بمجرد توافر الشبكة</string>
+    <string name="STR_NMS_RECV_MMS_FAIL">تعذر التنزيل إعادة المحاولة لاحقاً</string>
+    <string name="STR_NMS_GROUP_CHAT_ME">أنا</string>
+    <string name="STR_NMS_GROUP_CHAT_I">أنا</string>
+    <string name="STR_NMS_GROUP_CHAT_YOU">أنت</string>
+    <string name="STR_NMS_GROUP_CREATE_MSG">%1$s يدعو %2$s لدردشة المجموعة</string>
+    <string name="STR_NMS_GROUP_ADD_MSG">%1$s انضم لدردشة المجموعة</string>
+    <string name="STR_NMS_GROUP_DELETE_MSG">%1$s يحذف %2$s من دردشة المجموعة</string>
+    <string name="STR_NMS_GROUP_QUITE_MSG">%1$s ترك دردشة المجموعة</string>
+    <string name="STR_NMS_GROUP_CHAT_PLACE_HOLDER_MSG_BODY">انضمت لهذه المجموعة</string>
+    <string name="STR_NMS_PICTURE">الصورة</string>
+    <string name="STR_NMS_TAPE">الصوت</string>
+    <string name="STR_NMS_VCARD">جهة اتصال</string>
+    <string name="STR_NMS_LOCATION">الموقع</string>
+    <string name="STR_NMS_SKETCH">المخطط</string>
+    <string name="STR_NMS_VIDEO">الفيديو</string>
+    <string name="STR_NMS_CALENDAR">التقويم</string>
+    <string name="STR_NMS_UNKNOWN">غير معروف</string>
+    <string name="STR_NMS_READ_MODE_PIC">صورة</string>
+    <string name="STR_NMS_READ_MODE_TAPE">ملاحظة صوتية</string>
+    <string name="STR_NMS_READ_MODE_VCARD">جهات اتصال</string>
+    <string name="STR_NMS_READ_MODE_LOCATION">موقع</string>
+    <string name="STR_NMS_READ_MODE_SKETCH">مخطط</string>
+    <string name="STR_NMS_READ_MODE_VIDEO">فيديو</string>
+    <string name="STR_NMS_READ_MODE_CALENDAR">تقويم</string>
+    <string name="STR_NMS_ISMS_ENABLE">(تمكين iSMS)</string>
+    <string name="STR_NMS_READ_MODE_UNKNOWN">ملف غير معروف</string>
+    <string name="STR_NMS_ALL_MSG">كافة الرسائل</string>
+    <string name="STR_NMS_SAVED">تم حفظ</string>
+    <string name="STR_NMS_BLOCKMSG">محظور</string>
+    <string name="STR_NMS_SMS_TYPE">SMS</string>
+    <string name="STR_NMS_NO_SIM">لم يتم الكشف عن بطاقة SIM</string>
+    <string name="STR_NMS_ILLEGAL_ADDRESS">رقم غير صالح</string>
+    <string name="STR_NMS_REMIND_USER_SET_NAME">الرجاء تحديث وضعك</string>
+    <string name="STR_NMS_OK">موافق</string>
+    <string name="STR_NMS_BACK">رجوع</string>
+    <string name="STR_NMS_CANCEL">إلغاء</string>
+    <string name="STR_NMS_NETWORK_UNAVL">الرجاء التأكد من وجود اتصال بيانات فعال عبر شبكة 3G أو GPRS أو Wi-Fi مثلاً</string>
+    <string name="STR_NMS_TODAY">اليوم</string>
+    <string name="STR_NMS_YESTERDAY">الأمس</string>
+    <string name="STR_NMS_NOW">الآن</string>
+    <string name="STR_NMS_NO_SIM_CARD">يجب إدخال بطاقة SIM، إذا لم يتم الكشف عنها</string>
+    <string name="STR_NMS_NO_CONNECTION">الشبكة غير متوفرة أو تم تشغيل وضع الطيران، الرجاء التحقق من ذلك</string>
+    <string name="STR_NMS_ATTACH_SHARE">%1$s مشترك مع%2$s</string>
+    <string name="STR_NMS_WAIT">انتظر...</string>
+    <string name="STR_NMS_TIPTITLE">تلميح</string>
+
+    <string name="STR_NMS_OPEN">فتح</string>
+    <string name="STR_NMS_PLAY">تشغيل</string>
+    
+    <string name="STR_NMS_SETTING_COMMENT">iSMS أداة دردشة رائعة ومجانيةإنه مجاني ومريح.  تعرف على المزيد</string> 
+    <string name="STR_NMS_KNOW_MORE">تعرف على المزيد</string> 
+    <string name="STR_NMS_RECEIVED_MSG_DETAILS">النوع: IP رسالة\nمن: %1$s\nمرسلة: %2$s\nمستقبلة: %3$s</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH_ADD">خدمة ISMS غير متاحة مؤقتا بسبب عدم وجود مساحة التخزين.</string>
+    <string name="STR_NMS_SERVER_AUTO_ECHO_MSG">تلقى الرسالة. شكرا!</string>
+
+    <string name="STR_NMS_VCARD_NAME">%1$s جهات اتصال </string>
+    <string name="STR_NMS_SHARE_VCARD_FAILED">فشل في مشاركة جهة اتصال</string>
+
+    <!-- upgrade info -->
+    <string name="STR_NMS_UPGRADE_TICKER">ترقية الإصدار</string>
+    <string name="STR_NMS_UPGRADE_ERROR_TITLE">خطأ في الترقية</string>
+    <string name="STR_NMS_UPGRADE_ERROR_CONTENT"> العميل	خطأ في ترقية العميل Klient، الرجاء ترقية العميل iSMS</string>
+    <string name="STR_NMS_INSTALLED_TITLE">نجاح الترقية</string>
+    <string name="STR_NMS_INSTALLED_CONTENT">تمت الترقية بنجاح إلى الهاتف</string>
+    <string name="STR_NMS_PROMPT_DLG_TITLE">تم الكشف عن إصدار جديد</string>
+    <string name="STR_NMS_PROMPT_DLG_DOWNLOAD">التنزيل</string>
+    <string name="STR_NMS_PROMPT_DLG_LATER">لاحقًا</string>
+    <string name="STR_NMS_UPGRADING">الترقية</string>
+    <string name="STR_NMS_UPGRADE_TIME">آخر فحص: %s</string>
+    
+    <!-- ext protocol -->
+    <string name="STR_NMS_OFFLINE_URL">http://ismsi.hissage.com/webservice/nmsmail/notifyOffline.php</string>
+    
+    <!-- Activation start -->
+    <string name="STR_NMS_PRELOAD_IP_MSG_CONTENT">&quot;مرحباً بك في iSMS&quot;</string>
+    <string name="STR_NMS_ACTIVAT_TITLE">iSMS سيرسل رسالة SMS واحدة للتحقق من رقم هاتفك قد يتم فرض رسوم على المشغل</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE">التحقق من رقم هاتفك</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE2">التحقق من رقم هاتفك</string>
+    <string name="STR_NMS_YOUR_COUNTRY_TITLE">بلدك</string>
+    <string name="STR_NMS_YOUR_PHONE_TITLE">رقم هاتفك</string>
+    <string name="STR_NMS_VERIFY_FAIL_TITLE">فشل في اكمال التحقق من رسالة SMS</string>
+    <string name="STR_NMS_VERIFY_FAIL_CONTENT">الرجاء التأكد من إدخال رقم هاتفك بشكل صحيح</string>
+    <string name="STR_NMS_WORKING_SMS_TIP">الرجاء التأكد من حصولك على خطة SMS فعالة</string>
+    <string name="STR_NMS_VERIFYING">الانتظار للكشف تلقائيًا عن رسالة SMS المرسلة إلى</string>
+    <string name="STR_NMS_RETRY">حاول ثانية</string>
+    <string name="STR_NMS_EDIT_NUMBER">تحرير الرقم</string>
+    <string name="STR_NMS_UPDATE_PROFILE">تحديث الوضع</string>
+    <string name="STR_NMS_START_ISMS">بدء iSMS</string>
+    <string name="STR_NMS_SEND">إرسال</string>
+    <string name="STR_NMS_CONGRATULATIONS_TITLE">أصدق التهاني!</string>
+    <string name="STR_NMS_CONGRATULATIONS_CONTENT">شكرًا لك لتنشيط iSMS.\n يمكنك الآن بدء الاستمتاع بخدمة iSMS\n الرائعة!</string>
+    <string name="STR_NMS_WELCOME_BACK">أهلاً بعودتك</string>
+    <string name="STR_NMS_SEND_SMS_FAIL">فشل التحقق، الرجاء فحص:\n  1. رقم الهاتف صحيح،\n  2. تم إيقاف تشغيل برنامج Security \n  3. أسباب أخرى ممكنة لحظر إرسال رسالة .\nSMS تأكد وحاول مرة أخرى لاحقًا.</string>
+    <string name="STR_NMS_ACTIVE">تنشيط iSMS</string>
+    <string name="STR_NMS_WELCOME_ACTIVE">مرحباً بك في iSMS</string>
+    <string name="STR_NMS_CONNECTING">جارٍ الاتصال...</string>
+    <!-- Activation end -->
+
+
+    <!-- Notification start -->
+    <string name="STR_NMS_NEW_MSG_TITLE">رسالة iSMS جديدة </string>
+    <string name="STR_NMS_NEW_SMG_CONTENT">%d رسالة غير مقروءة</string>
+    <!-- Notification End -->
+
+    <string name="STR_NMS_MSG_DUMPER_MSG_SMS">SMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_MMS">MMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_IP">رسالة IP</string>
+    <string name="STR_NMS_MSG_DUMPER_SEND_MSG">المرسلة %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_RECEIVE_MSG">المستلمة %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TIME">الوقت: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TEXT">النص</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_PIC">الصورة</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_SKETCH">المخطط</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VOICE">الصوت</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VIDEO">الفيديو</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CALENDAR">التقويم</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION_IMG">صورة الموقع</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VCARD">Vcard</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION">الموقع</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CAPTION">التعليق: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_URL">Url: </string>
+    <string name="STR_NMS_MSG_DUMPER_DURATION">المدة: </string>
+    <string name="STR_NMS_MSG_DUMPER_COORDINATE">الإحداثيات: </string>
+    <string name="STR_NMS_MSG_DUMPER_ADDRESS">العنوان: </string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_SENDER">المرسل: </string>
+    <string name="STR_NMS_MSG_DUMPER_NORMAL_DETAIL">تفاصيل الجلسة:</string>
+    <string name="STR_NMS_MSG_DUMPER_NAME">الاسم: </string>
+    <string name="STR_NMS_MSG_DUMPER_NUMBER">الرقم: </string>
+    <string name="STR_NMS_MSG_DUMPER_PORTRAIT">عمودي</string>
+    <string name="STR_NMS_MSG_DUMPER_MULTI_SEND_DETAIL">البث:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_DETAIL">دردشة مجموعة:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_CREATER">المنشئ: </string>
+    <string name="STR_NMS_MSG_DUMPER_MEMBERS">الأعضاء: </string>
+    <string name="STR_NMS_MSG_DUMPER_VCARD_NAME">الاسم: </string>
+    <string name="STR_NMS_MSG_DUMPER_CALENDAR_SUMMARY">الملخص: </string>
+
+    <!-- Chat Settings -->
+    <string name="STR_NMS_CHAT_SETTING_TITLE">إعدادات الدردشة</string>
+    <string name="STR_NMS_DISPLAY">شاشة عرض</string>
+    <string name="STR_NMS_CHAT_WALLPAPER">خلفية الدردشة</string>
+    <string name="STR_NMS_SYS_WALLPAPER">تحديد الخلفية</string>
+    <string name="STR_NMS_CAMEARPHOTO">التقاط صورة</string>
+    <string name="STR_NMS_SYS_GALLERY">تحديد من المعرض</string>
+    <string name="STR_NMS_DEFAULT_WALLPAPER">افتراضي</string>
+    <string name="STR_NMS_NOTIFICATION_CATEGORY">إعلام</string>
+    <string name="STR_NMS_NOTIFICATION_TITLE">إعلام iSMS </string>
+    <string name="STR_NMS_NOTIFICATION_CONTENT">يظهر عندما يتم استلام الإعلامات</string>
+    <string name="STR_NMS_MUTE">صامت</string>
+    <string name="STR_NMS_MUTE_OFF">إيقاف</string>
+    <string name="STR_NMS_MUTE_1">صامت ساعة</string>
+    <string name="STR_NMS_MUTE_4">صامت 4 ساعات</string>
+    <string name="STR_NMS_MUTE_8">صامت 8 ساعات</string>
+    <string name="STR_NMS_RINGTONE_TITLE">نغمة الرنين</string>
+    <string name="STR_NMS_RINGTONE_CONTENT">قم بتعيين نغمة رنين للإعلامات الجديدة </string>
+    <string name="STR_NMS_VIBRATE_TITLE">اهتزاز</string>
+    <string name="STR_NMS_VIBRATE_CONTENT">الاهتزاز عند استلام الإعلامات</string>
+    <string name="STR_NMS_ACTIONS">الإجراءات</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_TITLE">تنزيل محفوظات الدردشة</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_CONTENT">حفظ في بطاقة SD بتنسيق zip  </string>
+    <string name="STR_NMS_EMAIL_HISTORY_TITLE">محفوظات دردشة البريد</string>
+    <string name="STR_NMS_EMAIL_HISTROY_CONTENT">محفوظات دردشة البريد بتنسيق zip</string>
+    <string name="STR_NMS_CLEAR_HISTROY">مسح محفوظات الدردشة</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_DLG">جارٍ التنزيل...</string>
+    <string name="STR_NMS_DOWNLOAD_OK">تم تنزيل محفوظات الدردشة، احفظها باسم %s</string>
+    <string name="STR_NMS_DOWNLOAD_ERROR">خطأ في تنزيل محفوظات الدردشة</string>
+    <string name="STR_NMS_DOWNLOAD_EMPTY">لم يتم تنزيل أي شيء</string>
+    <string name="STR_NMS_CLEARING">مسح المحفوظات، الرجاء الانتظار...</string>
+    <string name="STR_NMS_WAIT_SAVE_WALLPAPER">حفظ الخلفية، الرجاء الانتظار...</string>
+    <string name="STR_NMS_SAVE_WALLPAPER_OK">نجاح حفظ الخلفية</string>
+    <string name="STR_NMS_CLEARDONE">تم مسح المحفوظات</string>
+    <string name="STR_NMS_SVAE_TITLE">حفظ إلى بطاقة SD</string>
+    <string name="STR_NMS_SAVE_CONTENT">حفظ مؤشر ترابط الدردشة إلى بطاقة SD باسم ملف zip</string>
+    <string name="STR_NMS_EMAIL_TITLE">شارك عبر البريد</string>
+    <string name="STR_NMS_EMAIL_CONTENT">شارك بترابط الدردشة كمرفق عبر البريد الإلكتروني بتنسيق zip</string>
+
+    <!-- Chat Settings End -->
+
+
+    <!-- Profile Settings -->
+    <string name="STR_NMS_PROFILE_TITLE">الوضع</string>
+    <string name="STR_NMS_TAP_AVATAR_TIP">انقر لتحرير صورة الوضع</string>
+    <string name="STR_NMS_DISPLAY_NAME_TIP">اسم العرض</string>
+    <string name="STR_NMS_ACCOUNT_TIP">حساب ISMS </string>
+    <string name="STR_NMS_NO_APP">لا توجد تطبيقات قادرة على أداء هذا الإجراء</string>
+    <string name="STR_NMS_NO_NAME">إعداد اسمك</string>
+    <string name="STR_NMS_SAVE_AVATAR_FAILD">عذراً، فشل في حفظ صورة الوضع</string>
+    <string name="STR_NMS_INPUT_NAME">الاسم</string>
+    <string name="STR_NMS_TERM_WARN_ACTIVATE">ميزة  مدعومة فقط من خدمة n\niSMS .iSMS هي خدمة مجانية للرسائل الفورية تتيح لك إمكانية الدردشة ومشاركة محتوى متعدد الوسائط مع أصدقائك أينما كنت ووقتما شئت عبر اتصال البيانات بالإنترنت (شبكة Wi-Fi ،2G/3G...الخ). \nعند تنشيطها لأول مرة، تقوم خدمة iSMS بتوزيع رسالة SMS تلقائياً لإكمال التسجيل. قد يتم فرض رسوم/كوتاعلى SMS .\n\n اتفاقية المستخدم\n   </string>
+    <string name="STR_NMS_TERM_WARN_WELCOME">iSMS هي خدمة مجانية للرسائل الفورية تتيح لك إمكانية الدردشة ومشاركة محتوى متعدد الوسائط مع أصدقائك أينما كنت ووقتما شئت عبر اتصال البيانات بالإنترنت (شبكة Wi-Fi ،2G/3G...الخ). \nعند تنشيطها لأول مرة، تقوم خدمة iSMS بتوزيع رسالة SMS تلقائياً لإكمال التسجيل. قد يتم فرض رسوم/كوتا على SMS. \n\n اتفاقية المستخدم\n</string>
+    <string name="STR_NMS_TERM_KEY">البنود والشروط</string>
+    <string name="STR_NMS_AGREE_AND_CONTINUE">موافقة ومتابعة</string>
+    <string name="STR_NMS_ACTIVE_BNT">تنشيط</string>
+    <string name="STR_NMS_SET_PROFILE_OK">تم تعيين الوضع بنجاح</string>
+    <string name="STR_NMS_SET_PROFILE_FAIL">فشل في تعيين الوضع</string>
+    <string name="STR_NMS_ILLEGAL_PROFILE_NAME">اسم غير قانوني</string>
+    <string name="STR_NMS_NO_ACTIVITED">لم يتم تنشيط أو تمكين بطاقة SIM</string>
+    <!-- Profile Settings End -->
+
+
+    <!-- Term Activity -->
+    <string name="STR_NMS_REJECT">رفض</string>
+    <string name="STR_NMS_AGREE">موافقة</string>
+    <string name="STR_NMS_TERM_TITLE">شروط الخدمة</string>
+    <string name="STR_NMS_TERM_CONTENT">أنت تفهم أن الخدمة والبرامج المدمجة ضمن هذه الخدمة قد تشتمل على مكونات الأمان التي تسمح بحماية المواد الرقمية. ويخضع استخدام مثل هذه المواد لقوانين الاستخدام المنصوص عليها من قبل AF PushMail و/أو موفري المحتويات الذين يقدمون المحتويات إلى الخدمة. لا يجوز لك محاولة التجاوز أو التحايل على أي قاعدة من قواعد الاستخدام المضمّنة في هذه الخدمة. ممنوع منعاً باتاً إعادة نسخ المواد غير المصرح بها أو نشرها أو توزيعها أو عرضها بشكل عام في الخدمة سواء كلياً أم جزئياً.</string>
+    <!-- Term Activity End -->
+
+
+    <!-- System Settings -->
+    <string name="STR_NMS_SYS_SETTING_TITLE">رسالة iSMS </string>
+    <string name="STR_NMS_SETTINGS_TITLE">الوضع</string>
+    <string name="STR_NMS_PREFERENCE_CATE">التفضيلات</string>
+    <string name="STR_NMS_SEND_SMS_TITLE">إرسال كـSMS</string>
+    <string name="STR_NMS_SEND_SMS_CONTENT">إرسال كـSMS في حالة عدم إتاحة iSMS  قد يتم فرض أسعار المراسلة للمشغل لا تنطبق هذه القاعدة على دردشة المجموعة</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_TITLE">تنزيل تلقائي</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_CONTENT">تنزيل كائنات الوسائط المتعددة تلقائياً</string>
+    <string name="STR_NMS_CAPTION_TITLE">تعليقات</string>
+    <string name="STR_NMS_CAPTION_CONTENT">مشاركة ملف مع تعليقات</string>
+    <string name="STR_NMS_SYSTEM_CATE">النظام</string>
+    <string name="STR_NMS_UPDATE_TITLE">تحديث البرنامج</string>
+    <string name="STR_NMS_UPDATE_CONTENT">آخر فحص: أبداً</string>
+    <string name="STR_NMS_NETWORK_USAGE_TITLE">استخدام الشبكة</string>
+    <string name="STR_NMS_NETWORK_USAGE_CONTENT">عرض استخدام البيانات</string>
+    <string name="STR_NMS_NETWORK_DLG_CONTENT">Sent: %1$.3f K \nReceived: %2$.3f K\nLast reset: %3$s</string>
+    <string name="STR_NMS_VERSION_TITLE">الإصدار</string>
+    <string name="STR_NMS_NEVER_CLEAR">أبداً</string>
+    <string name="STR_NMS_RESET">إعادة تعيين</string>
+    <string name="STR_NMS_SWITCH_ON">تشغيل</string>
+    <string name="STR_NMS_SWITCH_OFF">إيقاف</string>
+    <string name="STR_NMS_SYSTEM_SETTING_TITLE">الإعدادات</string>
+    <string name="STR_NMS_COPYRGIHT">شركة Hesine Technologies </string>
+    <string name="STR_NMS_ABOUT">حول iSMS</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_TITLE">عرض حالة القراءة</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_CONTENT">عرض حالة القراءة في قائمة الرسائل</string>
+    <string name="STR_NMS_SHOW_REMIND_TITLE">عرض التذكيرات</string>
+    <string name="STR_NMS_SHOW_REMIND_CONTENT">عرض تذكيرات iSMS في شاشة الدردشة</string>
+    <string name="STR_NMS_MENU_RESET_SETTING">استعادة إعدادات افتراضية</string>
+    <string name="STR_NMS_MENU_FUNCTION_INTRODUCTION">الميزات</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT">اتفاقية المستخدم</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION">حق النشر</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT_TITLE">اتفاقية ترخيص المستخدم من HESINE iSMS</string>
+    <string name="STR_NMS_MENU_FUNCTION">قائمة الميزات</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION_DETAIL">\n Hesine Technologies شركة .\nCopyright© 2008-2013\nجميع الحقوق محفوظة.\n</string>
+    <!-- System Settings End -->
+
+
+    <!-- Caption Settings -->
+    <string name="STR_NMS_AUDIO_TITLE">الصوت</string>
+    <string name="STR_NMS_VIDEO_TITLE">الفيديو</string>
+    <string name="STR_NMS_PHOTO_TITLE">الصور</string>
+    <!-- Caption Settings End -->
+
+
+    <!-- Map String start -->
+    <string name="STR_NMS_MAP_TITLE">مشاركة الموقع</string>
+    <string name="STR_NMS_MAP_PROMPT">لا يمكن عرض الخريطة لأنه لم يتم تشغيل خدمة موقعك تم تقدير العنوان أدناه، اعتماداً على معلومات هاتفك الخلوي \n للحصول على المزيد من خدمة الموقع الصحيح، يُقترح تشغيل خدمة الموقع</string>
+    <string name="STR_NMS_MAP_NOTE_1">الرجاء تمكين مصدر موقعي في إعدادات النظام</string>
+    <string name="STR_NMS_MAP_SHARE">مشاركة</string>
+    <string name="STR_NMS_MAP_SETTINGS">الإعدادات</string>
+    <string name="STR_NMS_MAP_OK">موافق</string>
+    <string name="STR_NMS_MAP_CANCEL">إلغاء</string>
+    <string name="STR_NMS_MAP_EDIT">تحرير الموقع</string>
+    <string name="STR_NMS_MAP_SEARCH_HINT">البحث عن أماكن قريبة</string>
+    <string name="STR_NMS_MAP_WAIT">الرجاء انتظر...</string>
+    <string name="STR_NMS_MAP_EDIT_LIMIT"> حرف	لقد بلغ حرف إدخال Zeichen الحد المسموح به</string>
+    <string name="STR_NMS_MAP_ADDR_LEN">العنوان طويل جداً</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR_LOCATING">جارٍ تحديد موضعك الحالي...</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN_LOCATING">جارٍ تحديد موضع رمز PIN...</string>
+    <string name="STR_NMS_MAP_LINEONE_SEARCH_LOCATING">جارٍ تحديد موضعك المراد البحث عنه...</string>
+    <string name="STR_NMS_MAP_LINETHREE_NEARBY_LOCATING">جارٍ البحث عن أماكن قريبة...</string>
+    <string name="STR_NMS_MAP_LINEONE_FAILED">موقعك غير متاح الآن</string>
+    <string name="STR_NMS_MAP_LINETWO_FAILED">الرجاء التأكد من تشغيل خدمة موقعك وإتاحة الشبكة</string>
+    <string name="STR_NMS_MAP_LINETHREE_FAILED">لا توجد أماكن قريبة</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR">مشاركة الموقع الحالي</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN">مشاركة موقع رمز PIN</string>
+    <string name="STR_NMS_MAP_MY_LOCATION">موقعي</string>
+    <string name="STR_NMS_MAP_SEARCH">البحث</string>
+    <string name="STR_NMS_MAP_ERROR_1">تعذر الحصول على خطوط الطول والعرض</string>
+    <string name="STR_NMS_MAP_ERROR_2">كمبيوتر خادم، صغير عن خوادم Google</string>
+    <!-- Map String end -->
+
+
+    <!-- All Media String start -->
+    <string name="STR_NMS_ALL_MEDIA_TITLE">كافة الوسائط</string>
+    <string name="STR_NMS_ALL_MEDIA_WAIT">الرجاء انتظر...</string>
+    <string name="STR_NMS_ALL_MEDIA_ERROR">فشل في التحميل، أعد المحاولة لاحقاً</string>
+    <string name="STR_NMS_ALL_MEDIA_EMPTY">فارغ</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_WEEK">هذا الأسبوع</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_MONTH">هذا الشهر</string>
+    <string name="STR_NMS_ALL_MEDIA_JAN">يناير</string>
+    <string name="STR_NMS_ALL_MEDIA_FEB">فبراير</string>
+    <string name="STR_NMS_ALL_MEDIA_MAR">مارس</string>
+    <string name="STR_NMS_ALL_MEDIA_APR">أبريل</string>
+    <string name="STR_NMS_ALL_MEDIA_MAY">مايو</string>
+    <string name="STR_NMS_ALL_MEDIA_JUN">يونيو</string>
+    <string name="STR_NMS_ALL_MEDIA_JUL">يوليو</string>
+    <string name="STR_NMS_ALL_MEDIA_AUG">أغسطس</string>
+    <string name="STR_NMS_ALL_MEDIA_SEPT">سبتمبر</string>
+    <string name="STR_NMS_ALL_MEDIA_OCT">أكتوبر</string>
+    <string name="STR_NMS_ALL_MEDIA_NOV">نوفمبر</string>
+    <string name="STR_NMS_ALL_MEDIA_DEC">ديسمبر</string>
+    <string name="STR_NMS_ADDCONTACT">أضف جهة اتصال</string>
+    <string name="STR_NMS_ADD_PHONE_CONTACT">هل تضيف\&quot;%1$s\&quot; إلى جهات اتصال؟</string>
+    <string name="STR_NMS_DELETE_MEDIA">سيتم حذف الوسائط، هل تريد المتابعة؟</string>
+    <string name="STR_NMS_MEDIA_SHARE_MESSAGE">%1$s مشترك مع %2$s</string>
+
+    <!-- All Media String end -->
+
+
+    <!-- All Locations String start -->
+    <string name="STR_NMS_ALL_LOCATIONS_TITLE">كافة المواقع</string>
+    <string name="STR_NMS_ALL_LOCATIONS_LOC">الموقع</string>
+    <string name="STR_NMS_ALL_LOCATIONS_WAIT">الرجاء الانتظار...</string>
+    <!-- All Locations String end -->
+
+
+    <!-- Sketch -->
+    <string name="STR_NMS_SKETCH_TITLE">رسم مخطط</string>
+    <string name="STR_NMS_REDO">إعادة</string>
+    <string name="STR_NMS_UNDO">تراجع</string>
+    <string name="STR_NMS_SKETCH_CUSTOM">مخصص</string>
+    <string name="STR_NMS_PEN_SIZE">الحجم</string>
+    <string name="STR_NMS_SKETCH_TOOLS_PEN">قلم</string>
+    <string name="STR_NMS_SKETCH_TOOLS_ERASER">ممحاة</string>
+    <string name="STR_NMS_SKETCH_CUSTOM_COLOR">لون مخصص</string>
+    <string name="STR_NMS_CLEAR_SKETCH_TITLE">مسح المخطط</string>
+    <string name="STR_NMS_CLEAR_SKETCH_CONTENT">هل تريد مسح هذا المخطط؟</string>
+    <string name="STR_NMS_SIZE_SKETCH_TITLE">الحجم</string>
+    <string name="STR_NMS_SIZE_SKETCH_MAX">72</string>
+    <string name="STR_NMS_SIZE_SKETCH_MIN">2</string>
+    <string name="STR_NMS_COLOR_SKETCH_TITLE">اللون</string>
+    <string name="STR_NMS_SKETCH_ERROR">فشل في إنشاء المخطط</string>
+    <string name="STR_NMS_BACK_TITLE">تأكيد</string>
+    <string name="STR_NMS_FINISH_SKETCH_CONTENT">هل أنت متأكد من ترك رسم المخطط؟</string>
+    <string name="STR_NMS_LEAVE_SKETCH_CONTENT">هل أنت متأكد من إسقاط هذا المخطط؟</string>
+    <string name="STR_NMS_NOTREDO">لا شيء للإعادة</string>
+    <string name="STR_NMS_NOTUNDO">لا شيء للتراجع</string>
+    <string name="STR_NMS_SKETCH_DELETE">مسح</string>
+    <string name="STR_NMS_DISCARD">تجاهل</string>
+
+    <!-- Sketch end -->
+
+
+    <!-- Selection Contact -->
+    <string name="STR_NMS_DONE">موافق</string>
+    <string name="STR_NMS_SELECTALL">تحديد الكل</string>
+    <string name="STR_NMS_DESELECTED">إلغاء تحديد الكل</string>
+    <string name="STR_NMS_SELECTED">%1$s محدد</string>
+    <string name="STR_NMS_CONTACT_SEARCH">إيجاد جهة اتصال</string>
+    <string name="STR_NMS_SEARCH">البحث</string>
+    <string name="STR_NMS_CONTACT_SELECT">تحديد جهة اتصال</string>
+    <string name="STR_NMS_SELECT_MEMBER_FULL">تم تحديد جهات اتصال كثيرة جداً</string>
+    <string name="STR_NMS_SELECT_MEMBER_EMPTY">لم يتم تحديد أية جهة اتصال</string>
+    <string name="STR_NMS_SELECT_CONTAT_WAIT">الرجاء انتظر...</string>
+    <string name="STR_NMS_SELECT_CONTAT_EMPTY">بلا جهة اتصال iSMS </string>
+    <string name="STR_NMS_SELECT_NO_RESULT">بلا شيء</string>
+    <string name="STR_NMS_EMPTY">بلا جهة اتصال</string>
+    <!-- Selection Contact end -->
+
+    <!-- Group chat -->
+    <string name="STR_NMS_CREATE_GROUP_TITLE">إنشاء المجموعة</string>
+    <string name="STR_NMS_GROUP_INFO_TITLE">معلومات المجموعة</string>
+    <string name="STR_NMS_EDIT_GROUP_TITLE">تحرير المجموعة</string>
+    <string name="STR_NMS_SELECT_ACTION_TITLE">تحديد الإجراء </string>
+    <string name="STR_NMS_ADD_TO_BOOKMARK">إضافة إلى العلامة</string>
+    <string name="STR_NMS_ADD_TO_CONTACTS">أضف %1$s إلى جهة الاتصال</string>
+    <string name="STR_NMS_GROUP_NAME">اسم المجموعة</string>
+    <string name="STR_NMS_GROUP_INFO">معلومات المجموعة</string>
+    <string name="STR_NMS_GROUP_MEMBERS">أعضاء المجموعة</string>
+    <string name="STR_NMS_GROUP_NAME_HIT">اسم المجموعة</string>
+    <string name="STR_NMS_GROUP_NAME_EMPTY">اسم المجموعة فارغ</string>
+    <string name="STR_NMS_CONFIRM_LEAVE_TITLE">ترك هذه المجموعة</string>
+    <string name="STR_NMS_LEAVE_GROUP_CONTENT">هل تريد ترك هذه المجموعة؟</string>
+    <string name="STR_NMS_LEAVE_GROUP_SUCCESS">تم ترك هذه المجموعة بنجاح</string>
+    <string name="STR_NMS_LEAVE_GROUP_FAILED">فشل في ترك هذه المجموعة</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_SUCCESS">تم تحديث اسم المجموعة بنجاح</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_SUCCESS">تمت إضافة أعضاء جدد</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_FAILED">فشل في إضافة عضو للمجموعة</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_FAILED">فشل في تحديث اسم المجموعة</string>
+    <string name="STR_NMS_CREATE_GROUP_NAME_FAILED">فشل في إنشاء دردشة المجموعة</string>
+    <string name="STR_NMS_DELETE_GROUP_MEMBER_FAILED">فشل في إزالة عضو من المجموعة</string>
+    <string name="STR_NMS_UPDATE_GROUP_SUCCESS">تم تحديث معلومات المجموعة بنجاح</string>
+    <string name="STR_NMS_UPDATE_GROUP_FAILED">فشل في تحديث معلومات المجموعة</string>
+    <string name="STR_NMS_GROUP_CHAT_BACK">هل تريد تجاهل هذه العملية؟</string>
+    <string name="STR_NMS_GROUP_MEMEBER_YOU">أنت</string>
+    <string name="STR_NMS_GROUP_INVITE_MORE">أدعو المزيد</string>
+    <string name="STR_NMS_LEAVE_GROUP">ترك هذه المجموعة</string>
+    <string name="STR_NMS_CHAT">دردشة</string>
+    <string name="STR_NMS_CONFIRM_REMOVE_TITLE">إزالة من قائمة أعضاء المجموعة</string>
+    <string name="STR_NMS_REMOVE_OK">إزالة</string>
+    <string name="STR_NMS_REMOVE_CANCEL">إلغاء</string>
+    <string name="STR_NMS_REMOVE_CONTENT">هل تريد إزالة هذا من القائمة؟</string>
+    <string name="STR_NMS_VIEW_ALL_MEDIA">عرض كافة الوسائط</string>
+    <string name="STR_NMS_VIEW_ALL_LOCATIONS">عرض كافة المواقع</string>
+    <string name="STR_NMS_CHAT_SETTINGS">إعدادات الدردشة</string>
+    <string name="STR_NMS_VIEW_GROUP_FAILED">لقد تركت دردشة المجموعة هذه</string>
+    <string name="STR_NMS_VIEW_HISTORY">عرض محفوظات المجموعة</string>
+    <string name="STR_NMS_ISMS_ENABLE_TITLE">تمكين iSMS</string>
+    <string name="STR_NMS_ISMS_ENABLE_CONTENT">هذه الميزة مدعومة فقط من خدمة iSMS  هل تريد تكمين حسابك iSMS الآن؟</string>
+    <string name="STR_NMS_ENABLE">تمكين</string>
+    <string name="STR_NMS_LATER">رفض</string>
+    <string name="STR_NMS_SWITCH_TITLE">تبديل SIM</string>
+    <string name="STR_NMS_SWITCH_MESSAGE">يتم دعم دردشة المجموعة في حالة تنشيط خدمة iSMS فقط، ولكن لم يتم تنشيط بطاقة SIM الحالية هل تم تنشيط التبديل إلى بطاقة SIM؟</string>
+    <string name="STR_NMS_SWITCH_EDIT_MESSAGE">بطاقة SIM الحالية غير مقترنة بهذه المجموعة هل تم التبديل إلى SIM أخرى؟</string>
+    <string name="STR_NMS_LEAVE_GROUP_NOTICE">لقد تركت هذه المجموعة ولا يمكنك الانضمام إلى دردشة المجموعة ما لم يتم دعوتك مرة ثانية</string>
+    <string name="STR_NMS_LOSE_SIM_NOTICE">لقد تم إزالة بطاقة SIM الأصلية للدردشة، يمكنك إجراء الدردشة في هذه المجموعة فقط باستخدام بطاقة SIM الأصليةأنا</string>
+    <string name="STR_NMS_SWITCH">تبديل</string>
+
+    <!-- Group chat end -->
+
+
+    <!-- chat details screen long press item start -->
+    <string name="STR_NMS_LONG_PRESS_TITLE">خيارات الرسالة</string>
+    <string name="STR_NMS_SEND_VIA_TEXT">إرسال عبر SMS</string>
+    <string name="STR_NMS_TRY_AGAIN">حاول ثانية</string>
+    <string name="STR_NMS_TRY_ALL_AGAIN">حاول الكل ثانية</string>
+    <string name="STR_NMS_CONTINUE_TRY">متابعة المحاولة</string>
+    <string name="STR_NMS_COPY">نسخ</string>
+    
+    <string name="STR_NMS_FORWARD"> إعادة التوجيه	إعادة التوجيه</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_TITLE">تنزيل</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD">لإعادة توجيه iSMS، فأنت بحاجة إلى تنزيل محتوى الوسائط أولاً</string>
+    <string name="STR_NMS_FORWARD_CONTIUE">متابعة</string>
+    <string name="STR_NMS_FORWARD_FAILED">فشل في إعادة التوجيه </string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_MULTI">لإعادة التوجيه المتعدد، تحتاج بعض من iSMS أن يتم تنزيلها أولاً </string>
+    <string name="STR_NMS_FORWARD_SOME_FAILED">فشل في إعادة توجيه بعض من iSMS </string>
+    <string name="STR_NMS_FORWARD_ALL_FAILED">فشل في التنزيل، تم تجاهل إعادة التوجيه المتعدد</string>
+    
+    <string name="STR_NMS_SEND_VIA_MULTIMEDIA">إرسال عبر MMS </string>
+    <string name="STR_NMS_SHARE">مشاركة</string>
+    <string name="STR_NMS_DELETE">حذف</string>
+    <string name="STR_NMS_FLAG_IMPORTANT">وضع علامة الأهمية</string>
+    <string name="STR_NMS_REMOVE_IMPORTANT">إزالة علامة الأهمية</string>
+    <string name="STR_NMS_SAVE_IN_SDCARD">تصدير إلى بطاقة SD</string>
+    <string name="STR_NMS_SAVE_FILE">تم حفظ الملف إلى %1$s</string>
+    <string name="STR_NMS_SHARE_TITLE">طريقة المشاركة</string>
+    <string name="STR_NMS_VIEW_DETAILS">عرض التفاصيل</string>
+    <string name="STR_NMS_VIEW_DETAILS_TITLE">تفاصيل الرسالة</string>
+    <string name="STR_NMS_SEND_MSG_DETAILS">النوع: IP رسالة\nمرسلة: %1$s</string>
+    <!-- chat details screen long press item end -->
+
+
+    <!-- chat details screen delete item start -->
+    <string name="STR_NMS_DELETE_TITLE">حذف</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_TITLE">حذف رسالة هامة</string>
+    <string name="STR_NMS_DELETE_WARNING">سيتم حذف الرسالة</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_WARNING">هل تريد بالتأكيد حذف هذه الرسالة الهامة؟</string>
+    <string name="STR_NMS_DELETE_MSG">سيتم حذف الرسائل المحددة</string>
+    <string name="STR_NMS_DELETE_WAITTING">جارٍ الحذف</string>
+    <string name="STR_NMS_CLEAR_HISTORY_CONTENT">سيتم مسح كل محفوظات الدردشة في حجرة الدردشة هذه</string>
+    <string name="STR_NMS_DELETE_IMPORTANT">يتضمن ذلك الرسائل التي لها علامة الأهمية</string>
+    <!-- chat details screen delete item end -->
+
+
+    <!-- chat details actionBar option start -->
+    <string name="STR_NMS_MENU_CALL">مكالمة</string>
+    <string name="STR_NMS_MENU_GROUPINFO">معلومات المجموعة</string>
+    <string name="STR_NMS_MENU_INVITE_CHAT">دعوة الأصدقاء إلى الدردشة</string>
+    <string name="STR_NMS_MENU_INVITE_ISMS">دعوة الأصدقاء لاستخدام iSMS</string>
+    <string name="STR_NMS_MENU_SELECT_MSG">تحديد الرسالة</string>
+    <string name="STR_NMS_MENU_MARK_SPAM">نقل إلى قائمة البريد المزعج</string>
+    <string name="STR_NMS_MENU_REMOVE_SPAM">إزالة من قائمة البريد المزعج</string>
+    <string name="STR_NMS_MENU_ADD_SHORTCUT">إضافة اختصار</string>
+    <string name="STR_NMS_MENU_VIEW_ALLMEDIA">عرض كافة الوسائط</string>
+    <string name="STR_NMS_MENU_VIEW_ALLLOCATION">عرض كافة المواقع</string>
+    <string name="STR_NMS_MENU_EDIT_GROUP">تحرير مجموعة</string>
+    <string name="STR_NMS_MENU_CHAT_SETTING">إعداد الدردشة</string>
+    <string name="STR_NMS_MENU_INSERT_QUICK_TEXT">إدخال نص سريع</string>
+    <string name="STR_NMS_MENU_CLEAR_HISTORY">مسح محفوظات الدردشة</string>
+    <string name="STR_NMS_MENU_LEAVE_GROUP">ترك هذه المجموعة</string>
+    <string name="STR_NMS_MENU_DISCARD">تجاهل</string>
+    <string name="STR_NMS_MENU_DELETE">حذف</string>
+    <string name="STR_NMS_MENU_IMPORTANT">وضع علامة الأهمية</string>
+    <string name="STR_NMS_MENU_FORWARD">إعادة التوجيه</string>
+    <!-- chat details actionBar option end -->
+
+
+    <!-- chat details share item start -->
+    <string name="STR_NMS_TAKE_PHOTO">التقاط صورة</string>
+    <string name="STR_NMS_RECORD_VIDEO"> تسجيل	تسجيل فيديو </string>
+    <string name="STR_NMS_DRAW_SKETCH">رسم مخطط</string>
+    <string name="STR_NMS_SHARE_CONTACT">شارك جهة اتصال</string>
+    <string name="STR_NMS_CHOOSE_PHOTO">اختيار صورة</string>
+    <string name="STR_NMS_CHOOSE_VIDEO">اختيار فيديو</string>
+    <string name="STR_NMS_RECORD_AUDIO"> تسجيل	تسجيل صوت</string>
+    <string name="STR_NMS_SHARE_LOCATION">مشاركة الموقع</string>
+    <string name="STR_NMS_CHOOSE_AUDIO">اختيار صوت</string>
+    <string name="STR_NMS_SHARE_CALENDAR">مشاركة التقويم</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_TITLE">أضف موسيقى</string>
+    <string name="STR_NMS_CHOOSE_RINGTONE_ITEM">نغمة الرنين</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_ITEM">الصوت</string>
+    <string name="STR_NMS_INSERT_SDCARD">الرجاء إدخال بطاقة SD!</string>
+    <!-- chat details share item start -->
+
+
+    <!-- record audio start -->
+    <string name="STR_NMS_AUDIO_TIMER_FORMAT" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <string name="STR_NMS_AUDIO_LABLE"> مسجل	مسجل الملاحظة الصوتية</string>
+    <string name="STR_NMS_RECORD_AUDIO_CONT">انقر للتسجيل</string>
+    <string name="STR_NMS_PLAY_AUDIO_CONT">انقر للتشغيل</string>
+    <string name="STR_NMS_ACTION_SEND">إرسال</string>
+    <string name="audio_db_artist_name">تسجيلاتك</string>
+    <string name="audio_db_album_name">تسجيلات الصوت</string>
+    <string name="STR_NMS_SELECT_AUDIO">تحديد صوت</string>
+    <!-- record audio end -->
+
+
+    <!-- chat & group details screen start -->
+
+    <string name="STR_NMS_UNREAD_FORMAT">%1$d رسائل غير مقروءة</string>
+    <string name="STR_NMS_NOT_DELIVERED_TITLE">لم يتم استلامها بعد</string>
+    <string name="STR_NMS_FAILED_TITLE">خطأ في الإرسال</string>
+    <string name="STR_NMS_GROUP_SUBTITLE">%1$s, +%2$d</string>
+    <string name="STR_NMS_GROUP_DEAD_SUBTITLE">%1$s, %2$d</string>
+    <string name="STR_NMS_SAVE_AS_DRAFT">تم حفظ الرسالة كمسودة</string>
+    <string name="STR_NMS_NO_SD_TITLE">خطأ في بطاقة SD</string>
+    <string name="STR_NMS_CANT_SHARE">لا يمكن الوصول إلى بطاقة SD. كل الميزات المتعلقة بالوسائط المتعددة غير متاحة للاستخدام مؤقتاً. \n\n الرجاء فحص بطاقة SD والمحاولة مرة أخرى لاحقاً.</string>
+    <string name="STR_NMS_CANT_SAVE">لم يتم الكشف عن بطاقة SD، لا يتم حفظ ملف</string>
+    <string name="STR_NMS_SDSPACE_NOT_ENOUGH">المساحة المتاحة في بطاقة SD غير كافية، لا يتم حفظ ملف</string>
+    <string name="STR_NMS_REAEND_ALL">حاول الكل ثانية...</string>
+    <string name="STR_NMS_FILE_LIMIT">كبير جداً</string>
+    <string name="STR_NMS_LOAD_ALL_MESSAGE">تحميل كل الرسائل</string>
+    <string name="STR_NMS_DOWNLOAD_FAILED">فشل في التنزيل</string>
+    <string name="STR_NMS_INPUT_HINT">محتوى الإدخال</string>
+    <string name="STR_NMS_INPUT_HINT_ISMS">كتابة رسالة iSMS </string>
+    <string name="STR_NMS_CAPTION_HINT">كتابة التعليقات</string>
+    <string name="STR_NMS_PROTOCOL_SMS">SMS</string>
+    <string name="STR_NMS_PROTOCOL_MMS">MMS</string>
+    <string name="STR_NMS_PROTOCOL_IP">iSMS</string>
+    <string name="STR_NMS_SWITCH_BOTTON">تبديل SIM</string>
+    <string name="STR_NMS_TURN_ON_BOTTON">تشغيل</string>
+    <string name="STR_NMS_SWITCH_TEXT_FORMAT">لمتابعة دردشة المجموعة، انتقل إلى %1$s بطاقة SIM أولاً</string>
+    <string name="STR_NMS_ENABLE_TEXT_FORMAT">لمتابعة دردشة المجموعة، قم بتشغيل خدمة iSMS على %1$s بطاقة SIM أولاً</string>
+    <string name="STR_NMS_REPLACE_ATTACH_TITLE">استبدال المرفق</string>
+    <string name="STR_NMS_REPLACE_ATTACH_MSG">يوجد مرفق موجود، هل تريد استبداله؟</string>
+    <string name="STR_NMS_TRUNC_CAPTION">لقد تم قطع التعليق</string>
+    <string name="STR_NMS_MAX_CHARACTERS_REACHED">الحد المسموح لحجم الرسالة</string>
+    <string name="STR_NMS_MAX_EMOTICON_REACHED">توافق مع حدود الرموز</string>
+    <string name="STR_NMS_ENABLE_PROCESS">جارٍ المعالجة...</string>
+    <string name="STR_NMS_ERR_FILE">ملف غير صالح</string>
+    <string name="STR_NMS_SENDING_TEXT">جارٍ الإرسال...</string>
+    <!-- chat & group details screen end --> <!-- Error code tips -->
+    <string name="STR_NMS_ERR_GENERAL">خطأ عام</string>
+    <string name="STR_NMS_ERR_INVALID_ARGUMENT">وسيطة غير صالحة</string>
+    <string name="STR_NMS_ERR_NETWORK_BLOCK">الشبكة غير جيدة</string>
+    <string name="STR_NMS_ERR_PHONE_NOT_ACTIVATED">لم يتم التنشيط</string>
+    <string name="STR_NMS_ERR_SIM_NOT_ACTIVATED">لم يتم تنشيط بطاقة SIM</string>
+    <string name="STR_NMS_ERR_INVALID_MSG_DB_ID">رسالة غير صحيحة DB Id</string>
+    <string name="STR_NMS_ERR_ADD_MSG_DB_FAILED">فشل في الإدراج إلى DB</string>
+    <string name="STR_NMS_ERR_UPDATE_MSG_DB_FAILED">فشل في تحديث DB</string>
+    <string name="STR_NMS_ERR_GET_MSG_DB_DATA_FAILED">فشل في جلب الرسالة</string>
+    <string name="STR_NMS_ERR_INVALID_CONTACT_DB_ID">جهة اتصال غير صالحة DB Id</string>
+    <string name="STR_NMS_ERR_ADD_CONTACT_DB_FAILED">فشل في الإدراج إلى جهة الاتصال</string>
+    <string name="STR_NMS_ERR_UPDATE_CONTACT_DB_FAILED">فشل في تحديث جهة الاتصال DB</string>
+    <string name="STR_NMS_ERR_GET_CONTACT_DB_DATA_FAILED">فشل في جلب جهة اتصال بالتعريف</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_ERROR_FORMAT">صيغة رسالة IP غير صحيحة</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_INVALID_TO">مستلم غير صحيح</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_WITH_UNKNOWN_USER">مستخدم مستلم غير صحيح وغير معروف</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_NO_MBMBER">لا يوجد أعضاء لدردشة المجموعة</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_GCHAT_DEAD">لم يتم تنشيط دردشة المجموعة</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_INVALID_SIM_ID">بطاقة SIM لدردشة المجموعة ليست بطاقة SIM الحالية</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_FOR_SYS_MSG">إرسال رسالة النظام مرة أخرى</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_INVALID_STATUS">رسالة IP غير جاهزة</string>
+    <string name="STR_NMS_ERR_GCHAT_IS_DEAD">لا توجد دردشة المجموعة هذه حالياً</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBERS">أعضاء المجموعة غير صالحين</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBER_WITH_SELF">فشل في إنشاء المجموعة لن تتضمن الأعضاء نفسك</string>
+    <string name="STR_NMS_ERR_GCHAT_EXCEED_MAX_MEMBER_COUNT">عدد أعضاء المجموعة بلغ الحد المسموح به</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_NAME">اسم دردشة المجموعة غير صحيح</string>
+    <string name="STR_NMS_ERR_GCHAT_SIM_IS_NOT_ACTIVATED">لم يتم تنشيط بطاقة SIM الخاصة بدردشة المجموعة 	</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_NOT_INBOX_MSG">فشل في الحصول على تنزيل URL</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_INVALID_URL">تنزيل URL غير صحيح</string>
+    <string name="STR_NMS_ERR_GET_ATTACH_NAME_INVALID_BODY_FORMAT">فشل في الحصول على اسم تنزيل الملف</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_INVALID_FILE_NAME"> اسم تنزيل الملف غير صحيح</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_EXIST">لا يوجد تنزيل الملف</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_INBOX_MSG">فشل في تعيين تنزيل الملف</string>
+    <string name="STR_NMS_ERR_SIM_INFO_NOT_FOUND">لم يُعثر على معلومات بطاقة SIM</string>
+    <string name="STR_NMS_ERR_SIM_IN_INVALID_STATUS">حالة بطاقة SIM غير صالحة</string>
+    <string name="STR_NMS_ERR_CMD_PROCESSING">النظام مشغول ولا يتعامل مع أمر تهيئة النظام</string>
+    <string name="STR_NMS_ERR_CMD_GENERAL">خطأ في تهيئة النظام العام</string>
+    <string name="STR_NMS_ERR_CODE_END">رمز خطأ غير معروف</string>
+    <!-- Error code tips -->
+    <string name="STR_NMS_SEND_MMS_QUERY_TITLE">تحذير</string>
+    <string name="STR_NMS_SEND_MMS_QUERY">المستلم ليس مستخدم iSMS، أترسله عبر MMS؟</string>
+    <!-- Service center start -->
+    <string name="STR_NMS_SERVICE_TITLE">مركز خدمة iSMS </string>
+    <string name="STR_NMS_INTRODUCTION">باستخدام iSMS، يمكنك استلام الرسائل المجانية فوراً والمحافظة على محفوظات دردشتك في مكان واحد، اضغط على زر واحد للاستمتاع بالتجربة الجديدة! </string>
+    <string name="STR_NMS_TERMS">البنود والشروط</string>
+    <string name="STR_NMS_ACTIVATION_BUTTON">التنشيط الآن</string>
+    <string name="STR_NMS_LOSE_SDCARD">لم يتم الكشف عن بطاقة SD</string>
+    <!-- Service center end -->
+
+
+    <!-- conversation empty tips -->
+    <string name="STR_NMS_SPAM_EMPTY">ليس لديك أية محادثة غير مرغوب فيها \n يجمع SPAM كل المحادثات التي تتميز بأنها غير مرغوب فيها سيتم إيقاف تشغيل الإعلام افتراضياً يجنبك هذا من التشويش غير الضروري \n\n يمكنك تمييز المرسل بأنه غير هام، بالضغط على المحادثة وتحديد أيقونة &quot;وضع علامة كعشوائي&quot; عند تمييز محادثة بأنها غير مرغوب فيها، ستظهر أيقونة &quot;إيقاف الإعلام&quot; تلقائياً وسيتم وضع المحادثة هنا</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_FROM">+86123456789</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_SUBJECT">هذا مثال على رسالة غير مرغوب فيها</string>
+    <string name="STR_NMS_GROUPCHAT_EMPTY">ليس لديك أية رسالة في دردشة المجموعة \nتجمع GROUP CHATS كل رسائل دردشة المجموعة التي تم إنشائها أو الانضمام إليها من قبلك هذا يتيح لك إيجاد وإدارة دردشة المجموعة بسهولة \n\n لإنشاء دردشة المجموعة، يمكنك النقر فوق زر &quot;إنشاء دردشة المجموعة&quot; الموجود أسفل هذه الشاشة وتدعو أصدقائك للانضمام إليها</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_FROM">اسم المجموعة</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_SUBJECT">صديقك: \nI يحب ميزة دردشة المجموعة!</string>
+    <string name="STR_NMS_IMPORTANT_EMPTY">ليس لديك أية رسالة هامة \n يجمع IMPORTANT كل الرسائل التي لها علامة الأهمية يتيح لك هذا إيجاد الرسائل الهامة بسرعة \n\nيمكنك وضع علامة على رسالة لها أهمية، بالضغط على الرسالة وتحديد &quot;وضع علامة الأهمية&quot; من قائمة &quot;الخيار&quot; عندما يتم وضع علامة على رسالة هامة، سترى أيقونة علامة حمراء بأسفلها</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TITLE">هذا مثال للرسالة ذات علامة الأهمية ستظهر علامة حمراء</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TIME">10:55 قبل الظهر</string>
+    <string name="STR_NMS_ALLCHAT_EMPTY">بلا محادثات</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_CONTENT">لاستخدام هذه الميزة، ستضطر إلى تنشيط خدمة iSMS أولاً لا تقلق - إذا لم تحب الخدمة، يمكنك إيقاف تشغيلها دائماً في الإعدادات جربها الآن!</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_TITLE">تنشيط iSMS</string>
+    <!-- conversation empty tips -->
+    
+    <string name="STR_NMS_CLEAR_USER_DATA">تم مسح البيانات بنجاح</string>
+    
+    <!-- get file err start -->
+    <string name="STR_NMS_NO_SUCH_FILE">لا يوجد ملف</string>
+    <string name="STR_NMS_OVER_FILE_LIMIT">حجم الملف يتجاوز الحد المسموح به</string>
+    <string name="STR_NMS_INVALID_FILE_TYPE">هل لا تدعم هذا النوع؟</string>
+    <!-- get file err end -->
+
+    <string name="STR_NMS_DELIVERY_BODY">رسالة مستلمة من %s</string>
+    <string name="STR_NMS_SIM_SELECT_TITLE">تحديد SIM</string>
+    
+    <string name="STR_NMS_SHORTCUT_SUCCESS">تم إنشاء %1$s اختصار </string>
+    <string name="STR_NMS_SHORTCUT_REFRESHING">تحديث</string>
+    
+    <string name="STR_NMS_DISABLE_FAILED">فشلت العملية، الرجاء المحاولة مرة أخرى</string>
+    <string name="STR_NMS_ENABLE_FAILED">فشلت العملية، الرجاء المحاولة مرة أخرى</string>
+    <string name="STR_NMS_ENABLE_SUCCESS">لقد قمت بتنشيط خدمة iSMS بنجاح</string>
+    <string name="STR_NMS_DISABLE_SUCCESS">لقد قمت بإلغاء تنشيط خدمة iSMS بنجاح</string>
+    
+	<string name="STR_NMS_SD_CARD_FULL">بطاقة SD ممتلئة</string>
+    <string name="STR_NMS_SEND_MSG_FAILED">فشل في إرسال الرسالة!</string>
+    
+    <string name="STR_NMS_GROUPS_MEM"> أعضاء %1$s</string>
+    <string name="STR_NMS_ALL_CONTACTS">الكل</string>
+    <string name="STR_NMS_GROUPS_CONTACTS">كل المجموعات</string>
+     
+    <string name="imsp_ip_message">رسالة iSMS </string>
+    <string name="imsp_invite_chat_frequently"><b>هل تقوم بإجراء محادثات دردشة بصفة متكررة مع %s؟</b>لما لا تقوم بدعوة %s لاستخدام iSMS لتوفير نقودكما؟</string>
+    <string name="imsp_enable_chat_frequently"><b>لقد تم تعطيل خدمة iSMS لدى %s!</b>\nلماذا لا تقوم بتمكين خدمة iSMS وتوفير نقودكما؟</string>
+    <string name="imsp_invite">دعوة </string>
+    <string name="imsp_enable_notice">هل تريد بالتأكيد تمكين خدمة iSMS؟</string>
+    <string name="imsp_activate_chat_frequently"><b>هل تقوم بإجراء محادثات دردشة بصفة متكررة مع الأصدقاء؟</b>\nلماذا لا تقوم بتنشيط خدمة iSMS لإجراء محادثات دردشة بدون سعر تكلفة لرسائل SMS؟</string>
+    <string name="imsp_activate_note">هل تريد بالتأكيد تنشيط iSMS؟</string>
+    <string name="imsp_dismiss_content">هل تريد بالتأكيد رفض الملاحظة؟</string>
+    <string name="imsp_divider_online">%s متصل</string>
+    <string name="imsp_divider_offline">آخر وقت اتصال %s</string>
+    <string name="imsp_divider_never_online">لم يتصل أبدًا</string>
+    <string name="imsp_failed_title">فشل في الإرسال</string>
+    <string name="imsp_resend_via_sms">إرسال رسالة SMS</string>
+    <string name="imsp_resend_via_mms">إرسال رسالة MMS</string>
+    <string name="imsp_typing_text">جارٍ الكتابة</string>
+    <string name="imsp_save_attachment">حفظ المرفق</string>
+    <string name="imsp_view">عرض</string>
+    <string name="imsp_convert_to_mms">تحويل إلى MMS.</string>
+    <string name="imsp_convert_to_sms">تحويل إلى SMS.</string>
+    <string name="imsp_convert_to_isms">تحويل إلى iSMS.</string>
+    <string name="imsp_convert_to_mms_for_service">خدمة iSMS غير متوفرة على بطاقة SIM المحددة. يمكن إرسال هذه الرسالة من خلال MMS فقط في بطاقة SIM هذه. متابعة على أي حال؟</string>
+    <string name="imsp_convert_to_sms_for_service">خدمة iSMS غير متوفرة على بطاقة SIM المحددة. يمكن إرسال هذه الرسالة من خلال SMS فقط في بطاقة SIM هذه. متابعة على أي حال؟</string>
+    <string name="imsp_convert_to_mms_for_recipients">المستلم ليس من مستخدمي iSMS. يمكن إرسال الرسالة من خلال MMS فقط. متابعة على أي حال؟</string>
+    <string name="imsp_convert_to_sms_for_recipients">المستلم ليس من مستخدمي iSMS. يمكن إرسال الرسالة من خلال SMS فقط. متابعة على أي حال؟</string>
+    <string name="imsp_sms_convert_to_isms">خدمة iSMS متوفرة على بطاقة SIM المحددة. لحفظ سعر رسالة SMS، نقترح عليك تبديل الرسالة إلى iSMS. تبديل الآن؟</string>
+    <string name="imsp_mms_convert_to_isms">خدمة iSMS متوفرة على بطاقة SIM المحددة. لحفظ سعر رسالة MMS، نقترح عليك تبديل الرسالة إلى iSMS. تبديل الآن؟</string>
+    <string name="imsp_keep_mms">مواصلة رسالة MMS</string>
+    <string name="imsp_keep_sms">مواصلة رسالة SMS</string>
+    <string name="imsp_resend_discard_message">لإعادة إرسال الرسالة، سيتم تجاهل الرسالة التي تقوم بإنشائها حاليًا.</string>
+    <string name="imsp_no_sim_card">لا توجد بطاقة SIM!</string>
+    
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">&quot;لم يتم العثور على اتصال إنترنت قيد التشغيل! ‏‏الرجاء إعادة المحاولة لاحقاً.&quot;</string>
+    <string name="imsp_chat_setting_updating">جار التحديث...</string>
+    <string name="imsp_dialog_clear_title">مسح</string>
+    <string name="imsp_dialog_clear_description">سيتم مسح كل محفوظات الدردشة في حجرة الدردشة هذه</string>
+    <string name="imsp_chat_setting_saving">جارٍ الحفظ...</string>
+    <string name="imsp_chat_setting_sending">جارٍ الإرسال...</string>
+    <string name="imsp_save_chat_history_failed">فشل الحفظ</string>
+    <string name="imsp_send_chat_history_failed">فشل إرسال البريد الإلكتروني</string>
+    <string name="imsp_conversation_list_all">الرسائل</string>
+    <string name="imsp_conversation_list_important">هام</string>
+    <string name="imsp_conversation_list_group_chats">مجموعة</string>
+    <string name="imsp_conversation_list_spam">عشوائي</string>
+    <string name="imsp_mark_as_spam_tips">سيتم نقل الرسائل التي تم تمييزها كرسائل عشوائية إلى قائمة الرسائل العشوائية وسيتم إيقاف تشغيل الإعلام تلقائيًا.</string>
+    <string name="imsp_typing">&quot;جارٍ الكتابة...&quot;</string>
+    <string name="imsp_type_to_compose_text">&quot;كتابة رسالة SMS/iSMS&quot;</string>
+    <string name="imsp_no_sdcard">لا توجد بطاقة SD</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">ٌلإرسال دعوة، سيتم تجاهل الرسالة التي تقوم بإنشائها حاليًا.</string>
+    <string name="imsp_current_sim_enabled">تم تمكين بطاقة SIM الحالية.</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">حدد بطاقة SIM لتنشيط iSMS</string>
+    <string name="imsp_activate_message">هذه الميزة مدعومة فقط من خلال خدمة iSMS. هل تريد تنشيط حساب iSMS لديك الآن؟</string>
+    <string name="imsp_enable_message">هذه الميزة مدعومة فقط من خلال خدمة iSMS. هل تريد تكمين حساب iSMS لديك الآن؟</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">حدد بطاقة SIM لتمكين iSMS</string>
+    <string name="imsp_switch_sim_title">تبديل بطاقة SIM</string>
+    <string name="imsp_switch_sim_message">لا تدعم بطاقة SIM الحالية خدمة iSMS. هل تريد التبديل إلى بطاقة SIM أخرى؟</string>
+    <string name="imsp_switch_sim_successfully">تم تبديل بطاقة SIM بنجاح!</string>
+    <string name="imsp_dailog_multi_forward">إعادة توجيه الرسائل</string>
+    <string name="imsp_dialog_send_result">نتيجة الإرسال</string>
+    <string name="imsp_dlg_send_all">الكل: %s</string>
+    <string name="imsp_dlg_send_sucess">المرسَل: %s</string>
+    <string name="imsp_dlg_send_failed">فشل: %s</string>
+    <string name="imsp_multi_forward_sim_info">الحصول على بيانات بطاقة SIM</string>
+    <string name="imsp_multi_forward_no_sim">لا توجد بيانات لبطاقة SIM</string>
+    <string name="imsp_get_sim_failed">فشل الحصول على بيانات بطاقة SIM</string>
+    <string name="imsp_sim_status_error">خطا حالة بطاقة SIM</string>
+    <string name="imsp_forward_norecipients">لا يوجد مستلم/مستلمين لإعادة توجيه الرسالة</string>
+    <string name="imsp_multiforward_no_message">لا توجد رسالة/رسائل يمكن إعادة توجيهها</string>
+    <string name="imsp_need_input_recipients">الرجاء تحديد مستلم واحد على الأقل أولاً</string>
+    <string name="imsp_spam_empty">ليس لديك أية محادثات عشوائية. \n يجمع &quot;عشوائي&quot; كل المحادثات التي تم تميزها بأنها محادثات عشوائية. سيتم إيقاف تشغيل الإعلام افتراضيًا. يجنبك هذا الأمر التعرض لمضايقات لا فائدة منها. \n\nيمكنك تمييز مرسل بأنه غير مرغوب فيه، وذلك بالضغط على المحادثة وتحديد أيقونة &quot;وضع علامة كعشوائي&quot;. عند تمييز محادثة بأنها محادثة عشوائية، ستظهر أيقونة &quot;إيقاف الإعلام&quot; تلقائيًا وسيتم وضع المحادثة هنا.</string>
+    <string name="imsp_groupchat_empty">ليس لديك أية رسائل دردشة مجموعة. \nتجمع محادثات المجموعة كل رسائل دردشة المجموعة التي تم إنشاؤها أو الانضمام إليها من قبلك. يتيح لك هذا إمكانية العثور على دردشة المجموعة وإدارتها بسهولة. \n\nلإنشاء دردشة مجموعة، يمكنك النقر فوق زر &quot;إنشاء دردشة مجموعة&quot; الموجود أسفل هذه الشاشة ودعوة أصدقائك للانضمام إلى المجموعة.</string>
+    <string name="imsp_important_empty">ليس لديك أية رسالة هامة \n يجمع &quot;هام&quot; كل الرسائل التي تم تمييزها بعلامة &quot;هام&quot;. يتيح لك هذا إمكانية العثور على الرسائل الهامة بسهولة. \n\nيمكنك وضع علامة &quot;هام&quot; على الرسالة بالضغط على الرسالة وتحديد &quot;وضع علامة الأهمية&quot; من قائمة &quot;الخيار&quot;. عندما يتم وضع علامة هام على الرسالة، ستظهر أيقونة علامة حمراء بأسفلها.</string>
+    <string name="imsp_allchat_empty">لا محادثات</string>
+    <string name="imsp_attach_slideshow">عرض شرائح</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">جارٍ التنزيل...</string>
+    <string name="imsp_invite_friends_to_ipmsg">دعوة الأصدقاء لاستخدام iSMS</string>
+    <string name="imsp_multi_forward_tips_content">لإعادة التوجيه المتعدد، تحتاج بعض من iSMS أن يتم تنزيلها أولاً.</string>
+    <string name="imsp_multi_forward_failed_part">فشل إعادة توجيه بعض رسائل iSMS.</string>
+    
+</resources>

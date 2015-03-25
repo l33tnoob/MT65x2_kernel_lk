@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="iSMS_chat_settings"
+    android:title="@string/STR_NMS_CHAT_SETTING_TITLE" >
+
+    <PreferenceCategory
+        android:key="chat_settings_display"
+        android:title="@string/STR_NMS_DISPLAY" >
+        <Preference
+            android:key="wallpaper"
+            android:title="@string/STR_NMS_CHAT_WALLPAPER" >
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="chat_settings_notification"
+        android:title="@string/STR_NMS_NOTIFICATION_CATEGORY" >
+        <CheckBoxPreference
+            android:key="notification"
+            android:persistent="false"
+            android:summary="@string/STR_NMS_NOTIFICATION_CONTENT"
+            android:title="@string/STR_NMS_NOTIFICATION_TITLE" />
+
+        <ListPreference android:layout="?android:attr/preferenceLayoutChild"
+            android:dependency="notification"
+            android:key="mute"
+            android:title="@string/STR_NMS_MUTE"
+            android:summary="@string/STR_NMS_MUTE_OFF"
+            android:entries="@array/chat_settings_mute_list"
+            android:entryValues="@array/chat_settings_mute_list" 
+            android:defaultValue="@string/STR_NMS_MUTE_OFF"/>
+
+        <Preference android:layout="?android:attr/preferenceLayoutChild"
+            android:dependency="notification"
+            android:key="ringtone"
+            android:summary="@string/STR_NMS_RINGTONE_CONTENT"
+            android:title="@string/STR_NMS_RINGTONE_TITLE" />
+
+        <CheckBoxPreference android:layout="?android:attr/preferenceLayoutChild"
+            android:dependency="notification"
+            android:key="vibrate"
+            android:summary="@string/STR_NMS_VIBRATE_CONTENT"
+            android:title="@string/STR_NMS_VIBRATE_TITLE" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="actions"
+        android:title="@string/STR_NMS_ACTIONS" >
+        <Preference
+            android:key="download"
+            android:summary="@string/STR_NMS_DOWNLOAD_HISTORY_CONTENT"
+            android:title="@string/STR_NMS_DOWNLOAD_HISTORY_TITLE" >
+        </Preference>
+        <Preference
+            android:key="email"
+            android:summary="@string/STR_NMS_EMAIL_HISTROY_CONTENT"
+            android:title="@string/STR_NMS_EMAIL_HISTORY_TITLE" >
+        </Preference>
+        <Preference
+            android:key="clear"
+            android:title="@string/STR_NMS_CLEAR_HISTROY" >
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

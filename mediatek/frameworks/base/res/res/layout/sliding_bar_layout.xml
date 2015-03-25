@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"	
+		android:layout_gravity="center_horizontal"
+		android:minHeight="45dip" 
+		android:maxHeight="45dip"
+		android:minWidth="370dip" >
+	
+	<LinearLayout android:id="@+id/indicatorLayout" 
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		 >
+		<TextView android:id="@+id/hintText" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:textColor="#FF4F4E4E"
+			android:textSize="18sp"
+			android:paddingTop="0dip"
+			android:paddingBottom="2dip"
+			android:includeFontPadding="false"
+			android:visibility="invisible" >
+		</TextView>
+	
+		<ImageView android:id="@+id/indicator"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:visibility="invisible" >
+		</ImageView>
+	</LinearLayout>
+	
+	<ImageView android:id="@+id/leftTrigger"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical|left" >
+	</ImageView>
+
+	<ImageView android:id="@+id/rightTrigger"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical|right" >
+	</ImageView>
+	
+</merge>

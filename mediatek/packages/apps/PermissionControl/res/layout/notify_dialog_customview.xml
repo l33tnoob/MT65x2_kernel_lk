@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="10dip"
+    android:paddingEnd="10dip"
+    android:paddingTop="9dip"
+    android:paddingBottom="12dip">
+    <TextView 
+            android:id="@+id/message"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dip"
+            android:paddingBottom="5dip"/>
+    <TextView 
+            android:id="@+id/count_timer"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dip"
+            android:paddingBottom="5dip"/>
+    <CheckBox 
+        android:id="@+id/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/notify_check_hint"
+        />
+</LinearLayout>

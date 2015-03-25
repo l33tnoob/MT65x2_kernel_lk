@@ -1,0 +1,35 @@
+# ==============================================
+# Policy File of /system/binakmd8963 Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type akmd8963_exec , exec_type, file_type;
+type akmd8963 ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive akmd8963;
+init_daemon_domain(akmd8963)
+
+
+# 20131122 Add Set Property Rule
+allow akmd8963  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_CTS_02
+allow akmd8963 msensor_device:chr_file ioctl;
+allow akmd8963 system_data_file:dir { write add_name };
+allow akmd8963 system_data_file:file { write create open };
+

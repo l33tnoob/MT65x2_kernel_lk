@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:title="@string/bt_prxm_devs_title">
+
+	<CheckBoxPreference
+		android:key="bt_prxm_connect"
+		android:title="@string/bt_prxm_devs_connect_title"
+		android:summary="@string/bt_prxm_devs_connect_summary"
+		android:persistent="false"
+	/>
+	<Preference
+		android:key="bt_prxm_find_device"
+		android:title="@string/bt_prxm_find_device_title"
+		android:summary="@string/bt_prxm_find_device_summary"
+		android:dependency="bt_prxm_connect"
+	/>
+
+	<PreferenceCategory android:key="bt_prxm_link_loss_group"
+						android:title="@string/bt_prxm_devs_link_loss_group_title">
+		<ListPreference
+			android:key="bt_prxm_link_loss_level"
+			android:title="@string/bt_prxm_devs_link_loss_level_title"
+			android:summary="@string/bt_prxm_devs_link_loss_level_summary"
+			android:entries="@array/bt_prxm_link_loss_level_entries"
+			android:entryValues="@array/bt_prxm_link_loss_level_values"
+			android:persistent="false"
+			android:dependency="bt_prxm_connect"
+		/>
+	</PreferenceCategory>
+
+	<PreferenceCategory android:key="bt_prxm_path_loss_group"
+						android:title="@string/bt_prxm_devs_path_loss_group_title">
+		<ListPreference
+			android:key="bt_prxm_path_loss_level"
+			android:title="@string/bt_prxm_devs_path_loss_level_title"
+			android:summary="@string/bt_prxm_devs_path_loss_level_summary"
+			android:entries="@array/bt_prxm_path_loss_level_entries"
+			android:entryValues="@array/bt_prxm_path_loss_level_values"
+			android:persistent="false"
+			android:dependency="bt_prxm_connect"
+		/>
+		<com.mediatek.bluetooth.prx.monitor.PrxmPathLossThresholdPreference
+			android:key="bt_prxm_path_loss_threshold"
+			android:title="@string/bt_prxm_devs_path_loss_threshold_title"
+			android:summary="@string/bt_prxm_devs_path_loss_threshold_summary"
+			android:persistent="false"
+			android:dependency="bt_prxm_connect"
+		/>
+	</PreferenceCategory>
+
+</PreferenceScreen>

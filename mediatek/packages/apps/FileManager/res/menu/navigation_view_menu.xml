@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/create_folder"
+        android:icon="@drawable/actionbar_fm_create_folder"
+        android:showAsAction="always"
+        android:title="@string/create_folder"/>
+    <item
+        android:id="@+id/paste"
+        android:icon="@drawable/actionbar_fm_paste"
+        android:showAsAction="always"
+        android:title="@string/paste"/>
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/actionbar_fm_search"
+        android:showAsAction="always"
+        android:title="@string/search"/>
+    <item
+        android:id="@+id/change_mode"
+        android:showAsAction="never"
+        android:title="@string/change_mode"/>
+    <item
+        android:id="@+id/hide"
+        android:showAsAction="never"/>
+    <item
+        android:id="@+id/sort"
+        android:showAsAction="never"
+        android:title="@string/sort"/>
+
+</menu>

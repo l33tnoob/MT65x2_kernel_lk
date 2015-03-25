@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bindexopt Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type dexopt_exec , exec_type, file_type;
+type dexopt ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive dexopt;
+init_daemon_domain(dexopt)
+
+
+# 20131122 Add Set Property Rule
+allow dexopt  property_type:property_service set;

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ --><resources>    
+<!-- 
+     *******************Must Read******************
+		 *******[[[[[[Customization Note]]]]]]]]********
+		 *******************Must Read******************		 
+	 1.supported_location_codes and supported_location_mccs must be arranged in the order according to supported_locations.	 
+	   Customer can check Matvctrl.h for location-to-code mappings.Please also be noted that auto-select is mapped to -1. 
+	 2.if there's more than one mcc for a country,remember also update ChannelListActivity.getAutoSelectLocationIndex().
+	   You can check the case of China as an example.
+	 3.if you don't know the mcc of a specifi country/area,you also need to provide one item with its value set to 0.
+--> 
+    <string-array name="supported_locations">
+<item>"自動選擇"</item>
+        <item>"中國大陸"</item>
+        <item>"臺灣"</item>
+        <item>"中國深圳"</item>
+        <item>"中國香港"</item>
+        <item>"阿富汗"</item>
+        <item>"阿根廷"</item>
+        <item>"澳大利亞"</item>
+        <item>"巴西"</item>
+        <item>"緬甸"</item>
+        <item>"柬埔寨"</item>
+        <item>"加拿大"</item>
+        <item>"智利"</item>
+        <item>"東歐"</item>
+        <item>"西歐"</item>
+        <item>"法國"</item>
+        <item>"法屬殖民地"</item>
+        <item>"印度"</item>
+        <item>"印尼"</item>
+        <item>"伊朗"</item>
+        <item>"義大利"</item>
+        <item>"日本"</item>
+        <item>"韓國"</item>
+        <item>"寮國"</item>
+        <item>"馬來西亞"</item>
+        <item>"墨西哥"</item>
+        <item>"紐西蘭"</item>
+        <item>"巴基斯坦"</item>
+        <item>"巴拉圭"</item>
+        <item>"菲律賓"</item>
+        <item>"葡萄牙"</item>
+        <item>"俄羅斯"</item>
+        <item>"新加坡"</item>
+        <item>"南非"</item>
+        <item>"西班牙"</item>
+        <item>"泰國"</item>
+        <item>"土耳其"</item>
+        <item>"阿拉伯聯合大公國"</item>
+        <item>"英國"</item>
+        <item>"美國"</item>
+        <item>"烏拉圭"</item>
+        <item>"委內瑞拉"</item>
+        <item>"越南"</item>
+        <item>"愛爾蘭"</item>
+        <item>"摩洛哥"</item>		         
+	
+</string-array>
+
+<string-array name="AudioFormats">
+        <item>"單聲道"</item>
+        <item>"立體聲"</item>
+        <item>"副聲道"</item>
+<item>Sub</item>
+<item>Main sub</item>
+<item>Main</item>
+<item>Dual1</item>
+<item>Dual2</item>
+<item>NICAM Mono</item>
+<item>NICAM Stereo</item>
+<item>NICAM Dual1</item>
+<item>NICAM Dual2</item>
+</string-array>
+</resources>

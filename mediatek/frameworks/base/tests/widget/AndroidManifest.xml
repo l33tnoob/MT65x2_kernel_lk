@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mediatek.common.widget.tests"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:sharedUserId="com.android.uid.test" >
+
+    <uses-sdk android:minSdkVersion="14" />
+    
+    <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED" />
+    <uses-permission android:name="android.permission.DOWNLOAD_CACHE_NON_PURGEABLE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES" />
+    <uses-permission android:name="android.permission.DOWNLOAD_CACHE_NON_PURGEABLE" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.TEST_GRANTED" />
+    <uses-permission android:name="com.google.android.googleapps.permission.ACCESS_GOOGLE_PASSWORD" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.ALL_SERVICES" />
+
+    <uses-permission android:name="android.permission.MANAGE_USERS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+
+    <!-- location test permissions -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.HARDWARE_TEST" />
+
+    <!-- package manager test permissions -->
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.MOVE_PACKAGE" />
+    <uses-permission android:name="android.permission.PACKAGE_VERIFICATION_AGENT" />
+
+    <!--os storage test permissions -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ASEC_ACCESS" />
+    <uses-permission android:name="android.permission.ASEC_CREATE" />
+    <uses-permission android:name="android.permission.ASEC_DESTROY" />
+    <uses-permission android:name="android.permission.ASEC_MOUNT_UNMOUNT" />
+    <uses-permission android:name="android.permission.ASEC_RENAME" />
+    <uses-permission android:name="android.permission.SHUTDOWN" />
+
+    <!-- accessibility test permissions -->
+    <uses-permission android:name="android.permission.RETRIEVE_WINDOW_CONTENT" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.AUTOFOCUS" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INJECT_EVENTS" />
+    <application android:theme="@style/Theme">
+        <uses-library android:name="android.test.runner" />
+        
+        <activity android:name="com.mediatek.common.widget.tests.ActionBarNormalActivity" android:label="ActionBarNormalActivity" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.mediatek.common.widget.tests.ActionBarOrientationChangedActivity" android:label="ActionBarOrientationChangedActivity" android:theme="@android:style/Theme.Holo.Light" android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.mediatek.common.widget.tests.ActionBarActionModeListActivity" android:label="ActionBarActionModeListActivity" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.mediatek.common.widget.tests.ActionBarActionProviderActivity" android:label="ActionBarActionProviderActivity" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.mediatek.common.widget.tests.ActionBarActionViewActivity" android:label="ActionBarActionViewActivity" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.mediatek.common.widget.tests.ActionBarListActivity" android:label="ActionBarListActivity" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.mediatek.common.widget.tests.ActionBarSplitActionBarActivity" android:label="ActionBarSplitActionBarActivity" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.mediatek.common.widget.tests.ActionBarTabActivity" android:label="ActionBarTabActivity" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.mediatek.common.widget.tests.DialogFragmentActivity" android:label="DialogFragmentActivity" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.mediatek.common.widget.tests.PreferenceFragmentActivity" android:label="PreferenceFragmentActivity" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.mediatek.common.widget.tests.SetPreferenceActivity" android:label="SetPreferenceActivity" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.mediatek.common.widget.tests.SharedActivity" android:label="SharedActivity" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.mediatek.common.widget.tests.SurfaceViewActivity" android:label="SurfaceViewActivity" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.mediatek.common.widget.tests.TextureViewActivity" android:label="TextureViewActivity" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.mediatek.common.widget.tests.GestureDetectorActivity" android:label="GestureDetectorActivity" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.mediatek.common.widget.tests.ScaleGestureDetectorActivity" android:label="ScaleGestureDetectorActivity" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.mediatek.common.widget.tests.VolumePanelActivity" android:label="VolumePanelActivity" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        
+        <activity android:name="com.mediatek.common.widget.tests.ProgressBarActivity" android:label="ProgressBarActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.NumberPickerActivity" android:label="NumberPickerActivity" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.DatePickerDialogActivity" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.TimePickerDialogActivity" android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.focus.DescendantFocusability" android:label="DescendantFocusability">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.focus.FocusAfterRemoval" android:label="FocusAfterRemoval">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.focus.RequestFocus" android:label="RequestFocus">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.focus.ListOfButtons" android:label="ListOfButtons">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.focus.LinearLayoutGrid" android:label="LinearLayoutGrid">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.focus.ListOfEditTexts" android:label="ListOfEditTexts">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.focus.ListOfInternalSelectionViews" android:label="ListOfInternalSelectionViews">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.focus.ListWithFooterViewAndNewLabels" android:label="FocusListWithFooter">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.focus.ListWithMailMessages" android:label="ListWithMailMessages">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.focus.HorizontalFocusSearch" android:label="HorizontalFocusSearch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.focus.VerticalFocusSearch" android:label="VerticalFocusSearch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.focus.AdjacentVerticalRectLists" android:label="AdjacentVerticalRectLists">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.focus.GoneParentFocusedChild" android:label="GoneParentFocusedChild">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.layout.frame.FrameLayoutGravity" android:label="FrameLayoutGravity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.layout.frame.FrameLayoutMargin" android:label="FrameLayoutMargin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.layout.linear.BaselineAlignmentCenterGravity" android:label="BaselineAlignmentCenterGravity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.layout.linear.BaselineButtons" android:label="BaselineButtons">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.mediatek.common.widget.tests.layout.linear.ExceptionTextView" android:label="ExceptionTextView">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.layout.linear.FillInWrap" android:label="FillInWrap">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.layout.linear.BaselineAlignmentZeroWidthAndWeight" android:label="Baseline0WidthAndWeight">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.layout.linear.HorizontalOrientationVerticalAlignment" android:label="HorizontalOrientationVerticalAlignment">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.layout.linear.LLEditTextThenButton" android:label="LLEditTextThenButton">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.layout.linear.LLOfButtons1" android:label="LLOfButtons1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.layout.linear.LinearLayoutEditTexts" android:label="LinearLayoutEditTexts">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.layout.linear.LLOfButtons2" android:label="LLOfButtons2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.layout.linear.LLOfTwoFocusableInTouchMode" android:label="LLOfTwoFocusableInTouchMode">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.layout.linear.Weight" android:label="Weight">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.layout.linear.WeightSum" android:label="WeightSum">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.AdjacentListsWithAdjacentISVsInside" android:label="AdjacentListsWithAdjacentISVsInside">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListDividers" android:label="ListDividers">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListViewHeight" android:label="ListViewHeight">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.layout.table.FixedWidth" android:label="CellFixedWidth">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.layout.table.Weight" android:label="CellWeight">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.layout.table.HorizontalGravity" android:label="CellHorizontalGravity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.layout.table.VerticalGravity" android:label="CellVerticalGravity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.layout.table.AddColumn" android:label="AddColumnInTable">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.layout.table.CellSpan" android:label="CellSpan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.scroll.ButtonAboveTallInternalSelectionView" android:label="ButtonAboveTallInternalSelectionView">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.scroll.ButtonsWithTallTextViewInBetween" android:label="scrollButtonsWithTallTextViewInBetween">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.scroll.RequestRectangleVisible" android:label="ScrollToChildRect">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.scroll.RequestRectangleVisibleWithInternalScroll" android:label="ScrollToChildRectWithInternalScroll">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.scroll.ScrollViewButtonsAndLabels" android:label="ScrollViewButtonsAndLabels">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.scroll.ShortButtons" android:label="scrollShortButtons">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.scroll.TallTextAboveButton" android:label="scrollTallTextAboveButton">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.scroll.arrowscroll.MultiPageTextWithPadding" android:label="arrowscrollMultiPageTextWithPadding">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        
+        
+        
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListSetSelection" android:label="ListSetSelection">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListSimple" android:label="ListSimple">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListFilter" android:label="ListFilter">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListScrollListener" android:label="ListScrollListener">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListThrasher" android:label="ListThrasher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListTakeFocusFromSide" android:label="ListTakeFocusFromSide">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListBottomGravity" android:label="ListBottomGravity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListBottomGravityMany" android:label="ListBottomGravityMany">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListButtonsDiagonalAcrossItems" android:label="ListButtonsDiagonalAcrossItems">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListTopGravity" android:label="ListTopGravity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListTopGravityMany" android:label="ListTopGravityMany">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListEndingWithMultipleSeparators" android:label="ListEndingWithMultipleSeparators">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListGetSelectedView" android:label="ListGetSelectedView">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListInHorizontal" android:label="ListInHorizontal">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListInVertical" android:label="ListInVertical">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListInterleaveFocusables" android:label="ListInterleaveFocusables">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+             <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+         </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListOfItemsShorterThanScreen" android:label="ListOfItemsShorterThanScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListOfItemsTallerThanScreen" android:label="ListOfItemsTallerThanScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListOfThinItems" android:label="ListOfThinItems">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListOfShortTallShort" android:label="ListOfShortTallShort">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListOfShortShortTallShortShort" android:label="ListOfShortShortTallShortShort">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListWithOffScreenNextSelectable" android:label="ListWithOffScreenNextSelectable">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListWithFirstScreenUnSelectable" android:label="ListWithFirstScreenUnSelectable">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListWithSeparators" android:label="ListWithSeparators">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListWithHeaders" android:label="ListWithHeaders">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListWithEditTextHeader" android:label="ListWithEditTextHeader">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListWithNoFadingEdge" android:label="ListWithNoFadingEdge">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListWithScreenOfNoSelectables" android:label="ListWithScreenOfNoSelectables">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListItemFocusablesFarApart" android:label="ListItemFocusablesFarApart">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListItemFocusableAboveUnfocusable" android:label="ListItemFocusableAboveUnfocusable">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListItemFocusablesClose" android:label="ListItemFocusablesClose">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListLastItemPartiallyVisible" android:label="ListLastItemPartiallyVisible">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListItemsExpandOnSelection" android:label="ListItemsExpandOnSelection">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListWithOnItemSelectedAction" android:label="ListWithOnItemSelectedAction">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListItemISVAndButton" android:label="ListItemISVAndButton">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListOfTouchables" android:label="ListOfTouchables">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListRecyclerProfiling" android:label="ListRecyclerProfiling">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListHeterogeneous" android:label="ListHeterogeneous">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListHorizontalFocusWithinItemWins" android:label="ListHorizontalFocusWithinItemWins">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+	    <activity android:name="com.mediatek.common.widget.tests.listview.ListManagedCursor" android:label="ListManagedCursor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+	    <activity android:name="com.mediatek.common.widget.tests.listview.ListWithEmptyView" android:label="ListWithEmptyView">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.gridview.GridInHorizontal" android:label="GridInHorizontal">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.gridview.GridPadding" android:label="GridPadding">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.gridview.GridInVertical" android:label="GridInVertical">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.gridview.GridScrollListener" android:label="GridScrollListener">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+         <activity android:name="com.mediatek.common.widget.tests.gridview.GridThrasher" android:label="GridThrasher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.gridview.GridSimple" android:label="GridSimple">
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN" />
+               <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+           </intent-filter>
+       </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.gridview.GridDelete" android:label="GridDelete">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+         <activity android:name="com.mediatek.common.widget.tests.gridview.GridSetSelection" android:label="GridSetSelection">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.gridview.GridSetSelectionMany" android:label="GridSetSelectionMany">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.gridview.GridSetSelectionStackFromBottom" android:label="GridSetSelectionStackFromBottom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.gridview.GridSetSelectionStackFromBottomMany" android:label="GridSetSelectionStackFromBottomMany">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.gridview.GridStackFromBottom" android:label="GridStackFromBottom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.gridview.GridStackFromBottomMany" android:label="GridStackFromBottomMany">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.gridview.GridVerticalSpacing" android:label="GridVerticalSpacing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.gridview.GridVerticalSpacingStackFromBottom" android:label="GridVerticalSpacingStackFromBottom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.gridview.GridSingleColumn" android:label="GridSingleColumn">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        
+        <activity android:name="com.mediatek.common.widget.tests.expandablelistview.ExpandableListWithHeaders" android:label="ExpandableListWithHeaders">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.listview.ListWithDisappearingItemBug" android:label="ListWithDisappearingItemBug">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        
+        <activity android:name="com.mediatek.common.widget.tests.expandablelistview.InflatedExpandableListView" android:label="ExpandableListView Inflated">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.expandablelistview.ExpandableListSimple" android:label="ExpandableListSimple">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        
+        <activity android:name="com.mediatek.common.widget.tests.AutoCompleteTextViewSimple"
+                  android:label="AutoCompleteTextViewSimple">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        
+        <activity android:name="com.mediatek.common.widget.tests.RadioGroupActivity" android:label="RadioGroupActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.mediatek.common.widget.tests.TextViewTestActivity" android:label="TextViewTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        
+        /// M: [ALPS00428138] add new activities for scrollable widget testing @{ 
+        <activity android:name="com.mediatek.common.widget.tests.SpinnerOnGlobalLayout" android:label="SpinnerOnGlobalLayout"
+                  android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>       
+        
+         <activity android:name="com.mediatek.common.widget.tests.listview.ListWithFastScroller" android:label="ListWithFastScroller">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="com.mediatek.common.widget.tests.StackViewActivity" android:label="StackViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="com.mediatek.common.widget.tests.scroll.HorizontalScrollViewActivity" android:label="HorizontalScrollViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.FRAMEWORK_INSTRUMENTATION_TEST" />
+            </intent-filter>
+        </activity>
+        /// @}
+        
+    </application>
+    
+    <instrumentation android:name="com.zutubi.android.junitreport.JUnitReportTestRunner"
+            android:targetPackage="com.mediatek.common.widget.tests"
+            android:label="Common Widget Tests" />
+    
+    <instrumentation android:name="android.test.InstrumentationTestRunner"
+                        android:targetPackage="com.mediatek.common.widget.tests"
+            android:label="Common Widget Tests" />
+
+</manifest>

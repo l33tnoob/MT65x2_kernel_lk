@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bintiny_switch Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type tiny_switch_exec , exec_type, file_type;
+type tiny_switch ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive tiny_switch;
+init_daemon_domain(tiny_switch)
+
+
+# 20131122 Add Set Property Rule
+allow tiny_switch  property_type:property_service set;

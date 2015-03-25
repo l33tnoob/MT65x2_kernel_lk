@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bingatord Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type gatord_exec , exec_type, file_type;
+type gatord ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive gatord;
+init_daemon_domain(gatord)
+
+
+# 20131122 Add Set Property Rule
+allow gatord  property_type:property_service set;

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<AnimationGroup xmlns:android="http://schemas.android.com/apk/res/android" 
+                           xmlns:ngin3d="http://schemas.android.com/apk/res/com.mediatek.ngin3d.tests"
+                           android:id="@+id/animationGroup1" 
+                           ngin3d:target="@+id/image1"
+                           >
+
+    <KeyframeAnimation 
+                                  android:id="@+id/keyframe_animation1" 
+                                  ngin3d:dataSrc="@raw/photo_swap_enter_right_photo1_ani"
+                                  ngin3d:loop="true"  
+                                  ngin3d:autoReverse="true"  
+                                  />
+
+    <KeyframeAnimation 
+                                  android:id="@+id/keyframe_animation2" 
+                                  ngin3d:dataSrc="@raw/photo_swap_enter_right_photo2_ani"
+                                  ngin3d:loop="true"  
+                                  ngin3d:autoReverse="true"  
+                                  />
+</AnimationGroup> 
+

@@ -1,0 +1,65 @@
+;&lpddr2=0	; LPDDR
+&lpddr2=1	; LPDDR2
+
+D.S SD:0xC0007108 %LE %LONG 0x0652	; ARMPLL_BR = 1; ARMPLL_BP = 1; ARMPLL_DIVEN = 2
+D.S SD:0xC0007128 %LE %LONG 0x0652	; MAINPLL_BR = 1; MAINPLL_BP = 1; MAINPLL_DIVEN = 2
+D.S SD:0xC0007148 %LE %LONG 0x0652	; IPLL_BR = 1; IPLL_BP = 1; IPLL_DIVEN = 2
+
+D.S SD:0xC0007048 %LE %LONG 0x0000  ; WPLL, MDPLL, MEMPLL, MAINPLL, ARMPLL from ap_sleep control. CLKSQ_EN from SRCLKEN
+
+D.S SD:0xC0007064 %LE %LONG 0x271B  ; TVDDS stable time0 for tuning TVDDS enable timing
+D.S SD:0xC0007068 %LE %LONG 0x0229  ; TVDDS stable time2 for tuning TVDDS enable timing
+    
+D.S SD:0xC0007100 %LE %LONG 0x4CA0  ; ARMPLL 1001Mhz
+wait 120.us                         ; wait 120us (min delay is 30us)
+
+IF &lpddr2==0  ; LPDDR
+(
+D.S SD:0xC0007120 %LE %LONG 0x2460  ; MAINPLL 962Mhz
+)
+IF &lpddr2==1  ; LPDDR2
+(
+D.S SD:0xC0007120 %LE %LONG 0x2760  ; MAINPLL 1040Mhz
+)
+wait 120.us                         ; wait 120us (min delay is 30us)
+
+D.S SD:0xC0007B0C %LE %LONG 0xC000  ; [14] = 1, choose MDPLL instead of MAINPLL. [15] = 1, Enable MDPLL clock path
+
+D.S SD:0xC0007144 %LE %LONG 0x0036  ; 2^6 * Tin
+D.S SD:0xC0007140 %LE %LONG 0x5740  ; ISPPLL 143MHz
+wait 80.us                          ; wait 80us (min delay is 20us)
+
+D.S SD:0xC0007160 %LE %LONG 0x1710  ; USBPLL 624MHz (for USB 2.0 and 1.0 Phy)
+wait 80.us                          ; wait 80us (min delay is 20us)
+D.S SD:0xC0007160 %LE %LONG 0x1712  ; Set USBPLL to 48Mhz output enable
+
+D.S SD:0xC0007180 %LE %LONG 0x1310  ; MDPLL 1024MHz
+wait 80.us                          ; wait 80us (min delay is 20us)
+D.S SD:0xC0007180 %LE %LONG 0x1312  ; Set MDPLL to 297.14Mhz output enable
+
+D.S SD:0xC00071C0 %LE %LONG 0x403B  ; 3GPLL 197Mhz, 492Mhz, 61Mhz enable
+wait 120.us                         ; wait 120us (min delay is 30us)
+D.S SD:0xC00071C0 %LE %LONG 0x403F  ; 3GPLL 197Mhz, 281Mhz, 492Mhz, 61Mhz enable
+
+D.S SD:0xC0007144 %LE %LONG 0x4113  ; Reference clock is from ANA 26Mhz (Clock to MEMPLL enable)
+
+D.S SD:0xC0007200 %LE %LONG 0x0910  ; VCO = (BUS Freq/10) * (9+1) * 4 / 1
+D.S SD:0xC0007204 %LE %LONG 0x0026  ; MEMPLL = VCO/4
+wait 80.us                          ; wait 80us (min delay is 20us)
+
+D.S SD:0xC0001014 %LE %LONG 0x101   ; Force MUX1 to use 26Mhz and turn on enable_gen
+
+IF &lpddr2==0  ; LPDDR
+(
+D.S SD:0xC0001004 %LE %LONG 0x10    ; BUS clock will divide by 5
+)
+IF &lpddr2==1  ; LPDDR2
+(
+D.S SD:0xC0001004 %LE %LONG 0x8     ; BUS clock will divide by 4
+)
+
+D.S SD:0xC0001008 %LE %LONG 0x0     ; CA9 clock will divide by 1
+
+D.S SD:0xC000100C %LE %LONG 0x1     ; enable clock divider 2 to export /4 clock to mm system
+
+D.S SD:0xC0001000 %LE %LONG 0x259   ; Mux0 using MAINPLL, Mux1 using ARMPLL, MUX2 using MAINPLL, Mux3 From Mux1, MUX4 using CLKSQ, MUX6 using CLKSQ 

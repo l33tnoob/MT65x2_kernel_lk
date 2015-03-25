@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation = "vertical"
+  >
+  <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_weight="1"
+        android:fillViewport="true"
+    >
+    <LinearLayout
+	 		android:layout_width="fill_parent"
+	 		android:layout_height="fill_parent"
+	 		android:orientation = "vertical"
+	>
+	<TextView 
+		android:id="@+id/idunlockInputPassword" 
+		android:layout_width="fill_parent" 
+		android:layout_height="40dp"
+		android:text="@string/strInputPassword"
+		android:textSize = "20sp"
+		android:layout_marginTop = "20dp" 
+		android:gravity = "left"
+	/>
+	<EditText
+		android:id="@+id/idunlockEditInputPassword" 
+		android:layout_width="200dp" 
+		android:layout_height="wrap_content"
+		android:layout_gravity = "center"
+		android:contentDescription="@string/strInputPassword"
+	/>
+	<TextView 
+		android:id="@+id/idunlockInputChancesleft" 
+		android:layout_width="fill_parent" 
+		android:layout_height="40dp"
+		android:text="@string/strInputChancesleft"
+		android:textSize = "20sp"
+		android:layout_marginTop = "20dp" 
+		android:gravity = "left"
+	/>
+	<TextView
+		android:id="@+id/idunlockEditInputChancesleft" 
+		android:layout_width="200dp" 
+		android:layout_height="40dp"
+		android:textSize = "20sp"
+		android:layout_gravity = "center"
+		android:gravity = "center"
+	/>	
+	</LinearLayout>
+    </ScrollView>
+	<LinearLayout
+	 		android:layout_width="fill_parent"
+	 		android:layout_height="50dp"
+	 		android:orientation = "horizontal"
+	 		android:gravity = "center"
+	 		android:layout_alignParentBottom = "true"
+	 		style="@android:style/ButtonBar"
+	>
+				<Button 
+					android:id="@+id/idunlockButtonConfirm" 
+					android:layout_width="0dp" 
+					android:layout_height="50dp"
+					android:text="@string/strConfirm"
+					android:textSize = "20sp"
+					android:layout_weight="1"			
+				/>
+				<Button
+					android:id="@+id/idunlockButtonCancel" 
+					android:layout_width="0dp" 
+					android:layout_height="50dp"
+					android:text="@string/strCancel"
+					android:textSize = "20sp"
+					android:layout_weight="1"
+				/>
+	</LinearLayout> 
+</LinearLayout>

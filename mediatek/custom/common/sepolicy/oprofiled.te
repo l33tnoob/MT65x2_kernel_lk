@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/xbinoprofiled Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type oprofiled_exec , exec_type, file_type;
+type oprofiled ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive oprofiled;
+init_daemon_domain(oprofiled)
+
+
+# 20131122 Add Set Property Rule
+allow oprofiled  property_type:property_service set;

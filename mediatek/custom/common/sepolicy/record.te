@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binrecord Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type record_exec , exec_type, file_type;
+type record ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive record;
+init_daemon_domain(record)
+
+
+# 20131122 Add Set Property Rule
+allow record  property_type:property_service set;

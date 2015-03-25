@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="STR_NMS_MAIN">iSMS</string>
+    <string name="STR_NMS_HISSAGE">iSMS</string>
+    <string name="STR_NMS_INVITE_SMS_CONTENT">iSMS – цікаве спілкування. Це зручно й безкоштовно. Докладніше див. http://isms.hissage.</string>
+    <string name="STR_NMS_NO_SDCARD">SD-картку не знайдено; деякі операції недоступні в iSMS.</string>
+    <string name="STR_NMS_MOUNT_SDCARD">SD-картка готова</string>
+    <string name="STR_NMS_SEND_MMS_FAIL">Не вдалося надіслати повідомлення. Його буде надіслано під час підключення до мережі.</string>
+    <string name="STR_NMS_RECV_MMS_FAIL">Не вдалося завантажити. Спробуйте пізніше.</string>
+    <string name="STR_NMS_GROUP_CHAT_ME">я</string>
+    <string name="STR_NMS_GROUP_CHAT_I">я</string>
+    <string name="STR_NMS_GROUP_CHAT_YOU">Ви</string>
+    <string name="STR_NMS_GROUP_CREATE_MSG">%1$s запрошує %2$s до групового чату.</string>
+    <string name="STR_NMS_GROUP_ADD_MSG">%1$s приєднався до групового чату.</string>
+    <string name="STR_NMS_GROUP_DELETE_MSG">%1$s видаляє %2$s із групового чату.</string>
+    <string name="STR_NMS_GROUP_QUITE_MSG">%1$s залишає груповий чат.</string>
+    <string name="STR_NMS_GROUP_CHAT_PLACE_HOLDER_MSG_BODY">Ви приєдналися до цієї групи</string>
+    <string name="STR_NMS_PICTURE">зображення</string>
+    <string name="STR_NMS_TAPE">аудіо</string>
+    <string name="STR_NMS_VCARD">контакт</string>
+    <string name="STR_NMS_LOCATION">розташування</string>
+    <string name="STR_NMS_SKETCH">ескіз</string>
+    <string name="STR_NMS_VIDEO">відео</string>
+    <string name="STR_NMS_CALENDAR">календар</string>
+    <string name="STR_NMS_UNKNOWN">невідомо</string>
+    <string name="STR_NMS_READ_MODE_PIC">зображення</string>
+    <string name="STR_NMS_READ_MODE_TAPE">аудіо-нотатка</string>
+    <string name="STR_NMS_READ_MODE_VCARD">контакти</string>
+    <string name="STR_NMS_READ_MODE_LOCATION">розташування</string>
+    <string name="STR_NMS_READ_MODE_SKETCH">ескіз</string>
+    <string name="STR_NMS_READ_MODE_VIDEO">відео</string>
+    <string name="STR_NMS_READ_MODE_CALENDAR">календар</string>
+    <string name="STR_NMS_ISMS_ENABLE">(iSMS увімкнено)</string>
+    <string name="STR_NMS_READ_MODE_UNKNOWN">невідомий файл</string>
+    <string name="STR_NMS_ALL_MSG">Усі повідомлення</string>
+    <string name="STR_NMS_SAVED">Збережено</string>
+    <string name="STR_NMS_BLOCKMSG">Заблоковано</string>
+    <string name="STR_NMS_SMS_TYPE">SMS</string>
+    <string name="STR_NMS_VERSION_ID">v5.2.16.356</string>
+    <string name="STR_NMS_NO_SIM">SIM-картку не знайдено</string>
+    <string name="STR_NMS_ILLEGAL_ADDRESS">Неприпустимий номер</string>
+    <string name="STR_NMS_REMIND_USER_SET_NAME">Оновіть свій профіль</string>
+    <string name="STR_NMS_OK">ОК</string>
+    <string name="STR_NMS_BACK">Назад</string>
+    <string name="STR_NMS_CANCEL">Скасувати</string>
+    <string name="STR_NMS_NETWORK_UNAVL">Перевірте підключення до мережі, наприклад 3G, GPRS або Wi-Fi</string>
+    <string name="STR_NMS_TODAY">Сьогодні</string>
+    <string name="STR_NMS_YESTERDAY">Вчора</string>
+    <string name="STR_NMS_NOW">Зараз</string>
+    <string name="STR_NMS_NO_SIM_CARD">SIM-картку не знайдено. Вставте SIM-картку.</string>
+    <string name="STR_NMS_NO_CONNECTION">Мережа недоступна або ввімкнено режим &quot;У літаку&quot;.</string>
+    <string name="STR_NMS_ATTACH_SHARE">%1$s поділився(-лася) %2$s</string>
+    <string name="STR_NMS_WAIT">Зачекайте...</string>
+    <string name="STR_NMS_TIPTITLE">Порада</string>
+
+    <string name="STR_NMS_OPEN">Відкрити</string>
+    <string name="STR_NMS_PLAY">Відтворити</string>
+    
+    
+
+    <string name="STR_NMS_VCARD_NAME">Контакти %1$s</string>
+    <string name="STR_NMS_SHARE_VCARD_FAILED">не вдолося поділитися контактом</string>
+
+    <!-- upgrade info -->
+    <string name="STR_NMS_UPGRADE_URL">http://ismsi.hissage.com/webservice/hss/hssVersionUpdate.php</string>
+    <string name="STR_NMS_UPGRADE_TICKER">Оновлення версії</string>
+    <string name="STR_NMS_UPGRADE_ERROR_TITLE">Помилка оновлення</string>
+    <string name="STR_NMS_UPGRADE_ERROR_CONTENT">Помилка оновлення, потрібно оновити клієнт iSMS</string>
+    <string name="STR_NMS_INSTALLED_TITLE">Оновлення завершено</string>
+    <string name="STR_NMS_INSTALLED_CONTENT">Оновлення встановлено на телефоні</string>
+    <string name="STR_NMS_PROMPT_DLG_TITLE">Знайдено нову версію</string>
+    <string name="STR_NMS_PROMPT_DLG_DOWNLOAD">Завантажити</string>
+    <string name="STR_NMS_PROMPT_DLG_LATER">Пізніше</string>
+    <string name="STR_NMS_UPGRADING">Оновлення</string>
+    <string name="STR_NMS_UPGRADE_TIME">Остання перевірка: %s</string>
+    
+    <!-- ext protocol -->
+    <string name="STR_NMS_OFFLINE_URL">http://ismsi.hissage.com/webservice/nmsmail/notifyOffline.php</string>
+    
+    <!-- Activation start -->
+    <string name="STR_NMS_PRELOAD_IP_MSG_CONTENT">&quot;Вітаємо в iSMS.&quot;</string>
+    <string name="STR_NMS_ACTIVAT_TITLE">iSMS надішле вам SMS, щоб перевірити ваш номер телефону. Оператор може стягувати плату.</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE">Перевірка номеру</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE2">Перевірка номеру</string>
+    <string name="STR_NMS_YOUR_COUNTRY_TITLE">ВАША КРАЇНА</string>
+    <string name="STR_NMS_YOUR_PHONE_TITLE">ВАШ НОМЕР ТЕЛЕФОНУ</string>
+    <string name="STR_NMS_VERIFY_FAIL_TITLE">Не вдалося надіслати SMS для перевірки.</string>
+    <string name="STR_NMS_VERIFY_FAIL_CONTENT">Перевірте правильність введення номеру телефону.</string>
+    <string name="STR_NMS_WORKING_SMS_TIP">Переконайтеся, що функцію SMS увімкнено.</string>
+    <string name="STR_NMS_VERIFYING">Очікування автоматичного виявлення для надсилання SMS</string>
+    <string name="STR_NMS_RETRY">Повторити</string>
+    <string name="STR_NMS_EDIT_NUMBER">Редагувати номер</string>
+    <string name="STR_NMS_UPDATE_PROFILE">Оновити профіль</string>
+    <string name="STR_NMS_START_ISMS">Запустити iSMS</string>
+    <string name="STR_NMS_SEND">Надіслати</string>
+    <string name="STR_NMS_CONGRATULATIONS_TITLE">Вітаємо!</string>
+    <string name="STR_NMS_CONGRATULATIONS_CONTENT">Дякуємо за активацію iSMS.\nКористуйтеся всіма перевагами цієї служби.\nУспіхів з iSMS!</string>
+    <string name="STR_NMS_WELCOME_BACK">З поверненням.</string>
+    <string name="STR_NMS_SEND_SMS_FAIL">Помилка перевірки. Переконайтеся, що:\n  1. вказано правильний номер телефону;\n  2. брандмауер вимкнено;\n  3. ніщо інше не перешкоджає надсиланню SMS.\nПотім повторіть спробу.</string>
+    <string name="STR_NMS_ACTIVE">Активувати iSMS</string>
+    <string name="STR_NMS_WELCOME_ACTIVE">Вітаємо в iSMS</string>
+    <string name="STR_NMS_CONNECTING">Підключення...</string>
+    <!-- Activation end -->
+
+
+    <!-- Notification start -->
+    <string name="STR_NMS_NEW_MSG_TITLE">Нове повідомлення iSMS</string>
+    <string name="STR_NMS_NEW_SMG_CONTENT">Непрочитаних повідомлень: %d</string>
+    <!-- Notification End -->
+
+    <string name="STR_NMS_MSG_DUMPER_MSG_SMS">SMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_MMS">MMS</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_IP">IP-повідомлення</string>
+    <string name="STR_NMS_MSG_DUMPER_SEND_MSG">Надіслано %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_RECEIVE_MSG">Отримано %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TIME">Час: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TEXT">Текст</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_PIC">Зображення</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_SKETCH">Ескіз</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VOICE">Голос</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VIDEO">Відео</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CALENDAR">Календар</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION_IMG">Розташування зображення</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VCARD">Vcard</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION">Розташування</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CAPTION">Заголовок: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_URL">Url: </string>
+    <string name="STR_NMS_MSG_DUMPER_DURATION">Тривалість: </string>
+    <string name="STR_NMS_MSG_DUMPER_COORDINATE">Координати: </string>
+    <string name="STR_NMS_MSG_DUMPER_ADDRESS">Адреса: </string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_SENDER">Відправник: </string>
+    <string name="STR_NMS_MSG_DUMPER_NORMAL_DETAIL">Відомості про сеанс:</string>
+    <string name="STR_NMS_MSG_DUMPER_NAME">Ім’я: </string>
+    <string name="STR_NMS_MSG_DUMPER_NUMBER">Номер: </string>
+    <string name="STR_NMS_MSG_DUMPER_PORTRAIT">Портрет</string>
+    <string name="STR_NMS_MSG_DUMPER_MULTI_SEND_DETAIL">Трансляція:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_DETAIL">Груповий чат:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_CREATER">Автор: </string>
+    <string name="STR_NMS_MSG_DUMPER_MEMBERS">Члени: </string>
+    <string name="STR_NMS_MSG_DUMPER_VCARD_NAME">Ім’я: </string>
+    <string name="STR_NMS_MSG_DUMPER_CALENDAR_SUMMARY">Підсумок: </string>
+
+    <!-- Chat Settings -->
+    <string name="STR_NMS_CHAT_SETTING_TITLE">Настройки чату</string>
+    <string name="STR_NMS_DISPLAY">Дисплей</string>
+    <string name="STR_NMS_CHAT_WALLPAPER">Шпалери чату</string>
+    <string name="STR_NMS_SYS_WALLPAPER">Вибрати шпалери</string>
+    <string name="STR_NMS_CAMEARPHOTO">Зробити знімок</string>
+    <string name="STR_NMS_SYS_GALLERY">Вибрати з галереї</string>
+    <string name="STR_NMS_DEFAULT_WALLPAPER">За замовчуванням</string>
+    <string name="STR_NMS_NOTIFICATION_CATEGORY">Сповіщення</string>
+    <string name="STR_NMS_NOTIFICATION_TITLE">Сповіщення iSMS</string>
+    <string name="STR_NMS_NOTIFICATION_CONTENT">Показувати, якщо отримано сповіщення</string>
+    <string name="STR_NMS_MUTE">Без звуку</string>
+    <string name="STR_NMS_MUTE_OFF">Вимк.</string>
+    <string name="STR_NMS_MUTE_1">Вимк. на 1 год.</string>
+    <string name="STR_NMS_MUTE_4">Вимк. на 4 год.</string>
+    <string name="STR_NMS_MUTE_8">Вимк. на 8 год.</string>
+    <string name="STR_NMS_RINGTONE_TITLE">Мелодія дзвінка</string>
+    <string name="STR_NMS_RINGTONE_CONTENT">Установити мелодію дзвінка для нових сповіщень </string>
+    <string name="STR_NMS_VIBRATE_TITLE">Вібрація</string>
+    <string name="STR_NMS_VIBRATE_CONTENT">Увімкнути вібрацію, якщо отримано сповіщення</string>
+    <string name="STR_NMS_ACTIONS">Дії</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_TITLE">Завантажити журнал чату</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_CONTENT">Зберегти дані на SD-картці як ZIP-архів</string>
+    <string name="STR_NMS_EMAIL_HISTORY_TITLE">Журнал ел. повідомлень чату</string>
+    <string name="STR_NMS_EMAIL_HISTROY_CONTENT">Надіслати ел. поштою журнал чату як ZIP-архів</string>
+    <string name="STR_NMS_CLEAR_HISTROY">Очистити журнал чату</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_DLG">Завантаження...</string>
+    <string name="STR_NMS_DOWNLOAD_OK">Журнал чату завантажено. Збережіть його як %s</string>
+    <string name="STR_NMS_DOWNLOAD_ERROR">Помилка завантаження журналу чату.</string>
+    <string name="STR_NMS_DOWNLOAD_EMPTY">Немає файлів для завантаження.</string>
+    <string name="STR_NMS_CLEARING">Очищення журналу, зачекайте...</string>
+    <string name="STR_NMS_WAIT_SAVE_WALLPAPER">Збереження шпалер, зачекайте...</string>
+    <string name="STR_NMS_SAVE_WALLPAPER_OK">Шпалери збережено.</string>
+    <string name="STR_NMS_CLEARDONE">Журнал очищено.</string>
+    <string name="STR_NMS_SVAE_TITLE">Зберегти на SD-картку</string>
+    <string name="STR_NMS_SAVE_CONTENT">Зберегти цю розмову чату на SD-картці як ZIP-архів</string>
+    <string name="STR_NMS_EMAIL_TITLE">Надіслати ел. поштою</string>
+    <string name="STR_NMS_EMAIL_CONTENT">Надіслати цю розмову чату як вкладення ел. пошти в форматі ZIP</string>
+
+    <!-- Chat Settings End -->
+
+
+    <!-- Profile Settings -->
+    <string name="STR_NMS_PROFILE_TITLE">Профіль</string>
+    <string name="STR_NMS_TAP_AVATAR_TIP">Торкніться, щоб змінити зображення профілю</string>
+    <string name="STR_NMS_DISPLAY_NAME_TIP">ІМ’Я ПРОФІЛЮ</string>
+    <string name="STR_NMS_ACCOUNT_TIP">ОБЛІКОВИЙ ЗАПИС ISMS</string>
+    <string name="STR_NMS_NO_APP">Цю дію не може виконати жодна програма.</string>
+    <string name="STR_NMS_NO_NAME">Установити своє ім’я</string>
+    <string name="STR_NMS_SAVE_AVATAR_FAILD">На жаль, не вдалося зберегти зображення профілю.</string>
+    <string name="STR_NMS_INPUT_NAME">Ім’я</string>
+    <string name="STR_NMS_TERM_WARN_ACTIVATE">Цю функцію підтримує тільки служба iSMS.\n\niSMS – це безкоштовна служба обміну миттєвими повідомленнями, яка дає змогу спілкуватися в чаті та обмінюватися мультимедійним вмістом зі своїми друзями коли й де завгодно за допомогою підключення до Інтернету (Wi-Fi, 2G/3G тощо).\nПід час активації служби iSMS вам буде автоматично надіслано текстове повідомлення для звершення реєстрації. Може стягуватися плата за використання послуг SMS.\n\nУгода з користувачем\n</string>
+    <string name="STR_NMS_TERM_WARN_WELCOME">iSMS – це безкоштовна служба обміну миттєвими повідомленнями, яка дає змогу спілкуватися в чаті та обмінюватися мультимедійним вмістом зі своїми друзями коли й де завгодно за допомогою підключення до Інтернету (Wi-Fi, 2G/3G тощо).\nПід час активації служби iSMS вам буде автоматично надіслано текстове повідомлення для звершення реєстрації. Може стягуватися плата за використання послуг SMS.\n\nУгода з користувачем\n</string>
+    <string name="STR_NMS_TERM_KEY">Умови</string>
+    <string name="STR_NMS_AGREE_AND_CONTINUE">Погодитися та продовжити</string>
+    <string name="STR_NMS_ACTIVE_BNT">Активувати</string>
+    <string name="STR_NMS_SET_PROFILE_OK">Профіль створено</string>
+    <string name="STR_NMS_SET_PROFILE_FAIL">Не вдалося створити профіль</string>
+    <string name="STR_NMS_ILLEGAL_PROFILE_NAME">Неприпустиме ім’я</string>
+    <string name="STR_NMS_NO_ACTIVITED">SIM-картку не активовано або не вставлено.</string>
+    <!-- Profile Settings End -->
+
+
+    <!-- Term Activity -->
+    <string name="STR_NMS_REJECT">Відхилити</string>
+    <string name="STR_NMS_AGREE">Погодитися</string>
+    <string name="STR_NMS_TERM_TITLE">Умови надання Служби</string>
+    <string name="STR_NMS_TERM_CONTENT">Ви усвідомлюєте, що Служба та її програмне забезпечення можуть містити компоненти безпеки, які дають змогу захищати цифрові дані, і використання таких даних регламентується компанією AF PushMail і/або іншими постачальниками вмісту, які завантажують його у Службу. Заборонено порушувати або обходити будь-які правила використання, передбачені Службою. Будь-яке несанкціоноване відтворення, публікування, подальше розповсюдження або розголошення широкому загалу матеріалів, наданих Службою, повністю або частково, суворо заборонено.</string>
+    <!-- Term Activity End -->
+
+
+    <!-- System Settings -->
+    <string name="STR_NMS_SYS_SETTING_TITLE">Повідомлення iSMS</string>  
+    <string name="STR_NMS_SETTINGS_TITLE">ПРОФІЛЬ</string>
+    <string name="STR_NMS_PREFERENCE_CATE">НАСТРОЙКИ</string>
+    <string name="STR_NMS_SEND_SMS_TITLE">Надіслати як SMS</string>
+    <string name="STR_NMS_SEND_SMS_CONTENT">Надіслати як SMS, якщо служба iSMS недоступна. Оператор може стягувати плату за надсилання повідомлення. Це правило не стосується групового чату</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_TITLE">Автом. завантаження</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_CONTENT">Автоматично завантажувати об’єкти мультимедіа</string>
+    <string name="STR_NMS_CAPTION_TITLE">Заголовки</string>
+    <string name="STR_NMS_CAPTION_CONTENT">Надіслати файл із заголовками</string>
+    <string name="STR_NMS_SYSTEM_CATE">СИСТЕМА</string>
+    <string name="STR_NMS_UPDATE_TITLE">Оновлення програми</string>
+    <string name="STR_NMS_UPDATE_CONTENT">Остання перевірка: Ніколи</string>
+    <string name="STR_NMS_NETWORK_USAGE_TITLE">Використання мережі</string>
+    <string name="STR_NMS_NETWORK_USAGE_CONTENT">Переглянути загальний обсяг надісланих/отриманих даних</string>
+    <string name="STR_NMS_NETWORK_DLG_CONTENT">Надіслано: %1$.3f K \nОтримано: %2$.3f K\nОстаннє скидання: %3$s</string>
+    <string name="STR_NMS_VERSION_TITLE">Версія</string>
+    <string name="STR_NMS_NEVER_CLEAR">Ніколи</string>
+    <string name="STR_NMS_RESET">Скинути</string>
+    <string name="STR_NMS_SWITCH_ON">УВІМК.</string>
+    <string name="STR_NMS_SWITCH_OFF">ВИМК.</string>
+    <string name="STR_NMS_SYSTEM_SETTING_TITLE">Настройки</string>
+    <string name="STR_NMS_COPYRGIHT">Hesine Technologies, Inc.</string>
+    <string name="STR_NMS_ABOUT">Про iSMS</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_TITLE">Стан прочитання</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_CONTENT">Показувати стан прочитання у списку повідомлень</string>
+    <string name="STR_NMS_SHOW_REMIND_TITLE">Нагадування</string>
+    <string name="STR_NMS_SHOW_REMIND_CONTENT">Показувати нагадування iSMS у вікні чату</string>
+    <string name="STR_NMS_MENU_RESET_SETTING">Скинути настройки</string>
+    <string name="STR_NMS_MENU_FUNCTION_INTRODUCTION">Функції</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT">Угода з користувачем</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION">Авторське право</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT_TITLE">ЛІЦЕНЗІЙНА УГОДА СЛУЖБИ HESINE iSMS</string>
+    <string name="STR_NMS_MENU_FUNCTION">Список функцій</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION_DETAIL">\nHesine Technologies Inc.\nCopyright© 2008-2013\nУсі права захищено.\n</string>
+    <!-- System Settings End -->
+
+
+    <!-- Caption Settings -->
+    <string name="STR_NMS_AUDIO_TITLE">Аудіо</string>
+    <string name="STR_NMS_VIDEO_TITLE">Відео</string>
+    <string name="STR_NMS_PHOTO_TITLE">Фото</string>
+    <!-- Caption Settings End -->
+
+
+    <!-- Map String start -->
+    <string name="STR_NMS_MAP_TITLE">Надіслати дані про розташування</string>
+    <string name="STR_NMS_MAP_PROMPT">Не вдається відобразити карту, оскільки службу визначення розташування вимкнено. Наведену нижче адресу отримано на основі даних про вашу мережу мобільного зв’язку. \nЩоб визначити адресу точніше, радимо ввімкнути службу визначення розташування.</string>
+    <string name="STR_NMS_MAP_NOTE_1">Активуйте компонент &quot;Моє розташування&quot; в настройках системи</string>
+    <string name="STR_NMS_MAP_SHARE">Поділитися</string>
+    <string name="STR_NMS_MAP_SETTINGS">Настройки</string>
+    <string name="STR_NMS_MAP_OK">ОК</string>
+    <string name="STR_NMS_MAP_CANCEL">Скасувати</string>
+    <string name="STR_NMS_MAP_EDIT">Змінити розташування</string>
+    <string name="STR_NMS_MAP_SEARCH_HINT">Шукати місця поблизу</string>
+    <string name="STR_NMS_MAP_WAIT">Зачекайте...</string>
+    <string name="STR_NMS_MAP_EDIT_LIMIT">Досягнуто граничної кількості символів</string>
+    <string name="STR_NMS_MAP_ADDR_LEN">Адреса задовга</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR_LOCATING">Визначення вашого поточного розташування...</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN_LOCATING">Визначення вашого PIN-розташування...</string>
+    <string name="STR_NMS_MAP_LINEONE_SEARCH_LOCATING">Визначення шуканого розташування...</string>
+    <string name="STR_NMS_MAP_LINETHREE_NEARBY_LOCATING">Триває пошук поблизу...</string>
+    <string name="STR_NMS_MAP_LINEONE_FAILED">Ваше розташування зараз недоступне</string>
+    <string name="STR_NMS_MAP_LINETWO_FAILED">Перевірте, чи ввімкнено службу визначення розташування та підключення до мережі</string>
+    <string name="STR_NMS_MAP_LINETHREE_FAILED">Місць поблизу не знайдено</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR">Надіслати дані про поточне розташування</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN">Надіслати дані про PIN-розташування</string>
+    <string name="STR_NMS_MAP_MY_LOCATION">Моє розташування</string>
+    <string name="STR_NMS_MAP_SEARCH">Пошук</string>
+    <string name="STR_NMS_MAP_ERROR_1">Не вдалось отримати дані про широту й довготу</string>
+    <string name="STR_NMS_MAP_ERROR_2">Сервери Google повертають помилку</string>
+    <!-- Map String end -->
+
+
+    <!-- All Media String start -->
+    <string name="STR_NMS_ALL_MEDIA_TITLE">Усі файли</string>
+    <string name="STR_NMS_ALL_MEDIA_WAIT">Зачекайте...</string>
+    <string name="STR_NMS_ALL_MEDIA_ERROR">Не вдалося завантажити, спробуйте пізніше</string>
+    <string name="STR_NMS_ALL_MEDIA_EMPTY">Пусто</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_WEEK">Цього тижня</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_MONTH">Цього місяця</string>
+    <string name="STR_NMS_ALL_MEDIA_JAN">Січень</string>
+    <string name="STR_NMS_ALL_MEDIA_FEB">Лютий</string>
+    <string name="STR_NMS_ALL_MEDIA_MAR">Березень</string>
+    <string name="STR_NMS_ALL_MEDIA_APR">Квітень</string>
+    <string name="STR_NMS_ALL_MEDIA_MAY">Травень</string>
+    <string name="STR_NMS_ALL_MEDIA_JUN">Червень</string>
+    <string name="STR_NMS_ALL_MEDIA_JUL">Липень</string>
+    <string name="STR_NMS_ALL_MEDIA_AUG">Серпень</string>
+    <string name="STR_NMS_ALL_MEDIA_SEPT">Вересень</string>
+    <string name="STR_NMS_ALL_MEDIA_OCT">Жовтень</string>
+    <string name="STR_NMS_ALL_MEDIA_NOV">Листопад</string>
+    <string name="STR_NMS_ALL_MEDIA_DEC">Грудень</string>
+    <string name="STR_NMS_ADDCONTACT">Додати контакт</string>
+    <string name="STR_NMS_ADD_PHONE_CONTACT">Додати \&quot;%1$s\&quot; до контактів?</string>
+    <string name="STR_NMS_DELETE_MEDIA">Носій буде видалено, продовжити?</string>
+    <string name="STR_NMS_MEDIA_SHARE_MESSAGE">Доступ надано %1$s у %2$s</string>
+
+    <!-- All Media String end -->
+
+
+    <!-- All Locations String start -->
+    <string name="STR_NMS_ALL_LOCATIONS_TITLE">Усі розташування</string>
+    <string name="STR_NMS_ALL_LOCATIONS_LOC">Розташування</string>
+    <string name="STR_NMS_ALL_LOCATIONS_WAIT">Зачекайте...</string>
+    <!-- All Locations String end -->
+
+
+    <!-- Sketch -->
+    <string name="STR_NMS_SKETCH_TITLE">Намалювати ескіз</string>
+    <string name="STR_NMS_REDO">Повторити</string>
+    <string name="STR_NMS_UNDO">Скасувати</string>
+    <string name="STR_NMS_SKETCH_CUSTOM">Настроюваний</string>
+    <string name="STR_NMS_PEN_SIZE">Розмір</string>
+    <string name="STR_NMS_SKETCH_TOOLS_PEN">Олівець</string>
+    <string name="STR_NMS_SKETCH_TOOLS_ERASER">Ластик</string>
+    <string name="STR_NMS_SKETCH_CUSTOM_COLOR">Настр. колір</string>
+    <string name="STR_NMS_CLEAR_SKETCH_TITLE">Очистити ескіз</string>
+    <string name="STR_NMS_CLEAR_SKETCH_CONTENT">Очистити цей ескіз?</string>
+    <string name="STR_NMS_SIZE_SKETCH_TITLE">Розмір</string>
+    <string name="STR_NMS_SIZE_SKETCH_MAX">72</string>
+    <string name="STR_NMS_SIZE_SKETCH_MIN">2</string>
+    <string name="STR_NMS_COLOR_SKETCH_TITLE">Колір</string>
+    <string name="STR_NMS_SKETCH_ERROR">Не вдалося створити ескіз.</string>
+    <string name="STR_NMS_BACK_TITLE">Підтвердження</string>
+    <string name="STR_NMS_FINISH_SKETCH_CONTENT">Справді закрити цей ескіз?</string>
+    <string name="STR_NMS_LEAVE_SKETCH_CONTENT">Справді видалити цей ескіз?</string>
+    <string name="STR_NMS_NOTREDO">Немає дії для повторення</string>
+    <string name="STR_NMS_NOTUNDO">Немає дії для скасування</string>
+    <string name="STR_NMS_SKETCH_DELETE">Очистити</string>
+    <string name="STR_NMS_DISCARD">Вилучити</string>
+
+    <!-- Sketch end -->
+
+
+    <!-- Selection Contact -->
+    <string name="STR_NMS_DONE">ОК</string>
+    <string name="STR_NMS_SELECTALL">Виділити все</string>
+    <string name="STR_NMS_DESELECTED">Зняти виділення</string>
+    <string name="STR_NMS_SELECTED">Виділено: %1$s</string>
+    <string name="STR_NMS_CONTACT_SEARCH">Пошук контактів</string>
+    <string name="STR_NMS_SEARCH">Пошук</string>
+    <string name="STR_NMS_CONTACT_SELECT">Знайти контакт</string>
+    <string name="STR_NMS_SELECT_MEMBER_FULL">Виділено забагато контактів</string>
+    <string name="STR_NMS_SELECT_MEMBER_EMPTY">Контакти не виділено</string>
+    <string name="STR_NMS_SELECT_CONTAT_WAIT">Зачекайте...</string>
+    <string name="STR_NMS_SELECT_CONTAT_EMPTY">Немає контактів iSMS</string>
+    <string name="STR_NMS_SELECT_NO_RESULT">Нічого не знайдено</string>
+    <string name="STR_NMS_EMPTY">Немає контактів</string>
+    <!-- Selection Contact end -->
+
+    <!-- Group chat -->
+    <string name="STR_NMS_CREATE_GROUP_TITLE">Створити групу</string>
+    <string name="STR_NMS_GROUP_INFO_TITLE">Відомості про групу</string>
+    <string name="STR_NMS_EDIT_GROUP_TITLE">Редагувати групу</string>
+    <string name="STR_NMS_SELECT_ACTION_TITLE">Вибрати дію</string>
+    <string name="STR_NMS_ADD_TO_BOOKMARK">Додати до закладок</string>
+    <string name="STR_NMS_ADD_TO_CONTACTS">Додати %1$s до контактів?</string>
+    <string name="STR_NMS_GROUP_NAME">ІМ’Я ГРУПИ</string>
+    <string name="STR_NMS_GROUP_INFO">ВІДОМОСТІ ПРО ГРУПУ</string>
+    <string name="STR_NMS_GROUP_MEMBERS">ЧЛЕНИ ГРУПИ</string>
+    <string name="STR_NMS_GROUP_NAME_HIT">Ім’я групи</string>
+    <string name="STR_NMS_GROUP_NAME_EMPTY">Ім’я групи пусте</string>
+    <string name="STR_NMS_CONFIRM_LEAVE_TITLE">Вийти з цієї групи</string>
+    <string name="STR_NMS_LEAVE_GROUP_CONTENT">Справді вийти з цієї групи?</string>
+    <string name="STR_NMS_LEAVE_GROUP_SUCCESS">Ви вийшли з цієї групи</string>
+    <string name="STR_NMS_LEAVE_GROUP_FAILED">Не вдалося вийти з цієї групи</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_SUCCESS">І’мя групи оновлено</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_SUCCESS">Нових членів групи додано</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_FAILED">Не вдалося додати члена групи</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_FAILED">Не вдалося оновити ім’я групи</string>
+    <string name="STR_NMS_CREATE_GROUP_NAME_FAILED">Не вдалося створити груповий чат</string>
+    <string name="STR_NMS_DELETE_GROUP_MEMBER_FAILED">Не вдалося видалити члена групи</string>
+    <string name="STR_NMS_UPDATE_GROUP_SUCCESS">Відомості про групу оновлено</string>
+    <string name="STR_NMS_UPDATE_GROUP_FAILED">Не вдалося оновити відомості про групу</string>
+    <string name="STR_NMS_GROUP_CHAT_BACK">Скасувати цю операцію?</string>
+    <string name="STR_NMS_GROUP_MEMEBER_YOU">ВИ</string>
+    <string name="STR_NMS_GROUP_INVITE_MORE">Запросити</string>
+    <string name="STR_NMS_LEAVE_GROUP">Вийти з цієї групи</string>
+    <string name="STR_NMS_CHAT">Чат</string>
+    <string name="STR_NMS_CONFIRM_REMOVE_TITLE">Видалити зі списку членів групи</string>
+    <string name="STR_NMS_REMOVE_OK">Видалити</string>
+    <string name="STR_NMS_REMOVE_CANCEL">Скасувати</string>
+    <string name="STR_NMS_REMOVE_CONTENT">Видалити з цієї групи?</string>
+    <string name="STR_NMS_VIEW_ALL_MEDIA">Переглянути всі носії</string>
+    <string name="STR_NMS_VIEW_ALL_LOCATIONS">Переглянути всі розташування</string>
+    <string name="STR_NMS_CHAT_SETTINGS">Настройки чату</string>
+    <string name="STR_NMS_VIEW_GROUP_FAILED">Ви вийшли з цього групового чату.</string>
+    <string name="STR_NMS_VIEW_HISTORY">Переглянути журнал групи</string>
+    <string name="STR_NMS_ISMS_ENABLE_TITLE">Активувати iSMS</string>
+    <string name="STR_NMS_ISMS_ENABLE_CONTENT">Цю функцію підтримує тільки служба iSMS. Увімкнути ваш обліковий запис iSMS зараз?</string>
+    <string name="STR_NMS_ENABLE">Увімкнути</string>
+    <string name="STR_NMS_LATER">Вимкнути</string>
+    <string name="STR_NMS_SWITCH_TITLE">Перемикання SIM-карток</string>
+    <string name="STR_NMS_SWITCH_MESSAGE">Груповий чат доступний, тільки якщо ввімкнено службу iSMS, але поточну SIM-картку не активовано. Перемикнутися на активовану SIM-картку?</string>
+    <string name="STR_NMS_SWITCH_EDIT_MESSAGE">Поточну SIM-картку не пов’язано з цією групою. Перемикнутися на іншу SIM-картку?</string>
+    <string name="STR_NMS_LEAVE_GROUP_NOTICE">Ви вийшли з цієї групи й не можете приєднатися до чату цієї групи без запрошення</string>
+    <string name="STR_NMS_LOSE_SIM_NOTICE">Основну SIM-картку видалено. Спілкуватися в чаті цієї групи можна тільки за допомогою основної SIM-картки</string>
+    <string name="STR_NMS_SWITCH">Перемикнути</string>
+
+    <!-- Group chat end -->
+
+
+    <!-- chat details screen long press item start -->
+    <string name="STR_NMS_LONG_PRESS_TITLE">Параметри повідомлень</string>
+    <string name="STR_NMS_SEND_VIA_TEXT">Надіслати через SMS</string>
+    <string name="STR_NMS_TRY_AGAIN">Спробувати знову</string>
+    <string name="STR_NMS_TRY_ALL_AGAIN">Повторити всі спроби</string>
+    <string name="STR_NMS_CONTINUE_TRY">Продовжити спроби</string>
+    <string name="STR_NMS_COPY">Копіювати</string>
+    
+    <string name="STR_NMS_FORWARD">Переслати</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_TITLE">Завантажити</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD">Щоб переслати iSMS, потрібно спочатку завантажити медіа-вміст.</string>
+    <string name="STR_NMS_FORWARD_CONTIUE">Продовжити</string>
+    <string name="STR_NMS_FORWARD_FAILED">Не вдалося переслати.</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_MULTI">Щоб переслати багатьом користувачам, спочатку потрібно завантажити кілька iSMS.</string>
+    <string name="STR_NMS_FORWARD_SOME_FAILED">Не вдалося переслати кілька iSMS.</string>
+    <string name="STR_NMS_FORWARD_ALL_FAILED">Не вдалося завантажити, пересилання багатьом користувачам скасовано</string>
+    
+    <string name="STR_NMS_SEND_VIA_MULTIMEDIA">Надіслати через MMS</string>
+    <string name="STR_NMS_SHARE">Поділитися</string>
+    <string name="STR_NMS_DELETE">Видалити</string>
+    <string name="STR_NMS_FLAG_IMPORTANT">Позначити як важливе</string>
+    <string name="STR_NMS_REMOVE_IMPORTANT">Видалити позначку &quot;Важливе&quot;</string>
+    <string name="STR_NMS_SAVE_IN_SDCARD">Експортувати на SD-картку</string>
+    <string name="STR_NMS_SAVE_FILE">Файл збережено на %1$s</string>
+    <string name="STR_NMS_SHARE_TITLE">Спосіб надсилання</string>
+    <string name="STR_NMS_VIEW_DETAILS">Переглянути відомості</string>
+    <string name="STR_NMS_VIEW_DETAILS_TITLE">Відомості про повідомлення</string>
+    <string name="STR_NMS_SEND_MSG_DETAILS">Тип: IP-повідомлення\nНадіслано: %1$s</string>
+    <!-- chat details screen long press item end -->
+
+
+    <!-- chat details screen delete item start -->
+    <string name="STR_NMS_DELETE_TITLE">Видалити</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_TITLE">Видалити важливі повідомлення</string>
+    <string name="STR_NMS_DELETE_WARNING">Повідомлення видалено.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_WARNING">Справді видалити це важливе повідомлення?</string>
+    <string name="STR_NMS_DELETE_MSG">Виділені повідомлення видалено.</string>
+    <string name="STR_NMS_DELETE_WAITTING">Видалення</string>
+    <string name="STR_NMS_CLEAR_HISTORY_CONTENT">Журнал чату в цій кімнаті буде очищено</string>
+    <string name="STR_NMS_DELETE_IMPORTANT">Додати повідомлення, позначені як важливі</string>
+    <!-- chat details screen delete item end -->
+
+
+    <!-- chat details actionBar option start -->
+    <string name="STR_NMS_MENU_CALL">Виклик</string>
+    <string name="STR_NMS_MENU_GROUPINFO">Відомості про групу</string>
+    <string name="STR_NMS_MENU_INVITE_CHAT">Запросити друзів до чату</string>
+    <string name="STR_NMS_MENU_INVITE_ISMS">Запропонувати друзям використовувати iSMS</string>
+    <string name="STR_NMS_MENU_SELECT_MSG">Вибрати повідомлення</string>
+    <string name="STR_NMS_MENU_MARK_SPAM">Перемістити до списку &quot;Спам&quot;</string>
+    <string name="STR_NMS_MENU_REMOVE_SPAM">Вилучити зі списку &quot;Спам&quot;</string>
+    <string name="STR_NMS_MENU_ADD_SHORTCUT">Додати ярлик</string>
+    <string name="STR_NMS_MENU_VIEW_ALLMEDIA">Переглянути всі носії</string>
+    <string name="STR_NMS_MENU_VIEW_ALLLOCATION">Переглянути всі розташування</string>
+    <string name="STR_NMS_MENU_EDIT_GROUP">Редагувати групу</string>
+    <string name="STR_NMS_MENU_CHAT_SETTING">Настройки чату</string>
+    <string name="STR_NMS_MENU_INSERT_QUICK_TEXT">Вставити швидкий текст</string>
+    <string name="STR_NMS_MENU_CLEAR_HISTORY">Очистити журнал чату</string>
+    <string name="STR_NMS_MENU_LEAVE_GROUP">Вийти з цієї групи</string>
+    <string name="STR_NMS_MENU_DISCARD">Вилучити</string>
+    <string name="STR_NMS_MENU_DELETE">Видалити</string>
+    <string name="STR_NMS_MENU_IMPORTANT">Позначити як важливе</string>
+    <string name="STR_NMS_MENU_FORWARD">Переслати</string>
+    <!-- chat details actionBar option end -->
+
+
+    <!-- chat details share item start -->
+    <string name="STR_NMS_TAKE_PHOTO">Зробити знімок</string>
+    <string name="STR_NMS_RECORD_VIDEO">Записати відео</string>
+    <string name="STR_NMS_DRAW_SKETCH">Намалювати ескіз</string>
+    <string name="STR_NMS_SHARE_CONTACT">Надіслати контакт</string>
+    <string name="STR_NMS_CHOOSE_PHOTO">Вибрати фото</string>
+    <string name="STR_NMS_CHOOSE_VIDEO">Вибрати відео</string>
+    <string name="STR_NMS_RECORD_AUDIO">Записати аудіо</string>
+    <string name="STR_NMS_SHARE_LOCATION">Надіслати карту</string>
+    <string name="STR_NMS_CHOOSE_AUDIO">Вибрати аудіо</string>
+    <string name="STR_NMS_SHARE_CALENDAR">Надіслати календар</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_TITLE">Додати музику</string>
+    <string name="STR_NMS_CHOOSE_RINGTONE_ITEM">Мелодія дзвінка</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_ITEM">Аудіо</string>
+    <string name="STR_NMS_INSERT_SDCARD">Вставте SD-картку!</string>
+    <!-- chat details share item start -->
+
+
+    <!-- record audio start -->
+    <string name="STR_NMS_AUDIO_TIMER_FORMAT" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <string name="STR_NMS_AUDIO_LABLE">Записувач аудіо-нотаток</string>
+    <string name="STR_NMS_RECORD_AUDIO_CONT">Торкніться, щоб записати</string>
+    <string name="STR_NMS_PLAY_AUDIO_CONT">Торкніться, щоб відтворити</string>
+    <string name="STR_NMS_ACTION_SEND">Надіслати</string>
+    <string name="audio_db_artist_name">Ваші записи</string>
+    <string name="audio_db_album_name">Аудіозаписи</string>
+    <string name="STR_NMS_SELECT_AUDIO">Вибрати аудіо</string>
+    <!-- record audio end -->
+
+
+    <!-- chat & group details screen start -->
+
+    <string name="STR_NMS_UNREAD_FORMAT">Непрочитаних повідомлень: %1$d</string>
+    <string name="STR_NMS_NOT_DELIVERED_TITLE">Ще не доставлено</string>
+    <string name="STR_NMS_FAILED_TITLE">Помилка надсилання</string>
+    <string name="STR_NMS_GROUP_SUBTITLE">%1$s, +%2$d</string>
+    <string name="STR_NMS_GROUP_DEAD_SUBTITLE">%1$s, %2$d</string>
+    <string name="STR_NMS_SAVE_AS_DRAFT">Повідомлення збережено як чернетку</string>
+    <string name="STR_NMS_NO_SD_TITLE">Помилка SD-картки</string>
+    <string name="STR_NMS_CANT_SHARE">Немає доступу до SD-картки Усі мультимедійні функції тимчасово не працюють.\n\nПеревірте свою SD-картку та повторіть спробу.</string>
+    <string name="STR_NMS_CANT_SAVE">SD-картку не знайдено. Не вдається зберегти файл</string>
+    <string name="STR_NMS_SDSPACE_NOT_ENOUGH">Недостатньо місця на SD-картці. Не вдається зберегти файл.</string>
+    <string name="STR_NMS_REAEND_ALL">Повторити всі спроби...</string>
+    <string name="STR_NMS_FILE_LIMIT">Завеликий</string>
+    <string name="STR_NMS_LOAD_ALL_MESSAGE">Завантажити всі повідомлення</string>
+    <string name="STR_NMS_DOWNLOAD_FAILED">Не вдалося завантажити</string>
+    <string name="STR_NMS_INPUT_HINT">Додати вміст</string>
+    <string name="STR_NMS_INPUT_HINT_ISMS">Ввести повідомлення iSMS</string>
+    <string name="STR_NMS_CAPTION_HINT">Ввести заголовки</string>
+    <string name="STR_NMS_PROTOCOL_SMS">SMS</string>
+    <string name="STR_NMS_PROTOCOL_MMS">MMS</string>
+    <string name="STR_NMS_PROTOCOL_IP">iSMS</string>
+    <string name="STR_NMS_SWITCH_BOTTON">Перемикнути SIM-картку</string>
+    <string name="STR_NMS_TURN_ON_BOTTON">Увімкнути</string>
+    <string name="STR_NMS_SWITCH_TEXT_FORMAT">Щоб продовжити груповий чат, перемикніться на SIM-картку %1$s.</string>
+    <string name="STR_NMS_ENABLE_TEXT_FORMAT">Щоб продовжити груповий чат, увімкніть службу iSMS на SIM-картці %1$s.</string>
+    <string name="STR_NMS_REPLACE_ATTACH_TITLE">Замінити вкладення</string>
+    <string name="STR_NMS_REPLACE_ATTACH_MSG">Тут є вкладення, замінити його?</string>
+    <string name="STR_NMS_TRUNC_CAPTION">Заголовок скорочено.</string>
+    <string name="STR_NMS_MAX_CHARACTERS_REACHED">Досягнуто граничного розміру повідомлення.</string>
+    <string name="STR_NMS_MAX_EMOTICON_REACHED">Досягнуто граничної кількості емограм</string>
+    <string name="STR_NMS_ENABLE_PROCESS">Обробка...</string>
+    <string name="STR_NMS_ERR_FILE">Неприпустимий файл</string>
+    <string name="STR_NMS_SENDING_TEXT">Надсилання...</string>
+    <!-- chat & group details screen end --> <!-- Error code tips -->
+    <string name="STR_NMS_ERR_GENERAL">Загальна помилка</string>
+    <string name="STR_NMS_ERR_INVALID_ARGUMENT">Неприпустимий аргумент</string>
+    <string name="STR_NMS_ERR_NETWORK_BLOCK">Мережа недоступна</string>
+    <string name="STR_NMS_ERR_PHONE_NOT_ACTIVATED">Не активовано</string>
+    <string name="STR_NMS_ERR_SIM_NOT_ACTIVATED">SIM-картку не активовано</string>
+    <string name="STR_NMS_ERR_INVALID_MSG_DB_ID">ІD БД неприпустимого повідомлення</string>
+    <string name="STR_NMS_ERR_ADD_MSG_DB_FAILED">Не вдалося вставити в БД</string>
+    <string name="STR_NMS_ERR_UPDATE_MSG_DB_FAILED">Не вдалося оновити БД</string>
+    <string name="STR_NMS_ERR_GET_MSG_DB_DATA_FAILED">Не вдалося витягнути повідомлення</string>
+    <string name="STR_NMS_ERR_INVALID_CONTACT_DB_ID">ІD БД неприпустимого контакту</string>
+    <string name="STR_NMS_ERR_ADD_CONTACT_DB_FAILED">Не вдалося вставити в контакт</string>
+    <string name="STR_NMS_ERR_UPDATE_CONTACT_DB_FAILED">Не вдалось оновити БД контакту</string>
+    <string name="STR_NMS_ERR_GET_CONTACT_DB_DATA_FAILED">Не вдалося витягнути контакт за ІD</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_ERROR_FORMAT">Неприпустимий формат IP-повідомлення</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_INVALID_TO">Неприпустимий одержувач</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_WITH_UNKNOWN_USER">Неприпустимий невідомий одержувач</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_NO_MBMBER">Немає учасників групового чату</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_GCHAT_DEAD">Груповий чат не активовано</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_INVALID_SIM_ID">SIM-карткою групового чату не є поточна SIM-картка</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_FOR_SYS_MSG">Надіслати системне повідомлення знову</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_INVALID_STATUS">IP-повідомлення не готове</string>
+    <string name="STR_NMS_ERR_GCHAT_IS_DEAD">Цей груповий чат більше не доступний</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBERS">Неприпустимі члени групи</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBER_WITH_SELF">Не вдалося створити групу. Ви не можете додати себе у групу</string>
+    <string name="STR_NMS_ERR_GCHAT_EXCEED_MAX_MEMBER_COUNT">Досягнуто граничної кількості членів групи</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_NAME">Неприпустиме ім’я групового чату</string>
+    <string name="STR_NMS_ERR_GCHAT_SIM_IS_NOT_ACTIVATED">SIM-картку групового чату не активовано</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_NOT_INBOX_MSG">Не вдалося отримати URL-адресу для завантаження</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_INVALID_URL">Неприпустима URL-адреса для завантаження</string>
+    <string name="STR_NMS_ERR_GET_ATTACH_NAME_INVALID_BODY_FORMAT">Не вдалося отримати ім’я файлу завантаження</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_INVALID_FILE_NAME">Неприпустиме ім’я файлу завантаження</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_EXIST">Файл завантаження не існує</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_INBOX_MSG">Не вдалося встановити файл завантаження</string>
+    <string name="STR_NMS_ERR_SIM_INFO_NOT_FOUND">Відомості про SIM-картку не знайдено</string>
+    <string name="STR_NMS_ERR_SIM_IN_INVALID_STATUS">Неприпустимий стан SIM-картки</string>
+    <string name="STR_NMS_ERR_CMD_PROCESSING">Система зайнята й не може впоратися з командою конфігурації системи</string>
+    <string name="STR_NMS_ERR_CMD_GENERAL">Загальна помилка конфігурації системи</string>
+    <string name="STR_NMS_ERR_CODE_END">Невідомий код помилки</string>
+    <!-- Error code tips -->
+    <string name="STR_NMS_SEND_MMS_QUERY_TITLE">Попередження</string>
+    <string name="STR_NMS_SEND_MMS_QUERY">Одержувач не є користувачем iSMS. Надіслати в MMS?</string>
+    <!-- Service center start -->
+    <string name="STR_NMS_SERVICE_TITLE">Центр обслуговування iSMS</string>
+    <string name="STR_NMS_INTRODUCTION">Завдяки iSMS ви можете миттєво надсилати безкоштовні повідомлення та зберігати журнал чату в одному місці. Натисніть одну кнопку, щоб отримати всі переваги!</string>
+    <string name="STR_NMS_TERMS">Умови</string>
+    <string name="STR_NMS_ACTIVATION_BUTTON">Активація</string>
+    <string name="STR_NMS_LOSE_SDCARD">SD-картку не знайдено</string>
+    <!-- Service center end -->
+
+
+    <!-- conversation empty tips -->
+    <string name="STR_NMS_SPAM_EMPTY">Немає бесід, позначених як спам. \nРозділ СПАМ містить усі бесіди, позначені як спам. Сповіщення буде вимкнено за замовчуванням. Таким чином вони не докучатимуть вам. \n\nЩоб позначити відправника як небажаного, натисніть і утримуйте бесіду, а потім виберіть пункт &quot;Позначити як спам&quot;. Біля бесіди, позначеної як спам, відобразиться піктограма &quot;сповіщення вимкнено&quot;, а саму бесіду буде переміщено в цей розділ.</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_FROM">+86123456789</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_SUBJECT">Приклад небажаного повідомлення.</string>
+    <string name="STR_NMS_GROUPCHAT_EMPTY">Немає повідомлень групового чату. \nРозділ ГРУПОВІ ЧАТИ містить всі бесіди групового чату, які ви створили або до яких приєдналися. Це дає змогу швидко знаходити групові чати й керувати ними. \n\nЩоб створити груповий чат, торкніться кнопки &quot;Створити груповий чат&quot; у нижній частині цього екрана та запросіть своїх друзів до групи.</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_FROM">Ім’я групи</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_SUBJECT">Вашому другу:\nI сподобалася функція групового чату!</string>
+    <string name="STR_NMS_IMPORTANT_EMPTY">Немає важливих повідомлень. \nРозділ ВАЖЛИВІ містить усі повідомлення, позначені як важливі. Це дає змогу швидко знаходити важливі повідомлення. \n\nЩоб позначити повідомлення як важливе, натисніть і утримуйте повідомлення, а потім виберіть пункт &quot;Позначити як важливе&quot; в меню &quot;Параметри&quot;. Біля повідомлення, позначеного як важливе, відображається червоний прапорець, як зображено нижче.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TITLE">Приклад повідомлення, позначеного як важливе. Відображається червоний прапорець.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TIME">10:55</string>
+    <string name="STR_NMS_ALLCHAT_EMPTY">Немає бесід</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_CONTENT">Щоб використовувати цю функцію, спочатку потрібно активувати службу iSMS. Не турбуйтеся, якщо служба вам не сподобається, ви зможете вимкнути її в меню &quot;Настройки&quot;. Спробуйте зараз!</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_TITLE">Активувати iSMS</string>
+    <!-- conversation empty tips -->
+    
+    <string name="STR_NMS_CLEAR_USER_DATA">Дані успішно очищено</string>
+    
+    <!-- get file err start -->
+    <string name="STR_NMS_NO_SUCH_FILE">Цей файл не існує</string>
+    <string name="STR_NMS_OVER_FILE_LIMIT">Розмір файлу перевищує гранично припустимий</string>
+    <string name="STR_NMS_INVALID_FILE_TYPE">Цей тип не підтримується</string>
+    <!-- get file err end -->
+
+    <string name="STR_NMS_DELIVERY_BODY">Повідомлення отримано користувачем %s</string>
+    <string name="STR_NMS_SIM_SELECT_TITLE">Вибрати SIM-картку</string>
+    
+    <string name="STR_NMS_SHORTCUT_SUCCESS">Ярлик %1$s створено.</string>
+    <string name="STR_NMS_SHORTCUT_REFRESHING">Оновлення</string>
+    
+    <string name="STR_NMS_DISABLE_FAILED">Помилка операції, повторіть спробу</string>
+    <string name="STR_NMS_ENABLE_FAILED">Помилка операції, повторіть спробу</string>
+    <string name="STR_NMS_ENABLE_SUCCESS">Службу iSMS увімкнено</string>
+    <string name="STR_NMS_DISABLE_SUCCESS">Службу iSMS вимкнено</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH">Службу iSMS вимкнено через брак простору для зберігання. Звільніть трохи простору та активуйте її вручну.</string>
+
+	<string name="STR_NMS_SD_CARD_FULL">SD-картку заповнено</string>
+    <string name="STR_NMS_SEND_MSG_FAILED">Не вдалося надіслати повідомлення!</string>
+    
+    <string name="STR_NMS_GROUPS_MEM"> Члени %1$s</string>
+    <string name="STR_NMS_ALL_CONTACTS">УСІ</string>
+    <string name="STR_NMS_GROUPS_CONTACTS">УСІ ГРУПИ</string>
+    
+    <string name="STR_NMS_SETTING_COMMENT">iSMS – цікаве спілкування. Це зручно й безкоштовно.дізнатися детальніше</string>
+    <string name="STR_NMS_KNOW_MORE">дізнатися детальніше</string>
+    <string name="STR_NMS_RECEIVED_MSG_DETAILS">Тип: IP-повідомлення\nНадіслано: %1$s\nчас відправки: %2$s\nОтримано: %3$s</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH_ADD">iSMS сервіс тимчасово недоступний у зв\'язку з браком місця для зберігання.</string>
+    <string name="STR_NMS_SERVER_AUTO_ECHO_MSG">Повідомлення отримано. Спасибо!</string>   
+    
+    <string name="imsp_ip_message">Повідомлення iSMS</string>
+    <string name="imsp_invite_chat_frequently"><b>Часто спілкуєтесь із %s?</b>\nЧому б не запросити %s у iSMS, щоб заощаджувати гроші?</string>
+    <string name="imsp_enable_chat_frequently"><b>iSMS користувача %s вимкнено!</b>\nЧому б не ввімкнути iSMS, щоб заощаджувати гроші?</string>
+    <string name="imsp_invite">Запросити</string>
+    <string name="imsp_enable_notice">Справді ввімкнути службу iSMS?</string>
+    <string name="imsp_activate_chat_frequently"><b>Часто спілкуєтесь із друзями?</b>\nЧому б не активувати iSMS, щоб робити це безкоштовно?</string>
+    <string name="imsp_activate_note">Справді активувати iSMS?</string>
+    <string name="imsp_dismiss_content">Справді відхилити примітку?</string>
+    <string name="imsp_divider_online">%s – у мережі</string>
+    <string name="imsp_divider_offline">Востаннє був у %s</string>
+    <string name="imsp_divider_never_online">Без підключення</string>
+    <string name="imsp_failed_title">Не надіслано</string>
+    <string name="imsp_resend_via_sms">Надіслати SMS</string>
+    <string name="imsp_resend_via_mms">Надіслати MMS</string>
+    <string name="imsp_typing_text">Введення</string>
+    <string name="imsp_save_attachment">Зберегти вкладення</string>
+    <string name="imsp_view">Перегляд</string>
+    <string name="imsp_convert_to_mms">Перетворити в MMS.</string>
+    <string name="imsp_convert_to_sms">Перетворити в SMS.</string>
+    <string name="imsp_convert_to_isms">Перетворити в iSMS.</string>
+    <string name="imsp_convert_to_mms_for_service">Служба iSMS недоступна для вибраної SIM-картки. З цієї SIM-картки можна надіслати тільки MMS. Продовжити?</string>
+    <string name="imsp_convert_to_sms_for_service">Служба iSMS недоступна для вибраної SIM-картки. З цієї SIM-картки можна надіслати тільки SMS. Продовжити?</string>
+    <string name="imsp_convert_to_mms_for_recipients">Отримувачі не є користувачами iSMS. Можна надіслати тільки MMS. Продовжити?</string>
+    <string name="imsp_convert_to_sms_for_recipients">Отримувачі не є користувачами iSMS. Можна надіслати тільки SMS. Продовжити?</string>
+    <string name="imsp_sms_convert_to_isms">Служба iSMS доступна для вибраної SIM-картки. Щоб заощадити гроші, радимо перетворити повідомлення на iSMS. Перетворити?</string>
+    <string name="imsp_mms_convert_to_isms">Служба iSMS доступна для вибраної SIM-картки. Щоб заощадити гроші, радимо перетворити повідомлення на iSMS. Перетворити?</string>
+    <string name="imsp_keep_mms">Зберегти MMS</string>
+    <string name="imsp_keep_sms">Зберегти SMS</string>
+    <string name="imsp_resend_discard_message">Якщо надсилається перетворене повідомлення, поточне повідомлення видаляється.</string>
+    <string name="imsp_no_sim_card">Немає SIM!</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">&quot;Немає підключення до Інтернету! Повторіть спробу пізніше.&quot;</string>
+    <string name="imsp_chat_setting_updating">оновлення...</string>
+    <string name="imsp_dialog_clear_title">Очистити</string>
+    <string name="imsp_dialog_clear_description">Журнал чату буде очищено для цієї кімнати</string>
+    <string name="imsp_chat_setting_saving">зберігання...</string>
+    <string name="imsp_chat_setting_sending">надсилання...</string>
+    <string name="imsp_save_chat_history_failed">не збережено</string>
+    <string name="imsp_send_chat_history_failed">Ел. повід. не надіслано</string>
+    <string name="imsp_conversation_list_all">Повідомлення</string>
+    <string name="imsp_conversation_list_important">Важливі</string>
+    <string name="imsp_conversation_list_group_chats">Групові чати</string>
+    <string name="imsp_conversation_list_spam">Спам</string>
+    <string name="imsp_mark_as_spam_tips">Повідомлення, позначені як спам, буле переміщено у список &quot;Спам&quot; і оповіщення вимкнуться.</string>
+    <string name="imsp_typing">&quot;Введення...&quot;</string>
+    <string name="imsp_type_to_compose_text">&quot;Ввести повід. SMS/iSMS&quot;</string>
+    <string name="imsp_no_sdcard">Немає SD-картки</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">Якщо надсилається запрошення, поточне повідомлення видаляється.</string>
+    <string name="imsp_current_sim_enabled">SIM-картку ввімкнено.</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">Виберіть SIM, щоб активувати iSMS.</string>
+    <string name="imsp_activate_message">Цю функцію підтримує тільки служба iSMS. Активувати обл. запис iSMS?</string>
+    <string name="imsp_enable_message">Цю функцію підтримує тільки служба iSMS. Увімкнути обл. запис iSMS?</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">Виберіть SIM, щоб увімкнути iSMS.</string>
+    <string name="imsp_switch_sim_title">Вибір SIM</string>
+    <string name="imsp_switch_sim_message">Поточна SIM-картка не підтримує iSMS. Вибрати іншу SIM?</string>
+    <string name="imsp_switch_sim_successfully">SIM-картку вибрано!</string>
+    <string name="imsp_dailog_multi_forward">Пересилання повідомлень</string>
+    <string name="imsp_dialog_send_result">Звіт про надсилання</string>
+    <string name="imsp_dlg_send_all">Усі: %s</string>
+    <string name="imsp_dlg_send_sucess">Надіслані: %s</string>
+    <string name="imsp_dlg_send_failed">Не надіслані: %s</string>
+    <string name="imsp_multi_forward_sim_info">Отримання відомостей про SIM</string>
+    <string name="imsp_multi_forward_no_sim">Немає відомостей про SIM</string>
+    <string name="imsp_get_sim_failed">Не вдалось отримати відомості про SIM</string>
+    <string name="imsp_sim_status_error">Помилка стану SIM</string>
+    <string name="imsp_forward_norecipients">Немає одержувачів для пересилання повідомлення</string>
+    <string name="imsp_multiforward_no_message">Немає повідомлень для пересилання</string>
+    <string name="imsp_need_input_recipients">Укажіть хоча б одного одержувача</string>
+    <string name="imsp_spam_empty">Немає небажаних бесід. \n&quot;СПАМ&quot; містить усі бесіди, позначені як спам. Сповіщення вимкнено за замовчуванням, щоб ви не відволікалися дарма. \n\nЩоб позначити відправника як небажаного, натисніть та утримуйте бесіду й виберіть &quot;Позначити як спам&quot;. Біля бесіди, позначеної як спам, з’являється піктограма &quot;сповіщення вимк.&quot;, а бесіда переміщується в цей список.</string>
+    <string name="imsp_groupchat_empty">Немає повідомлень групового чату. \n&quot;ГРУПОВІ ЧАТИ&quot; містить усі повідомлення групового чату, які ви створили або на які відповіли. Це дає змогу швидко знаходити свої групові чати й керувати ними. \n\nЩоб створити груповий чат, торкніться &quot;Створити груповий чат&quot; унизу цього екрана й запросіть своїх друзів у групу.</string>
+    <string name="imsp_important_empty">Немає важливих повідомлень. \n&quot;ВАЖЛИВІ&quot; містить усі повідомлення, позначені як важливі. Це дає змогу швидко знаходити важливі повідомлення. \n\nЩоб позначити повідомлення як важливе, торкніться його та виберіть &quot;Позначити як важливе&quot; в меню &quot;Параметри&quot;. Біля повідомлення, позначеного як важливе, з’явиться червоний прапорець.</string>
+    <string name="imsp_allchat_empty">Немає бесід</string>
+    <string name="imsp_attach_slideshow">Показ слайдів</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">Завантаження...</string>
+    <string name="imsp_invite_friends_to_ipmsg">Запросити друзів у iSMS</string>
+    <string name="imsp_multi_forward_tips_content">Щоб пересилати повідомлення багатьом користувачам, спочатку потрібно завантажити кілька iSMS.</string>
+    <string name="imsp_multi_forward_failed_part">Помилка пересилання кількох iSMS.</string>
+
+</resources>

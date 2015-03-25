@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"Actualizaciones del sistema"</string>
+
+
+    <string name="none_package">No hay paquetes de actualización válidos.</string>
+    <string name="new_version_query">Buscando actualización\u2026</string>
+    <string name="menu_stats_refresh">"Actualizar"</string>
+    <string name="network_error">Error de conexión de red.</string>
+    <string name="no_new_version">El sistema está actualizado.</string>
+    <string name="not_support_version">El destino no admite la función Por ondas</string>
+    <string name="query_sd_insufficient_space">Espacio insuficiente para <xliff:g id="path">%s</xliff:g></string>
+    <string name="ota_category_title">OTA</string>
+    <string name="sd_category_title">ACTUALIZACIÓN DE TARJETA SD</string>
+    <string name="ota_preference_summary">Se encontró una actualización del sistema en el servidor</string>
+
+
+    <string name="notes_summary">La actualización del firmware puede mejorar la estabilidad de la máquina y solucionar errores. Actualice a la versión</string>
+    <string name="ask_for_install_ota">¿Desea instalar la actualización del sistema ahora?</string>
+    <string name="warning_install_ota" product="tablet">No podrá utilizar su tableta ni realizar llamadas de emergencia durante la instalación. No quite la batería ni la tarjeta SD, ni apague la tableta.</string>
+    <string name="warning_install_ota" product="default">No podrá utilizar su teléfono ni realizar llamadas de emergencia durante la instalación. No quite la batería ni la tarjeta SD, ni apague el teléfono.</string>
+    <string name="ask_for_install_sd">Se ha encontrado el paquete de actualización del sistema más reciente en su tarjeta SD. ¿Desea instalarlo?</string>
+    <string name="warning_install_sd" product="tablet">No podrá utilizar su tableta ni realizar llamadas de emergencia durante la instalación. No quite la batería ni la tarjeta SD, ni apague la tableta. \nAntes de iniciar la instalación, asegúrese de que el paquete se ha descargado del sitio Web oficial y que no está dañado.</string>
+    <string name="warning_install_sd" product="default">No podrá utilizar su teléfono ni realizar llamadas de emergencia durante la instalación. No quite la batería ni la tarjeta SD, ni apague el teléfono. \nAntes de iniciar la instalación, asegúrese de que el paquete se ha descargado del sitio Web oficial y que no está dañado.</string>
+    <string name="ask_for_download_ota">¿Desea descargar la actualización de optimización del sistema?</string>
+    <string name="warning_download_ota">Es recomendable utilizar una zona con cobertura Wi-Fi gratuita o un plan de datos ilimitado para aplicar esta actualización. Si no sigue esta indicación, se pueden aplicar tarifas por conexión de datos estándar. \nHaga una copia de seguridad de los datos antes de realizar la actualización.</string>
+        
+    <string name="notification_content_title">Actualización del sistema</string>
+    <string name="downloading_title">"Descargando..."</string>   
+    <string name="wifi_only_check">Solo Wi-Fi</string>     
+    
+    
+    
+    
+    
+    <string name="btn_install">"Instalar"</string>
+    <string name="btn_cancel">descartar</string>
+    <string name="btn_download">Descargar e instalar</string>
+    <string name="btn_resume">"Descargar"</string>
+    
+    <string name="warn_data_cost_title">Descargar actualización</string>
+    <string name="warn_data_cost_content">La descarga a través de redes móviles puede implicar tarifas adicionales. ¿Desea continuar?</string>
+    <string name="warn_data_cost_yes">Sí</string>
+    <string name="warn_data_cost_no">No</string>
+
+    <string name="notification_download_complete_title">La actualización del sistema está preparada</string>
+    <string name="notification_download_complete_context">Tocar para instalar la actualización del sistema</string>
+        
+    <string name="sdcard_crash_or_unmount">Error en la tarjeta SD. Compruebe la tarjeta SD e inténtelo de nuevo.</string>
+    <string name="unmount_sdcard">Error al montar la tarjeta SD. Compruébela.</string>
+    <string name="insufficient_space_content">There is no enough storage space! This installation need at least  <xliff:g id="deltasize" example="3.5M">%s</xliff:g>. Check your app manager to release extra space please. </string>
+
+    
+    
+    
+    
+    <string name="install_sd_title">Instalar actualización</string>
+    <string name="install_sd_message">Asegúrese de que el paquete se ha descargado del sitio Web oficial y que dicho paquete no está dañado. De lo contrario, puede causar problemas en el sistema.</string>
+    <string name="install_reminder_now">Instalar ahora</string>
+    <string name="install_reminder_not_now">"Ahora no"</string>
+    
+    
+
+    <string name="notification_content_text_completed">Descarga correcta</string> 
+
+    <string name="unknown_per">"Desconocidos"</string>    
+    <string name="unknown_error">Unknown error</string>
+    <string name="unknown_error_content">Error desconocido. Salga de esta página e inténtelo de nuevo.</string>
+    <string name="insufficient_space_title">Espacio insuficiente</string>
+    <string name="error_sdcard">Información de tarjeta SD</string>
+    <string name="insufficient_space">Espacio insuficiente la tarjeta SD.</string>
+    <string name="package_deleted_error">Las actualizaciones del sistema se detuvieron porque no son válidas.</string>
+    
+    <string name="cancel_download_title">Cancelar descarga</string>
+    <string name="cancel_download_content">Esta operación descartará el archivo descargado.</string>
+
+    
+    <string name="change_network_title">"Descargar"</string>
+    <string name="change_network_content">El NPA actual no admite la descarga. ¿Desea cambiar a otro NPA o desactivar la funcionalidad Wi-Fi?</string>
+    <string name="change_network_wifi_btn">Usar Wi-Fi</string>
+    <string name="change_network_apn_btn">Cambiar NPA</string>
+    <string name="change_network_discard_btn">descartar</string>    
+    <string name="package_error_title">Error de instalación.</string>
+    <string name="package_error_message_invalid">Error de paquete. Busque la actualización y descárguela de nuevo.</string>
+    <string name="package_error_message_insuff" product="tablet">Espacio insuficiente en el dispositivo.</string>
+    <string name="package_error_message_insuff" product="default">Espacio suficiente en el teléfono</string>
+    <string name="package_error_message_crash">No se puede acceder a los datos de usuario.</string>
+    <string name="package_error_message_full">Se necesita paquete completo para cambiar la partición..</string>    
+    <string name="updateSuccess" product="tablet">¡Enhorabuena! El dispositivo se ha actualizado correctamente a la versión  <xliff:g id="version" example="gb.p37">%s</xliff:g>. </string> 
+    <string name="updateSuccess" product="default">¡Enhorabuena! El teléfono se ha actualizado correctamente a la versión  <xliff:g id="version" example="gb.p37">%s</xliff:g>. </string> 
+    <string name="updateFailed">No se pudo actualizar a la versión  <xliff:g id="version" example="gb.p37">%s</xliff:g>. </string>
+    <string name="package_unzip">Descomprimiendo el paquete\u2026</string>
+    <string name="package_unzip_error">Unzip error</string>
+    
+    <string name="installing_message">El teléfono se apagará\u2026</string>
+    <string name="install_sd_info">Es necesario copiar el paquete en el almacenamiento del teléfono para continuar con la actualización.\nEspacio insuficiente en el teléfono.</string>
+    <string name="sdcard_crash_or_unmount_when_install">Las actualizaciones del sistema se detuvieron porque la tarjeta SD no está montada.</string>
+    <string name="sdcard_inserted">¿Desea explorar su tarjeta SD para ver si contiene más paquetes de actualización?</string>
+    
+    <string name="new_version_detected">Actualización del sistema disponible</string>
+    <string name="sdcard_unmount">La tarjeta SD está desmontada</string>
+    <string name="server_version_error">Error del servidor: actualice el código fuente del servidor.</string>
+    <string name="cta_warning">El sistema admite actualización de firmware solamente desde el sitio Web o servidor oficial. Si el usuario utiliza una imagen ROM de terceros y/o cualquier otro método raíz para actualizar el firmware, el teléfono se volverá inestable. Tenga en cuenta que el usuario debe asumir toda la responsabilidad por todos estos comportamientos.</string>
+</resources>

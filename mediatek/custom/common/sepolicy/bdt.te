@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binbdt Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type bdt_exec , exec_type, file_type;
+type bdt ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive bdt;
+init_daemon_domain(bdt)
+
+
+# 20131122 Add Set Property Rule
+allow bdt  property_type:property_service set;

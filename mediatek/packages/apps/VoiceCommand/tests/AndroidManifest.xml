@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mediatek.voicecommand.tests"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <application>
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+    <instrumentation
+        android:name="com.mediatek.voicecommand.tests.VoiceCommandTestRunner"
+        android:label="VoiceCommand tests"
+        android:targetPackage="com.mediatek.voicecommand" >
+    </instrumentation>
+
+</manifest>

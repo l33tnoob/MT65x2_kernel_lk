@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binlinker Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type linker_exec , exec_type, file_type;
+type linker ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive linker;
+init_daemon_domain(linker)
+
+
+# 20131122 Add Set Property Rule
+allow linker  property_type:property_service set;

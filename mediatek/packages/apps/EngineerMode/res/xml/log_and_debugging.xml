@@ -1,0 +1,58 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<Preference android:key="battery_log" android:title="@string/BatteryLog"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.BatteryLog" />
+	</Preference>
+
+	<Preference android:key="debug_utils" android:title="@string/debug_utils"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.mtklogger"
+			android:targetClass="com.mediatek.mtklogger.debugtool.DebugToolboxActivity" />
+	</Preference>
+
+	<Preference android:key="modem_warning" android:title="@string/modem_warning_title"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.modemwarning.ModemWarning" />
+	</Preference>
+
+<!--
+	<Preference android:key="log2server" android:title="@string/log2server"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.log2server.DialogSwitch" />
+	</Preference>
+-->
+	<Preference android:key="mtk_logger" android:title="@string/mtk_logger"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.mtklogger"
+			android:targetClass="com.mediatek.mtklogger.MainActivity" />
+	</Preference>
+
+	<Preference android:key="ext_md_logger" android:title="@string/ext_md_logger"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.extmdlogger"
+			android:targetClass="com.mediatek.extmdlogger.ExtMDLoggerTest" />
+	</Preference>
+
+	<Preference android:key="user2root" android:title="@string/user2root"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.user2root.User2rootActivity" />
+	</Preference>
+	<Preference android:key="modem_debug" android:title="@string/modem_reset_debug"
+		android:persistent="false">
+		<intent android:action="android.intent.action.MAIN"
+			android:targetPackage="com.mediatek.engineermode"
+			android:targetClass="com.mediatek.engineermode.modemdebug.ModemDebug" />
+	</Preference>
+</PreferenceScreen>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+			android:title="@string/bt_timec_settings_title" >
+
+	<PreferenceCategory android:key="bt_timec_connect_group" >
+		<CheckBoxPreference android:key="bt_timec_connect"
+				android:title="@string/bt_timec_settings_connect_title"
+				android:summaryOff="@string/bt_timec_settings_connect_summary"
+				android:summaryOn="@string/bt_timec_settings_disconnect_summary"
+				android:persistent="false" />
+	</PreferenceCategory>
+
+	<PreferenceCategory android:key="bt_timec_settings_group"
+			android:title="@string/bt_timec_settings_group_title" >
+		<CheckBoxPreference android:key="bt_timec_automatic"
+				android:title="@string/bt_timec_settings_automatic_title"
+				android:summary="@string/bt_timec_settings_automatic_summary"
+				android:persistent="false"
+				android:dependency="bt_timec_connect" />
+
+		<Preference android:key="bt_timec_sync"
+				android:title="@string/bt_timec_settings_sync_title"
+				android:summary="@string/bt_timec_settings_sync_summary"
+				android:dependency="bt_timec_connect" />
+
+		<Preference android:key="bt_timec_update_server"
+				android:title="@string/bt_timec_settings_update_server_title"
+				android:summary="@string/bt_timec_settings_update_server_summary"
+				android:dependency="bt_timec_connect" />
+
+		<Preference android:key="bt_timec_dst"
+				android:title="@string/bt_timec_settings_dst_title"
+				android:selectable="false"
+				android:dependency="bt_timec_connect" />
+	</PreferenceCategory>
+
+</PreferenceScreen>

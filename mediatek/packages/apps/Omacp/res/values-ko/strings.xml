@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!--
+        /* * Copyright (C) 2007-2008 Esmertec AG. * Copyright (C)
+        2007-2008 The Android Open Source Project * * Licensed under the
+        Apache License, Version 2.0 (the "License"); * you may not use
+        this file except in compliance with the License. * You may
+        obtain a copy of the License at * *
+        http://www.apache.org/licenses/LICENSE-2.0 * * Unless required
+        by applicable law or agreed to in writing, software *
+        distributed under the License is distributed on an "AS IS"
+        BASIS, * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+        express or implied. * See the License for the specific language
+        governing permissions and * limitations under the License. */
+    -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Used as the title and message type information. -->
+    <string name="configuration_message">전화 저장장치에 공간이 부족합니다. 지금 다운로드할 수 없습니다.</string>
+    <!-- %d unread messages -->
+    <string name="notification_multiple">예비 저장장치에 공간이 부족합니다. 지금 다운로드할 수 없습니다.</string>
+    <!-- Used as part of notification description string. -->
+    <string name="notification_multiple_title">새 메시지</string>
+    <!-- Menu text. Clicking the menu leads to a new UI. -->
+    <string name="view">보기</string>
+    <!-- Button text. Clicking the button will delete messages. -->
+    <string name="delete">삭제</string>
+    <!--
+        Menu text. Clicking the menu leads to a alert dialog showing the
+        detail information to user.
+    -->
+    <string name="view_message_detail">메시지 세부사항 보기</string>
+    <!-- Menu text. Clicking the menu will delete all the messages. -->
+    <string name="delete_all">모두 삭제</string>
+    <!-- Title of a context menu. -->
+    <string name="message_options">메시지 옵션</string>
+    <!-- Title of the main UI when the UI is loading. -->
+    <string name="refreshing">새로 고치는 중\u2026</string>
+    <!-- Button text. Clicking the button will just closing the dialog. -->
+    <string name="no">취소</string>
+    <!-- Title of a alert dialog. -->
+    <string name="message_details_title">메시지 세부사항</string>
+    <!-- An short identifier string, should be as short as possible. -->
+    <string name="installed_indicator">설치됨</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="message_type_label">유형:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="from_label">보낸 사람:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="received_label">수신:\u0020</string>
+    <!-- Dialog message to alert user. -->
+    <string name="confirm_delete_all_messages">모든 메시지가 삭제됩니다.</string>
+    <!-- Dialog message to alert user. -->
+    <string name="confirm_delete_message">메시지가 삭제됩니다.</string>
+    <!-- Button text. Clicking the button will perform installation. -->
+    <string name="full_install_text">전부 설치</string>
+    <!--
+        Button text. Clicking the button will lead to an selection
+        dialog.
+    -->
+    <string name="custom_install_text">사용자 지정 설치</string>
+    <!-- Button text. Clicking the button will perform installation. -->
+    <string name="install_text">설치</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="application_label">애플리케이션:\u0020</string>
+    <!-- Result of installation, should be as short as possible. -->
+    <string name="result_success">성공</string>
+    <!-- Result of installation, should be as short as possible. -->
+    <string name="result_failed">실패</string>
+    <!-- Result of installation, should be as short as possible. -->
+    <string name="unknown">알 수 없음</string>
+    <!-- Application name -->
+    <string name="mms_app_name">MMS</string>
+    <!-- Application name -->
+    <string name="browser_app_name">브라우저</string>
+    <!-- Application name -->
+    <string name="apn_app_name">액세스 지점 이름</string>
+    <!-- Application name -->
+    <string name="email_app_name">이메일</string>
+    <!-- Application name -->
+    <string name="email_smtp_app_name">이메일-SMTP</string>
+    <!-- Application name -->
+    <string name="email_pop3_app_name">이메일-POP3</string>
+    <!-- Application name -->
+    <string name="email_imap4_app_name">이메일-IMAP4</string>
+    <!-- Application name -->
+    <string name="dm_app_name">장치 관리</string>
+    <!-- Application name -->
+    <string name="agps_app_name">A-GPS</string>
+    <!-- Application name -->
+    <string name="rtsp_app_name">실시간 스트리밍 프로토콜</string>
+    <!-- Application name -->
+    <string name="ds_app_name">데이터 동기화</string>
+    <!-- Application name -->
+    <string name="imps_app_name">인스턴트 메시징 및 프레즌스 서비스</string>
+    <!-- Title of an alert dialog. -->
+    <string name="installation_report">설치 보고</string>
+    <!-- Button text. Clicking the button will close the dialog. -->
+    <string name="yes">확인</string>
+    <!-- Progress dialog message to tell user it is now installing. -->
+    <string name="installing_progress_message">설치하는 중…</string>
+    <!-- Error text. -->
+    <string name="install_timeout_error_msg">설치 오류.</string>
+    <!-- Dialog message to alert user. -->
+    <string name="re_install_notify_message">애플리케이션의 현재 설정이 덮어씌여집니다. 계속하시겠습니까?</string>
+    <!-- Title of an alert dialog. -->
+    <string name="re_install_notify_title">확인</string>
+    <!-- Dialog message to indicate user. -->
+    <string name="unlock_pin_dialog_title">PIN을 입력하십시오</string>
+    <!-- Title of a UI. -->
+    <string name="detail_activity_label">설정 세부사항</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="bookmark_label">URL:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="homepage_label">홈 페이지:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mmsc_label">MMSC:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="server_address_label">서버 주소:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="port_number_label">포트:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_outbound_label">아웃바운드:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_inbound_label">인바운드:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_account_label">계정:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_need_sign_label">로그인 필요:\u0020</string>
+    <string name="email_need_sign_yes">예</string>
+    <string name="email_need_sign_no">아니요</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="rtsp_netinfo_label">넷 정보:\u0020</string>
+    <!--
+        Label, should be as short as possible. UDP is the short form of
+        "User Datagram Protocol"
+    -->
+    <string name="rtsp_max_udp_port_label">최대 UDP 포트:</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="rtsp_min_udp_port_label">최소 UDP 포트:</string>
+    <!--
+        Label, should be as short as possible. Short form of "Access
+        Point Name"
+    -->
+    <string name="apn_apn_label">APN:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="apn_mms_proxy_label">MMS 프록시:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="apn_mms_port_label">MMS 포트:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="apn_auth_type_label">인증 유형:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="apn_type_label">APN 유형:\u0020</string>
+    <string name="info_unsupport">지원되지 않음</string>
+    <string name="info_unavaliable">사용할 수 없음</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="bookmark_folder_label">북마크 폴더:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="proxy_label">프록시:\u0020</string>
+    <!--
+        Label, should be as short as possible. Short form of "Network
+        Access Point"
+    -->
+    <string name="nap_label">NAP:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="bookmark_name_label">북마크 이름:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="user_name_label">사용자 이름:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="password_label">암호:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mmsc_name_label">MMSC 이름:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mms_cm_label">작성 모드:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mms_rm_label">재제출 모드:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mms_ms_label">최대 승인 MM 크기:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mms_pc_addr_label">엽서 서비스 주소:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="mms_ma_label">MMS A 인터페이스 지원:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="server_id_label">서버 ID:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="server_name_label">서버 이름:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="server_addr_type_label">서버 주소 유형:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="auth_level_label">보안 레벨:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="auth_type_label">보안 유형:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="auth_data_label">보안 날짜:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="dm_init_label">초기화 필요:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_setting_name_label">설정 이름:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_secure_label">보안:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_from_label">보낸 사람:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="email_rt_address_label">최신 주소:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="rtsp_max_bandwidth_label">최대 대역폭:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="ds_database_name_label">데이터베이스 이름:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="ds_database_url_label">데이터베이스 URI:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="content_type_label">콘텐트 유형:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="ds_cliuri_label">클라이언트 데이터베이스 URI:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="ds_sync_type_label">동기화 유형:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="imps_services_label">서비스:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="imps_cid_prefix_label">클라이언트 ID 접두어:\u0020</string>
+    <!-- Label, should be as short as possible. -->
+    <string name="name_label">이름:\u0020</string>
+    <!-- Dialog message to alert user. -->
+    <string name="detail_invalid_setting_error_msg">잘못된 설정.</string>
+    <!-- Title of dialog. -->
+    <string name="error">오류</string>
+    <string name="app_label">Omacp</string>
+</resources>

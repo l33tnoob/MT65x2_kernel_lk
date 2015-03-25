@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"Aktualizácie systému"</string>
+
+
+    <string name="none_package">Neexistujú žiadne platné aktualizačné balíčky.</string>
+    <string name="new_version_query">Vyhľadávanie aktualizácie\u2026</string>
+    <string name="menu_stats_refresh">"Obnoviť"</string>
+    <string name="network_error">Sieťové pripojenie zlyhalo</string>
+    <string name="server_version_error">Chyba servera: Aktualizujte zdrojový kód servera.</string>    
+    <string name="no_new_version">Váš systém je v súčasnej dobe aktuálny.</string>
+    <string name="not_support_version">Vaše cieľové zariadenie nepodporuje bezdrôtové pripojenie.</string>
+    <string name="query_sd_insufficient_space">Nedostatok miesta pre <xliff:g id="path">%s</xliff:g></string>
+    <string name="ota_category_title">OTA (Bezdrôtové)</string>
+    <string name="sd_category_title">AKTUALIZOVAŤ KARTU SD</string>
+    <string name="ota_preference_summary">Na serveri sa našla aktualizácia systému</string>
+
+
+    <string name="notes_summary">Aktualizácia firmvéru môže zvýšiť stabilitu zariadenia a opravu chýb.</string>
+    <string name="ask_for_install_ota">Chcete teraz nainštalovať aktualizáciu systému?</string>
+    <string name="warning_install_ota" product="tablet">Počas inštalácie nebudete môcť používať svoj tablet alebo vykonávať tiesňové volania. Z tabletu nevyberajte batériu a kartu SD alebo ho nevypínajte.</string>
+    <string name="warning_install_ota" product="default">Počas inštalácie nebudete môcť používať telefón alebo vykonávať tiesňové volania. Z telefónu nevyberajte batériu a kartu SD alebo ho nevypínajte.</string>
+    <string name="ask_for_install_sd">Na vašej karte SD bol nájdený balíček s najnovšou aktualizáciou systému. Chcete ho nainštalovať?</string>
+    <string name="warning_install_sd" product="tablet">Počas inštalácie nebudete môcť používať svoj tablet alebo vykonávať tiesňové volania. Z tabletu nevyberajte batériu a kartu SD alebo ho nevypínajte. \nPred začatím inštalácie sa uistite, že balík je prevzatý z oficiálnych internetových stránok, a nie je poškodený.</string>
+    <string name="warning_install_sd" product="default">Počas inštalácie nebudete môcť používať telefón alebo vykonávať tiesňové volania. Z telefónu nevyberajte batériu a kartu SD alebo ho nevypínajte. \nPred začatím inštalácie sa uistite, že balík je prevzatý z oficiálnych internetových stránok, a nie je poškodený.</string>
+    <string name="ask_for_download_ota">Chcete prevziať aktualizáciu optimalizácie systému?</string>
+    <string name="warning_download_ota">Chceli by sme vám odporučiť, aby ste na inštaláciu tejto aktualizácie používali bezplatný aktívny bod Wi-Fi alebo neobmedzený dátový tarif. Ak nemožno použiť štandardné poplatky za dátové pripojenie. \nPred prvou aktualizáciou si najskôr zálohujte svoje údaje.</string>
+        
+    <string name="notification_content_title">Aktualizácia systému</string>
+    <string name="downloading_title">"Preberanie\u2026"</string>   
+    <string name="wifi_only_check">"Iba Wi-Fi"</string>     
+    
+    
+    
+    
+    
+    <string name="btn_install">"Inštalovať"</string>
+    <string name="btn_cancel">Zrušiť</string>
+    <string name="btn_download">Prevziať na nainštalovať</string>
+    <string name="btn_resume">"Preberanie"</string>
+    
+    <string name="warn_data_cost_title">Prevziať aktualizáciu</string>
+    <string name="warn_data_cost_content">Pri preberaní prostredníctvom mobilnej siete môžu vzniknúť ďalšie poplatky. Chcete pokračovať?</string>
+    <string name="warn_data_cost_yes">"Áno"</string>
+    <string name="warn_data_cost_no">"Nie"</string>
+
+    <string name="notification_download_complete_title">Aktualizácia systému je pripravená</string>
+    <string name="notification_download_complete_context">Ak chcete nainštalovať aktualizácie systému, klepnite na toto tlačidlo.</string>
+        
+    <string name="sdcard_crash_or_unmount">Chyba karty SD. Skontrolujte kartu SD a skúste znova.</string>
+    <string name="unmount_sdcard">Pri vkladaní karty SD došlo k chybe. Skontrolujte ju.</string>
+    <string name="insufficient_space_content">Pre inštaláciu je potrebných aspoň <xliff:g id="deltasize" example="3.5M">%s</xliff:g> bajtov v pamäti. Ak chcete pokračovať, uvoľnite miesto v pamäti.</string>
+
+    
+    
+    
+    
+    <string name="install_sd_title">Inštalovať aktualizáciu</string>
+    <string name="install_sd_message">Uistite sa, že balík je prevzatý z oficiálnych internetových stránok a že nie je poškodený. V opačnom prípade môže spôsobiť systémové problémy.</string>
+    <string name="install_reminder_now">Inštalovať teraz</string>
+    <string name="install_reminder_not_now">"Teraz nie"</string>
+    
+    
+
+    <string name="notification_content_text_completed">Preberanie bolo úspešné</string> 
+
+    <string name="unknown_per">"neznáme"</string>    
+    <string name="unknown_error">Neznáma chyba</string>
+    <string name="unknown_error_content">Došlo k neznámej chybe. Zatvorte túto stránku a skúste znova.</string>
+    <string name="insufficient_space_title">Nedostatok miesta</string>
+    <string name="error_sdcard">Informácie o karte SD</string>
+    <string name="insufficient_space">Na karte SD je málo voľného miesta </string>
+    <string name="package_deleted_error">Aktualizácia systému sa zastavila kvôli neplatnosti vyššej verzie.</string>
+    
+    <string name="cancel_download_title">Zrušiť preberanie</string>
+    <string name="cancel_download_content">Touto operáciou sa odstráni prevzatý súbor.</string>
+
+    
+    <string name="change_network_title">"Preberanie"</string>
+    <string name="change_network_content">Aktuálny APN nepodporuje preberanie. Chcete zmeniť na iný APN alebo zapnúť Wi-Fi?</string>
+    <string name="change_network_wifi_btn">Použiť Wi-Fi</string>
+    <string name="change_network_apn_btn">Zmeniť APN</string>
+    <string name="change_network_discard_btn">Zrušiť</string>    
+    <string name="package_error_title">Inštalácia zlyhala</string>
+    <string name="package_error_message_invalid">Chyba balíka. Skontrolujte vyššiu verziu a znovu prevezmite.</string>
+    <string name="package_error_message_insuff" product="tablet">V pamäti zariadenia je nedostatok miesta.</string>
+    <string name="package_error_message_insuff" product="default">V pamäti telefónu je nedostatok miesta</string>
+    <string name="package_error_message_crash">Nemožno získať prístup k dátovým segmentom.</string>
+    <string name="package_error_message_full">Pre prípad zmeny segmentovania potrebujete kompletný balíček.</string>    
+    <string name="updateSuccess" product="tablet">Blahoželáme! Vaše zariadenie bolo úspešne aktualizované na verziu <xliff:g id="version" example="gb.p37">%s</xliff:g>.</string> 
+    <string name="updateSuccess" product="default">Blahoželáme! Váš telefón bol úspešne aktualizovaný na verziu <xliff:g id="version" example="gb.p37">%s</xliff:g>.</string> 
+    <string name="updateFailed">Nepodarilo sa aktualizovať na verziu <xliff:g id="version" example="gb.p37">%s</xliff:g>.</string>
+    <string name="package_unzip">Rozbalenie balíka\u2026</string>
+    <string name="package_unzip_error">Pri rozbaľovaní došlo k chybe</string>
+    
+    <string name="installing_message">Váš telefón bude vypnutý\u2026</string>
+    <string name="install_sd_info">Na pokračovanie v aktualizácii je potrebné skopírovať balík do pamäte telefónu. \nV pamäti telefónu je málo miesta.</string>
+    <string name="sdcard_crash_or_unmount_when_install">Aktualizácia systému sa zastavila, pretože je odstránená karta SD.</string>
+    <string name="sdcard_inserted">Chcete prehľadať kartu SD, aby ste našli viac aktualizačných balíkov?</string>
+    
+    <string name="new_version_detected">Aktualizácia systému je k dispozícii</string>
+    <string name="sdcard_unmount">Karta SD je odstránená.</string>
+    <string name="cta_warning">Systém podporuje aktualizáciu firmvéru iba z oficiálnych internetových stránok alebo servera. Ak používateľ používa na aktualizáciu firmvéru obrázok ROM tretej strany alebo akúkoľvek inú základnú metódu, telefón bude nestabilný. Používateľ by mal prevziať celú zodpovednosť za všetky tieto správania.</string>
+</resources>

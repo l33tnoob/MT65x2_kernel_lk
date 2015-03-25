@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="STR_NMS_MAIN">iSMS</string>
+    <string name="STR_NMS_HISSAGE">iSMS</string>
+    <string name="STR_NMS_INVITE_SMS_CONTENT">Здраво, iSMS е алатка за муабети. Бесплатна е и погодна. Проверете на http://isms.hissage.com за детали.</string>
+    <string name="STR_NMS_NO_SDCARD">Нема СД-картичка, iSMS нема да дозволи одредени операции</string>
+    <string name="STR_NMS_MOUNT_SDCARD">СД-картичката може да се користи</string>
+    <string name="STR_NMS_SEND_MMS_FAIL">Пораката не може да се испрати. Ќе се испрати автоматски кога ќе има мрежа.</string>
+    <string name="STR_NMS_RECV_MMS_FAIL">Нема преземање. Обидете се повторно.</string>
+    <string name="STR_NMS_GROUP_CHAT_ME">јас</string>
+    <string name="STR_NMS_GROUP_CHAT_I">Јас</string>
+    <string name="STR_NMS_GROUP_CHAT_YOU">Вие</string>
+    <string name="STR_NMS_GROUP_CREATE_MSG">%1$s го кани %2$s во групен муабет.</string>
+    <string name="STR_NMS_GROUP_ADD_MSG">%1$s влезе во групен муабет.</string>
+    <string name="STR_NMS_GROUP_DELETE_MSG">%1$s го избриша %2$s од групен муабет.</string>
+    <string name="STR_NMS_GROUP_QUITE_MSG">%1$s излезе од групен муабет.</string>
+    <string name="STR_NMS_GROUP_CHAT_PLACE_HOLDER_MSG_BODY">Влеговте во оваа група</string>
+    <string name="STR_NMS_PICTURE">слика</string>
+    <string name="STR_NMS_TAPE">аудио</string>
+    <string name="STR_NMS_VCARD">контакт</string>
+    <string name="STR_NMS_LOCATION">локација</string>
+    <string name="STR_NMS_SKETCH">цртеж</string>
+    <string name="STR_NMS_VIDEO">видео</string>
+    <string name="STR_NMS_CALENDAR">календар</string>
+    <string name="STR_NMS_UNKNOWN">непознато</string>
+    <string name="STR_NMS_READ_MODE_PIC">слика</string>
+    <string name="STR_NMS_READ_MODE_TAPE">аудио-белешка</string>
+    <string name="STR_NMS_READ_MODE_VCARD">контакти</string>
+    <string name="STR_NMS_READ_MODE_LOCATION">локација</string>
+    <string name="STR_NMS_READ_MODE_SKETCH">цртеж</string>
+    <string name="STR_NMS_READ_MODE_VIDEO">видео</string>
+    <string name="STR_NMS_READ_MODE_CALENDAR">календар</string>
+    <string name="STR_NMS_ISMS_ENABLE">(Овозможи iSMS)</string>
+    <string name="STR_NMS_READ_MODE_UNKNOWN">непозната датотека</string>
+    <string name="STR_NMS_ALL_MSG">Сите пораки</string>
+    <string name="STR_NMS_SAVED">Зачувано</string>
+    <string name="STR_NMS_BLOCKMSG">Блокирано</string>
+    <string name="STR_NMS_SMS_TYPE">СМС</string>
+    <string name="STR_NMS_VERSION_ID">v5.2.13.570</string>
+    <string name="STR_NMS_NO_SIM">Нема СИМ-картичка</string>
+    <string name="STR_NMS_ILLEGAL_ADDRESS">Погрешен број</string>
+    <string name="STR_NMS_REMIND_USER_SET_NAME">Ажурирајте го профилот</string>
+    <string name="STR_NMS_OK">Добро</string>
+    <string name="STR_NMS_BACK">Назад</string>
+    <string name="STR_NMS_CANCEL">Откажи</string>
+    <string name="STR_NMS_NETWORK_UNAVL">Проверете дали има работна податочна врска како 3G, GPRS или Wi-Fi</string>
+    <string name="STR_NMS_TODAY">Денес</string>
+    <string name="STR_NMS_YESTERDAY">Вчера</string>
+    <string name="STR_NMS_NOW">Сега</string>
+    <string name="STR_NMS_NO_SIM_CARD">Нема СИМ-картичка, мора да ставите СИМ-картичка.</string>
+    <string name="STR_NMS_NO_CONNECTION">Нема мрежа или е вклучен режимот за летови, проверете.</string>
+    <string name="STR_NMS_ATTACH_SHARE">%1$s сподели %2$s</string>
+    <string name="STR_NMS_WAIT">Почекајте…</string>
+    <string name="STR_NMS_TIPTITLE">Совет</string>
+
+    <string name="STR_NMS_OPEN">Отвори</string>
+    <string name="STR_NMS_PLAY">Пушти</string>
+    
+    
+
+    <string name="STR_NMS_VCARD_NAME">%1$s контакти</string>
+    <string name="STR_NMS_SHARE_VCARD_FAILED">споделувањето контакт не успеа</string>
+
+    <!-- upgrade info -->
+    <string name="STR_NMS_UPGRADE_TICKER">Надградба на верзија</string>
+    <string name="STR_NMS_UPGRADE_ERROR_TITLE">Грешка при надградба</string>
+    <string name="STR_NMS_UPGRADE_ERROR_CONTENT">Грешка при надградба, надградете клиент на iSMS</string>
+    <string name="STR_NMS_INSTALLED_TITLE">Успешна надградба</string>
+    <string name="STR_NMS_INSTALLED_CONTENT">Успешна надградба на телефонот</string>
+    <string name="STR_NMS_PROMPT_DLG_TITLE">Има нова верзија</string>
+    <string name="STR_NMS_PROMPT_DLG_DOWNLOAD">Преземи</string>
+    <string name="STR_NMS_PROMPT_DLG_LATER">Подоцна</string>
+    <string name="STR_NMS_UPGRADING">Се надградува</string>
+    <string name="STR_NMS_UPGRADE_TIME">Последна проверка: %s</string>
+    
+    <!-- ext protocol -->
+    <string name="STR_NMS_OFFLINE_URL">http://ismsi.hissage.com/webservice/nmsmail/notifyOffline.php</string>
+    
+    <!-- Activation start -->
+    <string name="STR_NMS_PRELOAD_IP_MSG_CONTENT">&quot;Добре дојдовте во iSMS.&quot;</string>
+    <string name="STR_NMS_ACTIVAT_TITLE">iSMS ќе испрати една СМС-порака да го провери тел. број. Може да ви се наплати.</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE">Проверете го тел. број</string>
+    <string name="STR_NMS_ACTIVAT_MAIN_TITLE2">Проверете го тел. број</string>
+    <string name="STR_NMS_YOUR_COUNTRY_TITLE">ВАШАТА ДРЖАВА</string>
+    <string name="STR_NMS_YOUR_PHONE_TITLE">ВАШИОТ ТЕЛ. БРОЈ</string>
+    <string name="STR_NMS_VERIFY_FAIL_TITLE">Проверката по СМС не успеа.</string>
+    <string name="STR_NMS_VERIFY_FAIL_CONTENT">Проверете дали точно го внесовте тел. број.</string>
+    <string name="STR_NMS_WORKING_SMS_TIP">Проверете дали имате работен план за СМС.</string>
+    <string name="STR_NMS_VERIFYING">Чекам автоматско откривање на СМС испратена на</string>
+    <string name="STR_NMS_RETRY">Обиди се пак</string>
+    <string name="STR_NMS_EDIT_NUMBER">Уреди број</string>
+    <string name="STR_NMS_UPDATE_PROFILE">Ажурирај профил</string>
+    <string name="STR_NMS_START_ISMS">Вклучи iSMS</string>
+    <string name="STR_NMS_SEND">Испрати</string>
+    <string name="STR_NMS_CONGRATULATIONS_TITLE">Честитки!</string>
+    <string name="STR_NMS_CONGRATULATIONS_CONTENT">Ви благодариме што активиравте iSMS.\n Уживајте во услугата.\nСо среќа iSMS!</string>
+    <string name="STR_NMS_WELCOME_BACK">Добре дојдовте пак.</string>
+    <string name="STR_NMS_SEND_SMS_FAIL">Потврдата не успеа, проверете:\n  1. Тел. број е точен,\n  2. Безбедносниот софтвер е исклучен,\n  3. Други можни причини за блокада при испраќање СМС.\nПроверете и обидете се пак.</string>
+    <string name="STR_NMS_ACTIVE">Активирај iSMS</string>
+    <string name="STR_NMS_WELCOME_ACTIVE">Добре дојдовте во iSMS</string>
+    <string name="STR_NMS_CONNECTING">Поврзувам...</string>
+    <!-- Activation end -->
+
+
+    <!-- Notification start -->
+    <string name="STR_NMS_NEW_MSG_TITLE">Нова iSMS-порака</string>
+    <string name="STR_NMS_NEW_SMG_CONTENT">%d непрочитана порака</string>
+    <!-- Notification End -->
+
+    <string name="STR_NMS_MSG_DUMPER_MSG_SMS">СМС</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_MMS">ММС</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_IP">ИП-порака</string>
+    <string name="STR_NMS_MSG_DUMPER_SEND_MSG">Испратени %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_RECEIVE_MSG">Примени %1$s %2$d:</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TIME">Време: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_TEXT">Текст</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_PIC">Слика</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_SKETCH">Цртеж</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VOICE">Говор</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VIDEO">Видео</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CALENDAR">Календар</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION_IMG">Слика за локацијата</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_VCARD">V-картичка</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_LOCATION">Локација</string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_CAPTION">Објаснување: </string>
+    <string name="STR_NMS_MSG_DUMPER_MSG_URL">Урл: </string>
+    <string name="STR_NMS_MSG_DUMPER_DURATION">Времетраење: </string>
+    <string name="STR_NMS_MSG_DUMPER_COORDINATE">Координирај: </string>
+    <string name="STR_NMS_MSG_DUMPER_ADDRESS">Адреса: </string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_SENDER">Испрати: </string>
+    <string name="STR_NMS_MSG_DUMPER_NORMAL_DETAIL">Детаљ од сесија:</string>
+    <string name="STR_NMS_MSG_DUMPER_NAME">Име: </string>
+    <string name="STR_NMS_MSG_DUMPER_NUMBER">Број: </string>
+    <string name="STR_NMS_MSG_DUMPER_PORTRAIT">Портрет</string>
+    <string name="STR_NMS_MSG_DUMPER_MULTI_SEND_DETAIL">Емитување:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_DETAIL">Групен муабет:</string>
+    <string name="STR_NMS_MSG_DUMPER_GROUP_CHAT_CREATER">Создавач: </string>
+    <string name="STR_NMS_MSG_DUMPER_MEMBERS">Членови: </string>
+    <string name="STR_NMS_MSG_DUMPER_VCARD_NAME">Име: </string>
+    <string name="STR_NMS_MSG_DUMPER_CALENDAR_SUMMARY">Резиме: </string>
+
+    <!-- Chat Settings -->
+    <string name="STR_NMS_CHAT_SETTING_TITLE">Поставки за муабет</string>
+    <string name="STR_NMS_DISPLAY">Приказ</string>
+    <string name="STR_NMS_CHAT_WALLPAPER">Тапет за муабет</string>
+    <string name="STR_NMS_SYS_WALLPAPER">Изберете тапет</string>
+    <string name="STR_NMS_CAMEARPHOTO">Фотографирајте</string>
+    <string name="STR_NMS_SYS_GALLERY">Изберете од Галерија</string>
+    <string name="STR_NMS_DEFAULT_WALLPAPER">Зададено</string>
+    <string name="STR_NMS_NOTIFICATION_CATEGORY">Известување</string>
+    <string name="STR_NMS_NOTIFICATION_TITLE">Известување на iSMS</string>
+    <string name="STR_NMS_NOTIFICATION_CONTENT">Покажи кога ќе стигне известување</string>
+    <string name="STR_NMS_MUTE">Без глас</string>
+    <string name="STR_NMS_MUTE_OFF">Исклучи</string>
+    <string name="STR_NMS_MUTE_1">Без глас 1 час</string>
+    <string name="STR_NMS_MUTE_4">Без глас 4 часа</string>
+    <string name="STR_NMS_MUTE_8">Без глас 8 часа</string>
+    <string name="STR_NMS_RINGTONE_TITLE">Тон за ѕвонење</string>
+    <string name="STR_NMS_RINGTONE_CONTENT">Поставете ѕвонење за нови известувања</string>
+    <string name="STR_NMS_VIBRATE_TITLE">Вибрации</string>
+    <string name="STR_NMS_VIBRATE_CONTENT">Вибрирај кога ќе стигне известување</string>
+    <string name="STR_NMS_ACTIONS">Дејства</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_TITLE">Преземи историја со муабети</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_CONTENT">Зачувај на СД-картичка во zip</string>
+    <string name="STR_NMS_EMAIL_HISTORY_TITLE">Испрати историја по е-пошта</string>
+    <string name="STR_NMS_EMAIL_HISTROY_CONTENT">Испрати историја по е-пошта во zip</string>
+    <string name="STR_NMS_CLEAR_HISTROY">Исчисти историја со муабети</string>
+    <string name="STR_NMS_DOWNLOAD_HISTORY_DLG">Преземам...</string>
+    <string name="STR_NMS_DOWNLOAD_OK">Преземањето историја заврши, зачувај како %s</string>
+    <string name="STR_NMS_DOWNLOAD_ERROR">Грешка при преземање историја.</string>
+    <string name="STR_NMS_DOWNLOAD_EMPTY">Нема што да се преземе.</string>
+    <string name="STR_NMS_CLEARING">Чистам историја, почекајте...</string>
+    <string name="STR_NMS_WAIT_SAVE_WALLPAPER">Зачувувам тапет, почекајте...</string>
+    <string name="STR_NMS_SAVE_WALLPAPER_OK">Тапетот е успешно зачуван.</string>
+    <string name="STR_NMS_CLEARDONE">Чистењето историја заврши.</string>
+    <string name="STR_NMS_SVAE_TITLE">Зачувај на СД-картичка</string>
+    <string name="STR_NMS_SAVE_CONTENT">Зачувај нишка за овој муабет на СД како zip</string>
+    <string name="STR_NMS_EMAIL_TITLE">Сподели преку е-пошта</string>
+    <string name="STR_NMS_EMAIL_CONTENT">Сподели ја оваа нишка за муабет како прилог преку е-пошта во zip</string>
+
+    <!-- Chat Settings End -->
+
+
+    <!-- Profile Settings -->
+    <string name="STR_NMS_PROFILE_TITLE">Профил</string>
+    <string name="STR_NMS_TAP_AVATAR_TIP">Допрете да уредите слика за профил</string>
+    <string name="STR_NMS_DISPLAY_NAME_TIP">ИМЕ ЗА ПРИКАЗ</string>
+    <string name="STR_NMS_ACCOUNT_TIP">СМЕТКА НА ISMS</string>
+    <string name="STR_NMS_NO_APP">Нема апликација за ова дејство.</string>
+    <string name="STR_NMS_NO_NAME">Поставете име</string>
+    <string name="STR_NMS_SAVE_AVATAR_FAILD">Жалам, сликата за профилот не се зачува.</string>
+    <string name="STR_NMS_INPUT_NAME">Име</string>
+    <string name="STR_NMS_TERM_WARN_ACTIVATE">Оваа одлика се поддржува само со услугата iSMS.\n\niSMS е бесплатна услуга за пораки и овозможува да муабетите и споделувате мултимедиуми со пријателите кога и каде сакате преку податочна интернет-врска (Wi-Fi, 2G/3G и сл.).\nПо активирање за првпат, iSMS автоматски ќе испрати СМС за да ја заврши регистрацијата. Ќе се наплати за СМС.\n\n Договор со корисникот\n</string>
+    <string name="STR_NMS_TERM_WARN_WELCOME">iSMS е бесплатна услуга за пораки и овозможува да муабетите и споделувате мултимедиуми со пријателите кога и каде сакате преку податочна интернет-врска (Wi-Fi, 2G/3G и сл.).\nПо активирање за првпат, iSMS автоматски ќе испрати СМС за да ја заврши регистрацијата. Ќе се наплати за СМС.\n\n Договор со корисникот\n</string>
+    <string name="STR_NMS_TERM_KEY">Услови и одредби</string>
+    <string name="STR_NMS_AGREE_AND_CONTINUE">Сложете се и продолжете</string>
+    <string name="STR_NMS_ACTIVE_BNT">Активирај</string>
+    <string name="STR_NMS_SET_PROFILE_OK">Профилот е безбедно поставен</string>
+    <string name="STR_NMS_SET_PROFILE_FAIL">Профилот не се постави</string>
+    <string name="STR_NMS_ILLEGAL_PROFILE_NAME">Неважечко име</string>
+    <string name="STR_NMS_NO_ACTIVITED">Нема активирана или овозможена СМС.</string>
+    <!-- Profile Settings End -->
+
+
+    <!-- Term Activity -->
+    <string name="STR_NMS_REJECT">Отфрли</string>
+    <string name="STR_NMS_AGREE">Прифати</string>
+    <string name="STR_NMS_TERM_TITLE">Услови на услугата</string>
+    <string name="STR_NMS_TERM_CONTENT">Разбирате дека услугата и софтверот во Услугата содржат безбедносни компоненти што дозволуваат заштита на дигиталните материјали, а употребата на овие материјали подлежи на правилата за употреба поставени со AF PushMail и/или давателите што обезбедуваат содржина за услугата. Не смее да ги преиначувате или заобиколувате правилата за употреба во Услугата. Строго се забранети неовластена репродукција, објавување, понатамошна дистрибуција или јавно прикажување на материјалите во Услугата по делови или во целост.</string>
+    <!-- Term Activity End -->
+
+
+    <!-- System Settings -->
+    <string name="STR_NMS_SYS_SETTING_TITLE">iSMS-порака</string>
+    <string name="STR_NMS_SETTINGS_TITLE">ПРОФИЛ</string>
+    <string name="STR_NMS_PREFERENCE_CATE">ПРИВИЛЕГИИ</string>
+    <string name="STR_NMS_SEND_SMS_TITLE">Испрати СМС</string>
+    <string name="STR_NMS_SEND_SMS_CONTENT">Испрати СМС кога нема iSMS. Операторот може да ви наплати. Ова правило не важи за групен муабет</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_TITLE">Автоматско преземање</string>
+    <string name="STR_NMS_AUTO_DOWNLOAD_CONTENT">Преземај автоматски мултимедијални предмети</string>
+    <string name="STR_NMS_CAPTION_TITLE">Објаснувања</string>
+    <string name="STR_NMS_CAPTION_CONTENT">Сподели датотека со објаснувања</string>
+    <string name="STR_NMS_SYSTEM_CATE">СИСТЕМ</string>
+    <string name="STR_NMS_UPDATE_TITLE">Ажурирање софтвер</string>
+    <string name="STR_NMS_UPDATE_CONTENT">Последна проверка: Никогаш</string>
+    <string name="STR_NMS_NETWORK_USAGE_TITLE">Употреба на мрежа</string>
+    <string name="STR_NMS_NETWORK_USAGE_CONTENT">Вкупна употреба на испратени/примени податоци</string>
+    <string name="STR_NMS_NETWORK_DLG_CONTENT">Испратено: %1$.3f K \nПримено: %1$.3f K \nПоследно ресетирање: %3$s</string>
+    <string name="STR_NMS_VERSION_TITLE">Верзија</string>
+    <string name="STR_NMS_NEVER_CLEAR">Никогаш</string>
+    <string name="STR_NMS_RESET">Ресетирај</string>
+    <string name="STR_NMS_SWITCH_ON">ВКЛУЧИ</string>
+    <string name="STR_NMS_SWITCH_OFF">ИСКЛУЧИ</string>
+    <string name="STR_NMS_SYSTEM_SETTING_TITLE">Поставки</string>
+    <string name="STR_NMS_COPYRGIHT">Hesine Technologies, Inc.</string>
+    <string name="STR_NMS_ABOUT">За iSMS</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_TITLE">Статус на читање</string>
+    <string name="STR_NMS_SHOW_READ_STATUS_CONTENT">Покажи статус на читање во список со пораки</string>
+    <string name="STR_NMS_SHOW_REMIND_TITLE">Покажи потсетници</string>
+    <string name="STR_NMS_SHOW_REMIND_CONTENT">Покажи iSMS-потсетници во екран за муабет</string>
+    <string name="STR_NMS_MENU_RESET_SETTING">Обнови зададени поставки</string>
+    <string name="STR_NMS_MENU_FUNCTION_INTRODUCTION">Одлики</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT">Договор со корисникот</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION">Заштитени права</string>
+    <string name="STR_NMS_MENU_LICENSE_AGREEMENT_TITLE">ДОГОВОР СО КОРИСНИКОТ ЗА ЛИЦЕНЦА НА HESINE iSMS</string>
+    <string name="STR_NMS_MENU_FUNCTION">Список со одлики</string>
+    <string name="STR_NMS_MENU_VERSION_INFORMATION_DETAIL">\nHesine Technologies Inc.\nCopyright© 2008-2013\nСите права се задржани.\n</string>
+    <!-- System Settings End -->
+
+
+    <!-- Caption Settings -->
+    <string name="STR_NMS_AUDIO_TITLE">Аудио</string>
+    <string name="STR_NMS_VIDEO_TITLE">Видеа</string>
+    <string name="STR_NMS_PHOTO_TITLE">Слики</string>
+    <!-- Caption Settings End -->
+
+
+    <!-- Map String start -->
+    <string name="STR_NMS_MAP_TITLE">Сподели локација</string>
+    <string name="STR_NMS_MAP_PROMPT">Картата не се прикажува бидејќи не е вклучена услугата за локација. Адресата подолу е проценета според информациите во телефонот. \nПрепорачуваме да ја вклучите услугата за локација за попрецизно одредување локација.</string>
+    <string name="STR_NMS_MAP_NOTE_1">Овозможете Моја локација во системските поставки</string>
+    <string name="STR_NMS_MAP_SHARE">Сподели</string>
+    <string name="STR_NMS_MAP_SETTINGS">Поставки</string>
+    <string name="STR_NMS_MAP_OK">Добро</string>
+    <string name="STR_NMS_MAP_CANCEL">Откажи</string>
+    <string name="STR_NMS_MAP_EDIT">Уреди локација</string>
+    <string name="STR_NMS_MAP_SEARCH_HINT">Барај места во близина</string>
+    <string name="STR_NMS_MAP_WAIT">Почекајте...</string>
+    <string name="STR_NMS_MAP_EDIT_LIMIT">Внесените знаци го достигнаа лимитот</string>
+    <string name="STR_NMS_MAP_ADDR_LEN">Адресата е предолга</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR_LOCATING">Ја лоцирам тековната позиција...</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN_LOCATING">Лоцирам позиција на ПИН...</string>
+    <string name="STR_NMS_MAP_LINEONE_SEARCH_LOCATING">Лоцирам барана позиција...</string>
+    <string name="STR_NMS_MAP_LINETHREE_NEARBY_LOCATING">Барам места во близина...</string>
+    <string name="STR_NMS_MAP_LINEONE_FAILED">Вашата локација ја нема сега</string>
+    <string name="STR_NMS_MAP_LINETWO_FAILED">Проверете дали услугата за локација е вклучена и дали има мрежа</string>
+    <string name="STR_NMS_MAP_LINETHREE_FAILED">Нема места во околина</string>
+    <string name="STR_NMS_MAP_LINEONE_CURR">Сподели тековна локација</string>
+    <string name="STR_NMS_MAP_LINEONE_PIN">Сподели локација на ПИН</string>
+    <string name="STR_NMS_MAP_MY_LOCATION">Моја локација</string>
+    <string name="STR_NMS_MAP_SEARCH">Барај</string>
+    <string name="STR_NMS_MAP_ERROR_1">Нема надморска ширина и должина</string>
+    <string name="STR_NMS_MAP_ERROR_2">Серверите на Google вратија грешка</string>
+    <!-- Map String end -->
+
+
+    <!-- All Media String start -->
+    <string name="STR_NMS_ALL_MEDIA_TITLE">Сите медиуми</string>
+    <string name="STR_NMS_ALL_MEDIA_WAIT">Почекајте...</string>
+    <string name="STR_NMS_ALL_MEDIA_ERROR">Не може да се вчита, обидете се подоцна</string>
+    <string name="STR_NMS_ALL_MEDIA_EMPTY">Празно</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_WEEK">Оваа седмица</string>
+    <string name="STR_NMS_ALL_MEDIA_TIME_THIS_MONTH">Овој месец</string>
+    <string name="STR_NMS_ALL_MEDIA_JAN">јануари</string>
+    <string name="STR_NMS_ALL_MEDIA_FEB">февруари</string>
+    <string name="STR_NMS_ALL_MEDIA_MAR">март</string>
+    <string name="STR_NMS_ALL_MEDIA_APR">април</string>
+    <string name="STR_NMS_ALL_MEDIA_MAY">мај</string>
+    <string name="STR_NMS_ALL_MEDIA_JUN">јуни</string>
+    <string name="STR_NMS_ALL_MEDIA_JUL">јули</string>
+    <string name="STR_NMS_ALL_MEDIA_AUG">август</string>
+    <string name="STR_NMS_ALL_MEDIA_SEPT">септември</string>
+    <string name="STR_NMS_ALL_MEDIA_OCT">октомври</string>
+    <string name="STR_NMS_ALL_MEDIA_NOV">ноември</string>
+    <string name="STR_NMS_ALL_MEDIA_DEC">декември</string>
+    <string name="STR_NMS_ADDCONTACT">Додај контакт</string>
+    <string name="STR_NMS_ADD_PHONE_CONTACT">Да се додаде \&quot;%1$s\&quot; во контакти?</string>
+    <string name="STR_NMS_DELETE_MEDIA">Медиумот ќе се избрише, да продолжам?</string>
+    <string name="STR_NMS_MEDIA_SHARE_MESSAGE">%1$s споделен на %2$s</string>
+
+    <!-- All Media String end -->
+
+
+    <!-- All Locations String start -->
+    <string name="STR_NMS_ALL_LOCATIONS_TITLE">Сите локации</string>
+    <string name="STR_NMS_ALL_LOCATIONS_LOC">Локација</string>
+    <string name="STR_NMS_ALL_LOCATIONS_WAIT">Почекајте...</string>
+    <!-- All Locations String end -->
+
+
+    <!-- Sketch -->
+    <string name="STR_NMS_SKETCH_TITLE">Нацртај цртеж</string>
+    <string name="STR_NMS_REDO">Повтори</string>
+    <string name="STR_NMS_UNDO">Врати</string>
+    <string name="STR_NMS_SKETCH_CUSTOM">Прилагодено</string>
+    <string name="STR_NMS_PEN_SIZE">Големина</string>
+    <string name="STR_NMS_SKETCH_TOOLS_PEN">Молив</string>
+    <string name="STR_NMS_SKETCH_TOOLS_ERASER">Гума</string>
+    <string name="STR_NMS_SKETCH_CUSTOM_COLOR">Прилагодена боја</string>
+    <string name="STR_NMS_CLEAR_SKETCH_TITLE">Исчисти цртеж</string>
+    <string name="STR_NMS_CLEAR_SKETCH_CONTENT">Да се исчисти овој цртеж?</string>
+    <string name="STR_NMS_SIZE_SKETCH_TITLE">Големина</string>
+    <string name="STR_NMS_SIZE_SKETCH_MAX">72</string>
+    <string name="STR_NMS_SIZE_SKETCH_MIN">2</string>
+    <string name="STR_NMS_COLOR_SKETCH_TITLE">Боја</string>
+    <string name="STR_NMS_SKETCH_ERROR">Цртежот не се создаде.</string>
+    <string name="STR_NMS_BACK_TITLE">Потврда</string>
+    <string name="STR_NMS_FINISH_SKETCH_CONTENT">Сакате да го оставите цртањето?</string>
+    <string name="STR_NMS_LEAVE_SKETCH_CONTENT">Сакате да го фрлите овој цртеж?</string>
+    <string name="STR_NMS_NOTREDO">Нема што да се повтори.</string>
+    <string name="STR_NMS_NOTUNDO">Нема што да се врати.</string>
+    <string name="STR_NMS_SKETCH_DELETE">Исчисти</string>
+    <string name="STR_NMS_DISCARD">Отфрли</string>
+
+    <!-- Sketch end -->
+
+
+    <!-- Selection Contact -->
+    <string name="STR_NMS_DONE">Добро</string>
+    <string name="STR_NMS_SELECTALL">Изберете сè</string>
+    <string name="STR_NMS_DESELECTED">Исчистете сè</string>
+    <string name="STR_NMS_SELECTED">%1$s избрани</string>
+    <string name="STR_NMS_CONTACT_SEARCH">Најди контакти</string>
+    <string name="STR_NMS_SEARCH">Барај</string>
+    <string name="STR_NMS_CONTACT_SELECT">Изберете контакт</string>
+    <string name="STR_NMS_SELECT_MEMBER_FULL">Избрани се многу контакти</string>
+    <string name="STR_NMS_SELECT_MEMBER_EMPTY">Нема избрани контакти</string>
+    <string name="STR_NMS_SELECT_CONTAT_WAIT">Почекајте...</string>
+    <string name="STR_NMS_SELECT_CONTAT_EMPTY">Нема iSMS-контакти</string>
+    <string name="STR_NMS_SELECT_NO_RESULT">Ништо не се најде</string>
+    <string name="STR_NMS_EMPTY">Нема контакти</string>
+    <string name="STR_NMS_ALL_CONTACTS">СÈ</string>
+    <string name="STR_NMS_GROUPS_MEM"> %1$s членови</string>
+    <string name="STR_NMS_GROUPS_CONTACTS">СИТЕ ГРУПИ</string>
+    <!-- Selection Contact end -->
+
+    <!-- Group chat -->
+    <string name="STR_NMS_CREATE_GROUP_TITLE">Создај група</string>
+    <string name="STR_NMS_GROUP_INFO_TITLE">Инфо. за група</string>
+    <string name="STR_NMS_EDIT_GROUP_TITLE">Уреди група</string>
+    <string name="STR_NMS_SELECT_ACTION_TITLE">Изберете дејство</string>
+    <string name="STR_NMS_ADD_TO_BOOKMARK">Додај во ознака</string>
+    <string name="STR_NMS_ADD_TO_CONTACTS">Додај %1$s во Контакти</string>
+    <string name="STR_NMS_GROUP_NAME">ИМЕ НА ГРУПА</string>
+    <string name="STR_NMS_GROUP_INFO">ИНФОРМАЦИИ ЗА ГРУПА</string>
+    <string name="STR_NMS_GROUP_MEMBERS">ЧЛЕНОВИ ВО ГРУПА</string>
+    <string name="STR_NMS_GROUP_NAME_HIT">Име на група</string>
+    <string name="STR_NMS_GROUP_NAME_EMPTY">Името на групата е празно</string>
+    <string name="STR_NMS_CONFIRM_LEAVE_TITLE">Излези од оваа група</string>
+    <string name="STR_NMS_LEAVE_GROUP_CONTENT">Да се излезе од оваа група?</string>
+    <string name="STR_NMS_LEAVE_GROUP_SUCCESS">Успешно се излезе од оваа група</string>
+    <string name="STR_NMS_LEAVE_GROUP_FAILED">Неуспешен излез од оваа група</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_SUCCESS">Успешно ажурирање на името на групата</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_SUCCESS">Додадени се нови членови</string>
+    <string name="STR_NMS_ADD_GROUP_MEMBER_FAILED">Не се додаде член во група</string>
+    <string name="STR_NMS_UPDATE_GROUP_NAME_FAILED">Името на група не се ажурираше</string>
+    <string name="STR_NMS_CREATE_GROUP_NAME_FAILED">Не се создаде групен муабет</string>
+    <string name="STR_NMS_DELETE_GROUP_MEMBER_FAILED">Не се отстрани член од група</string>
+    <string name="STR_NMS_UPDATE_GROUP_SUCCESS">Успешно ажурирање информации за група</string>
+    <string name="STR_NMS_UPDATE_GROUP_FAILED">Не се ажурираа информации за група</string>
+    <string name="STR_NMS_GROUP_CHAT_BACK">Да се отфрли ова дејство?</string>
+    <string name="STR_NMS_GROUP_MEMEBER_YOU">ВИЕ</string>
+    <string name="STR_NMS_GROUP_INVITE_MORE">Поканете повеќе</string>
+    <string name="STR_NMS_LEAVE_GROUP">Излези од оваа група</string>
+    <string name="STR_NMS_CHAT">Муабет</string>
+    <string name="STR_NMS_CONFIRM_REMOVE_TITLE">Отстрани од список со членови</string>
+    <string name="STR_NMS_REMOVE_OK">Отстрани</string>
+    <string name="STR_NMS_REMOVE_CANCEL">Откажи</string>
+    <string name="STR_NMS_REMOVE_CONTENT">Да се отстрани од овој список?</string>
+    <string name="STR_NMS_VIEW_ALL_MEDIA">Прегледај ги сите медиуми</string>
+    <string name="STR_NMS_VIEW_ALL_LOCATIONS">Прегледај ги сите локации</string>
+    <string name="STR_NMS_CHAT_SETTINGS">Поставки за муабет</string>
+    <string name="STR_NMS_VIEW_GROUP_FAILED">Излеговте од овој групен муабет.</string>
+    <string name="STR_NMS_VIEW_HISTORY">Прегледај историја за група</string>
+    <string name="STR_NMS_ISMS_ENABLE_TITLE">Овозможи iSMS</string>
+    <string name="STR_NMS_ISMS_ENABLE_CONTENT">Оваа одлика се поддржува само со услуга на iSMS. Да се овозможи сметката за iSMS сега?</string>
+    <string name="STR_NMS_ENABLE">Овозможи</string>
+    <string name="STR_NMS_LATER">Откажи</string>
+    <string name="STR_NMS_SWITCH_TITLE">Префрли на СИМ</string>
+    <string name="STR_NMS_SWITCH_MESSAGE">Групниот муабет се поддржува само со активирана услуга за iSMS, но тековната СИМ не е активирана. Да се префрли на активирана СИМ?</string>
+    <string name="STR_NMS_SWITCH_EDIT_MESSAGE">Тековната СИМ не е поврзана со оваа група. Да се префрли на друга СИМ?</string>
+    <string name="STR_NMS_LEAVE_GROUP_NOTICE">Излеговте од оваа група и не може да се приклучите освен ако не ве поканат пак</string>
+    <string name="STR_NMS_LOSE_SIM_NOTICE">Првичната СИМ за муабети се отстрани. Може да муабетите во оваа група само со првичната СИМ</string>
+    <string name="STR_NMS_SWITCH">Префрли</string>
+
+    <!-- Group chat end -->
+
+
+    <!-- chat details screen long press item start -->
+    <string name="STR_NMS_LONG_PRESS_TITLE">Опции за пораки</string>
+    <string name="STR_NMS_SEND_VIA_TEXT">Испрати преку СМС</string>
+    <string name="STR_NMS_TRY_AGAIN">Обиди се пак</string>
+    <string name="STR_NMS_TRY_ALL_AGAIN">Обиди се со сè пак</string>
+    <string name="STR_NMS_CONTINUE_TRY">Продолжи со обиди</string>
+    <string name="STR_NMS_COPY">Копирај</string>
+    
+    <string name="STR_NMS_FORWARD">Проследи</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_TITLE">Преземи</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD">Прво треба да преземете содржина на медиум, па да проследите iSMS.</string>
+    <string name="STR_NMS_FORWARD_CONTIUE">Продолжи</string>
+    <string name="STR_NMS_FORWARD_FAILED">Не се проследи.</string>
+    <string name="STR_NMS_FORWARD_DOWNLOAD_MULTI">Прво треба да се преземат одредени iSMS, па да се проследат до повеќе лица.</string>
+    <string name="STR_NMS_FORWARD_SOME_FAILED">Одредени iSMS не се проследија.</string>
+    <string name="STR_NMS_FORWARD_ALL_FAILED">Преземањето не успеа, проследувањето до повеќе е откажано</string>
+    
+    <string name="STR_NMS_SEND_VIA_MULTIMEDIA">Испрати преку ММС</string>
+    <string name="STR_NMS_SHARE">Сподели</string>
+    <string name="STR_NMS_DELETE">Избриши</string>
+    <string name="STR_NMS_FLAG_IMPORTANT">Означи како важно</string>
+    <string name="STR_NMS_REMOVE_IMPORTANT">Отстрани знаме за важност</string>
+    <string name="STR_NMS_SAVE_IN_SDCARD">Извези на СД-картичка</string>
+    <string name="STR_NMS_SAVE_FILE">Датотеката се зачува во %1$s</string>
+    <string name="STR_NMS_SHARE_TITLE">Начин на споделување</string>
+    <string name="STR_NMS_VIEW_DETAILS">Прегледај детали</string>
+    <string name="STR_NMS_VIEW_DETAILS_TITLE">Детали за пораката</string>
+    <string name="STR_NMS_SEND_MSG_DETAILS">Вид: ИП-порака\nИспратено: %1$s</string>
+    <!-- chat details screen long press item end -->
+
+
+    <!-- chat details screen delete item start -->
+    <string name="STR_NMS_DELETE_TITLE">Избриши</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_TITLE">Избриши важна порака</string>
+    <string name="STR_NMS_DELETE_WARNING">Пораката ќе се избрише.</string>
+    <string name="STR_NMS_DELETE_IMPORTANT_WARNING">Сигурно сакате да се избрише оваа важна порака?</string>
+    <string name="STR_NMS_DELETE_MSG">Избраните пораки ќе се избришат.</string>
+    <string name="STR_NMS_DELETE_WAITTING">Бришам</string>
+    <string name="STR_NMS_CLEAR_HISTORY_CONTENT">Целата историја со муабетот ќе се исчисти од овој простор за муабет</string>
+    <string name="STR_NMS_DELETE_IMPORTANT">Вклучи пораки означени како важни</string>
+    <!-- chat details screen delete item end -->
+
+
+    <!-- chat details actionBar option start -->
+    <string name="STR_NMS_MENU_CALL">Повикај</string>
+    <string name="STR_NMS_MENU_GROUPINFO">Информации за група</string>
+    <string name="STR_NMS_MENU_INVITE_CHAT">Поканете пријатели на муабет</string>
+    <string name="STR_NMS_MENU_INVITE_ISMS">Поканете пријатели во iSMS</string>
+    <string name="STR_NMS_MENU_SELECT_MSG">Изберете порака</string>
+    <string name="STR_NMS_MENU_MARK_SPAM">Премести во спам</string>
+    <string name="STR_NMS_MENU_REMOVE_SPAM">Отстрани од спам</string>
+    <string name="STR_NMS_MENU_ADD_SHORTCUT">Додај брз пристап</string>
+    <string name="STR_NMS_MENU_VIEW_ALLMEDIA">Прегледај ги сите медиуми</string>
+    <string name="STR_NMS_MENU_VIEW_ALLLOCATION">Прегледај ги сите локации</string>
+    <string name="STR_NMS_MENU_EDIT_GROUP">Уреди група</string>
+    <string name="STR_NMS_MENU_CHAT_SETTING">Поставка за муабет</string>
+    <string name="STR_NMS_MENU_INSERT_QUICK_TEXT">Внесете брз текст</string>
+    <string name="STR_NMS_MENU_CLEAR_HISTORY">Исчисти историја со муабети</string>
+    <string name="STR_NMS_MENU_LEAVE_GROUP">Излези од оваа група</string>
+    <string name="STR_NMS_MENU_DISCARD">Отфрли</string>
+    <string name="STR_NMS_MENU_DELETE">Избриши</string>
+    <string name="STR_NMS_MENU_IMPORTANT">Означи како важно</string>
+    <string name="STR_NMS_MENU_FORWARD">Проследи</string>
+    <!-- chat details actionBar option end -->
+
+
+    <!-- chat details share item start -->
+    <string name="STR_NMS_TAKE_PHOTO">Фотографирај</string>
+    <string name="STR_NMS_RECORD_VIDEO">Сними видео</string>
+    <string name="STR_NMS_DRAW_SKETCH">Нацртај цртеж</string>
+    <string name="STR_NMS_SHARE_CONTACT">Сподели контакт</string>
+    <string name="STR_NMS_CHOOSE_PHOTO">Избери фотографија</string>
+    <string name="STR_NMS_CHOOSE_VIDEO">Избери видео</string>
+    <string name="STR_NMS_RECORD_AUDIO">Сними аудио</string>
+    <string name="STR_NMS_SHARE_LOCATION">Сподели локација</string>
+    <string name="STR_NMS_CHOOSE_AUDIO">Избери аудио</string>
+    <string name="STR_NMS_SHARE_CALENDAR">Сподели календар</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_TITLE">Додај музика</string>
+    <string name="STR_NMS_CHOOSE_RINGTONE_ITEM">Тон за ѕвонење</string>
+    <string name="STR_NMS_CHOOSE_AUDIO_ITEM">Аудио</string>
+    <string name="STR_NMS_INSERT_SDCARD">Вметнете СД-картичка!</string>
+    <!-- chat details share item start -->
+
+
+    <!-- record audio start -->
+    <string name="STR_NMS_AUDIO_TIMER_FORMAT" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <string name="STR_NMS_AUDIO_LABLE">Аудио-снимач</string>
+    <string name="STR_NMS_RECORD_AUDIO_CONT">Допрете за снимање</string>
+    <string name="STR_NMS_PLAY_AUDIO_CONT">Допрете за пуштање</string>
+    <string name="STR_NMS_ACTION_SEND">Испрати</string>
+    <string name="audio_db_title_format"><xliff:g id="format">ггггг-ММ-дд ЧЧ:мм:сс</xliff:g></string>
+    <string name="audio_db_artist_name">Ваши снимки</string>
+    <string name="audio_db_album_name">Аудио-снимки</string>
+    <!-- record audio end -->
+
+
+    <!-- chat & group details screen start -->
+
+    <string name="STR_NMS_UNREAD_FORMAT">%d непрочитани пораки</string>
+    <string name="STR_NMS_NOT_DELIVERED_TITLE">Уште не е испорачано</string>
+    <string name="STR_NMS_FAILED_TITLE">Грешка при праќање</string>
+    <string name="STR_NMS_GROUP_SUBTITLE">%1$s, +%2$d</string>
+    <string name="STR_NMS_GROUP_DEAD_SUBTITLE">%1$s, %2$d</string>
+    <string name="STR_NMS_SAVE_AS_DRAFT">Пораката се зачува како урнек</string>
+    <string name="STR_NMS_NO_SD_TITLE">Грешка на СД</string>
+    <string name="STR_NMS_CANT_SHARE">Не може да се пристапи до СД. Сите одлики поврзани со медиумите привремено не се достапни.\n\nПроверете ја СД и обидете се повторно.</string>
+    <string name="STR_NMS_CANT_SAVE">Нема СД, датотеката не може да за зачува.</string>
+    <string name="STR_NMS_SDSPACE_NOT_ENOUGH">Има СД, но нема место, датотеката не може да за зачува.</string>
+    <string name="STR_NMS_REAEND_ALL">Обиди се со сè пак...</string>
+    <string name="STR_NMS_FILE_LIMIT">Преголемо</string>
+    <string name="STR_NMS_LOAD_ALL_MESSAGE">Вчитај ги сите пораки</string>
+    <string name="STR_NMS_DOWNLOAD_FAILED">Преземањето не успеа</string>
+    <string name="STR_NMS_INPUT_HINT">Содржина на запис</string>
+    <string name="STR_NMS_INPUT_HINT_ISMS">Впишете iSMS-порака</string>
+    <string name="STR_NMS_CAPTION_HINT">Впишете објаснување</string>
+    <string name="STR_NMS_PROTOCOL_SMS">СМС</string>
+    <string name="STR_NMS_PROTOCOL_MMS">ММС</string>
+    <string name="STR_NMS_PROTOCOL_IP">iSMS</string>
+    <string name="STR_NMS_SWITCH_BOTTON">Префрли на СИМ</string>
+    <string name="STR_NMS_TURN_ON_BOTTON">Вклучи</string>
+    <string name="STR_NMS_SWITCH_TEXT_FORMAT">Прво префрлете се на %1$s СИМ и потоа продолжете со муабет.</string>
+    <string name="STR_NMS_ENABLE_TEXT_FORMAT">Вклучете услуга на iSMS на %1$s СИМ прво и потоа продолжете со муабет.</string>
+    <string name="STR_NMS_REPLACE_ATTACH_TITLE">Замена на прилог</string>
+    <string name="STR_NMS_REPLACE_ATTACH_MSG">Веќе има прилог, да се замени?</string>
+    <string name="STR_NMS_TRUNC_CAPTION">Објаснувањето се отсече.</string>
+    <string name="STR_NMS_MAX_CHARACTERS_REACHED">Достигнат е лимитот за големина на порака.</string>
+    <string name="STR_NMS_MAX_EMOTICON_REACHED">Достигнат е лимитот за емотикона</string>
+    <string name="STR_NMS_ENABLE_PROCESS">Обработувам...</string>
+    <string name="STR_NMS_ERR_FILE">Неважечка датотека</string>
+    <string name="STR_NMS_SENDING_TEXT">Испраќам...</string>
+    <!-- chat & group details screen end -->
+    <!-- Error code tips -->
+    <string name="STR_NMS_ERR_GENERAL">Општа грешка</string>
+    <string name="STR_NMS_ERR_INVALID_ARGUMENT">Неважечки аргумент</string>
+    <string name="STR_NMS_ERR_NETWORK_BLOCK">Мрежата не е добра</string>
+    <string name="STR_NMS_ERR_PHONE_NOT_ACTIVATED">Не е активирано</string>
+    <string name="STR_NMS_ERR_SIM_NOT_ACTIVATED">СИМ-картичката не е активна</string>
+    <string name="STR_NMS_ERR_INVALID_MSG_DB_ID">Неважечка порака DB Id</string>
+    <string name="STR_NMS_ERR_ADD_MSG_DB_FAILED">Вметнувањето DB не успеа</string>
+    <string name="STR_NMS_ERR_UPDATE_MSG_DB_FAILED">Ажурирањето DB не успеа</string>
+    <string name="STR_NMS_ERR_GET_MSG_DB_DATA_FAILED">Земањето порака не успеа</string>
+    <string name="STR_NMS_ERR_INVALID_CONTACT_DB_ID">Неважечки контакт DB Id</string>
+    <string name="STR_NMS_ERR_ADD_CONTACT_DB_FAILED">Не може да се додаде на контакт</string>
+    <string name="STR_NMS_ERR_UPDATE_CONTACT_DB_FAILED">Не може да се ажурира контакт на DB</string>
+    <string name="STR_NMS_ERR_GET_CONTACT_DB_DATA_FAILED">Контактот не може да се земе со Id</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_ERROR_FORMAT">Грешен формат на ИП-порака</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_INVALID_TO">Неважечки примач</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_WITH_UNKNOWN_USER">Неважечки, непознат корисник</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_NO_MBMBER">Нема членови во групен муабет</string>
+    <string name="STR_NMS_ERR_GNEW_IP_MSG_GCHAT_DEAD">Групниот муабет не е активиран</string>
+    <string name="STR_NMS_ERR_NEW_IP_MSG_GCHAT_INVALID_SIM_ID">СИМ за групниот муабет не е тековната СИМ-картичка</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_FOR_SYS_MSG">Испрати системска порака пак</string>
+    <string name="STR_NMS_ERR_RESEND_IP_MSG_INVALID_STATUS">ИП-пораката не е готова</string>
+    <string name="STR_NMS_ERR_GCHAT_IS_DEAD">Овој групен муабет повеќе не е таму</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBERS">Грешни членови на група</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_MEMBER_WITH_SELF">Не се создаде група. Членовите нема да ве гледаат вас</string>
+    <string name="STR_NMS_ERR_GCHAT_EXCEED_MAX_MEMBER_COUNT">Бројот на членовите го достигна лимитот</string>
+    <string name="STR_NMS_ERR_GCHAT_INVALID_NAME">Неважечко име за групен муабет</string>
+    <string name="STR_NMS_ERR_GCHAT_SIM_IS_NOT_ACTIVATED">СИМ за групниот муабет не е активирана</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_NOT_INBOX_MSG">Нема УРЛ за преземање</string>
+    <string name="STR_NMS_ERR_GET_DOWNLOAD_URL_INVALID_URL">Грешен УРЛ за преземање</string>
+    <string name="STR_NMS_ERR_GET_ATTACH_NAME_INVALID_BODY_FORMAT">Не се доби името на датотеката за преземање</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_INVALID_FILE_NAME">Грешно име на датотека за преземање</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_EXIST">Датотеката за преземање не постои</string>
+    <string name="STR_NMS_ERR_SET_DOWNLOADED_FILE_NOT_INBOX_MSG">Не може да се постави датотека за преземање</string>
+    <string name="STR_NMS_ERR_SIM_INFO_NOT_FOUND">Нема информации за СИМ</string>
+    <string name="STR_NMS_ERR_SIM_IN_INVALID_STATUS">Неважечка состојба на СИМ</string>
+    <string name="STR_NMS_ERR_CMD_PROCESSING">Системот е зафатен, не може да ја изврши наредбата за системска конфигурација</string>
+    <string name="STR_NMS_ERR_CMD_GENERAL">Општа грешка на системска конфигурација</string>
+    <string name="STR_NMS_ERR_CODE_END">Непознат код за грешка</string>
+    <!-- Error code tips -->
+    <string name="STR_NMS_SEND_MMS_QUERY_TITLE">Предупредување</string>
+    <string name="STR_NMS_SEND_MMS_QUERY">Примачот не е корисник на iSMS, да се испрати ММС?</string>
+    <!-- Service center start -->
+    <string name="STR_NMS_SERVICE_TITLE">Центар за услуги на iSMS</string>
+    <string name="STR_NMS_INTRODUCTION">Со iSMS, може да испраќате бесплатни пораки и да го чувате муабетот на едно место. Сосема ново искуство со еден допир на копчето!</string>
+    <string name="STR_NMS_TERMS">Услови и одредби</string>
+    <string name="STR_NMS_ACTIVATION_BUTTON">Активирање</string>
+    <string name="STR_NMS_LOSE_SDCARD">Нема СД-картичка</string>
+    <!-- Service center end -->
+
+
+    <!-- conversation empty tips -->
+    <string name="STR_NMS_SPAM_EMPTY">Нема разговори во спам. \nСПАМ ги собира сите разговори што се обележани како спам. Известувањето зададено ќе се исклучи. Со тоа се спречува непотребно вознемирување. \n\nМоже да обележите примач како спам ако го држите разговорот и ја изберете иконата Обележи како спам. Кога разговорот е обележан како спам, автоматски ќе се појави икона за исклучено известување и разговорот ќе се смести тука.</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_FROM">+86123456789</string>
+    <string name="STR_NMS_SPAM_EXAMPLE_SUBJECT">Ова е пример за порака во спам.</string>
+    <string name="STR_NMS_GROUPCHAT_EMPTY">Нема порака од групниот муабет. \nГРУПНИ МУАБЕТИ ги собира сите пораки што сте ги направиле и придружиле во муабетот. Така може лесно да ги наоѓате и да управувате со муабетите. \n\nЗа да создадете групен муабет, допрете го копчето Создај група долу на овој екран и поканете пријатели да ѝ се приклучат.</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_FROM">Име на група</string>
+    <string name="STR_NMS_GROUP_EXAMPLE_SUBJECT">Ваш пријател:\nМи се допаѓа одликата на муабетот!</string>
+    <string name="STR_NMS_IMPORTANT_EMPTY">Немате важни пораки. \nВАЖНО ги собира сите пораки што се обележани како важни. Така може лесно да ги наоѓате важните пораки. \n\nМоже да обележите порака како важна ако држите порака и изберете Обележи како важно од менито Опции. Кога пораката е обележана како важна, се гледа икона за црвено знаме како подолу.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TITLE">Ова е пример за порака обележана како важна. Ќе се појави црвено знаме.</string>
+    <string name="STR_NMS_IMPORTANT_EXAMPLE_TIME">10:55</string>
+    <string name="STR_NMS_ALLCHAT_EMPTY">Нема разговори</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_CONTENT">Прво треба да активирате услуга на iSMS и потоа да ја користите одликата. Не грижете се - ако не ви се допаѓа услугата, може да ја исклучите во Поставки. Пробајте сега!</string>
+    <string name="STR_NMS_EMPTY_ACTIVATE_TITLE">Активирај iSMS</string>
+    <!-- conversation empty tips -->
+    
+    <string name="STR_NMS_CLEAR_USER_DATA">Успешно исчистени податоци</string>
+    
+    <!-- get file err start -->
+    <string name="STR_NMS_NO_SUCH_FILE">Нема таква датотека</string>
+    <string name="STR_NMS_OVER_FILE_LIMIT">Големината на датотеката го надмина лимитот</string>
+    <string name="STR_NMS_INVALID_FILE_TYPE">Овој вид не се поддржува</string>
+    <!-- get file err end -->
+
+    <string name="STR_NMS_DELIVERY_BODY">Примената порака е од %s</string>
+    <string name="STR_NMS_SIM_SELECT_TITLE">Изберете СИМ</string>
+    
+    <string name="STR_NMS_SHORTCUT_SUCCESS">Создадовте брз пристап %1$s.</string>
+    <string name="STR_NMS_SHORTCUT_REFRESHING">Освежувам</string>
+    
+    <string name="STR_NMS_DISABLE_FAILED">Операцијата не успеа, обидете се пак</string>
+    <string name="STR_NMS_ENABLE_FAILED">Операцијата не успеа, обидете се пак</string>
+    <string name="STR_NMS_ENABLE_SUCCESS">Успешно ја активиравте услугата на iSMS</string>
+    <string name="STR_NMS_DISABLE_SUCCESS">Успешно ја дезактивиравте услугата на iSMS</string>
+    
+	<string name="STR_NMS_SD_CARD_FULL">СД е полна</string>
+    <string name="STR_NMS_SEND_MSG_FAILED">Пораката не се испрати!</string>
+    <string name="STR_NMS_SELECT_AUDIO">Изберете аудио</string>
+    
+    <string name="STR_NMS_SETTING_COMMENT">iSMS е алатка за муабети. Бесплатна е и погодна.  Дознај повеќе</string>
+    <string name="STR_NMS_KNOW_MORE">Дознај повеќе</string>
+    <string name="STR_NMS_RECEIVED_MSG_DETAILS">Вид: ИП-порака\nОд: %1$s\nИспратено: %2$s\nПримено: %3$s</string>
+    <string name="STR_NMS_SPACE_NOT_ENOUGH_ADD">iSMS Сервисот е привремено недостапен поради недостаток на простор за складирање.</string>
+    <string name="STR_NMS_SERVER_AUTO_ECHO_MSG">Порака. Благодарение!</string>
+
+    <string name="imsp_ip_message">iSMS-порака</string>
+    <string name="imsp_invite_chat_frequently"><b>Често правиш муабет со %s?</b>\nЗошто не ја/го поканиш %s да употребува iSMS, па и двете/двајцата да заштедите пари?</string>
+    <string name="imsp_enable_chat_frequently"><b>Услугата iSMS на %s е деактивирана!</b>\nЗошто не ја активираш услугата iSMS, па и двете/двајцата да заштедите пари?</string>
+    <string name="imsp_invite">Покани ја/го</string>
+    <string name="imsp_enable_notice">Сигурно сакаш да ја активираш услугата iSMS?</string>
+    <string name="imsp_activate_chat_frequently"><b>Често правиш муабет со пријателите?</b>\nЗошто не ја активираш услугата iSMS за да правиш муабет без да плаќаш за SMS?</string>
+    <string name="imsp_activate_note">Сигурно сакаш да ја активираш iSMS?</string>
+    <string name="imsp_dismiss_content">Сигурно сакаш да ја отфрлиш забелешката?</string>
+    <string name="imsp_divider_online">%s е на интернет</string>
+    <string name="imsp_divider_offline">Последен пат кога %s бил/а на интернет</string>
+    <string name="imsp_divider_never_online">Никогаш не бил/а на интернет</string>
+    <string name="imsp_failed_title">Испраќањето е неуспешно</string>
+    <string name="imsp_resend_via_sms">Испрати SMS наместо тоа</string>
+    <string name="imsp_resend_via_mms">Испрати МMS наместо тоа</string>
+    <string name="imsp_typing_text">Пишување</string>
+    <string name="imsp_save_attachment">Зачувај го прилогот</string>
+    <string name="imsp_view">Види</string>
+    <string name="imsp_convert_to_mms">Претвори во MMS.</string>
+    <string name="imsp_convert_to_sms">Претвори во ЅMS.</string>
+    <string name="imsp_convert_to_isms">Претвори во iSMS.</string>
+    <string name="imsp_convert_to_mms_for_service">Услугата iSMS не е достапна кај оваа избрана SIM картичка. Оваа порака може да се испрати само преку MMS кај оваа SIM картичка. Сакаш да продолжиш и покрај тоа?</string>
+    <string name="imsp_convert_to_sms_for_service">Услугата iSMS не е достапна кај оваа избрана SIM картичка. Оваа порака може да се испрати само преку ЅMS кај оваа SIM картичка. Сакаш да продолжиш и покрај тоа?</string>
+    <string name="imsp_convert_to_mms_for_recipients">Примателот не е корисник на iSMS. Оваа порака може да се испрати само преку MMS. Сакаш да продолжиш и покрај тоа?</string>
+    <string name="imsp_convert_to_sms_for_recipients">Примателот не е корисник на iSMS. Оваа порака може да се испрати само преку SMS. Сакаш да продолжиш и покрај тоа?</string>
+    <string name="imsp_sms_convert_to_isms">Услугата iSMS е достапна кај оваа избрана SIM картичка. За да се зачува цената на SMS, се предлага пораката да се промени во iSMS. Направи промена сега?</string>
+    <string name="imsp_mms_convert_to_isms">Услугата iSMS е достапна кај оваа избрана SIM картичка. За да се зачува цената на МMS, се предлага пораката да се промени во iSMS. Направи промена сега?</string>
+    <string name="imsp_keep_mms">Задржи ја MMS</string>
+    <string name="imsp_keep_sms">Задржи ја SMS</string>
+    <string name="imsp_resend_discard_message">За одново да ја пратите пораката, тековната порака што ја составувате ќе биде отфрлена.</string>
+    <string name="imsp_no_sim_card">Нема SIM картичка!</string>
+
+    <!-- 01.20 -->
+    <string name="imsp_nointernet">"Не е пронајдена интернет врска што функционира! Обидете се повторно подоцна".</string>
+    <string name="imsp_chat_setting_updating">ажурира...</string>
+    <string name="imsp_dialog_clear_title">Исчисти</string>
+    <string name="imsp_dialog_clear_description">Целата историја со муабетот ќе се исчисти од овој простор за муабет</string>
+    <string name="imsp_chat_setting_saving">зачувува...</string>
+    <string name="imsp_chat_setting_sending">испраќа...</string>
+    <string name="imsp_save_chat_history_failed">зачувувањето е неупешно</string>
+    <string name="imsp_send_chat_history_failed">Е-пораката не е успешно испратена</string>
+    <string name="imsp_conversation_list_all">Пораки</string>
+    <string name="imsp_conversation_list_important">Важно</string>
+    <string name="imsp_conversation_list_group_chats">Групни</string>
+    <string name="imsp_conversation_list_spam">Спам</string>
+    <string name="imsp_mark_as_spam_tips">Пораките означени како спам ќе се преместат во листата со спам пораки и автоматски ќе се исклучат известувањата за нив.</string>
+    <string name="imsp_typing">„Пишување...“</string>
+    <string name="imsp_type_to_compose_text">„Напишете SMS/iSMS порака“</string>
+    <string name="imsp_no_sdcard">Нема SD картичка</string>
+    <string name="imsp_invite_friends_to_ipmsg_dialog_msg">За да испратите покана, пораките што ги составувате ќе бидат отфрлени.</string>
+    <string name="imsp_current_sim_enabled">Активирана е тековната SIM.</string>
+    <string name="imsp_sim_selected_dialog_title_for_activate">Изберете SIM за да активирате iSMS</string>
+    <string name="imsp_activate_message">Оваа опција се поддржува само со услуга на iSMS. Да се активира вашата сметка за iSMS сега?</string>
+    <string name="imsp_enable_message">Оваа опција се поддржува само со услуга на iSMS. Да се овозможи сметката за iSMS сега?</string>
+    <string name="imsp_sim_selected_dialog_title_for_enable">Изберете SIM за да активирате iSMS</string>
+    <string name="imsp_switch_sim_title">Променете ја SIM</string>
+    <string name="imsp_switch_sim_message">Моменталната SIM не поддржува iSMS. Префрлете се на друга SIM?</string>
+    <string name="imsp_switch_sim_successfully">Промената на SIM е успешна!</string>
+    <string name="imsp_dailog_multi_forward">Препраќање пораки</string>
+    <string name="imsp_dialog_send_result">Испратете резултат</string>
+    <string name="imsp_dlg_send_all">Сите: %s</string>
+    <string name="imsp_dlg_send_sucess">Испратено: %s</string>
+    <string name="imsp_dlg_send_failed">Неуспешно: %s</string>
+    <string name="imsp_multi_forward_sim_info">Добивање информации за SIM</string>
+    <string name="imsp_multi_forward_no_sim">Нема информации за SIM</string>
+    <string name="imsp_get_sim_failed">Добивањето информации за SIM не беше успешно</string>
+    <string name="imsp_sim_status_error">Грешка во статусот на SIM</string>
+    <string name="imsp_forward_norecipients">Нема примател(и) на пораката што се препраќа</string>
+    <string name="imsp_multiforward_no_message">Пораката не може да се препрати</string>
+    <string name="imsp_need_input_recipients">Најпрво изберете најмалку еден примател</string>
+    <string name="imsp_spam_empty">Нема разговори во спам. \nСПАМ ги собира сите разговори што се означени како спам. Известувањето ќе се исклучи според фабричките поставувања. Со тоа се спречува непотребно вознемирување. \n\nМоже да го означите испраќачот како спам одржувајќи разговор и избирајќи ја иконата „Означи како спам“. Кога разговорот е обележан како спам, автоматски ќе се појави икона за исклучено известување и разговорот ќе се смести овде.</string>
+    <string name="imsp_groupchat_empty">Нема порака од групниот муабет. \nГРУПНИ МУАБЕТИ ги собира сите пораки од групните муабети што сте ги создале или на кои сте се приклучиле. Така може лесно да ги наоѓате и да управувате со групните муабети. \n\nЗа да создадете групен муабет, може да го допрете копчето „Создај групен муабет“ што се наоѓа на долниот дел од екранот и да ги поканите пријателите да ѝ се придружат на групата.</string>
+    <string name="imsp_important_empty">Немате важни пораки. \nВАЖНО ги собира сите пораки што се означени со знаменце како важни. Така може лесно да ги наоѓате важните пораки. \n\nМоже да означите со знаменце некоја порака како важна држејќи ја пораката и избирајќи „Означи со знаменце како важно“ од менито „Опции“. Кога пораката е означена како важна, се гледа икона со црвено знаме како подолу.</string>
+    <string name="imsp_allchat_empty">Нема разговори</string>
+    <string name="imsp_attach_slideshow">Приказ на слајдови</string>
+    <!-- 01.27 -->
+    <string name="imsp_download_history_dlg">Презема...</string>
+    <string name="imsp_invite_friends_to_ipmsg">Поканете пријатели во iSMS</string>
+    <string name="imsp_multi_forward_tips_content">Прво треба да се преземат одредени iSMS, па да се препратат до повеќе лица.</string>
+    <string name="imsp_multi_forward_failed_part">Одредени iSMS не се препратија.</string>
+
+</resources>

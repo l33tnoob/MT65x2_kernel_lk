@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binaee Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type aee_exec , exec_type, file_type;
+type aee ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive aee;
+init_daemon_domain(aee)
+
+
+# 20131122 Add Set Property Rule
+allow aee  property_type:property_service set;

@@ -1,0 +1,36 @@
+# ==============================================
+# Policy File of /system/binmuxreport Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type muxreport_exec , exec_type, file_type;
+type muxreport ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive muxreport;
+init_daemon_domain(muxreport)
+
+
+# 20131122 Add Set Property Rule
+allow muxreport  property_type:property_service set;
+
+# 20131213 KKMR1_CQ_01
+allow muxreport ccci_device:chr_file { read write ioctl open };
+allow muxreport device:chr_file { read ioctl open };
+allow muxreport linker_exec:file read;
+allow muxreport property_socket:sock_file write;
+

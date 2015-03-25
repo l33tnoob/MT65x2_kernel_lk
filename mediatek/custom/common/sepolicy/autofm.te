@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/binautofm Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type autofm_exec , exec_type, file_type;
+type autofm ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive autofm;
+init_daemon_domain(autofm)
+
+
+# 20131122 Add Set Property Rule
+allow autofm  property_type:property_service set;

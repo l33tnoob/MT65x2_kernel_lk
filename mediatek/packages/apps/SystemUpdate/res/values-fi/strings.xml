@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">"Järjestelmäpäivitykset"</string>
+
+
+    <string name="none_package">Kelvollisia päivityspaketteja ei ole.</string>
+    <string name="new_version_query">Tarkistetaan päivitystä\u2026</string>
+    <string name="menu_stats_refresh">"Päivitä"</string>
+    <string name="network_error">Verkkoyhteys katkesi</string>
+    <string name="server_version_error">Palvelinvirhe: Päivitä tulostimen lähdekoodi.</string>    
+    <string name="no_new_version">Järjestelmä on ajan tasalla.</string>
+    <string name="not_support_version">Kohteesi ei tue satelliitti-lähetystä.</string>
+    <string name="query_sd_insufficient_space">Tila ei riitä kohteelle <xliff:g id="path">%s</xliff:g></string>
+    <string name="ota_category_title">OTA</string>
+    <string name="sd_category_title">SD-KORTTIPÄIVITYS</string>
+    <string name="ota_preference_summary">Palvelimelta löytyi järjestelmäpäivitys</string>
+
+
+    <string name="notes_summary">Laiteohjelmistopäivitys voi parantaa koneen vakautta ja korjata vikoja.</string>
+    <string name="ask_for_install_ota">Haluatko asentaa järjestelmäpäivityksen nyt?</string>
+    <string name="warning_install_ota" product="tablet">Et voi käyttää tablet-tietokonettasi tai soittaa hätäpuheluja asennuksen aikana. Älä poista akkua ja SD-korttia tai kytke tablet-tietokonetta pois päältä.</string>
+    <string name="warning_install_ota" product="default">Et voi käyttää puhelintasi tai soittaa hätäpuheluja asennuksen aikana. Älä poista akkua ja SD-korttia tai kytke puhelinta pois päältä.</string>
+    <string name="ask_for_install_sd">SD-kortilta löytyi uusin järjestelmäpäivitysen paketti. Haluatko asentaa?</string>
+    <string name="warning_install_sd" product="tablet">Et voi käyttää tablet-tietokonettasi tai soittaa hätäpuheluja asennuksen aikana. Älä poista akkua ja SD-korttia tai kytke tablet-tietokonetta pois päältä. \nVarmista ennen asennuksen aloittamista, että paketti on ladattu viralliselta web-sivustolta, ja ettei se ole vahingoittunut.</string>
+    <string name="warning_install_sd" product="default">Et voi käyttää puhelintasi tai soittaa hätäpuheluja asennuksen aikana. Älä poista akkua ja SD-korttia tai kytke puhelinta pois päältä. \nVarmista ennen asennuksen aloittamista, että paketti on ladattu viralliselta web-sivustolta, ja ettei se ole vahingoittunut.</string>
+    <string name="ask_for_download_ota">Haluatko ladata järjestelmän optimointipäivityksen?</string>
+    <string name="warning_download_ota">Suosittelemme tämän päivityksen ottamista käyttöön ilmaisen Wi-Fi-verkkopisteen tai rajoittaman datasiirtosopimuksen avulla. Jollei sellaisia ole, voidaan soveltaa vakiotiedonsiirtoyhteyden maksuja. \nVarmuuskopioi tietosi ennen päivitystä.</string>
+        
+    <string name="notification_content_title">Järjestelmäpäivitys</string>
+    <string name="downloading_title">"Ladataan\u2026"</string>   
+    <string name="wifi_only_check">"Vain Wi-Fi"</string>     
+    
+    
+    
+    
+    
+    <string name="btn_install">"Asenna"</string>
+    <string name="btn_cancel">Hylkää</string>
+    <string name="btn_download">Lataa ja asenna</string>
+    <string name="btn_resume">"Lataus"</string>
+    
+    <string name="warn_data_cost_title">Lataa päivitys</string>
+    <string name="warn_data_cost_content">Lataaminen matkapuhelinverkolla voi aiheuttaa lisäkustannuksia. Haluatko jatkaa?</string>
+    <string name="warn_data_cost_yes">"Kyllä"</string>
+    <string name="warn_data_cost_no">"Ei"</string>
+
+    <string name="notification_download_complete_title">Järjestelmäpäivitys on valmis</string>
+    <string name="notification_download_complete_context">Asenna järjestelmäpäivitys napauttamalla</string>
+        
+    <string name="sdcard_crash_or_unmount">SD-korttivirhe. Tarkista SD-korttisi ja yritä uudelleen.</string>
+    <string name="unmount_sdcard">Virhe SD-kortin käyttöönotossa. Tarkista se.</string>
+    <string name="insufficient_space_content">Asennus tarvitsee vähintään <xliff:g id="deltasize" example="3.5M">%s</xliff:g> tavua tallennustilaa. Vapauta tilaa jatkaaksesi.</string>
+
+    
+    
+    
+    
+    <string name="install_sd_title">Asenna päivitys</string>
+    <string name="install_sd_message">Varmista, että pakkaus on ladattu viralliselta web-sivustolta, ja ettei paketti ole vahingoittunut. Muuten järjestelmässä voi esiintyä ongelmia.</string>
+    <string name="install_reminder_now">Asenna nyt</string>
+    <string name="install_reminder_not_now">"Ei nyt"</string>
+    
+    
+
+    <string name="notification_content_text_completed">Lataaminen onnistui</string> 
+
+    <string name="unknown_per">"tuntematon"</string>    
+    <string name="unknown_error">Tuntematon virhe</string>
+    <string name="unknown_error_content">Ilmeni tuntematon virhe. Poistu ntältä sivulta ja yritä uudelleen.</string>
+    <string name="insufficient_space_title">Tila ei riitä</string>
+    <string name="error_sdcard">SD-korttitiedot</string>
+    <string name="insufficient_space">Tila ei riitä SD-kortilla.</string>
+    <string name="package_deleted_error">Järjestelmäpäivitys pysähtyi, koska päivitys ei kelvannut.</string>
+    
+    <string name="cancel_download_title">Peru lataaminen</string>
+    <string name="cancel_download_content">Tämä toiminta hylkää ladatun tiedoston.</string>
+
+    
+    <string name="change_network_title">"Lataus"</string>
+    <string name="change_network_content">Nykyinen APN ei tue lataamista. Haluatko vaihtaa toiseen APN:ään tai kytkeä Wi-Fi-yhteyden päälle?</string>
+    <string name="change_network_wifi_btn">Käytä Wi-Fiä</string>
+    <string name="change_network_apn_btn">Vaihda APN</string>
+    <string name="change_network_discard_btn">Hylkää</string>    
+    <string name="package_error_title">Asennus epäonnistui</string>
+    <string name="package_error_message_invalid">Pakettivirhe. Tarkista päivitys ja lataa uudelleen.</string>
+    <string name="package_error_message_insuff" product="tablet">Ei tarpeeksi tilaa laitteen.</string>
+    <string name="package_error_message_insuff" product="default">Ei tarpeeksi tilaa puhelimessa.</string>
+    <string name="package_error_message_crash">Datan osiointia ei voi käyttää.</string>
+    <string name="package_error_message_full">Tarvitaan täysi paketti, koska osiointi muutti kirjainkokoa.</string>    
+    <string name="updateSuccess" product="tablet">Onneksi olkoon! Laitteesi päivitettiin versioon <xliff:g id="version" example="gb.p37">%s</xliff:g>.</string> 
+    <string name="updateSuccess" product="default">Onneksi olkoon! Puhelimesi päivitettiin versioon <xliff:g id="version" example="gb.p37">%s</xliff:g>.</string> 
+    <string name="updateFailed">Päivittäminen versioon <xliff:g id="version" example="gb.p37">%s</xliff:g> epäonnistui.</string>
+    <string name="package_unzip">Pakettia puretaan\u2026</string>
+    <string name="package_unzip_error">Pakkauksen purkuvirhe</string>
+    
+    <string name="installing_message">Puhelimesi sammutetaan\u2026</string>
+    <string name="install_sd_info">Paketti on kopioitava puhelimen tallennustilaan päivityksen jatkamiseksi.\nPuhelimesi tila ei riitä.</string>
+    <string name="sdcard_crash_or_unmount_when_install">Järjestelmäpäivitys pysähtyi, koska SD-kortti on otettu pois käytöstä.</string>
+    <string name="sdcard_inserted">Haluatko skannata SD-korttisi hakeaksesi lisää päivityspaketteja?</string>
+    
+    <string name="new_version_detected">Järjestelmäpäivitys on käytettävissä</string>
+    <string name="sdcard_unmount">SD-kortti on otettu pois käytöstä</string>
+    <string name="cta_warning">Järjestelmä tukee laiteohjelmiston päivitystä vain viralliselta web-sivustolta tai palvelimelta. Jos käyttäjä käyttää laiteohjelmiston päivitykseen 3. osapuolen ROM-kuvaa ja/tai otakin muuta juurimenetelmää, puhelin muuttuu epävakaaksi. Huomaa, että käyttäjällä itsellään on kaikki vastuu kaikista näistä häiriöistä.</string>
+</resources>

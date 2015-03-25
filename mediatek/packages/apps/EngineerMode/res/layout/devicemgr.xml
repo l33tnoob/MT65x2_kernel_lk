@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/device_mgr" >
+
+    <ListPreference
+        android:entries="@array/device_mgr_entries"
+        android:entryValues="@array/device_mgr_values"
+        android:key="sms_auto_reg"
+        android:persistent="true"
+        android:summary="Disabled"
+        android:title="@string/device_mgr_sms_auto_reg" />
+
+    <ListPreference
+        android:entries="@array/device_mgr_dm_conf_switch_entries"
+        android:entryValues="@array/device_mgr_dm_conf_switch_values"
+        android:key="dm_conf_switch"
+        android:persistent="true"
+        android:summary="Test Environment"
+        android:title="@string/device_mgr_dm_conf_switch" />
+    
+</PreferenceScreen>

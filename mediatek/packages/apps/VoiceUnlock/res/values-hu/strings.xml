@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="unlock_set_unlock_mode_voice_weak">Hangkioldás</string>
+    <string name="voice_unlock_setup_intro_header">Hangparancs rögzítése</string>
+    <string name="voice_command_select_title">Parancs kiválasztása</string>
+    <string name="voice_command_launch_app_title">Alkalmazás indítása</string>
+    <string name="reset_command_title">Parancs visszaállítása</string>
+    <string name="reset_command_prompt">Megtörténik az aktuális parancs visszaállítása, ezért nem nyerhető vissza.</string>
+    <string name="reset_command_prompt_last">Az egyetlen hangparancs vissza lesz állítva. A kijelzőzár Elhúzásra módosul.</string>
+    <string name="voice_unlock_options_title">Lehetőségek</string>
+    <string name="voice_unlock_ok_label">"OK"</string>
+    <string name="voice_unlock_cancel_label">"Mégse"</string>
+    <string name="voice_unlock_retry_label">Újra</string>
+    <string name="voice_unlock_record_label">Rögzítés</string>
+    <string name="voice_unlock_continue_label">"Folytatás"</string>
+    <string name="voice_unlock_setup_intro">Mondjon ki egy 2-6 szótagból álló parancsot, majd ismételje meg 3-6 alkalommal.</string>
+    <string name="voice_unlock_command">Kioldó parancs</string>
+    <string name="voice_command1">Ébresztő parancs 1</string>
+    <string name="voice_command2">Ébresztő parancs 2</string>
+    <string name="voice_command3">Ébresztő parancs 3</string>
+    <string name="command_summary"><xliff:g id="app_name">%1$s</xliff:g> kioldása és indítása</string>
+    <string name="voice_command_primary"><xliff:g id="app_name">%1$s</xliff:g> indítása</string>
+    <string name="voice_command_customize">"Személyre szabás"</string>
+    <string name="voice_command_secondary"><xliff:g id="app_name">%1$s</xliff:g> indítása kioldás után</string>
+    <string name="voice_command_record_description_unlock_screen">Kijelző kioldása</string>
+    <string name="voice_command_record_description_command">Kijelző kioldása és <xliff:g id="app_name">%1$s</xliff:g> indítása</string>
+    <string name="voice_service_error_title">A hangkioldás szolgáltatás hibás.</string>
+    <string name="stop_playing_title">Médialejátszás leállítása</string>
+    <string name="stop_playing_message">Rögzítés előtt állítsa le a médialejátszást.</string>
+    <string name="voice_command_record_introdution">Érintse meg a Rögzítés gombot, majd MONDJA KI a hangparancsot.</string>
+    <string name="voice_command_record_prepare">Előkészítés. Kérjük, várjon...</string>
+    <string name="voice_command_record_first_recording">MONDJA KI a parancsot.\n2-6 szótag javasolt.</string>
+    <string name="voice_command_record_non_first_recording">ISMÉTELJE MEG a hangparancsot.</string>
+    <string name="voice_command_record_one_round_ok">MEGVAN.</string>
+    <string name="voice_command_record_one_round_noisy">Túl nagy a zaj a hangja rögzítéséhez. Próbálja újra.</string>
+    <string name="voice_command_record_one_round_weak">Nem hallható tisztán a hangja. Próbálja újra.</string>
+    <string name="voice_command_record_one_round_diff">A korábbiaktól eltérő parancsot adott meg.</string>
+    <string name="voice_command_record_one_round_exist">Majdnem egyezik a meglévő hangparancssal. Próbálkozzon másikkal.</string>
+    <string name="voice_command_record_recording_ok">A hangparancs beállítása sikeresen megtörtént.</string>
+    <string name="voice_unlock_setup_end_all_done">Kész.</string>
+    <string name="voice_unlock_setup_end_prompt">Telefonja kioldásához egyszerűen mondja ki a hangparancsot.</string>
+    <string name="pass_word_file_missing">A hangparancs nem játszható le.</string>
+    <string name="time_out_title">Időtúllépés</string>
+    <string name="time_out_message">Nincs hangbemenet 5 másodperce. Próbálja újra.</string>
+    <string name="during_call_title">A rögzítés nem érhető el</string>
+    <string name="during_call_message">A "Hangparancs rögzítése" hívás közben nem érhető el.</string>
+</resources>

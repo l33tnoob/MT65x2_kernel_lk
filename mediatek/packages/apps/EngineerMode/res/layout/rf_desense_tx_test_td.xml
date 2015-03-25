@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true" >
+
+        <TableLayout
+	        android:id="@+id/TableLayout01"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:stretchColumns="1"
+            android:padding="20dp" >
+
+            <!-- Band -->
+	        <TableRow
+	            android:id="@+id/TableRow01"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+	            <TextView 
+	        		android:id="@+id/band" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+					android:text="@string/rf_desense_band" />
+		        <Spinner android:id="@+id/band_spinner"
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+                    android:text="@string/rf_desense_band"
+		            android:drawSelectorOnTop="true" />
+	        </TableRow>
+
+            <!-- Channel -->
+            <TableRow
+                android:id="@+id/TableRow03"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical" >
+                <TextView 
+                    android:id="@+id/channel" 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/rf_desense_channel" />
+                <EditText
+                    android:id="@+id/channel_editor" 
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:singleLine="true"
+                    android:maxLength="5"
+					android:inputType="number">
+                </EditText>
+            </TableRow>
+
+            <!-- Power -->
+            <TableRow
+                android:id="@+id/TableRow04"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical" >
+                <TextView 
+                    android:id="@+id/power" 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/rf_desense_power" />
+                <EditText
+                    android:id="@+id/power_editor" 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:maxLength="3"
+                    android:inputType="numberSigned">
+                </EditText>
+                <TextView 
+                    android:id="@+id/power" 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="@string/rf_desense_dbm" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:orientation="horizontal"
+		android:gravity="center" >
+		<Button 
+			android:id="@+id/button_start" 
+			android:layout_width="0dp" 
+	        android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/rf_desense_button_start" />
+		<Button
+			android:id="@+id/button_pause" 
+			android:layout_width="0dp" 
+	        android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/rf_desense_button_pause" />
+        <Button
+            android:id="@+id/button_stop" 
+            android:layout_width="0dp" 
+	        android:layout_height="wrap_content"
+			android:layout_weight="1"
+            android:text="@string/rf_desense_button_stop" />
+    </LinearLayout> 
+</LinearLayout>

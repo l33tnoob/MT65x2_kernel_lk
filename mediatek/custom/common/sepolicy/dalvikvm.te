@@ -1,0 +1,29 @@
+# ==============================================
+# Policy File of /system/bindalvikvm Executable File 
+
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type dalvikvm_exec , exec_type, file_type;
+type dalvikvm ,domain;
+
+# ==============================================
+# Android Policy Rule
+# ==============================================
+
+# ==============================================
+# NSA Policy Rule
+# ==============================================
+
+# ==============================================
+# MTK Policy Rule
+# ==============================================
+
+permissive dalvikvm;
+init_daemon_domain(dalvikvm)
+
+
+# 20131122 Add Set Property Rule
+allow dalvikvm  property_type:property_service set;

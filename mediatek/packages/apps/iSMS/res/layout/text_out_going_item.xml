@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hissage.ui.view.NmsMessageItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/time_divider_zone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="14dip"
+        android:paddingTop="4dip" >
+
+        <include
+            android:id="@+id/time_divider"
+            layout="@layout/time_diviter_item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="10dip" >
+
+        <CheckBox
+            android:id="@+id/cb_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:clickable="false"
+            android:focusable="false"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dip"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_out_going_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/outgoing_nms_selector"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_text_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:linksClickable="false"
+                    android:textColor="#222222"
+                    android:textColorHighlight="#ffffff"
+                    android:textSize="14sp" />
+
+                <include
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    layout="@layout/out_going_status" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.hissage.ui.view.NmsMessageItemView>

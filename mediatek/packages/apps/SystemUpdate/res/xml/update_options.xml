@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="System Update Options" >
+
+    <ListPreference
+        android:entries="@array/update_options_entries"
+        android:entryValues="@array/update_options_values"
+        android:key="update_options"
+        android:persistent="true"
+        android:title="System Update Options" />
+</PreferenceScreen>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Preference
+        android:key="set_working_mode"
+        android:persistent="false"
+        android:title="@string/set_working_mode" >
+    </Preference>
+    <Preference
+        android:key="my3g324m_configuration"
+        android:persistent="false"
+        android:title="@string/my3g324m_configuration" >
+    </Preference>
+    <Preference
+        android:key="auto_answer"
+        android:persistent="false"
+        android:title="@string/auto_answer" >
+    </Preference>
+
+    <!--
+      <Preference
+  	  android:key="peer_audio_recorder"
+  	  android:title="@string/peer_audio_recorder"
+  	  android:persistent="false">
+  	</Preference>
+  	
+  	<Preference
+  	  android:key="peer_video_recorder"
+  	  android:title="@string/peer_video_recorder"
+  	  android:persistent="false">
+  	</Preference>
+    -->
+
+    <CheckBoxPreference
+        android:key="debug_message"
+        android:persistent="false"
+        android:title="@string/debug_message" >
+    </CheckBoxPreference>
+
+    <!--
+    <CheckBoxPreference
+     android:key="h223_raw_data"
+     android:title="@string/h223_raw_data"
+     android:persistent="false">
+    </CheckBoxPreference>
+    -->
+
+    <CheckBoxPreference
+        android:key="log_to_file"
+        android:persistent="false"
+        android:title="@string/log_to_file" >
+    </CheckBoxPreference>
+
+    <Preference
+        android:key="log_filter"
+        android:persistent="false"
+        android:title="@string/log_filter" >
+    </Preference>
+
+    <CheckBoxPreference
+        android:key="h263_only"
+        android:persistent="false"
+        android:title="@string/h263_only" >
+    </CheckBoxPreference>
+
+    <CheckBoxPreference
+        android:key="get_raw_data"
+        android:persistent="false"
+        android:title="@string/get_raw_data" >
+    </CheckBoxPreference>
+
+</PreferenceScreen>

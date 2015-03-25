@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="bt_opp_notification_in_coming_ticker">"Requête fichier entrant"</string>
+	<string name="bt_opp_notification_in_coming_title">"Requête fichier entrant (de : %1$s)"</string>
+	<string name="bt_opp_notification_in_coming_message">"Choisissez d’accepter le fichier entrant."</string>
+	<string name="bt_opp_notification_in_ongoing_ticker">"Fichier entrant"</string>
+	<string name="bt_opp_notification_in_ongoing_message">"Réception : %1$s (%2$s)"</string>
+	<string name="bt_opp_notification_out_ongoing_ticker">"Sortant fichier"</string>
+	<string name="bt_opp_notification_out_ongoing_message">"Envoi : %1$s (%2$s)"</string>
+	<string name="bt_opp_cancel_task_title">"Transfert de fichier"</string>
+	<string name="bt_opp_cancel_task_message">"Annuler ce transfert ?"</string>
+	<string name="bt_opp_cancel_task_yes">"Oui"</string>
+	<string name="bt_opp_cancel_task_no">"Non"</string>
+	<string name="bt_opp_canceling_task_message">"Annulation du transfert en cours, veuillez patienter..."</string>
+	<string name="bt_opps_confirm_push_title">"Bluetooth - Objet entrant"</string>
+	<string name="bt_opps_confirm_push_message">"Fichier entrant :%1$s (%2$s) à partir de %3$s. Accepter ?"</string>
+	<string name="bt_opps_confirm_push_yes">"Accepter"</string>
+	<string name="bt_opps_confirm_push_no">"Rejeter"</string>
+	<string name="bt_oppc_push_action_label">"Bluetooth"</string>
+	<string name="bt_oppc_push_toast_sending_file">"Envoi du fichier vers %1$s"</string>
+	<string name="bt_oppc_push_toast_sending_files">"Envoi des fichiers vers %1$s"</string>
+	<string name="bt_oppc_push_toast_unsupported_uri">"Contenu partagé non pris en charge : %1$s"</string>
+    <string name="bt_oppc_push_toast_unknown_device">"Périphérique inconnu"</string>
+	<string name="bt_opps_toast_storage_unavailable">"Pas de carte SD ou pas assez d'espace de stockage pour les fichiers entrants."</string>
+	<string name="bt_opps_push_toast_invalid_request">"Demande de partage non valide de l'appareil distant."</string>
+    <string name="permlab_bluetoothWhitelist">Placer accès appareil Bluetooth sur liste blanche.</string>  
+    <string name="permdesc_bluetoothWhitelist">"Permet à l'application de placer temporairement un appareil Bluetooth sur liste blanche pour autoriser cet appareil à envoyer des fichiers vers cet appareil sans confirmation de l'utilisateur."</string>  
+    <string name="permlab_handoverStatus">Recevoir les diffusions BT transférées</string>  
+    <string name="permdesc_handoverStatus">"Autorise la réception des infos sur l'état des transferts du Bluetooth."</string>
+</resources>
